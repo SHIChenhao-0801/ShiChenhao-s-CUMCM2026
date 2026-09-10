@@ -1,0 +1,170 @@
+<div id="c-storage-balance">
+  <h3>一个 10 分钟时段的电力平衡</h3>
+  <div class="viz-row text-small text-muted">
+    <span>教学示例</span><span>充电、放电效率各 90%</span><span>储电范围 1,200–10,800 kWh</span>
+  </div>
+  <div class="viz-controls">
+    <label class="form-label" for="c-net-demand">
+      净负荷 <output id="c-net-value" class="tabular-nums">3,000 kW · 缺电</output>
+      <input id="c-net-demand" class="form-range" type="range" min="-4000" max="8000" step="100" value="3000">
+    </label>
+    <label class="form-label" for="c-storage-request">
+      充放电指令 <output id="c-request-value" class="tabular-nums">−2,000 kW · 放电</output>
+      <input id="c-storage-request" class="form-range" type="range" min="-5000" max="5000" step="100" value="-2000">
+    </label>
+    <label class="form-label" for="c-energy-start">
+      期初储电量 <output id="c-energy-value" class="tabular-nums">6,000 kWh</output>
+      <input id="c-energy-start" class="form-range" type="range" min="1200" max="10800" step="50" value="6000">
+    </label>
+  </div>
+  <div id="c-command-status" class="text-small tabular-nums" aria-live="polite">实际放电 2,000 kW · 指令全部执行</div>
+  <div id="c-power-figure">
+    <svg class="c-power-svg" role="img" aria-labelledby="c-power-title c-power-description">
+      <title id="c-power-title">本时段功率流</title>
+      <desc id="c-power-description">电网和储能共同满足净负荷；充放电受储电量上下限约束。</desc>
+    </svg>
+  </div>
+  <div class="viz-row tabular-nums" aria-live="polite">
+    <span>购电 <output id="c-grid-energy">166.7</output> kWh</span>
+    <span>未利用剩余 <output id="c-surplus-energy">0.0</output> kWh</span>
+    <span>充放电损耗 <output id="c-loss-energy">37.0</output> kWh</span>
+  </div>
+  <hr>
+  <div class="viz-row tabular-nums">
+    <span>期末储电量 <output id="c-energy-end">5,629.6</output> kWh</span>
+    <span class="text-small text-muted">额定容量 12,000 kWh</span>
+  </div>
+  <div id="c-energy-meter" class="progress" role="progressbar" aria-label="期末电池储电量，占额定容量的百分比" aria-valuemin="0" aria-valuemax="100" aria-valuenow="46.9">
+    <div id="c-energy-fill" class="progress-bar" style="width:46.9%"></div>
+  </div>
+  <div class="viz-row text-small tabular-nums">
+    <span id="c-energy-delta">本时段变化 −370.4 kWh</span>
+    <span id="c-energy-percent">荷电状态 46.9%</span>
+  </div>
+</div>
+<style>
+  #c-storage-balance { color:var(--foreground); }
+  #c-storage-balance #c-power-figure { margin-block:12px; }
+  #c-storage-balance .c-power-svg { display:block; width:100%; overflow:visible; }
+  #c-storage-balance .c-power-svg text { fill:var(--foreground); font-size:12px; }
+  #c-storage-balance .c-power-svg .c-struct { stroke:var(--border); stroke-width:1.5; fill:none; }
+  #c-storage-balance .c-power-svg .c-track { fill:var(--muted); }
+  #c-storage-balance .c-power-svg .c-mark { fill:var(--viz-series-1); }
+  #c-storage-balance .c-power-svg .c-column-title { font-weight:500; }
+  #c-storage-balance .c-power-svg .c-bar { transition:width 160ms ease; }
+  @media (prefers-reduced-motion:reduce) {
+    #c-storage-balance .c-power-svg .c-bar { transition:none; }
+  }
+</style>
+<script>
+(() => {
+  const root=document.getElementById('c-storage-balance');
+  const byId=id=>root.querySelector('#'+id);
+  const svg=root.querySelector('.c-power-svg');
+  const figure=byId('c-power-figure');
+  const netInput=byId('c-net-demand');
+  const requestInput=byId('c-storage-request');
+  const energyInput=byId('c-energy-start');
+  const ns='http://www.w3.org/2000/svg';
+  const number=(value,digits=0)=>value.toLocaleString('zh-CN',{minimumFractionDigits:digits,maximumFractionDigits:digits});
+  const signed=(value,digits=0)=>(value<0?'−':value>0?'+':'')+number(Math.abs(value),digits);
+  let state;
+  let width=0;
+  let drawn=false;
+
+  function element(tag,attrs,text){
+    const item=document.createElementNS(ns,tag);
+    for(const [key,value] of Object.entries(attrs))item.setAttribute(key,value);
+    if(text!==undefined)item.textContent=text;
+    return item;
+  }
+
+  function draw(rebuild=false){
+    if(!state)return;
+    const measured=figure.getBoundingClientRect().width;
+    if(measured<=0)return;
+    if(rebuild||Math.abs(measured-width)>1||!drawn){
+      width=measured;
+      svg.setAttribute('viewBox','0 0 '+width+' 262');
+      svg.setAttribute('height','262');
+      svg.querySelectorAll('g').forEach(node=>node.remove());
+      const layer=element('g',{});
+      const gap=48;
+      const col=(width-gap)/2;
+      const middle=width/2;
+      const right=col+gap;
+      layer.append(element('text',{x:0,y:16,class:'c-column-title'},'供给侧 · kW'));
+      layer.append(element('text',{x:right,y:16,class:'c-column-title'},'用电与剩余 · kW'));
+      layer.append(element('path',{d:'M '+middle+' 64 V 220',class:'c-struct'}));
+      for(let side=0;side<2;side++){
+        const x=side===0?0:right;
+        for(let row=0;row<3;row++){
+          const y=44+row*78;
+          const key=side+'-'+row;
+          const node=element('g',{'data-node':key});
+          node.append(element('text',{x,y,'data-label':key},''));
+          node.append(element('text',{x,y:y+20,'data-value':key,class:'tabular-nums'},''));
+          node.append(element('rect',{x,y:y+30,width:col,height:6,class:'c-track'}));
+          node.append(element('rect',{x,y:y+30,width:0,height:6,class:'c-mark c-bar','data-bar':key}));
+          const start=side===0?col:right;
+          node.append(element('path',{d:'M '+start+' '+(y+20)+' H '+middle,class:'c-struct'}));
+          layer.append(node);
+        }
+      }
+      svg.append(layer);
+      drawn=true;
+    }
+    const rows=[
+      [{label:'光伏净剩余',value:Math.max(-state.net,0)},{label:'储能放电',value:state.discharge},{label:'电网购电',value:state.grid}],
+      [{label:'净负荷缺口',value:Math.max(state.net,0)},{label:'储能充电',value:state.charge},{label:'未利用剩余',value:state.surplus}]
+    ];
+    const maxValue=Math.max(1,...rows.flat().map(row=>row.value));
+    const column=(width-48)/2;
+    rows.forEach((side,s)=>side.forEach((row,r)=>{
+      const key=s+'-'+r;
+      svg.querySelector('[data-label="'+key+'"]').textContent=row.label;
+      svg.querySelector('[data-value="'+key+'"]').textContent=number(row.value,1)+' kW';
+      svg.querySelector('[data-bar="'+key+'"]').setAttribute('width',column*row.value/maxValue);
+    }));
+    byId('c-power-description').textContent='净负荷 '+number(state.net,1)+' 千瓦，实际充电 '+number(state.charge,1)+' 千瓦，放电 '+number(state.discharge,1)+' 千瓦，电网购电 '+number(state.grid,1)+' 千瓦，未利用剩余 '+number(state.surplus,1)+' 千瓦。';
+  }
+
+  function update(){
+    const dt=1/6;
+    const efficiency=0.9;
+    const net=Number(netInput.value);
+    const request=Number(requestInput.value);
+    const initial=Number(energyInput.value);
+    const chargeCap=Math.max(0,(10800-initial)/(efficiency*dt));
+    const dischargeCap=Math.max(0,(initial-1200)*efficiency/dt);
+    const charge=Math.min(Math.max(request,0),5000,chargeCap);
+    const discharge=Math.min(Math.max(-request,0),5000,dischargeCap);
+    const balance=net+charge-discharge;
+    const grid=Math.max(balance,0);
+    const surplus=Math.max(-balance,0);
+    const next=initial+efficiency*charge*dt-discharge*dt/efficiency;
+    const delta=next-initial;
+    const loss=(1-efficiency)*charge*dt+(1/efficiency-1)*discharge*dt;
+    const actual=charge-discharge;
+    const limited=Math.abs(actual-request)>1e-7;
+    state={net,charge,discharge,grid,surplus};
+    byId('c-net-value').textContent=signed(net)+' kW · '+(net>0?'缺电':net<0?'光伏剩余':'收支相等');
+    byId('c-request-value').textContent=signed(request)+' kW · '+(request>0?'充电':request<0?'放电':'待机');
+    byId('c-energy-value').textContent=number(initial)+' kWh';
+    byId('c-command-status').textContent='实际'+(actual>0?'充电 ':actual<0?'放电 ':'待机 ')+number(Math.abs(actual),1)+' kW · '+(limited?'受储电量边界限制':'指令全部执行');
+    byId('c-grid-energy').textContent=number(grid*dt,1);
+    byId('c-surplus-energy').textContent=number(surplus*dt,1);
+    byId('c-loss-energy').textContent=number(loss,1);
+    byId('c-energy-end').textContent=number(next,1);
+    byId('c-energy-delta').textContent='本时段变化 '+signed(delta,1)+' kWh';
+    const percent=100*next/12000;
+    byId('c-energy-percent').textContent='荷电状态 '+number(percent,1)+'%';
+    byId('c-energy-meter').setAttribute('aria-valuenow',percent.toFixed(1));
+    byId('c-energy-fill').style.width=percent+'%';
+    draw();
+  }
+  [netInput,requestInput,energyInput].forEach(input=>input.addEventListener('input',update));
+  new ResizeObserver(()=>draw()).observe(figure);
+  update();
+})();
+</script>

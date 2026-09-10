@@ -5,8 +5,9 @@
   "decision_date_beijing": "2026-09-10",
   "problem_id": null,
   "problem_title": null,
-  "user_instruction": "请留意 现在选题仍然不确定 请你给我详细解释一下B题 包括公式 算法（需要必要的代码解释）等等",
-  "current_reading_focus": "B",
+  "user_instruction": "那么C呢",
+  "selection_basis": "用户此前明确选题仍不确定；本轮追问C题沿用详细公式、算法与教学代码讲解范围，不代表最终选择C。",
+  "current_reading_focus": "C",
   "previous_decision": {
     "problem_id": "A",
     "instruction": "我的评估最终选择A题。",
@@ -15,16 +16,17 @@
   "workspace_root": "D:/Document/数学建模/2026CUMCM",
   "problem_pdf": null,
   "attachments_root": null,
-  "current_reading_pdf": "problem_files/CUMCM2026Problems/B题/B题.pdf",
-  "current_reading_attachments_root": "problem_files/CUMCM2026Problems/B题/附件",
+  "current_reading_pdf": "problem_files/CUMCM2026Problems/C题/C题.pdf",
+  "current_reading_attachments_root": "problem_files/CUMCM2026Problems/C题/附件",
   "source_manifest": "notes/problem-reading/2026-09-10/source_manifest.json",
   "model_route_status": "not_yet_confirmed",
   "formal_results_status": "not_run",
   "reading_artifacts": [
-    "notes/B-principles/B题_公式算法与代码讲解.md",
-    "notes/B-principles/bearing-geometry.html"
+    "notes/C-principles/C题_公式算法与代码讲解.md",
+    "notes/C-principles/附件结构初读.md",
+    "notes/C-principles/storage-balance.html"
   ],
-  "reading_status": "B题公式、算法及教学代码说明已完成，并经独立只读复核；未运行模拟器或正式求解。",
+  "reading_status": "C题附件结构初读及公式、算法、教学代码说明已完成，并经独立只读复核；未训练预测模型、求解调度或填写结果模板。",
   "next_action": "用户继续评估选题；按其后续决定进入相应题目的正式审题、数据审计和模型比较。",
-  "scope_note": "当前选题待定，A题推导保留为候选参考，B题重新进入评估。详细解释不代表启动模拟器测试或最终确认B题，不改变任何工作流门禁状态。"
+  "scope_note": "当前选题待定，A/B/C题讲解均保留为候选参考。本轮C题附件初读与教学说明不代表正式数据审计、模型确认或实际求解，不改变任何工作流门禁状态。"
 }
