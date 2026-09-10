@@ -1,0 +1,699 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-10T22:09:44+08:00",
+  "generated_by": "paper_output/code/contracts/build_a_contracts.py",
+  "source": "paper_output/step1/problem_analysis.json",
+  "source_sha256": "7fc6f77b600924f54209914890aedf53e5d161c3006b3441e0fcda4654512100",
+  "problem_id": "A",
+  "selection_rationale": "可解释守恒PDE先行，新增耦合和移动域均由题目逐问要求驱动；选择理由已记录，用户人工核验仍待完成",
+  "status": "S2_ROUTE_READY_NOT_NUMERICALLY_VALIDATED",
+  "questions": [
+    {
+      "question_id": "Q1",
+      "title": "问题一：预热平衡阶段",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "core_goal": "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。",
+      "baseline_model": "固定半径常系数圆柱Robin-Bessel解析解（热方程可直接验证，水扩散D冻结作求解器基准）",
+      "main_model": "固定骨架一维径向热传导及D(C)非线性扩散；守恒有限体积+隐式时间积分",
+      "model_id": "cylindrical_fixed_nonlinear_diffusion",
+      "backup_models": [
+        "常物性Bessel基准，只验证可解析边界与常系数情景",
+        "二维轴对称端面或表面潜热替代情景，另标物理闭合与数据要求"
+      ],
+      "model_reason": "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²"
+      ],
+      "parameter_set": "Q1",
+      "validation": [
+        "每条公式先说明目的、自变量、因变量、单位和物理含义；经验系数只作题给，不能伪造第一性原理推导",
+        "对源PDF第3—4页人工可视核对指数中的除号；温度进入Arrhenius项前必须换算为K",
+        "检查初始场、中心零通量、表面Robin通量、C正性及温度/含水率范围；不以数值裁剪掩盖失败",
+        "常系数圆柱Bessel级数对照验证离散求解器，报告截断误差与数值误差的区别",
+        "分别加密空间网格和时间步；满足渐近收敛条件才报告Richardson外推或观测阶",
+        "检查累计水分流出量与干基总水量减少的离散闭合；核对单位与相对残差",
+        "保存输入/代码/参数/输出SHA256、实际运行退出码与有限数值；VS GUI复现、用户人工审查分别记录",
+        "没有药材内部T/C实测真值；不得将数值一致性写为实测RMSE、预测准确率或校准成功"
+      ],
+      "figures": [
+        {
+          "figure_id": "fig_q1_1",
+          "title": "前30min温度径向剖面",
+          "purpose": "支撑Q1真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q1_1.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q1_2",
+          "title": "前30min含水率径向剖面",
+          "purpose": "支撑Q1真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q1_2.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q1_3",
+          "title": "常系数Bessel与数值解误差",
+          "purpose": "支撑Q1真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q1_3.png",
+          "status": "planned_not_generated"
+        }
+      ],
+      "paper_sections": [
+        "问题一：预热平衡阶段模型建立",
+        "问题一：预热平衡阶段结果分析",
+        "问题一：预热平衡阶段模型检验"
+      ],
+      "output_contract": {
+        "file": "result1.xlsx",
+        "sheets": [
+          "温度",
+          "水分浓度"
+        ],
+        "time_unit": "s",
+        "time_step_s": 1,
+        "time_start_s": 0,
+        "time_end_s": 1800,
+        "radius_unit": "cm",
+        "radius_grid_cm": {
+          "start": 0,
+          "end": 2,
+          "step": 0.1
+        },
+        "paper_times_s": [
+          100,
+          300,
+          600,
+          900,
+          1200,
+          1500,
+          1800
+        ],
+        "paper_radii_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
+      },
+      "assumptions": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A07"
+      ],
+      "implementation": {
+        "language": "Python",
+        "libraries_planned": [
+          "numpy",
+          "scipy"
+        ],
+        "method": "圆柱环形有限体积、面通量、隐式积分；常系数Bessel基准；耦合非线性需收敛/容差证据",
+        "production_entry": "paper_output/code/modeling/run_modeling.py",
+        "source_status": "主代理另行编写，本契约不声称已执行",
+        "visual_studio_reproduction": "required_pending",
+        "human_review": "pending"
+      },
+      "acceptance_metrics": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ]
+    },
+    {
+      "question_id": "Q2",
+      "title": "问题二：全过程热湿耦合",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "core_goal": "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。",
+      "baseline_model": "固定半径、同一初值的常物性圆柱热/水基线，作为附录3变物性耦合的对照",
+      "main_model": "固定骨架一维径向非线性热湿耦合PDE；rho*cp与k依赖C、D依赖C及绝对温度",
+      "model_id": "cylindrical_fixed_coupled_heat_moisture",
+      "backup_models": [
+        "常物性Bessel基准，只验证可解析边界与常系数情景",
+        "二维轴对称端面或表面潜热替代情景，另标物理闭合与数据要求"
+      ],
+      "model_reason": "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²"
+      ],
+      "parameter_set": "Q2_Q3",
+      "validation": [
+        "每条公式先说明目的、自变量、因变量、单位和物理含义；经验系数只作题给，不能伪造第一性原理推导",
+        "对源PDF第3—4页人工可视核对指数中的除号；温度进入Arrhenius项前必须换算为K",
+        "检查初始场、中心零通量、表面Robin通量、C正性及温度/含水率范围；不以数值裁剪掩盖失败",
+        "常系数圆柱Bessel级数对照验证离散求解器，报告截断误差与数值误差的区别",
+        "分别加密空间网格和时间步；满足渐近收敛条件才报告Richardson外推或观测阶",
+        "检查累计水分流出量与干基总水量减少的离散闭合；核对单位与相对残差",
+        "保存输入/代码/参数/输出SHA256、实际运行退出码与有限数值；VS GUI复现、用户人工审查分别记录",
+        "没有药材内部T/C实测真值；不得将数值一致性写为实测RMSE、预测准确率或校准成功",
+        "50°C/0.05平台、末值、末1h均值延拓与h/beta情景对照"
+      ],
+      "figures": [
+        {
+          "figure_id": "fig_q2_1",
+          "title": "前3h中心与表面温湿演化",
+          "purpose": "支撑Q2真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q2_1.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q2_2",
+          "title": "全过程温度含水率及D变化",
+          "purpose": "支撑Q2真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q2_2.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q2_3",
+          "title": "变物性与冻结物性对照",
+          "purpose": "支撑Q2真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q2_3.png",
+          "status": "planned_not_generated"
+        }
+      ],
+      "paper_sections": [
+        "问题二：全过程热湿耦合模型建立",
+        "问题二：全过程热湿耦合结果分析",
+        "问题二：全过程热湿耦合模型检验"
+      ],
+      "output_contract": {
+        "file": "result2.xlsx",
+        "sheets": [
+          "温度",
+          "水分浓度"
+        ],
+        "time_unit": "s",
+        "time_step_s": 1,
+        "time_start_s": 0,
+        "time_end_rule": "全程保存至Q3达标时刻；前3h单独可提取，最终提交体积实测后明确口径",
+        "radius_unit": "cm",
+        "radius_grid_cm": {
+          "start": 0,
+          "end": 2,
+          "step": 0.1
+        },
+        "paper_times_h": [
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          3
+        ],
+        "paper_radii_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ]
+      },
+      "assumptions": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A07"
+      ],
+      "implementation": {
+        "language": "Python",
+        "libraries_planned": [
+          "numpy",
+          "scipy"
+        ],
+        "method": "圆柱环形有限体积、面通量、隐式积分；常系数Bessel基准；耦合非线性需收敛/容差证据",
+        "production_entry": "paper_output/code/modeling/run_modeling.py",
+        "source_status": "主代理另行编写，本契约不声称已执行",
+        "visual_studio_reproduction": "required_pending",
+        "human_review": "pending"
+      },
+      "acceptance_metrics": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "title": "问题三：全域达标时间",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "core_goal": "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。",
+      "baseline_model": "问题二已验证解的max(C)阈值事件；常D/Bessel时长仅作可解释尺度对照",
+      "main_model": "继承Q2的守恒数值解并对全域最大干基含水率做阈值事件定位",
+      "model_id": "whole_domain_drying_event",
+      "backup_models": [
+        "常物性Bessel基准，只验证可解析边界与常系数情景",
+        "二维轴对称端面或表面潜热替代情景，另标物理闭合与数据要求"
+      ],
+      "model_reason": "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²",
+        "M(t)=max_{0<=r<=R(t)}C(r,t)，t*=inf{t:M(t)<0.15}",
+        "阈值连续交叉估计、严格首达输出时刻、未舍入余量分别记录"
+      ],
+      "parameter_set": "Q2_Q3",
+      "validation": [
+        "每条公式先说明目的、自变量、因变量、单位和物理含义；经验系数只作题给，不能伪造第一性原理推导",
+        "对源PDF第3—4页人工可视核对指数中的除号；温度进入Arrhenius项前必须换算为K",
+        "检查初始场、中心零通量、表面Robin通量、C正性及温度/含水率范围；不以数值裁剪掩盖失败",
+        "常系数圆柱Bessel级数对照验证离散求解器，报告截断误差与数值误差的区别",
+        "分别加密空间网格和时间步；满足渐近收敛条件才报告Richardson外推或观测阶",
+        "检查累计水分流出量与干基总水量减少的离散闭合；核对单位与相对残差",
+        "保存输入/代码/参数/输出SHA256、实际运行退出码与有限数值；VS GUI复现、用户人工审查分别记录",
+        "没有药材内部T/C实测真值；不得将数值一致性写为实测RMSE、预测准确率或校准成功",
+        "50°C/0.05平台、末值、末1h均值延拓与h/beta情景对照",
+        "全域最大值而非均值判定；中心是否为最大值逐时验证，不能直接假定",
+        "分别报告事件插值误差、时间步误差、空间误差及模型情景差异"
+      ],
+      "figures": [
+        {
+          "figure_id": "fig_q3_1",
+          "title": "max(C)与0.15阈值及结束时间",
+          "purpose": "支撑Q3真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q3_1.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q3_2",
+          "title": "每6h径向含水率剖面",
+          "purpose": "支撑Q3真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q3_2.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q3_3",
+          "title": "网格时间步与边界延拓敏感性",
+          "purpose": "支撑Q3真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q3_3.png",
+          "status": "planned_not_generated"
+        }
+      ],
+      "paper_sections": [
+        "问题三：全域达标时间模型建立",
+        "问题三：全域达标时间结果分析",
+        "问题三：全域达标时间模型检验"
+      ],
+      "output_contract": {
+        "file": "result3.xlsx",
+        "sheets": [
+          "Sheet1"
+        ],
+        "variable": "C",
+        "time_unit": "s",
+        "time_step_s": 60,
+        "time_start_s": 0,
+        "time_end_rule": "全域达标末时刻另加末行，即使不整除60s",
+        "radius_unit": "cm",
+        "radius_grid_cm": {
+          "start": 0,
+          "end": 2,
+          "step": 0.1
+        },
+        "paper_time_step_h": 6,
+        "paper_radii_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "paper_add_endpoint": true
+      },
+      "assumptions": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A07"
+      ],
+      "implementation": {
+        "language": "Python",
+        "libraries_planned": [
+          "numpy",
+          "scipy"
+        ],
+        "method": "圆柱环形有限体积、面通量、隐式积分；常系数Bessel基准；耦合非线性需收敛/容差证据",
+        "production_entry": "paper_output/code/modeling/run_modeling.py",
+        "source_status": "主代理另行编写，本契约不声称已执行",
+        "visual_studio_reproduction": "required_pending",
+        "human_review": "pending"
+      },
+      "acceptance_metrics": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "title": "问题四：收缩下的达标时间",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "core_goal": "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。",
+      "baseline_model": "附录4相同物性、固定R0、同边界的全过程模型，用于隔离半径收缩的净影响",
+      "main_model": "同比径向材料收缩x=r/R(t)的一维热湿耦合PDE；rho_d随R^-2变化守恒，有限体积在固定材料网格求解",
+      "model_id": "cylindrical_material_shrinkage_coupled",
+      "backup_models": [
+        "常物性Bessel基准，只验证可解析边界与常系数情景",
+        "二维轴对称端面或表面潜热替代情景，另标物理闭合与数据要求"
+      ],
+      "model_reason": "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²",
+        "x=r/R(t)，u=x*R'(t)，rho_d=rho_d0*(R0/R)^2",
+        "固定材料x下T_t=[1/(rho*cp*R²*x)]*d_x(x*k*T_x)",
+        "固定材料x下C_t=[1/(R²*x)]*d_x(x*D*C_x)",
+        "两式材料平流与网格速度相消；不可再额外加xR'/R平流",
+        "附录4固定/收缩时长差和相对变化率；跨物性比较另列",
+        "M(t)=max_{0<=r<=R(t)}C(r,t)，t*=inf{t:M(t)<0.15}",
+        "阈值连续交叉估计、严格首达输出时刻、未舍入余量分别记录"
+      ],
+      "parameter_set": "Q4",
+      "validation": [
+        "每条公式先说明目的、自变量、因变量、单位和物理含义；经验系数只作题给，不能伪造第一性原理推导",
+        "对源PDF第3—4页人工可视核对指数中的除号；温度进入Arrhenius项前必须换算为K",
+        "检查初始场、中心零通量、表面Robin通量、C正性及温度/含水率范围；不以数值裁剪掩盖失败",
+        "常系数圆柱Bessel级数对照验证离散求解器，报告截断误差与数值误差的区别",
+        "分别加密空间网格和时间步；满足渐近收敛条件才报告Richardson外推或观测阶",
+        "检查累计水分流出量与干基总水量减少的离散闭合；核对单位与相对残差",
+        "保存输入/代码/参数/输出SHA256、实际运行退出码与有限数值；VS GUI复现、用户人工审查分别记录",
+        "没有药材内部T/C实测真值；不得将数值一致性写为实测RMSE、预测准确率或校准成功",
+        "50°C/0.05平台、末值、末1h均值延拓与h/beta情景对照",
+        "全域最大值而非均值判定；中心是否为最大值逐时验证，不能直接假定",
+        "分别报告事件插值误差、时间步误差、空间误差及模型情景差异",
+        "附录4固定半径与收缩半径同物性对照；Q3/Q4跨物性对比单列",
+        "半径数据0—72h覆盖检查、物理坐标输出映射和域外空值核验"
+      ],
+      "figures": [
+        {
+          "figure_id": "fig_q4_1",
+          "title": "半径数据与插值",
+          "purpose": "支撑Q4真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q4_1.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q4_2",
+          "title": "收缩材料网格及物理域含水率",
+          "purpose": "支撑Q4真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q4_2.png",
+          "status": "planned_not_generated"
+        },
+        {
+          "figure_id": "fig_q4_3",
+          "title": "附录4固定/收缩同物性时长对照",
+          "purpose": "支撑Q4真实模型结果或独立验证",
+          "expected_path": "paper_output/figures/fig_q4_3.png",
+          "status": "planned_not_generated"
+        }
+      ],
+      "paper_sections": [
+        "问题四：收缩下的达标时间模型建立",
+        "问题四：收缩下的达标时间结果分析",
+        "问题四：收缩下的达标时间模型检验"
+      ],
+      "output_contract": {
+        "file": "result4.xlsx",
+        "sheets": [
+          "Sheet1"
+        ],
+        "variable": "C",
+        "time_unit": "s",
+        "time_step_s": 60,
+        "time_start_s": 0,
+        "time_end_rule": "全域达标末时刻另加末行",
+        "radius_unit": "cm",
+        "radius_grid_rule": "0,0.1,...<=R(t)，另含真实表面；r>R(t)为域外，留空而非0",
+        "paper_time_step_h": 6,
+        "paper_radius_step_cm": 0.5,
+        "paper_add_surface": true,
+        "paper_add_endpoint": true
+      },
+      "assumptions": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07"
+      ],
+      "implementation": {
+        "language": "Python",
+        "libraries_planned": [
+          "numpy",
+          "scipy"
+        ],
+        "method": "圆柱环形有限体积、面通量、隐式积分；常系数Bessel基准；耦合非线性需收敛/容差证据",
+        "production_entry": "paper_output/code/modeling/run_modeling.py",
+        "source_status": "主代理另行编写，本契约不声称已执行",
+        "visual_studio_reproduction": "required_pending",
+        "human_review": "pending"
+      },
+      "acceptance_metrics": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ]
+    }
+  ],
+  "shared_assumptions": [
+    {
+      "id": "A01",
+      "title": "径向一维及端面处理",
+      "statement": "采用轴对称、轴向近似均匀的一维径向场，固定长度L=0.25m，Q1—Q3半径R0=0.02m。",
+      "start": "由真实三维药材抽象为圆柱的一维传递域时",
+      "basis": "题目按到中心的距离输出；长径比L/(2R0)=6.25",
+      "limit": "题目有限圆柱事实不等于端面绝热；端面积/侧面积=R0/L=0.08，不足以独自证明影响可忽略",
+      "validation": "至少量级分析；有预算时采用有限圆柱二维轴对称或可核验常系数端面修正情景"
+    },
+    {
+      "id": "A02",
+      "title": "有效显热",
+      "statement": "用a(C)=rho(C)*cp(C)作为有效体积热容量，a(C)D_tT=div(k(C)grad(T))；基准不显式增加相变潜热或湿分携带焓。",
+      "start": "从总能量守恒约化到有效显热方程时",
+      "basis": "题给rho、cp、k及对流换热参数，未给完整相变/焓闭合",
+      "limit": "rho(C)在此作为题给有效热容量的组成部分，不能同时无条件声明其为严格守恒的湿物料总密度",
+      "validation": "表面潜热替代情景需明确j_w、Lv及能量方向，禁止内外双重扣潜热"
+    },
+    {
+      "id": "A03",
+      "title": "干物质骨架及Fick闭合",
+      "statement": "C为kg水/kg干物质。Q1—Q3固定均匀干骨架；Q4均匀同比径向材料收缩，rho_d(t)=rho_d0*(R0/R(t))^2。水通量j_w=-rho_d*D*grad(C)。",
+      "start": "把干基质量比C转为守恒水质量，并为通量选择本构时",
+      "basis": "干物质质量守恒与给定半径轨迹可相容闭合",
+      "limit": "rho_d0仅决定总水质量单位尺度，不影响空间均匀rho_d下的C解；不能把rho(C)/(1+C)再强塞入同一均匀骨架",
+      "validation": "干物质守恒、累计水分质量守恒，必要时对替代总密度闭合单独立模"
+    },
+    {
+      "id": "A04",
+      "title": "环境到材料的等效平衡映射",
+      "statement": "基准令Ceq(t)=附件1给出的烘房水分值，使用-D*C_r=beta*(Cs-Ceq)。",
+      "start": "把空气观测变为材料表面Robin边界时，早于4h外推",
+      "basis": "题目提供kg/kg环境水分与m/s有效传质系数，未给吸附等温线",
+      "limit": "kg水/kg干空气与kg水/kg干药材不是同一基准；这里是简化约定，并非由单位相同推得物理等价",
+      "validation": "对Ceq映射比例/偏移或不同平衡值做敏感性；没有品种吸附数据不能唯一恢复真实映射"
+    },
+    {
+      "id": "A05",
+      "title": "环境插值和4h后延拓",
+      "statement": "0—14400s按附件1分段线性插值，超过4h基准取50°C与Ceq=0.05。",
+      "start": "相邻60s观测之间采用插值时已有局部假设；超过14400s明确进入观测外延拓",
+      "basis": "附件末时段接近恒温、恒湿平台，题面称恒温干燥",
+      "limit": "50/0.05只是候选工况，不是其后68h的实测值，也不能声称给出了统计置信区间",
+      "validation": "末值保持、末1h均值保持、平台温湿扰动；时长对工况变化另列"
+    },
+    {
+      "id": "A06",
+      "title": "收缩材料运动",
+      "statement": "Q4以附件2的R(t)确定边界，取u(r,t)=r*R'(t)/R(t)，长度固定。x=r/R(t)为材料坐标，网格速度等于骨架速度。",
+      "start": "由仅有半径观测推断内部材料速度场时",
+      "basis": "与表面速度及空间均匀干物质骨架守恒相容的最简闭合",
+      "limit": "附件没有内部位移或长度轨迹，不能证明真实内部收缩均匀；仅坐标变换本身不构成物理假设证据",
+      "validation": "R插值保持非增、正值；同物性固定/收缩对照；不得重复加入ALE平流或C体积稀释项"
+    },
+    {
+      "id": "A07",
+      "title": "传热传质系数延用",
+      "statement": "Q2—Q4沿用h=25 W/(m²K)、beta=8e-7m/s。",
+      "start": "附录3/4未重给边界系数，建立对应边界条件时",
+      "basis": "同一药材烘房，题面仅明确更换给出的经验物性",
+      "limit": "温湿风速变化可能改变系数，当前无风速或系数测量",
+      "validation": "h、beta独立±10%/±20%参数情景，报告设置而非实测误差"
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "U01",
+      "issue": "烘房kg/kg的参考质量基准与材料平衡含水率映射未明",
+      "resolution": "按A04显式约定并敏感性，不能隐去",
+      "blocks": "不阻塞条件性机理求解；阻塞无条件的实测预测准确性声明"
+    },
+    {
+      "id": "U02",
+      "issue": "附件1仅4h而全过程约2—3天",
+      "resolution": "按A05平台延拓并对照末值/末段均值/扰动",
+      "blocks": "无假设不能唯一预测4h以后"
+    },
+    {
+      "id": "U03",
+      "issue": "result2完整结果的终止时刻未明确，正文只列3h",
+      "resolution": "保留从0至Q3达标时刻的逐秒全程T/C；另导出前3h，依据20M支撑上限实测压缩体积后形成明确提交方案",
+      "blocks": "不影响求解；最终文件范围解释与体积仍待导出验证"
+    },
+    {
+      "id": "U04",
+      "issue": "Q4半径不落0.1cm或0.5cm格点时表面及域外单元如何表达",
+      "resolution": "固定物理距离列+独立表面列，域外留空且不得填0；配套时间到R(t)映射/元数据，最终保证模板格式清晰",
+      "blocks": "最终模板结构需实际导出检查"
+    },
+    {
+      "id": "U05",
+      "issue": "rho(C)与干基/固定或给定收缩体积的严格总质量守恒不自动相容",
+      "resolution": "有效热容量和干骨架质量守恒分清；另一密度解释必须新建并标明替代模型",
+      "blocks": "阻塞把相互不相容闭合全部称为严格守恒"
+    },
+    {
+      "id": "U06",
+      "issue": "Q4若达标超过72h则R数据不足",
+      "resolution": "先在实测范围内求解；超出时标记数据域外并比较末半径保持与正值非增外推，不能静默延长",
+      "blocks": "72h后时长依赖额外半径外推"
+    },
+    {
+      "id": "U07",
+      "issue": "严格低于0.15和四位小数显示0.1500可能冲突",
+      "resolution": "事件求根报告连续阈值交叉时间、严格达标的首个输出时刻及未舍入max(C)；等于阈值点不称严格低于",
+      "blocks": "不阻塞模型；需保留未舍入判定证据"
+    }
+  ],
+  "parameter_sets": {
+    "Q1": {
+      "source": "A题.pdf 第3页附录2",
+      "rho": "820",
+      "cp": "2600",
+      "k": "0.36",
+      "D": "7e-9*exp(-0.89/C)",
+      "h": 25.0,
+      "beta": 8e-07
+    },
+    "Q2_Q3": {
+      "source": "A题.pdf 第4页附录3",
+      "rho": "650+128*C",
+      "cp": "1450+2736*C/(1+C)",
+      "k": "0.21+0.38*C/(1+C)",
+      "D": "2.4e-3*exp(-0.45/C)*exp(-3850/T_K)",
+      "h_beta_status": "沿用附录2是明确记录的模型约定；两问未另给参数"
+    },
+    "Q4": {
+      "source": "A题.pdf 第4页附录4",
+      "rho": "760+90*C",
+      "cp": "1850+2150*C/(1+C)",
+      "k": "0.12+0.20*C/(1+C)",
+      "D": "4.2e-4*exp(-0.30/C)*exp(-3850/T_K)",
+      "h_beta_status": "沿用附录2是明确记录的模型约定；第四问未另给参数"
+    }
+  },
+  "data_plan_handoff": {
+    "required_skill": "data-cleaning-and-visualization",
+    "scope": "仅A题7资产；2输入数据与4模板分开",
+    "fresh_load_report": "paper_output/data_cleaned/load_report.json",
+    "no_data_leakage": "环境与半径不是内部T/C标签；4h以后延拓不是观测"
+  },
+  "experiment_plan": {
+    "budget_mode": "CPU有限预算，autoresearch附加实验不替代主流程",
+    "deadline_utc": "2026-09-10T19:00:00+00:00",
+    "deadline_beijing": "2026-09-11T03:00:00+08:00",
+    "requested_nominal_radial_cells": 400,
+    "grid_sequence_candidate": [
+      100,
+      200,
+      400
+    ],
+    "time_step_strategy": "按实际求解器选择1、2、4秒或容差阶梯；分别做空间和时间研究，输出每1秒不等于积分步长必为1秒",
+    "priority_order": [
+      "S3数据审计",
+      "可解释短时与Bessel基准",
+      "四问实际解",
+      "干物质及水分守恒",
+      "空间时间收敛",
+      "同物性收缩对照",
+      "边界延拓与参数敏感性",
+      "端面和潜热替代",
+      "模板完整性与压缩大小",
+      "VS GUI复现及核心代码人工交接"
+    ],
+    "stop_rules": [
+      "物理守恒或正性失败则修模型/算法后重新运行",
+      "任何模型、输入、参数变化重算受影响输出",
+      "禁止为了赶进度用占位数值或未运行图填充结果",
+      "预算不足时明确未执行项；不能将计划改为PASS"
+    ]
+  },
+  "scaling_policy": {
+    "unit_conversion": "cm→m、°C→K（D用K）、s→h仅在展示；必须",
+    "moving_domain": "Q4 x=r/R(t)固定材料域；作用对象为自变量/空间域，并同步变换导数及边界",
+    "nondimensionalization": "以R0、温差尺度、C0及时间尺度形成无量纲数用于量级和误差控制；不改变物理输出",
+    "inequality_bounds": "可在所算T/C范围推D上下界估算扩散时间尺度；要比较PDE解须证明同初边界与比较原理适用，不将系数上下界直接当精确时长界",
+    "normalization_not_required": "不为物理模型套机器学习特征标准化；如数值缩放T/C，必须记变换及反变换"
+  },
+  "official_evidence_requirements": {
+    "S5": [
+      "model_results.json",
+      "metrics.json",
+      "conclusions.json",
+      "tables.json",
+      "run_manifest.json",
+      "actual_usable_figures"
+    ],
+    "S6": "真实证据和输入新鲜度PASS后才进入正式写作",
+    "independent_review": "所有主要公式、边界和守恒闭合以及数值结果须独立检查",
+    "no_empirical_validation_claim": "当前无内部实测，验证仅解析/离散/物理一致性与条件性敏感性"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "scope": "analytic benchmark implementation selfcheck; production FVM comparison is separate",
+  "checks": [
+    {
+      "name": "robin_eigen_relative_residual",
+      "value": 5.01624228267908e-12,
+      "tolerance": 1e-10,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "name": "piecewise_convolution_vs_adaptive_quadrature",
+      "value": 8.881784197001252e-16,
+      "tolerance": 1e-10,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "annular_average_vs_adaptive_quadrature",
+      "value": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "name": "constant_boundary_step_energy_identity",
+      "value": 1.7694179454963432e-16,
+      "tolerance": 1e-10,
+      "unit": "K/s",
+      "passed": true
+    },
+    {
+      "name": "Q1_observed_boundary_120_vs_240_terms",
+      "value": 1.524666686236742e-07,
+      "tolerance": 0.0001,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "Q1_observed_boundary_240_vs_480_terms",
+      "value": 1.8995478967553936e-08,
+      "tolerance": 0.0001,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "uniform_equilibrium",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "insulating_boundary",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "unit": "K",
+      "passed": true
+    }
+  ],
+  "series_note": "120/240/480 differences estimate truncation sensitivity at sampled locations and times, not a rigorous uniform error bound.",
+  "no_internal_experimental_validation": true,
+  "visual_studio_gui": "pending",
+  "human_review": "pending",
+  "schema_version": "1.0",
+  "question_id": "Q1",
+  "generated_at": "2026-09-10T14:16:50.997207+00:00",
+  "generated_by": "paper_output/code/modeling/validate_bessel.py",
+  "frozen_moisture_diffusion_coefficient_m2_s": 4.937655094173937e-09,
+  "frozen_moisture_note": "This table is a constant-D algorithm benchmark and must not replace nonlinear Q1 result1 moisture values.",
+  "execution_provenance": {
+    "source_code_path": "paper_output/code/modeling/validate_bessel.py",
+    "source_code_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+    "run_command": "C:\\Python314\\python.exe -B paper_output/code/modeling/validate_bessel.py",
+    "run_exit_code": 0,
+    "python_version": "3.14.7",
+    "input_artifacts": [
+      {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      }
+    ],
+    "output_artifacts": [
+      {
+        "path": "paper_output/results/bessel_validation/q1_exact_heat_paper_points.csv",
+        "bytes": 1264,
+        "sha256": "ffe202b454ff28efd057f99203e8c12e3988bf2996ebe85b112c5d858da2c11c"
+      },
+      {
+        "path": "paper_output/results/bessel_validation/frozen_D_moisture_benchmark_points.csv",
+        "bytes": 1272,
+        "sha256": "af8d8a47373bf776f9f767128cd2188c9ceab8a3c7a28c48e663bdd27eb11622"
+      }
+    ]
+  }
+}

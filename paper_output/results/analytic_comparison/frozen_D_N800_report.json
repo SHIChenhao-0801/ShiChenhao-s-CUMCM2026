@@ -1,0 +1,174 @@
+{
+  "case_id": "frozen_D_N800",
+  "settings": {
+    "question": "Q1",
+    "intervals": 800,
+    "rtol": 1e-10,
+    "atol_temperature": 1e-10,
+    "atol_moisture": 1e-11,
+    "max_step_s": 2.0,
+    "early_max_step_s": 2.0,
+    "horizon_h": 240.0,
+    "shrink": false,
+    "boundary_extension": "nominal",
+    "tail_temperature_C": 50.0,
+    "tail_equilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibrium_scale": 1.0,
+    "surface_latent_fraction": 0.0,
+    "latent_J_kg": 2400000.0,
+    "constant_D": 4.937655094173937e-09,
+    "constant_thermal": false,
+    "method": "BDF",
+    "face_scheme": "kirchhoff"
+  },
+  "diagnostics": {
+    "event_s": null,
+    "event_h": null,
+    "end_s": 1800.0,
+    "elapsed_s": 2.7945570000010775,
+    "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+    "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+    "min_C": 1.552153541588725,
+    "max_C": 2.5500000000000007,
+    "min_T_K": 301.15,
+    "max_T_K": 309.9355601785613,
+    "min_D": 4.937655094173937e-09,
+    "max_D": 4.937655094173937e-09,
+    "positive_properties": true,
+    "max_radial_C_increase": 2.6645352591003757e-15,
+    "final_max_C": 2.5499921292093957,
+    "final_surface_C": 1.552153541588725,
+    "strictly_dry_at_end": false,
+    "radius_end_m": 0.02,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 4690,
+    "accepted_time_points": 1720,
+    "nfev": 3888,
+    "njev": 73,
+    "nlu": 429,
+    "solver_success": true
+  },
+  "comparison_scope": "constant-property heat and frozen-D linear moisture",
+  "comparisons": {
+    "paper": {
+      "temperature": {
+        "max_abs_error": 1.577469959102018e-06,
+        "rms_error": 4.346413411734233e-07,
+        "mean_signed_error": -1.4211989634662001e-07,
+        "max_error_time_s": 300.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": -1.577469959102018e-06,
+        "centre_max_abs_error": 2.47698437760846e-07,
+        "surface_max_abs_error": 1.577469959102018e-06,
+        "finite_values": true
+      },
+      "analytic_truncation_sensitivity": {
+        "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+        "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+      },
+      "frozen_D_moisture": {
+        "max_abs_error": 1.693382915579633e-05,
+        "rms_error": 3.193924586319606e-06,
+        "mean_signed_error": 8.712145748633406e-07,
+        "max_error_time_s": 100.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": 1.693382915579633e-05,
+        "centre_max_abs_error": 5.585209628122811e-09,
+        "surface_max_abs_error": 1.693382915579633e-05,
+        "finite_values": true
+      }
+    },
+    "dense": {
+      "temperature": {
+        "max_abs_error": 3.143377057313046e-06,
+        "rms_error": 2.955895156612742e-07,
+        "mean_signed_error": -1.3622801452021796e-07,
+        "max_error_time_s": 540.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": -3.143377057313046e-06,
+        "centre_max_abs_error": 2.9593155659313197e-07,
+        "surface_max_abs_error": 3.143377057313046e-06,
+        "finite_values": true
+      },
+      "analytic_truncation_sensitivity": {
+        "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+        "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+      },
+      "frozen_D_moisture": {
+        "max_abs_error": 7.158659870754036e-05,
+        "rms_error": 2.346033676582004e-06,
+        "mean_signed_error": 4.7655406920225946e-07,
+        "max_error_time_s": 10.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": 7.158659870754036e-05,
+        "centre_max_abs_error": 5.585210516301231e-09,
+        "surface_max_abs_error": 7.158659870754036e-05,
+        "finite_values": true
+      }
+    }
+  },
+  "output_artifacts": [
+    {
+      "path": "paper_output/results/analytic_comparison/frozen_D_N800_paper.csv",
+      "bytes": 5038,
+      "sha256": "dcf434602e559177e62c9f6f9305e07627bf733582f5cc4924d9e2f4696a8d31"
+    },
+    {
+      "path": "paper_output/results/analytic_comparison/frozen_D_N800_dense.csv",
+      "bytes": 542136,
+      "sha256": "5905db835ee051b254e4c24ada712bc5c0d3010ccb4cf61b9d41c83b85a66468"
+    },
+    {
+      "path": "paper_output/results/analytic_comparison/frozen_D_N800_early.csv",
+      "bytes": 2912,
+      "sha256": "e0e0018987ee3cbb128a43ae2d4246fe4e806bac7c3c97cdea6a83a6b67e5c94"
+    }
+  ],
+  "representation_diagnostic": {
+    "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+    "strict_cell_average_interpretation_is_not_primary": true,
+    "heat_node_max_abs_error_K": 1.577469959102018e-06,
+    "heat_vs_annular_average_max_abs_error_K": 0.0020509931699734807,
+    "analytic_point_vs_annular_average_max_difference_K": 0.0020511716363103005,
+    "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+  },
+  "early_boundary_layer": {
+    "times_s": [
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0,
+      30.0,
+      60.0
+    ],
+    "radii_m": [
+      0.0,
+      0.019,
+      0.02
+    ],
+    "moisture": {
+      "max_abs_error": 0.0002501421049081465,
+      "rms_error": 7.33457542268429e-05,
+      "mean_signed_error": 3.374036966141163e-05,
+      "max_error_time_s": 1.0,
+      "max_error_radius_m": 0.02,
+      "error_at_max_location": 0.0002501421049081465,
+      "centre_max_abs_error": 1.6063594898696465e-11,
+      "surface_max_abs_error": 0.0002501421049081465,
+      "finite_values": true
+    },
+    "surface_errors_kg_per_kg": [
+      0.0002501421049081465,
+      0.000172813027536467,
+      0.0001052939503853878,
+      7.158734031609271e-05,
+      4.792028876599019e-05,
+      3.751278157171356e-05,
+      2.409716974405285e-05
+    ],
+    "analytic_240_480_max_difference": 4.515926721460062e-07
+  }
+}

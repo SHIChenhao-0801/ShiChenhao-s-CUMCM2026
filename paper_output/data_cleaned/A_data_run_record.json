@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper_output/code/data/prepare_a_data.py",
+  "generated_at": "2026-09-10T14:11:26.830805+00:00",
+  "source_code_sha256": "f32a7a23ea85f0bb68b59b64cf3e9c670cbabf8ce6324e29f0059a41c8f1fc5d",
+  "status": "PASS",
+  "operation": "S3 observed input processing",
+  "runtime": {
+    "executable": "C:\\Python314\\python.exe",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.1"
+  },
+  "input_manifest_sha256": "ea7b124aafc563640b3f25eb37e89a374efabffa785663137a8347db40e462e9",
+  "record_counts": {
+    "environment": 241,
+    "radius": 145
+  },
+  "observations_changed": 0,
+  "csv_round_trip_max_absolute_error": {
+    "environment": 5.684341886080802e-14,
+    "radius": 1.734723475976807e-18
+  },
+  "figures_generated": [
+    "fig_A_environment",
+    "fig_A_radius"
+  ],
+  "model_solve": false,
+  "visual_studio_gui_reproduction": false,
+  "user_human_review": false
+}

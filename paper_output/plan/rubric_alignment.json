@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-10T22:09:44+08:00",
+  "generated_by": "paper_output/code/contracts/build_a_contracts.py",
+  "source": "paper_output/plan/model_route.json",
+  "source_sha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+  "rubric_status": "内部质量映射；非官方分值及权重",
+  "items": [
+    {
+      "rubric_point": "题意覆盖",
+      "question_id": "Q1",
+      "evidence_required": [
+        "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。",
+        "result1.xlsx"
+      ],
+      "paper_location": [
+        "问题一：预热平衡阶段模型建立",
+        "问题一：预热平衡阶段结果分析",
+        "问题一：预热平衡阶段模型检验"
+      ],
+      "qa_rule": "采样、坐标、变量、达标及显示口径与原题对应",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "模型合理性",
+      "question_id": "Q1",
+      "evidence_required": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²"
+      ],
+      "paper_location": [
+        "问题一：预热平衡阶段模型建立",
+        "问题一：预热平衡阶段结果分析",
+        "问题一：预热平衡阶段模型检验"
+      ],
+      "qa_rule": "守恒、本构、初边值闭合清晰；每式用途和自/因变量定义明确",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "结果可信",
+      "question_id": "Q1",
+      "evidence_required": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ],
+      "paper_location": [
+        "问题一：预热平衡阶段模型建立",
+        "问题一：预热平衡阶段结果分析",
+        "问题一：预热平衡阶段模型检验"
+      ],
+      "qa_rule": "报告实际计算的指标及局限；无内部实测不能宣称实测预测准确率",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "图表证据",
+      "question_id": "Q1",
+      "evidence_required": [
+        "fig_q1_1: 前30min温度径向剖面",
+        "fig_q1_2: 前30min含水率径向剖面",
+        "fig_q1_3: 常系数Bessel与数值解误差"
+      ],
+      "paper_location": [
+        "问题一：预热平衡阶段模型建立",
+        "问题一：预热平衡阶段结果分析",
+        "问题一：预热平衡阶段模型检验"
+      ],
+      "qa_rule": "每张已采用图存在、与冻结结果一致、正文引用并解释；未运行图不得作结果",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "可复现",
+      "question_id": "Q1",
+      "evidence_required": [
+        "输入/源码/配置/输出哈希",
+        "运行退出码及耗时",
+        "VS GUI证据",
+        "用户人工审查状态"
+      ],
+      "paper_location": [
+        "问题一：预热平衡阶段模型建立",
+        "问题一：预热平衡阶段结果分析",
+        "问题一：预热平衡阶段模型检验"
+      ],
+      "qa_rule": "三类执行/复現/审查状态分别记录，不能互相替代",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "题意覆盖",
+      "question_id": "Q2",
+      "evidence_required": [
+        "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。",
+        "result2.xlsx"
+      ],
+      "paper_location": [
+        "问题二：全过程热湿耦合模型建立",
+        "问题二：全过程热湿耦合结果分析",
+        "问题二：全过程热湿耦合模型检验"
+      ],
+      "qa_rule": "采样、坐标、变量、达标及显示口径与原题对应",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "模型合理性",
+      "question_id": "Q2",
+      "evidence_required": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²"
+      ],
+      "paper_location": [
+        "问题二：全过程热湿耦合模型建立",
+        "问题二：全过程热湿耦合结果分析",
+        "问题二：全过程热湿耦合模型检验"
+      ],
+      "qa_rule": "守恒、本构、初边值闭合清晰；每式用途和自/因变量定义明确",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "结果可信",
+      "question_id": "Q2",
+      "evidence_required": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ],
+      "paper_location": [
+        "问题二：全过程热湿耦合模型建立",
+        "问题二：全过程热湿耦合结果分析",
+        "问题二：全过程热湿耦合模型检验"
+      ],
+      "qa_rule": "报告实际计算的指标及局限；无内部实测不能宣称实测预测准确率",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "图表证据",
+      "question_id": "Q2",
+      "evidence_required": [
+        "fig_q2_1: 前3h中心与表面温湿演化",
+        "fig_q2_2: 全过程温度含水率及D变化",
+        "fig_q2_3: 变物性与冻结物性对照"
+      ],
+      "paper_location": [
+        "问题二：全过程热湿耦合模型建立",
+        "问题二：全过程热湿耦合结果分析",
+        "问题二：全过程热湿耦合模型检验"
+      ],
+      "qa_rule": "每张已采用图存在、与冻结结果一致、正文引用并解释；未运行图不得作结果",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "可复现",
+      "question_id": "Q2",
+      "evidence_required": [
+        "输入/源码/配置/输出哈希",
+        "运行退出码及耗时",
+        "VS GUI证据",
+        "用户人工审查状态"
+      ],
+      "paper_location": [
+        "问题二：全过程热湿耦合模型建立",
+        "问题二：全过程热湿耦合结果分析",
+        "问题二：全过程热湿耦合模型检验"
+      ],
+      "qa_rule": "三类执行/复現/审查状态分别记录，不能互相替代",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "题意覆盖",
+      "question_id": "Q3",
+      "evidence_required": [
+        "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。",
+        "result3.xlsx"
+      ],
+      "paper_location": [
+        "问题三：全域达标时间模型建立",
+        "问题三：全域达标时间结果分析",
+        "问题三：全域达标时间模型检验"
+      ],
+      "qa_rule": "采样、坐标、变量、达标及显示口径与原题对应",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "模型合理性",
+      "question_id": "Q3",
+      "evidence_required": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²",
+        "M(t)=max_{0<=r<=R(t)}C(r,t)，t*=inf{t:M(t)<0.15}",
+        "阈值连续交叉估计、严格首达输出时刻、未舍入余量分别记录"
+      ],
+      "paper_location": [
+        "问题三：全域达标时间模型建立",
+        "问题三：全域达标时间结果分析",
+        "问题三：全域达标时间模型检验"
+      ],
+      "qa_rule": "守恒、本构、初边值闭合清晰；每式用途和自/因变量定义明确",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "结果可信",
+      "question_id": "Q3",
+      "evidence_required": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ],
+      "paper_location": [
+        "问题三：全域达标时间模型建立",
+        "问题三：全域达标时间结果分析",
+        "问题三：全域达标时间模型检验"
+      ],
+      "qa_rule": "报告实际计算的指标及局限；无内部实测不能宣称实测预测准确率",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "图表证据",
+      "question_id": "Q3",
+      "evidence_required": [
+        "fig_q3_1: max(C)与0.15阈值及结束时间",
+        "fig_q3_2: 每6h径向含水率剖面",
+        "fig_q3_3: 网格时间步与边界延拓敏感性"
+      ],
+      "paper_location": [
+        "问题三：全域达标时间模型建立",
+        "问题三：全域达标时间结果分析",
+        "问题三：全域达标时间模型检验"
+      ],
+      "qa_rule": "每张已采用图存在、与冻结结果一致、正文引用并解释；未运行图不得作结果",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "可复现",
+      "question_id": "Q3",
+      "evidence_required": [
+        "输入/源码/配置/输出哈希",
+        "运行退出码及耗时",
+        "VS GUI证据",
+        "用户人工审查状态"
+      ],
+      "paper_location": [
+        "问题三：全域达标时间模型建立",
+        "问题三：全域达标时间结果分析",
+        "问题三：全域达标时间模型检验"
+      ],
+      "qa_rule": "三类执行/复現/审查状态分别记录，不能互相替代",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "题意覆盖",
+      "question_id": "Q4",
+      "evidence_required": [
+        "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。",
+        "result4.xlsx"
+      ],
+      "paper_location": [
+        "问题四：收缩下的达标时间模型建立",
+        "问题四：收缩下的达标时间结果分析",
+        "问题四：收缩下的达标时间模型检验"
+      ],
+      "qa_rule": "采样、坐标、变量、达标及显示口径与原题对应",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "模型合理性",
+      "question_id": "Q4",
+      "evidence_required": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²",
+        "x=r/R(t)，u=x*R'(t)，rho_d=rho_d0*(R0/R)^2",
+        "固定材料x下T_t=[1/(rho*cp*R²*x)]*d_x(x*k*T_x)",
+        "固定材料x下C_t=[1/(R²*x)]*d_x(x*D*C_x)",
+        "两式材料平流与网格速度相消；不可再额外加xR'/R平流",
+        "附录4固定/收缩时长差和相对变化率；跨物性比较另列",
+        "M(t)=max_{0<=r<=R(t)}C(r,t)，t*=inf{t:M(t)<0.15}",
+        "阈值连续交叉估计、严格首达输出时刻、未舍入余量分别记录"
+      ],
+      "paper_location": [
+        "问题四：收缩下的达标时间模型建立",
+        "问题四：收缩下的达标时间结果分析",
+        "问题四：收缩下的达标时间模型检验"
+      ],
+      "qa_rule": "守恒、本构、初边值闭合清晰；每式用途和自/因变量定义明确",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "结果可信",
+      "question_id": "Q4",
+      "evidence_required": [
+        "Bessel最大/相对误差（仅可解析对照，不是实测精度）",
+        "空间与时间加密下关键表格/时长变化",
+        "水分质量守恒相对残差",
+        "非有限/负含水率/域外伪数值计数必须为0",
+        "逐问输出时间半径网格及四位小数显示完整性"
+      ],
+      "paper_location": [
+        "问题四：收缩下的达标时间模型建立",
+        "问题四：收缩下的达标时间结果分析",
+        "问题四：收缩下的达标时间模型检验"
+      ],
+      "qa_rule": "报告实际计算的指标及局限；无内部实测不能宣称实测预测准确率",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "图表证据",
+      "question_id": "Q4",
+      "evidence_required": [
+        "fig_q4_1: 半径数据与插值",
+        "fig_q4_2: 收缩材料网格及物理域含水率",
+        "fig_q4_3: 附录4固定/收缩同物性时长对照"
+      ],
+      "paper_location": [
+        "问题四：收缩下的达标时间模型建立",
+        "问题四：收缩下的达标时间结果分析",
+        "问题四：收缩下的达标时间模型检验"
+      ],
+      "qa_rule": "每张已采用图存在、与冻结结果一致、正文引用并解释；未运行图不得作结果",
+      "evidence_status": "planned_pending_actual_execution"
+    },
+    {
+      "rubric_point": "可复现",
+      "question_id": "Q4",
+      "evidence_required": [
+        "输入/源码/配置/输出哈希",
+        "运行退出码及耗时",
+        "VS GUI证据",
+        "用户人工审查状态"
+      ],
+      "paper_location": [
+        "问题四：收缩下的达标时间模型建立",
+        "问题四：收缩下的达标时间结果分析",
+        "问题四：收缩下的达标时间模型检验"
+      ],
+      "qa_rule": "三类执行/复現/审查状态分别记录，不能互相替代",
+      "evidence_status": "planned_pending_actual_execution"
+    }
+  ]
+}

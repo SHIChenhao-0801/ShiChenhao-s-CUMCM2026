@@ -1,14 +1,17 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-10T21:21:17`
-- Current step: `S0`
-- Next step: `S1`
-- Recommended skill: `problem-doc-model-selector`
-- Next action: 解析题面并生成 paper_output/step1/problem_analysis.json。
+- Generated at: `2026-09-10T22:12:53`
+- Current step: `S3`
+- Next step: `S4`
+- Recommended skill: `model-code-and-result-generator`
+- Next action: 生成 paper_output/code/modeling/ 下的 q*_model.py 与 run_modeling.py。
 
 ## Completed Steps
 - `S0`
+- `S1`
+- `S2`
+- `S3`
 
 ## Input Summary
 - file_count: `33`
@@ -27,4 +30,5 @@
 - Run count: `0`
 
 ## Blockers
-- S1: 缺少文件：paper_output/step1/problem_analysis.json
+- S4: paper_output/code/modeling/ 中没有 q*_model.py。
+- S4: 缺少 paper_output/code/modeling/run_modeling.py。

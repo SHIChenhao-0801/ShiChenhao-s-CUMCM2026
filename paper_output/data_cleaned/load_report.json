@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper_output/code/data/prepare_a_data.py",
+  "generated_at": "2026-09-10T14:11:24.063928+00:00",
+  "source_code_sha256": "f32a7a23ea85f0bb68b59b64cf3e9c670cbabf8ce6324e29f0059a41c8f1fc5d",
+  "status": "PASS",
+  "input_manifest_used": true,
+  "input_manifest": "paper_output/input_manifest.json",
+  "input_manifest_sha256": "ea7b124aafc563640b3f25eb37e89a374efabffa785663137a8347db40e462e9",
+  "active_problem": "A",
+  "input_dirs": [
+    "problem_files/CUMCM2026Problems/A题/附件"
+  ],
+  "data_files": [
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "kind": "spreadsheet",
+      "ext": ".xlsx",
+      "readable": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "unchanged_after_read": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 242,
+          "cols": 3,
+          "sample_cols": [
+            "时间",
+            "温度",
+            "水分浓度"
+          ]
+        }
+      ],
+      "numeric_record_count": 241,
+      "missing_numeric_cells": 0,
+      "nonfinite_values": 0,
+      "duplicate_times": 0,
+      "time_start_s": 0,
+      "time_end_s": 14400,
+      "time_step_s": 60,
+      "warnings": [],
+      "errors": [],
+      "minima": [
+        0.0,
+        28.0,
+        0.01963
+      ],
+      "maxima": [
+        14400.0,
+        50.246,
+        0.05025
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "kind": "spreadsheet",
+      "ext": ".xlsx",
+      "readable": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "unchanged_after_read": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 146,
+          "cols": 2,
+          "sample_cols": [
+            "时间",
+            "半径"
+          ]
+        }
+      ],
+      "numeric_record_count": 145,
+      "missing_numeric_cells": 0,
+      "nonfinite_values": 0,
+      "duplicate_times": 0,
+      "time_start_s": 0,
+      "time_end_s": 259200,
+      "time_step_s": 1800,
+      "warnings": [],
+      "errors": [],
+      "minima": [
+        0.0,
+        1.198
+      ],
+      "maxima": [
+        259200.0,
+        2.0
+      ]
+    }
+  ],
+  "skipped_files": [
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/B题.pdf",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/C题.pdf",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+      "role": "raw_data",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+      "role": "raw_data",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+      "role": "raw_data",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+      "role": "raw_data",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/D题.pdf",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+      "role": "raw_data",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/E题.pdf",
+      "role": "problem_statement",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx",
+      "role": "raw_data",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx",
+      "role": "result_template",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/format2026.doc",
+      "role": "problem_statement_unreadable",
+      "reason": "outside_active_A_raw_inputs"
+    },
+    {
+      "path": "problem_files/original_archives/CUMCM2026Problems.zip",
+      "role": "unsupported",
+      "reason": "outside_active_A_raw_inputs"
+    }
+  ],
+  "pdf_diagnostics": [],
+  "warnings": [
+    "Air kg/kg is not automatically solid dry-basis equilibrium moisture.",
+    "Room observations end at 4 h; radius observations end at 72 h.",
+    "No internal temperature/moisture validation measurements are supplied."
+  ],
+  "errors": [],
+  "summary": {
+    "file_count_scanned": 2,
+    "data_file_count": 2,
+    "readable_data_file_count": 2,
+    "pdf_file_count": 0
+  }
+}
