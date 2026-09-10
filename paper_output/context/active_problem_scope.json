@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0",
+  "generated_at_beijing": "2026-09-10T21:20:48.1221934+08:00",
+  "problem_id": "A",
+  "problem_title": "药材的烘干问题",
+  "selection_record": "paper_output/context/contest_selection.json",
+  "inventory_manifest": "paper_output/input_manifest.json",
+  "inventory_manifest_sha256": "ea7b124aafc563640b3f25eb37e89a374efabffa785663137a8347db40e462e9",
+  "scope_status": "recorded_not_yet_consumed_by_formal_loader",
+  "selected_assets": [
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "ext": ".pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 3191
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 242,
+          "cols": 3,
+          "sample_cols": [
+            "时间",
+            "温度",
+            "水分浓度"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 146,
+          "cols": 2,
+          "sample_cols": [
+            "时间",
+            "半径"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "温度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        },
+        {
+          "name": "水分浓度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "温度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        },
+        {
+          "name": "水分浓度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "药材表面"
+          ]
+        }
+      ]
+    }
+  ],
+  "raw_model_inputs": [
+    "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+    "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx"
+  ],
+  "output_templates": [
+    "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+    "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+    "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+    "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx"
+  ],
+  "other_inventory_assets": [
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/B题.pdf",
+      "sha256": "81c992a9bee5376308c4768b58719b177f17d6ee1f9861577a851924c5a838ca",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+      "sha256": "20a27603ea81efa8f11658b3fa5b859a69aa3ff88fb3664d2abb80d740b47553",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+      "sha256": "c882513d5b7e0ec50f3068570ea55fdc1b5c4a5fa2d6e9e54e79b33cf0858cb2",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/C题.pdf",
+      "sha256": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+      "sha256": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+      "sha256": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+      "sha256": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+      "sha256": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+      "sha256": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+      "sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+      "sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+      "sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+      "sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/D题.pdf",
+      "sha256": "04945c2db24cd6cb659de55e6a23ddd43553ec61bc1c7741010a7eac220712a9",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+      "sha256": "b7f905cd2629f9a85b47db352be503404a0cd5b8f70b9209aafdf7e262f3449c",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+      "sha256": "6657970f5ead42a0ddaacc29f6d3f0e25538661446a1b6672491a2d83fdd664c",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+      "sha256": "53f6feb7bbf0bdfb8fbe15af35e0759a45933120928a05231fc8fe3569fefb8e",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+      "sha256": "6e7072651e204fa07e0dad2b6ddd1ceb72d74f41905e5d2ba44deea0456feead",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+      "sha256": "95e45e755e9fc9e30d45fa0cd4c4cc638a94e4d5c7201f09828ed7fdcaef75b9",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/E题.pdf",
+      "sha256": "3e4e340ae722c5dd92239ea9152802c4e8bd233f8032bdcd017bced55d3f4de7",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx",
+      "sha256": "f6ac8e080a96719428f87109c43a1fffb211cbf6e299ef93e381eed30edd69ca",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+      "sha256": "e3eff773f353d70611b47c7118d8b01fcc19aa5fd1d5af257f2320ff4e6b607a",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+      "sha256": "d7af4794cb38087b2f531a9aa4124a9a0f4d70aa04e1e8a5eec8d5930fa3b334",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx",
+      "sha256": "37e8103bd74e2de85a07f5decb822ad61aff84f901537074f4e8255c19245441",
+      "scope": "not_A_model_input",
+      "reason": "unselected_problem_retained_as_history"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/format2026.doc",
+      "sha256": "d77de49534649b46ca195d32bd9c56a1fbe06dc96fdcf3e1199e6dd7d9831f4a",
+      "scope": "not_A_model_input",
+      "reason": "contest_format_rule_pending_conversion_and_review"
+    },
+    {
+      "path": "problem_files/original_archives/CUMCM2026Problems.zip",
+      "sha256": "a54c0e6b552d31e2dbd41aba4a07769943433cb9317927514c2d39ec6442e241",
+      "scope": "not_A_model_input",
+      "reason": "original_archive_provenance_only"
+    }
+  ],
+  "required_next_action": "S1/S3必须按本范围读取A题；通用预检/加载器不会自动按选题过滤。原始模板不覆写。",
+  "limitations": [
+    "库存预检PASS不是完整数据审计、物理验证或求解通过。",
+    "format2026.doc尚需转换和规则核验；zip已知为原件存档，无需再询问是否原始建模数据。"
+  ]
+}

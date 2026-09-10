@@ -58,7 +58,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\git-sync.ps1 -Me
 | 本地路径 | 原因与处理 |
 | --- | --- |
 | `.agents/skills/` | 指向父目录共享 Skill 的 Windows Junction，避免越过比赛工作区边界；采用的正式代码仍须复制到本届目录并记录来源。 |
-| `B题模拟器/CUMCM2026B/Jammers-simulator/` | 外部程序目录及运行状态，保留本地；既有检查笔记继续入库。最新选题仍待定，排除该程序不表示放弃 B。 |
+| `B题模拟器/CUMCM2026B/Jammers-simulator/` | 外部程序目录及运行状态，保留本地；既有检查笔记继续入库。用户已最终选A，B题记录仅作历史，不再安排B题测试。 |
 | `B题模拟器/CUMCM2026B/Jammers-simulator-full-win64.7z` | 外部软件包，236,850,965 字节，超过普通 GitHub 文件限制；本地保留。 |
 | `B题模拟器/CUMCM2026B/Jammers-simulator-win64.7z` | 同一外部模拟器下载包，本地保留。 |
 | `B题模拟器/CUMCM2026B/模拟器操作演示.mp4` | 外部演示视频，130,689,914 字节，超过普通 GitHub 文件限制；本地保留。 |

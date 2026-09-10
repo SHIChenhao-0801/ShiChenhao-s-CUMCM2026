@@ -1,27 +1,31 @@
 {
   "schema_version": "1.0",
   "generated_by": "paper-workflow-orchestrator/scripts/workflow_guard.py",
-  "generated_at": "2026-09-10T17:36:51",
+  "generated_at": "2026-09-10T21:21:17",
   "mode": "status",
-  "target_step": "S0",
+  "target_step": "S1",
   "status": "INCOMPLETE",
-  "current_step": "",
-  "next_step": "S0",
-  "recommended_skill": "paper-workflow-orchestrator",
-  "next_action": "运行 preflight_check.py，生成 preflight_report.json 与 input_manifest.json。",
+  "current_step": "S0",
+  "next_step": "S1",
+  "recommended_skill": "problem-doc-model-selector",
+  "next_action": "解析题面并生成 paper_output/step1/problem_analysis.json。",
   "steps": [
     {
       "step": "S0",
       "name": "准入预检",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S1",
+      "name": "审题分析",
       "status": "FAIL",
       "failures": [
-        "缺少文件：paper_output/preflight_report.json",
-        "缺少文件：paper_output/input_manifest.json"
+        "缺少文件：paper_output/step1/problem_analysis.json"
       ]
     }
   ],
   "failures": [
-    "S0: 缺少文件：paper_output/preflight_report.json",
-    "S0: 缺少文件：paper_output/input_manifest.json"
+    "S1: 缺少文件：paper_output/step1/problem_analysis.json"
   ]
 }

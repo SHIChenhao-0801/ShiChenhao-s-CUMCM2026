@@ -1,0 +1,1053 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper-workflow-orchestrator/scripts/preflight_check.py",
+  "generated_at": "2026-09-10T21:13:24",
+  "root": "D:/Document/数学建模/2026CUMCM",
+  "entries": [
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "ext": ".pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 3191
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 242,
+          "cols": 3,
+          "sample_cols": [
+            "时间",
+            "温度",
+            "水分浓度"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 146,
+          "cols": 2,
+          "sample_cols": [
+            "时间",
+            "半径"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "温度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        },
+        {
+          "name": "水分浓度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "温度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        },
+        {
+          "name": "水分浓度",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 5,
+          "cols": 6,
+          "sample_cols": [
+            "时间\\到药材中心的距离",
+            "0",
+            "0.1",
+            "0.2",
+            "…",
+            "药材表面"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/B题.pdf",
+      "ext": ".pdf",
+      "bytes": 514825,
+      "sha256": "81c992a9bee5376308c4768b58719b177f17d6ee1f9861577a851924c5a838ca",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 4551
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+      "ext": ".docx",
+      "bytes": 33675,
+      "sha256": "20a27603ea81efa8f11658b3fa5b859a69aa3ff88fb3664d2abb80d740b47553",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 3592,
+      "paragraphs": 64
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+      "ext": ".docx",
+      "bytes": 57179,
+      "sha256": "c882513d5b7e0ec50f3068570ea55fdc1b5c4a5fa2d6e9e54e79b33cf0858cb2",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 12786,
+      "paragraphs": 277
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/C题.pdf",
+      "ext": ".pdf",
+      "bytes": 354389,
+      "sha256": "2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 3358
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 16003,
+      "sha256": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 145,
+          "cols": 4,
+          "sample_cols": [
+            "时间",
+            "电价",
+            "小区负载",
+            "光伏发电预测功率"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 907128,
+      "sha256": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "小区负载",
+          "rows": 366,
+          "cols": 145,
+          "sample_cols": [
+            "日期\\时间",
+            "00:10:00",
+            "00:20:00",
+            "00:30:00",
+            "00:40:00",
+            "00:50:00",
+            "01:00:00",
+            "01:10:00"
+          ]
+        },
+        {
+          "name": "光伏发电实际功率",
+          "rows": 366,
+          "cols": 145,
+          "sample_cols": [
+            "日期\\时间",
+            "00:10:00",
+            "00:20:00",
+            "00:30:00",
+            "00:40:00",
+            "00:50:00",
+            "01:00:00",
+            "01:10:00"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 293526,
+      "sha256": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1461,
+          "cols": 26,
+          "sample_cols": [
+            "日期",
+            "预报时刻",
+            "预报1小时",
+            "预报2小时",
+            "预报3小时",
+            "预报4小时",
+            "预报5小时",
+            "预报6小时"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+      "ext": ".xlsx",
+      "bytes": 409790,
+      "sha256": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 366,
+          "cols": 145,
+          "sample_cols": [
+            "日期\\时间",
+            "00:10:00",
+            "00:20:00",
+            "00:30:00",
+            "00:40:00",
+            "00:50:00",
+            "01:00:00",
+            "01:10:00"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 13323,
+      "sha256": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 145,
+          "cols": 2,
+          "sample_cols": [
+            "时间段",
+            "购电量"
+          ]
+        },
+        {
+          "name": "充放电量",
+          "rows": 7,
+          "cols": 5,
+          "sample_cols": [
+            "时间段",
+            "充电量",
+            "放电量",
+            "时刻",
+            "储电量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 18397,
+      "sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "cols": 147,
+          "sample_cols": [
+            "日期\\时间",
+            "0:10-0:20",
+            "0:20-0:30",
+            "0:30-0:40",
+            "0:40-0:50",
+            "0:50-1:00",
+            "1:00-1:10",
+            "1:10-1:20"
+          ]
+        },
+        {
+          "name": "充放电量",
+          "rows": 20,
+          "cols": 6,
+          "sample_cols": [
+            "日期",
+            "时间段",
+            "充电量",
+            "放电量",
+            "时刻",
+            "储电量"
+          ]
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "cols": 3,
+          "sample_cols": [
+            "日期",
+            "购电时间段",
+            "购电量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 265429,
+      "sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "cols": 147,
+          "sample_cols": [
+            "日期\\时间",
+            "0:10-0:20",
+            "0:20-0:30",
+            "0:30-0:40",
+            "0:40-0:50",
+            "0:50-1:00",
+            "1:00-1:10",
+            "1:10-1:20"
+          ]
+        },
+        {
+          "name": "调整购电量",
+          "rows": 335,
+          "cols": 147,
+          "sample_cols": [
+            "日期\\时间",
+            "0:10-0:20",
+            "0:20-0:30",
+            "0:30-0:40",
+            "0:40-0:50",
+            "0:50-1:00",
+            "1:00-1:10",
+            "1:10-1:20"
+          ]
+        },
+        {
+          "name": "充放电量",
+          "rows": 26,
+          "cols": 6,
+          "sample_cols": [
+            "日期",
+            "时间段",
+            "充电量",
+            "放电量",
+            "时刻",
+            "储电量"
+          ]
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "cols": 3,
+          "sample_cols": [
+            "日期",
+            "购电时间段",
+            "购电量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 18397,
+      "sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "cols": 147,
+          "sample_cols": [
+            "日期\\时间",
+            "0:10-0:20",
+            "0:20-0:30",
+            "0:30-0:40",
+            "0:40-0:50",
+            "0:50-1:00",
+            "1:00-1:10",
+            "1:10-1:20"
+          ]
+        },
+        {
+          "name": "充放电量",
+          "rows": 20,
+          "cols": 6,
+          "sample_cols": [
+            "日期",
+            "时间段",
+            "充电量",
+            "放电量",
+            "时刻",
+            "储电量"
+          ]
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "cols": 3,
+          "sample_cols": [
+            "日期",
+            "购电时间段",
+            "购电量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 265429,
+      "sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "cols": 147,
+          "sample_cols": [
+            "日期\\时间",
+            "0:10-0:20",
+            "0:20-0:30",
+            "0:30-0:40",
+            "0:40-0:50",
+            "0:50-1:00",
+            "1:00-1:10",
+            "1:10-1:20"
+          ]
+        },
+        {
+          "name": "调整购电量",
+          "rows": 335,
+          "cols": 147,
+          "sample_cols": [
+            "日期\\时间",
+            "0:10-0:20",
+            "0:20-0:30",
+            "0:30-0:40",
+            "0:40-0:50",
+            "0:50-1:00",
+            "1:00-1:10",
+            "1:10-1:20"
+          ]
+        },
+        {
+          "name": "充放电量",
+          "rows": 26,
+          "cols": 6,
+          "sample_cols": [
+            "日期",
+            "时间段",
+            "充电量",
+            "放电量",
+            "时刻",
+            "储电量"
+          ]
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "cols": 3,
+          "sample_cols": [
+            "日期",
+            "购电时间段",
+            "购电量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/D题.pdf",
+      "ext": ".pdf",
+      "bytes": 442550,
+      "sha256": "04945c2db24cd6cb659de55e6a23ddd43553ec61bc1c7741010a7eac220712a9",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 2176
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 16067,
+      "sha256": "b7f905cd2629f9a85b47db352be503404a0cd5b8f70b9209aafdf7e262f3449c",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 151,
+          "cols": 5,
+          "sample_cols": [
+            "用频装备编号",
+            "频段区间",
+            "时间区间",
+            "间隔时长",
+            "使用次数"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 10135,
+      "sha256": "6657970f5ead42a0ddaacc29f6d3f0e25538661446a1b6672491a2d83fdd664c",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 3,
+          "sample_cols": [
+            "序号",
+            "冲突装备1",
+            "冲突设备2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9832,
+      "sha256": "53f6feb7bbf0bdfb8fbe15af35e0759a45933120928a05231fc8fe3569fefb8e",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 4,
+          "sample_cols": [
+            "用频装备编号",
+            "调整后频段区间",
+            "调整后时间区间",
+            "是否撤销用频计划"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 8362,
+      "sha256": "6e7072651e204fa07e0dad2b6ddd1ceb72d74f41905e5d2ba44deea0456feead",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 3,
+          "sample_cols": [
+            "新增用频装备序号",
+            "调整后频段区间",
+            "调整后时间区间"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9854,
+      "sha256": "95e45e755e9fc9e30d45fa0cd4c4cc638a94e4d5c7201f09828ed7fdcaef75b9",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 5,
+          "sample_cols": [
+            "用频装备编号",
+            "调整后频段范围",
+            "调整后时间区间",
+            "调整后间隔时长",
+            "是否撤销用频计划"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/E题.pdf",
+      "ext": ".pdf",
+      "bytes": 342795,
+      "sha256": "3e4e340ae722c5dd92239ea9152802c4e8bd233f8032bdcd017bced55d3f4de7",
+      "role": "problem_statement",
+      "role_confidence": 0.85,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "extractable": true,
+      "char_count": 2036
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx",
+      "ext": ".xlsx",
+      "bytes": 313639,
+      "sha256": "f6ac8e080a96719428f87109c43a1fffb211cbf6e299ef93e381eed30edd69ca",
+      "role": "raw_data",
+      "role_confidence": 0.8,
+      "usable_for_modeling": true,
+      "requires_user_confirmation": false,
+      "warnings": [],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 2628,
+          "cols": 10,
+          "sample_cols": [
+            "日期",
+            "方案ID",
+            "推广单元ID",
+            "展现量",
+            "点击量",
+            "消费额",
+            "上方位展现量",
+            "上方首位展现量"
+          ]
+        },
+        {
+          "name": "Sheet2",
+          "rows": 366,
+          "cols": 2,
+          "sample_cols": [
+            "日期",
+            "新注册数 "
+          ]
+        },
+        {
+          "name": "Sheet3",
+          "rows": 2228,
+          "cols": 9,
+          "sample_cols": [
+            "序号",
+            "关键词",
+            "方案ID",
+            "推广单元ID",
+            "消费额",
+            "点击量",
+            "浏览量",
+            "跳出率"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+      "ext": ".xlsx",
+      "bytes": 9465,
+      "sha256": "e3eff773f353d70611b47c7118d8b01fcc19aa5fd1d5af257f2320ff4e6b607a",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 8,
+          "sample_cols": [
+            "方案ID",
+            "推广单元",
+            "序号",
+            "黄金词",
+            "重点词",
+            "潜力词",
+            "问题词",
+            "无效词"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+      "ext": ".xlsx",
+      "bytes": 8775,
+      "sha256": "d7af4794cb38087b2f531a9aa4124a9a0f4d70aa04e1e8a5eec8d5930fa3b334",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 9,
+          "sample_cols": [
+            "日期",
+            "方案ID",
+            "推广单元",
+            "关键词",
+            "投入金额",
+            "预期展位",
+            "预期点击量",
+            "预期浏览量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx",
+      "ext": ".xlsx",
+      "bytes": 8775,
+      "sha256": "37e8103bd74e2de85a07f5decb822ad61aff84f901537074f4e8255c19245441",
+      "role": "result_template",
+      "role_confidence": 0.95,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": false,
+      "warnings": [
+        "文件名疑似结果提交模板，不可当作原始建模数据。"
+      ],
+      "errors": [],
+      "readable": true,
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1,
+          "cols": 9,
+          "sample_cols": [
+            "日期",
+            "方案ID",
+            "推广单元",
+            "关键词",
+            "投入金额",
+            "预期展位",
+            "预期点击量",
+            "预期浏览量"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/format2026.doc",
+      "ext": ".doc",
+      "bytes": 71168,
+      "sha256": "d77de49534649b46ca195d32bd9c56a1fbe06dc96fdcf3e1199e6dd7d9831f4a",
+      "role": "problem_statement_unreadable",
+      "role_confidence": 0.75,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": true,
+      "warnings": [
+        "老 .doc 格式无法可靠解析；请另存为 .docx 或 .pdf 后再放入 problem_files/。"
+      ],
+      "errors": [],
+      "extractable": false
+    },
+    {
+      "path": "problem_files/original_archives/CUMCM2026Problems.zip",
+      "ext": ".zip",
+      "bytes": 4362100,
+      "sha256": "a54c0e6b552d31e2dbd41aba4a07769943433cb9317927514c2d39ec6442e241",
+      "role": "unsupported",
+      "role_confidence": 0.2,
+      "usable_for_modeling": false,
+      "requires_user_confirmation": true,
+      "warnings": [
+        "不属于当前自动识别的题面或数据格式，需要人工确认用途。"
+      ],
+      "errors": []
+    }
+  ],
+  "summary": {
+    "file_count": 33,
+    "role_counts": {
+      "problem_statement": 7,
+      "raw_data": 8,
+      "result_template": 16,
+      "problem_statement_unreadable": 1,
+      "unsupported": 1
+    },
+    "problem_statement_count": 7,
+    "raw_data_count": 8,
+    "result_template_count": 16,
+    "requires_user_confirmation": true
+  }
+}

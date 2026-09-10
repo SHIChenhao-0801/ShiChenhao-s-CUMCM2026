@@ -8,16 +8,19 @@
 
 先读 [比赛约束](AGENTS.md) 和 [本届记忆](memoryskill.md)。用户指定最新 9 月 10 日赛前说明会为首要依据；旧资料有冲突时按该说明会更新，讲义自身不一致的事项另记待校内澄清。
 
+A题后续工作入口：[9月10日至提交执行计划](notes/A-plan/2026-09-10_A题执行计划.md)、[Skills调度清单](notes/A-plan/A题_Skills调度清单.md)、[正式输出布局](paper_output/OUTPUT_LAYOUT.md)。本轮已实际通过S0输入预检，下一步S1结构化审题；尚无A题正式求解结果。通用题包库存与A题活动输入范围分开记录，后续加载须遵守 [A题输入范围](paper_output/context/active_problem_scope.json)。
+
 | 目录 | 放置内容 |
 | --- | --- |
 | `problem_files/` | 2026 正式题面、原始附件和官方更新；保留原始文件 |
 | `reference_materials/contest-admin/` | 最新说明会、当届行政资料和来源哈希 |
 | `crawled_data/` | 围绕题意取得的外部数据及来源、时点记录 |
 | `paper_output/code/` | 正式建模、清洗和出图源码、配置 |
-| `paper_output/data/` | 审计及处理后的数据，原始输入可追溯 |
+| `paper_output/data_cleaned/` | 主流程正式读取报告与审计/清洗数据，原始输入可追溯 |
 | `paper_output/results/` | 数值结果、指标和实际运行清单 |
 | `paper_output/figures/`、`paper_output/tables/` | 可追溯图表及可编辑源数据 |
-| `paper_output/paper/` | 唯一主稿、导出文件及版本 |
+| `paper_output/drafts/`、`paper_output/final_paper_source.md`、`paper_output/final_paper.docx` | 主流程章节、唯一正式源稿和Word；尚未生成 |
+| `paper_output/paper/` | 论文同学交接/历史版本和导出证据，避免另建独立主稿 |
 | `paper_output/qa/`、`paper_output/context/` | 审查证据与本次比赛工作流状态 |
 | `paper_output/submission/` | 最终定稿 PDF、支撑 ZIP、哈希与提交凭证 |
 | `notes/` | 比赛记录、AI 使用过程、论文交接、环境复现、自动化简报 |

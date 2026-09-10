@@ -1,38 +1,101 @@
 {
   "schema_version": "1.0",
   "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
-  "generated_at": "2026-09-10T17:36:51",
+  "generated_at": "2026-09-10T21:21:17",
   "status": "PASS",
   "root": "D:\\Document\\数学建模\\2026CUMCM",
   "workflow": {
     "status": "INCOMPLETE",
     "mode": "status",
-    "current_step": "",
-    "next_step": "S0",
-    "recommended_skill": "paper-workflow-orchestrator",
-    "next_action": "运行 preflight_check.py，生成 preflight_report.json 与 input_manifest.json。",
-    "completed_steps": [],
+    "current_step": "S0",
+    "next_step": "S1",
+    "recommended_skill": "problem-doc-model-selector",
+    "next_action": "解析题面并生成 paper_output/step1/problem_analysis.json。",
+    "completed_steps": [
+      "S0"
+    ],
     "failures": [
-      "S0: 缺少文件：paper_output/preflight_report.json",
-      "S0: 缺少文件：paper_output/input_manifest.json"
+      "S1: 缺少文件：paper_output/step1/problem_analysis.json"
     ]
   },
-  "inputs": {},
+  "inputs": {
+    "summary": {
+      "file_count": 33,
+      "role_counts": {
+        "problem_statement": 7,
+        "raw_data": 8,
+        "result_template": 16,
+        "problem_statement_unreadable": 1,
+        "unsupported": 1
+      },
+      "problem_statement_count": 7,
+      "raw_data_count": 8,
+      "result_template_count": 16,
+      "requires_user_confirmation": true
+    },
+    "role_counts": {
+      "problem_statement": 7,
+      "raw_data": 8,
+      "result_template": 16,
+      "problem_statement_unreadable": 1,
+      "unsupported": 1
+    },
+    "problem_statements": [
+      "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "problem_files/CUMCM2026Problems/B题/B题.pdf",
+      "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+      "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+      "problem_files/CUMCM2026Problems/C题/C题.pdf",
+      "problem_files/CUMCM2026Problems/D题/D题.pdf",
+      "problem_files/CUMCM2026Problems/E题/E题.pdf"
+    ],
+    "raw_data": [
+      "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx"
+    ],
+    "result_templates": [
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx"
+    ]
+  },
   "runs": {},
   "artifacts": {
     "workflow_guard_report": {
       "path": "paper_output/qa/workflow_guard_report.json",
       "exists": true,
-      "bytes": 832,
+      "bytes": 821,
       "status": "INCOMPLETE"
     },
     "preflight_report": {
       "path": "paper_output/preflight_report.json",
-      "exists": false
+      "exists": true,
+      "bytes": 28833,
+      "status": "PASS"
     },
     "input_manifest": {
       "path": "paper_output/input_manifest.json",
-      "exists": false
+      "exists": true,
+      "bytes": 29392
     },
     "load_report": {
       "path": "paper_output/data_cleaned/load_report.json",
@@ -60,7 +123,7 @@
     }
   },
   "latest_statuses": {
-    "preflight": null,
+    "preflight": "PASS",
     "load_report": null,
     "run_manifest": null,
     "evidence_gate": null,
@@ -68,7 +131,6 @@
     "format_check": null
   },
   "blockers": [
-    "S0: 缺少文件：paper_output/preflight_report.json",
-    "S0: 缺少文件：paper_output/input_manifest.json"
+    "S1: 缺少文件：paper_output/step1/problem_analysis.json"
   ]
 }
