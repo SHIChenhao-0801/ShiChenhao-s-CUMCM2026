@@ -1,17 +1,30 @@
 {
   "schema_version": "1.0",
   "contest": "2026年高教社杯全国大学生数学建模竞赛",
-  "selection_status": "confirmed_by_user",
+  "selection_status": "undecided",
   "decision_date_beijing": "2026-09-10",
-  "problem_id": "A",
-  "problem_title": "药材的烘干问题",
-  "user_instruction": "我的评估最终选择A题。",
+  "problem_id": null,
+  "problem_title": null,
+  "user_instruction": "请留意 现在选题仍然不确定 请你给我详细解释一下B题 包括公式 算法（需要必要的代码解释）等等",
+  "current_reading_focus": "B",
+  "previous_decision": {
+    "problem_id": "A",
+    "instruction": "我的评估最终选择A题。",
+    "status": "superseded_by_latest_user_instruction"
+  },
   "workspace_root": "D:/Document/数学建模/2026CUMCM",
-  "problem_pdf": "problem_files/CUMCM2026Problems/A题/A题.pdf",
-  "attachments_root": "problem_files/CUMCM2026Problems/A题/附件",
+  "problem_pdf": null,
+  "attachments_root": null,
+  "current_reading_pdf": "problem_files/CUMCM2026Problems/B题/B题.pdf",
+  "current_reading_attachments_root": "problem_files/CUMCM2026Problems/B题/附件",
   "source_manifest": "notes/problem-reading/2026-09-10/source_manifest.json",
   "model_route_status": "not_yet_confirmed",
   "formal_results_status": "not_run",
-  "next_action": "对A题开展正式输入准入、四问题意对齐及附件审计，然后确定基线模型与验证方案。",
-  "scope_note": "B/C题属于选题历史资料，不作为A题模型输入。B模拟器检查已结束。本记录只确认选题，不改变任何工作流门禁状态。"
+  "reading_artifacts": [
+    "notes/B-principles/B题_公式算法与代码讲解.md",
+    "notes/B-principles/bearing-geometry.html"
+  ],
+  "reading_status": "B题公式、算法及教学代码说明已完成，并经独立只读复核；未运行模拟器或正式求解。",
+  "next_action": "用户继续评估选题；按其后续决定进入相应题目的正式审题、数据审计和模型比较。",
+  "scope_note": "当前选题待定，A题推导保留为候选参考，B题重新进入评估。详细解释不代表启动模拟器测试或最终确认B题，不改变任何工作流门禁状态。"
 }

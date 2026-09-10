@@ -1,0 +1,176 @@
+<div id="b-bearing-geometry">
+  <h3>两次测向的交会区域</h3>
+  <div class="viz-controls">
+    <label class="form-label" for="b-bearing-angle">交会夹角 <output id="b-bearing-angle-value" class="tabular-nums">90°</output>
+      <input id="b-bearing-angle" class="form-range" type="range" min="15" max="165" step="1" value="90">
+    </label>
+  </div>
+  <div class="b-bearing-views">
+    <div class="b-bearing-view"><svg class="b-bearing-svg" id="b-bearing-overview" role="img" aria-label="两检测站与示例目标的相对位置，每站方向不确定范围为正负一度"></svg></div>
+    <div class="b-bearing-view"><svg class="b-bearing-svg" id="b-bearing-detail" role="img" aria-label="两条方向锥相交的可行域局部放大图，虚线连接最远两顶点"></svg></div>
+  </div>
+  <div class="viz-row b-bearing-legend text-small">
+    <span><i class="b-bearing-swatch b-bearing-one"></i>站 1 · ±1°</span>
+    <span><i class="b-bearing-swatch b-bearing-two"></i>站 2 · ±1°</span>
+    <span><i class="b-bearing-swatch b-bearing-feasible"></i>交集</span>
+  </div>
+  <div id="b-bearing-result" class="tabular-nums" aria-live="polite">可行域直径：39.51 m</div>
+  <div class="text-small text-muted">几何示例 · 两站到目标距离均为 800 m</div>
+</div>
+<style>
+  #b-bearing-geometry { color: var(--foreground); }
+  #b-bearing-geometry .b-bearing-views { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+  #b-bearing-geometry .b-bearing-view { min-width: 0; }
+  #b-bearing-geometry .b-bearing-svg { display: block; width: 100%; overflow: visible; }
+  #b-bearing-geometry .b-bearing-svg text { fill: var(--foreground); }
+  #b-bearing-geometry .b-bearing-legend { margin: 6px 0 10px; }
+  #b-bearing-geometry .b-bearing-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  #b-bearing-geometry .b-bearing-swatch { display: inline-block; width: 15px; height: 7px; }
+  #b-bearing-geometry .b-bearing-one { background: var(--viz-series-1); }
+  #b-bearing-geometry .b-bearing-two { background: var(--viz-series-2); }
+  #b-bearing-geometry .b-bearing-feasible { background: var(--viz-series-3); }
+  @media (max-width: 600px) { #b-bearing-geometry .b-bearing-views { grid-template-columns: minmax(0, 1fr); gap: 8px; } }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('b-bearing-geometry');
+  const slider = root.querySelector('#b-bearing-angle');
+  const overview = root.querySelector('#b-bearing-overview');
+  const detail = root.querySelector('#b-bearing-detail');
+  const NS = 'http://www.w3.org/2000/svg';
+  const colors = ['var(--viz-series-1)', 'var(--viz-series-2)'];
+  const eps = Math.PI / 180;
+  const clipBox = 1000000;
+  function element(tag, attrs, parent, label) {
+    const node = document.createElementNS(NS, tag);
+    Object.entries(attrs || {}).forEach(([key, value]) => node.setAttribute(key, value));
+    if (label !== undefined) node.textContent = label;
+    parent.appendChild(node);
+    return node;
+  }
+  function halfplanes(station, theta) {
+    return [
+      [Math.sin(theta - eps), -Math.cos(theta - eps)],
+      [-Math.sin(theta + eps), Math.cos(theta + eps)]
+    ].map(([a, b]) => [a, b, a * station[0] + b * station[1]]);
+  }
+  function clip(poly, [a, b, c]) {
+    const out = [];
+    for (let i = 0; i < poly.length; i++) {
+      const p = poly[i], q = poly[(i + 1) % poly.length];
+      const fp = a * p[0] + b * p[1] - c;
+      const fq = a * q[0] + b * q[1] - c;
+      const pin = fp <= 1e-8, qin = fq <= 1e-8;
+      if (pin) out.push(p);
+      if (pin !== qin) {
+        const t = fp / (fp - fq);
+        out.push([p[0] + t * (q[0] - p[0]), p[1] + t * (q[1] - p[1])]);
+      }
+    }
+    return out;
+  }
+  function region(planes, box = clipBox) {
+    return planes.reduce(clip, [[-box, -box], [box, -box], [box, box], [-box, box]]);
+  }
+  function farthestPair(poly) {
+    let distance = -1, pair;
+    for (let i = 0; i < poly.length; i++) {
+      for (let j = i + 1; j < poly.length; j++) {
+        const d = Math.hypot(poly[i][0] - poly[j][0], poly[i][1] - poly[j][1]);
+        if (d > distance) { distance = d; pair = [poly[i], poly[j]]; }
+      }
+    }
+    return { distance, pair };
+  }
+  function canvas(svg, title) {
+    const width = Math.max(280, Math.round(svg.parentElement.getBoundingClientRect().width));
+    const height = 250;
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+    svg.setAttribute('height', height);
+    svg.replaceChildren();
+    element('title', {}, svg, title);
+    element('text', { x: 0, y: 19, class: 'text-small' }, svg, title);
+    return { width, height };
+  }
+  function projector(points, width, height, pad = 32) {
+    const xs = points.map(p => p[0]), ys = points.map(p => p[1]);
+    const xmin = Math.min(...xs), xmax = Math.max(...xs);
+    const ymin = Math.min(...ys), ymax = Math.max(...ys);
+    const cx = (xmin + xmax) / 2, cy = (ymin + ymax) / 2;
+    const scale = Math.min((width - 2 * pad) / Math.max(1, xmax - xmin), (height - 68 - pad) / Math.max(1, ymax - ymin));
+    const origin = [width / 2, 42 + (height - 68) / 2];
+    return { scale, project: p => [origin[0] + (p[0] - cx) * scale, origin[1] - (p[1] - cy) * scale] };
+  }
+  function path(poly, project) { return poly.map(p => project(p).join(',')).join(' '); }
+  function line(parent, p, q, project, color, dash) {
+    const a = project(p), b = project(q);
+    return element('line', { x1: a[0], y1: a[1], x2: b[0], y2: b[1], stroke: color, 'stroke-width': 1.4, ...(dash ? { 'stroke-dasharray': dash } : {}) }, parent);
+  }
+  function target(parent, project, label) {
+    const [x, y] = project([0, 0]);
+    element('circle', { cx: x, cy: y, r: 3.5, fill: 'var(--foreground)' }, parent);
+    element('text', { x: x + 9, y: y - 9, class: 'text-small' }, parent, label);
+  }
+  function draw() {
+    const degrees = Number(slider.value), theta = degrees * Math.PI / 180;
+    const stations = [[-800, 0], [-800 * Math.cos(theta), -800 * Math.sin(theta)]];
+    const headings = [0, theta];
+    const planes = stations.flatMap((s, i) => halfplanes(s, headings[i]));
+    const poly = region(planes);
+    const valid = poly.length >= 3 && poly.every(p => p.every(v => Number.isFinite(v) && Math.abs(v) < clipBox * 0.9));
+    if (!valid) {
+      root.querySelector('#b-bearing-result').textContent = '此几何范围无法形成完整可行域。';
+      return;
+    }
+    const { distance, pair } = farthestPair(poly);
+    root.querySelector('#b-bearing-angle-value').textContent = `${degrees}°`;
+    slider.setAttribute('aria-valuetext', `${degrees}度`);
+    root.querySelector('#b-bearing-result').textContent = `可行域直径：${distance.toFixed(2)} m`;
+    const wide = canvas(overview, '站位与测向');
+    const ends = stations.map((s, i) => [-eps, eps].map(offset => [s[0] + 980 * Math.cos(headings[i] + offset), s[1] + 980 * Math.sin(headings[i] + offset)]));
+    const wideTransform = projector([...stations, [0, 0], ...ends.flat()], wide.width, wide.height, 38);
+    const project = wideTransform.project;
+    stations.forEach((s, i) => {
+      element('polygon', { points: path([s, ...ends[i]], project), fill: colors[i], 'fill-opacity': 0.13 }, overview);
+      ends[i].forEach(p => line(overview, s, p, project, colors[i]));
+      line(overview, s, [0, 0], project, colors[i], '4 4');
+      const [x, y] = project(s);
+      if (i === 0) element('circle', { cx: x, cy: y, r: 4.5, fill: colors[i] }, overview);
+      else element('rect', { x: x - 4, y: y - 4, width: 8, height: 8, fill: colors[i] }, overview);
+      const right = x > wide.width * 0.7;
+      element('text', { x: x + (right ? -9 : 9), y: y + 19, 'text-anchor': right ? 'end' : 'start', class: 'text-small' }, overview, `站 ${i + 1}`);
+    });
+    target(overview, project, '示例目标');
+    const local = canvas(detail, '局部放大 · 虚线为直径');
+    const localTransform = projector(poly, local.width, local.height, 40);
+    const zoom = localTransform.project;
+    const defs = element('defs', {}, detail);
+    const cp = element('clipPath', { id: 'b-bearing-local-clip' }, defs);
+    element('rect', { x: 8, y: 32, width: local.width - 16, height: local.height - 66 }, cp);
+    const marks = element('g', { 'clip-path': 'url(#b-bearing-local-clip)' }, detail);
+    stations.forEach((s, i) => {
+      const cone = region(halfplanes(s, headings[i]));
+      element('polygon', { points: path(cone, zoom), fill: colors[i], 'fill-opacity': 0.06 }, marks);
+      [-eps, eps].forEach(offset => {
+        const end = [s[0] + 2000 * Math.cos(headings[i] + offset), s[1] + 2000 * Math.sin(headings[i] + offset)];
+        line(marks, s, end, zoom, colors[i]);
+      });
+    });
+    element('polygon', { points: path(poly, zoom), fill: 'var(--viz-series-3)', 'fill-opacity': 0.28 }, marks);
+    line(marks, pair[0], pair[1], zoom, 'var(--foreground)', '5 4');
+    pair.forEach(p => { const [x, y] = zoom(p); element('circle', { cx: x, cy: y, r: 3, fill: 'var(--foreground)' }, marks); });
+    const [gx, gy] = zoom([0, 0]);
+    element('circle', { cx: gx, cy: gy, r: 3.5, fill: 'var(--foreground)' }, marks);
+    const desiredMeters = 60 / localTransform.scale;
+    const decade = Math.pow(10, Math.floor(Math.log10(desiredMeters)));
+    const scaleMeters = [1, 2, 5, 10].map(x => x * decade).filter(x => x <= desiredMeters).pop() || decade;
+    const bar = scaleMeters * localTransform.scale;
+    element('line', { x1: 12, y1: local.height - 19, x2: 12 + bar, y2: local.height - 19, stroke: 'var(--foreground)', 'stroke-width': 2 }, detail);
+    element('text', { x: 20 + bar, y: local.height - 15, class: 'text-small' }, detail, `${scaleMeters} m`);
+  }
+  slider.addEventListener('input', draw);
+  const observer = new ResizeObserver(draw);
+  observer.observe(root.querySelector('.b-bearing-views'));
+  draw();
+})();
+</script>
