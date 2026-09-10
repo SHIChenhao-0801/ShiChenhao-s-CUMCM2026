@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "createdAtUtc": "2026-09-10T20:23:28.025727+00:00",
+  "artifacts": [
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/launch.json",
+      "bytes": 3751,
+      "sha256": "9302f0bd1cc790fff49bfe1d1209b6e91fd920f6508231df052994cf4f6b4c58"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q1_paper_moisture.csv",
+      "bytes": 345,
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q1_paper_temperature.csv",
+      "bytes": 380,
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q2_paper_moisture.csv",
+      "bytes": 285,
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q2_paper_temperature.csv",
+      "bytes": 315,
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q3_paper_moisture.csv",
+      "bytes": 466,
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q4_paper_moisture.csv",
+      "bytes": 390,
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q4_paper_radius.csv",
+      "bytes": 172,
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result1.export.json",
+      "bytes": 37981,
+      "sha256": "8fe4d07dbf7dca928cc96916c5f634fabe0407ea20838462de41da50e7f90f8b"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result1.validation.json",
+      "bytes": 5278,
+      "sha256": "e3ad827ddd16786d8c06da36765c6a178ea1917f8c58510ec86665e22bf238da"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result1.xlsx",
+      "bytes": 390899,
+      "sha256": "a23eb04e3e41f3e6c9fa7b81ba44850a141730437269a5950474f3c4f1925f92"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result1_unrounded.csv.gz",
+      "bytes": 578239,
+      "sha256": "204429a6ab2006c7e6a1f534584ff883baa334bfc66103e328efdf9a1205875d"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result2.export.json",
+      "bytes": 36709,
+      "sha256": "b61fa32e5fd4252696051f262127ec1886adcd4dbe37597c00bc0c297d49e682"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result2.validation.json",
+      "bytes": 5267,
+      "sha256": "e311ebd1e149cf6177c53ce48a923275b62aac826216423a24dedcd0ee25c23f"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result2.xlsx",
+      "bytes": 29210086,
+      "sha256": "091d584884c916f9e4f7ed7e1f61eb3b5bc2ccfc58185aaa6497495fd10a9bab"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result2_unrounded.csv.gz",
+      "bytes": 43018253,
+      "sha256": "2b306996604f87ddcdd5a716ad3c0a2229d267902c9a2c9ad795fc9320fa6966"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result3.export.json",
+      "bytes": 25234,
+      "sha256": "03d02f4936cf657a6fbcbc693b5fd9f6226039cc33245a66477f1a3293e3b1e7"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result3.validation.json",
+      "bytes": 4620,
+      "sha256": "fbe5edfe65369311a0f3bdbd0c422181cf30879f5ca05201db9ef1d6e211ad3a"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result3.xlsx",
+      "bytes": 339137,
+      "sha256": "f0217116ac72be4381a22ba4e239289ed98950e558ce827cc69b0760161f9252"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result3_unrounded.csv.gz",
+      "bytes": 640369,
+      "sha256": "d5ef2fa52de3711c0775cf398bb6c39862022a6cba54c30fb7ec18349e329483"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result4.export.json",
+      "bytes": 26071,
+      "sha256": "1972a381cdad2da7a14850bbd2d5bffcefd7d1e21d128e78ca894f4b853adced"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result4.validation.json",
+      "bytes": 6107,
+      "sha256": "fb238741da3e1c1c54a497844c7e7bc4bda02546467a8d240316e1a108ae38d8"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result4.xlsx",
+      "bytes": 278277,
+      "sha256": "149471020411dd15447ee40ae2a139fded090aae0718a81c41116bc2c66af78f"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result4_unrounded.csv.gz",
+      "bytes": 402572,
+      "sha256": "bd82a49d16f7d6a3c18d219a19916945798ac3b6ead7483d260883ddb8ab5a20"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q1/comparison.json",
+      "bytes": 9859,
+      "sha256": "5dc2fb48bc54d0f0e9e248959f85bddc50c8f285e9501145c5c077a6c9071499"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q1/sampled_solution.npz",
+      "bytes": 10569,
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q1/summary.json",
+      "bytes": 3644,
+      "sha256": "2ae0925e2e78981674a526ee2ba8677b2d6668095856e0506f9c94a4d85fe611"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q23/comparison.json",
+      "bytes": 16964,
+      "sha256": "c327e1e28717711fbecf183800686c96576b099d42dfe88d82410837d2737a9e"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q23/sampled_solution.npz",
+      "bytes": 689540,
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q23/summary.json",
+      "bytes": 5145,
+      "sha256": "2a1e240c626049d375f7dc63cc7c3f50234acecd1883e64a9a0696a254b2e0c5"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q4/comparison.json",
+      "bytes": 10806,
+      "sha256": "5ade36708dd5116a39494efd6409e9544df113a07d06f1b27c44d9188de3d664"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q4/sampled_solution.npz",
+      "bytes": 628742,
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q4/summary.json",
+      "bytes": 5126,
+      "sha256": "28874d22b85daf5b11afef30f41ec35f8deb52213211f505a5326908fe48e282"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/runResult.json",
+      "bytes": 80748,
+      "sha256": "db44a009937bf9fd3a0deade927234cbb917a2a1346db4ee0ebaf1e4f3e7e7ab"
+    }
+  ]
+}

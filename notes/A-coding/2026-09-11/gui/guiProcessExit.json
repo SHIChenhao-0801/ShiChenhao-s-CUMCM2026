@@ -1,0 +1,16 @@
+{
+  "runId": "gui_camel_final_v2",
+  "role": "External read-only observer of the already GUI-launched Python worker",
+  "processId": 2200,
+  "executable": "C:\\Python314\\python.exe",
+  "processStartedAtUtc": "2026-09-10T19:47:20.9231945Z",
+  "observationStartedAtUtc": "2026-09-10T20:18:04.2604638Z",
+  "observedExitAtUtc": "2026-09-10T20:23:29.1646400Z",
+  "actualExitCode": 0,
+  "sourceSha256AtObservationStart": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+  "sourceSha256AtObservedExit": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+  "guiEvidence": "IDE运行观察.md and saved Computer Use screenshots; separate from this process observer",
+  "processWasStoppedByObserver": false,
+  "humanReview": "pending",
+  "timingScope": "Process start and observed exit include GUI breakpoint pauses; not pure solver performance"
+}

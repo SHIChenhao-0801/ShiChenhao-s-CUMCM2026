@@ -1,0 +1,53 @@
+{
+  "workspace": "D:/Document/数学建模/2026CUMCM",
+  "task": "Q1-Q4 code delivery from final_v6a",
+  "status": "COMPLETED_READY_FOR_USER_CODE_REVIEW",
+  "readyForHumanReview": true,
+  "humanReview": "PENDING_USER_REVIEW",
+  "sourceDirectory": "paper_output/code/review_delivery",
+  "visualStudioSolution": "paper_output/code/review_delivery/A_CodeReview.sln",
+  "explanation": "paper_output/code/review_delivery/docs/公式与算法说明.md",
+  "reviewChecklist": "paper_output/code/review_delivery/docs/人工审查清单.md",
+  "deliveryLog": "paper_output/results/code_delivery/交付与运行记录.md",
+  "modelBaseline": "paper_output/results/production/final_v6a",
+  "scope": "Code naming, comments, reproducible runner, independent MATLAB implementation and verification; no change to accepted physical model",
+  "skillAlias": {"requested": "autoresponse", "resolvedFromPriorUserClarification": "autoresearch"},
+  "cli": {
+    "runId": "camel_final_v2",
+    "status": "PASS",
+    "actualExitCode": 0,
+    "elapsedSeconds": 697.7192608,
+    "workbookCellsVerified": 9335598,
+    "paperCsvCellsVerified": 297,
+    "savedArraysExactlyEqual": 21,
+    "independentArtifactAudit": "notes/A-coding/2026-09-11/final-artifact-audit/audit_summary.json"
+  },
+  "matlab": {
+    "guiFunctionCompletedObserved": true,
+    "sourceOpenedInEditor": true,
+    "intervalCount": 40,
+    "comparisonStatus": "PASS",
+    "evidenceDirectory": "paper_output/qa/matlab_crosscheck_20260911",
+    "wholeApplicationExitCode": null
+  },
+  "visualStudio": {
+    "runId": "gui_camel_final_v2",
+    "breakpointAndStepObserved": true,
+    "initialRhsVariablesObserved": true,
+    "fullRunCompletedObserved": true,
+    "actualExitCode": 0,
+    "externalExitRecord": "notes/A-coding/2026-09-11/gui/guiProcessExit.json",
+    "independentArtifactAudit": "notes/A-coding/2026-09-11/gui-artifact-audit/audit_summary.json",
+    "observationLog": "notes/A-coding/2026-09-11/gui/IDE运行观察.md"
+  },
+  "retainedFailure": {
+    "runId": "camel_final_v1",
+    "actualExitCode": 1,
+    "reason": "Q3 exporter provenance retained the old q3_model.py basename",
+    "fixedSource": "paper_output/code/review_delivery/exportOutputs.py",
+    "targetedValidation": "paper_output/code/review_delivery/runtime/exportPathFix_v2/verification.json"
+  },
+  "verifiedCodeBackup": "843654f010c7552fa3d5e98cccb7fa7aba0b0576",
+  "scientificLimit": "Conditional model prediction; no internal temperature or moisture observations to establish empirical accuracy",
+  "workflowScope": "S6 remains current; this coding task does not execute formal paper S7/S8"
+}

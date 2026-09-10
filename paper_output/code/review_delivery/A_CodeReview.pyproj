@@ -12,7 +12,7 @@
     <RootNamespace>A_CodeReview</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <InterpreterId>MSBuild|VerifiedPython314|$(MSBuildProjectFullPath)</InterpreterId>
-    <CommandLineArguments>--profile final --run-id gui_camel_final_v2</CommandLineArguments>
+    <CommandLineArguments>--profile final</CommandLineArguments>
     <InterpreterArguments>-B</InterpreterArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>

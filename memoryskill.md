@@ -40,11 +40,12 @@
 - 相邻网格/Richardson是经验指示，收紧容差+maxstep是联合时间设置敏感性，机器级质量残差是共享通量的离散自洽；无内部实测，无法给物理预测准确率或真实时间置信区间。有效容量、气固平衡、潜热/体积联合闭合仍待数据与人工选择；本轮新审计工具只有实际CLI，无新GUI或人工签核。
 - 备份恢复检查点：前次最终模型commit ffa81c45d81649259aa1d7c8c42d3b6f9b6caf12曾HTTP408失败，本轮重试实际exit0，git ls-remote已核对远端与该commit一致。这是本轮新审查文件提交前的已验证检查点；新的审查工作单元另行commit/push并核对。
 
-## 新代码交付任务（2026-09-11 北京时间，进行中）
+## 新代码交付任务（2026-09-11 北京时间，已完成代理实现与运行）
 
 - 用户要求本聊天负责Q1—Q4代码，按最终模型分析公式，驼峰变量和必要中文注释，运行后给日志与算法/复杂度/库/函数说明，最后用户亲自审查。用户再次授权Computer Use操作现有IDE。autoresponse按既有明确澄清使用autoresearch；有限CPU等价性实验协议在notes/A-coding/2026-09-11/autoresearch-protocol.md。
 - 新目录paper_output/code/review_delivery：Python正式入口runDelivery.py、8个驼峰核心模块、A_CodeReview.sln、实际进程监督runLogged.ps1，以及MATLAB独立N40 runCrossCheck.m。原模型及final_v6a冻结输入输出不改。代码解释与人工清单在docs；新总日志paper_output/results/code_delivery/交付与运行记录.md。
-- N40新旧6次实际求解、21保存数组零差，audit_v1真实退出0；8模块反向AST及64项核心运行检查通过。首版final_v1在Q3来源记录遗留旧文件名导致真实exit1，保留失败；修复仅来源路径，后续Q3/Q4 N40完整导出、回读及SHA验证通过。全量camel_final_v2与GUI v2正在执行，未提前记通过。
+- N40新旧6次实际求解、21保存数组零差，audit_v1真实退出0；8模块反向AST及64项核心运行检查通过。首版final_v1在Q3来源记录遗留旧文件名导致真实exit1，保留失败；修复仅来源路径，后续Q3/Q4 N40完整导出、回读及SHA验证通过。全量camel_final_v2于03:58北京时间完成，真实exit0、697.719秒；9335598工作簿格及297正文格核验、21数组及原精度数据与冻结版一致，独立151唯一文件哈希复核通过。
 - MATLAB R2026a Update5已经Computer Use在原生命令窗口完成N40 Q1/Q23/Q4，源码已在编辑器打开，观察COMPLETED_NUMERICAL_CHECKS；共同固定时刻100标量+2事件实际对照PASS，maxT差2.375e-7K、maxC差5.851e-10、max事件差2.297e-4s。证据paper_output/qa/matlab_crosscheck_20260911；与连续全域误差和实测精度区分。
-- 本轮VS v2已命中runDelivery:139，单步进入q1Model与dryingCore:197，观察N3200、T301.15K、C2.55、R.02m和导数/通量，截图notes/A-coding/2026-09-11/gui。v1 GUI在首题solve前主动停止以重载修复版；人工审查始终pending。
+- 本轮VS v2已命中runDelivery:139，单步进入q1Model与dryingCore:197，观察N3200、T301.15K、C2.55、R.02m和导数/通量；Q23/Q4参数、Q4 shrink=True及Q2导出循环也已观察。04:23:28北京时间VS即时窗口显示四题完整求解与检查完成，工作进程PID2200由外部观察器实际确认exit0，随后关闭残留调试包装会话。截图及guiProcessExit.json在notes/A-coding/2026-09-11/gui。v1 GUI在首题solve前主动停止以重载修复版；人工审查始终pending。最终工程--profile final自动创建新编号，GUI实跑原项目参数另存档。
+- 本轮明确代码交付状态见paper_output/context/code_delivery_status.json；整体主流程仍S6，未执行正式论文S7/S8。代码/CLI/MATLAB首个完整单元commit843654f010c7552fa3d5e98cccb7fa7aba0b0576已push且远端SHA核对一致，GUI收尾证据另行提交。
 - 软目标为高崎05/23跑道中点附近日出前，公开坐标约24.5440N118.1280E，估计北京时间2026-09-11 05:52；来源与近似范围见sunrise-reference.md。用户明确完不成也无妨，质量优先。

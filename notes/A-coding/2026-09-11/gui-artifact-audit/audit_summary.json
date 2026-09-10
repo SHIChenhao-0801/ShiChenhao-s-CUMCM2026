@@ -1,0 +1,435 @@
+{
+  "status": "PASS",
+  "runId": "gui_camel_final_v2",
+  "auditedAtUtc": "2026-09-10T20:26:46.8530635Z",
+  "auditMethod": "Read-only PowerShell record/contract/hash review, actual CSV parsing and frozen-hash comparisons, plus independently streaming all four gzip CSV payloads for GUI-versus-CLI SHA256 equality; no new PDE solve or workbook live-Run replay.",
+  "auditElapsedSeconds": 1.9995825,
+  "errors": [],
+  "artifactCount": 34,
+  "manifestInventoryMatches": true,
+  "uniqueReferencedHashRecords": 151,
+  "allReferencedFilesMatch": true,
+  "currentRootPythonSourceCount": 9,
+  "currentSources": [
+    {
+      "path": "paper_output/code/review_delivery/analyticJacobian.py",
+      "bytes": 17600,
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+    },
+    {
+      "path": "paper_output/code/review_delivery/diskDense.py",
+      "bytes": 5562,
+      "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "bytes": 21525,
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "paper_output/code/review_delivery/exportOutputs.py",
+      "bytes": 42147,
+      "sha256": "3a66a754e7f3a13534918c7ebab7bc664d07669121f12ecde47efb5871a406ed"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q1Model.py",
+      "bytes": 532,
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q2Model.py",
+      "bytes": 550,
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q3Model.py",
+      "bytes": 1595,
+      "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q4Model.py",
+      "bytes": 584,
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runDelivery.py",
+      "bytes": 15385,
+      "sha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a"
+    }
+  ],
+  "totalSavedArrayEvidenceCount": 21,
+  "trajectoryComparisons": [
+    {
+      "trajectory": "Q1",
+      "intervals": 3200,
+      "arrayCount": 7,
+      "allRecordedArraysExact": true,
+      "guiAndCliNpzBytesSame": true,
+      "guiNpz": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q1/sampled_solution.npz",
+        "bytes": 10569,
+        "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+      },
+      "cliNpz": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/Q1/sampled_solution.npz",
+        "bytes": 10569,
+        "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+      },
+      "warningCount": 0,
+      "solverSuccess": true,
+      "massBalanceResidual": 5.773159728050814E-15
+    },
+    {
+      "trajectory": "Q23",
+      "intervals": 3200,
+      "arrayCount": 7,
+      "allRecordedArraysExact": true,
+      "guiAndCliNpzBytesSame": true,
+      "guiNpz": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q23/sampled_solution.npz",
+        "bytes": 689540,
+        "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+      },
+      "cliNpz": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/Q23/sampled_solution.npz",
+        "bytes": 689540,
+        "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+      },
+      "warningCount": 0,
+      "solverSuccess": true,
+      "massBalanceResidual": 1.1546319456101628E-14
+    },
+    {
+      "trajectory": "Q4",
+      "intervals": 6400,
+      "arrayCount": 7,
+      "allRecordedArraysExact": true,
+      "guiAndCliNpzBytesSame": true,
+      "guiNpz": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q4/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      },
+      "cliNpz": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/Q4/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      },
+      "warningCount": 0,
+      "solverSuccess": true,
+      "massBalanceResidual": 7.993605777301127E-15
+    }
+  ],
+  "workbookFullReadbackEvidenceCells": 9335598,
+  "paperCsvCount": 7,
+  "paperLiveRunEvidenceCells": 297,
+  "actualPaperCsvChecks": [
+    {
+      "question": "Q1",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q1_paper_temperature.csv",
+      "actualRows": 7,
+      "actualColumns": 6,
+      "actualCells": 42,
+      "matchesFrozenBytes": true
+    },
+    {
+      "question": "Q1",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q1_paper_moisture.csv",
+      "actualRows": 7,
+      "actualColumns": 6,
+      "actualCells": 42,
+      "matchesFrozenBytes": true
+    },
+    {
+      "question": "Q2",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q2_paper_temperature.csv",
+      "actualRows": 6,
+      "actualColumns": 6,
+      "actualCells": 36,
+      "matchesFrozenBytes": true
+    },
+    {
+      "question": "Q2",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q2_paper_moisture.csv",
+      "actualRows": 6,
+      "actualColumns": 6,
+      "actualCells": 36,
+      "matchesFrozenBytes": true
+    },
+    {
+      "question": "Q3",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q3_paper_moisture.csv",
+      "actualRows": 10,
+      "actualColumns": 6,
+      "actualCells": 60,
+      "matchesFrozenBytes": true
+    },
+    {
+      "question": "Q4",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q4_paper_moisture.csv",
+      "actualRows": 9,
+      "actualColumns": 7,
+      "actualCells": 63,
+      "matchesFrozenBytes": true
+    },
+    {
+      "question": "Q4",
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/q4_paper_radius.csv",
+      "actualRows": 9,
+      "actualColumns": 2,
+      "actualCells": 18,
+      "matchesFrozenBytes": true
+    }
+  ],
+  "exports": [
+    {
+      "question": "Q1",
+      "status": "PASS",
+      "workbookCells": 79244,
+      "paperCells": 84,
+      "liveRunSamples": 14,
+      "maxRawDifference": 0.0,
+      "sheets": {
+        "温度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "first_time_s": 0,
+          "last_time_s": 1800,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        },
+        "水分浓度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "first_time_s": 0,
+          "last_time_s": 1800,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result1.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\gui_camel_final_v2\\outputs\\result1.xlsx",
+        "bytes": 390899,
+        "sha256": "a23eb04e3e41f3e6c9fa7b81ba44850a141730437269a5950474f3c4f1925f92",
+        "exists": true,
+        "role": "contest_result_workbook"
+      }
+    },
+    {
+      "question": "Q2",
+      "status": "PASS",
+      "workbookCells": 9103732,
+      "paperCells": 72,
+      "liveRunSamples": 14,
+      "maxRawDifference": 0.0,
+      "sheets": {
+        "温度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "first_time_s": 0,
+          "last_time_s": 206902,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        },
+        "水分浓度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "first_time_s": 0,
+          "last_time_s": 206902,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result2.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\gui_camel_final_v2\\outputs\\result2.xlsx",
+        "bytes": 29210086,
+        "sha256": "091d584884c916f9e4f7ed7e1f61eb3b5bc2ccfc58185aaa6497495fd10a9bab",
+        "exists": true,
+        "role": "contest_result_workbook"
+      }
+    },
+    {
+      "question": "Q3",
+      "status": "PASS",
+      "workbookCells": 75922,
+      "paperCells": 60,
+      "liveRunSamples": 15,
+      "maxRawDifference": 0.0,
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3451,
+          "total_rows": 3452,
+          "first_time_s": 0,
+          "last_time_s": 206902,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result3.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\gui_camel_final_v2\\outputs\\result3.xlsx",
+        "bytes": 339137,
+        "sha256": "f0217116ac72be4381a22ba4e239289ed98950e558ce827cc69b0760161f9252",
+        "exists": true,
+        "role": "contest_result_workbook"
+      }
+    },
+    {
+      "question": "Q4",
+      "status": "PASS",
+      "workbookCells": 76700,
+      "paperCells": 81,
+      "liveRunSamples": 15,
+      "maxRawDifference": 0.0,
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "first_time_s": 0,
+          "last_time_s": 183928,
+          "outside_domain_blank_cells": 23173,
+          "value_comparison_max_abs_error": 0.0
+        },
+        "半径": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "first_time_s": 0,
+          "last_time_s": 183928,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result4.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\gui_camel_final_v2\\outputs\\result4.xlsx",
+        "bytes": 278277,
+        "sha256": "149471020411dd15447ee40ae2a139fded090aae0718a81c41116bc2c66af78f",
+        "exists": true,
+        "role": "contest_result_workbook"
+      }
+    }
+  ],
+  "actualUncompressedArchiveComparisons": [
+    {
+      "question": "Q1",
+      "guiFile": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result1_unrounded.csv.gz",
+        "bytes": 578239,
+        "sha256": "204429a6ab2006c7e6a1f534584ff883baa334bfc66103e328efdf9a1205875d"
+      },
+      "cliFile": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1_unrounded.csv.gz",
+        "bytes": 578239,
+        "sha256": "0163de47e24be7acfebf7efab570dc8b13a37f8c930a1648cee0164504a53e90"
+      },
+      "guiUncompressedSha256": "6044bb3eb23e432e5e001f0c73ede90561b57108c743f76a45a75e7eabdd6b95",
+      "cliUncompressedSha256": "6044bb3eb23e432e5e001f0c73ede90561b57108c743f76a45a75e7eabdd6b95",
+      "payloadExactHashMatch": true,
+      "scope": "Actual independent stream decompression and SHA256 of full CSV payload; not container hash alone."
+    },
+    {
+      "question": "Q2",
+      "guiFile": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result2_unrounded.csv.gz",
+        "bytes": 43018253,
+        "sha256": "2b306996604f87ddcdd5a716ad3c0a2229d267902c9a2c9ad795fc9320fa6966"
+      },
+      "cliFile": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2_unrounded.csv.gz",
+        "bytes": 43018253,
+        "sha256": "5ee3e6927465ff12a9e7ccbcd16e5dc3eb7b8852ef69bd57681629976dd6aa09"
+      },
+      "guiUncompressedSha256": "c502e65a1666d8119529582103f6b124395c0515821963e2550f7a82f8b2f05d",
+      "cliUncompressedSha256": "c502e65a1666d8119529582103f6b124395c0515821963e2550f7a82f8b2f05d",
+      "payloadExactHashMatch": true,
+      "scope": "Actual independent stream decompression and SHA256 of full CSV payload; not container hash alone."
+    },
+    {
+      "question": "Q3",
+      "guiFile": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result3_unrounded.csv.gz",
+        "bytes": 640369,
+        "sha256": "d5ef2fa52de3711c0775cf398bb6c39862022a6cba54c30fb7ec18349e329483"
+      },
+      "cliFile": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3_unrounded.csv.gz",
+        "bytes": 640369,
+        "sha256": "0f8feea1e202f46d699cf899e44f7ebb2831a1371f65475fe60890a7bb3b1f11"
+      },
+      "guiUncompressedSha256": "fcb34de5c351cc15e1ad891cbe9fba373b20450d3b181dead29791130c8c70ea",
+      "cliUncompressedSha256": "fcb34de5c351cc15e1ad891cbe9fba373b20450d3b181dead29791130c8c70ea",
+      "payloadExactHashMatch": true,
+      "scope": "Actual independent stream decompression and SHA256 of full CSV payload; not container hash alone."
+    },
+    {
+      "question": "Q4",
+      "guiFile": {
+        "path": "paper_output/results/code_delivery/gui_camel_final_v2/outputs/result4_unrounded.csv.gz",
+        "bytes": 402572,
+        "sha256": "bd82a49d16f7d6a3c18d219a19916945798ac3b6ead7483d260883ddb8ab5a20"
+      },
+      "cliFile": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4_unrounded.csv.gz",
+        "bytes": 402572,
+        "sha256": "27ba21850f066f6ceef28a251df874f05bfe46c7a3502c16aed3ddb55f06a660"
+      },
+      "guiUncompressedSha256": "a2bb685d1c84ab2f4fb080a62561f0bc99769adee133943e4a30e7c7b2fd31ce",
+      "cliUncompressedSha256": "a2bb685d1c84ab2f4fb080a62561f0bc99769adee133943e4a30e7c7b2fd31ce",
+      "payloadExactHashMatch": true,
+      "scope": "Actual independent stream decompression and SHA256 of full CSV payload; not container hash alone."
+    }
+  ],
+  "strictCompletion": [
+    {
+      "question": "Q3",
+      "criticalEventHours": 57.47230195056044,
+      "reportedHours": 57.4724,
+      "maxMoistureAtReportedTime": 0.14999989718225315,
+      "strictlyBelow015": true,
+      "withinSolvedTail": true,
+      "completionMatchesFrozen": true
+    },
+    {
+      "question": "Q4",
+      "criticalEventHours": 51.09057478683054,
+      "reportedHours": 51.0906,
+      "maxMoistureAtReportedTime": 0.14999995339076624,
+      "strictlyBelow015": true,
+      "withinSolvedTail": true,
+      "completionMatchesFrozen": true
+    }
+  ],
+  "process": {
+    "pid": 2200,
+    "actualExitCode": 0,
+    "processStartedAtUtc": "2026-09-10T19:47:20.9231945Z",
+    "observedExitAtUtc": "2026-09-10T20:23:29.16464Z",
+    "processWasStoppedByObserver": false,
+    "childStatus": "PASS",
+    "childSelfExitCode": null,
+    "childElapsedIncludingBreakpointsSeconds": 2164.1895256999996,
+    "timingScope": "Process start and observed exit include GUI breakpoint pauses; not pure solver performance",
+    "evidence": {
+      "path": "notes/A-coding/2026-09-11/gui/guiProcessExit.json",
+      "bytes": 891,
+      "sha256": "0c059a856f42698fe9fbfd02975c87fdc7b098cfd85e37282fce2022e00b594c"
+    }
+  },
+  "hashVerificationEvidence": {
+    "path": "notes/A-coding/2026-09-11/gui-artifact-audit/hash_verification.json",
+    "bytes": 81552,
+    "sha256": "876831ceeb00aa17043fa660297639d231c8df963457f7c804a818dd16c14e2e"
+  },
+  "guiVisualObservation": "Main agent separately signs IDE运行观察.md and Computer Use screenshots; this subagent audited files only.",
+  "humanReview": "pending",
+  "limitations": [
+    "Complete workbook/live-Run readback counts are verified recorded evidence with matching hashes; this audit did not independently re-evaluate all workbook cells from a new live solution.",
+    "All four unrounded CSV gzip payloads were independently decoded and compared by SHA256 against CLI camel_final_v2.",
+    "GUI-versus-CLI NPZ archive bytes and seven paper CSV frozen bytes were independently hashed; this is not a new PDE solve or spatial-convergence experiment.",
+    "Process lifetime and child elapsed include IDE breakpoint pauses and do not measure pure solver performance.",
+    "IDE screenshots/visual completion are the main agent separate observations; no user acceptance was inferred.",
+    "Identical numerical implementations and outputs do not establish calibrated physical prediction accuracy."
+  ]
+}
