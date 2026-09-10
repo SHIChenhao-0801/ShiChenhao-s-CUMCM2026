@@ -1,0 +1,2266 @@
+ memory_archive.md                                  |    44 +
+ memoryskill.md                                     |    73 +-
+ .../2026-09-10/A题_完整建模与公式推导.md           |  1692 +++
+ notes/A-modeling/2026-09-10/A题_建模浓缩交接.md    |   353 +
+ .../2026-09-10/assemble_complete_model.mjs         |   331 +
+ .../A-modeling/2026-09-10/autoresearch_protocol.md |    14 +
+ .../data/A_Drying_before_launch_fix.pyproj.txt     |    48 +
+ .../2026-09-10/data/audit_peer_workbooks.mjs       |    89 +
+ .../2026-09-10/data/autoresearch_final_review.json |  7910 ++++++++++++
+ .../2026-09-10/data/autoresearch_final_review.md   |   112 +
+ .../data/dense_storage_breakpoint_probe.json       |    65 +
+ .../2026-09-10/data/dense_storage_review.md        |   127 +
+ .../2026-09-10/data/dense_storage_review_v6.md     |    76 +
+ .../2026-09-10/data/final_backup_preflight.json    |  9149 +++++++++++++
+ .../2026-09-10/data/final_backup_preflight.md      |    52 +
+ .../data/final_handoff_content_review.json         |  1264 ++
+ .../data/final_handoff_content_review.md           |    48 +
+ .../2026-09-10/data/final_numerical_audit.json     |  3356 +++++
+ .../2026-09-10/data/final_numerical_audit.md       |   165 +
+ .../fig_q1_profiles_pdf_render.png                 |   Bin 0 -> 105721 bytes
+ .../fig_q2_profiles_pdf_render.png                 |   Bin 0 -> 102861 bytes
+ .../fig_q3_drying_pdf_render.png                   |   Bin 0 -> 128931 bytes
+ .../fig_q4_drying_pdf_render.png                   |   Bin 0 -> 144742 bytes
+ .../pdf_structure_and_fonts.json                   |   110 +
+ .../q1_q2_plot_table_consistency.json              |    61 +
+ ...ort_preflight_existing_numerical_materials.json |   513 +
+ ...port_preflight_existing_numerical_materials.zip |   Bin 0 -> 14382321 bytes
+ .../support_preflight_q2_only.json                 |     9 +
+ .../support_preflight_q2_only.zip                  |   Bin 0 -> 10109027 bytes
+ .../2026-09-10/data/final_visual_review.json       |   654 +
+ .../2026-09-10/data/final_visual_review.md         |    74 +
+ .../data/independent_model_risk_review.md          |   303 +
+ .../2026-09-10/data/peer_reference_data_review.md  |   157 +
+ .../2026-09-10/data/peer_workbook_audit.json       |   780 ++
+ .../entry_fixture_failure/Q1/summary.json          |    78 +
+ .../entry_fixture_failure/Q23/summary.json         |   149 +
+ .../entry_fixture_failure/figures/Q1_fixture.bin   |     1 +
+ .../entry_fixture_failure/figures/Q2_fixture.bin   |     1 +
+ .../entry_fixture_failure/outputs/Q1_fixture.json  |     4 +
+ .../outputs/Q1_fixture.validation.json             |     3 +
+ .../entry_fixture_failure/outputs/Q2_fixture.json  |     4 +
+ .../outputs/Q2_fixture.validation.json             |     3 +
+ .../entry_fixture_success/Q1/summary.json          |    78 +
+ .../entry_fixture_success/Q23/summary.json         |   149 +
+ .../entry_fixture_success/Q4/summary.json          |   129 +
+ .../contracts/conclusions.json                     |   131 +
+ .../contracts/figure_index.json                    |    61 +
+ .../entry_fixture_success/contracts/metrics.json   |   177 +
+ .../contracts/model_results.json                   |   674 +
+ .../contracts/table_index.json                     |     8 +
+ .../entry_fixture_success/export_validation.json   |    41 +
+ .../entry_fixture_success/figures/Q1_fixture.bin   |     1 +
+ .../entry_fixture_success/figures/Q2_fixture.bin   |     1 +
+ .../entry_fixture_success/figures/Q3_fixture.bin   |     1 +
+ .../entry_fixture_success/figures/Q4_fixture.bin   |     1 +
+ .../metric_evidence_validation.json                |     5 +
+ .../entry_fixture_success/numerical_summaries.json |   358 +
+ .../entry_fixture_success/outputs/Q1_fixture.json  |     4 +
+ .../outputs/Q1_fixture.validation.json             |     3 +
+ .../entry_fixture_success/outputs/Q2_fixture.json  |     4 +
+ .../outputs/Q2_fixture.validation.json             |     3 +
+ .../entry_fixture_success/outputs/Q3_fixture.json  |     4 +
+ .../outputs/Q3_fixture.validation.json             |     3 +
+ .../entry_fixture_success/outputs/Q4_fixture.json  |     4 +
+ .../outputs/Q4_fixture.validation.json             |     3 +
+ .../entry_fixture_success/worker_success.json      |   605 +
+ .../check-ejagch_o/exit-0.log                      |     1 +
+ .../check-ejagch_o/exit-7.log                      |     1 +
+ .../check-ejagch_o/fixture/input.txt               |     1 +
+ .../check-ejagch_o/fixture/launch.json             |     3 +
+ .../check-ejagch_o/fixture/observed.png            |   Bin 0 -> 39 bytes
+ .../paper_output/results/model_results.json        |     3 +
+ .../production/test/publication_failure.json       |     7 +
+ .../test/publication_previous/inventory.json       |    13 +
+ .../paper_output/results/model_results.json        |     3 +
+ .../paper_output/results/run_manifest.json         |     4 +
+ .../results/production/test/run_manifest.json      |    10 +
+ .../fixture/paper_output/results/run_manifest.json |    10 +
+ .../check-ejagch_o/fixture/summary.json            |    12 +
+ .../check-ejagch_o/process_result.json             |    13 +
+ .../check-ejagch_o/selfcheck.json                  |    53 +
+ .../check-it_zvbue/exit-0.log                      |     1 +
+ .../check-it_zvbue/exit-7.log                      |     1 +
+ .../check-it_zvbue/fixture/input.txt               |     1 +
+ .../check-it_zvbue/fixture/launch.json             |     3 +
+ .../check-it_zvbue/fixture/observed.png            |   Bin 0 -> 39 bytes
+ .../paper_output/results/model_results.json        |     3 +
+ .../production/test/publication_failure.json       |     7 +
+ .../test/publication_previous/inventory.json       |    13 +
+ .../paper_output/results/model_results.json        |     3 +
+ .../paper_output/results/run_manifest.json         |     4 +
+ .../results/production/test/run_manifest.json      |    10 +
+ .../fixture/paper_output/results/run_manifest.json |    10 +
+ .../check-it_zvbue/fixture/summary.json            |    12 +
+ .../check-it_zvbue/selfcheck.json                  |    50 +
+ .../entry_fixture_failure/Q1/summary.json          |    78 +
+ .../entry_fixture_failure/Q23/summary.json         |   149 +
+ .../entry_fixture_failure/figures/Q1_fixture.bin   |     1 +
+ .../entry_fixture_failure/figures/Q2_fixture.bin   |     1 +
+ .../entry_fixture_failure/outputs/Q1_fixture.json  |     4 +
+ .../outputs/Q1_fixture.validation.json             |     3 +
+ .../entry_fixture_failure/outputs/Q2_fixture.json  |     4 +
+ .../outputs/Q2_fixture.validation.json             |     3 +
+ .../entry_fixture_success/Q1/summary.json          |    78 +
+ .../entry_fixture_success/Q23/summary.json         |   149 +
+ .../entry_fixture_success/Q4/summary.json          |   129 +
+ .../contracts/conclusions.json                     |   131 +
+ .../contracts/figure_index.json                    |    61 +
+ .../entry_fixture_success/contracts/metrics.json   |   177 +
+ .../contracts/model_results.json                   |   674 +
+ .../contracts/table_index.json                     |     8 +
+ .../entry_fixture_success/export_validation.json   |    41 +
+ .../entry_fixture_success/figures/Q1_fixture.bin   |     1 +
+ .../entry_fixture_success/figures/Q2_fixture.bin   |     1 +
+ .../entry_fixture_success/figures/Q3_fixture.bin   |     1 +
+ .../entry_fixture_success/figures/Q4_fixture.bin   |     1 +
+ .../metric_evidence_validation.json                |     5 +
+ .../entry_fixture_success/numerical_summaries.json |   358 +
+ .../entry_fixture_success/outputs/Q1_fixture.json  |     4 +
+ .../outputs/Q1_fixture.validation.json             |     3 +
+ .../entry_fixture_success/outputs/Q2_fixture.json  |     4 +
+ .../outputs/Q2_fixture.validation.json             |     3 +
+ .../entry_fixture_success/outputs/Q3_fixture.json  |     4 +
+ .../outputs/Q3_fixture.validation.json             |     3 +
+ .../entry_fixture_success/outputs/Q4_fixture.json  |     4 +
+ .../outputs/Q4_fixture.validation.json             |     3 +
+ .../entry_fixture_success/worker_success.json      |   605 +
+ .../check-qy0teplj/exit-0.log                      |     1 +
+ .../check-qy0teplj/exit-7.log                      |     1 +
+ .../check-qy0teplj/fixture/input.txt               |     1 +
+ .../check-qy0teplj/fixture/launch.json             |     3 +
+ .../check-qy0teplj/fixture/observed.png            |   Bin 0 -> 39 bytes
+ .../paper_output/results/model_results.json        |     3 +
+ .../production/test/publication_failure.json       |     7 +
+ .../test/publication_previous/inventory.json       |    13 +
+ .../paper_output/results/model_results.json        |     3 +
+ .../paper_output/results/run_manifest.json         |     4 +
+ .../results/production/test/run_manifest.json      |    24 +
+ .../fixture/paper_output/results/run_manifest.json |    24 +
+ .../check-qy0teplj/fixture/summary.json            |    12 +
+ .../check-qy0teplj/process_result.json             |    13 +
+ .../check-qy0teplj/selfcheck.json                  |    53 +
+ .../2026-09-10/data/production_entry_fix_log.md    |    52 +
+ .../2026-09-10/data/production_entry_review.md     |   123 +
+ ...s6_modeling_evidence_review.guard_snapshot.json |    52 +
+ .../data/s6_modeling_evidence_review.json          |  1100 ++
+ .../2026-09-10/data/s6_modeling_evidence_review.md |    97 +
+ ...g_evidence_review.workflow_status_snapshot.json |    75 +
+ .../build_supplementary_figures.py                 |   169 +
+ .../convergence_plotted_values.csv                 |     6 +
+ .../environment_plotted_values.csv                 |     6 +
+ .../fig_model_grid_convergence.json                |    90 +
+ .../fig_model_grid_convergence.pdf                 |   Bin 0 -> 56334 bytes
+ .../fig_model_grid_convergence.png                 |   Bin 0 -> 190848 bytes
+ .../fig_model_grid_convergence.svg                 |  5230 ++++++++
+ .../fig_model_grid_convergence_data.npz            |   Bin 0 -> 1280 bytes
+ .../fig_model_grid_convergence_pdf_render.png      |   Bin 0 -> 108713 bytes
+ .../fig_q3_physical_sensitivity.json               |   266 +
+ .../fig_q3_physical_sensitivity.pdf                |   Bin 0 -> 48677 bytes
+ .../fig_q3_physical_sensitivity.png                |   Bin 0 -> 101956 bytes
+ .../fig_q3_physical_sensitivity.svg                |  4424 +++++++
+ .../fig_q3_physical_sensitivity_data.npz           |   Bin 0 -> 518 bytes
+ .../fig_q3_physical_sensitivity_pdf_render.png     |   Bin 0 -> 66845 bytes
+ .../fig_q4_shrinkage_control.json                  |   137 +
+ .../fig_q4_shrinkage_control.pdf                   |   Bin 0 -> 51391 bytes
+ .../fig_q4_shrinkage_control.png                   |   Bin 0 -> 89338 bytes
+ .../fig_q4_shrinkage_control.svg                   |  4633 +++++++
+ .../fig_q4_shrinkage_control_data.npz              |   Bin 0 -> 235 bytes
+ .../fig_q4_shrinkage_control_pdf_render.png        |   Bin 0 -> 54862 bytes
+ .../generation_and_value_verification.json         |   703 +
+ .../supplementary_figures/pdf_structure_check.json |    56 +
+ .../data/supplementary_figures/review.json         |   130 +
+ .../data/supplementary_figures/review.md           |    59 +
+ .../shrinkage_plotted_values.csv                   |     3 +
+ notes/A-modeling/2026-09-10/deadline_handoff.md    |    28 +
+ .../gui_final_v6a/01_launch_settings.png           |   Bin 0 -> 176550 bytes
+ .../gui_final_v6a/02_q1_entry_breakpoint.png       |   Bin 0 -> 216867 bytes
+ .../gui_final_v6a/02_q1_entry_locals.txt           |   301 +
+ .../gui_final_v6a/03_settings_expanded.png         |   Bin 0 -> 198526 bytes
+ .../gui_final_v6a/03_settings_locals.txt           |   288 +
+ .../2026-09-10/gui_final_v6a/04_rhs_locals.txt     |   308 +
+ .../gui_final_v6a/04_rhs_single_step.png           |   Bin 0 -> 236616 bytes
+ .../gui_final_v6a/05_q23_entry_breakpoint.png      |   Bin 0 -> 225883 bytes
+ .../gui_final_v6a/05_q23_entry_locals.txt          |   290 +
+ .../gui_final_v6a/06_q4_entry_breakpoint.png       |   Bin 0 -> 222819 bytes
+ .../2026-09-10/gui_final_v6a/07_q4_model_6400.png  |   Bin 0 -> 142209 bytes
+ .../gui_final_v6a/07_q4_model_locals.txt           |   299 +
+ .../08_gui_all_solves_exports_complete.png         |   Bin 0 -> 278905 bytes
+ .../gui_final_v6a/09_debug_session_closed.png      |   Bin 0 -> 135038 bytes
+ .../2026-09-10/gui_final_v6a/gui_observation.json  |    91 +
+ .../2026-09-10/gui_final_v6a/gui_observation.md    |    47 +
+ .../gui_final_v6a/independent_comparison.json      |  1891 +++
+ .../gui_final_v6a/independent_comparison.md        |    83 +
+ .../2026-09-10/handoff_files_snapshot.json         |    17 +
+ notes/A-modeling/2026-09-10/peer_word_review.md    |    83 +
+ .../2026-09-10/physics/axisymmetric_derivations.md |   104 +
+ .../2026-09-10/physics/formula_registry_review.md  |    45 +
+ notes/A-modeling/2026-09-10/physics/issue_list.md  |    46 +
+ .../2026-09-10/physics/jacobian_derivations.md     |   418 +
+ .../physics/latent_saturation_audit.json           |    62 +
+ .../physics/physical_sensitivity_table.json        |   124 +
+ .../2026-09-10/physics/physics_branch_freeze.json  |    67 +
+ .../2026-09-10/physics/physics_derivations.md      |   753 ++
+ .../physics/physics_physical_sensitivity_review.md |   130 +
+ .../2026-09-10/physics/source-page-3.png           |   Bin 0 -> 254869 bytes
+ .../2026-09-10/physics/source-page-4.png           |   Bin 0 -> 114275 bytes
+ notes/A-modeling/2026-09-10/production_contract.md |   210 +
+ notes/A-modeling/2026-09-10/state.json             |    48 +
+ paper_output/code/modeling/A_Drying.pyproj         |    49 +
+ paper_output/code/modeling/A_Drying.sln            |    20 +
+ paper_output/code/modeling/analytic_jacobian.py    |   325 +
+ paper_output/code/modeling/disk_dense.py           |   121 +
+ paper_output/code/modeling/drying_core.py          |   122 +-
+ paper_output/code/modeling/export_outputs.py       |   748 ++
+ paper_output/code/modeling/peer_beta_check.py      |   270 +
+ .../code/modeling/production_provenance.py         |   497 +
+ paper_output/code/modeling/publication_plots.py    |   402 +
+ paper_output/code/modeling/q1_model.py             |     8 +
+ paper_output/code/modeling/q2_model.py             |     8 +
+ paper_output/code/modeling/q3_model.py             |    27 +
+ paper_output/code/modeling/q4_model.py             |     8 +
+ paper_output/code/modeling/run_modeling.py         |   448 +
+ paper_output/code/modeling/verify_convergence.py   |   127 +
+ paper_output/code/modeling/verify_dense_storage.py |    69 +
+ paper_output/code/modeling/verify_time_accuracy.py |   251 +
+ paper_output/code/versions/disk_dense_v5.py        |    99 +
+ paper_output/code/versions/disk_dense_v6.py        |   121 +
+ .../versions/drying_core_v3_analytic_jacobian.py   |   338 +
+ .../versions/drying_core_v4_block_diagnostics.py   |   352 +
+ .../code/versions/drying_core_v5_disk_dense.py     |   395 +
+ .../code/versions/drying_core_v6_bdf_knots.py      |   402 +
+ paper_output/code/versions/export_outputs_v1.py    |   533 +
+ paper_output/code/versions/export_outputs_v2.py    |   535 +
+ .../code/versions/verify_convergence_v1.py         |   106 +
+ .../code/versions/verify_convergence_v5.py         |   123 +
+ .../code/versions/verify_dense_storage_v5.py       |    61 +
+ paper_output/context/workflow_memory.json          |    54 +-
+ paper_output/context/workflow_memory.md            |    23 +-
+ paper_output/figure_index.json                     |   694 +-
+ paper_output/qa/evidence_gate_report.json          |    63 +
+ paper_output/qa/evidence_gate_report.md            |    11 +
+ paper_output/qa/workflow_guard_report.json         |    54 +-
+ paper_output/qa/workflow_guard_report.md           |    23 +-
+ .../axisymmetric_check/aggregate_summary.json      |    19 +-
+ paper_output/results/conclusions.json              |   162 +
+ .../Q1_K_analytic_J_v3/N1600/sampled_solution.npz  |   Bin 0 -> 10565 bytes
+ .../Q1_K_analytic_J_v3/N1600/summary.json          |    81 +
+ .../Q1_K_analytic_J_v3/N3200/sampled_solution.npz  |   Bin 0 -> 10569 bytes
+ .../Q1_K_analytic_J_v3/N3200/summary.json          |    81 +
+ .../Q1_K_analytic_J_v3/N800/sampled_solution.npz   |   Bin 0 -> 10566 bytes
+ .../Q1_K_analytic_J_v3/N800/summary.json           |    81 +
+ .../Q1_K_analytic_J_v3/convergence_report.json     |   322 +
+ .../N1600/sampled_solution.npz                     |   Bin 0 -> 10582 bytes
+ .../Q1_frozenD_analytic_J_v3/N1600/summary.json    |    81 +
+ .../N3200/sampled_solution.npz                     |   Bin 0 -> 10574 bytes
+ .../Q1_frozenD_analytic_J_v3/N3200/summary.json    |    81 +
+ .../convergence_report.json                        |   219 +
+ .../Q23_K_analytic_J_v3/N1600/sampled_solution.npz |   Bin 0 -> 689319 bytes
+ .../Q23_K_analytic_J_v3/N1600/summary.json         |    81 +
+ .../Q23_K_analytic_J_v3/N400/sampled_solution.npz  |   Bin 0 -> 689468 bytes
+ .../Q23_K_analytic_J_v3/N400/summary.json          |    81 +
+ .../Q23_K_analytic_J_v3/N800/sampled_solution.npz  |   Bin 0 -> 689729 bytes
+ .../Q23_K_analytic_J_v3/N800/summary.json          |    81 +
+ .../Q23_K_analytic_J_v3/convergence_report.json    |   307 +
+ .../N1600/sampled_solution.npz                     |   Bin 0 -> 689319 bytes
+ .../Q23_final_resolution_v4/N1600/summary.json     |    81 +
+ .../convergence_report.json                        |    96 +
+ .../Q23_final_resolution_v4/interruption.json      |     9 +
+ .../convergence/Q23_final_resolution_v5.log        |     4 +
+ .../N1600/sampled_solution.npz                     |   Bin 0 -> 689320 bytes
+ .../Q23_final_resolution_v5/N1600/summary.json     |    91 +
+ .../N3200/sampled_solution.npz                     |   Bin 0 -> 689540 bytes
+ .../Q23_final_resolution_v5/N3200/summary.json     |    91 +
+ .../convergence_report.json                        |   223 +
+ .../Q4_K_analytic_J_v3/N1600/sampled_solution.npz  |   Bin 0 -> 628505 bytes
+ .../Q4_K_analytic_J_v3/N1600/summary.json          |    81 +
+ .../Q4_K_analytic_J_v3/N400/sampled_solution.npz   |   Bin 0 -> 628874 bytes
+ .../Q4_K_analytic_J_v3/N400/summary.json           |    81 +
+ .../Q4_K_analytic_J_v3/N800/sampled_solution.npz   |   Bin 0 -> 628316 bytes
+ .../Q4_K_analytic_J_v3/N800/summary.json           |    81 +
+ .../Q4_K_analytic_J_v3/convergence_report.json     |   307 +
+ .../N1600/sampled_solution.npz                     |   Bin 0 -> 628505 bytes
+ .../Q4_final_resolution_v4/N1600/summary.json      |    81 +
+ .../Q4_final_resolution_v4/convergence_report.json |    96 +
+ .../Q4_final_resolution_v4/interruption.json       |     9 +
+ .../results/convergence/Q4_final_resolution_v5.log |     6 +
+ .../N1600/sampled_solution.npz                     |   Bin 0 -> 628506 bytes
+ .../Q4_final_resolution_v5/N1600/summary.json      |    91 +
+ .../N3200/sampled_solution.npz                     |   Bin 0 -> 628625 bytes
+ .../Q4_final_resolution_v5/N3200/summary.json      |    91 +
+ .../N6400/sampled_solution.npz                     |   Bin 0 -> 628742 bytes
+ .../Q4_final_resolution_v5/N6400/summary.json      |    91 +
+ .../Q4_final_resolution_v5/convergence_report.json |   337 +
+ .../dense_storage_verification/verification.json   |   234 +
+ .../verification.json                              |   240 +
+ .../Q1/q1_paper_moisture.csv                       |     8 +
+ .../Q1/q1_paper_temperature.csv                    |     8 +
+ .../Q1/result1.export.json                         |  1645 +++
+ .../Q1/result1.validation.json                     |   154 +
+ .../export_paper_selfcheck_v3/Q1/result1.xlsx      |   Bin 0 -> 391166 bytes
+ .../Q1/result1_unrounded.csv.gz                    |   Bin 0 -> 584817 bytes
+ .../Q2/q2_paper_moisture.csv                       |     7 +
+ .../Q2/q2_paper_temperature.csv                    |     7 +
+ .../Q2/result2.export.json                         |  1645 +++
+ .../Q2/result2.validation.json                     |   152 +
+ .../export_paper_selfcheck_v3/Q2/result2.xlsx      |   Bin 0 -> 3605431 bytes
+ .../Q2/result2_unrounded.csv.gz                    |   Bin 0 -> 5729298 bytes
+ .../Q3/q3_paper_moisture.csv                       |    11 +
+ .../Q3/result3.export.json                         |  1038 ++
+ .../Q3/result3.validation.json                     |   120 +
+ .../export_paper_selfcheck_v3/Q3/result3.xlsx      |   Bin 0 -> 339128 bytes
+ .../Q3/result3_unrounded.csv.gz                    |   Bin 0 -> 640716 bytes
+ .../Q4/q4_paper_moisture.csv                       |    10 +
+ .../Q4/q4_paper_radius.csv                         |    10 +
+ .../Q4/result4.export.json                         |  1149 ++
+ .../Q4/result4.validation.json                     |   165 +
+ .../export_paper_selfcheck_v3/Q4/result4.xlsx      |   Bin 0 -> 278102 bytes
+ .../Q4/result4_unrounded.csv.gz                    |   Bin 0 -> 402814 bytes
+ .../last_time_label/q3_paper_moisture.csv          |    11 +
+ .../moisture_value/q2_paper_moisture.csv           |     7 +
+ .../outside_nonblank/q4_paper_moisture.csv         |    10 +
+ .../radius_value/q4_paper_radius.csv               |    10 +
+ .../surface_missing/q4_paper_moisture.csv          |    10 +
+ .../temperature_value/q1_paper_temperature.csv     |     8 +
+ .../results/export_paper_selfcheck_v3/handoff.md   |    30 +
+ .../paper_csv_selfcheck_report.json                |  1289 ++
+ .../export_selfcheck/moisture_saved_preview.png    |   Bin 0 -> 27031 bytes
+ .../results/export_selfcheck/q1_paper_moisture.csv |     8 +
+ .../export_selfcheck/q1_paper_temperature.csv      |     8 +
+ .../export_selfcheck/render_saved_export.mjs       |    15 +
+ .../results/export_selfcheck/result1.export.json   |  1638 +++
+ .../export_selfcheck/result1.validation.json       |    54 +
+ paper_output/results/export_selfcheck/result1.xlsx |   Bin 0 -> 391199 bytes
+ .../export_selfcheck/result1_unrounded.csv.gz      |   Bin 0 -> 584943 bytes
+ .../saved_workbook_inspection.ndjson               |     1 +
+ .../export_selfcheck/selfcheck_summary.json        |   212 +
+ .../export_selfcheck/temperature_saved_preview.png |   Bin 0 -> 26971 bytes
+ .../gui_final_v6a/Q1/sampled_solution.npz          |   Bin 0 -> 10569 bytes
+ .../gui_reproduction/gui_final_v6a/Q1/summary.json |   161 +
+ .../gui_final_v6a/Q23/sampled_solution.npz         |   Bin 0 -> 689540 bytes
+ .../gui_final_v6a/Q23/summary.json                 |   237 +
+ .../gui_final_v6a/Q4/sampled_solution.npz          |   Bin 0 -> 628742 bytes
+ .../gui_reproduction/gui_final_v6a/Q4/summary.json |   217 +
+ .../gui_final_v6a/figures/fig_q1_profiles.json     |   110 +
+ .../gui_final_v6a/figures/fig_q1_profiles.pdf      |   Bin 0 -> 61860 bytes
+ .../gui_final_v6a/figures/fig_q1_profiles.png      |   Bin 0 -> 220065 bytes
+ .../gui_final_v6a/figures/fig_q1_profiles.svg      |  6540 ++++++++++
+ .../gui_final_v6a/figures/fig_q1_profiles_data.npz |   Bin 0 -> 12242 bytes
+ .../gui_final_v6a/figures/fig_q2_profiles.json     |   110 +
+ .../gui_final_v6a/figures/fig_q2_profiles.pdf      |   Bin 0 -> 60863 bytes
+ .../gui_final_v6a/figures/fig_q2_profiles.png      |   Bin 0 -> 219522 bytes
+ .../gui_final_v6a/figures/fig_q2_profiles.svg      |  6290 +++++++++
+ .../gui_final_v6a/figures/fig_q2_profiles_data.npz |   Bin 0 -> 12165 bytes
+ .../gui_final_v6a/figures/fig_q3_drying.json       |   114 +
+ .../gui_final_v6a/figures/fig_q3_drying.pdf        |   Bin 0 -> 68207 bytes
+ .../gui_final_v6a/figures/fig_q3_drying.png        |   Bin 0 -> 234364 bytes
+ .../gui_final_v6a/figures/fig_q3_drying.svg        |  5230 ++++++++
+ .../gui_final_v6a/figures/fig_q3_drying_data.npz   |   Bin 0 -> 249286 bytes
+ .../gui_final_v6a/figures/fig_q4_drying.json       |   114 +
+ .../gui_final_v6a/figures/fig_q4_drying.pdf        |   Bin 0 -> 84222 bytes
+ .../gui_final_v6a/figures/fig_q4_drying.png        |   Bin 0 -> 260825 bytes
+ .../gui_final_v6a/figures/fig_q4_drying.svg        |  6367 +++++++++
+ .../gui_final_v6a/figures/fig_q4_drying_data.npz   |   Bin 0 -> 222086 bytes
+ .../gui_reproduction/gui_final_v6a/launch.json     |   225 +
+ .../gui_final_v6a/launch_claim.json                |     6 +
+ .../gui_final_v6a/numerical_summaries.json         |   617 +
+ .../gui_final_v6a/outputs/q1_paper_moisture.csv    |     8 +
+ .../gui_final_v6a/outputs/q1_paper_temperature.csv |     8 +
+ .../gui_final_v6a/outputs/q2_paper_moisture.csv    |     7 +
+ .../gui_final_v6a/outputs/q2_paper_temperature.csv |     7 +
+ .../gui_final_v6a/outputs/q3_paper_moisture.csv    |    11 +
+ .../gui_final_v6a/outputs/q4_paper_moisture.csv    |    10 +
+ .../gui_final_v6a/outputs/q4_paper_radius.csv      |    10 +
+ .../gui_final_v6a/outputs/result1.export.json      |  1645 +++
+ .../gui_final_v6a/outputs/result1.validation.json  |   154 +
+ .../gui_final_v6a/outputs/result1.xlsx             |   Bin 0 -> 390897 bytes
+ .../gui_final_v6a/outputs/result1_unrounded.csv.gz |   Bin 0 -> 578239 bytes
+ .../gui_final_v6a/outputs/result2.export.json      |  1645 +++
+ .../gui_final_v6a/outputs/result2.validation.json  |   152 +
+ .../gui_final_v6a/outputs/result2.xlsx             |   Bin 0 -> 29210087 bytes
+ .../gui_final_v6a/outputs/result2_unrounded.csv.gz |   Bin 0 -> 43018253 bytes
+ .../gui_final_v6a/outputs/result3.export.json      |  1038 ++
+ .../gui_final_v6a/outputs/result3.validation.json  |   120 +
+ .../gui_final_v6a/outputs/result3.xlsx             |   Bin 0 -> 339138 bytes
+ .../gui_final_v6a/outputs/result3_unrounded.csv.gz |   Bin 0 -> 640369 bytes
+ .../gui_final_v6a/outputs/result4.export.json      |  1149 ++
+ .../gui_final_v6a/outputs/result4.validation.json  |   165 +
+ .../gui_final_v6a/outputs/result4.xlsx             |   Bin 0 -> 278278 bytes
+ .../gui_final_v6a/outputs/result4_unrounded.csv.gz |   Bin 0 -> 402572 bytes
+ .../gui_final_v6a/review_evidence_validation.json  |   182 +
+ .../gui_final_v6a/review_result.json               |  2453 ++++
+ .../gui_final_v6a/review_started.json              |     5 +
+ .../gui_final_v6a/worker_success.json              |  1680 +++
+ .../analytic_jacobian_selftest.json                | 12772 ++++++++++++++++++
+ .../integrated_v3/analytic_jacobian_selftest.json  | 12856 +++++++++++++++++++
+ .../integrated_v4/analytic_jacobian_selftest.json  | 12856 +++++++++++++++++++
+ paper_output/results/metrics.json                  |   177 +
+ paper_output/results/model_results.json            |  1087 ++
+ .../N200_harmonic_beta1/comparison_fields.npz      |   Bin 0 -> 33601 bytes
+ .../N200_harmonic_beta1/record.json                |    89 +
+ .../N200_harmonic_beta1/sampled_solution.npz       |   Bin 0 -> 700802 bytes
+ .../peer_beta_check/N200_harmonic_beta1/stderr.log |     0
+ .../peer_beta_check/N200_harmonic_beta1/stdout.log |     1 +
+ .../N200_harmonic_beta1/summary.json               |    81 +
+ .../N200_harmonic_beta2/comparison_fields.npz      |   Bin 0 -> 35291 bytes
+ .../N200_harmonic_beta2/record.json                |    89 +
+ .../N200_harmonic_beta2/sampled_solution.npz       |   Bin 0 -> 734262 bytes
+ .../peer_beta_check/N200_harmonic_beta2/stderr.log |     0
+ .../peer_beta_check/N200_harmonic_beta2/stdout.log |     1 +
+ .../N200_harmonic_beta2/summary.json               |    81 +
+ .../N200_kirchhoff_beta1/comparison_fields.npz     |   Bin 0 -> 33593 bytes
+ .../N200_kirchhoff_beta1/record.json               |    89 +
+ .../N200_kirchhoff_beta1/sampled_solution.npz      |   Bin 0 -> 684936 bytes
+ .../N200_kirchhoff_beta1/stderr.log                |     0
+ .../N200_kirchhoff_beta1/stdout.log                |     1 +
+ .../N200_kirchhoff_beta1/summary.json              |    81 +
+ .../N200_kirchhoff_beta2/comparison_fields.npz     |   Bin 0 -> 33642 bytes
+ .../N200_kirchhoff_beta2/record.json               |    89 +
+ .../N200_kirchhoff_beta2/sampled_solution.npz      |   Bin 0 -> 651702 bytes
+ .../N200_kirchhoff_beta2/stderr.log                |     0
+ .../N200_kirchhoff_beta2/stdout.log                |     1 +
+ .../N200_kirchhoff_beta2/summary.json              |    81 +
+ .../N400_harmonic_beta1/comparison_fields.npz      |   Bin 0 -> 64464 bytes
+ .../N400_harmonic_beta1/record.json                |    89 +
+ .../N400_harmonic_beta1/sampled_solution.npz       |   Bin 0 -> 687562 bytes
+ .../peer_beta_check/N400_harmonic_beta1/stderr.log |     0
+ .../peer_beta_check/N400_harmonic_beta1/stdout.log |     1 +
+ .../N400_harmonic_beta1/summary.json               |    81 +
+ .../N400_harmonic_beta2/comparison_fields.npz      |   Bin 0 -> 64464 bytes
+ .../N400_harmonic_beta2/record.json                |    89 +
+ .../N400_harmonic_beta2/sampled_solution.npz       |   Bin 0 -> 662139 bytes
+ .../peer_beta_check/N400_harmonic_beta2/stderr.log |     0
+ .../peer_beta_check/N400_harmonic_beta2/stdout.log |     1 +
+ .../N400_harmonic_beta2/summary.json               |    81 +
+ .../N400_kirchhoff_beta1/comparison_fields.npz     |   Bin 0 -> 64402 bytes
+ .../N400_kirchhoff_beta1/record.json               |    89 +
+ .../N400_kirchhoff_beta1/sampled_solution.npz      |   Bin 0 -> 685669 bytes
+ .../N400_kirchhoff_beta1/stderr.log                |     0
+ .../N400_kirchhoff_beta1/stdout.log                |     1 +
+ .../N400_kirchhoff_beta1/summary.json              |    81 +
+ .../N400_kirchhoff_beta2/comparison_fields.npz     |   Bin 0 -> 64470 bytes
+ .../N400_kirchhoff_beta2/record.json               |    89 +
+ .../N400_kirchhoff_beta2/sampled_solution.npz      |   Bin 0 -> 652577 bytes
+ .../N400_kirchhoff_beta2/stderr.log                |     0
+ .../N400_kirchhoff_beta2/stdout.log                |     1 +
+ .../N400_kirchhoff_beta2/summary.json              |    81 +
+ .../N800_harmonic_beta1/comparison_fields.npz      |   Bin 0 -> 126224 bytes
+ .../N800_harmonic_beta1/record.json                |    89 +
+ .../N800_harmonic_beta1/sampled_solution.npz       |   Bin 0 -> 685616 bytes
+ .../peer_beta_check/N800_harmonic_beta1/stderr.log |     0
+ .../peer_beta_check/N800_harmonic_beta1/stdout.log |     1 +
+ .../N800_harmonic_beta1/summary.json               |    81 +
+ .../N800_harmonic_beta2/comparison_fields.npz      |   Bin 0 -> 125858 bytes
+ .../N800_harmonic_beta2/record.json                |    89 +
+ .../N800_harmonic_beta2/sampled_solution.npz       |   Bin 0 -> 653704 bytes
+ .../peer_beta_check/N800_harmonic_beta2/stderr.log |     0
+ .../peer_beta_check/N800_harmonic_beta2/stdout.log |     1 +
+ .../N800_harmonic_beta2/summary.json               |    81 +
+ .../N800_kirchhoff_beta1/comparison_fields.npz     |   Bin 0 -> 126047 bytes
+ .../N800_kirchhoff_beta1/record.json               |    89 +
+ .../N800_kirchhoff_beta1/sampled_solution.npz      |   Bin 0 -> 685404 bytes
+ .../N800_kirchhoff_beta1/stderr.log                |     0
+ .../N800_kirchhoff_beta1/stdout.log                |     1 +
+ .../N800_kirchhoff_beta1/summary.json              |    81 +
+ .../N800_kirchhoff_beta2/comparison_fields.npz     |   Bin 0 -> 125883 bytes
+ .../N800_kirchhoff_beta2/record.json               |    89 +
+ .../N800_kirchhoff_beta2/sampled_solution.npz      |   Bin 0 -> 651653 bytes
+ .../N800_kirchhoff_beta2/stderr.log                |     0
+ .../N800_kirchhoff_beta2/stdout.log                |     1 +
+ .../N800_kirchhoff_beta2/summary.json              |    81 +
+ .../results/peer_beta_check/aggregate_summary.json |  1278 ++
+ .../results/peer_beta_check/analysis_metrics.json  |   162 +
+ .../results/peer_beta_check/numerical_table.md     |    15 +
+ .../peer_beta_check/peer_beta_check_report.md      |   149 +
+ paper_output/results/peer_beta_check/progress.json |  1072 ++
+ .../plot_selfcheck/fig_model_grid_convergence.json |    78 +
+ .../plot_selfcheck/fig_model_grid_convergence.pdf  |   Bin 0 -> 55559 bytes
+ .../plot_selfcheck/fig_model_grid_convergence.png  |   Bin 0 -> 176423 bytes
+ .../plot_selfcheck/fig_model_grid_convergence.svg  |  5154 ++++++++
+ .../fig_model_grid_convergence_data.npz            |   Bin 0 -> 870 bytes
+ .../results/plot_selfcheck/fig_q1_profiles.json    |   109 +
+ .../results/plot_selfcheck/fig_q1_profiles.pdf     |   Bin 0 -> 61965 bytes
+ .../results/plot_selfcheck/fig_q1_profiles.png     |   Bin 0 -> 218399 bytes
+ .../results/plot_selfcheck/fig_q1_profiles.svg     |  6540 ++++++++++
+ .../plot_selfcheck/fig_q1_profiles_data.npz        |   Bin 0 -> 12404 bytes
+ .../results/plot_selfcheck/fig_q2_profiles.json    |   109 +
+ .../results/plot_selfcheck/fig_q2_profiles.pdf     |   Bin 0 -> 60859 bytes
+ .../results/plot_selfcheck/fig_q2_profiles.png     |   Bin 0 -> 218489 bytes
+ .../results/plot_selfcheck/fig_q2_profiles.svg     |  6290 +++++++++
+ .../plot_selfcheck/fig_q2_profiles_data.npz        |   Bin 0 -> 12163 bytes
+ .../results/plot_selfcheck/fig_q3_drying.json      |   113 +
+ .../results/plot_selfcheck/fig_q3_drying.pdf       |   Bin 0 -> 68389 bytes
+ .../results/plot_selfcheck/fig_q3_drying.png       |   Bin 0 -> 235169 bytes
+ .../results/plot_selfcheck/fig_q3_drying.svg       |  5275 ++++++++
+ .../results/plot_selfcheck/fig_q3_drying_data.npz  |   Bin 0 -> 249028 bytes
+ .../results/plot_selfcheck/fig_q4_drying.json      |   113 +
+ .../results/plot_selfcheck/fig_q4_drying.pdf       |   Bin 0 -> 84078 bytes
+ .../results/plot_selfcheck/fig_q4_drying.png       |   Bin 0 -> 260041 bytes
+ .../results/plot_selfcheck/fig_q4_drying.svg       |  6337 +++++++++
+ .../results/plot_selfcheck/fig_q4_drying_data.npz  |   Bin 0 -> 222266 bytes
+ .../fig_q4_physical_sensitivity.json               |   224 +
+ .../plot_selfcheck/fig_q4_physical_sensitivity.pdf |   Bin 0 -> 50665 bytes
+ .../plot_selfcheck/fig_q4_physical_sensitivity.png |   Bin 0 -> 92327 bytes
+ .../plot_selfcheck/fig_q4_physical_sensitivity.svg |  4638 +++++++
+ .../fig_q4_physical_sensitivity_data.npz           |   Bin 0 -> 499 bytes
+ .../plot_selfcheck/fig_q4_shrinkage_control.json   |   137 +
+ .../plot_selfcheck/fig_q4_shrinkage_control.pdf    |   Bin 0 -> 51391 bytes
+ .../plot_selfcheck/fig_q4_shrinkage_control.png    |   Bin 0 -> 89338 bytes
+ .../plot_selfcheck/fig_q4_shrinkage_control.svg    |  4633 +++++++
+ .../fig_q4_shrinkage_control_data.npz              |   Bin 0 -> 235 bytes
+ .../plot_selfcheck/plot_selfcheck_report.json      |   931 ++
+ .../results/plot_selfcheck/visual_review.json      |   140 +
+ .../production/final_v6a/Q1/sampled_solution.npz   |   Bin 0 -> 10569 bytes
+ .../results/production/final_v6a/Q1/summary.json   |   161 +
+ .../production/final_v6a/Q23/sampled_solution.npz  |   Bin 0 -> 689540 bytes
+ .../results/production/final_v6a/Q23/summary.json  |   237 +
+ .../production/final_v6a/Q4/sampled_solution.npz   |   Bin 0 -> 628742 bytes
+ .../results/production/final_v6a/Q4/summary.json   |   217 +
+ .../final_v6a/contracts/conclusions.json           |   162 +
+ .../final_v6a/contracts/figure_index.json          |   489 +
+ .../production/final_v6a/contracts/metrics.json    |   177 +
+ .../final_v6a/contracts/model_results.json         |  1083 ++
+ .../final_v6a/contracts/table_index.json           |   114 +
+ .../production/final_v6a/export_validation.json    |   624 +
+ .../final_v6a/figures/fig_q1_profiles.json         |   110 +
+ .../final_v6a/figures/fig_q1_profiles.pdf          |   Bin 0 -> 61860 bytes
+ .../final_v6a/figures/fig_q1_profiles.png          |   Bin 0 -> 220065 bytes
+ .../final_v6a/figures/fig_q1_profiles.svg          |  6540 ++++++++++
+ .../final_v6a/figures/fig_q1_profiles_data.npz     |   Bin 0 -> 12242 bytes
+ .../final_v6a/figures/fig_q2_profiles.json         |   110 +
+ .../final_v6a/figures/fig_q2_profiles.pdf          |   Bin 0 -> 60863 bytes
+ .../final_v6a/figures/fig_q2_profiles.png          |   Bin 0 -> 219522 bytes
+ .../final_v6a/figures/fig_q2_profiles.svg          |  6290 +++++++++
+ .../final_v6a/figures/fig_q2_profiles_data.npz     |   Bin 0 -> 12165 bytes
+ .../final_v6a/figures/fig_q3_drying.json           |   114 +
+ .../production/final_v6a/figures/fig_q3_drying.pdf |   Bin 0 -> 68207 bytes
+ .../production/final_v6a/figures/fig_q3_drying.png |   Bin 0 -> 234364 bytes
+ .../production/final_v6a/figures/fig_q3_drying.svg |  5230 ++++++++
+ .../final_v6a/figures/fig_q3_drying_data.npz       |   Bin 0 -> 249286 bytes
+ .../final_v6a/figures/fig_q4_drying.json           |   114 +
+ .../production/final_v6a/figures/fig_q4_drying.pdf |   Bin 0 -> 84222 bytes
+ .../production/final_v6a/figures/fig_q4_drying.png |   Bin 0 -> 260825 bytes
+ .../production/final_v6a/figures/fig_q4_drying.svg |  6367 +++++++++
+ .../final_v6a/figures/fig_q4_drying_data.npz       |   Bin 0 -> 222086 bytes
+ .../results/production/final_v6a/launch.json       |   226 +
+ .../results/production/final_v6a/launch_claim.json |     6 +
+ .../final_v6a/metric_evidence_validation.json      |     5 +
+ .../production/final_v6a/numerical_summaries.json  |   617 +
+ .../final_v6a/outputs/q1_paper_moisture.csv        |     8 +
+ .../final_v6a/outputs/q1_paper_temperature.csv     |     8 +
+ .../final_v6a/outputs/q2_paper_moisture.csv        |     7 +
+ .../final_v6a/outputs/q2_paper_temperature.csv     |     7 +
+ .../final_v6a/outputs/q3_paper_moisture.csv        |    11 +
+ .../final_v6a/outputs/q4_paper_moisture.csv        |    10 +
+ .../final_v6a/outputs/q4_paper_radius.csv          |    10 +
+ .../final_v6a/outputs/result1.export.json          |  1645 +++
+ .../final_v6a/outputs/result1.validation.json      |   154 +
+ .../production/final_v6a/outputs/result1.xlsx      |   Bin 0 -> 390899 bytes
+ .../final_v6a/outputs/result1_unrounded.csv.gz     |   Bin 0 -> 578239 bytes
+ .../final_v6a/outputs/result2.export.json          |  1645 +++
+ .../final_v6a/outputs/result2.validation.json      |   152 +
+ .../production/final_v6a/outputs/result2.xlsx      |   Bin 0 -> 29210086 bytes
+ .../final_v6a/outputs/result2_unrounded.csv.gz     |   Bin 0 -> 43018253 bytes
+ .../final_v6a/outputs/result3.export.json          |  1038 ++
+ .../final_v6a/outputs/result3.validation.json      |   120 +
+ .../production/final_v6a/outputs/result3.xlsx      |   Bin 0 -> 339137 bytes
+ .../final_v6a/outputs/result3_unrounded.csv.gz     |   Bin 0 -> 640369 bytes
+ .../final_v6a/outputs/result4.export.json          |  1149 ++
+ .../final_v6a/outputs/result4.validation.json      |   165 +
+ .../production/final_v6a/outputs/result4.xlsx      |   Bin 0 -> 278278 bytes
+ .../final_v6a/outputs/result4_unrounded.csv.gz     |   Bin 0 -> 402572 bytes
+ .../production/final_v6a/process_result.json       |    26 +
+ .../final_v6a/publication_previous/inventory.json  |    29 +
+ .../paper_output/figure_index.json                 |   102 +
+ .../final_v6a/published_contracts/conclusions.json |   162 +
+ .../published_contracts/figure_index.json          |   592 +
+ .../final_v6a/published_contracts/metrics.json     |   177 +
+ .../published_contracts/model_results.json         |  1087 ++
+ .../final_v6a/published_contracts/table_index.json |   114 +
+ .../results/production/final_v6a/run_manifest.json |   793 ++
+ .../results/production/final_v6a/stdout.log        |    23 +
+ .../production/final_v6a/worker_started.json       |     4 +
+ .../production/final_v6a/worker_success.json       |  1716 +++
+ paper_output/results/run_manifest.json             |   793 ++
+ .../baseline/case_record.json                      |   185 +
+ .../baseline/comparison_projection.npz             |   Bin 0 -> 484751 bytes
+ .../baseline/process_result.json                   |    25 +
+ .../baseline/sampled_solution.npz                  |   Bin 0 -> 10809 bytes
+ .../baseline/stdout.log                            |     2 +
+ .../baseline/summary.json                          |   106 +
+ .../baseline/worker_started.json                   |     4 +
+ .../baseline/worker_success.json                   |   222 +
+ .../Q1_N20_driver_functional_20260910/launch.json  |   107 +
+ .../tight/case_record.json                         |   185 +
+ .../tight/comparison_projection.npz                |   Bin 0 -> 484799 bytes
+ .../tight/process_result.json                      |    25 +
+ .../tight/sampled_solution.npz                     |   Bin 0 -> 10810 bytes
+ .../tight/stdout.log                               |     2 +
+ .../tight/summary.json                             |   106 +
+ .../tight/worker_started.json                      |     4 +
+ .../tight/worker_success.json                      |   222 +
+ .../time_accuracy_report.json                      |   537 +
+ .../final_v6/baseline/case_record.json             |   185 +
+ .../final_v6/baseline/comparison_projection.npz    |   Bin 0 -> 470316 bytes
+ .../final_v6/baseline/process_result.json          |    25 +
+ .../final_v6/baseline/sampled_solution.npz         |   Bin 0 -> 10569 bytes
+ .../time_accuracy/final_v6/baseline/stdout.log     |     2 +
+ .../time_accuracy/final_v6/baseline/summary.json   |   106 +
+ .../final_v6/baseline/worker_started.json          |     4 +
+ .../final_v6/baseline/worker_success.json          |   222 +
+ .../results/time_accuracy/final_v6/launch.json     |   107 +
+ .../time_accuracy/final_v6/tight/case_record.json  |   185 +
+ .../final_v6/tight/comparison_projection.npz       |   Bin 0 -> 471474 bytes
+ .../final_v6/tight/process_result.json             |    25 +
+ .../final_v6/tight/sampled_solution.npz            |   Bin 0 -> 10596 bytes
+ .../time_accuracy/final_v6/tight/stdout.log        |     2 +
+ .../time_accuracy/final_v6/tight/summary.json      |   106 +
+ .../final_v6/tight/worker_started.json             |     4 +
+ .../final_v6/tight/worker_success.json             |   222 +
+ .../final_v6/time_accuracy_report.json             |   537 +
+ .../final_v6_Q23/baseline/case_record.json         |   185 +
+ .../baseline/comparison_projection.npz             |   Bin 0 -> 35655586 bytes
+ .../final_v6_Q23/baseline/process_result.json      |    25 +
+ .../final_v6_Q23/baseline/sampled_solution.npz     |   Bin 0 -> 689540 bytes
+ .../time_accuracy/final_v6_Q23/baseline/stdout.log |     2 +
+ .../final_v6_Q23/baseline/summary.json             |   106 +
+ .../final_v6_Q23/baseline/worker_started.json      |     4 +
+ .../final_v6_Q23/baseline/worker_success.json      |   222 +
+ .../results/time_accuracy/final_v6_Q23/launch.json |   107 +
+ .../final_v6_Q23/tight/case_record.json            |   185 +
+ .../final_v6_Q23/tight/comparison_projection.npz   |   Bin 0 -> 35734922 bytes
+ .../final_v6_Q23/tight/process_result.json         |    25 +
+ .../final_v6_Q23/tight/sampled_solution.npz        |   Bin 0 -> 690378 bytes
+ .../time_accuracy/final_v6_Q23/tight/stdout.log    |     2 +
+ .../time_accuracy/final_v6_Q23/tight/summary.json  |   106 +
+ .../final_v6_Q23/tight/worker_started.json         |     4 +
+ .../final_v6_Q23/tight/worker_success.json         |   222 +
+ .../final_v6_Q23/time_accuracy_report.json         |   537 +
+ .../final_v6_Q4/baseline/case_record.json          |   185 +
+ .../final_v6_Q4/baseline/comparison_projection.npz |   Bin 0 -> 21093072 bytes
+ .../final_v6_Q4/baseline/process_result.json       |    25 +
+ .../final_v6_Q4/baseline/sampled_solution.npz      |   Bin 0 -> 628742 bytes
+ .../time_accuracy/final_v6_Q4/baseline/stdout.log  |     2 +
+ .../final_v6_Q4/baseline/summary.json              |   106 +
+ .../final_v6_Q4/baseline/worker_started.json       |     4 +
+ .../final_v6_Q4/baseline/worker_success.json       |   222 +
+ .../results/time_accuracy/final_v6_Q4/launch.json  |   107 +
+ .../final_v6_Q4/tight/case_record.json             |   185 +
+ .../final_v6_Q4/tight/comparison_projection.npz    |   Bin 0 -> 21152380 bytes
+ .../final_v6_Q4/tight/process_result.json          |    25 +
+ .../final_v6_Q4/tight/sampled_solution.npz         |   Bin 0 -> 628788 bytes
+ .../time_accuracy/final_v6_Q4/tight/stdout.log     |     2 +
+ .../time_accuracy/final_v6_Q4/tight/summary.json   |   106 +
+ .../final_v6_Q4/tight/worker_started.json          |     4 +
+ .../final_v6_Q4/tight/worker_success.json          |   222 +
+ .../final_v6_Q4/time_accuracy_report.json          |   537 +
+ paper_output/tables/table_index.json               |   114 +
+ .../peer-models/2026-09-10_A_model/README.md       |   197 +
+ .../2026-09-10_A_model/code/analytic.py            |   215 +
+ .../2026-09-10_A_model/code/check_figs.py          |   157 +
+ .../2026-09-10_A_model/code/conv_tstar.py          |    74 +
+ .../peer-models/2026-09-10_A_model/code/diag1.py   |    29 +
+ .../2026-09-10_A_model/code/export_png.py          |    22 +
+ .../peer-models/2026-09-10_A_model/code/figures.py |   334 +
+ .../2026-09-10_A_model/code/figures2.py            |   169 +
+ .../peer-models/2026-09-10_A_model/code/physics.py |   250 +
+ .../peer-models/2026-09-10_A_model/code/raster.py  |   259 +
+ .../peer-models/2026-09-10_A_model/code/results.py |   262 +
+ .../2026-09-10_A_model/code/run_prod.py            |    91 +
+ .../2026-09-10_A_model/code/sensitivity.py         |   154 +
+ .../peer-models/2026-09-10_A_model/code/smoke.py   |    36 +
+ .../peer-models/2026-09-10_A_model/code/solver.py  |   425 +
+ .../peer-models/2026-09-10_A_model/code/summary.py |   177 +
+ .../peer-models/2026-09-10_A_model/code/svgplot.py |   555 +
+ .../peer-models/2026-09-10_A_model/code/verify.py  |   303 +
+ .../peer-models/2026-09-10_A_model/code/xlsxio.py  |   186 +
+ .../out/figures/fig01_chamber_conditions.svg       |    64 +
+ .../out/figures/fig02_q1_T_profiles.svg            |    62 +
+ .../out/figures/fig03_q1_C_profiles.svg            |    67 +
+ .../out/figures/fig04_q1_history.svg               |    63 +
+ .../out/figures/fig05_verification.svg             |    82 +
+ .../out/figures/fig06_q2_T_profiles.svg            |    65 +
+ .../out/figures/fig07_q2_C_profiles.svg            |    62 +
+ .../out/figures/fig08_q2_history.svg               |    68 +
+ .../out/figures/fig09_q3_drying_rate.svg           |    46 +
+ .../out/figures/fig10_q3_cmax.svg                  |    60 +
+ .../out/figures/fig11_q2_field_T.svg               |  7059 ++++++++++
+ .../out/figures/fig12_q2_field_C.svg               |  7759 +++++++++++
+ .../out/figures/fig13_q3_field_C.svg               |  7053 ++++++++++
+ .../out/figures/fig14_R_shrinkage.svg              |    97 +
+ .../out/figures/fig15_q4_field_C.svg               |  4719 +++++++
+ .../out/figures/fig16_q3_vs_q4.svg                 |    56 +
+ .../out/figures/fig17_conv_grid.svg                |    44 +
+ .../out/figures/fig17_conv_sub.svg                 |    46 +
+ .../out/figures/fig18_tornado.svg                  |    85 +
+ .../out/figures/fig19_shrink_models.svg            |    55 +
+ .../out/figures/fig20_rate_compare.svg             |    50 +
+ .../2026-09-10_A_model/out/pkl/conv_tstar_q3.pkl   |   Bin 0 -> 80 bytes
+ .../2026-09-10_A_model/out/pkl/conv_tstar_q4.pkl   |   Bin 0 -> 80 bytes
+ .../2026-09-10_A_model/out/pkl/q1_N200_sub4.pkl    |   Bin 0 -> 872306 bytes
+ .../2026-09-10_A_model/out/pkl/q1_N400_sub4.pkl    |   Bin 0 -> 872308 bytes
+ .../2026-09-10_A_model/out/pkl/q2_N200_sub2.pkl    |   Bin 0 -> 5185946 bytes
+ .../2026-09-10_A_model/out/pkl/q2_N400_sub2.pkl    |   Bin 0 -> 5185948 bytes
+ .../2026-09-10_A_model/out/pkl/q3_N200_sub12.pkl   |   Bin 0 -> 13176326 bytes
+ .../2026-09-10_A_model/out/pkl/q3_N400_sub12.pkl   |   Bin 0 -> 1737851 bytes
+ .../2026-09-10_A_model/out/pkl/q4_N200_sub12.pkl   |   Bin 0 -> 11388340 bytes
+ .../2026-09-10_A_model/out/pkl/q4_N400_sub12.pkl   |   Bin 0 -> 1538312 bytes
+ .../2026-09-10_A_model/out/pkl/sens_base.pkl       |   Bin 0 -> 13284795 bytes
+ .../out/png/fig01_chamber_conditions.png           |   Bin 0 -> 25466 bytes
+ .../out/png/fig02_q1_T_profiles.png                |   Bin 0 -> 22592 bytes
+ .../out/png/fig03_q1_C_profiles.png                |   Bin 0 -> 23853 bytes
+ .../out/png/fig04_q1_history.png                   |   Bin 0 -> 23058 bytes
+ .../out/png/fig05_verification.png                 |   Bin 0 -> 31077 bytes
+ .../out/png/fig06_q2_T_profiles.png                |   Bin 0 -> 20073 bytes
+ .../out/png/fig07_q2_C_profiles.png                |   Bin 0 -> 26522 bytes
+ .../out/png/fig08_q2_history.png                   |   Bin 0 -> 26953 bytes
+ .../out/png/fig09_q3_drying_rate.png               |   Bin 0 -> 22495 bytes
+ .../2026-09-10_A_model/out/png/fig10_q3_cmax.png   |   Bin 0 -> 21726 bytes
+ .../out/png/fig11_q2_field_T.png                   |   Bin 0 -> 52022 bytes
+ .../out/png/fig12_q2_field_C.png                   |   Bin 0 -> 71729 bytes
+ .../out/png/fig13_q3_field_C.png                   |   Bin 0 -> 43592 bytes
+ .../out/png/fig14_R_shrinkage.png                  |   Bin 0 -> 18396 bytes
+ .../out/png/fig15_q4_field_C.png                   |   Bin 0 -> 41755 bytes
+ .../2026-09-10_A_model/out/png/fig16_q3_vs_q4.png  |   Bin 0 -> 22713 bytes
+ .../2026-09-10_A_model/out/png/fig17_conv_grid.png |   Bin 0 -> 18534 bytes
+ .../2026-09-10_A_model/out/png/fig17_conv_sub.png  |   Bin 0 -> 24540 bytes
+ .../2026-09-10_A_model/out/png/fig18_tornado.png   |   Bin 0 -> 23092 bytes
+ .../out/png/fig19_shrink_models.png                |   Bin 0 -> 23719 bytes
+ .../out/png/fig20_rate_compare.png                 |   Bin 0 -> 26139 bytes
+ .../out/preview/fig01_chamber_conditions.png       |   Bin 0 -> 9456 bytes
+ .../out/preview/fig02_q1_T_profiles.png            |   Bin 0 -> 8230 bytes
+ .../out/preview/fig03_q1_C_profiles.png            |   Bin 0 -> 8372 bytes
+ .../out/preview/fig04_q1_history.png               |   Bin 0 -> 9223 bytes
+ .../out/preview/fig05_verification.png             |   Bin 0 -> 11408 bytes
+ .../out/preview/fig06_q2_T_profiles.png            |   Bin 0 -> 6942 bytes
+ .../out/preview/fig07_q2_C_profiles.png            |   Bin 0 -> 9865 bytes
+ .../out/preview/fig08_q2_history.png               |   Bin 0 -> 11037 bytes
+ .../out/preview/fig09_q3_drying_rate.png           |   Bin 0 -> 7357 bytes
+ .../out/preview/fig10_q3_cmax.png                  |   Bin 0 -> 8933 bytes
+ .../out/preview/fig11_q2_field_T.png               |   Bin 0 -> 28819 bytes
+ .../out/preview/fig12_q2_field_C.png               |   Bin 0 -> 36819 bytes
+ .../out/preview/fig13_q3_field_C.png               |   Bin 0 -> 21177 bytes
+ .../out/preview/fig14_R_shrinkage.png              |   Bin 0 -> 6547 bytes
+ .../out/preview/fig15_q4_field_C.png               |   Bin 0 -> 21793 bytes
+ .../out/preview/fig16_q3_vs_q4.png                 |   Bin 0 -> 8935 bytes
+ .../out/preview/fig17_conv_grid.png                |   Bin 0 -> 6709 bytes
+ .../out/preview/fig17_conv_sub.png                 |   Bin 0 -> 6720 bytes
+ .../out/preview/fig18_tornado.png                  |   Bin 0 -> 8170 bytes
+ .../out/preview/fig19_shrink_models.png            |   Bin 0 -> 7050 bytes
+ .../out/preview/fig20_rate_compare.png             |   Bin 0 -> 8419 bytes
+ .../2026-09-10_A_model/out/result1.xlsx            |   Bin 0 -> 373629 bytes
+ .../2026-09-10_A_model/out/result2.xlsx            |   Bin 0 -> 2555240 bytes
+ .../2026-09-10_A_model/out/result3.xlsx            |   Bin 0 -> 323087 bytes
+ .../2026-09-10_A_model/out/result4.xlsx            |   Bin 0 -> 229981 bytes
+ .../2026-09-10_A_model/out/sensitivity.json        |   216 +
+ .../2026-09-10_A_model/out/summary.json            |   457 +
+ .../out/tables/论文表格_表1-表6.md                 |    84 +
+ .../2026-09-10_A_model/source_manifest.json        |   873 ++
+ .../2026-09-10_A_model/模型与算法_完整文档.md      |   963 ++
+ .../lin_yuxiang_word/arithmetic_checks.json        |    16 +
+ .../peer-models/lin_yuxiang_word/extract_review.py |   121 +
+ .../lin_yuxiang_word/extracted/document.xml        |     1 +
+ .../lin_yuxiang_word/extracted/formulas.json       |  3247 +++++
+ .../lin_yuxiang_word/extracted/formulas.md         |  1771 +++
+ .../lin_yuxiang_word/extracted/full_document.md    |  2149 ++++
+ .../lin_yuxiang_word/extracted/media/image1.png    |   Bin 0 -> 25466 bytes
+ .../lin_yuxiang_word/extracted/media/image10.png   |   Bin 0 -> 26953 bytes
+ .../lin_yuxiang_word/extracted/media/image11.png   |   Bin 0 -> 52022 bytes
+ .../lin_yuxiang_word/extracted/media/image12.png   |   Bin 0 -> 71729 bytes
+ .../lin_yuxiang_word/extracted/media/image13.png   |   Bin 0 -> 21726 bytes
+ .../lin_yuxiang_word/extracted/media/image14.png   |   Bin 0 -> 22495 bytes
+ .../lin_yuxiang_word/extracted/media/image15.png   |   Bin 0 -> 43592 bytes
+ .../lin_yuxiang_word/extracted/media/image16.png   |   Bin 0 -> 18396 bytes
+ .../lin_yuxiang_word/extracted/media/image17.png   |   Bin 0 -> 41755 bytes
+ .../lin_yuxiang_word/extracted/media/image18.png   |   Bin 0 -> 22713 bytes
+ .../lin_yuxiang_word/extracted/media/image19.png   |   Bin 0 -> 26139 bytes
+ .../lin_yuxiang_word/extracted/media/image2.png    |   Bin 0 -> 31077 bytes
+ .../lin_yuxiang_word/extracted/media/image20.png   |   Bin 0 -> 23092 bytes
+ .../lin_yuxiang_word/extracted/media/image21.png   |   Bin 0 -> 23719 bytes
+ .../lin_yuxiang_word/extracted/media/image3.png    |   Bin 0 -> 18534 bytes
+ .../lin_yuxiang_word/extracted/media/image4.png    |   Bin 0 -> 24540 bytes
+ .../lin_yuxiang_word/extracted/media/image5.png    |   Bin 0 -> 22592 bytes
+ .../lin_yuxiang_word/extracted/media/image6.png    |   Bin 0 -> 23853 bytes
+ .../lin_yuxiang_word/extracted/media/image7.png    |   Bin 0 -> 23058 bytes
+ .../lin_yuxiang_word/extracted/media/image8.png    |   Bin 0 -> 20073 bytes
+ .../lin_yuxiang_word/extracted/media/image9.png    |   Bin 0 -> 26522 bytes
+ .../lin_yuxiang_word/extracted/omml/M0001.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0002.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0003.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0004.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0005.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0006.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0007.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0008.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0009.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0010.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0011.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0012.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0013.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0014.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0015.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0016.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0017.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0018.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0019.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0020.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0021.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0022.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0023.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0024.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0025.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0026.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0027.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0028.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0029.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0030.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0031.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0032.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0033.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0034.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0035.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0036.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0037.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0038.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0039.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0040.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0041.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0042.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0043.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0044.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0045.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0046.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0047.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0048.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0049.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0050.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0051.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0052.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0053.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0054.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0055.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0056.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0057.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0058.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0059.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0060.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0061.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0062.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0063.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0064.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0065.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0066.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0067.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0068.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0069.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0070.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0071.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0072.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0073.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0074.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0075.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0076.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0077.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0078.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0079.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0080.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0081.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0082.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0083.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0084.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0085.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0086.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0087.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0088.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0089.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0090.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0091.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0092.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0093.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0094.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0095.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0096.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0097.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0098.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0099.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0100.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0101.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0102.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0103.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0104.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0105.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0106.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0107.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0108.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0109.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0110.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0111.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0112.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0113.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0114.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0115.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0116.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0117.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0118.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0119.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0120.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0121.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0122.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0123.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0124.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0125.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0126.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0127.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0128.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0129.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0130.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0131.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0132.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0133.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0134.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0135.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0136.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0137.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0138.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0139.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0140.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0141.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0142.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0143.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0144.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0145.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0146.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0147.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0148.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0149.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0150.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0151.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0152.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0153.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0154.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0155.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0156.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0157.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0158.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0159.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0160.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0161.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0162.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0163.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0164.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0165.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0166.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0167.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0168.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0169.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0170.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0171.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0172.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0173.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0174.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0175.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0176.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0177.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0178.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0179.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0180.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0181.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0182.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0183.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0184.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0185.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0186.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0187.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0188.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0189.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0190.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0191.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0192.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0193.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0194.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0195.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0196.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0197.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0198.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0199.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0200.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0201.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0202.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0203.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0204.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0205.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0206.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0207.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0208.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0209.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0210.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0211.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0212.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0213.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0214.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0215.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0216.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0217.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0218.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0219.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0220.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0221.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0222.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0223.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0224.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0225.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0226.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0227.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0228.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0229.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0230.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0231.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0232.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0233.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0234.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0235.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0236.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0237.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0238.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0239.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0240.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0241.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0242.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0243.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0244.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0245.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0246.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0247.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0248.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0249.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0250.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0251.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0252.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0253.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0254.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0255.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0256.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0257.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0258.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0259.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0260.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0261.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0262.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0263.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0264.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0265.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0266.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0267.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0268.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0269.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0270.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0271.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0272.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0273.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0274.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0275.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0276.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0277.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0278.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0279.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0280.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0281.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0282.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0283.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0284.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0285.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0286.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0287.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0288.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0289.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0290.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0291.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0292.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0293.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0294.xml      |     2 +
+ .../lin_yuxiang_word/extracted/omml/M0295.xml      |     2 +
+ .../lin_yuxiang_word/extracted/paragraphs.json     |  6868 ++++++++++
+ .../lin_yuxiang_word/extracted/tables.json         |  1995 +++
+ .../lin_yuxiang_word/extraction_inventory.json     |   409 +
+ .../lin_yuxiang_word/reading_evidence.json         |    73 +
+ .../lin_yuxiang_word/render/contact-1-12.png       |   Bin 0 -> 630695 bytes
+ .../lin_yuxiang_word/render/contact-13-24.png      |   Bin 0 -> 515407 bytes
+ .../lin_yuxiang_word/render/contact-25-33.png      |   Bin 0 -> 382815 bytes
+ .../peer-models/lin_yuxiang_word/render/page-1.png |   Bin 0 -> 357932 bytes
+ .../lin_yuxiang_word/render/page-10.png            |   Bin 0 -> 344205 bytes
+ .../lin_yuxiang_word/render/page-11.png            |   Bin 0 -> 258988 bytes
+ .../lin_yuxiang_word/render/page-12.png            |   Bin 0 -> 246636 bytes
+ .../lin_yuxiang_word/render/page-13.png            |   Bin 0 -> 260489 bytes
+ .../lin_yuxiang_word/render/page-14.png            |   Bin 0 -> 109599 bytes
+ .../lin_yuxiang_word/render/page-15.png            |   Bin 0 -> 188052 bytes
+ .../lin_yuxiang_word/render/page-16.png            |   Bin 0 -> 228925 bytes
+ .../lin_yuxiang_word/render/page-17.png            |   Bin 0 -> 132544 bytes
+ .../lin_yuxiang_word/render/page-18.png            |   Bin 0 -> 234781 bytes
+ .../lin_yuxiang_word/render/page-19.png            |   Bin 0 -> 64472 bytes
+ .../peer-models/lin_yuxiang_word/render/page-2.png |   Bin 0 -> 408779 bytes
+ .../lin_yuxiang_word/render/page-20.png            |   Bin 0 -> 75683 bytes
+ .../lin_yuxiang_word/render/page-21.png            |   Bin 0 -> 211969 bytes
+ .../lin_yuxiang_word/render/page-22.png            |   Bin 0 -> 241383 bytes
+ .../lin_yuxiang_word/render/page-23.png            |   Bin 0 -> 198271 bytes
+ .../lin_yuxiang_word/render/page-24.png            |   Bin 0 -> 261128 bytes
+ .../lin_yuxiang_word/render/page-25.png            |   Bin 0 -> 86495 bytes
+ .../lin_yuxiang_word/render/page-26.png            |   Bin 0 -> 112413 bytes
+ .../lin_yuxiang_word/render/page-27.png            |   Bin 0 -> 405321 bytes
+ .../lin_yuxiang_word/render/page-28.png            |   Bin 0 -> 216741 bytes
+ .../lin_yuxiang_word/render/page-29.png            |   Bin 0 -> 269331 bytes
+ .../peer-models/lin_yuxiang_word/render/page-3.png |   Bin 0 -> 228368 bytes
+ .../lin_yuxiang_word/render/page-30.png            |   Bin 0 -> 89752 bytes
+ .../lin_yuxiang_word/render/page-31.png            |   Bin 0 -> 423559 bytes
+ .../lin_yuxiang_word/render/page-32.png            |   Bin 0 -> 79475 bytes
+ .../lin_yuxiang_word/render/page-33.png            |   Bin 0 -> 305370 bytes
+ .../peer-models/lin_yuxiang_word/render/page-4.png |   Bin 0 -> 339885 bytes
+ .../peer-models/lin_yuxiang_word/render/page-5.png |   Bin 0 -> 286347 bytes
+ .../peer-models/lin_yuxiang_word/render/page-6.png |   Bin 0 -> 242263 bytes
+ .../peer-models/lin_yuxiang_word/render/page-7.png |   Bin 0 -> 297514 bytes
+ .../peer-models/lin_yuxiang_word/render/page-8.png |   Bin 0 -> 112530 bytes
+ .../peer-models/lin_yuxiang_word/render/page-9.png |   Bin 0 -> 245932 bytes
+ .../lin_yuxiang_word/render/page_index.json        |   427 +
+ .../lin_yuxiang_word/render/rendered_text.txt      |  1458 +++
+ .../render/模型思路与公式图表全集.pdf              |   Bin 0 -> 1837557 bytes
+ .../lin_yuxiang_word/source_record.json            |    12 +
+ .../lin_yuxiang_word/word_zip_comparison.json      |   344 +
+ .../lin_yuxiang_word/模型思路与公式图表全集.docx   |   Bin 0 -> 357729 bytes
+ tmp/a_final_backup_output.log                      |     0
+ tools/compare_gui_final_v6a.py                     |   207 +
+ tools/extract_peer_reference.py                    |    40 +
+ tools/finalize_a_handoff.py                        |    91 +
+ tools/finalize_v6_setup.py                         |    31 +
+ tools/update_a_final_checkpoint.py                 |    50 +
+ tools/update_a_memory.py                           |    53 +
+ 1134 files changed, 301351 insertions(+), 212 deletions(-)
+[main ffa81c4] A题: freeze verified final models, derivations, full results and VS reproduction
+ 1134 files changed, 302486 insertions(+), 212 deletions(-)
+ create mode 100644 memory_archive.md
+ create mode 100644 notes/A-modeling/2026-09-10/A题_完整建模与公式推导.md
+ create mode 100644 notes/A-modeling/2026-09-10/A题_建模浓缩交接.md
+ create mode 100644 notes/A-modeling/2026-09-10/assemble_complete_model.mjs
+ create mode 100644 notes/A-modeling/2026-09-10/data/A_Drying_before_launch_fix.pyproj.txt
+ create mode 100644 notes/A-modeling/2026-09-10/data/audit_peer_workbooks.mjs
+ create mode 100644 notes/A-modeling/2026-09-10/data/autoresearch_final_review.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/autoresearch_final_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/dense_storage_breakpoint_probe.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/dense_storage_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/dense_storage_review_v6.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_backup_preflight.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_backup_preflight.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_handoff_content_review.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_handoff_content_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_numerical_audit.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_numerical_audit.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q1_profiles_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q2_profiles_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q3_drying_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q4_drying_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/pdf_structure_and_fonts.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/q1_q2_plot_table_consistency.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_existing_numerical_materials.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_existing_numerical_materials.zip
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_q2_only.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_q2_only.zip
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_review.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/final_visual_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/independent_model_risk_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/peer_reference_data_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/peer_workbook_audit.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/Q1/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/Q23/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/figures/Q1_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/figures/Q2_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/outputs/Q1_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/outputs/Q1_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/outputs/Q2_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_failure/outputs/Q2_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/Q1/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/Q23/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/Q4/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/conclusions.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/figure_index.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/metrics.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/table_index.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/export_validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q1_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q2_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q3_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q4_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/metric_evidence_validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/numerical_summaries.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q1_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q1_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q2_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q2_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q3_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q3_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q4_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q4_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/worker_success.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/exit-0.log
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/exit-7.log
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/input.txt
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/launch.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/observed.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/production/test/publication_failure.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/production/test/publication_previous/inventory.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/production/test/publication_previous/paper_output/results/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/production/test/publication_previous/paper_output/results/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/production/test/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/paper_output/results/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/fixture/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/process_result.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/selfcheck.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/exit-0.log
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/exit-7.log
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/input.txt
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/launch.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/observed.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/production/test/publication_failure.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/production/test/publication_previous/inventory.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/production/test/publication_previous/paper_output/results/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/production/test/publication_previous/paper_output/results/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/production/test/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/paper_output/results/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/fixture/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-it_zvbue/selfcheck.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/Q1/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/Q23/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/figures/Q1_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/figures/Q2_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/outputs/Q1_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/outputs/Q1_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/outputs/Q2_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_failure/outputs/Q2_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/Q1/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/Q23/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/Q4/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/contracts/conclusions.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/contracts/figure_index.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/contracts/metrics.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/contracts/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/contracts/table_index.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/export_validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/figures/Q1_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/figures/Q2_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/figures/Q3_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/figures/Q4_fixture.bin
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/metric_evidence_validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/numerical_summaries.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q1_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q1_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q2_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q2_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q3_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q3_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q4_fixture.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/outputs/Q4_fixture.validation.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/entry_fixture_success/worker_success.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/exit-0.log
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/exit-7.log
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/input.txt
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/launch.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/observed.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/production/test/publication_failure.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/production/test/publication_previous/inventory.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/production/test/publication_previous/paper_output/results/model_results.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/production/test/publication_previous/paper_output/results/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/production/test/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/paper_output/results/run_manifest.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/fixture/summary.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/process_result.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-qy0teplj/selfcheck.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_fix_log.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/production_entry_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.guard_snapshot.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.workflow_status_snapshot.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/build_supplementary_figures.py
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/convergence_plotted_values.csv
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/environment_plotted_values.csv
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.pdf
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.svg
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence_data.npz
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.pdf
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.svg
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity_data.npz
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.pdf
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.svg
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control_data.npz
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control_pdf_render.png
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/generation_and_value_verification.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/pdf_structure_check.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/review.json
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/review.md
+ create mode 100644 notes/A-modeling/2026-09-10/data/supplementary_figures/shrinkage_plotted_values.csv
+ create mode 100644 notes/A-modeling/2026-09-10/deadline_handoff.md
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/01_launch_settings.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/02_q1_entry_breakpoint.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/02_q1_entry_locals.txt
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/03_settings_expanded.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/03_settings_locals.txt
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/04_rhs_locals.txt
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/04_rhs_single_step.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/05_q23_entry_breakpoint.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/05_q23_entry_locals.txt
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/06_q4_entry_breakpoint.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/07_q4_model_6400.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/07_q4_model_locals.txt
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/08_gui_all_solves_exports_complete.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/09_debug_session_closed.png
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/gui_observation.json
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/gui_observation.md
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/independent_comparison.json
+ create mode 100644 notes/A-modeling/2026-09-10/gui_final_v6a/independent_comparison.md
+ create mode 100644 notes/A-modeling/2026-09-10/handoff_files_snapshot.json
+ create mode 100644 notes/A-modeling/2026-09-10/peer_word_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/axisymmetric_derivations.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/formula_registry_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/issue_list.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/jacobian_derivations.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/latent_saturation_audit.json
+ create mode 100644 notes/A-modeling/2026-09-10/physics/physical_sensitivity_table.json
+ create mode 100644 notes/A-modeling/2026-09-10/physics/physics_branch_freeze.json
+ create mode 100644 notes/A-modeling/2026-09-10/physics/physics_derivations.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/physics_physical_sensitivity_review.md
+ create mode 100644 notes/A-modeling/2026-09-10/physics/source-page-3.png
+ create mode 100644 notes/A-modeling/2026-09-10/physics/source-page-4.png
+ create mode 100644 notes/A-modeling/2026-09-10/production_contract.md
+ create mode 100644 notes/A-modeling/2026-09-10/state.json
+ create mode 100644 paper_output/code/modeling/A_Drying.pyproj
+ create mode 100644 paper_output/code/modeling/A_Drying.sln
+ create mode 100644 paper_output/code/modeling/analytic_jacobian.py
+ create mode 100644 paper_output/code/modeling/disk_dense.py
+ create mode 100644 paper_output/code/modeling/export_outputs.py
+ create mode 100644 paper_output/code/modeling/peer_beta_check.py
+ create mode 100644 paper_output/code/modeling/production_provenance.py
+ create mode 100644 paper_output/code/modeling/publication_plots.py
+ create mode 100644 paper_output/code/modeling/q1_model.py
+ create mode 100644 paper_output/code/modeling/q2_model.py
+ create mode 100644 paper_output/code/modeling/q3_model.py
+ create mode 100644 paper_output/code/modeling/q4_model.py
+ create mode 100644 paper_output/code/modeling/run_modeling.py
+ create mode 100644 paper_output/code/modeling/verify_convergence.py
+ create mode 100644 paper_output/code/modeling/verify_dense_storage.py
+ create mode 100644 paper_output/code/modeling/verify_time_accuracy.py
+ create mode 100644 paper_output/code/versions/disk_dense_v5.py
+ create mode 100644 paper_output/code/versions/disk_dense_v6.py
+ create mode 100644 paper_output/code/versions/drying_core_v3_analytic_jacobian.py
+ create mode 100644 paper_output/code/versions/drying_core_v4_block_diagnostics.py
+ create mode 100644 paper_output/code/versions/drying_core_v5_disk_dense.py
+ create mode 100644 paper_output/code/versions/drying_core_v6_bdf_knots.py
+ create mode 100644 paper_output/code/versions/export_outputs_v1.py
+ create mode 100644 paper_output/code/versions/export_outputs_v2.py
+ create mode 100644 paper_output/code/versions/verify_convergence_v1.py
+ create mode 100644 paper_output/code/versions/verify_convergence_v5.py
+ create mode 100644 paper_output/code/versions/verify_dense_storage_v5.py
+ create mode 100644 paper_output/qa/evidence_gate_report.json
+ create mode 100644 paper_output/qa/evidence_gate_report.md
+ create mode 100644 paper_output/results/conclusions.json
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/N3200/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/N3200/summary.json
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/N800/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/N800/summary.json
+ create mode 100644 paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q1_frozenD_analytic_J_v3/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q1_frozenD_analytic_J_v3/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q1_frozenD_analytic_J_v3/N3200/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q1_frozenD_analytic_J_v3/N3200/summary.json
+ create mode 100644 paper_output/results/convergence/Q1_frozenD_analytic_J_v3/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/N400/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/N400/summary.json
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/N800/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/N800/summary.json
+ create mode 100644 paper_output/results/convergence/Q23_K_analytic_J_v3/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v4/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v4/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v4/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v4/interruption.json
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v5.log
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v5/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v5/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v5/N3200/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v5/N3200/summary.json
+ create mode 100644 paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/N400/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/N400/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/N800/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/N800/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_K_analytic_J_v3/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v4/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v4/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v4/convergence_report.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v4/interruption.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5.log
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/N1600/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/N1600/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/N3200/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/N3200/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/N6400/sampled_solution.npz
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/N6400/summary.json
+ create mode 100644 paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json
+ create mode 100644 paper_output/results/dense_storage_verification/verification.json
+ create mode 100644 paper_output/results/dense_storage_verification_v6/verification.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q1/q1_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q1/q1_paper_temperature.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q1/result1.export.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q1/result1.validation.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q1/result1.xlsx
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q1/result1_unrounded.csv.gz
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q2/q2_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q2/q2_paper_temperature.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q2/result2.export.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q2/result2.validation.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q2/result2.xlsx
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q2/result2_unrounded.csv.gz
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q3/q3_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q3/result3.export.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q3/result3.validation.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q3/result3.xlsx
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q3/result3_unrounded.csv.gz
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q4/q4_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q4/q4_paper_radius.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q4/result4.export.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q4/result4.validation.json
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q4/result4.xlsx
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/Q4/result4_unrounded.csv.gz
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/deliberate_defects/last_time_label/q3_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/deliberate_defects/moisture_value/q2_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/deliberate_defects/outside_nonblank/q4_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/deliberate_defects/radius_value/q4_paper_radius.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/deliberate_defects/surface_missing/q4_paper_moisture.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/deliberate_defects/temperature_value/q1_paper_temperature.csv
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/handoff.md
+ create mode 100644 paper_output/results/export_paper_selfcheck_v3/paper_csv_selfcheck_report.json
+ create mode 100644 paper_output/results/export_selfcheck/moisture_saved_preview.png
+ create mode 100644 paper_output/results/export_selfcheck/q1_paper_moisture.csv
+ create mode 100644 paper_output/results/export_selfcheck/q1_paper_temperature.csv
+ create mode 100644 paper_output/results/export_selfcheck/render_saved_export.mjs
+ create mode 100644 paper_output/results/export_selfcheck/result1.export.json
+ create mode 100644 paper_output/results/export_selfcheck/result1.validation.json
+ create mode 100644 paper_output/results/export_selfcheck/result1.xlsx
+ create mode 100644 paper_output/results/export_selfcheck/result1_unrounded.csv.gz
+ create mode 100644 paper_output/results/export_selfcheck/saved_workbook_inspection.ndjson
+ create mode 100644 paper_output/results/export_selfcheck/selfcheck_summary.json
+ create mode 100644 paper_output/results/export_selfcheck/temperature_saved_preview.png
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/Q1/sampled_solution.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/Q1/summary.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/Q23/sampled_solution.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/Q23/summary.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/Q4/sampled_solution.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/Q4/summary.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.pdf
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.png
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.svg
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles_data.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.pdf
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.png
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.svg
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles_data.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.pdf
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.png
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.svg
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying_data.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.pdf
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.png
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.svg
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying_data.npz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/launch.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/launch_claim.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/numerical_summaries.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q1_paper_moisture.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q1_paper_temperature.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q2_paper_moisture.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q2_paper_temperature.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q3_paper_moisture.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q4_paper_moisture.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/q4_paper_radius.csv
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.export.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.validation.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.xlsx
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1_unrounded.csv.gz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.export.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.validation.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.xlsx
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2_unrounded.csv.gz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.export.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.validation.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.xlsx
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3_unrounded.csv.gz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.export.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.validation.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.xlsx
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4_unrounded.csv.gz
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/review_evidence_validation.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/review_result.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/review_started.json
+ create mode 100644 paper_output/results/gui_reproduction/gui_final_v6a/worker_success.json
+ create mode 100644 paper_output/results/jacobian_validation/analytic_jacobian_selftest.json
+ create mode 100644 paper_output/results/jacobian_validation/integrated_v3/analytic_jacobian_selftest.json
+ create mode 100644 paper_output/results/jacobian_validation/integrated_v4/analytic_jacobian_selftest.json
+ create mode 100644 paper_output/results/metrics.json
+ create mode 100644 paper_output/results/model_results.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta1/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta1/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta1/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta1/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta1/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta1/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta2/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta2/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta2/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta2/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta2/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_harmonic_beta2/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta1/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta1/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta1/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta1/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta1/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta1/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta2/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta2/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta2/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta2/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta2/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N200_kirchhoff_beta2/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta1/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta1/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta1/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta1/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta1/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta1/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta2/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta2/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta2/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta2/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta2/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_harmonic_beta2/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta1/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta1/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta1/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta1/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta1/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta1/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta2/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta2/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta2/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta2/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta2/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N400_kirchhoff_beta2/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta1/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta1/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta1/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta1/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta1/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta1/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta2/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta2/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta2/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta2/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta2/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_harmonic_beta2/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta1/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta1/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta1/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta1/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta1/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta1/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta2/comparison_fields.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta2/record.json
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta2/sampled_solution.npz
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta2/stderr.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta2/stdout.log
+ create mode 100644 paper_output/results/peer_beta_check/N800_kirchhoff_beta2/summary.json
+ create mode 100644 paper_output/results/peer_beta_check/aggregate_summary.json
+ create mode 100644 paper_output/results/peer_beta_check/analysis_metrics.json
+ create mode 100644 paper_output/results/peer_beta_check/numerical_table.md
+ create mode 100644 paper_output/results/peer_beta_check/peer_beta_check_report.md
+ create mode 100644 paper_output/results/peer_beta_check/progress.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_model_grid_convergence.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_model_grid_convergence.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_model_grid_convergence.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_model_grid_convergence.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_model_grid_convergence_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q1_profiles.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q1_profiles.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q1_profiles.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q1_profiles.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q1_profiles_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q2_profiles.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q2_profiles.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q2_profiles.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q2_profiles.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q2_profiles_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q3_drying.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q3_drying.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q3_drying.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q3_drying.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q3_drying_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_drying.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_drying.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_drying.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_drying.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_drying_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_physical_sensitivity.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_physical_sensitivity.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_physical_sensitivity.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_physical_sensitivity.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_physical_sensitivity_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.json
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.pdf
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.png
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.svg
+ create mode 100644 paper_output/results/plot_selfcheck/fig_q4_shrinkage_control_data.npz
+ create mode 100644 paper_output/results/plot_selfcheck/plot_selfcheck_report.json
+ create mode 100644 paper_output/results/plot_selfcheck/visual_review.json
+ create mode 100644 paper_output/results/production/final_v6a/Q1/sampled_solution.npz
+ create mode 100644 paper_output/results/production/final_v6a/Q1/summary.json
+ create mode 100644 paper_output/results/production/final_v6a/Q23/sampled_solution.npz
+ create mode 100644 paper_output/results/production/final_v6a/Q23/summary.json
+ create mode 100644 paper_output/results/production/final_v6a/Q4/sampled_solution.npz
+ create mode 100644 paper_output/results/production/final_v6a/Q4/summary.json
+ create mode 100644 paper_output/results/production/final_v6a/contracts/conclusions.json
+ create mode 100644 paper_output/results/production/final_v6a/contracts/figure_index.json
+ create mode 100644 paper_output/results/production/final_v6a/contracts/metrics.json
+ create mode 100644 paper_output/results/production/final_v6a/contracts/model_results.json
+ create mode 100644 paper_output/results/production/final_v6a/contracts/table_index.json
+ create mode 100644 paper_output/results/production/final_v6a/export_validation.json
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q1_profiles.json
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q1_profiles.pdf
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q1_profiles.png
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q1_profiles.svg
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q2_profiles.json
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q2_profiles.pdf
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q2_profiles.png
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q2_profiles.svg
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q2_profiles_data.npz
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q3_drying.json
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q3_drying.pdf
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q3_drying.png
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q3_drying.svg
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q4_drying.json
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q4_drying.pdf
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q4_drying.png
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q4_drying.svg
+ create mode 100644 paper_output/results/production/final_v6a/figures/fig_q4_drying_data.npz
+ create mode 100644 paper_output/results/production/final_v6a/launch.json
+ create mode 100644 paper_output/results/production/final_v6a/launch_claim.json
+ create mode 100644 paper_output/results/production/final_v6a/metric_evidence_validation.json
+ create mode 100644 paper_output/results/production/final_v6a/numerical_summaries.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result1.export.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result1.validation.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result1.xlsx
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result1_unrounded.csv.gz
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result2.export.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result2.validation.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result2.xlsx
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result2_unrounded.csv.gz
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result3.export.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result3.validation.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result3.xlsx
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result3_unrounded.csv.gz
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result4.export.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result4.validation.json
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result4.xlsx
+ create mode 100644 paper_output/results/production/final_v6a/outputs/result4_unrounded.csv.gz
+ create mode 100644 paper_output/results/production/final_v6a/process_result.json
+ create mode 100644 paper_output/results/production/final_v6a/publication_previous/inventory.json
+ create mode 100644 paper_output/results/production/final_v6a/publication_previous/paper_output/figure_index.json
+ create mode 100644 paper_output/results/production/final_v6a/published_contracts/conclusions.json
+ create mode 100644 paper_output/results/production/final_v6a/published_contracts/figure_index.json
+ create mode 100644 paper_output/results/production/final_v6a/published_contracts/metrics.json
+ create mode 100644 paper_output/results/production/final_v6a/published_contracts/model_results.json
+ create mode 100644 paper_output/results/production/final_v6a/published_contracts/table_index.json
+ create mode 100644 paper_output/results/production/final_v6a/run_manifest.json
+ create mode 100644 paper_output/results/production/final_v6a/stdout.log
+ create mode 100644 paper_output/results/production/final_v6a/worker_started.json
+ create mode 100644 paper_output/results/production/final_v6a/worker_success.json
+ create mode 100644 paper_output/results/run_manifest.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/summary.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/baseline/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/launch.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/summary.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/tight/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/time_accuracy_report.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/summary.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/baseline/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/launch.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/summary.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/tight/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6/time_accuracy_report.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/summary.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/baseline/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/launch.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/summary.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/tight/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/summary.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/baseline/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/launch.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/case_record.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/comparison_projection.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/process_result.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/sampled_solution.npz
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/stdout.log
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/summary.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/worker_started.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/tight/worker_success.json
+ create mode 100644 paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json
+ create mode 100644 paper_output/tables/table_index.json
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/README.md
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/analytic.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/check_figs.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/conv_tstar.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/diag1.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/export_png.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/figures.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/figures2.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/physics.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/raster.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/results.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/run_prod.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/sensitivity.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/smoke.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/solver.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/summary.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/svgplot.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/verify.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/code/xlsxio.py
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig01_chamber_conditions.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig02_q1_T_profiles.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig03_q1_C_profiles.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig04_q1_history.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig05_verification.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig06_q2_T_profiles.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig07_q2_C_profiles.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig08_q2_history.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig09_q3_drying_rate.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig10_q3_cmax.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig11_q2_field_T.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig12_q2_field_C.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig13_q3_field_C.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig14_R_shrinkage.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig15_q4_field_C.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig16_q3_vs_q4.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig17_conv_grid.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig17_conv_sub.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig18_tornado.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig19_shrink_models.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/figures/fig20_rate_compare.svg
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/conv_tstar_q3.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/conv_tstar_q4.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q1_N200_sub4.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q1_N400_sub4.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q2_N200_sub2.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q2_N400_sub2.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q3_N200_sub12.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q3_N400_sub12.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q4_N200_sub12.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/q4_N400_sub12.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/pkl/sens_base.pkl
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig01_chamber_conditions.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig02_q1_T_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig03_q1_C_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig04_q1_history.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig05_verification.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig06_q2_T_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig07_q2_C_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig08_q2_history.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig09_q3_drying_rate.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig10_q3_cmax.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig11_q2_field_T.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig12_q2_field_C.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig13_q3_field_C.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig14_R_shrinkage.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig15_q4_field_C.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig16_q3_vs_q4.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig17_conv_grid.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig17_conv_sub.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig18_tornado.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig19_shrink_models.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/png/fig20_rate_compare.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig01_chamber_conditions.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig02_q1_T_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig03_q1_C_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig04_q1_history.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig05_verification.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig06_q2_T_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig07_q2_C_profiles.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig08_q2_history.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig09_q3_drying_rate.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig10_q3_cmax.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig11_q2_field_T.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig12_q2_field_C.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig13_q3_field_C.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig14_R_shrinkage.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig15_q4_field_C.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig16_q3_vs_q4.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig17_conv_grid.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig17_conv_sub.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig18_tornado.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig19_shrink_models.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/preview/fig20_rate_compare.png
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/result1.xlsx
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/result2.xlsx
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/result3.xlsx
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/result4.xlsx
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/sensitivity.json
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/summary.json
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/out/tables/论文表格_表1-表6.md
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/source_manifest.json
+ create mode 100644 reference_materials/peer-models/2026-09-10_A_model/模型与算法_完整文档.md
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/arithmetic_checks.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extract_review.py
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/document.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/formulas.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/formulas.md
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/full_document.md
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image1.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image10.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image11.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image12.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image13.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image14.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image15.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image16.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image17.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image18.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image19.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image2.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image20.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image21.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image3.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image4.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image5.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image6.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image7.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image8.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/media/image9.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0001.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0002.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0003.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0004.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0005.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0006.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0007.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0008.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0009.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0010.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0011.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0012.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0013.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0014.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0015.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0016.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0017.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0018.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0019.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0020.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0021.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0022.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0023.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0024.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0025.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0026.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0027.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0028.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0029.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0030.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0031.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0032.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0033.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0034.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0035.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0036.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0037.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0038.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0039.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0040.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0041.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0042.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0043.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0044.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0045.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0046.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0047.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0048.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0049.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0050.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0051.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0052.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0053.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0054.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0055.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0056.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0057.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0058.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0059.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0060.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0061.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0062.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0063.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0064.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0065.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0066.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0067.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0068.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0069.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0070.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0071.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0072.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0073.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0074.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0075.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0076.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0077.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0078.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0079.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0080.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0081.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0082.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0083.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0084.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0085.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0086.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0087.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0088.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0089.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0090.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0091.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0092.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0093.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0094.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0095.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0096.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0097.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0098.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0099.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0100.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0101.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0102.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0103.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0104.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0105.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0106.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0107.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0108.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0109.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0110.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0111.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0112.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0113.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0114.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0115.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0116.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0117.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0118.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0119.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0120.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0121.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0122.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0123.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0124.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0125.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0126.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0127.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0128.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0129.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0130.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0131.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0132.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0133.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0134.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0135.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0136.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0137.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0138.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0139.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0140.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0141.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0142.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0143.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0144.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0145.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0146.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0147.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0148.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0149.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0150.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0151.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0152.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0153.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0154.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0155.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0156.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0157.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0158.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0159.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0160.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0161.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0162.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0163.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0164.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0165.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0166.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0167.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0168.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0169.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0170.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0171.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0172.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0173.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0174.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0175.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0176.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0177.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0178.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0179.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0180.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0181.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0182.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0183.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0184.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0185.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0186.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0187.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0188.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0189.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0190.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0191.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0192.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0193.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0194.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0195.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0196.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0197.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0198.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0199.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0200.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0201.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0202.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0203.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0204.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0205.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0206.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0207.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0208.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0209.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0210.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0211.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0212.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0213.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0214.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0215.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0216.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0217.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0218.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0219.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0220.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0221.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0222.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0223.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0224.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0225.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0226.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0227.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0228.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0229.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0230.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0231.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0232.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0233.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0234.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0235.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0236.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0237.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0238.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0239.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0240.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0241.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0242.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0243.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0244.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0245.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0246.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0247.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0248.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0249.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0250.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0251.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0252.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0253.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0254.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0255.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0256.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0257.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0258.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0259.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0260.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0261.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0262.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0263.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0264.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0265.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0266.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0267.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0268.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0269.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0270.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0271.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0272.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0273.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0274.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0275.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0276.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0277.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0278.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0279.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0280.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0281.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0282.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0283.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0284.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0285.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0286.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0287.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0288.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0289.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0290.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0291.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0292.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0293.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0294.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/omml/M0295.xml
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/paragraphs.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extracted/tables.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/extraction_inventory.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/reading_evidence.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/contact-1-12.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/contact-13-24.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/contact-25-33.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-1.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-10.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-11.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-12.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-13.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-14.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-15.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-16.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-17.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-18.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-19.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-2.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-20.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-21.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-22.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-23.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-24.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-25.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-26.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-27.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-28.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-29.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-3.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-30.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-31.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-32.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-33.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-4.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-5.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-6.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-7.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-8.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page-9.png
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/page_index.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/rendered_text.txt
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/render/模型思路与公式图表全集.pdf
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/source_record.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/word_zip_comparison.json
+ create mode 100644 reference_materials/peer-models/lin_yuxiang_word/模型思路与公式图表全集.docx
+ create mode 100644 tmp/a_final_backup_output.log
+ create mode 100644 tools/compare_gui_final_v6a.py
+ create mode 100644 tools/extract_peer_reference.py
+ create mode 100644 tools/finalize_a_handoff.py
+ create mode 100644 tools/finalize_v6_setup.py
+ create mode 100644 tools/update_a_final_checkpoint.py
+ create mode 100644 tools/update_a_memory.py
+error: RPC failed; HTTP 408 curl 22 The requested URL returned error: 408
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date

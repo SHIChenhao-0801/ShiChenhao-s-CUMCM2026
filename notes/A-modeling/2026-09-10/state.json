@@ -6,7 +6,7 @@
   "target_at_beijing": "2026-09-11T03:00:00+08:00",
   "skill_name_clarified_by_user": "autoresearch",
   "scope": "D:/Document/数学建模/2026CUMCM",
-  "status": "results_validated_gui_complete_awaiting_deadline",
+  "status": "modeling_rechecked_with_disclosed_physical_limits_wake_cancelled_delivery_not_sent",
   "requested_summary_file": "notes/A-modeling/2026-09-10/A题_建模浓缩交接.md",
   "requested_full_derivation_file": "notes/A-modeling/2026-09-10/A题_完整建模与公式推导.md",
   "wake_action": {
@@ -14,13 +14,16 @@
     "song": "Die For You",
     "artist": "VALORANT Music & Grabbitz",
     "track_seen_in_gui": true,
-    "played_at_deadline": false
+    "played_at_deadline": false,
+    "cancelled_by_user": true,
+    "cancelled_reason": "用户已醒来，要求不用叫醒"
   },
   "delivery_action": {
     "application": "微信",
     "recipient": "林宇翔",
     "user_authorized": true,
-    "sent": false
+    "sent": false,
+    "status": "not_sent_user_stopped_computer_use_with_escape"
   },
   "deadline_automation_id": "a-03-00",
   "human_code_review": "pending",
@@ -33,7 +36,7 @@
     "saved_at_utc": "2026-09-10T15:22:14.0234407Z",
     "review_report": "notes/A-modeling/2026-09-10/peer_word_review.md"
   },
-  "last_memory_update_utc": "2026-09-10T17:57:06.746822+00:00",
+  "last_memory_update_utc": "2026-09-10T19:01:02.051820+00:00",
   "production_run": "final_v6a",
   "numerical_audit": "notes/A-modeling/2026-09-10/data/final_numerical_audit.md",
   "workflow_evidence_gate": "S6_PASS",
@@ -44,5 +47,26 @@
     "completed": true,
     "actual_gui_exit_code": null,
     "observation_report": "notes/A-modeling/2026-09-10/gui_final_v6a/gui_observation.md"
+  },
+  "deadline_automation_status": "PAUSED",
+  "backup": {
+    "local_commit": "ffa81c45d81649259aa1d7c8c42d3b6f9b6caf12",
+    "remote_verified_commit": "ffa81c45d81649259aa1d7c8c42d3b6f9b6caf12",
+    "latest_push": "PRIOR_MODEL_RETRY_SUCCEEDED_ACTUAL_EXIT_0",
+    "latest_run_remote_matches": true,
+    "checkpoint_scope": "Verified prior model commit before this audit documentation commit; current audit is backed up as a subsequent work unit."
+  },
+  "independent_recheck": {
+    "status": "CONDITIONAL_MODEL_RECHECK_COMPLETE_WITH_DISCLOSED_PHYSICAL_GAPS",
+    "completed_at_utc": "2026-09-10T19:01:02.051820+00:00",
+    "reader_report": "notes/A-modeling/2026-09-10/A题_成果与重新核验报告.md",
+    "machine_index": "paper_output/qa/recheck_20260910_1828/recheck_summary.json",
+    "physical_prediction_accuracy": "not_established_without_internal_observations",
+    "continuous_domain_strict_error_bound": "not_established",
+    "all_four_decimal_last_digits_stable": false,
+    "new_production_PDE_solves": 0,
+    "frozen_core_or_results_changed": false,
+    "new_audit_helpers_GUI_reproduced": false,
+    "human_review": "pending"
   }
 }

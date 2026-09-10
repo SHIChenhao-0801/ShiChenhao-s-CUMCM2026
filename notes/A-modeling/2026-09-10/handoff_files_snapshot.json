@@ -1,17 +1,25 @@
 {
-  "created_at_utc": "2026-09-10T17:58:02.056722+00:00",
-  "status": "FINAL_MODELING_HANDOFF_FILES_READY_FOR_REVIEW",
+  "created_at_utc": "2026-09-10T19:01:02.051820+00:00",
+  "status": "CONDITIONAL_MODEL_RECHECK_COMPLETE_WITH_DISCLOSED_PHYSICAL_GAPS",
   "files": {
     "A题_完整建模与公式推导.md": {
-      "bytes": 130091,
-      "sha256": "d71d6d6e7b5d8ee62e4cac18009c5cf24687ccfc723f7cf36f81090d949155e8"
+      "bytes": 132723,
+      "sha256": "4f8835dac20c4613a91c9ca2666380d8a8664819bb9b0b90b6db72611199856d"
     },
     "A题_建模浓缩交接.md": {
-      "bytes": 25245,
-      "sha256": "0fc1e7f0cb5bc75a17c0d61f2d8fc1e9a6835c26b19f35b1c6ee5681398c0a7a"
+      "bytes": 27661,
+      "sha256": "c7c3ac6100088334771ef2c8480d0a1e4fe52d6f0f3c2c599864cfb0344b76f1"
+    },
+    "A题_成果与重新核验报告.md": {
+      "bytes": 22121,
+      "sha256": "40898df2a500f127fa9e26e1f67308c3f14bbf9810f270e29dd347a2b08df6c8"
     }
   },
-  "gui_observation_sha256": "349f5fb9a6cbd864016430fe490bc0d1067a4408758abf9c6f2cfad0df500d27",
+  "latest_recheck": {
+    "path": "paper_output/qa/recheck_20260910_1828/recheck_summary.json",
+    "bytes": 29385,
+    "sha256": "5106137db3e337d5454503d0636f456ca1b99cf7498c381080239370c47b4de6"
+  },
   "human_review": "pending",
-  "planned_delivery": "Send the condensed MD only to the explicitly authorized recipient at 19:00 UTC; not sent by this script."
+  "delivery": "Not sent; user cancelled wake action and stopped Computer Use with Escape."
 }

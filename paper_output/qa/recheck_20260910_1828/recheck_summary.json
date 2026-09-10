@@ -1,0 +1,700 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-09-10T19:01:02.051820+00:00",
+  "status": "CONDITIONAL_MODEL_RECHECK_COMPLETE_WITH_DISCLOSED_PHYSICAL_GAPS",
+  "scope": "Fresh raw-data, algebra, saved-array and analytic-baseline audit; explanatory amendments only.",
+  "new_production_PDE_solves": 0,
+  "formal_S7_S8_started_by_this_audit": false,
+  "new_core_algebra_defects_found_in_checked_model": 0,
+  "physical_predictive_accuracy": "NOT_ESTABLISHED_NO_INTERNAL_OBSERVATIONS",
+  "continuous_domain_strict_error_bound": "NOT_ESTABLISHED",
+  "all_four_decimal_last_digits_stable": false,
+  "human_approval": "pending",
+  "new_audit_helpers_GUI_reproduced": false,
+  "documents": [
+    {
+      "before": {
+        "path": "paper_output/qa/recheck_20260910_1828/documents_before/A题_完整建模与公式推导.md",
+        "bytes": 130091,
+        "sha256": "d71d6d6e7b5d8ee62e4cac18009c5cf24687ccfc723f7cf36f81090d949155e8"
+      },
+      "current": {
+        "path": "notes/A-modeling/2026-09-10/A题_完整建模与公式推导.md",
+        "bytes": 132723,
+        "sha256": "4f8835dac20c4613a91c9ca2666380d8a8664819bb9b0b90b6db72611199856d"
+      },
+      "display_math_blocks_unchanged": 98,
+      "all_original_tables_unchanged": true,
+      "original_table_count": 27,
+      "registered_tags": 92
+    },
+    {
+      "before": {
+        "path": "paper_output/qa/recheck_20260910_1828/documents_before/A题_建模浓缩交接.md",
+        "bytes": 25245,
+        "sha256": "0fc1e7f0cb5bc75a17c0d61f2d8fc1e9a6835c26b19f35b1c6ee5681398c0a7a"
+      },
+      "current": {
+        "path": "notes/A-modeling/2026-09-10/A题_建模浓缩交接.md",
+        "bytes": 27661,
+        "sha256": "c7c3ac6100088334771ef2c8480d0a1e4fe52d6f0f3c2c599864cfb0344b76f1"
+      },
+      "display_math_blocks_unchanged": 20,
+      "all_original_tables_unchanged": true,
+      "original_table_count": 9,
+      "registered_tags": 0
+    }
+  ],
+  "unified_report": {
+    "path": "notes/A-modeling/2026-09-10/A题_成果与重新核验报告.md",
+    "bytes": 22121,
+    "sha256": "40898df2a500f127fa9e26e1f67308c3f14bbf9810f270e29dd347a2b08df6c8"
+  },
+  "document_links_checked": [
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/A题_成果与重新核验报告.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/physics_branch_freeze.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q23_K_analytic_J_v3/N1600/summary.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q4_K_analytic_J_v3/N1600/summary.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/peer_beta_check/peer_beta_check_report.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/peer_beta_check/aggregate_summary.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/peer_reference_data_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/peer_word_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/independent_model_risk_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/physics_physical_sensitivity_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/derivation_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/dense_storage_verification_v6/verification.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/dense_storage_review_v6.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/numerical_summaries.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/process_result.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/export_validation.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/final_numerical_audit.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/final_visual_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q1_frozenD_analytic_J_v3/convergence_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/bessel_validation/bessel_selfcheck.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/supplementary_figures/review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.png",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.png",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.png",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/gui_final_v6a/gui_observation.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/gui_final_v6a/independent_comparison.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/autoresearch_final_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/physics_branch_freeze.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/physics_derivations.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/axisymmetric_derivations.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/jacobian_derivations.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/formula_registry_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/issue_list.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/physics_physical_sensitivity_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/physical_sensitivity_table.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/physics/latent_saturation_audit.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/independent_model_risk_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/derivation_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/peer_reference_data_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/peer_word_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/peer_beta_check/peer_beta_check_report.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/peer_beta_check/aggregate_summary.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/dense_storage_verification/verification.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/disk_dense.py",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q23_K_analytic_J_v3/N1600/summary.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/convergence/Q4_K_analytic_J_v3/N1600/summary.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/data_cleaned/load_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/run_manifest.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/numerical_summaries.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/disk_dense.py",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/dense_storage_verification_v6/verification.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/final_numerical_audit.md",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/final_numerical_audit.json",
+      "exists": true
+    },
+    {
+      "document": "A题_完整建模与公式推导.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/data/final_visual_review.md",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/A题_完整建模与公式推导.md",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/notes/A-modeling/2026-09-10/A题_建模浓缩交接.md",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/result1.xlsx",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/result2.xlsx",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/result3.xlsx",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/result4.xlsx",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/surface_time_recheck.json",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/data_scale_recheck.md",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/data_scale_recheck.json",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/physics_recheck.md",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/physics_small_checks.json",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/numerical_recheck.md",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/numerical_recheck.json",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/explanatory_corrections.json",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/recovered_historical_source/reconstruction_record.json",
+      "exists": true
+    },
+    {
+      "document": "A题_成果与重新核验报告.md",
+      "target": "D:/Document/数学建模/2026CUMCM/paper_output/qa/recheck_20260910_1828/evidence_gate_after.json",
+      "exists": true
+    }
+  ],
+  "production_manifest": {
+    "path": "paper_output/results/production/final_v6a/run_manifest.json",
+    "bytes": 31524,
+    "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+  },
+  "final_selected_source_hashes_match_independent_audit": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665"
+    },
+    {
+      "path": "paper_output/code/modeling/axisymmetric_check.py",
+      "bytes": 13887,
+      "sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c"
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "bytes": 14520,
+      "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805"
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60"
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "bytes": 41427,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b"
+    },
+    {
+      "path": "paper_output/code/modeling/peer_beta_check.py",
+      "bytes": 14337,
+      "sha256": "a7a31ba683be96de9f20c13476bdfa2a6e1e9fac25ec0035fdfaedff8159a683"
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130"
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "bytes": 24337,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388"
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8"
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204"
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137"
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535"
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "bytes": 3995,
+      "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509"
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "bytes": 27729,
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84"
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "bytes": 16285,
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "bytes": 6542,
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "bytes": 3850,
+      "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "bytes": 14430,
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result1.xlsx",
+      "bytes": 390899,
+      "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result2.xlsx",
+      "bytes": 29210086,
+      "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result3.xlsx",
+      "bytes": 339137,
+      "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result4.xlsx",
+      "bytes": 278278,
+      "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+    }
+  ],
+  "independent_agent_statuses": {
+    "data_scale_recheck.json": "INDEPENDENT_RAW_DATA_AND_SCALAR_RECHECK_COMPLETE",
+    "physics_recheck.json": "PHYSICS_RECHECK_COMPLETE_WITH_EXPLICIT_PHYSICAL_LIMITATIONS",
+    "numerical_recheck.json": "RECHECK_COMPLETED_CONDITIONAL_NUMERICAL_EVIDENCE_WITH_EXPLICIT_LIMITS",
+    "surface_time_recheck.json": "SAVED_SURFACE_TIME_COMPARISON_COMPLETE"
+  },
+  "evidence": [
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_recheck.md",
+      "bytes": 18579,
+      "sha256": "ae02cded6aa3c8f59bc9bdbbef05ef961ec73d70cd43f8cd5a8a26a999332c2d"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_recheck.json",
+      "bytes": 61794,
+      "sha256": "7a10f017f47f75944ea04a93e5ea0e262967f58aeeadac274b4b8777ab0d5223"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_recheck.md",
+      "bytes": 26190,
+      "sha256": "815d6981c1779929c09c5a9d615db6efdabf8d46ea6948e668189780d31e48ab"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_recheck.json",
+      "bytes": 23844,
+      "sha256": "1db92b3e106a5d93c28da15fa9c3b78eab10be949ec12d3b6213288f20b3e638"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_small_checks.json",
+      "bytes": 13911,
+      "sha256": "c537f1580366873b76b06a98eefc57d38e001ffbbdb8e333c9e2837b85c63652"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/numerical_recheck.md",
+      "bytes": 17098,
+      "sha256": "67a4afbecf0b5241da22c08ec9d0eb370d85e2d3a5ebdb0fed8b076ea973e64d"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/numerical_recheck.json",
+      "bytes": 193222,
+      "sha256": "5a48cd74c1a839488a30fd326da562ac5f0be9c406281a89b8f54b125c3cfe99"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/surface_time_recheck.json",
+      "bytes": 10577,
+      "sha256": "4aded431193660c905b697fb4e2aa08d4dc3d86324d5da494fa1b4654b45ca7e"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/explanatory_corrections.json",
+      "bytes": 3725,
+      "sha256": "b6f5ba00878fd4548e9842a4d0a999683137fa9ad050285f53e2689223f90631"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/recovered_historical_source/reconstruction_record.json",
+      "bytes": 873,
+      "sha256": "d25a20a6208cc60a83c3f7733f5c3128d66460ce48cfdffc7c8ff47094000c78"
+    }
+  ],
+  "evidence_gate": {
+    "path": "paper_output/qa/evidence_gate_report.json",
+    "bytes": 2028,
+    "sha256": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e",
+    "status": "PASS",
+    "meaning": "provenance and artifact contract only; not empirical physical validation"
+  },
+  "independent_final_text_review": {
+    "reviewer": "physics_derivations",
+    "substantive_issues_found": 0,
+    "minor_issue": "Two purpose/variable descriptions should precede their formulas",
+    "minor_issue_corrected": true
+  },
+  "unresolved_physical_inputs": [
+    "air humidity basis, transfer-coefficient basis and material sorption equilibrium",
+    "effective versus component volumetric heat capacity and empirical density basis",
+    "latent heat, phase transport, saturation and deformation closure",
+    "environment beyond four hours and internal temperature/moisture validation"
+  ],
+  "reproducibility_limit": "Historical coarse full-second spatial arrays were not retained; this audit rereads their reports and rechecks saved material samples, not every historical spatial sample.",
+  "helper": {
+    "path": "paper_output/qa/recheck_20260910_1828/finalize_recheck.py",
+    "bytes": 7799,
+    "sha256": "816c6816f5263a59d4fa87db43ef9491991d49b036f07bc8c17a3c562134c80e"
+  }
+}

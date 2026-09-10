@@ -1,0 +1,272 @@
+{
+  "at_utc": "2026-09-10T19:03:16.106638+00:00",
+  "scope": "Changed and newly unignored files before final audit commit; token-marker and 100MiB screen plus agent review; not a proof of absence of secrets",
+  "files": [
+    {
+      "path": "memoryskill.md",
+      "bytes": 9839,
+      "sha256": "42dff6235d4d722c15a46216d53be60efd0bd3384f0f0ae27bf22902d1cc57ce"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/A题_完整建模与公式推导.md",
+      "bytes": 132723,
+      "sha256": "4f8835dac20c4613a91c9ca2666380d8a8664819bb9b0b90b6db72611199856d"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/A题_建模浓缩交接.md",
+      "bytes": 27661,
+      "sha256": "c7c3ac6100088334771ef2c8480d0a1e4fe52d6f0f3c2c599864cfb0344b76f1"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/A题_成果与重新核验报告.md",
+      "bytes": 22121,
+      "sha256": "40898df2a500f127fa9e26e1f67308c3f14bbf9810f270e29dd347a2b08df6c8"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/deadline_handoff.md",
+      "bytes": 5124,
+      "sha256": "a7a03916b024f31ecce89b5c1e8283da01a3b47f243709efb7acc1a76a638372"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/handoff_files_snapshot.json",
+      "bytes": 966,
+      "sha256": "6924ca954c46a91202a209666ac2f65ae8c5fbe05382d364d93c1613e29c2a30"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/state.json",
+      "bytes": 3506,
+      "sha256": "10feb1f2d91f0bacf60a6e732af2c8ccf152a92234afb2be3e3352e3ab37cff3"
+    },
+    {
+      "path": "paper_output/context/workflow_memory.json",
+      "bytes": 5889,
+      "sha256": "0b40a804779bf038dac231fb9708a3adbd1a67644708e74f7c995e65b4aea1e1"
+    },
+    {
+      "path": "paper_output/context/workflow_memory.md",
+      "bytes": 1245,
+      "sha256": "b8f13be65b6a803a5801301482edb0a39a5ecff82f7024338e5a0258d67853a1"
+    },
+    {
+      "path": "paper_output/qa/evidence_gate_report.json",
+      "bytes": 2028,
+      "sha256": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
+    },
+    {
+      "path": "paper_output/qa/evidence_gate_report.md",
+      "bytes": 415,
+      "sha256": "9dff67a86d1525ea37c37b3c82471d4cf6fbfd029c23de51c1c5668723dbabdf"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/apply_recheck_corrections.py",
+      "bytes": 4475,
+      "sha256": "b08476894173ea1fe8e42daff554b80a740f8de62cd7c8ec20acfd95b92f90ce"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/assemble_physics_recheck.py",
+      "bytes": 6594,
+      "sha256": "05195e08f9e4c4c3f5c499a6860f801370fffd97f1edf2990c370c512a6dcb5f"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_20260910T183957938102Z.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_20260910T183957938102Z.stdout.log",
+      "bytes": 12586,
+      "sha256": "b5b20a0ae416f17f3cec50b0c7af65cd0d16ef82d81b9007da7f67e78f7261b8"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_20260910T184117647719Z.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_20260910T184117647719Z.stdout.log",
+      "bytes": 13812,
+      "sha256": "9e008c8f116f30bb2831a5065fd1615791733df30be522630bcfd5d6d59e7e6c"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_process_20260910T183957938102Z.json",
+      "bytes": 728,
+      "sha256": "aab8ed9f3c6a504fd115459550bcd1b6c10d98d422cd86b7954116a71c9670f4"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_process_20260910T184117647719Z.json",
+      "bytes": 728,
+      "sha256": "2259b7079092da8cb36b5f05a183f277917521f1d11b64013b70debfe9798c6b"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_recheck.json",
+      "bytes": 61794,
+      "sha256": "7a10f017f47f75944ea04a93e5ea0e262967f58aeeadac274b4b8777ab0d5223"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_recheck.md",
+      "bytes": 18579,
+      "sha256": "ae02cded6aa3c8f59bc9bdbbef05ef961ec73d70cd43f8cd5a8a26a999332c2d"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/data_scale_recheck_helper.py",
+      "bytes": 18556,
+      "sha256": "b6e4d46cf224a647e3dcf5249b297f01cd9cb94cf2529086805fc3beb4378a3d"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/documents_before/A题_完整建模与公式推导.md",
+      "bytes": 130091,
+      "sha256": "d71d6d6e7b5d8ee62e4cac18009c5cf24687ccfc723f7cf36f81090d949155e8"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/documents_before/A题_建模浓缩交接.md",
+      "bytes": 25245,
+      "sha256": "0fc1e7f0cb5bc75a17c0d61f2d8fc1e9a6835c26b19f35b1c6ee5681398c0a7a"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/evidence_gate_after.json",
+      "bytes": 2028,
+      "sha256": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/evidence_gate_after.md",
+      "bytes": 415,
+      "sha256": "9dff67a86d1525ea37c37b3c82471d4cf6fbfd029c23de51c1c5668723dbabdf"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/evidence_gate_before.json",
+      "bytes": 2028,
+      "sha256": "569a3a42937ca7b1c3261e4537feb429c0d443d652973c4760584c14a0be4536"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/evidence_gate_before.md",
+      "bytes": 415,
+      "sha256": "568536c6412e1961dc37d10e7e31292c3bdc202e943227776fb89922c0e4b987"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/explanatory_corrections.json",
+      "bytes": 3725,
+      "sha256": "b6f5ba00878fd4548e9842a4d0a999683137fa9ad050285f53e2689223f90631"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/finalize_recheck.py",
+      "bytes": 7799,
+      "sha256": "816c6816f5263a59d4fa87db43ef9491991d49b036f07bc8c17a3c562134c80e"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/numerical_recheck.json",
+      "bytes": 193222,
+      "sha256": "5a48cd74c1a839488a30fd326da562ac5f0be9c406281a89b8f54b125c3cfe99"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/numerical_recheck.md",
+      "bytes": 17098,
+      "sha256": "67a4afbecf0b5241da22c08ec9d0eb370d85e2d3a5ebdb0fed8b076ea973e64d"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/numerical_recheck.py",
+      "bytes": 16775,
+      "sha256": "1c05df3bd2b12d1989ed74415c40eb3c6455616f2d31d151378a1b2a7c66db1b"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/original_pdf_fresh_text.txt",
+      "bytes": 7072,
+      "sha256": "7adbcbaf8c5a2dec98f35d1a9e0b20f54f900f7ff06be4ade720a7d917367f83"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/original_pdf_page_3.png",
+      "bytes": 161006,
+      "sha256": "a6256b9e698b5e1842994b8d5990cac66b7a79309774591cee61550e7c1eff65"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/original_pdf_page_4.png",
+      "bytes": 78603,
+      "sha256": "e17d71843792323f8cacbd8f1797c3c3c4c2e5a8647625b2f714d48ba1deb170"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_recheck.json",
+      "bytes": 23844,
+      "sha256": "1db92b3e106a5d93c28da15fa9c3b78eab10be949ec12d3b6213288f20b3e638"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_recheck.md",
+      "bytes": 26190,
+      "sha256": "815d6981c1779929c09c5a9d615db6efdabf8d46ea6948e668189780d31e48ab"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_small_checks.json",
+      "bytes": 13911,
+      "sha256": "c537f1580366873b76b06a98eefc57d38e001ffbbdb8e333c9e2837b85c63652"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/physics_small_checks.py",
+      "bytes": 9219,
+      "sha256": "13a2a2396a80a4cfb83e9f643a2b28eb43748189c4c58c5821a742579588dae5"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/raw_problem_page_1.png",
+      "bytes": 158254,
+      "sha256": "592f5cb96825e95bdb2a9cb4e6357b74a53b99544e2e46e20100cea7df5ca6cf"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/raw_problem_page_3.png",
+      "bytes": 161006,
+      "sha256": "a6256b9e698b5e1842994b8d5990cac66b7a79309774591cee61550e7c1eff65"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/raw_problem_page_4.png",
+      "bytes": 78603,
+      "sha256": "e17d71843792323f8cacbd8f1797c3c3c4c2e5a8647625b2f714d48ba1deb170"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/raw_problem_text.txt",
+      "bytes": 7046,
+      "sha256": "11298485dd852bdd6f5efd477983e1b0b7e6496f2ceaadda98b24cdc365d2b73"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/recheck_summary.json",
+      "bytes": 29385,
+      "sha256": "5106137db3e337d5454503d0636f456ca1b99cf7498c381080239370c47b4de6"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/recovered_historical_source/reconstruction_record.json",
+      "bytes": 873,
+      "sha256": "d25a20a6208cc60a83c3f7733f5c3128d66460ce48cfdffc7c8ff47094000c78"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/recovered_historical_source/verify_convergence_v3_hash_verified.py",
+      "bytes": 5356,
+      "sha256": "ac5f0cbc5de5beeecddf163497626a61bb6aabb82fc458c226c51a7d532f61e0"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/run_data_scale_recheck.py",
+      "bytes": 1602,
+      "sha256": "982da7ff30991708363f64d24471e8e646aec07045844fbb1af68e8302d22943"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/surface_time_recheck.json",
+      "bytes": 10577,
+      "sha256": "4aded431193660c905b697fb4e2aa08d4dc3d86324d5da494fa1b4654b45ca7e"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/surface_time_recheck.py",
+      "bytes": 5022,
+      "sha256": "86a4911cc9bec942418c8837fe47bfeac9025b87ce309165c2ce304c0c38b9c9"
+    },
+    {
+      "path": "paper_output/qa/workflow_guard_report.json",
+      "bytes": 2066,
+      "sha256": "5fd9d853ed6409259c31180d15a38505557b8e060983650403fb77957aa6e051"
+    },
+    {
+      "path": "paper_output/qa/workflow_guard_report.md",
+      "bytes": 860,
+      "sha256": "0486fe02ab0b4925963e8d6288df960b9eecbb6198a1dc687aea05b4dc3fff0b"
+    },
+    {
+      "path": "tmp/a_final_backup_output.log",
+      "bytes": 188013,
+      "sha256": "86dc82618d8ae43f87efd3cb9abc637d4e52957eb557dd604d237e8914f8776a"
+    }
+  ],
+  "flagged_paths": []
+}

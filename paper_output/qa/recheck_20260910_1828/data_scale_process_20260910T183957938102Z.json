@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-09-10T18:39:57.938180+00:00",
+  "ended_utc": "2026-09-10T18:39:58.877937+00:00",
+  "wall_s": 0.9397792000017944,
+  "command": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\recheck_20260910_1828\\data_scale_recheck_helper.py"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM",
+  "pid": 51072,
+  "actual_child_returncode": 0,
+  "observed_by": "subprocess.Popen.wait",
+  "helper_sha256": "55465dec541c28b476701cca3a45ca2b4cf229562bad06757eb92e90e140f0bf",
+  "stdout": "data_scale_20260910T183957938102Z.stdout.log",
+  "stderr": "data_scale_20260910T183957938102Z.stderr.log",
+  "GUI_observed": false,
+  "PDE_run": false
+}

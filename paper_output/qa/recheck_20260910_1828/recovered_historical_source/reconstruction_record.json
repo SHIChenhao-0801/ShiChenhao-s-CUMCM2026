@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-09-10T18:39:43.581539+00:00",
+  "method": "deterministic one-keyword repair of archived v1 bytes; exact SHA256 equality to pre-existing historical driver record",
+  "source": "paper_output\\code\\versions\\verify_convergence_v1.py",
+  "source_sha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+  "replacement": "diffusivity=args.frozen_d -> diffusion_coefficient=args.frozen_d",
+  "recovered_path": "paper_output\\qa\\recheck_20260910_1828\\recovered_historical_source\\verify_convergence_v3_hash_verified.py",
+  "recovered_bytes": 5356,
+  "recovered_sha256": "ac5f0cbc5de5beeecddf163497626a61bb6aabb82fc458c226c51a7d532f61e0",
+  "historical_report_driver_sha256": "ac5f0cbc5de5beeecddf163497626a61bb6aabb82fc458c226c51a7d532f61e0",
+  "executed_recovered_code": false,
+  "changed_original_frozen_sources": false
+}

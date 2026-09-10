@@ -1,0 +1,431 @@
+{
+  "started_utc": "2026-09-10T18:39:21.950274+00:00",
+  "scope": "Fresh small algebra checks and read-only extraction; no PDE solver called",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.2",
+  "checks": [
+    {
+      "case": "Q1_kirchhoff_latent0_closeFalse",
+      "Jacobian_five_point_max_row_scaled_error": 3.314551348472682e-11,
+      "Jacobian_five_point_max_abs_error": 3.579775365025739e-12,
+      "mass_rhs_residual_per_s": 5.929230630780102e-21,
+      "mass_jacobian_left_null_residual": 2.710505431213761e-20,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "case": "Q23_kirchhoff_latent0_closeFalse",
+      "Jacobian_five_point_max_row_scaled_error": 3.318928735962427e-11,
+      "Jacobian_five_point_max_abs_error": 3.251718339036813e-12,
+      "mass_rhs_residual_per_s": 4.235164736271502e-21,
+      "mass_jacobian_left_null_residual": 5.421010862427522e-20,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "case": "Q4_kirchhoff_latent0_closeFalse",
+      "Jacobian_five_point_max_row_scaled_error": 3.3225432560238085e-11,
+      "Jacobian_five_point_max_abs_error": 3.3184288650289773e-12,
+      "mass_rhs_residual_per_s": 6.776263578034403e-21,
+      "mass_jacobian_left_null_residual": 4.0657581468206416e-20,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "case": "Q23_harmonic_latent0_closeFalse",
+      "Jacobian_five_point_max_row_scaled_error": 3.318928735962427e-11,
+      "Jacobian_five_point_max_abs_error": 3.251718339036813e-12,
+      "mass_rhs_residual_per_s": 3.3881317890172014e-21,
+      "mass_jacobian_left_null_residual": 1.0842021724855044e-19,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "case": "Q4_harmonic_latent0_closeFalse",
+      "Jacobian_five_point_max_row_scaled_error": 3.3225432560238085e-11,
+      "Jacobian_five_point_max_abs_error": 3.3184288650289773e-12,
+      "mass_rhs_residual_per_s": 4.235164736271502e-21,
+      "mass_jacobian_left_null_residual": 2.710505431213761e-20,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "case": "Q4_kirchhoff_latent1_closeFalse",
+      "Jacobian_five_point_max_row_scaled_error": 3.319436475795152e-11,
+      "Jacobian_five_point_max_abs_error": 3.3184288650289773e-12,
+      "mass_rhs_residual_per_s": 6.776263578034403e-21,
+      "mass_jacobian_left_null_residual": 4.0657581468206416e-20,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    },
+    {
+      "case": "Q23_kirchhoff_latent0_closeTrue",
+      "Jacobian_five_point_max_row_scaled_error": 1.8715086113234174e-08,
+      "Jacobian_five_point_max_abs_error": 1.1861949547609107e-09,
+      "mass_rhs_residual_per_s": 0.0,
+      "mass_jacobian_left_null_residual": 2.168404344971009e-19,
+      "passive_column_max_abs": 0.0,
+      "pass": true
+    }
+  ],
+  "observations": {
+    "environment_rows": 241,
+    "environment_time_range_s": [
+      0.0,
+      14400.0
+    ],
+    "radius_rows": 145,
+    "radius_time_range_s": [
+      0.0,
+      259200.0
+    ]
+  },
+  "density_incompatibility": {
+    "rho_d0_kg_m3": 278.7323943661972,
+    "necessary_min_radius_m": 0.012112029565383969,
+    "first_literal_below_bound_time_h": 19.5,
+    "first_literal_below_bound_radius_m": 0.01211,
+    "required_mean_rho_d_72h_kg_m3": 776.8439730273808,
+    "maximum_conserved_dry_mass_fraction_72h": 0.9783174310257706,
+    "note": "First crossing refers to printed data, not an inferred true measurement crossing."
+  },
+  "capacity_comparison_conditional_component_interpretation": [
+    {
+      "question": "Q23",
+      "C": 2.55,
+      "R_m": 0.02,
+      "rho_d_kg_m3": 275.0422535211268,
+      "B_effective_J_m3_K": 3334694.794366197,
+      "B_component_mixture_J_m3_K": 3334694.794366197,
+      "effective_to_component_ratio": 1.0
+    },
+    {
+      "question": "Q23",
+      "C": 0.15,
+      "R_m": 0.02,
+      "rho_d_kg_m3": 275.0422535211268,
+      "B_effective_J_m3_K": 1209157.1130434785,
+      "B_component_mixture_J_m3_K": 571510.2985915494,
+      "effective_to_component_ratio": 2.115722351851522
+    },
+    {
+      "question": "Q23",
+      "C": 0.05265,
+      "R_m": 0.02,
+      "rho_d_kg_m3": 275.0422535211268,
+      "B_effective_J_m3_K": 1042143.6344764925,
+      "B_component_mixture_J_m3_K": 459428.6274816902,
+      "effective_to_component_ratio": 2.268347186349474
+    },
+    {
+      "question": "Q4",
+      "C": 2.55,
+      "R_m": 0.012,
+      "rho_d_kg_m3": 774.2566510172145,
+      "B_effective_J_m3_K": 3358725.3521126765,
+      "B_component_mixture_J_m3_K": 9329792.644757435,
+      "effective_to_component_ratio": 0.36
+    },
+    {
+      "question": "Q4",
+      "C": 0.15,
+      "R_m": 0.012,
+      "rho_d_kg_m3": 774.2566510172145,
+      "B_effective_J_m3_K": 1647891.3043478264,
+      "B_component_mixture_J_m3_K": 1896928.7949921754,
+      "effective_to_component_ratio": 0.8687154250060418
+    },
+    {
+      "question": "Q4",
+      "C": 0.05265,
+      "R_m": 0.012,
+      "rho_d_kg_m3": 774.2566510172145,
+      "B_effective_J_m3_K": 1497002.9478934119,
+      "B_component_mixture_J_m3_K": 1595433.255086072,
+      "effective_to_component_ratio": 0.9383049670809639
+    }
+  ],
+  "kirchhoff_primitive_quadrature": [
+    {
+      "a": 0.89,
+      "left": 0.052,
+      "right": 0.15,
+      "relative_error": 2.632545548404039e-16,
+      "pass": true
+    },
+    {
+      "a": 0.89,
+      "left": 0.15,
+      "right": 2.55,
+      "relative_error": 0.0,
+      "pass": true
+    },
+    {
+      "a": 0.89,
+      "left": 0.052,
+      "right": 0.052000001,
+      "relative_error": 2.673175483842133e-15,
+      "pass": true
+    },
+    {
+      "a": 0.45,
+      "left": 0.052,
+      "right": 0.15,
+      "relative_error": 2.718279727909269e-16,
+      "pass": true
+    },
+    {
+      "a": 0.45,
+      "left": 0.15,
+      "right": 2.55,
+      "relative_error": 0.0,
+      "pass": true
+    },
+    {
+      "a": 0.45,
+      "left": 0.052,
+      "right": 0.052000001,
+      "relative_error": 2.893996513222467e-16,
+      "pass": true
+    },
+    {
+      "a": 0.3,
+      "left": 0.052,
+      "right": 0.15,
+      "relative_error": 1.5464737594784146e-16,
+      "pass": true
+    },
+    {
+      "a": 0.3,
+      "left": 0.15,
+      "right": 2.55,
+      "relative_error": 0.0,
+      "pass": true
+    },
+    {
+      "a": 0.3,
+      "left": 0.052,
+      "right": 0.052000001,
+      "relative_error": 6.468230128413288e-16,
+      "pass": true
+    }
+  ],
+  "warnings": [],
+  "material_chain_rule": {
+    "manufactured_F": "F(t,x)=t+x^2; R=.02 exp(-2e-5 t)",
+    "Eulerian_material_derivative": 1.0,
+    "fixed_x_derivative": 1.0,
+    "residual": 0.0
+  },
+  "fresh_saved_latent_sample_recheck": [
+    {
+      "question": "Q23",
+      "time_s": 1020.0,
+      "material_x": 1.0,
+      "T_C": 10.76932092593546,
+      "C": 1.5375848446817513,
+      "air_Y_kg_water_per_kg_dry_air_assumed": 0.02732,
+      "assumed_total_pressure_Pa": 101325,
+      "air_vapor_partial_pressure_Pa": 4263.5888273663295,
+      "NIST_upper_temperature_C": 11.0,
+      "NIST_psat_upper_bound_Pa": 1313.0,
+      "predicted_outward_jw_kg_m2_s": 0.0003323093170360027,
+      "latent_heat_flux_W_m2": 797.5423608864064,
+      "conditional_vapor_direction_conflict": true
+    },
+    {
+      "question": "Q4",
+      "time_s": 480.0,
+      "material_x": 1.0,
+      "T_C": 14.42046041673882,
+      "C": 1.296366050914093,
+      "air_Y_kg_water_per_kg_dry_air_assumed": 0.02325,
+      "assumed_total_pressure_Pa": 101325,
+      "air_vapor_partial_pressure_Pa": 3651.30890660963,
+      "NIST_upper_temperature_C": 15.0,
+      "NIST_psat_upper_bound_Pa": 1705.8,
+      "predicted_outward_jw_kg_m2_s": 0.0002937510888153099,
+      "latent_heat_flux_W_m2": 705.0026131567438,
+      "conditional_vapor_direction_conflict": true
+    }
+  ],
+  "constitutive_scales_at_stated_probe_states_not_field_extrema": [
+    {
+      "question": "Q1",
+      "T_K": 301.15,
+      "C": 2.55,
+      "R_m": 0.02,
+      "rho_effective": 820.0,
+      "cp": 2600.0,
+      "k": 0.36,
+      "D_m2_s": 4.937655094173937e-09,
+      "heat_Biot_hR_over_k": 1.3888888888888888,
+      "mass_Biot_betaR_over_D": 3.2404045432170427,
+      "R2_over_D_h": 22.50280932789613
+    },
+    {
+      "question": "Q1",
+      "T_K": 323.15,
+      "C": 0.15,
+      "R_m": 0.02,
+      "rho_effective": 820.0,
+      "cp": 2600.0,
+      "k": 0.36,
+      "D_m2_s": 1.8547445945663438e-11,
+      "heat_Biot_hR_over_k": 1.3888888888888888,
+      "mass_Biot_betaR_over_D": 862.6524669150442,
+      "R2_over_D_h": 5990.642131354473
+    },
+    {
+      "question": "Q1",
+      "T_K": 323.15,
+      "C": 0.05265,
+      "R_m": 0.02,
+      "rho_effective": 820.0,
+      "cp": 2600.0,
+      "k": 0.36,
+      "D_m2_s": 3.1896852023021466e-16,
+      "heat_Biot_hR_over_k": 1.3888888888888888,
+      "mass_Biot_betaR_over_D": 50161689.90109759,
+      "R2_over_D_h": 348345068.7576221
+    },
+    {
+      "question": "Q23",
+      "T_K": 301.15,
+      "C": 2.55,
+      "R_m": 0.02,
+      "rho_effective": 976.4,
+      "cp": 3415.295774647887,
+      "k": 0.48295774647887324,
+      "D_m2_s": 5.641680373025668e-09,
+      "heat_Biot_hR_over_k": 1.0352872557596966,
+      "mass_Biot_betaR_over_D": 2.836034468826014,
+      "R2_over_D_h": 19.694683811291764
+    },
+    {
+      "question": "Q23",
+      "T_K": 323.15,
+      "C": 0.15,
+      "R_m": 0.02,
+      "rho_effective": 669.2,
+      "cp": 1806.8695652173913,
+      "k": 0.25956521739130434,
+      "D_m2_s": 8.001208146652625e-10,
+      "heat_Biot_hR_over_k": 1.9262981574539364,
+      "mass_Biot_betaR_over_D": 19.996980089430295,
+      "R2_over_D_h": 138.86791728771038
+    },
+    {
+      "question": "Q23",
+      "T_K": 323.15,
+      "C": 0.05265,
+      "R_m": 0.02,
+      "rho_effective": 656.7392,
+      "cp": 1586.845485204009,
+      "k": 0.22900631738944568,
+      "D_m2_s": 3.1197541092844063e-12,
+      "heat_Biot_hR_over_k": 2.1833458818941898,
+      "mass_Biot_betaR_over_D": 5128.609319684493,
+      "R2_over_D_h": 35615.342497808975
+    },
+    {
+      "question": "Q4",
+      "T_K": 301.15,
+      "C": 2.55,
+      "R_m": 0.02,
+      "rho_effective": 989.5,
+      "cp": 3394.3661971830984,
+      "k": 0.26366197183098594,
+      "D_m2_s": 1.0471122989493634e-09,
+      "heat_Biot_hR_over_k": 1.896367521367521,
+      "mass_Biot_betaR_over_D": 15.280118489730139,
+      "R2_over_D_h": 106.1119339564593
+    },
+    {
+      "question": "Q4",
+      "T_K": 323.15,
+      "C": 0.15,
+      "R_m": 0.012,
+      "rho_effective": 773.5,
+      "cp": 2130.4347826086955,
+      "k": 0.14608695652173914,
+      "D_m2_s": 3.806169274383754e-10,
+      "heat_Biot_hR_over_k": 2.0535714285714284,
+      "mass_Biot_betaR_over_D": 25.222209807140825,
+      "R2_over_D_h": 105.09254086308678
+    },
+    {
+      "question": "Q4",
+      "T_K": 323.15,
+      "C": 0.05265,
+      "R_m": 0.012,
+      "rho_effective": 764.7385,
+      "cp": 1957.5357431244954,
+      "k": 0.13000332494181352,
+      "D_m2_s": 9.42897817235721e-12,
+      "heat_Biot_hR_over_k": 2.307633286566117,
+      "mass_Biot_betaR_over_D": 1018.1378962297497,
+      "R2_over_D_h": 4242.241234290624
+    }
+  ],
+  "sources": [
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "notes/problem-reading/2026-09-10/A_problem_text.txt",
+      "bytes": 7082,
+      "sha256": "235da564be9cea5ddb1664b3c51bfdd45ea80989689dc57d9b8cd9c59fc07f1f"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/A题_完整建模与公式推导.md",
+      "bytes": 130091,
+      "sha256": "d71d6d6e7b5d8ee62e4cac18009c5cf24687ccfc723f7cf36f81090d949155e8"
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/numerical_summaries.json",
+      "bytes": 16270,
+      "sha256": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5"
+    },
+    {
+      "path": "paper_output/results/experiments/physical_Q23_latent_N200_K/sampled_solution.npz",
+      "bytes": 1061309,
+      "sha256": "6f28e664a6596736d0391e03c71c914a1ad002f173f606986153183a6af9bae1"
+    },
+    {
+      "path": "paper_output/results/experiments/physical_Q4_latent_N200_K/sampled_solution.npz",
+      "bytes": 1022718,
+      "sha256": "96464880c6874e377b2d7318105c62e33e84d27ce5af50b1de56138b70461be3"
+    }
+  ],
+  "helper_source": {
+    "path": "paper_output/qa/recheck_20260910_1828/physics_small_checks.py",
+    "bytes": 9219,
+    "sha256": "13a2a2396a80a4cfb83e9f643a2b28eb43748189c4c58c5821a742579588dae5"
+  },
+  "algebra_checks_pass": true,
+  "physical_model_status": "CONDITIONAL_EFFECTIVE_MODEL; physical validation absent",
+  "ended_utc": "2026-09-10T18:39:22.150474+00:00"
+}

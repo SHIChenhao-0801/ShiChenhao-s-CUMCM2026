@@ -1,0 +1,317 @@
+{
+  "status": "SAVED_SURFACE_TIME_COMPARISON_COMPLETE",
+  "created_at": "2026-09-10T18:50:22.344313+00:00",
+  "scope": "Same final N, baseline versus tight tolerances and step caps; actual x=1 surface at common regular 60 s times only. Not all seconds or a continuous error bound.",
+  "new_PDE_solves": 0,
+  "code": {
+    "path": "paper_output/qa/recheck_20260910_1828/surface_time_recheck.py",
+    "bytes": 5022,
+    "sha256": "86a4911cc9bec942418c8837fe47bfeac9025b87ce309165c2ce304c0c38b9c9"
+  },
+  "results": [
+    {
+      "question": "Q1",
+      "sources": [
+        {
+          "path": "paper_output/results/time_accuracy/final_v6/baseline/sampled_solution.npz",
+          "bytes": 10569,
+          "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6/tight/sampled_solution.npz",
+          "bytes": 10596,
+          "sha256": "3bb72ca4e03c1985c673a7fa1d9acb45ac9de1c037cf7d53ab1055e333e06a33"
+        }
+      ],
+      "common_regular_time_count": 31,
+      "first_s": 0.0,
+      "last_s": 1800.0,
+      "time_interval_s": 60,
+      "material_point_count": 21,
+      "source_time_counts": [
+        32,
+        32
+      ],
+      "excluded_common_non_60s_times": [
+        100.0
+      ],
+      "fields": {
+        "T_K": {
+          "surface_max_absolute_difference": 1.627586982522189e-06,
+          "surface_max_location": {
+            "time_s": 1740.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_values_at_max": {
+            "baseline": 309.5861716979406,
+            "tight": 309.58617332552757
+          },
+          "all_21_material_points_max_absolute_difference": 1.627586982522189e-06,
+          "all_21_material_points_max_location": {
+            "time_s": 1740.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_4dp_difference_count": 0,
+          "surface_4dp_differences": []
+        },
+        "C": {
+          "surface_max_absolute_difference": 2.2262680587914474e-09,
+          "surface_max_location": {
+            "time_s": 60.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_values_at_max": {
+            "baseline": 2.311632381342466,
+            "tight": 2.311632379116198
+          },
+          "all_21_material_points_max_absolute_difference": 2.2262680587914474e-09,
+          "all_21_material_points_max_location": {
+            "time_s": 60.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_4dp_difference_count": 0,
+          "surface_4dp_differences": []
+        }
+      }
+    },
+    {
+      "question": "Q23",
+      "sources": [
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/sampled_solution.npz",
+          "bytes": 690378,
+          "sha256": "5188509b66d2a6b004b9554d003e3868121a9bb51ebfca65b47066e781fb8f69"
+        }
+      ],
+      "common_regular_time_count": 3449,
+      "first_s": 0.0,
+      "last_s": 206880.0,
+      "time_interval_s": 60,
+      "material_point_count": 21,
+      "source_time_counts": [
+        3452,
+        3452
+      ],
+      "excluded_common_non_60s_times": [
+        100.0,
+        206902.0
+      ],
+      "fields": {
+        "T_K": {
+          "surface_max_absolute_difference": 2.6602599518810166e-06,
+          "surface_max_location": {
+            "time_s": 12180.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_values_at_max": {
+            "baseline": 323.1115222982955,
+            "tight": 323.11151963803553
+          },
+          "all_21_material_points_max_absolute_difference": 2.6602599518810166e-06,
+          "all_21_material_points_max_location": {
+            "time_s": 12180.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_4dp_difference_count": 4,
+          "surface_4dp_differences": [
+            {
+              "time_s": 3420.0,
+              "radius_m": 0.02,
+              "baseline": 42.4149496829059,
+              "tight": 42.41495074160923,
+              "baseline_4dp": "42.4149",
+              "tight_4dp": "42.4150"
+            },
+            {
+              "time_s": 5400.0,
+              "radius_m": 0.02,
+              "baseline": 47.140050004863326,
+              "tight": 47.140049992523245,
+              "baseline_4dp": "47.1401",
+              "tight_4dp": "47.1400"
+            },
+            {
+              "time_s": 8040.0,
+              "radius_m": 0.02,
+              "baseline": 49.379149352153206,
+              "tight": 49.37915121611337,
+              "baseline_4dp": "49.3791",
+              "tight_4dp": "49.3792"
+            },
+            {
+              "time_s": 13440.0,
+              "radius_m": 0.02,
+              "baseline": 49.99265032961108,
+              "tight": 49.99264884340482,
+              "baseline_4dp": "49.9927",
+              "tight_4dp": "49.9926"
+            }
+          ]
+        },
+        "C": {
+          "surface_max_absolute_difference": 9.941051204442886e-09,
+          "surface_max_location": {
+            "time_s": 13260.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_values_at_max": {
+            "baseline": 0.8723493263626889,
+            "tight": 0.8723493363037401
+          },
+          "all_21_material_points_max_absolute_difference": 9.941051204442886e-09,
+          "all_21_material_points_max_location": {
+            "time_s": 13260.0,
+            "material_x": 1.0,
+            "radius_m": 0.02
+          },
+          "surface_4dp_difference_count": 0,
+          "surface_4dp_differences": []
+        }
+      }
+    },
+    {
+      "question": "Q4",
+      "sources": [
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q4/baseline/sampled_solution.npz",
+          "bytes": 628742,
+          "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q4/tight/sampled_solution.npz",
+          "bytes": 628788,
+          "sha256": "79084fbd13d4926b25bc7c2cdfce4acbb69920fcd7330d45257935fb76e8c3d7"
+        }
+      ],
+      "common_regular_time_count": 3066,
+      "first_s": 0.0,
+      "last_s": 183900.0,
+      "time_interval_s": 60,
+      "material_point_count": 21,
+      "source_time_counts": [
+        3069,
+        3069
+      ],
+      "excluded_common_non_60s_times": [
+        100.0,
+        183928.0
+      ],
+      "fields": {
+        "T_K": {
+          "surface_max_absolute_difference": 3.239170268898306e-06,
+          "surface_max_location": {
+            "time_s": 9600.0,
+            "material_x": 1.0,
+            "radius_m": 0.01576666666666667
+          },
+          "surface_values_at_max": {
+            "baseline": 322.9236694726343,
+            "tight": 322.923666233464
+          },
+          "all_21_material_points_max_absolute_difference": 3.239170268898306e-06,
+          "all_21_material_points_max_location": {
+            "time_s": 9600.0,
+            "material_x": 1.0,
+            "radius_m": 0.01576666666666667
+          },
+          "surface_4dp_difference_count": 2,
+          "surface_4dp_differences": [
+            {
+              "time_s": 2400.0,
+              "radius_m": 0.018466666666666666,
+              "baseline": 38.68795032219555,
+              "tight": 38.68794948645234,
+              "baseline_4dp": "38.6880",
+              "tight_4dp": "38.6879"
+            },
+            {
+              "time_s": 2820.0,
+              "radius_m": 0.018282333333333334,
+              "baseline": 40.44925005659684,
+              "tight": 40.44924974997895,
+              "baseline_4dp": "40.4493",
+              "tight_4dp": "40.4492"
+            }
+          ]
+        },
+        "C": {
+          "surface_max_absolute_difference": 8.699361120356741e-09,
+          "surface_max_location": {
+            "time_s": 6420.0,
+            "material_x": 1.0,
+            "radius_m": 0.016588
+          },
+          "surface_values_at_max": {
+            "baseline": 0.8568368564943712,
+            "tight": 0.8568368651937324
+          },
+          "all_21_material_points_max_absolute_difference": 8.699361120356741e-09,
+          "all_21_material_points_max_location": {
+            "time_s": 6420.0,
+            "material_x": 1.0,
+            "radius_m": 0.016588
+          },
+          "surface_4dp_difference_count": 0,
+          "surface_4dp_differences": []
+        }
+      }
+    }
+  ],
+  "Q4_spatial_saved_surface": {
+    "question": "Q4",
+    "coarse_N": 3200,
+    "fine_N": 6400,
+    "sources": [
+      {
+        "path": "paper_output/results/convergence/Q4_final_resolution_v5/N3200/sampled_solution.npz",
+        "bytes": 628625,
+        "sha256": "0c03994cc634f07dc12349e3204eaaf8a2570e2d888a74c84bfc784d4d931439"
+      },
+      {
+        "path": "paper_output/results/convergence/Q4_final_resolution_v5/N6400/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      }
+    ],
+    "common_saved_time_count": 3068,
+    "scope": "x=1 actual moving surface at common saved times; ordinary samples every 60 s with common extra times; no full-second surface archive.",
+    "extra_non_60s_times": [
+      100.0,
+      183928.0
+    ],
+    "fields": {
+      "T_K": {
+        "surface_max_absolute_difference": 2.328249422589579e-06,
+        "location": {
+          "time_s": 1740.0,
+          "material_x": 1.0,
+          "radius_m": 0.018772333333333335
+        },
+        "coarse": 308.7447595941399,
+        "fine": 308.74476192238933
+      },
+      "C": {
+        "surface_max_absolute_difference": 8.22559752000629e-06,
+        "location": {
+          "time_s": 60.0,
+          "material_x": 1.0,
+          "radius_m": 0.01995766666666667
+        },
+        "coarse": 2.079438311232141,
+        "fine": 2.079430085634621
+      }
+    }
+  }
+}
