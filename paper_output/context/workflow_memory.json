@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
+  "generated_at": "2026-09-10T17:36:51",
+  "status": "PASS",
+  "root": "D:\\Document\\数学建模\\2026CUMCM",
+  "workflow": {
+    "status": "INCOMPLETE",
+    "mode": "status",
+    "current_step": "",
+    "next_step": "S0",
+    "recommended_skill": "paper-workflow-orchestrator",
+    "next_action": "运行 preflight_check.py，生成 preflight_report.json 与 input_manifest.json。",
+    "completed_steps": [],
+    "failures": [
+      "S0: 缺少文件：paper_output/preflight_report.json",
+      "S0: 缺少文件：paper_output/input_manifest.json"
+    ]
+  },
+  "inputs": {},
+  "runs": {},
+  "artifacts": {
+    "workflow_guard_report": {
+      "path": "paper_output/qa/workflow_guard_report.json",
+      "exists": true,
+      "bytes": 832,
+      "status": "INCOMPLETE"
+    },
+    "preflight_report": {
+      "path": "paper_output/preflight_report.json",
+      "exists": false
+    },
+    "input_manifest": {
+      "path": "paper_output/input_manifest.json",
+      "exists": false
+    },
+    "load_report": {
+      "path": "paper_output/data_cleaned/load_report.json",
+      "exists": false
+    },
+    "run_manifest": {
+      "path": "paper_output/results/run_manifest.json",
+      "exists": false
+    },
+    "evidence_gate_report": {
+      "path": "paper_output/qa/evidence_gate_report.json",
+      "exists": false
+    },
+    "authoring_state": {
+      "path": "paper_output/context/authoring_state.json",
+      "exists": false
+    },
+    "writing_plan": {
+      "path": "paper_output/plan/writing_plan.json",
+      "exists": false
+    },
+    "format_check_report": {
+      "path": "paper_output/format_check_report.json",
+      "exists": false
+    }
+  },
+  "latest_statuses": {
+    "preflight": null,
+    "load_report": null,
+    "run_manifest": null,
+    "evidence_gate": null,
+    "authoring": null,
+    "format_check": null
+  },
+  "blockers": [
+    "S0: 缺少文件：paper_output/preflight_report.json",
+    "S0: 缺少文件：paper_output/input_manifest.json"
+  ]
+}

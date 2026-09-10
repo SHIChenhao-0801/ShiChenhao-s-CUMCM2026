@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-09-10",
+  "timezone": "Asia/Shanghai",
+  "effective_from": "2026-09-10T18:00:00+08:00",
+  "contest_root": "D:/Document/数学建模/2026CUMCM",
+  "checks": [
+    {
+      "id": "automation",
+      "name": "高教杯每三小时进度与信息简报",
+      "status": "ACTIVE",
+      "schedule_unchanged": true,
+      "thread_unchanged": true,
+      "prompt_matches": true,
+      "uses_contest_root": true,
+      "authority_updated": true
+    },
+    {
+      "id": "kpl-f1",
+      "name": "数模期间赛事提醒与本周大盘观察",
+      "status": "ACTIVE",
+      "schedule_unchanged": true,
+      "thread_unchanged": true,
+      "prompt_matches": true,
+      "uses_contest_root": true,
+      "authority_updated": true
+    }
+  ],
+  "notification_conditions_preserved": true,
+  "first_contest_briefing_run_verified": false
+}

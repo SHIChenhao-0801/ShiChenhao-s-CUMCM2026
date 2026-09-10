@@ -1,0 +1,53 @@
+# Shared tools live outside this contest repository (Windows junction).
+/.agents/skills/
+
+# Rebuildable caches and local development environments.
+/tmp/cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+node_modules/
+.vs/
+*.suo
+*.user
+*.VC.db
+*.VC.VC.opendb
+.Rproj.user/
+.Rhistory
+
+# Credentials and machine-local secrets. Keep sanitized examples.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+secrets.json
+secrets.local.*
+
+# Office locks and OS metadata (documents and PDFs themselves are tracked).
+~$*
+.~lock.*#
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Downloaded B-problem software, installers and demonstration video.
+# These are external tools, not this team's source/results. Keep the local files.
+/B题模拟器/CUMCM2026B/Jammers-simulator/
+/B题模拟器/CUMCM2026B/Jammers-simulator-full-win64.7z
+/B题模拟器/CUMCM2026B/Jammers-simulator-win64.7z
+/B题模拟器/CUMCM2026B/模拟器操作演示.mp4
+
+# Do not blanket-ignore data, PDFs, ZIPs, figures, logs or tmp/:
+# original inputs, execution evidence and frozen submissions belong in Git.

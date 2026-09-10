@@ -1,0 +1,20 @@
+# Preserve original bytes, line endings and recorded evidence/submission hashes.
+# Git can still display text diffs; no automatic newline conversion is applied.
+* -text
+
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.7z binary
+*.mp4 binary
+*.mat binary
+*.parquet binary

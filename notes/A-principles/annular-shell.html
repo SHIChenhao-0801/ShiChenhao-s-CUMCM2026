@@ -1,0 +1,78 @@
+<div id="a-annular-shell">
+  <h3>圆柱薄壳：几何示意</h3>
+  <div class="text-small text-muted">横截面 · 长度 L = 25 cm · 厚度 dr = 0.10 cm</div>
+  <div class="viz-controls">
+    <label class="form-label" for="a-shell-radius">薄壳内半径 r：<output id="a-shell-radius-value" class="tabular-nums">1.00 cm</output>
+      <input id="a-shell-radius" class="form-range" type="range" min="0.2" max="1.8" step="0.02" value="1" aria-label="薄壳内半径，单位厘米">
+    </label>
+  </div>
+  <svg class="shell-diagram" role="img" aria-labelledby="a-shell-title a-shell-description">
+    <title id="a-shell-title">药材圆柱横截面内的环形薄壳</title>
+    <desc id="a-shell-description">药材外半径为 2 厘米。着色环带从内半径 r 延伸到 r 加 dr，固定厚度为 0.1 厘米。滑动内半径可比较薄壳两侧的面积。</desc>
+    <g id="a-shell-shapes"></g>
+  </svg>
+  <div id="a-shell-detail" class="text-small tabular-nums" aria-live="polite">侧面积（内/外）157.1/172.8 cm² · 体积 16.49 cm³</div>
+</div>
+<style>
+  #a-annular-shell { color: var(--foreground); width: 100%; }
+  #a-annular-shell .shell-diagram { display: block; width: 100%; }
+  #a-annular-shell .shell-diagram text { fill: var(--foreground); font-size: var(--font-size-base); font-weight: 400; }
+  #a-annular-shell #a-shell-detail { overflow-wrap: anywhere; }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('a-annular-shell');
+  const slider = root.querySelector('#a-shell-radius');
+  const value = root.querySelector('#a-shell-radius-value');
+  const svg = root.querySelector('.shell-diagram');
+  const group = root.querySelector('#a-shell-shapes');
+  const detail = root.querySelector('#a-shell-detail');
+  const ns = 'http://www.w3.org/2000/svg';
+  const R = 2, dr = 0.1, L = 25;
+
+  function element(name, attributes, content) {
+    const node = document.createElementNS(ns, name);
+    Object.entries(attributes).forEach(([key, val]) => node.setAttribute(key, String(val)));
+    if (content !== undefined) node.textContent = content;
+    group.appendChild(node);
+    return node;
+  }
+
+  function draw() {
+    const width = Math.max(1, root.getBoundingClientRect().width);
+    const radius = Math.min(150, Math.max(40, (width - 72) / 2));
+    const height = radius * 2 + 64;
+    const cx = width / 2, cy = radius + 28;
+    const r = Number(slider.value);
+    const inner = radius * r / R, outer = radius * (r + dr) / R;
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+    svg.setAttribute('height', height);
+    group.replaceChildren();
+    element('circle', { cx, cy, r: radius, fill: 'none', stroke: 'var(--border)', 'stroke-width': 1.5 });
+    const circlePath = rad => `M ${cx + rad} ${cy} A ${rad} ${rad} 0 1 0 ${cx - rad} ${cy} A ${rad} ${rad} 0 1 0 ${cx + rad} ${cy} Z`;
+    element('path', { d: circlePath(outer) + ' ' + circlePath(inner), fill: 'var(--viz-series-1)', 'fill-opacity': 0.26, 'fill-rule': 'evenodd' });
+    [inner, outer].forEach(rad => element('circle', { cx, cy, r: rad, fill: 'none', stroke: 'var(--viz-series-1)', 'stroke-width': 1 }));
+    element('circle', { cx, cy, r: 2.5, fill: 'var(--foreground)' });
+    element('line', { x1: cx, y1: cy, x2: cx - radius, y2: cy, stroke: 'var(--foreground)', 'stroke-width': 1 });
+    element('text', { x: cx - radius / 2, y: cy - 12, 'text-anchor': 'middle' }, 'R = 2 cm');
+    element('line', { x1: cx, y1: cy, x2: cx + inner, y2: cy, stroke: 'var(--foreground)', 'stroke-width': 1 });
+    element('text', { x: cx + Math.max(inner / 2, 15), y: cy + 22, 'text-anchor': 'middle' }, 'r');
+    const dx = outer * Math.SQRT1_2;
+    element('line', { x1: cx, y1: cy, x2: cx + dx, y2: cy - dx, stroke: 'var(--foreground)', 'stroke-width': 1 });
+    const labelX = cx + Math.max(dx + 8, 50);
+    const labelY = cy - Math.max(dx + 14, 44);
+    element('line', { x1: cx + dx, y1: cy - dx, x2: labelX, y2: labelY + 5, stroke: 'var(--border)', 'stroke-width': 1 });
+    element('text', { x: labelX, y: labelY, 'text-anchor': 'middle' }, 'r + dr');
+    value.textContent = r.toFixed(2) + ' cm';
+    slider.setAttribute('aria-valuetext', r.toFixed(2) + ' 厘米');
+    const innerArea = 2 * Math.PI * r * L;
+    const outerArea = 2 * Math.PI * (r + dr) * L;
+    const volume = Math.PI * ((r + dr) ** 2 - r ** 2) * L;
+    detail.textContent = `侧面积（内/外）${innerArea.toFixed(1)}/${outerArea.toFixed(1)} cm² · 体积 ${volume.toFixed(2)} cm³`;
+  }
+
+  slider.addEventListener('input', draw);
+  new ResizeObserver(draw).observe(root);
+  draw();
+})();
+</script>
