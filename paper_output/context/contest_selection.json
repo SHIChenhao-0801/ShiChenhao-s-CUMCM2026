@@ -1,32 +1,33 @@
 {
   "schema_version": "1.0",
   "contest": "2026年高教社杯全国大学生数学建模竞赛",
-  "selection_status": "undecided",
+  "selection_status": "confirmed",
   "decision_date_beijing": "2026-09-10",
-  "problem_id": null,
-  "problem_title": null,
-  "user_instruction": "那么C呢",
-  "selection_basis": "用户此前明确选题仍不确定；本轮追问C题沿用详细公式、算法与教学代码讲解范围，不代表最终选择C。",
-  "current_reading_focus": "C",
+  "problem_id": "A",
+  "problem_title": "药材的烘干问题",
+  "user_instruction": "我最终证实打A 不考虑B了",
+  "selection_basis": "用户在B题最小接口演练与A题可行性评估期间，明确最终选择A，不再考虑B。该最新指令覆盖此前选题待定状态。选题确认不等于具体模型、数值结果或人工代码审查通过。",
+  "current_reading_focus": "A",
   "previous_decision": {
     "problem_id": "A",
     "instruction": "我的评估最终选择A题。",
     "status": "superseded_by_latest_user_instruction"
   },
   "workspace_root": "D:/Document/数学建模/2026CUMCM",
-  "problem_pdf": null,
-  "attachments_root": null,
-  "current_reading_pdf": "problem_files/CUMCM2026Problems/C题/C题.pdf",
-  "current_reading_attachments_root": "problem_files/CUMCM2026Problems/C题/附件",
+  "problem_pdf": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+  "attachments_root": "problem_files/CUMCM2026Problems/A题/附件",
+  "current_reading_pdf": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+  "current_reading_attachments_root": "problem_files/CUMCM2026Problems/A题/附件",
   "source_manifest": "notes/problem-reading/2026-09-10/source_manifest.json",
   "model_route_status": "not_yet_confirmed",
   "formal_results_status": "not_run",
   "reading_artifacts": [
-    "notes/C-principles/C题_公式算法与代码讲解.md",
-    "notes/C-principles/附件结构初读.md",
-    "notes/C-principles/storage-balance.html"
+    "notes/A-principles/A题_公式推导与原理讲解.md",
+    "notes/A-principles/annular-shell.html",
+    "notes/selection-evaluation/2026-09-10/A题_可行性评估.md",
+    "notes/selection-evaluation/2026-09-10/A附件_只读核对.json"
   ],
-  "reading_status": "C题附件结构初读及公式、算法、教学代码说明已完成，并经独立只读复核；未训练预测模型、求解调度或填写结果模板。",
-  "next_action": "用户继续评估选题；按其后续决定进入相应题目的正式审题、数据审计和模型比较。",
-  "scope_note": "当前选题待定，A/B/C题讲解均保留为候选参考。本轮C题附件初读与教学说明不代表正式数据审计、模型确认或实际求解，不改变任何工作流门禁状态。"
+  "reading_status": "A题题面、公式推导、附件只读核对和实施可行性评估已整理；尚无A题正式数值求解与结果模板填充。",
+  "next_action": "围绕已确认的A题开展正式输入准入、完整数据审计及可解释基线；优先验证问题1，再复用框架处理问题2、3和问题4。",
+  "scope_note": "A题已最终选定；B评估与测试按用户指令结束。本次只读核对与可行性分析不代表正式门禁通过。B问题3接口演练证据仅为历史选题记录，不迁入A题求解结果。"
 }

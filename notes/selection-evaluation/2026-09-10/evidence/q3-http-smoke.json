@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "timestamp": "2026-09-10T20:57:09.3949498+08:00",
+  "purpose": "simulator_transport_smoke_test_not_solver",
+  "practice_problem": 3,
+  "source": "B attachment 2 section 10, plus one identical request replay",
+  "base_url": "http://127.0.0.1:2026",
+  "program_elapsed_s": 0.1836045,
+  "entered": true,
+  "exited": true,
+  "checks": {
+    "remaining_real_time_positive": true,
+    "idempotent_retry_unchanged_time": true,
+    "first_move_and_measure_105s": true,
+    "channel_switch_and_measure_111s": true,
+    "clear_time_matches_rule": true,
+    "clear_does_not_change_measurement_channel": true,
+    "exit_time_unchanged": true,
+    "exit_reason_user_exit": true
+  },
+  "passed": true,
+  "error": null,
+  "records": [
+    {
+      "route": "/enter",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-1",
+        "robot_id": "<runtime-robot-id>"
+      },
+      "http_status": 200,
+      "latency_ms": 79.1599,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030677,
+        "virtual_time_s": 0,
+        "max_virtual_duration_s": 360000,
+        "max_real_duration_s": 1200,
+        "remaining_real_duration_s": 1200
+      }
+    },
+    {
+      "route": "/measure",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-2",
+        "robot_id": "<runtime-robot-id>",
+        "position": {
+          "y": 400,
+          "x": 300
+        },
+        "channel": 1
+      },
+      "http_status": 200,
+      "latency_ms": 3.0202,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030714,
+        "virtual_time_s": 105,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "route": "/measure",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-3",
+        "robot_id": "<runtime-robot-id>",
+        "position": {
+          "y": 400,
+          "x": 300
+        },
+        "channel": 2
+      },
+      "http_status": 200,
+      "latency_ms": 1.6436,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030717,
+        "virtual_time_s": 111,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "route": "/measure",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-3",
+        "robot_id": "<runtime-robot-id>",
+        "position": {
+          "y": 400,
+          "x": 300
+        },
+        "channel": 2
+      },
+      "http_status": 200,
+      "latency_ms": 1.3663,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030717,
+        "virtual_time_s": 111,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "route": "/clear",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-4",
+        "robot_id": "<runtime-robot-id>",
+        "position": {
+          "y": 0,
+          "x": 300
+        },
+        "channel": 3
+      },
+      "http_status": 200,
+      "latency_ms": 1.6245,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030731,
+        "virtual_time_s": 194,
+        "clear_result": "no_target_in_range"
+      }
+    },
+    {
+      "route": "/measure",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-5",
+        "robot_id": "<runtime-robot-id>",
+        "position": {
+          "y": 0,
+          "x": 300
+        },
+        "channel": 2
+      },
+      "http_status": 200,
+      "latency_ms": 1.4664,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030733,
+        "virtual_time_s": 199,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "route": "/exit",
+      "request": {
+        "arena_id": "default",
+        "request_id": "smoke-498ca9ab6bbd44eabea4667c2d32fe22-6",
+        "robot_id": "<runtime-robot-id>"
+      },
+      "http_status": 200,
+      "latency_ms": 1.9604,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1789045030736,
+        "virtual_time_s": 199,
+        "exit_reason": "user_exit"
+      }
+    }
+  ]
+}
