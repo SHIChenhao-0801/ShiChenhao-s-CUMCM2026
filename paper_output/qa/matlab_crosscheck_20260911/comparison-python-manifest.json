@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "createdAtUtc": "2026-09-10T19:39:03.359Z",
+  "script": {
+    "path": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+    "bytes": 16706,
+    "sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe"
+  },
+  "processSupervision": {
+    "supervisorStartedAtUtc": "2026-09-10T19:39:03.253Z",
+    "supervisorFinishedAtUtc": "2026-09-10T19:39:03.357Z",
+    "executable": "D:\\Nodejs\\node.exe",
+    "commandArguments": [
+      "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\tools\\compareMatlab.mjs",
+      "--worker"
+    ],
+    "cwd": "D:\\Document\\数学建模\\2026CUMCM",
+    "workerActualExitCode": 0,
+    "workerSignal": null,
+    "workerSpawnError": null,
+    "workerStderr": "",
+    "source": "Node parent process spawnSync return status; not a child prefilled success flag"
+  },
+  "outputs": [
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+      "bytes": 55252,
+      "sha256": "9cf5bd7aa55169456378c530f71375fbd53b66c0ff3f3de93d62882ffc784c9d"
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.md",
+      "bytes": 2254,
+      "sha256": "2f9f178f1794a5272676b91f509c10baf547dc6d5564765579ee9ea407d1836b"
+    }
+  ]
+}

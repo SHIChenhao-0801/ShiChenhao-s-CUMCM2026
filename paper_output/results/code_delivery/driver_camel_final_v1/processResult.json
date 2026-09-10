@@ -1,0 +1,19 @@
+{
+  "runId": "camel_final_v1",
+  "profile": "final",
+  "executable": "C:\\Python314\\python.exe",
+  "argumentText": "-B \"D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\runDelivery.py\" --profile final --run-id camel_final_v1",
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM",
+  "processId": 36092,
+  "startedAtUtc": "2026-09-10T19:31:07.4990101Z",
+  "finishedAtUtc": "2026-09-10T19:39:37.2734670Z",
+  "elapsedSeconds": 509.7637947,
+  "actualExitCode": 1,
+  "sourceSha256AtLaunch": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+  "sourceSha256AtExit": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+  "observedPeakWorkingSetBytes": 1320587264,
+  "memoryScope": "One-second observed process working set; excludes transient peaks and child processes",
+  "timedOut": false,
+  "humanReview": "pending",
+  "guiObserved": false
+}

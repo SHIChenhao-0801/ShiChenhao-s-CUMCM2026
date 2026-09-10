@@ -1,0 +1,624 @@
+{
+  "status": "PASS",
+  "createdUtc": "2026-09-10T19:28:34.360118+00:00",
+  "runtime": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Python314\\python.exe",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "elapsedS": 3.5244434000014735,
+  "checks": [
+    {
+      "label": "Q1/initial/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/initial/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/initial/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/initial/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/initial/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/initial/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nonuniform/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nonuniform/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nonuniform/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nonuniform/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nonuniform/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nonuniform/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nearUniform/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nearUniform/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nearUniform/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nearUniform/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nearUniform/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q1/nearUniform/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/initial/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/initial/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/initial/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/initial/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/initial/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/initial/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nonuniform/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nonuniform/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nonuniform/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nonuniform/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nonuniform/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nonuniform/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nearUniform/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nearUniform/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nearUniform/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nearUniform/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nearUniform/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q23/nearUniform/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/initial/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/initial/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/initial/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/initial/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/initial/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/initial/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nonuniform/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nonuniform/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nonuniform/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nonuniform/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nonuniform/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nonuniform/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nearUniform/rhs",
+      "shape": [
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nearUniform/jacobian",
+      "shape": [
+        19,
+        19
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nearUniform/property0",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nearUniform/property1",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nearUniform/property2",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "Q4/nearUniform/property3",
+      "shape": [
+        9
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "memory/acceptedTimes0",
+      "shape": [
+        1369
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "memory/acceptedStates0",
+      "shape": [
+        19,
+        1369
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "memory/denseQuery",
+      "shape": [
+        19,
+        4164
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "memory/physicalFields0",
+      "shape": [
+        3,
+        3
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "memory/physicalFields1",
+      "shape": [
+        3,
+        3
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "disk/acceptedTimes0",
+      "shape": [
+        1369
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "disk/acceptedStates0",
+      "shape": [
+        19,
+        1369
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "disk/denseQuery",
+      "shape": [
+        19,
+        4164
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "disk/physicalFields0",
+      "shape": [
+        3,
+        3
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    },
+    {
+      "label": "disk/physicalFields1",
+      "shape": [
+        3,
+        3
+      ],
+      "bitwiseIdentical": true,
+      "maxAbsDifference": 0.0
+    }
+  ],
+  "runs": [
+    {
+      "question": "Q1",
+      "intervals": 8,
+      "storage": "memory",
+      "reviewDiagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 0.7271026000016718,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+        "min_C": 1.5265009669347473,
+        "max_C": 2.55,
+        "min_T_K": 301.15,
+        "max_T_K": 309.93380502141537,
+        "min_D": 3.907420494279151e-09,
+        "max_D": 4.937655094173937e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 0.0,
+        "final_max_C": 2.5498867798332356,
+        "final_surface_C": 1.5265009669347473,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3514,
+        "accepted_time_points": 1369,
+        "nfev": 3514,
+        "njev": 31,
+        "nlu": 272,
+        "solver_success": true,
+        "dense_storage": "memory",
+        "dense_coefficient_bytes": 0,
+        "dense_polynomial_count": 0
+      },
+      "denseQueryCount": 4164
+    },
+    {
+      "question": "Q1",
+      "intervals": 8,
+      "storage": "disk",
+      "reviewDiagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 0.8890596999990521,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+        "min_C": 1.5265009669347473,
+        "max_C": 2.55,
+        "min_T_K": 301.15,
+        "max_T_K": 309.93380502141537,
+        "min_D": 3.907420494279151e-09,
+        "max_D": 4.937655094173937e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 0.0,
+        "final_max_C": 2.5498867798332356,
+        "final_surface_C": 1.5265009669347473,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3514,
+        "accepted_time_points": 1369,
+        "nfev": 3514,
+        "njev": 31,
+        "nlu": 272,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 1110968,
+        "dense_polynomial_count": 1368
+      },
+      "denseQueryCount": 4164
+    }
+  ],
+  "warnings": [],
+  "allChecksBitwiseIdentical": true,
+  "limitations": [
+    "N8 rename/storage compatibility only; not production grid accuracy",
+    "CLI run only; Visual Studio GUI and user review not asserted"
+  ],
+  "humanReview": "pending",
+  "guiReproduced": false
+}

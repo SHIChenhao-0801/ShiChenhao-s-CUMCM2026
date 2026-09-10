@@ -1,0 +1,104 @@
+{
+  "startedAtUtc": "2026-09-10T19:29:28.943041+00:00",
+  "runId": "camel_audit_v1",
+  "profile": "audit",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\runDelivery.py",
+    "--profile",
+    "audit",
+    "--run-id",
+    "camel_audit_v1"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "libraries": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "openpyxl": "3.1.5"
+  },
+  "inputRecords": [
+    {
+      "path": "paper_output/code/review_delivery/analyticJacobian.py",
+      "bytes": 17600,
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+    },
+    {
+      "path": "paper_output/code/review_delivery/diskDense.py",
+      "bytes": 5562,
+      "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "bytes": 21525,
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "paper_output/code/review_delivery/exportOutputs.py",
+      "bytes": 42148,
+      "sha256": "34cb5bfa0f16f60534cb4d28057892604ca2f3b0539ca2a9b0c7c17494883ab5"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q1Model.py",
+      "bytes": 532,
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q2Model.py",
+      "bytes": 550,
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q3Model.py",
+      "bytes": 1595,
+      "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q4Model.py",
+      "bytes": 584,
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runDelivery.py",
+      "bytes": 15385,
+      "sha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    }
+  ],
+  "blasThreads": 1,
+  "humanReview": "pending",
+  "guiObserved": false,
+  "baseline": "paper_output/results/production/final_v6a",
+  "seed": null,
+  "seedReason": "deterministic PDE solve; no pseudorandom numbers",
+  "experimentBudgetSeconds": 1800
+}

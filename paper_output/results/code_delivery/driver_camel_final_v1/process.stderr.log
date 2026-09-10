@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\runDelivery.py", line 257, in main
+    summaries[questionKey], comparisons[questionKey] = runQuestion(
+                                                       ~~~~~~~~~~~^
+        questionKey, intervalCount, outputDirectory, arguments.profile)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\runDelivery.py", line 173, in runQuestion
+    validation = exportOutputs.validateExports([exportResult], runs={questionId: solutionRun})
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\exportOutputs.py", line 639, in validateExports
+    paperValidation,paperErrors=validatePaperTables(manifest,run)
+                                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\exportOutputs.py", line 404, in validatePaperTables
+    'completion':completionInfo,'completion_source':exportFileRecord(SOURCE.with_name('q3_model.py')) if completionInfo else None,
+                                                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\exportOutputs.py", line 61, in exportFileRecord
+    'bytes':path.stat().st_size,'sha256':sha256File(path),'exists':True}
+            ~~~~~~~~~^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 654, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。: 'D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q3_model.py'
+Traceback (most recent call last):
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\runDelivery.py", line 281, in <module>
+    main()
+    ~~~~^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\runDelivery.py", line 257, in main
+    summaries[questionKey], comparisons[questionKey] = runQuestion(
+                                                       ~~~~~~~~~~~^
+        questionKey, intervalCount, outputDirectory, arguments.profile)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\runDelivery.py", line 173, in runQuestion
+    validation = exportOutputs.validateExports([exportResult], runs={questionId: solutionRun})
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\exportOutputs.py", line 639, in validateExports
+    paperValidation,paperErrors=validatePaperTables(manifest,run)
+                                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\exportOutputs.py", line 404, in validatePaperTables
+    'completion':completionInfo,'completion_source':exportFileRecord(SOURCE.with_name('q3_model.py')) if completionInfo else None,
+                                                    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\code\review_delivery\exportOutputs.py", line 61, in exportFileRecord
+    'bytes':path.stat().st_size,'sha256':sha256File(path),'exists':True}
+            ~~~~~~~~~^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 654, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。: 'D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q3_model.py'

@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "outputs": [
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q3/q3_paper_moisture.csv",
+      "bytes": 466,
+      "sha256": "9568aac09b38508e38b4f448de99da4d375f435da33433fd2e71ffce7d6b684e"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q3/result3.export.json",
+      "bytes": 25244,
+      "sha256": "34ee4b5dcc705fb76b8a9c1036ac93f535e9d6d14f6abf89b46a6c7d1ce93e40"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q3/result3.validation.json",
+      "bytes": 4620,
+      "sha256": "b4664d902d42e30d8aec2a5e7252d56eeed4098117d1aee66494d7b85d587c9d"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q3/result3.xlsx",
+      "bytes": 339131,
+      "sha256": "feaf7886350fe94fd09f465feddc37171dec0ed0c6a7206819ff771534cb30b9"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q3/result3_unrounded.csv.gz",
+      "bytes": 640521,
+      "sha256": "fecbfba0d67b9205b9953b804d06bf62c3d2c89a65c142901fd723a46de4ea22"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q4/q4_paper_moisture.csv",
+      "bytes": 390,
+      "sha256": "9e32b72bdf6381ba536e7670320464ce9f15a0bbc05852938e126845c17b275b"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q4/q4_paper_radius.csv",
+      "bytes": 172,
+      "sha256": "76ed187c4392b97e360129fe5a0029a44687a56052d379ce997c0d41a501058f"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q4/result4.export.json",
+      "bytes": 26122,
+      "sha256": "3886e03c8b23483935573c9aa24ca2a5ab892edfe606c6e6d07406a6bdd1ae3e"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q4/result4.validation.json",
+      "bytes": 6111,
+      "sha256": "381dfc12f63e399bb971cbc8c0df999b15b759a0297ab76c5cf195864ecc05a8"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q4/result4.xlsx",
+      "bytes": 278094,
+      "sha256": "e0ed1ecf2901871bd8c9b6985c53ac7f55a57f42bd246f8ea418e7706002ecad"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/Q4/result4_unrounded.csv.gz",
+      "bytes": 402901,
+      "sha256": "6d9a25df06f3d3f6407b9b913aa195006ea28aac9f85f1cb0721c127535fc507"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runtime/exportPathFix_v2/verification.json",
+      "bytes": 30965,
+      "sha256": "1c7b6cff35c729df8f9e1f9f6118c97af75236ae56e8ed16ba132bc1cecede2f"
+    }
+  ]
+}

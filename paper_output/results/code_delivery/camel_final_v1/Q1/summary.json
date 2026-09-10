@@ -1,0 +1,137 @@
+{
+  "settings": {
+    "question": "Q1",
+    "intervals": 3200,
+    "rtol": 1e-10,
+    "atolTemperature": 1e-10,
+    "atolMoisture": 1e-12,
+    "maxStepS": 120.0,
+    "earlyMaxStepS": 2.0,
+    "horizonH": 240.0,
+    "shrink": false,
+    "boundaryExtension": "nominal",
+    "tailTemperatureC": 50.0,
+    "tailEquilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibriumScale": 1.0,
+    "surfaceLatentFraction": 0.0,
+    "latentJKg": 2400000.0,
+    "constantD": null,
+    "constantThermal": false,
+    "method": "BDF",
+    "faceScheme": "kirchhoff",
+    "jacobianMode": "analytic",
+    "denseStorage": "disk"
+  },
+  "diagnostics": {
+    "event_s": null,
+    "event_h": null,
+    "end_s": 1800.0,
+    "elapsed_s": 7.744966499998554,
+    "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+    "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+    "min_C": 1.510234685362519,
+    "max_C": 2.550000000000001,
+    "min_T_K": 301.15,
+    "max_T_K": 309.9355602874471,
+    "min_D": 3.882960068132186e-09,
+    "max_D": 4.937655094173939e-09,
+    "positive_properties": true,
+    "max_radial_C_increase": 3.552713678800501e-15,
+    "final_max_C": 2.549992403819304,
+    "final_surface_C": 1.5102346853625193,
+    "strictly_dry_at_end": false,
+    "radius_end_m": 0.02,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 3914,
+    "accepted_time_points": 1743,
+    "nfev": 3914,
+    "njev": 68,
+    "nlu": 431,
+    "solver_success": true,
+    "dense_storage": "disk",
+    "dense_coefficient_bytes": 463474752,
+    "dense_polynomial_count": 1742
+  },
+  "code": {
+    "path": "paper_output/code/review_delivery/dryingCore.py",
+    "bytes": 21525,
+    "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+    "exists": true
+  },
+  "jacobian_code": {
+    "path": "paper_output/code/review_delivery/analyticJacobian.py",
+    "bytes": 17600,
+    "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+    "exists": true
+  },
+  "dense_storage_code": {
+    "path": "paper_output/code/review_delivery/diskDense.py",
+    "bytes": 5562,
+    "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+    "exists": true
+  },
+  "inputs": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    }
+  ],
+  "human_review_status": "pending",
+  "gui_reproduced": false,
+  "warningCount": 0,
+  "crossLanguageSamples": {
+    "timesS": [
+      0.0,
+      1800.0
+    ],
+    "materialX": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "temperatureK": [
+      [
+        301.15,
+        301.15,
+        301.15,
+        301.15,
+        301.15
+      ],
+      [
+        306.7253448172471,
+        306.92200190803965,
+        307.51416078664806,
+        308.51212454467895,
+        309.9355602874471
+      ]
+    ],
+    "moistureDryBasis": [
+      [
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55
+      ],
+      [
+        2.549992403819304,
+        2.549723930554662,
+        2.5383005254029065,
+        2.3754698868518354,
+        1.5102346853625193
+      ]
+    ]
+  }
+}

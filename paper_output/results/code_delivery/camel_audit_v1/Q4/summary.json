@@ -1,0 +1,193 @@
+{
+  "settings": {
+    "question": "Q4",
+    "intervals": 40,
+    "rtol": 1e-10,
+    "atolTemperature": 1e-10,
+    "atolMoisture": 1e-12,
+    "maxStepS": 120.0,
+    "earlyMaxStepS": 2.0,
+    "horizonH": 240.0,
+    "shrink": true,
+    "boundaryExtension": "nominal",
+    "tailTemperatureC": 50.0,
+    "tailEquilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibriumScale": 1.0,
+    "surfaceLatentFraction": 0.0,
+    "latentJKg": 2400000.0,
+    "constantD": null,
+    "constantThermal": false,
+    "method": "BDF",
+    "faceScheme": "kirchhoff",
+    "jacobianMode": "analytic",
+    "denseStorage": "disk"
+  },
+  "diagnostics": {
+    "event_s": 183960.68415641366,
+    "event_h": 51.10019004344824,
+    "end_s": 183962.0,
+    "elapsed_s": 12.040061600000627,
+    "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+    "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+    "min_C": 0.05260998489636258,
+    "max_C": 2.55,
+    "min_T_K": 301.1499999999999,
+    "max_T_K": 323.20014180741873,
+    "min_D": 9.388202369162352e-12,
+    "max_D": 2.477056158986742e-09,
+    "positive_properties": true,
+    "max_radial_C_increase": 0.0,
+    "final_max_C": 0.1499993244745923,
+    "final_surface_C": 0.05260998489636258,
+    "strictly_dry_at_end": true,
+    "radius_end_m": 0.012,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 37277,
+    "accepted_time_points": 15571,
+    "nfev": 37277,
+    "njev": 485,
+    "nlu": 3528,
+    "solver_success": true,
+    "dense_storage": "disk",
+    "dense_coefficient_bytes": 54020384,
+    "dense_polynomial_count": 15568
+  },
+  "code": {
+    "path": "paper_output/code/review_delivery/dryingCore.py",
+    "bytes": 21525,
+    "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+    "exists": true
+  },
+  "jacobian_code": {
+    "path": "paper_output/code/review_delivery/analyticJacobian.py",
+    "bytes": 17600,
+    "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+    "exists": true
+  },
+  "dense_storage_code": {
+    "path": "paper_output/code/review_delivery/diskDense.py",
+    "bytes": 5562,
+    "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+    "exists": true
+  },
+  "inputs": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    }
+  ],
+  "human_review_status": "pending",
+  "gui_reproduced": false,
+  "warningCount": 0,
+  "completion": {
+    "critical_event_s": 183960.68415641366,
+    "critical_event_h": 51.10019004344824,
+    "reported_drying_time_h": 51.1002,
+    "reported_time_s": 183960.72,
+    "max_C_at_reported_time": 0.1499999815985006,
+    "slowest_material_coordinate": 0.0,
+    "conservative_post_verification_s": 183962.0,
+    "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+    "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+  },
+  "crossLanguageSamples": {
+    "timesS": [
+      0.0,
+      1800.0,
+      10800.0,
+      183960.72,
+      183962.0
+    ],
+    "materialX": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "temperatureK": [
+      [
+        301.15,
+        301.15,
+        301.15,
+        301.15,
+        301.15
+      ],
+      [
+        304.1882119667832,
+        304.4676376081732,
+        305.32275050356026,
+        306.8026940055178,
+        309.06147890130813
+      ],
+      [
+        322.97124443743996,
+        322.9784502633587,
+        323.00287142754536,
+        323.04963833213014,
+        323.1274485935505
+      ],
+      [
+        323.1499999999999,
+        323.15000000000003,
+        323.15,
+        323.15,
+        323.15
+      ],
+      [
+        323.1499999999999,
+        323.15,
+        323.15,
+        323.15,
+        323.15
+      ]
+    ],
+    "moistureDryBasis": [
+      [
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55
+      ],
+      [
+        2.55,
+        2.5499999999789535,
+        2.549996047790871,
+        2.529869177763224,
+        1.1287375663491424
+      ],
+      [
+        2.454212159076175,
+        2.381082137074005,
+        2.111954003888823,
+        1.5583937307170819,
+        0.6840238885209566
+      ],
+      [
+        0.1499999815985006,
+        0.146927842809864,
+        0.13718513031676027,
+        0.11813552731513843,
+        0.05261002539169076
+      ],
+      [
+        0.1499993244745923,
+        0.1469272082817578,
+        0.13718456543027965,
+        0.11813508961739565,
+        0.05260998489636258
+      ]
+    ]
+  }
+}

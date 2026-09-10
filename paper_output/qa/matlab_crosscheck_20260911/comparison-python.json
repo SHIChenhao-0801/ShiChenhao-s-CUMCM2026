@@ -1,0 +1,1605 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "failures": [],
+  "startedAtUtc": "2026-09-10T19:39:03.319Z",
+  "finishedAtUtc": "2026-09-10T19:39:03.338Z",
+  "elapsedSeconds": 0.0181365,
+  "thresholds": {
+    "temperatureK": 0.0001,
+    "moistureDryBasis": 0.000001,
+    "eventSec": 0.01
+  },
+  "thresholdPolicy": "Fixed before reading results; not changed after observing differences",
+  "matchingPolicy": "Exact common time values and exact common material coordinates; no row-index pairing or interpolation",
+  "differenceConvention": "MATLAB minus Python",
+  "script": {
+    "path": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+    "bytes": 16706,
+    "sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe"
+  },
+  "inputRecords": [
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/runSummary.json",
+      "bytes": 40173,
+      "sha256": "9edd3cccb57f9485dbea73fe2fe191fb9fba6ba22cb61957d2038026ce23a5f0"
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/runLog.txt",
+      "bytes": 597,
+      "sha256": "0199a0c78bbbc3b36ad986fd3f03ccdace5a794207a631826335ec7c738a1edc"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+      "bytes": 3743,
+      "sha256": "0bbedcc6f0224afa93544a2a09d14021386ea24b5c50db0491c7b912bfa6510a"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+      "bytes": 44684,
+      "sha256": "e19d2e0e9a733efdcec45daf18b898561f642a4ab854887cc3e222ed48eff0ba"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/artifactManifest.json",
+      "bytes": 3943,
+      "sha256": "5f9fa42214699690db2e14f1405ecfff75e8c1865b3221d6d0a761b43f9da2f3"
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/Q1_crossCheck.json",
+      "bytes": 5886,
+      "sha256": "634c073d0be0b74bfcd444e0d5ef70c5cd20ca433fc8277c3054182e624d6877"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/Q1/summary.json",
+      "bytes": 3612,
+      "sha256": "a43ae8e51667f0493c7a7c611f676a065afc092225caf68b3509edbdff8131d0"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/Q1/sampled_solution.npz",
+      "bytes": 10669,
+      "sha256": "077663d70c868c43cf5ae18799cfc305eaf1ba66c7edf430361ef1bf888636a4"
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/Q23_crossCheck.json",
+      "bytes": 12770,
+      "sha256": "14bf93b600272609c0cae0672e4ec5e173c39542a73204d2c2a89b7767f66150"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/Q23/summary.json",
+      "bytes": 5143,
+      "sha256": "072a99bbfbdc15992e4c270b570b0b7f67ea2d1488186cf7ed01a22aa7644329"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/Q23/sampled_solution.npz",
+      "bytes": 689147,
+      "sha256": "493ce2d38d15dbf6283fef58114d723806287f56aadf98ceacc8997737257b9f"
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/Q4_crossCheck.json",
+      "bytes": 12952,
+      "sha256": "b04c41ea1742b270624371771414ce22d1b01773ef9f82b38d02228fa7b06cb2"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/Q4/summary.json",
+      "bytes": 5123,
+      "sha256": "48d3311928549902af50a88c6bc6639a7ddb76288ac6b8e347bafd28f93f82b5"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/Q4/sampled_solution.npz",
+      "bytes": 629864,
+      "sha256": "ffbc8c83b851d595d2eb7ce82551a49ea90879f6264dfad86b3e478398f679df"
+    },
+    {
+      "path": "paper_output/code/review_delivery/matlab/runCrossCheck.m",
+      "bytes": 26369,
+      "sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "bytes": 21525,
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "paper_output/code/review_delivery/analyticJacobian.py",
+      "bytes": 17600,
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+    },
+    {
+      "path": "paper_output/code/review_delivery/diskDense.py",
+      "bytes": 5562,
+      "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+    }
+  ],
+  "provenanceChecks": [
+    {
+      "label": "MATLAB source",
+      "actual": {
+        "path": "paper_output/code/review_delivery/matlab/runCrossCheck.m",
+        "bytes": 26369,
+        "sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "MATLAB observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "MATLAB observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q1/code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/dryingCore.py",
+        "bytes": 21525,
+        "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q1/jacobian_code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/analyticJacobian.py",
+        "bytes": 17600,
+        "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q1/dense_storage_code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/diskDense.py",
+        "bytes": 5562,
+        "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q1/observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q1/observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q23/code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/dryingCore.py",
+        "bytes": 21525,
+        "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q23/jacobian_code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/analyticJacobian.py",
+        "bytes": 17600,
+        "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q23/dense_storage_code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/diskDense.py",
+        "bytes": 5562,
+        "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q23/observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q23/observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q4/code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/dryingCore.py",
+        "bytes": 21525,
+        "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q4/jacobian_code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/analyticJacobian.py",
+        "bytes": 17600,
+        "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q4/dense_storage_code",
+      "actual": {
+        "path": "paper_output/code/review_delivery/diskDense.py",
+        "bytes": 5562,
+        "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q4/observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      },
+      "matchedRecordedHash": true
+    },
+    {
+      "label": "Q4/observed input",
+      "actual": {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+      },
+      "matchedRecordedHash": true
+    }
+  ],
+  "runtime": {
+    "nodeVersion": "v24.20.0",
+    "executable": "D:\\Nodejs\\node.exe",
+    "platform": "win32",
+    "architecture": "x64",
+    "matlabVersion": "26.1.0.3346908 (R2026a) Update 5",
+    "matlabSolver": "ode15s_default_NDF",
+    "matlabJacobian": "JPattern_finite_difference",
+    "pythonVersion": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "pythonLibraries": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5"
+    },
+    "pythonSolver": "SciPy BDF",
+    "pythonJacobian": "analytic sparse"
+  },
+  "sourceRunTimes": {
+    "matlabStartedAtUtc": "2026-09-10T19:32:42.731Z",
+    "matlabFinishedAtUtc": "2026-09-10T19:33:27.745Z",
+    "pythonStartedAtUtc": "2026-09-10T19:29:28.943041+00:00",
+    "pythonFinishedAtUtc": "2026-09-10T19:30:22.376624+00:00"
+  },
+  "comparedFieldScalars": 100,
+  "comparedEvents": 2,
+  "questions": [
+    {
+      "question": "Q1",
+      "status": "PASS",
+      "intervals": 40,
+      "commonTimesSec": [
+        0,
+        1800
+      ],
+      "commonMaterialX": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "matchedCoordinatePairs": 10,
+      "maxima": {
+        "temperatureK": {
+          "timeSec": 1800,
+          "materialX": 0,
+          "matlabValue": 306.72530774908074,
+          "pythonValue": 306.72530770914983,
+          "signedDifferenceMatlabMinusPython": 3.993091013398953e-8,
+          "absoluteDifference": 3.993091013398953e-8,
+          "passed": true
+        },
+        "moistureDryBasis": {
+          "timeSec": 1800,
+          "materialX": 0.75,
+          "matlabValue": 2.3756720386760373,
+          "pythonValue": 2.3756720386858965,
+          "signedDifferenceMatlabMinusPython": -9.85922454788124e-12,
+          "absoluteDifference": 9.85922454788124e-12,
+          "passed": true
+        }
+      },
+      "event": {
+        "applicable": false,
+        "reason": "Q1 stops at 1800 s and has no drying event"
+      },
+      "comparisons": [
+        {
+          "timeSec": 0,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 306.72530774908074,
+            "pythonValue": 306.72530770914983,
+            "signedDifferenceMatlabMinusPython": 3.993091013398953e-8,
+            "absoluteDifference": 3.993091013398953e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.549990231400734,
+            "pythonValue": 2.549990231401041,
+            "signedDifferenceMatlabMinusPython": -3.0730973321624333e-13,
+            "absoluteDifference": 3.0730973321624333e-13,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 306.921967271793,
+            "pythonValue": 306.92196723259786,
+            "signedDifferenceMatlabMinusPython": 3.919512892025523e-8,
+            "absoluteDifference": 3.919512892025523e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.5496987131618445,
+            "pythonValue": 2.5496987131620497,
+            "signedDifferenceMatlabMinusPython": -2.0516921495072893e-13,
+            "absoluteDifference": 2.0516921495072893e-13,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 307.514126907538,
+            "pythonValue": 307.51412687164594,
+            "signedDifferenceMatlabMinusPython": 3.58920715370914e-8,
+            "absoluteDifference": 3.58920715370914e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.5381237724259575,
+            "pythonValue": 2.538123772423033,
+            "signedDifferenceMatlabMinusPython": 2.9243274468626623e-12,
+            "absoluteDifference": 2.9243274468626623e-12,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 308.51206767351346,
+            "pythonValue": 308.5120676440837,
+            "signedDifferenceMatlabMinusPython": 2.9429770620481577e-8,
+            "absoluteDifference": 2.9429770620481577e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.3756720386760373,
+            "pythonValue": 2.3756720386858965,
+            "signedDifferenceMatlabMinusPython": -9.85922454788124e-12,
+            "absoluteDifference": 9.85922454788124e-12,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 309.9354924347197,
+            "pythonValue": 309.93549241176817,
+            "signedDifferenceMatlabMinusPython": 2.295155354659073e-8,
+            "absoluteDifference": 2.295155354659073e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.5107622661256626,
+            "pythonValue": 1.5107622661253068,
+            "signedDifferenceMatlabMinusPython": 3.5571545708990016e-13,
+            "absoluteDifference": 3.5571545708990016e-13,
+            "passed": true
+          }
+        }
+      ],
+      "excludedPythonTimesSec": [],
+      "excludedMatlabTimesSec": [],
+      "exclusionReason": "Python strict reported time and MATLAB critical event are different times; their field rows are not paired.",
+      "matlabWarnings": [],
+      "matlabWarningCapture": "last warning per segment; not all warning messages",
+      "pythonWarningCount": 0
+    },
+    {
+      "question": "Q23",
+      "status": "PASS",
+      "intervals": 40,
+      "commonTimesSec": [
+        0,
+        1800,
+        10800,
+        206940
+      ],
+      "commonMaterialX": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "matchedCoordinatePairs": 20,
+      "maxima": {
+        "temperatureK": {
+          "timeSec": 1800,
+          "materialX": 1,
+          "matlabValue": 308.5631964257974,
+          "pythonValue": 308.5631965940915,
+          "signedDifferenceMatlabMinusPython": -1.6829409332785872e-7,
+          "absoluteDifference": 1.6829409332785872e-7,
+          "passed": true
+        },
+        "moistureDryBasis": {
+          "timeSec": 10800,
+          "materialX": 1,
+          "matlabValue": 1.0080395668058222,
+          "pythonValue": 1.0080395662207249,
+          "signedDifferenceMatlabMinusPython": 5.850973039400742e-10,
+          "absoluteDifference": 5.850973039400742e-10,
+          "passed": true
+        }
+      },
+      "event": {
+        "applicable": true,
+        "matlabEventSec": 206938.71951884878,
+        "pythonEventSec": 206938.71928915233,
+        "signedDifferenceSec": 0.00022969645215198398,
+        "absoluteDifferenceSec": 0.00022969645215198398,
+        "passed": true
+      },
+      "comparisons": [
+        {
+          "timeSec": 0,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 305.3392711164824,
+            "pythonValue": 305.3392711264721,
+            "signedDifferenceMatlabMinusPython": -9.989719274017261e-9,
+            "absoluteDifference": 9.989719274017261e-9,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.5499243595596726,
+            "pythonValue": 2.5499243595601753,
+            "signedDifferenceMatlabMinusPython": -5.027089855502709e-13,
+            "absoluteDifference": 5.027089855502709e-13,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 305.5321378995651,
+            "pythonValue": 305.53213791034904,
+            "signedDifferenceMatlabMinusPython": -1.0783935522340471e-8,
+            "absoluteDifference": 1.0783935522340471e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.5488307915420223,
+            "pythonValue": 2.548830791539113,
+            "signedDifferenceMatlabMinusPython": 2.90922841372776e-12,
+            "absoluteDifference": 2.90922841372776e-12,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 306.11595650330224,
+            "pythonValue": 306.11595651665965,
+            "signedDifferenceMatlabMinusPython": -1.3357407624425832e-8,
+            "absoluteDifference": 1.3357407624425832e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.5253939508215453,
+            "pythonValue": 2.5253939507863654,
+            "signedDifferenceMatlabMinusPython": 3.517985902590226e-11,
+            "absoluteDifference": 3.517985902590226e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 307.1107902798521,
+            "pythonValue": 307.1107902974636,
+            "signedDifferenceMatlabMinusPython": -1.7611512248549843e-8,
+            "absoluteDifference": 1.7611512248549843e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.3259443302502025,
+            "pythonValue": 2.3259443301681957,
+            "signedDifferenceMatlabMinusPython": 8.200684575854211e-11,
+            "absoluteDifference": 8.200684575854211e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 308.5631964257974,
+            "pythonValue": 308.5631965940915,
+            "signedDifferenceMatlabMinusPython": -1.6829409332785872e-7,
+            "absoluteDifference": 1.6829409332785872e-7,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.6485772799507896,
+            "pythonValue": 1.6485772800759155,
+            "signedDifferenceMatlabMinusPython": -1.2512590963353887e-10,
+            "absoluteDifference": 1.2512590963353887e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 322.999518491908,
+            "pythonValue": 322.9995184810525,
+            "signedDifferenceMatlabMinusPython": 1.0855501386686228e-8,
+            "absoluteDifference": 1.0855501386686228e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.766173378769894,
+            "pythonValue": 1.7661733785911757,
+            "signedDifferenceMatlabMinusPython": 1.787183734336395e-10,
+            "absoluteDifference": 1.787183734336395e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 323.0053592882887,
+            "pythonValue": 323.0053592755736,
+            "signedDifferenceMatlabMinusPython": 1.2715076991298702e-8,
+            "absoluteDifference": 1.2715076991298702e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.7165240655287008,
+            "pythonValue": 1.7165240653518363,
+            "signedDifferenceMatlabMinusPython": 1.768645230271204e-10,
+            "absoluteDifference": 1.768645230271204e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 323.02462203677476,
+            "pythonValue": 323.0246220184425,
+            "signedDifferenceMatlabMinusPython": 1.8332229956286028e-8,
+            "absoluteDifference": 1.8332229956286028e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.5701732088873852,
+            "pythonValue": 1.5701732087071192,
+            "signedDifferenceMatlabMinusPython": 1.8026602432996697e-10,
+            "absoluteDifference": 1.8026602432996697e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 323.0601566377804,
+            "pythonValue": 323.0601566089842,
+            "signedDifferenceMatlabMinusPython": 2.879619387385901e-8,
+            "absoluteDifference": 2.879619387385901e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.3332134028379594,
+            "pythonValue": 1.3332134026218172,
+            "signedDifferenceMatlabMinusPython": 2.1614221523691413e-10,
+            "absoluteDifference": 2.1614221523691413e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 323.1164041610363,
+            "pythonValue": 323.11640410369733,
+            "signedDifferenceMatlabMinusPython": 5.733897978643654e-8,
+            "absoluteDifference": 5.733897978643654e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.0080395668058222,
+            "pythonValue": 1.0080395662207249,
+            "signedDifferenceMatlabMinusPython": 5.850973039400742e-10,
+            "absoluteDifference": 5.850973039400742e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 206940,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.14999962709215547,
+            "pythonValue": 0.14999962702512643,
+            "signedDifferenceMatlabMinusPython": 6.702904897792905e-11,
+            "absoluteDifference": 6.702904897792905e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 206940,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.1476865032751401,
+            "pythonValue": 0.1476865032112858,
+            "signedDifferenceMatlabMinusPython": 6.385431072786218e-11,
+            "absoluteDifference": 6.385431072786218e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 206940,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.14020946296367878,
+            "pythonValue": 0.14020946290554878,
+            "signedDifferenceMatlabMinusPython": 5.813000081289488e-11,
+            "absoluteDifference": 5.813000081289488e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 206940,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.1249167109141822,
+            "pythonValue": 0.1249167108669379,
+            "signedDifferenceMatlabMinusPython": 4.724430568980864e-11,
+            "absoluteDifference": 4.724430568980864e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 206940,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.05264446935670747,
+            "pythonValue": 0.05264446935142287,
+            "signedDifferenceMatlabMinusPython": 5.28459914717061e-12,
+            "absoluteDifference": 5.28459914717061e-12,
+            "passed": true
+          }
+        }
+      ],
+      "excludedPythonTimesSec": [
+        206938.8
+      ],
+      "excludedMatlabTimesSec": [
+        206938.71951884878
+      ],
+      "exclusionReason": "Python strict reported time and MATLAB critical event are different times; their field rows are not paired.",
+      "matlabWarnings": [],
+      "matlabWarningCapture": "last warning per segment; not all warning messages",
+      "pythonWarningCount": 0
+    },
+    {
+      "question": "Q4",
+      "status": "PASS",
+      "intervals": 40,
+      "commonTimesSec": [
+        0,
+        1800,
+        10800,
+        183962
+      ],
+      "commonMaterialX": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ],
+      "matchedCoordinatePairs": 20,
+      "maxima": {
+        "temperatureK": {
+          "timeSec": 1800,
+          "materialX": 1,
+          "matlabValue": 309.06147866383196,
+          "pythonValue": 309.06147890130813,
+          "signedDifferenceMatlabMinusPython": -2.3747617206026916e-7,
+          "absoluteDifference": 2.3747617206026916e-7,
+          "passed": true
+        },
+        "moistureDryBasis": {
+          "timeSec": 10800,
+          "materialX": 1,
+          "matlabValue": 0.6840238881144844,
+          "pythonValue": 0.6840238885209566,
+          "signedDifferenceMatlabMinusPython": -4.064721892405032e-10,
+          "absoluteDifference": 4.064721892405032e-10,
+          "passed": true
+        }
+      },
+      "event": {
+        "applicable": true,
+        "matlabEventSec": 183960.68422991925,
+        "pythonEventSec": 183960.68415641366,
+        "signedDifferenceSec": 0.00007350559462793171,
+        "absoluteDifferenceSec": 0.00007350559462793171,
+        "passed": true
+      },
+      "comparisons": [
+        {
+          "timeSec": 0,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 0,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 0,
+          "pythonTimeIndexZeroBased": 0,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 301.15,
+            "pythonValue": 301.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 304.18821196470645,
+            "pythonValue": 304.1882119667832,
+            "signedDifferenceMatlabMinusPython": -2.07671746466076e-9,
+            "absoluteDifference": 2.07671746466076e-9,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.55,
+            "pythonValue": 2.55,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 304.46763760638817,
+            "pythonValue": 304.4676376081732,
+            "signedDifferenceMatlabMinusPython": -1.785053882485954e-9,
+            "absoluteDifference": 1.785053882485954e-9,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.5499999999789713,
+            "pythonValue": 2.5499999999789535,
+            "signedDifferenceMatlabMinusPython": 1.7763568394002505e-14,
+            "absoluteDifference": 1.7763568394002505e-14,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 305.3227505016384,
+            "pythonValue": 305.32275050356026,
+            "signedDifferenceMatlabMinusPython": -1.921875991683919e-9,
+            "absoluteDifference": 1.921875991683919e-9,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.54999604779083,
+            "pythonValue": 2.549996047790871,
+            "signedDifferenceMatlabMinusPython": -4.085620730620576e-14,
+            "absoluteDifference": 4.085620730620576e-14,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 306.80269400559064,
+            "pythonValue": 306.8026940055178,
+            "signedDifferenceMatlabMinusPython": 7.281641956069507e-11,
+            "absoluteDifference": 7.281641956069507e-11,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.529869177761943,
+            "pythonValue": 2.529869177763224,
+            "signedDifferenceMatlabMinusPython": -1.2807532812075806e-12,
+            "absoluteDifference": 1.2807532812075806e-12,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 1800,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 1,
+          "pythonTimeIndexZeroBased": 1,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 309.06147866383196,
+            "pythonValue": 309.06147890130813,
+            "signedDifferenceMatlabMinusPython": -2.3747617206026916e-7,
+            "absoluteDifference": 2.3747617206026916e-7,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.1287375666610573,
+            "pythonValue": 1.1287375663491424,
+            "signedDifferenceMatlabMinusPython": 3.119149383223885e-10,
+            "absoluteDifference": 3.119149383223885e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 322.97124440409857,
+            "pythonValue": 322.97124443743996,
+            "signedDifferenceMatlabMinusPython": -3.334139364596922e-8,
+            "absoluteDifference": 3.334139364596922e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.4542121591873873,
+            "pythonValue": 2.454212159076175,
+            "signedDifferenceMatlabMinusPython": 1.1121237264433148e-10,
+            "absoluteDifference": 1.1121237264433148e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 322.9784502295658,
+            "pythonValue": 322.9784502633587,
+            "signedDifferenceMatlabMinusPython": -3.379290092198062e-8,
+            "absoluteDifference": 3.379290092198062e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.381082137222674,
+            "pythonValue": 2.381082137074005,
+            "signedDifferenceMatlabMinusPython": 1.4866863295992516e-10,
+            "absoluteDifference": 1.4866863295992516e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 323.00287139420334,
+            "pythonValue": 323.00287142754536,
+            "signedDifferenceMatlabMinusPython": -3.334201892357669e-8,
+            "absoluteDifference": 3.334201892357669e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 2.111954004111982,
+            "pythonValue": 2.111954003888823,
+            "signedDifferenceMatlabMinusPython": 2.2315926884175497e-10,
+            "absoluteDifference": 2.2315926884175497e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 323.04963830006176,
+            "pythonValue": 323.04963833213014,
+            "signedDifferenceMatlabMinusPython": -3.2068385280581424e-8,
+            "absoluteDifference": 3.2068385280581424e-8,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 1.5583937308927254,
+            "pythonValue": 1.5583937307170819,
+            "signedDifferenceMatlabMinusPython": 1.7564349974463767e-10,
+            "absoluteDifference": 1.7564349974463767e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 10800,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 2,
+          "pythonTimeIndexZeroBased": 2,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 323.127448729388,
+            "pythonValue": 323.1274485935505,
+            "signedDifferenceMatlabMinusPython": 1.3583746749645798e-7,
+            "absoluteDifference": 1.3583746749645798e-7,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.6840238881144844,
+            "pythonValue": 0.6840238885209566,
+            "signedDifferenceMatlabMinusPython": -4.064721892405032e-10,
+            "absoluteDifference": 4.064721892405032e-10,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 183962,
+          "materialX": 0,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 0,
+          "pythonXIndexZeroBased": 0,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.1499999999999,
+            "signedDifferenceMatlabMinusPython": 5.684341886080802e-14,
+            "absoluteDifference": 5.684341886080802e-14,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.1499993245131599,
+            "pythonValue": 0.1499993244745923,
+            "signedDifferenceMatlabMinusPython": 3.856759356324346e-11,
+            "absoluteDifference": 3.856759356324346e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 183962,
+          "materialX": 0.25,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 1,
+          "pythonXIndexZeroBased": 1,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.14692720831736164,
+            "pythonValue": 0.1469272082817578,
+            "signedDifferenceMatlabMinusPython": 3.560385319900661e-11,
+            "absoluteDifference": 3.560385319900661e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 183962,
+          "materialX": 0.5,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 2,
+          "pythonXIndexZeroBased": 2,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.13718456546151273,
+            "pythonValue": 0.13718456543027965,
+            "signedDifferenceMatlabMinusPython": 3.123307168451106e-11,
+            "absoluteDifference": 3.123307168451106e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 183962,
+          "materialX": 0.75,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 3,
+          "pythonXIndexZeroBased": 3,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.11813508964102289,
+            "pythonValue": 0.11813508961739565,
+            "signedDifferenceMatlabMinusPython": 2.3627239054135885e-11,
+            "absoluteDifference": 2.3627239054135885e-11,
+            "passed": true
+          }
+        },
+        {
+          "timeSec": 183962,
+          "materialX": 1,
+          "matlabTimeIndexZeroBased": 4,
+          "pythonTimeIndexZeroBased": 4,
+          "matlabXIndexZeroBased": 4,
+          "pythonXIndexZeroBased": 4,
+          "temperatureK": {
+            "matlabValue": 323.15,
+            "pythonValue": 323.15,
+            "signedDifferenceMatlabMinusPython": 0,
+            "absoluteDifference": 0,
+            "passed": true
+          },
+          "moistureDryBasis": {
+            "matlabValue": 0.05260998489852639,
+            "pythonValue": 0.05260998489636258,
+            "signedDifferenceMatlabMinusPython": 2.1638107972066223e-12,
+            "absoluteDifference": 2.1638107972066223e-12,
+            "passed": true
+          }
+        }
+      ],
+      "excludedPythonTimesSec": [
+        183960.72
+      ],
+      "excludedMatlabTimesSec": [
+        183960.68422991925
+      ],
+      "exclusionReason": "Python strict reported time and MATLAB critical event are different times; their field rows are not paired.",
+      "matlabWarnings": [],
+      "matlabWarningCapture": "last warning per segment; not all warning messages",
+      "pythonWarningCount": 0
+    }
+  ],
+  "scope": "Independent N40 implementation agreement at recorded common times and five material coordinates, plus continuous event times",
+  "limitations": [
+    "NPZ files are hashed for provenance; numerical comparisons read crossLanguageSamples in Python summary.json.",
+    "No full-time/full-space error bound, physical calibration accuracy, production-grid acceptance, or confidence interval is established.",
+    "MATLAB GUI execution evidence is recorded separately by the main agent; this comparison does not infer GUI completion.",
+    "Human code review remains pending."
+  ],
+  "guiEvidence": "separate external record",
+  "humanReview": "pending",
+  "processSupervision": {
+    "supervisorStartedAtUtc": "2026-09-10T19:39:03.253Z",
+    "supervisorFinishedAtUtc": "2026-09-10T19:39:03.357Z",
+    "executable": "D:\\Nodejs\\node.exe",
+    "commandArguments": [
+      "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\tools\\compareMatlab.mjs",
+      "--worker"
+    ],
+    "cwd": "D:\\Document\\数学建模\\2026CUMCM",
+    "workerActualExitCode": 0,
+    "workerSignal": null,
+    "workerSpawnError": null,
+    "workerStderr": "",
+    "source": "Node parent process spawnSync return status; not a child prefilled success flag"
+  }
+}

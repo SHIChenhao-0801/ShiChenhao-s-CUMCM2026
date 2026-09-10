@@ -1,0 +1,8 @@
+{
+  "startedAtUtc": "2026-09-10T19:44:46.2158072Z",
+  "finishedAtUtc": "2026-09-10T19:45:14.9396874Z",
+  "actualProcessExitCode": 0,
+  "executable": "C:\\Python314\\python.exe",
+  "command": "python -B paper_output/code/review_delivery/tools/verifyExportPathFix.py",
+  "evidenceSource": "PowerShell observed LASTEXITCODE after actual child termination"
+}

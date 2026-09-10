@@ -1,0 +1,19 @@
+{
+  "runId": "camel_audit_v1",
+  "profile": "audit",
+  "executable": "C:\\Python314\\python.exe",
+  "argumentText": "-B \"D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\runDelivery.py\" --profile audit --run-id camel_audit_v1",
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM",
+  "processId": 53052,
+  "startedAtUtc": "2026-09-10T19:29:28.6405863Z",
+  "finishedAtUtc": "2026-09-10T19:30:22.6602485Z",
+  "elapsedSeconds": 54.0106313,
+  "actualExitCode": 0,
+  "sourceSha256AtLaunch": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+  "sourceSha256AtExit": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+  "observedPeakWorkingSetBytes": 108732416,
+  "memoryScope": "One-second observed process working set; excludes transient peaks and child processes",
+  "timedOut": false,
+  "humanReview": "pending",
+  "guiObserved": false
+}

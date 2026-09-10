@@ -1,0 +1,2043 @@
+{
+  "runId": "camel_final_v2",
+  "startedAtUtc": "2026-09-10T19:46:26.476049+00:00",
+  "status": "PASS",
+  "humanReview": "pending",
+  "guiObservation": "separate external evidence required",
+  "actualProcessExitCode": null,
+  "frozenBaselineVerification": {
+    "status": "PASS",
+    "manifest": {
+      "path": "paper_output/results/production/final_v6a/run_manifest.json",
+      "bytes": 31524,
+      "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+    },
+    "checkedRecords": [
+      {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665"
+      },
+      {
+        "path": "paper_output/code/modeling/axisymmetric_check.py",
+        "bytes": 13887,
+        "sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c"
+      },
+      {
+        "path": "paper_output/code/modeling/compare_analytic.py",
+        "bytes": 14520,
+        "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805"
+      },
+      {
+        "path": "paper_output/code/modeling/disk_dense.py",
+        "bytes": 4869,
+        "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60"
+      },
+      {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 19944,
+        "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+      },
+      {
+        "path": "paper_output/code/modeling/export_outputs.py",
+        "bytes": 41427,
+        "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b"
+      },
+      {
+        "path": "paper_output/code/modeling/peer_beta_check.py",
+        "bytes": 14337,
+        "sha256": "a7a31ba683be96de9f20c13476bdfa2a6e1e9fac25ec0035fdfaedff8159a683"
+      },
+      {
+        "path": "paper_output/code/modeling/production_provenance.py",
+        "bytes": 24002,
+        "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130"
+      },
+      {
+        "path": "paper_output/code/modeling/publication_plots.py",
+        "bytes": 24337,
+        "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388"
+      },
+      {
+        "path": "paper_output/code/modeling/q1_model.py",
+        "bytes": 340,
+        "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8"
+      },
+      {
+        "path": "paper_output/code/modeling/q2_model.py",
+        "bytes": 352,
+        "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204"
+      },
+      {
+        "path": "paper_output/code/modeling/q3_model.py",
+        "bytes": 1285,
+        "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137"
+      },
+      {
+        "path": "paper_output/code/modeling/q4_model.py",
+        "bytes": 377,
+        "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535"
+      },
+      {
+        "path": "paper_output/code/modeling/run_experiments.py",
+        "bytes": 3995,
+        "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509"
+      },
+      {
+        "path": "paper_output/code/modeling/run_modeling.py",
+        "bytes": 27729,
+        "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84"
+      },
+      {
+        "path": "paper_output/code/modeling/validate_bessel.py",
+        "bytes": 16285,
+        "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac"
+      },
+      {
+        "path": "paper_output/code/modeling/verify_convergence.py",
+        "bytes": 6542,
+        "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec"
+      },
+      {
+        "path": "paper_output/code/modeling/verify_dense_storage.py",
+        "bytes": 3850,
+        "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472"
+      },
+      {
+        "path": "paper_output/code/modeling/verify_time_accuracy.py",
+        "bytes": 14430,
+        "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc"
+      },
+      {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      },
+      {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+      },
+      {
+        "path": "paper_output/plan/model_route.json",
+        "bytes": 34621,
+        "sha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e"
+      },
+      {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+        "bytes": 16586,
+        "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+      },
+      {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+        "bytes": 11485,
+        "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+      },
+      {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      },
+      {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      },
+      {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+        "bytes": 9345,
+        "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+      },
+      {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+        "bytes": 9351,
+        "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+      },
+      {
+        "path": "paper_output/figure_index.json",
+        "bytes": 23386,
+        "sha256": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c"
+      },
+      {
+        "path": "paper_output/figures/fig_A_environment.pdf",
+        "bytes": 23880,
+        "sha256": "d47e0fe198c99f4e0fee475ef7c8e96e0a6febd50a72441850dbc1e6eaff9204"
+      },
+      {
+        "path": "paper_output/figures/fig_A_environment.png",
+        "bytes": 120197,
+        "sha256": "3da9d5d4dae189adf49beb1f9d3253315ecc35e5f09c533eb9c9a36c402a7f46"
+      },
+      {
+        "path": "paper_output/figures/fig_A_environment.svg",
+        "bytes": 111940,
+        "sha256": "a1cf01b052b3e2d9340aba41e8bb19eb5c2dbfe81c8c58eebef767accbe9976d"
+      },
+      {
+        "path": "paper_output/figures/fig_A_radius.pdf",
+        "bytes": 18226,
+        "sha256": "171876248d66e1219ab52c7f52a933eadf95cea2aea2f760a7d84ae90f7823ac"
+      },
+      {
+        "path": "paper_output/figures/fig_A_radius.png",
+        "bytes": 94566,
+        "sha256": "207ecbeb949ef334daa657a200e8efbdb26bde0d9e850336ee5009099c8540fc"
+      },
+      {
+        "path": "paper_output/figures/fig_A_radius.svg",
+        "bytes": 75734,
+        "sha256": "016d2af8d9030d19d1eed104c299a2568431ba603a2c3a009cffda0fbddf94b9"
+      },
+      {
+        "path": "paper_output/results/conclusions.json",
+        "bytes": 10392,
+        "sha256": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505"
+      },
+      {
+        "path": "paper_output/results/metrics.json",
+        "bytes": 6918,
+        "sha256": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28"
+      },
+      {
+        "path": "paper_output/results/model_results.json",
+        "bytes": 42888,
+        "sha256": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/Q1/sampled_solution.npz",
+        "bytes": 10569,
+        "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/Q1/summary.json",
+        "bytes": 3941,
+        "sha256": "2b4394701813dfcbb4b1041156715f9dd5a488f2ecd7402bf3d91adaecdeb536"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+        "bytes": 689540,
+        "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+        "bytes": 5724,
+        "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/Q4/summary.json",
+        "bytes": 5350,
+        "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/contracts/conclusions.json",
+        "bytes": 10395,
+        "sha256": "b54b07295f7ce535d5bc04446eb2480fd8ee648236b1c25b8a0af94e0252e233"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/contracts/figure_index.json",
+        "bytes": 19502,
+        "sha256": "bd2ff211f708d81b8e40d9dc9cc2fe50097dd121a1cc4c9f5baf31b853639359"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/contracts/metrics.json",
+        "bytes": 6921,
+        "sha256": "f75a87b52d785e89fca85d1ba80cfd537f3a662b9f3d281dbe285641b14dd495"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/contracts/model_results.json",
+        "bytes": 42527,
+        "sha256": "0f98f1ff1d7fdb7a04efa3cd13b62a7d7a9776ddfcddaae9d3c0919e1decb997"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/contracts/table_index.json",
+        "bytes": 4083,
+        "sha256": "7a9af9810952ca95b55ab59544d06290b3ed7dd0ea8cb47d5b87ec8e8f361d47"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/export_validation.json",
+        "bytes": 26056,
+        "sha256": "f064429802c23b8dff7170ccf88435ec7e751ea8f811396d4deedee9a640ff89"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.json",
+        "bytes": 3984,
+        "sha256": "59419e2d20b1d2574caca6f7533d55517c724ed9e7b1cb22ef3d6af0c8e33b4b"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.pdf",
+        "bytes": 61860,
+        "sha256": "6024b7a69f78c11dafb987d369c044bcba5b368b7c24a566fe59f7bc807d2f18"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.png",
+        "bytes": 220065,
+        "sha256": "a4f82ffc04435a7b426e556e5fd0fe2fca47a034ee25a5bccf27df46bf06c001"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.svg",
+        "bytes": 148009,
+        "sha256": "59d898934ce14840206c63fef8803998c96bd2e4ec4bdfcda3d9eaa267a1cbdf"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+        "bytes": 12242,
+        "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.json",
+        "bytes": 4001,
+        "sha256": "369b20a95a111d9aafb7a22609f6b1946e8ae4f90985d8f5544ae0b6500cf067"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.pdf",
+        "bytes": 60863,
+        "sha256": "d745d1d1ce70453712dd7ebf410d6dd49457e0552005904c51013763d5be6171"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.png",
+        "bytes": 219522,
+        "sha256": "c06bebb0f0ff3dd1f7ca5eeee9713a2fe4a0c06a5262c70ffc23d0b877e74327"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.svg",
+        "bytes": 143833,
+        "sha256": "057da476dde16e7d14672b60d610ae900403a467977f0f07b81ba3f8a64f5f80"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles_data.npz",
+        "bytes": 12165,
+        "sha256": "21fe824252f59c64f47b4a85b263481d61ec4f732b24368dc17771c49256a97e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.json",
+        "bytes": 4286,
+        "sha256": "eea5178861b44818507fe534851c6c21d5612526f7cafd76cf160bd7bd3a27eb"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.pdf",
+        "bytes": 68207,
+        "sha256": "de673f06a715fa8a4506aa0ee9a14c56bee6008f2399a816765ebf9863074da1"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.png",
+        "bytes": 234364,
+        "sha256": "70139c9fa2a43bd4507a87a46d1d757944919e08464f866a82ca6544978bb6ba"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.svg",
+        "bytes": 137422,
+        "sha256": "41c7cdfb5ef9f50a4a69de70369ada2103166e4b3bb0452199996e4b3449ba26"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+        "bytes": 249286,
+        "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.json",
+        "bytes": 4285,
+        "sha256": "39d3c233381e3d4829e3e0413953fe3ac7ca2c03118a1fbc83cc0565c7e26191"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.pdf",
+        "bytes": 84222,
+        "sha256": "243dd20d0be71564f5415ec605d8871ed1ae1a384598d2b547b83b699444da4e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.png",
+        "bytes": 260825,
+        "sha256": "59958d509154a1b8b2ef4cecc05a552ea748027eda331262461c5b08016b16c9"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.svg",
+        "bytes": 170550,
+        "sha256": "fd770e261ea222f2805445fb91fcb869c944f065349165e7ddd4aadb1a5d7151"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying_data.npz",
+        "bytes": 222086,
+        "sha256": "340ebfd87d947121cd58214a616c7dd2dd6a5c93f6e1c4a4bf2b81a7a7b1dbc9"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/launch.json",
+        "bytes": 7509,
+        "sha256": "ffff3d627524c18046a913c6bd0b47da97e114d1c88bbb1e2c8092ad4f9093cb"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/launch_claim.json",
+        "bytes": 157,
+        "sha256": "d99d29c3ca313bd9c4dafaeff2f7807772d632b918023594b7a217302646b7ed"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/metric_evidence_validation.json",
+        "bytes": 141,
+        "sha256": "392b896dea12c3678be0bf6bbbc97dcf3c6499889d7b75eedaf95bab00ff5872"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/numerical_summaries.json",
+        "bytes": 16270,
+        "sha256": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+        "bytes": 345,
+        "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+        "bytes": 380,
+        "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+        "bytes": 285,
+        "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+        "bytes": 315,
+        "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+        "bytes": 466,
+        "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+        "bytes": 390,
+        "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+        "bytes": 172,
+        "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result1.export.json",
+        "bytes": 37878,
+        "sha256": "1158f19d64ada8bc0bfb7b3fe01c58944e1acb0af9fcf01b478da8ef3a756836"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result1.validation.json",
+        "bytes": 5175,
+        "sha256": "7a716ca00499cc858fa0acf54786fc995d38947fb0602a427de011124268bf5a"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result1.xlsx",
+        "bytes": 390899,
+        "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result1_unrounded.csv.gz",
+        "bytes": 578239,
+        "sha256": "839686a7d8659902f5286de43c9f7c2fd048c11dd907ca0883605018a0370aa3"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result2.export.json",
+        "bytes": 36606,
+        "sha256": "56f086f6249b35333bb07f432f47243b82ebe11711b0702fe3ec023a1c4eaf2e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result2.validation.json",
+        "bytes": 5165,
+        "sha256": "614e20e630d5b6a887d7334d43bcdb05e0ff6552e96a160658c2b4a88a0e05c1"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result2.xlsx",
+        "bytes": 29210086,
+        "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result2_unrounded.csv.gz",
+        "bytes": 43018253,
+        "sha256": "74cc413bce9b5b132a2af7269a7f366061a78c390de900367697f171361c3f41"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result3.export.json",
+        "bytes": 25155,
+        "sha256": "139b8134e231aba69a596f501ccefee0ee003807db427f4498b1734a84c5ad5e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result3.validation.json",
+        "bytes": 4530,
+        "sha256": "9a93cbf83cbfa292cab7b0aeff20f831dc204b5ac3d0ad00bb33bd806b2e1ba3"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result3.xlsx",
+        "bytes": 339137,
+        "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result3_unrounded.csv.gz",
+        "bytes": 640369,
+        "sha256": "e4d1e25e215013f653a763c693d654256f44260ff03b91a9b0097c1ac8ea21c1"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result4.export.json",
+        "bytes": 25966,
+        "sha256": "1996a39d7dab85197224f264f736436df0d8f0eee1cbba527e0445ca5452d0df"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result4.validation.json",
+        "bytes": 5992,
+        "sha256": "c1d065baf8c0fe8eb00e8dd05b76e5be68756a2caebf8dbf5228ca95bf0de6f5"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result4.xlsx",
+        "bytes": 278278,
+        "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/outputs/result4_unrounded.csv.gz",
+        "bytes": 402572,
+        "sha256": "46224781624cb889fe1feafcb8f8bddfb55ab49e457470adc011abdaff3098cd"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/process_result.json",
+        "bytes": 815,
+        "sha256": "83915af102ac762430b02beaf41c37b708b635b4eb13eede9b01d340cf2de3dd"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/published_contracts/conclusions.json",
+        "bytes": 10392,
+        "sha256": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/published_contracts/figure_index.json",
+        "bytes": 23386,
+        "sha256": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/published_contracts/metrics.json",
+        "bytes": 6918,
+        "sha256": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/published_contracts/model_results.json",
+        "bytes": 42888,
+        "sha256": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/published_contracts/table_index.json",
+        "bytes": 4080,
+        "sha256": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/stdout.log",
+        "bytes": 4833,
+        "sha256": "bdfbe519a6314773efc13cb075076a6c045c218f8563654ab05f214c33933266"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/worker_started.json",
+        "bytes": 71,
+        "sha256": "f0d567a14e452f258b9b739391dd8fe03ad0c7f696933e42d60dbc5043f209dc"
+      },
+      {
+        "path": "paper_output/results/production/final_v6a/worker_success.json",
+        "bytes": 57192,
+        "sha256": "e3f1e9ab198f48d9a50360423a5fd326cea00583932e94a29aa0aa3ca8ebe912"
+      },
+      {
+        "path": "paper_output/tables/table_index.json",
+        "bytes": 4080,
+        "sha256": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b"
+      }
+    ]
+  },
+  "summaries": {
+    "Q1": {
+      "settings": {
+        "question": "Q1",
+        "intervals": 3200,
+        "rtol": 1e-10,
+        "atolTemperature": 1e-10,
+        "atolMoisture": 1e-12,
+        "maxStepS": 120.0,
+        "earlyMaxStepS": 2.0,
+        "horizonH": 240.0,
+        "shrink": false,
+        "boundaryExtension": "nominal",
+        "tailTemperatureC": 50.0,
+        "tailEquilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibriumScale": 1.0,
+        "surfaceLatentFraction": 0.0,
+        "latentJKg": 2400000.0,
+        "constantD": null,
+        "constantThermal": false,
+        "method": "BDF",
+        "faceScheme": "kirchhoff",
+        "jacobianMode": "analytic",
+        "denseStorage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 5.270382800001244,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+        "min_C": 1.510234685362519,
+        "max_C": 2.550000000000001,
+        "min_T_K": 301.15,
+        "max_T_K": 309.9355602874471,
+        "min_D": 3.882960068132186e-09,
+        "max_D": 4.937655094173939e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 3.552713678800501e-15,
+        "final_max_C": 2.549992403819304,
+        "final_surface_C": 1.5102346853625193,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3914,
+        "accepted_time_points": 1743,
+        "nfev": 3914,
+        "njev": 68,
+        "nlu": 431,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 463474752,
+        "dense_polynomial_count": 1742
+      },
+      "code": {
+        "path": "paper_output/code/review_delivery/dryingCore.py",
+        "bytes": 21525,
+        "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/review_delivery/analyticJacobian.py",
+        "bytes": 17600,
+        "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+        "exists": true
+      },
+      "dense_storage_code": {
+        "path": "paper_output/code/review_delivery/diskDense.py",
+        "bytes": 5562,
+        "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "warningCount": 0,
+      "crossLanguageSamples": {
+        "timesS": [
+          0.0,
+          1800.0
+        ],
+        "materialX": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "temperatureK": [
+          [
+            301.15,
+            301.15,
+            301.15,
+            301.15,
+            301.15
+          ],
+          [
+            306.7253448172471,
+            306.92200190803965,
+            307.51416078664806,
+            308.51212454467895,
+            309.9355602874471
+          ]
+        ],
+        "moistureDryBasis": [
+          [
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55
+          ],
+          [
+            2.549992403819304,
+            2.549723930554662,
+            2.5383005254029065,
+            2.3754698868518354,
+            1.5102346853625193
+          ]
+        ]
+      }
+    },
+    "Q23": {
+      "settings": {
+        "question": "Q23",
+        "intervals": 3200,
+        "rtol": 1e-10,
+        "atolTemperature": 1e-10,
+        "atolMoisture": 1e-12,
+        "maxStepS": 120.0,
+        "earlyMaxStepS": 2.0,
+        "horizonH": 240.0,
+        "shrink": false,
+        "boundaryExtension": "nominal",
+        "tailTemperatureC": 50.0,
+        "tailEquilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibriumScale": 1.0,
+        "surfaceLatentFraction": 0.0,
+        "latentJKg": 2400000.0,
+        "constantD": null,
+        "constantThermal": false,
+        "method": "BDF",
+        "faceScheme": "kirchhoff",
+        "jacobianMode": "analytic",
+        "denseStorage": "disk"
+      },
+      "diagnostics": {
+        "event_s": 206900.28702201758,
+        "event_h": 57.47230195056044,
+        "end_s": 206902.0,
+        "elapsed_s": 80.7523672999996,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 1.1546319456101628e-14,
+        "min_C": 0.05265944808510597,
+        "max_C": 2.550000000000001,
+        "min_T_K": 301.15,
+        "max_T_K": 323.18986600675885,
+        "min_D": 3.124541898624993e-12,
+        "max_D": 1.252185966946026e-08,
+        "positive_properties": true,
+        "max_radial_C_increase": 3.1086244689504383e-15,
+        "final_max_C": 0.14999950103529133,
+        "final_surface_C": 0.05265944808510597,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 32705,
+        "accepted_time_points": 14283,
+        "nfev": 32705,
+        "njev": 618,
+        "nlu": 3552,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 3754872872,
+        "dense_polynomial_count": 14280
+      },
+      "code": {
+        "path": "paper_output/code/review_delivery/dryingCore.py",
+        "bytes": 21525,
+        "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/review_delivery/analyticJacobian.py",
+        "bytes": 17600,
+        "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+        "exists": true
+      },
+      "dense_storage_code": {
+        "path": "paper_output/code/review_delivery/diskDense.py",
+        "bytes": 5562,
+        "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "warningCount": 0,
+      "completion": {
+        "critical_event_s": 206900.28702201758,
+        "critical_event_h": 57.47230195056044,
+        "reported_drying_time_h": 57.4724,
+        "reported_time_s": 206900.64,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 206902.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "crossLanguageSamples": {
+        "timesS": [
+          0.0,
+          1800.0,
+          10800.0,
+          206900.64,
+          206902.0
+        ],
+        "materialX": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "temperatureK": [
+          [
+            301.15,
+            301.15,
+            301.15,
+            301.15,
+            301.15
+          ],
+          [
+            305.3392446508569,
+            305.532114218488,
+            306.1159401214376,
+            307.11077899334816,
+            308.56302049753884
+          ],
+          [
+            322.9994956060796,
+            323.0053407098511,
+            323.02461224281694,
+            323.0601477811811,
+            323.1164123947858
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.1499999999999
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.15
+          ]
+        ],
+        "moistureDryBasis": [
+          [
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55
+          ],
+          [
+            2.549934098712396,
+            2.5488838430623373,
+            2.5255580144516143,
+            2.3257039999977334,
+            1.648617763296951
+          ],
+          [
+            1.7661771002440243,
+            1.716533013166519,
+            1.5701979936396047,
+            1.3332634188779369,
+            1.0081231118401026
+          ],
+          [
+            0.14999989718225315,
+            0.14768651296460814,
+            0.1402086276135209,
+            0.12491406907205477,
+            0.0526594803435617
+          ],
+          [
+            0.14999950103529133,
+            0.14768612746407359,
+            0.14020827567351044,
+            0.12491378167987972,
+            0.05265944808510597
+          ]
+        ]
+      }
+    },
+    "Q4": {
+      "settings": {
+        "question": "Q4",
+        "intervals": 6400,
+        "rtol": 1e-10,
+        "atolTemperature": 1e-10,
+        "atolMoisture": 1e-12,
+        "maxStepS": 120.0,
+        "earlyMaxStepS": 2.0,
+        "horizonH": 240.0,
+        "shrink": true,
+        "boundaryExtension": "nominal",
+        "tailTemperatureC": 50.0,
+        "tailEquilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibriumScale": 1.0,
+        "surfaceLatentFraction": 0.0,
+        "latentJKg": 2400000.0,
+        "constantD": null,
+        "constantThermal": false,
+        "method": "BDF",
+        "faceScheme": "kirchhoff",
+        "jacobianMode": "analytic",
+        "denseStorage": "disk"
+      },
+      "diagnostics": {
+        "event_s": 183926.06923258994,
+        "event_h": 51.09057478683054,
+        "end_s": 183928.0,
+        "elapsed_s": 189.7095756000017,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 7.993605777301127e-15,
+        "min_C": 0.05261996970729463,
+        "max_C": 2.5500000000000025,
+        "min_T_K": 301.15,
+        "max_T_K": 323.2000976421016,
+        "min_D": 9.398366254447737e-12,
+        "max_D": 2.477122820067253e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 4.440892098500626e-15,
+        "final_max_C": 0.14999900856092843,
+        "final_surface_C": 0.052619969707294635,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.012,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 36934,
+        "accepted_time_points": 15996,
+        "nfev": 36934,
+        "njev": 737,
+        "nlu": 4099,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 8327788168,
+        "dense_polynomial_count": 15993
+      },
+      "code": {
+        "path": "paper_output/code/review_delivery/dryingCore.py",
+        "bytes": 21525,
+        "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/review_delivery/analyticJacobian.py",
+        "bytes": 17600,
+        "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+        "exists": true
+      },
+      "dense_storage_code": {
+        "path": "paper_output/code/review_delivery/diskDense.py",
+        "bytes": 5562,
+        "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "warningCount": 0,
+      "completion": {
+        "critical_event_s": 183926.06923258994,
+        "critical_event_h": 51.09057478683054,
+        "reported_drying_time_h": 51.0906,
+        "reported_time_s": 183926.16,
+        "max_C_at_reported_time": 0.14999995339076624,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 183928.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "crossLanguageSamples": {
+        "timesS": [
+          0.0,
+          1800.0,
+          10800.0,
+          183926.16,
+          183928.0
+        ],
+        "materialX": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "temperatureK": [
+          [
+            301.15,
+            301.15,
+            301.15,
+            301.15,
+            301.15
+          ],
+          [
+            304.18781907151936,
+            304.46728468564174,
+            305.3224885001255,
+            306.80252608201823,
+            309.05980848026536
+          ],
+          [
+            322.97124085294246,
+            322.9784486845918,
+            323.0028781283762,
+            323.0496413187221,
+            323.12744861066466
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.15
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.15
+          ]
+        ],
+        "moistureDryBasis": [
+          [
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55
+          ],
+          [
+            2.55,
+            2.5499999999995815,
+            2.549998436080619,
+            2.5309421443741127,
+            1.1313425016195608
+          ],
+          [
+            2.4547252277379927,
+            2.3815382147789257,
+            2.112246351658363,
+            1.5585872624122925,
+            0.6843727284423174
+          ],
+          [
+            0.14999995339076624,
+            0.14692749737405153,
+            0.13718379398934455,
+            0.11813224940015873,
+            0.05262002809955053
+          ],
+          [
+            0.14999900856092843,
+            0.14692658503537287,
+            0.13718298178958888,
+            0.11813162008386399,
+            0.052619969707294635
+          ]
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "Q1": {
+      "sampledSolution": {
+        "actual": {
+          "path": "paper_output/results/code_delivery/camel_final_v2/Q1/sampled_solution.npz",
+          "bytes": 10569,
+          "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+        },
+        "baseline": {
+          "path": "paper_output/results/production/final_v6a/Q1/sampled_solution.npz",
+          "bytes": 10569,
+          "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+        },
+        "status": "PASS",
+        "arrays": [
+          {
+            "array": "times_s",
+            "shape": [
+              32
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "material_x",
+            "shape": [
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "T_K",
+            "shape": [
+              32,
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "C",
+            "shape": [
+              32,
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "radius_m",
+            "shape": [
+              32
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "mean_C",
+            "shape": [
+              32
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "cumulative_loss",
+            "shape": [
+              32
+            ],
+            "exactEqual": true
+          }
+        ]
+      },
+      "exports": [
+        {
+          "questionId": "Q1",
+          "validation": {
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "exports": [
+              {
+                "schema_version": "1.0",
+                "question_id": "Q1",
+                "generated_by": "paper_output/code/review_delivery/exportOutputs.py",
+                "generated_at": "2026-09-10T19:46:37.996473+00:00",
+                "status": "PASS",
+                "fully_verified_with_live_Run": true,
+                "checked_cells": 79244,
+                "sheets": {
+                  "温度": {
+                    "data_rows": 1801,
+                    "total_rows": 1802,
+                    "first_time_s": 0,
+                    "last_time_s": 1800,
+                    "outside_domain_blank_cells": 0,
+                    "value_comparison_max_abs_error": 0.0
+                  },
+                  "水分浓度": {
+                    "data_rows": 1801,
+                    "total_rows": 1802,
+                    "first_time_s": 0,
+                    "last_time_s": 1800,
+                    "outside_domain_blank_cells": 0,
+                    "value_comparison_max_abs_error": 0.0
+                  }
+                },
+                "live_Run_sample_validation": {
+                  "status": "PASS",
+                  "samples": 14,
+                  "max_abs_unrounded_difference": 0.0
+                },
+                "paper_CSV_live_Run_validation": {
+                  "status": "PASS",
+                  "checked_cells": 84,
+                  "files": [
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q1_paper_temperature.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q1_paper_temperature.csv",
+                        "bytes": 380,
+                        "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+                        "exists": true
+                      },
+                      "kind": "temperature",
+                      "status": "PASS",
+                      "header": [
+                        "时间/s",
+                        "0",
+                        "0.5",
+                        "1",
+                        "1.5",
+                        "2"
+                      ],
+                      "data_rows": 7,
+                      "expected_data_rows": 7,
+                      "checked_cells": 42,
+                      "source_query_times_s": [
+                        100.0,
+                        300.0,
+                        600.0,
+                        900.0,
+                        1200.0,
+                        1500.0,
+                        1800.0
+                      ],
+                      "display_time_unit": "s",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "degC",
+                      "max_field_rounding_error_from_live_value": 4.938376132912481e-05,
+                      "outside_domain_blank_cells": 0,
+                      "physical_radii_m": [
+                        0.0,
+                        0.005,
+                        0.01,
+                        0.015,
+                        0.02
+                      ],
+                      "surface_column_1based": null,
+                      "surface_query": null
+                    },
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q1_paper_moisture.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q1_paper_moisture.csv",
+                        "bytes": 345,
+                        "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+                        "exists": true
+                      },
+                      "kind": "moisture",
+                      "status": "PASS",
+                      "header": [
+                        "时间/s",
+                        "0",
+                        "0.5",
+                        "1",
+                        "1.5",
+                        "2"
+                      ],
+                      "data_rows": 7,
+                      "expected_data_rows": 7,
+                      "checked_cells": 42,
+                      "source_query_times_s": [
+                        100.0,
+                        300.0,
+                        600.0,
+                        900.0,
+                        1200.0,
+                        1500.0,
+                        1800.0
+                      ],
+                      "display_time_unit": "s",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "kg/kg",
+                      "max_field_rounding_error_from_live_value": 4.636328382545685e-05,
+                      "outside_domain_blank_cells": 0,
+                      "physical_radii_m": [
+                        0.0,
+                        0.005,
+                        0.01,
+                        0.015,
+                        0.02
+                      ],
+                      "surface_column_1based": null,
+                      "surface_query": null
+                    }
+                  ],
+                  "completion": null,
+                  "completion_source": null,
+                  "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+                  "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+                },
+                "errors": [],
+                "elapsed_s": 1.1895786999994016,
+                "workbook": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1.xlsx",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result1.xlsx",
+                  "bytes": 390898,
+                  "sha256": "92f37cf04f0e3119c34587a13ce90894bf0fb32161c9fec7f68100c5ae3eb58b",
+                  "exists": true,
+                  "role": "contest_result_workbook"
+                },
+                "export_manifest": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1.export.json",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result1.export.json",
+                  "bytes": 37950,
+                  "sha256": "318340eb115863b85904b85f52e0c6817dc8f0cee4c820ed63c19b364ff82c7f",
+                  "exists": true
+                },
+                "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+                "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+                "visual_render": "pending",
+                "visual_studio_gui": "pending",
+                "human_review": "pending",
+                "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result1.validation.json"
+              }
+            ]
+          },
+          "archiveCheck": {
+            "status": "PASS",
+            "uncompressedBytes": 1445070,
+            "actual": {
+              "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1_unrounded.csv.gz",
+              "bytes": 578239,
+              "sha256": "0163de47e24be7acfebf7efab570dc8b13a37f8c930a1648cee0164504a53e90"
+            },
+            "baseline": {
+              "path": "paper_output/results/production/final_v6a/outputs/result1_unrounded.csv.gz",
+              "bytes": 578239,
+              "sha256": "839686a7d8659902f5286de43c9f7c2fd048c11dd907ca0883605018a0370aa3"
+            }
+          },
+          "paperTables": [
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q1_paper_moisture.csv",
+                "bytes": 345,
+                "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+              },
+              "exactEqual": true
+            },
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q1_paper_temperature.csv",
+                "bytes": 380,
+                "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+              },
+              "exactEqual": true
+            }
+          ]
+        }
+      ]
+    },
+    "Q23": {
+      "sampledSolution": {
+        "actual": {
+          "path": "paper_output/results/code_delivery/camel_final_v2/Q23/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+        },
+        "baseline": {
+          "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+        },
+        "status": "PASS",
+        "arrays": [
+          {
+            "array": "times_s",
+            "shape": [
+              3452
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "material_x",
+            "shape": [
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "T_K",
+            "shape": [
+              3452,
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "C",
+            "shape": [
+              3452,
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "radius_m",
+            "shape": [
+              3452
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "mean_C",
+            "shape": [
+              3452
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "cumulative_loss",
+            "shape": [
+              3452
+            ],
+            "exactEqual": true
+          }
+        ]
+      },
+      "exports": [
+        {
+          "questionId": "Q2",
+          "validation": {
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "exports": [
+              {
+                "schema_version": "1.0",
+                "question_id": "Q2",
+                "generated_by": "paper_output/code/review_delivery/exportOutputs.py",
+                "generated_at": "2026-09-10T19:54:16.223827+00:00",
+                "status": "PASS",
+                "fully_verified_with_live_Run": true,
+                "checked_cells": 9103732,
+                "sheets": {
+                  "温度": {
+                    "data_rows": 206903,
+                    "total_rows": 206904,
+                    "first_time_s": 0,
+                    "last_time_s": 206902,
+                    "outside_domain_blank_cells": 0,
+                    "value_comparison_max_abs_error": 0.0
+                  },
+                  "水分浓度": {
+                    "data_rows": 206903,
+                    "total_rows": 206904,
+                    "first_time_s": 0,
+                    "last_time_s": 206902,
+                    "outside_domain_blank_cells": 0,
+                    "value_comparison_max_abs_error": 0.0
+                  }
+                },
+                "live_Run_sample_validation": {
+                  "status": "PASS",
+                  "samples": 14,
+                  "max_abs_unrounded_difference": 0.0
+                },
+                "paper_CSV_live_Run_validation": {
+                  "status": "PASS",
+                  "checked_cells": 72,
+                  "files": [
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q2_paper_temperature.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q2_paper_temperature.csv",
+                        "bytes": 315,
+                        "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+                        "exists": true
+                      },
+                      "kind": "temperature",
+                      "status": "PASS",
+                      "header": [
+                        "时间/h",
+                        "0",
+                        "0.5",
+                        "1",
+                        "1.5",
+                        "2"
+                      ],
+                      "data_rows": 6,
+                      "expected_data_rows": 6,
+                      "checked_cells": 36,
+                      "source_query_times_s": [
+                        1800.0,
+                        3600.0,
+                        5400.0,
+                        7200.0,
+                        9000.0,
+                        10800.0
+                      ],
+                      "display_time_unit": "h",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "degC",
+                      "max_field_rounding_error_from_live_value": 4.9995136670588636e-05,
+                      "outside_domain_blank_cells": 0,
+                      "physical_radii_m": [
+                        0.0,
+                        0.005,
+                        0.01,
+                        0.015,
+                        0.02
+                      ],
+                      "surface_column_1based": null,
+                      "surface_query": null
+                    },
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q2_paper_moisture.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q2_paper_moisture.csv",
+                        "bytes": 285,
+                        "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+                        "exists": true
+                      },
+                      "kind": "moisture",
+                      "status": "PASS",
+                      "header": [
+                        "时间/h",
+                        "0",
+                        "0.5",
+                        "1",
+                        "1.5",
+                        "2"
+                      ],
+                      "data_rows": 6,
+                      "expected_data_rows": 6,
+                      "checked_cells": 36,
+                      "source_query_times_s": [
+                        1800.0,
+                        3600.0,
+                        5400.0,
+                        7200.0,
+                        9000.0,
+                        10800.0
+                      ],
+                      "display_time_unit": "h",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "kg/kg",
+                      "max_field_rounding_error_from_live_value": 4.846568046090738e-05,
+                      "outside_domain_blank_cells": 0,
+                      "physical_radii_m": [
+                        0.0,
+                        0.005,
+                        0.01,
+                        0.015,
+                        0.02
+                      ],
+                      "surface_column_1based": null,
+                      "surface_query": null
+                    }
+                  ],
+                  "completion": null,
+                  "completion_source": null,
+                  "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+                  "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+                },
+                "errors": [],
+                "elapsed_s": 117.96916549999878,
+                "workbook": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2.xlsx",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result2.xlsx",
+                  "bytes": 29210088,
+                  "sha256": "7dfdce6f103392e0550382ff17173e247c0a8fe0522ee0ee6a4626e0fac1dc31",
+                  "exists": true,
+                  "role": "contest_result_workbook"
+                },
+                "export_manifest": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2.export.json",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result2.export.json",
+                  "bytes": 36678,
+                  "sha256": "b15156c6afff4d63e36fde5fdf206e08376d9cc6991088880986a260a9bc5628",
+                  "exists": true
+                },
+                "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+                "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+                "visual_render": "pending",
+                "visual_studio_gui": "pending",
+                "human_review": "pending",
+                "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result2.validation.json"
+              }
+            ]
+          },
+          "archiveCheck": {
+            "status": "PASS",
+            "uncompressedBytes": 146776490,
+            "actual": {
+              "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2_unrounded.csv.gz",
+              "bytes": 43018253,
+              "sha256": "5ee3e6927465ff12a9e7ccbcd16e5dc3eb7b8852ef69bd57681629976dd6aa09"
+            },
+            "baseline": {
+              "path": "paper_output/results/production/final_v6a/outputs/result2_unrounded.csv.gz",
+              "bytes": 43018253,
+              "sha256": "74cc413bce9b5b132a2af7269a7f366061a78c390de900367697f171361c3f41"
+            }
+          },
+          "paperTables": [
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q2_paper_moisture.csv",
+                "bytes": 285,
+                "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+              },
+              "exactEqual": true
+            },
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q2_paper_temperature.csv",
+                "bytes": 315,
+                "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+              },
+              "exactEqual": true
+            }
+          ]
+        },
+        {
+          "questionId": "Q3",
+          "validation": {
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "exports": [
+              {
+                "schema_version": "1.0",
+                "question_id": "Q3",
+                "generated_by": "paper_output/code/review_delivery/exportOutputs.py",
+                "generated_at": "2026-09-10T19:54:20.595756+00:00",
+                "status": "PASS",
+                "fully_verified_with_live_Run": true,
+                "checked_cells": 75922,
+                "sheets": {
+                  "Sheet1": {
+                    "data_rows": 3451,
+                    "total_rows": 3452,
+                    "first_time_s": 0,
+                    "last_time_s": 206902,
+                    "outside_domain_blank_cells": 0,
+                    "value_comparison_max_abs_error": 0.0
+                  }
+                },
+                "live_Run_sample_validation": {
+                  "status": "PASS",
+                  "samples": 15,
+                  "max_abs_unrounded_difference": 0.0
+                },
+                "paper_CSV_live_Run_validation": {
+                  "status": "PASS",
+                  "checked_cells": 60,
+                  "files": [
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q3_paper_moisture.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q3_paper_moisture.csv",
+                        "bytes": 466,
+                        "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+                        "exists": true
+                      },
+                      "kind": "moisture",
+                      "status": "PASS",
+                      "header": [
+                        "时间/h",
+                        "0",
+                        "0.5",
+                        "1",
+                        "1.5",
+                        "2"
+                      ],
+                      "data_rows": 10,
+                      "expected_data_rows": 10,
+                      "checked_cells": 60,
+                      "source_query_times_s": [
+                        21600.0,
+                        43200.0,
+                        64800.0,
+                        86400.0,
+                        108000.0,
+                        129600.0,
+                        151200.0,
+                        172800.0,
+                        194400.0,
+                        206900.64
+                      ],
+                      "display_time_unit": "h",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "kg/kg",
+                      "max_field_rounding_error_from_live_value": 4.855806059500534e-05,
+                      "outside_domain_blank_cells": 0,
+                      "physical_radii_m": [
+                        0.0,
+                        0.005,
+                        0.01,
+                        0.015,
+                        0.02
+                      ],
+                      "surface_column_1based": null,
+                      "surface_query": null
+                    }
+                  ],
+                  "completion": {
+                    "critical_event_s": 206900.28702201758,
+                    "critical_event_h": 57.47230195056044,
+                    "reported_drying_time_h": 57.4724,
+                    "reported_time_s": 206900.64,
+                    "max_C_at_reported_time": 0.14999989718225315,
+                    "slowest_material_coordinate": 0.0,
+                    "conservative_post_verification_s": 206902.0,
+                    "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+                    "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+                  },
+                  "completion_source": {
+                    "path": "paper_output/code/review_delivery/q3Model.py",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q3Model.py",
+                    "bytes": 1595,
+                    "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+                    "exists": true
+                  },
+                  "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+                  "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+                },
+                "errors": [],
+                "elapsed_s": 0.8811997000011615,
+                "workbook": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3.xlsx",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result3.xlsx",
+                  "bytes": 339137,
+                  "sha256": "0b19f9d61c15e4ad9d461a775b5c66451d719c987a641266dbb79e9fd0b39bd2",
+                  "exists": true,
+                  "role": "contest_result_workbook"
+                },
+                "export_manifest": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3.export.json",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result3.export.json",
+                  "bytes": 25212,
+                  "sha256": "fdabe1de94076e5c5e3e03417bbfdfe2926bdf507fac1e8caa9cc7b92b8fcb5f",
+                  "exists": true
+                },
+                "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+                "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+                "visual_render": "pending",
+                "visual_studio_gui": "pending",
+                "human_review": "pending",
+                "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result3.validation.json"
+              }
+            ]
+          },
+          "archiveCheck": {
+            "status": "PASS",
+            "uncompressedBytes": 1481115,
+            "actual": {
+              "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3_unrounded.csv.gz",
+              "bytes": 640369,
+              "sha256": "0f8feea1e202f46d699cf899e44f7ebb2831a1371f65475fe60890a7bb3b1f11"
+            },
+            "baseline": {
+              "path": "paper_output/results/production/final_v6a/outputs/result3_unrounded.csv.gz",
+              "bytes": 640369,
+              "sha256": "e4d1e25e215013f653a763c693d654256f44260ff03b91a9b0097c1ac8ea21c1"
+            }
+          },
+          "paperTables": [
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q3_paper_moisture.csv",
+                "bytes": 466,
+                "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+              },
+              "exactEqual": true
+            }
+          ]
+        }
+      ]
+    },
+    "Q4": {
+      "sampledSolution": {
+        "actual": {
+          "path": "paper_output/results/code_delivery/camel_final_v2/Q4/sampled_solution.npz",
+          "bytes": 628742,
+          "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+        },
+        "baseline": {
+          "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+          "bytes": 628742,
+          "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+        },
+        "status": "PASS",
+        "arrays": [
+          {
+            "array": "times_s",
+            "shape": [
+              3069
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "material_x",
+            "shape": [
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "T_K",
+            "shape": [
+              3069,
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "C",
+            "shape": [
+              3069,
+              21
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "radius_m",
+            "shape": [
+              3069
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "mean_C",
+            "shape": [
+              3069
+            ],
+            "exactEqual": true
+          },
+          {
+            "array": "cumulative_loss",
+            "shape": [
+              3069
+            ],
+            "exactEqual": true
+          }
+        ]
+      },
+      "exports": [
+        {
+          "questionId": "Q4",
+          "validation": {
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "exports": [
+              {
+                "schema_version": "1.0",
+                "question_id": "Q4",
+                "generated_by": "paper_output/code/review_delivery/exportOutputs.py",
+                "generated_at": "2026-09-10T19:58:00.888544+00:00",
+                "status": "PASS",
+                "fully_verified_with_live_Run": true,
+                "checked_cells": 76700,
+                "sheets": {
+                  "Sheet1": {
+                    "data_rows": 3068,
+                    "total_rows": 3069,
+                    "first_time_s": 0,
+                    "last_time_s": 183928,
+                    "outside_domain_blank_cells": 23173,
+                    "value_comparison_max_abs_error": 0.0
+                  },
+                  "半径": {
+                    "data_rows": 3068,
+                    "total_rows": 3069,
+                    "first_time_s": 0,
+                    "last_time_s": 183928,
+                    "outside_domain_blank_cells": 0,
+                    "value_comparison_max_abs_error": 0.0
+                  }
+                },
+                "live_Run_sample_validation": {
+                  "status": "PASS",
+                  "samples": 15,
+                  "max_abs_unrounded_difference": 0.0
+                },
+                "paper_CSV_live_Run_validation": {
+                  "status": "PASS",
+                  "checked_cells": 81,
+                  "files": [
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q4_paper_moisture.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q4_paper_moisture.csv",
+                        "bytes": 390,
+                        "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+                        "exists": true
+                      },
+                      "kind": "moisture",
+                      "status": "PASS",
+                      "header": [
+                        "时间/h",
+                        "0",
+                        "0.5",
+                        "1",
+                        "1.5",
+                        "2",
+                        "药材表面"
+                      ],
+                      "data_rows": 9,
+                      "expected_data_rows": 9,
+                      "checked_cells": 63,
+                      "source_query_times_s": [
+                        21600.0,
+                        43200.0,
+                        64800.0,
+                        86400.0,
+                        108000.0,
+                        129600.0,
+                        151200.0,
+                        172800.0,
+                        183926.16
+                      ],
+                      "display_time_unit": "h",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "kg/kg",
+                      "max_field_rounding_error_from_live_value": 4.657237056709951e-05,
+                      "outside_domain_blank_cells": 18,
+                      "physical_radii_m": [
+                        0.0,
+                        0.005,
+                        0.01,
+                        0.015,
+                        0.02
+                      ],
+                      "surface_column_1based": 7,
+                      "surface_query": "material_x=1; never fixed 2 cm"
+                    },
+                    {
+                      "artifact": {
+                        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q4_paper_radius.csv",
+                        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\q4_paper_radius.csv",
+                        "bytes": 172,
+                        "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+                        "exists": true
+                      },
+                      "kind": "radius",
+                      "status": "PASS",
+                      "header": [
+                        "时间/h",
+                        "表面半径/cm"
+                      ],
+                      "data_rows": 9,
+                      "expected_data_rows": 9,
+                      "checked_cells": 18,
+                      "source_query_times_s": [
+                        21600.0,
+                        43200.0,
+                        64800.0,
+                        86400.0,
+                        108000.0,
+                        129600.0,
+                        151200.0,
+                        172800.0,
+                        183926.16
+                      ],
+                      "display_time_unit": "h",
+                      "max_display_time_rounding_error": 0.0,
+                      "field_unit": "cm",
+                      "max_field_rounding_error_from_live_value": 0.0,
+                      "outside_domain_blank_cells": 0,
+                      "physical_radii_m": null,
+                      "surface_column_1based": null,
+                      "surface_query": null
+                    }
+                  ],
+                  "completion": {
+                    "critical_event_s": 183926.06923258994,
+                    "critical_event_h": 51.09057478683054,
+                    "reported_drying_time_h": 51.0906,
+                    "reported_time_s": 183926.16,
+                    "max_C_at_reported_time": 0.14999995339076624,
+                    "slowest_material_coordinate": 0.0,
+                    "conservative_post_verification_s": 183928.0,
+                    "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+                    "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+                  },
+                  "completion_source": {
+                    "path": "paper_output/code/review_delivery/q3Model.py",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q3Model.py",
+                    "bytes": 1595,
+                    "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+                    "exists": true
+                  },
+                  "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+                  "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+                },
+                "errors": [],
+                "elapsed_s": 1.1187858999983291,
+                "workbook": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4.xlsx",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result4.xlsx",
+                  "bytes": 278278,
+                  "sha256": "9956ce379200fe9871b2c517c68eb1e7ab3396dbfe3935249c0807286999450f",
+                  "exists": true,
+                  "role": "contest_result_workbook"
+                },
+                "export_manifest": {
+                  "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4.export.json",
+                  "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result4.export.json",
+                  "bytes": 26038,
+                  "sha256": "15e74cc54fbf940623f58f2e281ea46f43630829a700a92d1309f254ac93124a",
+                  "exists": true
+                },
+                "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+                "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+                "visual_render": "pending",
+                "visual_studio_gui": "pending",
+                "human_review": "pending",
+                "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result4.validation.json"
+              }
+            ]
+          },
+          "archiveCheck": {
+            "status": "PASS",
+            "uncompressedBytes": 965025,
+            "actual": {
+              "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4_unrounded.csv.gz",
+              "bytes": 402572,
+              "sha256": "27ba21850f066f6ceef28a251df874f05bfe46c7a3502c16aed3ddb55f06a660"
+            },
+            "baseline": {
+              "path": "paper_output/results/production/final_v6a/outputs/result4_unrounded.csv.gz",
+              "bytes": 402572,
+              "sha256": "46224781624cb889fe1feafcb8f8bddfb55ab49e457470adc011abdaff3098cd"
+            }
+          },
+          "paperTables": [
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q4_paper_moisture.csv",
+                "bytes": 390,
+                "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+              },
+              "exactEqual": true
+            },
+            {
+              "file": {
+                "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q4_paper_radius.csv",
+                "bytes": 172,
+                "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+              },
+              "exactEqual": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "finishedAtUtc": "2026-09-10T19:58:03.479694+00:00",
+  "elapsedSeconds": 697.0036352000025
+}
