@@ -1,0 +1,266 @@
+{
+  "figure_id": "fig_q3_physical_sensitivity",
+  "question_id": "Q3",
+  "title": "第二、三问：物理假设与参数情景比较",
+  "caption": "读取明确列出的已完成情景，并记录每份摘要哈希、设置和原计算版本；不将情景差异当作观测误差。",
+  "purpose": "读取明确列出的已完成情景，并记录每份摘要哈希、设置和原计算版本；不将情景差异当作观测误差。",
+  "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.png",
+  "bytes": 101956,
+  "sha256": "285cfa0fdeb4b019d8a7246e979737892da047675893b7b0b7878ba6f5300b6f",
+  "status": "computed",
+  "ok": true,
+  "placeholder": false,
+  "exists": true,
+  "artifacts": {
+    "png": {
+      "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.png",
+      "bytes": 101956,
+      "sha256": "285cfa0fdeb4b019d8a7246e979737892da047675893b7b0b7878ba6f5300b6f",
+      "exists": true
+    },
+    "svg": {
+      "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.svg",
+      "bytes": 94707,
+      "sha256": "9e42843c461435e973b4800dfb1d288d55bfe2149689f2f4b5a6ceb8094aec01",
+      "exists": true
+    },
+    "pdf": {
+      "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.pdf",
+      "bytes": 48677,
+      "sha256": "9986174015e90f9b8f43e041359becc4e449348a20df1e29b5dc1f5603479415",
+      "exists": true
+    }
+  },
+  "plot_data": {
+    "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity_data.npz",
+    "bytes": 518,
+    "sha256": "bacfdbf6da8e8767455cfeafc047298e886b090818ed8c5f3d5f20d5ace26454",
+    "exists": true
+  },
+  "sources": [
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/grids_Q23_N200_K/summary.json",
+          "bytes": 2272,
+          "sha256": "44cc35c90923e35bea306e39362511649b97b665a0e85612748ea3687a8911ad",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q23",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    },
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/physical_Q23_T49_N200_K/summary.json",
+          "bytes": 2277,
+          "sha256": "e3a3a215775e185b6116d5f77570c4e16b49b7cd3478702ae23735352ecd1589",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q23",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 49.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    },
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/physical_Q23_T51_N200_K/summary.json",
+          "bytes": 2272,
+          "sha256": "ebc79060152214345af4381439d81c2e818040c89f0bb74b1a67e02b51e3d2b9",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q23",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 51.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    },
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/physical_Q23_last_N200_K/summary.json",
+          "bytes": 2275,
+          "sha256": "6d8b0c77712d0e3fbcaada21092b676f5e0f8a6c51790d0ae81a9a7c1f7cd872",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q23",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "last",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    },
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/physical_Q23_mean_N200_K/summary.json",
+          "bytes": 2277,
+          "sha256": "7ed7a595cb09cae7898c138774afe069d3407d5942457236c0f3943823bec98d",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q23",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "tail_mean",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    }
+  ],
+  "generated_by": "paper_output/code/modeling/publication_plots.py",
+  "source_code_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+  "generated_at": "2026-09-10T17:32:31.316238+00:00",
+  "font": {
+    "name": "Microsoft YaHei",
+    "file": "C:\\Windows\\Fonts\\msyh.ttc"
+  },
+  "visual_review": "pending",
+  "human_review": "pending",
+  "visual_studio_gui": "pending",
+  "scenario_labels": [
+    "平台延拓（基准）",
+    "4 h 后改为 49 °C",
+    "4 h 后改为 51 °C",
+    "4 h 后延续末值",
+    "4 h 后延续末 1 h 均值"
+  ],
+  "baseline_label": "平台延拓（基准）",
+  "intervals": 200
+}

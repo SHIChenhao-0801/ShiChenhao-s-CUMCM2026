@@ -1,0 +1,90 @@
+{
+  "figure_id": "fig_model_grid_convergence",
+  "question_id": "Q3",
+  "title": "相邻网格结果差异与临界时刻收敛",
+  "caption": "横轴为相邻比较中较细网格的区间数；所画为实际计算的最大含水率差和阈值时刻差，不把相邻差直接称作严格误差上界。",
+  "purpose": "横轴为相邻比较中较细网格的区间数；所画为实际计算的最大含水率差和阈值时刻差，不把相邻差直接称作严格误差上界。",
+  "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.png",
+  "bytes": 190848,
+  "sha256": "6cd104cd53ce1a9e83b9dde62e0832ce1236363c3d66f55498522f7abae27ffb",
+  "status": "computed",
+  "ok": true,
+  "placeholder": false,
+  "exists": true,
+  "artifacts": {
+    "png": {
+      "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.png",
+      "bytes": 190848,
+      "sha256": "6cd104cd53ce1a9e83b9dde62e0832ce1236363c3d66f55498522f7abae27ffb",
+      "exists": true
+    },
+    "svg": {
+      "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.svg",
+      "bytes": 115602,
+      "sha256": "973f07396b25665ba9bd7b8d719951bdc96c7f6bf578aae7bbdafb36b5e059ef",
+      "exists": true
+    },
+    "pdf": {
+      "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.pdf",
+      "bytes": 56334,
+      "sha256": "5d18a64b98a3b7a7b9dc2d9e82f2f6360de79f2d1e4babf436ae72d8d502c1dd",
+      "exists": true
+    }
+  },
+  "plot_data": {
+    "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence_data.npz",
+    "bytes": 1280,
+    "sha256": "a710ddc8bf096f2226dd1c808245367059b13ea59446fa533e2844fc81ffd939",
+    "exists": true
+  },
+  "sources": [
+    {
+      "kind": "finished_convergence_report",
+      "files": [
+        {
+          "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+          "bytes": 10761,
+          "sha256": "78362f990ca25ca6caad1e8e93b9ca8e2c86d934d8ade58aa74720c2a858c5e7",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "kind": "finished_convergence_report",
+      "files": [
+        {
+          "path": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+          "bytes": 7673,
+          "sha256": "0fe5a791f3df2dff3b29c0bcc4a0e527da6f7330570f5144c2f573bc4781a579",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "kind": "finished_convergence_report",
+      "files": [
+        {
+          "path": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "bytes": 11574,
+          "sha256": "2cd0caad1176bfd182b6be0fe564da80081162bad24753e90a97b8eabb0b5a3d",
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "generated_by": "paper_output/code/modeling/publication_plots.py",
+  "source_code_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+  "generated_at": "2026-09-10T17:32:29.230870+00:00",
+  "font": {
+    "name": "Microsoft YaHei",
+    "file": "C:\\Windows\\Fonts\\msyh.ttc"
+  },
+  "visual_review": "pending",
+  "human_review": "pending",
+  "visual_studio_gui": "pending",
+  "question_ids": [
+    "Q1",
+    "Q23",
+    "Q4"
+  ]
+}

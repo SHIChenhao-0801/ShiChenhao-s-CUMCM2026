@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "question": "q1",
+      "kind": "temperature",
+      "shape": [
+        7,
+        5
+      ],
+      "figure_data_sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096",
+      "csv_sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "matched_radius_error_m": 0.0,
+      "max_unrounded_vs_csv_difference": 4.938376132912481e-05,
+      "status": "PASS",
+      "scope": "independent frozen figure data versus independently validated paper CSV at identical time/physical radius"
+    },
+    {
+      "question": "q1",
+      "kind": "moisture",
+      "shape": [
+        7,
+        5
+      ],
+      "figure_data_sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096",
+      "csv_sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "matched_radius_error_m": 0.0,
+      "max_unrounded_vs_csv_difference": 4.636328382545685e-05,
+      "status": "PASS",
+      "scope": "independent frozen figure data versus independently validated paper CSV at identical time/physical radius"
+    },
+    {
+      "question": "q2",
+      "kind": "temperature",
+      "shape": [
+        6,
+        5
+      ],
+      "figure_data_sha256": "21fe824252f59c64f47b4a85b263481d61ec4f732b24368dc17771c49256a97e",
+      "csv_sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "matched_radius_error_m": 0.0,
+      "max_unrounded_vs_csv_difference": 4.9995136670588636e-05,
+      "status": "PASS",
+      "scope": "independent frozen figure data versus independently validated paper CSV at identical time/physical radius"
+    },
+    {
+      "question": "q2",
+      "kind": "moisture",
+      "shape": [
+        6,
+        5
+      ],
+      "figure_data_sha256": "21fe824252f59c64f47b4a85b263481d61ec4f732b24368dc17771c49256a97e",
+      "csv_sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "matched_radius_error_m": 0.0,
+      "max_unrounded_vs_csv_difference": 4.846568046090738e-05,
+      "status": "PASS",
+      "scope": "independent frozen figure data versus independently validated paper CSV at identical time/physical radius"
+    }
+  ]
+}

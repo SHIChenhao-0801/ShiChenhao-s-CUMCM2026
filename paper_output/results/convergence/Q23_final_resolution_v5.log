@@ -1,0 +1,4 @@
+START Q23_final_resolution_v5 N=1600
+START Q23_final_resolution_v5 N=3200
+{"max_absolute_difference": {"T_K": 2.8929259201504465e-06, "C": 3.830289061168557e-05}, "locations": {"T_K": {"time_s": 9060.0, "radius_m": 0.02}, "C": {"time_s": 1.0, "radius_m": 0.02}}, "compared_time_count": 206903, "radial_count": 21, "convention": "Only finite values at common physical points are compared.", "coarse_N": 1600, "fine_N": 3200, "event_difference_s": -0.020146428927546367}
+COMPLETED Q23_final_resolution_v5

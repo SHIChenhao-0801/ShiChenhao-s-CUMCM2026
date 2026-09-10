@@ -1,0 +1,13 @@
+{
+  "pid": 17132,
+  "returncode": 7,
+  "started_at": "2026-09-10T16:07:26.927260+00:00",
+  "finished_at": "2026-09-10T16:07:26.987241+00:00",
+  "command": "C:\\Python314\\python.exe -c \"import sys; print(\\\"tiny-process\\\"); sys.exit(7)\"",
+  "argv": [
+    "C:\\Python314\\python.exe",
+    "-c",
+    "import sys; print(\"tiny-process\"); sys.exit(7)"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-qy0teplj\\fixture"
+}

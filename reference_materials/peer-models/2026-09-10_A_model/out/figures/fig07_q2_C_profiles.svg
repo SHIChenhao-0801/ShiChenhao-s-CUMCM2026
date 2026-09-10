@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" font-family="'SimSun','Microsoft YaHei','Times New Roman',serif" font-size="13">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="400.0" y="27" text-anchor="middle" font-size="15" font-weight="bold">图7  问题2 药材水分浓度径向剖面（0—3 h）</text>
+<g stroke="#dddddd" stroke-width="0.8">
+<line x1="82.00" y1="52" x2="82.00" y2="406"/>
+<line x1="255.00" y1="52" x2="255.00" y2="406"/>
+<line x1="428.00" y1="52" x2="428.00" y2="406"/>
+<line x1="601.00" y1="52" x2="601.00" y2="406"/>
+<line x1="774.00" y1="52" x2="774.00" y2="406"/>
+<line x1="82" y1="388.70" x2="774" y2="388.70"/>
+<line x1="82" y1="286.21" x2="774" y2="286.21"/>
+<line x1="82" y1="183.71" x2="774" y2="183.71"/>
+<line x1="82" y1="81.21" x2="774" y2="81.21"/>
+</g>
+<rect x="82" y="52" width="692" height="354" fill="none" stroke="#333" stroke-width="1.2"/>
+<line x1="82.00" y1="406" x2="82.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="82.00" y="426" text-anchor="middle" font-size="12">0</text>
+<line x1="255.00" y1="406" x2="255.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="255.00" y="426" text-anchor="middle" font-size="12">0.5</text>
+<line x1="428.00" y1="406" x2="428.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="428.00" y="426" text-anchor="middle" font-size="12">1</text>
+<line x1="601.00" y1="406" x2="601.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="601.00" y="426" text-anchor="middle" font-size="12">1.5</text>
+<line x1="774.00" y1="406" x2="774.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="774.00" y="426" text-anchor="middle" font-size="12">2</text>
+<line x1="77" y1="388.70" x2="82" y2="388.70" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="392.70" text-anchor="end" font-size="12">1</text>
+<line x1="77" y1="286.21" x2="82" y2="286.21" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="290.21" text-anchor="end" font-size="12">1.5</text>
+<line x1="77" y1="183.71" x2="82" y2="183.71" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="187.71" text-anchor="end" font-size="12">2</text>
+<line x1="77" y1="81.21" x2="82" y2="81.21" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="85.21" text-anchor="end" font-size="12">2.5</text>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,70.96 116.60,70.96 151.20,70.96 185.80,70.96 220.40,70.96 255.00,70.96 289.60,70.96 324.20,70.96 358.80,70.96 393.40,70.96 428.00,70.96 462.60,70.96 497.20,70.96 531.80,70.97 566.40,71.01 601.00,71.27 635.60,72.47 670.20,76.87 704.80,89.30 739.40,116.91 774.00,166.00"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,70.96 116.60,70.96 151.20,70.96 185.80,70.96 220.40,70.96 255.00,70.96 289.60,70.97 324.20,70.97 358.80,70.98 393.40,71.02 428.00,71.13 462.60,71.43 497.20,72.15 531.80,73.79 566.40,77.16 601.00,83.51 635.60,94.53 670.20,112.12 704.80,138.05 739.40,173.48 774.00,218.51"/>
+<polyline fill="none" stroke="#1e8449" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,70.98 116.60,70.98 151.20,70.99 185.80,71.02 220.40,71.08 255.00,71.19 289.60,71.42 324.20,71.83 358.80,72.57 393.40,73.85 428.00,75.98 462.60,79.35 497.20,84.49 531.80,92.02 566.40,102.62 601.00,116.94 635.60,135.55 670.20,158.81 704.80,186.83 739.40,219.34 774.00,255.74"/>
+<polyline fill="none" stroke="#b7791f" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,75.94 116.60,76.16 151.20,76.84 185.80,78.03 220.40,79.81 255.00,82.28 289.60,85.58 324.20,89.87 358.80,95.30 393.40,102.08 428.00,110.36 462.60,120.32 497.20,132.08 531.80,145.76 566.40,161.40 601.00,179.00 635.60,198.50 670.20,219.76 704.80,242.61 739.40,266.82 774.00,292.13"/>
+<polyline fill="none" stroke="#6c3483" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,104.57 116.60,105.06 151.20,106.52 185.80,108.98 220.40,112.45 255.00,116.96 289.60,122.54 324.20,129.22 358.80,137.04 393.40,146.01 428.00,156.16 462.60,167.49 497.20,179.99 531.80,193.65 566.40,208.44 601.00,224.29 635.60,241.17 670.20,259.00 704.80,277.70 739.40,297.20 774.00,317.45"/>
+<polyline fill="none" stroke="#00838f" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,148.69 116.60,149.20 151.20,150.74 185.80,153.30 220.40,156.88 255.00,161.48 289.60,167.09 324.20,173.69 358.80,181.29 393.40,189.85 428.00,199.36 462.60,209.81 497.20,221.17 531.80,233.40 566.40,246.49 601.00,260.39 635.60,275.08 670.20,290.54 704.80,306.74 739.40,323.67 774.00,341.33"/>
+<polyline fill="none" stroke="#d35400" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,192.60 116.60,193.06 151.20,194.44 185.80,196.75 220.40,199.96 255.00,204.09 289.60,209.10 324.20,215.00 358.80,221.76 393.40,229.38 428.00,237.83 462.60,247.10 497.20,257.16 531.80,268.00 566.40,279.60 601.00,291.95 635.60,305.03 670.20,318.84 704.80,333.39 739.40,348.70 774.00,364.79"/>
+<polyline fill="none" stroke="#2c3e50" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,231.64 116.60,232.05 151.20,233.28 185.80,235.32 220.40,238.17 255.00,241.82 289.60,246.27 324.20,251.50 358.80,257.51 393.40,264.29 428.00,271.82 462.60,280.09 497.20,289.09 531.80,298.81 566.40,309.24 601.00,320.38 635.60,332.24 670.20,344.80 704.80,358.10 739.40,372.16 774.00,387.04"/>
+<text x="428.0" y="454" text-anchor="middle" font-size="14">到药材中心的距离 r / cm</text>
+<text x="18" y="229.0" text-anchor="middle" font-size="14" transform="rotate(-90,18,229.0)">干基含水率 C / (kg/kg)</text>
+<rect x="622" y="62" width="142" height="138" fill="#ffffff" fill-opacity="0.88" stroke="#bbbbbb" stroke-width="0.8"/>
+<line x1="630" y1="74" x2="656" y2="74" stroke="#1f4e9c" stroke-width="2.00"/>
+<text x="662" y="78" font-size="11">0.0833333 h</text>
+<line x1="630" y1="90" x2="656" y2="90" stroke="#c0392b" stroke-width="2.00"/>
+<text x="662" y="94" font-size="11">0.25 h</text>
+<line x1="630" y1="106" x2="656" y2="106" stroke="#1e8449" stroke-width="2.00"/>
+<text x="662" y="110" font-size="11">0.5 h</text>
+<line x1="630" y1="122" x2="656" y2="122" stroke="#b7791f" stroke-width="2.00"/>
+<text x="662" y="126" font-size="11">1 h</text>
+<line x1="630" y1="138" x2="656" y2="138" stroke="#6c3483" stroke-width="2.00"/>
+<text x="662" y="142" font-size="11">1.5 h</text>
+<line x1="630" y1="154" x2="656" y2="154" stroke="#00838f" stroke-width="2.00"/>
+<text x="662" y="158" font-size="11">2 h</text>
+<line x1="630" y1="170" x2="656" y2="170" stroke="#d35400" stroke-width="2.00"/>
+<text x="662" y="174" font-size="11">2.5 h</text>
+<line x1="630" y1="186" x2="656" y2="186" stroke="#2c3e50" stroke-width="2.00"/>
+<text x="662" y="190" font-size="11">3 h</text>
+</svg>

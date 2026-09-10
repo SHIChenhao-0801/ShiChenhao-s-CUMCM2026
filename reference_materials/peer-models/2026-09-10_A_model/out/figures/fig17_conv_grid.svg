@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" font-family="'SimSun','Microsoft YaHei','Times New Roman',serif" font-size="13">
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400.0" y="27" text-anchor="middle" font-size="15" font-weight="bold">图17a  烘干时间 T* 的网格收敛性（问题3）</text>
+<g stroke="#dddddd" stroke-width="0.8">
+<line x1="203.10" y1="52" x2="203.10" y2="376"/>
+<line x1="376.10" y1="52" x2="376.10" y2="376"/>
+<line x1="549.10" y1="52" x2="549.10" y2="376"/>
+<line x1="722.10" y1="52" x2="722.10" y2="376"/>
+<line x1="82" y1="303.31" x2="774" y2="303.31"/>
+<line x1="82" y1="202.15" x2="774" y2="202.15"/>
+<line x1="82" y1="100.99" x2="774" y2="100.99"/>
+</g>
+<rect x="82" y="52" width="692" height="324" fill="none" stroke="#333" stroke-width="1.2"/>
+<line x1="203.10" y1="376" x2="203.10" y2="381" stroke="#333" stroke-width="1.2"/>
+<text x="203.10" y="396" text-anchor="middle" font-size="12">200</text>
+<line x1="376.10" y1="376" x2="376.10" y2="381" stroke="#333" stroke-width="1.2"/>
+<text x="376.10" y="396" text-anchor="middle" font-size="12">400</text>
+<line x1="549.10" y1="376" x2="549.10" y2="381" stroke="#333" stroke-width="1.2"/>
+<text x="549.10" y="396" text-anchor="middle" font-size="12">600</text>
+<line x1="722.10" y1="376" x2="722.10" y2="381" stroke="#333" stroke-width="1.2"/>
+<text x="722.10" y="396" text-anchor="middle" font-size="12">800</text>
+<line x1="77" y1="303.31" x2="82" y2="303.31" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="307.31" text-anchor="end" font-size="12">60</text>
+<line x1="77" y1="202.15" x2="82" y2="202.15" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="206.15" text-anchor="end" font-size="12">65</text>
+<line x1="77" y1="100.99" x2="82" y2="100.99" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="104.99" text-anchor="end" font-size="12">70</text>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="2.40" stroke-linejoin="round" stroke-linecap="round" points="116.60,69.36 203.10,324.52 376.10,350.11"/>
+<circle cx="116.60" cy="69.36" r="4.5" fill="#1f4e9c"/>
+<circle cx="203.10" cy="324.52" r="4.5" fill="#1f4e9c"/>
+<circle cx="376.10" cy="350.11" r="4.5" fill="#1f4e9c"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="1.80" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6,4" points="82.00,358.64 774.00,358.64"/>
+<text x="428.0" y="424" text-anchor="middle" font-size="14">径向节点数 N</text>
+<text x="18" y="214.0" text-anchor="middle" font-size="14" transform="rotate(-90,18,214.0)">烘干时间 T* / h</text>
+<text x="135.63" y="62.28" font-size="11" fill="#333" text-anchor="start">71.5633</text>
+<text x="222.13" y="317.44" font-size="11" fill="#333" text-anchor="start">58.9518</text>
+<text x="395.13" y="343.03" font-size="11" fill="#333" text-anchor="start">57.6868</text>
+<rect x="442" y="62" width="322" height="42" fill="#ffffff" fill-opacity="0.88" stroke="#bbbbbb" stroke-width="0.8"/>
+<line x1="450" y1="74" x2="476" y2="74" stroke="#1f4e9c" stroke-width="2.40"/>
+<text x="482" y="78" font-size="11">数值计算 T*(N)</text>
+<line x1="450" y1="90" x2="476" y2="90" stroke="#c0392b" stroke-width="1.80" stroke-dasharray="6,4"/>
+<text x="482" y="94" font-size="11">二阶 Richardson 外推 57.2651 h</text>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "run_id": "test",
+      "returncode": 0,
+      "input_files": [
+        {
+          "path": "input.txt",
+          "bytes": 13,
+          "sha256": "aa2353a76c07b8615467bb59085dc2d9867c94f2c1d2e7a15df72b196bfdebf0",
+          "exists": true
+        }
+      ],
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/model_results.json",
+          "bytes": 26,
+          "sha256": "eaadde67148f95c2b08b4f08e318b7d08416b9f7f34c60927daf1f1acb3c5e61"
+        }
+      ]
+    }
+  ]
+}

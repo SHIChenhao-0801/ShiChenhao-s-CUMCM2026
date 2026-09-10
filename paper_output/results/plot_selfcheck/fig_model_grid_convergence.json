@@ -1,0 +1,78 @@
+{
+  "figure_id": "fig_model_grid_convergence",
+  "question_id": "Q3",
+  "title": "相邻网格结果差异与临界时刻收敛",
+  "caption": "横轴为相邻比较中较细网格的区间数；所画为实际计算的最大含水率差和阈值时刻差，不把相邻差直接称作严格误差上界。",
+  "purpose": "横轴为相邻比较中较细网格的区间数；所画为实际计算的最大含水率差和阈值时刻差，不把相邻差直接称作严格误差上界。",
+  "path": "paper_output/results/plot_selfcheck/fig_model_grid_convergence.png",
+  "bytes": 176423,
+  "sha256": "6632e0e2b56c653fe54e79a8153535ba2f3001ab2c8a748f2498fd0ab3424dd3",
+  "status": "computed",
+  "ok": true,
+  "placeholder": false,
+  "exists": true,
+  "artifacts": {
+    "png": {
+      "path": "paper_output/results/plot_selfcheck/fig_model_grid_convergence.png",
+      "bytes": 176423,
+      "sha256": "6632e0e2b56c653fe54e79a8153535ba2f3001ab2c8a748f2498fd0ab3424dd3",
+      "exists": true
+    },
+    "svg": {
+      "path": "paper_output/results/plot_selfcheck/fig_model_grid_convergence.svg",
+      "bytes": 112150,
+      "sha256": "59fc395a30b5c8ba5cad267a70a2394c0a01adf51173c121afad1cca20d7c4e8",
+      "exists": true
+    },
+    "pdf": {
+      "path": "paper_output/results/plot_selfcheck/fig_model_grid_convergence.pdf",
+      "bytes": 55559,
+      "sha256": "a07b0838d2ccfee229324dfe2cf8d68baa23b3973d7e4a54325d07d3f590bf55",
+      "exists": true
+    }
+  },
+  "plot_data": {
+    "path": "paper_output/results/plot_selfcheck/fig_model_grid_convergence_data.npz",
+    "bytes": 870,
+    "sha256": "ba9d5cbadc466514098d7c031e5a8f9a6d353de2c555c98d87bd4af2329840c2",
+    "exists": true
+  },
+  "sources": [
+    {
+      "kind": "finished_convergence_report",
+      "files": [
+        {
+          "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+          "bytes": 10761,
+          "sha256": "78362f990ca25ca6caad1e8e93b9ca8e2c86d934d8ade58aa74720c2a858c5e7",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "kind": "finished_convergence_report",
+      "files": [
+        {
+          "path": "paper_output/results/convergence/Q23_K_analytic_J_v3/convergence_report.json",
+          "bytes": 10395,
+          "sha256": "586b6990a2d99c06bde6a039203099a8e3ee6971f76b148316c16fe04044f36e",
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "generated_by": "paper_output/code/modeling/publication_plots.py",
+  "source_code_sha256": "0c4ef4d8085211be26d64d139d9c91314a977a06e8fb2333e7b113b7a3005b41",
+  "generated_at": "2026-09-10T15:11:30.104345+00:00",
+  "font": {
+    "name": "Microsoft YaHei",
+    "file": "C:\\Windows\\Fonts\\msyh.ttc"
+  },
+  "visual_review": "pending",
+  "human_review": "pending",
+  "visual_studio_gui": "pending",
+  "question_ids": [
+    "Q1",
+    "Q23"
+  ]
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520" font-family="'SimSun','Microsoft YaHei','Times New Roman',serif" font-size="13">
+<rect width="820" height="520" fill="#ffffff"/>
+<text x="410.0" y="27" text-anchor="middle" font-size="15" font-weight="bold">图18  关键参数对烘干时间 T* 的敏感度（相对基准 +58.9518 h）</text>
+<g stroke="#dddddd" stroke-width="0.8">
+<line x1="103.24" y1="52" x2="103.24" y2="446"/>
+<line x1="286.02" y1="52" x2="286.02" y2="446"/>
+<line x1="468.81" y1="52" x2="468.81" y2="446"/>
+<line x1="651.59" y1="52" x2="651.59" y2="446"/>
+<line x1="82" y1="380.92" x2="794" y2="380.92"/>
+<line x1="82" y1="307.63" x2="794" y2="307.63"/>
+<line x1="82" y1="234.34" x2="794" y2="234.34"/>
+<line x1="82" y1="161.05" x2="794" y2="161.05"/>
+<line x1="82" y1="87.76" x2="794" y2="87.76"/>
+</g>
+<rect x="82" y="52" width="712" height="394" fill="none" stroke="#333" stroke-width="1.2"/>
+<line x1="103.24" y1="446" x2="103.24" y2="451" stroke="#333" stroke-width="1.2"/>
+<text x="103.24" y="466" text-anchor="middle" font-size="12">-50</text>
+<line x1="286.02" y1="446" x2="286.02" y2="451" stroke="#333" stroke-width="1.2"/>
+<text x="286.02" y="466" text-anchor="middle" font-size="12">0</text>
+<line x1="468.81" y1="446" x2="468.81" y2="451" stroke="#333" stroke-width="1.2"/>
+<text x="468.81" y="466" text-anchor="middle" font-size="12">50</text>
+<line x1="651.59" y1="446" x2="651.59" y2="451" stroke="#333" stroke-width="1.2"/>
+<text x="651.59" y="466" text-anchor="middle" font-size="12">100</text>
+<line x1="77" y1="380.92" x2="82" y2="380.92" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="384.92" text-anchor="end" font-size="12">2</text>
+<line x1="77" y1="307.63" x2="82" y2="307.63" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="311.63" text-anchor="end" font-size="12">5</text>
+<line x1="77" y1="234.34" x2="82" y2="234.34" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="238.34" text-anchor="end" font-size="12">8</text>
+<line x1="77" y1="161.05" x2="82" y2="161.05" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="165.05" text-anchor="end" font-size="12">10</text>
+<line x1="77" y1="87.76" x2="82" y2="87.76" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="91.76" text-anchor="end" font-size="12">12</text>
+<line x1="286.02" y1="52" x2="286.02" y2="446" stroke="#333" stroke-width="1.4" stroke-dasharray=""/>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,73.11 285.93,73.11"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,102.42 286.19,102.42"/>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,131.74 285.78,131.74"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,161.05 286.52,161.05"/>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,190.37 285.39,190.37"/>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,219.68 279.45,219.68"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,249.00 295.32,249.00"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,278.32 307.28,278.32"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,307.63 324.46,307.63"/>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,336.95 218.25,336.95"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,366.26 407.88,366.26"/>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,395.58 122.80,395.58"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="7.00" stroke-linejoin="round" stroke-linecap="round" points="286.02,424.89 692.40,424.89"/>
+<text x="438.0" y="494" text-anchor="middle" font-size="14">T* 相对变化 / %</text>
+<text x="18" y="249.0" text-anchor="middle" font-size="14" transform="rotate(-90,18,249.0)"></text>
+<text x="285.93" y="64.90" font-size="11" fill="#333" text-anchor="end">h x1.25  -0.03%</text>
+<text x="286.19" y="94.21" font-size="11" fill="#333" text-anchor="start">h x0.75  +0.04%</text>
+<text x="285.78" y="123.53" font-size="11" fill="#333" text-anchor="end">h x2.00  -0.07%</text>
+<text x="286.52" y="152.85" font-size="11" fill="#333" text-anchor="start">h x0.50  +0.14%</text>
+<text x="285.39" y="182.16" font-size="11" fill="#333" text-anchor="end">beta x1.25  -0.17%</text>
+<text x="279.45" y="211.48" font-size="11" fill="#333" text-anchor="end">C_eq x1.20  -1.80%</text>
+<text x="295.32" y="240.79" font-size="11" fill="#333" text-anchor="start">beta x0.75  +2.54%</text>
+<text x="307.28" y="270.11" font-size="11" fill="#333" text-anchor="start">beta x2.00  +5.82%</text>
+<text x="324.46" y="299.42" font-size="11" fill="#333" text-anchor="start">beta x0.50  +10.51%</text>
+<text x="218.25" y="328.74" font-size="11" fill="#333" text-anchor="end">D x1.25  -18.54%</text>
+<text x="407.88" y="358.05" font-size="11" fill="#333" text-anchor="start">D x0.75  +33.33%</text>
+<text x="122.80" y="387.37" font-size="11" fill="#333" text-anchor="end">D x2.00  -44.65%</text>
+<text x="692.40" y="416.68" font-size="11" fill="#333" text-anchor="start">D x0.50  +111.16%</text>
+<rect x="644" y="266" width="140" height="170" fill="#ffffff" fill-opacity="0.88" stroke="#bbbbbb" stroke-width="0.8"/>
+<line x1="652" y1="278" x2="678" y2="278" stroke="#1f4e9c" stroke-width="7.00"/>
+<text x="684" y="282" font-size="11">h x1.25</text>
+<line x1="652" y1="294" x2="678" y2="294" stroke="#c0392b" stroke-width="7.00"/>
+<text x="684" y="298" font-size="11">h x0.75</text>
+<line x1="652" y1="310" x2="678" y2="310" stroke="#1f4e9c" stroke-width="7.00"/>
+<text x="684" y="314" font-size="11">h x2.00</text>
+<line x1="652" y1="326" x2="678" y2="326" stroke="#c0392b" stroke-width="7.00"/>
+<text x="684" y="330" font-size="11">h x0.50</text>
+<line x1="652" y1="342" x2="678" y2="342" stroke="#1f4e9c" stroke-width="7.00"/>
+<text x="684" y="346" font-size="11">beta x1.25</text>
+<line x1="652" y1="358" x2="678" y2="358" stroke="#1f4e9c" stroke-width="7.00"/>
+<text x="684" y="362" font-size="11">C_eq x1.20</text>
+<line x1="652" y1="374" x2="678" y2="374" stroke="#c0392b" stroke-width="7.00"/>
+<text x="684" y="378" font-size="11">beta x0.75</text>
+<line x1="652" y1="390" x2="678" y2="390" stroke="#c0392b" stroke-width="7.00"/>
+<text x="684" y="394" font-size="11">beta x2.00</text>
+<line x1="652" y1="406" x2="678" y2="406" stroke="#c0392b" stroke-width="7.00"/>
+<text x="684" y="410" font-size="11">beta x0.50</text>
+<line x1="652" y1="422" x2="678" y2="422" stroke="#1f4e9c" stroke-width="7.00"/>
+<text x="684" y="426" font-size="11">D x1.25</text>
+</svg>

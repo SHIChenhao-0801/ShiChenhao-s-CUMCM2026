@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": "Isolated tiny-file contracts; no model solve or real production publication.",
+  "checks": [
+    "hash_mutation_rejected",
+    "duplicate_version_marker_rejected",
+    "metric_mismatch_rejected",
+    "existing_artifact_preserved_planned_not_promoted",
+    "publication_failure_rolls_back_old_contract_and_manifest",
+    "successful_publication_commits_manifest_last",
+    "actual_process_zero_and_nonzero_exits_observed",
+    "entry_one_run_at_a_time_and_Q2_Q3_same_identity",
+    "entry_closes_run_after_export_failure",
+    "worker_does_not_publish_global_contracts"
+  ],
+  "processes": [
+    {
+      "pid": 31632,
+      "returncode": 0,
+      "started_at": "2026-09-10T16:05:28.977348+00:00",
+      "finished_at": "2026-09-10T16:05:29.030137+00:00",
+      "command": "C:\\Python314\\python.exe -c \"import sys; print(\\\"tiny-process\\\"); sys.exit(0)\"",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-c",
+        "import sys; print(\"tiny-process\"); sys.exit(0)"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-ejagch_o\\fixture"
+    },
+    {
+      "pid": 22884,
+      "returncode": 7,
+      "started_at": "2026-09-10T16:05:29.033174+00:00",
+      "finished_at": "2026-09-10T16:05:29.085088+00:00",
+      "command": "C:\\Python314\\python.exe -c \"import sys; print(\\\"tiny-process\\\"); sys.exit(7)\"",
+      "argv": [
+        "C:\\Python314\\python.exe",
+        "-c",
+        "import sys; print(\"tiny-process\"); sys.exit(7)"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-ejagch_o\\fixture"
+    }
+  ],
+  "source": {
+    "path": "paper_output/code/modeling/production_provenance.py",
+    "bytes": 23665,
+    "sha256": "6430e1aa38c486cd3cff6a9ccb13336fb2cc22376f9954be54bb55052a87665f",
+    "exists": true
+  },
+  "generated_at": "2026-09-10T16:05:29.655190+00:00",
+  "visual_studio_gui": "pending",
+  "human_review": "pending"
+}

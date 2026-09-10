@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" font-family="'SimSun','Microsoft YaHei','Times New Roman',serif" font-size="13">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="400.0" y="27" text-anchor="middle" font-size="15" font-weight="bold">图2  问题1 药材温度径向剖面（预热平衡阶段）</text>
+<g stroke="#dddddd" stroke-width="0.8">
+<line x1="82.00" y1="52" x2="82.00" y2="406"/>
+<line x1="255.00" y1="52" x2="255.00" y2="406"/>
+<line x1="428.00" y1="52" x2="428.00" y2="406"/>
+<line x1="601.00" y1="52" x2="601.00" y2="406"/>
+<line x1="774.00" y1="52" x2="774.00" y2="406"/>
+<line x1="82" y1="387.04" x2="774" y2="387.04"/>
+<line x1="82" y1="315.08" x2="774" y2="315.08"/>
+<line x1="82" y1="243.13" x2="774" y2="243.13"/>
+<line x1="82" y1="171.18" x2="774" y2="171.18"/>
+<line x1="82" y1="99.23" x2="774" y2="99.23"/>
+</g>
+<rect x="82" y="52" width="692" height="354" fill="none" stroke="#333" stroke-width="1.2"/>
+<line x1="82.00" y1="406" x2="82.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="82.00" y="426" text-anchor="middle" font-size="12">0</text>
+<line x1="255.00" y1="406" x2="255.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="255.00" y="426" text-anchor="middle" font-size="12">0.5</text>
+<line x1="428.00" y1="406" x2="428.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="428.00" y="426" text-anchor="middle" font-size="12">1</text>
+<line x1="601.00" y1="406" x2="601.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="601.00" y="426" text-anchor="middle" font-size="12">1.5</text>
+<line x1="774.00" y1="406" x2="774.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="774.00" y="426" text-anchor="middle" font-size="12">2</text>
+<line x1="77" y1="387.04" x2="82" y2="387.04" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="391.04" text-anchor="end" font-size="12">28</text>
+<line x1="77" y1="315.08" x2="82" y2="315.08" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="319.08" text-anchor="end" font-size="12">30</text>
+<line x1="77" y1="243.13" x2="82" y2="243.13" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="247.13" text-anchor="end" font-size="12">32</text>
+<line x1="77" y1="171.18" x2="82" y2="171.18" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="175.18" text-anchor="end" font-size="12">34</text>
+<line x1="77" y1="99.23" x2="82" y2="99.23" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="103.23" text-anchor="end" font-size="12">36</text>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,387.04 116.60,387.04 151.20,387.03 185.80,387.03 220.40,387.03 255.00,387.03 289.60,387.02 324.20,387.00 358.80,386.98 393.40,386.95 428.00,386.89 462.60,386.81 497.20,386.69 531.80,386.50 566.40,386.24 601.00,385.86 635.60,385.33 670.20,384.60 704.80,383.62 739.40,382.30 774.00,380.56"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,385.57 116.60,385.54 151.20,385.45 185.80,385.29 220.40,385.06 255.00,384.75 289.60,384.36 324.20,383.86 358.80,383.24 393.40,382.49 428.00,381.59 462.60,380.51 497.20,379.22 531.80,377.70 566.40,375.90 601.00,373.80 635.60,371.32 670.20,368.43 704.80,365.05 739.40,361.10 774.00,356.50"/>
+<polyline fill="none" stroke="#1e8449" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,370.73 116.60,370.61 151.20,370.26 185.80,369.67 220.40,368.84 255.00,367.75 289.60,366.41 324.20,364.78 358.80,362.87 393.40,360.66 428.00,358.11 462.60,355.23 497.20,351.96 531.80,348.31 566.40,344.23 601.00,339.70 635.60,334.68 670.20,329.15 704.80,323.07 739.40,316.41 774.00,309.14"/>
+<polyline fill="none" stroke="#b7791f" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,339.39 116.60,339.20 151.20,338.63 185.80,337.67 220.40,336.32 255.00,334.57 289.60,332.42 324.20,329.86 358.80,326.87 393.40,323.44 428.00,319.57 462.60,315.22 497.20,310.40 531.80,305.09 566.40,299.26 601.00,292.92 635.60,286.03 670.20,278.60 704.80,270.59 739.40,262.01 774.00,252.83"/>
+<polyline fill="none" stroke="#6c3483" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,295.56 116.60,295.32 151.20,294.60 185.80,293.40 220.40,291.72 255.00,289.55 289.60,286.88 324.20,283.72 358.80,280.04 393.40,275.84 428.00,271.11 462.60,265.84 497.20,260.01 531.80,253.62 566.40,246.65 601.00,239.08 635.60,230.91 670.20,222.10 704.80,212.66 739.40,202.55 774.00,191.77"/>
+<polyline fill="none" stroke="#00838f" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,243.29 116.60,243.01 151.20,242.19 185.80,240.82 220.40,238.89 255.00,236.41 289.60,233.38 324.20,229.78 358.80,225.62 393.40,220.88 428.00,215.57 462.60,209.69 497.20,203.22 531.80,196.16 566.40,188.53 601.00,180.31 635.60,171.51 670.20,162.16 704.80,152.25 739.40,141.81 774.00,130.88"/>
+<polyline fill="none" stroke="#d35400" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,186.46 116.60,186.17 151.20,185.33 185.80,183.91 220.40,181.93 255.00,179.38 289.60,176.27 324.20,172.58 358.80,168.32 393.40,163.49 428.00,158.08 462.60,152.08 497.20,145.50 531.80,138.33 566.40,130.56 601.00,122.17 635.60,113.18 670.20,103.57 704.80,93.33 739.40,82.46 774.00,70.96"/>
+<text x="428.0" y="454" text-anchor="middle" font-size="14">到药材中心的距离 r / cm</text>
+<text x="18" y="229.0" text-anchor="middle" font-size="14" transform="rotate(-90,18,229.0)">温度 T / °C</text>
+<rect x="624" y="62" width="140" height="122" fill="#ffffff" fill-opacity="0.88" stroke="#bbbbbb" stroke-width="0.8"/>
+<line x1="632" y1="74" x2="658" y2="74" stroke="#1f4e9c" stroke-width="2.00"/>
+<text x="664" y="78" font-size="11">t = 100 s</text>
+<line x1="632" y1="90" x2="658" y2="90" stroke="#c0392b" stroke-width="2.00"/>
+<text x="664" y="94" font-size="11">t = 300 s</text>
+<line x1="632" y1="106" x2="658" y2="106" stroke="#1e8449" stroke-width="2.00"/>
+<text x="664" y="110" font-size="11">t = 600 s</text>
+<line x1="632" y1="122" x2="658" y2="122" stroke="#b7791f" stroke-width="2.00"/>
+<text x="664" y="126" font-size="11">t = 900 s</text>
+<line x1="632" y1="138" x2="658" y2="138" stroke="#6c3483" stroke-width="2.00"/>
+<text x="664" y="142" font-size="11">t = 1200 s</text>
+<line x1="632" y1="154" x2="658" y2="154" stroke="#00838f" stroke-width="2.00"/>
+<text x="664" y="158" font-size="11">t = 1500 s</text>
+<line x1="632" y1="170" x2="658" y2="170" stroke="#d35400" stroke-width="2.00"/>
+<text x="664" y="174" font-size="11">t = 1800 s</text>
+</svg>

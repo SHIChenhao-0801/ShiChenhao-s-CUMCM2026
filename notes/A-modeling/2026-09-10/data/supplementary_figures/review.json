@@ -1,0 +1,130 @@
+{
+  "status": "PASS_SAVED_EVIDENCE_AND_VISUAL_REVIEW",
+  "reviewed_at": "2026-09-10T17:36:36.256157+00:00",
+  "scope": "Existing evidence replot only; original PNG and every PDF page rendered and visually inspected; not GUI or human approval.",
+  "PDE_solve_count": 0,
+  "source_and_frozen_modeling_code_unchanged": true,
+  "generation_report": {
+    "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/generation_and_value_verification.json",
+    "bytes": 27704,
+    "sha256": "1230cca8b8c3e725a0a579de8ee73eccfb3f97cfad1536533e936cec1fac728b"
+  },
+  "review_markdown": {
+    "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/review.md",
+    "bytes": 5643,
+    "sha256": "de48354d175e9e8eb04b7109c9f491ff57a9e1187e466faeca068cb2cea8dba7"
+  },
+  "pdf_structure_check": {
+    "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/pdf_structure_check.json",
+    "bytes": 1513,
+    "sha256": "f9b1d8ad38e14aacaa4b60428ee82b75c5922ae3a773a20c9dc8d5f0b7fa5022"
+  },
+  "figures": [
+    {
+      "id": "fig_model_grid_convergence",
+      "PNG": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.png",
+        "bytes": 190848,
+        "sha256": "6cd104cd53ce1a9e83b9dde62e0832ce1236363c3d66f55498522f7abae27ffb"
+      },
+      "PDF": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.pdf",
+        "bytes": 56334,
+        "sha256": "5d18a64b98a3b7a7b9dc2d9e82f2f6360de79f2d1e4babf436ae72d8d502c1dd"
+      },
+      "SVG": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence.svg",
+        "bytes": 115602,
+        "sha256": "973f07396b25665ba9bd7b8d719951bdc96c7f6bf578aae7bbdafb36b5e059ef"
+      },
+      "actual_PDF_render": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_model_grid_convergence_pdf_render.png",
+        "bytes": 108713,
+        "sha256": "c881eb18f6b7fd074556838632d04d832ea3939da12434bf975ebced9cf54cfb"
+      },
+      "visual_check": {
+        "full_original_png_viewed": true,
+        "full_pdf_render_viewed": true,
+        "titles_units_ticks_legends_footnotes": true,
+        "clipping_or_overlap": false,
+        "missing_glyphs": false
+      },
+      "relative_embed_from_main_markdown": "data/supplementary_figures/fig_model_grid_convergence.png"
+    },
+    {
+      "id": "fig_q4_shrinkage_control",
+      "PNG": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.png",
+        "bytes": 89338,
+        "sha256": "7f8b38852f590d3e28c463806134530cbedcc4ce066b051a7eb71d16c84dc31f"
+      },
+      "PDF": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.pdf",
+        "bytes": 51391,
+        "sha256": "8bfa9fd5a6dc574cfbf3bc70f99b9f843f5e153748e283ad2bf73dd3f3fa7911"
+      },
+      "SVG": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control.svg",
+        "bytes": 92781,
+        "sha256": "3c8a2c926535d1abafc213af4de12a51975d1dd5d2fdd9cf21bbda8af920f51d"
+      },
+      "actual_PDF_render": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q4_shrinkage_control_pdf_render.png",
+        "bytes": 54862,
+        "sha256": "ae5d7ff71a7ad25fea5dbe1c1fc7f43bf90ae2996e18709401eb65b51d1eacac"
+      },
+      "visual_check": {
+        "full_original_png_viewed": true,
+        "full_pdf_render_viewed": true,
+        "titles_units_ticks_legends_footnotes": true,
+        "clipping_or_overlap": false,
+        "missing_glyphs": false
+      },
+      "relative_embed_from_main_markdown": "data/supplementary_figures/fig_q4_shrinkage_control.png"
+    },
+    {
+      "id": "fig_q3_physical_sensitivity",
+      "PNG": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.png",
+        "bytes": 101956,
+        "sha256": "285cfa0fdeb4b019d8a7246e979737892da047675893b7b0b7878ba6f5300b6f"
+      },
+      "PDF": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.pdf",
+        "bytes": 48677,
+        "sha256": "9986174015e90f9b8f43e041359becc4e449348a20df1e29b5dc1f5603479415"
+      },
+      "SVG": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity.svg",
+        "bytes": 94707,
+        "sha256": "9e42843c461435e973b4800dfb1d288d55bfe2149689f2f4b5a6ceb8094aec01"
+      },
+      "actual_PDF_render": {
+        "path": "notes/A-modeling/2026-09-10/data/supplementary_figures/fig_q3_physical_sensitivity_pdf_render.png",
+        "bytes": 66845,
+        "sha256": "08c7a0f35689a11bde3d1c30a5e0a894da4db9f29a77cef107735752ef6873c6"
+      },
+      "visual_check": {
+        "full_original_png_viewed": true,
+        "full_pdf_render_viewed": true,
+        "titles_units_ticks_legends_footnotes": true,
+        "clipping_or_overlap": false,
+        "missing_glyphs": false
+      },
+      "relative_embed_from_main_markdown": "data/supplementary_figures/fig_q3_physical_sensitivity.png"
+    }
+  ],
+  "human_review": "pending",
+  "new_driver_Visual_Studio_reproduction": "pending",
+  "formal_figure_index_modified": false,
+  "formal_gate_inputs_modified": false,
+  "readback_all_plot_npz_values_exact": true,
+  "convergence_full_second_comparisons": 5,
+  "physical_sensitivity_version": "v2,N=200",
+  "convergence_versions": {
+    "Q1": "v3",
+    "Q23": "v5",
+    "Q4": "v5"
+  },
+  "review_summary_attempts": "First read-only one-off summary command exited 1 because locale default GBK was used on UTF-8 JSON; no artifacts changed. Retried with explicit UTF-8 successfully."
+}

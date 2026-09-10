@@ -1,0 +1,162 @@
+{
+  "grid_event_differences_s": [
+    {
+      "scheme": "harmonic",
+      "beta": 8e-07,
+      "N400_minus_N200_s": -4553.932239521702,
+      "N800_minus_N400_s": -628.3772239700484
+    },
+    {
+      "scheme": "harmonic",
+      "beta": 1.6e-06,
+      "N400_minus_N200_s": -24543.70193002312,
+      "N800_minus_N400_s": -2836.8574883312976
+    },
+    {
+      "scheme": "kirchhoff",
+      "beta": 8e-07,
+      "N400_minus_N200_s": -1.2370734410942532,
+      "N800_minus_N400_s": -0.3136799596250057
+    },
+    {
+      "scheme": "kirchhoff",
+      "beta": 1.6e-06,
+      "N400_minus_N200_s": -1.3100619692122564,
+      "N800_minus_N400_s": -0.33048796039656736
+    }
+  ],
+  "last_face_at_24h": [
+    {
+      "case": "N200_harmonic_beta1",
+      "C_left": 0.10540004489118668,
+      "C_surface": 0.06562801747768979,
+      "T_left_K": 323.15,
+      "T_surface_K": 323.14999999999986,
+      "harmonic_reversal_indicator_Xi": 3.8646983534594725,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 9.010926703695408e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "08782e918f493b57252f822d60e8546cffae51d2e9dce5d352c95e7d311b716d"
+    },
+    {
+      "case": "N200_harmonic_beta2",
+      "C_left": 0.14752847266659905,
+      "C_surface": 0.05557967735998586,
+      "T_left_K": 323.1499999999999,
+      "T_surface_K": 323.15,
+      "harmonic_reversal_indicator_Xi": 13.308876678074519,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 1.1974123861635902e-10,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "83425944677c990a64aca0095344a1d6b58cde41a0e63a1a5a1820adfb32f92d"
+    },
+    {
+      "case": "N200_kirchhoff_beta1",
+      "C_left": 0.09019468323924597,
+      "C_surface": 0.0664790056037804,
+      "T_left_K": 323.15,
+      "T_surface_K": 323.15,
+      "harmonic_reversal_indicator_Xi": 2.0662808791726026,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 3.3688992776779046e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "8355a19fd99408af7b61389499a40e61fe045d1ae8cec1abfed424c9d4076f04"
+    },
+    {
+      "case": "N200_kirchhoff_beta2",
+      "C_left": 0.08592898590697666,
+      "C_surface": 0.05634310910117466,
+      "T_left_K": 323.15000000000015,
+      "T_surface_K": 323.15000000000003,
+      "harmonic_reversal_indicator_Xi": 3.9418534826886953,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 3.0210703127566137e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "0eacd0c9f7a3ae2babdf0b13044d4afda5afdb053fb437efecd11c115a7a6c43"
+    },
+    {
+      "case": "N400_harmonic_beta1",
+      "C_left": 0.08772986438773256,
+      "C_surface": 0.06632501548065214,
+      "T_left_K": 323.15000000000003,
+      "T_surface_K": 323.1499999999999,
+      "harmonic_reversal_indicator_Xi": 1.838449386108294,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 2.5588171020885535e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "63cdd31ff20f772f460e100c8295a54aabfadae3518bed66fa144e4087bf312b"
+    },
+    {
+      "case": "N400_harmonic_beta2",
+      "C_left": 0.1037614313869199,
+      "C_surface": 0.05620432896978515,
+      "T_left_K": 323.15,
+      "T_surface_K": 323.1499999999999,
+      "harmonic_reversal_indicator_Xi": 6.6063056622076255,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 5.856484542125324e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "fd5fd430a0852789aa6279b997f782738b4bfaaf8b441d2754257dc63396fc92"
+    },
+    {
+      "case": "N400_kirchhoff_beta1",
+      "C_left": 0.08275993472571246,
+      "C_surface": 0.06647606543398811,
+      "T_left_K": 323.15,
+      "T_surface_K": 323.15,
+      "harmonic_reversal_indicator_Xi": 1.3119116123962815,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 9.109041075484522e-12,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "2b8964e9bf8fefd0026d17adfa206d4f37fff35b6590b2308712b09fab033b7c"
+    },
+    {
+      "case": "N400_kirchhoff_beta2",
+      "C_left": 0.07841468542274725,
+      "C_surface": 0.05634419510969045,
+      "T_left_K": 323.15000000000003,
+      "T_surface_K": 323.15,
+      "harmonic_reversal_indicator_Xi": 2.829568007179067,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 1.808273305206607e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "29ebd812d1e34226551989e4a282fbe04d20d07af2f42ea6b14f274e58393a30"
+    },
+    {
+      "case": "N800_harmonic_beta1",
+      "C_left": 0.07853585392217609,
+      "C_surface": 0.0664439634469518,
+      "T_left_K": 323.15000000000003,
+      "T_surface_K": 323.15,
+      "harmonic_reversal_indicator_Xi": 0.9113062238504156,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": -2.4127786550004035e-12,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "8ed8ac43d85ec7927f4e567eb2d52005333398a4cf1514553cf19adf129fd181"
+    },
+    {
+      "case": "N800_harmonic_beta2",
+      "C_left": 0.0815209964424209,
+      "C_surface": 0.056327465660424327,
+      "T_left_K": 323.1499999999999,
+      "T_surface_K": 323.1499999999999,
+      "harmonic_reversal_indicator_Xi": 3.294290740417982,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 2.3059006621933238e-11,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "1937e6d7d8fd0a0e904eb3f3b440893ce24a8a46cdb4d70151910924de8c5176"
+    },
+    {
+      "case": "N800_kirchhoff_beta1",
+      "C_left": 0.07705887592438186,
+      "C_surface": 0.06647475476668452,
+      "T_left_K": 323.15000000000003,
+      "T_surface_K": 323.1499999999999,
+      "harmonic_reversal_indicator_Xi": 0.7728470895039568,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": -6.011407049282554e-12,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "ccd3d7e2dd3f52b212d64351324300f74151d2355d83d223ccbd9aa8f926fb49"
+    },
+    {
+      "case": "N800_kirchhoff_beta2",
+      "C_left": 0.07224193832845374,
+      "C_surface": 0.056344543720659564,
+      "T_left_K": 323.1500000000001,
+      "T_surface_K": 323.15,
+      "harmonic_reversal_indicator_Xi": 1.921902888678511,
+      "harmonic_outward_flux_coefficient_derivative_wrt_C_surface": 8.592605121333651e-12,
+      "interpretation": "Derivative of harmonic D*(Cleft-Csurface), without positive geometric factor; hypothetical diagnostic for Kirchhoff states.",
+      "snapshot_sha256": "bf66b31ba7437a41bc389b670b541949807c73b287d62af1bd9adeeb933c2750"
+    }
+  ]
+}

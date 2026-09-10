@@ -1,0 +1,182 @@
+{
+  "status": "COMPUTED_PENDING_GUI_OBSERVATION",
+  "input_files": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/axisymmetric_check.py",
+      "bytes": 13887,
+      "sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "bytes": 14520,
+      "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "bytes": 41427,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/peer_beta_check.py",
+      "bytes": 14337,
+      "sha256": "a7a31ba683be96de9f20c13476bdfa2a6e1e9fac25ec0035fdfaedff8159a683",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "bytes": 24337,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "bytes": 3995,
+      "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "bytes": 27729,
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "bytes": 16285,
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "bytes": 6542,
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "bytes": 3850,
+      "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "bytes": 14430,
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    },
+    {
+      "path": "paper_output/plan/model_route.json",
+      "bytes": 34621,
+      "sha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "exists": true
+    }
+  ],
+  "worker_success": {
+    "path": "paper_output/results/gui_reproduction/gui_final_v6a/worker_success.json",
+    "bytes": 56894,
+    "sha256": "b5d71d5675493bc0c980ee23305787f186dd3f2541e088836058ebe49fa11756",
+    "exists": true
+  },
+  "scope": "Direct solve function and saved hashes checked; no process exit code is self-certified.",
+  "visual_studio_gui": "pending",
+  "human_review": "pending"
+}

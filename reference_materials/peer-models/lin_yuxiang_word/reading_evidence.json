@@ -1,0 +1,73 @@
+{
+  "completed_at": "2026-09-10T15:46:37.825397+00:00",
+  "status": "READ_AND_REVIEWED_WITH_ISSUES",
+  "source": {
+    "path": "reference_materials/peer-models/lin_yuxiang_word/模型思路与公式图表全集.docx",
+    "bytes": 357729,
+    "sha256": "3ef3cf192a5dbbbe3b1fd665eea88812210745e6011e10f8c486e212e5a87a4b"
+  },
+  "original_source_unchanged": true,
+  "extractor": {
+    "path": "reference_materials/peer-models/lin_yuxiang_word/extract_review.py",
+    "bytes": 7660,
+    "sha256": "f739e698e9478e9d84afec700ad75cbbfea946d505065842d999d1de6d3f52ca"
+  },
+  "runtime": "Codex bundled document Python runtime 26.905.11957; numerical model not executed",
+  "render": {
+    "renderer": "C:/Users/Shi Chenhao/.codex/plugins/cache/openai-primary-runtime/documents/26.905.11957/skills/documents/render_docx.py",
+    "engine": "D:/Document/数学建模/tools/libreoffice/app/program/soffice.exe",
+    "actual_return_code": 0,
+    "pdf": {
+      "path": "reference_materials/peer-models/lin_yuxiang_word/render/模型思路与公式图表全集.pdf",
+      "bytes": 1837557,
+      "sha256": "690bf236a1a3d008dff539478884dd404698eb7f9baa363f343ac3bd1f4b1276"
+    },
+    "page_count": 33,
+    "all_page_overviews_visually_viewed": true,
+    "full_page_images_visually_viewed": [
+      3,
+      6,
+      9,
+      11
+    ],
+    "source_media_visually_viewed": [
+      "image1.png"
+    ],
+    "render_warnings": [
+      "Could not find platform independent libraries <prefix>; command nevertheless returned 0 and all page outputs exist."
+    ],
+    "delivery_quality": "NOT_ACCEPTED: source PNG labels already broken; OMML conversion residuals observed; no source edits requested."
+  },
+  "content_read": {
+    "paragraphs": 1070,
+    "tables": 27,
+    "native_math_objects": 295,
+    "display_math_paragraphs": 42,
+    "embedded_images": 21,
+    "coverage": "Full ordered body/table extraction read; raw OMML archived; all 33 page overviews and representative formula pages reviewed."
+  },
+  "comparison": {
+    "path": "reference_materials/peer-models/lin_yuxiang_word/word_zip_comparison.json",
+    "bytes": 11509,
+    "sha256": "9bcad3961f831fa02ba25c42e4883645775a2a90bba4fafcda0150079a3c3617"
+  },
+  "arithmetic": {
+    "path": "reference_materials/peer-models/lin_yuxiang_word/arithmetic_checks.json",
+    "bytes": 733,
+    "sha256": "f697ad42277b38d48ab27d277e505aaaa44767f10f90720d2f118d46351e8d3d"
+  },
+  "review_report": {
+    "path": "notes/A-modeling/2026-09-10/peer_word_review.md",
+    "bytes": 16483,
+    "sha256": "a3ba80c6019633af0cf8f94bf98132782940c79bf13f7827a0f4899460736e04"
+  },
+  "boundaries": {
+    "peer_code_executed": false,
+    "peer_pickle_loaded": false,
+    "wechat_message_sent": false,
+    "main_model_changed": false,
+    "original_word_modified": false,
+    "human_review": "pending",
+    "visual_studio_gui": "not claimed; document reading helper is not core solver reproduction"
+  }
+}

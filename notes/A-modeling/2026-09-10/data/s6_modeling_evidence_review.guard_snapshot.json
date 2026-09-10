@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper-workflow-orchestrator/scripts/workflow_guard.py",
+  "generated_at": "2026-09-11T01:01:22",
+  "target_step": "S6",
+  "status": "PASS",
+  "steps": [
+    {
+      "step": "S0",
+      "name": "准入预检",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S1",
+      "name": "审题分析",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S2",
+      "name": "模型路线",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S3",
+      "name": "数据与图表计划",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S4",
+      "name": "建模代码",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S5",
+      "name": "结果证据",
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S6",
+      "name": "证据门禁",
+      "status": "PASS",
+      "failures": []
+    }
+  ],
+  "failures": []
+}

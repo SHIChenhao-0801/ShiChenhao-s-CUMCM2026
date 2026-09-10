@@ -1,0 +1,344 @@
+{
+  "word_sha256": "3ef3cf192a5dbbbe3b1fd665eea88812210745e6011e10f8c486e212e5a87a4b",
+  "zip_model_md_sha256": "f1fbaa2cfcb6742d6b8e205459690c4851596728d4342039505955eb56ba7cad",
+  "zip_paper_tables_sha256": "cd4059b362057430ab8a82133fb5acbbf276bb55348df335f231c30374725146",
+  "image_matches": [
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image1.png",
+      "sha256": "ac35cdda57d4b9f36c037e04aba8b477bff7cd08973a29b052782b791fc6bdb1",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig01_chamber_conditions.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image10.png",
+      "sha256": "7b23ee708cb8865ebabb13967853b32559bdb99d4f8cc09366cbf875cc529247",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig08_q2_history.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image11.png",
+      "sha256": "3be4913833f668f2b4c922215ea9485f1082cdbb7e596dc08e7caa9de9ddc9e7",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig11_q2_field_T.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image12.png",
+      "sha256": "f4a93a15d51db98bcad1ff6edbb4601a9dc352a3d26495f9b07ca073d418f85a",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig12_q2_field_C.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image13.png",
+      "sha256": "fc04242635bc8b72c4436e7d706ba0abe909fc299257664ef2de190ba95314a2",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig10_q3_cmax.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image14.png",
+      "sha256": "f82205bd8dba3ec12b2f144aedae136bd37368fb403808694c3e4b8e1ddfc7a6",
+      "pixels": [
+        1600,
+        900
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig09_q3_drying_rate.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image15.png",
+      "sha256": "b9f1782f389bad0b4ce0af1a073abc7e2a82c7f938ff93896f5fa48dd61b5224",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig13_q3_field_C.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image16.png",
+      "sha256": "0450b15de05c9a9d1f1f22441d885e7d8f4c844f5f480592b670e89abf9338d6",
+      "pixels": [
+        1560,
+        840
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig14_R_shrinkage.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image17.png",
+      "sha256": "e1100ac7ceab4c8ad8d0b90b5f03e56977f4ad907a624de57be1742dcb63def0",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig15_q4_field_C.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image18.png",
+      "sha256": "8514411ceae915dff18354c7626aa78526e9a4ce39b61807326a6caaafc13f05",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig16_q3_vs_q4.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image19.png",
+      "sha256": "bb59e0170eeb9c990c1d82b8f329700b5a0d13199d47dba7538c705e29d4e243",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig20_rate_compare.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image2.png",
+      "sha256": "bf71649c840b043b95233a35cc86d0cfb6e1de3e0c957f7727bc38c46a727d3c",
+      "pixels": [
+        1600,
+        860
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig05_verification.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image20.png",
+      "sha256": "03d21d631b5f594458efd0eab28949c07da65db61671487be316821411133225",
+      "pixels": [
+        1640,
+        1040
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig18_tornado.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image21.png",
+      "sha256": "6771ef1158ab1170203dc017bb55995edb1b31e126cdcbda17b64738d5aecae9",
+      "pixels": [
+        1720,
+        920
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig19_shrink_models.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image3.png",
+      "sha256": "48101e2101e0a8f9bb509ca9b4131e5e2811e1f8707b2c993cfd6135515e7fc3",
+      "pixels": [
+        1600,
+        900
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig17_conv_grid.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image4.png",
+      "sha256": "b118e98ae2e4f7f4371fe9cb454e20a00aacf9fe8ce33c5694f51f407d26baeb",
+      "pixels": [
+        1600,
+        900
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig17_conv_sub.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image5.png",
+      "sha256": "c607a2a09b9633485781cb78efae731e192700a5e9ea6b30971eb6009614bc61",
+      "pixels": [
+        1600,
+        960
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig02_q1_T_profiles.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image6.png",
+      "sha256": "84a7c286b89c659ec148d27612174dde77a31f184231a55c9bfb75c134d1f370",
+      "pixels": [
+        1600,
+        960
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig03_q1_C_profiles.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image7.png",
+      "sha256": "a054ed902139f058e082ba27b70e75c56daa5367f646d328f998da62adbc23a6",
+      "pixels": [
+        1640,
+        940
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig04_q1_history.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image8.png",
+      "sha256": "4f042c2a7867698cc6c71316ecf31313832d9fb6abf55253d179dee15837258c",
+      "pixels": [
+        1600,
+        960
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig06_q2_T_profiles.png"
+      ]
+    },
+    {
+      "word_media": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image9.png",
+      "sha256": "918fb571dcbfbbc65f21b0a44d4e86f562b771c4bd224079ab05667a127f72bc",
+      "pixels": [
+        1600,
+        960
+      ],
+      "exact_sha_matches": [
+        "reference_materials/peer-models/2026-09-10_A_model/out/png/fig07_q2_C_profiles.png"
+      ]
+    }
+  ],
+  "exactly_matching_word_images": 21,
+  "common_paper_table_comparisons": [
+    {
+      "paper_table": 1,
+      "word_table_id": "T12",
+      "paragraph_first": "P0450",
+      "paragraph_last": "P0497",
+      "word_data_rows": 7,
+      "zip_data_rows": 7,
+      "word_columns": 6,
+      "zip_columns": 6,
+      "equal_common_numeric_or_blank_cells": 35,
+      "differences": [],
+      "zip_extra_columns": []
+    },
+    {
+      "paper_table": 2,
+      "word_table_id": "T13",
+      "paragraph_first": "P0500",
+      "paragraph_last": "P0547",
+      "word_data_rows": 7,
+      "zip_data_rows": 7,
+      "word_columns": 6,
+      "zip_columns": 6,
+      "equal_common_numeric_or_blank_cells": 35,
+      "differences": [],
+      "zip_extra_columns": []
+    },
+    {
+      "paper_table": 3,
+      "word_table_id": "T15",
+      "paragraph_first": "P0577",
+      "paragraph_last": "P0618",
+      "word_data_rows": 6,
+      "zip_data_rows": 6,
+      "word_columns": 6,
+      "zip_columns": 6,
+      "equal_common_numeric_or_blank_cells": 30,
+      "differences": [],
+      "zip_extra_columns": []
+    },
+    {
+      "paper_table": 4,
+      "word_table_id": "T16",
+      "paragraph_first": "P0621",
+      "paragraph_last": "P0662",
+      "word_data_rows": 6,
+      "zip_data_rows": 6,
+      "word_columns": 6,
+      "zip_columns": 6,
+      "equal_common_numeric_or_blank_cells": 30,
+      "differences": [],
+      "zip_extra_columns": []
+    },
+    {
+      "paper_table": 5,
+      "word_table_id": "T18",
+      "paragraph_first": "P0726",
+      "paragraph_last": "P0791",
+      "word_data_rows": 10,
+      "zip_data_rows": 10,
+      "word_columns": 6,
+      "zip_columns": 6,
+      "equal_common_numeric_or_blank_cells": 50,
+      "differences": [],
+      "zip_extra_columns": []
+    },
+    {
+      "paper_table": 6,
+      "word_table_id": "T20",
+      "paragraph_first": "P0823",
+      "paragraph_last": "P0882",
+      "word_data_rows": 9,
+      "zip_data_rows": 9,
+      "word_columns": 6,
+      "zip_columns": 8,
+      "equal_common_numeric_or_blank_cells": 45,
+      "differences": [],
+      "zip_extra_columns": [
+        "药材表面",
+        "当前半径 R/cm"
+      ]
+    }
+  ],
+  "math_literal_command_residuals": [
+    {
+      "id": "M0036",
+      "paragraph_id": "P0106",
+      "plain_text": "∂t(ρcpT)=ρcp ∂tT+\\underbraceT ρdcw ∂tC含水率变化项"
+    },
+    {
+      "id": "M0053",
+      "paragraph_id": "P0122",
+      "plain_text": "ρd ∂tC=-1r∂r(r jw) \\Longrightarrow ∂C∂t=1r∂∂r(rD(C,T)∂C∂r)"
+    },
+    {
+      "id": "M0094",
+      "paragraph_id": "P0164",
+      "plain_text": "T∞(t)=附件1 线性插值,t≤14400 s50.00,t>14400 s\\qquadCeq(t)=附件1 线性插值,t≤14400 s0.0500,t>14400 s"
+    },
+    {
+      "id": "M0127",
+      "paragraph_id": "P0227",
+      "plain_text": "R2jXjdFjdt=ΨN+1/2 \\Longleftrightarrow dMdt=-2β(Cs-Ceq)R,  M=201F x dx"
+    }
+  ]
+}

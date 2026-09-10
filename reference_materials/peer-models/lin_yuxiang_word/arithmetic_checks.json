@@ -1,0 +1,16 @@
+{
+  "arithmetic_checks": {
+    "reported_analytic_error_over_1e_4": 2.3499999999999996,
+    "reported_analytic_error_over_half_round_unit": 4.699999999999999,
+    "q23_initial_dry_density_kg_m3": 275.0422535211268,
+    "q23_if_normalized_flux_1e_6_true_mass_flux_kg_m2_s": 0.00027504225352112675,
+    "latent_load_at_that_flux_W_m2": 660.1014084507042,
+    "q4_min_conserved_radius_cm": 1.2112029565383968,
+    "q4_radius_drop_mm": 8.0,
+    "q4_radius_ratio_percent": 60.0,
+    "Q23_D_C0_over_C015_at_same_T": 16.83616770181327,
+    "Q1_D_C0": 4.937655094173937e-09,
+    "Q1_diffusion_scale_C0_s": 81010.11358042607
+  },
+  "scope": "Algebra and units only; no peer code execution and no new production simulation."
+}

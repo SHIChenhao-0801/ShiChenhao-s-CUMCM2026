@@ -1,0 +1,6868 @@
+[
+  {
+    "id": "P0001",
+    "text": "CUMCM 2026 A 题　药材的烘干问题",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0002",
+    "text": "模型思路、公式推导、数值方法与图表全集",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0003",
+    "text": "本文档汇集本题的完整建模思路、全部数学公式、数值方法、验证结果、论文表格与矢量插图。所有公式均为 Word 原生可编辑公式，可直接复制进论文并修改；所有插图与表格均由程序计算结果直接生成。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0004",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0005",
+    "text": "一、问题分析与总体建模思路",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0006",
+    "text": "1.1　物理机理",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0007",
+    "text": "热风烘干是一个 多孔介质内耦合传热传质 过程。烘房热风通过对流把热量传给药材表面，热量再以导热方式向内部传递；同时药材内部水分在含水率梯度驱动下向表面迁移，并在表面被气流带走。两个过程通过\"物性随含水率变化\"与\"扩散系数随温度变化\"发生双向耦合。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0008",
+    "text": "药材为圆柱形（长 $L=25$ cm，半径 ${R}_{0}=2$ cm），长径比 $L/{R}_{0}=12.5$，可作一维轴对称径向近似（第 6.5 节用有限长圆柱乘积解析解定量验证）。",
+    "style": null,
+    "math_ids": [
+      "M0001",
+      "M0002",
+      "M0003"
+    ]
+  },
+  {
+    "id": "P0009",
+    "text": "1.2　三个关键难点与对策",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0010",
+    "text": "难点",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0011",
+    "text": "说明",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0012",
+    "text": "本文对策",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0013",
+    "text": "A. 变物性双向耦合",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0014",
+    "text": "问题 2—4 中 rho、cp、k 依赖 C，D 依赖 C 与 T，方程不再线性可分离",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0015",
+    "text": "全隐式 θ 方法 + Picard 迭代",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0016",
+    "text": "B. 移动边界（收缩）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0017",
+    "text": "问题 4 半径由 2 cm 缩至 1.198 cm，计算域随时间变化",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0018",
+    "text": "材料坐标 x=r/R(t) 作仿射收缩变换",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0019",
+    "text": "C. 结果正确性无独立参照",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0020",
+    "text": "A 题有标准答案，必须证明\"算得对\"",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0021",
+    "text": "Duhamel–Bessel 解析解逐点校核",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0022",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0023",
+    "text": "1.3　总体建模框架",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0024",
+    "text": "附件 1 提供烘房温度 ${T}_{∞}(t)$ 与空气水分浓度 ${C}_{eq}(t)$，附录 2/3/4 提供经验物性式，附件 2 提供收缩半径 $R(t)$。三者进入守恒方程组后，经有限体积离散、θ 方法时间推进与追赶法求解，输出 $T(r,t)$ 与 $C(r,t)$，并汇总为 result1—result4.xlsx。",
+    "style": null,
+    "math_ids": [
+      "M0004",
+      "M0005",
+      "M0006",
+      "M0007",
+      "M0008"
+    ]
+  },
+  {
+    "id": "P0025",
+    "text": "二、模型假设",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0026",
+    "text": "· 1）一维轴对称：药材为无限长圆柱，温度与含水率只沿径向变化，忽略端面与轴向变化。由长径比 $L/{R}_{0}=12.5$ 支持，并在第 6.5 节定量检验。",
+    "style": null,
+    "math_ids": [
+      "M0009"
+    ]
+  },
+  {
+    "id": "P0027",
+    "text": "· 2）连续介质与局部热平衡：药材视为连续多孔介质，固相与液相在同一位置瞬时达到热平衡，用单一温度 $T(r,t)$ 描述。",
+    "style": null,
+    "math_ids": [
+      "M0010"
+    ]
+  },
+  {
+    "id": "P0028",
+    "text": "· 3）干基基准与固定骨架：含水率以干基定义 $C={m}_{w}/{m}_{d}$；忽略干物质自身的溶解与流失。",
+    "style": null,
+    "math_ids": [
+      "M0011"
+    ]
+  },
+  {
+    "id": "P0029",
+    "text": "· 4）有效 Fick 扩散：内部水分迁移用有效扩散系数 $D(C,T)$ 的 Fick 定律描述，不显式区分液态水与蒸汽。",
+    "style": null,
+    "math_ids": [
+      "M0012"
+    ]
+  },
+  {
+    "id": "P0030",
+    "text": "· 5）有效显热模型：能量方程只保留显热项，不显式引入相变潜热（题给参数中未提供汽化潜热）；潜热影响在第 9.3 节作为模型改进单独讨论。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0031",
+    "text": "· 6）含水率不改变几何（问题 1—3）：问题 1—3 取 $R≡{R}_{0}$；问题 4 按附件 2 的 $R(t)$ 处理收缩。",
+    "style": null,
+    "math_ids": [
+      "M0013",
+      "M0014"
+    ]
+  },
+  {
+    "id": "P0032",
+    "text": "· 7）物性经验式即题给关系：rho、cp、k、D 严格采用附录 2/3/4 给出的形式，不作额外拟合。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0033",
+    "text": "· 8）边界数据延拓：附件 1 只给出 $0≤t≤14400$ s。由数据本身确定的平台值延拓：${T}_{∞}=50.00$ °C、${C}_{eq}=0.0500$ kg/kg（依据见 4.5.4 节）。",
+    "style": null,
+    "math_ids": [
+      "M0015",
+      "M0016",
+      "M0017"
+    ]
+  },
+  {
+    "id": "P0034",
+    "text": "· 9）收缩为仿射（同比）收缩：附件 2 只给出半径曲线，不足以唯一确定内部速度场，故采用最简且相容的仿射收缩假设（4.4 节证明该假设下变换后方程无平流项）。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0035",
+    "text": "· 10）烘房空气水分浓度直接作为等效平衡含水率 ${C}_{eq}$（题设简化约定，8.3 节给出敏感性）。",
+    "style": null,
+    "math_ids": [
+      "M0018"
+    ]
+  },
+  {
+    "id": "P0036",
+    "text": "三、符号说明",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0037",
+    "text": "符号",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0038",
+    "text": "含义",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0039",
+    "text": "单位",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0040",
+    "text": "t",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0041",
+    "text": "时间",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0042",
+    "text": "s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0043",
+    "text": "r",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0044",
+    "text": "到药材中心的径向距离",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0045",
+    "text": "m",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0046",
+    "text": "x = r/R(t)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0047",
+    "text": "材料坐标（无量纲）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0048",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0049",
+    "text": "R(t)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0050",
+    "text": "药材当前半径",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0051",
+    "text": "m",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0052",
+    "text": "R0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0053",
+    "text": "初始半径 2 cm",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0054",
+    "text": "m",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0055",
+    "text": "T",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0056",
+    "text": "药材温度",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0057",
+    "text": "°C（物性式中用 K）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0058",
+    "text": "T∞(t)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0059",
+    "text": "烘房温度",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0060",
+    "text": "°C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0061",
+    "text": "C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0062",
+    "text": "干基含水率 mw/md",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0063",
+    "text": "kg/kg",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0064",
+    "text": "Ceq(t)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0065",
+    "text": "与烘房空气对应的等效平衡含水率",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0066",
+    "text": "kg/kg",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0067",
+    "text": "rho, cp, k",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0068",
+    "text": "密度、比热容、导热系数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0069",
+    "text": "kg/m³, J/(kg·K), W/(m·K)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0070",
+    "text": "D",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0071",
+    "text": "水分有效扩散系数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0072",
+    "text": "m²/s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0073",
+    "text": "h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0074",
+    "text": "对流换热系数 25",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0075",
+    "text": "W/(m²·K)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0076",
+    "text": "beta",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0077",
+    "text": "对流传质系数 8e-7",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0078",
+    "text": "m/s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0079",
+    "text": "alpha = k/(rho·cp)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0080",
+    "text": "热扩散率",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0081",
+    "text": "m²/s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0082",
+    "text": "Bi = hR0/k",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0083",
+    "text": "传热 Biot 数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0084",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0085",
+    "text": "Bim = beta·R0/D",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0086",
+    "text": "传质 Biot 数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0087",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0088",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0089",
+    "text": "干基 / 湿基换算：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0090",
+    "text": "$w=\\frac{C}{1+C},  C=\\frac{w}{1-w}$",
+    "style": null,
+    "math_ids": [
+      "M0019"
+    ]
+  },
+  {
+    "id": "P0091",
+    "text": "代入题给初值与判据：${C}_{0}=2.55⇒{w}_{0}=71.83%$；$C=0.15⇒w=13.04%$。",
+    "style": null,
+    "math_ids": [
+      "M0020",
+      "M0021"
+    ]
+  },
+  {
+    "id": "P0092",
+    "text": "四、模型建立",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0093",
+    "text": "4.1　控制体与几何量",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0094",
+    "text": "取半径 $r$、厚度 $dr$、长 $L$ 的圆柱薄壳为控制体：",
+    "style": null,
+    "math_ids": [
+      "M0022",
+      "M0023",
+      "M0024"
+    ]
+  },
+  {
+    "id": "P0095",
+    "text": "$dV=π[(r+dr{)}^{2}-{r}^{2}]L=2πrL dr+O(d{r}^{2}),  A(r)=2πrL$",
+    "style": null,
+    "math_ids": [
+      "M0025"
+    ]
+  },
+  {
+    "id": "P0096",
+    "text": "向外为正的通量记为 $F$，则薄壳净流入为",
+    "style": null,
+    "math_ids": [
+      "M0026"
+    ]
+  },
+  {
+    "id": "P0097",
+    "text": "$A(r)F(r)-A(r+dr)F(r+dr)≃-{∂}_{r}[2πrL F(r)]dr$",
+    "style": null,
+    "math_ids": [
+      "M0027"
+    ]
+  },
+  {
+    "id": "P0098",
+    "text": "除以体积后得净流入率密度 $-\\frac{1}{r}{∂}_{r}(rF)$。式中的 $1/r$ 因子来自圆柱几何下传递面积随半径线性增长，这是圆柱模型与平板模型的本质差别。",
+    "style": null,
+    "math_ids": [
+      "M0028",
+      "M0029"
+    ]
+  },
+  {
+    "id": "P0099",
+    "text": "4.2　能量守恒方程（含一个必须避开的陷阱）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0100",
+    "text": "4.2.1　朴素守恒形式的问题",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0101",
+    "text": "若直接在控制体内对焓做守恒（忽略随水分带走的焓），会写成",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0102",
+    "text": "$ρ{c}_{p} {∂}_{t}T=\\frac{1}{r}{∂}_{r}(rk {∂}_{r}T)$",
+    "style": null,
+    "math_ids": [
+      "M0030"
+    ]
+  },
+  {
+    "id": "P0103",
+    "text": "在 $ρ{c}_{p}$ 随 $C$ 变化时需特别小心：真正的守恒量是单位体积焓 $e=ρ{c}_{p}(T-{T}_{ref})$，而干物质与水分的比焓不同。设干物质密度 ${ρ}_{d}$，则",
+    "style": null,
+    "math_ids": [
+      "M0031",
+      "M0032",
+      "M0033",
+      "M0034"
+    ]
+  },
+  {
+    "id": "P0104",
+    "text": "$ρ{c}_{p}={ρ}_{d} {c}_{d}+{ρ}_{d}C {c}_{w}$",
+    "style": null,
+    "math_ids": [
+      "M0035"
+    ]
+  },
+  {
+    "id": "P0105",
+    "text": "对其展开时间导数：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0106",
+    "text": "${∂}_{t}(ρ{c}_{p}T)=ρ{c}_{p} {∂}_{t}T+\\underbrace{T {ρ}_{d}{c}_{w} {∂}_{t}C}_{含水率变化项}$",
+    "style": null,
+    "math_ids": [
+      "M0036"
+    ]
+  },
+  {
+    "id": "P0107",
+    "text": "若忽略这一项，则在水分快速迁出的阶段（${∂}_{t}C<0$）会凭空出现正的热源 $-{ρ}_{d}{c}_{w}T {∂}_{t}C>0$，使药材温度 虚假地超过烘房温度。这是本模型必须避免的误差。",
+    "style": null,
+    "math_ids": [
+      "M0037",
+      "M0038"
+    ]
+  },
+  {
+    "id": "P0108",
+    "text": "4.2.2　随水分带走的焓通量",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0109",
+    "text": "水分以质量通量 ${j}_{w}$ 迁移，比焓为 ${h}_{w}={c}_{w}(T-{T}_{ref})$，能量方程应为",
+    "style": null,
+    "math_ids": [
+      "M0039",
+      "M0040"
+    ]
+  },
+  {
+    "id": "P0110",
+    "text": "${∂}_{t}(ρ{c}_{p}T)=∇·(k∇T)-∇·({h}_{w}{j}_{w})$",
+    "style": null,
+    "math_ids": [
+      "M0041"
+    ]
+  },
+  {
+    "id": "P0111",
+    "text": "展开第二项：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0112",
+    "text": "$∇·({h}_{w}{j}_{w})={c}_{w}(T-{T}_{ref})∇·{j}_{w}+{c}_{w} {j}_{w}·∇T=-{ρ}_{d}{c}_{w}(T-{T}_{ref}) {∂}_{t}C+{c}_{w} {j}_{w}·∇T$",
+    "style": null,
+    "math_ids": [
+      "M0042"
+    ]
+  },
+  {
+    "id": "P0113",
+    "text": "其中用到水的质量守恒 ${∂}_{t}({ρ}_{d}C)=-∇·{j}_{w}$。代回并消去同类项，得",
+    "style": null,
+    "math_ids": [
+      "M0043"
+    ]
+  },
+  {
+    "id": "P0114",
+    "text": "$ρ{c}_{p} {∂}_{t}T=∇·(k∇T)-{c}_{w} {j}_{w}·∇T$",
+    "style": null,
+    "math_ids": [
+      "M0044"
+    ]
+  },
+  {
+    "id": "P0115",
+    "text": "量级估计：${c}_{w}|{j}_{w}||∇T|∼4180×1{0}^{-6}×1{0}^{3}≈4 W/m^3$，而导热项 $k ΔT/{R}_{0}^{2}∼0.3×20/4×1{0}^{-4}≈1.5×1{0}^{4} W/m^3$，两者相差约 3 个数量级，故",
+    "style": null,
+    "math_ids": [
+      "M0045",
+      "M0046"
+    ]
+  },
+  {
+    "id": "P0116",
+    "text": "$ρ(C){c}_{p}(C) \\frac{∂T}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rk(C)\\frac{∂T}{∂r})$",
+    "style": null,
+    "math_ids": [
+      "M0047"
+    ]
+  },
+  {
+    "id": "P0117",
+    "text": "结论：式 (E) 采用 物质导数形式，$(ρ{c}_{p})$ 只作为随 $C$ 变化的系数，不参与时间求导——这正是\"含水率变化项\"与\"水分带走的焓\"相消的严格结果。若不修正，数值结果会出现中心温度 52.0 °C > 烘房 50.0 °C 的非物理现象。",
+    "style": null,
+    "math_ids": [
+      "M0048",
+      "M0049"
+    ]
+  },
+  {
+    "id": "P0118",
+    "text": "4.3　水分守恒方程",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0119",
+    "text": "水分的体积质量密度为 ${ρ}_{d}C$，有效 Fick 通量取",
+    "style": null,
+    "math_ids": [
+      "M0050"
+    ]
+  },
+  {
+    "id": "P0120",
+    "text": "${j}_{w}=-{ρ}_{d}D {∂}_{r}C,  [{j}_{w}]=kg/(m^2s)$",
+    "style": null,
+    "math_ids": [
+      "M0051"
+    ]
+  },
+  {
+    "id": "P0121",
+    "text": "在固定的均匀干物质骨架下 ${ρ}_{d}$ 在空间导数中可约去：",
+    "style": null,
+    "math_ids": [
+      "M0052"
+    ]
+  },
+  {
+    "id": "P0122",
+    "text": "${ρ}_{d} {∂}_{t}C=-\\frac{1}{r}{∂}_{r}(r {j}_{w}) \\Longrightarrow \\frac{∂C}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rD(C,T)\\frac{∂C}{∂r})$",
+    "style": null,
+    "math_ids": [
+      "M0053"
+    ]
+  },
+  {
+    "id": "P0123",
+    "text": "注意：这里 ${ρ}_{d}$ 完全约去，因此式 (M) 与题给经验式 $ρ(C)$ 的具体形式无关，**避免了\"经验 $ρ(C)$ 与干物质守恒是否相容\"的争议**。",
+    "style": null,
+    "math_ids": [
+      "M0054",
+      "M0055",
+      "M0056"
+    ]
+  },
+  {
+    "id": "P0124",
+    "text": "4.4　材料坐标与收缩变换（问题 4）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0125",
+    "text": "4.4.1　仿射收缩与材料坐标",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0126",
+    "text": "令材料坐标 $x=r/R(t)∈[0,1]$，$Θ(x,t)=T(R(t)x,t)$，$F(x,t)=C(R(t)x,t)$。仿射收缩假设对应材料速度 $u=xaccent(̇,R)(t)$，即每个材料点保持 $x$ 不变。",
+    "style": null,
+    "math_ids": [
+      "M0057",
+      "M0058",
+      "M0059",
+      "M0060",
+      "M0061"
+    ]
+  },
+  {
+    "id": "P0127",
+    "text": "4.4.2　干物质守恒的相容性",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0128",
+    "text": "材料薄壳 $[x,x+dx]$ 的干物质质量为 $d{m}_{d}={ρ}_{d}·2πL {R}^{2}x dx$，守恒要求 ${ρ}_{d}{R}^{2}x$ 沿材料路径不变。取初值均匀（$C≡2.55$）则",
+    "style": null,
+    "math_ids": [
+      "M0062",
+      "M0063",
+      "M0064",
+      "M0065"
+    ]
+  },
+  {
+    "id": "P0129",
+    "text": "${ρ}_{d}(x,t)={ρ}_{d0}\\frac{{R}_{0}^{2}}{R(t{)}^{2}}$",
+    "style": null,
+    "math_ids": [
+      "M0066"
+    ]
+  },
+  {
+    "id": "P0130",
+    "text": "4.4.3　变换后的方程组",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0131",
+    "text": "由 ${ρ}_{d}({C}_{t}+u{C}_{r})=\\frac{1}{r}{∂}_{r}(r{ρ}_{d}D{C}_{r})$，代入 $u=xaccent(̇,R)$ 与 ${ρ}_{d}∝{R}^{-2}$，**平流项与 ${ρ}_{d}$ 的空间变化恰好全部抵消**：",
+    "style": null,
+    "math_ids": [
+      "M0067",
+      "M0068",
+      "M0069",
+      "M0070"
+    ]
+  },
+  {
+    "id": "P0132",
+    "text": "$\\frac{∂F}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(x D(F,Θ)\\frac{∂F}{∂x})$",
+    "style": null,
+    "math_ids": [
+      "M0071"
+    ]
+  },
+  {
+    "id": "P0133",
+    "text": "能量方程在材料坐标下对随体控制体做焓平衡，水分带走的焓与 ${∂}_{t}(ρ{c}_{p})$ 项同样相消，得",
+    "style": null,
+    "math_ids": [
+      "M0072"
+    ]
+  },
+  {
+    "id": "P0134",
+    "text": "$ρ{c}_{p} \\frac{∂Θ}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(x k \\frac{∂Θ}{∂x})$",
+    "style": null,
+    "math_ids": [
+      "M0073"
+    ]
+  },
+  {
+    "id": "P0135",
+    "text": "关键提示：采用仿射收缩 + 物质导数后，方程中既 没有 $+(xaccent(̇,R)/R){Θ}_{x}$ 形式的平流项，也 没有 $2accent(̇,R)ρ{c}_{p}T/R$ 形式的体积变化项。这两个项只在错误地把守恒量写成 $ρ{c}_{p}T$ 或错误地使用空间（欧拉）导数时才会出现，重复计入会使问题 4 结果严重失真。",
+    "style": null,
+    "math_ids": [
+      "M0074",
+      "M0075",
+      "M0076"
+    ]
+  },
+  {
+    "id": "P0136",
+    "text": "当 $R≡{R}_{0}$（问题 1—3）时，式 (E4)(M4) 严格退化为式 (E)(M)。因此 四问共用一套方程，仅需切换物性公式与 $R(t)$。",
+    "style": null,
+    "math_ids": [
+      "M0077",
+      "M0078"
+    ]
+  },
+  {
+    "id": "P0137",
+    "text": "4.5　初始条件与边界条件",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0138",
+    "text": "4.5.1　初始条件",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0139",
+    "text": "$T(r,0)=28{ }^{∘}C,  C(r,0)=2.55 kg/kg,  0≤r≤{R}_{0}$",
+    "style": null,
+    "math_ids": [
+      "M0079"
+    ]
+  },
+  {
+    "id": "P0140",
+    "text": "4.5.2　中心对称条件",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0141",
+    "text": "$\\frac{∂T}{∂r}{|}_{r=0}=0,  \\frac{∂C}{∂r}{|}_{r=0}=0$",
+    "style": null,
+    "math_ids": [
+      "M0080"
+    ]
+  },
+  {
+    "id": "P0142",
+    "text": "由轴对称与光滑性，在 $r→0$ 处有 $li{m}_{r→0}\\frac{1}{r}{∂}_{r}(ra {∂}_{r}f)=2a(0){f}_{rr}(0)$。数值实现中不直接除以 $r$，而是利用 ${x}_{-1/2}=0$ 使该面通量恒为零（避免奇性）。",
+    "style": null,
+    "math_ids": [
+      "M0081",
+      "M0082",
+      "M0083",
+      "M0084"
+    ]
+  },
+  {
+    "id": "P0143",
+    "text": "4.5.3　表面对流换热与对流传质",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0144",
+    "text": "$-k\\frac{∂T}{∂r}{|}_{r=R}=h [{T}_{s}-{T}_{∞}(t)],  -D\\frac{∂C}{∂r}{|}_{r=R}=β [{C}_{s}-{C}_{eq}(t)]$",
+    "style": null,
+    "math_ids": [
+      "M0085"
+    ]
+  },
+  {
+    "id": "P0145",
+    "text": "在材料坐标下（${∂}_{r}=(1/R){∂}_{x}$）：",
+    "style": null,
+    "math_ids": [
+      "M0086"
+    ]
+  },
+  {
+    "id": "P0146",
+    "text": "$k\\frac{∂Θ}{∂x}{|}_{x=1}=R h ({T}_{∞}-{Θ}_{s}),  -D\\frac{∂F}{∂x}{|}_{x=1}=R β ({F}_{s}-{C}_{eq})$",
+    "style": null,
+    "math_ids": [
+      "M0087"
+    ]
+  },
+  {
+    "id": "P0147",
+    "text": "物理解释：${C}_{s}≫{C}_{eq}$ 时 $∂C/∂r<0$，水由内向外迁移；${T}_{∞}>{T}_{s}$ 时 $∂T/∂r>0$，热由外向内传入。两者方向均与物理直觉一致。",
+    "style": null,
+    "math_ids": [
+      "M0088",
+      "M0089",
+      "M0090",
+      "M0091"
+    ]
+  },
+  {
+    "id": "P0148",
+    "text": "4.5.4　附件 1 边界数据的延拓规则",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0149",
+    "text": "附件 1 只覆盖 $0≤t≤14400$ s，而问题 2—4 需算至 2—3 天。我们从数据本身确定延拓规则：",
+    "style": null,
+    "math_ids": [
+      "M0092"
+    ]
+  },
+  {
+    "id": "P0150",
+    "text": "阶段",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0151",
+    "text": "时段",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0152",
+    "text": "T∞",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0153",
+    "text": "Ceq",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0154",
+    "text": "预热平衡",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0155",
+    "text": "0 ≤ t ≲ 10800 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0156",
+    "text": "28 → 50 °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0157",
+    "text": "0.0196 → 0.0500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0158",
+    "text": "恒温干燥",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0159",
+    "text": "t ≳ 10800 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0160",
+    "text": "段均值 49.9989（标准差 0.153）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0161",
+    "text": "段均值 0.04999（标准差 0.00015）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0162",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0163",
+    "text": "数据后段的标准差仅 0.15 °C 与 $1.5×1{0}^{-4}$，且均值几乎正好等于 50.000 与 0.0500，说明原始数据是\"50 °C 恒温 + 测量噪声\"与\"0.05 + 噪声\"。因此取：",
+    "style": null,
+    "math_ids": [
+      "M0093"
+    ]
+  },
+  {
+    "id": "P0164",
+    "text": "${T}_{∞}(t)={\\begin{matrix}附件1 线性插值, & t≤14400 s \\\\ 50.00, & t>14400 s\\end{matrix})\\qquad{C}_{eq}(t)={\\begin{matrix}附件1 线性插值, & t≤14400 s \\\\ 0.0500, & t>14400 s\\end{matrix})$",
+    "style": null,
+    "math_ids": [
+      "M0094"
+    ]
+  },
+  {
+    "id": "P0165",
+    "text": "第 8.2 节给出\"段均值\"与\"指数平滑拟合\"两种替代口径的对比，证明结论对该选择 完全不敏感（差异仅 0.01%）。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0166",
+    "text": "[IMAGE media/image1.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0167",
+    "text": "图1　附件 1 烘房温度与空气水分浓度（预热平衡 / 恒温干燥两阶段）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0168",
+    "text": "4.6　物性经验关系（严格照抄题给附录）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0169",
+    "text": "问题 1（附录 2）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0170",
+    "text": "$ρ=820, {c}_{p}=2600, k=0.36, D=7×1{0}^{-9}exp(-\\frac{0.89}{C})$",
+    "style": null,
+    "math_ids": [
+      "M0095"
+    ]
+  },
+  {
+    "id": "P0171",
+    "text": "问题 2、3（附录 3）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0172",
+    "text": "$ρ=650+128C,  {c}_{p}=1450+2736\\frac{C}{1+C},  k=0.21+0.38\\frac{C}{1+C}$",
+    "style": null,
+    "math_ids": [
+      "M0096"
+    ]
+  },
+  {
+    "id": "P0173",
+    "text": "$D=2.4×1{0}^{-3}exp(-\\frac{0.45}{C})exp(-\\frac{3850}{T})$",
+    "style": null,
+    "math_ids": [
+      "M0097"
+    ]
+  },
+  {
+    "id": "P0174",
+    "text": "问题 4（附录 4）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0175",
+    "text": "$ρ=760+90C,  {c}_{p}=1850+2150\\frac{C}{1+C},  k=0.12+0.20\\frac{C}{1+C}$",
+    "style": null,
+    "math_ids": [
+      "M0098"
+    ]
+  },
+  {
+    "id": "P0176",
+    "text": "$D=4.2×1{0}^{-4}exp(-\\frac{0.30}{C})exp(-\\frac{3850}{T})$",
+    "style": null,
+    "math_ids": [
+      "M0099"
+    ]
+  },
+  {
+    "id": "P0177",
+    "text": "比热形式的物理含义：由组分质量加权 $Q=({m}_{d}{c}_{d}+{m}_{w}{c}_{w})ΔT$ 得",
+    "style": null,
+    "math_ids": [
+      "M0100"
+    ]
+  },
+  {
+    "id": "P0178",
+    "text": "${c}_{p}=\\frac{{c}_{d}+C{c}_{w}}{1+C}={c}_{d}+({c}_{w}-{c}_{d})\\frac{C}{1+C}$",
+    "style": null,
+    "math_ids": [
+      "M0101"
+    ]
+  },
+  {
+    "id": "P0179",
+    "text": "对照 ${c}_{p}=1450+2736 C/(1+C)$ 可读出水（或等效湿分）比热 ${c}_{w}≈1450+2736=4186$ J/(kg·K)，与液态水比热 4180 J/(kg·K) 高度一致，说明该经验式的形式是合理的。",
+    "style": null,
+    "math_ids": [
+      "M0102",
+      "M0103"
+    ]
+  },
+  {
+    "id": "P0180",
+    "text": "扩散系数的 Arrhenius 形式：$exp(-3850/T)=exp[-{E}_{a}/({R}_{g}T)]$ 对应活化能",
+    "style": null,
+    "math_ids": [
+      "M0104"
+    ]
+  },
+  {
+    "id": "P0181",
+    "text": "${E}_{a}=3850×{R}_{g}=3850×8.314=3.20×1{0}^{4} J/mol≈32.0 kJ/mol$",
+    "style": null,
+    "math_ids": [
+      "M0105"
+    ]
+  },
+  {
+    "id": "P0182",
+    "text": "且 $\\frac{∂lnD}{∂T}=\\frac{3850}{{T}^{2}}>0$，$\\frac{∂lnD}{∂C}=\\frac{a}{{C}^{2}}>0$，即 同含水率下升温加快扩散、同温度下含水率降低使扩散急剧变慢——这解释了干燥后期显著变慢的现象。",
+    "style": null,
+    "math_ids": [
+      "M0106",
+      "M0107"
+    ]
+  },
+  {
+    "id": "P0183",
+    "text": "4.7　特征尺度分析",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0184",
+    "text": "量",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0185",
+    "text": "表达式",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0186",
+    "text": "值",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0187",
+    "text": "物理含义",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0188",
+    "text": "热扩散率（问题1）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0189",
+    "text": "alpha = k/(rho·cp)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0190",
+    "text": "1.6886e-7 m²/s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0191",
+    "text": "温度不均匀被消除的速度尺度",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0192",
+    "text": "热特征时间",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0193",
+    "text": "τT = R0²/alpha",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0194",
+    "text": "2368.9 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0195",
+    "text": "与问题 1 的 1800 s 同量级",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0196",
+    "text": "传热 Biot 数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0197",
+    "text": "Bi = hR0/k",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0198",
+    "text": "1.3889",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0199",
+    "text": "内外热阻相当，不可作集总假设",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0200",
+    "text": "传质 Biot 数（问题1）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0201",
+    "text": "Bim = beta·R0/D(C0)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0202",
+    "text": "3.2404",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0203",
+    "text": "内外传质阻力相当",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0204",
+    "text": "质扩散时间（C0）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0205",
+    "text": "τD = R0²/D(C0)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0206",
+    "text": "7.09e4 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0207",
+    "text": "干燥初期尺度",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0208",
+    "text": "质扩散时间（C=0.15）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0209",
+    "text": "R0²/D(0.15)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0210",
+    "text": "5.00e5 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0211",
+    "text": "干燥末期尺度，比初期慢 7 倍",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0212",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0213",
+    "text": "结论：$Bi=1.39$ 说明不能假设药材整体瞬时等温，必须求解分布参数模型；末期 ${τ}_{D}$ 达 $5×1{0}^{5}$ s（5.8 天），预示达到 ${C}_{max}<0.15$ 后残余水分仍极难脱除。",
+    "style": null,
+    "math_ids": [
+      "M0108",
+      "M0109",
+      "M0110",
+      "M0111"
+    ]
+  },
+  {
+    "id": "P0214",
+    "text": "4.8　烘干判据与目标量",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0215",
+    "text": "$M(t)=ma{x}_{0≤r≤R(t)}C(r,t),  {t}_{*}=inf{t≥0: M(t)<0.15}$",
+    "style": null,
+    "math_ids": [
+      "M0112"
+    ]
+  },
+  {
+    "id": "P0216",
+    "text": "数值上在下降穿越处线性插值求 ${t}_{*}$，并核查穿越后确实低于阈值。",
+    "style": null,
+    "math_ids": [
+      "M0113"
+    ]
+  },
+  {
+    "id": "P0217",
+    "text": "\n",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0218",
+    "text": "五、数值方法",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0219",
+    "text": "5.1　节点中心有限体积离散",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0220",
+    "text": "取 节点中心 网格：节点 ${x}_{j}=jΔx$（$j=0,…,N$），$Δx=1/N$。选 $N$ 为 20 的倍数，可保证结果要求的取样半径 $0,0.1,…,2.0$ cm 恰为网格节点，从根本上消除了插值误差。各节点控制体的 $∫ x dx$ 积分：",
+    "style": null,
+    "math_ids": [
+      "M0114",
+      "M0115",
+      "M0116",
+      "M0117",
+      "M0118",
+      "M0119"
+    ]
+  },
+  {
+    "id": "P0221",
+    "text": "${X}_{j}=∫_{C{V}_{j}} x dx={\\begin{matrix}\\frac{1}{2}(\\frac{Δx}{2}{)}^{2}, & j=0 \\\\ j Δ{x}^{2}, & 0<j<N \\\\ \\frac{1}{2}[1-(1-\\frac{Δx}{2}{)}^{2}], & j=N\\end{matrix})$",
+    "style": null,
+    "math_ids": [
+      "M0120"
+    ]
+  },
+  {
+    "id": "P0222",
+    "text": "对 (E4)(M4) 在控制体上积分，得 严格守恒 的半离散方程：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0223",
+    "text": "${R}^{2}{X}_{j}\\frac{d{F}_{j}}{dt}={Ψ}_{j+1/2}-{Ψ}_{j-1/2},  {X}_{j}(ρ{c}_{p}{)}_{j}{R}^{2}\\frac{d{Θ}_{j}}{dt}={Φ}_{j+1/2}-{Φ}_{j-1/2}$",
+    "style": null,
+    "math_ids": [
+      "M0121"
+    ]
+  },
+  {
+    "id": "P0224",
+    "text": "${Ψ}_{j+1/2}={x}_{j+1/2}{D}_{j+1/2}\\frac{{F}_{j+1}-{F}_{j}}{Δx},  {Φ}_{j+1/2}={x}_{j+1/2}{k}_{j+1/2}\\frac{{Θ}_{j+1}-{Θ}_{j}}{Δx}$",
+    "style": null,
+    "math_ids": [
+      "M0122"
+    ]
+  },
+  {
+    "id": "P0225",
+    "text": "边界通量：${Ψ}_{-1/2}={Φ}_{-1/2}=0$（对称），${Φ}_{N+1/2}=R h ({T}_{∞}-{Θ}_{N})$，${Ψ}_{N+1/2}=-R β ({F}_{N}-{C}_{eq})$。",
+    "style": null,
+    "math_ids": [
+      "M0123",
+      "M0124",
+      "M0125"
+    ]
+  },
+  {
+    "id": "P0226",
+    "text": "离散守恒性可严格证明：对 $j$ 求和消去内部面通量，得",
+    "style": null,
+    "math_ids": [
+      "M0126"
+    ]
+  },
+  {
+    "id": "P0227",
+    "text": "${R}^{2}∑_{j} {X}_{j}\\frac{d{F}_{j}}{dt}={Ψ}_{N+1/2} \\Longleftrightarrow \\frac{dM}{dt}=-\\frac{2β({C}_{s}-{C}_{eq})}{R},  M=2∫_{0}^{1} F x dx$",
+    "style": null,
+    "math_ids": [
+      "M0127"
+    ]
+  },
+  {
+    "id": "P0228",
+    "text": "该式与表面通量直接对应，是独立于局部曲线的守恒检验（见 6.3 节）。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0229",
+    "text": "5.2　界面系数的调和平均",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0230",
+    "text": "${k}_{j+1/2}=\\frac{2{k}_{j}{k}_{j+1}}{{k}_{j}+{k}_{j+1}},  {D}_{j+1/2}=\\frac{2{D}_{j}{D}_{j+1}}{{D}_{j}+{D}_{j+1}}$",
+    "style": null,
+    "math_ids": [
+      "M0128"
+    ]
+  },
+  {
+    "id": "P0231",
+    "text": "干燥后期表面层两侧物性差异显著，调和平均能正确再现界面通量，而算术平均会系统性高估传递速率。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0232",
+    "text": "5.3　θ 方法与 Rannacher 启动",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0233",
+    "text": "${X}_{j}(ρ{c}_{p}{)}_{j}^{θ}({R}^{2}{)}^{θ}\\frac{{Θ}_{j}^{n+1}-{Θ}_{j}^{n}}{Δt}=θ[{Φ}^{n+1}]+(1-θ)[{Φ}^{n}]$",
+    "style": null,
+    "math_ids": [
+      "M0129"
+    ]
+  },
+  {
+    "id": "P0234",
+    "text": "其中 ${φ}^{θ}=θ{φ}^{n+1}+(1-θ){φ}^{n}$。取 $θ=1/2$ 得 Crank–Nicolson（二阶精度、无条件稳定）。由于初始时刻表面传质驱动力存在阶跃，纯 CN 会在最初几步产生非物理振荡，故采用 Rannacher 启动：首步用两个后向欧拉半步，之后切换为 CN。",
+    "style": null,
+    "math_ids": [
+      "M0130",
+      "M0131"
+    ]
+  },
+  {
+    "id": "P0235",
+    "text": "5.4　Picard 迭代处理非线性",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0236",
+    "text": "每个时间步内物性依赖未知解，采用 半隐式 Picard 迭代：① 令初值 $({T}^{(0)},{C}^{(0)})=({T}^{n},{C}^{n})$；② 用 ${C}^{(k)}$ 计算 $ρ,{c}_{p},k$，用 $({C}^{(k)},{T}^{(k)})$ 计算 $D$；③ 组装并求解三对角系统得 ${T}^{(k+1)}$，再求解得 ${C}^{(k+1)}$；④ 若 $max|{T}^{(k+1)}-{T}^{(k)}|<1{0}^{-10}$ 且 $max|{C}^{(k+1)}-{C}^{(k)}|<1{0}^{-10}$ 则停止。实际每步仅需 3—7 次迭代。数值上还对 $C$ 作正性保护。",
+    "style": null,
+    "math_ids": [
+      "M0132",
+      "M0133",
+      "M0134",
+      "M0135",
+      "M0136",
+      "M0137",
+      "M0138",
+      "M0139",
+      "M0140",
+      "M0141"
+    ]
+  },
+  {
+    "id": "P0237",
+    "text": "5.5　追赶法（Thomas 算法）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0238",
+    "text": "每步求解两个三对角线性系统 ${a}_{j}{u}_{j-1}+{b}_{j}{u}_{j}+{c}_{j}{u}_{j+1}={d}_{j}$，采用追赶法（LU 分解），复杂度 $O(N)$，数值稳定。",
+    "style": null,
+    "math_ids": [
+      "M0142",
+      "M0143"
+    ]
+  },
+  {
+    "id": "P0239",
+    "text": "5.6　输出网格构造",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0240",
+    "text": "问题",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0241",
+    "text": "内部时间步",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0242",
+    "text": "输出时刻",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0243",
+    "text": "输出列",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0244",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0245",
+    "text": "Δt = 0.25 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0246",
+    "text": "1, 2, …, 1800 s（每 1 s）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0247",
+    "text": "0, 0.1, …, 2.0 cm",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0248",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0249",
+    "text": "Δt = 0.5 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0250",
+    "text": "1, 2, …, 10800 s（每 1 s）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0251",
+    "text": "同上",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0252",
+    "text": "3",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0253",
+    "text": "Δt = 5 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0254",
+    "text": "60, 120, …, T*（每 60 s）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0255",
+    "text": "同上",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0256",
+    "text": "4",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0257",
+    "text": "Δt = 5 s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0258",
+    "text": "60, 120, …, T*（每 60 s）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0259",
+    "text": "同上 + 药材表面",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0260",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0261",
+    "text": "问题 4 的空白处理：收缩后材料只占据 $r≤R(t)$。结果文件中 $r>R(t)$ 的单元留空，并另设「药材表面」列给出 $F(1,t)$，使表面含水率始终可读。",
+    "style": null,
+    "math_ids": [
+      "M0144",
+      "M0145",
+      "M0146"
+    ]
+  },
+  {
+    "id": "P0262",
+    "text": "5.7　算法总流程",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0263",
+    "text": "① 读入物性组、边界 ${T}_{∞}(t),{C}_{eq}(t)$、$R(t)$、网格 $N$ 与子步 $sub$；",
+    "style": null,
+    "math_ids": [
+      "M0147",
+      "M0148",
+      "M0149",
+      "M0150"
+    ]
+  },
+  {
+    "id": "P0264",
+    "text": "② 初始化 ${T}_{j}=28$ °C，${C}_{j}=2.55$，计算初始物性与通量残差；",
+    "style": null,
+    "math_ids": [
+      "M0151",
+      "M0152"
+    ]
+  },
+  {
+    "id": "P0265",
+    "text": "③ 构造时间步序列（含 Rannacher 启动）；",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0266",
+    "text": "④ 对每个时间步：计算 $R$ 与环境量 → 保存上一步状态 → Picard 迭代求解能量与水分三对角系统 → 更新物性与残差 → 记录输出 → 判断是否达到判据；",
+    "style": null,
+    "math_ids": [
+      "M0153"
+    ]
+  },
+  {
+    "id": "P0267",
+    "text": "⑤ 输出完整场与标量诊断量。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0268",
+    "text": "\n",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0269",
+    "text": "六、模型验证与数值可信性",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0270",
+    "text": "A 题有标准答案，因此 \"算得对\"比\"写得好\"更关键。本节给出四层独立验证。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0271",
+    "text": "6.1　问题 1 温度场的解析解校核（核心验证）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0272",
+    "text": "问题 1 物性为常数，忽略相变时温度方程线性，故可用 无限长圆柱 + 对流边界 的 Bessel 级数解析解作独立参照。归一化阶跃响应（初值 0、环境阶跃到 1）：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0273",
+    "text": "$φ(x,Fo)=1-∑_{n=1}^{∞} {C}_{n}{J}_{0}({ζ}_{n}x){e}^{-{ζ}_{n}^{2}Fo},  {C}_{n}=\\frac{2 Bi}{({ζ}_{n}^{2}+B{i}^{2}){J}_{0}({ζ}_{n})}$",
+    "style": null,
+    "math_ids": [
+      "M0154"
+    ]
+  },
+  {
+    "id": "P0274",
+    "text": "${ζ}_{n}$ 为 $ζ{J}_{1}(ζ)=Bi {J}_{0}(ζ)$ 的正根，$Fo=αt/{R}_{0}^{2}$。",
+    "style": null,
+    "math_ids": [
+      "M0155",
+      "M0156",
+      "M0157"
+    ]
+  },
+  {
+    "id": "P0275",
+    "text": "时变环境的 Duhamel 卷积：附件 1 的 ${T}_{∞}(t)$ 为分段线性，其导数分段常数，故响应可逐段精确积分：",
+    "style": null,
+    "math_ids": [
+      "M0158"
+    ]
+  },
+  {
+    "id": "P0276",
+    "text": "$T(r,t)-{T}_{i}=∑_{k} {Δ}_{k}^{′}∫_{t-{t}_{k+1}}^{t-{t}_{k}} φ(\\frac{r}{{R}_{0}},u)du$",
+    "style": null,
+    "math_ids": [
+      "M0159"
+    ]
+  },
+  {
+    "id": "P0277",
+    "text": "其中 $∫ φ du$ 有闭式：",
+    "style": null,
+    "math_ids": [
+      "M0160"
+    ]
+  },
+  {
+    "id": "P0278",
+    "text": "$F(x,s)=∫_{0}^{s} φ(x,u)du=s-∑_{n} {C}_{n}{J}_{0}({ζ}_{n}x)\\frac{1-{e}^{-{λ}_{n}s}}{{λ}_{n}},  {λ}_{n}=\\frac{{ζ}_{n}^{2}α}{{R}_{0}^{2}}$",
+    "style": null,
+    "math_ids": [
+      "M0161"
+    ]
+  },
+  {
+    "id": "P0279",
+    "text": "实现细节：${J}_{0},{J}_{1}$ 用 Miller 向后递推 计算（大自变量下亦稳定），与标准值比对误差 $∼1{0}^{-11}$；特征根用扫描 + 二分求得，残差 $∼1{0}^{-16}$。",
+    "style": null,
+    "math_ids": [
+      "M0162",
+      "M0163",
+      "M0164"
+    ]
+  },
+  {
+    "id": "P0280",
+    "text": "项目",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0281",
+    "text": "数值",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0282",
+    "text": "校核点",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0283",
+    "text": "8 个时刻 × 21 个半径 = 168 点",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0284",
+    "text": "最大绝对偏差",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0285",
+    "text": "2.35e-4 °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0286",
+    "text": "温度变化量级",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0287",
+    "text": "约 8.8 °C（中心）/ 13.5 °C（环境）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0288",
+    "text": "相对误差",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0289",
+    "text": "约 2e-5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0290",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0291",
+    "text": "偏差低于\"保留四位小数\"的报告精度（$1{0}^{-4}$），说明数值解在报告精度内与解析解一致。",
+    "style": null,
+    "math_ids": [
+      "M0165"
+    ]
+  },
+  {
+    "id": "P0292",
+    "text": "[IMAGE media/image2.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0293",
+    "text": "图5　问题 1 数值解与 Duhamel–Bessel 解析解的绝对偏差（纵轴对数）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0294",
+    "text": "6.2　常扩散系数水分问题校核",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0295",
+    "text": "将 $D$ 固定为常数、${C}_{eq}$ 固定为常数，构造线性问题并用同一 Bessel 级数解校核：$B{i}_{m}=β{R}_{0}/D=3.2389$，校核点 4 个时刻 × 21 个半径，**最大绝对偏差 $3.89×1{0}^{-4}$ kg/kg**，出现在 $t=60$ s 的表面点（梯度最陡处），随网格加密进一步下降。",
+    "style": null,
+    "math_ids": [
+      "M0166",
+      "M0167",
+      "M0168",
+      "M0169",
+      "M0170"
+    ]
+  },
+  {
+    "id": "P0296",
+    "text": "6.3　质量守恒检验",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0297",
+    "text": "由 5.1 节证明的离散恒等式，独立累加表面通量并与全域含水量比较，结果在 $1{0}^{-7}$ 量级内一致，证明离散格式严格守恒、无虚假源汇。这一检验也直接排除了 4.2.1 节所述的\"虚假热源\"类错误。",
+    "style": null,
+    "math_ids": [
+      "M0171"
+    ]
+  },
+  {
+    "id": "P0298",
+    "text": "6.4　网格与时间步收敛性",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0299",
+    "text": "6.4.1　场量的收敛性",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0300",
+    "text": "空间收敛性（问题 1，$t=1800$ s）：$N=200$ 与 $N=400$ 的结果在四位小数上完全一致；问题 2 的 ${C}_{max}(3 h)$ 相对偏差 $6×1{0}^{-7}$。",
+    "style": null,
+    "math_ids": [
+      "M0172",
+      "M0173",
+      "M0174",
+      "M0175",
+      "M0176"
+    ]
+  },
+  {
+    "id": "P0301",
+    "text": "6.4.2　烘干时间 T* 的收敛性（关键说明）",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0302",
+    "text": "烘干时间 ${T}^{*}$ 由 ${C}_{max}$ 穿越 0.15 定义，而该阶段",
+    "style": null,
+    "math_ids": [
+      "M0177",
+      "M0178"
+    ]
+  },
+  {
+    "id": "P0303",
+    "text": "$\\frac{d{C}_{max}}{dt}≈-2.87×1{0}^{-7} s^{-1}  (特征时间 {τ}_{D}={R}_{0}^{2}/D(0.15)≈5.0×1{0}^{5} s)$",
+    "style": null,
+    "math_ids": [
+      "M0179"
+    ]
+  },
+  {
+    "id": "P0304",
+    "text": "因此 ${C}_{max}$ 的微小离散误差会被放大约 $1/2.87×1{0}^{-7}≈3.5×1{0}^{6}$ 倍转换为时间误差。**${T}^{*}$ 的网格敏感度显著高于场量本身**，必须单独量化。",
+    "style": null,
+    "math_ids": [
+      "M0180",
+      "M0181",
+      "M0182"
+    ]
+  },
+  {
+    "id": "P0305",
+    "text": "问题 3 空间收敛性（$Δt=5$ s）：",
+    "style": null,
+    "math_ids": [
+      "M0183"
+    ]
+  },
+  {
+    "id": "P0306",
+    "text": "N",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0307",
+    "text": "T* / s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0308",
+    "text": "T* / h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0309",
+    "text": "相邻网格相对差",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0310",
+    "text": "100",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0311",
+    "text": "257627.74",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0312",
+    "text": "71.5633",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0313",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0314",
+    "text": "200",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0315",
+    "text": "212226.42",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0316",
+    "text": "58.9518",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0317",
+    "text": "17.6 %",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0318",
+    "text": "400",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0319",
+    "text": "207672.49",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0320",
+    "text": "57.6868",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0321",
+    "text": "2.14 %",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0322",
+    "text": "800",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0323",
+    "text": "207044.11",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0324",
+    "text": "57.5123",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0325",
+    "text": "0.303 %",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0326",
+    "text": "二阶 Richardson 外推",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0327",
+    "text": "206834.65",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0328",
+    "text": "57.4541",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0329",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0330",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0331",
+    "text": "拟合收敛阶 $p=3.32$（100→200→400）与 $p=2.86$（200→400→800），说明格式精度优于二阶。据 $N=400→800$ 仅变化 0.303%，估计 ${T}^{*}$ 的**数值不确定度约 $±0.2%$**。",
+    "style": null,
+    "math_ids": [
+      "M0184",
+      "M0185",
+      "M0186",
+      "M0187",
+      "M0188"
+    ]
+  },
+  {
+    "id": "P0332",
+    "text": "问题 3 时间步收敛性（$N=200$）：",
+    "style": null,
+    "math_ids": [
+      "M0189"
+    ]
+  },
+  {
+    "id": "P0333",
+    "text": "子步 sub",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0334",
+    "text": "Δt / s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0335",
+    "text": "T* / s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0336",
+    "text": "3",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0337",
+    "text": "20.0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0338",
+    "text": "212226.43",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0339",
+    "text": "6",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0340",
+    "text": "10.0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0341",
+    "text": "212226.43",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0342",
+    "text": "12",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0343",
+    "text": "5.0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0344",
+    "text": "212226.42",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0345",
+    "text": "24",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0346",
+    "text": "2.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0347",
+    "text": "212226.42",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0348",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0349",
+    "text": "**四种时间步给出完全相同的 ${T}^{*}$（相差 < 0.01 s）**，说明时间离散误差可完全忽略，Crank–Nicolson 的二阶精度充分。",
+    "style": null,
+    "math_ids": [
+      "M0190"
+    ]
+  },
+  {
+    "id": "P0350",
+    "text": "问题 4 空间收敛性（含收缩）：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0351",
+    "text": "N",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0352",
+    "text": "T* / s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0353",
+    "text": "T* / h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0354",
+    "text": "相邻网格相对差",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0355",
+    "text": "100",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0356",
+    "text": "185314.87",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0357",
+    "text": "51.4764",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0358",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0359",
+    "text": "200",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0360",
+    "text": "184229.07",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0361",
+    "text": "51.1747",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0362",
+    "text": "0.589 %",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0363",
+    "text": "400",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0364",
+    "text": "183996.40",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0365",
+    "text": "51.1101",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0366",
+    "text": "0.126 %",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0367",
+    "text": "800",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0368",
+    "text": "183942.12",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0369",
+    "text": "51.0950",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0370",
+    "text": "0.030 %",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0371",
+    "text": "二阶 Richardson 外推",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0372",
+    "text": "183924.03",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0373",
+    "text": "51.0900",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0374",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0375",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0376",
+    "text": "问题 4 的收敛阶 $p=2.222$ 与 $p=2.100$，非常接近理论二阶精度；$N=400$ 的结果与外推值仅差 0.039%，精度已足够。时间步同样给出可忽略的差异（相对 $1{0}^{-5}$ 量级）。",
+    "style": null,
+    "math_ids": [
+      "M0191",
+      "M0192",
+      "M0193",
+      "M0194"
+    ]
+  },
+  {
+    "id": "P0377",
+    "text": "[IMAGE media/image3.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0378",
+    "text": "图17a　烘干时间 T* 的网格收敛性与 Richardson 外推",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0379",
+    "text": "[IMAGE media/image4.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0380",
+    "text": "图17b　烘干时间 T* 的时间步收敛性（四条柱高几乎相同，说明完全收敛）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0381",
+    "text": "6.5　端面（轴向）效应量化",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0382",
+    "text": "一维径向近似忽略了两端面。对线性常物性问题，有限长圆柱解可由 乘积法 给出。设 $Φ$ 表示\"初值 0、环境阶跃到 1\"的归一化响应，由于归一化温度满足 ${θ}^{*}=(T-{T}_{∞})/({T}_{i}-{T}_{∞})=1-Φ$ 且 ${θ}_{3D}^{*}={θ}_{cyl}^{*}{θ}_{slab}^{*}$，故",
+    "style": null,
+    "math_ids": [
+      "M0195",
+      "M0196",
+      "M0197"
+    ]
+  },
+  {
+    "id": "P0383",
+    "text": "${Φ}_{3D}={Φ}_{cyl}+{Φ}_{slab}-{Φ}_{cyl}{Φ}_{slab}  (注意不是简单相乘)$",
+    "style": null,
+    "math_ids": [
+      "M0198"
+    ]
+  },
+  {
+    "id": "P0384",
+    "text": "平板半厚 ${L}_{0}=12.5$ cm，$B{i}_{slab}=h{L}_{0}/k=8.681$，中心响应 ${Φ}_{slab}=1-∑_{m} \\frac{2sin{μ}_{m}}{{μ}_{m}+sin{μ}_{m}cos{μ}_{m}}{e}^{-{μ}_{m}^{2}αt/{L}_{0}^{2}}$。",
+    "style": null,
+    "math_ids": [
+      "M0199",
+      "M0200",
+      "M0201"
+    ]
+  },
+  {
+    "id": "P0385",
+    "text": "t / s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0386",
+    "text": "1D 径向 / °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0387",
+    "text": "含端面 / °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0388",
+    "text": "偏差 / °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0389",
+    "text": "Fo_平板",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0390",
+    "text": "300",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0391",
+    "text": "28.04080",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0392",
+    "text": "28.04150",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0393",
+    "text": "+0.00070",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0394",
+    "text": "0.0032",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0395",
+    "text": "900",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0396",
+    "text": "29.32447",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0397",
+    "text": "29.32466",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0398",
+    "text": "+0.00019",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0399",
+    "text": "0.0097",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0400",
+    "text": "1800",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0401",
+    "text": "33.57550",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0402",
+    "text": "33.57571",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0403",
+    "text": "+0.00021",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0404",
+    "text": "0.0195",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0405",
+    "text": "3600",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0406",
+    "text": "42.33723",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0407",
+    "text": "42.33859",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0408",
+    "text": "+0.00136",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0409",
+    "text": "0.0389",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0410",
+    "text": "7200",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0411",
+    "text": "49.05176",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0412",
+    "text": "49.05595",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0413",
+    "text": "+0.00419",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0414",
+    "text": "0.0778",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0415",
+    "text": "14400",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0416",
+    "text": "50.00485",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0417",
+    "text": "50.00645",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0418",
+    "text": "+0.00160",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0419",
+    "text": "0.1556",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0420",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0421",
+    "text": "结论：平板热特征时间 ${τ}_{slab}={L}_{0}^{2}/α=92535$ s $=25.7$ h，远大于问题 1 的 1800 s 窗口，故在预热阶段端面几乎不参与换热，**中心温度偏差仅约 $2×1{0}^{-4}$ °C，一维轴对称近似完全成立。端面提供 额外受热面，故含端面的中心温度比一维径向解 略高**。",
+    "style": null,
+    "math_ids": [
+      "M0202",
+      "M0203",
+      "M0204"
+    ]
+  },
+  {
+    "id": "P0422",
+    "text": "端面使总外表面积增加 $2π{R}_{0}^{2}/(2π{R}_{0}L)={R}_{0}/L=8.0%$。但由于全过程（尤其 6 h 之后）由 内部扩散控制而非表面控制（见 7.3 与 8.1 节），该面积增加对烘干时间的影响远小于 8%。因此本文报告的 ${t}_{*}$ 可视为 偏保守（略偏长） 的上界估计。",
+    "style": null,
+    "math_ids": [
+      "M0205",
+      "M0206"
+    ]
+  },
+  {
+    "id": "P0423",
+    "text": "\n",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0424",
+    "text": "七、结果与分析",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0425",
+    "text": "本节数值由程序从计算结果直接导出（out/summary.json），对应的结果文件为 out/result1.xlsx—out/result4.xlsx。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0426",
+    "text": "7.1　问题 1（预热平衡阶段，0—1800 s，附录 2 物性）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0427",
+    "text": "主要结果：$t=1800$ s 时",
+    "style": null,
+    "math_ids": [
+      "M0207"
+    ]
+  },
+  {
+    "id": "P0428",
+    "text": "量",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0429",
+    "text": "中心 r=0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0430",
+    "text": "表面 r=2 cm",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0431",
+    "text": "温度 T / °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0432",
+    "text": "33.5753",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0433",
+    "text": "36.7856",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0434",
+    "text": "含水率 C / (kg/kg)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0435",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0436",
+    "text": "1.5102",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0437",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0438",
+    "text": "分析：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0439",
+    "text": "· 温度：环境温度在 1800 s 内由 28 °C 升至 41.5 °C，但药材中心仅升至 33.58 °C，表面 36.79 °C，内外温差约 3.2 °C。这与 $Bi=1.39$ 一致：内外热阻相当，温度分布呈明显抛物线形。",
+    "style": null,
+    "math_ids": [
+      "M0208"
+    ]
+  },
+  {
+    "id": "P0440",
+    "text": "· 水分：中心含水率几乎不变（2.55 → 2.54999），而表面由 2.55 迅速降至 1.5102。这是因为初期驱动力 ${C}_{s}-{C}_{eq}≈2.53$ 很大，表面迅速建立\"准平衡\"薄层，随后由内部扩散控制。",
+    "style": null,
+    "math_ids": [
+      "M0209"
+    ]
+  },
+  {
+    "id": "P0441",
+    "text": "· 全域含水量由 2.55 降至 2.2936（无量纲 $M=2∫ Cx dx$），降幅 10.06%，水分损失集中在表面约 5 mm 厚的薄层内。",
+    "style": null,
+    "math_ids": [
+      "M0210"
+    ]
+  },
+  {
+    "id": "P0442",
+    "text": "· 表面质量通量由初值 $β({C}_{0}-{C}_{eq,0})=2.02×1{0}^{-6}$ kg/(m²·s) 递减，说明预热阶段后期已进入降速干燥。",
+    "style": null,
+    "math_ids": [
+      "M0211"
+    ]
+  },
+  {
+    "id": "P0443",
+    "text": "[IMAGE media/image5.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0444",
+    "text": "图2　问题 1 药材温度径向剖面（预热平衡阶段）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0445",
+    "text": "[IMAGE media/image6.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0446",
+    "text": "图3　问题 1 药材水分浓度径向剖面（预热平衡阶段）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0447",
+    "text": "[IMAGE media/image7.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0448",
+    "text": "图4　问题 1 中心与表面的温度、水分随时间变化",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0449",
+    "text": "表 1　30 分钟内药材的温度（单位：°C）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0450",
+    "text": "时间/s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0451",
+    "text": "0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0452",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0453",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0454",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0455",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0456",
+    "text": "100",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0457",
+    "text": "28.0001",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0458",
+    "text": "28.0003",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0459",
+    "text": "28.0040",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0460",
+    "text": "28.0327",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0461",
+    "text": "28.1801",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0462",
+    "text": "300",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0463",
+    "text": "28.0408",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0464",
+    "text": "28.0635",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0465",
+    "text": "28.1514",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0466",
+    "text": "28.3681",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0467",
+    "text": "28.8488",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0468",
+    "text": "600",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0469",
+    "text": "28.4533",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0470",
+    "text": "28.5360",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0471",
+    "text": "28.8039",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0472",
+    "text": "29.3159",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0473",
+    "text": "30.1652",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0474",
+    "text": "900",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0475",
+    "text": "29.3243",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0476",
+    "text": "29.4583",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0477",
+    "text": "29.8755",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0478",
+    "text": "30.6161",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0479",
+    "text": "31.7304",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0480",
+    "text": "1200",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0481",
+    "text": "30.5427",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0482",
+    "text": "30.7098",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0483",
+    "text": "31.2223",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0484",
+    "text": "32.1126",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0485",
+    "text": "33.4276",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0486",
+    "text": "1500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0487",
+    "text": "31.9957",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0488",
+    "text": "32.1867",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0489",
+    "text": "32.7660",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0490",
+    "text": "33.7463",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0491",
+    "text": "35.1203",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0492",
+    "text": "1800",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0493",
+    "text": "33.5753",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0494",
+    "text": "33.7720",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0495",
+    "text": "34.3642",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0496",
+    "text": "35.3621",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0497",
+    "text": "36.7856",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0498",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0499",
+    "text": "表 2　30 分钟内药材的水分浓度（单位：kg/kg）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0500",
+    "text": "时间/s",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0501",
+    "text": "0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0502",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0503",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0504",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0505",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0506",
+    "text": "100",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0507",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0508",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0509",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0510",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0511",
+    "text": "2.2471",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0512",
+    "text": "300",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0513",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0514",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0515",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0516",
+    "text": "2.5492",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0517",
+    "text": "2.0509",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0518",
+    "text": "600",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0519",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0520",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0521",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0522",
+    "text": "2.5353",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0523",
+    "text": "1.8770",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0524",
+    "text": "900",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0525",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0526",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0527",
+    "text": "2.5497",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0528",
+    "text": "2.5045",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0529",
+    "text": "1.7547",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0530",
+    "text": "1200",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0531",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0532",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0533",
+    "text": "2.5482",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0534",
+    "text": "2.4646",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0535",
+    "text": "1.6586",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0536",
+    "text": "1500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0537",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0538",
+    "text": "2.5499",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0539",
+    "text": "2.5445",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0540",
+    "text": "2.4206",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0541",
+    "text": "1.5787",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0542",
+    "text": "1800",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0543",
+    "text": "2.5500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0544",
+    "text": "2.5497",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0545",
+    "text": "2.5383",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0546",
+    "text": "2.3755",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0547",
+    "text": "1.5102",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0548",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0549",
+    "text": "7.2　问题 2（整个烘干过程的 0—3 h，附录 3 物性）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0550",
+    "text": "主要结果：$t=3$ h 时",
+    "style": null,
+    "math_ids": [
+      "M0212"
+    ]
+  },
+  {
+    "id": "P0551",
+    "text": "量",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0552",
+    "text": "中心",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0553",
+    "text": "表面",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0554",
+    "text": "温度 / °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0555",
+    "text": "49.8495",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0556",
+    "text": "49.9664",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0557",
+    "text": "含水率 / (kg/kg)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0558",
+    "text": "1.7662",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0559",
+    "text": "1.0081",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0560",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0561",
+    "text": "分析：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0562",
+    "text": "· 3 h 后药材温度已趋近烘房温度平台值 50 °C，且 中心 49.85 °C、表面 49.97 °C 均不高于环境温度，符合\"无内热源时温度不可能超越环境\"的热力学要求。这直接验证了 4.2 节能量方程形式的正确性。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0563",
+    "text": "· 中心含水率由 2.55 降至 1.766，表面降至 1.008，内外含水率差 0.758，仍处于降速干燥阶段。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0564",
+    "text": "· 全域平均含水率由 2.55 降至 1.3825，降幅 45.78%；表面水通量降至 $7.67×1{0}^{-7}$ kg/(m²·s)，表面热通量仅 5.71 W/m²（远小于问题 1 末期的 118.19 W/m²），说明 热侧已不再是限制环节，干燥完全由内部水分扩散控制。",
+    "style": null,
+    "math_ids": [
+      "M0213"
+    ]
+  },
+  {
+    "id": "P0565",
+    "text": "· 3 h 仅完成约 46% 的脱水任务，与\"烘干过程持续 2—3 天\"的题设一致。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0566",
+    "text": "[IMAGE media/image8.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0567",
+    "text": "图6　问题 2 药材温度径向剖面（0—3 h）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0568",
+    "text": "[IMAGE media/image9.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0569",
+    "text": "图7　问题 2 药材水分浓度径向剖面（0—3 h）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0570",
+    "text": "[IMAGE media/image10.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0571",
+    "text": "图8　问题 2 中心与表面的温度、水分随时间变化",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0572",
+    "text": "[IMAGE media/image11.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0573",
+    "text": "图11　问题 2 温度场 r–t 等值线图",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0574",
+    "text": "[IMAGE media/image12.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0575",
+    "text": "图12　问题 2 水分场 r–t 等值线图",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0576",
+    "text": "表 3　3 小时内药材的温度（单位：°C）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0577",
+    "text": "时间/h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0578",
+    "text": "0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0579",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0580",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0581",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0582",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0583",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0584",
+    "text": "32.1892",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0585",
+    "text": "32.3821",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0586",
+    "text": "32.9659",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0587",
+    "text": "33.9608",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0588",
+    "text": "35.4130",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0589",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0590",
+    "text": "40.3816",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0591",
+    "text": "40.5536",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0592",
+    "text": "41.0605",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0593",
+    "text": "41.8782",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0594",
+    "text": "42.9976",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0595",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0596",
+    "text": "45.8468",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0597",
+    "text": "45.9348",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0598",
+    "text": "46.1930",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0599",
+    "text": "46.6051",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0600",
+    "text": "47.1401",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0601",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0602",
+    "text": "48.4502",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0603",
+    "text": "48.4881",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0604",
+    "text": "48.5984",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0605",
+    "text": "48.7736",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0606",
+    "text": "49.0033",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0607",
+    "text": "2.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0608",
+    "text": "49.4670",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0609",
+    "text": "49.4792",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0610",
+    "text": "49.5137",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0611",
+    "text": "49.5653",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0612",
+    "text": "49.6609",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0613",
+    "text": "3",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0614",
+    "text": "49.8495",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0615",
+    "text": "49.8553",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0616",
+    "text": "49.8746",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0617",
+    "text": "49.9101",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0618",
+    "text": "49.9664",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0619",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0620",
+    "text": "表 4　3 小时内药材的水分浓度（单位：kg/kg）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0621",
+    "text": "时间/h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0622",
+    "text": "0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0623",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0624",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0625",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0626",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0627",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0628",
+    "text": "2.5499",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0629",
+    "text": "2.5489",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0630",
+    "text": "2.5256",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0631",
+    "text": "2.3257",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0632",
+    "text": "1.6486",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0633",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0634",
+    "text": "2.5257",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0635",
+    "text": "2.4948",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0636",
+    "text": "2.3578",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0637",
+    "text": "2.0230",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0638",
+    "text": "1.4711",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0639",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0640",
+    "text": "2.3861",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0641",
+    "text": "2.3256",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0642",
+    "text": "2.1344",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0643",
+    "text": "1.8020",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0644",
+    "text": "1.3476",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0645",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0646",
+    "text": "2.1709",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0647",
+    "text": "2.1084",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0648",
+    "text": "1.9236",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0649",
+    "text": "1.6259",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0650",
+    "text": "1.2311",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0651",
+    "text": "2.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0652",
+    "text": "1.9566",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0653",
+    "text": "1.9006",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0654",
+    "text": "1.7360",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0655",
+    "text": "1.4720",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0656",
+    "text": "1.1166",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0657",
+    "text": "3",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0658",
+    "text": "1.7662",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0659",
+    "text": "1.7165",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0660",
+    "text": "1.5702",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0661",
+    "text": "1.3333",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0662",
+    "text": "1.0081",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0663",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0664",
+    "text": "7.3　问题 3（无收缩，烘干时间）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0665",
+    "text": "核心结果：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0666",
+    "text": "${t}_{*}=207672.5 s=57.6868 h=2.4036 天$",
+    "style": null,
+    "math_ids": [
+      "M0214"
+    ]
+  },
+  {
+    "id": "P0667",
+    "text": "（网格 Richardson 外推值 $57.4541$ h，**最佳估计 ${t}_{*}≈57.5$ h $≈2.40$ 天**）",
+    "style": null,
+    "math_ids": [
+      "M0215",
+      "M0216",
+      "M0217"
+    ]
+  },
+  {
+    "id": "P0668",
+    "text": "过程特征：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0669",
+    "text": "时刻 / h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0670",
+    "text": "Cmax",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0671",
+    "text": "Cmin",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0672",
+    "text": "平均 C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0673",
+    "text": "中心温度 / °C",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0674",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0675",
+    "text": "2.5257",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0676",
+    "text": "1.4711",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0677",
+    "text": "2.0650",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0678",
+    "text": "40.3816",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0679",
+    "text": "3",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0680",
+    "text": "1.7662",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0681",
+    "text": "1.0081",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0682",
+    "text": "1.3825",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0683",
+    "text": "49.8495",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0684",
+    "text": "6",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0685",
+    "text": "1.0170",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0686",
+    "text": "0.5328",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0687",
+    "text": "0.7817",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0688",
+    "text": "50.0000",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0689",
+    "text": "12",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0690",
+    "text": "0.4561",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0691",
+    "text": "0.1642",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0692",
+    "text": "0.3368",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0693",
+    "text": "50.0000",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0694",
+    "text": "24",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0695",
+    "text": "0.2378",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0696",
+    "text": "0.0663",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0697",
+    "text": "0.1862",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0698",
+    "text": "50.0000",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0699",
+    "text": "36",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0700",
+    "text": "0.1860",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0701",
+    "text": "0.0566",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0702",
+    "text": "0.1507",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0703",
+    "text": "50.0000",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0704",
+    "text": "48",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0705",
+    "text": "0.1620",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0706",
+    "text": "0.0538",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0707",
+    "text": "0.1336",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0708",
+    "text": "50.0000",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0709",
+    "text": "57.6868（t*）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0710",
+    "text": "0.1500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0711",
+    "text": "0.0527",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0712",
+    "text": "0.1247",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0713",
+    "text": "50.0000",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0714",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0715",
+    "text": "· 温度在约 6 h 后全域达到 50 °C（与环境完全热平衡），此后 干燥过程纯粹由传质控制，这是本题最重要的简化契机。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0716",
+    "text": "· ${C}_{min}$ 在约 12 h 后已接近 ${C}_{eq}=0.05$ 的平衡值（0.0527），此后几乎不再变化，说明 表面早已\"干透\"，剩余水分全部困在中心。",
+    "style": null,
+    "math_ids": [
+      "M0218",
+      "M0219"
+    ]
+  },
+  {
+    "id": "P0717",
+    "text": "· 中心与表面的巨大差异（${t}_{*}$ 时 ${C}_{max}=0.150$ vs ${C}_{min}=0.053$，相差近 3 倍）正是\"扩散控制\"阶段的典型特征，也解释了为什么必须用分布参数模型。",
+    "style": null,
+    "math_ids": [
+      "M0220",
+      "M0221",
+      "M0222"
+    ]
+  },
+  {
+    "id": "P0718",
+    "text": "为什么是 2.40 天？ 由 4.7 节，干燥初期 ${τ}_{D}=7.09×1{0}^{4}$ s，末期升至 $5.00×1{0}^{5}$ s，相差 7 倍。从 $C=2.55$ 到 $0.15$ 需跨越 $D$ 的 3 个数量级变化，故所需时间远大于初期特征时间，落在 $2×1{0}^{5}$ s 量级（约 2.4 天），与题目\"一般持续 2—3 天\"高度吻合，是模型正确性的独立旁证。",
+    "style": null,
+    "math_ids": [
+      "M0223",
+      "M0224",
+      "M0225",
+      "M0226",
+      "M0227",
+      "M0228"
+    ]
+  },
+  {
+    "id": "P0719",
+    "text": "[IMAGE media/image13.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0720",
+    "text": "图10　问题 3 全域含水率指标随时间变化与 0.15 判据",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0721",
+    "text": "[IMAGE media/image14.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0722",
+    "text": "图9　问题 3 干燥速率特征曲线（全程处于降速段，无恒速段）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0723",
+    "text": "[IMAGE media/image15.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0724",
+    "text": "图13　问题 3 全过程水分场 r–t 等值线图",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0725",
+    "text": "表 5　药材烘干过程的水分浓度（单位：kg/kg）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0726",
+    "text": "时间/h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0727",
+    "text": "0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0728",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0729",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0730",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0731",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0732",
+    "text": "6",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0733",
+    "text": "1.0170",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0734",
+    "text": "0.9881",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0735",
+    "text": "0.9015",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0736",
+    "text": "0.7550",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0737",
+    "text": "0.5328",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0738",
+    "text": "12",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0739",
+    "text": "0.4561",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0740",
+    "text": "0.4432",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0741",
+    "text": "0.4031",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0742",
+    "text": "0.3297",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0743",
+    "text": "0.1642",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0744",
+    "text": "18",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0745",
+    "text": "0.2988",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0746",
+    "text": "0.2916",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0747",
+    "text": "0.2687",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0748",
+    "text": "0.2253",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0749",
+    "text": "0.0844",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0750",
+    "text": "24",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0751",
+    "text": "0.2378",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0752",
+    "text": "0.2328",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0753",
+    "text": "0.2168",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0754",
+    "text": "0.1857",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0755",
+    "text": "0.0663",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0756",
+    "text": "30",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0757",
+    "text": "0.2059",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0758",
+    "text": "0.2019",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0759",
+    "text": "0.1893",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0760",
+    "text": "0.1644",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0761",
+    "text": "0.0597",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0762",
+    "text": "36",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0763",
+    "text": "0.1860",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0764",
+    "text": "0.1827",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0765",
+    "text": "0.1720",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0766",
+    "text": "0.1508",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0767",
+    "text": "0.0566",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0768",
+    "text": "42",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0769",
+    "text": "0.1722",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0770",
+    "text": "0.1693",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0771",
+    "text": "0.1600",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0772",
+    "text": "0.1411",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0773",
+    "text": "0.0549",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0774",
+    "text": "48",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0775",
+    "text": "0.1620",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0776",
+    "text": "0.1594",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0777",
+    "text": "0.1510",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0778",
+    "text": "0.1339",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0779",
+    "text": "0.0538",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0780",
+    "text": "54",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0781",
+    "text": "0.1541",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0782",
+    "text": "0.1517",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0783",
+    "text": "0.1439",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0784",
+    "text": "0.1282",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0785",
+    "text": "0.0530",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0786",
+    "text": "烘干结束 57.6868 h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0787",
+    "text": "0.1500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0788",
+    "text": "0.1477",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0789",
+    "text": "0.1403",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0790",
+    "text": "0.1252",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0791",
+    "text": "0.0527",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0792",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0793",
+    "text": "注：末行为烘干判据 $ma{x}_{r}C=0.15$ 被满足的临界时刻，故该行中心处数值按定义恰为 0.1500；结果文件 result3.xlsx 记录至 60 s 网格上最大含水率 严格低于 0.15 的首个时刻。",
+    "style": null,
+    "math_ids": [
+      "M0229"
+    ]
+  },
+  {
+    "id": "P0794",
+    "text": "7.4　问题 4（含收缩）",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0795",
+    "text": "核心结果：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0796",
+    "text": "${t}_{*}=183996.4 s=51.1101 h=2.1296 天$",
+    "style": null,
+    "math_ids": [
+      "M0230"
+    ]
+  },
+  {
+    "id": "P0797",
+    "text": "（Richardson 外推值 $51.0900$ h，**最佳估计 ${t}_{*}≈51.1$ h $≈2.13$ 天**）",
+    "style": null,
+    "math_ids": [
+      "M0231",
+      "M0232",
+      "M0233"
+    ]
+  },
+  {
+    "id": "P0798",
+    "text": "收缩的作用（定量分解）：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0799",
+    "text": "效应",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0800",
+    "text": "因子",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0801",
+    "text": "对干燥时间的方向",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0802",
+    "text": "几何缩短（R² 减小）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0803",
+    "text": "R_end²/R0² = 0.5990² = 0.3588",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0804",
+    "text": "缩短（有利，约 2.8 倍）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0805",
+    "text": "扩散系数改变",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0806",
+    "text": "D4/D23 = 0.175·e^(0.15/C)，C=0.15 时为 0.4757",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0807",
+    "text": "延长（不利，约 2.1 倍）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0808",
+    "text": "净效应",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0809",
+    "text": "t*4/t*3 = 183996.4/207672.5 = 0.8860",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0810",
+    "text": "缩短 11.40%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0811",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0812",
+    "text": "结论：收缩使水分迁移路径显著缩短，其有利作用（约 2.8 倍）超过附录 4 扩散系数偏小的不利作用（约 2.1 倍），净效果是烘干时间缩短约 11.4%（由 57.69 h 降至 51.11 h）。${t}_{*}$ 时药材半径已缩至 1.200 cm（原始半径的 59.9%），即约 4 mm 的表层已被\"挤掉\"。",
+    "style": null,
+    "math_ids": [
+      "M0234"
+    ]
+  },
+  {
+    "id": "P0813",
+    "text": "注意：不能把问题 3 与问题 4 的时间差全部归因于收缩——两者使用的物性公式（附录 3 vs 附录 4）本身不同。第 8.4 节给出隔离对比。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0814",
+    "text": "[IMAGE media/image16.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0815",
+    "text": "图14　附件 2 药材半径随时间的变化（收缩规律）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0816",
+    "text": "[IMAGE media/image17.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0817",
+    "text": "图15　问题 4 水分场 r–t 等值线图（可见收缩域，空白处已无材料）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0818",
+    "text": "[IMAGE media/image18.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0819",
+    "text": "图16　问题 3 与问题 4 全域最大含水率对比",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0820",
+    "text": "[IMAGE media/image19.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0821",
+    "text": "图20　问题 3 与问题 4 干燥速率特征曲线对比",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0822",
+    "text": "表 6　药材烘干过程的水分浓度（单位：kg/kg）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0823",
+    "text": "时间/h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0824",
+    "text": "0",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0825",
+    "text": "0.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0826",
+    "text": "1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0827",
+    "text": "1.5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0828",
+    "text": "2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0829",
+    "text": "6",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0830",
+    "text": "1.7195",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0831",
+    "text": "1.5370",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0832",
+    "text": "1.0219",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0833",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0834",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0835",
+    "text": "12",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0836",
+    "text": "0.7376",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0837",
+    "text": "0.6546",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0838",
+    "text": "0.4083",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0839",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0840",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0841",
+    "text": "18",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0842",
+    "text": "0.4087",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0843",
+    "text": "0.3685",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0844",
+    "text": "0.2394",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0845",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0846",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0847",
+    "text": "24",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0848",
+    "text": "0.2851",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0849",
+    "text": "0.2610",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0850",
+    "text": "0.1788",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0851",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0852",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0853",
+    "text": "30",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0854",
+    "text": "0.2264",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0855",
+    "text": "0.2094",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0856",
+    "text": "0.1491",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0857",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0858",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0859",
+    "text": "36",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0860",
+    "text": "0.1929",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0861",
+    "text": "0.1796",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0862",
+    "text": "0.1315",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0863",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0864",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0865",
+    "text": "42",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0866",
+    "text": "0.1713",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0867",
+    "text": "0.1604",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0868",
+    "text": "0.1199",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0869",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0870",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0871",
+    "text": "48",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0872",
+    "text": "0.1562",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0873",
+    "text": "0.1468",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0874",
+    "text": "0.1115",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0875",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0876",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0877",
+    "text": "烘干结束 51.1101 h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0878",
+    "text": "0.1500",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0879",
+    "text": "0.1412",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0880",
+    "text": "0.1079",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0881",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0882",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0883",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0884",
+    "text": "注：空白表示该半径已超出收缩后的药材表面（结果文件 result4.xlsx 另设「药材表面」列，给出 $F(1,t)$ 供随时查阅）。",
+    "style": null,
+    "math_ids": [
+      "M0235"
+    ]
+  },
+  {
+    "id": "P0885",
+    "text": "\n",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0886",
+    "text": "八、敏感度分析与模型对比",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P0887",
+    "text": "8.1　关键参数敏感度",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0888",
+    "text": "以问题 3 的烘干时间 ${t}_{*}$ 为目标（基准 ${t}_{*}=58.9518$ h，$N=200$），对传质系数 $β$、换热系数 $h$、扩散系数 $D$、平衡含水率 ${C}_{eq}$ 分别做倍率扰动：",
+    "style": null,
+    "math_ids": [
+      "M0236",
+      "M0237",
+      "M0238",
+      "M0239",
+      "M0240",
+      "M0241",
+      "M0242"
+    ]
+  },
+  {
+    "id": "P0889",
+    "text": "参数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0890",
+    "text": "×0.50",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0891",
+    "text": "×0.75",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0892",
+    "text": "×1.25",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0893",
+    "text": "×2.00",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0894",
+    "text": "结论",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0895",
+    "text": "D",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0896",
+    "text": "+111.16%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0897",
+    "text": "+33.33%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0898",
+    "text": "−18.54%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0899",
+    "text": "−44.65%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0900",
+    "text": "最敏感，近似 t* ∝ D⁻¹",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0901",
+    "text": "beta",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0902",
+    "text": "+10.51%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0903",
+    "text": "+2.54%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0904",
+    "text": "−0.17%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0905",
+    "text": "+5.82%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0906",
+    "text": "非单调！存在最优值",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0907",
+    "text": "h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0908",
+    "text": "+0.14%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0909",
+    "text": "+0.04%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0910",
+    "text": "−0.03%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0911",
+    "text": "−0.07%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0912",
+    "text": "几乎无影响",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0913",
+    "text": "Ceq",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0914",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0915",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0916",
+    "text": "—",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0917",
+    "text": "−1.80%（×1.2）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0918",
+    "text": "较弱",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0919",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0920",
+    "text": "8.1.1　发现一：干燥时间几乎只由扩散系数 D 决定",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0921",
+    "text": "$D$ 减半使 ${t}_{*}$ 增加 111%，加倍使 ${t}_{*}$ 减少 45%，即 ${t}_{*}∝{D}^{-1.05}$。这与\"扩散控制\"的物理图像完全一致：整个干燥过程（除最初约 6 h 的升温段）都由内部水分扩散支配，${t}_{*}≈{R}_{0}^{2}/{D}_{eff}$。",
+    "style": null,
+    "math_ids": [
+      "M0243",
+      "M0244",
+      "M0245",
+      "M0246",
+      "M0247"
+    ]
+  },
+  {
+    "id": "P0922",
+    "text": "**因此提高干燥效率的根本途径是提高 $D$（即升温），而不是加大风速（$h$）或强化表面传质（$β$）。**",
+    "style": null,
+    "math_ids": [
+      "M0248",
+      "M0249",
+      "M0250"
+    ]
+  },
+  {
+    "id": "P0923",
+    "text": "$h$ 的影响仅 $±0.14%$ 是同一结论的另一面：热特征时间仅 2369 s，而总时长 2.4 天（$2.1×1{0}^{5}$ s），温度场在 6 h 内即达准稳态 50 °C，热量输运从来不是限制环节。",
+    "style": null,
+    "math_ids": [
+      "M0251",
+      "M0252",
+      "M0253"
+    ]
+  },
+  {
+    "id": "P0924",
+    "text": "8.1.2　发现二：表面传质系数存在最优值（\"表面结壳\"效应）",
+    "style": "Heading3",
+    "math_ids": []
+  },
+  {
+    "id": "P0925",
+    "text": "$β$ 的敏感度 非单调：$β×0.5→{t}_{*}$ 增加 10.5%（表面排汽不足），$β×1.25→{t}_{*}$ 略降 0.17%（最优附近），而 $β×2→{t}_{*}$ 反而增加 5.8%。",
+    "style": null,
+    "math_ids": [
+      "M0254",
+      "M0255",
+      "M0256",
+      "M0257"
+    ]
+  },
+  {
+    "id": "P0926",
+    "text": "物理机理：干燥速率 $D∝exp(-0.45/C)$ 对含水率极度敏感。若表面传质过快，表层迅速失水至很低的 $C$，其 $D$ 随之下降一两个数量级，形成一层 高阻力的\"干壳\"（case hardening），反而堵死了内部水分向表面的通道。$β$ 越大，干壳形成越早、越致密，反效果越强。",
+    "style": null,
+    "math_ids": [
+      "M0258",
+      "M0259",
+      "M0260",
+      "M0261"
+    ]
+  },
+  {
+    "id": "P0927",
+    "text": "同一机理也解释了 ${C}_{eq}$ 的反直觉作用：${C}_{eq}$ 提高 20%（表面不易变干）使 ${t}_{*}$ 减小 1.80%，因为它抑制了干壳的形成。",
+    "style": null,
+    "math_ids": [
+      "M0262",
+      "M0263",
+      "M0264"
+    ]
+  },
+  {
+    "id": "P0928",
+    "text": "工程启示：热风干燥不宜盲目提高风速与排湿强度；存在一个使总干燥时间最短的最优表面传质条件（本文基准 $β$ 已接近该最优值）。这为\"分阶段变温变风\"的干燥工艺优化提供了理论依据：前期宜强排湿，后期应适当降低表面传质强度以避免结壳。",
+    "style": null,
+    "math_ids": [
+      "M0265"
+    ]
+  },
+  {
+    "id": "P0929",
+    "text": "[IMAGE media/image20.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0930",
+    "text": "图18　关键参数对烘干时间 T* 的敏感度（龙卷风图）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0931",
+    "text": "8.2　边界延拓口径",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0932",
+    "text": "口径",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0933",
+    "text": "说明",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0934",
+    "text": "t* / h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0935",
+    "text": "相对基准",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0936",
+    "text": "主模型",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0937",
+    "text": "附件1 数据 + t>14400 s 取平台值 (50.0, 0.0500)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0938",
+    "text": "58.9518",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0939",
+    "text": "基准",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0940",
+    "text": "替代 1",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0941",
+    "text": "t>14400 s 取数据段均值 (49.9989, 0.04999)",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0942",
+    "text": "58.9603",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0943",
+    "text": "+0.01%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0944",
+    "text": "替代 2",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0945",
+    "text": "全程指数平滑拟合",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0946",
+    "text": "58.9572",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0947",
+    "text": "+0.01%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0948",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0949",
+    "text": "三种口径的差异仅 $0.01%$，证明结论对边界延拓方式完全不敏感，第 4.5.4 节的延拓选择是稳健的。",
+    "style": null,
+    "math_ids": [
+      "M0266"
+    ]
+  },
+  {
+    "id": "P0950",
+    "text": "8.3　空气水分浓度基准",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0951",
+    "text": "题面把烘房水分浓度写成 kg/kg 而未注明基准。本文直接取附件 1 数值作为等效平衡含水率。替代口径按湿基→干基换算 ${C}_{eq}^{dry}=w/(1-w)$（$w=0.05$ 时 ${C}_{eq}^{dry}=0.0526$，即整体提高约 5%）：",
+    "style": null,
+    "math_ids": [
+      "M0267",
+      "M0268",
+      "M0269"
+    ]
+  },
+  {
+    "id": "P0952",
+    "text": "口径",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0953",
+    "text": "t* / h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0954",
+    "text": "相对基准",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0955",
+    "text": "直接使用附件值（主模型）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0956",
+    "text": "58.9518",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0957",
+    "text": "基准",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0958",
+    "text": "由湿基换算为干基",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0959",
+    "text": "58.1894",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0960",
+    "text": "−1.29%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0961",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0962",
+    "text": "差异 1.29%，远小于 $D$ 的不确定性。题面未注明基准这一歧义对最终结论影响有限。",
+    "style": null,
+    "math_ids": [
+      "M0270"
+    ]
+  },
+  {
+    "id": "P0963",
+    "text": "8.4　收缩口径对比（问题 4）：几何效应与物性效应的分离",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0964",
+    "text": "为把\"几何收缩\"与\"附录 4 物性差异\"两个因素分离，构造 $2×2$ 组合（均取 $N=200$、$sub=12$）：",
+    "style": null,
+    "math_ids": [
+      "M0271",
+      "M0272",
+      "M0273"
+    ]
+  },
+  {
+    "id": "P0965",
+    "text": "t* / h",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0966",
+    "text": "附录 3 物性",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0967",
+    "text": "附录 4 物性",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0968",
+    "text": "无收缩（R ≡ 2 cm）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0969",
+    "text": "58.9518",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0970",
+    "text": "130.3046",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0971",
+    "text": "仿射收缩（R(t)）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0972",
+    "text": "25.3833",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0973",
+    "text": "51.1747（主模型）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0974",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0975",
+    "text": "效应",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0976",
+    "text": "计算",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0977",
+    "text": "倍数",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0978",
+    "text": "几何收缩效应（附录4物性下）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0979",
+    "text": "51.1747 / 130.3046",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0980",
+    "text": "0.393（缩短 61%）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0981",
+    "text": "物性效应（含收缩）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0982",
+    "text": "51.1747 / 25.3833",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0983",
+    "text": "2.016（延长 102%）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0984",
+    "text": "净效应（问题3 → 问题4）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0985",
+    "text": "51.1747 / 58.9518",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0986",
+    "text": "0.868（缩短 13.2%）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0987",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0988",
+    "text": "结论：① 几何收缩本身极其有利，在相同物性下使干燥时间缩短约 61%（因为迁移距离按 ${R}^{2}$ 缩短，${R}_{end}^{2}/{R}_{0}^{2}=0.359$）；② 附录 4 的扩散系数显著偏小，在相同几何下使时间延长约 102%；③ 两者相抵后净效应是缩短约 13%。这正是 7.4 节强调的\"不能把问题 3、4 的时间差全部归因于收缩\"的定量依据。",
+    "style": null,
+    "math_ids": [
+      "M0274",
+      "M0275"
+    ]
+  },
+  {
+    "id": "P0989",
+    "text": "另外，把 $R$ 固定为终值 1.198 cm 得 ${t}_{*}=47.88$ h，说明\"全程用终半径\"会高估收缩的有利作用（真实收缩是渐进的，前期半径大、扩散路径长，故时间更长）。",
+    "style": null,
+    "math_ids": [
+      "M0276",
+      "M0277"
+    ]
+  },
+  {
+    "id": "P0990",
+    "text": "[IMAGE media/image21.png]",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0991",
+    "text": "图19　问题 4 收缩口径与物性组合对烘干时间的影响",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0992",
+    "text": "8.5　数值参数与不确定度",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P0993",
+    "text": "不确定度汇总：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0994",
+    "text": "来源",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0995",
+    "text": "量级",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0996",
+    "text": "与 D 不确定度相比",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0997",
+    "text": "时间离散",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0998",
+    "text": "＜1e-5",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P0999",
+    "text": "可忽略",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1000",
+    "text": "网格离散",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1001",
+    "text": "±0.30%（N=400→800）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1002",
+    "text": "可忽略",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1003",
+    "text": "边界延拓口径",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1004",
+    "text": "±0.01%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1005",
+    "text": "可忽略",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1006",
+    "text": "Ceq 基准",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1007",
+    "text": "±1.3%",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1008",
+    "text": "小",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1009",
+    "text": "D(C,T) 经验式",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1010",
+    "text": "±100% 量级",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1011",
+    "text": "主导",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1012",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1013",
+    "text": "结论：模型的数值误差与边界条件口径误差都在 1% 量级或更小，**总不确定度由题给经验式 $D(C,T)$ 决定**。这提示论文应把\"经验式适用范围与可靠性\"作为模型局限的重点讨论对象。",
+    "style": null,
+    "math_ids": [
+      "M0278"
+    ]
+  },
+  {
+    "id": "P1014",
+    "text": "\n",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1015",
+    "text": "九、模型评价、改进与推广",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P1016",
+    "text": "9.1　优点",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P1017",
+    "text": "· 四问统一：以材料坐标 + 仿射收缩变换把问题 1—4 纳入同一方程组，固定半径是其特例（$R≡{R}_{0}$），避免了对问题 4 另起一套模型。",
+    "style": null,
+    "math_ids": [
+      "M0279"
+    ]
+  },
+  {
+    "id": "P1018",
+    "text": "· 能量方程严格：识别并修正了\"变 $ρ{c}_{p}$ 时守恒量选择\"导致的虚假热源，使温度不会非物理地超越环境温度；推导给出相消关系与量级估计。",
+    "style": null,
+    "math_ids": [
+      "M0280"
+    ]
+  },
+  {
+    "id": "P1019",
+    "text": "· 可验证：用 Duhamel–Bessel 解析解在 168 个点上校核，最大偏差 $2.35×1{0}^{-4}$ °C，低于报告精度；另有守恒检验与收敛性检验。",
+    "style": null,
+    "math_ids": [
+      "M0281"
+    ]
+  },
+  {
+    "id": "P1020",
+    "text": "· 数值可信：节点中心有限体积 + 调和平均界面系数 + θ 方法 + Rannacher 启动 + 追赶法，无条件稳定、二阶精度、严格守恒；网格取 20 的倍数使取样点恰为节点。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1021",
+    "text": "· 稳健性充分：对边界延拓、水分浓度基准、收缩口径、网格与时间步均做了系统对比。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1022",
+    "text": "9.2　局限",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P1023",
+    "text": "· 未显式引入 相变潜热 与水分携带焓（后者已证明量级可忽略，前者不可忽略但题未给参数）；",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1024",
+    "text": "· 一维径向近似忽略端面（已定量证明影响很小，但使传质面积低估约 8%，故 ${t}_{*}$ 偏保守）；",
+    "style": null,
+    "math_ids": [
+      "M0282"
+    ]
+  },
+  {
+    "id": "P1025",
+    "text": "· 假定 仿射（同比）收缩，附件 2 的单一 $R(t)$ 曲线不足以确定真实内部速度场；",
+    "style": null,
+    "math_ids": [
+      "M0283"
+    ]
+  },
+  {
+    "id": "P1026",
+    "text": "· 经验 $ρ(C)$ 与\"固定干物质骨架\"并非严格相容，本文通过对 ${ρ}_{d}$ 的恰当约去回避了该矛盾。",
+    "style": null,
+    "math_ids": [
+      "M0284",
+      "M0285"
+    ]
+  },
+  {
+    "id": "P1027",
+    "text": "9.3　模型改进：相变潜热耦合",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P1028",
+    "text": "在表面引入蒸发能耗（忽略表面储能）：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1029",
+    "text": "$h ({T}_{∞}-{T}_{s})=k\\frac{∂T}{∂r}{|}_{R}+{L}_{v} {j}_{evap}$",
+    "style": null,
+    "math_ids": [
+      "M0286"
+    ]
+  },
+  {
+    "id": "P1030",
+    "text": "令 ${L}_{v}≈2.4×1{0}^{6}$ J/kg（50 °C 量级），以表面水通量作为蒸发通量，则在问题 3 的初期 ${L}_{v}{j}_{w}∼2.4×1{0}^{6}×1{0}^{-6}≈2.4$ W/m²，而 $h({T}_{∞}-{T}_{s})∼25×5=125$ W/m²，蒸发耗热约占总热流的 2%，故对温度场影响有限；但会显著降低表面温度，进而通过 $D∝{e}^{-3850/T}$ 降低干燥速率。",
+    "style": null,
+    "math_ids": [
+      "M0287",
+      "M0288",
+      "M0289",
+      "M0290"
+    ]
+  },
+  {
+    "id": "P1031",
+    "text": "实现要点：潜热只能计入一次，不能在表面与内部重复计入；需明确蒸发位置（表面蒸发 vs 内部原位蒸发）与水分通量基准。",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1032",
+    "text": "9.4　推广",
+    "style": "Heading2",
+    "math_ids": []
+  },
+  {
+    "id": "P1033",
+    "text": "· 二维轴对称模型：去掉端面假设，用 $(r,z)$ 网格求解，代价是计算量约 $1{0}^{2}$ 倍；",
+    "style": null,
+    "math_ids": [
+      "M0291",
+      "M0292"
+    ]
+  },
+  {
+    "id": "P1034",
+    "text": "· 多组分/多相模型：区分自由水与结合水，引入吸附等温线；",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1035",
+    "text": "· 变温热风优化：把 ${T}_{∞}(t)$ 作为控制变量，以\"能耗 + 时间 + 品质\"为目标做最优控制；",
+    "style": null,
+    "math_ids": [
+      "M0293"
+    ]
+  },
+  {
+    "id": "P1036",
+    "text": "· 品质耦合：把有效成分降解动力学 $dQ/dt=-{k}_{Q}(T)Q$ 与干燥模型耦合，求\"最短时间—最高品质\"的 Pareto 前沿；",
+    "style": null,
+    "math_ids": [
+      "M0294"
+    ]
+  },
+  {
+    "id": "P1037",
+    "text": "· 反问题：由实测含水率曲线反演 $D(C,T)$ 或界面传质系数。",
+    "style": null,
+    "math_ids": [
+      "M0295"
+    ]
+  },
+  {
+    "id": "P1038",
+    "text": "\n",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1039",
+    "text": "附录 A　结果文件与程序清单",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P1040",
+    "text": "文件",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1041",
+    "text": "内容",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1042",
+    "text": "result1.xlsx",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1043",
+    "text": "问题 1 结果：「温度」「水分浓度」双工作表，1800 行 × 21 列",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1044",
+    "text": "result2.xlsx",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1045",
+    "text": "问题 2 结果：同上，10800 行",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1046",
+    "text": "result3.xlsx",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1047",
+    "text": "问题 3 结果：单工作表，60 s 步长至烘干结束（3473 行）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1048",
+    "text": "result4.xlsx",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1049",
+    "text": "问题 4 结果：含「药材表面」列（3074 行）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1050",
+    "text": "code/solver.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1051",
+    "text": "四问统一的有限体积求解器（含能量方程严格形式）",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1052",
+    "text": "code/analytic.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1053",
+    "text": "Bessel 函数（Miller 递推）、特征根、Duhamel 卷积解析解",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1054",
+    "text": "code/verify.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1055",
+    "text": "V1—V5 独立验证套件",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1056",
+    "text": "code/results.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1057",
+    "text": "生成 result1—result4.xlsx 与论文表格",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1058",
+    "text": "code/figures.py / figures2.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1059",
+    "text": "生成全部矢量插图",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1060",
+    "text": "code/sensitivity.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1061",
+    "text": "敏感度分析与模型对比",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1062",
+    "text": "code/conv_tstar.py",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1063",
+    "text": "烘干时间 T* 的收敛性研究",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1064",
+    "text": "",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1065",
+    "text": "附录 B　⚠️ 合规提醒（务必执行）",
+    "style": "Heading1",
+    "math_ids": []
+  },
+  {
+    "id": "P1066",
+    "text": "按《全国大学生数学建模竞赛人工智能工具使用规定（2026 年试行）》：",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1067",
+    "text": "① 论文 参考文献之前 必须设置「AI工具使用声明」，二选一填写；",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1068",
+    "text": "② 使用 AI 的，支撑材料必须包含 `AI工具使用详情.pdf`，内容含：工具名称/版本、具体使用目的与环节、主要提示方式与使用过程、对 AI 输出的采纳与人工核验情况；",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1069",
+    "text": "③ 官方原文：\"将未经必要人工审查与核实的 AI 生成内容直接作为核心建模与分析成果提交的，取消其评奖资格。\"",
+    "style": null,
+    "math_ids": []
+  },
+  {
+    "id": "P1070",
+    "text": "本模型的每一条推导、每一个数值都需要由参赛队员本人复核并能够当面讲清。 特别是 4.2 节的能量方程推导、5.3 节的数值格式、6.4 节的收敛性结论——这三处是论文最可能被评委追问的地方。",
+    "style": null,
+    "math_ids": []
+  }
+]

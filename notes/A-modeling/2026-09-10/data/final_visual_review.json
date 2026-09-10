@@ -1,0 +1,654 @@
+{
+  "schema_version": "1.0",
+  "run_id": "final_v6a",
+  "generated_at": "2026-09-10T16:39:30.574713+00:00",
+  "reviewer": "independent workflow_contracts subagent",
+  "status": "PASS_FOR_FOUR_MAIN_FIGURES_AND_TABLE_PRESENTATION",
+  "source_directory": "paper_output/results/production/final_v6a",
+  "process_observed_evidence": {
+    "path": "paper_output/results/production/final_v6a/process_result.json",
+    "bytes": 815,
+    "sha256": "83915af102ac762430b02beaf41c37b708b635b4eb13eede9b01d340cf2de3dd"
+  },
+  "production_return_code": 0,
+  "scope": "Four production PNGs visually inspected; all four production PDFs independently rendered with Poppler and visually inspected; complete seven paper CSVs read; production live Run export validation reports and artifact hashes audited. This review did not independently resolve the PDE or rerun every XLSX cell readback.",
+  "figures": [
+    {
+      "question_id": "Q1",
+      "figure_id": "fig_q1_profiles",
+      "status": "PASS",
+      "manual_visual_observation": "已完整查看正式 PNG 和 Poppler 渲染的 PDF 单页。中文标题、两子图、摄氏温度/干基含水率、物理距离 cm、七个 s 时刻图例均清晰；说明列明一维有效模型、端面/潜热与等效平衡约定；没有文字遮挡、裁切或缺字。",
+      "png": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.png",
+        "bytes": 220065,
+        "sha256": "a4f82ffc04435a7b426e556e5fd0fe2fca47a034ee25a5bccf27df46bf06c001"
+      },
+      "pdf": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.pdf",
+        "bytes": 61860,
+        "sha256": "6024b7a69f78c11dafb987d369c044bcba5b368b7c24a566fe59f7bc807d2f18"
+      },
+      "pdf_render": {
+        "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q1_profiles_pdf_render.png",
+        "bytes": 105721,
+        "sha256": "988fda06ac8b7dfffc0ef024be1bf0072d85b8cb67ecec3fb5d25e5d333a58e0"
+      },
+      "metadata": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.json",
+        "bytes": 3984,
+        "sha256": "59419e2d20b1d2574caca6f7533d55517c724ed9e7b1cb22ef3d6af0c8e33b4b"
+      },
+      "plot_data": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+        "bytes": 12242,
+        "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096"
+      },
+      "source_hashes_current_and_matching": true
+    },
+    {
+      "question_id": "Q2",
+      "figure_id": "fig_q2_profiles",
+      "status": "PASS",
+      "manual_visual_observation": "已完整查看正式 PNG 和 PDF 单页。标题明确仅展示前三小时，六个 h 时刻图例清楚；温度°C与含水率kg/kg、物理半径cm正确。完整工作簿另覆盖全程，图示范围不冒充工作簿终点。",
+      "png": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.png",
+        "bytes": 219522,
+        "sha256": "c06bebb0f0ff3dd1f7ca5eeee9713a2fe4a0c06a5262c70ffc23d0b877e74327"
+      },
+      "pdf": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.pdf",
+        "bytes": 60863,
+        "sha256": "d745d1d1ce70453712dd7ebf410d6dd49457e0552005904c51013763d5be6171"
+      },
+      "pdf_render": {
+        "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q2_profiles_pdf_render.png",
+        "bytes": 102861,
+        "sha256": "fb1dd9f70dc05b3a47f23fcfcff28db94713d099872d548404c4d5a55cff52bf"
+      },
+      "metadata": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.json",
+        "bytes": 4001,
+        "sha256": "369b20a95a111d9aafb7a22609f6b1946e8ae4f90985d8f5544ae0b6500cf067"
+      },
+      "plot_data": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles_data.npz",
+        "bytes": 12165,
+        "sha256": "21fe824252f59c64f47b4a85b263481d61ec4f732b24368dc17771c49256a97e"
+      },
+      "source_hashes_current_and_matching": true
+    },
+    {
+      "question_id": "Q3",
+      "figure_id": "fig_q3_drying",
+      "status": "PASS",
+      "manual_visual_observation": "已完整查看正式 PNG 和 PDF 单页。固定物理半径0..2cm与全时段h热图，中心/干质量加权均值/表面和0.15kg/kg阈值清晰，临界时刻箭头无裁切。4h分界及其后50°C、0.05kg/kg延拓假设在脚注注明。图中57.472h为临界时刻的三位小数标注，论文上取整报告57.4724h另行核验。",
+      "png": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.png",
+        "bytes": 234364,
+        "sha256": "70139c9fa2a43bd4507a87a46d1d757944919e08464f866a82ca6544978bb6ba"
+      },
+      "pdf": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.pdf",
+        "bytes": 68207,
+        "sha256": "de673f06a715fa8a4506aa0ee9a14c56bee6008f2399a816765ebf9863074da1"
+      },
+      "pdf_render": {
+        "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q3_drying_pdf_render.png",
+        "bytes": 128931,
+        "sha256": "cfda1074e466a131a3e13cd18ae291093fe74758268f3a6d18228d26ed112d57"
+      },
+      "metadata": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.json",
+        "bytes": 4286,
+        "sha256": "eea5178861b44818507fe534851c6c21d5612526f7cafd76cf160bd7bd3a27eb"
+      },
+      "plot_data": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+        "bytes": 249286,
+        "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c"
+      },
+      "source_hashes_current_and_matching": true,
+      "data_geometry_check": {
+        "status": "PASS",
+        "times": 266,
+        "physical_radii": 121,
+        "outside_nan_count": 0,
+        "inside_all_finite": true,
+        "radius_vs_observed_piecewise_linear_max_error_m": 0.0,
+        "centre_ge_mean_ge_surface_within_1e-9": true,
+        "maxC_equals_centre_within_1e-9": true,
+        "last_time_s": 206902.0,
+        "last_max_C": 0.14999950103529133,
+        "last_radius_m": 0.02
+      }
+    },
+    {
+      "question_id": "Q4",
+      "figure_id": "fig_q4_drying",
+      "status": "PASS",
+      "manual_visual_observation": "已完整查看正式 PNG 和 PDF 单页。R(t)曲线界定收缩域；曲线上方完全留白并标为域外（非药材），不是零水分。物理r轴与小时t轴、中心/均值/实际表面轨迹、阈值与临界时刻标注清晰。脚注说明4h后环境延拓。表面列独立于固定2cm列。",
+      "png": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.png",
+        "bytes": 260825,
+        "sha256": "59958d509154a1b8b2ef4cecc05a552ea748027eda331262461c5b08016b16c9"
+      },
+      "pdf": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.pdf",
+        "bytes": 84222,
+        "sha256": "243dd20d0be71564f5415ec605d8871ed1ae1a384598d2b547b83b699444da4e"
+      },
+      "pdf_render": {
+        "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/fig_q4_drying_pdf_render.png",
+        "bytes": 144742,
+        "sha256": "c2347419811340cf700192bb7bf600572b03ae25ef4dd09c33cd165c0d99cb32"
+      },
+      "metadata": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.json",
+        "bytes": 4285,
+        "sha256": "39d3c233381e3d4829e3e0413953fe3ac7ca2c03118a1fbc83cc0565c7e26191"
+      },
+      "plot_data": {
+        "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying_data.npz",
+        "bytes": 222086,
+        "sha256": "340ebfd87d947121cd58214a616c7dd2dd6a5c93f6e1c4a4bf2b81a7a7b1dbc9"
+      },
+      "source_hashes_current_and_matching": true,
+      "data_geometry_check": {
+        "status": "PASS",
+        "times": 360,
+        "physical_radii": 121,
+        "outside_nan_count": 15648,
+        "inside_all_finite": true,
+        "radius_vs_observed_piecewise_linear_max_error_m": 0.0,
+        "centre_ge_mean_ge_surface_within_1e-9": true,
+        "maxC_equals_centre_within_1e-9": true,
+        "last_time_s": 183928.0,
+        "last_max_C": 0.14999900856092843,
+        "last_radius_m": 0.012
+      }
+    }
+  ],
+  "paper_tables": [
+    {
+      "question_id": "Q1",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+        "bytes": 380,
+        "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+      },
+      "header": [
+        "时间/s",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "data_rows": 7,
+      "first_row": [
+        "100.0000",
+        "28.0001",
+        "28.0003",
+        "28.0040",
+        "28.0327",
+        "28.1801"
+      ],
+      "last_row": [
+        "1800.0000",
+        "33.5753",
+        "33.7720",
+        "34.3642",
+        "35.3621",
+        "36.7856"
+      ],
+      "outside_blank_count": 0,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 42,
+      "independent_live_validation_status": "PASS",
+      "meaning": "按照题目指定正文时刻与固定物理半径保存。"
+    },
+    {
+      "question_id": "Q1",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+        "bytes": 345,
+        "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+      },
+      "header": [
+        "时间/s",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "data_rows": 7,
+      "first_row": [
+        "100.0000",
+        "2.5500",
+        "2.5500",
+        "2.5500",
+        "2.5500",
+        "2.2470"
+      ],
+      "last_row": [
+        "1800.0000",
+        "2.5500",
+        "2.5497",
+        "2.5383",
+        "2.3755",
+        "1.5102"
+      ],
+      "outside_blank_count": 0,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 42,
+      "independent_live_validation_status": "PASS",
+      "meaning": "按照题目指定正文时刻与固定物理半径保存。"
+    },
+    {
+      "question_id": "Q2",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+        "bytes": 315,
+        "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+      },
+      "header": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "data_rows": 6,
+      "first_row": [
+        "0.5000",
+        "32.1892",
+        "32.3821",
+        "32.9659",
+        "33.9608",
+        "35.4130"
+      ],
+      "last_row": [
+        "3.0000",
+        "49.8495",
+        "49.8553",
+        "49.8746",
+        "49.9101",
+        "49.9664"
+      ],
+      "outside_blank_count": 0,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 36,
+      "independent_live_validation_status": "PASS",
+      "meaning": "按照题目指定正文时刻与固定物理半径保存。"
+    },
+    {
+      "question_id": "Q2",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+        "bytes": 285,
+        "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+      },
+      "header": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "data_rows": 6,
+      "first_row": [
+        "0.5000",
+        "2.5499",
+        "2.5489",
+        "2.5256",
+        "2.3257",
+        "1.6486"
+      ],
+      "last_row": [
+        "3.0000",
+        "1.7662",
+        "1.7165",
+        "1.5702",
+        "1.3333",
+        "1.0081"
+      ],
+      "outside_blank_count": 0,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 36,
+      "independent_live_validation_status": "PASS",
+      "meaning": "按照题目指定正文时刻与固定物理半径保存。"
+    },
+    {
+      "question_id": "Q3",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+        "bytes": 466,
+        "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+      },
+      "header": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "data_rows": 10,
+      "first_row": [
+        "6.0000",
+        "1.0170",
+        "0.9881",
+        "0.9015",
+        "0.7550",
+        "0.5328"
+      ],
+      "last_row": [
+        "57.4724",
+        "0.1500",
+        "0.1477",
+        "0.1402",
+        "0.1249",
+        "0.0527"
+      ],
+      "outside_blank_count": 0,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 60,
+      "independent_live_validation_status": "PASS",
+      "meaning": "按照题目指定正文时刻与固定物理半径保存。"
+    },
+    {
+      "question_id": "Q4",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+        "bytes": 390,
+        "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+      },
+      "header": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2",
+        "药材表面"
+      ],
+      "data_rows": 9,
+      "first_row": [
+        "6.0000",
+        "1.7196",
+        "1.5377",
+        "1.0226",
+        "",
+        "",
+        "0.4207"
+      ],
+      "last_row": [
+        "51.0906",
+        "0.1500",
+        "0.1413",
+        "0.1081",
+        "",
+        "",
+        "0.0526"
+      ],
+      "outside_blank_count": 18,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 63,
+      "independent_live_validation_status": "PASS",
+      "meaning": "Q4末列为实际材料表面；域外空白不是0；半径表另给cm坐标。"
+    },
+    {
+      "question_id": "Q4",
+      "artifact": {
+        "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+        "bytes": 172,
+        "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+      },
+      "header": [
+        "时间/h",
+        "表面半径/cm"
+      ],
+      "data_rows": 9,
+      "first_row": [
+        "6.0000",
+        "1.3740"
+      ],
+      "last_row": [
+        "51.0906",
+        "1.2000"
+      ],
+      "outside_blank_count": 0,
+      "read_in_full": true,
+      "independent_live_validation_checked_cells": 18,
+      "independent_live_validation_status": "PASS",
+      "meaning": "Q4末列为实际材料表面；域外空白不是0；半径表另给cm坐标。"
+    }
+  ],
+  "exports": [
+    {
+      "question_id": "Q1",
+      "workbook": {
+        "path": "paper_output/results/production/final_v6a/outputs/result1.xlsx",
+        "bytes": 390899,
+        "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+      },
+      "validation_report": {
+        "path": "paper_output/results/production/final_v6a/outputs/result1.validation.json",
+        "bytes": 5175,
+        "sha256": "7a716ca00499cc858fa0acf54786fc995d38947fb0602a427de011124268bf5a"
+      },
+      "validation_status": "PASS",
+      "sheets": {
+        "温度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "first_time_s": 0,
+          "last_time_s": 1800,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        },
+        "水分浓度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "first_time_s": 0,
+          "last_time_s": 1800,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "checked_workbook_cells": 79244,
+      "checked_paper_CSV_cells": 84,
+      "live_Run_sample_validation": {
+        "status": "PASS",
+        "samples": 14,
+        "max_abs_unrounded_difference": 0.0
+      },
+      "paper_table_time_contract": {
+        "unit": "s",
+        "stored_decimals": 4,
+        "query_uses_unrounded_seconds": true
+      },
+      "max_C_at_reported_time": null
+    },
+    {
+      "question_id": "Q2",
+      "workbook": {
+        "path": "paper_output/results/production/final_v6a/outputs/result2.xlsx",
+        "bytes": 29210086,
+        "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+      },
+      "validation_report": {
+        "path": "paper_output/results/production/final_v6a/outputs/result2.validation.json",
+        "bytes": 5165,
+        "sha256": "614e20e630d5b6a887d7334d43bcdb05e0ff6552e96a160658c2b4a88a0e05c1"
+      },
+      "validation_status": "PASS",
+      "sheets": {
+        "温度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "first_time_s": 0,
+          "last_time_s": 206902,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        },
+        "水分浓度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "first_time_s": 0,
+          "last_time_s": 206902,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "checked_workbook_cells": 9103732,
+      "checked_paper_CSV_cells": 72,
+      "live_Run_sample_validation": {
+        "status": "PASS",
+        "samples": 14,
+        "max_abs_unrounded_difference": 0.0
+      },
+      "paper_table_time_contract": {
+        "unit": "h",
+        "stored_decimals": 4,
+        "query_uses_unrounded_seconds": true
+      },
+      "max_C_at_reported_time": null
+    },
+    {
+      "question_id": "Q3",
+      "workbook": {
+        "path": "paper_output/results/production/final_v6a/outputs/result3.xlsx",
+        "bytes": 339137,
+        "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+      },
+      "validation_report": {
+        "path": "paper_output/results/production/final_v6a/outputs/result3.validation.json",
+        "bytes": 4530,
+        "sha256": "9a93cbf83cbfa292cab7b0aeff20f831dc204b5ac3d0ad00bb33bd806b2e1ba3"
+      },
+      "validation_status": "PASS",
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3451,
+          "total_rows": 3452,
+          "first_time_s": 0,
+          "last_time_s": 206902,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "checked_workbook_cells": 75922,
+      "checked_paper_CSV_cells": 60,
+      "live_Run_sample_validation": {
+        "status": "PASS",
+        "samples": 15,
+        "max_abs_unrounded_difference": 0.0
+      },
+      "paper_table_time_contract": {
+        "unit": "h",
+        "stored_decimals": 4,
+        "query_uses_unrounded_seconds": true,
+        "reported_time_s": 206900.64,
+        "reported_drying_time_h": 57.4724,
+        "critical_event_s": 206900.28702201758,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "conservative_post_verification_s": 206902.0,
+        "reported_time_h": 57.4724,
+        "regular_step_s": 21600.0,
+        "endpoint_convention": "6-hour samples plus upward-reported strict-drying time; distinct from workbook post-verification endpoint"
+      },
+      "max_C_at_reported_time": 0.14999989718225315
+    },
+    {
+      "question_id": "Q4",
+      "workbook": {
+        "path": "paper_output/results/production/final_v6a/outputs/result4.xlsx",
+        "bytes": 278278,
+        "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+      },
+      "validation_report": {
+        "path": "paper_output/results/production/final_v6a/outputs/result4.validation.json",
+        "bytes": 5992,
+        "sha256": "c1d065baf8c0fe8eb00e8dd05b76e5be68756a2caebf8dbf5228ca95bf0de6f5"
+      },
+      "validation_status": "PASS",
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "first_time_s": 0,
+          "last_time_s": 183928,
+          "outside_domain_blank_cells": 23173,
+          "value_comparison_max_abs_error": 0.0
+        },
+        "半径": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "first_time_s": 0,
+          "last_time_s": 183928,
+          "outside_domain_blank_cells": 0,
+          "value_comparison_max_abs_error": 0.0
+        }
+      },
+      "checked_workbook_cells": 76700,
+      "checked_paper_CSV_cells": 81,
+      "live_Run_sample_validation": {
+        "status": "PASS",
+        "samples": 15,
+        "max_abs_unrounded_difference": 0.0
+      },
+      "paper_table_time_contract": {
+        "unit": "h",
+        "stored_decimals": 4,
+        "query_uses_unrounded_seconds": true,
+        "reported_time_s": 183926.16,
+        "reported_drying_time_h": 51.0906,
+        "critical_event_s": 183926.06923258994,
+        "max_C_at_reported_time": 0.14999995339076624,
+        "conservative_post_verification_s": 183928.0,
+        "reported_time_h": 51.0906,
+        "regular_step_s": 21600.0,
+        "endpoint_convention": "6-hour samples plus upward-reported strict-drying time; distinct from workbook post-verification endpoint"
+      },
+      "max_C_at_reported_time": 0.14999995339076624
+    }
+  ],
+  "total_production_workbook_cells_with_actual_readback_evidence": 9335598,
+  "total_paper_CSV_cells_with_independent_live_Run_validation": 297,
+  "pdf_structure_font_evidence": {
+    "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/pdf_structure_and_fonts.json",
+    "bytes": 5127,
+    "sha256": "d61755a57c028e78e14d5faea50141ae7a8c0544eff77564720dbf88107a69f7"
+  },
+  "q1_q2_plot_table_value_evidence": {
+    "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/q1_q2_plot_table_consistency.json",
+    "bytes": 2277,
+    "sha256": "ea7cbbbb3211a46037f7d24da4910a8663efaac45463e925384743e225d7193c"
+  },
+  "support_size_preflight": {
+    "evidence": {
+      "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_existing_numerical_materials.json",
+      "bytes": 21141,
+      "sha256": "b8de0326a06e999ef25a7fb034375edc7116904141f19ed8c74e2568f7a41aa6"
+    },
+    "workbooks_total_bytes": 30218400,
+    "candidate_bytes": 14382321,
+    "candidate_sha256": "f25729fa3f9f01c5a97cdc07b7bd6d178040dc19f3a14555ef22022732479e4e",
+    "candidate_files": 93,
+    "remaining_bytes_to_20_decimal_MB": 5617679,
+    "status": "NUMERICAL_CANDIDATE_SIZE_PASS_SUBMISSION_INCOMPLETE",
+    "all_entries_losslessly_verified": true
+  },
+  "issues": [],
+  "limitations": [
+    "四位小数保存是输出契约，不等于经验模型预测精度；本检查没有内部实验真值。",
+    "图上临界时刻的显示精度与论文严格上取整报告时刻不同，正文采用Q3 57.4724h、Q4 51.0906h，并保留原精度严格阈值检验。",
+    "正式完整支撑包尚须加入AI工具使用详情.pdf及最终复现说明，并进行匿名性和最终大小复核。",
+    "本子任务未操作GUI或Git；模型代码的VS复现与用户人工审查由主代理单独记录。"
+  ],
+  "source_and_production_files_modified": false
+}

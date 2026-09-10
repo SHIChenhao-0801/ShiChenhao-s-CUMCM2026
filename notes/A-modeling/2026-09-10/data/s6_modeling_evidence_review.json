@@ -1,0 +1,1100 @@
+{
+  "checkpoint_id": "S6_final_v6a_execution_and_modeling_evidence_review",
+  "generated_at": "2026-09-10T17:11:15.404718+00:00",
+  "status": "PASS",
+  "acceptance_scope": "S6 official execution/result evidence, plus explicit static and saved-data consistency checks. Not full modeling/GUI/human/submission acceptance.",
+  "score": 100.0,
+  "score_basis": "10 transparent execution-evidence criteria only; not a contest score or predictive-accuracy score. Final fixed-N time checks are recorded separately and complete; GUI/human/submission work remains explicitly open.",
+  "official_evidence_gate": {
+    "path": "paper_output/qa/evidence_gate_report.json",
+    "bytes": 2028,
+    "sha256": "569a3a42937ca7b1c3261e4537feb429c0d443d652973c4760584c14a0be4536"
+  },
+  "official_evidence_gate_status": "PASS",
+  "official_questions": [
+    {
+      "question_id": "Q1",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 3,
+      "conclusion_count": 1,
+      "figure_count": 2,
+      "table_count": 2
+    },
+    {
+      "question_id": "Q2",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 3,
+      "conclusion_count": 1,
+      "figure_count": 1,
+      "table_count": 2
+    },
+    {
+      "question_id": "Q3",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 4,
+      "conclusion_count": 1,
+      "figure_count": 1,
+      "table_count": 1
+    },
+    {
+      "question_id": "Q4",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 4,
+      "conclusion_count": 1,
+      "figure_count": 2,
+      "table_count": 2
+    }
+  ],
+  "official_input_hashes": {
+    "paper_output/plan/model_route.json": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+    "paper_output/figure_index.json": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c",
+    "paper_output/results/model_results.json": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547",
+    "paper_output/results/run_manifest.json": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87",
+    "paper_output/results/metrics.json": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28",
+    "paper_output/results/conclusions.json": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505",
+    "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b"
+  },
+  "official_S6_guard": {
+    "path": "notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.guard_snapshot.json",
+    "bytes": 1039,
+    "sha256": "3e05a9300bc7b75fb1c11754306642e0ff47301853e7fd9b3381f05792a6c679"
+  },
+  "reviewed_inputs": [
+    {
+      "path": "paper_output/plan/model_route.json",
+      "bytes": 34621,
+      "sha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e"
+    },
+    {
+      "path": "paper_output/figure_index.json",
+      "bytes": 23386,
+      "sha256": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c"
+    },
+    {
+      "path": "paper_output/results/model_results.json",
+      "bytes": 42888,
+      "sha256": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547"
+    },
+    {
+      "path": "paper_output/results/run_manifest.json",
+      "bytes": 31524,
+      "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+    },
+    {
+      "path": "paper_output/results/metrics.json",
+      "bytes": 6918,
+      "sha256": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28"
+    },
+    {
+      "path": "paper_output/results/conclusions.json",
+      "bytes": 10392,
+      "sha256": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505"
+    },
+    {
+      "path": "paper_output/tables/table_index.json",
+      "bytes": 4080,
+      "sha256": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b"
+    },
+    {
+      "path": "paper_output/context/active_problem_scope.json",
+      "bytes": 14160,
+      "sha256": "836c5fcdf7145317cfa0d6fdd47822a2982077c16815ec5ed5797fcf8af37f50"
+    },
+    {
+      "path": "paper_output/plan/rubric_alignment.json",
+      "bytes": 16245,
+      "sha256": "0886949f9d48589541a72f48d6c6903f6114c63ecd48cb2d8c88d80a67f4ad40"
+    },
+    {
+      "path": "paper_output/data_cleaned/load_report.json",
+      "bytes": 8196,
+      "sha256": "7957b67c0f168b4c39e5509f483f70337809377f946910b79d9700153a4e5626"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/final_visual_review.json",
+      "bytes": 23763,
+      "sha256": "e151b6556941e8674a622edf1d91941bdc9df8d87388c088178446b7c61e0147"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/physics/formula_registry_review.md",
+      "bytes": 4993,
+      "sha256": "94f32748e6d1ee928be9726e0f239d43d7510fa98f90f4036d01ec692c2b6c04"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/physics/physics_physical_sensitivity_review.md",
+      "bytes": 11063,
+      "sha256": "dfb3f945c261b97ae2a55dbb40797b75af678dae93d518ad2516af5896835306"
+    },
+    {
+      "path": "paper_output/results/dense_storage_verification_v6/verification.json",
+      "bytes": 9108,
+      "sha256": "225e25da40b3fe9e144becb9a86c025f744c2686e8a49bae39d47fbbc998c327"
+    },
+    {
+      "path": "paper_output/results/jacobian_validation/integrated_v4/analytic_jacobian_selftest.json",
+      "bytes": 451106,
+      "sha256": "77a27ab8b102306e2d64fc54cf28f91706432f4f7a22020752164b44c43403ee"
+    },
+    {
+      "path": "paper_output/results/axisymmetric_check/aggregate_summary.json",
+      "bytes": 1849,
+      "sha256": "f0776ffd2cb78c09e4717c35df85118e103ae95add90ec91022bcda6ae528496"
+    }
+  ],
+  "review_implementation_sources": [
+    {
+      "path": "D:\\Document\\数学建模\\agent-skills\\01-yushui-verified\\skills\\quality-assurance-auditor\\SKILL.md",
+      "bytes": 14497,
+      "sha256": "46076ca54449d3d997b1dc8e4358b25d2007f7083ed9a4c5392f54222643d161"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\agent-skills\\01-yushui-verified\\skills\\quality-assurance-auditor\\scripts\\evidence_gate.py",
+      "bytes": 19612,
+      "sha256": "8a9521168f84e74d17c89f54281a12a3caa68e03861c5e63a0ccacc99618503a"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\agent-skills\\01-yushui-verified\\skills\\paper-workflow-orchestrator\\scripts\\workflow_guard.py",
+      "bytes": 31756,
+      "sha256": "d81759ad2fc16bc4bd3781102d56c0b8d5075ffb71e0fb13cb18417c810bee8b"
+    }
+  ],
+  "criteria": [
+    {
+      "criterion": "four_question_scope",
+      "status": "PASS"
+    },
+    {
+      "criterion": "S5_and_S6_official",
+      "status": "PASS"
+    },
+    {
+      "criterion": "production_real_exit_and_fresh_hashes",
+      "status": "PASS"
+    },
+    {
+      "criterion": "all_metrics_numeric_exact_source",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Q2_Q3_same_trajectory",
+      "status": "PASS"
+    },
+    {
+      "criterion": "equation_version_bridge",
+      "status": "PASS"
+    },
+    {
+      "criterion": "saved_final_vs_spatial_fine_samples_equal",
+      "status": "PASS"
+    },
+    {
+      "criterion": "positive_fields_properties_mass_identity",
+      "status": "PASS"
+    },
+    {
+      "criterion": "four_complete_exports_and_seven_CSV_validation",
+      "status": "PASS"
+    },
+    {
+      "criterion": "four_primary_graphs_visual_check",
+      "status": "PASS"
+    }
+  ],
+  "metric_checks": [
+    {
+      "question_id": "Q1",
+      "metric_name": "mass_balance_absolute_residual",
+      "value": 5.773159728050814e-15,
+      "evidence_path": "paper_output/results/production/final_v6a/Q1/summary.json",
+      "pointer": "/diagnostics/max_mass_balance_abs_kg_per_kg",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q1",
+      "metric_name": "radial_intervals",
+      "value": 3200,
+      "evidence_path": "paper_output/results/production/final_v6a/Q1/summary.json",
+      "pointer": "/settings/intervals",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q1",
+      "metric_name": "center_C_at_report_time",
+      "value": 2.549992403819304,
+      "evidence_path": "paper_output/results/production/final_v6a/Q1/summary.json",
+      "pointer": "/metric_samples/Q1/C/0/0",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q2",
+      "metric_name": "mass_balance_absolute_residual",
+      "value": 1.1546319456101628e-14,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/diagnostics/max_mass_balance_abs_kg_per_kg",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q2",
+      "metric_name": "radial_intervals",
+      "value": 3200,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/settings/intervals",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q2",
+      "metric_name": "center_C_at_report_time",
+      "value": 1.7661771002440243,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/metric_samples/Q2/C/0/0",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q3",
+      "metric_name": "mass_balance_absolute_residual",
+      "value": 1.1546319456101628e-14,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/diagnostics/max_mass_balance_abs_kg_per_kg",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q3",
+      "metric_name": "radial_intervals",
+      "value": 3200,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/settings/intervals",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q3",
+      "metric_name": "center_C_at_report_time",
+      "value": 0.14999989718225315,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/metric_samples/Q3/C/0/0",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q3",
+      "metric_name": "reported_drying_time",
+      "value": 57.4724,
+      "evidence_path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "pointer": "/completion/reported_drying_time_h",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q4",
+      "metric_name": "mass_balance_absolute_residual",
+      "value": 7.993605777301127e-15,
+      "evidence_path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "pointer": "/diagnostics/max_mass_balance_abs_kg_per_kg",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q4",
+      "metric_name": "radial_intervals",
+      "value": 6400,
+      "evidence_path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "pointer": "/settings/intervals",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q4",
+      "metric_name": "center_C_at_report_time",
+      "value": 0.14999995339076624,
+      "evidence_path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "pointer": "/metric_samples/Q4/C/0/0",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    },
+    {
+      "question_id": "Q4",
+      "metric_name": "reported_drying_time",
+      "value": 51.0906,
+      "evidence_path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "pointer": "/completion/reported_drying_time_h",
+      "finite_numeric": true,
+      "exact_pointer_match": true,
+      "evidence_in_run_manifest": true
+    }
+  ],
+  "production_trajectories": [
+    {
+      "trajectory": "Q1",
+      "source": {
+        "path": "paper_output/results/production/final_v6a/Q1/summary.json",
+        "bytes": 3941,
+        "sha256": "2b4394701813dfcbb4b1041156715f9dd5a488f2ecd7402bf3d91adaecdeb536"
+      },
+      "N": 3200,
+      "mass_residual_kg_kg": 5.773159728050814e-15,
+      "min_C": 1.510234685362519,
+      "max_C": 2.550000000000001,
+      "positive_properties": true,
+      "solver_warning_count": 0,
+      "event_s": null,
+      "end_s": 1800.0,
+      "completion": null,
+      "gui_reproduced_in_frozen_summary": false,
+      "human_review_in_frozen_summary": "pending"
+    },
+    {
+      "trajectory": "Q23",
+      "source": {
+        "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+        "bytes": 5724,
+        "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+      },
+      "N": 3200,
+      "mass_residual_kg_kg": 1.1546319456101628e-14,
+      "min_C": 0.05265944808510597,
+      "max_C": 2.550000000000001,
+      "positive_properties": true,
+      "solver_warning_count": 0,
+      "event_s": 206900.28702201758,
+      "end_s": 206902.0,
+      "completion": {
+        "critical_event_s": 206900.28702201758,
+        "critical_event_h": 57.47230195056044,
+        "reported_drying_time_h": 57.4724,
+        "reported_time_s": 206900.64,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 206902.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "gui_reproduced_in_frozen_summary": false,
+      "human_review_in_frozen_summary": "pending"
+    },
+    {
+      "trajectory": "Q4",
+      "source": {
+        "path": "paper_output/results/production/final_v6a/Q4/summary.json",
+        "bytes": 5350,
+        "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e"
+      },
+      "N": 6400,
+      "mass_residual_kg_kg": 7.993605777301127e-15,
+      "min_C": 0.05261996970729463,
+      "max_C": 2.5500000000000025,
+      "positive_properties": true,
+      "solver_warning_count": 0,
+      "event_s": 183926.06923258994,
+      "end_s": 183928.0,
+      "completion": {
+        "critical_event_s": 183926.06923258994,
+        "critical_event_h": 51.09057478683054,
+        "reported_drying_time_h": 51.0906,
+        "reported_time_s": 183926.16,
+        "max_C_at_reported_time": 0.14999995339076624,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 183928.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "gui_reproduced_in_frozen_summary": false,
+      "human_review_in_frozen_summary": "pending"
+    }
+  ],
+  "version_method_checks": [
+    {
+      "snapshot": {
+        "path": "paper_output/code/versions/drying_core_v2_kirchhoff.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce"
+      },
+      "core_equation_methods_ast_identical": [
+        "RadialModel.radius",
+        "RadialModel.environment",
+        "RadialModel.properties",
+        "RadialModel.water_internal_flux",
+        "RadialModel.rhs",
+        "RadialModel.initial"
+      ],
+      "other_changed_methods": [
+        "RadialModel.__init__",
+        "Run.__init__",
+        "Run.fields",
+        "Run.diagnostics",
+        "solve_case",
+        "save_run"
+      ],
+      "scope": "AST identity of listed methods only, not a claim that entire versions are identical"
+    },
+    {
+      "snapshot": {
+        "path": "paper_output/code/versions/drying_core_v3_analytic_jacobian.py",
+        "bytes": 16516,
+        "sha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a"
+      },
+      "core_equation_methods_ast_identical": [
+        "RadialModel.radius",
+        "RadialModel.environment",
+        "RadialModel.properties",
+        "RadialModel.water_internal_flux",
+        "RadialModel.rhs",
+        "RadialModel.initial"
+      ],
+      "other_changed_methods": [
+        "Run.__init__",
+        "Run.diagnostics",
+        "solve_case",
+        "save_run"
+      ],
+      "scope": "AST identity of listed methods only, not a claim that entire versions are identical"
+    },
+    {
+      "snapshot": {
+        "path": "paper_output/code/versions/drying_core_v4_block_diagnostics.py",
+        "bytes": 17538,
+        "sha256": "f113d965ce87a43ba86a95c291ce721120bf9543180bdcbd58e7c43f06eb76de"
+      },
+      "core_equation_methods_ast_identical": [
+        "RadialModel.radius",
+        "RadialModel.environment",
+        "RadialModel.properties",
+        "RadialModel.water_internal_flux",
+        "RadialModel.rhs",
+        "RadialModel.initial"
+      ],
+      "other_changed_methods": [
+        "Run.__init__",
+        "Run.diagnostics",
+        "solve_case",
+        "save_run"
+      ],
+      "scope": "AST identity of listed methods only, not a claim that entire versions are identical"
+    },
+    {
+      "snapshot": {
+        "path": "paper_output/code/versions/drying_core_v5_disk_dense.py",
+        "bytes": 19608,
+        "sha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8"
+      },
+      "core_equation_methods_ast_identical": [
+        "RadialModel.radius",
+        "RadialModel.environment",
+        "RadialModel.properties",
+        "RadialModel.water_internal_flux",
+        "RadialModel.rhs",
+        "RadialModel.initial"
+      ],
+      "other_changed_methods": [
+        "solve_case",
+        "_solve_case_impl"
+      ],
+      "scope": "AST identity of listed methods only, not a claim that entire versions are identical"
+    }
+  ],
+  "saved_sample_version_bridges": [
+    {
+      "question": "Q1",
+      "historical": {
+        "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/N3200/sampled_solution.npz",
+        "bytes": 10569,
+        "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+      },
+      "final_production": {
+        "path": "paper_output/results/production/final_v6a/Q1/sampled_solution.npz",
+        "bytes": 10569,
+        "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+      },
+      "byte_hash_equal": true,
+      "all_arrays_equal": true,
+      "shapes": {
+        "times_s": [
+          32
+        ],
+        "material_x": [
+          21
+        ],
+        "T_K": [
+          32,
+          21
+        ],
+        "C": [
+          32,
+          21
+        ],
+        "radius_m": [
+          32
+        ],
+        "mean_C": [
+          32
+        ],
+        "cumulative_loss": [
+          32
+        ]
+      },
+      "scope": "saved sampled arrays; this is not a fresh complete per-second cross-version re-run"
+    },
+    {
+      "question": "Q23",
+      "historical": {
+        "path": "paper_output/results/convergence/Q23_final_resolution_v5/N3200/sampled_solution.npz",
+        "bytes": 689540,
+        "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+      },
+      "final_production": {
+        "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+        "bytes": 689540,
+        "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+      },
+      "byte_hash_equal": true,
+      "all_arrays_equal": true,
+      "shapes": {
+        "times_s": [
+          3452
+        ],
+        "material_x": [
+          21
+        ],
+        "T_K": [
+          3452,
+          21
+        ],
+        "C": [
+          3452,
+          21
+        ],
+        "radius_m": [
+          3452
+        ],
+        "mean_C": [
+          3452
+        ],
+        "cumulative_loss": [
+          3452
+        ]
+      },
+      "scope": "saved sampled arrays; this is not a fresh complete per-second cross-version re-run"
+    },
+    {
+      "question": "Q4",
+      "historical": {
+        "path": "paper_output/results/convergence/Q4_final_resolution_v5/N6400/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      },
+      "final_production": {
+        "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      },
+      "byte_hash_equal": true,
+      "all_arrays_equal": true,
+      "shapes": {
+        "times_s": [
+          3069
+        ],
+        "material_x": [
+          21
+        ],
+        "T_K": [
+          3069,
+          21
+        ],
+        "C": [
+          3069,
+          21
+        ],
+        "radius_m": [
+          3069
+        ],
+        "mean_C": [
+          3069
+        ],
+        "cumulative_loss": [
+          3069
+        ]
+      },
+      "scope": "saved sampled arrays; this is not a fresh complete per-second cross-version re-run"
+    }
+  ],
+  "spatial_validation": [
+    {
+      "question": "Q1",
+      "source": {
+        "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+        "bytes": 10761,
+        "sha256": "78362f990ca25ca6caad1e8e93b9ca8e2c86d934d8ade58aa74720c2a858c5e7"
+      },
+      "status": "computed_and_zero_solver_warnings",
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 2.4831436462591228e-06,
+            "C": 0.00018988217883419978
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 720.0,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1.0,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 1801,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 800,
+          "fine_N": 1600,
+          "event_difference_s": null
+        },
+        {
+          "max_absolute_difference": {
+            "T_K": 1.9161718682880746e-06,
+            "C": 4.690332349133186e-05
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 720.0,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1.0,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 1801,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": null
+        }
+      ],
+      "recorded_core_hashes": [
+        "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a"
+      ],
+      "historical_version_explicit": true,
+      "rigorous_error_bound": false
+    },
+    {
+      "question": "Q23",
+      "source": {
+        "path": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+        "bytes": 7673,
+        "sha256": "0fe5a791f3df2dff3b29c0bcc4a0e527da6f7330570f5144c2f573bc4781a579"
+      },
+      "status": "computed_and_zero_solver_warnings",
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 2.8929259201504465e-06,
+            "C": 3.830289061168557e-05
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 9060.0,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1.0,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 206903,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": -0.020146428927546367
+        }
+      ],
+      "recorded_core_hashes": [
+        "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8"
+      ],
+      "historical_version_explicit": true,
+      "rigorous_error_bound": false
+    },
+    {
+      "question": "Q4",
+      "source": {
+        "path": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+        "bytes": 11574,
+        "sha256": "2cd0caad1176bfd182b6be0fe564da80081162bad24753e90a97b8eabb0b5a3d"
+      },
+      "status": "computed_and_zero_solver_warnings",
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 2.666802117801126e-06,
+            "C": 6.976616569297905e-05
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 1409.0,
+              "radius_m": 0.019
+            },
+            "C": {
+              "time_s": 125325.0,
+              "radius_m": 0.012
+            }
+          },
+          "compared_time_count": 183929,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": -0.016721835534553975
+        },
+        {
+          "max_absolute_difference": {
+            "T_K": 9.633932904762332e-07,
+            "C": 1.9799471771719812e-05
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 3240.0,
+              "radius_m": 0.018000000000000002
+            },
+            "C": {
+              "time_s": 125662.0,
+              "radius_m": 0.012
+            }
+          },
+          "compared_time_count": 183929,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 3200,
+          "fine_N": 6400,
+          "event_difference_s": -0.0041705477342475206
+        }
+      ],
+      "recorded_core_hashes": [
+        "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8"
+      ],
+      "historical_version_explicit": true,
+      "rigorous_error_bound": false
+    }
+  ],
+  "temporal_validation": [
+    {
+      "question": "Q1",
+      "status": "PASS_WITHIN_RECORDED_SAMPLING",
+      "source": {
+        "path": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+        "bytes": 19464,
+        "sha256": "0a09a105fd5058a8970302413a82e0d701b96f2dabe8bc7d1cdc2615cab82d8b"
+      },
+      "N": 3200,
+      "comparison": {
+        "max_absolute_difference": {
+          "T_K": 1.627586982522189e-06,
+          "C": 3.6191343255609354e-09
+        },
+        "locations": {
+          "T_K": {
+            "time_s": 1740.0,
+            "radius_m": 0.02
+          },
+          "C": {
+            "time_s": 68.0,
+            "radius_m": 0.02
+          }
+        },
+        "compared_time_count": 1801,
+        "radial_count": 21,
+        "convention": "Only finite values at common physical points are compared.",
+        "baseline_N": 3200,
+        "tight_N": 3200,
+        "baseline_event_s": null,
+        "tight_event_s": null,
+        "event_difference_s": null,
+        "absolute_event_difference_s": null,
+        "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+        "baseline_projection_time_count": 1801,
+        "tight_projection_time_count": 1801,
+        "common_last_time_s": 1800.0,
+        "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+        "not_a_rigorous_error_bound": true,
+        "no_experimental_accuracy_claim": true
+      },
+      "all_actual_worker_returncodes_zero": true,
+      "baseline_controls": {
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "early_max_step_s": 2.0,
+        "max_step_s": 120.0
+      },
+      "tight_controls": {
+        "rtol": 1e-11,
+        "atol_temperature": 1e-11,
+        "atol_moisture": 1e-13,
+        "early_max_step_s": 1.0,
+        "max_step_s": 60.0
+      },
+      "scope": "fixed N simultaneous time tolerance/step tightening, not a rigorous error bound",
+      "baseline_sampled_solution_matches_final_sampled_NPZ_bytes": true
+    },
+    {
+      "question": "Q23",
+      "status": "PASS_WITHIN_RECORDED_SAMPLING",
+      "source": {
+        "path": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+        "bytes": 19720,
+        "sha256": "e0e2e1ad0ba8ad583319c5a52ff22b37fcb6d4635a7b2398f221b608bcf756fc"
+      },
+      "N": 3200,
+      "comparison": {
+        "max_absolute_difference": {
+          "T_K": 2.6602599518810166e-06,
+          "C": 9.941051204442886e-09
+        },
+        "locations": {
+          "T_K": {
+            "time_s": 12180.0,
+            "radius_m": 0.02
+          },
+          "C": {
+            "time_s": 13260.0,
+            "radius_m": 0.02
+          }
+        },
+        "compared_time_count": 206903,
+        "radial_count": 21,
+        "convention": "Only finite values at common physical points are compared.",
+        "baseline_N": 3200,
+        "tight_N": 3200,
+        "baseline_event_s": 206900.28702201758,
+        "tight_event_s": 206900.2870259933,
+        "event_difference_s": 3.975728759542108e-06,
+        "absolute_event_difference_s": 3.975728759542108e-06,
+        "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+        "baseline_projection_time_count": 206903,
+        "tight_projection_time_count": 206903,
+        "common_last_time_s": 206902.0,
+        "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+        "not_a_rigorous_error_bound": true,
+        "no_experimental_accuracy_claim": true
+      },
+      "all_actual_worker_returncodes_zero": true,
+      "baseline_controls": {
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "early_max_step_s": 2.0,
+        "max_step_s": 120.0
+      },
+      "tight_controls": {
+        "rtol": 1e-11,
+        "atol_temperature": 1e-11,
+        "atol_moisture": 1e-13,
+        "early_max_step_s": 1.0,
+        "max_step_s": 60.0
+      },
+      "scope": "fixed N simultaneous time tolerance/step tightening, not a rigorous error bound",
+      "baseline_sampled_solution_matches_final_sampled_NPZ_bytes": true
+    },
+    {
+      "question": "Q4",
+      "status": "PASS_WITHIN_RECORDED_SAMPLING",
+      "source": {
+        "path": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+        "bytes": 19695,
+        "sha256": "a66f24e588ac1da46f50e74a5c0a20624491b3cb8198b63316afc72d03d5af70"
+      },
+      "N": 6400,
+      "comparison": {
+        "max_absolute_difference": {
+          "T_K": 9.443490398552967e-07,
+          "C": 9.818015289653204e-10
+        },
+        "locations": {
+          "T_K": {
+            "time_s": 13140.0,
+            "radius_m": 0.015
+          },
+          "C": {
+            "time_s": 1382.0,
+            "radius_m": 0.019
+          }
+        },
+        "compared_time_count": 183929,
+        "radial_count": 21,
+        "convention": "Only finite values at common physical points are compared.",
+        "baseline_N": 6400,
+        "tight_N": 6400,
+        "baseline_event_s": 183926.06923258994,
+        "tight_event_s": 183926.0692291744,
+        "event_difference_s": -3.4155382309108973e-06,
+        "absolute_event_difference_s": 3.4155382309108973e-06,
+        "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+        "baseline_projection_time_count": 183929,
+        "tight_projection_time_count": 183929,
+        "common_last_time_s": 183928.0,
+        "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+        "not_a_rigorous_error_bound": true,
+        "no_experimental_accuracy_claim": true
+      },
+      "all_actual_worker_returncodes_zero": true,
+      "baseline_controls": {
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "early_max_step_s": 2.0,
+        "max_step_s": 120.0
+      },
+      "tight_controls": {
+        "rtol": 1e-11,
+        "atol_temperature": 1e-11,
+        "atol_moisture": 1e-13,
+        "early_max_step_s": 1.0,
+        "max_step_s": 60.0
+      },
+      "scope": "fixed N simultaneous time tolerance/step tightening, not a rigorous error bound",
+      "baseline_sampled_solution_matches_final_sampled_NPZ_bytes": true
+    }
+  ],
+  "analytical_benchmarks": {
+    "source": {
+      "path": "paper_output/results/convergence/Q1_frozenD_analytic_J_v3/convergence_report.json",
+      "bytes": 7374,
+      "sha256": "4745462ecb8ddfa055c8f07b3cc489074111f609eb07efad8868cebc3f14e0d7"
+    },
+    "runs": [
+      {
+        "N": 1600,
+        "constant_D": 4.938e-09,
+        "analytic_comparison": {
+          "N": 1600,
+          "max_heat_error_K": 1.4398660823644605e-06,
+          "scope": "All 1801 integer seconds and 21 requested radii",
+          "max_frozen_D_water_error": 6.192999926479814e-05,
+          "water_error_time_s": 1.0,
+          "water_error_radius_m": 0.02
+        }
+      },
+      {
+        "N": 3200,
+        "constant_D": 4.938e-09,
+        "analytic_comparison": {
+          "N": 3200,
+          "max_heat_error_K": 1.1482335366963525e-06,
+          "scope": "All 1801 integer seconds and 21 requested radii",
+          "max_frozen_D_water_error": 1.5448663388095696e-05,
+          "water_error_time_s": 1.0,
+          "water_error_radius_m": 0.02
+        }
+      }
+    ],
+    "scope": "constant-D moisture benchmark only; Q1 heat constant coefficients with actual piecewise-linear boundary",
+    "old_N400_review_required_preserved": true,
+    "old_N400_warning_resolution": "N400 early water error was too large. Later N1600/N3200 constant-D full-second benchmarks provide the relevant evidence; do not relabel the earlier report PASS."
+  },
+  "visual_review": {
+    "path": "notes/A-modeling/2026-09-10/data/final_visual_review.json",
+    "bytes": 23763,
+    "sha256": "e151b6556941e8674a622edf1d91941bdc9df8d87388c088178446b7c61e0147"
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "id": "PHYSICAL_CLOSURE_LIMITS",
+      "issue": "rho*cp effective heat capacity, dry-matter conservation, air-kg/kg to material Ceq mapping, no explicit latent heat and affine fixed-length shrinkage are stated assumptions; no internal experimental truth validates them.",
+      "action": "Carry the explicit assumptions and their data-support boundaries into any manuscript."
+    },
+    {
+      "id": "HISTORICAL_VALIDATION_VERSION",
+      "issue": "Bessel, spatial, Jacobian and physical scenario experiments retain their actual historical versions; only the selected equations and saved final samples have the documented bridge.",
+      "action": "Cite actual source versions and scopes, never label all tests as newly run on v6."
+    },
+    {
+      "id": "PLANNED_FIGURE_IDS",
+      "issue": "S2 planned fig_q1_1/fig_q1_2 etc are design names; final index uses combined fig_q1_profiles/fig_q2_profiles and fig_q3_drying/fig_q4_drying plus two observation figures.",
+      "action": "Use final figure_index IDs and state panel mapping in later writing; do not copy nonexistent planned paths."
+    },
+    {
+      "id": "MODEL_FORM_VS_NUMERICAL_ERROR",
+      "issue": "Mass residual and grid/time comparisons are numerical properties, not empirical accuracy or rigorous continuous error bounds.",
+      "action": "Keep four-decimal output, actual numerical comparisons, physical uncertainty and conditional scenario results separate."
+    }
+  ],
+  "open_requirements": [
+    {
+      "id": "VISUAL_STUDIO_FINAL_REPRODUCTION",
+      "owner": "root",
+      "status": "in_progress_not_accepted_by_this_review",
+      "required_action": "Record actual source, breakpoints/variables and final run/compare output from Visual Studio Computer Use."
+    },
+    {
+      "id": "HUMAN_MODEL_CODE_REVIEW",
+      "owner": "user/team",
+      "status": "pending",
+      "required_action": "Team review of chosen closure assumptions and core code; no AI substitute."
+    },
+    {
+      "id": "FINAL_SUBMISSION_PACKAGE",
+      "owner": "root/team",
+      "status": "pending",
+      "required_action": "Add AI tool use PDF and final reproduction guide, then anonymous review and exact final package size/hash verification."
+    },
+    {
+      "id": "S7_S8_PAPER",
+      "owner": "root/team",
+      "status": "not_started_by_this_subtask",
+      "required_action": "No paper writing triggered. Formal paper/OMML/reference/layout/render validation belongs to the later authorized workflow."
+    }
+  ],
+  "memory_handoff": {
+    "owner": "root",
+    "workflow_memory_not_modified": true,
+    "observed_old_memory_current_step": "S4",
+    "latest_guard_current_step": "S6",
+    "required_next_action": "Root records fresh S6 report hashes and open requirements with context-memory-keeper; do not initiate S7 from this subtask."
+  },
+  "frozen_modeling_sources_modified": false,
+  "formal_production_results_modified": false,
+  "formal_paper_writing_triggered": false,
+  "GUI_or_human_review_marked_pass": false,
+  "workflow_after_review": {
+    "path": "notes/A-modeling/2026-09-10/data/s6_modeling_evidence_review.workflow_status_snapshot.json",
+    "bytes": 2066,
+    "sha256": "52b5d4332073f544d826076f83d57e069e924701e7577a7e0b22abe3d066a41c"
+  },
+  "next_step": "S7",
+  "recommended_skill": "paper-formal-writer",
+  "next_skill_invoked": false,
+  "finalized_at": "2026-09-10T17:17:30.564823+00:00"
+}

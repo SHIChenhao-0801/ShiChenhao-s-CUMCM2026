@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-09-10T17:58:02.056722+00:00",
+  "status": "FINAL_MODELING_HANDOFF_FILES_READY_FOR_REVIEW",
+  "files": {
+    "A题_完整建模与公式推导.md": {
+      "bytes": 130091,
+      "sha256": "d71d6d6e7b5d8ee62e4cac18009c5cf24687ccfc723f7cf36f81090d949155e8"
+    },
+    "A题_建模浓缩交接.md": {
+      "bytes": 25245,
+      "sha256": "0fc1e7f0cb5bc75a17c0d61f2d8fc1e9a6835c26b19f35b1c6ee5681398c0a7a"
+    }
+  },
+  "gui_observation_sha256": "349f5fb9a6cbd864016430fe490bc0d1067a4408758abf9c6f2cfad0df500d27",
+  "human_review": "pending",
+  "planned_delivery": "Send the condensed MD only to the explicitly authorized recipient at 19:00 UTC; not sent by this script."
+}

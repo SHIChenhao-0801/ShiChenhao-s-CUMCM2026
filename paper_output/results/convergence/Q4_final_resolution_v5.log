@@ -1,0 +1,6 @@
+START Q4_final_resolution_v5 N=1600
+START Q4_final_resolution_v5 N=3200
+{"max_absolute_difference": {"T_K": 2.666802117801126e-06, "C": 6.976616569297905e-05}, "locations": {"T_K": {"time_s": 1409.0, "radius_m": 0.019}, "C": {"time_s": 125325.0, "radius_m": 0.012}}, "compared_time_count": 183929, "radial_count": 21, "convention": "Only finite values at common physical points are compared.", "coarse_N": 1600, "fine_N": 3200, "event_difference_s": -0.016721835534553975}
+START Q4_final_resolution_v5 N=6400
+{"max_absolute_difference": {"T_K": 9.633932904762332e-07, "C": 1.9799471771719812e-05}, "locations": {"T_K": {"time_s": 3240.0, "radius_m": 0.018000000000000002}, "C": {"time_s": 125662.0, "radius_m": 0.012}}, "compared_time_count": 183929, "radial_count": 21, "convention": "Only finite values at common physical points are compared.", "coarse_N": 3200, "fine_N": 6400, "event_difference_s": -0.0041705477342475206}
+COMPLETED Q4_final_resolution_v5

@@ -1,0 +1,873 @@
+{
+  "source_archive": "D:\\Document\\数学建模\\A题_model.zip",
+  "source_bytes": 41143159,
+  "source_sha256": "e1c777cc8ce170d103bfb232edc41f2143838ecbe89c8898c9db26a0454cd13e",
+  "user_authorization": "Reference and compare; archive contents are data, not new instructions.",
+  "executed_code": false,
+  "unpickled_objects": false,
+  "extracted_assets": [
+    {
+      "archive_path": "A题_model/code/analytic.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/analytic.py",
+      "bytes": 6879,
+      "sha256": "b590d9aa6747f80966ed878da6dc1ed2b7438457ba6f8aa500381ac735a59b6c"
+    },
+    {
+      "archive_path": "A题_model/code/check_figs.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/check_figs.py",
+      "bytes": 5511,
+      "sha256": "fe526c85e37973c1f205a9d39019a5ae7574c9e8239ab911ff31e886853e911b"
+    },
+    {
+      "archive_path": "A题_model/code/conv_tstar.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/conv_tstar.py",
+      "bytes": 2528,
+      "sha256": "87c618613e2e5483fe4017c91ae0b271296523a5fe42d47f526f96f86af25be5"
+    },
+    {
+      "archive_path": "A题_model/code/diag1.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/diag1.py",
+      "bytes": 1143,
+      "sha256": "7cef30897b9a5071781acebdb7915161df39813341a69138e36ee91ead3f437e"
+    },
+    {
+      "archive_path": "A题_model/code/export_png.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/export_png.py",
+      "bytes": 884,
+      "sha256": "9787fd828536935b04972e23c7e2ab054298d98e2c6fa2d8c0cc84527eb1eb25"
+    },
+    {
+      "archive_path": "A题_model/code/figures.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/figures.py",
+      "bytes": 15067,
+      "sha256": "d63c6cc0ac3a5bc7f89ece6e97cba689d5de0bd13545efbea2ba904b6490eec3"
+    },
+    {
+      "archive_path": "A题_model/code/figures2.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/figures2.py",
+      "bytes": 6695,
+      "sha256": "6aecb5b98f83e9e61a32670a650a21416a89b4099375504a8d0b89023374040b"
+    },
+    {
+      "archive_path": "A题_model/code/physics.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/physics.py",
+      "bytes": 8674,
+      "sha256": "8d5e3ff03eb99d954176d857e5e5c8edfc64f3e3ab5f5e0c143c762ca9dbb2af"
+    },
+    {
+      "archive_path": "A题_model/code/raster.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/raster.py",
+      "bytes": 9733,
+      "sha256": "903ff406f5e4871561f59f2f71da22080cdaf6f99c9736850ad915f80daddc40"
+    },
+    {
+      "archive_path": "A题_model/code/results.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/results.py",
+      "bytes": 10405,
+      "sha256": "c10a5329a6dbf589d070a3bd2616d5456e8d0c4d83aabc30c353c9280c33ef60"
+    },
+    {
+      "archive_path": "A题_model/code/run_prod.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/run_prod.py",
+      "bytes": 3199,
+      "sha256": "4bbc8cb86b031c7a579e9ae07a94b3d4333fae94bc397220f5a9b3f02013c019"
+    },
+    {
+      "archive_path": "A题_model/code/sensitivity.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/sensitivity.py",
+      "bytes": 5298,
+      "sha256": "4bfbc217b284afa18cf56db6c1ec250c1abf7e85b10f20afb34b3917070c4393"
+    },
+    {
+      "archive_path": "A题_model/code/smoke.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/smoke.py",
+      "bytes": 1696,
+      "sha256": "67c17f14ab02fe8b1f8c0b007e47e3e66e7c8444980efb67cc489056b0130783"
+    },
+    {
+      "archive_path": "A题_model/code/solver.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/solver.py",
+      "bytes": 14398,
+      "sha256": "4d4c013a382729c965a93d133ed9d11d1ee4384c50d592ecf1d73c2467c282ae"
+    },
+    {
+      "archive_path": "A题_model/code/summary.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/summary.py",
+      "bytes": 7474,
+      "sha256": "33df24ca0ad39b64077dd216b9c0423e0c45c226a8bae3a7eafe1d4d3569d064"
+    },
+    {
+      "archive_path": "A题_model/code/svgplot.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/svgplot.py",
+      "bytes": 24371,
+      "sha256": "7e4b3dafc50a95202dd24266d7af271840408173f3cb3664fdff855a76b4b902"
+    },
+    {
+      "archive_path": "A题_model/code/verify.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/verify.py",
+      "bytes": 12325,
+      "sha256": "9fb926aa90041eb0c0c17e8ce156762c51eb7c2222fd27aa0fbbf6ad6a95e691"
+    },
+    {
+      "archive_path": "A题_model/code/xlsxio.py",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/code/xlsxio.py",
+      "bytes": 8467,
+      "sha256": "af38c2d529d34d278e4227e32aa06ad7a7eb308735042a9f9af301a7fa8a353f"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig01_chamber_conditions.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig01_chamber_conditions.svg",
+      "bytes": 11388,
+      "sha256": "f6b06616cebeca6b524501148de3e59dde1cc0aaf51b38d4c58bd0493e1cb09e"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig02_q1_T_profiles.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig02_q1_T_profiles.svg",
+      "bytes": 6738,
+      "sha256": "c3ed69e6c8b451c780b59859caec85c9efceafa466add3477242e0a1e42c2688"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig03_q1_C_profiles.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig03_q1_C_profiles.svg",
+      "bytes": 7038,
+      "sha256": "953e67c92813f75289ae24b1648b8aea21fd260e6b29d304701270cf64039a67"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig04_q1_history.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig04_q1_history.svg",
+      "bytes": 103602,
+      "sha256": "f9213e1ebc14e266278ea461dfaccf4c0b31fd0e326c1b8833b1f8fd4aa88394"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig05_verification.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig05_verification.svg",
+      "bytes": 10387,
+      "sha256": "9aafffd49c21e1294ae8ab1115fdff214fbeb253f334ddee13809132ad02c1f9"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig06_q2_T_profiles.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig06_q2_T_profiles.svg",
+      "bytes": 7180,
+      "sha256": "a3659b365ca04c10df021ee3772b2d1d6592acf51219b76b3ca7333230fd8b25"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig07_q2_C_profiles.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig07_q2_C_profiles.svg",
+      "bytes": 7003,
+      "sha256": "8f540895857a4371755483a0d39d3a35dfa8aaa642947a685dc028a61184ad7b"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig08_q2_history.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig08_q2_history.svg",
+      "bytes": 594515,
+      "sha256": "100991b0106120b94fd18b3f40ed857472af38dd1474c320debcb915fb977be7"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig09_q3_drying_rate.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig09_q3_drying_rate.svg",
+      "bytes": 48658,
+      "sha256": "9fc53a5206dd5d3ae3402c32df4057bb1b55bfee477bc6521a9a0fc7a0a67ec6"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig10_q3_cmax.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig10_q3_cmax.svg",
+      "bytes": 150077,
+      "sha256": "d00b98984997cb0bd7133b32f75fd49729918a6cddd3a2d13f367dc7e31f9cac"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig11_q2_field_T.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig11_q2_field_T.svg",
+      "bytes": 532728,
+      "sha256": "f3f18164489acc3afb3d7a5d997ac999107d3761e644d491ae160918f71b2322"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig12_q2_field_C.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig12_q2_field_C.svg",
+      "bytes": 612655,
+      "sha256": "8fcf132252c3be4f750554b3456b07bfe7f1bc9475839d3ad2e370cc171b3778"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig13_q3_field_C.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig13_q3_field_C.svg",
+      "bytes": 532040,
+      "sha256": "9f5048c52c429eec38c3f7080a5db4c070978c760f9853e8c303b1c5b1123170"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig14_R_shrinkage.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig14_R_shrinkage.svg",
+      "bytes": 51461,
+      "sha256": "f4481b105adbe488a9642d08e699f08e220e809bcf4a1a39163aef1a74063855"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig15_q4_field_C.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig15_q4_field_C.svg",
+      "bytes": 365290,
+      "sha256": "a4ce0d10b6c8b17365702c9f9148e2028c48d04b0d07e31a9739212b5e1bee04"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig16_q3_vs_q4.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig16_q3_vs_q4.svg",
+      "bytes": 95429,
+      "sha256": "eca3e708831a534f21ca407cfa7a4aba7d48266056229c245f0c94a0f4d3362a"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig17_conv_grid.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig17_conv_grid.svg",
+      "bytes": 3396,
+      "sha256": "c1b8061d6cc2b00518b7d2a5c502072906741fedf6ab2dc0f2f93668eff28980"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig17_conv_sub.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig17_conv_sub.svg",
+      "bytes": 3496,
+      "sha256": "b370f66a629aa8c6dbd9a1a7f80047538dc52680abcbb658371e5b7a9bdfb66e"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig18_tornado.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig18_tornado.svg",
+      "bytes": 7355,
+      "sha256": "01d46b6f33d13c858a541e364095376abaaaafdf48d47ea8805e9e2be5132dcd"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig19_shrink_models.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig19_shrink_models.svg",
+      "bytes": 4301,
+      "sha256": "c22cf72315c987a222e05f7c02913ba3987339072ee663810b0bf29128a9628a"
+    },
+    {
+      "archive_path": "A题_model/out/figures/fig20_rate_compare.svg",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/figures/fig20_rate_compare.svg",
+      "bytes": 94572,
+      "sha256": "55bda741b403387b3302d5322a8026f91b2fb0fcfe4027af4a16b644387c2cbd"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/conv_tstar_q3.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/conv_tstar_q3.pkl",
+      "bytes": 80,
+      "sha256": "16c281476e8063621af32edabc63838e5d82c092c632397a8f066cebf343eb8a"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/conv_tstar_q4.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/conv_tstar_q4.pkl",
+      "bytes": 80,
+      "sha256": "50a09721f1a69e2c9ec6fd91884e056859bc0aa3a4df4d861c8a8bba7eb00518"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q1_N200_sub4.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q1_N200_sub4.pkl",
+      "bytes": 872306,
+      "sha256": "c50df18484e64a709c6ffcbe73d4c12a8c6b8e2feab07f18eafbbc90d7ac7aa7"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q1_N400_sub4.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q1_N400_sub4.pkl",
+      "bytes": 872308,
+      "sha256": "08fbe2542b439ceb394713b9fa153db1134a0871801f5447a538117fa44c1647"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q2_N200_sub2.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q2_N200_sub2.pkl",
+      "bytes": 5185946,
+      "sha256": "435261db622617863aad9c4c29521553f9449d7855dc62f9808aa6eb2594255d"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q2_N400_sub2.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q2_N400_sub2.pkl",
+      "bytes": 5185948,
+      "sha256": "2cd8bfdf8dd8504e85e6f806381100738b54f2e8fdbaf17af045db1b64618b92"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q3_N200_sub12.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q3_N200_sub12.pkl",
+      "bytes": 13176326,
+      "sha256": "455c15b8f04c4c686ae5f82daeb9ee7b4f2b7a6beff967ac0c389946c1857048"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q3_N400_sub12.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q3_N400_sub12.pkl",
+      "bytes": 1737851,
+      "sha256": "ff3b2c3e2682aca65b7674192d470fc9092d6efdb5341d29e55aaf77c133abf9"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q4_N200_sub12.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q4_N200_sub12.pkl",
+      "bytes": 11388340,
+      "sha256": "a3af0c575435ff3853a3f8dc82ca1551cb24707897b40883ddef302e2b74fb7d"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/q4_N400_sub12.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/q4_N400_sub12.pkl",
+      "bytes": 1538312,
+      "sha256": "41298f1d8f2af96563dd20a14660c075f9fef3d6a5b29ca4ad829d07ebb77529"
+    },
+    {
+      "archive_path": "A题_model/out/pkl/sens_base.pkl",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/pkl/sens_base.pkl",
+      "bytes": 13284795,
+      "sha256": "b17e25fcaa67ff8ac242cde3ad6c41d59d68bb035098a18a92225fce659f3d7c"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig01_chamber_conditions.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig01_chamber_conditions.png",
+      "bytes": 25466,
+      "sha256": "ac35cdda57d4b9f36c037e04aba8b477bff7cd08973a29b052782b791fc6bdb1"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig02_q1_T_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig02_q1_T_profiles.png",
+      "bytes": 22592,
+      "sha256": "c607a2a09b9633485781cb78efae731e192700a5e9ea6b30971eb6009614bc61"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig03_q1_C_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig03_q1_C_profiles.png",
+      "bytes": 23853,
+      "sha256": "84a7c286b89c659ec148d27612174dde77a31f184231a55c9bfb75c134d1f370"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig04_q1_history.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig04_q1_history.png",
+      "bytes": 23058,
+      "sha256": "a054ed902139f058e082ba27b70e75c56daa5367f646d328f998da62adbc23a6"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig05_verification.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig05_verification.png",
+      "bytes": 31077,
+      "sha256": "bf71649c840b043b95233a35cc86d0cfb6e1de3e0c957f7727bc38c46a727d3c"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig06_q2_T_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig06_q2_T_profiles.png",
+      "bytes": 20073,
+      "sha256": "4f042c2a7867698cc6c71316ecf31313832d9fb6abf55253d179dee15837258c"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig07_q2_C_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig07_q2_C_profiles.png",
+      "bytes": 26522,
+      "sha256": "918fb571dcbfbbc65f21b0a44d4e86f562b771c4bd224079ab05667a127f72bc"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig08_q2_history.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig08_q2_history.png",
+      "bytes": 26953,
+      "sha256": "7b23ee708cb8865ebabb13967853b32559bdb99d4f8cc09366cbf875cc529247"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig09_q3_drying_rate.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig09_q3_drying_rate.png",
+      "bytes": 22495,
+      "sha256": "f82205bd8dba3ec12b2f144aedae136bd37368fb403808694c3e4b8e1ddfc7a6"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig10_q3_cmax.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig10_q3_cmax.png",
+      "bytes": 21726,
+      "sha256": "fc04242635bc8b72c4436e7d706ba0abe909fc299257664ef2de190ba95314a2"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig11_q2_field_T.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig11_q2_field_T.png",
+      "bytes": 52022,
+      "sha256": "3be4913833f668f2b4c922215ea9485f1082cdbb7e596dc08e7caa9de9ddc9e7"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig12_q2_field_C.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig12_q2_field_C.png",
+      "bytes": 71729,
+      "sha256": "f4a93a15d51db98bcad1ff6edbb4601a9dc352a3d26495f9b07ca073d418f85a"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig13_q3_field_C.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig13_q3_field_C.png",
+      "bytes": 43592,
+      "sha256": "b9f1782f389bad0b4ce0af1a073abc7e2a82c7f938ff93896f5fa48dd61b5224"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig14_R_shrinkage.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig14_R_shrinkage.png",
+      "bytes": 18396,
+      "sha256": "0450b15de05c9a9d1f1f22441d885e7d8f4c844f5f480592b670e89abf9338d6"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig15_q4_field_C.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig15_q4_field_C.png",
+      "bytes": 41755,
+      "sha256": "e1100ac7ceab4c8ad8d0b90b5f03e56977f4ad907a624de57be1742dcb63def0"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig16_q3_vs_q4.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig16_q3_vs_q4.png",
+      "bytes": 22713,
+      "sha256": "8514411ceae915dff18354c7626aa78526e9a4ce39b61807326a6caaafc13f05"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig17_conv_grid.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig17_conv_grid.png",
+      "bytes": 18534,
+      "sha256": "48101e2101e0a8f9bb509ca9b4131e5e2811e1f8707b2c993cfd6135515e7fc3"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig17_conv_sub.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig17_conv_sub.png",
+      "bytes": 24540,
+      "sha256": "b118e98ae2e4f7f4371fe9cb454e20a00aacf9fe8ce33c5694f51f407d26baeb"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig18_tornado.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig18_tornado.png",
+      "bytes": 23092,
+      "sha256": "03d21d631b5f594458efd0eab28949c07da65db61671487be316821411133225"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig19_shrink_models.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig19_shrink_models.png",
+      "bytes": 23719,
+      "sha256": "6771ef1158ab1170203dc017bb55995edb1b31e126cdcbda17b64738d5aecae9"
+    },
+    {
+      "archive_path": "A题_model/out/png/fig20_rate_compare.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/png/fig20_rate_compare.png",
+      "bytes": 26139,
+      "sha256": "bb59e0170eeb9c990c1d82b8f329700b5a0d13199d47dba7538c705e29d4e243"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig01_chamber_conditions.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig01_chamber_conditions.png",
+      "bytes": 9456,
+      "sha256": "04ac09a09d7e97aafd86dc81f12377d5de4cdb0b27f0e9b7d2e2aa4e09b651ea"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig02_q1_T_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig02_q1_T_profiles.png",
+      "bytes": 8230,
+      "sha256": "676449b78c0af1fd3652460616f165900f1f23a14372c6c09aae51603e5a1151"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig03_q1_C_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig03_q1_C_profiles.png",
+      "bytes": 8372,
+      "sha256": "63999486347dc4a87905c9f875c457c6efedc78c961b9deb7d9576fca037696a"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig04_q1_history.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig04_q1_history.png",
+      "bytes": 9223,
+      "sha256": "bd97e591944bbd7cb563d0feaacceac5392c26bacc9d45bf08098da799ed8366"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig05_verification.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig05_verification.png",
+      "bytes": 11408,
+      "sha256": "c83d34eb3a7982504f441e07c599a7fa3ddfb48047334315fa44fa60b6596c16"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig06_q2_T_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig06_q2_T_profiles.png",
+      "bytes": 6942,
+      "sha256": "1966df50b940ab6e48bd4fc0c755d1cfd9f22f97e2fc6a36842567bf09f4ae0d"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig07_q2_C_profiles.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig07_q2_C_profiles.png",
+      "bytes": 9865,
+      "sha256": "081b849899fc165f40ae97ce12f5c529d92a03eb3765a522a93a174d8fd30b48"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig08_q2_history.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig08_q2_history.png",
+      "bytes": 11037,
+      "sha256": "d359e29e2fde1f238942807b04065634b1da5b85cbd7d8ed0b124f306a074340"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig09_q3_drying_rate.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig09_q3_drying_rate.png",
+      "bytes": 7357,
+      "sha256": "018b9996449c759eb4ce7a06e9bb95ffa86e567a5b2796d2c80d0431dba3cd87"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig10_q3_cmax.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig10_q3_cmax.png",
+      "bytes": 8933,
+      "sha256": "6b1c56ae45329fbf1a4815ce574cf40844be3821d30b4f0f24373beca65dda45"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig11_q2_field_T.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig11_q2_field_T.png",
+      "bytes": 28819,
+      "sha256": "a290e888d5a8cb60ac577b04b801693195b163d80b5560837971dcee48508b58"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig12_q2_field_C.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig12_q2_field_C.png",
+      "bytes": 36819,
+      "sha256": "aeb010d92f51cc87f1d7db2a064065fb60cb8dfad2c91ecf613966d7d9e9565b"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig13_q3_field_C.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig13_q3_field_C.png",
+      "bytes": 21177,
+      "sha256": "d1ee71d7750243c081cd968ce8221d02e853aaef265fa4b2f78a3fb047e621ba"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig14_R_shrinkage.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig14_R_shrinkage.png",
+      "bytes": 6547,
+      "sha256": "4cc62d33b01794d850dc8b3842369f03e243e3dc96c638a1fc9acb6d819ed0d2"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig15_q4_field_C.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig15_q4_field_C.png",
+      "bytes": 21793,
+      "sha256": "01ef0595cbeb145fa9fdd2cc85ed3694a9406dfebab7455237c384b3dbeecf55"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig16_q3_vs_q4.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig16_q3_vs_q4.png",
+      "bytes": 8935,
+      "sha256": "4c214bebaa51c9d67d115498b42cc2b9a9d6d279d8a343bc89788dcfeb29ccd4"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig17_conv_grid.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig17_conv_grid.png",
+      "bytes": 6709,
+      "sha256": "54da8f5b95b9b455a7065fc0b9f20899a3111ed70ec4752095740b97b79ee9f4"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig17_conv_sub.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig17_conv_sub.png",
+      "bytes": 6720,
+      "sha256": "5e8254b9ca64d7e9b7cb58de24dc2e9e0c6974fe5e0c2a07a0a854aefbd5f4fe"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig18_tornado.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig18_tornado.png",
+      "bytes": 8170,
+      "sha256": "2c38b498dcb889ca1c817913d8be6a093a7efb6ed0dc3c8dd08d80ded6ca20c8"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig19_shrink_models.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig19_shrink_models.png",
+      "bytes": 7050,
+      "sha256": "342c88f0120ecf3a2e21b20964554fcbeec1a995884235bc464f1bbd9e13f5f2"
+    },
+    {
+      "archive_path": "A题_model/out/preview/fig20_rate_compare.png",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/preview/fig20_rate_compare.png",
+      "bytes": 8419,
+      "sha256": "e3faa343b0fb315689568315d19fd81603ffae10dd257ed1f99fa8564c1c4ba1"
+    },
+    {
+      "archive_path": "A题_model/out/result1.xlsx",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/result1.xlsx",
+      "bytes": 373629,
+      "sha256": "acab54b9947b079e079d0435fb60737b4680b45f2f12e8211b62f843f5e721c3"
+    },
+    {
+      "archive_path": "A题_model/out/result2.xlsx",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/result2.xlsx",
+      "bytes": 2555240,
+      "sha256": "f34b26797040591a4bc4afd73b12863719a10f111d22ef67c5cc9bbe77b1501e"
+    },
+    {
+      "archive_path": "A题_model/out/result3.xlsx",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/result3.xlsx",
+      "bytes": 323087,
+      "sha256": "1b606c5855585f08059f51652c622769c53bfdd12bd8fdfa86871c2c8419d3b7"
+    },
+    {
+      "archive_path": "A题_model/out/result4.xlsx",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/result4.xlsx",
+      "bytes": 229981,
+      "sha256": "91049ceab6616a145693b4c3ae5cea5620ff23eb5d0789899a7959a0699240bb"
+    },
+    {
+      "archive_path": "A题_model/out/sensitivity.json",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/sensitivity.json",
+      "bytes": 4890,
+      "sha256": "fecb2fb93fa29d432b2ab0c0b7206bebf67ae7ef992a9e833bdb638416e8799d"
+    },
+    {
+      "archive_path": "A题_model/out/summary.json",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/summary.json",
+      "bytes": 10512,
+      "sha256": "28addd8a5a33e1674f4e8c3b19d8923eb5b3d269b235830ed97f537f6068d2b8"
+    },
+    {
+      "archive_path": "A题_model/out/tables/论文表格_表1-表6.md",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/out/tables/论文表格_表1-表6.md",
+      "bytes": 3715,
+      "sha256": "cd4059b362057430ab8a82133fb5acbbf276bb55348df335f231c30374725146"
+    },
+    {
+      "archive_path": "A题_model/README.md",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/README.md",
+      "bytes": 10192,
+      "sha256": "d31e75bafaf9adddd19ff9173281aca456721ca2842ee70f06355c3649136e9b"
+    },
+    {
+      "archive_path": "A题_model/模型与算法_完整文档.md",
+      "path": "reference_materials/peer-models/2026-09-10_A_model/模型与算法_完整文档.md",
+      "bytes": 47488,
+      "sha256": "f1fbaa2cfcb6742d6b8e205459690c4851596728d4342039505955eb56ba7cad"
+    }
+  ],
+  "skipped": [
+    {
+      "path": "A题_model/code/__pycache__/analytic.cpython-314.pyc",
+      "bytes": 9531,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/check_figs.cpython-314.pyc",
+      "bytes": 10368,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/physics.cpython-314.pyc",
+      "bytes": 13049,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/raster.cpython-314.pyc",
+      "bytes": 19731,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/solver.cpython-314.pyc",
+      "bytes": 22283,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/svgplot.cpython-314.pyc",
+      "bytes": 40680,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/verify.cpython-314.pyc",
+      "bytes": 18114,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/code/__pycache__/xlsxio.cpython-314.pyc",
+      "bytes": 12394,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Crashpad/settings.dat",
+      "bytes": 288,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Crashpad/throttle_store.dat",
+      "bytes": 20,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Affiliation Database",
+      "bytes": 12288,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Affiliation Database-journal",
+      "bytes": 512,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/ClientCertificates/LOCK",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/ClientCertificates/LOG",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Code Cache/js/index",
+      "bytes": 24,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Code Cache/js/index-dir/the-real-index",
+      "bytes": 48,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Code Cache/wasm/index",
+      "bytes": 24,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Code Cache/wasm/index-dir/the-real-index",
+      "bytes": 48,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Favicons",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Favicons-journal",
+      "bytes": 512,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/History",
+      "bytes": 212992,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/History-journal",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Login Data",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Login Data For Account",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Login Data For Account-journal",
+      "bytes": 512,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Login Data-journal",
+      "bytes": 512,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/README",
+      "bytes": 182,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/ServerCertificate",
+      "bytes": 20480,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/ServerCertificate-journal",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Site Characteristics Database/000001.dbtmp",
+      "bytes": 16,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Site Characteristics Database/75586023-ab1b-4e3c-9a08-06d723f4f316.tmp",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Site Characteristics Database/LOCK",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Site Characteristics Database/LOG",
+      "bytes": 152,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Site Characteristics Database/MANIFEST-000001",
+      "bytes": 41,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Sync Data/LevelDB/000001.dbtmp",
+      "bytes": 16,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Sync Data/LevelDB/LOCK",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Sync Data/LevelDB/LOG",
+      "bytes": 140,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Sync Data/LevelDB/MANIFEST-000001",
+      "bytes": 41,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Vpn Tokens",
+      "bytes": 28672,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Vpn Tokens-journal",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Web Data",
+      "bytes": 180224,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Default/Web Data-journal",
+      "bytes": 9728,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/GPUPersistentCache/DawnGraphiteCache/3VTFBHJDFNU2V4IGSN4IATDSGV2NT3ME/cache.db",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/GPUPersistentCache/DawnGraphiteCache/3VTFBHJDFNU2V4IGSN4IATDSGV2NT3ME/cache.db-wal",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/GPUPersistentCache/DawnGraphiteCache/3VTFBHJDFNU2V4IGSN4IATDSGV2NT3ME/cache.journal",
+      "bytes": 0,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Last Version",
+      "bytes": 13,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Local State",
+      "bytes": 3500,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/Variations",
+      "bytes": 86,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/VariationsRuntimeSeedV2",
+      "bytes": 19,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/VariationsSafeSeedV2",
+      "bytes": 19,
+      "reason": "unneeded bytecode/browser profile"
+    },
+    {
+      "path": "A题_model/out/preview/ud/VariationsSeedV2",
+      "bytes": 19,
+      "reason": "unneeded bytecode/browser profile"
+    }
+  ]
+}

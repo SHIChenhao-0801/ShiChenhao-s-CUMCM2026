@@ -1,0 +1,1289 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-09-10T16:13:37.334554+00:00",
+  "scope": "N40 exporter fidelity only. Q2 uses constant_D=2e-8 and beta=8e-6 solely to shorten the real full-event export test; these are not formal physical results. Q1/Q3/Q4 use their nominal physics.",
+  "source": {
+    "path": "paper_output/code/modeling/export_outputs.py",
+    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\export_outputs.py",
+    "bytes": 41427,
+    "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+    "exists": true
+  },
+  "exports": [
+    {
+      "question_id": "Q1",
+      "settings": {
+        "question": "Q1",
+        "intervals": 40,
+        "rtol": 1e-08,
+        "atol_temperature": 1e-08,
+        "atol_moisture": 1e-10,
+        "max_step_s": 600.0,
+        "early_max_step_s": 5.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "export": {
+        "question_id": "Q1",
+        "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.xlsx",
+        "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.export.json",
+        "artifacts": [
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q1/result1.xlsx",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.xlsx",
+            "bytes": 391166,
+            "sha256": "05d2e281b4412d0d5bfc929aeeb767c4c3c3c039ff30df7bb089aabfa726c542",
+            "exists": true,
+            "role": "contest_result_workbook"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q1/result1_unrounded.csv.gz",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1_unrounded.csv.gz",
+            "bytes": 584817,
+            "sha256": "d5fd66f2d8f2837a46c86f863862177b1d0ba1527d77c98ee78f629ddde84bdd",
+            "exists": true,
+            "role": "internal_unrounded_output_grid_archive"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q1/q1_paper_temperature.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\q1_paper_temperature.csv",
+            "bytes": 380,
+            "sha256": "c0db2708c44869bdf3bbe9eeb76e43e618052699b09f71c71e234d27dc6b7e7d",
+            "exists": true,
+            "role": "paper_table"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q1/q1_paper_moisture.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\q1_paper_moisture.csv",
+            "bytes": 345,
+            "sha256": "0a70db9b078e1df52a011f535ef1bb90b3b3f5f6119a06cbb941a17b467390d3",
+            "exists": true,
+            "role": "paper_table"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q1/result1.export.json",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.export.json",
+            "bytes": 37992,
+            "sha256": "a5a711893c1afc660f710bf8087bfa31a34f718f2f1584f9fff042d55228089b",
+            "exists": true,
+            "role": "export_manifest"
+          }
+        ],
+        "sheets": {
+          "温度": {
+            "data_rows": 1801,
+            "total_rows": 1802,
+            "columns": 22,
+            "outside_domain_blank_cells": 0,
+            "first_time_s": 0.0,
+            "last_time_s": 1800.0,
+            "header": [
+              "时间\\到药材中心的距离",
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2.0
+            ]
+          },
+          "水分浓度": {
+            "data_rows": 1801,
+            "total_rows": 1802,
+            "columns": 22,
+            "outside_domain_blank_cells": 0,
+            "first_time_s": 0.0,
+            "last_time_s": 1800.0,
+            "header": [
+              "时间\\到药材中心的距离",
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2.0
+            ]
+          }
+        },
+        "size": {
+          "workbook_bytes": 391166,
+          "workbook_MiB": 0.3730449676513672,
+          "unrounded_archive_bytes": 584817,
+          "warning_limit_bytes": 20000000,
+          "workbook_exceeds_20_decimal_MB": false,
+          "archive_is_internal_not_automatically_in_submission_zip": true,
+          "complete_support_archive_still_requires_actual_size_check": true,
+          "no_required_time_or_space_values_removed": true
+        },
+        "validation_status": "pending"
+      },
+      "validation": {
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "exports": [
+          {
+            "schema_version": "1.0",
+            "question_id": "Q1",
+            "generated_by": "paper_output/code/modeling/export_outputs.py",
+            "generated_at": "2026-09-10T16:12:58.476392+00:00",
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "checked_cells": 79244,
+            "sheets": {
+              "温度": {
+                "data_rows": 1801,
+                "total_rows": 1802,
+                "first_time_s": 0,
+                "last_time_s": 1800,
+                "outside_domain_blank_cells": 0,
+                "value_comparison_max_abs_error": 0.0
+              },
+              "水分浓度": {
+                "data_rows": 1801,
+                "total_rows": 1802,
+                "first_time_s": 0,
+                "last_time_s": 1800,
+                "outside_domain_blank_cells": 0,
+                "value_comparison_max_abs_error": 0.0
+              }
+            },
+            "live_Run_sample_validation": {
+              "status": "PASS",
+              "samples": 14,
+              "max_abs_unrounded_difference": 0.0
+            },
+            "paper_CSV_live_Run_validation": {
+              "status": "PASS",
+              "checked_cells": 84,
+              "files": [
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q1/q1_paper_temperature.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\q1_paper_temperature.csv",
+                    "bytes": 380,
+                    "sha256": "c0db2708c44869bdf3bbe9eeb76e43e618052699b09f71c71e234d27dc6b7e7d",
+                    "exists": true
+                  },
+                  "kind": "temperature",
+                  "status": "PASS",
+                  "header": [
+                    "时间/s",
+                    "0",
+                    "0.5",
+                    "1",
+                    "1.5",
+                    "2"
+                  ],
+                  "data_rows": 7,
+                  "expected_data_rows": 7,
+                  "checked_cells": 42,
+                  "source_query_times_s": [
+                    100.0,
+                    300.0,
+                    600.0,
+                    900.0,
+                    1200.0,
+                    1500.0,
+                    1800.0
+                  ],
+                  "display_time_unit": "s",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "degC",
+                  "max_field_rounding_error_from_live_value": 4.926668609428475e-05,
+                  "outside_domain_blank_cells": 0,
+                  "physical_radii_m": [
+                    0.0,
+                    0.005,
+                    0.01,
+                    0.015,
+                    0.02
+                  ],
+                  "surface_column_1based": null,
+                  "surface_query": null
+                },
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q1/q1_paper_moisture.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\q1_paper_moisture.csv",
+                    "bytes": 345,
+                    "sha256": "0a70db9b078e1df52a011f535ef1bb90b3b3f5f6119a06cbb941a17b467390d3",
+                    "exists": true
+                  },
+                  "kind": "moisture",
+                  "status": "PASS",
+                  "header": [
+                    "时间/s",
+                    "0",
+                    "0.5",
+                    "1",
+                    "1.5",
+                    "2"
+                  ],
+                  "data_rows": 7,
+                  "expected_data_rows": 7,
+                  "checked_cells": 42,
+                  "source_query_times_s": [
+                    100.0,
+                    300.0,
+                    600.0,
+                    900.0,
+                    1200.0,
+                    1500.0,
+                    1800.0
+                  ],
+                  "display_time_unit": "s",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "kg/kg",
+                  "max_field_rounding_error_from_live_value": 4.952231810984031e-05,
+                  "outside_domain_blank_cells": 0,
+                  "physical_radii_m": [
+                    0.0,
+                    0.005,
+                    0.01,
+                    0.015,
+                    0.02
+                  ],
+                  "surface_column_1based": null,
+                  "surface_query": null
+                }
+              ],
+              "completion": null,
+              "completion_source": null,
+              "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+              "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+            },
+            "errors": [],
+            "elapsed_s": 1.1422688999991806,
+            "workbook": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q1/result1.xlsx",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.xlsx",
+              "bytes": 391166,
+              "sha256": "05d2e281b4412d0d5bfc929aeeb767c4c3c3c039ff30df7bb089aabfa726c542",
+              "exists": true,
+              "role": "contest_result_workbook"
+            },
+            "export_manifest": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q1/result1.export.json",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.export.json",
+              "bytes": 37992,
+              "sha256": "a5a711893c1afc660f710bf8087bfa31a34f718f2f1584f9fff042d55228089b",
+              "exists": true
+            },
+            "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+            "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+            "visual_render": "pending",
+            "visual_studio_gui": "pending",
+            "human_review": "pending",
+            "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q1\\result1.validation.json"
+          }
+        ]
+      },
+      "event_s": null,
+      "end_s": 1800.0,
+      "Q2_is_accelerated_constant_D_export_test_only": false
+    },
+    {
+      "question_id": "Q2",
+      "settings": {
+        "question": "Q23",
+        "intervals": 40,
+        "rtol": 1e-08,
+        "atol_temperature": 1e-08,
+        "atol_moisture": 1e-10,
+        "max_step_s": 600.0,
+        "early_max_step_s": 5.0,
+        "horizon_h": 24.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-06,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": 2e-08,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "export": {
+        "question_id": "Q2",
+        "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.xlsx",
+        "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.export.json",
+        "artifacts": [
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q2/result2.xlsx",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.xlsx",
+            "bytes": 3605431,
+            "sha256": "741a7b5a5ca93540e4316b763f84e17f2865a1db078dfaa10820adbb58369e8a",
+            "exists": true,
+            "role": "contest_result_workbook"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q2/result2_unrounded.csv.gz",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2_unrounded.csv.gz",
+            "bytes": 5729298,
+            "sha256": "037182572aaeed202d4c7ae0a765557b2b3eb3b68a2de03e0016eb390a019c6e",
+            "exists": true,
+            "role": "internal_unrounded_output_grid_archive"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q2/q2_paper_temperature.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\q2_paper_temperature.csv",
+            "bytes": 315,
+            "sha256": "98914bf0b3327e98e1cde7f18ff3bea32fe5c839649853ad7c3a4cbe61a66124",
+            "exists": true,
+            "role": "paper_table"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q2/q2_paper_moisture.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\q2_paper_moisture.csv",
+            "bytes": 285,
+            "sha256": "2476cb3ed7431df6043dbeaa62ea535d842cf36f02e6e5cae7222f3053413fb6",
+            "exists": true,
+            "role": "paper_table"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q2/result2.export.json",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.export.json",
+            "bytes": 38605,
+            "sha256": "556d822fa4fc1067e8051a7c6e0e359418c7d79a0b597c7ab6767563f30a4efe",
+            "exists": true,
+            "role": "export_manifest"
+          }
+        ],
+        "sheets": {
+          "温度": {
+            "data_rows": 16103,
+            "total_rows": 16104,
+            "columns": 22,
+            "outside_domain_blank_cells": 0,
+            "first_time_s": 0.0,
+            "last_time_s": 16102.0,
+            "header": [
+              "时间\\到药材中心的距离",
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2.0
+            ]
+          },
+          "水分浓度": {
+            "data_rows": 16103,
+            "total_rows": 16104,
+            "columns": 22,
+            "outside_domain_blank_cells": 0,
+            "first_time_s": 0.0,
+            "last_time_s": 16102.0,
+            "header": [
+              "时间\\到药材中心的距离",
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2.0
+            ]
+          }
+        },
+        "size": {
+          "workbook_bytes": 3605431,
+          "workbook_MiB": 3.4384069442749023,
+          "unrounded_archive_bytes": 5729298,
+          "warning_limit_bytes": 20000000,
+          "workbook_exceeds_20_decimal_MB": false,
+          "archive_is_internal_not_automatically_in_submission_zip": true,
+          "complete_support_archive_still_requires_actual_size_check": true,
+          "no_required_time_or_space_values_removed": true
+        },
+        "validation_status": "pending"
+      },
+      "validation": {
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "exports": [
+          {
+            "schema_version": "1.0",
+            "question_id": "Q2",
+            "generated_by": "paper_output/code/modeling/export_outputs.py",
+            "generated_at": "2026-09-10T16:13:24.198800+00:00",
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "checked_cells": 708532,
+            "sheets": {
+              "温度": {
+                "data_rows": 16103,
+                "total_rows": 16104,
+                "first_time_s": 0,
+                "last_time_s": 16102,
+                "outside_domain_blank_cells": 0,
+                "value_comparison_max_abs_error": 0.0
+              },
+              "水分浓度": {
+                "data_rows": 16103,
+                "total_rows": 16104,
+                "first_time_s": 0,
+                "last_time_s": 16102,
+                "outside_domain_blank_cells": 0,
+                "value_comparison_max_abs_error": 0.0
+              }
+            },
+            "live_Run_sample_validation": {
+              "status": "PASS",
+              "samples": 14,
+              "max_abs_unrounded_difference": 0.0
+            },
+            "paper_CSV_live_Run_validation": {
+              "status": "PASS",
+              "checked_cells": 72,
+              "files": [
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q2/q2_paper_temperature.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\q2_paper_temperature.csv",
+                    "bytes": 315,
+                    "sha256": "98914bf0b3327e98e1cde7f18ff3bea32fe5c839649853ad7c3a4cbe61a66124",
+                    "exists": true
+                  },
+                  "kind": "temperature",
+                  "status": "PASS",
+                  "header": [
+                    "时间/h",
+                    "0",
+                    "0.5",
+                    "1",
+                    "1.5",
+                    "2"
+                  ],
+                  "data_rows": 6,
+                  "expected_data_rows": 6,
+                  "checked_cells": 36,
+                  "source_query_times_s": [
+                    1800.0,
+                    3600.0,
+                    5400.0,
+                    7200.0,
+                    9000.0,
+                    10800.0
+                  ],
+                  "display_time_unit": "h",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "degC",
+                  "max_field_rounding_error_from_live_value": 4.766674370415558e-05,
+                  "outside_domain_blank_cells": 0,
+                  "physical_radii_m": [
+                    0.0,
+                    0.005,
+                    0.01,
+                    0.015,
+                    0.02
+                  ],
+                  "surface_column_1based": null,
+                  "surface_query": null
+                },
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q2/q2_paper_moisture.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\q2_paper_moisture.csv",
+                    "bytes": 285,
+                    "sha256": "2476cb3ed7431df6043dbeaa62ea535d842cf36f02e6e5cae7222f3053413fb6",
+                    "exists": true
+                  },
+                  "kind": "moisture",
+                  "status": "PASS",
+                  "header": [
+                    "时间/h",
+                    "0",
+                    "0.5",
+                    "1",
+                    "1.5",
+                    "2"
+                  ],
+                  "data_rows": 6,
+                  "expected_data_rows": 6,
+                  "checked_cells": 36,
+                  "source_query_times_s": [
+                    1800.0,
+                    3600.0,
+                    5400.0,
+                    7200.0,
+                    9000.0,
+                    10800.0
+                  ],
+                  "display_time_unit": "h",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "kg/kg",
+                  "max_field_rounding_error_from_live_value": 4.754117815924941e-05,
+                  "outside_domain_blank_cells": 0,
+                  "physical_radii_m": [
+                    0.0,
+                    0.005,
+                    0.01,
+                    0.015,
+                    0.02
+                  ],
+                  "surface_column_1based": null,
+                  "surface_query": null
+                }
+              ],
+              "completion": null,
+              "completion_source": null,
+              "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+              "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+            },
+            "errors": [],
+            "elapsed_s": 9.424812900000688,
+            "workbook": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q2/result2.xlsx",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.xlsx",
+              "bytes": 3605431,
+              "sha256": "741a7b5a5ca93540e4316b763f84e17f2865a1db078dfaa10820adbb58369e8a",
+              "exists": true,
+              "role": "contest_result_workbook"
+            },
+            "export_manifest": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q2/result2.export.json",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.export.json",
+              "bytes": 38605,
+              "sha256": "556d822fa4fc1067e8051a7c6e0e359418c7d79a0b597c7ab6767563f30a4efe",
+              "exists": true
+            },
+            "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+            "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+            "visual_render": "pending",
+            "visual_studio_gui": "pending",
+            "human_review": "pending",
+            "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q2\\result2.validation.json"
+          }
+        ]
+      },
+      "event_s": 16100.416298198237,
+      "end_s": 16102.0,
+      "Q2_is_accelerated_constant_D_export_test_only": true
+    },
+    {
+      "question_id": "Q3",
+      "settings": {
+        "question": "Q23",
+        "intervals": 40,
+        "rtol": 1e-08,
+        "atol_temperature": 1e-08,
+        "atol_moisture": 1e-10,
+        "max_step_s": 600.0,
+        "early_max_step_s": 5.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "export": {
+        "question_id": "Q3",
+        "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.xlsx",
+        "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.export.json",
+        "artifacts": [
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q3/result3.xlsx",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.xlsx",
+            "bytes": 339128,
+            "sha256": "3ca3d7b1b0011a647b9919013d0f07e2f0eb10d000ad426616b422aca54431b3",
+            "exists": true,
+            "role": "contest_result_workbook"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q3/result3_unrounded.csv.gz",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3_unrounded.csv.gz",
+            "bytes": 640716,
+            "sha256": "21f04ba3c1d6c5779e06463278a50fbfbe3d25e912d73d5ab99d7c36cde8be5c",
+            "exists": true,
+            "role": "internal_unrounded_output_grid_archive"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q3/q3_paper_moisture.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\q3_paper_moisture.csv",
+            "bytes": 466,
+            "sha256": "9568aac09b38508e38b4f448de99da4d375f435da33433fd2e71ffce7d6b684e",
+            "exists": true,
+            "role": "paper_table"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q3/result3.export.json",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.export.json",
+            "bytes": 25158,
+            "sha256": "99332f9f05acc0d872860ac99ab07da31e5c6d8deb668d2fff65f47e8983658c",
+            "exists": true,
+            "role": "export_manifest"
+          }
+        ],
+        "sheets": {
+          "Sheet1": {
+            "data_rows": 3451,
+            "total_rows": 3452,
+            "columns": 22,
+            "outside_domain_blank_cells": 0,
+            "first_time_s": 0.0,
+            "last_time_s": 206940.0,
+            "header": [
+              "时间\\到药材中心的距离",
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2.0
+            ]
+          }
+        },
+        "size": {
+          "workbook_bytes": 339128,
+          "workbook_MiB": 0.32341766357421875,
+          "unrounded_archive_bytes": 640716,
+          "warning_limit_bytes": 20000000,
+          "workbook_exceeds_20_decimal_MB": false,
+          "archive_is_internal_not_automatically_in_submission_zip": true,
+          "complete_support_archive_still_requires_actual_size_check": true,
+          "no_required_time_or_space_values_removed": true
+        },
+        "validation_status": "pending"
+      },
+      "validation": {
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "exports": [
+          {
+            "schema_version": "1.0",
+            "question_id": "Q3",
+            "generated_by": "paper_output/code/modeling/export_outputs.py",
+            "generated_at": "2026-09-10T16:13:29.862129+00:00",
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "checked_cells": 75922,
+            "sheets": {
+              "Sheet1": {
+                "data_rows": 3451,
+                "total_rows": 3452,
+                "first_time_s": 0,
+                "last_time_s": 206940,
+                "outside_domain_blank_cells": 0,
+                "value_comparison_max_abs_error": 0.0
+              }
+            },
+            "live_Run_sample_validation": {
+              "status": "PASS",
+              "samples": 15,
+              "max_abs_unrounded_difference": 0.0
+            },
+            "paper_CSV_live_Run_validation": {
+              "status": "PASS",
+              "checked_cells": 60,
+              "files": [
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q3/q3_paper_moisture.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\q3_paper_moisture.csv",
+                    "bytes": 466,
+                    "sha256": "9568aac09b38508e38b4f448de99da4d375f435da33433fd2e71ffce7d6b684e",
+                    "exists": true
+                  },
+                  "kind": "moisture",
+                  "status": "PASS",
+                  "header": [
+                    "时间/h",
+                    "0",
+                    "0.5",
+                    "1",
+                    "1.5",
+                    "2"
+                  ],
+                  "data_rows": 10,
+                  "expected_data_rows": 10,
+                  "checked_cells": 60,
+                  "source_query_times_s": [
+                    21600.0,
+                    43200.0,
+                    64800.0,
+                    86400.0,
+                    108000.0,
+                    129600.0,
+                    151200.0,
+                    172800.0,
+                    194400.0,
+                    206938.8
+                  ],
+                  "display_time_unit": "h",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "kg/kg",
+                  "max_field_rounding_error_from_live_value": 4.8933728451244773e-05,
+                  "outside_domain_blank_cells": 0,
+                  "physical_radii_m": [
+                    0.0,
+                    0.005,
+                    0.01,
+                    0.015,
+                    0.02
+                  ],
+                  "surface_column_1based": null,
+                  "surface_query": null
+                }
+              ],
+              "completion": {
+                "critical_event_s": 206938.72049457923,
+                "critical_event_h": 57.482977915160895,
+                "reported_drying_time_h": 57.483,
+                "reported_time_s": 206938.8,
+                "max_C_at_reported_time": 0.14999997684587169,
+                "slowest_material_coordinate": 0.0,
+                "conservative_post_verification_s": 206940.0,
+                "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+                "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+              },
+              "completion_source": {
+                "path": "paper_output/code/modeling/q3_model.py",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q3_model.py",
+                "bytes": 1285,
+                "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+                "exists": true
+              },
+              "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+              "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+            },
+            "errors": [],
+            "elapsed_s": 1.03928729999825,
+            "workbook": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q3/result3.xlsx",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.xlsx",
+              "bytes": 339128,
+              "sha256": "3ca3d7b1b0011a647b9919013d0f07e2f0eb10d000ad426616b422aca54431b3",
+              "exists": true,
+              "role": "contest_result_workbook"
+            },
+            "export_manifest": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q3/result3.export.json",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.export.json",
+              "bytes": 25158,
+              "sha256": "99332f9f05acc0d872860ac99ab07da31e5c6d8deb668d2fff65f47e8983658c",
+              "exists": true
+            },
+            "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+            "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+            "visual_render": "pending",
+            "visual_studio_gui": "pending",
+            "human_review": "pending",
+            "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q3\\result3.validation.json"
+          }
+        ]
+      },
+      "event_s": 206938.72049457923,
+      "end_s": 206940.0,
+      "Q2_is_accelerated_constant_D_export_test_only": false
+    },
+    {
+      "question_id": "Q4",
+      "settings": {
+        "question": "Q4",
+        "intervals": 40,
+        "rtol": 1e-08,
+        "atol_temperature": 1e-08,
+        "atol_moisture": 1e-10,
+        "max_step_s": 600.0,
+        "early_max_step_s": 5.0,
+        "horizon_h": 240.0,
+        "shrink": true,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "export": {
+        "question_id": "Q4",
+        "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.xlsx",
+        "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.export.json",
+        "artifacts": [
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q4/result4.xlsx",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.xlsx",
+            "bytes": 278102,
+            "sha256": "4ed91f5d752f159839ca795332a27708acd3b46a44d13bbf5ea0da453d9befcc",
+            "exists": true,
+            "role": "contest_result_workbook"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q4/result4_unrounded.csv.gz",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4_unrounded.csv.gz",
+            "bytes": 402814,
+            "sha256": "4ad50b4bc44a5e9e6723d40b855ac7589d5d81988c9642f55f56068298c35015",
+            "exists": true,
+            "role": "internal_unrounded_output_grid_archive"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q4/q4_paper_moisture.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\q4_paper_moisture.csv",
+            "bytes": 390,
+            "sha256": "9e32b72bdf6381ba536e7670320464ce9f15a0bbc05852938e126845c17b275b",
+            "exists": true,
+            "role": "paper_table"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q4/q4_paper_radius.csv",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\q4_paper_radius.csv",
+            "bytes": 172,
+            "sha256": "76ed187c4392b97e360129fe5a0029a44687a56052d379ce997c0d41a501058f",
+            "exists": true,
+            "role": "paper_surface_coordinates"
+          },
+          {
+            "path": "paper_output/results/export_paper_selfcheck_v3/Q4/result4.export.json",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.export.json",
+            "bytes": 26011,
+            "sha256": "e76f5133805f4b053aed287e2f2ea225155a5f608bffc2444e4e5d302c4cba31",
+            "exists": true,
+            "role": "export_manifest"
+          }
+        ],
+        "sheets": {
+          "Sheet1": {
+            "data_rows": 3069,
+            "total_rows": 3070,
+            "columns": 23,
+            "outside_domain_blank_cells": 23181,
+            "first_time_s": 0.0,
+            "last_time_s": 183962.0,
+            "header": [
+              "时间\\到药材中心的距离",
+              0.0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2.0,
+              "药材表面"
+            ]
+          },
+          "半径": {
+            "data_rows": 3069,
+            "total_rows": 3070,
+            "columns": 2,
+            "outside_domain_blank_cells": 0,
+            "first_time_s": 0.0,
+            "last_time_s": 183962.0,
+            "header": [
+              "时间/s",
+              "药材表面半径/cm"
+            ]
+          }
+        },
+        "size": {
+          "workbook_bytes": 278102,
+          "workbook_MiB": 0.26521873474121094,
+          "unrounded_archive_bytes": 402814,
+          "warning_limit_bytes": 20000000,
+          "workbook_exceeds_20_decimal_MB": false,
+          "archive_is_internal_not_automatically_in_submission_zip": true,
+          "complete_support_archive_still_requires_actual_size_check": true,
+          "no_required_time_or_space_values_removed": true
+        },
+        "validation_status": "pending"
+      },
+      "validation": {
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "exports": [
+          {
+            "schema_version": "1.0",
+            "question_id": "Q4",
+            "generated_by": "paper_output/code/modeling/export_outputs.py",
+            "generated_at": "2026-09-10T16:13:37.230104+00:00",
+            "status": "PASS",
+            "fully_verified_with_live_Run": true,
+            "checked_cells": 76725,
+            "sheets": {
+              "Sheet1": {
+                "data_rows": 3069,
+                "total_rows": 3070,
+                "first_time_s": 0,
+                "last_time_s": 183962,
+                "outside_domain_blank_cells": 23181,
+                "value_comparison_max_abs_error": 0.0
+              },
+              "半径": {
+                "data_rows": 3069,
+                "total_rows": 3070,
+                "first_time_s": 0,
+                "last_time_s": 183962,
+                "outside_domain_blank_cells": 0,
+                "value_comparison_max_abs_error": 0.0
+              }
+            },
+            "live_Run_sample_validation": {
+              "status": "PASS",
+              "samples": 15,
+              "max_abs_unrounded_difference": 2.7755575615628914e-17
+            },
+            "paper_CSV_live_Run_validation": {
+              "status": "PASS",
+              "checked_cells": 81,
+              "files": [
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q4/q4_paper_moisture.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\q4_paper_moisture.csv",
+                    "bytes": 390,
+                    "sha256": "9e32b72bdf6381ba536e7670320464ce9f15a0bbc05852938e126845c17b275b",
+                    "exists": true
+                  },
+                  "kind": "moisture",
+                  "status": "PASS",
+                  "header": [
+                    "时间/h",
+                    "0",
+                    "0.5",
+                    "1",
+                    "1.5",
+                    "2",
+                    "药材表面"
+                  ],
+                  "data_rows": 9,
+                  "expected_data_rows": 9,
+                  "checked_cells": 63,
+                  "source_query_times_s": [
+                    21600.0,
+                    43200.0,
+                    64800.0,
+                    86400.0,
+                    108000.0,
+                    129600.0,
+                    151200.0,
+                    172800.0,
+                    183960.72
+                  ],
+                  "display_time_unit": "h",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "kg/kg",
+                  "max_field_rounding_error_from_live_value": 4.853140608052087e-05,
+                  "outside_domain_blank_cells": 18,
+                  "physical_radii_m": [
+                    0.0,
+                    0.005,
+                    0.01,
+                    0.015,
+                    0.02
+                  ],
+                  "surface_column_1based": 7,
+                  "surface_query": "material_x=1; never fixed 2 cm"
+                },
+                {
+                  "artifact": {
+                    "path": "paper_output/results/export_paper_selfcheck_v3/Q4/q4_paper_radius.csv",
+                    "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\q4_paper_radius.csv",
+                    "bytes": 172,
+                    "sha256": "76ed187c4392b97e360129fe5a0029a44687a56052d379ce997c0d41a501058f",
+                    "exists": true
+                  },
+                  "kind": "radius",
+                  "status": "PASS",
+                  "header": [
+                    "时间/h",
+                    "表面半径/cm"
+                  ],
+                  "data_rows": 9,
+                  "expected_data_rows": 9,
+                  "checked_cells": 18,
+                  "source_query_times_s": [
+                    21600.0,
+                    43200.0,
+                    64800.0,
+                    86400.0,
+                    108000.0,
+                    129600.0,
+                    151200.0,
+                    172800.0,
+                    183960.72
+                  ],
+                  "display_time_unit": "h",
+                  "max_display_time_rounding_error": 0.0,
+                  "field_unit": "cm",
+                  "max_field_rounding_error_from_live_value": 0.0,
+                  "outside_domain_blank_cells": 0,
+                  "physical_radii_m": null,
+                  "surface_column_1based": null,
+                  "surface_query": null
+                }
+              ],
+              "completion": {
+                "critical_event_s": 183960.68962362036,
+                "critical_event_h": 51.10019156211677,
+                "reported_drying_time_h": 51.1002,
+                "reported_time_s": 183960.72,
+                "max_C_at_reported_time": 0.1499999844052728,
+                "slowest_material_coordinate": 0.0,
+                "conservative_post_verification_s": 183962.0,
+                "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+                "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+              },
+              "completion_source": {
+                "path": "paper_output/code/modeling/q3_model.py",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q3_model.py",
+                "bytes": 1285,
+                "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+                "exists": true
+              },
+              "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+              "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+            },
+            "errors": [],
+            "elapsed_s": 1.2226288999991084,
+            "workbook": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q4/result4.xlsx",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.xlsx",
+              "bytes": 278102,
+              "sha256": "4ed91f5d752f159839ca795332a27708acd3b46a44d13bbf5ea0da453d9befcc",
+              "exists": true,
+              "role": "contest_result_workbook"
+            },
+            "export_manifest": {
+              "path": "paper_output/results/export_paper_selfcheck_v3/Q4/result4.export.json",
+              "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.export.json",
+              "bytes": 26011,
+              "sha256": "e76f5133805f4b053aed287e2f2ea225155a5f608bffc2444e4e5d302c4cba31",
+              "exists": true
+            },
+            "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+            "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+            "visual_render": "pending",
+            "visual_studio_gui": "pending",
+            "human_review": "pending",
+            "report_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\Q4\\result4.validation.json"
+          }
+        ]
+      },
+      "event_s": 183960.68962362036,
+      "end_s": 183962.0,
+      "Q2_is_accelerated_constant_D_export_test_only": false
+    }
+  ],
+  "negative_checks": [
+    {
+      "question_id": "Q1",
+      "defect": "temperature_value",
+      "correctly_rejected": true,
+      "errors": [
+        "q1_paper_temperature.csv: independently queried value mismatch at row 2, column 2"
+      ],
+      "artifact": {
+        "path": "paper_output/results/export_paper_selfcheck_v3/deliberate_defects/temperature_value/q1_paper_temperature.csv",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\deliberate_defects\\temperature_value\\q1_paper_temperature.csv",
+        "bytes": 380,
+        "sha256": "9b4a7c79a9fcbab733bc3eca89814562eb0a858d3f56c704adacdb241cc31b4a",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q2",
+      "defect": "moisture_value",
+      "correctly_rejected": true,
+      "errors": [
+        "q2_paper_moisture.csv: independently queried value mismatch at row 2, column 2"
+      ],
+      "artifact": {
+        "path": "paper_output/results/export_paper_selfcheck_v3/deliberate_defects/moisture_value/q2_paper_moisture.csv",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\deliberate_defects\\moisture_value\\q2_paper_moisture.csv",
+        "bytes": 285,
+        "sha256": "2a7a2d80136fccc07f8d88b54040162e440dad783f02509ffbc6bd7d36622c9e",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q3",
+      "defect": "last_time_label",
+      "correctly_rejected": true,
+      "errors": [
+        "q3_paper_moisture.csv: time label mismatch at row 11; query time is 206938.79999999999s"
+      ],
+      "artifact": {
+        "path": "paper_output/results/export_paper_selfcheck_v3/deliberate_defects/last_time_label/q3_paper_moisture.csv",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\deliberate_defects\\last_time_label\\q3_paper_moisture.csv",
+        "bytes": 466,
+        "sha256": "9e2215f0a53dc416a13bd5bd0462c3a5932c5e41272c773aeeab52857cf63461",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q4",
+      "defect": "outside_nonblank",
+      "correctly_rejected": true,
+      "errors": [
+        "q4_paper_moisture.csv: domain outside must be blank at row 2, column 5"
+      ],
+      "artifact": {
+        "path": "paper_output/results/export_paper_selfcheck_v3/deliberate_defects/outside_nonblank/q4_paper_moisture.csv",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\deliberate_defects\\outside_nonblank\\q4_paper_moisture.csv",
+        "bytes": 396,
+        "sha256": "fc50e46035423d72d5068692c4ec0ce3312f75be842f1ee9fa2df379e609856f",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q4",
+      "defect": "surface_missing",
+      "correctly_rejected": true,
+      "errors": [
+        "q4_paper_moisture.csv: finite four-decimal number required at row 10, column 7"
+      ],
+      "artifact": {
+        "path": "paper_output/results/export_paper_selfcheck_v3/deliberate_defects/surface_missing/q4_paper_moisture.csv",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\deliberate_defects\\surface_missing\\q4_paper_moisture.csv",
+        "bytes": 384,
+        "sha256": "d7edef5315a9f04dad8df60dd8e6337ccdde41005075ea06fba73c8d48aac7b3",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q4",
+      "defect": "radius_value",
+      "correctly_rejected": true,
+      "errors": [
+        "q4_paper_radius.csv: independently queried value mismatch at row 10, column 2"
+      ],
+      "artifact": {
+        "path": "paper_output/results/export_paper_selfcheck_v3/deliberate_defects/radius_value/q4_paper_radius.csv",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\export_paper_selfcheck_v3\\deliberate_defects\\radius_value\\q4_paper_radius.csv",
+        "bytes": 172,
+        "sha256": "7e2defaf00013517fc76c6a389597fc4cd07e23d33d01950a0766d518eee3a82",
+        "exists": true
+      }
+    }
+  ],
+  "negative_test_scope": "Copied paper CSVs only; six deliberate defects must be rejected even after their recorded hashes are updated.",
+  "visual_studio_gui": "pending",
+  "human_review": "pending"
+}

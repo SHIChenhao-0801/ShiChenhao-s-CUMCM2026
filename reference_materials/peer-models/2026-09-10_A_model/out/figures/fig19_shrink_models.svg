@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460" font-family="'SimSun','Microsoft YaHei','Times New Roman',serif" font-size="13">
+<rect width="860" height="460" fill="#ffffff"/>
+<text x="430.0" y="27" text-anchor="middle" font-size="15" font-weight="bold">图19  问题4 收缩口径与物性组合对烘干时间的影响</text>
+<g stroke="#dddddd" stroke-width="0.8">
+<line x1="82.00" y1="52" x2="82.00" y2="386"/>
+<line x1="270.00" y1="52" x2="270.00" y2="386"/>
+<line x1="458.00" y1="52" x2="458.00" y2="386"/>
+<line x1="646.00" y1="52" x2="646.00" y2="386"/>
+<line x1="834.00" y1="52" x2="834.00" y2="386"/>
+<line x1="82" y1="386.00" x2="834" y2="386.00"/>
+<line x1="82" y1="325.55" x2="834" y2="325.55"/>
+<line x1="82" y1="265.09" x2="834" y2="265.09"/>
+<line x1="82" y1="204.64" x2="834" y2="204.64"/>
+<line x1="82" y1="144.19" x2="834" y2="144.19"/>
+<line x1="82" y1="83.73" x2="834" y2="83.73"/>
+</g>
+<rect x="82" y="52" width="752" height="334" fill="none" stroke="#333" stroke-width="1.2"/>
+<line x1="82.00" y1="386" x2="82.00" y2="391" stroke="#333" stroke-width="1.2"/>
+<text x="82.00" y="406" text-anchor="middle" font-size="12">0</text>
+<line x1="270.00" y1="386" x2="270.00" y2="391" stroke="#333" stroke-width="1.2"/>
+<text x="270.00" y="406" text-anchor="middle" font-size="12">1</text>
+<line x1="458.00" y1="386" x2="458.00" y2="391" stroke="#333" stroke-width="1.2"/>
+<text x="458.00" y="406" text-anchor="middle" font-size="12">2</text>
+<line x1="646.00" y1="386" x2="646.00" y2="391" stroke="#333" stroke-width="1.2"/>
+<text x="646.00" y="406" text-anchor="middle" font-size="12">3</text>
+<line x1="834.00" y1="386" x2="834.00" y2="391" stroke="#333" stroke-width="1.2"/>
+<text x="834.00" y="406" text-anchor="middle" font-size="12">4</text>
+<line x1="77" y1="386.00" x2="82" y2="386.00" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="390.00" text-anchor="end" font-size="12">0</text>
+<line x1="77" y1="325.55" x2="82" y2="325.55" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="329.55" text-anchor="end" font-size="12">25</text>
+<line x1="77" y1="265.09" x2="82" y2="265.09" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="269.09" text-anchor="end" font-size="12">50</text>
+<line x1="77" y1="204.64" x2="82" y2="204.64" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="208.64" text-anchor="end" font-size="12">75</text>
+<line x1="77" y1="144.19" x2="82" y2="144.19" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="148.19" text-anchor="end" font-size="12">100</text>
+<line x1="77" y1="83.73" x2="82" y2="83.73" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="87.73" text-anchor="end" font-size="12">125</text>
+<rect x="124.30" y="262.25" width="103.40" height="123.75" fill="#1f4e9c" fill-opacity="0.85" stroke="#1f4e9c" stroke-width="1.0"/>
+<text x="176.00" y="257.25" text-anchor="middle" font-size="11" fill="#222">51.17</text>
+<rect x="312.30" y="70.91" width="103.40" height="315.09" fill="#c0392b" fill-opacity="0.85" stroke="#c0392b" stroke-width="1.0"/>
+<text x="364.00" y="65.91" text-anchor="middle" font-size="11" fill="#222">130.3</text>
+<rect x="500.30" y="270.21" width="103.40" height="115.79" fill="#1e8449" fill-opacity="0.85" stroke="#1e8449" stroke-width="1.0"/>
+<text x="552.00" y="265.21" text-anchor="middle" font-size="11" fill="#222">47.88</text>
+<rect x="688.30" y="324.62" width="103.40" height="61.38" fill="#b7791f" fill-opacity="0.85" stroke="#b7791f" stroke-width="1.0"/>
+<text x="740.00" y="319.62" text-anchor="middle" font-size="11" fill="#222">25.38</text>
+<text x="458.0" y="434" text-anchor="middle" font-size="14"></text>
+<text x="18" y="219.0" text-anchor="middle" font-size="14" transform="rotate(-90,18,219.0)">烘干时间 T* / h</text>
+<text x="176.00" y="324.13" font-size="10" fill="#fff" text-anchor="middle">仿射收缩（主模型）</text>
+<text x="364.00" y="228.45" font-size="10" fill="#fff" text-anchor="middle">忽略收缩 R≡2 cm</text>
+<text x="552.00" y="328.11" font-size="10" fill="#fff" text-anchor="middle">固定等效终半径 R≡1.198 cm</text>
+<text x="740.00" y="355.31" font-size="10" fill="#fff" text-anchor="middle">仅收缩、物性取附录3</text>
+</svg>

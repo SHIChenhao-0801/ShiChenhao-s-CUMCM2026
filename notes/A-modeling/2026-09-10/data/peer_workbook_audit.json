@@ -1,0 +1,780 @@
+{
+  "created_utc": "2026-09-10T15:07:15.963Z",
+  "reader": "bundled Node @oai/artifact-tool",
+  "operation": "read-only XLSX import and independent value/schema checks",
+  "peer_code_executed": false,
+  "pickle_loaded": false,
+  "assets": [
+    {
+      "question": 1,
+      "path": "D:/Document/数学建模/2026CUMCM/reference_materials/peer-models/2026-09-10_A_model/out/result1.xlsx",
+      "sha256": "acab54b9947b079e079d0435fb60737b4680b45f2f12e8211b62f843f5e721c3",
+      "bytes": 373629,
+      "sheets": [
+        {
+          "sheet": "温度",
+          "used_rows": 1801,
+          "data_rows": 1800,
+          "columns": 22,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+          ],
+          "first": [
+            1,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28.0002
+          ],
+          "last": [
+            1800,
+            33.5753,
+            33.5832,
+            33.6068,
+            33.6461,
+            33.7012,
+            33.772,
+            33.8586,
+            33.9611,
+            34.0794,
+            34.2138,
+            34.3642,
+            34.5307,
+            34.7137,
+            34.9131,
+            35.1292,
+            35.3621,
+            35.6121,
+            35.8794,
+            36.164,
+            36.466,
+            36.7856
+          ],
+          "times": {
+            "first": 1,
+            "last": 1800,
+            "step_counts": {
+              "1": 1799
+            },
+            "duplicate_count": 0,
+            "noninteger_count": 0
+          },
+          "numeric": {
+            "min": 28,
+            "max": 36.7856,
+            "invalid_count": 0,
+            "blank_count": 0,
+            "non_four_decimal_rounded": 0,
+            "zero_count": 0
+          },
+          "geometry": {
+            "outside_expected": 0,
+            "outside_filled": 0,
+            "inside_blank": 0,
+            "radial_C_increase_count": 0,
+            "surface_equals_grid_count": 0,
+            "surface_grid_mismatch": 0,
+            "examples": []
+          },
+          "event": null
+        },
+        {
+          "sheet": "水分浓度",
+          "used_rows": 1801,
+          "data_rows": 1800,
+          "columns": 22,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+          ],
+          "first": [
+            1,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.5188
+          ],
+          "last": [
+            1800,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.5499,
+            2.5497,
+            2.5494,
+            2.5486,
+            2.547,
+            2.544,
+            2.5383,
+            2.5282,
+            2.5109,
+            2.483,
+            2.4397,
+            2.3755,
+            2.2841,
+            2.1591,
+            1.9937,
+            1.7807,
+            1.5102
+          ],
+          "times": {
+            "first": 1,
+            "last": 1800,
+            "step_counts": {
+              "1": 1799
+            },
+            "duplicate_count": 0,
+            "noninteger_count": 0
+          },
+          "numeric": {
+            "min": 1.5102,
+            "max": 2.55,
+            "invalid_count": 0,
+            "blank_count": 0,
+            "non_four_decimal_rounded": 0,
+            "zero_count": 0
+          },
+          "geometry": {
+            "outside_expected": 0,
+            "outside_filled": 0,
+            "inside_blank": 0,
+            "radial_C_increase_count": 0,
+            "surface_equals_grid_count": 0,
+            "surface_grid_mismatch": 0,
+            "examples": []
+          },
+          "event": null
+        }
+      ],
+      "unchanged_after_read": true
+    },
+    {
+      "question": 2,
+      "path": "D:/Document/数学建模/2026CUMCM/reference_materials/peer-models/2026-09-10_A_model/out/result2.xlsx",
+      "sha256": "f34b26797040591a4bc4afd73b12863719a10f111d22ef67c5cc9bbe77b1501e",
+      "bytes": 2555240,
+      "sheets": [
+        {
+          "sheet": "温度",
+          "used_rows": 10801,
+          "data_rows": 10800,
+          "columns": 22,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+          ],
+          "first": [
+            1,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28,
+            28.0001
+          ],
+          "last": [
+            10800,
+            49.8495,
+            49.8497,
+            49.8504,
+            49.8516,
+            49.8532,
+            49.8553,
+            49.858,
+            49.8613,
+            49.8651,
+            49.8695,
+            49.8746,
+            49.8803,
+            49.8868,
+            49.8938,
+            49.9016,
+            49.9101,
+            49.9194,
+            49.9296,
+            49.9407,
+            49.9529,
+            49.9664
+          ],
+          "times": {
+            "first": 1,
+            "last": 10800,
+            "step_counts": {
+              "1": 10799
+            },
+            "duplicate_count": 0,
+            "noninteger_count": 0
+          },
+          "numeric": {
+            "min": 28,
+            "max": 49.9664,
+            "invalid_count": 0,
+            "blank_count": 0,
+            "non_four_decimal_rounded": 0,
+            "zero_count": 0
+          },
+          "geometry": {
+            "outside_expected": 0,
+            "outside_filled": 0,
+            "inside_blank": 0,
+            "radial_C_increase_count": 0,
+            "surface_equals_grid_count": 0,
+            "surface_grid_mismatch": 0,
+            "examples": []
+          },
+          "event": null
+        },
+        {
+          "sheet": "水分浓度",
+          "used_rows": 10801,
+          "data_rows": 10800,
+          "columns": 22,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+          ],
+          "first": [
+            1,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.5207
+          ],
+          "last": [
+            10800,
+            1.7662,
+            1.7642,
+            1.7582,
+            1.7483,
+            1.7344,
+            1.7165,
+            1.6948,
+            1.6693,
+            1.64,
+            1.6069,
+            1.5702,
+            1.5299,
+            1.4859,
+            1.4385,
+            1.3876,
+            1.3333,
+            1.2754,
+            1.2141,
+            1.1493,
+            1.0807,
+            1.0081
+          ],
+          "times": {
+            "first": 1,
+            "last": 10800,
+            "step_counts": {
+              "1": 10799
+            },
+            "duplicate_count": 0,
+            "noninteger_count": 0
+          },
+          "numeric": {
+            "min": 1.0081,
+            "max": 2.55,
+            "invalid_count": 0,
+            "blank_count": 0,
+            "non_four_decimal_rounded": 0,
+            "zero_count": 0
+          },
+          "geometry": {
+            "outside_expected": 0,
+            "outside_filled": 0,
+            "inside_blank": 0,
+            "radial_C_increase_count": 0,
+            "surface_equals_grid_count": 0,
+            "surface_grid_mismatch": 0,
+            "examples": []
+          },
+          "event": null
+        }
+      ],
+      "unchanged_after_read": true
+    },
+    {
+      "question": 3,
+      "path": "D:/Document/数学建模/2026CUMCM/reference_materials/peer-models/2026-09-10_A_model/out/result3.xlsx",
+      "sha256": "1b606c5855585f08059f51652c622769c53bfdd12bd8fdfa86871c2c8419d3b7",
+      "bytes": 323087,
+      "sheets": [
+        {
+          "sheet": "Sheet1",
+          "used_rows": 3474,
+          "data_rows": 3473,
+          "columns": 22,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+          ],
+          "first": [
+            60,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.5485,
+            2.5185,
+            2.3272
+          ],
+          "last": [
+            208380,
+            0.1498,
+            0.1497,
+            0.1494,
+            0.149,
+            0.1483,
+            0.1475,
+            0.1465,
+            0.1452,
+            0.1438,
+            0.1421,
+            0.1401,
+            0.1379,
+            0.1353,
+            0.1324,
+            0.129,
+            0.125,
+            0.1204,
+            0.1147,
+            0.1073,
+            0.0965,
+            0.0527
+          ],
+          "times": {
+            "first": 60,
+            "last": 208380,
+            "step_counts": {
+              "60": 3472
+            },
+            "duplicate_count": 0,
+            "noninteger_count": 0
+          },
+          "numeric": {
+            "min": 0.0527,
+            "max": 2.55,
+            "invalid_count": 0,
+            "blank_count": 0,
+            "non_four_decimal_rounded": 0,
+            "zero_count": 0
+          },
+          "geometry": {
+            "outside_expected": 0,
+            "outside_filled": 0,
+            "inside_blank": 0,
+            "radial_C_increase_count": 0,
+            "surface_equals_grid_count": 0,
+            "surface_grid_mismatch": 0,
+            "examples": []
+          },
+          "event": {
+            "reported_critical_s": 207672.49247019208,
+            "first_60s_grid_after_critical": 207720,
+            "actual_end_s": 208380,
+            "extra_seconds_after_first_grid": 660,
+            "rows_near_critical": [
+              {
+                "excel_row": 3460,
+                "time_s": 207540,
+                "center_C": 0.15,
+                "surface_C": 0.0527
+              },
+              {
+                "excel_row": 3461,
+                "time_s": 207600,
+                "center_C": 0.15,
+                "surface_C": 0.0527
+              },
+              {
+                "excel_row": 3462,
+                "time_s": 207660,
+                "center_C": 0.15,
+                "surface_C": 0.0527
+              },
+              {
+                "excel_row": 3463,
+                "time_s": 207720,
+                "center_C": 0.15,
+                "surface_C": 0.0527
+              },
+              {
+                "excel_row": 3464,
+                "time_s": 207780,
+                "center_C": 0.15,
+                "surface_C": 0.0527
+              },
+              {
+                "excel_row": 3465,
+                "time_s": 207840,
+                "center_C": 0.15,
+                "surface_C": 0.0527
+              }
+            ],
+            "first_saved_rounded_max_below_015": 207900
+          }
+        }
+      ],
+      "unchanged_after_read": true
+    },
+    {
+      "question": 4,
+      "path": "D:/Document/数学建模/2026CUMCM/reference_materials/peer-models/2026-09-10_A_model/out/result4.xlsx",
+      "sha256": "91049ceab6616a145693b4c3ae5cea5620ff23eb5d0789899a7959a0699240bb",
+      "bytes": 229981,
+      "sheets": [
+        {
+          "sheet": "Sheet1",
+          "used_rows": 3075,
+          "data_rows": 3074,
+          "columns": 23,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2,
+            "药材表面"
+          ],
+          "first": [
+            60,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.5301,
+            null,
+            2.0802
+          ],
+          "last": [
+            184440,
+            0.1498,
+            0.1494,
+            0.1484,
+            0.1467,
+            0.1442,
+            0.141,
+            0.137,
+            0.1319,
+            0.1257,
+            0.118,
+            0.1078,
+            0.093,
+            0.0526,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.0526
+          ],
+          "times": {
+            "first": 60,
+            "last": 184440,
+            "step_counts": {
+              "60": 3073
+            },
+            "duplicate_count": 0,
+            "noninteger_count": 0
+          },
+          "numeric": {
+            "min": 0.0526,
+            "max": 2.55,
+            "invalid_count": 0,
+            "blank_count": 23229,
+            "non_four_decimal_rounded": 0,
+            "zero_count": 0
+          },
+          "geometry": {
+            "outside_expected": 23229,
+            "outside_filled": 0,
+            "inside_blank": 0,
+            "radial_C_increase_count": 0,
+            "surface_equals_grid_count": 975,
+            "surface_grid_mismatch": 0,
+            "examples": []
+          },
+          "event": {
+            "reported_critical_s": 183996.40140377992,
+            "first_60s_grid_after_critical": 184020,
+            "actual_end_s": 184440,
+            "extra_seconds_after_first_grid": 420,
+            "rows_near_critical": [
+              {
+                "excel_row": 3065,
+                "time_s": 183840,
+                "center_C": 0.1501,
+                "surface_C": 0.0526
+              },
+              {
+                "excel_row": 3066,
+                "time_s": 183900,
+                "center_C": 0.15,
+                "surface_C": 0.0526
+              },
+              {
+                "excel_row": 3067,
+                "time_s": 183960,
+                "center_C": 0.15,
+                "surface_C": 0.0526
+              },
+              {
+                "excel_row": 3068,
+                "time_s": 184020,
+                "center_C": 0.15,
+                "surface_C": 0.0526
+              },
+              {
+                "excel_row": 3069,
+                "time_s": 184080,
+                "center_C": 0.15,
+                "surface_C": 0.0526
+              },
+              {
+                "excel_row": 3070,
+                "time_s": 184140,
+                "center_C": 0.1499,
+                "surface_C": 0.0526
+              }
+            ],
+            "first_saved_rounded_max_below_015": 184140
+          }
+        }
+      ],
+      "unchanged_after_read": true
+    }
+  ],
+  "cross_checks": {
+    "q2_q3_shared_rounded_cells": {
+      "shared_times": 180,
+      "compared_cells": 3780,
+      "different_cells": 3,
+      "max_abs_difference": 0.00009999999999976694,
+      "where": {
+        "time_s": 120,
+        "radius_cm": 2,
+        "q2": 2.2421,
+        "q3": 2.2422
+      }
+    }
+  }
+}

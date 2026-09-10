@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-09-10T16:51:02.370267+00:00",
+  "parent_pid": 24944,
+  "token": "c215483af0784e7ead90dac086e74e92",
+  "configuration": {
+    "question": "Q1",
+    "n": 3200,
+    "full_second_comparison": true
+  },
+  "input_files": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "bytes": 16285,
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "bytes": 6542,
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "bytes": 14430,
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    }
+  ],
+  "runtime": {
+    "executable": "C:\\Python314\\python.exe",
+    "implementation": "CPython",
+    "version": "3.14.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "installed_library_versions": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.1"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "scope": "Installed distributions; actual imported module paths are recorded by worker."
+  }
+}

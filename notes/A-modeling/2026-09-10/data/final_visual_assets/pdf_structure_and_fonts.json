@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "tool": "pypdf read-only with bundled runtime; visual proof uses separately rendered Poppler PNG",
+  "pdfs": [
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles.pdf",
+      "sha256": "6024b7a69f78c11dafb987d369c044bcba5b368b7c24a566fe59f7bc807d2f18",
+      "pages": 1,
+      "page_points": [
+        0.0,
+        0.0,
+        821.2893046875,
+        350.208
+      ],
+      "fonts": [
+        {
+          "name": "/F1",
+          "basefont": "/DQSOJN+MicrosoftYaHei",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/F2",
+          "basefont": "/CJLBMO+MicrosoftYaHei-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "extracted_text": "0.0 0.5 1.0 1.5 2.0\n到药材中心的距离 / cm\n28\n30\n32\n34\n36温度 / °C\n（a）温度\n0.0 0.5 1.0 1.5 2.0\n到药材中心的距离 / cm\n1.6\n1.8\n2.0\n2.2\n2.4\n2.6干基含水率 / (kg/kg)\n（b）干基含水率\n第一问：预热阶段的径向温湿分布\n一维径向有效模型的条件性数值结果；忽略端面与显式潜热，环境水分按等效平衡边界处理。\n100 s 300 s 600 s 900 s 1200 s 1500 s 1800 s"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q2_profiles.pdf",
+      "sha256": "d745d1d1ce70453712dd7ebf410d6dd49457e0552005904c51013763d5be6171",
+      "pages": 1,
+      "page_points": [
+        0.0,
+        0.0,
+        829.5549296875,
+        350.208
+      ],
+      "fonts": [
+        {
+          "name": "/F1",
+          "basefont": "/BTINLE+MicrosoftYaHei",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/F2",
+          "basefont": "/GQVEMN+MicrosoftYaHei-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "extracted_text": "0.0 0.5 1.0 1.5 2.0\n到药材中心的距离 / cm\n32.5\n35.0\n37.5\n40.0\n42.5\n45.0\n47.5\n50.0温度 / °C\n（a）温度\n0.0 0.5 1.0 1.5 2.0\n到药材中心的距离 / cm\n1.0\n1.2\n1.4\n1.6\n1.8\n2.0\n2.2\n2.4\n2.6干基含水率 / (kg/kg)\n（b）干基含水率\n第二问：前三小时的径向温湿分布\n一维径向有效模型的条件性数值结果；忽略端面与显式潜热，环境水分按等效平衡边界处理。\n0.5 h 1 h 1.5 h 2 h 2.5 h 3 h"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying.pdf",
+      "sha256": "de673f06a715fa8a4506aa0ee9a14c56bee6008f2399a816765ebf9863074da1",
+      "pages": 1,
+      "page_points": [
+        0.0,
+        0.0,
+        839.7004296875,
+        370.836
+      ],
+      "fonts": [
+        {
+          "name": "/F1",
+          "basefont": "/DXMEXE+MicrosoftYaHei",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/F2",
+          "basefont": "/BQHKFD+MicrosoftYaHei-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "extracted_text": "0 10 20 30 40 50\n烘干时间 / h\n0.00\n0.25\n0.50\n0.75\n1.00\n1.25\n1.50\n1.75\n2.00物理径向距离 / cm\n4 h\n（a）物理空间中的含水率\n0 10 20 30 40 50\n烘干时间 / h\n0.0\n0.5\n1.0\n1.5\n2.0\n2.5干基含水率 / (kg/kg)\n全域临界时刻\n57.472 h\n（b）中心、均值与表面的变化\n中心\n干质量加权均值\n表面\n阈值 0.15 kg/kg\n0.5\n1.0\n1.5\n2.0\n2.5\n干基含水率 / (kg/kg)\n第三问：固定半径下的全程水分迁移\n一维径向有效模型；均值按干物质质量加权，达标条件取全域最大值。\n4 h 后环境延拓为 50 °C、等效平衡含水率 0.05 kg/kg。"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying.pdf",
+      "sha256": "243dd20d0be71564f5415ec605d8871ed1ae1a384598d2b547b83b699444da4e",
+      "pages": 1,
+      "page_points": [
+        0.0,
+        0.0,
+        839.7004296875,
+        370.836
+      ],
+      "fonts": [
+        {
+          "name": "/F1",
+          "basefont": "/DOEYSP+MicrosoftYaHei",
+          "subtype": "/Type0",
+          "embedded": true
+        },
+        {
+          "name": "/F2",
+          "basefont": "/DDOYCY+MicrosoftYaHei-Bold",
+          "subtype": "/Type0",
+          "embedded": true
+        }
+      ],
+      "extracted_text": "0 10 20 30 40 50\n烘干时间 / h\n0.00\n0.25\n0.50\n0.75\n1.00\n1.25\n1.50\n1.75\n2.00物理径向距离 / cm\n域外（非药材）\n4 h\n（a）物理空间中的含水率\n药材表面 R(t)\n0 10 20 30 40 50\n烘干时间 / h\n0.0\n0.5\n1.0\n1.5\n2.0\n2.5干基含水率 / (kg/kg)\n全域临界时刻\n51.091 h\n（b）中心、均值与表面的变化\n中心\n干质量加权均值\n表面\n阈值 0.15 kg/kg\n0.5\n1.0\n1.5\n2.0\n2.5\n干基含水率 / (kg/kg)\n第四问：收缩域内的全程水分迁移\n一维径向有效模型；均值按干物质质量加权，达标条件取全域最大值。\n4 h 后环境延拓为 50 °C、等效平衡含水率 0.05 kg/kg。"
+    }
+  ]
+}

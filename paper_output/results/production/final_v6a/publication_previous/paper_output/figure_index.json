@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper_output/code/data/prepare_a_data.py",
+  "generated_at": "2026-09-10T14:11:26.829883+00:00",
+  "source_code_sha256": "f32a7a23ea85f0bb68b59b64cf3e9c670cbabf8ce6324e29f0059a41c8f1fc5d",
+  "figures": [
+    {
+      "figure_id": "fig_A_environment",
+      "title": "烘房温度与水分指标原始观测",
+      "question_id": "Q1",
+      "question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "data_source": "paper_output/data_cleaned/A_environment_observed.csv",
+      "candidate_x": "time_h",
+      "candidate_y": [
+        "temperature_C",
+        "air_moisture_kg_per_kg"
+      ],
+      "purpose": "展示0–4小时实测边界及末期平台，标明长期延拓的观测边界",
+      "paper_usage": "数据审计与环境边界条件",
+      "caption": "241条原始观测；连线仅连接采样点，不表示4小时以后实测。空气kg/kg指标未直接等同药材平衡含水率。",
+      "path": "paper_output/figures/fig_A_environment.png",
+      "output_path": "paper_output/figures/fig_A_environment.png",
+      "chart_type": "observed_time_series",
+      "artifacts": {
+        "png": {
+          "path": "paper_output/figures/fig_A_environment.png",
+          "sha256": "3da9d5d4dae189adf49beb1f9d3253315ecc35e5f09c533eb9c9a36c402a7f46",
+          "bytes": 120197
+        },
+        "svg": {
+          "path": "paper_output/figures/fig_A_environment.svg",
+          "sha256": "a1cf01b052b3e2d9340aba41e8bb19eb5c2dbfe81c8c58eebef767accbe9976d",
+          "bytes": 111940
+        },
+        "pdf": {
+          "path": "paper_output/figures/fig_A_environment.pdf",
+          "sha256": "d47e0fe198c99f4e0fee475ef7c8e96e0a6febd50a72441850dbc1e6eaff9204",
+          "bytes": 23880
+        }
+      },
+      "status": "generated_from_observations",
+      "ok": true,
+      "placeholder": false,
+      "exists": true,
+      "planned": false,
+      "used_in": "数据审计与环境边界条件",
+      "source_sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "visual_review": "pending",
+      "human_review": "pending"
+    },
+    {
+      "figure_id": "fig_A_radius",
+      "title": "药材半径收缩原始观测",
+      "question_id": "Q4",
+      "question_ids": [
+        "Q4"
+      ],
+      "data_source": "paper_output/data_cleaned/A_radius_observed.csv",
+      "candidate_x": "time_h",
+      "candidate_y": [
+        "radius_cm"
+      ],
+      "purpose": "展示0–72小时给定半径和48–72小时尾段，限定收缩几何的数据支持范围",
+      "paper_usage": "收缩数据与移动边界",
+      "caption": "145条原始观测；半径保持非增。右图放大48–72小时，未对72小时以后外推。",
+      "path": "paper_output/figures/fig_A_radius.png",
+      "output_path": "paper_output/figures/fig_A_radius.png",
+      "chart_type": "observed_time_series",
+      "artifacts": {
+        "png": {
+          "path": "paper_output/figures/fig_A_radius.png",
+          "sha256": "207ecbeb949ef334daa657a200e8efbdb26bde0d9e850336ee5009099c8540fc",
+          "bytes": 94566
+        },
+        "svg": {
+          "path": "paper_output/figures/fig_A_radius.svg",
+          "sha256": "016d2af8d9030d19d1eed104c299a2568431ba603a2c3a009cffda0fbddf94b9",
+          "bytes": 75734
+        },
+        "pdf": {
+          "path": "paper_output/figures/fig_A_radius.pdf",
+          "sha256": "171876248d66e1219ab52c7f52a933eadf95cea2aea2f760a7d84ae90f7823ac",
+          "bytes": 18226
+        }
+      },
+      "status": "generated_from_observations",
+      "ok": true,
+      "placeholder": false,
+      "exists": true,
+      "planned": false,
+      "used_in": "收缩数据与移动边界",
+      "source_sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "visual_review": "pending",
+      "human_review": "pending"
+    }
+  ]
+}

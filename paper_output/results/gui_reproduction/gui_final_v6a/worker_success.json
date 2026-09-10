@@ -1,0 +1,1680 @@
+{
+  "started_at": "2026-09-10T16:58:30.437395+00:00",
+  "finished_at": "2026-09-10T17:38:29.378474+00:00",
+  "elapsed_seconds": 2397.2540211000014,
+  "input_files": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/axisymmetric_check.py",
+      "bytes": 13887,
+      "sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "bytes": 14520,
+      "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "bytes": 41427,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/peer_beta_check.py",
+      "bytes": 14337,
+      "sha256": "a7a31ba683be96de9f20c13476bdfa2a6e1e9fac25ec0035fdfaedff8159a683",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "bytes": 24337,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "bytes": 3995,
+      "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "bytes": 27729,
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "bytes": 16285,
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "bytes": 6542,
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "bytes": 3850,
+      "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "bytes": 14430,
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    },
+    {
+      "path": "paper_output/plan/model_route.json",
+      "bytes": 34621,
+      "sha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "exists": true
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "exists": true
+    }
+  ],
+  "runtime": {
+    "executable": "C:\\Python314\\python.exe",
+    "implementation": "CPython",
+    "version": "3.14.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "installed_library_versions": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.1"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "scope": "Installed distributions; actual imported module paths are recorded by worker."
+  },
+  "font": {
+    "path": "C:\\Windows\\Fonts\\msyh.ttc",
+    "bytes": 19704352,
+    "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+  },
+  "imported_model_modules": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "bytes": 41427,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "bytes": 24337,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "bytes": 27729,
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "exists": true
+    }
+  ],
+  "output_artifacts": [
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.json",
+      "bytes": 4034,
+      "sha256": "db57effe71bafe693d7a1fede46e7c3769debfd5714b4f4f9f476069283ab055",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.pdf",
+      "bytes": 61860,
+      "sha256": "65a7d150fd03f2d4fce2ab3e17424b3a359d660779c66da33016b6a78bea4092",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.png",
+      "bytes": 220065,
+      "sha256": "a4f82ffc04435a7b426e556e5fd0fe2fca47a034ee25a5bccf27df46bf06c001",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles.svg",
+      "bytes": 148009,
+      "sha256": "3c9328bebae24a0f3839482d278590872a23a01e75eebcc611578b8e92baf10b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q1_profiles_data.npz",
+      "bytes": 12242,
+      "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.json",
+      "bytes": 4051,
+      "sha256": "33c7d3bf7b3f6185ff50d1aec0d979680e0ae0c537e9f91bc457109c9cd2c8fc",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.pdf",
+      "bytes": 60863,
+      "sha256": "e13b63bf5b18bcbe1bdb1b9c74736d43c5c1f50b7e63dcc880b24484bd5dd668",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.png",
+      "bytes": 219522,
+      "sha256": "c06bebb0f0ff3dd1f7ca5eeee9713a2fe4a0c06a5262c70ffc23d0b877e74327",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles.svg",
+      "bytes": 143833,
+      "sha256": "631927c44396eacf26764711ff30e796ffd6ccb8a161f7a4e5642f9be32eb6a7",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q2_profiles_data.npz",
+      "bytes": 12165,
+      "sha256": "21fe824252f59c64f47b4a85b263481d61ec4f732b24368dc17771c49256a97e",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.json",
+      "bytes": 4336,
+      "sha256": "ee78c884c52f2bcf8279c92a5fc94354e71abe4d8f3ffcb84729570f3c9e4bc8",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.pdf",
+      "bytes": 68207,
+      "sha256": "8036acc198d158579782021885025aa8df6947d13cad37e8ef307caebd5df0ad",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.png",
+      "bytes": 234364,
+      "sha256": "70139c9fa2a43bd4507a87a46d1d757944919e08464f866a82ca6544978bb6ba",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying.svg",
+      "bytes": 137422,
+      "sha256": "f70d2116d0894275e6205ac18ef80a059c075873627a41c1acb21129878349bf",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q3_drying_data.npz",
+      "bytes": 249286,
+      "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.json",
+      "bytes": 4335,
+      "sha256": "a6d8a3ce33082461385d88c8384152c46bf5433c4f1f993e7d64c044811acc75",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.pdf",
+      "bytes": 84222,
+      "sha256": "bb5a34d561d3736bfc1b2e91714bcd803e7801063789c90bb672c99f036e880f",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.png",
+      "bytes": 260825,
+      "sha256": "59958d509154a1b8b2ef4cecc05a552ea748027eda331262461c5b08016b16c9",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying.svg",
+      "bytes": 170550,
+      "sha256": "e7d30aec9d974a0eba913a3a21b50710b75c76d8bd63484d4c26210b98ca2d9e",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/figures/fig_q4_drying_data.npz",
+      "bytes": 222086,
+      "sha256": "340ebfd87d947121cd58214a616c7dd2dd6a5c93f6e1c4a4bf2b81a7a7b1dbc9",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/launch.json",
+      "bytes": 7450,
+      "sha256": "11acc7b36633beeb70a8f0a46dd569b5bcd9ab172f872b0533eddd16220e68c1",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/launch_claim.json",
+      "bytes": 161,
+      "sha256": "1b0c6dc4a0a4d92c851e0301504ff5075d5a995bd5dc0b97e9abdc09673db941",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/numerical_summaries.json",
+      "bytes": 16295,
+      "sha256": "b4877207e058ed619c25b19f5283a1ea78f2167aa7fb8d57cf35272248562583",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q1_paper_moisture.csv",
+      "bytes": 345,
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q1_paper_temperature.csv",
+      "bytes": 380,
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q2_paper_moisture.csv",
+      "bytes": 285,
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q2_paper_temperature.csv",
+      "bytes": 315,
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q3_paper_moisture.csv",
+      "bytes": 466,
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q4_paper_moisture.csv",
+      "bytes": 390,
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q4_paper_radius.csv",
+      "bytes": 172,
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.export.json",
+      "bytes": 37957,
+      "sha256": "5a9526891bef220f4c21489bb383f503840d2f131d4b05b9963cf9c06cd7fc19",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.validation.json",
+      "bytes": 5256,
+      "sha256": "f2363cd3216c8e7ddb078fd21348e3b8182f9048ae2f1eab302f529b874f3e83",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.xlsx",
+      "bytes": 390897,
+      "sha256": "2ec3c9edd6900b7a40a0f90dfa92d9692a43cb42cc26d10fda080eddc7b1f418",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1_unrounded.csv.gz",
+      "bytes": 578239,
+      "sha256": "faf7e674520d59b84a384bd44845f0d96ab4d8e7dc458884ddef8e252024e98b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.export.json",
+      "bytes": 36684,
+      "sha256": "9725aa8139a417b8d5910866981c3635299ff2eb2af78498c422caa2f392238e",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.validation.json",
+      "bytes": 5245,
+      "sha256": "2da27067ac21cf3ec48f51a667186b6985e970d7ef132974b4f539673fe44b17",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.xlsx",
+      "bytes": 29210087,
+      "sha256": "ff421fc9a79f6e6d75badedf72d4024f7bfd460d383b2a28553566d8fd3d8274",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2_unrounded.csv.gz",
+      "bytes": 43018253,
+      "sha256": "78414667bcac028569517860fbb5d44de2b9b106e78745e00531843e710e5260",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.export.json",
+      "bytes": 25215,
+      "sha256": "be4e3ce73ae9e24c9c4e4b420811b181c227fe565bfdc7e685f45def1a085763",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.validation.json",
+      "bytes": 4590,
+      "sha256": "4a046bbf13d54e11a75eb9d8bcb8feade42b0938c1ad9638af17855836f2ad26",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.xlsx",
+      "bytes": 339138,
+      "sha256": "d6562d0816f3dcdc8b826b8c4393a7ca1f21be42e79f4c08fdf03c4f0e6fd125",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3_unrounded.csv.gz",
+      "bytes": 640369,
+      "sha256": "d579e36e14726315f6d33a2440ca905741f6129ab4b29f4646f8d1575c1d5a14",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.export.json",
+      "bytes": 26046,
+      "sha256": "5a4a7921301fae726fcde53335c73c23411ec4863f9b48ac30e4fd3a145a42b4",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.validation.json",
+      "bytes": 6073,
+      "sha256": "e6017b65595f81f1ea74ec7a3e5ea09e77563b663da19b0a6dd7cc7eb87e1501",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.xlsx",
+      "bytes": 278278,
+      "sha256": "647107348a562dd2ab41c457b4e35670ec6c3c88f909eaf6101dff7ab21b3605",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4_unrounded.csv.gz",
+      "bytes": 402572,
+      "sha256": "cbf439a1993975e4c6e4bc5d2e51503ab2a9c1be884d0b91e95d42d46416df86",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/Q1/sampled_solution.npz",
+      "bytes": 10569,
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/Q1/summary.json",
+      "bytes": 3949,
+      "sha256": "04a19b980ed5075ca72a7cfad3ceee724fc2af44fc0c9decb303f1c0840ed14a",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/Q23/sampled_solution.npz",
+      "bytes": 689540,
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/Q23/summary.json",
+      "bytes": 5732,
+      "sha256": "dddf5d5fd1201b8f05f4d005c505b89ed8ab3744a4e550c3b78f9f99665467b0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/Q4/sampled_solution.npz",
+      "bytes": 628742,
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/Q4/summary.json",
+      "bytes": 5359,
+      "sha256": "c9023ead1d7a10fecf8ac24a13f3076cf3afc6489442af29f8e038c565909b74",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/review_result.json",
+      "bytes": 90117,
+      "sha256": "1e1bbed069a05d5ba7eac9a0b9cd878586641ac7a98f448122a100a26267afa7",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/gui_reproduction/gui_final_v6a/review_started.json",
+      "bytes": 109,
+      "sha256": "440e2b62543db16dcefae78a83f6d1ab1b5bb83c23bce79bf5709090e5ae3f12",
+      "exists": true
+    }
+  ],
+  "question_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "summaries": {
+    "Q1": {
+      "settings": {
+        "question": "Q1",
+        "intervals": 3200,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "max_step_s": 120.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 302.6628522000028,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+        "min_C": 1.510234685362519,
+        "max_C": 2.550000000000001,
+        "min_T_K": 301.15,
+        "max_T_K": 309.9355602874471,
+        "min_D": 3.882960068132186e-09,
+        "max_D": 4.937655094173939e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 3.552713678800501e-15,
+        "final_max_C": 2.549992403819304,
+        "final_surface_C": 1.5102346853625193,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3914,
+        "accepted_time_points": 1743,
+        "nfev": 3914,
+        "njev": 68,
+        "nlu": 431,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 463474752,
+        "dense_polynomial_count": 1742
+      },
+      "code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 19944,
+        "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+        "exists": true
+      },
+      "dense_storage_code": {
+        "path": "paper_output/code/modeling/disk_dense.py",
+        "bytes": 4869,
+        "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "solver_warning_count": 0,
+      "source_run_id": "gui_final_v6a",
+      "source_trajectory_id": "gui_final_v6a:Q1",
+      "reproduction_samples": {
+        "times_s": [
+          0.0,
+          1800.0
+        ],
+        "material_x": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "T_K": [
+          [
+            301.15,
+            301.15,
+            301.15,
+            301.15,
+            301.15
+          ],
+          [
+            306.7253448172471,
+            306.92200190803965,
+            307.51416078664806,
+            308.51212454467895,
+            309.9355602874471
+          ]
+        ],
+        "C": [
+          [
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55
+          ],
+          [
+            2.549992403819304,
+            2.549723930554662,
+            2.5383005254029065,
+            2.3754698868518354,
+            1.5102346853625193
+          ]
+        ]
+      },
+      "metric_samples": {
+        "Q1": {
+          "time_s": 1800.0,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              306.7253448172471,
+              309.9355602874471
+            ]
+          ],
+          "C": [
+            [
+              2.549992403819304,
+              1.5102346853625193
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        }
+      }
+    },
+    "Q23": {
+      "settings": {
+        "question": "Q23",
+        "intervals": 3200,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "max_step_s": 120.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": 206900.28702201758,
+        "event_h": 57.47230195056044,
+        "end_s": 206902.0,
+        "elapsed_s": 58.95125320000079,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 1.1546319456101628e-14,
+        "min_C": 0.05265944808510597,
+        "max_C": 2.550000000000001,
+        "min_T_K": 301.15,
+        "max_T_K": 323.18986600675885,
+        "min_D": 3.124541898624993e-12,
+        "max_D": 1.252185966946026e-08,
+        "positive_properties": true,
+        "max_radial_C_increase": 3.1086244689504383e-15,
+        "final_max_C": 0.14999950103529133,
+        "final_surface_C": 0.05265944808510597,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 32705,
+        "accepted_time_points": 14283,
+        "nfev": 32705,
+        "njev": 618,
+        "nlu": 3552,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 3754872872,
+        "dense_polynomial_count": 14280
+      },
+      "code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 19944,
+        "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+        "exists": true
+      },
+      "dense_storage_code": {
+        "path": "paper_output/code/modeling/disk_dense.py",
+        "bytes": 4869,
+        "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "solver_warning_count": 0,
+      "source_run_id": "gui_final_v6a",
+      "source_trajectory_id": "gui_final_v6a:Q23",
+      "completion": {
+        "critical_event_s": 206900.28702201758,
+        "critical_event_h": 57.47230195056044,
+        "reported_drying_time_h": 57.4724,
+        "reported_time_s": 206900.64,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 206902.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "reproduction_samples": {
+        "times_s": [
+          0.0,
+          1800.0,
+          10800.0,
+          206900.64,
+          206902.0
+        ],
+        "material_x": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "T_K": [
+          [
+            301.15,
+            301.15,
+            301.15,
+            301.15,
+            301.15
+          ],
+          [
+            305.3392446508569,
+            305.532114218488,
+            306.1159401214376,
+            307.11077899334816,
+            308.56302049753884
+          ],
+          [
+            322.9994956060796,
+            323.0053407098511,
+            323.02461224281694,
+            323.0601477811811,
+            323.1164123947858
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.1499999999999
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.15
+          ]
+        ],
+        "C": [
+          [
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55
+          ],
+          [
+            2.549934098712396,
+            2.5488838430623373,
+            2.5255580144516143,
+            2.3257039999977334,
+            1.648617763296951
+          ],
+          [
+            1.7661771002440243,
+            1.716533013166519,
+            1.5701979936396047,
+            1.3332634188779369,
+            1.0081231118401026
+          ],
+          [
+            0.14999989718225315,
+            0.14768651296460814,
+            0.1402086276135209,
+            0.12491406907205477,
+            0.0526594803435617
+          ],
+          [
+            0.14999950103529133,
+            0.14768612746407359,
+            0.14020827567351044,
+            0.12491378167987972,
+            0.05265944808510597
+          ]
+        ]
+      },
+      "metric_samples": {
+        "Q2": {
+          "time_s": 10800.0,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              322.9994956060796,
+              323.1164123947858
+            ]
+          ],
+          "C": [
+            [
+              1.7661771002440243,
+              1.0081231118401026
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        },
+        "Q3": {
+          "time_s": 206900.64,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              323.15,
+              323.1499999999999
+            ]
+          ],
+          "C": [
+            [
+              0.14999989718225315,
+              0.0526594803435617
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        }
+      }
+    },
+    "Q4": {
+      "settings": {
+        "question": "Q4",
+        "intervals": 6400,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "max_step_s": 120.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": true,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": 183926.06923258994,
+        "event_h": 51.09057478683054,
+        "end_s": 183928.0,
+        "elapsed_s": 136.75434090000272,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 7.993605777301127e-15,
+        "min_C": 0.05261996970729463,
+        "max_C": 2.5500000000000025,
+        "min_T_K": 301.15,
+        "max_T_K": 323.2000976421016,
+        "min_D": 9.398366254447737e-12,
+        "max_D": 2.477122820067253e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 4.440892098500626e-15,
+        "final_max_C": 0.14999900856092843,
+        "final_surface_C": 0.052619969707294635,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.012,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 36934,
+        "accepted_time_points": 15996,
+        "nfev": 36934,
+        "njev": 737,
+        "nlu": 4099,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 8327788168,
+        "dense_polynomial_count": 15993
+      },
+      "code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 19944,
+        "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+        "exists": true
+      },
+      "dense_storage_code": {
+        "path": "paper_output/code/modeling/disk_dense.py",
+        "bytes": 4869,
+        "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "solver_warning_count": 0,
+      "source_run_id": "gui_final_v6a",
+      "source_trajectory_id": "gui_final_v6a:Q4",
+      "completion": {
+        "critical_event_s": 183926.06923258994,
+        "critical_event_h": 51.09057478683054,
+        "reported_drying_time_h": 51.0906,
+        "reported_time_s": 183926.16,
+        "max_C_at_reported_time": 0.14999995339076624,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 183928.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "reproduction_samples": {
+        "times_s": [
+          0.0,
+          1800.0,
+          10800.0,
+          183926.16,
+          183928.0
+        ],
+        "material_x": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "T_K": [
+          [
+            301.15,
+            301.15,
+            301.15,
+            301.15,
+            301.15
+          ],
+          [
+            304.18781907151936,
+            304.46728468564174,
+            305.3224885001255,
+            306.80252608201823,
+            309.05980848026536
+          ],
+          [
+            322.97124085294246,
+            322.9784486845918,
+            323.0028781283762,
+            323.0496413187221,
+            323.12744861066466
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.15
+          ],
+          [
+            323.15,
+            323.15,
+            323.15,
+            323.15,
+            323.15
+          ]
+        ],
+        "C": [
+          [
+            2.55,
+            2.55,
+            2.55,
+            2.55,
+            2.55
+          ],
+          [
+            2.55,
+            2.5499999999995815,
+            2.549998436080619,
+            2.5309421443741127,
+            1.1313425016195608
+          ],
+          [
+            2.4547252277379927,
+            2.3815382147789257,
+            2.112246351658363,
+            1.5585872624122925,
+            0.6843727284423174
+          ],
+          [
+            0.14999995339076624,
+            0.14692749737405153,
+            0.13718379398934455,
+            0.11813224940015873,
+            0.05262002809955053
+          ],
+          [
+            0.14999900856092843,
+            0.14692658503537287,
+            0.13718298178958888,
+            0.11813162008386399,
+            0.052619969707294635
+          ]
+        ]
+      },
+      "metric_samples": {
+        "Q4": {
+          "time_s": 183926.16,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              323.15,
+              323.15
+            ]
+          ],
+          "C": [
+            [
+              0.14999995339076624,
+              0.05262002809955053
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        }
+      }
+    }
+  },
+  "exports": [
+    {
+      "question_id": "Q1",
+      "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result1.xlsx",
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result1.export.json",
+      "artifacts": [
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result1.xlsx",
+          "bytes": 390897,
+          "sha256": "2ec3c9edd6900b7a40a0f90dfa92d9692a43cb42cc26d10fda080eddc7b1f418",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1_unrounded.csv.gz",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result1_unrounded.csv.gz",
+          "bytes": 578239,
+          "sha256": "faf7e674520d59b84a384bd44845f0d96ab4d8e7dc458884ddef8e252024e98b",
+          "exists": true,
+          "role": "internal_unrounded_output_grid_archive"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q1_paper_temperature.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q1_paper_temperature.csv",
+          "bytes": 380,
+          "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+          "exists": true,
+          "role": "paper_table"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q1_paper_moisture.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q1_paper_moisture.csv",
+          "bytes": 345,
+          "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+          "exists": true,
+          "role": "paper_table"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result1.export.json",
+          "bytes": 37957,
+          "sha256": "5a9526891bef220f4c21489bb383f503840d2f131d4b05b9963cf9c06cd7fc19",
+          "exists": true,
+          "role": "export_manifest"
+        }
+      ],
+      "sheets": {
+        "温度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 1800.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        },
+        "水分浓度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 1800.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        }
+      },
+      "size": {
+        "workbook_bytes": 390897,
+        "workbook_MiB": 0.3727884292602539,
+        "unrounded_archive_bytes": 578239,
+        "warning_limit_bytes": 20000000,
+        "workbook_exceeds_20_decimal_MB": false,
+        "archive_is_internal_not_automatically_in_submission_zip": true,
+        "complete_support_archive_still_requires_actual_size_check": true,
+        "no_required_time_or_space_values_removed": true
+      },
+      "validation_status": "PASS",
+      "validation_report": {
+        "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result1.validation.json",
+        "bytes": 5256,
+        "sha256": "f2363cd3216c8e7ddb078fd21348e3b8182f9048ae2f1eab302f529b874f3e83",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q2",
+      "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result2.xlsx",
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result2.export.json",
+      "artifacts": [
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result2.xlsx",
+          "bytes": 29210087,
+          "sha256": "ff421fc9a79f6e6d75badedf72d4024f7bfd460d383b2a28553566d8fd3d8274",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2_unrounded.csv.gz",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result2_unrounded.csv.gz",
+          "bytes": 43018253,
+          "sha256": "78414667bcac028569517860fbb5d44de2b9b106e78745e00531843e710e5260",
+          "exists": true,
+          "role": "internal_unrounded_output_grid_archive"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q2_paper_temperature.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q2_paper_temperature.csv",
+          "bytes": 315,
+          "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+          "exists": true,
+          "role": "paper_table"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q2_paper_moisture.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q2_paper_moisture.csv",
+          "bytes": 285,
+          "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+          "exists": true,
+          "role": "paper_table"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result2.export.json",
+          "bytes": 36684,
+          "sha256": "9725aa8139a417b8d5910866981c3635299ff2eb2af78498c422caa2f392238e",
+          "exists": true,
+          "role": "export_manifest"
+        }
+      ],
+      "sheets": {
+        "温度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 206902.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        },
+        "水分浓度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 206902.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        }
+      },
+      "size": {
+        "workbook_bytes": 29210087,
+        "workbook_MiB": 27.85690975189209,
+        "unrounded_archive_bytes": 43018253,
+        "warning_limit_bytes": 20000000,
+        "workbook_exceeds_20_decimal_MB": true,
+        "archive_is_internal_not_automatically_in_submission_zip": true,
+        "complete_support_archive_still_requires_actual_size_check": true,
+        "no_required_time_or_space_values_removed": true
+      },
+      "validation_status": "PASS",
+      "validation_report": {
+        "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result2.validation.json",
+        "bytes": 5245,
+        "sha256": "2da27067ac21cf3ec48f51a667186b6985e970d7ef132974b4f539673fe44b17",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q3",
+      "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result3.xlsx",
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result3.export.json",
+      "artifacts": [
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result3.xlsx",
+          "bytes": 339138,
+          "sha256": "d6562d0816f3dcdc8b826b8c4393a7ca1f21be42e79f4c08fdf03c4f0e6fd125",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3_unrounded.csv.gz",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result3_unrounded.csv.gz",
+          "bytes": 640369,
+          "sha256": "d579e36e14726315f6d33a2440ca905741f6129ab4b29f4646f8d1575c1d5a14",
+          "exists": true,
+          "role": "internal_unrounded_output_grid_archive"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q3_paper_moisture.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q3_paper_moisture.csv",
+          "bytes": 466,
+          "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+          "exists": true,
+          "role": "paper_table"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result3.export.json",
+          "bytes": 25215,
+          "sha256": "be4e3ce73ae9e24c9c4e4b420811b181c227fe565bfdc7e685f45def1a085763",
+          "exists": true,
+          "role": "export_manifest"
+        }
+      ],
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3451,
+          "total_rows": 3452,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 206902.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        }
+      },
+      "size": {
+        "workbook_bytes": 339138,
+        "workbook_MiB": 0.3234272003173828,
+        "unrounded_archive_bytes": 640369,
+        "warning_limit_bytes": 20000000,
+        "workbook_exceeds_20_decimal_MB": false,
+        "archive_is_internal_not_automatically_in_submission_zip": true,
+        "complete_support_archive_still_requires_actual_size_check": true,
+        "no_required_time_or_space_values_removed": true
+      },
+      "validation_status": "PASS",
+      "validation_report": {
+        "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result3.validation.json",
+        "bytes": 4590,
+        "sha256": "4a046bbf13d54e11a75eb9d8bcb8feade42b0938c1ad9638af17855836f2ad26",
+        "exists": true
+      }
+    },
+    {
+      "question_id": "Q4",
+      "workbook_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result4.xlsx",
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result4.export.json",
+      "artifacts": [
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result4.xlsx",
+          "bytes": 278278,
+          "sha256": "647107348a562dd2ab41c457b4e35670ec6c3c88f909eaf6101dff7ab21b3605",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4_unrounded.csv.gz",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result4_unrounded.csv.gz",
+          "bytes": 402572,
+          "sha256": "cbf439a1993975e4c6e4bc5d2e51503ab2a9c1be884d0b91e95d42d46416df86",
+          "exists": true,
+          "role": "internal_unrounded_output_grid_archive"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q4_paper_moisture.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q4_paper_moisture.csv",
+          "bytes": 390,
+          "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+          "exists": true,
+          "role": "paper_table"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/q4_paper_radius.csv",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\q4_paper_radius.csv",
+          "bytes": 172,
+          "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+          "exists": true,
+          "role": "paper_surface_coordinates"
+        },
+        {
+          "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\gui_reproduction\\gui_final_v6a\\outputs\\result4.export.json",
+          "bytes": 26046,
+          "sha256": "5a4a7921301fae726fcde53335c73c23411ec4863f9b48ac30e4fd3a145a42b4",
+          "exists": true,
+          "role": "export_manifest"
+        }
+      ],
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "columns": 23,
+          "outside_domain_blank_cells": 23173,
+          "first_time_s": 0.0,
+          "last_time_s": 183928.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0,
+            "药材表面"
+          ]
+        },
+        "半径": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "columns": 2,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 183928.0,
+          "header": [
+            "时间/s",
+            "药材表面半径/cm"
+          ]
+        }
+      },
+      "size": {
+        "workbook_bytes": 278278,
+        "workbook_MiB": 0.26538658142089844,
+        "unrounded_archive_bytes": 402572,
+        "warning_limit_bytes": 20000000,
+        "workbook_exceeds_20_decimal_MB": false,
+        "archive_is_internal_not_automatically_in_submission_zip": true,
+        "complete_support_archive_still_requires_actual_size_check": true,
+        "no_required_time_or_space_values_removed": true
+      },
+      "validation_status": "PASS",
+      "validation_report": {
+        "path": "paper_output/results/gui_reproduction/gui_final_v6a/outputs/result4.validation.json",
+        "bytes": 6073,
+        "sha256": "e6017b65595f81f1ea74ec7a3e5ea09e77563b663da19b0a6dd7cc7eb87e1501",
+        "exists": true
+      }
+    }
+  ],
+  "mode": "review",
+  "human_review": "pending",
+  "visual_studio_gui": "pending"
+}

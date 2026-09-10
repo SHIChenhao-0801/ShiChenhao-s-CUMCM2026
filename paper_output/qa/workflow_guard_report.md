@@ -1,15 +1,24 @@
 # Workflow Guard Report
 
-- Target step: `S3`
-- Status: `PASS`
-- Generated at: `2026-09-10T22:13:13`
-- Skill: `model-code-and-result-generator`
-- Required step: `S3`
-- Handoff: 数据/图表计划和 load_report 通过后才能生成或运行建模代码。
-- Next action: 允许启动 model-code-and-result-generator；完成后必须回到 paper-workflow-orchestrator 判断下一步。
+- Target step: `S7`
+- Status: `INCOMPLETE`
+- Generated at: `2026-09-11T01:19:39`
+- Current step: `S6`
+- Next step: `S7`
+- Recommended skill: `paper-formal-writer`
+- Next action: 执行写作计划、章节审计、必要的局部修复、确定性合并与全文统一改写；S7 PASS 后再生成正式 Word。
 
 ## Steps
 - S0 准入预检: `PASS`
 - S1 审题分析: `PASS`
 - S2 模型路线: `PASS`
 - S3 数据与图表计划: `PASS`
+- S4 建模代码: `PASS`
+- S5 结果证据: `PASS`
+- S6 证据门禁: `PASS`
+- S7 正式稿: `FAIL`
+  - 缺少文件：paper_output/plan/paper_outline.json
+  - 缺少文件：paper_output/plan/writing_plan.json
+  - 缺少文件：paper_output/context/authoring_state.json
+  - 缺少文件：paper_output/final_paper_source.md
+  - 缺少文件：paper_output/final_paper.docx

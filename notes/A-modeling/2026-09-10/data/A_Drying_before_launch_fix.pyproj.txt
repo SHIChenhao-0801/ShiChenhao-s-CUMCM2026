@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <ProjectGuid>{EACD24A0-A5E8-499A-A248-064AE6E45961}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>run_modeling.py</StartupFile>
+    <WorkingDirectory>D:\Document\数学建模\2026CUMCM</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>A_Drying</Name>
+    <RootNamespace>A_Drying</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>MSBuild|VerifiedPython314|$(MSBuildProjectFullPath)</InterpreterId>
+    <ScriptArguments>--review --review-exports --version gui_final_v6a --n1 3200 --n23 3200 --n4 6400 --blas-threads 1</ScriptArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'"><DebugSymbols>true</DebugSymbols></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="run_experiments.py" />
+    <Compile Include="run_modeling.py" />
+    <Compile Include="production_provenance.py" />
+    <Compile Include="disk_dense.py" />
+    <Compile Include="analytic_jacobian.py" />
+    <Compile Include="export_outputs.py" />
+    <Compile Include="publication_plots.py" />
+    <Compile Include="q1_model.py" />
+    <Compile Include="q2_model.py" />
+    <Compile Include="q3_model.py" />
+    <Compile Include="q4_model.py" />
+    <Compile Include="verify_convergence.py" />
+    <Compile Include="verify_dense_storage.py" />
+
+    <Compile Include="drying_core.py" />
+    <Compile Include="validate_bessel.py" />
+    <Compile Include="..\data\prepare_a_data.py"><Link>prepare_a_data.py</Link></Compile>
+    <Compile Include="..\contracts\build_a_contracts.py"><Link>build_a_contracts.py</Link></Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="C:\Python314\">
+      <Id>VerifiedPython314</Id><Version>3.14</Version>
+      <Description>Verified local Python 3.14 (64-bit)</Description>
+      <InterpreterPath>python.exe</InterpreterPath><WindowsInterpreterPath>pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable><Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="D:\VisualStudio\MSBuild\Microsoft\VisualStudio\v18.0\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

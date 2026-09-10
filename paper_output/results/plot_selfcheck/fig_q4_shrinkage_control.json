@@ -1,0 +1,137 @@
+{
+  "figure_id": "fig_q4_shrinkage_control",
+  "question_id": "Q4",
+  "title": "同附录4物性下的固定半径与收缩对照",
+  "caption": "已保存同物性、同参数、同源码版本N=200对照；读取来源原始哈希，未假设与后续细网格正式结果相同。",
+  "purpose": "已保存同物性、同参数、同源码版本N=200对照；读取来源原始哈希，未假设与后续细网格正式结果相同。",
+  "path": "paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.png",
+  "bytes": 89338,
+  "sha256": "7f8b38852f590d3e28c463806134530cbedcc4ce066b051a7eb71d16c84dc31f",
+  "status": "computed",
+  "ok": true,
+  "placeholder": false,
+  "exists": true,
+  "artifacts": {
+    "png": {
+      "path": "paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.png",
+      "bytes": 89338,
+      "sha256": "7f8b38852f590d3e28c463806134530cbedcc4ce066b051a7eb71d16c84dc31f",
+      "exists": true
+    },
+    "svg": {
+      "path": "paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.svg",
+      "bytes": 92781,
+      "sha256": "eff378dcfda1b70428987ffb3f20a910465bbd2cf31b5dda2039d2f77ad8d5fa",
+      "exists": true
+    },
+    "pdf": {
+      "path": "paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.pdf",
+      "bytes": 51391,
+      "sha256": "33c367df7b01c72b5365ff4764136b1e0bf9e8d319b1c0ef0c0d9e9cbec3326e",
+      "exists": true
+    }
+  },
+  "plot_data": {
+    "path": "paper_output/results/plot_selfcheck/fig_q4_shrinkage_control_data.npz",
+    "bytes": 235,
+    "sha256": "8215bff6e277dce157104b07ffaa2a339fd249e23adfcbb690bf3bdc7e7d6527",
+    "exists": true
+  },
+  "sources": [
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/physical_Q4_fixed_N200_K/summary.json",
+          "bytes": 2303,
+          "sha256": "251f974f4995f12bb6161f933bb45103935de9cfe83e841884f453097aaa1483",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q4",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    },
+    {
+      "kind": "saved_completed_run_summary",
+      "files": [
+        {
+          "path": "paper_output/results/experiments/grids_Q4_N200_K/summary.json",
+          "bytes": 2304,
+          "sha256": "cf28eb6fdfb9debcc69cdec79413c91e819c40a30e0330b4914c78b78c63006c",
+          "exists": true
+        }
+      ],
+      "recorded_solver_code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 15623,
+        "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+        "exists": true
+      },
+      "settings": {
+        "question": "Q4",
+        "intervals": 200,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": true,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff"
+      },
+      "current_solver_equivalence_not_assumed": true
+    }
+  ],
+  "generated_by": "paper_output/code/modeling/publication_plots.py",
+  "source_code_sha256": "0c4ef4d8085211be26d64d139d9c91314a977a06e8fb2333e7b113b7a3005b41",
+  "generated_at": "2026-09-10T15:11:28.561359+00:00",
+  "font": {
+    "name": "Microsoft YaHei",
+    "file": "C:\\Windows\\Fonts\\msyh.ttc"
+  },
+  "visual_review": "pending",
+  "human_review": "pending",
+  "visual_studio_gui": "pending",
+  "intervals": 200,
+  "same_property_control": true,
+  "reduction_percent": 60.65240589104815
+}

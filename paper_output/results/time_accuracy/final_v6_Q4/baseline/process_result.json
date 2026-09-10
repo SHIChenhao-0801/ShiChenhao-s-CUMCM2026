@@ -1,0 +1,25 @@
+{
+  "pid": 48908,
+  "returncode": 0,
+  "started_at": "2026-09-10T16:57:59.792033+00:00",
+  "finished_at": "2026-09-10T17:03:38.487458+00:00",
+  "command": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --worker --variant baseline --launch-token 94c59d9a55d147dc8d881808638f0369 --full-second-comparison",
+  "argv": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+    "--question",
+    "Q4",
+    "--n",
+    "6400",
+    "--tag",
+    "final_v6_Q4",
+    "--worker",
+    "--variant",
+    "baseline",
+    "--launch-token",
+    "94c59d9a55d147dc8d881808638f0369",
+    "--full-second-comparison"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM"
+}

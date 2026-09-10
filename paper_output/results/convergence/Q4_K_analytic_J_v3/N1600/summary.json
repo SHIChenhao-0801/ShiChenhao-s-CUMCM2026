@@ -1,0 +1,81 @@
+{
+  "settings": {
+    "question": "Q4",
+    "intervals": 1600,
+    "rtol": 1e-10,
+    "atol_temperature": 1e-10,
+    "atol_moisture": 1e-12,
+    "max_step_s": 120.0,
+    "early_max_step_s": 2.0,
+    "horizon_h": 240.0,
+    "shrink": true,
+    "boundary_extension": "nominal",
+    "tail_temperature_C": 50.0,
+    "tail_equilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibrium_scale": 1.0,
+    "surface_latent_fraction": 0.0,
+    "latent_J_kg": 2400000.0,
+    "constant_D": null,
+    "constant_thermal": false,
+    "method": "BDF",
+    "face_scheme": "kirchhoff",
+    "jacobian_mode": "analytic"
+  },
+  "diagnostics": {
+    "event_s": 183926.0901249732,
+    "event_h": 51.090580590270335,
+    "end_s": 183928.0,
+    "elapsed_s": 102.64750020000065,
+    "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+    "max_mass_balance_abs_kg_per_kg": 9.769962616701378e-15,
+    "min_C": 0.05261995953007914,
+    "max_C": 2.5500000000000016,
+    "min_T_K": 301.15,
+    "max_T_K": 323.2000983847087,
+    "min_D": 9.398355891071941e-12,
+    "max_D": 2.4771227846183713e-09,
+    "positive_properties": true,
+    "max_radial_C_increase": 3.1086244689504383e-15,
+    "final_max_C": 0.14999901928908285,
+    "final_surface_C": 0.052619959530079134,
+    "strictly_dry_at_end": true,
+    "radius_end_m": 0.012,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 37127,
+    "accepted_time_points": 16018,
+    "nfev": 37127,
+    "njev": 770,
+    "nlu": 4133,
+    "solver_success": true
+  },
+  "code": {
+    "path": "paper_output/code/modeling/drying_core.py",
+    "bytes": 16516,
+    "sha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+    "exists": true
+  },
+  "jacobian_code": {
+    "path": "paper_output/code/modeling/analytic_jacobian.py",
+    "bytes": 16952,
+    "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+    "exists": true
+  },
+  "inputs": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    }
+  ],
+  "human_review_status": "pending",
+  "gui_reproduced": false
+}

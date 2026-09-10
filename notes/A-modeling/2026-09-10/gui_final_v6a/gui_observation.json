@@ -1,0 +1,91 @@
+{
+  "recorded_at_utc": "2026-09-10T17:58:02.052123+00:00",
+  "status": "GUI_CORE_EXECUTION_AND_ARTIFACT_COMPARISON_COMPLETED",
+  "gui_run": "gui_final_v6a",
+  "source_production": "final_v6a",
+  "gui_actual_exit_code": null,
+  "exit_code_observation": "VS Debug Output did not display an exit code; do not infer 0.",
+  "all_solves_and_exports_observed": true,
+  "breakpoint_and_single_step_variables_observed": true,
+  "debug_session_closed_after_completion": true,
+  "independent_comparison_checks": 60,
+  "independent_comparison_passed": true,
+  "human_review": "pending",
+  "scope": "executed core solve/export/primary-figure/validation call chain; not every historical or supplementary helper",
+  "run_started_at": "2026-09-10T16:58:30.437395+00:00",
+  "run_finished_at": "2026-09-10T17:38:29.284311+00:00",
+  "original_run_record": {
+    "path": "paper_output/results/gui_reproduction/gui_final_v6a/review_result.json",
+    "sha256": "1e1bbed069a05d5ba7eac9a0b9cd878586641ac7a98f448122a100a26267afa7"
+  },
+  "evidence": {
+    "01_launch_settings.png": {
+      "bytes": 176550,
+      "sha256": "c42ce516d8a284767c44b9e9d7b3e9eea03209dec2198858a5f38b72806e1206"
+    },
+    "02_q1_entry_breakpoint.png": {
+      "bytes": 216867,
+      "sha256": "a9659e1f7b8aa8b1c91e91bba4423e13adaad8aa14a89a011c3487b119a5c8d3"
+    },
+    "02_q1_entry_locals.txt": {
+      "bytes": 20494,
+      "sha256": "490f57f0d55fd7045016bfbfe5adc758872c52f0300209a2171e9b34d7f78ecd"
+    },
+    "03_settings_expanded.png": {
+      "bytes": 198526,
+      "sha256": "de4fbc3b6837573ee6cfb7cdba8f614e4a1dd43870116500837713a96395d41a"
+    },
+    "03_settings_locals.txt": {
+      "bytes": 16887,
+      "sha256": "954a6662cc28aa928f26401848786433a910adf0893b6b05895073aa66e2ef52"
+    },
+    "04_rhs_locals.txt": {
+      "bytes": 19059,
+      "sha256": "2c77268c17c695c1049790d52fab4d25671c0f97e2c67e2c3a7d5720c2439fc2"
+    },
+    "04_rhs_single_step.png": {
+      "bytes": 236616,
+      "sha256": "87e3624e3a3bfc2e7e1946be76e0ee5f037568e2f38c0dba2297427707200422"
+    },
+    "05_q23_entry_breakpoint.png": {
+      "bytes": 225883,
+      "sha256": "2a7793a317e25e3438ceb73cb2c0839009d3a831a004f6986a8f68f7b2af53d9"
+    },
+    "05_q23_entry_locals.txt": {
+      "bytes": 16617,
+      "sha256": "24e421fdafd52bc12ca0e8ab7f802d095157603361a52082101a323891b8fa92"
+    },
+    "06_q4_entry_breakpoint.png": {
+      "bytes": 222819,
+      "sha256": "3c2c9a31a9389d4d8263250f1d2a80230847e0dc1cbcdfbc98e65407038b01a0"
+    },
+    "07_q4_model_6400.png": {
+      "bytes": 142209,
+      "sha256": "52feb19566184939b438e578325885c29963c7b2fd7228b9fa77793a5d5d6429"
+    },
+    "07_q4_model_locals.txt": {
+      "bytes": 17149,
+      "sha256": "773a5d6336762031af80ff56e161dcd7946a62dd5319df1077bab92016c2beef"
+    },
+    "08_gui_all_solves_exports_complete.png": {
+      "bytes": 278905,
+      "sha256": "08a64243ed556ae2cecd5928cde86e8009aa703a490a94a36d4d24543c68f153"
+    },
+    "09_debug_session_closed.png": {
+      "bytes": 135038,
+      "sha256": "ac9ad25f64caf0f4b1174ea00eac715f17b1647a830f483dde40e293d25978bf"
+    },
+    "gui_observation.md": {
+      "bytes": 5502,
+      "sha256": "d50894ae2de70b5b5abda3856432f96ca5a28f9c728f5065eac02b000bc685ff"
+    },
+    "independent_comparison.json": {
+      "bytes": 66258,
+      "sha256": "72ebd3a3f1ac9dc0975feabed9c7afab3866987beaec1fbd4b02e2dc80c98cd9"
+    },
+    "independent_comparison.md": {
+      "bytes": 7113,
+      "sha256": "3690a76d527e17cde840741469739765a9504ebc02fbf80515172ce96c159baf"
+    }
+  }
+}

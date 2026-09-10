@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "frozen_utc": "2026-09-10T15:26:55Z",
+  "scope": "Physics branch documents frozen for root integration; no solver mutation or new numerical run in the M55 revision.",
+  "registered_formula_blocks": {
+    "E": 9,
+    "M": 55,
+    "K": 3,
+    "A": 8,
+    "J": 26,
+    "total": 101
+  },
+  "static_checks": {
+    "latex_tags": 92,
+    "all_tags_unique": true,
+    "display_delimiters_balanced": true,
+    "no_control_characters": true,
+    "stale_100_block_claims_absent": true
+  },
+  "files": [
+    {
+      "file": "physics_derivations.md",
+      "bytes": 50549,
+      "sha256": "3730af72fdb50ff8c21a6ea3cc9f2e5807b17eeaf78214544675943bdeec9987"
+    },
+    {
+      "file": "axisymmetric_derivations.md",
+      "bytes": 6772,
+      "sha256": "79a241059f4f8af5208247a2cafafa1f9263107f222f0151a70d7fad155f6a41"
+    },
+    {
+      "file": "jacobian_derivations.md",
+      "bytes": 23272,
+      "sha256": "858f66ad4d46977f8e0c12a56caa22ed2e87c91fa099fdd47597538dbb84ff88"
+    },
+    {
+      "file": "formula_registry_review.md",
+      "bytes": 4993,
+      "sha256": "94f32748e6d1ee928be9726e0f239d43d7510fa98f90f4036d01ec692c2b6c04"
+    },
+    {
+      "file": "issue_list.md",
+      "bytes": 7258,
+      "sha256": "07b6839ca254b245fd927b0ac9ef027928caf47412f27d6ea28bc4a4fcd43bc0"
+    },
+    {
+      "file": "physics_physical_sensitivity_review.md",
+      "bytes": 11063,
+      "sha256": "dfb3f945c261b97ae2a55dbb40797b75af678dae93d518ad2516af5896835306"
+    },
+    {
+      "file": "physical_sensitivity_table.json",
+      "bytes": 4019,
+      "sha256": "4aae39f6e57091ee0ad2127018683923c1e2769f3bb8de3b9c22690c33956b14"
+    },
+    {
+      "file": "latent_saturation_audit.json",
+      "bytes": 2697,
+      "sha256": "632fd5fa839f68eaecbcbb99065ba95a118c6212053b33f5ce23a30050e5842c"
+    }
+  ],
+  "limitations": [
+    "Registry count is not a count of independent physical laws.",
+    "Static checks are not LaTeX rendering, production numerical validation, Visual Studio reproduction or human review.",
+    "No filesystem read-only flag was set; subsequent edits require a refreshed manifest."
+  ]
+}

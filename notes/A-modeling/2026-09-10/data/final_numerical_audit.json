@@ -1,0 +1,3356 @@
+{
+  "schema_version": "1.0",
+  "audit_status": "FROZEN_NUMERICAL_EVIDENCE_AUDIT_COMPLETE_CONDITIONAL_MODEL",
+  "frozen": true,
+  "updated_at_utc": "2026-09-10T17:18:00Z",
+  "audited_production_version": "final_v6a",
+  "read_only_scope": "Production, spatial, analytic and workbook audit was read-only. On subsequent parent authorization, ran three sequential final-N time-check batches using frozen code: six actual Run solves, all exited zero and closed. Direct independent projection reductions and final hash checks completed. No model/code changes, contracts, Git or guard actions.",
+  "limitations": [
+    "Four decimals are storage/reporting format, not established physical predictive accuracy.",
+    "No internal measured T/C truth is available.",
+    "Richardson indicators are empirical, conditional on an asymptotic error expansion, not rigorous bounds.",
+    "All three final-N time checks completed; these are simultaneous tolerance/maximum-step sensitivities, not rigorous error bounds or separate method-order estimates."
+  ],
+  "sources": [
+    {
+      "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+      "sha256": "78362f990ca25ca6caad1e8e93b9ca8e2c86d934d8ade58aa74720c2a858c5e7"
+    },
+    {
+      "path": "paper_output/results/convergence/Q1_frozenD_analytic_J_v3/convergence_report.json",
+      "sha256": "4745462ecb8ddfa055c8f07b3cc489074111f609eb07efad8868cebc3f14e0d7"
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_K_analytic_J_v3/convergence_report.json",
+      "sha256": "586b6990a2d99c06bde6a039203099a8e3ee6971f76b148316c16fe04044f36e"
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+      "sha256": "0fe5a791f3df2dff3b29c0bcc4a0e527da6f7330570f5144c2f573bc4781a579"
+    },
+    {
+      "path": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+      "sha256": "2cd0caad1176bfd182b6be0fe564da80081162bad24753e90a97b8eabb0b5a3d"
+    },
+    {
+      "path": "paper_output/results/bessel_validation/bessel_selfcheck.json",
+      "bytes": 3201,
+      "sha256": "e84f07a57f865069390cd2b9c1e85f1b998bf75158991a8ff757d05eaf022723"
+    },
+    {
+      "path": "paper_output/results/dense_storage_verification_v6/verification.json",
+      "bytes": 9108,
+      "sha256": "225e25da40b3fe9e144becb9a86c025f744c2686e8a49bae39d47fbbc998c327"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q1/summary.json",
+      "bytes": 3941,
+      "sha256": "2b4394701813dfcbb4b1041156715f9dd5a488f2ecd7402bf3d91adaecdeb536"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "bytes": 5724,
+      "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result1.validation.json",
+      "bytes": 5175,
+      "sha256": "7a716ca00499cc858fa0acf54786fc995d38947fb0602a427de011124268bf5a"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/physics/physical_sensitivity_table.json",
+      "bytes": 4019,
+      "sha256": "4aae39f6e57091ee0ad2127018683923c1e2769f3bb8de3b9c22690c33956b14"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/dense_storage_review_v6.md",
+      "bytes": 10317,
+      "sha256": "e125166b5abc9db8b1379bf664f4dc9995a1f19ca0df90cb7de3dac65e290d15"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/independent_model_risk_review.md",
+      "bytes": 29536,
+      "sha256": "86bb33a797ce67dbdcf4c591aaeecd08908ab7cc1e1cf6cd4e021ea95367f99b"
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_K_analytic_J_v3/N1600/sampled_solution.npz",
+      "bytes": 689319,
+      "sha256": "bf894c67e08cd700146694a8b6c49c9f359d63e2c6051e0095c5a49c29c89dd8"
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_final_resolution_v5/N1600/sampled_solution.npz",
+      "bytes": 689320,
+      "sha256": "c36c681af6e0f364de5e092febff8cb1b05f71296e57cdda66490f6182a1e139"
+    },
+    {
+      "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/N3200/sampled_solution.npz",
+      "bytes": 10569,
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q1/sampled_solution.npz",
+      "bytes": 10569,
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/run_manifest.json",
+      "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result2.validation.json",
+      "sha256": "614e20e630d5b6a887d7334d43bcdb05e0ff6552e96a160658c2b4a88a0e05c1"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result3.validation.json",
+      "sha256": "9a93cbf83cbfa292cab7b0aeff20f831dc204b5ac3d0ad00bb33bd806b2e1ba3"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/result4.validation.json",
+      "sha256": "c1d065baf8c0fe8eb00e8dd05b76e5be68756a2caebf8dbf5228ca95bf0de6f5"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/published_contracts/metrics.json",
+      "sha256": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/published_contracts/figure_index.json",
+      "sha256": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c"
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_existing_numerical_materials.zip",
+      "sha256": "f25729fa3f9f01c5a97cdc07b7bd6d178040dc19f3a14555ef22022732479e4e"
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+      "sha256": "0a09a105fd5058a8970302413a82e0d701b96f2dabe8bc7d1cdc2615cab82d8b"
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+      "sha256": "e0e2e1ad0ba8ad583319c5a52ff22b37fcb6d4635a7b2398f221b608bcf756fc"
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+      "sha256": "a66f24e588ac1da46f50e74a5c0a20624491b3cb8198b63316afc72d03d5af70"
+    }
+  ],
+  "analytic_benchmark": {
+    "selfcheck": {
+      "status": "PASS",
+      "scope": "analytic benchmark implementation selfcheck; production FVM comparison is separate",
+      "checks": [
+        {
+          "name": "robin_eigen_relative_residual",
+          "value": 5.01624228267908e-12,
+          "tolerance": 1e-10,
+          "unit": "1",
+          "passed": true
+        },
+        {
+          "name": "piecewise_convolution_vs_adaptive_quadrature",
+          "value": 8.881784197001252e-16,
+          "tolerance": 1e-10,
+          "unit": "K",
+          "passed": true
+        },
+        {
+          "name": "annular_average_vs_adaptive_quadrature",
+          "value": 4.440892098500626e-16,
+          "tolerance": 1e-10,
+          "unit": "1",
+          "passed": true
+        },
+        {
+          "name": "constant_boundary_step_energy_identity",
+          "value": 1.7694179454963432e-16,
+          "tolerance": 1e-10,
+          "unit": "K/s",
+          "passed": true
+        },
+        {
+          "name": "Q1_observed_boundary_120_vs_240_terms",
+          "value": 1.524666686236742e-7,
+          "tolerance": 0.0001,
+          "unit": "K",
+          "passed": true
+        },
+        {
+          "name": "Q1_observed_boundary_240_vs_480_terms",
+          "value": 1.8995478967553936e-8,
+          "tolerance": 0.0001,
+          "unit": "K",
+          "passed": true
+        },
+        {
+          "name": "uniform_equilibrium",
+          "value": 0,
+          "tolerance": 1e-12,
+          "unit": "K",
+          "passed": true
+        },
+        {
+          "name": "insulating_boundary",
+          "value": 0,
+          "tolerance": 1e-12,
+          "unit": "K",
+          "passed": true
+        }
+      ],
+      "series_note": "120/240/480 differences estimate truncation sensitivity at sampled locations and times, not a rigorous uniform error bound.",
+      "no_internal_experimental_validation": true,
+      "visual_studio_gui": "pending",
+      "human_review": "pending",
+      "schema_version": "1.0",
+      "question_id": "Q1",
+      "generated_at": "2026-09-10T14:16:50.997207+00:00",
+      "generated_by": "paper_output/code/modeling/validate_bessel.py",
+      "frozen_moisture_diffusion_coefficient_m2_s": 4.937655094173937e-9,
+      "frozen_moisture_note": "This table is a constant-D algorithm benchmark and must not replace nonlinear Q1 result1 moisture values.",
+      "execution_provenance": {
+        "source_code_path": "paper_output/code/modeling/validate_bessel.py",
+        "source_code_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+        "run_command": "C:\\Python314\\python.exe -B paper_output/code/modeling/validate_bessel.py",
+        "run_exit_code": 0,
+        "python_version": "3.14.7",
+        "input_artifacts": [
+          {
+            "path": "paper_output/data_cleaned/A_environment_observed.csv",
+            "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+          }
+        ],
+        "output_artifacts": [
+          {
+            "path": "paper_output/results/bessel_validation/q1_exact_heat_paper_points.csv",
+            "bytes": 1264,
+            "sha256": "ffe202b454ff28efd057f99203e8c12e3988bf2996ebe85b112c5d858da2c11c"
+          },
+          {
+            "path": "paper_output/results/bessel_validation/frozen_D_moisture_benchmark_points.csv",
+            "bytes": 1272,
+            "sha256": "af8d8a47373bf776f9f767128cd2188c9ceab8a3c7a28c48e663bdd27eb11622"
+          }
+        ]
+      }
+    },
+    "adopted_Q1_N3200_max_heat_error_K": 0.0000018037762288258818,
+    "frozen_D_control_N3200_max_water_error": 0.000015448663388095696,
+    "frozen_D_control_coefficient_m2_s": 4.938e-9,
+    "control_not_nonlinear_Q1_answer": true,
+    "Q1_heat_error_nonmonotone_across_grid": true
+  },
+  "spatial_checks": [
+    {
+      "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+      "sha256": "78362F990CA25CA6CAAD1E8E93B9CA8E2C86D934D8ADE58AA74720C2A858C5E7",
+      "status": "computed_and_zero_solver_warnings",
+      "finished_at": "2026-09-10T22:47:31.320551+08:00",
+      "runs": [
+        {
+          "N": 800,
+          "event_s": null,
+          "event_h": null,
+          "min_C": 1.510235916617525,
+          "mass": 4.884981308350689e-15,
+          "steps": 1723,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": {
+            "N": 800,
+            "max_heat_error_K": 0.0000018991774481946777,
+            "scope": "All 1801 integer seconds and 21 requested radii"
+          },
+          "warnings": []
+        },
+        {
+          "N": 1600,
+          "event_s": null,
+          "event_h": null,
+          "min_C": 1.5102349315407397,
+          "mass": 1.021405182655144e-14,
+          "steps": 1737,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": {
+            "N": 1600,
+            "max_heat_error_K": 0.0000024026897449402895,
+            "scope": "All 1801 integer seconds and 21 requested radii"
+          },
+          "warnings": []
+        },
+        {
+          "N": 3200,
+          "event_s": null,
+          "event_h": null,
+          "min_C": 1.510234685362519,
+          "mass": 1.1546319456101628e-14,
+          "steps": 1743,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": {
+            "N": 3200,
+            "max_heat_error_K": 0.0000018037762288258818,
+            "scope": "All 1801 integer seconds and 21 requested radii"
+          },
+          "warnings": []
+        }
+      ],
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 0.0000024831436462591228,
+            "C": 0.00018988217883419978
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 720,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 1801,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 800,
+          "fine_N": 1600,
+          "event_difference_s": null
+        },
+        {
+          "max_absolute_difference": {
+            "T_K": 0.0000019161718682880746,
+            "C": 0.00004690332349133186
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 720,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 1801,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": null
+        }
+      ]
+    },
+    {
+      "path": "paper_output/results/convergence/Q1_frozenD_analytic_J_v3/convergence_report.json",
+      "sha256": "4745462ECB8DDFA055C8F07B3CC489074111F609EB07EFAD8868CEBC3F14E0D7",
+      "status": "computed_and_zero_solver_warnings",
+      "finished_at": "2026-09-10T22:51:48.880487+08:00",
+      "runs": [
+        {
+          "N": 1600,
+          "event_s": null,
+          "event_h": null,
+          "min_C": 1.5521742065666713,
+          "mass": 1.021405182655144e-14,
+          "steps": 1729,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": {
+            "N": 1600,
+            "max_heat_error_K": 0.0000014398660823644605,
+            "scope": "All 1801 integer seconds and 21 requested radii",
+            "max_frozen_D_water_error": 0.00006192999926479814,
+            "water_error_time_s": 1,
+            "water_error_radius_m": 0.02
+          },
+          "warnings": []
+        },
+        {
+          "N": 3200,
+          "event_s": null,
+          "event_h": null,
+          "min_C": 1.5521740960698658,
+          "mass": 1.1102230246251565e-14,
+          "steps": 1747,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": {
+            "N": 3200,
+            "max_heat_error_K": 0.0000011482335366963525,
+            "scope": "All 1801 integer seconds and 21 requested radii",
+            "max_frozen_D_water_error": 0.000015448663388095696,
+            "water_error_time_s": 1,
+            "water_error_radius_m": 0.02
+          },
+          "warnings": []
+        }
+      ],
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 0.0000010652630635377136,
+            "C": 0.000046481335876702445
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 1620,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 1801,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": null
+        }
+      ]
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_K_analytic_J_v3/convergence_report.json",
+      "sha256": "586B6990A2D99C06BDE6A039203099A8E3EE6971F76B148316C16FE04044F36E",
+      "status": "computed_and_zero_solver_warnings",
+      "finished_at": "2026-09-10T22:52:47.674811+08:00",
+      "runs": [
+        {
+          "N": 400,
+          "event_s": 206900.7026428093,
+          "event_h": 57.472417400780365,
+          "min_C": 0.052658932179365334,
+          "mass": 1.0658141036401503e-14,
+          "steps": 14372,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": null,
+          "warnings": []
+        },
+        {
+          "N": 800,
+          "event_s": 206900.387141935,
+          "event_h": 57.47232976164861,
+          "min_C": 0.052659291370905435,
+          "mass": 7.105427357601002e-15,
+          "steps": 14321,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": null,
+          "warnings": []
+        },
+        {
+          "N": 1600,
+          "event_s": 206900.3071684465,
+          "event_h": 57.472307546790695,
+          "min_C": 0.05265941175148473,
+          "mass": 1.2434497875801753e-14,
+          "steps": 14294,
+          "code": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "analytic": null,
+          "warnings": []
+        }
+      ],
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 0.000004423248412877001,
+            "C": 0.0006504181250739371
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 2700,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 206903,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 400,
+          "fine_N": 800,
+          "event_difference_s": -0.31550087430514395
+        },
+        {
+          "max_absolute_difference": {
+            "T_K": 0.0000022638810150965583,
+            "C": 0.00015482524174181833
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 4800,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 206903,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 800,
+          "fine_N": 1600,
+          "event_difference_s": -0.07997348849312402
+        }
+      ]
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+      "sha256": "0FE5A791F3DF2DFF3B29C0BCC4A0E527DA6F7330570F5144C2F573BC4781A579",
+      "status": "computed_and_zero_solver_warnings",
+      "finished_at": "2026-09-10T23:53:50.995039+08:00",
+      "runs": [
+        {
+          "N": 1600,
+          "event_s": 206900.3071684465,
+          "event_h": 57.472307546790695,
+          "min_C": 0.05265941175148473,
+          "mass": 9.769962616701378e-15,
+          "steps": 14294,
+          "code": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "warnings": []
+        },
+        {
+          "N": 3200,
+          "event_s": 206900.28702201758,
+          "event_h": 57.47230195056044,
+          "min_C": 0.05265944808510597,
+          "mass": 1.1546319456101628e-14,
+          "steps": 14283,
+          "code": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "warnings": []
+        }
+      ],
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 0.0000028929259201504465,
+            "C": 0.00003830289061168557
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 9060,
+              "radius_m": 0.02
+            },
+            "C": {
+              "time_s": 1,
+              "radius_m": 0.02
+            }
+          },
+          "compared_time_count": 206903,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": -0.020146428927546367
+        }
+      ]
+    },
+    {
+      "path": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+      "sha256": "2CD0CAAD1176BFD182B6BE0FE564DA80081162BAD24753E90A97B8EABB0B5A3D",
+      "status": "computed_and_zero_solver_warnings",
+      "finished_at": "2026-09-11T00:04:34.026696+08:00",
+      "runs": [
+        {
+          "N": 1600,
+          "event_s": 183926.0901249732,
+          "event_h": 51.090580590270335,
+          "min_C": 0.05261995953007914,
+          "mass": 7.105427357601002e-15,
+          "steps": 16018,
+          "code": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "warnings": []
+        },
+        {
+          "N": 3200,
+          "event_s": 183926.07340313768,
+          "event_h": 51.09057594531602,
+          "min_C": 0.05261996766615455,
+          "mass": 1.0658141036401503e-14,
+          "steps": 15993,
+          "code": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "warnings": []
+        },
+        {
+          "N": 6400,
+          "event_s": 183926.06923258994,
+          "event_h": 51.09057478683054,
+          "min_C": 0.05261996970729463,
+          "mass": 7.993605777301127e-15,
+          "steps": 15996,
+          "code": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "warnings": []
+        }
+      ],
+      "comparisons": [
+        {
+          "max_absolute_difference": {
+            "T_K": 0.000002666802117801126,
+            "C": 0.00006976616569297905
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 1409,
+              "radius_m": 0.019
+            },
+            "C": {
+              "time_s": 125325,
+              "radius_m": 0.012
+            }
+          },
+          "compared_time_count": 183929,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 1600,
+          "fine_N": 3200,
+          "event_difference_s": -0.016721835534553975
+        },
+        {
+          "max_absolute_difference": {
+            "T_K": 9.633932904762332e-7,
+            "C": 0.000019799471771719812
+          },
+          "locations": {
+            "T_K": {
+              "time_s": 3240,
+              "radius_m": 0.018000000000000002
+            },
+            "C": {
+              "time_s": 125662,
+              "radius_m": 0.012
+            }
+          },
+          "compared_time_count": 183929,
+          "radial_count": 21,
+          "convention": "Only finite values at common physical points are compared.",
+          "coarse_N": 3200,
+          "fine_N": 6400,
+          "event_difference_s": -0.0041705477342475206
+        }
+      ]
+    }
+  ],
+  "richardson": {
+    "formula_p": "log2(d_coarse/d_fine)",
+    "formula_fine_indicator": "d_fine/(2^p-1)",
+    "records": [
+      {
+        "qid": "Q1_C",
+        "d1": 0.00018988217883419978,
+        "d2": 0.00004690332349133186,
+        "p_estimate": 2.017342450974368,
+        "fine_error_indicator": 0.00001538634331109338,
+        "unit": "kg/kg",
+        "not_rigorous_upper_bound": true
+      },
+      {
+        "qid": "Q23_C",
+        "d1": 0.00015482524174181833,
+        "d2": 0.00003830289061168557,
+        "p_estimate": 2.0151155211414333,
+        "fine_error_indicator": 0.000012590815538662387,
+        "unit": "kg/kg",
+        "not_rigorous_upper_bound": true
+      },
+      {
+        "qid": "Q4_C",
+        "d1": 0.00006976616569297905,
+        "d2": 0.000019799471771719812,
+        "p_estimate": 1.8170656048680933,
+        "fine_error_indicator": 0.000007845607777390651,
+        "unit": "kg/kg",
+        "not_rigorous_upper_bound": true
+      },
+      {
+        "qid": "Q23_event",
+        "d1": 0.07997348849312402,
+        "d2": 0.020146428927546367,
+        "p_estimate": 1.9889976852447575,
+        "fine_error_indicator": 0.006784197677102704,
+        "unit": "s",
+        "not_rigorous_upper_bound": true,
+        "extrapolated_event_s": 206900.2802378199,
+        "extrapolated_event_h": 57.47230006606109
+      },
+      {
+        "qid": "Q4_event",
+        "d1": 0.016721835534553975,
+        "d2": 0.0041705477342475206,
+        "p_estimate": 2.003424442930922,
+        "fine_error_indicator": 0.0013857915363244596,
+        "unit": "s",
+        "not_rigorous_upper_bound": true,
+        "extrapolated_event_s": 183926.0678467984,
+        "extrapolated_event_h": 51.090574401888446
+      }
+    ],
+    "scalar_event_extrapolation_is_diagnostic_not_reported_drying_time": true,
+    "Q23_cross_version_basis": "The shared N1600 v3/v5 saved T/C arrays at 3452 times x 21 material points are exactly equal; same event. Storage/diagnostic changes are audited separately.",
+    "Q4_C_note": "Maximum differences occur at different times (125325 s vs 125662 s); norm-based p is empirical."
+  },
+  "storage_equivalence": {
+    "source": "paper_output/results/dense_storage_verification_v6/verification.json",
+    "status": "PASS",
+    "runs": [
+      {
+        "question": "Q1",
+        "N": 40,
+        "query_count": 3829,
+        "internal_knot_count": 542,
+        "accepted_times_and_states_bitwise_equal": true,
+        "event_and_endpoint_bitwise_equal": true,
+        "dense_query_max_difference": 0,
+        "private_cache_removed_after_close": true,
+        "warnings": []
+      },
+      {
+        "question": "Q23",
+        "N": 40,
+        "query_count": 16162,
+        "internal_knot_count": 4652,
+        "accepted_times_and_states_bitwise_equal": true,
+        "event_and_endpoint_bitwise_equal": true,
+        "dense_query_max_difference": 0,
+        "private_cache_removed_after_close": true,
+        "warnings": []
+      },
+      {
+        "question": "Q4",
+        "N": 40,
+        "query_count": 18346,
+        "internal_knot_count": 5380,
+        "accepted_times_and_states_bitwise_equal": true,
+        "event_and_endpoint_bitwise_equal": true,
+        "dense_query_max_difference": 0,
+        "private_cache_removed_after_close": true,
+        "warnings": []
+      }
+    ],
+    "scope": "Three actual complete N40 memory/disk trajectories including all accepted breakpoints and neighboring representable times; not final spatial accuracy.",
+    "v5_historical_breakpoint_difference_not_deleted": 2.220446049250313e-16
+  },
+  "saved_projection_crosschecks": [
+    {
+      "pair": "Q23_N1600_v3_v5",
+      "equal_times": true,
+      "max_T_K": 0,
+      "max_C": 0,
+      "a_keys": [
+        "times_s",
+        "material_x",
+        "T_K",
+        "C",
+        "radius_m",
+        "mean_C",
+        "cumulative_loss"
+      ],
+      "b_keys": [
+        "times_s",
+        "material_x",
+        "T_K",
+        "C",
+        "radius_m",
+        "mean_C",
+        "cumulative_loss"
+      ],
+      "shape": [
+        3452,
+        21
+      ]
+    },
+    {
+      "pair": "Q1_N3200_v3_v6production",
+      "equal_times": true,
+      "max_T_K": 0,
+      "max_C": 0,
+      "a_keys": [
+        "times_s",
+        "material_x",
+        "T_K",
+        "C",
+        "radius_m",
+        "mean_C",
+        "cumulative_loss"
+      ],
+      "b_keys": [
+        "times_s",
+        "material_x",
+        "T_K",
+        "C",
+        "radius_m",
+        "mean_C",
+        "cumulative_loss"
+      ],
+      "shape": [
+        32,
+        21
+      ]
+    }
+  ],
+  "production": {
+    "overall_status": "ACTUAL_WORKER_EXIT_ZERO_PUBLISHED_HASHES_VERIFIED",
+    "process_exit": 0,
+    "manifest_status": "PASS",
+    "Q1": {
+      "status": "SUMMARY_EXPORT_LIVE_READBACK_PASS",
+      "summary": {
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q1",
+        "settings": {
+          "question": "Q1",
+          "intervals": 3200,
+          "rtol": 1e-10,
+          "atol_temperature": 1e-10,
+          "atol_moisture": 1e-12,
+          "max_step_s": 120,
+          "early_max_step_s": 2,
+          "horizon_h": 240,
+          "shrink": false,
+          "boundary_extension": "nominal",
+          "tail_temperature_C": 50,
+          "tail_equilibrium": 0.05,
+          "h": 25,
+          "beta": 8e-7,
+          "equilibrium_scale": 1,
+          "surface_latent_fraction": 0,
+          "latent_J_kg": 2400000,
+          "constant_D": null,
+          "constant_thermal": false,
+          "method": "BDF",
+          "face_scheme": "kirchhoff",
+          "jacobian_mode": "analytic",
+          "dense_storage": "disk"
+        },
+        "diagnostics": {
+          "event_s": null,
+          "event_h": null,
+          "end_s": 1800,
+          "elapsed_s": 5.367319200002385,
+          "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+          "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+          "min_C": 1.510234685362519,
+          "max_C": 2.550000000000001,
+          "min_T_K": 301.15,
+          "max_T_K": 309.9355602874471,
+          "min_D": 3.882960068132186e-9,
+          "max_D": 4.937655094173939e-9,
+          "positive_properties": true,
+          "max_radial_C_increase": 3.552713678800501e-15,
+          "final_max_C": 2.549992403819304,
+          "final_surface_C": 1.5102346853625193,
+          "strictly_dry_at_end": false,
+          "radius_end_m": 0.02,
+          "radius_extrapolation_used": false,
+          "rhs_evaluations": 3914,
+          "accepted_time_points": 1743,
+          "nfev": 3914,
+          "njev": 68,
+          "nlu": 431,
+          "solver_success": true,
+          "dense_storage": "disk",
+          "dense_coefficient_bytes": 463474752,
+          "dense_polynomial_count": 1742
+        },
+        "completion": null,
+        "metric_samples": {
+          "Q1": {
+            "time_s": 1800,
+            "material_x": [
+              0,
+              1
+            ],
+            "T_K": [
+              [
+                306.7253448172471,
+                309.9355602874471
+              ]
+            ],
+            "C": [
+              [
+                2.549992403819304,
+                1.5102346853625193
+              ]
+            ],
+            "source": "live_Run_dense_solution"
+          }
+        },
+        "solver_warning_count": 0,
+        "code": {
+          "path": "paper_output/code/modeling/drying_core.py",
+          "bytes": 19944,
+          "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+          "exists": true
+        },
+        "jacobian_code": {
+          "path": "paper_output/code/modeling/analytic_jacobian.py",
+          "bytes": 16952,
+          "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+          "exists": true
+        },
+        "dense_storage_code": {
+          "path": "paper_output/code/modeling/disk_dense.py",
+          "bytes": 4869,
+          "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+          "exists": true
+        },
+        "inputs": [
+          {
+            "path": "paper_output/data_cleaned/A_environment_observed.csv",
+            "bytes": 10125,
+            "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+            "exists": true
+          },
+          {
+            "path": "paper_output/data_cleaned/A_radius_observed.csv",
+            "bytes": 3522,
+            "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+            "exists": true
+          }
+        ]
+      },
+      "export_validation": {
+        "schema_version": "1.0",
+        "question_id": "Q1",
+        "generated_by": "paper_output/code/modeling/export_outputs.py",
+        "generated_at": "2026-09-10T16:21:01.559406+00:00",
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "checked_cells": 79244,
+        "sheets": {
+          "温度": {
+            "data_rows": 1801,
+            "total_rows": 1802,
+            "first_time_s": 0,
+            "last_time_s": 1800,
+            "outside_domain_blank_cells": 0,
+            "value_comparison_max_abs_error": 0
+          },
+          "水分浓度": {
+            "data_rows": 1801,
+            "total_rows": 1802,
+            "first_time_s": 0,
+            "last_time_s": 1800,
+            "outside_domain_blank_cells": 0,
+            "value_comparison_max_abs_error": 0
+          }
+        },
+        "live_Run_sample_validation": {
+          "status": "PASS",
+          "samples": 14,
+          "max_abs_unrounded_difference": 0
+        },
+        "paper_CSV_live_Run_validation": {
+          "status": "PASS",
+          "checked_cells": 84,
+          "files": [
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q1_paper_temperature.csv",
+                "bytes": 380,
+                "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+                "exists": true
+              },
+              "kind": "temperature",
+              "status": "PASS",
+              "header": [
+                "时间/s",
+                "0",
+                "0.5",
+                "1",
+                "1.5",
+                "2"
+              ],
+              "data_rows": 7,
+              "expected_data_rows": 7,
+              "checked_cells": 42,
+              "source_query_times_s": [
+                100,
+                300,
+                600,
+                900,
+                1200,
+                1500,
+                1800
+              ],
+              "display_time_unit": "s",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "degC",
+              "max_field_rounding_error_from_live_value": 0.00004938376132912481,
+              "outside_domain_blank_cells": 0,
+              "physical_radii_m": [
+                0,
+                0.005,
+                0.01,
+                0.015,
+                0.02
+              ],
+              "surface_column_1based": null,
+              "surface_query": null
+            },
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q1_paper_moisture.csv",
+                "bytes": 345,
+                "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+                "exists": true
+              },
+              "kind": "moisture",
+              "status": "PASS",
+              "header": [
+                "时间/s",
+                "0",
+                "0.5",
+                "1",
+                "1.5",
+                "2"
+              ],
+              "data_rows": 7,
+              "expected_data_rows": 7,
+              "checked_cells": 42,
+              "source_query_times_s": [
+                100,
+                300,
+                600,
+                900,
+                1200,
+                1500,
+                1800
+              ],
+              "display_time_unit": "s",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "kg/kg",
+              "max_field_rounding_error_from_live_value": 0.00004636328382545685,
+              "outside_domain_blank_cells": 0,
+              "physical_radii_m": [
+                0,
+                0.005,
+                0.01,
+                0.015,
+                0.02
+              ],
+              "surface_column_1based": null,
+              "surface_query": null
+            }
+          ],
+          "completion": null,
+          "completion_source": null,
+          "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+          "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+        },
+        "errors": [],
+        "elapsed_s": 1.084365800001251,
+        "workbook": {
+          "path": "paper_output/results/production/final_v6a/outputs/result1.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result1.xlsx",
+          "bytes": 390899,
+          "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        "export_manifest": {
+          "path": "paper_output/results/production/final_v6a/outputs/result1.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result1.export.json",
+          "bytes": 37878,
+          "sha256": "1158f19d64ada8bc0bfb7b3fe01c58944e1acb0af9fcf01b478da8ef3a756836",
+          "exists": true
+        },
+        "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+        "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+        "visual_render": "pending",
+        "visual_studio_gui": "pending",
+        "human_review": "pending"
+      }
+    },
+    "Q2_Q3": {
+      "status": "SUMMARY_Q2_FULL_RUN_EXPORT_Q3_STRICT_REPORT_LIVE_READBACK_PASS",
+      "summary": {
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q23",
+        "settings": {
+          "question": "Q23",
+          "intervals": 3200,
+          "rtol": 1e-10,
+          "atol_temperature": 1e-10,
+          "atol_moisture": 1e-12,
+          "max_step_s": 120,
+          "early_max_step_s": 2,
+          "horizon_h": 240,
+          "shrink": false,
+          "boundary_extension": "nominal",
+          "tail_temperature_C": 50,
+          "tail_equilibrium": 0.05,
+          "h": 25,
+          "beta": 8e-7,
+          "equilibrium_scale": 1,
+          "surface_latent_fraction": 0,
+          "latent_J_kg": 2400000,
+          "constant_D": null,
+          "constant_thermal": false,
+          "method": "BDF",
+          "face_scheme": "kirchhoff",
+          "jacobian_mode": "analytic",
+          "dense_storage": "disk"
+        },
+        "diagnostics": {
+          "event_s": 206900.28702201758,
+          "event_h": 57.47230195056044,
+          "end_s": 206902,
+          "elapsed_s": 82.39432490000036,
+          "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+          "max_mass_balance_abs_kg_per_kg": 1.1546319456101628e-14,
+          "min_C": 0.05265944808510597,
+          "max_C": 2.550000000000001,
+          "min_T_K": 301.15,
+          "max_T_K": 323.18986600675885,
+          "min_D": 3.124541898624993e-12,
+          "max_D": 1.252185966946026e-8,
+          "positive_properties": true,
+          "max_radial_C_increase": 3.1086244689504383e-15,
+          "final_max_C": 0.14999950103529133,
+          "final_surface_C": 0.05265944808510597,
+          "strictly_dry_at_end": true,
+          "radius_end_m": 0.02,
+          "radius_extrapolation_used": false,
+          "rhs_evaluations": 32705,
+          "accepted_time_points": 14283,
+          "nfev": 32705,
+          "njev": 618,
+          "nlu": 3552,
+          "solver_success": true,
+          "dense_storage": "disk",
+          "dense_coefficient_bytes": 3754872872,
+          "dense_polynomial_count": 14280
+        },
+        "completion": {
+          "critical_event_s": 206900.28702201758,
+          "critical_event_h": 57.47230195056044,
+          "reported_drying_time_h": 57.4724,
+          "reported_time_s": 206900.64,
+          "max_C_at_reported_time": 0.14999989718225315,
+          "slowest_material_coordinate": 0,
+          "conservative_post_verification_s": 206902,
+          "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+          "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+        },
+        "metric_samples": {
+          "Q2": {
+            "time_s": 10800,
+            "material_x": [
+              0,
+              1
+            ],
+            "T_K": [
+              [
+                322.9994956060796,
+                323.1164123947858
+              ]
+            ],
+            "C": [
+              [
+                1.7661771002440243,
+                1.0081231118401026
+              ]
+            ],
+            "source": "live_Run_dense_solution"
+          },
+          "Q3": {
+            "time_s": 206900.64,
+            "material_x": [
+              0,
+              1
+            ],
+            "T_K": [
+              [
+                323.15,
+                323.1499999999999
+              ]
+            ],
+            "C": [
+              [
+                0.14999989718225315,
+                0.0526594803435617
+              ]
+            ],
+            "source": "live_Run_dense_solution"
+          }
+        },
+        "solver_warning_count": 0,
+        "code": {
+          "path": "paper_output/code/modeling/drying_core.py",
+          "bytes": 19944,
+          "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+          "exists": true
+        },
+        "jacobian_code": {
+          "path": "paper_output/code/modeling/analytic_jacobian.py",
+          "bytes": 16952,
+          "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+          "exists": true
+        },
+        "dense_storage_code": {
+          "path": "paper_output/code/modeling/disk_dense.py",
+          "bytes": 4869,
+          "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+          "exists": true
+        },
+        "inputs": [
+          {
+            "path": "paper_output/data_cleaned/A_environment_observed.csv",
+            "bytes": 10125,
+            "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+            "exists": true
+          },
+          {
+            "path": "paper_output/data_cleaned/A_radius_observed.csv",
+            "bytes": 3522,
+            "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+            "exists": true
+          }
+        ]
+      },
+      "same_trajectory_id": "final_v6a:Q23",
+      "three_hour_temperature_C": [
+        49.84949560607964,
+        49.966412394785834
+      ],
+      "three_hour_C": [
+        1.7661771002440243,
+        1.0081231118401026
+      ],
+      "strict_report_h": 57.4724,
+      "strict_report_margin_kgkg": 1.028177468442859e-7,
+      "export_validation_Q2": {
+        "schema_version": "1.0",
+        "question_id": "Q2",
+        "generated_by": "paper_output/code/modeling/export_outputs.py",
+        "generated_at": "2026-09-10T16:28:27.111094+00:00",
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "checked_cells": 9103732,
+        "sheets": {
+          "温度": {
+            "data_rows": 206903,
+            "total_rows": 206904,
+            "first_time_s": 0,
+            "last_time_s": 206902,
+            "outside_domain_blank_cells": 0,
+            "value_comparison_max_abs_error": 0
+          },
+          "水分浓度": {
+            "data_rows": 206903,
+            "total_rows": 206904,
+            "first_time_s": 0,
+            "last_time_s": 206902,
+            "outside_domain_blank_cells": 0,
+            "value_comparison_max_abs_error": 0
+          }
+        },
+        "live_Run_sample_validation": {
+          "status": "PASS",
+          "samples": 14,
+          "max_abs_unrounded_difference": 0
+        },
+        "paper_CSV_live_Run_validation": {
+          "status": "PASS",
+          "checked_cells": 72,
+          "files": [
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q2_paper_temperature.csv",
+                "bytes": 315,
+                "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+                "exists": true
+              },
+              "kind": "temperature",
+              "status": "PASS",
+              "header": [
+                "时间/h",
+                "0",
+                "0.5",
+                "1",
+                "1.5",
+                "2"
+              ],
+              "data_rows": 6,
+              "expected_data_rows": 6,
+              "checked_cells": 36,
+              "source_query_times_s": [
+                1800,
+                3600,
+                5400,
+                7200,
+                9000,
+                10800
+              ],
+              "display_time_unit": "h",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "degC",
+              "max_field_rounding_error_from_live_value": 0.000049995136670588636,
+              "outside_domain_blank_cells": 0,
+              "physical_radii_m": [
+                0,
+                0.005,
+                0.01,
+                0.015,
+                0.02
+              ],
+              "surface_column_1based": null,
+              "surface_query": null
+            },
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q2_paper_moisture.csv",
+                "bytes": 285,
+                "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+                "exists": true
+              },
+              "kind": "moisture",
+              "status": "PASS",
+              "header": [
+                "时间/h",
+                "0",
+                "0.5",
+                "1",
+                "1.5",
+                "2"
+              ],
+              "data_rows": 6,
+              "expected_data_rows": 6,
+              "checked_cells": 36,
+              "source_query_times_s": [
+                1800,
+                3600,
+                5400,
+                7200,
+                9000,
+                10800
+              ],
+              "display_time_unit": "h",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "kg/kg",
+              "max_field_rounding_error_from_live_value": 0.00004846568046090738,
+              "outside_domain_blank_cells": 0,
+              "physical_radii_m": [
+                0,
+                0.005,
+                0.01,
+                0.015,
+                0.02
+              ],
+              "surface_column_1based": null,
+              "surface_query": null
+            }
+          ],
+          "completion": null,
+          "completion_source": null,
+          "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+          "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+        },
+        "errors": [],
+        "elapsed_s": 127.76506810000137,
+        "workbook": {
+          "path": "paper_output/results/production/final_v6a/outputs/result2.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result2.xlsx",
+          "bytes": 29210086,
+          "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        "export_manifest": {
+          "path": "paper_output/results/production/final_v6a/outputs/result2.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result2.export.json",
+          "bytes": 36606,
+          "sha256": "56f086f6249b35333bb07f432f47243b82ebe11711b0702fe3ec023a1c4eaf2e",
+          "exists": true
+        },
+        "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+        "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+        "visual_render": "pending",
+        "visual_studio_gui": "pending",
+        "human_review": "pending"
+      },
+      "export_validation_Q3": {
+        "schema_version": "1.0",
+        "question_id": "Q3",
+        "generated_by": "paper_output/code/modeling/export_outputs.py",
+        "generated_at": "2026-09-10T16:28:32.399280+00:00",
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "checked_cells": 75922,
+        "sheets": {
+          "Sheet1": {
+            "data_rows": 3451,
+            "total_rows": 3452,
+            "first_time_s": 0,
+            "last_time_s": 206902,
+            "outside_domain_blank_cells": 0,
+            "value_comparison_max_abs_error": 0
+          }
+        },
+        "live_Run_sample_validation": {
+          "status": "PASS",
+          "samples": 15,
+          "max_abs_unrounded_difference": 0
+        },
+        "paper_CSV_live_Run_validation": {
+          "status": "PASS",
+          "checked_cells": 60,
+          "files": [
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q3_paper_moisture.csv",
+                "bytes": 466,
+                "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+                "exists": true
+              },
+              "kind": "moisture",
+              "status": "PASS",
+              "header": [
+                "时间/h",
+                "0",
+                "0.5",
+                "1",
+                "1.5",
+                "2"
+              ],
+              "data_rows": 10,
+              "expected_data_rows": 10,
+              "checked_cells": 60,
+              "source_query_times_s": [
+                21600,
+                43200,
+                64800,
+                86400,
+                108000,
+                129600,
+                151200,
+                172800,
+                194400,
+                206900.64
+              ],
+              "display_time_unit": "h",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "kg/kg",
+              "max_field_rounding_error_from_live_value": 0.00004855806059500534,
+              "outside_domain_blank_cells": 0,
+              "physical_radii_m": [
+                0,
+                0.005,
+                0.01,
+                0.015,
+                0.02
+              ],
+              "surface_column_1based": null,
+              "surface_query": null
+            }
+          ],
+          "completion": {
+            "critical_event_s": 206900.28702201758,
+            "critical_event_h": 57.47230195056044,
+            "reported_drying_time_h": 57.4724,
+            "reported_time_s": 206900.64,
+            "max_C_at_reported_time": 0.14999989718225315,
+            "slowest_material_coordinate": 0,
+            "conservative_post_verification_s": 206902,
+            "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+            "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+          },
+          "completion_source": {
+            "path": "paper_output/code/modeling/q3_model.py",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q3_model.py",
+            "bytes": 1285,
+            "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+            "exists": true
+          },
+          "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+          "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+        },
+        "errors": [],
+        "elapsed_s": 0.9025900999986334,
+        "workbook": {
+          "path": "paper_output/results/production/final_v6a/outputs/result3.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result3.xlsx",
+          "bytes": 339137,
+          "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        "export_manifest": {
+          "path": "paper_output/results/production/final_v6a/outputs/result3.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result3.export.json",
+          "bytes": 25155,
+          "sha256": "139b8134e231aba69a596f501ccefee0ee003807db427f4498b1734a84c5ad5e",
+          "exists": true
+        },
+        "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+        "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+        "visual_render": "pending",
+        "visual_studio_gui": "pending",
+        "human_review": "pending"
+      }
+    },
+    "Q4": {
+      "status": "SUMMARY_EXPORT_LIVE_READBACK_AND_INDEPENDENT_DOMAIN_AUDIT_PASS",
+      "summary": {
+        "settings": {
+          "question": "Q4",
+          "intervals": 6400,
+          "rtol": 1e-10,
+          "atol_temperature": 1e-10,
+          "atol_moisture": 1e-12,
+          "max_step_s": 120,
+          "early_max_step_s": 2,
+          "horizon_h": 240,
+          "shrink": true,
+          "boundary_extension": "nominal",
+          "tail_temperature_C": 50,
+          "tail_equilibrium": 0.05,
+          "h": 25,
+          "beta": 8e-7,
+          "equilibrium_scale": 1,
+          "surface_latent_fraction": 0,
+          "latent_J_kg": 2400000,
+          "constant_D": null,
+          "constant_thermal": false,
+          "method": "BDF",
+          "face_scheme": "kirchhoff",
+          "jacobian_mode": "analytic",
+          "dense_storage": "disk"
+        },
+        "diagnostics": {
+          "event_s": 183926.06923258994,
+          "event_h": 51.09057478683054,
+          "end_s": 183928,
+          "elapsed_s": 164.5545338999982,
+          "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+          "max_mass_balance_abs_kg_per_kg": 7.993605777301127e-15,
+          "min_C": 0.05261996970729463,
+          "max_C": 2.5500000000000025,
+          "min_T_K": 301.15,
+          "max_T_K": 323.2000976421016,
+          "min_D": 9.398366254447737e-12,
+          "max_D": 2.477122820067253e-9,
+          "positive_properties": true,
+          "max_radial_C_increase": 4.440892098500626e-15,
+          "final_max_C": 0.14999900856092843,
+          "final_surface_C": 0.052619969707294635,
+          "strictly_dry_at_end": true,
+          "radius_end_m": 0.012,
+          "radius_extrapolation_used": false,
+          "rhs_evaluations": 36934,
+          "accepted_time_points": 15996,
+          "nfev": 36934,
+          "njev": 737,
+          "nlu": 4099,
+          "solver_success": true,
+          "dense_storage": "disk",
+          "dense_coefficient_bytes": 8327788168,
+          "dense_polynomial_count": 15993
+        },
+        "code": {
+          "path": "paper_output/code/modeling/drying_core.py",
+          "bytes": 19944,
+          "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+          "exists": true
+        },
+        "jacobian_code": {
+          "path": "paper_output/code/modeling/analytic_jacobian.py",
+          "bytes": 16952,
+          "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+          "exists": true
+        },
+        "dense_storage_code": {
+          "path": "paper_output/code/modeling/disk_dense.py",
+          "bytes": 4869,
+          "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+          "exists": true
+        },
+        "inputs": [
+          {
+            "path": "paper_output/data_cleaned/A_environment_observed.csv",
+            "bytes": 10125,
+            "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+            "exists": true
+          },
+          {
+            "path": "paper_output/data_cleaned/A_radius_observed.csv",
+            "bytes": 3522,
+            "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+            "exists": true
+          }
+        ],
+        "human_review_status": "pending",
+        "gui_reproduced": false,
+        "solver_warning_count": 0,
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q4",
+        "completion": {
+          "critical_event_s": 183926.06923258994,
+          "critical_event_h": 51.09057478683054,
+          "reported_drying_time_h": 51.0906,
+          "reported_time_s": 183926.16,
+          "max_C_at_reported_time": 0.14999995339076624,
+          "slowest_material_coordinate": 0,
+          "conservative_post_verification_s": 183928,
+          "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+          "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+        },
+        "reproduction_samples": {
+          "times_s": [
+            0,
+            1800,
+            10800,
+            183926.16,
+            183928
+          ],
+          "material_x": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ],
+          "T_K": [
+            [
+              301.15,
+              301.15,
+              301.15,
+              301.15,
+              301.15
+            ],
+            [
+              304.18781907151936,
+              304.46728468564174,
+              305.3224885001255,
+              306.80252608201823,
+              309.05980848026536
+            ],
+            [
+              322.97124085294246,
+              322.9784486845918,
+              323.0028781283762,
+              323.0496413187221,
+              323.12744861066466
+            ],
+            [
+              323.15,
+              323.15,
+              323.15,
+              323.15,
+              323.15
+            ],
+            [
+              323.15,
+              323.15,
+              323.15,
+              323.15,
+              323.15
+            ]
+          ],
+          "C": [
+            [
+              2.55,
+              2.55,
+              2.55,
+              2.55,
+              2.55
+            ],
+            [
+              2.55,
+              2.5499999999995815,
+              2.549998436080619,
+              2.5309421443741127,
+              1.1313425016195608
+            ],
+            [
+              2.4547252277379927,
+              2.3815382147789257,
+              2.112246351658363,
+              1.5585872624122925,
+              0.6843727284423174
+            ],
+            [
+              0.14999995339076624,
+              0.14692749737405153,
+              0.13718379398934455,
+              0.11813224940015873,
+              0.05262002809955053
+            ],
+            [
+              0.14999900856092843,
+              0.14692658503537287,
+              0.13718298178958888,
+              0.11813162008386399,
+              0.052619969707294635
+            ]
+          ]
+        },
+        "metric_samples": {
+          "Q4": {
+            "time_s": 183926.16,
+            "material_x": [
+              0,
+              1
+            ],
+            "T_K": [
+              [
+                323.15,
+                323.15
+              ]
+            ],
+            "C": [
+              [
+                0.14999995339076624,
+                0.05262002809955053
+              ]
+            ],
+            "source": "live_Run_dense_solution"
+          }
+        }
+      },
+      "export_validation": {
+        "schema_version": "1.0",
+        "question_id": "Q4",
+        "generated_by": "paper_output/code/modeling/export_outputs.py",
+        "generated_at": "2026-09-10T16:31:46.577850+00:00",
+        "status": "PASS",
+        "fully_verified_with_live_Run": true,
+        "checked_cells": 76700,
+        "sheets": {
+          "Sheet1": {
+            "data_rows": 3068,
+            "total_rows": 3069,
+            "first_time_s": 0,
+            "last_time_s": 183928,
+            "outside_domain_blank_cells": 23173,
+            "value_comparison_max_abs_error": 0
+          },
+          "半径": {
+            "data_rows": 3068,
+            "total_rows": 3069,
+            "first_time_s": 0,
+            "last_time_s": 183928,
+            "outside_domain_blank_cells": 0,
+            "value_comparison_max_abs_error": 0
+          }
+        },
+        "live_Run_sample_validation": {
+          "status": "PASS",
+          "samples": 15,
+          "max_abs_unrounded_difference": 0
+        },
+        "paper_CSV_live_Run_validation": {
+          "status": "PASS",
+          "checked_cells": 81,
+          "files": [
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q4_paper_moisture.csv",
+                "bytes": 390,
+                "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+                "exists": true
+              },
+              "kind": "moisture",
+              "status": "PASS",
+              "header": [
+                "时间/h",
+                "0",
+                "0.5",
+                "1",
+                "1.5",
+                "2",
+                "药材表面"
+              ],
+              "data_rows": 9,
+              "expected_data_rows": 9,
+              "checked_cells": 63,
+              "source_query_times_s": [
+                21600,
+                43200,
+                64800,
+                86400,
+                108000,
+                129600,
+                151200,
+                172800,
+                183926.16
+              ],
+              "display_time_unit": "h",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "kg/kg",
+              "max_field_rounding_error_from_live_value": 0.00004657237056709951,
+              "outside_domain_blank_cells": 18,
+              "physical_radii_m": [
+                0,
+                0.005,
+                0.01,
+                0.015,
+                0.02
+              ],
+              "surface_column_1based": 7,
+              "surface_query": "material_x=1; never fixed 2 cm"
+            },
+            {
+              "artifact": {
+                "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+                "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\q4_paper_radius.csv",
+                "bytes": 172,
+                "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+                "exists": true
+              },
+              "kind": "radius",
+              "status": "PASS",
+              "header": [
+                "时间/h",
+                "表面半径/cm"
+              ],
+              "data_rows": 9,
+              "expected_data_rows": 9,
+              "checked_cells": 18,
+              "source_query_times_s": [
+                21600,
+                43200,
+                64800,
+                86400,
+                108000,
+                129600,
+                151200,
+                172800,
+                183926.16
+              ],
+              "display_time_unit": "h",
+              "max_display_time_rounding_error": 0,
+              "field_unit": "cm",
+              "max_field_rounding_error_from_live_value": 0,
+              "outside_domain_blank_cells": 0,
+              "physical_radii_m": null,
+              "surface_column_1based": null,
+              "surface_query": null
+            }
+          ],
+          "completion": {
+            "critical_event_s": 183926.06923258994,
+            "critical_event_h": 51.09057478683054,
+            "reported_drying_time_h": 51.0906,
+            "reported_time_s": 183926.16,
+            "max_C_at_reported_time": 0.14999995339076624,
+            "slowest_material_coordinate": 0,
+            "conservative_post_verification_s": 183928,
+            "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+            "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+          },
+          "completion_source": {
+            "path": "paper_output/code/modeling/q3_model.py",
+            "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q3_model.py",
+            "bytes": 1285,
+            "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+            "exists": true
+          },
+          "scope": "Every paper CSV cell independently re-evaluated from live Run and fixed question contracts; no generation arrays or 60s archives reused.",
+          "rounding_limit": "CSV stores four decimals; matching rounded values cannot distinguish sub-rounding perturbations of the original source value."
+        },
+        "errors": [],
+        "elapsed_s": 0.940823900000396,
+        "workbook": {
+          "path": "paper_output/results/production/final_v6a/outputs/result4.xlsx",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result4.xlsx",
+          "bytes": 278278,
+          "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f",
+          "exists": true,
+          "role": "contest_result_workbook"
+        },
+        "export_manifest": {
+          "path": "paper_output/results/production/final_v6a/outputs/result4.export.json",
+          "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\production\\final_v6a\\outputs\\result4.export.json",
+          "bytes": 25966,
+          "sha256": "1996a39d7dab85197224f264f736436df0d8f0eee1cbba527e0445ca5452d0df",
+          "exists": true
+        },
+        "scope": "Full workbook/raw-archive validation; independent workbook live Run samples and every paper CSV time/position/value/surface/radius cell when live Run is provided.",
+        "four_decimals_are_storage_and_display_not_physical_accuracy_claim": true,
+        "visual_render": "pending",
+        "visual_studio_gui": "pending",
+        "human_review": "pending"
+      },
+      "strict_report_margin_kgkg": 4.660923375032766e-8
+    },
+    "independent_manifest_check": {
+      "status": "PASS",
+      "run_id": "final_v6a",
+      "returncode": 0,
+      "process": {
+        "pid": 32364,
+        "returncode": 0,
+        "started_at": "2026-09-11T00:20:48.887795+08:00",
+        "finished_at": "2026-09-11T00:31:52.177092+08:00",
+        "command": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\run_modeling.py --version final_v6a --n1 3200 --n23 3200 --n4 6400 --blas-threads 1 --worker --launch-token 0e91d4894bf8467cb5c63d03ac6fd0f9",
+        "argv": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\run_modeling.py",
+          "--version",
+          "final_v6a",
+          "--n1",
+          "3200",
+          "--n23",
+          "3200",
+          "--n4",
+          "6400",
+          "--blas-threads",
+          "1",
+          "--worker",
+          "--launch-token",
+          "0e91d4894bf8467cb5c63d03ac6fd0f9"
+        ],
+        "cwd": "D:\\Document\\数学建模\\2026CUMCM"
+      },
+      "source_hash": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "input_count": 28,
+      "output_count": 79,
+      "checked": 107,
+      "failures": [],
+      "global_manifest_matches": true,
+      "manifest_sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+    },
+    "independent_export_metric_package": {
+      "status": "PASS",
+      "read_only_no_PDE_solve": true,
+      "q4_workbook_and_unrounded": {
+        "status": "PASS",
+        "rows": 3068,
+        "first_time_s": 0,
+        "last_time_s": 183928,
+        "time_grid": "all 60-second samples plus exact critical event and conservative end, sorted unique",
+        "raw_time_grid_exactly_expected": true,
+        "time_display_rounding_decimals": 4,
+        "max_time_display_rounding_error_s": 0.00003258994547650218,
+        "outside_blank_cells": 23173,
+        "inside_cells": 41255,
+        "surface_coincidences": 969,
+        "surface_unrounded_max_difference": 0,
+        "max_field_rounding_error": 0.00004999961098703376,
+        "errors": []
+      },
+      "metric_evidence": [
+        {
+          "question": "Q1",
+          "metric": "mass_balance_absolute_residual",
+          "equal": true,
+          "value": 5.773159728050814e-15
+        },
+        {
+          "question": "Q1",
+          "metric": "radial_intervals",
+          "equal": true,
+          "value": 3200
+        },
+        {
+          "question": "Q1",
+          "metric": "center_C_at_report_time",
+          "equal": true,
+          "value": 2.549992403819304
+        },
+        {
+          "question": "Q2",
+          "metric": "mass_balance_absolute_residual",
+          "equal": true,
+          "value": 1.1546319456101628e-14
+        },
+        {
+          "question": "Q2",
+          "metric": "radial_intervals",
+          "equal": true,
+          "value": 3200
+        },
+        {
+          "question": "Q2",
+          "metric": "center_C_at_report_time",
+          "equal": true,
+          "value": 1.7661771002440243
+        },
+        {
+          "question": "Q3",
+          "metric": "mass_balance_absolute_residual",
+          "equal": true,
+          "value": 1.1546319456101628e-14
+        },
+        {
+          "question": "Q3",
+          "metric": "radial_intervals",
+          "equal": true,
+          "value": 3200
+        },
+        {
+          "question": "Q3",
+          "metric": "center_C_at_report_time",
+          "equal": true,
+          "value": 0.14999989718225315
+        },
+        {
+          "question": "Q3",
+          "metric": "reported_drying_time",
+          "equal": true,
+          "value": 57.4724
+        },
+        {
+          "question": "Q4",
+          "metric": "mass_balance_absolute_residual",
+          "equal": true,
+          "value": 7.993605777301127e-15
+        },
+        {
+          "question": "Q4",
+          "metric": "radial_intervals",
+          "equal": true,
+          "value": 6400
+        },
+        {
+          "question": "Q4",
+          "metric": "center_C_at_report_time",
+          "equal": true,
+          "value": 0.14999995339076624
+        },
+        {
+          "question": "Q4",
+          "metric": "reported_drying_time",
+          "equal": true,
+          "value": 51.0906
+        }
+      ],
+      "support_preflight": {
+        "generated_at": "2026-09-10T16:35:11.234528+00:00",
+        "run_id": "final_v6a",
+        "status": "NUMERICAL_CANDIDATE_SIZE_PASS_SUBMISSION_INCOMPLETE",
+        "workbooks": [
+          {
+            "path": "paper_output/results/production/final_v6a/outputs/result1.xlsx",
+            "bytes": 390899,
+            "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+          },
+          {
+            "path": "paper_output/results/production/final_v6a/outputs/result2.xlsx",
+            "bytes": 29210086,
+            "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+          },
+          {
+            "path": "paper_output/results/production/final_v6a/outputs/result3.xlsx",
+            "bytes": 339137,
+            "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+          },
+          {
+            "path": "paper_output/results/production/final_v6a/outputs/result4.xlsx",
+            "bytes": 278278,
+            "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+          }
+        ],
+        "workbooks_total_bytes": 30218400,
+        "archive": {
+          "path": "notes/A-modeling/2026-09-10/data/final_visual_assets/support_preflight_existing_numerical_materials.zip",
+          "bytes": 14382321,
+          "sha256": "f25729fa3f9f01c5a97cdc07b7bd6d178040dc19f3a14555ef22022732479e4e"
+        },
+        "candidate_file_count": 93,
+        "candidate_uncompressed_bytes": 34717917,
+        "max_package_bytes": 20000000,
+        "remaining_bytes_to_20_decimal_MB": 5617679,
+        "decompressed_every_entry_hash_equal": true,
+        "all_source_files_unchanged": true,
+        "required_time_or_radius_values_deleted": false,
+        "scope": "All four unchanged result workbooks, complete frozen numerical launch inputs/model sources, all final production figures in PNG/SVG/PDF, plot data, paper CSV, run/validation/contracts evidence. Internal full precision output archives are preserved outside this submission candidate.",
+        "not_final_submission_reasons": [
+          "AI工具使用详情.pdf has not been created in paper_output at review time.",
+          "Final submission README/environment/reproduction instructions and final human/GUI acceptance must be assembled and rechecked.",
+          "This internal candidate preserves provenance paths and is not an anonymity-reviewed final package."
+        ]
+      },
+      "support_archive_sha_independently_matches": true
+    },
+    "published_figure_source_records": [
+      {
+        "figure_id": "fig_A_environment",
+        "question_id": "Q1",
+        "source_run_id": null,
+        "source_trajectory_id": null,
+        "status": "generated_from_observations",
+        "output_path": "paper_output/figures/fig_A_environment.png"
+      },
+      {
+        "figure_id": "fig_A_radius",
+        "question_id": "Q4",
+        "source_run_id": null,
+        "source_trajectory_id": null,
+        "status": "generated_from_observations",
+        "output_path": "paper_output/figures/fig_A_radius.png"
+      },
+      {
+        "figure_id": "fig_q1_profiles",
+        "question_id": "Q1",
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q1",
+        "status": "computed",
+        "output_path": null
+      },
+      {
+        "figure_id": "fig_q2_profiles",
+        "question_id": "Q2",
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q23",
+        "status": "computed",
+        "output_path": null
+      },
+      {
+        "figure_id": "fig_q3_drying",
+        "question_id": "Q3",
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q23",
+        "status": "computed",
+        "output_path": null
+      },
+      {
+        "figure_id": "fig_q4_drying",
+        "question_id": "Q4",
+        "source_run_id": "final_v6a",
+        "source_trajectory_id": "final_v6a:Q4",
+        "status": "computed",
+        "output_path": null
+      }
+    ],
+    "final_independent_recheck": {
+      "checked_at_utc": "2026-09-10T17:16:48Z",
+      "status": "PASS",
+      "checked": 107,
+      "failures": [],
+      "manifest_sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87",
+      "global_manifest_matches": true,
+      "global_manifest_path": "paper_output/results/run_manifest.json",
+      "returncode": 0
+    }
+  },
+  "final_N_time_accuracy": {
+    "Q1": {
+      "N": 3200,
+      "status": "ACTUAL_RUNS_EXIT_ZERO_HASHES_AND_DIRECT_REDUCTION_VERIFIED",
+      "report": {
+        "path": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+        "sha256": "0a09a105fd5058a8970302413a82e0d701b96f2dabe8bc7d1cdc2615cab82d8b"
+      },
+      "started_at": "2026-09-10T16:51:02.370267+00:00",
+      "finished_at": "2026-09-10T16:51:23.399138+00:00",
+      "wall_seconds": 21.028868800000055,
+      "baseline_controls": {
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "early_max_step_s": 2,
+        "max_step_s": 120
+      },
+      "tight_controls": {
+        "rtol": 1e-11,
+        "atol_temperature": 1e-11,
+        "atol_moisture": 1e-13,
+        "early_max_step_s": 1,
+        "max_step_s": 60
+      },
+      "runtime": {
+        "executable": "C:\\Python314\\python.exe",
+        "implementation": "CPython",
+        "version": "3.14.7",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "installed_library_versions": {
+          "numpy": "2.5.2",
+          "scipy": "1.18.1",
+          "openpyxl": "3.1.5",
+          "matplotlib": "3.11.1"
+        },
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "scope": "Installed distributions; actual imported module paths are recorded by worker."
+      },
+      "comparison": {
+        "max_absolute_difference": {
+          "T_K": 0.000001627586982522189,
+          "C": 3.6191343255609354e-9
+        },
+        "locations": {
+          "T_K": {
+            "time_s": 1740,
+            "radius_m": 0.02
+          },
+          "C": {
+            "time_s": 68,
+            "radius_m": 0.02
+          }
+        },
+        "compared_time_count": 1801,
+        "radial_count": 21,
+        "convention": "Only finite values at common physical points are compared.",
+        "baseline_N": 3200,
+        "tight_N": 3200,
+        "baseline_event_s": null,
+        "tight_event_s": null,
+        "event_difference_s": null,
+        "absolute_event_difference_s": null,
+        "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+        "baseline_projection_time_count": 1801,
+        "tight_projection_time_count": 1801,
+        "common_last_time_s": 1800,
+        "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+        "not_a_rigorous_error_bound": true,
+        "no_experimental_accuracy_claim": true
+      },
+      "runs": [
+        {
+          "variant": "baseline",
+          "process": {
+            "pid": 46332,
+            "returncode": 0,
+            "started_at": "2026-09-10T16:51:02.587172+00:00",
+            "finished_at": "2026-09-10T16:51:10.878356+00:00"
+          },
+          "summary_file": {
+            "path": "paper_output/results/time_accuracy/final_v6/baseline/summary.json",
+            "bytes": 3332,
+            "sha256": "91fb217401ed17b57c82e99dc5ebe404a044f27cb50b061fd2aec4cfa8ab17c3",
+            "exists": true
+          },
+          "settings": {
+            "question": "Q1",
+            "intervals": 3200,
+            "rtol": 1e-10,
+            "atol_temperature": 1e-10,
+            "atol_moisture": 1e-12,
+            "max_step_s": 120,
+            "early_max_step_s": 2,
+            "horizon_h": 240,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50,
+            "tail_equilibrium": 0.05,
+            "h": 25,
+            "beta": 8e-7,
+            "equilibrium_scale": 1,
+            "surface_latent_fraction": 0,
+            "latent_J_kg": 2400000,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "diagnostics": {
+            "event_s": null,
+            "event_h": null,
+            "end_s": 1800,
+            "elapsed_s": 4.985825900002965,
+            "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+            "max_mass_balance_abs_kg_per_kg": 5.773159728050814e-15,
+            "min_C": 1.510234685362519,
+            "max_C": 2.550000000000001,
+            "min_T_K": 301.15,
+            "max_T_K": 309.9355602874471,
+            "min_D": 3.882960068132186e-9,
+            "max_D": 4.937655094173939e-9,
+            "positive_properties": true,
+            "max_radial_C_increase": 3.552713678800501e-15,
+            "final_max_C": 2.549992403819304,
+            "final_surface_C": 1.5102346853625193,
+            "strictly_dry_at_end": false,
+            "radius_end_m": 0.02,
+            "radius_extrapolation_used": false,
+            "rhs_evaluations": 3914,
+            "accepted_time_points": 1743,
+            "nfev": 3914,
+            "njev": 68,
+            "nlu": 431,
+            "solver_success": true,
+            "dense_storage": "disk",
+            "dense_coefficient_bytes": 463474752,
+            "dense_polynomial_count": 1742
+          },
+          "time_check": {
+            "variant": "baseline",
+            "question": "Q1",
+            "spatial_intervals": 3200,
+            "started_at": "2026-09-10T16:51:04.001980+00:00",
+            "solve_finished_at": "2026-09-10T16:51:09.316208+00:00",
+            "warnings": [],
+            "projection_time_count": 1801,
+            "full_second_comparison": true,
+            "projection_radius_count": 21,
+            "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+            "finished_at": "2026-09-10T16:51:10.650792+00:00",
+            "wall_seconds": 6.648833499999455,
+            "Run_closed": true
+          }
+        },
+        {
+          "variant": "tight",
+          "process": {
+            "pid": 50048,
+            "returncode": 0,
+            "started_at": "2026-09-10T16:51:10.973940+00:00",
+            "finished_at": "2026-09-10T16:51:22.267573+00:00"
+          },
+          "summary_file": {
+            "path": "paper_output/results/time_accuracy/final_v6/tight/summary.json",
+            "bytes": 3339,
+            "sha256": "159a5a5002e04762e652a937e4b706600c3f77d6e2772ee1dcfb2de2c145521b",
+            "exists": true
+          },
+          "settings": {
+            "question": "Q1",
+            "intervals": 3200,
+            "rtol": 1e-11,
+            "atol_temperature": 1e-11,
+            "atol_moisture": 1e-13,
+            "max_step_s": 60,
+            "early_max_step_s": 1,
+            "horizon_h": 240,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50,
+            "tail_equilibrium": 0.05,
+            "h": 25,
+            "beta": 8e-7,
+            "equilibrium_scale": 1,
+            "surface_latent_fraction": 0,
+            "latent_J_kg": 2400000,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "diagnostics": {
+            "event_s": null,
+            "event_h": null,
+            "end_s": 1800,
+            "elapsed_s": 7.702415700001438,
+            "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+            "max_mass_balance_abs_kg_per_kg": 5.329070518200751e-15,
+            "min_C": 1.510234685342474,
+            "max_C": 2.550000000000002,
+            "min_T_K": 301.1499999999999,
+            "max_T_K": 309.9355603347281,
+            "min_D": 3.882960068101813e-9,
+            "max_D": 4.93765509417394e-9,
+            "positive_properties": true,
+            "max_radial_C_increase": 3.552713678800501e-15,
+            "final_max_C": 2.5499924038194144,
+            "final_surface_C": 1.5102346853424742,
+            "strictly_dry_at_end": false,
+            "radius_end_m": 0.02,
+            "radius_extrapolation_used": false,
+            "rhs_evaluations": 6390,
+            "accepted_time_points": 2925,
+            "nfev": 6390,
+            "njev": 95,
+            "nlu": 651,
+            "solver_success": true,
+            "dense_storage": "disk",
+            "dense_coefficient_bytes": 817637488,
+            "dense_polynomial_count": 2924
+          },
+          "time_check": {
+            "variant": "tight",
+            "question": "Q1",
+            "spatial_intervals": 3200,
+            "started_at": "2026-09-10T16:51:12.280406+00:00",
+            "solve_finished_at": "2026-09-10T16:51:20.552538+00:00",
+            "warnings": [],
+            "projection_time_count": 1801,
+            "full_second_comparison": true,
+            "projection_radius_count": 21,
+            "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+            "finished_at": "2026-09-10T16:51:22.108860+00:00",
+            "wall_seconds": 9.828469299998687,
+            "Run_closed": true
+          }
+        }
+      ],
+      "independent_audit": {
+        "report_file": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+        "report_sha256": "0a09a105fd5058a8970302413a82e0d701b96f2dabe8bc7d1cdc2615cab82d8b",
+        "checked_hash_count": 27,
+        "hash_failures": [],
+        "observed_driver_exit_code": 0,
+        "actual_child_exit_codes": [
+          0,
+          0
+        ],
+        "baseline_matches_final_production_sample_sha": true,
+        "independent_npz_reduction": {
+          "same_full_time_grid": true,
+          "same_radius_grid": true,
+          "values": {
+            "T_K": {
+              "max_absolute_difference": 0.000001627586982522189,
+              "time_s": 1740,
+              "radius_m": 0.02,
+              "matches_report_value_and_location": true
+            },
+            "C": {
+              "max_absolute_difference": 3.6191343255609354e-9,
+              "time_s": 68,
+              "radius_m": 0.02,
+              "matches_report_value_and_location": true
+            }
+          },
+          "finite_masks": {
+            "T_K": {
+              "finite_masks_equal": true,
+              "finite_pair_count": 37821,
+              "array_shape": [
+                1801,
+                21
+              ]
+            },
+            "C": {
+              "finite_masks_equal": true,
+              "finite_pair_count": 37821,
+              "array_shape": [
+                1801,
+                21
+              ]
+            }
+          },
+          "scope": "Fresh direct NumPy reduction on saved actual full-second projections; does not call verify_convergence or drying_core."
+        }
+      }
+    },
+    "Q23": {
+      "N": 3200,
+      "status": "ACTUAL_RUNS_EXIT_ZERO_HASHES_AND_DIRECT_REDUCTION_VERIFIED",
+      "report": {
+        "path": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+        "sha256": "e0e2e1ad0ba8ad583319c5a52ff22b37fcb6d4635a7b2398f221b608bcf756fc"
+      },
+      "started_at": "2026-09-10T16:52:14.250683+00:00",
+      "finished_at": "2026-09-10T16:57:25.124932+00:00",
+      "wall_seconds": 310.8742456,
+      "baseline_controls": {
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "early_max_step_s": 2,
+        "max_step_s": 120
+      },
+      "tight_controls": {
+        "rtol": 1e-11,
+        "atol_temperature": 1e-11,
+        "atol_moisture": 1e-13,
+        "early_max_step_s": 1,
+        "max_step_s": 60
+      },
+      "runtime": {
+        "executable": "C:\\Python314\\python.exe",
+        "implementation": "CPython",
+        "version": "3.14.7",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "installed_library_versions": {
+          "numpy": "2.5.2",
+          "scipy": "1.18.1",
+          "openpyxl": "3.1.5",
+          "matplotlib": "3.11.1"
+        },
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "scope": "Installed distributions; actual imported module paths are recorded by worker."
+      },
+      "comparison": {
+        "max_absolute_difference": {
+          "T_K": 0.0000026602599518810166,
+          "C": 9.941051204442886e-9
+        },
+        "locations": {
+          "T_K": {
+            "time_s": 12180,
+            "radius_m": 0.02
+          },
+          "C": {
+            "time_s": 13260,
+            "radius_m": 0.02
+          }
+        },
+        "compared_time_count": 206903,
+        "radial_count": 21,
+        "convention": "Only finite values at common physical points are compared.",
+        "baseline_N": 3200,
+        "tight_N": 3200,
+        "baseline_event_s": 206900.28702201758,
+        "tight_event_s": 206900.2870259933,
+        "event_difference_s": 0.000003975728759542108,
+        "absolute_event_difference_s": 0.000003975728759542108,
+        "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+        "baseline_projection_time_count": 206903,
+        "tight_projection_time_count": 206903,
+        "common_last_time_s": 206902,
+        "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+        "not_a_rigorous_error_bound": true,
+        "no_experimental_accuracy_claim": true
+      },
+      "runs": [
+        {
+          "variant": "baseline",
+          "process": {
+            "pid": 39812,
+            "returncode": 0,
+            "started_at": "2026-09-10T16:52:14.475043+00:00",
+            "finished_at": "2026-09-10T16:54:25.316889+00:00"
+          },
+          "summary_file": {
+            "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/summary.json",
+            "bytes": 3380,
+            "sha256": "33bf0866ca05c5d928efa97c9061881e8e98a1457bc809aadcc7498a37b4a09b",
+            "exists": true
+          },
+          "settings": {
+            "question": "Q23",
+            "intervals": 3200,
+            "rtol": 1e-10,
+            "atol_temperature": 1e-10,
+            "atol_moisture": 1e-12,
+            "max_step_s": 120,
+            "early_max_step_s": 2,
+            "horizon_h": 240,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50,
+            "tail_equilibrium": 0.05,
+            "h": 25,
+            "beta": 8e-7,
+            "equilibrium_scale": 1,
+            "surface_latent_fraction": 0,
+            "latent_J_kg": 2400000,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "diagnostics": {
+            "event_s": 206900.28702201758,
+            "event_h": 57.47230195056044,
+            "end_s": 206902,
+            "elapsed_s": 71.93414999999732,
+            "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+            "max_mass_balance_abs_kg_per_kg": 1.1546319456101628e-14,
+            "min_C": 0.05265944808510597,
+            "max_C": 2.550000000000001,
+            "min_T_K": 301.15,
+            "max_T_K": 323.18986600675885,
+            "min_D": 3.124541898624993e-12,
+            "max_D": 1.252185966946026e-8,
+            "positive_properties": true,
+            "max_radial_C_increase": 3.1086244689504383e-15,
+            "final_max_C": 0.14999950103529133,
+            "final_surface_C": 0.05265944808510597,
+            "strictly_dry_at_end": true,
+            "radius_end_m": 0.02,
+            "radius_extrapolation_used": false,
+            "rhs_evaluations": 32705,
+            "accepted_time_points": 14283,
+            "nfev": 32705,
+            "njev": 618,
+            "nlu": 3552,
+            "solver_success": true,
+            "dense_storage": "disk",
+            "dense_coefficient_bytes": 3754872872,
+            "dense_polynomial_count": 14280
+          },
+          "time_check": {
+            "variant": "baseline",
+            "question": "Q23",
+            "spatial_intervals": 3200,
+            "started_at": "2026-09-10T16:52:15.791870+00:00",
+            "solve_finished_at": "2026-09-10T16:53:30.760109+00:00",
+            "warnings": [],
+            "projection_time_count": 206903,
+            "full_second_comparison": true,
+            "projection_radius_count": 21,
+            "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+            "finished_at": "2026-09-10T16:54:25.080755+00:00",
+            "wall_seconds": 129.28889379999964,
+            "Run_closed": true
+          }
+        },
+        {
+          "variant": "tight",
+          "process": {
+            "pid": 48076,
+            "returncode": 0,
+            "started_at": "2026-09-10T16:54:25.465101+00:00",
+            "finished_at": "2026-09-10T16:57:23.455566+00:00"
+          },
+          "summary_file": {
+            "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/summary.json",
+            "bytes": 3389,
+            "sha256": "87e9e820b96ff25a480bc0fd3ba0250ad2a462fc27636c19fcece3149e666df6",
+            "exists": true
+          },
+          "settings": {
+            "question": "Q23",
+            "intervals": 3200,
+            "rtol": 1e-11,
+            "atol_temperature": 1e-11,
+            "atol_moisture": 1e-13,
+            "max_step_s": 60,
+            "early_max_step_s": 1,
+            "horizon_h": 240,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50,
+            "tail_equilibrium": 0.05,
+            "h": 25,
+            "beta": 8e-7,
+            "equilibrium_scale": 1,
+            "surface_latent_fraction": 0,
+            "latent_J_kg": 2400000,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "diagnostics": {
+            "event_s": 206900.2870259933,
+            "event_h": 57.47230195166481,
+            "end_s": 206902,
+            "elapsed_s": 119.25163850000172,
+            "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+            "max_mass_balance_abs_kg_per_kg": 1.0658141036401503e-14,
+            "min_C": 0.052659448085097094,
+            "max_C": 2.5500000000000025,
+            "min_T_K": 301.1499999999999,
+            "max_T_K": 323.18986650950535,
+            "min_D": 3.1245418986204972e-12,
+            "max_D": 1.252185976107208e-8,
+            "positive_properties": true,
+            "max_radial_C_increase": 3.552713678800501e-15,
+            "final_max_C": 0.14999950103562854,
+            "final_surface_C": 0.052659448085097094,
+            "strictly_dry_at_end": true,
+            "radius_end_m": 0.02,
+            "radius_extrapolation_used": false,
+            "rhs_evaluations": 55096,
+            "accepted_time_points": 24943,
+            "nfev": 55096,
+            "njev": 679,
+            "nlu": 5574,
+            "solver_success": true,
+            "dense_storage": "disk",
+            "dense_coefficient_bytes": 6825956568,
+            "dense_polynomial_count": 24940
+          },
+          "time_check": {
+            "variant": "tight",
+            "question": "Q23",
+            "spatial_intervals": 3200,
+            "started_at": "2026-09-10T16:54:26.705370+00:00",
+            "solve_finished_at": "2026-09-10T16:56:31.038723+00:00",
+            "warnings": [],
+            "projection_time_count": 206903,
+            "full_second_comparison": true,
+            "projection_radius_count": 21,
+            "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+            "finished_at": "2026-09-10T16:57:23.245616+00:00",
+            "wall_seconds": 176.5402458000026,
+            "Run_closed": true
+          }
+        }
+      ],
+      "independent_audit": {
+        "report_file": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+        "report_sha256": "e0e2e1ad0ba8ad583319c5a52ff22b37fcb6d4635a7b2398f221b608bcf756fc",
+        "checked_hash_count": 27,
+        "hash_failures": [],
+        "observed_driver_exit_code": 0,
+        "actual_child_exit_codes": [
+          0,
+          0
+        ],
+        "baseline_matches_final_production_sample_sha": true,
+        "independent_npz_reduction": {
+          "same_full_time_grid": true,
+          "same_radius_grid": true,
+          "values": {
+            "T_K": {
+              "max_absolute_difference": 0.0000026602599518810166,
+              "time_s": 12180,
+              "radius_m": 0.02,
+              "matches_report_value_and_location": true
+            },
+            "C": {
+              "max_absolute_difference": 9.941051204442886e-9,
+              "time_s": 13260,
+              "radius_m": 0.02,
+              "matches_report_value_and_location": true
+            }
+          },
+          "finite_masks": {
+            "T_K": {
+              "finite_masks_equal": true,
+              "finite_pair_count": 4344963,
+              "array_shape": [
+                206903,
+                21
+              ]
+            },
+            "C": {
+              "finite_masks_equal": true,
+              "finite_pair_count": 4344963,
+              "array_shape": [
+                206903,
+                21
+              ]
+            }
+          },
+          "scope": "Fresh direct NumPy reduction on saved actual full-second projections; does not call verify_convergence or drying_core."
+        }
+      }
+    },
+    "Q4": {
+      "N": 6400,
+      "status": "ACTUAL_RUNS_EXIT_ZERO_HASHES_AND_DIRECT_REDUCTION_VERIFIED",
+      "report": {
+        "path": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+        "sha256": "a66f24e588ac1da46f50e74a5c0a20624491b3cb8198b63316afc72d03d5af70"
+      },
+      "started_at": "2026-09-10T16:57:59.586751+00:00",
+      "finished_at": "2026-09-10T17:11:08.770836+00:00",
+      "wall_seconds": 789.1840613000022,
+      "baseline_controls": {
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "early_max_step_s": 2,
+        "max_step_s": 120
+      },
+      "tight_controls": {
+        "rtol": 1e-11,
+        "atol_temperature": 1e-11,
+        "atol_moisture": 1e-13,
+        "early_max_step_s": 1,
+        "max_step_s": 60
+      },
+      "runtime": {
+        "executable": "C:\\Python314\\python.exe",
+        "implementation": "CPython",
+        "version": "3.14.7",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "installed_library_versions": {
+          "numpy": "2.5.2",
+          "scipy": "1.18.1",
+          "openpyxl": "3.1.5",
+          "matplotlib": "3.11.1"
+        },
+        "thread_environment": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1"
+        },
+        "scope": "Installed distributions; actual imported module paths are recorded by worker."
+      },
+      "comparison": {
+        "max_absolute_difference": {
+          "T_K": 9.443490398552967e-7,
+          "C": 9.818015289653204e-10
+        },
+        "locations": {
+          "T_K": {
+            "time_s": 13140,
+            "radius_m": 0.015
+          },
+          "C": {
+            "time_s": 1382,
+            "radius_m": 0.019
+          }
+        },
+        "compared_time_count": 183929,
+        "radial_count": 21,
+        "convention": "Only finite values at common physical points are compared.",
+        "baseline_N": 6400,
+        "tight_N": 6400,
+        "baseline_event_s": 183926.06923258994,
+        "tight_event_s": 183926.0692291744,
+        "event_difference_s": -0.0000034155382309108973,
+        "absolute_event_difference_s": 0.0000034155382309108973,
+        "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+        "baseline_projection_time_count": 183929,
+        "tight_projection_time_count": 183929,
+        "common_last_time_s": 183928,
+        "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+        "not_a_rigorous_error_bound": true,
+        "no_experimental_accuracy_claim": true
+      },
+      "runs": [
+        {
+          "variant": "baseline",
+          "process": {
+            "pid": 48908,
+            "returncode": 0,
+            "started_at": "2026-09-10T16:57:59.792033+00:00",
+            "finished_at": "2026-09-10T17:03:38.487458+00:00"
+          },
+          "summary_file": {
+            "path": "paper_output/results/time_accuracy/final_v6_Q4/baseline/summary.json",
+            "bytes": 3378,
+            "sha256": "42f723d3715ea12ac17d5d88a0b22b7cde49cc7f9514739f141f2dc6cc57823a",
+            "exists": true
+          },
+          "settings": {
+            "question": "Q4",
+            "intervals": 6400,
+            "rtol": 1e-10,
+            "atol_temperature": 1e-10,
+            "atol_moisture": 1e-12,
+            "max_step_s": 120,
+            "early_max_step_s": 2,
+            "horizon_h": 240,
+            "shrink": true,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50,
+            "tail_equilibrium": 0.05,
+            "h": 25,
+            "beta": 8e-7,
+            "equilibrium_scale": 1,
+            "surface_latent_fraction": 0,
+            "latent_J_kg": 2400000,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "diagnostics": {
+            "event_s": 183926.06923258994,
+            "event_h": 51.09057478683054,
+            "end_s": 183928,
+            "elapsed_s": 214.67361850000088,
+            "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+            "max_mass_balance_abs_kg_per_kg": 7.993605777301127e-15,
+            "min_C": 0.05261996970729463,
+            "max_C": 2.5500000000000025,
+            "min_T_K": 301.15,
+            "max_T_K": 323.2000976421016,
+            "min_D": 9.398366254447737e-12,
+            "max_D": 2.477122820067253e-9,
+            "positive_properties": true,
+            "max_radial_C_increase": 4.440892098500626e-15,
+            "final_max_C": 0.14999900856092843,
+            "final_surface_C": 0.052619969707294635,
+            "strictly_dry_at_end": true,
+            "radius_end_m": 0.012,
+            "radius_extrapolation_used": false,
+            "rhs_evaluations": 36934,
+            "accepted_time_points": 15996,
+            "nfev": 36934,
+            "njev": 737,
+            "nlu": 4099,
+            "solver_success": true,
+            "dense_storage": "disk",
+            "dense_coefficient_bytes": 8327788168,
+            "dense_polynomial_count": 15993
+          },
+          "time_check": {
+            "variant": "baseline",
+            "question": "Q4",
+            "spatial_intervals": 6400,
+            "started_at": "2026-09-10T16:58:01.062511+00:00",
+            "solve_finished_at": "2026-09-10T17:01:43.305393+00:00",
+            "warnings": [],
+            "projection_time_count": 183929,
+            "full_second_comparison": true,
+            "projection_radius_count": 21,
+            "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+            "finished_at": "2026-09-10T17:03:38.248381+00:00",
+            "wall_seconds": 337.18586270000014,
+            "Run_closed": true
+          }
+        },
+        {
+          "variant": "tight",
+          "process": {
+            "pid": 24000,
+            "returncode": 0,
+            "started_at": "2026-09-10T17:03:38.604190+00:00",
+            "finished_at": "2026-09-10T17:11:06.649062+00:00"
+          },
+          "summary_file": {
+            "path": "paper_output/results/time_accuracy/final_v6_Q4/tight/summary.json",
+            "bytes": 3383,
+            "sha256": "c4ba837cffeadf251fc82db15242f1eddb7b1e65188dac37106ca78f55fc57c0",
+            "exists": true
+          },
+          "settings": {
+            "question": "Q4",
+            "intervals": 6400,
+            "rtol": 1e-11,
+            "atol_temperature": 1e-11,
+            "atol_moisture": 1e-13,
+            "max_step_s": 60,
+            "early_max_step_s": 1,
+            "horizon_h": 240,
+            "shrink": true,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50,
+            "tail_equilibrium": 0.05,
+            "h": 25,
+            "beta": 8e-7,
+            "equilibrium_scale": 1,
+            "surface_latent_fraction": 0,
+            "latent_J_kg": 2400000,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "diagnostics": {
+            "event_s": 183926.0692291744,
+            "event_h": 51.09057478588178,
+            "end_s": 183928,
+            "elapsed_s": 292.5721840999977,
+            "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+            "max_mass_balance_abs_kg_per_kg": 1.4210854715202004e-14,
+            "min_C": 0.05261996970702014,
+            "max_C": 2.5500000000000025,
+            "min_T_K": 301.1499999999999,
+            "max_T_K": 323.200098247072,
+            "min_D": 9.398366254168233e-12,
+            "max_D": 2.477122821706304e-9,
+            "positive_properties": true,
+            "max_radial_C_increase": 4.440892098500626e-15,
+            "final_max_C": 0.1499990085572536,
+            "final_surface_C": 0.052619969707020146,
+            "strictly_dry_at_end": true,
+            "radius_end_m": 0.012,
+            "radius_extrapolation_used": false,
+            "rhs_evaluations": 59603,
+            "accepted_time_points": 27056,
+            "nfev": 59603,
+            "njev": 790,
+            "nlu": 6142,
+            "solver_success": true,
+            "dense_storage": "disk",
+            "dense_coefficient_bytes": 14798629216,
+            "dense_polynomial_count": 27053
+          },
+          "time_check": {
+            "variant": "tight",
+            "question": "Q4",
+            "spatial_intervals": 6400,
+            "started_at": "2026-09-10T17:03:39.782517+00:00",
+            "solve_finished_at": "2026-09-10T17:08:44.208374+00:00",
+            "warnings": [],
+            "projection_time_count": 183929,
+            "full_second_comparison": true,
+            "projection_radius_count": 21,
+            "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+            "finished_at": "2026-09-10T17:11:06.376509+00:00",
+            "wall_seconds": 446.59399499999927,
+            "Run_closed": true
+          }
+        }
+      ],
+      "independent_audit": {
+        "report_file": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+        "report_sha256": "a66f24e588ac1da46f50e74a5c0a20624491b3cb8198b63316afc72d03d5af70",
+        "checked_hash_count": 27,
+        "hash_failures": [],
+        "observed_driver_exit_code": 0,
+        "actual_child_exit_codes": [
+          0,
+          0
+        ],
+        "baseline_matches_final_production_sample_sha": true,
+        "independent_npz_reduction": {
+          "same_full_time_grid": true,
+          "same_radius_grid": true,
+          "values": {
+            "T_K": {
+              "max_absolute_difference": 9.443490398552967e-7,
+              "time_s": 13140,
+              "radius_m": 0.015,
+              "matches_report_value_and_location": true
+            },
+            "C": {
+              "max_absolute_difference": 9.818015289653204e-10,
+              "time_s": 1382,
+              "radius_m": 0.019,
+              "matches_report_value_and_location": true
+            }
+          },
+          "finite_masks": {
+            "T_K": {
+              "finite_masks_equal": true,
+              "finite_pair_count": 2473078,
+              "array_shape": [
+                183929,
+                21
+              ]
+            },
+            "C": {
+              "finite_masks_equal": true,
+              "finite_pair_count": 2473078,
+              "array_shape": [
+                183929,
+                21
+              ]
+            }
+          },
+          "scope": "Fresh direct NumPy reduction on saved actual full-second projections; does not call verify_convergence or drying_core."
+        }
+      }
+    },
+    "excluded_as_final_accuracy_evidence": "paper_output/results/time_accuracy/Q1_N20_driver_functional_20260910/time_accuracy_report.json",
+    "launch_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "scope": "Process-local PowerShell environment set before each parent/child launch; report runtime_record directly records OPENBLAS/OMP. MKL setting recorded from the actual invocation here."
+    },
+    "refused_launch": {
+      "question": "Q23",
+      "tag": "final_v6",
+      "driver_exit_code": 1,
+      "reason": "FileExistsError from exclusive batch directory already used by Q1; no Q23 solver started and no file overwritten; sequential retry uses final_v6_Q23."
+    },
+    "memory_observations": {
+      "status": "PARTIAL_PROCESS_SAMPLES_NOT_COMPLETE_LIFETIME_PEAK_AUDIT",
+      "samples": [
+        {
+          "UTC": "2026-09-10T16:52:42.9331352Z",
+          "PID": 50936,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --full-second-comparison",
+          "WorkingSet64": 32124928,
+          "PeakWorkingSet64": 32849920,
+          "PrivateMemorySize64": 20426752,
+          "PeakPagedMemorySize64": 21032960
+        },
+        {
+          "UTC": "2026-09-10T16:52:42.9578879Z",
+          "PID": 39812,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --worker --variant baseline --launch-token 75562f6985f144e08e7307f2c1ad75f5 --full-second-comparison",
+          "WorkingSet64": 448348160,
+          "PeakWorkingSet64": 450588672,
+          "PrivateMemorySize64": 524013568,
+          "PeakPagedMemorySize64": 553414656
+        },
+        {
+          "UTC": "2026-09-10T16:54:08.5531510Z",
+          "PID": 50936,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --full-second-comparison",
+          "WorkingSet64": 32059392,
+          "PeakWorkingSet64": 32849920,
+          "PrivateMemorySize64": 20312064,
+          "PeakPagedMemorySize64": 21032960
+        },
+        {
+          "UTC": "2026-09-10T16:54:08.5789374Z",
+          "PID": 39812,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --worker --variant baseline --launch-token 75562f6985f144e08e7307f2c1ad75f5 --full-second-comparison",
+          "WorkingSet64": 914845696,
+          "PeakWorkingSet64": 1400385536,
+          "PrivateMemorySize64": 342872064,
+          "PeakPagedMemorySize64": 1479188480
+        },
+        {
+          "UTC": "2026-09-10T16:55:37.2878420Z",
+          "PID": 50936,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --full-second-comparison",
+          "WorkingSet64": 32034816,
+          "PeakWorkingSet64": 34152448,
+          "PrivateMemorySize64": 20189184,
+          "PeakPagedMemorySize64": 22196224
+        },
+        {
+          "UTC": "2026-09-10T16:55:37.3144092Z",
+          "PID": 48076,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --worker --variant tight --launch-token 75562f6985f144e08e7307f2c1ad75f5 --full-second-comparison",
+          "WorkingSet64": 924499968,
+          "PeakWorkingSet64": 927293440,
+          "PrivateMemorySize64": 1003446272,
+          "PeakPagedMemorySize64": 1033469952
+        },
+        {
+          "UTC": "2026-09-10T16:58:41.6601504Z",
+          "PID": 19452,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --full-second-comparison",
+          "WorkingSet64": 31924224,
+          "PeakWorkingSet64": 32780288,
+          "PrivateMemorySize64": 20041728,
+          "PeakPagedMemorySize64": 20914176
+        },
+        {
+          "UTC": "2026-09-10T16:58:41.6934354Z",
+          "PID": 48908,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --worker --variant baseline --launch-token 94c59d9a55d147dc8d881808638f0369 --full-second-comparison",
+          "WorkingSet64": 532590592,
+          "PeakWorkingSet64": 537993216,
+          "PrivateMemorySize64": 636436480,
+          "PeakPagedMemorySize64": 696389632
+        },
+        {
+          "UTC": "2026-09-10T17:00:24.8006329Z",
+          "PID": 19452,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --full-second-comparison",
+          "WorkingSet64": 31797248,
+          "PeakWorkingSet64": 32780288,
+          "PrivateMemorySize64": 19808256,
+          "PeakPagedMemorySize64": 20914176
+        },
+        {
+          "UTC": "2026-09-10T17:00:24.8293390Z",
+          "PID": 48908,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --worker --variant baseline --launch-token 94c59d9a55d147dc8d881808638f0369 --full-second-comparison",
+          "WorkingSet64": 1330245632,
+          "PeakWorkingSet64": 1334689792,
+          "PrivateMemorySize64": 1437052928,
+          "PeakPagedMemorySize64": 1492512768
+        },
+        {
+          "UTC": "2026-09-10T17:02:01.1711981Z",
+          "PID": 19452,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --full-second-comparison",
+          "WorkingSet64": 31797248,
+          "PeakWorkingSet64": 32780288,
+          "PrivateMemorySize64": 19808256,
+          "PeakPagedMemorySize64": 20914176
+        },
+        {
+          "UTC": "2026-09-10T17:02:01.2001528Z",
+          "PID": 48908,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --worker --variant baseline --launch-token 94c59d9a55d147dc8d881808638f0369 --full-second-comparison",
+          "WorkingSet64": 1780887552,
+          "PeakWorkingSet64": 2823929856,
+          "PrivateMemorySize64": 413515776,
+          "PeakPagedMemorySize64": 2933948416
+        },
+        {
+          "UTC": "2026-09-10T17:05:30.0125339Z",
+          "PID": 19452,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --full-second-comparison",
+          "WorkingSet64": 31891456,
+          "PeakWorkingSet64": 34004992,
+          "PrivateMemorySize64": 20131840,
+          "PeakPagedMemorySize64": 22351872
+        },
+        {
+          "UTC": "2026-09-10T17:05:30.0399088Z",
+          "PID": 24000,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --worker --variant tight --launch-token 94c59d9a55d147dc8d881808638f0369 --full-second-comparison",
+          "WorkingSet64": 1487597568,
+          "PeakWorkingSet64": 1492049920,
+          "PrivateMemorySize64": 1593663488,
+          "PeakPagedMemorySize64": 1652129792
+        },
+        {
+          "UTC": "2026-09-10T17:08:08.6164907Z",
+          "PID": 19452,
+          "CommandLine": "\"C:\\Python314\\python.exe\" -B paper_output/code/modeling/verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --full-second-comparison",
+          "WorkingSet64": 31940608,
+          "PeakWorkingSet64": 34004992,
+          "PrivateMemorySize64": 20213760,
+          "PeakPagedMemorySize64": 22351872
+        },
+        {
+          "UTC": "2026-09-10T17:08:08.6417086Z",
+          "PID": 24000,
+          "CommandLine": "C:\\Python314\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q4 --n 6400 --tag final_v6_Q4 --worker --variant tight --launch-token 94c59d9a55d147dc8d881808638f0369 --full-second-comparison",
+          "WorkingSet64": 2728316928,
+          "PeakWorkingSet64": 4695916544,
+          "PrivateMemorySize64": 632754176,
+          "PeakPagedMemorySize64": 4810338304
+        }
+      ],
+      "system_memory_samples": [
+        {
+          "utc": "2026-09-10T17:09:09.1609370Z",
+          "free_physical_bytes": 10779516928,
+          "total_visible_bytes": 33846259712
+        }
+      ],
+      "max_observed_PeakWorkingSet64": 4695916544,
+      "max_observed_PeakPagedMemorySize64": 4810338304,
+      "Q1": "No successful live process memory sample; short run finished before observation.",
+      "interpretation": "Each PeakWorkingSet64 is the OS high-water mark only up to its sampled timestamp. The maximum captured value is not a guaranteed full-lifetime upper bound; no unobserved final peak is invented."
+    },
+    "comparison_to_last_spatial_difference": {
+      "C_time_difference_as_percent_of_last_spatial_difference": {
+        "Q1": 0.007716157526086147,
+        "Q23": 0.025953788462665106,
+        "Q4": 0.004958725870493461
+      },
+      "event_time_difference_as_percent_of_last_spatial_difference": {
+        "Q23": 0.019734161194722023,
+        "Q4": 0.08189663441238978
+      },
+      "interpretation": "Ratios compare observed sensitivities on their recorded query sets. They are not ratios of true errors. Temperature time and spatial differences remain of the same approximate 1e-6 K order."
+    }
+  },
+  "physical_scenarios": {
+    "source": "notes/A-modeling/2026-09-10/physics/physical_sensitivity_table.json",
+    "N": 200,
+    "separate_from_numerical_error": true,
+    "not_confidence_intervals": true,
+    "not_final_grid_results": true,
+    "table": {
+      "comparison_scope": "same N200 Kirchhoff, same core and inputs",
+      "baseline_Q23_h": 57.4727587858255,
+      "baseline_Q4_h": 51.090973419826916,
+      "records": [
+        {
+          "trial": "physical_Q23_beta08_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 59.169296220694086,
+          "delta_h": 1.6965374348685884,
+          "delta_percent": 2.9518983788316167,
+          "minimum_T_C": 28,
+          "mass_residual": 3.552713678800501e-15
+        },
+        {
+          "trial": "physical_Q23_beta12_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 56.433469155980255,
+          "delta_h": -1.0392896298452428,
+          "delta_percent": -1.8083169344944734,
+          "minimum_T_C": 28,
+          "mass_residual": 3.552713678800501e-15
+        },
+        {
+          "trial": "physical_Q23_eq045_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 57.381483438489646,
+          "delta_h": -0.09127534733585208,
+          "delta_percent": -0.15881497471870676,
+          "minimum_T_C": 28,
+          "mass_residual": 3.552713678800501e-15
+        },
+        {
+          "trial": "physical_Q23_eq055_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 57.58291475969394,
+          "delta_h": 0.11015597386844433,
+          "delta_percent": 0.19166641065368883,
+          "minimum_T_C": 28,
+          "mass_residual": 3.552713678800501e-15
+        },
+        {
+          "trial": "physical_Q23_last_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 57.169833881214096,
+          "delta_h": -0.30292490461140176,
+          "delta_percent": -0.5270756285430169,
+          "minimum_T_C": 28,
+          "mass_residual": 2.6645352591003757e-15
+        },
+        {
+          "trial": "physical_Q23_latent_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 60.497718428230066,
+          "delta_h": 3.0249596424045677,
+          "delta_percent": 5.26329291704475,
+          "minimum_T_C": 10.767699419895905,
+          "mass_residual": 3.9968028886505635e-15
+        },
+        {
+          "trial": "physical_Q23_mean_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 57.47445591294536,
+          "delta_h": 0.0016971271198613636,
+          "delta_percent": 0.002952924404039442,
+          "minimum_T_C": 28,
+          "mass_residual": 2.6645352591003757e-15
+        },
+        {
+          "trial": "physical_Q23_T49_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 59.33996412900231,
+          "delta_h": 1.8672053431768134,
+          "delta_percent": 3.2488528176192615,
+          "minimum_T_C": 28,
+          "mass_residual": 5.329070518200751e-15
+        },
+        {
+          "trial": "physical_Q23_T51_N200_K",
+          "baseline_h": 57.4727587858255,
+          "event_h": 55.68718955674412,
+          "delta_h": -1.785569229081375,
+          "delta_percent": -3.1068096726231103,
+          "minimum_T_C": 28,
+          "mass_residual": 4.440892098500626e-15
+        },
+        {
+          "trial": "physical_Q4_fixed_N200_K",
+          "baseline_h": 51.090973419826916,
+          "event_h": 129.84522834701946,
+          "delta_h": 78.75425492719253,
+          "delta_percent": 154.14514474024546,
+          "minimum_T_C": 28,
+          "mass_residual": 3.552713678800501e-15
+        },
+        {
+          "trial": "physical_Q4_latent_N200_K",
+          "baseline_h": 51.090973419826916,
+          "event_h": 56.4847710721481,
+          "delta_h": 5.393797652321183,
+          "delta_percent": 10.557241898679518,
+          "minimum_T_C": 14.419801883820924,
+          "mass_residual": 4.884981308350689e-15
+        },
+        {
+          "trial": "physical_Q4_T49_N200_K",
+          "baseline_h": 51.090973419826916,
+          "event_h": 52.72825077520362,
+          "delta_h": 1.6372773553767033,
+          "delta_percent": 3.2046313581125148,
+          "minimum_T_C": 28,
+          "mass_residual": 3.1086244689504383e-15
+        },
+        {
+          "trial": "physical_Q4_T51_N200_K",
+          "baseline_h": 51.090973419826916,
+          "event_h": 49.52436014540292,
+          "delta_h": -1.5666132744239931,
+          "delta_percent": -3.0663210535269156,
+          "minimum_T_C": 28,
+          "mass_residual": 5.773159728050814e-15
+        }
+      ]
+    },
+    "latent_label": "Equivalent-Ceq surface full latent-energy-load pressure test; humidity/condensation consistency is not closed.",
+    "primary_model_assumptions": [
+      "rho(C)*cp(C) treated as effective thermal capacity, not simultaneously enforced literal wet density.",
+      "Air kg/kg is used as equivalent material Ceq from t=0; no measured sorption mapping.",
+      "Fixed length and affine radial material shrinkage with observed exogenous R(t).",
+      "No explicit latent heat or end faces in the radial baseline.",
+      "Environment only observed to 4h; 50C/0.05 continuation is a hypothesis. R observed to 72h."
+    ]
+  },
+  "pending_requirements": [],
+  "frozen_at_utc": "2026-09-10T17:18:00Z",
+  "external_acceptance_scope": [
+    "GUI reproduction and user model/code acceptance are recorded by root and remain outside this numerical audit's completion claim.",
+    "The current numerical ZIP candidate passes the 20 MB size preflight; final submission must separately include AI-use disclosure and README, and pass anonymity and human checks.",
+    "No internal measured T/C exists, so model-closure assumptions and empirical physical validity are not resolved by numerical verification."
+  ]
+}

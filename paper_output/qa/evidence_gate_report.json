@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "quality-assurance-auditor/scripts/evidence_gate.py",
+  "generated_at": "2026-09-11T01:01:21",
+  "status": "PASS",
+  "failures": [],
+  "warnings": [],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 3,
+      "conclusion_count": 1,
+      "figure_count": 2,
+      "table_count": 2
+    },
+    {
+      "question_id": "Q2",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 3,
+      "conclusion_count": 1,
+      "figure_count": 1,
+      "table_count": 2
+    },
+    {
+      "question_id": "Q3",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 4,
+      "conclusion_count": 1,
+      "figure_count": 1,
+      "table_count": 1
+    },
+    {
+      "question_id": "Q4",
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "has_result": true,
+      "metric_count": 4,
+      "conclusion_count": 1,
+      "figure_count": 2,
+      "table_count": 2
+    }
+  ],
+  "input_hashes": {
+    "paper_output/plan/model_route.json": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+    "paper_output/figure_index.json": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c",
+    "paper_output/results/model_results.json": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547",
+    "paper_output/results/run_manifest.json": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87",
+    "paper_output/results/metrics.json": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28",
+    "paper_output/results/conclusions.json": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505",
+    "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b"
+  }
+}

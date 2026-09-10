@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" font-family="'SimSun','Microsoft YaHei','Times New Roman',serif" font-size="13">
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="400.0" y="27" text-anchor="middle" font-size="15" font-weight="bold">图6  问题2 药材温度径向剖面（0—3 h）</text>
+<g stroke="#dddddd" stroke-width="0.8">
+<line x1="82.00" y1="52" x2="82.00" y2="406"/>
+<line x1="255.00" y1="52" x2="255.00" y2="406"/>
+<line x1="428.00" y1="52" x2="428.00" y2="406"/>
+<line x1="601.00" y1="52" x2="601.00" y2="406"/>
+<line x1="774.00" y1="52" x2="774.00" y2="406"/>
+<line x1="82" y1="358.51" x2="774" y2="358.51"/>
+<line x1="82" y1="286.50" x2="774" y2="286.50"/>
+<line x1="82" y1="214.49" x2="774" y2="214.49"/>
+<line x1="82" y1="142.49" x2="774" y2="142.49"/>
+<line x1="82" y1="70.48" x2="774" y2="70.48"/>
+</g>
+<rect x="82" y="52" width="692" height="354" fill="none" stroke="#333" stroke-width="1.2"/>
+<line x1="82.00" y1="406" x2="82.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="82.00" y="426" text-anchor="middle" font-size="12">0</text>
+<line x1="255.00" y1="406" x2="255.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="255.00" y="426" text-anchor="middle" font-size="12">0.5</text>
+<line x1="428.00" y1="406" x2="428.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="428.00" y="426" text-anchor="middle" font-size="12">1</text>
+<line x1="601.00" y1="406" x2="601.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="601.00" y="426" text-anchor="middle" font-size="12">1.5</text>
+<line x1="774.00" y1="406" x2="774.00" y2="411" stroke="#333" stroke-width="1.2"/>
+<text x="774.00" y="426" text-anchor="middle" font-size="12">2</text>
+<line x1="77" y1="358.51" x2="82" y2="358.51" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="362.51" text-anchor="end" font-size="12">30</text>
+<line x1="77" y1="286.50" x2="82" y2="286.50" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="290.50" text-anchor="end" font-size="12">35</text>
+<line x1="77" y1="214.49" x2="82" y2="214.49" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="218.49" text-anchor="end" font-size="12">40</text>
+<line x1="77" y1="142.49" x2="82" y2="142.49" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="146.49" text-anchor="end" font-size="12">45</text>
+<line x1="77" y1="70.48" x2="82" y2="70.48" stroke="#333" stroke-width="1.2"/>
+<text x="73" y="74.48" text-anchor="end" font-size="12">50</text>
+<polyline fill="none" stroke="#1f4e9c" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,387.04 116.60,387.03 151.20,387.01 185.80,386.97 220.40,386.91 255.00,386.83 289.60,386.73 324.20,386.60 358.80,386.44 393.40,386.23 428.00,385.98 462.60,385.67 497.20,385.30 531.80,384.85 566.40,384.31 601.00,383.66 635.60,382.89 670.20,381.97 704.80,380.87 739.40,379.57 774.00,378.02"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,374.88 116.60,374.81 151.20,374.62 185.80,374.31 220.40,373.86 255.00,373.27 289.60,372.55 324.20,371.69 358.80,370.68 393.40,369.51 428.00,368.19 462.60,366.69 497.20,365.02 531.80,363.17 566.40,361.12 601.00,358.87 635.60,356.41 670.20,353.73 704.80,350.82 739.40,347.65 774.00,344.21"/>
+<polyline fill="none" stroke="#1e8449" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,326.98 116.60,326.87 151.20,326.54 185.80,325.98 220.40,325.20 255.00,324.20 289.60,322.98 324.20,321.52 358.80,319.84 393.40,317.94 428.00,315.79 462.60,313.42 497.20,310.80 531.80,307.94 566.40,304.83 601.00,301.47 635.60,297.84 670.20,293.95 704.80,289.78 739.40,285.31 774.00,280.55"/>
+<polyline fill="none" stroke="#b7791f" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,209.00 116.60,208.90 151.20,208.60 185.80,208.10 220.40,207.41 255.00,206.52 289.60,205.44 324.20,204.16 358.80,202.70 393.40,201.05 428.00,199.22 462.60,197.21 497.20,195.03 531.80,192.67 566.40,190.14 601.00,187.45 635.60,184.58 670.20,181.54 704.80,178.33 739.40,174.92 774.00,171.32"/>
+<polyline fill="none" stroke="#6c3483" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,130.29 116.60,130.24 151.20,130.09 185.80,129.83 220.40,129.48 255.00,129.02 289.60,128.47 324.20,127.82 358.80,127.08 393.40,126.24 428.00,125.31 462.60,124.29 497.20,123.18 531.80,121.99 566.40,120.72 601.00,119.37 635.60,117.95 670.20,116.46 704.80,114.91 739.40,113.31 774.00,111.67"/>
+<polyline fill="none" stroke="#00838f" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,92.80 116.60,92.78 151.20,92.71 185.80,92.60 220.40,92.45 255.00,92.25 289.60,92.02 324.20,91.74 358.80,91.42 393.40,91.06 428.00,90.66 462.60,90.23 497.20,89.76 531.80,89.26 566.40,88.72 601.00,88.14 635.60,87.54 670.20,86.90 704.80,86.24 739.40,85.55 774.00,84.83"/>
+<polyline fill="none" stroke="#d35400" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,78.16 116.60,78.15 151.20,78.13 185.80,78.09 220.40,78.04 255.00,77.98 289.60,77.90 324.20,77.82 358.80,77.72 393.40,77.61 428.00,77.48 462.60,77.35 497.20,77.22 531.80,77.07 566.40,76.91 601.00,76.74 635.60,76.55 670.20,76.33 704.80,76.07 739.40,75.76 774.00,75.36"/>
+<polyline fill="none" stroke="#2c3e50" stroke-width="2.00" stroke-linejoin="round" stroke-linecap="round" points="82.00,72.65 116.60,72.64 151.20,72.63 185.80,72.62 220.40,72.59 255.00,72.56 289.60,72.53 324.20,72.48 358.80,72.42 393.40,72.36 428.00,72.29 462.60,72.20 497.20,72.11 531.80,72.01 566.40,71.90 601.00,71.77 635.60,71.64 670.20,71.49 704.80,71.33 739.40,71.16 774.00,70.96"/>
+<text x="428.0" y="454" text-anchor="middle" font-size="14">到药材中心的距离 r / cm</text>
+<text x="18" y="229.0" text-anchor="middle" font-size="14" transform="rotate(-90,18,229.0)">温度 T / °C</text>
+<rect x="622" y="62" width="142" height="138" fill="#ffffff" fill-opacity="0.88" stroke="#bbbbbb" stroke-width="0.8"/>
+<line x1="630" y1="74" x2="656" y2="74" stroke="#1f4e9c" stroke-width="2.00"/>
+<text x="662" y="78" font-size="11">0.0833333 h</text>
+<line x1="630" y1="90" x2="656" y2="90" stroke="#c0392b" stroke-width="2.00"/>
+<text x="662" y="94" font-size="11">0.25 h</text>
+<line x1="630" y1="106" x2="656" y2="106" stroke="#1e8449" stroke-width="2.00"/>
+<text x="662" y="110" font-size="11">0.5 h</text>
+<line x1="630" y1="122" x2="656" y2="122" stroke="#b7791f" stroke-width="2.00"/>
+<text x="662" y="126" font-size="11">1 h</text>
+<line x1="630" y1="138" x2="656" y2="138" stroke="#6c3483" stroke-width="2.00"/>
+<text x="662" y="142" font-size="11">1.5 h</text>
+<line x1="630" y1="154" x2="656" y2="154" stroke="#00838f" stroke-width="2.00"/>
+<text x="662" y="158" font-size="11">2 h</text>
+<line x1="630" y1="170" x2="656" y2="170" stroke="#d35400" stroke-width="2.00"/>
+<text x="662" y="174" font-size="11">2.5 h</text>
+<line x1="630" y1="186" x2="656" y2="186" stroke="#2c3e50" stroke-width="2.00"/>
+<text x="662" y="190" font-size="11">3 h</text>
+</svg>

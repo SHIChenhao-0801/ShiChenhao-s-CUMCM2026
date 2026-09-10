@@ -1,0 +1,409 @@
+{
+  "source": {
+    "path": "reference_materials/peer-models/lin_yuxiang_word/模型思路与公式图表全集.docx",
+    "bytes": 357729,
+    "sha256": "3ef3cf192a5dbbbe3b1fd665eea88812210745e6011e10f8c486e212e5a87a4b"
+  },
+  "source_members": [
+    "[Content_Types].xml",
+    "_rels/.rels",
+    "word/document.xml",
+    "word/_rels/document.xml.rels",
+    "word/styles.xml",
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image4.png",
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/media/image7.png",
+    "word/media/image8.png",
+    "word/media/image9.png",
+    "word/media/image10.png",
+    "word/media/image11.png",
+    "word/media/image12.png",
+    "word/media/image13.png",
+    "word/media/image14.png",
+    "word/media/image15.png",
+    "word/media/image16.png",
+    "word/media/image17.png",
+    "word/media/image18.png",
+    "word/media/image19.png",
+    "word/media/image20.png",
+    "word/media/image21.png"
+  ],
+  "paragraph_count": 1070,
+  "table_count": 27,
+  "omml_count": 295,
+  "display_math_paragraph_count": 42,
+  "embedded_media_count": 21,
+  "image_placements": [
+    {
+      "paragraph_id": "P0166",
+      "relationship_id": "rIdImg101",
+      "relationship": {
+        "Id": "rIdImg101",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image1.png"
+      }
+    },
+    {
+      "paragraph_id": "P0292",
+      "relationship_id": "rIdImg102",
+      "relationship": {
+        "Id": "rIdImg102",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image2.png"
+      }
+    },
+    {
+      "paragraph_id": "P0377",
+      "relationship_id": "rIdImg103",
+      "relationship": {
+        "Id": "rIdImg103",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image3.png"
+      }
+    },
+    {
+      "paragraph_id": "P0379",
+      "relationship_id": "rIdImg104",
+      "relationship": {
+        "Id": "rIdImg104",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image4.png"
+      }
+    },
+    {
+      "paragraph_id": "P0443",
+      "relationship_id": "rIdImg105",
+      "relationship": {
+        "Id": "rIdImg105",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image5.png"
+      }
+    },
+    {
+      "paragraph_id": "P0445",
+      "relationship_id": "rIdImg106",
+      "relationship": {
+        "Id": "rIdImg106",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image6.png"
+      }
+    },
+    {
+      "paragraph_id": "P0447",
+      "relationship_id": "rIdImg107",
+      "relationship": {
+        "Id": "rIdImg107",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image7.png"
+      }
+    },
+    {
+      "paragraph_id": "P0566",
+      "relationship_id": "rIdImg108",
+      "relationship": {
+        "Id": "rIdImg108",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image8.png"
+      }
+    },
+    {
+      "paragraph_id": "P0568",
+      "relationship_id": "rIdImg109",
+      "relationship": {
+        "Id": "rIdImg109",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image9.png"
+      }
+    },
+    {
+      "paragraph_id": "P0570",
+      "relationship_id": "rIdImg110",
+      "relationship": {
+        "Id": "rIdImg110",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image10.png"
+      }
+    },
+    {
+      "paragraph_id": "P0572",
+      "relationship_id": "rIdImg111",
+      "relationship": {
+        "Id": "rIdImg111",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image11.png"
+      }
+    },
+    {
+      "paragraph_id": "P0574",
+      "relationship_id": "rIdImg112",
+      "relationship": {
+        "Id": "rIdImg112",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image12.png"
+      }
+    },
+    {
+      "paragraph_id": "P0719",
+      "relationship_id": "rIdImg113",
+      "relationship": {
+        "Id": "rIdImg113",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image13.png"
+      }
+    },
+    {
+      "paragraph_id": "P0721",
+      "relationship_id": "rIdImg114",
+      "relationship": {
+        "Id": "rIdImg114",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image14.png"
+      }
+    },
+    {
+      "paragraph_id": "P0723",
+      "relationship_id": "rIdImg115",
+      "relationship": {
+        "Id": "rIdImg115",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image15.png"
+      }
+    },
+    {
+      "paragraph_id": "P0814",
+      "relationship_id": "rIdImg116",
+      "relationship": {
+        "Id": "rIdImg116",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image16.png"
+      }
+    },
+    {
+      "paragraph_id": "P0816",
+      "relationship_id": "rIdImg117",
+      "relationship": {
+        "Id": "rIdImg117",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image17.png"
+      }
+    },
+    {
+      "paragraph_id": "P0818",
+      "relationship_id": "rIdImg118",
+      "relationship": {
+        "Id": "rIdImg118",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image18.png"
+      }
+    },
+    {
+      "paragraph_id": "P0820",
+      "relationship_id": "rIdImg119",
+      "relationship": {
+        "Id": "rIdImg119",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image19.png"
+      }
+    },
+    {
+      "paragraph_id": "P0929",
+      "relationship_id": "rIdImg120",
+      "relationship": {
+        "Id": "rIdImg120",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image20.png"
+      }
+    },
+    {
+      "paragraph_id": "P0990",
+      "relationship_id": "rIdImg121",
+      "relationship": {
+        "Id": "rIdImg121",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "Target": "media/image21.png"
+      }
+    }
+  ],
+  "embedded_media": [
+    {
+      "member": "word/media/image1.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image1.png",
+      "bytes": 25466,
+      "sha256": "ac35cdda57d4b9f36c037e04aba8b477bff7cd08973a29b052782b791fc6bdb1"
+    },
+    {
+      "member": "word/media/image2.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image2.png",
+      "bytes": 31077,
+      "sha256": "bf71649c840b043b95233a35cc86d0cfb6e1de3e0c957f7727bc38c46a727d3c"
+    },
+    {
+      "member": "word/media/image3.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image3.png",
+      "bytes": 18534,
+      "sha256": "48101e2101e0a8f9bb509ca9b4131e5e2811e1f8707b2c993cfd6135515e7fc3"
+    },
+    {
+      "member": "word/media/image4.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image4.png",
+      "bytes": 24540,
+      "sha256": "b118e98ae2e4f7f4371fe9cb454e20a00aacf9fe8ce33c5694f51f407d26baeb"
+    },
+    {
+      "member": "word/media/image5.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image5.png",
+      "bytes": 22592,
+      "sha256": "c607a2a09b9633485781cb78efae731e192700a5e9ea6b30971eb6009614bc61"
+    },
+    {
+      "member": "word/media/image6.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image6.png",
+      "bytes": 23853,
+      "sha256": "84a7c286b89c659ec148d27612174dde77a31f184231a55c9bfb75c134d1f370"
+    },
+    {
+      "member": "word/media/image7.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image7.png",
+      "bytes": 23058,
+      "sha256": "a054ed902139f058e082ba27b70e75c56daa5367f646d328f998da62adbc23a6"
+    },
+    {
+      "member": "word/media/image8.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image8.png",
+      "bytes": 20073,
+      "sha256": "4f042c2a7867698cc6c71316ecf31313832d9fb6abf55253d179dee15837258c"
+    },
+    {
+      "member": "word/media/image9.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image9.png",
+      "bytes": 26522,
+      "sha256": "918fb571dcbfbbc65f21b0a44d4e86f562b771c4bd224079ab05667a127f72bc"
+    },
+    {
+      "member": "word/media/image10.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image10.png",
+      "bytes": 26953,
+      "sha256": "7b23ee708cb8865ebabb13967853b32559bdb99d4f8cc09366cbf875cc529247"
+    },
+    {
+      "member": "word/media/image11.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image11.png",
+      "bytes": 52022,
+      "sha256": "3be4913833f668f2b4c922215ea9485f1082cdbb7e596dc08e7caa9de9ddc9e7"
+    },
+    {
+      "member": "word/media/image12.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image12.png",
+      "bytes": 71729,
+      "sha256": "f4a93a15d51db98bcad1ff6edbb4601a9dc352a3d26495f9b07ca073d418f85a"
+    },
+    {
+      "member": "word/media/image13.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image13.png",
+      "bytes": 21726,
+      "sha256": "fc04242635bc8b72c4436e7d706ba0abe909fc299257664ef2de190ba95314a2"
+    },
+    {
+      "member": "word/media/image14.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image14.png",
+      "bytes": 22495,
+      "sha256": "f82205bd8dba3ec12b2f144aedae136bd37368fb403808694c3e4b8e1ddfc7a6"
+    },
+    {
+      "member": "word/media/image15.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image15.png",
+      "bytes": 43592,
+      "sha256": "b9f1782f389bad0b4ce0af1a073abc7e2a82c7f938ff93896f5fa48dd61b5224"
+    },
+    {
+      "member": "word/media/image16.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image16.png",
+      "bytes": 18396,
+      "sha256": "0450b15de05c9a9d1f1f22441d885e7d8f4c844f5f480592b670e89abf9338d6"
+    },
+    {
+      "member": "word/media/image17.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image17.png",
+      "bytes": 41755,
+      "sha256": "e1100ac7ceab4c8ad8d0b90b5f03e56977f4ad907a624de57be1742dcb63def0"
+    },
+    {
+      "member": "word/media/image18.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image18.png",
+      "bytes": 22713,
+      "sha256": "8514411ceae915dff18354c7626aa78526e9a4ce39b61807326a6caaafc13f05"
+    },
+    {
+      "member": "word/media/image19.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image19.png",
+      "bytes": 26139,
+      "sha256": "bb59e0170eeb9c990c1d82b8f329700b5a0d13199d47dba7538c705e29d4e243"
+    },
+    {
+      "member": "word/media/image20.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image20.png",
+      "bytes": 23092,
+      "sha256": "03d21d631b5f594458efd0eab28949c07da65db61671487be316821411133225"
+    },
+    {
+      "member": "word/media/image21.png",
+      "path": "reference_materials/peer-models/lin_yuxiang_word/extracted/media/image21.png",
+      "bytes": 23719,
+      "sha256": "6771ef1158ab1170203dc017bb55995edb1b31e126cdcbda17b64738d5aecae9"
+    }
+  ],
+  "page_count_metadata": null,
+  "page_count_note": "No docProps/app.xml in source; actual pagination requires rendering.",
+  "math_node_types": {
+    "oMath": 295,
+    "r": 2052,
+    "t": 2052,
+    "sSub": 312,
+    "sSubPr": 312,
+    "e": 472,
+    "sub": 348,
+    "oMathPara": 42,
+    "oMathParaPr": 42,
+    "jc": 42,
+    "f": 66,
+    "fPr": 66,
+    "num": 66,
+    "den": 66,
+    "rPr": 138,
+    "sty": 138,
+    "sSup": 85,
+    "sSupPr": 85,
+    "sup": 121,
+    "sSubSup": 24,
+    "sSubSupPr": 24,
+    "acc": 4,
+    "accPr": 4,
+    "chr": 16,
+    "d": 12,
+    "dPr": 12,
+    "begChr": 12,
+    "m": 3,
+    "mPr": 3,
+    "mcs": 3,
+    "mc": 3,
+    "mcPr": 3,
+    "count": 3,
+    "mcJc": 3,
+    "ctrlPr": 3,
+    "mr": 7,
+    "func": 9,
+    "funcPr": 9,
+    "fName": 9,
+    "endChr": 9,
+    "nary": 12,
+    "naryPr": 12,
+    "limLoc": 12,
+    "subHide": 12,
+    "supHide": 12
+  },
+  "extraction_note": "Paragraphs include table-cell paragraphs in document order. All native OMML retained as raw XML. Math text preserves structure but uses Unicode/operator annotations; it is not an independently authored formula set."
+}

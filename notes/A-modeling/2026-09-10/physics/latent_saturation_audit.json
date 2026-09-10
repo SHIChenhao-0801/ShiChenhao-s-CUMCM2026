@@ -1,0 +1,62 @@
+{
+  "scope": "Post-processing of saved sensitivity solutions. Standard pressure and air-ratio interpretation are audit assumptions; no pressure observation was supplied.",
+  "NIST_Antoine": {
+    "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=4",
+    "A": 5.40221,
+    "B": 1838.675,
+    "C": -31.737,
+    "T_K_valid": [
+      273,
+      303
+    ],
+    "pressure_units": "bar"
+  },
+  "records": [
+    {
+      "trial": "physical_Q23_latent_N200_K",
+      "summary_sha256": "deddf7c77145aabe12189516a5e08a050b18be07d319aaf58c8c19ff69efbacc",
+      "sample_npz_sha256": "6f28e664a6596736d0391e03c71c914a1ad002f173f606986153183a6af9bae1",
+      "saved_sample_min_T_K": 283.91932092593544,
+      "all_accepted_min_T_K": 283.9176994198959,
+      "time_s": 1020.0,
+      "material_x": 1.0,
+      "surface_C_if_x1": 1.5375848446817513,
+      "air_T_K": 309.504,
+      "air_Y_assumed_humidity_ratio": 0.02732,
+      "radius_m": 0.02,
+      "dry_density_kg_m3": 275.0422535211268,
+      "model_outward_water_flux_kg_m2_s": 0.0003323093170360027,
+      "latent_flux_W_m2": 797.5423608864064,
+      "air_inward_heat_W_m2": 639.6169768516145,
+      "assumed_pressure_Pa": 101325.0,
+      "psat_surface_Pa": 1291.682220259335,
+      "air_vapor_partial_pressure_Pa": 4263.5888273663295,
+      "surface_aw_required_for_zero_flux": 3.300803216529771,
+      "maximum_pressure_allowing_evaporation_Pa_at_aw1": 30697.07381905846,
+      "saturation_inconsistent_with_positive_evaporation_if_Y_is_air_ratio": true
+    },
+    {
+      "trial": "physical_Q4_latent_N200_K",
+      "summary_sha256": "fa4a372457fad5b17dfbc9bd3d1ef0563f6982ae279e463a93d2ae4b826a118a",
+      "sample_npz_sha256": "96464880c6874e377b2d7318105c62e33e84d27ce5af50b1de56138b70461be3",
+      "saved_sample_min_T_K": 287.5704604167388,
+      "all_accepted_min_T_K": 287.5698018838209,
+      "time_s": 480.0,
+      "material_x": 1.0,
+      "surface_C_if_x1": 1.296366050914093,
+      "air_T_K": 305.271,
+      "air_Y_assumed_humidity_ratio": 0.02325,
+      "radius_m": 0.019661333333333333,
+      "dry_density_kg_m3": 288.41743119607753,
+      "model_outward_water_flux_kg_m2_s": 0.0002937510888153099,
+      "latent_flux_W_m2": 705.0026131567438,
+      "air_inward_heat_W_m2": 442.51348958153045,
+      "assumed_pressure_Pa": 101325.0,
+      "psat_surface_Pa": 1641.3844425758577,
+      "air_vapor_partial_pressure_Pa": 3651.30890660963,
+      "surface_aw_required_for_zero_flux": 2.224529983286278,
+      "maximum_pressure_allowing_evaporation_Pa_at_aw1": 45548.9477603325,
+      "saturation_inconsistent_with_positive_evaporation_if_Y_is_air_ratio": true
+    }
+  ]
+}

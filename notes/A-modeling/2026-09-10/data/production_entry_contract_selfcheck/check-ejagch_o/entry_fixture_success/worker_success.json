@@ -1,0 +1,605 @@
+{
+  "started_at": "2026-09-10T16:05:29.256613+00:00",
+  "finished_at": "2026-09-10T16:05:29.477566+00:00",
+  "elapsed_seconds": 0.22095339999941643,
+  "input_files": [
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "bytes": 26943,
+      "sha256": "1770dc580f54a932f5854b6e5bb211efbc72f7db162858b6aacccec6d82683a6",
+      "exists": true
+    }
+  ],
+  "runtime": {},
+  "font": {},
+  "imported_model_modules": [],
+  "output_artifacts": [
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/conclusions.json",
+      "bytes": 8617,
+      "sha256": "90c01edff89789e904e9595445b1589a64075a20f0b5fce847449c36f72a06d2",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/figure_index.json",
+      "bytes": 2329,
+      "sha256": "a4d532c0e4ed565fd3b09db15a0f0bb5e1ba38d71030c557c931ae8c5f5ede27",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/metrics.json",
+      "bytes": 7577,
+      "sha256": "a6ea44cd945c5fd1b0989e43c56274f812c2bb39d90eb9b275a56a08a11bc1b3",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/model_results.json",
+      "bytes": 22760,
+      "sha256": "dc5e9af2f6a189e710668f52cfa4b355fb5220bd92d95ffcf97c74713f4ac42c",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/contracts/table_index.json",
+      "bytes": 272,
+      "sha256": "3d666c44d6467083ddbf6c3c0a5a0ca6d708217894d62f62c27bf0085a01cd4b",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/export_validation.json",
+      "bytes": 1413,
+      "sha256": "74d2c0e63c471dba2ae7fd16284defb92f89d7e1402f8dd645730c507080fc2a",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q1_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q2_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q3_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q4_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/metric_evidence_validation.json",
+      "bytes": 141,
+      "sha256": "392b896dea12c3678be0bf6bbbc97dcf3c6499889d7b75eedaf95bab00ff5872",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/numerical_summaries.json",
+      "bytes": 5984,
+      "sha256": "263089270392abbada1333332f9c4f2a98739f436150c53288e987c95d0679ce",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q1_fixture.json",
+      "bytes": 42,
+      "sha256": "af56ec8936ea35e6eac435bc3535769dfca0b1a66968226cae6fc138439b8b50",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q1_fixture.validation.json",
+      "bytes": 27,
+      "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q2_fixture.json",
+      "bytes": 42,
+      "sha256": "b7e8e887a5e547a4fc97939ba77d5a37a01414cd0a172d252667566838fe7ffe",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q2_fixture.validation.json",
+      "bytes": 27,
+      "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q3_fixture.json",
+      "bytes": 42,
+      "sha256": "32496e1cb4bbd4decc0a06bc4287f433a2c2cd7cdba7964655019c116311c37e",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q3_fixture.validation.json",
+      "bytes": 27,
+      "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q4_fixture.json",
+      "bytes": 42,
+      "sha256": "3b55bbe81e9e90c4ae5bc0f231c90b5319ba9534d009f41f9262fc56289a62b5",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q4_fixture.validation.json",
+      "bytes": 27,
+      "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/Q1/summary.json",
+      "bytes": 1120,
+      "sha256": "80245414b434fa5b81ac680635ae98d1802cf054e2fdd21c5dc02f299f3e776b",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/Q23/summary.json",
+      "bytes": 2212,
+      "sha256": "74397719f07372dc77718d89ae734ab20cd6944c9d8c0524760eefeeaef55f54",
+      "exists": true
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/Q4/summary.json",
+      "bytes": 1915,
+      "sha256": "e41f8efa1c98d52e2b322936712ca12f02a83cab1cb2497452295d094a80af41",
+      "exists": true
+    }
+  ],
+  "question_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "summaries": {
+    "Q1": {
+      "settings": {
+        "intervals": 2
+      },
+      "diagnostics": {
+        "max_mass_balance_abs_kg_per_kg": 0.0
+      },
+      "solver_warning_count": 0,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q1",
+      "reproduction_samples": {
+        "times_s": [
+          0.0,
+          1800.0
+        ],
+        "material_x": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "T_K": [
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ]
+        ],
+        "C": [
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ]
+        ]
+      },
+      "metric_samples": {
+        "Q1": {
+          "time_s": 1800.0,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              310.0,
+              310.0
+            ]
+          ],
+          "C": [
+            [
+              0.1499,
+              0.1499
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        }
+      }
+    },
+    "Q23": {
+      "settings": {
+        "intervals": 2
+      },
+      "diagnostics": {
+        "max_mass_balance_abs_kg_per_kg": 0.0
+      },
+      "solver_warning_count": 0,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q23",
+      "completion": {
+        "reported_time_s": 15000.12,
+        "reported_drying_time_h": 4.1667000000000005,
+        "critical_event_h": 4.166666666666667,
+        "max_C_at_reported_time": 0.1499
+      },
+      "reproduction_samples": {
+        "times_s": [
+          0.0,
+          1800.0,
+          10800.0,
+          15000.12,
+          15002.0
+        ],
+        "material_x": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "T_K": [
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ]
+        ],
+        "C": [
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ]
+        ]
+      },
+      "metric_samples": {
+        "Q2": {
+          "time_s": 10800.0,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              310.0,
+              310.0
+            ]
+          ],
+          "C": [
+            [
+              0.1499,
+              0.1499
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        },
+        "Q3": {
+          "time_s": 15000.12,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              310.0,
+              310.0
+            ]
+          ],
+          "C": [
+            [
+              0.1499,
+              0.1499
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        }
+      }
+    },
+    "Q4": {
+      "settings": {
+        "intervals": 2
+      },
+      "diagnostics": {
+        "max_mass_balance_abs_kg_per_kg": 0.0
+      },
+      "solver_warning_count": 0,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q4",
+      "completion": {
+        "reported_time_s": 15000.12,
+        "reported_drying_time_h": 4.1667000000000005,
+        "critical_event_h": 4.166666666666667,
+        "max_C_at_reported_time": 0.1499
+      },
+      "reproduction_samples": {
+        "times_s": [
+          0.0,
+          1800.0,
+          10800.0,
+          15000.12,
+          15002.0
+        ],
+        "material_x": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "T_K": [
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ],
+          [
+            310.0,
+            310.0,
+            310.0,
+            310.0,
+            310.0
+          ]
+        ],
+        "C": [
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ],
+          [
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499,
+            0.1499
+          ]
+        ]
+      },
+      "metric_samples": {
+        "Q4": {
+          "time_s": 15000.12,
+          "material_x": [
+            0.0,
+            1.0
+          ],
+          "T_K": [
+            [
+              310.0,
+              310.0
+            ]
+          ],
+          "C": [
+            [
+              0.1499,
+              0.1499
+            ]
+          ],
+          "source": "live_Run_dense_solution"
+        }
+      }
+    }
+  },
+  "exports": [
+    {
+      "question_id": "Q1",
+      "artifacts": [
+        {
+          "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q1_fixture.json",
+          "bytes": 42,
+          "sha256": "af56ec8936ea35e6eac435bc3535769dfca0b1a66968226cae6fc138439b8b50",
+          "exists": true
+        }
+      ],
+      "size": {},
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-ejagch_o\\entry_fixture_success\\outputs\\Q1_fixture.json",
+      "validation_report": {
+        "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q1_fixture.validation.json",
+        "bytes": 27,
+        "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+        "exists": true
+      },
+      "validation_status": "PASS"
+    },
+    {
+      "question_id": "Q2",
+      "artifacts": [
+        {
+          "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q2_fixture.json",
+          "bytes": 42,
+          "sha256": "b7e8e887a5e547a4fc97939ba77d5a37a01414cd0a172d252667566838fe7ffe",
+          "exists": true
+        }
+      ],
+      "size": {},
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-ejagch_o\\entry_fixture_success\\outputs\\Q2_fixture.json",
+      "validation_report": {
+        "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q2_fixture.validation.json",
+        "bytes": 27,
+        "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+        "exists": true
+      },
+      "validation_status": "PASS"
+    },
+    {
+      "question_id": "Q3",
+      "artifacts": [
+        {
+          "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q3_fixture.json",
+          "bytes": 42,
+          "sha256": "32496e1cb4bbd4decc0a06bc4287f433a2c2cd7cdba7964655019c116311c37e",
+          "exists": true
+        }
+      ],
+      "size": {},
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-ejagch_o\\entry_fixture_success\\outputs\\Q3_fixture.json",
+      "validation_report": {
+        "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q3_fixture.validation.json",
+        "bytes": 27,
+        "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+        "exists": true
+      },
+      "validation_status": "PASS"
+    },
+    {
+      "question_id": "Q4",
+      "artifacts": [
+        {
+          "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q4_fixture.json",
+          "bytes": 42,
+          "sha256": "3b55bbe81e9e90c4ae5bc0f231c90b5319ba9534d009f41f9262fc56289a62b5",
+          "exists": true
+        }
+      ],
+      "size": {},
+      "manifest_path": "D:\\Document\\数学建模\\2026CUMCM\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-ejagch_o\\entry_fixture_success\\outputs\\Q4_fixture.json",
+      "validation_report": {
+        "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/outputs/Q4_fixture.validation.json",
+        "bytes": 27,
+        "sha256": "82cf02fd78a7df96172fc321edf2c66a460f359f92a64adb0ea4dd4038b469fa",
+        "exists": true
+      },
+      "validation_status": "PASS"
+    }
+  ],
+  "mode": "production",
+  "human_review": "pending",
+  "visual_studio_gui": "pending"
+}

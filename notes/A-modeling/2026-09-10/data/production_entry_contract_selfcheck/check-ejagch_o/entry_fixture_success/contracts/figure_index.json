@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper_output/code/modeling/run_modeling.py",
+  "generated_at": "2026-09-10T16:05:29.468201+00:00",
+  "source_run_id": "fixture_sequence",
+  "publication_state": "version_only_awaiting_parent_observed_exit",
+  "figures": [
+    {
+      "figure_id": "fixture_Q1",
+      "question_id": "Q1",
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q1_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true,
+      "status": "computed",
+      "placeholder": false,
+      "ok": true,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q1"
+    },
+    {
+      "figure_id": "fixture_Q2",
+      "question_id": "Q2",
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q2_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true,
+      "status": "computed",
+      "placeholder": false,
+      "ok": true,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q23"
+    },
+    {
+      "figure_id": "fixture_Q3",
+      "question_id": "Q3",
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q3_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true,
+      "status": "computed",
+      "placeholder": false,
+      "ok": true,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q23"
+    },
+    {
+      "figure_id": "fixture_Q4",
+      "question_id": "Q4",
+      "path": "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-ejagch_o/entry_fixture_success/figures/Q4_fixture.bin",
+      "bytes": 38,
+      "sha256": "2b895d80b74ddfd6a9a86d55cf2d040a7eb573491908d1128872c6719dd046f9",
+      "exists": true,
+      "status": "computed",
+      "placeholder": false,
+      "ok": true,
+      "source_run_id": "fixture_sequence",
+      "source_trajectory_id": "fixture_sequence:Q4"
+    }
+  ]
+}

@@ -14,12 +14,12 @@
   "fine_grid_end_effect_percent": -0.003677276929541948,
   "effect_grid_change_s": 0.3893532821675767,
   "raw_2d_grid_change_s": -49.184112654208434,
-  "max_all_runs_mass_residual": 4.263256414560601E-14,
+  "max_all_runs_mass_residual": 4.263256414560601e-14,
   "rhs_regression": {
-    "same_state_2d_vs_1d_rhs_temperature_K_per_s": 3.469446951953614E-18,
-    "same_state_2d_vs_1d_rhs_C_per_s": 3.1170812458958252E-19,
-    "same_state_loss_rhs_error": 6.776263578034403E-21,
-    "instantaneous_mass_balance_error_per_s": 9.486769009248164E-20,
+    "same_state_2d_vs_1d_rhs_temperature_K_per_s": 3.469446951953614e-18,
+    "same_state_2d_vs_1d_rhs_C_per_s": 3.1170812458958252e-19,
+    "same_state_loss_rhs_error": 6.776263578034403e-21,
+    "instantaneous_mass_balance_error_per_s": 9.486769009248164e-20,
     "pass": true
   },
   "gui_reproduced": false,
@@ -32,5 +32,10 @@
     "Stops at equality event: the critical time is the infimum of strict dry times, not a post-crossing verification."
   ],
   "code_sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
-  "core_sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce"
+  "core_sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+  "runtime_versions": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  }
 }

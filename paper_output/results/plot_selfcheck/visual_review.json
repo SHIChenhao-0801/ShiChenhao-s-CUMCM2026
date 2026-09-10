@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-09-10T15:13:40.486520+00:00",
+  "status": "PASS",
+  "scope": "Actual N40 live-run plot selfcheck, all seven PNGs visually inspected by AI; not formal result accuracy, human review, VS GUI reproduction, or pixel inspection of each PDF/SVG.",
+  "source": {
+    "path": "paper_output/code/modeling/publication_plots.py",
+    "sha256": "0c4ef4d8085211be26d64d139d9c91314a977a06e8fb2333e7b113b7a3005b41"
+  },
+  "figure_count": 7,
+  "checks": [
+    {
+      "figure_id": "fig_q1_profiles",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.png",
+        "bytes": 218399,
+        "sha256": "92bed12293d2e8fbe8c3207861237bf42bed8d5311d6bd0c937b3c65639543ed",
+        "exists": true
+      },
+      "pixels": [
+        2394,
+        1021
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    },
+    {
+      "figure_id": "fig_q2_profiles",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_q2_profiles.png",
+        "bytes": 218489,
+        "sha256": "a59069788524ac265a0b2d6b5790558e06744a7c3c00e0acb47a91ecbab826d9",
+        "exists": true
+      },
+      "pixels": [
+        2418,
+        1021
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    },
+    {
+      "figure_id": "fig_q3_drying",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_q3_drying.png",
+        "bytes": 235169,
+        "sha256": "e75853aa514ddc6d863caa5470a7ad9d1eb24e59eef19a79431d3c0f7c9425a0",
+        "exists": true
+      },
+      "pixels": [
+        2449,
+        1081
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    },
+    {
+      "figure_id": "fig_q4_drying",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_q4_drying.png",
+        "bytes": 260041,
+        "sha256": "954bc2934de919b6e2eb8039fc7829eabc9d31118b59a61b92982ec19c9b9c2f",
+        "exists": true
+      },
+      "pixels": [
+        2449,
+        1081
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    },
+    {
+      "figure_id": "fig_q4_shrinkage_control",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_q4_shrinkage_control.png",
+        "bytes": 89338,
+        "sha256": "7f8b38852f590d3e28c463806134530cbedcc4ce066b051a7eb71d16c84dc31f",
+        "exists": true
+      },
+      "pixels": [
+        1519,
+        981
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    },
+    {
+      "figure_id": "fig_model_grid_convergence",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_model_grid_convergence.png",
+        "bytes": 176423,
+        "sha256": "6632e0e2b56c653fe54e79a8153535ba2f3001ab2c8a748f2498fd0ab3424dd3",
+        "exists": true
+      },
+      "pixels": [
+        2368,
+        1021
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    },
+    {
+      "figure_id": "fig_q4_physical_sensitivity",
+      "png": {
+        "path": "paper_output/results/plot_selfcheck/fig_q4_physical_sensitivity.png",
+        "bytes": 92327,
+        "sha256": "2dd136ce5ef2f8451e1a51751194e52e0b9201dcbd6e4956fa74f047ffea421a",
+        "exists": true
+      },
+      "pixels": [
+        1711,
+        981
+      ],
+      "artifact_hashes": "PASS",
+      "svg_xml": "PASS",
+      "pdf_container_markers": "PASS",
+      "AI_png_visual_review": "PASS",
+      "notes": "Chinese text, axis labels and units, legends, domain masking, and annotations viewed; convergence minor-tick collision fixed and reviewed."
+    }
+  ],
+  "human_review": "pending",
+  "visual_studio_gui": "pending"
+}
