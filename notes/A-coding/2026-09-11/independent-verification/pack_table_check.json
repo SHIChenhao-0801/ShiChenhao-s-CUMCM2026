@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "markdown": "03_问题一二_写作页.md",
+      "csv": "q1_paper_temperature.csv",
+      "csvRowCount": 7,
+      "exactRowHits": 7,
+      "allRowsExactMatch": true
+    },
+    {
+      "markdown": "03_问题一二_写作页.md",
+      "csv": "q1_paper_moisture.csv",
+      "csvRowCount": 7,
+      "exactRowHits": 7,
+      "allRowsExactMatch": true
+    },
+    {
+      "markdown": "03_问题一二_写作页.md",
+      "csv": "q2_paper_temperature.csv",
+      "csvRowCount": 6,
+      "exactRowHits": 6,
+      "allRowsExactMatch": true
+    },
+    {
+      "markdown": "03_问题一二_写作页.md",
+      "csv": "q2_paper_moisture.csv",
+      "csvRowCount": 6,
+      "exactRowHits": 6,
+      "allRowsExactMatch": true
+    },
+    {
+      "markdown": "04_问题三四_写作页.md",
+      "csv": "q3_paper_moisture.csv",
+      "csvRowCount": 10,
+      "exactRowHits": 10,
+      "allRowsExactMatch": true
+    },
+    {
+      "markdown": "04_问题三四_写作页.md",
+      "csv": "q4_paper_moisture.csv",
+      "csvRowCount": 9,
+      "exactRowHits": 9,
+      "allRowsExactMatch": true
+    },
+    {
+      "markdown": "04_问题三四_写作页.md",
+      "csv": "q4_paper_radius.csv",
+      "csvRowCount": 9,
+      "exactRowHits": 9,
+      "allRowsExactMatch": true
+    }
+  ]
+}

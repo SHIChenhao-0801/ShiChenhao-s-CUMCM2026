@@ -1,0 +1,58 @@
+{
+  "record_type": "independent_rerun_verification",
+  "created_at_utc": "2026-09-11T09:57:20Z",
+  "created_at_beijing": "2026-09-11T17:57:20+08:00",
+  "author": "DSH agent (2026 CUMCM workspace audit)",
+  "run_id": "agent_audit_verify_d",
+  "profile": "audit",
+  "purpose": "Independently re-execute the delivered solver and re-verify the frozen final_v6a baseline from a process that is not the original authoring run.",
+  "command": "C:\\Python314\\python.exe -B paper_output/code/review_delivery/runDelivery.py --profile audit --run-id agent_audit_verify_d",
+  "cwd": "D:/Document/数学建模/2026CUMCM",
+  "actualExternalExitCode": 0,
+  "elapsedSeconds": 49.84,
+  "harnessNote": "The DSH file sandbox blocks directories created by tempfile.mkdtemp, which diskDense.DenseCache uses for its rebuildable private cache. The run was executed through agentSandboxWrapper.py (kept in this directory), which replaces tempfile.mkdtemp with an equivalent os.mkdir-based implementation. No model, mesh, tolerance, input data, solver, Jacobian or export logic was modified. This is an agent-sandbox workaround, not a defect of the delivered code.",
+  "wrapperScript": "paper_output/results/code_delivery/agent_audit_verify_d/agentSandboxWrapper.py",
+  "consoleLog": "paper_output/results/code_delivery/agent_audit_verify_d/agentRerun.stdout.log",
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "openpyxl": "3.1.5",
+    "powershell": "5.1.26100.9444 (Desktop)"
+  },
+  "results": {
+    "topStatus": "PASS",
+    "frozenBaselineVerification": {
+      "status": "PASS",
+      "checkedRecords": 107,
+      "source": "paper_output/results/production/final_v6a/run_manifest.json"
+    },
+    "trajectoriesSolved": ["Q1", "Q23", "Q4"],
+    "solverWarnings": 0,
+    "equivalenceVsFrozenLegacyImplementation": {
+      "method": "N40 same-settings re-solve of paper_output/code/modeling (original) versus paper_output/code/review_delivery (renamed review copy)",
+      "arraysCompared": 3,
+      "sampledSolutionNpzByteIdentical": true,
+      "status": "PASS"
+    },
+    "coarseVsProductionGrid": {
+      "Q23": {"n40EventH": 57.48297758032009, "n40ReportedH": 57.483, "productionEventH": 57.47230195056044, "productionReportedH": 57.4724, "deltaH": 0.01067562975965},
+      "Q4": {"n40EventH": 51.10019004344824, "n40ReportedH": 51.1002, "productionEventH": 51.09057478683054, "productionReportedH": 51.0906, "deltaH": 0.0096152566177},
+      "interpretation": "Coarse N40 differs from the production N3200/N6400 grid by about 35-38 s, the same order as the reported N1600->N3200 grid-convergence residual. Not a contradiction of the frozen results."
+    },
+    "massBalanceResidualMaxKgPerKg": {"Q1": 8.881784197001252e-16, "Q23": 9.769962616701378e-15, "Q4": 5.773159728050814e-15},
+    "strictThresholdCheckAtReportedTime": {"Q23": 0.14999997649481878, "Q4": 0.1499999815985006}
+  },
+  "artifacts": {
+    "runDirectory": "paper_output/results/code_delivery/agent_audit_verify_d",
+    "runResult": "paper_output/results/code_delivery/agent_audit_verify_d/runResult.json",
+    "stdoutLog": "paper_output/results/code_delivery/agent_audit_verify_d/stdout.log",
+    "launch": "paper_output/results/code_delivery/agent_audit_verify_d/launch.json",
+    "artifactManifest": "paper_output/results/code_delivery/agent_audit_verify_d/artifactManifest.json"
+  },
+  "limits": [
+    "This audit profile solves N40 only; it does not re-run the N3200/N6400 production grid and does not re-export the four workbooks.",
+    "Numeric reproducibility is not physical predictive accuracy: there are no internal temperature or moisture observations for this material.",
+    "humanReview remains pending; this record does not sign off the user's manual code review."
+  ]
+}

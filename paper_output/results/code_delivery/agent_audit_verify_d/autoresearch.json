@@ -1,0 +1,209 @@
+{
+  "status": "KEEP",
+  "primaryMetric": "maximum absolute sampled field difference",
+  "primaryMetricValue": 0.0,
+  "criterion": "exact equality at fixed N40, same settings and inputs",
+  "randomSeed": null,
+  "deterministic": true,
+  "checks": [
+    {
+      "actual": {
+        "path": "paper_output/results/code_delivery/agent_audit_verify_d/Q1/sampled_solution.npz",
+        "bytes": 10669,
+        "sha256": "077663d70c868c43cf5ae18799cfc305eaf1ba66c7edf430361ef1bf888636a4"
+      },
+      "baseline": {
+        "path": "paper_output/results/code_delivery/agent_audit_verify_d/legacyBaseline/Q1/sampled_solution.npz",
+        "bytes": 10669,
+        "sha256": "077663d70c868c43cf5ae18799cfc305eaf1ba66c7edf430361ef1bf888636a4"
+      },
+      "status": "PASS",
+      "arrays": [
+        {
+          "array": "times_s",
+          "shape": [
+            32
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "material_x",
+          "shape": [
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "T_K",
+          "shape": [
+            32,
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "C",
+          "shape": [
+            32,
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "radius_m",
+          "shape": [
+            32
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "mean_C",
+          "shape": [
+            32
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "cumulative_loss",
+          "shape": [
+            32
+          ],
+          "exactEqual": true
+        }
+      ]
+    },
+    {
+      "actual": {
+        "path": "paper_output/results/code_delivery/agent_audit_verify_d/Q23/sampled_solution.npz",
+        "bytes": 689147,
+        "sha256": "493ce2d38d15dbf6283fef58114d723806287f56aadf98ceacc8997737257b9f"
+      },
+      "baseline": {
+        "path": "paper_output/results/code_delivery/agent_audit_verify_d/legacyBaseline/Q23/sampled_solution.npz",
+        "bytes": 689147,
+        "sha256": "493ce2d38d15dbf6283fef58114d723806287f56aadf98ceacc8997737257b9f"
+      },
+      "status": "PASS",
+      "arrays": [
+        {
+          "array": "times_s",
+          "shape": [
+            3452
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "material_x",
+          "shape": [
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "T_K",
+          "shape": [
+            3452,
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "C",
+          "shape": [
+            3452,
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "radius_m",
+          "shape": [
+            3452
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "mean_C",
+          "shape": [
+            3452
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "cumulative_loss",
+          "shape": [
+            3452
+          ],
+          "exactEqual": true
+        }
+      ]
+    },
+    {
+      "actual": {
+        "path": "paper_output/results/code_delivery/agent_audit_verify_d/Q4/sampled_solution.npz",
+        "bytes": 629864,
+        "sha256": "ffbc8c83b851d595d2eb7ce82551a49ea90879f6264dfad86b3e478398f679df"
+      },
+      "baseline": {
+        "path": "paper_output/results/code_delivery/agent_audit_verify_d/legacyBaseline/Q4/sampled_solution.npz",
+        "bytes": 629864,
+        "sha256": "ffbc8c83b851d595d2eb7ce82551a49ea90879f6264dfad86b3e478398f679df"
+      },
+      "status": "PASS",
+      "arrays": [
+        {
+          "array": "times_s",
+          "shape": [
+            3070
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "material_x",
+          "shape": [
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "T_K",
+          "shape": [
+            3070,
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "C",
+          "shape": [
+            3070,
+            21
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "radius_m",
+          "shape": [
+            3070
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "mean_C",
+          "shape": [
+            3070
+          ],
+          "exactEqual": true
+        },
+        {
+          "array": "cumulative_loss",
+          "shape": [
+            3070
+          ],
+          "exactEqual": true
+        }
+      ]
+    }
+  ],
+  "heldOutCheck": "final grid and all unrounded output rows against frozen final_v6a"
+}
