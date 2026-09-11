@@ -1,0 +1,163 @@
+{
+  "status": "SCENARIO_SCALE_CHECK_COMPLETE_NOT_EMPIRICAL_VALIDATION",
+  "started_at_utc": "2026-09-11T01:35:28.298884+00:00",
+  "ended_at_utc": "2026-09-11T01:35:28.301486+00:00",
+  "python_version": "3.14.7",
+  "new_PDE_solves": 0,
+  "new_GUI_reproduction": false,
+  "human_review": "pending",
+  "sigma_W_m2K4": 5.6703744191844314e-08,
+  "convective_coefficient_W_m2K": 25.0,
+  "sources": [
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "bytes": 21525,
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/raw_problem_text.txt",
+      "bytes": 7046,
+      "sha256": "11298485dd852bdd6f5efd477983e1b0b7e6496f2ceaadda98b24cdc365d2b73"
+    }
+  ],
+  "rows": [
+    {
+      "surface_temperature_C": 28.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.1,
+      "radiation_coefficient_W_m2K": 0.6907179252592355,
+      "radiation_over_convective_coefficient": 0.027628717010369418,
+      "inward_radiation_W_m2": 15.195794355703184,
+      "inward_convection_W_m2": 550.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 28.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.5,
+      "radiation_coefficient_W_m2K": 3.4535896262961767,
+      "radiation_over_convective_coefficient": 0.13814358505184707,
+      "inward_radiation_W_m2": 75.97897177851591,
+      "inward_convection_W_m2": 550.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 28.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.9,
+      "radiation_coefficient_W_m2K": 6.216461327333118,
+      "radiation_over_convective_coefficient": 0.2486584530933247,
+      "inward_radiation_W_m2": 136.76214920132864,
+      "inward_convection_W_m2": 550.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 28.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 1.0,
+      "radiation_coefficient_W_m2K": 6.907179252592353,
+      "radiation_over_convective_coefficient": 0.27628717010369414,
+      "inward_radiation_W_m2": 151.95794355703183,
+      "inward_convection_W_m2": 550.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 40.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.1,
+      "radiation_coefficient_W_m2K": 0.7305917487918735,
+      "radiation_over_convective_coefficient": 0.02922366995167494,
+      "inward_radiation_W_m2": 7.305917487918739,
+      "inward_convection_W_m2": 250.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 40.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.5,
+      "radiation_coefficient_W_m2K": 3.6529587439593674,
+      "radiation_over_convective_coefficient": 0.1461183497583747,
+      "inward_radiation_W_m2": 36.52958743959369,
+      "inward_convection_W_m2": 250.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 40.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.9,
+      "radiation_coefficient_W_m2K": 6.5753257391268605,
+      "radiation_over_convective_coefficient": 0.26301302956507444,
+      "inward_radiation_W_m2": 65.75325739126865,
+      "inward_convection_W_m2": 250.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 40.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 1.0,
+      "radiation_coefficient_W_m2K": 7.305917487918735,
+      "radiation_over_convective_coefficient": 0.2922366995167494,
+      "inward_radiation_W_m2": 73.05917487918738,
+      "inward_convection_W_m2": 250.0,
+      "flux_ratio_defined": true
+    },
+    {
+      "surface_temperature_C": 50.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.1,
+      "radiation_coefficient_W_m2K": 0.765392511347493,
+      "radiation_over_convective_coefficient": 0.03061570045389972,
+      "inward_radiation_W_m2": 0.0,
+      "inward_convection_W_m2": 0.0,
+      "flux_ratio_defined": false
+    },
+    {
+      "surface_temperature_C": 50.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.5,
+      "radiation_coefficient_W_m2K": 3.8269625567374645,
+      "radiation_over_convective_coefficient": 0.1530785022694986,
+      "inward_radiation_W_m2": 0.0,
+      "inward_convection_W_m2": 0.0,
+      "flux_ratio_defined": false
+    },
+    {
+      "surface_temperature_C": 50.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 0.9,
+      "radiation_coefficient_W_m2K": 6.8885326021274365,
+      "radiation_over_convective_coefficient": 0.27554130408509747,
+      "inward_radiation_W_m2": 0.0,
+      "inward_convection_W_m2": 0.0,
+      "flux_ratio_defined": false
+    },
+    {
+      "surface_temperature_C": 50.0,
+      "wall_temperature_C": 50.0,
+      "scenario_emissivity_not_measured": 1.0,
+      "radiation_coefficient_W_m2K": 7.653925113474929,
+      "radiation_over_convective_coefficient": 0.3061570045389972,
+      "inward_radiation_W_m2": 0.0,
+      "inward_convection_W_m2": 0.0,
+      "flux_ratio_defined": false
+    }
+  ],
+  "assumptions": [
+    "Chosen emissivity values are scenario inputs, not measured properties of this herb.",
+    "Isothermal black radiative enclosure fills the surface view; nonparticipating surroundings.",
+    "Wall and air temperatures both set to 50 C solely for this scale comparison.",
+    "Surface 28 C and wall 50 C is not asserted to be the actual initial state.",
+    "At surface=wall=air, both net heat fluxes vanish; only the conductance ratio remains defined."
+  ],
+  "conclusion": "At epsilon=0.9 and Ts=28 C the radiation/convection flux ratio is about 24.87%; 50 C alone does not justify negligible radiation. No inference of a 24.87% drying-time or temperature error is made.",
+  "primary_sources": [
+    "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+    "https://doc.comsol.com/6.3/doc/com.comsol.help.heat/heat_ug_ht_features.09.088.html",
+    "https://doc.comsol.com/6.4/doc/com.comsol.help.heat/heat_ug_modeling.06.55.html"
+  ]
+}

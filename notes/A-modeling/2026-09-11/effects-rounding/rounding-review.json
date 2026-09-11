@@ -1,0 +1,5769 @@
+{
+  "generated_at": "2026-09-11T01:35:08.276644+00:00",
+  "status": "REVIEW_COMPLETE_FOUR_DECIMAL_OUTPUT_PRESERVED_WITH_EXPLICIT_TIME_AND_ROUNDING_CONVENTIONS",
+  "scope": "Read sources, selected workbook rows and archived NPZ; no new PDE, no GUI or workbook edits.",
+  "new_PDE_solves": 0,
+  "sources": [
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "paper_output/step1/A题_原文抽取.txt",
+      "bytes": 7082,
+      "sha256": "235da564be9cea5ddb1664b3c51bfdd45ea80989689dc57d9b8cd9c59fc07f1f"
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137"
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "bytes": 41427,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q3Model.py",
+      "bytes": 1595,
+      "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f"
+    },
+    {
+      "path": "paper_output/code/review_delivery/exportOutputs.py",
+      "bytes": 42147,
+      "sha256": "3a66a754e7f3a13534918c7ebab7bc664d07669121f12ecde47efb5871a406ed"
+    },
+    {
+      "path": "paper_output/qa/recheck_20260910_1828/numerical_recheck.json",
+      "bytes": 193222,
+      "sha256": "5a48cd74c1a839488a30fd326da562ac5f0be9c406281a89b8f54b125c3cfe99"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "bytes": 5724,
+      "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "bytes": 5350,
+      "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_final_v2/Q23/summary.json",
+      "bytes": 5143,
+      "sha256": "8d8072ee3bc12004ea64fde081415a17ff9b03a2fc5481fadd4a648df1e875a5"
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_final_v2/Q4/summary.json",
+      "bytes": 5125,
+      "sha256": "3e3db1dd8f2298c3bd83ca943d92b2684ac9a89c8076430645bdbe700c083ab6"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q23/summary.json",
+      "bytes": 5145,
+      "sha256": "2a1e240c626049d375f7dc63cc7c3f50234acecd1883e64a9a0696a254b2e0c5"
+    },
+    {
+      "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q4/summary.json",
+      "bytes": 5126,
+      "sha256": "28874d22b85daf5b11afef30f41ec35f8deb52213211f505a5326908fe48e282"
+    }
+  ],
+  "events": {
+    "Q23": {
+      "completion": {
+        "critical_event_s": 206900.28702201758,
+        "critical_event_h": 57.47230195056044,
+        "reported_drying_time_h": 57.4724,
+        "reported_time_s": 206900.64,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 206902.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "nearest_4dp_h": 57.4723,
+      "nearest_time_s": 206900.28,
+      "nearest_time_minus_event_s": -0.007022017583949491,
+      "archive_sources": [
+        {
+          "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+        },
+        {
+          "path": "paper_output/results/code_delivery/camel_final_v2/Q23/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+        },
+        {
+          "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q23/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+        }
+      ],
+      "new_gui_completion_equal": true,
+      "new_old_gui_sampled_NPZ_byte_equal": true,
+      "saved_root": {
+        "time_s": 206900.28702201758,
+        "max_of_21_material_C": 0.15
+      },
+      "previous_saved": {
+        "time_s": 206880.0,
+        "max_C": 0.15000590991697363
+      },
+      "next_saved": {
+        "time_s": 206902.0,
+        "max_C": 0.14999950103529133
+      },
+      "exact_nearest_rounded_time_saved": false,
+      "strict_at_reported_record": true
+    },
+    "Q4": {
+      "completion": {
+        "critical_event_s": 183926.06923258994,
+        "critical_event_h": 51.09057478683054,
+        "reported_drying_time_h": 51.0906,
+        "reported_time_s": 183926.16,
+        "max_C_at_reported_time": 0.14999995339076624,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 183928.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "nearest_4dp_h": 51.0906,
+      "nearest_time_s": 183926.16,
+      "nearest_time_minus_event_s": 0.09076741005992517,
+      "archive_sources": [
+        {
+          "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+          "bytes": 628742,
+          "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+        },
+        {
+          "path": "paper_output/results/code_delivery/camel_final_v2/Q4/sampled_solution.npz",
+          "bytes": 628742,
+          "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+        },
+        {
+          "path": "paper_output/results/code_delivery/gui_camel_final_v2/Q4/sampled_solution.npz",
+          "bytes": 628742,
+          "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+        }
+      ],
+      "new_gui_completion_equal": true,
+      "new_old_gui_sampled_NPZ_byte_equal": true,
+      "saved_root": {
+        "time_s": 183926.06923258994,
+        "max_of_21_material_C": 0.15
+      },
+      "previous_saved": {
+        "time_s": 183900.0,
+        "max_C": 0.15001338881542736
+      },
+      "next_saved": {
+        "time_s": 183928.0,
+        "max_C": 0.14999900856092843
+      },
+      "exact_nearest_rounded_time_saved": false,
+      "strict_at_reported_record": true
+    }
+  },
+  "workbooks": {
+    "Q1": {
+      "old": {
+        "path": "paper_output/results/production/final_v6a/outputs/result1.xlsx",
+        "actual_rows_read": 3,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3",
+              "value": 28.0002,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "latest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1.xlsx",
+        "actual_rows_read": 3,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3",
+              "value": 28.0002,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "selected_values_and_styles_equal": true,
+      "export_manifest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1.export.json",
+        "bytes": 37950,
+        "sha256": "318340eb115863b85904b85f52e0c6817dc8f0cee4c820ed63c19b364ff82c7f"
+      }
+    },
+    "Q2": {
+      "old": {
+        "path": "paper_output/results/production/final_v6a/outputs/result2.xlsx",
+        "actual_rows_read": 5402,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3",
+              "value": 28.0001,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A5402",
+              "value": 5400.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B5402",
+              "value": 45.8468,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C5402",
+              "value": 45.8503,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D5402",
+              "value": 45.8609,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E5402",
+              "value": 45.8786,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F5402",
+              "value": 45.9032,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G5402",
+              "value": 45.9348,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H5402",
+              "value": 45.9732,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I5402",
+              "value": 46.0184,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J5402",
+              "value": 46.0701,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K5402",
+              "value": 46.1284,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L5402",
+              "value": 46.193,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M5402",
+              "value": 46.2637,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N5402",
+              "value": 46.3405,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O5402",
+              "value": 46.4232,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P5402",
+              "value": 46.5114,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q5402",
+              "value": 46.6051,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R5402",
+              "value": 46.7038,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S5402",
+              "value": 46.8071,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T5402",
+              "value": 46.9147,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U5402",
+              "value": 47.0259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V5402",
+              "value": 47.1401,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "latest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2.xlsx",
+        "actual_rows_read": 5402,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 28.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3",
+              "value": 28.0001,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A5402",
+              "value": 5400.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B5402",
+              "value": 45.8468,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C5402",
+              "value": 45.8503,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D5402",
+              "value": 45.8609,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E5402",
+              "value": 45.8786,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F5402",
+              "value": 45.9032,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G5402",
+              "value": 45.9348,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H5402",
+              "value": 45.9732,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I5402",
+              "value": 46.0184,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J5402",
+              "value": 46.0701,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K5402",
+              "value": 46.1284,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L5402",
+              "value": 46.193,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M5402",
+              "value": 46.2637,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N5402",
+              "value": 46.3405,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O5402",
+              "value": 46.4232,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P5402",
+              "value": 46.5114,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q5402",
+              "value": 46.6051,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R5402",
+              "value": 46.7038,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S5402",
+              "value": 46.8071,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T5402",
+              "value": 46.9147,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U5402",
+              "value": 47.0259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V5402",
+              "value": 47.1401,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "selected_values_and_styles_equal": true,
+      "export_manifest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2.export.json",
+        "bytes": 36678,
+        "sha256": "b15156c6afff4d63e36fde5fdf206e08376d9cc6991088880986a260a9bc5628"
+      }
+    },
+    "Q3": {
+      "old": {
+        "path": "paper_output/results/production/final_v6a/outputs/result3.xlsx",
+        "actual_rows_read": 3452,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 60.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 2.5485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 2.5185,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3",
+              "value": 2.3271,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3449",
+              "value": 206820.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3449",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3449",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3449",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3449",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3449",
+              "value": 0.1486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3449",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3449",
+              "value": 0.1467,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3449",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3449",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3449",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3449",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3449",
+              "value": 0.138,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3449",
+              "value": 0.1354,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3449",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3449",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3449",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3449",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3449",
+              "value": 0.1144,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3449",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3449",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3449",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3450",
+              "value": 206880.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3450",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3450",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3450",
+              "value": 0.1496,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3450",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3450",
+              "value": 0.1485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3450",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3450",
+              "value": 0.1466,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3450",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3450",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3450",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3450",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3450",
+              "value": 0.1379,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3450",
+              "value": 0.1353,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3450",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3450",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3450",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3450",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3450",
+              "value": 0.1144,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3450",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3450",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3450",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3451",
+              "value": 206900.287,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3451",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3451",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3451",
+              "value": 0.1496,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3451",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3451",
+              "value": 0.1485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3451",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3451",
+              "value": 0.1466,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3451",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3451",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3451",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3451",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3451",
+              "value": 0.1379,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3451",
+              "value": 0.1353,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3451",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3451",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3451",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3451",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3451",
+              "value": 0.1143,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3451",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3451",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3451",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3452",
+              "value": 206902.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3452",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3452",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3452",
+              "value": 0.1496,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3452",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3452",
+              "value": 0.1485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3452",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3452",
+              "value": 0.1466,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3452",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3452",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3452",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3452",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3452",
+              "value": 0.1379,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3452",
+              "value": 0.1353,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3452",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3452",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3452",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3452",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3452",
+              "value": 0.1143,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3452",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3452",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3452",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "latest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3.xlsx",
+        "actual_rows_read": 3452,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 60.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 2.5485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 2.5185,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3",
+              "value": 2.3271,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3449",
+              "value": 206820.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3449",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3449",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3449",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3449",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3449",
+              "value": 0.1486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3449",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3449",
+              "value": 0.1467,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3449",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3449",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3449",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3449",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3449",
+              "value": 0.138,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3449",
+              "value": 0.1354,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3449",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3449",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3449",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3449",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3449",
+              "value": 0.1144,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3449",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3449",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3449",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3450",
+              "value": 206880.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3450",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3450",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3450",
+              "value": 0.1496,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3450",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3450",
+              "value": 0.1485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3450",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3450",
+              "value": 0.1466,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3450",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3450",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3450",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3450",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3450",
+              "value": 0.1379,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3450",
+              "value": 0.1353,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3450",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3450",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3450",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3450",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3450",
+              "value": 0.1144,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3450",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3450",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3450",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3451",
+              "value": 206900.287,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3451",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3451",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3451",
+              "value": 0.1496,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3451",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3451",
+              "value": 0.1485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3451",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3451",
+              "value": 0.1466,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3451",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3451",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3451",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3451",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3451",
+              "value": 0.1379,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3451",
+              "value": 0.1353,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3451",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3451",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3451",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3451",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3451",
+              "value": 0.1143,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3451",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3451",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3451",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3452",
+              "value": 206902.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3452",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3452",
+              "value": 0.1499,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3452",
+              "value": 0.1496,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3452",
+              "value": 0.1492,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3452",
+              "value": 0.1485,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3452",
+              "value": 0.1477,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3452",
+              "value": 0.1466,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3452",
+              "value": 0.1454,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3452",
+              "value": 0.1439,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3452",
+              "value": 0.1422,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3452",
+              "value": 0.1402,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3452",
+              "value": 0.1379,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3452",
+              "value": 0.1353,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3452",
+              "value": 0.1324,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3452",
+              "value": 0.1289,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3452",
+              "value": 0.1249,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3452",
+              "value": 0.1202,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3452",
+              "value": 0.1143,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3452",
+              "value": 0.1068,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3452",
+              "value": 0.0956,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V3452",
+              "value": 0.0527,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "selected_values_and_styles_equal": true,
+      "export_manifest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3.export.json",
+        "bytes": 25212,
+        "sha256": "fdabe1de94076e5c5e3e03417bbfdfe2926bdf507fac1e8caa9cc7b92b8fcb5f"
+      },
+      "paper_table_time_contract": {
+        "unit": "h",
+        "stored_decimals": 4,
+        "query_uses_unrounded_seconds": true,
+        "reported_time_s": 206900.64,
+        "reported_drying_time_h": 57.4724,
+        "critical_event_s": 206900.28702201758,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "conservative_post_verification_s": 206902.0,
+        "reported_time_h": 57.4724,
+        "regular_step_s": 21600.0,
+        "endpoint_convention": "6-hour samples plus upward-reported strict-drying time; distinct from workbook post-verification endpoint"
+      },
+      "paper_CSV_last_rows": [
+        {
+          "source": {
+            "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+            "bytes": 466,
+            "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+          },
+          "last_row": [
+            "57.4724",
+            "0.1500",
+            "0.1477",
+            "0.1402",
+            "0.1249",
+            "0.0527"
+          ]
+        },
+        {
+          "source": {
+            "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q3_paper_moisture.csv",
+            "bytes": 466,
+            "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+          },
+          "last_row": [
+            "57.4724",
+            "0.1500",
+            "0.1477",
+            "0.1402",
+            "0.1249",
+            "0.0527"
+          ]
+        }
+      ]
+    },
+    "Q4": {
+      "old": {
+        "path": "paper_output/results/production/final_v6a/outputs/result4.xlsx",
+        "actual_rows_read": 3069,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "W1",
+              "value": null,
+              "text": "药材表面",
+              "format": "builtin:0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 60.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 2.5486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3",
+              "value": 2.0794,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3066",
+              "value": 183840.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3066",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3066",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3066",
+              "value": 0.1487,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3066",
+              "value": 0.147,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3066",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3066",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3066",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3066",
+              "value": 0.1322,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3066",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3066",
+              "value": 0.1182,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3066",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3066",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3066",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3066",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3067",
+              "value": 183900.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3067",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3067",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3067",
+              "value": 0.1487,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3067",
+              "value": 0.1469,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3067",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3067",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3067",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3067",
+              "value": 0.1321,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3067",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3067",
+              "value": 0.1181,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3067",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3067",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3067",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3067",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3068",
+              "value": 183926.0692,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3068",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3068",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3068",
+              "value": 0.1486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3068",
+              "value": 0.1469,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3068",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3068",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3068",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3068",
+              "value": 0.1321,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3068",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3068",
+              "value": 0.1181,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3068",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3068",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3068",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3068",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3069",
+              "value": 183928.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3069",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3069",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3069",
+              "value": 0.1486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3069",
+              "value": 0.1469,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3069",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3069",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3069",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3069",
+              "value": 0.1321,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3069",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3069",
+              "value": 0.1181,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3069",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3069",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3069",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3069",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "latest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4.xlsx",
+        "actual_rows_read": 3069,
+        "selected_rows": [
+          [
+            {
+              "cell": "A1",
+              "value": null,
+              "text": "时间\\到药材中心的距离",
+              "format": "builtin:0"
+            },
+            {
+              "cell": "B1",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "C1",
+              "value": 0.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "D1",
+              "value": 0.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "E1",
+              "value": 0.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "F1",
+              "value": 0.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "G1",
+              "value": 0.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "H1",
+              "value": 0.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "I1",
+              "value": 0.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "J1",
+              "value": 0.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "K1",
+              "value": 0.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "L1",
+              "value": 1.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "M1",
+              "value": 1.1,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "N1",
+              "value": 1.2,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "O1",
+              "value": 1.3,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "P1",
+              "value": 1.4,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "Q1",
+              "value": 1.5,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "R1",
+              "value": 1.6,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "S1",
+              "value": 1.7,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "T1",
+              "value": 1.8,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "U1",
+              "value": 1.9,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "V1",
+              "value": 2.0,
+              "text": null,
+              "format": "0.0"
+            },
+            {
+              "cell": "W1",
+              "value": null,
+              "text": "药材表面",
+              "format": "builtin:0"
+            }
+          ],
+          [
+            {
+              "cell": "A2",
+              "value": 0.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "V2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W2",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3",
+              "value": 60.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "O3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "P3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "Q3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "R3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "S3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "T3",
+              "value": 2.55,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "U3",
+              "value": 2.5486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3",
+              "value": 2.0794,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3066",
+              "value": 183840.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3066",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3066",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3066",
+              "value": 0.1487,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3066",
+              "value": 0.147,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3066",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3066",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3066",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3066",
+              "value": 0.1322,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3066",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3066",
+              "value": 0.1182,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3066",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3066",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3066",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3066",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3067",
+              "value": 183900.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3067",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3067",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3067",
+              "value": 0.1487,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3067",
+              "value": 0.1469,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3067",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3067",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3067",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3067",
+              "value": 0.1321,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3067",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3067",
+              "value": 0.1181,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3067",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3067",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3067",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3067",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3068",
+              "value": 183926.0692,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3068",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3068",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3068",
+              "value": 0.1486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3068",
+              "value": 0.1469,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3068",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3068",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3068",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3068",
+              "value": 0.1321,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3068",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3068",
+              "value": 0.1181,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3068",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3068",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3068",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3068",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ],
+          [
+            {
+              "cell": "A3069",
+              "value": 183928.0,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "B3069",
+              "value": 0.15,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "C3069",
+              "value": 0.1497,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "D3069",
+              "value": 0.1486,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "E3069",
+              "value": 0.1469,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "F3069",
+              "value": 0.1445,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "G3069",
+              "value": 0.1413,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "H3069",
+              "value": 0.1372,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "I3069",
+              "value": 0.1321,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "J3069",
+              "value": 0.1259,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "K3069",
+              "value": 0.1181,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "L3069",
+              "value": 0.1081,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "M3069",
+              "value": 0.0936,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "N3069",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            },
+            {
+              "cell": "W3069",
+              "value": 0.0526,
+              "text": null,
+              "format": "0.0000"
+            }
+          ]
+        ],
+        "styles_observed": {
+          "1": "builtin:0",
+          "2": "0.0",
+          "3": "0.0000"
+        }
+      },
+      "selected_values_and_styles_equal": true,
+      "export_manifest": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4.export.json",
+        "bytes": 26038,
+        "sha256": "15e74cc54fbf940623f58f2e281ea46f43630829a700a92d1309f254ac93124a"
+      },
+      "paper_table_time_contract": {
+        "unit": "h",
+        "stored_decimals": 4,
+        "query_uses_unrounded_seconds": true,
+        "reported_time_s": 183926.16,
+        "reported_drying_time_h": 51.0906,
+        "critical_event_s": 183926.06923258994,
+        "max_C_at_reported_time": 0.14999995339076624,
+        "conservative_post_verification_s": 183928.0,
+        "reported_time_h": 51.0906,
+        "regular_step_s": 21600.0,
+        "endpoint_convention": "6-hour samples plus upward-reported strict-drying time; distinct from workbook post-verification endpoint"
+      },
+      "paper_CSV_last_rows": [
+        {
+          "source": {
+            "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+            "bytes": 390,
+            "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+          },
+          "last_row": [
+            "51.0906",
+            "0.1500",
+            "0.1413",
+            "0.1081",
+            "",
+            "",
+            "0.0526"
+          ]
+        },
+        {
+          "source": {
+            "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q4_paper_moisture.csv",
+            "bytes": 390,
+            "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+          },
+          "last_row": [
+            "51.0906",
+            "0.1500",
+            "0.1413",
+            "0.1081",
+            "",
+            "",
+            "0.0526"
+          ]
+        }
+      ]
+    }
+  },
+  "rounding_examples": [
+    {
+      "decimal_string": "0.03125",
+      "python_float_round_4": 0.0312,
+      "decimal_half_even_4": "0.0312",
+      "decimal_half_up_4": "0.0313"
+    },
+    {
+      "decimal_string": "-0.03125",
+      "python_float_round_4": -0.0312,
+      "decimal_half_even_4": "-0.0312",
+      "decimal_half_up_4": "-0.0313"
+    },
+    {
+      "decimal_string": "1.23445",
+      "python_float_round_4": 1.2345,
+      "decimal_half_even_4": "1.2344",
+      "decimal_half_up_4": "1.2345"
+    },
+    {
+      "decimal_string": "57.47230195056044",
+      "python_float_round_4": 57.4723,
+      "decimal_half_even_4": "57.4723",
+      "decimal_half_up_4": "57.4723"
+    },
+    {
+      "decimal_string": "51.09057478683054",
+      "python_float_round_4": 51.0906,
+      "decimal_half_even_4": "51.0906",
+      "decimal_half_up_4": "51.0906"
+    }
+  ],
+  "round_doc": "Round a number to a given precision in decimal digits.\n\nThe return value is an integer if ndigits is omitted or None.\nOtherwise the return value has the same type as the number.  ndigits\nmay be negative.",
+  "script": {
+    "path": "notes/A-modeling/2026-09-11/effects-rounding/readback-rounding.py",
+    "bytes": 5924,
+    "sha256": "1549c73db0a456312b96dde03bd41a7112044c37cbaa398be6d4f5fcd5b3be0b"
+  },
+  "reviewed_at": "2026-09-11T01:37:32.199826+00:00",
+  "interpretive_findings": [
+    {
+      "id": "R1",
+      "finding": "Original problem specifies four decimal places, not four significant digits and not an explicit tie-breaking rule."
+    },
+    {
+      "id": "R2",
+      "finding": "Both exporter versions use Python float round(x,4) plus 0.0000; ties-to-even differs from decimal half-up at exact midpoints, and binary conversion can move an apparent decimal midpoint."
+    },
+    {
+      "id": "R3",
+      "finding": "Q3 57.4723 h is the correct nearest-rounded critical-time approximation, but its exact literal time precedes the recorded downward crossing by 0.007022017583949491 s; not a certified strictly feasible execution time. No saved exact state at that literal time was available or fabricated."
+    },
+    {
+      "id": "R4",
+      "finding": "57.4724 h Q3 and 51.0906 h Q4 are the declared four-decimal grid times with original unrounded all-node strict-feasibility certificates. Displayed maximum concentration 0.1500 does not replace original precision in the inequality."
+    },
+    {
+      "id": "R5",
+      "finding": "The strict continuous feasible set has an open onset under continuous strict crossing; the critical time is its infimum. A minimum exists for the discrete reporting grid under the tested conditions. ceil(event_s)+1 is a separate conservative integration endpoint."
+    },
+    {
+      "id": "R6",
+      "finding": "Using 57.4723 h as an explicitly approximate critical-time label is mathematically defensible and compatible with four-decimal formatting; the problem does not explicitly mandate upward rounding. It cannot silently replace a 57.4724 h strict-report table label while retaining its computed values."
+    }
+  ],
+  "recommendation": "保留现有四位格式及正式数值：临界时长约57.4723 h；按0.0001 h网格报告并复核严格干燥条件，取57.4724 h。Q4两者均为51.0906 h。"
+}

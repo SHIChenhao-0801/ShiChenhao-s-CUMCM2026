@@ -1,0 +1,13 @@
+{
+  "status": "COMMENT_ERRATUM_RECORDED_FROZEN_SOURCE_NOT_EDITED",
+  "source": {
+    "path": "paper_output/code/review_delivery/dryingCore.py",
+    "bytes": 21525,
+    "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+  },
+  "line": 32,
+  "current_comment": "# 原始环境时间单位为秒，温度为 K，含水率为 kg 水 / kg 干物质；记录输入哈希。",
+  "corrected_comment_proposed": "# 读取清洗后的环境表：time_s单位s，temperature_K单位K；环境水分列保留题给kg/kg数值，并按等效Ceq使用，真实气相质量基准与气固映射待核；记录输入哈希。",
+  "numerical_behavior_changed": false,
+  "reason_to_retain_old_source": "The exact frozen source remains paired with its completed CLI/GUI run evidence; this task is a read-only review, and the corrected wording is delivered as an explicit erratum."
+}

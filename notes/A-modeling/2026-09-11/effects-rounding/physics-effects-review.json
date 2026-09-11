@@ -1,0 +1,178 @@
+{
+  "status": "REVIEW_COMPLETE_WITH_CONDITIONAL_PHYSICAL_FINDINGS",
+  "date_utc": "2026-09-11",
+  "scope": "Seven listed screenshot topics; read-only original/final code and saved diagnostics plus primary principles; no new PDE production",
+  "new_PDE_solves": 0,
+  "modified_frozen_code": false,
+  "GUI_operation": false,
+  "Git_operation": false,
+  "seven_topics": [
+    {
+      "id": "EFFECT01",
+      "topic": "Soret/Dufour",
+      "finding": "Low absolute temperature alone is not a negligibility criterion. D(T,C) is not a direct temperature-gradient mass flux. Diffusive enthalpy flux and latent heat are not synonymous with Dufour.",
+      "decision": "Explicit baseline omission; require measured or bounded cross coefficients and flux/output sensitivity.",
+      "criteria": [
+        "etaS=|KT gradT|/|D gradC|",
+        "etaD=|KC gradC|/|k gradT|"
+      ],
+      "missing": [
+        "cross coefficient definitions and values in material dry-basis convention",
+        "local-gradient applicability",
+        "consistent thermodynamic force/flux conversion"
+      ]
+    },
+    {
+      "id": "EFFECT02",
+      "topic": "Radiation",
+      "finding": "Use qrad=epsilon sigma(Trad^4-Ts^4); low temperature does not prove negligible; supplied h is explicitly convective.",
+      "decision": "Parent separately evaluates stated parameter scenarios; this review introduces no emissivity, wall temperature or view-factor measurements.",
+      "missing": [
+        "surface emissivity",
+        "radiating wall/heater temperatures",
+        "view factors/radiative surroundings"
+      ]
+    },
+    {
+      "id": "EFFECT03",
+      "topic": "Axial shrinkage",
+      "finding": "Uniform affine R,L deformation requires rho_d R^2 L=constant. R(t) does not determine L(t) or internal velocities. Shortening L worsens the literal wet-density/dry-mass/volume bound.",
+      "decision": "Keep fixed L as explicit assumption; do not claim radial data prove axial shrinkage absent."
+    },
+    {
+      "id": "EFFECT04",
+      "topic": "Single effective D and bound/free water",
+      "finding": "One empirical total-water D is a closure, not evidence that phase partition, exchange kinetics and desorption/latent energy have all been calibrated.",
+      "decision": "Do not assert mechanisms already fully absorbed without fitting/phase data."
+    },
+    {
+      "id": "EFFECT05",
+      "topic": "Isotropy",
+      "finding": "Cylindrical shape and axisymmetric fields do not prove isotropic transport or deformation. Scalar D,k are parsimonious supplied-property use; directional validation absent.",
+      "decision": "Tensor/axial coefficients required for verified anisotropic extension; radial-only model probes radial effective coefficients."
+    },
+    {
+      "id": "EFFECT06",
+      "topic": "Phase-change source cancellation",
+      "finding": "Internal +/-S cancel in a total-water balance with consistent control volume/basis, even without local phase equilibrium. Latent enthalpy does not disappear; temperature-form -Lv S or equivalent total-enthalpy storage/flux must be accounted once.",
+      "decision": "Mass cancellation valid conditionally; inference that it removes energy latent heat is incorrect."
+    },
+    {
+      "id": "EFFECT07",
+      "topic": "C floor 1e-12",
+      "finding": "Coefficient continuation prevents division by zero but float exp underflows; it neither clips accepted states nor proves positivity, stability or useful uniform parabolicity.",
+      "decision": "Do not claim positive-diffusion guarantee; actual frozen production accepted states remain far above floor."
+    }
+  ],
+  "additional_distinction": {
+    "vapor_equilibrium_temperature_driving": "jv=-delta_p grad[aw(C,T) psat(T)] contains a temperature-gradient term by chain rule; this is not automatically molecular Soret and is not automatically captured by D(T,C) gradC.",
+    "radiation_relation_to_rounding": "Output to four decimals is a formatting convention; it does not bound any omitted physical mechanism."
+  },
+  "actual_small_expression_check": {
+    "tool_exit_code": 0,
+    "tool_wall_seconds": 0.3806402,
+    "operation": "NumPy float64 exp(-a/1e-12) for a in [0.89,0.45,0.30], no PDE calls",
+    "floor": 1e-12,
+    "a_values": [
+      0.89,
+      0.45,
+      0.3
+    ],
+    "computed_exp_factors": [
+      0,
+      0,
+      0
+    ],
+    "minimum_positive_subnormal": 5e-324
+  },
+  "saved_production_diagnostics": {
+    "source": "paper_output/results/production/final_v6a/numerical_summaries.json",
+    "scope": "Existing actual accepted-state diagnostics, freshly read; no rerun",
+    "Q1": {
+      "min_C": 1.510234685362519,
+      "min_D_m2_s": 3.882960068132186e-9
+    },
+    "Q23": {
+      "min_C": 0.05265944808510597,
+      "min_D_m2_s": 3.124541898624993e-12
+    },
+    "Q4": {
+      "min_C": 0.05261996970729463,
+      "min_D_m2_s": 9.398366254447737e-12
+    }
+  },
+  "code_locations": [
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "lines": [
+        117,
+        125,
+        128,
+        131,
+        153,
+        160,
+        167,
+        169
+      ],
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "lines": [
+        110,
+        118,
+        121,
+        124,
+        145,
+        152,
+        157,
+        159
+      ],
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/numerical_summaries.json",
+      "sha256": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5"
+    }
+  ],
+  "primary_sources": [
+    {
+      "title": "COMSOL Multicomponent Thermal Diffusion",
+      "url": "https://doc.comsol.com/6.4/doc/com.comsol.help.chem/chem_ug_chemsptrans.08.261.html",
+      "use": "Definition of Soret and need for thermal diffusion coefficients"
+    },
+    {
+      "title": "Van-Brunt, Farrell, Monroe: Consolidated theory of fluid thermodiffusion",
+      "url": "https://arxiv.org/html/2109.05082v2",
+      "use": "Soret/Dufour definitions; force/flux conventions and why arbitrary concentration-temperature coefficients are not simply Onsager-equal; not herbal parameters"
+    },
+    {
+      "title": "COMSOL How to Model Heat and Moisture Transport in Porous Media",
+      "url": "https://www.comsol.com/blogs/how-to-model-heat-and-moisture-transport-in-porous-media-with-comsol",
+      "use": "Vapor pressure driving, phase transport and equilibrium/non-equilibrium concepts; not herb calibration"
+    },
+    {
+      "title": "COMSOL Hygroscopic Porous Medium",
+      "url": "https://doc.comsol.com/6.4/doc/com.comsol.help.heat/heat_ug_mt_features.10.04.html",
+      "use": "Total moisture and cancellation of phase-change mass sources"
+    },
+    {
+      "title": "COMSOL Theory for Moist Porous Media Heat and Moisture Coupling",
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.heat/heat_ug_theory.07.086.html",
+      "use": "Distinct latent source, vapor saturation and diffusive enthalpy coupling"
+    },
+    {
+      "title": "COMSOL Surface-to-Ambient Radiation",
+      "url": "https://doc.comsol.com/6.3/doc/com.comsol.help.heat/heat_ug_ht_features.09.088.html",
+      "use": "Radiation boundary mechanism and required emissivity/environment temperature"
+    }
+  ],
+  "review_file": "notes/A-modeling/2026-09-11/effects-rounding/physics-effects-review.md",
+  "limitations": [
+    "No newly measured material coefficients",
+    "No new Soret/Dufour/phase-change/anisotropic PDE trajectory",
+    "No claim of four-decimal physical accuracy",
+    "No full all-state numerical positivity proof",
+    "No changes to prior 101-block registration"
+  ]
+}

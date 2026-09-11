@@ -1,0 +1,1377 @@
+{
+  "created_at": "2026-09-11T01:45:35.193107+00:00",
+  "status": "REVIEW_COMPLETE_SCREENSHOT_ADVICE_SEPARATED_FROM_ORIGINAL_PROBLEM_AND_CURRENT_OUTPUT_CONTRACT",
+  "no_new_PDE": true,
+  "GUI": false,
+  "original_templates": {
+    "Q1": {
+      "source": {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      },
+      "sheet_names": [
+        "温度",
+        "水分浓度"
+      ],
+      "headers": {
+        "温度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "水分浓度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ]
+      }
+    },
+    "Q2": {
+      "source": {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      },
+      "sheet_names": [
+        "温度",
+        "水分浓度"
+      ],
+      "headers": {
+        "温度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ],
+        "水分浓度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ]
+      }
+    },
+    "Q3": {
+      "source": {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+        "bytes": 9345,
+        "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+      },
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "headers": {
+        "Sheet1": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          2
+        ]
+      }
+    },
+    "Q4": {
+      "source": {
+        "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+        "bytes": 9351,
+        "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+      },
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "headers": {
+        "Sheet1": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          "…",
+          "药材表面"
+        ]
+      }
+    }
+  },
+  "current_exports": {
+    "Q1": {
+      "manifest_source": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1.export.json",
+        "bytes": 37950,
+        "sha256": "318340eb115863b85904b85f52e0c6817dc8f0cee4c820ed63c19b364ff82c7f"
+      },
+      "sheets": {
+        "温度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 1800.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        },
+        "水分浓度": {
+          "data_rows": 1801,
+          "total_rows": 1802,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 1800.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        }
+      },
+      "time_grid": {
+        "start_s": 0.0,
+        "end_s": 1800.0,
+        "regular_step_s": 1,
+        "critical_event_s": null,
+        "include_post_verification_endpoint": false,
+        "count": 1801,
+        "rounding_duplicate_time_count": 0
+      },
+      "radius_grid": {
+        "fixed_radii_cm": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0
+        ],
+        "surface_column": false,
+        "surface_coordinate_sheet": null
+      },
+      "domain_rule": {
+        "outside_values": "blank (None); never zero",
+        "comparison_tolerance_m": 1e-12,
+        "Q4_surface_is_not_fixed_2cm": true
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result1.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result1.xlsx",
+        "bytes": 390898,
+        "sha256": "92f37cf04f0e3119c34587a13ce90894bf0fb32161c9fec7f68100c5ae3eb58b",
+        "exists": true,
+        "role": "contest_result_workbook"
+      },
+      "actual_sheet_names": [
+        "温度",
+        "水分浓度"
+      ],
+      "actual_headers": {
+        "温度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2
+        ],
+        "水分浓度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2
+        ]
+      },
+      "actual_final_temperature_row_1802": [
+        1800,
+        33.5753,
+        33.5832,
+        33.6068,
+        33.6461,
+        33.7012,
+        33.772,
+        33.8586,
+        33.9611,
+        34.0794,
+        34.2138,
+        34.3642,
+        34.5307,
+        34.7137,
+        34.9131,
+        35.1292,
+        35.3621,
+        35.6121,
+        35.8794,
+        36.164,
+        36.466,
+        36.7856
+      ]
+    },
+    "Q2": {
+      "manifest_source": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2.export.json",
+        "bytes": 36678,
+        "sha256": "b15156c6afff4d63e36fde5fdf206e08376d9cc6991088880986a260a9bc5628"
+      },
+      "sheets": {
+        "温度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 206902.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        },
+        "水分浓度": {
+          "data_rows": 206903,
+          "total_rows": 206904,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 206902.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        }
+      },
+      "time_grid": {
+        "start_s": 0.0,
+        "end_s": 206902.0,
+        "regular_step_s": 1,
+        "critical_event_s": null,
+        "include_post_verification_endpoint": true,
+        "count": 206903,
+        "rounding_duplicate_time_count": 0
+      },
+      "radius_grid": {
+        "fixed_radii_cm": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0
+        ],
+        "surface_column": false,
+        "surface_coordinate_sheet": null
+      },
+      "domain_rule": {
+        "outside_values": "blank (None); never zero",
+        "comparison_tolerance_m": 1e-12,
+        "Q4_surface_is_not_fixed_2cm": true
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result2.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result2.xlsx",
+        "bytes": 29210088,
+        "sha256": "7dfdce6f103392e0550382ff17173e247c0a8fe0522ee0ee6a4626e0fac1dc31",
+        "exists": true,
+        "role": "contest_result_workbook"
+      },
+      "actual_sheet_names": [
+        "温度",
+        "水分浓度"
+      ],
+      "actual_headers": {
+        "温度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2
+        ],
+        "水分浓度": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2
+        ]
+      }
+    },
+    "Q3": {
+      "manifest_source": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3.export.json",
+        "bytes": 25212,
+        "sha256": "fdabe1de94076e5c5e3e03417bbfdfe2926bdf507fac1e8caa9cc7b92b8fcb5f"
+      },
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3451,
+          "total_rows": 3452,
+          "columns": 22,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 206902.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0
+          ]
+        }
+      },
+      "time_grid": {
+        "start_s": 0.0,
+        "end_s": 206902.0,
+        "regular_step_s": 60,
+        "critical_event_s": 206900.28702201758,
+        "include_post_verification_endpoint": true,
+        "count": 3451,
+        "rounding_duplicate_time_count": 0
+      },
+      "radius_grid": {
+        "fixed_radii_cm": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0
+        ],
+        "surface_column": false,
+        "surface_coordinate_sheet": null
+      },
+      "domain_rule": {
+        "outside_values": "blank (None); never zero",
+        "comparison_tolerance_m": 1e-12,
+        "Q4_surface_is_not_fixed_2cm": true
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result3.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result3.xlsx",
+        "bytes": 339137,
+        "sha256": "0b19f9d61c15e4ad9d461a775b5c66451d719c987a641266dbb79e9fd0b39bd2",
+        "exists": true,
+        "role": "contest_result_workbook"
+      },
+      "actual_sheet_names": [
+        "Sheet1"
+      ],
+      "actual_headers": {
+        "Sheet1": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2
+        ]
+      }
+    },
+    "Q4": {
+      "manifest_source": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4.export.json",
+        "bytes": 26038,
+        "sha256": "15e74cc54fbf940623f58f2e281ea46f43630829a700a92d1309f254ac93124a"
+      },
+      "sheets": {
+        "Sheet1": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "columns": 23,
+          "outside_domain_blank_cells": 23173,
+          "first_time_s": 0.0,
+          "last_time_s": 183928.0,
+          "header": [
+            "时间\\到药材中心的距离",
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0,
+            "药材表面"
+          ]
+        },
+        "半径": {
+          "data_rows": 3068,
+          "total_rows": 3069,
+          "columns": 2,
+          "outside_domain_blank_cells": 0,
+          "first_time_s": 0.0,
+          "last_time_s": 183928.0,
+          "header": [
+            "时间/s",
+            "药材表面半径/cm"
+          ]
+        }
+      },
+      "time_grid": {
+        "start_s": 0.0,
+        "end_s": 183928.0,
+        "regular_step_s": 60,
+        "critical_event_s": 183926.06923258994,
+        "include_post_verification_endpoint": true,
+        "count": 3068,
+        "rounding_duplicate_time_count": 0
+      },
+      "radius_grid": {
+        "fixed_radii_cm": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0
+        ],
+        "surface_column": true,
+        "surface_coordinate_sheet": "半径"
+      },
+      "domain_rule": {
+        "outside_values": "blank (None); never zero",
+        "comparison_tolerance_m": 1e-12,
+        "Q4_surface_is_not_fixed_2cm": true
+      },
+      "workbook": {
+        "path": "paper_output/results/code_delivery/camel_final_v2/outputs/result4.xlsx",
+        "absolute_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\results\\code_delivery\\camel_final_v2\\outputs\\result4.xlsx",
+        "bytes": 278278,
+        "sha256": "9956ce379200fe9871b2c517c68eb1e7ab3396dbfe3935249c0807286999450f",
+        "exists": true,
+        "role": "contest_result_workbook"
+      },
+      "actual_sheet_names": [
+        "Sheet1",
+        "半径"
+      ],
+      "actual_headers": {
+        "Sheet1": [
+          "时间\\到药材中心的距离",
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2,
+          "药材表面"
+        ],
+        "半径": [
+          "时间/s",
+          "药材表面半径/cm"
+        ]
+      },
+      "actual_row_362_6h": {
+        "Sheet1": [
+          21600,
+          1.7196,
+          1.7122,
+          1.6901,
+          1.6535,
+          1.6026,
+          1.5377,
+          1.4595,
+          1.3683,
+          1.2647,
+          1.1494,
+          1.0226,
+          0.8843,
+          0.7332,
+          0.565,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.4207
+        ],
+        "半径": [
+          21600,
+          1.374
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "paper_output/code/review_delivery/q1Model.py",
+      "bytes": 532,
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q2Model.py",
+      "bytes": 550,
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33"
+    },
+    {
+      "path": "paper_output/code/review_delivery/q4Model.py",
+      "bytes": 584,
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009"
+    },
+    {
+      "path": "paper_output/code/review_delivery/runDelivery.py",
+      "bytes": 15385,
+      "sha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a"
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "bytes": 21525,
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "paper_output/code/review_delivery/exportOutputs.py",
+      "bytes": 42147,
+      "sha256": "3a66a754e7f3a13534918c7ebab7bc664d07669121f12ecde47efb5871a406ed"
+    }
+  ],
+  "original_PDF": {
+    "source": {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    "pages": 4,
+    "fresh_text_pages": {
+      "1": "2026年高教社杯全国大学生数学建模竞赛题目（请先阅读“全国大学生数学建模竞赛论文格式规范”）A题药材的烘干问题干燥是决定中药材成品品质的关键工序之一，其中热风烘干是一种常见的干燥方式。该方式主要包括预热平衡和恒温干燥两个阶段，通过调控烘房温湿环境，完成药材的干燥。在中药材烘干过程中，工艺参数选取不当容易导致干燥效率低、能耗高、成品品质不稳定等问题。而传统的试验优化模式存在成本高、周期长等问题，亟需借助数理分析与数值仿真的方法得到干燥规律。请建立数学模型解决以下问题。问题1某中药材形状大致呈圆柱形，长为25cm，半径为2cm。烘干开始时，药材的温度为28°C，水分浓度（即干基含水率）为2.55kg/kg，烘房的温度（单位：°C）和水分浓度（单位：kg/kg）的变化情况见附件1。请建立预热平衡阶段药材温度和水分浓度变化规律的数学模型（相关参数见附录2），在论文中按表1和表2的格式分别给出100、300、600、900、1200、1500、1800s，到药材中心距离0、0.5、1、1.5、2cm处的结果，并将1800s内每隔1s、到药材中心距离每隔0.1cm的完整结果保存到文件result1.xlsx中（模板文件见附件3）。所有结果保留四位小数（下同）。表130分钟内药材的温度时间/s到药材中心的距离/cm00.511.52100300600900120015001800表230分钟内药材的水分浓度时间/s到药材中心的距离/cm00.511.52100300600900120015001800",
+      "2": "问题2烘干过程一般持续2-3天，预热平衡与恒温干燥阶段的参数有所不同。请建立整个烘干过程药材温度和水分浓度变化规律的数学模型（为简化问题，相关经验公式统一采用附录3中的公式），在论文中按表3和表4的格式分别给出3h内每隔0.5h、到药材中心距离0、0.5、1、1.5、2cm处的结果，并将每隔1s、到药材中心距离每隔0.1cm的完整结果保存到文件result2.xlsx中（模板文件见附件3）。表33小时内药材的温度时间/h到药材中心的距离/cm00.511.520.51.01.52.02.53.0表43小时内药材的水分浓度时间/h到药材中心的距离/cm00.511.520.51.01.52.02.53.0问题3按照烘干要求，药材各处的水分浓度应低于0.15kg/kg，请确定药材烘干所需要的时间（单位：h）。在论文中按表5的格式给出每隔6h、到药材中心距离每隔0.5cm的水分浓度，并将药材内部水分浓度每隔60s、到药材中心距离每隔0.1cm的完整结果保存到文件result3.xlsx中（模板文件见附件3）。表5药材烘干过程的水分浓度时间/h到药材中心的距离/cm00.511.5261218„烘干结束时间问题4在实际烘干过程中，药材会因水分流失发生尺寸变化。请根据附件2，确定药材的烘干时长（相关经验公式见附录4）。在论文中按表6的格式给出每隔6h、到药材中",
+      "3": "心距离每隔0.5cm的水分浓度，并将药材内部水分浓度每隔60s时间、0.1cm距离的完整结果保存到文件result4.xlsx中（模板文件见附件3）。表6药材烘干过程的水分浓度时间/h到药材中心的距离/cm00.5„药材表面61218„烘干结束时间附录1附件说明附件1给出了烘干初期各时间点（单位：s）烘房的温度（单位：°C）和水分浓度（单位：kg/kg）。附件2给出了烘干过程中各时间点（单位：s）药材的半径（单位：cm）。附件3是结果文件夹，包括4个文件（result1.xlsx-result4.xlsx）。result1.xlsx问题1的结果模板文件在“温度”和“水分浓度”工作表中分别保存问题1要求的温度（单位：°C）和水分浓度（单位：kg/kg），其中A列为时间（单位：s），第1行为到药材中心的距离（单位：cm）。result2.xlsx问题2的结果模板文件在“温度”和“水分浓度”工作表中分别保存问题2要求的温度（单位：°C）和水分浓度（单位：kg/kg），其中A列为时间（单位：s），第1行为到药材中心的距离（单位：cm）。result3.xlsx问题3的结果模板文件保存问题3要求的水分浓度（单位：kg/kg），其中A列为时间（单位：s），第1行为到药材中心的距离（单位：cm）。result4.xlsx问题4的结果模板文件保存问题4要求的水分浓度（单位：kg/kg），其中A列为时间（单位：s），第1行为到药材中心的距离（单位：cm）。附录2问题1的相关参数密度为820kg/m3、比热容为2600J/(kg·K)、热传导系数为0.36W/(m·K)，对流换热系数为25W/(m2·K)，对流传质系数为8×10−7m/s，水分浓度扩散系数的经验公式为𝐷=7×10−9e−0.89𝐶其中𝐷为水分浓度扩散系数（单位：m2/s），𝐶为药材水分浓度（单位：kg/kg）。"
+    }
+  },
+  "code_line_evidence": {
+    "q1Model.py": [
+      {
+        "line": 7,
+        "text": "def solve(intervals=3200):"
+      }
+    ],
+    "q2Model.py": [
+      {
+        "line": 7,
+        "text": "def solve(intervals=3200):"
+      },
+      {
+        "line": 8,
+        "text": "    return solveCase(Settings(question='Q23', intervals=intervals, faceScheme='kirchhoff',"
+      }
+    ],
+    "q4Model.py": [
+      {
+        "line": 7,
+        "text": "def solve(intervals=6400):"
+      }
+    ],
+    "runDelivery.py": [
+      {
+        "line": 125,
+        "text": "    \"\"\"一个轨迹求解一次；Q2和Q3共享Q23轨迹，导出后立即释放缓存。\"\"\""
+      },
+      {
+        "line": 129,
+        "text": "    moduleName = {\"Q1\": \"q1Model\", \"Q23\": \"q2Model\", \"Q4\": \"q4Model\"}[questionKey]"
+      },
+      {
+        "line": 168,
+        "text": "            questionIds = [\"Q2\", \"Q3\"] if questionKey == \"Q23\" else [questionKey]"
+      },
+      {
+        "line": 203,
+        "text": "    for questionKey, moduleName in [(\"Q1\", \"q1_model\"), (\"Q23\", \"q2_model\"), (\"Q4\", \"q4_model\")]:"
+      },
+      {
+        "line": 255,
+        "text": "                for questionKey, finalIntervals in [(\"Q1\", 3200), (\"Q23\", 3200), (\"Q4\", 6400)]:"
+      },
+      {
+        "line": 256,
+        "text": "                    intervalCount = 40 if arguments.profile == \"audit\" else finalIntervals"
+      }
+    ],
+    "dryingCore.py": [
+      {
+        "line": 48,
+        "text": "    question: str = 'Q23'"
+      },
+      {
+        "line": 80,
+        "text": "        self.x = np.linspace(0., 1., settings.intervals + 1)"
+      },
+      {
+        "line": 126,
+        "text": "        elif s.question in ('Q2', 'Q3', 'Q23'):"
+      },
+      {
+        "line": 158,
+        "text": "        a, D0 = {'Q1':(.89,7e-9), 'Q23':(.45,2.4e-3), 'Q2':(.45,2.4e-3),"
+      },
+      {
+        "line": 175,
+        "text": "        T, C = state[:-1:2], state[1:-1:2]"
+      },
+      {
+        "line": 199,
+        "text": "    def initial(self):"
+      },
+      {
+        "line": 201,
+        "text": "        state[:-1:2], state[1:-1:2], state[-1] = T0, C0, 0."
+      },
+      {
+        "line": 234,
+        "text": "    def fields(self, times, radiiM=None, materialX=None):"
+      },
+      {
+        "line": 237,
+        "text": "        Ts, Cs = state[:-1:2].T, state[1:-1:2].T"
+      },
+      {
+        "line": 302,
+        "text": "def solveCase(settings: Settings) -> Run:"
+      },
+      {
+        "line": 320,
+        "text": "def solveCaseImpl(settings, cache, started):"
+      },
+      {
+        "line": 328,
+        "text": "    def dryEvent(t, y):"
+      },
+      {
+        "line": 330,
+        "text": "    dryEvent.terminal, dryEvent.direction = True, -1"
+      },
+      {
+        "line": 333,
+        "text": "    horizon = 1800. if settings.question == 'Q1' else settings.horizonH * 3600."
+      },
+      {
+        "line": 334,
+        "text": "    pieces, initial, eventS = [], model.initial(), None"
+      },
+      {
+        "line": 401,
+        "text": "    x = np.linspace(0., 1., 21)"
+      }
+    ],
+    "exportOutputs.py": [
+      {
+        "line": 44,
+        "text": "RADII_M = np.arange(21, dtype=float)*0.001"
+      },
+      {
+        "line": 80,
+        "text": "def outputTimes(questionId,end,event):"
+      },
+      {
+        "line": 93,
+        "text": "    return np.unique(np.r_[np.arange(math.floor(end/60)+1,dtype=float)*60,event,end])"
+      },
+      {
+        "line": 142,
+        "text": "    if qid=='Q4':"
+      },
+      {
+        "line": 163,
+        "text": "    if qid in ['Q1','Q2']:"
+      },
+      {
+        "line": 166,
+        "text": "    if qid=='Q4':"
+      },
+      {
+        "line": 173,
+        "text": "    if qid in ['Q1','Q2']:"
+      },
+      {
+        "line": 176,
+        "text": "    if qid=='Q4':"
+      },
+      {
+        "line": 183,
+        "text": "    if qid in ['Q1','Q2']:"
+      },
+      {
+        "line": 186,
+        "text": "    if qid=='Q3':"
+      },
+      {
+        "line": 236,
+        "text": "def paperTables(run,qid,directory):"
+      },
+      {
+        "line": 237,
+        "text": "    if qid=='Q1':"
+      },
+      {
+        "line": 239,
+        "text": "    elif qid=='Q2':"
+      },
+      {
+        "line": 251,
+        "text": "    headers=['时间/s' if qid=='Q1' else '时间/h']+[0,0.5,1,1.5,2]"
+      },
+      {
+        "line": 252,
+        "text": "    if qid=='Q4':"
+      },
+      {
+        "line": 256,
+        "text": "    fields=[('temperature',T),('moisture',C)] if qid in ['Q1','Q2'] else [('moisture',C)]"
+      },
+      {
+        "line": 262,
+        "text": "                row=[f'{t if qid==\"Q1\" else t/3600:.4f}']"
+      },
+      {
+        "line": 269,
+        "text": "                if qid=='Q4':"
+      },
+      {
+        "line": 273,
+        "text": "    if qid=='Q4':"
+      },
+      {
+        "line": 295,
+        "text": "    if qid=='Q1':"
+      },
+      {
+        "line": 298,
+        "text": "    elif qid=='Q2':"
+      },
+      {
+        "line": 310,
+        "text": "        expectedKinds=['moisture']+(['radius'] if qid=='Q4' else [])"
+      },
+      {
+        "line": 331,
+        "text": "        desiredTime='时间/s' if qid=='Q1' else '时间/h'"
+      },
+      {
+        "line": 342,
+        "text": "            wantedColumns=7 if qid=='Q4' else 6"
+      },
+      {
+        "line": 351,
+        "text": "            if qid=='Q4' and header[-1]!='药材表面':"
+      },
+      {
+        "line": 356,
+        "text": "            if qid=='Q4':"
+      },
+      {
+        "line": 374,
+        "text": "            timeValue=float(t if qid=='Q1' else t/3600.)"
+      },
+      {
+        "line": 398,
+        "text": "            'source_query_times_s':times.tolist(),'display_time_unit':'s' if qid=='Q1' else 'h',"
+      },
+      {
+        "line": 410,
+        "text": "def exportQuestion(run,questionId,outputDir,*,chunkRows=1000,overwrite=False):"
+      },
+      {
+        "line": 431,
+        "text": "    allowed={'Q1':{'Q1'},'Q2':{'Q2','Q23'},'Q3':{'Q2','Q3','Q23'},'Q4':{'Q4'}}"
+      },
+      {
+        "line": 434,
+        "text": "    if qid=='Q4' and not run.model.settings.shrink:"
+      },
+      {
+        "line": 445,
+        "text": "    if qid=='Q4':"
+      },
+      {
+        "line": 446,
+        "text": "        headers['Sheet1'].append(template['surface_header'])"
+      },
+      {
+        "line": 447,
+        "text": "        headers['半径']=['时间/s','药材表面半径/cm']"
+      },
+      {
+        "line": 478,
+        "text": "    paperTimeContract={'unit':'s' if qid=='Q1' else 'h','stored_decimals':4,"
+      },
+      {
+        "line": 480,
+        "text": "    if qid in ['Q3','Q4']:"
+      },
+      {
+        "line": 500,
+        "text": "        'time_grid':{'start_s':0.,'end_s':float(times[-1]),'regular_step_s':1 if qid in ['Q1','Q2'] else 60,"
+      },
+      {
+        "line": 501,
+        "text": "                     'critical_event_s':provenance['event_s'] if qid in ['Q3','Q4'] else None,"
+      },
+      {
+        "line": 504,
+        "text": "        'radius_grid':{'fixed_radii_cm':RADII_CM,'surface_column':qid=='Q4','surface_coordinate_sheet':'半径' if qid=='Q4' else None},"
+      },
+      {
+        "line": 585,
+        "text": "                        if qid=='Q4':"
+      },
+      {
+        "line": 667,
+        "text": "        settings={'question':'Q23' if qid in ['Q2','Q3'] else qid,"
+      },
+      {
+        "line": 671,
+        "text": "        if qid=='Q2':"
+      },
+      {
+        "line": 676,
+        "text": "            if qid=='Q2' and (run.eventS is None or run.endS<10800.):"
+      }
+    ]
+  },
+  "prior_selected_cell_review": {
+    "path": "notes/A-modeling/2026-09-11/effects-rounding/rounding-review.json",
+    "bytes": 152862,
+    "sha256": "66a7a31be75254c1d220d4e2dd7a2743cf1899fcdaaa4f1c5d34036422eaa9ac"
+  },
+  "Q2_5400s_actual_selected_cells": [
+    {
+      "cell": "A5402",
+      "value": 5400.0,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "B5402",
+      "value": 45.8468,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "C5402",
+      "value": 45.8503,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "D5402",
+      "value": 45.8609,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "E5402",
+      "value": 45.8786,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "F5402",
+      "value": 45.9032,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "G5402",
+      "value": 45.9348,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "H5402",
+      "value": 45.9732,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "I5402",
+      "value": 46.0184,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "J5402",
+      "value": 46.0701,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "K5402",
+      "value": 46.1284,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "L5402",
+      "value": 46.193,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "M5402",
+      "value": 46.2637,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "N5402",
+      "value": 46.3405,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "O5402",
+      "value": 46.4232,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "P5402",
+      "value": 46.5114,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "Q5402",
+      "value": 46.6051,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "R5402",
+      "value": 46.7038,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "S5402",
+      "value": 46.8071,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "T5402",
+      "value": 46.9147,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "U5402",
+      "value": 47.0259,
+      "text": null,
+      "format": "0.0000"
+    },
+    {
+      "cell": "V5402",
+      "value": 47.1401,
+      "text": null,
+      "format": "0.0000"
+    }
+  ],
+  "Q3_paper_CSV": {
+    "source": {
+      "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q3_paper_moisture.csv",
+      "bytes": 466,
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+    },
+    "header": [
+      "时间/h",
+      "0",
+      "0.5",
+      "1",
+      "1.5",
+      "2"
+    ],
+    "first": [
+      "6.0000",
+      "1.0170",
+      "0.9881",
+      "0.9015",
+      "0.7550",
+      "0.5328"
+    ],
+    "last": [
+      "57.4724",
+      "0.1500",
+      "0.1477",
+      "0.1402",
+      "0.1249",
+      "0.0527"
+    ]
+  },
+  "Q4_paper_CSV": {
+    "source": {
+      "path": "paper_output/results/code_delivery/camel_final_v2/outputs/q4_paper_moisture.csv",
+      "bytes": 390,
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    "header": [
+      "时间/h",
+      "0",
+      "0.5",
+      "1",
+      "1.5",
+      "2",
+      "药材表面"
+    ],
+    "first": [
+      "6.0000",
+      "1.7196",
+      "1.5377",
+      "1.0226",
+      "",
+      "",
+      "0.4207"
+    ],
+    "last": [
+      "51.0906",
+      "0.1500",
+      "0.1413",
+      "0.1081",
+      "",
+      "",
+      "0.0526"
+    ]
+  },
+  "reference_screenshots": [
+    {
+      "path": "C:/Users/SHICHE~1/AppData/Local/Temp/codex-clipboard-92b7eba5-0852-4c78-8111-7aa27f552f01.png",
+      "sha256": "140cc6d532e71bcf79144296f532f0593ac89b853494250058091927b41b772c",
+      "visually_read": true,
+      "used_as_instruction": false
+    },
+    {
+      "path": "C:/Users/SHICHE~1/AppData/Local/Temp/codex-clipboard-aa7bb9cb-22c5-42de-b32b-5b426cfe97b1.png",
+      "sha256": "16e6712d5214288af4b322c4e1058499d9b571a68d2444951029949274db490c",
+      "visually_read": true,
+      "used_as_instruction": false
+    },
+    {
+      "path": "C:/Users/SHICHE~1/AppData/Local/Temp/codex-clipboard-b441718a-0e88-463b-b9c4-ff38a7c8c17f.png",
+      "sha256": "02f75bf036b5174bf0e633d3eb7274289495448c97a095c2c9c011441849b77b",
+      "visually_read": true,
+      "used_as_instruction": false
+    },
+    {
+      "path": "C:/Users/SHICHE~1/AppData/Local/Temp/codex-clipboard-a9a44d8d-91a3-47ac-83bd-3fe8f609b496.png",
+      "sha256": "afb27cf87007d6ca0baedb02bcf9b782721ba9910891165d0c7f341247363a7e",
+      "visually_read": true,
+      "used_as_instruction": false
+    }
+  ],
+  "reviewed_at": "2026-09-11T01:50:27.362810+00:00",
+  "findings": [
+    {
+      "id": "Q2_SCOPE",
+      "judgment": "screenshot misleading",
+      "text": "Q2 entire-process model and complete every-second workbook; first 3 h limits paper tables only. Current shared Q23 trajectory ends206902 s."
+    },
+    {
+      "id": "Q2_SWITCH",
+      "judgment": "screenshot must be corrected",
+      "text": "Original Q2 expressly unifies Appendix3. From t=0 uniform28C/2.55; no Appendix2-to3 timed splice or Q1 final-state reuse."
+    },
+    {
+      "id": "OUTPUT_NOT_SOLVER_GRID",
+      "judgment": "scope correction",
+      "text": "21 requested physical output radii are not all3201 Q1 solver nodes. 60s Q3/Q4 sampling is not forced solver step size."
+    },
+    {
+      "id": "EVENT_NOT_FOR_LOOP",
+      "judgment": "scope correction",
+      "text": "Adaptive terminal events valid;240h failure/search horizon is not fixed drying answer. No event triggers completion failure."
+    },
+    {
+      "id": "Q4_TEMPLATE_DISCOVERY",
+      "judgment": "earlier overstatement corrected",
+      "text": "Fresh exact original result4 header is time,0,0.1,0.2,ellipsis,surface. OnlySheet1. No mandatory fixed2cm column and no original radius sheet. Current0..2cm union grid+surface and auxiliary radius are implementation choices, not official-confirmed extended format."
+    },
+    {
+      "id": "Q4_COLUMN_MEANING",
+      "judgment": "conditioned advice",
+      "text": "Moving actual surface is correct. Current fixed-radius columns stayfixed; outsideNone and separatex1surface. Do not reusefixed2cm as current surface or overwrite per-rowcoordinates."
+    },
+    {
+      "id": "SHEET_SCOPE",
+      "judgment": "screenshot wrong if universal",
+      "text": "Q1/Q2 two temperature/moisture sheets;Q3 concentrationonly;Q4 concentrationSheet1 plus optional auxiliaryradius, nottwo temperature/moisture sheets."
+    }
+  ],
+  "new_full_workbook_validation": false,
+  "new_verification_scope": "Fresh PDF text pp1-3; four original template exact headers; four current actual sheet names/headers; Q1 final row and Q4 six-hour row; Q2 key cell reused from immediate preceding independently-run rounding readback. Complete counts are recorded export-contract evidence, not a new scan of9m cells."
+}

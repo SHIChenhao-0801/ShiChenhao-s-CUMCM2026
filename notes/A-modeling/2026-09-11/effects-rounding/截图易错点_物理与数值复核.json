@@ -1,0 +1,141 @@
+{
+  "status": "PHYSICS_NUMERICS_REVIEW_COMPLETE_WITH_LOCAL_CHECKS",
+  "review_scope": "Four screenshots read; cylindrical center, Q1 decoupling/Q23 coupling, Robin and SI, live properties, Q4 material shrinkage, implicit BDF limits. Output/template mapping belongs to parallel audit.",
+  "confirmed_comment_issue": "review_delivery/dryingCore.py:32 labels original air moisture as kg water/kg dry material without source support; suggest explicit effective-Ceq convention, do not change frozen code during audit.",
+  "screenshot_corrections": ["Q1 baseline is mathematically decoupled despite joint implementation", "Q2 uses Appendix 3 from t=0 rather than Appendix 2/3 switching", "Fixed normalized material grid is valid while physical radius moves", "Negative C has possible boundary, unit, constitutive, spatial and nonlinear/temporal causes; explicit CFL is not a universal implicit BDF constraint"],
+  "primary_time_algorithm_source": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html",
+  "created_at_utc": "2026-09-11T01:45:55.828013+00:00",
+  "new_PDE_solves": 0,
+  "process_exit_code": 0,
+  "tool_wall_seconds": 1.5665896,
+  "probe_source": "from pathlib import Path\nimport sys,json,hashlib,warnings\nfrom datetime import datetime,timezone\nimport numpy as np\nsys.path.insert(0,str(Path('paper_output/code/review_delivery').resolve()))\nimport dryingCore as dc\nimport analyticJacobian as aj\nout=Path('notes/A-modeling/2026-09-11/effects-rounding/截图易错点_物理与数值复核.json')\nresult={'status':'LOCAL_IMPLEMENTATION_CHECKS','created_at_utc':datetime.now(timezone.utc).isoformat(),'new_PDE_solves':0,'process_exit_code':None,'checks':[]}\nwith warnings.catch_warnings(record=True) as caught:\n    warnings.simplefilter('always')\n    m=dc.RadialModel(dc.Settings(question='Q1',intervals=16,faceScheme='kirchhoff',constantD=5e-9))\n    y=m.initial();y[:-1:2]=301.15+8*m.x**2;y[1:-1:2]=2.55-.5*m.x**2\n    f=m.rhs(1000.,y)\n    expectedT=4*(.36/(820*2600))*8/.02**2\n    expectedC=4*5e-9*(-.5)/.02**2\n    result['checks'].append({'id':'CENTER_POLYNOMIAL','N':16,'T_center_rhs_K_s':float(f[0]),'expected_T':expectedT,'C_center_rhs_per_s':float(f[1]),'expected_C':expectedC,'center_weight':float(m.w[0]),'all_finite':bool(np.isfinite(f).all()),'pass':bool(abs(f[0]-expectedT)<1e-12 and abs(f[1]-expectedC)<1e-15)})\n    for q in ['Q1','Q23','Q4']:\n        m=dc.RadialModel(dc.Settings(question=q,intervals=12,faceScheme='kirchhoff',shrink=(q=='Q4')))\n        y=m.initial();y[:-1:2]=309+6*m.x**2;y[1:-1:2]=2.4-1.9*m.x**2\n        J=aj.jacobian(m,18000.,y).toarray()\n        iT=np.arange(0,2*m.n,2);iC=iT+1\n        tc=float(np.max(abs(J[np.ix_(iT,iC)])));ct=float(np.max(abs(J[np.ix_(iC,iT)])))\n        T=y[:-1:2];C=y[1:-1:2]\n        f=m.rhs(18000.,y)\n        yC=y.copy();yC[1:-1:2]*=.9;fC=m.rhs(18000.,yC)\n        yT=y.copy();yT[:-1:2]+=3;fT=m.rhs(18000.,yT)\n        changedTC=float(np.max(abs(fC[:-1:2]-f[:-1:2])))\n        changedCT=float(np.max(abs(fT[1:-1:2]-f[1:-1:2])))\n        d=m.properties(T,C)[3];dT=m.properties(T+3,C)[3];dC=m.properties(T,.9*C)[3]\n        result['checks'].append({'id':'CROSS_COUPLING_'+q,'max_abs_dTdot_dC':tc,'max_abs_dCdot_dT':ct,'direct_C_perturb_heat_change':changedTC,'direct_T_perturb_water_change':changedCT,'D_changes_with_C':bool(np.any(dC!=d)),'D_changes_with_T':bool(np.any(dT!=d)),'pass':bool((tc==ct==changedTC==changedCT==0) if q=='Q1' else (tc>0 and ct>0 and changedTC>0 and changedCT>0))})\n    for T,C,label in [(300.,.2,'DRYING_HEATING'),(340.,.02,'WETTING_COOLING')]:\n        m=dc.RadialModel(dc.Settings(question='Q1',intervals=12,faceScheme='kirchhoff'))\n        y=m.initial();y[:-1:2]=T;y[1:-1:2]=C\n        f=m.rhs(18000.,y);R=float(m.radius(18000.));Ta,Ce=m.environment(18000.)\n        meanT=float(np.dot(2*m.w,f[:-1:2]));meanC=float(np.dot(2*m.w,f[1:-1:2]))\n        expectedT=2*25*(float(Ta)-T)/(R*820*2600);expectedC=-2*8e-7*(C-float(Ce))/R\n        result['checks'].append({'id':'BOUNDARY_'+label,'T_uniform_K':T,'C_uniform':C,'air_T_K':float(Ta),'effective_Ceq':float(Ce),'surface_Tdot':float(f[-3]),'surface_Cdot':float(f[-2]),'mean_Tdot':meanT,'expected_mean_Tdot':expectedT,'mean_Cdot':meanC,'expected_mean_Cdot':expectedC,'mass_residual':meanC+float(f[-1]),'pass':bool(abs(meanT-expectedT)<1e-15 and abs(meanC-expectedC)<1e-18)})\n    m=dc.RadialModel(dc.Settings(question='Q4',intervals=12,faceScheme='kirchhoff',shrink=True,constantD=5e-9,constantThermal=True))\n    y=m.initial();y[:-1:2]=301.15+8*m.x**2;y[1:-1:2]=2.55-.5*m.x**2\n    t=36000.;R=float(m.radius(t));f=m.rhs(t,y)\n    expectedT=4*(.36/(820*2600))*8/R**2;expectedC=4*5e-9*(-.5)/R**2\n    result['checks'].append({'id':'SHRINK_R_MINUS_2_CENTER','time_s':t,'radius_m':R,'Tdot_center':float(f[0]),'expected_Tdot_center':expectedT,'Cdot_center':float(f[1]),'expected_Cdot_center':expectedC,'mass_residual':float(np.dot(2*m.w,f[1:-1:2])+f[-1]),'pass':bool(abs(f[0]-expectedT)<1e-12 and abs(f[1]-expectedC)<1e-15)})\nresult['warnings']=[str(w.message) for w in caught]\npaths=['paper_output/code/review_delivery/dryingCore.py','paper_output/code/review_delivery/analyticJacobian.py','paper_output/code/modeling/drying_core.py','problem_files/CUMCM2026Problems/A题/A题.pdf','paper_output/code/review_delivery/q1Model.py','paper_output/code/review_delivery/q2Model.py','paper_output/code/review_delivery/q4Model.py']\nresult['sources']=[{'path':p,'sha256':hashlib.sha256(Path(p).read_bytes()).hexdigest(),'bytes':Path(p).stat().st_size} for p in paths]\nresult['all_local_checks_pass']=all(c['pass'] for c in result['checks'])\nresult['limitations']=['No new PDE integration','Manufactured/local states do not prove global convergence or positivity','Q1 decoupling refers to supplied Q1 properties and no latent/temperature-dependent moisture boundary','Source comment on original air concentration basis is misleading, numerical effective boundary unchanged']\nout.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\n',encoding='utf8')\nprint(json.dumps(result,ensure_ascii=False,indent=2))\nassert result['all_local_checks_pass']\n",
+  "checks": [
+    {
+      "id": "CENTER_POLYNOMIAL",
+      "N": 16,
+      "T_center_rhs_K_s": 0.013508442776735458,
+      "expected_T": 0.013508442776735458,
+      "C_center_rhs_per_s": -2.4999999999999998e-05,
+      "expected_C": -2.4999999999999998e-05,
+      "center_weight": 0.00048828125,
+      "all_finite": true,
+      "pass": true
+    },
+    {
+      "id": "CROSS_COUPLING_Q1",
+      "max_abs_dTdot_dC": 0.0,
+      "max_abs_dCdot_dT": 0.0,
+      "direct_C_perturb_heat_change": 0.0,
+      "direct_T_perturb_water_change": 0.0,
+      "D_changes_with_C": true,
+      "D_changes_with_T": false,
+      "pass": true
+    },
+    {
+      "id": "CROSS_COUPLING_Q23",
+      "max_abs_dTdot_dC": 0.041585895039014054,
+      "max_abs_dCdot_dT": 2.398084510116343e-05,
+      "direct_C_perturb_heat_change": 0.004030465136155733,
+      "direct_T_perturb_water_change": 0.00015109457506095854,
+      "D_changes_with_C": true,
+      "D_changes_with_T": true,
+      "pass": true
+    },
+    {
+      "id": "CROSS_COUPLING_Q4",
+      "max_abs_dTdot_dC": 0.05260071872951531,
+      "max_abs_dCdot_dT": 1.0438872045265818e-05,
+      "direct_C_perturb_heat_change": 0.0042975873268664075,
+      "direct_T_perturb_water_change": 6.577153261869965e-05,
+      "D_changes_with_C": true,
+      "D_changes_with_T": true,
+      "pass": true
+    },
+    {
+      "id": "BOUNDARY_DRYING_HEATING",
+      "T_uniform_K": 300.0,
+      "C_uniform": 0.2,
+      "air_T_K": 323.15,
+      "effective_Ceq": 0.05,
+      "surface_Tdot": 0.33268133008662254,
+      "surface_Cdot": -0.0001470638297872339,
+      "mean_Tdot": 0.027145872420262635,
+      "expected_mean_Tdot": 0.027145872420262642,
+      "mean_Cdot": -1.2000000000000002e-05,
+      "expected_mean_Cdot": -1.2000000000000002e-05,
+      "mass_residual": -1.6940658945086007e-21,
+      "pass": true
+    },
+    {
+      "id": "BOUNDARY_WETTING_COOLING",
+      "T_uniform_K": 340.0,
+      "C_uniform": 0.02,
+      "air_T_K": 323.15,
+      "effective_Ceq": 0.05,
+      "surface_Tdot": -0.24214602211488567,
+      "surface_Cdot": 2.941276595744678e-05,
+      "mean_Tdot": -0.019758442776735486,
+      "expected_mean_Tdot": -0.01975844277673549,
+      "mean_Cdot": 2.4000000000000007e-06,
+      "expected_mean_Cdot": 2.4e-06,
+      "mass_residual": 8.470329472543003e-22,
+      "pass": true
+    },
+    {
+      "id": "SHRINK_R_MINUS_2_CENTER",
+      "time_s": 36000.0,
+      "radius_m": 0.01273,
+      "Tdot_center": 0.033343291670145714,
+      "expected_Tdot_center": 0.033343291670153284,
+      "Cdot_center": -6.170824465344518e-05,
+      "expected_Cdot_center": -6.170824465344342e-05,
+      "mass_residual": 0.0,
+      "pass": true
+    }
+  ],
+  "warnings": [],
+  "sources": [
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+      "bytes": 21525
+    },
+    {
+      "path": "paper_output/code/review_delivery/analyticJacobian.py",
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+      "bytes": 17600
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "bytes": 19944
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "bytes": 553320
+    },
+    {
+      "path": "paper_output/code/review_delivery/q1Model.py",
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1",
+      "bytes": 532
+    },
+    {
+      "path": "paper_output/code/review_delivery/q2Model.py",
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33",
+      "bytes": 550
+    },
+    {
+      "path": "paper_output/code/review_delivery/q4Model.py",
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009",
+      "bytes": 584
+    }
+  ],
+  "all_local_checks_pass": true,
+  "limitations": [
+    "No new PDE integration",
+    "Manufactured/local states do not prove global convergence or positivity",
+    "Q1 decoupling refers to supplied Q1 properties and no latent/temperature-dependent moisture boundary",
+    "Source comment on original air concentration basis is misleading, numerical effective boundary unchanged"
+  ]
+}
