@@ -1,0 +1,24 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+                 id numericCount uIdentical exactIdentical edgesIdentical
+1      baseline_N20           20       TRUE           TRUE           TRUE
+2     candidate_N40           40       TRUE           TRUE           TRUE
+3     candidate_N80           80       TRUE           TRUE           TRUE
+4    candidate_N160          160       TRUE           TRUE           TRUE
+5 negative_flat_N40           40       TRUE           TRUE           TRUE
+6          time_N80           80       TRUE           TRUE           TRUE
+7       repeat_N160          160       TRUE           TRUE           TRUE
+8 heldout_lambda1p5          160       TRUE           TRUE           TRUE
+  maxUAbsDifference maxExactAbsDifference
+1                 0                     0
+2                 0                     0
+3                 0                     0
+4                 0                     0
+5                 0                     0
+6                 0                     0
+7                 0                     0
+8                 0                     0
+ALL_EIGHT_TRIALS_ARRAYS_IDENTICAL

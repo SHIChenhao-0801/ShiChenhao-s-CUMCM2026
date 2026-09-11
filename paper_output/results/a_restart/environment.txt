@@ -1,0 +1,27 @@
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=en_US.UTF-8  LC_CTYPE=en_US.UTF-8    LC_MONETARY=en_US.UTF-8
+[4] LC_NUMERIC=C            LC_TIME=en_US.UTF-8    
+
+time zone: Asia/Shanghai
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] Matrix_1.7-5
+
+loaded via a namespace (and not attached):
+[1] compiler_4.6.1 grid_4.6.1     lattice_0.22-9
+best_id candidate_N160
+random_seed not_applicable_deterministic
+batch_started_utc 2026-09-11 07:17:08 UTC
+batch_ended_utc 2026-09-11 07:17:10 UTC
+elapsed_seconds 1.89092087745667

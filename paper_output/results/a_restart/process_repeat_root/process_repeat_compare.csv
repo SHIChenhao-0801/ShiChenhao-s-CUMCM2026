@@ -1,0 +1,9 @@
+"id","numericCount","uIdentical","exactIdentical","edgesIdentical","maxUAbsDifference","maxExactAbsDifference"
+"baseline_N20",20,TRUE,TRUE,TRUE,0,0
+"candidate_N40",40,TRUE,TRUE,TRUE,0,0
+"candidate_N80",80,TRUE,TRUE,TRUE,0,0
+"candidate_N160",160,TRUE,TRUE,TRUE,0,0
+"negative_flat_N40",40,TRUE,TRUE,TRUE,0,0
+"time_N80",80,TRUE,TRUE,TRUE,0,0
+"repeat_N160",160,TRUE,TRUE,TRUE,0,0
+"heldout_lambda1p5",160,TRUE,TRUE,TRUE,0,0

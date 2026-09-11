@@ -1,0 +1,12 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous> -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file 'D:/Document/f0e-&e;:f(!/2026CUMCM/paper_output/results/a_restart/process_repeat_root/process_repeat_compare.csv': Invalid argument
+Execution halted

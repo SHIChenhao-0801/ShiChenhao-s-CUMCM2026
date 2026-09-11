@@ -1,0 +1,9 @@
+baseline_N20 error 4.30765281318e-05 mass 2.22044604925e-16 
+candidate_N40 error 1.07922477881e-05 mass 3.27515792264e-15 
+candidate_N80 error 2.70284195358e-06 mass 4.4408920985e-15 
+candidate_N160 error 6.76179642611e-07 mass 6.28386231938e-14 
+negative_flat_N40 error 0.087979787276 mass -4.77395900589e-15 
+time_N80 error 2.70333308727e-06 mass 7.16093850883e-15 
+repeat_N160 error 6.76179642611e-07 mass 6.28386231938e-14 
+heldout_lambda1p5 error 2.97658457121e-06 mass 7.11652958785e-14 
+ALL_CHECKS_PASS; best: candidate_N160 
