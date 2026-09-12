@@ -61,6 +61,7 @@ PRODUCTION_EVENT_H = {"Q23": 57.47230195056044, "Q4": 51.09057478683054}
 
 SCALES = {"d": 1.0, "k": 1.0}
 _ORIGINAL_PROPERTIES = RadialModel.properties
+_ORIGINAL_WATER_FLUX = RadialModel.water_internal_flux
 
 
 def _scaled_properties(self, T, C):
@@ -68,7 +69,24 @@ def _scaled_properties(self, T, C):
     return rho, cp, k * SCALES["k"], D * SCALES["d"]
 
 
+def _scaled_water_flux(self, T, C, D):
+    """Scale the internal water flux, which is the only place D enters the model.
+
+    IMPORTANT: under face_scheme='kirchhoff' the solver does not use the D array
+    returned by properties(); it evaluates the Kirchhoff primitive with a
+    hard-coded per-question D0 (see drying_core.water_internal_flux, the line
+    `return self.internal_faces * D0 * thermal_factor * difference / self.dx`).
+    Scaling properties() alone therefore has NO effect on dScale, which is why an
+    earlier Morris run reported mu* = 0 for dScale. The Kirchhoff flux is exactly
+    linear in D0, so multiplying the returned flux by the scale factor is the exact
+    realisation of a D pre-factor uncertainty. The surface Robin flux uses beta and
+    is deliberately NOT scaled.
+    """
+    return _ORIGINAL_WATER_FLUX(self, T, C, D) * SCALES["d"]
+
+
 RadialModel.properties = _scaled_properties
+RadialModel.water_internal_flux = _scaled_water_flux
 
 # name, unit, baseline, low, high
 PARAMETERS = [
@@ -216,6 +234,31 @@ def sobol(question, subset, baseSamples, seed=7):
             "indices": rows, "elapsedSeconds": time.perf_counter() - started}
 
 
+def scan(stageName, parameter, values, questions=("Q23", "Q4")):
+    """One-parameter scan used to repair the dScale entry and to validate kScale."""
+    rows = []
+    for question in questions:
+        for value in values:
+            point = baseline_point()
+            low = next(p[3] for p in PARAMETERS if p[0] == parameter)
+            high = next(p[4] for p in PARAMETERS if p[0] == parameter)
+            point[parameter] = (value - low) / (high - low)
+            y = evaluate(question, point)
+            rows.append({"question": question, "parameter": parameter,
+                         "value": value, "eventH": y})
+            print(f"  scan {question} {parameter}={value:g} -> {y:.6f} h", flush=True)
+    byQ = {}
+    for question in questions:
+        ys = [r["eventH"] for r in rows if r["question"] == question]
+        lo, hi = min(ys), max(ys)
+        base = next((r["eventH"] for r in rows
+                     if r["question"] == question and abs(r["value"] - 1.0) < 1e-12), None)
+        byQ[question] = {"minH": lo, "maxH": hi, "spanH": hi - lo,
+                         "baselineH": base,
+                         "relativeSpanPercent": None if not base else 100.0 * (hi - lo) / base}
+    return {"stage": stageName, "parameter": parameter, "rows": rows, "summary": byQ}
+
+
 def main():
     stage = sys.argv[1] if len(sys.argv) > 1 else "morris"
     OUT.mkdir(parents=True, exist_ok=True)
@@ -227,6 +270,11 @@ def main():
         trajectories = int(sys.argv[2]) if len(sys.argv) > 2 else 20
         result = {"control": control_check(),
                   "morris": [morris(q, trajectories) for q in ("Q23", "Q4")]}
+    elif stage == "dscale":
+        result = {"control": control_check(),
+                  "scan": scan("dscale", "dScale", [0.7, 0.875, 1.0, 1.05, 1.225, 1.4])}
+    elif stage == "kscale":
+        result = {"scan": scan("kscale", "kScale", [0.85, 0.925, 1.0, 1.075, 1.15])}
     elif stage == "sobol":
         subset = sys.argv[2].split(",")
         base = int(sys.argv[3]) if len(sys.argv) > 3 else 64
@@ -235,8 +283,8 @@ def main():
         raise SystemExit(f"unknown stage {stage}")
     path = OUT / f"{stage}.json"
     path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({k: v for k, v in result.items() if k != "morris"},
-                     ensure_ascii=False)[:2000], flush=True)
+    print(json.dumps(result.get("scan", {}).get("summary", {}), ensure_ascii=False),
+          flush=True)
     return 0
 
 
