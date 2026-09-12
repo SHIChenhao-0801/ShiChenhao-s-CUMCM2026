@@ -178,5 +178,15 @@
     "figure2GuidePage": 3,
     "paperModified": false,
     "audit": "paper_output/qa/figure_guide_20260912/final_audit.json"
+  },
+  "six_figure_data_package": {
+    "path": "paper_output/handoff/A题六图绘图资料包_含全部数据.zip",
+    "sha256": "f2b4355e9c637a9001edf683ed98fdeadbc036865f25599084ee9610003d78fd",
+    "status": "PORTABLE_DATA_PACKAGE_VERIFIED",
+    "tables": 14,
+    "dataRows": 4627,
+    "originalFiles": 15,
+    "qa": "paper_output/qa/figure_package_20260912/final_package_audit.json",
+    "scope": "Six plotting figures only; supersedes path-only handoff. Does not change modeling/submission review status."
   }
 }

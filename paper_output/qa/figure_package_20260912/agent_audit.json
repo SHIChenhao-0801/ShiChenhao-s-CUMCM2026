@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "model_runs": 0,
+  "checks": [
+    {
+      "name": "all_original_source_copies",
+      "status": "PASS",
+      "files": 15
+    },
+    {
+      "name": "figure_1_temperature",
+      "status": "PASS",
+      "rows": 121,
+      "columns": 8,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_1_moisture",
+      "status": "PASS",
+      "rows": 121,
+      "columns": 8,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_2_observed_0_4h",
+      "status": "PASS",
+      "rows": 241,
+      "columns": 3,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_2_assumed_platform_4_60h",
+      "status": "PASS",
+      "rows": 2,
+      "columns": 4,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_3_temperature_0_4h",
+      "status": "PASS",
+      "rows": 242,
+      "columns": 3,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_3_moisture_to_event",
+      "status": "PASS",
+      "rows": 3451,
+      "columns": 3,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_4_centre_near_event",
+      "status": "PASS",
+      "rows": 4,
+      "columns": 4,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_4_drying_main",
+      "status": "PASS",
+      "rows": 266,
+      "columns": 5,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_4_maximum_near_event",
+      "status": "PASS",
+      "rows": 2,
+      "columns": 4,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_4_event_markers",
+      "status": "PASS",
+      "rows": 2,
+      "strictly_feasible_report_point": true
+    },
+    {
+      "name": "figure_5_radius_observed",
+      "status": "PASS",
+      "rows": 145,
+      "columns": 2,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "figure_5_moisture_profiles_xy_pairs",
+      "status": "PASS",
+      "rows": 21,
+      "columns": 12,
+      "maximum_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "figure_5_selected_times_and_radii",
+      "status": "PASS",
+      "rows": 6,
+      "exact_existing_times": true,
+      "endpoint_reaches_surface": true
+    },
+    {
+      "name": "figure_6_scenario_comparison",
+      "status": "PASS",
+      "rows": 3,
+      "columns": 3,
+      "maximum_abs_error": 0.0
+    },
+    {
+      "name": "manifest_completeness",
+      "status": "PASS",
+      "tables": 14,
+      "total_data_rows": 4627
+    },
+    {
+      "name": "xlsx_vs_independently_verified_csv",
+      "status": "PASS",
+      "numeric_cells": 15681,
+      "maximum_abs_error": 0.0,
+      "external_links": 0
+    },
+    {
+      "name": "docx_portable_table_references",
+      "status": "PASS",
+      "all_14_csv_and_sheet_names": true,
+      "local_drive_paths": 0
+    }
+  ],
+  "scope": "Frozen-source-to-CSV independent comparison; copied input hashes; manifest paths and data counts. XLSX/Word checks run when final assets exist. ZIP audit belongs to root final check.",
+  "package": "paper_output/handoff/six_figures_20260912",
+  "final_assets": [
+    {
+      "file": "六图绘图数据.xlsx",
+      "sha256": "ef23e4b4bcc96bcc3ccbaf2e17e6ff2e291e059e51befe1c5baae371ee1848e9"
+    },
+    {
+      "file": "六图绘图说明.docx",
+      "sha256": "ee35b6a949f129642e856d78671c8418f9e6912f39519756a78b93a446132df6"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "status": "PASS",
+  "task": "six_figure_portable_data",
+  "input": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook_data.json",
+  "out": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\handoff\\six_figures_20260912\\六图绘图数据.xlsx",
+  "sheets": [
+    {
+      "name": "图1温度",
+      "rows": 121,
+      "columns": [
+        "r_cm",
+        "T_100s",
+        "T_300s",
+        "T_600s",
+        "T_900s",
+        "T_1200s",
+        "T_1500s",
+        "T_1800s"
+      ],
+      "dataRange": "A7:H127",
+      "source": "原始数据/fig_q1_profiles_data.npz；radii_m×100，temperature_C转置",
+      "csv": "CSV/图1/temperature.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\01_图1温度.png",
+      "previewSHA256": "e23eedfdaf03261eda220b322257abf8afb6c2c7ce51a0e4fafeab731da318e3",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图1含水率",
+      "rows": 121,
+      "columns": [
+        "r_cm",
+        "C_100s",
+        "C_300s",
+        "C_600s",
+        "C_900s",
+        "C_1200s",
+        "C_1500s",
+        "C_1800s"
+      ],
+      "dataRange": "A7:H127",
+      "source": "原始数据/fig_q1_profiles_data.npz；radii_m×100，C转置",
+      "csv": "CSV/图1/moisture.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\02_图1含水率.png",
+      "previewSHA256": "2b65e91fdc35f1a5621d605f42a24b86c17787fc7dbcdd5f74ccb03562c29e5a",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图2观测",
+      "rows": 241,
+      "columns": [
+        "time_h",
+        "temperature_C",
+        "air_moisture_kg_per_kg"
+      ],
+      "dataRange": "A7:C247",
+      "source": "原始数据/A_environment_observed.csv",
+      "csv": "CSV/图2/observed_0_4h.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\03_图2观测.png",
+      "previewSHA256": "19f2f697d7acb32c408019fa1062e62a6caec2ca7257881d9dc6da008f6f59a6",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图2假设平台",
+      "rows": 2,
+      "columns": [
+        "time_h",
+        "temperature_C",
+        "boundary_moisture_kg_per_kg",
+        "endpoint_included"
+      ],
+      "dataRange": "A7:D8",
+      "source": "原始数据/Q23/summary.json；settings名义延拓，展示终点60h",
+      "csv": "CSV/图2/assumed_platform_4_60h.csv",
+      "renderedRange": "A1:H8",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\04_图2假设平台.png",
+      "previewSHA256": "c08e0bb7e0bfa7ac5a88899ce3065284d30112acc3805bf9fa52e0a77e467310",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图3温度",
+      "rows": 242,
+      "columns": [
+        "time_h",
+        "centre_T_C",
+        "surface_T_C"
+      ],
+      "dataRange": "A7:C248",
+      "source": "原始数据/Q23/sampled_solution.npz；times_s/3600，T_K首末列",
+      "csv": "CSV/图3/temperature_0_4h.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\05_图3温度.png",
+      "previewSHA256": "d4dc69b4261b02b387dced26ed1aee0b08767ed7e8422fe6aba2eb369744a4a9",
+      "previewReused": false,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图3含水率",
+      "rows": 3451,
+      "columns": [
+        "time_h",
+        "centre_C_kg_per_kg",
+        "surface_C_kg_per_kg"
+      ],
+      "dataRange": "A7:C3457",
+      "source": "原始数据/Q23/sampled_solution.npz；times_s/3600，C首末列",
+      "csv": "CSV/图3/moisture_to_event.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\06_图3含水率.png",
+      "previewSHA256": "8f8f8fee99bb2b498608b6e149db1e7e77981c274bad65018b489232ae870371",
+      "previewReused": false,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图4主曲线",
+      "rows": 266,
+      "columns": [
+        "time_h",
+        "centre_C",
+        "surface_C",
+        "max_C",
+        "threshold_C"
+      ],
+      "dataRange": "A7:E272",
+      "source": "原始数据/fig_q3_drying_data.npz；times_s/3600，centre_C、surface_C、max_C",
+      "csv": "CSV/图4/drying_main.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\07_图4主曲线.png",
+      "previewSHA256": "516ddfdf7695ca202f32be0832f8ed7cea35241328067e152c67d95ddf5be418",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图4全域放大",
+      "rows": 2,
+      "columns": [
+        "time_s",
+        "delta_time_s",
+        "max_C",
+        "max_C_minus_threshold"
+      ],
+      "dataRange": "A7:D8",
+      "source": "原始数据/fig_q3_drying_data.npz；仅筛选已有点，未新增求解",
+      "csv": "CSV/图4/maximum_near_event.csv",
+      "renderedRange": "A1:H8",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\08_图4全域放大.png",
+      "previewSHA256": "a5266b2f4637e6ae42587f66e1eb754a42ef5f19a7295bc99c053234724501ef",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图4中心放大",
+      "rows": 4,
+      "columns": [
+        "time_s",
+        "delta_time_s",
+        "centre_C",
+        "centre_C_minus_threshold"
+      ],
+      "dataRange": "A7:D10",
+      "source": "原始数据/Q23/sampled_solution.npz；C首列，根前120s至实际终点",
+      "csv": "CSV/图4/centre_near_event.csv",
+      "renderedRange": "A1:H10",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\09_图4中心放大.png",
+      "previewSHA256": "fe51e8452b0433f60758c489fa488cc8a78b7724150f14a6afa4e7e43922872d",
+      "previewReused": false,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图4事件标记",
+      "rows": 2,
+      "columns": [
+        "kind",
+        "time_s",
+        "time_h",
+        "delta_time_s",
+        "max_C",
+        "max_C_minus_threshold",
+        "strictly_below"
+      ],
+      "dataRange": "A7:G8",
+      "source": "原始数据/Q23/summary.json；completion",
+      "csv": "CSV/图4/event_markers.csv",
+      "renderedRange": "A1:H8",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\10_图4事件标记.png",
+      "previewSHA256": "39aae443fdf117637e7e927aa8095957f907ea839ff746f2b92ca6ba1a8c9921",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图5半径",
+      "rows": 145,
+      "columns": [
+        "time_h",
+        "radius_cm"
+      ],
+      "dataRange": "A7:B151",
+      "source": "原始数据/A_radius_observed.csv",
+      "csv": "CSV/图5/radius_observed.csv",
+      "renderedRange": "A1:H15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\11_图5半径.png",
+      "previewSHA256": "49267516c55dc108a3bec461262fe2e13e9191eb5046725aa32948e532f19936",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图5含水率剖面",
+      "rows": 21,
+      "columns": [
+        "r_0h_cm",
+        "C_0h",
+        "r_6h_cm",
+        "C_6h",
+        "r_12h_cm",
+        "C_12h",
+        "r_24h_cm",
+        "C_24h",
+        "r_48h_cm",
+        "C_48h",
+        "r_event_cm",
+        "C_event"
+      ],
+      "dataRange": "A7:L27",
+      "source": "原始数据/Q4/sampled_solution.npz；r=material_x×radius_m×100，C原值；N6400",
+      "csv": "CSV/图5/moisture_profiles_xy_pairs.csv",
+      "renderedRange": "A1:L15",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\12_图5含水率剖面.png",
+      "previewSHA256": "a662809cbe85e841df7f4170b79fe13daf54ad79b3cc1229963a20fa5d27a8d4",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图5选定时刻",
+      "rows": 6,
+      "columns": [
+        "curve",
+        "time_s",
+        "time_h",
+        "radius_cm"
+      ],
+      "dataRange": "A7:D12",
+      "source": "原始数据/Q4/sampled_solution.npz；精确匹配保存时刻",
+      "csv": "CSV/图5/selected_times_and_radii.csv",
+      "renderedRange": "A1:H12",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\13_图5选定时刻.png",
+      "previewSHA256": "7a0b5b00323462f3e7c2772e577fda35067ee5924217d37078909d7d82369279",
+      "previewReused": true,
+      "artifactValuesExact": true
+    },
+    {
+      "name": "图6情景对比",
+      "rows": 3,
+      "columns": [
+        "p",
+        "Q23_event_h",
+        "Q4_event_h"
+      ],
+      "dataRange": "A7:C9",
+      "source": "原始数据/isotherm_closure.json；六条scenarios的顶层event_h",
+      "csv": "CSV/图6/scenario_comparison.csv",
+      "renderedRange": "A1:H9",
+      "preview": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\figure_package_20260912\\workbook\\14_图6情景对比.png",
+      "previewSHA256": "9e087eece40372f44d37d190827ebd1a04a140a39315260f48db82d978006163",
+      "previewReused": true,
+      "artifactValuesExact": true
+    }
+  ],
+  "recalculate": true,
+  "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "inputSHA256": "9f9fbfdc54d295073adc29900f913660115da255eab55b0f1d9b3a35f61a3b05",
+  "outputSHA256": "ef23e4b4bcc96bcc3ccbaf2e17e6ff2e291e059e51befe1c5baae371ee1848e9",
+  "finalAudit": "paper_output/qa/figure_package_20260912/workbook_independent_audit.json"
+}

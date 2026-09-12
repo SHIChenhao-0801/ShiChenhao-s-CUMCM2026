@@ -12,6 +12,12 @@
 - Python/C++正式代码必须通过Computer Use在Visual Studio实际打开、断点/变量/运行复现；CLI成功、AI阅读均不能等同GUI复现或用户人工审查。MATLAB通过GUI，R通过Rscript；默认CPU与有限预算。
 - 用户持续授权：每完成可复核工作单元由主代理检查后commit/push到私有GitHub仓库 SHIChenhao-0801/ShiChenhao-s-CUMCM2026/main，核对远端哈希才称备份；子代理不操作Git索引，不强推/删锁/丢弃修改。UTC04/10/16/22六小时同步安排见notes/workspace-maintenance。
 
+## 六图数据实际打包交付（2026-09-12，替代仅路径手册）
+
+- 用户纠正：绘图同学没有本地工作区，交接必须实际包含所有六图数据。已生成 `paper_output/handoff/A题六图绘图资料包_含全部数据.zip`，可直接转发。内含7页便携Word、14表Excel、14CSV、15原始文件以及说明/清单/校验。
+- 已将NPZ直接导出可绘图列，共4627行；图2观测与假设平台独立，图4中心样点/全节点最大值/严格事件独立，图5六组各自XY，图6统一N800。Word使用包内路径，无需对方自行转换NPZ。
+- ZIP 1978536字节，SHA256 `f2b4355e9c637a9001edf683ed98fdeadbc036865f25599084ee9610003d78fd`；实际异目录解压回读与CSV/Excel全部逐值比对通过。QA `paper_output/qa/figure_package_20260912/final_package_audit.json`。无新模型计算或论文修改。
+
 ## 独立六图绘图手册（2026-09-12）
 
 - 用户要求Word逐图说明要求和所需数据，已交付 `paper_output/paper/A题六张图绘制要求与数据说明.docx`，共7页（总览1页、每图1页）；每图完整路径、字段/形状、单位、时刻、图注和边界限制齐全，图2在手册第3页。QA `paper_output/qa/figure_guide_20260912/final_audit.json`。

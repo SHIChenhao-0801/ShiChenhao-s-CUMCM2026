@@ -1,0 +1,52 @@
+{
+  "version": "guide_v1",
+  "docx": "paper_output/handoff/six_figures_20260912/六图绘图说明.docx",
+  "docxSha256": "ee35b6a949f129642e856d78671c8418f9e6912f39519756a78b93a446132df6",
+  "pdf": "paper_output/qa/figure_package_20260912/guide_v1.pdf",
+  "pageCount": 7,
+  "pages": [
+    {
+      "page": 1,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-1.png",
+      "sha256": "b56eed328ddf17845dd38e2ebe431d8aa53b65b0b1ba1b55a4abca34bc63a4e2",
+      "text": "第 1 页\nA\n六\n明\n题\n图绘图说\n本资料包已包含六张图的全部作图数据。解压后，直接打开“六图绘图数据.xlsx”，按本说明选择工\n作表和数据列即可绘图。CSV 提供同一套数值，便于导入Origin、MATLAB 或其他绘图软件。\n包内文件或目录\n用途\n六图绘图数据.xlsx\n14 张数据工作表，包含实际数值。\nCSV/图1/ 至 CSV/图6/\n按图号分开的14 份CSV，与Excel 逐表对应。\n原始数据/\n15 份原始CSV、NPZ、JSON 及正文核对表，供追溯。\n请先阅读.txt、数据清单.json\n使用入口、表格行数、数据来源与转换记录。\n六\n索引\n张图\n图号\n绘图内容\n本说明页码\n图1\n指定时刻的径向温度与含水率\n2\n图2\n环境观测与4 小时后的平台延拓\n3\n图3\n中心与表面的热湿响应\n4\n图4\n全域达标过程与临界放大\n5\n图5\n收缩半径与六时刻含水率剖面\n6\n图6\n三组参数下的两类临界时长\n7\n数据使用\n定\n约\nExcel 第6 行为字段名、第7 行起为数值；CSV 第1 行为字段名、第2 行起为数值。所有数据都已实\n际放入资料包，无需访问作者电脑或另外下载数据。\n列名中的h、s、cm 和°C 表示已经转换好的单位，不再重复换算。含水率C 采用干基kg 水/kg 干物\n质；图2 环境水分指标为kg/kg，不能标成相对湿度%。\n图1、图3、图4 取N3200 结果，图5 取N6400 结果；图6 全部为N800 情景。Excel 用于直接绘图；\n需完整数值精度时取CSV 或原始文件。\n数学变量使用Times New Roman 斜体，单位及说明性下标用正体。颜色和线型同时区分曲线。以下论文页码对\n应当前稿，插图后按章节重新核对。\n"
+    },
+    {
+      "page": 2,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-2.png",
+      "sha256": "00b25fc745af3b36ab7fbf191fb27628dd1f88d486fab459d88cfb5e42d78f44",
+      "text": "第 2 页\n图1 指定\n刻的径向温度与含水率\n时\n论文位置：5.1.4，当前第9 页，表1 与表2 分析之后\n绘制左右两个面板：左图为温度，右图为干基含水率。两个面板均画100、300、600、900、1200、\n1500、1800 s 七条曲线，使用相同的颜色与图例次序。\n打开哪些数据表\nExcel：六图绘图数据.xlsx。下列CSV 均位于包内 CSV/图1/。\nExcel 工作表\nCSV 文件名\n数据行数\n图1 温度\ntemperature.csv\n121\n图1 含水率\nmoisture.csv\n121\n如何\n取横\n与\n选\n轴\n纵轴\n数据列\n取法\nr_cm\n两张表第一列均为横轴，范围0–2 cm。\nT_100s 至 T_1800s\n温度表后七列分别为七条曲线，纵轴T / °C。\nC_100s 至 C_1800s\n含水率表后七列分别为七条曲线，纵轴C / (kg/kg)。\n制要求\n绘\n每条曲线使用完整121 个径向点，中心为r=0，表面为r=2 cm。绘制模型曲线；不要只拿正文五个半\n径的四位数值拼接作图。\n共享图例写“时间 / s”。两张表的同一列序对应同一时刻。温度列已经是摄氏度，不再减273.15；半\n径已经是厘米，不再乘100。\n建\n注\n议图\n问题一在固定半径2 cm、附录2 物性下的径向温度与干基含水率分布，采用N3200 生产结果。表面\n先响应，内部含水率变化存在滞后。\n包内原始文件\n原始数据/fig_q1_profiles_data.npz；正文核对表在 原始数据/正文核对表/q1_paper_temperature.csv 和 \nq1_paper_moisture.csv。\n"
+    },
+    {
+      "page": 3,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-3.png",
+      "sha256": "dca5ba949139a98f3bbc70d752dfdcb5c2414ead9a05fec6f3447f488af1ef53",
+      "text": "第 3 页\n图2 \n境\n与\n环\n观测\n4 小\n后的平台延拓\n时\n论文位置：5.2.2，当前第11 页，边界延拓公式之后\n上图绘制0–4 h 环境温度观测点及线性插值，下图绘制环境水分指标；另用0–60 h 的长时间轴或小插\n图展示4 h 后的平台。t=4 h 处画竖线，并注明两侧含义。\n打开哪些数据表\nExcel：六图绘图数据.xlsx。下列CSV 均位于包内 CSV/图2/。\nExcel 工作表\nCSV 文件名\n数据行数\n图2 观测\nobserved_0_4h.csv\n241\n图2 假设平台\nassumed_platform_4_60h.csv\n2\n如何取数\n数据列\n取法\ntime_h\n横轴时间 / h。观测表241 行，0–4 h。\ntemperature_C\n温度纵轴 / °C。\nair_moisture_kg_per_kg\n观测表的环境水分指标，纵轴 / (kg/kg)。\nboundary_moisture_kg_per_kg\n平台表水分指标，作为独立假设系列。\nendpoint_included\n0 表示4 h 平台左端开放；1 表示60 h 绘图端点包含。此列不\n作纵轴。\n平台与\n的\n界\n观测\n边\n位置\n温度 / °C\n水分指标 / (kg/kg)\n0 h 观测\n28\n0.01963\n4 h 末次观测\n50.165\n0.04986\n4 h 右侧至60 h 假设平台\n50\n0.05\n观测点相邻连直线即为分段线性插值。平台表仅两行，是水平线的端点；应画虚线，无实测标记。4 h 平台端\n点用空心点或图注说明右侧极限，保留观测末点的小跳变。\n建\n注\n议图\n0–4 h 为环境观测与分段线性插值；4 h 后延拓为50°C 和0.05 kg/kg 的假设平台。空气指标映射为材料等效边界\n量属于模型假设。\n包内原始文件\n原始数据/A_environment_observed.csv；平台设置见 原始数据/Q23/summary.json 的settings。\n"
+    },
+    {
+      "page": 4,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-4.png",
+      "sha256": "c58524519eab964ff6142aded28330d9f5fd2f65e0e94ae4d45b2d84e115b148",
+      "text": "第 4 页\n图3 中心与表面的\n湿响\n热\n应\n论文位置：5.2.4，当前第12 页，表3 与表4 分析之后\n绘制温度与含水率两个时间面板，每图均含中心、表面两条曲线。温度图展示0–4 h；含水率图展示\n从0 至临界达标附近，两图允许使用不同的横轴范围。\n打开哪些数据表\nExcel：六图绘图数据.xlsx。下列CSV 均位于包内 CSV/图3/。\nExcel 工作表\nCSV 文件名\n数据行数\n图3 温度\ntemperature_0_4h.csv\n242\n图3 含水率\nmoisture_to_event.csv\n3451\n如何\n列\n选\n工作表\n横轴与纵轴\n图3 温度\ntime_h 为X；centre_T_C 与surface_T_C 为两条Y，单位°C。\n图3 含水率\ntime_h 为X；centre_C_kg_per_kg 与surface_C_kg_per_kg 为两条Y，单位干基kg/\nkg。\n数据已按时间范围筛选：温度242 个保存点，含水率3451 个保存点。含水率表止于临界根\n57.47230195056044 h；若额外标严格报告点，使用“图4 事件标记”，并单独标明其含义。\n型与比\n要求\n线\n较\n两个面板的中心曲线使用同一种颜色与线型，表面同理。中心为r=0，表面为r=2 cm。可以在温度图\n标出4 h 观测结束时刻，在含水率图标出0.15 阈值。\n采用问题二从均匀初始状态独立计算的完整轨迹。升温接近完成不代表内部水分已达到干燥阈值。\n建\n注\n议图\n问题二采用附录3 整组变物性、固定半径和N3200 结果；4 h 后使用名义环境平台。中心与表面热湿\n响应表明热平衡与干燥达标具有不同时间尺度。\n包内原始文件\n原始数据/Q23/sampled_solution.npz；事件记录在 原始数据/Q23/summary.json；正文四位核对表在 原始数\n据/正文核对表/q2_paper_temperature.csv 和 q2_paper_moisture.csv。\n"
+    },
+    {
+      "page": 5,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-5.png",
+      "sha256": "17e893dec764a88f2c862ef002d7605525a7b4f9b3f253e0996b0e4de070e4ec",
+      "text": "第 5 页\n图4 全域达\n程与\n界放大\n标过\n临\n论文位置：5.3.4，当前第15 页，达标过程说明处\n主图画中心、表面、全域最大含水率，并叠加0.15 kg/kg 阈值线。放大图采用相对临界根的秒差为横\n轴，以浓度减0.15 为纵轴，区分临界等号根和严格报告点。\n打开哪些数据表\nExcel：六图绘图数据.xlsx。下列CSV 均位于包内 CSV/图4/。\nExcel 工作表\nCSV 文件名\n数据行数\n图4 主曲线\ndrying_main.csv\n266\n图4 全域放大\nmaximum_near_event.csv\n2\n图4 中心放大\ncentre_near_event.csv\n4\n图4 事件标记\nevent_markers.csv\n2\n主\n与放大\n各自取数\n图\n图\n主曲线：time_h 作X，centre_C、surface_C、max_C 作三条Y，threshold_C 作水平线。max_C 来自全体生产节\n点。中心与最大值重合时直接重合，不能人为错开。\n全域放大：delta_time_s 作X，max_C_minus_threshold 作Y，仅含两个已有保存点。中心放大：delta_time_s 作\nX，centre_C_minus_threshold 作Y，可展示根前120 s 内的中心样点；标签必须写“中心样点”。\n事件标记：以delta_time_s 和max_C_minus_threshold 画两个独立点。kind=critical_equality 为临界根；\nstrict_report 为严格报告点。负值表示低于阈值，勿先舍入为四位再画。\n标记\n时间 / h\n最大干基含水率\n临界根\n57.47230195056044\n0.15\n严格报告点\n57.4724\n0.14999989718225315\n注与范\n图\n围\n两标记相差约0.353 s。主图可设0–60 h，但数据止于206902 s，后续留空。临界根为等号条件；严格报告点经\n全域最大值核验低于0.15。放大图连线仅连接已有保存点，不新增预测点。\n包内原始文件\n原始数据/fig_q3_drying_data.npz；原始数据/Q23/sampled_solution.npz；原始数据/Q23/summary.json。\n"
+    },
+    {
+      "page": 6,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-6.png",
+      "sha256": "d93277c9c1789b20bb4bd915f6c47d03f6c97a73850e86012fb3e4445a13b3fb",
+      "text": "第 6 页\n图5 收\n半径与域内含水率剖面\n缩\n论文位置：5.4.4，当前第18 页，表6 与表7 分析之后\n左图绘制半径随时间变化，并标出六个选定时刻；右图绘制0、6、12、24、48 h 和临界根处的含水\n率剖面。每条剖面都在当时真实表面终止。\n打开哪些数据表\nExcel：六图绘图数据.xlsx。下列CSV 均位于包内 CSV/图5/。\nExcel 工作表\nCSV 文件名\n数据行数\n图5 半径\nradius_observed.csv\n145\n图5 含水率剖面\nmoisture_profiles_xy_pairs.csv\n21\n图5 选定时刻\nselected_times_and_radii.csv\n6\n如何\n取成\n坐\n选\n对\n标\n左图：图5 半径的time_h 作X、radius_cm 作Y。图5 选定时刻表提供六个标记点及完整事件时刻。\n右图：图5 含水率剖面每相邻两列是一组X/Y。依次选r_0h_cm 与C_0h、r_6h_cm 与C_6h、r_12h_cm 与\nC_12h、r_24h_cm 与C_24h、r_48h_cm 与C_48h、r_event_cm 与C_event。\n每组21 点。r 已经按各自时刻计算为material_x×radius_m×100，单位cm；C 为干基kg/kg。不要给六条曲线统\n一套第一组半径列。\n时刻 / h\n0\n6\n12\n24\n48\n临界根\n半径 / cm\n2.0000\n1.3740\n1.2480\n1.2040\n1.2000\n1.2000\n临界根为51.09057478683054 h。横轴可统一显示0–2 cm，但各曲线在自身半径处终止；域外没有药材，应留\n空，不填零、不补线。使用散点连线图以正确匹配每组X/Y。\n建\n注\n议图\n附录4 物性下的径向同比收缩结果，固定轴向长度，N6400。与问题三的比较同时改变物性和几何，不能将全\n部干燥时差解释为纯收缩效应。\n包内原始文件\n原始数据/A_radius_observed.csv；原始数据/Q4/sampled_solution.npz；原始数据/Q4/summary.json；正文表在 原\n始数据/正文核对表/q4_paper_moisture.csv 和 q4_paper_radius.csv。\n"
+    },
+    {
+      "page": 7,
+      "image": "tmp/cache/figure_package_20260912/guide_v1/page-7.png",
+      "sha256": "6204108e0ccf32eb2df988ecb7b8a06f98400c9687d2f52897f1950d06f80dc0",
+      "text": "第 7 页\n图6 \n界阻力情景\n比\n经验边\n对\n论文位置：5.4.6，当前第19 页，补充修正之后\n横轴为经验参数p=1、2、4，绘制两组带标记折线或分组柱图：问题二三定半径、附录3 物性；问题\n四收缩、附录4 物性。纵轴为临界时长 / h。\n打开哪些数据表\nExcel：六图绘图数据.xlsx。下列CSV 均位于包内 CSV/图6/。\nExcel 工作表\nCSV 文件名\n数据行数\n图6 情景对比\nscenario_comparison.csv\n3\n直接使用的六个数据点\np\nQ23_event_h\nQ4_event_h\n1\n57.47232976256206\n51.090599155463806\n2\n59.623901353233975\n52.22830295685303\n4\n65.4447491379564\n55.31621495305313\np 列作横轴；Q23_event_h 和Q4_event_h 为两组纵轴。绘图保留原始数值，文字标注可以显示四位小\n数。三行表格实际包含两组共六个点。\n比\n范\n与\n注\n较\n围\n标\n所有点统一采用N800 网格、零潜热负荷，取顶层event_h 的临界等号时长。p=1 也使用同一N800 情\n景族结果，不能用正文N3200 或N6400 生产时长替换。\n仅绘制已计算的p=1、2、4。折线用作阅读辅助，不补入其他p 值，不添加未经计算的误差棒或置信\n带。\n建\n注\n议图\n在相同N800 网格及零潜热负荷下比较p=1、2、4 的经验边界阻力情景。该参数族尚未由真实药材等\n温线标定，结果说明所选边界解释对临界时长的影响。\n包内原始文件\n原始数据/isotherm_closure.json；scenarios 中的六条iso_p1/2/4_Q23/Q4 记录，均为computed_event_only。\n"
+    }
+  ],
+  "renderExitCode": 0
+}

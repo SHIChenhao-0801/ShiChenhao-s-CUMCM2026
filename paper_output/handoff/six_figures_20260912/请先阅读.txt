@@ -1,0 +1,29 @@
+﻿A题六图绘图资料包
+
+先打开“六图绘图数据.xlsx”，按图号选择工作表。每张表第6行为字段名、第7行起为数值。
+Word“六图绘图说明.docx”逐图写明坐标、选列、线型、标记及图注。
+CSV目录提供同一套数值，UTF-8 BOM编码，Excel/WPS或Origin可直接导入。
+原始数据目录保留15份来源副本，供复核或自定义绘图；普通作图不必读取NPZ或JSON。
+所有路径均相对解压后的本文件夹。无需作者电脑、D盘路径、工作区或额外下载。
+
+数据精度：CSV保留Python双精度往返表示；Excel单元格为数值，显示小数位不代表数据已舍入。
+本包是冻结结果的导出，未重跑模型。图1/3/4为N3200，图5为N6400，图6均为N800。
+图2观测与4h后平台必须分开。平台表的4h表示开放左端的右侧极限，不是新的观测点。
+图4中心放大表只标中心样点；全域最大值与严格达标点使用对应数据表。
+图5每两列一组XY，横轴半径随时刻变化，不可给六条曲线套同一半径列。
+
+文件与工作表对应：
+图1 | Excel：图1温度 | CSV/图1/temperature.csv | 121条
+图1 | Excel：图1含水率 | CSV/图1/moisture.csv | 121条
+图2 | Excel：图2观测 | CSV/图2/observed_0_4h.csv | 241条
+图2 | Excel：图2假设平台 | CSV/图2/assumed_platform_4_60h.csv | 2条
+图3 | Excel：图3温度 | CSV/图3/temperature_0_4h.csv | 242条
+图3 | Excel：图3含水率 | CSV/图3/moisture_to_event.csv | 3451条
+图4 | Excel：图4主曲线 | CSV/图4/drying_main.csv | 266条
+图4 | Excel：图4全域放大 | CSV/图4/maximum_near_event.csv | 2条
+图4 | Excel：图4中心放大 | CSV/图4/centre_near_event.csv | 4条
+图4 | Excel：图4事件标记 | CSV/图4/event_markers.csv | 2条
+图5 | Excel：图5半径 | CSV/图5/radius_observed.csv | 145条
+图5 | Excel：图5含水率剖面 | CSV/图5/moisture_profiles_xy_pairs.csv | 21条
+图5 | Excel：图5选定时刻 | CSV/图5/selected_times_and_radii.csv | 6条
+图6 | Excel：图6情景对比 | CSV/图6/scenario_comparison.csv | 3条

@@ -1,0 +1,309 @@
+{
+  "purpose": "Six-figure plotting handoff with actual data",
+  "new_model_runs": 0,
+  "sources": [
+    {
+      "file": "原始数据/A_environment_observed.csv",
+      "source": "paper_output/data_cleaned/A_environment_observed.csv",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "file": "原始数据/fig_q1_profiles_data.npz",
+      "source": "paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+      "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096"
+    },
+    {
+      "file": "原始数据/正文核对表/q1_paper_temperature.csv",
+      "source": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+    },
+    {
+      "file": "原始数据/正文核对表/q1_paper_moisture.csv",
+      "source": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+    },
+    {
+      "file": "原始数据/Q23/summary.json",
+      "source": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+    },
+    {
+      "file": "原始数据/Q23/sampled_solution.npz",
+      "source": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "file": "原始数据/正文核对表/q2_paper_temperature.csv",
+      "source": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+    },
+    {
+      "file": "原始数据/正文核对表/q2_paper_moisture.csv",
+      "source": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+    },
+    {
+      "file": "原始数据/fig_q3_drying_data.npz",
+      "source": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+      "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c"
+    },
+    {
+      "file": "原始数据/A_radius_observed.csv",
+      "source": "paper_output/data_cleaned/A_radius_observed.csv",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "file": "原始数据/Q4/sampled_solution.npz",
+      "source": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "file": "原始数据/正文核对表/q4_paper_moisture.csv",
+      "source": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    {
+      "file": "原始数据/正文核对表/q4_paper_radius.csv",
+      "source": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+    },
+    {
+      "file": "原始数据/isotherm_closure.json",
+      "source": "paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "sha256": "7528cf2deb3b596c4c1877ad291043a3e47c8e96127de03cbb760a2ee63f9c96"
+    },
+    {
+      "file": "原始数据/Q4/summary.json",
+      "source": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e"
+    }
+  ],
+  "tables": [
+    {
+      "figure": 1,
+      "name": "图1温度",
+      "title": "图1 径向温度剖面",
+      "note": "首列为物理半径cm；其余七列对应100、300、600、900、1200、1500、1800 s。温度单位°C，含水率为kg水/kg干物质。N3200。",
+      "source": "原始数据/fig_q1_profiles_data.npz；radii_m×100，temperature_C转置",
+      "columns": [
+        "r_cm",
+        "T_100s",
+        "T_300s",
+        "T_600s",
+        "T_900s",
+        "T_1200s",
+        "T_1500s",
+        "T_1800s"
+      ],
+      "csv": "CSV/图1/temperature.csv",
+      "data_rows": 121
+    },
+    {
+      "figure": 1,
+      "name": "图1含水率",
+      "title": "图1 径向含水率剖面",
+      "note": "首列为物理半径cm；其余七列对应100、300、600、900、1200、1500、1800 s。温度单位°C，含水率为kg水/kg干物质。N3200。",
+      "source": "原始数据/fig_q1_profiles_data.npz；radii_m×100，C转置",
+      "columns": [
+        "r_cm",
+        "C_100s",
+        "C_300s",
+        "C_600s",
+        "C_900s",
+        "C_1200s",
+        "C_1500s",
+        "C_1800s"
+      ],
+      "csv": "CSV/图1/moisture.csv",
+      "data_rows": 121
+    },
+    {
+      "figure": 2,
+      "name": "图2观测",
+      "title": "图2 环境观测数据 0至4小时",
+      "note": "241条真实观测。t=4h末点为50.165°C和0.04986，必须保留。相邻观测点连直线即为分段线性插值。水分指标不是相对湿度%。",
+      "source": "原始数据/A_environment_observed.csv",
+      "columns": [
+        "time_h",
+        "temperature_C",
+        "air_moisture_kg_per_kg"
+      ],
+      "csv": "CSV/图2/observed_0_4h.csv",
+      "data_rows": 241
+    },
+    {
+      "figure": 2,
+      "name": "图2假设平台",
+      "title": "图2 4小时后的假设平台",
+      "note": "两行是水平线的绘图端点，不是实测。4h仅表示右侧极限，左端开放；60h为展示终点。虚线无实测标记，与观测系列分开。",
+      "source": "原始数据/Q23/summary.json；settings名义延拓，展示终点60h",
+      "columns": [
+        "time_h",
+        "temperature_C",
+        "boundary_moisture_kg_per_kg",
+        "endpoint_included"
+      ],
+      "csv": "CSV/图2/assumed_platform_4_60h.csv",
+      "data_rows": 2
+    },
+    {
+      "figure": 3,
+      "name": "图3温度",
+      "title": "图3 中心与表面温度响应",
+      "note": "采用Q23从0时刻起算的同一轨迹。centre表示中心，surface表示表面；已换算小时和°C，含水率为干基kg/kg。N3200。",
+      "source": "原始数据/Q23/sampled_solution.npz；times_s/3600，T_K首末列",
+      "columns": [
+        "time_h",
+        "centre_T_C",
+        "surface_T_C"
+      ],
+      "csv": "CSV/图3/temperature_0_4h.csv",
+      "data_rows": 242
+    },
+    {
+      "figure": 3,
+      "name": "图3含水率",
+      "title": "图3 中心与表面含水率响应",
+      "note": "采用Q23从0时刻起算的同一轨迹。centre表示中心，surface表示表面；已换算小时和°C，含水率为干基kg/kg。N3200。",
+      "source": "原始数据/Q23/sampled_solution.npz；times_s/3600，C首末列",
+      "columns": [
+        "time_h",
+        "centre_C_kg_per_kg",
+        "surface_C_kg_per_kg"
+      ],
+      "csv": "CSV/图3/moisture_to_event.csv",
+      "data_rows": 3451
+    },
+    {
+      "figure": 4,
+      "name": "图4主曲线",
+      "title": "图4 全域达标过程",
+      "note": "max_C取生产全体节点最大值；中心与最大值重合时不人为错开。threshold_C=0.15。实际曲线止于206902s，之后留空。",
+      "source": "原始数据/fig_q3_drying_data.npz；times_s/3600，centre_C、surface_C、max_C",
+      "columns": [
+        "time_h",
+        "centre_C",
+        "surface_C",
+        "max_C",
+        "threshold_C"
+      ],
+      "csv": "CSV/图4/drying_main.csv",
+      "data_rows": 266
+    },
+    {
+      "figure": 4,
+      "name": "图4全域放大",
+      "title": "图4 临界附近全域最大值保存点",
+      "note": "仅两个已保存全域最大值点，含临界根及计算终点。横轴秒差，纵轴max_C_minus_threshold；严格报告点另见图4事件标记。",
+      "source": "原始数据/fig_q3_drying_data.npz；仅筛选已有点，未新增求解",
+      "columns": [
+        "time_s",
+        "delta_time_s",
+        "max_C",
+        "max_C_minus_threshold"
+      ],
+      "csv": "CSV/图4/maximum_near_event.csv",
+      "data_rows": 2
+    },
+    {
+      "figure": 4,
+      "name": "图4中心放大",
+      "title": "图4 临界附近中心含水率保存点",
+      "note": "供观察根前走势。这里是中心样点，不应改名为全节点最大值曲线；全域最大值与严格标记请取另外两表。横轴秒差，纵轴centre_C_minus_threshold。",
+      "source": "原始数据/Q23/sampled_solution.npz；C首列，根前120s至实际终点",
+      "columns": [
+        "time_s",
+        "delta_time_s",
+        "centre_C",
+        "centre_C_minus_threshold"
+      ],
+      "csv": "CSV/图4/centre_near_event.csv",
+      "data_rows": 4
+    },
+    {
+      "figure": 4,
+      "name": "图4事件标记",
+      "title": "图4 临界根与严格报告点",
+      "note": "临界根浓度0.15为等号定义；严格报告点的最大浓度来自实际核验记录，不能用四位舍入替代。kind与strictly_below用于区分标记。",
+      "source": "原始数据/Q23/summary.json；completion",
+      "columns": [
+        "kind",
+        "time_s",
+        "time_h",
+        "delta_time_s",
+        "max_C",
+        "max_C_minus_threshold",
+        "strictly_below"
+      ],
+      "csv": "CSV/图4/event_markers.csv",
+      "data_rows": 2
+    },
+    {
+      "figure": 5,
+      "name": "图5半径",
+      "title": "图5 半径观测序列",
+      "note": "145条观测，0至72h，每0.5h一条。横轴小时、纵轴cm；连接相邻点为模型的线性插值。",
+      "source": "原始数据/A_radius_observed.csv",
+      "columns": [
+        "time_h",
+        "radius_cm"
+      ],
+      "csv": "CSV/图5/radius_observed.csv",
+      "data_rows": 145
+    },
+    {
+      "figure": 5,
+      "name": "图5含水率剖面",
+      "title": "图5 六时刻物理半径与含水率",
+      "note": "每相邻两列是一组X和Y，共六组，各21点。r已乘各时刻真实R。C为干基kg/kg；各曲线到自身表面结束，域外留空。event的精确时刻见选定时刻表。",
+      "source": "原始数据/Q4/sampled_solution.npz；r=material_x×radius_m×100，C原值；N6400",
+      "columns": [
+        "r_0h_cm",
+        "C_0h",
+        "r_6h_cm",
+        "C_6h",
+        "r_12h_cm",
+        "C_12h",
+        "r_24h_cm",
+        "C_24h",
+        "r_48h_cm",
+        "C_48h",
+        "r_event_cm",
+        "C_event"
+      ],
+      "csv": "CSV/图5/moisture_profiles_xy_pairs.csv",
+      "data_rows": 21
+    },
+    {
+      "figure": 5,
+      "name": "图5选定时刻",
+      "title": "图5 六条剖面的时刻与半径",
+      "note": "可作为半径曲线上的标记；event为临界根51.09057478683054h。半径已换算cm。",
+      "source": "原始数据/Q4/sampled_solution.npz；精确匹配保存时刻",
+      "columns": [
+        "curve",
+        "time_s",
+        "time_h",
+        "radius_cm"
+      ],
+      "csv": "CSV/图5/selected_times_and_radii.csv",
+      "data_rows": 6
+    },
+    {
+      "figure": 6,
+      "name": "图6情景对比",
+      "title": "图6 经验边界阻力情景对比",
+      "note": "三行共六点，全部N800且latentFraction=0，使用临界等号事件小时。p=1不能替换为正文生产结果；不加误差棒或置信带。",
+      "source": "原始数据/isotherm_closure.json；六条scenarios的顶层event_h",
+      "columns": [
+        "p",
+        "Q23_event_h",
+        "Q4_event_h"
+      ],
+      "csv": "CSV/图6/scenario_comparison.csv",
+      "data_rows": 3
+    }
+  ],
+  "total_data_rows": 4627,
+  "source_root_note": "source字段仅作来源追踪；绘图只使用包内file/CSV/Excel，无需原工作区。"
+}

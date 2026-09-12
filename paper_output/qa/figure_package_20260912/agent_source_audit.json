@@ -1,0 +1,366 @@
+{
+  "status": "SOURCE_DATA_VERIFIED_PACKAGE_PENDING",
+  "method": "Independent direct reads of frozen NPZ, JSON, CSV. No PDE rerun.",
+  "figures": {
+    "1": {
+      "nTimes": 7,
+      "nRadii": 121,
+      "times_s": [
+        100.0,
+        300.0,
+        600.0,
+        900.0,
+        1200.0,
+        1500.0,
+        1800.0
+      ],
+      "r_cm_endpoints": [
+        0.0,
+        2.0
+      ],
+      "temperatureShape": [
+        7,
+        121
+      ],
+      "moistureShape": [
+        7,
+        121
+      ]
+    },
+    "2": {
+      "rows": 241,
+      "fields": [
+        "time_s",
+        "time_h",
+        "temperature_C",
+        "temperature_K",
+        "air_moisture_kg_per_kg"
+      ],
+      "first": {
+        "time_s": "0",
+        "time_h": "0",
+        "temperature_C": "28",
+        "temperature_K": "301.15",
+        "air_moisture_kg_per_kg": "0.01963"
+      },
+      "last": {
+        "time_s": "14400",
+        "time_h": "4",
+        "temperature_C": "50.165",
+        "temperature_K": "323.315",
+        "air_moisture_kg_per_kg": "0.04986"
+      },
+      "platform": "4<t<=60 h; temperature_C=50; air_moisture_kg_per_kg=0.05; assumed, not measured"
+    },
+    "3": {
+      "shape": [
+        3452,
+        21
+      ],
+      "temperatureSamples0to4h": 242,
+      "moistureSamplesThroughRoot": 3451,
+      "rootIndex": 3450,
+      "materialEndpoints": [
+        0.0,
+        1.0
+      ]
+    },
+    "4": {
+      "completion": {
+        "critical_event_s": 206900.28702201758,
+        "critical_event_h": 57.47230195056044,
+        "reported_drying_time_h": 57.4724,
+        "reported_time_s": 206900.64,
+        "max_C_at_reported_time": 0.14999989718225315,
+        "slowest_material_coordinate": 0.0,
+        "conservative_post_verification_s": 206902.0,
+        "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+        "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+      },
+      "reportPointInSampledSolution": false,
+      "lastSampledCentreRows": [
+        [
+          206700.0,
+          0.1500583951603777
+        ],
+        [
+          206760.0,
+          0.1500408903831625
+        ],
+        [
+          206820.0,
+          0.15002339530498127
+        ],
+        [
+          206880.0,
+          0.15000590991697363
+        ],
+        [
+          206900.28702201758,
+          0.15
+        ],
+        [
+          206902.0,
+          0.14999950103529133
+        ]
+      ],
+      "mainSamples": 266,
+      "sourceFieldForAllNodeMaximum": "max_C",
+      "lastComputed_s": 206902.0,
+      "centreMaxMaximumDifference": 4.440892098500626e-16
+    },
+    "5": {
+      "selectedRows": [
+        {
+          "time_s": 0,
+          "index": 0,
+          "radius_cm": 2.0,
+          "centre_C": 2.55,
+          "surface_C": 2.55,
+          "physicalR_cm": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9000000000000001,
+            1.0,
+            1.1,
+            1.2000000000000002,
+            1.3,
+            1.4000000000000001,
+            1.5,
+            1.6,
+            1.7000000000000002,
+            1.8000000000000003,
+            1.9000000000000004,
+            2.0
+          ]
+        },
+        {
+          "time_s": 21600,
+          "index": 361,
+          "radius_cm": 1.374,
+          "centre_C": 1.7195880367453145,
+          "surface_C": 0.4206997304501066,
+          "physicalR_cm": [
+            0.0,
+            0.06870000000000001,
+            0.13740000000000002,
+            0.20610000000000003,
+            0.27480000000000004,
+            0.3435,
+            0.41220000000000007,
+            0.4809000000000001,
+            0.5496000000000001,
+            0.6183,
+            0.687,
+            0.7557000000000001,
+            0.8244000000000001,
+            0.8931000000000001,
+            0.9618000000000002,
+            1.0305,
+            1.0992000000000002,
+            1.1679000000000002,
+            1.2366,
+            1.3053000000000001,
+            1.374
+          ]
+        },
+        {
+          "time_s": 43200,
+          "index": 721,
+          "radius_cm": 1.248,
+          "centre_C": 0.7376689331140169,
+          "surface_C": 0.16695964704072508,
+          "physicalR_cm": [
+            0.0,
+            0.0624,
+            0.1248,
+            0.1872,
+            0.2496,
+            0.312,
+            0.3744,
+            0.4368,
+            0.4992,
+            0.5616,
+            0.624,
+            0.6864,
+            0.7488,
+            0.8111999999999999,
+            0.8736,
+            0.936,
+            0.9984,
+            1.0608000000000002,
+            1.1232,
+            1.1856,
+            1.248
+          ]
+        },
+        {
+          "time_s": 86400,
+          "index": 1441,
+          "radius_cm": 1.204,
+          "centre_C": 0.2851137001880641,
+          "surface_C": 0.06733666818683921,
+          "physicalR_cm": [
+            0.0,
+            0.06020000000000001,
+            0.12040000000000002,
+            0.18060000000000004,
+            0.24080000000000004,
+            0.301,
+            0.3612000000000001,
+            0.42140000000000005,
+            0.4816000000000001,
+            0.5418000000000001,
+            0.602,
+            0.6622000000000001,
+            0.7224000000000002,
+            0.7826000000000002,
+            0.8428000000000001,
+            0.903,
+            0.9632000000000002,
+            1.0234,
+            1.0836000000000001,
+            1.1438000000000001,
+            1.204
+          ]
+        },
+        {
+          "time_s": 172800,
+          "index": 2881,
+          "radius_cm": 1.2,
+          "centre_C": 0.1561465723705671,
+          "surface_C": 0.053014624695981526,
+          "physicalR_cm": [
+            0.0,
+            0.060000000000000005,
+            0.12000000000000001,
+            0.18000000000000005,
+            0.24000000000000002,
+            0.3,
+            0.3600000000000001,
+            0.42000000000000004,
+            0.48000000000000004,
+            0.54,
+            0.6,
+            0.66,
+            0.7200000000000002,
+            0.78,
+            0.8400000000000001,
+            0.9000000000000001,
+            0.9600000000000001,
+            1.02,
+            1.08,
+            1.1400000000000001,
+            1.2
+          ]
+        },
+        {
+          "time_s": 183926.06923258994,
+          "index": 3067,
+          "radius_cm": 1.2,
+          "centre_C": 0.15,
+          "surface_C": 0.052620030980109034,
+          "physicalR_cm": [
+            0.0,
+            0.060000000000000005,
+            0.12000000000000001,
+            0.18000000000000005,
+            0.24000000000000002,
+            0.3,
+            0.3600000000000001,
+            0.42000000000000004,
+            0.48000000000000004,
+            0.54,
+            0.6,
+            0.66,
+            0.7200000000000002,
+            0.78,
+            0.8400000000000001,
+            0.9000000000000001,
+            0.9600000000000001,
+            1.02,
+            1.08,
+            1.1400000000000001,
+            1.2
+          ]
+        }
+      ],
+      "shape": [
+        3069,
+        21
+      ],
+      "radiusObservationRecords": 145
+    },
+    "6": [
+      {
+        "scenario": "iso_p1_Q23",
+        "question": "Q23",
+        "intervals": 800,
+        "latentFraction": 0.0,
+        "isothermShapeP": 1.0,
+        "status": "computed_event_only",
+        "event_h": 57.47232976256206
+      },
+      {
+        "scenario": "iso_p2_Q23",
+        "question": "Q23",
+        "intervals": 800,
+        "latentFraction": 0.0,
+        "isothermShapeP": 2.0,
+        "status": "computed_event_only",
+        "event_h": 59.623901353233975
+      },
+      {
+        "scenario": "iso_p4_Q23",
+        "question": "Q23",
+        "intervals": 800,
+        "latentFraction": 0.0,
+        "isothermShapeP": 4.0,
+        "status": "computed_event_only",
+        "event_h": 65.4447491379564
+      },
+      {
+        "scenario": "iso_p1_Q4",
+        "question": "Q4",
+        "intervals": 800,
+        "latentFraction": 0.0,
+        "isothermShapeP": 1.0,
+        "status": "computed_event_only",
+        "event_h": 51.090599155463806
+      },
+      {
+        "scenario": "iso_p2_Q4",
+        "question": "Q4",
+        "intervals": 800,
+        "latentFraction": 0.0,
+        "isothermShapeP": 2.0,
+        "status": "computed_event_only",
+        "event_h": 52.22830295685303
+      },
+      {
+        "scenario": "iso_p4_Q4",
+        "question": "Q4",
+        "intervals": 800,
+        "latentFraction": 0.0,
+        "isothermShapeP": 4.0,
+        "status": "computed_event_only",
+        "event_h": 55.31621495305313
+      }
+    ]
+  },
+  "pitfalls": [
+    "Do not compute all-node maxima from sparse 21-point saved C arrays.",
+    "Fig4 strict report point is a separate summary result, not a saved trajectory point.",
+    "Fig4 no new trajectory beyond 206902 s.",
+    "Fig5 physical radius is current R(t) times material_x, not fixed 2 cm.",
+    "Fig2 t=4h is observed 50.165 and 0.04986; right-side platform is 50 and 0.05.",
+    "Fig6 all six scenarios share N800, never replace p=1 by production-grid event."
+  ]
+}
