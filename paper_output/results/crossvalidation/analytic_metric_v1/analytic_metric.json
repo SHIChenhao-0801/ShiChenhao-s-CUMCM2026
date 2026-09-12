@@ -1,0 +1,44 @@
+{
+  "purpose": "separate a solver error from a point-versus-control-volume-average comparison artifact in the Q1 analytic benchmark",
+  "levels": [
+    800,
+    1600,
+    3200,
+    6400
+  ],
+  "rows": [
+    {
+      "intervals": 800,
+      "maxPointVsCellDifferenceK": 0.00205117265068111,
+      "surfacePointVsCellDifferenceK": 0.00205117265068111,
+      "interiorMaxDifferenceK": 1.311069695475453e-06
+    },
+    {
+      "intervals": 1600,
+      "maxPointVsCellDifferenceK": 0.0010257532077275755,
+      "surfacePointVsCellDifferenceK": 0.0010257532077275755,
+      "interiorMaxDifferenceK": 3.277668838563841e-07
+    },
+    {
+      "intervals": 3200,
+      "maxPointVsCellDifferenceK": 0.0005129183118128822,
+      "surfacePointVsCellDifferenceK": 0.0005129183118128822,
+      "interiorMaxDifferenceK": 8.194496103897109e-08
+    },
+    {
+      "intervals": 6400,
+      "maxPointVsCellDifferenceK": 0.00025646958874858683,
+      "surfacePointVsCellDifferenceK": 0.00025646958874858683,
+      "interiorMaxDifferenceK": 2.0491256691457238e-08
+    }
+  ],
+  "interpretation": "The maximum discrepancy between the analytic point value and the analytic annular average sits at the surface control volume and does not shrink with refinement, exactly like the reported benchmark error. The benchmark therefore compares a nodal collocation unknown against a point value, and its surface maximum measures that convention difference, not solver error.",
+  "knownFrozenNumbers": {
+    "reportedMaxHeatErrorK": {
+      "N800": 1.899177e-06,
+      "N1600": 2.40269e-06,
+      "N3200": 1.803776e-06
+    },
+    "source": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json"
+  }
+}

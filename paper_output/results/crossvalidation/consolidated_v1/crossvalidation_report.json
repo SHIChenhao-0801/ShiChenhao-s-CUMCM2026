@@ -1,0 +1,632 @@
+{
+  "tolerances": {
+    "integratorEventSeconds": 1.0,
+    "faceSchemeHoursAtFinest": 0.5,
+    "scalingResidualPercent": 5.0,
+    "crossLanguageEventSeconds": 1.0,
+    "analyticBenchmarkKelvin": 0.0001,
+    "massBalanceKgPerKg": 1e-06,
+    "independentRootSeconds": 1e-06,
+    "schemeDifferenceKgPerKg": 0.0001,
+    "observedOrderMinimum": 1.5,
+    "constantDLimitKgPerKg": 0.0,
+    "baselineLimitAbsoluteDifferencePaOverKappa": 1e-06
+  },
+  "layers": {
+    "L1_timeIntegrator": {
+      "Q23": {
+        "BDF_N800": 57.47232976164861,
+        "BDF_N1600": 57.472307546790695,
+        "Radau_N800": 57.47232976196033,
+        "Radau_N1600": 57.47230754637677,
+        "differenceSeconds_N800": 1.1221999329791288e-06,
+        "differenceSeconds_N1600": 1.490136014581367e-06
+      },
+      "Q4": {
+        "BDF_N800": 51.090599156417724,
+        "BDF_N1600": 51.090580590270335,
+        "Radau_N800": 51.09059915553665,
+        "Radau_N1600": 51.09058059025484,
+        "differenceSeconds_N800": 3.1718627724330872e-06,
+        "differenceSeconds_N1600": 5.5788973440940026e-08
+      }
+    },
+    "L2_faceScheme": {
+      "Q23": {
+        "N400": {
+          "kirchhoffH": 57.472417400780365,
+          "harmonicH": 57.686801395032276,
+          "differenceH": 0.2143839942519108,
+          "ratio": 1.0037302066616915
+        },
+        "N800": {
+          "kirchhoffH": 57.47232976164861,
+          "harmonicH": 57.51225171105476,
+          "differenceH": 0.03992194940614979,
+          "ratio": 1.000694629042736
+        },
+        "N1600": {
+          "kirchhoffH": 57.472307546790695,
+          "harmonicH": 57.48106624978333,
+          "differenceH": 0.008758702992636813,
+          "ratio": 1.0001523986658358
+        }
+      },
+      "Q4": {
+        "N400": {
+          "kirchhoffH": 51.09067331061578,
+          "harmonicH": 51.11054756429652,
+          "differenceH": 0.01987425368074014,
+          "ratio": 1.0003889996430446
+        },
+        "N800": {
+          "kirchhoffH": 51.090599156417724,
+          "harmonicH": 51.09547046314625,
+          "differenceH": 0.004871306728524871,
+          "ratio": 1.0000953464396378
+        },
+        "N1600": {
+          "kirchhoffH": 51.090580590270335,
+          "harmonicH": 51.091791488514694,
+          "differenceH": 0.0012108982443592708,
+          "ratio": 1.0000237010077078
+        }
+      }
+    },
+    "L3_crossImplementation": {
+      "source": "paper_output/qa/matlab_crosscheck_20260911",
+      "maxTemperatureDifferenceK": 2.375e-07,
+      "maxMoistureDifferenceKgPerKg": 5.851e-10,
+      "maxEventDifferenceSeconds": 0.0002297,
+      "note": "separate MATLAB finite-volume + ode15s implementation at N=40"
+    },
+    "L4_analyticAndScaling": {
+      "analyticBenchmarkQ1Kelvin": 1.803776172e-06,
+      "analyticBenchmarkNote": "constant-property cylindrical Bessel series, 240 terms",
+      "fixedRadiusTimeH": 129.84522834701946,
+      "shrinkingTimeH": 51.090973419826916,
+      "reductionPercent": 60.65240589104815,
+      "equivalentFixedRadiusTimeH": 131.6197854199707,
+      "ratioEquivalentToFixed": 1.0136667099403038,
+      "scalingResidualPercent": 1.3666709940303834,
+      "interpretation": "Stretching the shrinking timeline by (R0/R(t))**2 gives an equivalent fixed-radius time within about 1.4 percent of the directly simulated fixed-radius drying time. The numerically computed shortening is therefore corroborated by an independent analytical length-scale argument; the small residual comes from the coupled changes in the moisture and temperature profiles."
+    },
+    "L5_stageBoundaries": {
+      "T1_chamber_plateau_onset": {
+        "brokenStick_hours": 0.9,
+        "sequentialMK_hours": 2.3666666666666667,
+        "fisher_k2_hours": [
+          0.5666666666666667
+        ],
+        "relative_threshold_95pct_hours": 1.3666666666666667
+      },
+      "T1b_chamber_moisture_plateau_onset": {
+        "brokenStick_hours": 1.2,
+        "sequentialMK_hours": 2.3666666666666667,
+        "fisher_k2_hours": [
+          0.7833333333333333
+        ],
+        "relative_threshold_95pct_hours": 1.6666666666666667
+      },
+      "T2_radius_shrinkage_end": {
+        "brokenStick_hours": 7.5,
+        "sequentialMK_hours": 4.5,
+        "fisher_k2_hours": [
+          5.0
+        ],
+        "fisher_k3_hours": [
+          2.0,
+          7.0
+        ],
+        "relative_threshold_95pct_hours": 13.5
+      },
+      "T3_preheating_end": {
+        "brokenStick_center_hours": 2.85,
+        "brokenStick_surface_hours": 2.85,
+        "sequentialMK_center_hours": null,
+        "sequentialMK_surface_hours": null,
+        "fisher_k2_center_hours": [
+          1.1
+        ],
+        "fisher_k2_surface_hours": [
+          0.95
+        ],
+        "relative_threshold_95pct_center_hours": 2.1666666666666665,
+        "relative_threshold_95pct_surface_hours": 1.9666666666666666
+      }
+    },
+    "L6_modelStructure": {
+      "Q23": [
+        {
+          "fraction": 0.0,
+          "eventH": 57.47232976164861,
+          "minSurfaceC": 28.0,
+          "relativeToBaselinePercent": 0.0
+        },
+        {
+          "fraction": 0.25,
+          "eventH": 58.18572133878618,
+          "minSurfaceC": 24.887408157659138,
+          "relativeToBaselinePercent": 1.2412783335844837
+        },
+        {
+          "fraction": 0.5,
+          "eventH": 58.93408214506526,
+          "minSurfaceC": 20.254586607702322,
+          "relativeToBaselinePercent": 2.5434019979334157
+        },
+        {
+          "fraction": 1.0,
+          "eventH": 60.49721847273473,
+          "minSurfaceC": 10.899746984182627,
+          "relativeToBaselinePercent": 5.26320878870067
+        }
+      ],
+      "Q4": [
+        {
+          "fraction": 0.0,
+          "eventH": 51.090599156417724,
+          "minSurfaceC": 28.0,
+          "relativeToBaselinePercent": 0.0
+        },
+        {
+          "fraction": 0.25,
+          "eventH": 52.41650770915345,
+          "minSurfaceC": 25.69579628346486,
+          "relativeToBaselinePercent": 2.595210419584935
+        },
+        {
+          "fraction": 0.5,
+          "eventH": 53.76195569337404,
+          "minSurfaceC": 21.694525206598883,
+          "relativeToBaselinePercent": 5.228665510024178
+        },
+        {
+          "fraction": 1.0,
+          "eventH": 56.4844608021467,
+          "minSurfaceC": 14.552831445320919,
+          "relativeToBaselinePercent": 10.557444490355772
+        }
+      ]
+    },
+    "L7_independentRootAndMaxLocation": {
+      "Q23": {
+        "solverEventH": 57.47232976164861,
+        "independentBisectionH": 57.472329761648595,
+        "differenceSeconds": 5.820766091346741e-11,
+        "unroundedMaxCAtStrictTime": 0.14999953019871928,
+        "strictlyBelowThreshold": true,
+        "centreIsMaximumAtEvent": true,
+        "maxExcessOverCentreKgPerKg": 8.881784197001252e-16,
+        "maxExcessOverCentreMedianKgPerKg": 0.0,
+        "maxRadialMoistureIncreaseKgPerKg": 1.3322676295501878e-15
+      },
+      "Q4": {
+        "solverEventH": 51.090599156417724,
+        "independentBisectionH": 51.0905991564177,
+        "differenceSeconds": 5.820766091346741e-11,
+        "unroundedMaxCAtStrictTime": 0.1499990536101906,
+        "strictlyBelowThreshold": true,
+        "centreIsMaximumAtEvent": true,
+        "maxExcessOverCentreKgPerKg": 1.3322676295501878e-15,
+        "maxExcessOverCentreMedianKgPerKg": 0.0,
+        "maxRadialMoistureIncreaseKgPerKg": 1.7763568394002505e-15
+      }
+    },
+    "L8_discretisation": {
+      "constantDLimitMaxDifferenceKgPerKg": 0.0,
+      "constantDLimitRows": [
+        {
+          "intervals": 200,
+          "maxAbsDifference": 0.0
+        },
+        {
+          "intervals": 400,
+          "maxAbsDifference": 0.0
+        },
+        {
+          "intervals": 800,
+          "maxAbsDifference": 0.0
+        },
+        {
+          "intervals": 1600,
+          "maxAbsDifference": 0.0
+        }
+      ],
+      "variableDRows": [
+        {
+          "intervals": 200,
+          "maxAbsDifference": 3.728809559122581e-06,
+          "maxDifferenceTimeS": 1800.0,
+          "locationOfMax": 0.02
+        },
+        {
+          "intervals": 400,
+          "maxAbsDifference": 9.325503447232819e-07,
+          "maxDifferenceTimeS": 1800.0,
+          "locationOfMax": 0.02
+        },
+        {
+          "intervals": 800,
+          "maxAbsDifference": 2.3299293094858342e-07,
+          "maxDifferenceTimeS": 1800.0,
+          "locationOfMax": 0.02
+        },
+        {
+          "intervals": 1600,
+          "maxAbsDifference": 5.828579419109303e-08,
+          "maxDifferenceTimeS": 1800.0,
+          "locationOfMax": 0.02
+        }
+      ],
+      "observedOrder": 1.999069975926462,
+      "expectedOrderDeclared": 1.0,
+      "declaredToleranceKgPerKg": 0.0001
+    },
+    "L9_isothermClosure": {
+      "isotherm": {
+        "form": "a_w(C) = 1 - (1 - awRef) (C_ref/C)^(1/p), p >= 1",
+        "C_ref": 0.05,
+        "awRef": 0.6,
+        "awRefSource": "chamber plateau relative humidity from attachment 1 (derived, not assumed)",
+        "shapeParametersUsed": [
+          1.0,
+          1.5,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "pEqualsOneMeans": "K_eff identically 1, so the frozen baseline is the p = 1 member of this family; larger p means stronger water binding",
+        "status": "family of closures; the material's true isotherm is not provided"
+      },
+      "anchorCheck": {
+        "statedEquilibriumC": 0.05,
+        "chamberPlateauRH": 0.6072710989856436,
+        "isothermAtCref": 0.6,
+        "absoluteDifference": 0.0,
+        "note": "a_w(C_eq) is forced to the chamber relative humidity because the stated equilibrium point can neither gain nor lose water"
+      },
+      "baselineLimitDifference": 0.0,
+      "baselineLimitDetail": {
+        "partitionFactorAtP1": 1.0,
+        "partitionFactorAtCref": 1.0,
+        "frozenDriveSigned": -1.151111546961326,
+        "revisedDriveSigned": -1.151111546961326,
+        "absoluteDifference": 0.0,
+        "independentCheck": "core.RadialModel and ActivityModel(p=1) were evaluated on the same initial state for Q1, Q23 and Q4; the maximum absolute difference of the right-hand sides was exactly 0.0 in all three cases"
+      },
+      "partitionFactorAcrossRange": [
+        {
+          "C": 0.05,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.6666666666666666,
+          "Keff_p2": 0.5,
+          "Keff_p3": 0.3333333333333333,
+          "Keff_p4": 0.25
+        },
+        {
+          "C": 0.06,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.6867071540869446,
+          "Keff_p2": 0.5227744249483387,
+          "Keff_p3": 0.35378382671382874,
+          "Keff_p4": 0.26734324677379934
+        },
+        {
+          "C": 0.08,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.7173215078580893,
+          "Keff_p2": 0.558481559887747,
+          "Keff_p3": 0.38669873776440394,
+          "Keff_p4": 0.2956274532814363
+        },
+        {
+          "C": 0.1,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.7400789501051268,
+          "Keff_p2": 0.5857864376269049,
+          "Keff_p3": 0.4125989480318004,
+          "Keff_p4": 0.318207169492571
+        },
+        {
+          "C": 0.15,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.7788752148462957,
+          "Keff_p2": 0.6339745962155613,
+          "Keff_p3": 0.45995808847404784,
+          "Keff_p4": 0.3602464715226112
+        },
+        {
+          "C": 0.2,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.8041996493439335,
+          "Keff_p2": 0.6666666666666666,
+          "Keff_p3": 0.4933859667367512,
+          "Keff_p4": 0.3905242917512699
+        },
+        {
+          "C": 0.3,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.8365758814335721,
+          "Keff_p2": 0.7101020514433645,
+          "Keff_p3": 0.5396145502210747,
+          "Keff_p4": 0.433268274904473
+        },
+        {
+          "C": 0.5,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.8717294788853462,
+          "Keff_p2": 0.7597469266479577,
+          "Keff_p3": 0.5953790184874689,
+          "Keff_p4": 0.4862874164551677
+        },
+        {
+          "C": 1.0,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.909767493863426,
+          "Keff_p2": 0.8172560023684433,
+          "Keff_p3": 0.6648387896168013,
+          "Keff_p4": 0.5548728373667496
+        },
+        {
+          "C": 2.55,
+          "Keff_p1": 1.0,
+          "Keff_p1p5": 0.9458314046146762,
+          "Keff_p2": 0.8771714314291431,
+          "Keff_p3": 0.7449509729284063,
+          "Keff_p4": 0.6383127720996233
+        }
+      ],
+      "chamber": {
+        "plateauMeanRH": 0.6072710989856436,
+        "plateauMinRH": 0.5941581575283217,
+        "plateauMaxRH": 0.6199076346134036,
+        "windowMeanRH": 0.6228689124600515,
+        "earlyRH": 0.8215669493070091,
+        "plateauTemperatureC": 49.66074033149175,
+        "plateauHumidityRatio": 0.048888453038674035,
+        "tailFromSeconds": 3600.0
+      },
+      "scenarios": [
+        {
+          "scenario": "iso_p1_Q23",
+          "status": "failed",
+          "eventH": 57.47232977083764,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p1.5_Q23",
+          "status": "failed",
+          "eventH": 58.4426012628419,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p2_Q23",
+          "status": "failed",
+          "eventH": 59.62390141127482,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p3_Q23",
+          "status": "failed",
+          "eventH": 62.366511111880406,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p4_Q23",
+          "status": "failed",
+          "eventH": 65.44474918288174,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p1_Q4",
+          "status": "failed",
+          "eventH": 51.090597593063286,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p1.5_Q4",
+          "status": "failed",
+          "eventH": 51.61135452312964,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p2_Q4",
+          "status": "failed",
+          "eventH": 52.2283030221039,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p3_Q4",
+          "status": "failed",
+          "eventH": 53.66798267096376,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        },
+        {
+          "scenario": "iso_p4_Q4",
+          "status": "failed",
+          "eventH": 55.316215818162476,
+          "tailIntegrity": null,
+          "partitionFactorAtEnd": null,
+          "eventReached": null
+        }
+      ],
+      "frozenBaselineForComparison": {
+        "source": "paper_output/results/production/final_v6a/run_manifest.json",
+        "Q3_reportedHours": 57.4724,
+        "Q4_reportedHours": 51.0906
+      }
+    }
+  },
+  "inputsPresent": {
+    "solverCases": true,
+    "latentScenarios": true,
+    "thresholdScaling": true,
+    "stageBoundaries": true,
+    "methodComparison": true,
+    "isothermClosure": true,
+    "morrisScreening": false,
+    "sobolIndices": false
+  },
+  "verdicts": [
+    {
+      "check": "L1 integrator Q23 N800",
+      "value": 1.1221999329791288e-06,
+      "unit": "s",
+      "tolerance": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check": "L1 integrator Q23 N1600",
+      "value": 1.490136014581367e-06,
+      "unit": "s",
+      "tolerance": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check": "L1 integrator Q4 N800",
+      "value": 3.1718627724330872e-06,
+      "unit": "s",
+      "tolerance": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check": "L1 integrator Q4 N1600",
+      "value": 5.5788973440940026e-08,
+      "unit": "s",
+      "tolerance": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check": "L2 face scheme Q23 N400",
+      "value": 0.2143839942519108,
+      "unit": "h",
+      "ratio": 1.0037302066616915,
+      "status": "REPORTED"
+    },
+    {
+      "check": "L2 face scheme Q23 N800",
+      "value": 0.03992194940614979,
+      "unit": "h",
+      "ratio": 1.000694629042736,
+      "status": "REPORTED"
+    },
+    {
+      "check": "L2 face scheme Q23 N1600",
+      "value": 0.008758702992636813,
+      "unit": "h",
+      "ratio": 1.0001523986658358,
+      "status": "REPORTED"
+    },
+    {
+      "check": "L2 face scheme Q4 N400",
+      "value": 0.01987425368074014,
+      "unit": "h",
+      "ratio": 1.0003889996430446,
+      "status": "REPORTED"
+    },
+    {
+      "check": "L2 face scheme Q4 N800",
+      "value": 0.004871306728524871,
+      "unit": "h",
+      "ratio": 1.0000953464396378,
+      "status": "REPORTED"
+    },
+    {
+      "check": "L2 face scheme Q4 N1600",
+      "value": 0.0012108982443592708,
+      "unit": "h",
+      "ratio": 1.0000237010077078,
+      "status": "REPORTED"
+    },
+    {
+      "check": "L4 R-squared scaling residual",
+      "value": 1.3666709940303834,
+      "unit": "%",
+      "tolerance": 5.0,
+      "status": "PASS"
+    },
+    {
+      "check": "L7 independent root Q23",
+      "value": 5.820766091346741e-11,
+      "unit": "s",
+      "tolerance": 1e-06,
+      "status": "PASS"
+    },
+    {
+      "check": "L7 strict threshold Q23",
+      "value": 0.14999953019871928,
+      "unit": "kg/kg",
+      "tolerance": 0.15,
+      "status": "PASS"
+    },
+    {
+      "check": "L7 independent root Q4",
+      "value": 5.820766091346741e-11,
+      "unit": "s",
+      "tolerance": 1e-06,
+      "status": "PASS"
+    },
+    {
+      "check": "L7 strict threshold Q4",
+      "value": 0.1499990536101906,
+      "unit": "kg/kg",
+      "tolerance": 0.15,
+      "status": "PASS"
+    },
+    {
+      "check": "L8 constant-D Kirchhoff vs midpoint FD",
+      "value": 0.0,
+      "unit": "kg/kg",
+      "tolerance": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check": "L8 variable-D scheme difference at finest N",
+      "value": 5.828579419109303e-08,
+      "unit": "kg/kg",
+      "tolerance": 0.0001,
+      "status": "PASS"
+    },
+    {
+      "check": "L8 observed convergence order",
+      "value": 1.999069975926462,
+      "unit": "1",
+      "tolerance": 1.5,
+      "status": "PASS"
+    },
+    {
+      "check": "L9 p=1 member reproduces the frozen boundary",
+      "value": 0.0,
+      "unit": "1",
+      "tolerance": 1e-06,
+      "status": "PASS"
+    },
+    {
+      "check": "L9 isotherm passes through the forced equilibrium point",
+      "value": 0.0,
+      "unit": "1",
+      "tolerance": 1e-12,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

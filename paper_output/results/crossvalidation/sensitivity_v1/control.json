@@ -1,0 +1,17 @@
+{
+  "control": {
+    "unpatchedAnalyticJacobianH": 57.47276052486771,
+    "patchedFiniteDifferenceH": 57.472760525051456,
+    "differenceSeconds": 6.614868652832229e-07,
+    "referenceProductionN3200H": 57.47230195056044,
+    "surrogateOffsetVsProductionSeconds": 1.6508675061601252
+  },
+  "surrogateEventH": {
+    "Q23": 57.4727587858255,
+    "Q4": 51.090973419826916
+  },
+  "productionEventH": {
+    "Q23": 57.47230195056044,
+    "Q4": 51.09057478683054
+  }
+}
