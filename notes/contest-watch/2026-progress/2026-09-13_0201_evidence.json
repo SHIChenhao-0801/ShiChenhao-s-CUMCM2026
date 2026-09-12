@@ -1,0 +1,2581 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Read-only progress snapshot; no production rerun, GUI verification or human approval",
+  "workspace": "D:\\Document\\数学建模\\2026CUMCM",
+  "startedAt": "2026-09-13T02:01:00+08:00",
+  "intendedAt": "2026-09-13T00:00:00+08:00",
+  "capturedAtUtc": "2026-09-12T18:10:07.9455510Z",
+  "gitHead": "e32ca860051d9f4791538d75357955449bf6675c",
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "observedTargetDelayAboutHours": 2,
+    "cause": "UNCONFIRMED",
+    "configurationChanged": false
+  },
+  "reports": [
+    {
+      "path": "paper_output/qa/revision_20260913/final_delivery_audit.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8402291Z",
+      "sha256": "6610750f58eb3d33dc69bc3e0aa77e6462435c154aa5c40a5b5fbdadf9c55da1",
+      "bytes": 1968,
+      "lastWriteTimeUtc": "2026-09-12T15:57:32.5862814Z",
+      "content": {
+        "status": "PASS_FOR_REQUESTED_PAPER_AND_FIGURE_WORK",
+        "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+        "docxSha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+        "sourceUnchanged": true,
+        "render": {
+          "manifest": "v4_render_manifest.json",
+          "pageCount": 31,
+          "abstractPages": 1,
+          "bodyIncludingAIAndReferencesPages": 21,
+          "appendixPages": 9,
+          "allPagesVisuallyReviewed": true,
+          "changedFromV2": [
+            3,
+            12,
+            13,
+            14,
+            15,
+            16,
+            19
+          ],
+          "unchangedFromV2": 24
+        },
+        "equations": {
+          "numbered": 37,
+          "body": 21,
+          "appendix": 16,
+          "equationREF": 39,
+          "citationREF": 8,
+          "bibliography": 7,
+          "wrongReferencesRepaired": 13
+        },
+        "evidence": [
+          "final_semantic_audit.json",
+          "final_appendix_visual_audit.json",
+          "final_root_visual_audit.json",
+          "references/final_citation_visual_review.json"
+        ],
+        "figureZip": "paper_output/figures/六图核查包_20260913.zip",
+        "figureZipSha256": "5f66e58aab4854fb929f42745e2eec247d74c2a53928c2145c3d10c1765d08bb",
+        "figureZipCRC": "PASS",
+        "figureFormats": {
+          "png": 6,
+          "pdf": 6,
+          "svg": 6
+        },
+        "figuresInserted": false,
+        "productionRecomputed": false,
+        "wordGuiCrossReferenceClickTest": false,
+        "newVisualStudioReproduction": false,
+        "humanReview": "PENDING_USER_REVIEW",
+        "wechat": {
+          "recipient": "乐乐",
+          "status": "UNSENT_TOOL_BLOCKED",
+          "explicitUserAuthorization": true,
+          "reason": "Computer Use自动审批审查无法可靠识别当前Windows浏览器URL，终止本轮桌面控制；用户再次授权后只读重试仍失败。",
+          "messagePrepared": "论文的参考文献核查、正文修改、公式校对与编号整理，以及六张图绘制已完成。修订稿和独立图像已准备好，图像暂未插入论文，等待核查。"
+        }
+      }
+    },
+    {
+      "path": "paper_output/qa/revision_20260913/final_semantic_audit.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8638584Z",
+      "sha256": "84d2f809915e5eac9d5a99c815e8eaf331c0dcd36de97eb0d85a7ac3301ce11d",
+      "bytes": 46288,
+      "lastWriteTimeUtc": "2026-09-12T15:52:22.0099222Z",
+      "content": {
+        "source_docx": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\user_source.docx",
+        "source_sha256": "0b58fbf0edb76a3f258d07c53eedd72139ef05cb84cb9f28491df32720c8cc24",
+        "output_docx": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+        "output_sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+        "builder_output_hash_matches": true,
+        "equation_seq_count": 37,
+        "equation_numbers_ordered": true,
+        "equation_bookmark_count": 37,
+        "bibliography_seq_count": 7,
+        "bibliography_ref_count": 8,
+        "bibliography_bookmark_count": 7,
+        "bookmark_ids_unique": true,
+        "bookmark_pairs_match": true,
+        "ref_checks": [
+          {
+            "p": 10,
+            "instr": " REF bib_001 \\h ",
+            "value": "1",
+            "context": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。",
+            "target": "bib_001",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 10,
+            "instr": " REF bib_002 \\h ",
+            "value": "2",
+            "context": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。",
+            "target": "bib_002",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 43,
+            "instr": " REF bib_003 \\h ",
+            "value": "3",
+            "context": "平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。附件1的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记该观测数值为 Y∞，基线取 Ceq=Y∞，作为表面传质的等效平衡值。这一数值映射是本文的边界假设；文献中的一般平衡关系不构成该映射的标定依据。若进一步将 Y∞ 解释为空气湿度比，其参考质量也需另作说明。",
+            "target": "bib_003",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 49,
+            "instr": " REF eq_002 \\h ",
+            "value": "2",
+            "context": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。",
+            "target": "eq_002",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 49,
+            "instr": " REF eq_003 \\h ",
+            "value": "3",
+            "context": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。",
+            "target": "eq_003",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 49,
+            "instr": " REF bib_004 \\h ",
+            "value": "4",
+            "context": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。",
+            "target": "bib_004",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 56,
+            "instr": " REF eq_006 \\h ",
+            "value": "6",
+            "context": "因此本问温度方程是可独立求解的线性热方程，水方程仍因D1(C)而非线性。式(6)没有温度项；Arrhenius温度因子只在问题二至四的物性关系中出现。不能把“常热物性”扩大解释为“全部物性均为常数”，也不应给问题一另外加入温度活化项。",
+            "target": "eq_006",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 58,
+            "instr": " REF bib_005 \\h ",
+            "value": "5",
+            "context": "设归一化坐标 x=r/R0，在 0≤x≤1 上划分 N 个等长区间，节点 xi=i/N 包含中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体，记其无量纲体积权重为 wi。有限体积法先计算相邻控制体共用的面通量，再由净通量建立收支；内部面在全域求和时成对相消[5]。该处理可直接落实轴心零通量条件。",
+            "target": "bib_005",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 59,
+            "instr": " REF bib_004 \\h ",
+            "value": "4",
+            "context": "对于随含水率显著变化的扩散系数，参照浓度相关扩散方程的积分变换方法[4]，构造Kirchhoff浓度势。将题给系数写为 D=D0A(T)exp(−a/C)，取",
+            "target": "bib_004",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 61,
+            "instr": " REF eq_007 \\h ",
+            "value": "7",
+            "context": "相邻节点之间的水分通量通过势差计算，温度因子在该面单独取值。不能把A(T)Φ(C)整体作差，否则会产生原Fick闭合中不存在的温度梯度通量。浓度相近时采用局部展开避免两项接近的势值相减损失有效数字。式(7)使浓度方向的积分得到解析处理，但温度面值、有限网格与时间推进仍有离散误差；它不是对整个偏微分方程的精确求解。",
+            "target": "eq_007",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 62,
+            "instr": " REF bib_006 \\h ",
+            "value": "6",
+            "context": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。",
+            "target": "bib_006",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 62,
+            "instr": " REF bib_007 \\h ",
+            "value": "7",
+            "context": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。",
+            "target": "bib_007",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 72,
+            "instr": " REF eq_006 \\h ",
+            "value": "6",
+            "context": "表层含水率降低后，式(6)中的D随之减小，形成较强的干燥阻力。因而即使表面与外界存在传质驱动力，内部水分也不会立刻均匀释放。只用一个全体平均含水率描述此阶段，会掩盖径向差异，无法回答题目要求的各位置浓度。",
+            "target": "eq_006",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 78,
+            "instr": " REF eq_002 \\h ",
+            "value": "2",
+            "context": "问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3在整个求解区间使用同一套变物性，不在1800 s将附录2解拼接到附录3，也不把问题一末状态用作新的初始条件。这样才能区分两问的物性设定，避免在中途人为改变材料参数。",
+            "target": "eq_002",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 78,
+            "instr": " REF eq_005 \\h ",
+            "value": "5",
+            "context": "问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3在整个求解区间使用同一套变物性，不在1800 s将附录2解拼接到附录3，也不把问题一末状态用作新的初始条件。这样才能区分两问的物性设定，避免在中途人为改变材料参数。",
+            "target": "eq_005",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 84,
+            "instr": " REF eq_008 \\h ",
+            "value": "8",
+            "context": "式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位为m²/s，T必须是绝对温度。指数中的0.45/C和3850/T均为无量纲经验组合，系数按题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解释。",
+            "target": "eq_008",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 84,
+            "instr": " REF eq_009 \\h ",
+            "value": "9",
+            "context": "式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位为m²/s，T必须是绝对温度。指数中的0.45/C和3850/T均为无量纲经验组合，系数按题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解释。",
+            "target": "eq_009",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 100,
+            "instr": " REF eq_009 \\h ",
+            "value": "9",
+            "context": "水分扩散对温度的响应与含水率的响应方向不同。在相同C下，升温使式(9)的温度因子增大，有利于扩散；随着药材逐渐变干，exp(−0.45/C)减小，使后期扩散变慢。因此全过程通常表现为前期升温推动水分迁移、后期低含水率区域限制传递的组合效应。该解释来自物性公式及场分布，不把时间曲线的形状直接归因为某个未经观测的组织变化。",
+            "target": "eq_009",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 120,
+            "instr": " REF eq_014 \\h ",
+            "value": "14",
+            "context": "第一步：在问题二的积分过程中监测 g(t) 下降穿零。第二步：利用连续数值解在包围区间内定位临界根，并核对最大含水率与阈值的一致性。第三步：按式(14)选取并核验烘干时长。第四步：从同一轨迹查询每隔60 s、径向每隔0.1 cm的含水率。另在 N=800 的验证轨迹上采用独立二分法复核事件定位；正式结果由 N=3200 的计算轨迹给出。",
+            "target": "eq_014",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 121,
+            "instr": " REF eq_014 \\h ",
+            "value": "14",
+            "context": "求解阈值方程得到临界时刻 tc≈57.472302 h。按式(14)选取并核验未舍入含水率，得到烘干时长为 57.4724 h。",
+            "target": "eq_014",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 141,
+            "instr": " REF eq_017 \\h ",
+            "value": "17",
+            "context": "式(17)沿用有效显热闭合，未显式包含潜热、湿分携焓及收缩功。材料坐标方程中不再出现额外网格平流项；干基比值也不另加体积浓缩项。收缩引起的干骨架密度变化满足 ρd(t)=ρd0[R0/R(t)]2。坐标变换和干质量守恒推导见附录A。",
+            "target": "eq_017",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 149,
+            "instr": " REF eq_016 \\h ",
+            "value": "16",
+            "context": "在材料坐标中采用 N=6400 的固定网格。每次右端函数求值时，根据当前 t 更新 R(t)，再更新式(16)—(20)中的几何因子、物性和边界通量。网格点随材料运动，输出时转换到题目要求的物理半径 r。",
+            "target": "eq_016",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 149,
+            "instr": " REF eq_020 \\h ",
+            "value": "20",
+            "context": "在材料坐标中采用 N=6400 的固定网格。每次右端函数求值时，根据当前 t 更新 R(t)，再更新式(16)—(20)中的几何因子、物性和边界通量。网格点随材料运动，输出时转换到题目要求的物理半径 r。",
+            "target": "eq_020",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 162,
+            "instr": " REF eq_016 \\h ",
+            "value": "16",
+            "context": "式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。",
+            "target": "eq_016",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 162,
+            "instr": " REF eq_018 \\h ",
+            "value": "18",
+            "context": "式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。",
+            "target": "eq_018",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 162,
+            "instr": " REF eq_010 \\h ",
+            "value": "10",
+            "context": "式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。",
+            "target": "eq_010",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 173,
+            "instr": " REF eq_014 \\h ",
+            "value": "14",
+            "context": "达标时间由全域最大含水率事件确定，并在 N=800 的验证轨迹上用独立二分法复核事件定位。最终烘干时刻按式(14)确定，其可行性由未舍入的最大含水率核验；两种定位方法的比较见附录C.4。",
+            "target": "eq_014",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 204,
+            "instr": " REF eq_001 \\h ",
+            "value": "1",
+            "context": "本附录补充正文方程的守恒推导、数值求解步骤和核心算法。温度、时间、长度在计算中分别采用K、s、m；含水率为kg水/kg干物质。式号续正文式(1)—(21)。完整输入、源程序和结果记录作为支撑材料保留，文末仅列实际生产程序的必要片段。",
+            "target": "eq_001",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 204,
+            "instr": " REF eq_021 \\h ",
+            "value": "21",
+            "context": "本附录补充正文方程的守恒推导、数值求解步骤和核心算法。温度、时间、长度在计算中分别采用K、s、m；含水率为kg水/kg干物质。式号续正文式(1)—(21)。完整输入、源程序和结果记录作为支撑材料保留，文末仅列实际生产程序的必要片段。",
+            "target": "eq_021",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 207,
+            "instr": " REF eq_015 \\h ",
+            "value": "15",
+            "context": "记干骨架速度为 u，当前单位体积内的干物质质量为 ρd，水相对骨架的通量为 jw。将正文式(15)的水质量方程减去干物质方程的 C 倍，骨架压缩项消去，得到",
+            "target": "eq_015",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 209,
+            "instr": " REF eq_003 \\h ",
+            "value": "3",
+            "context": "采用 jw=−ρdD∇C，并以空间均匀的干骨架密度闭合，便有 DtC=∇·(D∇C)。固定半径时 u=0，圆柱径向散度给出正文式(3)。初值 C0=2.55 对应湿基质量分数 C0/(1+C0)=0.7183098592；干基含水率可以大于 1。若将环境指标解释为空气湿度比，其分母与材料干基含水率不同；正文的 Ceq 是由环境指标约定的等效边界量。",
+            "target": "eq_003",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 211,
+            "instr": " REF eq_006 \\h ",
+            "value": "6",
+            "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+            "target": "eq_006",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 211,
+            "instr": " REF eq_008 \\h ",
+            "value": "8",
+            "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+            "target": "eq_008",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 211,
+            "instr": " REF eq_009 \\h ",
+            "value": "9",
+            "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+            "target": "eq_009",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 211,
+            "instr": " REF eq_019 \\h ",
+            "value": "19",
+            "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+            "target": "eq_019",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 211,
+            "instr": " REF eq_020 \\h ",
+            "value": "20",
+            "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+            "target": "eq_020",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 218,
+            "instr": " REF eq_016 \\h ",
+            "value": "16",
+            "context": "两项平流相消，DtC=Ct；再代入 ∂r=R−1∂x，即得正文式(16)、(17)及边界式(18)。纯收缩而无相对失水时 DtC=0，所以干基比值 C 不另加体积浓缩项。干物质量 πLR2ρd=πLR02ρd0 保持不变。该变换依赖同比运动与干骨架空间均匀假设；半径按观测插值即可，方程求值无需对折线半径数值微分。",
+            "target": "eq_016",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 218,
+            "instr": " REF eq_017 \\h ",
+            "value": "17",
+            "context": "两项平流相消，DtC=Ct；再代入 ∂r=R−1∂x，即得正文式(16)、(17)及边界式(18)。纯收缩而无相对失水时 DtC=0，所以干基比值 C 不另加体积浓缩项。干物质量 πLR2ρd=πLR02ρd0 保持不变。该变换依赖同比运动与干骨架空间均匀假设；半径按观测插值即可，方程求值无需对折线半径数值微分。",
+            "target": "eq_017",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 218,
+            "instr": " REF eq_018 \\h ",
+            "value": "18",
+            "context": "两项平流相消，DtC=Ct；再代入 ∂r=R−1∂x，即得正文式(16)、(17)及边界式(18)。纯收缩而无相对失水时 DtC=0，所以干基比值 C 不另加体积浓缩项。干物质量 πLR2ρd=πLR02ρd0 保持不变。该变换依赖同比运动与干骨架空间均匀假设；半径按观测插值即可，方程求值无需对折线半径数值微分。",
+            "target": "eq_018",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 229,
+            "instr": " REF eq_007 \\h ",
+            "value": "7",
+            "context": "三组扩散率写成 D=D0e−b/Te−a/C，参数 (a,b,D0) 分别为 (0.89,0,7×10−9)、(0.45,3850,2.4×10−3) 和 (0.30,3850,4.2×10−4)。正文式(7)中，Ce−a/C 与 aEi(−a/C) 的导数分别为 e−a/C(1+a/C) 和 −(a/C)e−a/C，故 Φa′(C)=e−a/C。以面平均温度 T―i=(Ti+Ti+1)/2 计算",
+            "target": "eq_007",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 238,
+            "instr": " REF eq_029 \\h ",
+            "value": "29",
+            "context": "对于式(29)，程序对实际中点表达式求导：两侧浓度偏导为 12f′(C―)ΔC∓f(C―)，其中 f(C)=e−a/C、f′=af/C2；在保护区同时乘相应 C>10−12 的活跃标记。热通量中 ∂kH/∂ki=2ki+12/(ki+ki+1)2，另一侧对称。面导数向两侧控制体按正负号装配。",
+            "target": "eq_029",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 246,
+            "instr": " REF eq_033 \\h ",
+            "value": "33",
+            "context": "两侧均为单位长度热率。B 或 R 变化时，2πR2∑iwiBi(Ti−Tref) 的总导数还含容量和几何变化项，故式(33)只能检验离散热算子的通量平衡。",
+            "target": "eq_033",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 250,
+            "instr": " REF eq_034 \\h ",
+            "value": "34",
+            "context": "其中 G=32yn−2yn−1+12yn−2−ΔtF。实际使用 SciPy BDF 的 1—5 阶自适应实现及解析稀疏 Jacobian；式(34)只解释隐式求解，不把固定二阶系数套用于不等步长。",
+            "target": "eq_034",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 253,
+            "instr": " REF eq_010 \\h ",
+            "value": "10",
+            "context": "计算使用清洗环境表的 241 个 0—4 h 记录及半径表的 145 个 0—72 h 记录。环境在观测区间内线性插值，4 h 后沿用正文式(10)的 50°C、Ceq=0.05 平台。三条轨迹均从 T0=301.15 K、C0=2.55 出发：Q1 取 N=3200 并算至 1800 s；Q2、Q3 共用一条 N=3200 轨迹；Q4 取 N=6400 并随当前 R(t) 更新几何。",
+            "target": "eq_010",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 258,
+            "instr": " REF eq_032 \\h ",
+            "value": "32",
+            "context": "每次正式求解还检查接受状态物性为正、含水率范围及式(32)的质量残差。解析热场、导数差分、时间及空间检查承担不同验证作用，事件时长稳定不能替代局部场检验。附件未提供内部温湿度标签，因此不据此给出实测准确率。",
+            "target": "eq_032",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 268,
+            "instr": " REF eq_014 \\h ",
+            "value": "14",
+            "context": "取 Δt=0.36 s，并依次检查 t0,t0+Δt,… 处未舍入的 MN。第一个满足 MN<0.15 的候选点即正文式(14)的 tr；若候选点超出已实际积分的区间，则报错。问题三的连续根为57.47230195056044 h，选取时长为57.4724 h；问题四分别为51.09057478683054 h和51.0906 h。表中显示精度与阈值判定精度分别处理。",
+            "target": "eq_014",
+            "exists": true,
+            "display_matches_target": true
+          },
+          {
+            "p": 271,
+            "instr": " REF eq_021 \\h ",
+            "value": "21",
+            "context": "正文式(21)的 p 情景只改变等效边界阻力。当 Cs≥Cref>0、p≥1 时，令 z=(Cref/Cs)1/p∈[0,1]，有 1−z≤1−zp≤p(1−z)，从而 1/p≤Kp≤1；Cs→Cref 时取连续极限 1/p。该族是在指定参考点下以活动度差缩放得到的经验形式，未标定药材等温线。历史 p=1,2,4 的 N800 事件只用于条件情景比较，不替代正式网格的严格报告时刻，也不推出真实时长下界。",
+            "target": "eq_021",
+            "exists": true,
+            "display_matches_target": true
+          }
+        ],
+        "all_refs_resolve_and_match": true,
+        "equation_math_comparison": [
+          {
+            "number": 1,
+            "sourceParagraph": 40,
+            "original": "C=\\frac{{m}_{w}}{{m}_{d}}, w=\\frac{C}{1+C}",
+            "final": "C=\\frac{{m}_{w}}{{m}_{d}}, w=\\frac{C}{1+C}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 2,
+            "sourceParagraph": 47,
+            "original": "B(C)\\frac{∂T}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rk(C)\\frac{∂T}{∂r}), 0<r<{R}_{0}",
+            "final": "B(C)\\frac{∂T}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rk(C)\\frac{∂T}{∂r}), 0<r<{R}_{0}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 3,
+            "sourceParagraph": 48,
+            "original": "\\frac{∂C}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rD(T,C)\\frac{∂C}{∂r})",
+            "final": "\\frac{∂C}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rD(T,C)\\frac{∂C}{∂r})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 4,
+            "sourceParagraph": 51,
+            "original": "T(r,0)=301.15 K, C(r,0)=2.55, {T}_{r}(0,t)={C}_{r}(0,t)=0",
+            "final": "T(r,0)=301.15 K, C(r,0)=2.55, {T}_{r}(0,t)={C}_{r}(0,t)=0",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 5,
+            "sourceParagraph": 52,
+            "original": "−k{T}_{r}({R}_{0},t)=h({T}_{s}−{T}_{∞}), −D{C}_{r}({R}_{0},t)=β({C}_{s}−{C}_{eq})",
+            "final": "−k{T}_{r}({R}_{0},t)=h({T}_{s}−{T}_{∞}), −D{C}_{r}({R}_{0},t)=β({C}_{s}−{C}_{eq})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 6,
+            "sourceParagraph": 55,
+            "original": "{D}_{1}(C)=7×{10}^{−9}exp(−\\frac{0.89}{C}) {m}^{2}/s",
+            "final": "{D}_{1}(C)=7×{10}^{−9}exp(−\\frac{0.89}{C}) {m}^{2}/s",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 7,
+            "sourceParagraph": 60,
+            "original": "{Φ}_{a}(C)=Cexp(−a/C)+aEi(−a/C), {Φ}_{a}^{′}(C)=exp(−a/C)",
+            "final": "{Φ}_{a}(C)=Cexp(−a/C)+aEi(−a/C), {Φ}_{a}^{′}(C)=exp(−a/C)",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 8,
+            "sourceParagraph": 82,
+            "original": "{ρ}_{eff}=650+128C, {c}_{p}=1450+2736w, k=0.21+0.38w",
+            "final": "{ρ}_{eff}=650+128C, {c}_{p}=1450+2736w, k=0.21+0.38w",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 9,
+            "sourceParagraph": 83,
+            "original": "{D}_{3}(T,C)=2.4×{10}^{−3}exp(−\\frac{0.45}{C}−\\frac{3850}{T})",
+            "final": "{D}_{3}(T,C)=2.4×{10}^{−3}exp(−\\frac{0.45}{C}−\\frac{3850}{T})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 10,
+            "sourceParagraph": 86,
+            "original": "({T}_{∞},{C}_{eq})(t)={({I}_{T}(t),{I}_{Y}(t)),0≤t≤14400 s,(323.15,0.05),t>14400 s.",
+            "final": "({T}_{∞},{C}_{eq})(t)={({I}_{T}(t),{I}_{Y}(t)),0≤t≤14400 s,(323.15,0.05),t>14400 s.",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 11,
+            "sourceParagraph": 109,
+            "original": "M(t)={max}_{0≤r≤{R}_{0}}C(r,t)",
+            "final": "M(t)={max}_{0≤r≤{R}_{0}}C(r,t)",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 12,
+            "sourceParagraph": 111,
+            "original": "M(t)<0.15",
+            "final": "M(t)<0.15",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 13,
+            "sourceParagraph": 113,
+            "original": "g(t)=M(t)−0.15",
+            "final": "g(t)=M(t)−0.15",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 14,
+            "sourceParagraph": 117,
+            "original": "{t}_{r}={10}^{−4}⌈{10}^{4}{t}_{c}⌉ h, M({t}_{r})<0.15",
+            "final": "{t}_{r}=min{kΔt: k∈{ℕ}_{0}, kΔt≥{t}_{c}, M(kΔt)<0.15}",
+            "math_text_unchanged": false,
+            "intentional_replacement": true
+          },
+          {
+            "number": 15,
+            "sourceParagraph": 137,
+            "original": "{∂}_{t}{ρ}_{d}+∇ ·({ρ}_{d}u)=0, {∂}_{t}({ρ}_{d}C)+∇ ·({ρ}_{d}Cu+{j}_{w})=0",
+            "final": "{∂}_{t}{ρ}_{d}+∇ ·({ρ}_{d}u)=0, {∂}_{t}({ρ}_{d}C)+∇ ·({ρ}_{d}Cu+{j}_{w})=0",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 16,
+            "sourceParagraph": 139,
+            "original": "\\frac{∂\\hat{C}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xD\\frac{∂\\hat{C}}{∂x})",
+            "final": "\\frac{∂\\hat{C}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xD\\frac{∂\\hat{C}}{∂x})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 17,
+            "sourceParagraph": 140,
+            "original": "B(\\hat{C})\\frac{∂\\hat{T}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xk\\frac{∂\\hat{T}}{∂x})",
+            "final": "B(\\hat{C})\\frac{∂\\hat{T}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xk\\frac{∂\\hat{T}}{∂x})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 18,
+            "sourceParagraph": 143,
+            "original": "−\\frac{k}{R}{\\hat{T}}_{x}(1,t)=h({T}_{s}−{T}_{∞}), −\\frac{D}{R}{\\hat{C}}_{x}(1,t)=β({C}_{s}−{C}_{eq})",
+            "final": "−\\frac{k}{R(t)}{\\hat{T}}_{x}(1,t)=h({T}_{s}−{T}_{∞}), −\\frac{D}{R(t)}{\\hat{C}}_{x}(1,t)=β({C}_{s}−{C}_{eq})",
+            "math_text_unchanged": false,
+            "intentional_replacement": true
+          },
+          {
+            "number": 19,
+            "sourceParagraph": 145,
+            "original": "{ρ}_{eff}=760+90C, {c}_{p}=1850+2150w, k=0.12+0.20w,",
+            "final": "{ρ}_{eff}=760+90C, {c}_{p}=1850+2150w, k=0.12+0.20w,",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 20,
+            "sourceParagraph": 146,
+            "original": "{D}_{4}(T,C)=4.2×{10}^{−4}exp(−\\frac{0.30}{C}−\\frac{3850}{T})",
+            "final": "{D}_{4}(T,C)=4.2×{10}^{−4}exp(−\\frac{0.30}{C}−\\frac{3850}{T})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 21,
+            "sourceParagraph": 165,
+            "original": "{K}_{p}({C}_{s})=\\frac{1−({C}_{ref}/{C}_{s}{)}^{1/p}}{1−{C}_{ref}/{C}_{s}}, {j}_{w}={ρ}_{d}β{K}_{p}({C}_{s})({C}_{s}−{C}_{eq})",
+            "final": "{K}_{p}({C}_{s})=\\frac{1−({C}_{ref}/{C}_{s}{)}^{1/p}}{1−{C}_{ref}/{C}_{s}}, {j}_{w}={ρ}_{d}β{K}_{p}({C}_{s})({C}_{s}−{C}_{eq})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 22,
+            "sourceParagraph": 203,
+            "original": "{ρ}_{d}{D}_{t}C=−∇·{j}_{w}, {D}_{t}={∂}_{t}+u·∇",
+            "final": "{ρ}_{d}{D}_{t}C=−∇·{j}_{w}, {D}_{t}={∂}_{t}+u·∇",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 23,
+            "sourceParagraph": 208,
+            "original": "R(t)≥{R}_{0}\\sqrt[]{\\frac{{ρ}_{d0}}{760}}=1.2112029565 cm, {ρ}_{d0}=\\frac{760+90×2.55}{3.55}",
+            "final": "R(t)≥{R}_{0}\\sqrt[]{\\frac{{ρ}_{d0}}{760}}=1.2112029565 cm, {ρ}_{d0}=\\frac{760+90×2.55}{3.55}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 24,
+            "sourceParagraph": 212,
+            "original": "{ρ}_{d}(t)={ρ}_{d0}{(\\frac{{R}_{0}}{R(t)})}^{2}, {{C}_{t}|}_{r}={\\hat{C}}_{t}−\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}, {u}_{r}{C}_{r}=\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}",
+            "final": "{ρ}_{d}(t)={ρ}_{d0}{(\\frac{{R}_{0}}{R(t)})}^{2}, {{C}_{t}|}_{r}={\\hat{C}}_{t}−\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}, {u}_{r}{C}_{r}=\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 25,
+            "sourceParagraph": 217,
+            "original": "{w}_{i}={∫}_{{a}_{i}}^{{b}_{i}}x dx=\\frac{{b}_{i}^{2}−{a}_{i}^{2}}{2}, {w}_{0}=\\frac{Δ{x}^{2}}{8}, {w}_{i}={x}_{i}Δx (1≤i<N), {w}_{N}=\\frac{Δx}{2}−\\frac{Δ{x}^{2}}{8}",
+            "final": "{w}_{i}={∫}_{{a}_{i}}^{{b}_{i}}x dx=\\frac{{b}_{i}^{2}−{a}_{i}^{2}}{2}, {w}_{0}=\\frac{Δ{x}^{2}}{8}, {w}_{i}={x}_{i}Δx (1≤i<N), {w}_{N}=\\frac{Δx}{2}−\\frac{Δ{x}^{2}}{8}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 26,
+            "sourceParagraph": 219,
+            "original": "{\\dot{T}}_{i}=\\frac{{g}_{i+1/2}^{T}−{g}_{i−1/2}^{T}}{{R}^{2}{w}_{i}{B}_{i}}, {\\dot{C}}_{i}=\\frac{{g}_{i+1/2}^{C}−{g}_{i−1/2}^{C}}{{R}^{2}{w}_{i}}",
+            "final": "{\\dot{T}}_{i}=\\frac{{g}_{i+1/2}^{T}−{g}_{i−1/2}^{T}}{{R}^{2}{w}_{i}{B}_{i}}, {\\dot{C}}_{i}=\\frac{{g}_{i+1/2}^{C}−{g}_{i−1/2}^{C}}{{R}^{2}{w}_{i}}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 27,
+            "sourceParagraph": 222,
+            "original": "{g}_{i+1/2}^{T}={γ}_{i}{k}_{H}({T}_{i+1}−{T}_{i}), {k}_{H}=\\frac{2{k}_{i}{k}_{i+1}}{{k}_{i}+{k}_{i+1}}, {γ}_{i}=\\frac{{x}_{i+1/2}}{Δx}",
+            "final": "{g}_{i+1/2}^{T}={γ}_{i}{k}_{H}({T}_{i+1}−{T}_{i}), {k}_{H}=\\frac{2{k}_{i}{k}_{i+1}}{{k}_{i}+{k}_{i+1}}, {γ}_{i}=\\frac{{x}_{i+1/2}}{Δx}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 28,
+            "sourceParagraph": 225,
+            "original": "{g}_{i+1/2}^{C}={γ}_{i}{D}_{0}{e}^{−b/{T^{―}}_{i}}[{Φ}_{a}({C}_{i+1})−{Φ}_{a}({C}_{i})]",
+            "final": "{g}_{i+1/2}^{C}={γ}_{i}{D}_{0}{e}^{−b/{T^{―}}_{i}}[{Φ}_{a}({C}_{i+1})−{Φ}_{a}({C}_{i})]",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 29,
+            "sourceParagraph": 228,
+            "original": "ΔΦ≃{e}^{−a/C^{―}}ΔC, |ΔC|<{10}^{−7}max(C^{―},{10}^{−3})",
+            "final": "ΔΦ≃{e}^{−a/C^{―}}ΔC, |ΔC|<{10}^{−7}max(C^{―},{10}^{−3})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 30,
+            "sourceParagraph": 232,
+            "original": "\\frac{∂{g}^{C}}{∂{C}_{i}}=−{G}_{i}{e}^{−a/{C}_{i}}, \\frac{∂{g}^{C}}{∂{C}_{i+1}}={G}_{i}{e}^{−a/{C}_{i+1}}, \\frac{∂{g}^{C}}{∂{T}_{i}}=\\frac{∂{g}^{C}}{∂{T}_{i+1}}={g}^{C}\\frac{b}{2{T^{―}}_{i}^{2}}",
+            "final": "\\frac{∂{g}^{C}}{∂{C}_{i}}=−{G}_{i}{e}^{−a/{C}_{i}}, \\frac{∂{g}^{C}}{∂{C}_{i+1}}={G}_{i}{e}^{−a/{C}_{i+1}}, \\frac{∂{g}^{C}}{∂{T}_{i}}=\\frac{∂{g}^{C}}{∂{T}_{i+1}}={g}^{C}\\frac{b}{2{T^{―}}_{i}^{2}}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 31,
+            "sourceParagraph": 235,
+            "original": "{B}_{i}^{′}={ρ}_{eff}^{′}{c}_{p}+{ρ}_{eff}{c}_{p}^{′}, {\\frac{∂{\\dot{T}}_{i}}{∂{C}_{i}}|}_{capacity}=−{\\dot{T}}_{i}\\frac{{B}_{i}^{′}}{{B}_{i}}",
+            "final": "{B}_{i}^{′}={ρ}_{eff}^{′}{c}_{p}+{ρ}_{eff}{c}_{p}^{′}, {\\frac{∂{\\dot{T}}_{i}}{∂{C}_{i}}|}_{capacity}=−{\\dot{T}}_{i}\\frac{{B}_{i}^{′}}{{B}_{i}}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 32,
+            "sourceParagraph": 238,
+            "original": "\\dot{ℓ}=\\frac{2β}{R}({C}_{N}−{C}_{eq}), 2{∑}_{i}{w}_{i}{C}_{i}+ℓ={C}_{0}",
+            "final": "\\dot{ℓ}=\\frac{2β}{R}({C}_{N}−{C}_{eq}), 2{∑}_{i}{w}_{i}{C}_{i}+ℓ={C}_{0}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 33,
+            "sourceParagraph": 240,
+            "original": "2π{R}^{2}{∑}_{i}{w}_{i}{B}_{i}{\\dot{T}}_{i}=2πRh({T}_{∞}−{T}_{N})",
+            "final": "2π{R}^{2}{∑}_{i}{w}_{i}{B}_{i}{\\dot{T}}_{i}=2πRh({T}_{∞}−{T}_{N})",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 34,
+            "sourceParagraph": 244,
+            "original": "\\frac{3{y}_{n}−4{y}_{n−1}+{y}_{n−2}}{2Δt}=F({t}_{n},{y}_{n}), (\\frac{3}{2}I−ΔtJ)δy=−G",
+            "final": "\\frac{3{y}_{n}−4{y}_{n−1}+{y}_{n−2}}{2Δt}=F({t}_{n},{y}_{n}), (\\frac{3}{2}I−ΔtJ)δy=−G",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 35,
+            "sourceParagraph": 256,
+            "original": "{μ}_{n}{J}_{1}({μ}_{n})=B{i}_{h}{J}_{0}({μ}_{n}), B{i}_{h}=\\frac{h{R}_{0}}{k}, {λ}_{n}=\\frac{α{μ}_{n}^{2}}{{R}_{0}^{2}}, {b}_{n}=\\frac{2{J}_{1}({μ}_{n})}{{μ}_{n}[{J}_{0}({μ}_{n}{)}^{2}+{J}_{1}({μ}_{n}{)}^{2}]}",
+            "final": "{μ}_{n}{J}_{1}({μ}_{n})=B{i}_{h}{J}_{0}({μ}_{n}), B{i}_{h}=\\frac{h{R}_{0}}{k}, {λ}_{n}=\\frac{α{μ}_{n}^{2}}{{R}_{0}^{2}}, {b}_{n}=\\frac{2{J}_{1}({μ}_{n})}{{μ}_{n}[{J}_{0}({μ}_{n}{)}^{2}+{J}_{1}({μ}_{n}{)}^{2}]}",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 36,
+            "sourceParagraph": 258,
+            "original": "T(x,t)={T}_{∞}(t)+{∑}_{n=1}^{∞}{b}_{n}{J}_{0}({μ}_{n}x)[({T}_{0}−{T}_{∞}(0)){e}^{−{λ}_{n}t}−{∫}_{0}^{t}{e}^{−{λ}_{n}(t−τ)}{\\dot{T}}_{∞}(τ) dτ]",
+            "final": "T(x,t)={T}_{∞}(t)+{∑}_{n=1}^{∞}{b}_{n}{J}_{0}({μ}_{n}x)[({T}_{0}−{T}_{∞}(0)){e}^{−{λ}_{n}t}−{∫}_{0}^{t}{e}^{−{λ}_{n}(t−τ)}{\\dot{T}}_{∞}(τ) dτ]",
+            "math_text_unchanged": true,
+            "intentional_replacement": false
+          },
+          {
+            "number": 37,
+            "sourceParagraph": 262,
+            "original": "{t}_{rep,h}={10}^{−4}⌈{10}^{4}\\frac{{t}_{∗}}{3600}⌉, {M}_{N}(3600{t}_{rep,h})<0.15",
+            "final": "{t}_{0}=Δt⌈\\frac{{t}_{c}}{Δt}⌉, Δt=0.36 s",
+            "math_text_unchanged": false,
+            "intentional_replacement": true
+          }
+        ],
+        "unchanged_equations_preserved": true,
+        "result_table_checks": [
+          {
+            "index": 1,
+            "same": true,
+            "cells": 48
+          },
+          {
+            "index": 2,
+            "same": true,
+            "cells": 48
+          },
+          {
+            "index": 3,
+            "same": true,
+            "cells": 42
+          },
+          {
+            "index": 4,
+            "same": true,
+            "cells": 42
+          },
+          {
+            "index": 5,
+            "same": true,
+            "cells": 66
+          },
+          {
+            "index": 6,
+            "same": true,
+            "cells": 70
+          },
+          {
+            "index": 7,
+            "same": true,
+            "cells": 20
+          },
+          {
+            "index": 8,
+            "same": true,
+            "cells": 20
+          }
+        ],
+        "all_result_table_cells_unchanged": true,
+        "appendix_D_all_paragraph_text_unchanged": true,
+        "appendix_D_paragraph_styles": {
+          "8": 1,
+          "": 124,
+          "9": 6
+        },
+        "symbol_table_final": [
+          [
+            "符号",
+            "说明",
+            "单位"
+          ],
+          [
+            "t",
+            "时间",
+            "s"
+          ],
+          [
+            "r",
+            "到药材中心的径向距离",
+            "m"
+          ],
+          [
+            "x=r/R(t)",
+            "材料归一化径向坐标",
+            "1"
+          ],
+          [
+            "T",
+            "药材温度",
+            "K"
+          ],
+          [
+            "C",
+            "干基含水率=m水/m干物质",
+            "kg/kg"
+          ],
+          [
+            "w=C/(1+C)",
+            "湿基质量分数",
+            "1"
+          ],
+          [
+            "R(t)",
+            "药材当前半径",
+            "m"
+          ],
+          [
+            "ρeff",
+            "有效密度（用于热容量）",
+            "kg/m³"
+          ],
+          [
+            "ρd",
+            "守恒干物质密度",
+            "kg/m³"
+          ],
+          [
+            "cp",
+            "比热容",
+            "J/(kg·K)"
+          ],
+          [
+            "k",
+            "导热系数",
+            "W/(m·K)"
+          ],
+          [
+            "D",
+            "有效水分扩散系数",
+            "m²/s"
+          ],
+          [
+            "h",
+            "对流换热系数",
+            "W/(m²·K)"
+          ],
+          [
+            "β",
+            "对流传质系数",
+            "m/s"
+          ],
+          [
+            "B=ρeff·cp",
+            "有效体积显热容量",
+            "J/(m³·K)"
+          ],
+          [
+            "qr",
+            "径向导热热流密度（向外为正）",
+            "W/m²"
+          ],
+          [
+            "jw",
+            "径向水分质量通量（向外为正）",
+            "kg/(m²·s)"
+          ],
+          [
+            "ℓ(t)",
+            "每单位初始干物质的累计失水",
+            "kg/kg"
+          ],
+          [
+            "Ceq",
+            "环境对应的等效平衡含水率",
+            "kg/kg"
+          ],
+          [
+            "T∞",
+            "烘房温度",
+            "K"
+          ],
+          [
+            "tc",
+            "全域含水率阈值的临界时刻",
+            "s"
+          ]
+        ],
+        "inline_delimiter_examples": [
+          {
+            "source": "式(14)及式(16)—(20)",
+            "converted": "式(14)及式(16)—(20)"
+          },
+          {
+            "source": "[1]、[7]",
+            "converted": "[1]、[7]"
+          },
+          {
+            "source": "(x=r/R(t))",
+            "converted": "$x=r/R(t)$"
+          },
+          {
+            "source": "([0,1])",
+            "converted": "$[0,1]$"
+          },
+          {
+            "source": "(0.15\\ \\mathrm{kg/kg})",
+            "converted": "$0.15$ kg/kg"
+          },
+          {
+            "source": "(\\Delta t=0.36\\ \\mathrm s=10^{-4}\\ \\mathrm h)",
+            "converted": "$\\Delta t=0.36\\ \\mathrm s=10^{-4}\\ \\mathrm h$"
+          },
+          {
+            "source": "(t_{\\mathrm c}\\approx57.472302\\ \\mathrm h)",
+            "converted": "$t_{\\mathrm c}\\approx57.472302\\ \\mathrm h$"
+          },
+          {
+            "source": "(0.1500)",
+            "converted": "$0.1500$"
+          },
+          {
+            "source": "(kg/kg)",
+            "converted": "$kg/kg$"
+          }
+        ],
+        "status": "PASS",
+        "agent_semantic_review": "COMPLETE",
+        "human_review": "This is an independent AI audit; team human review was not performed here.",
+        "code_fragment_line_counts": [
+          20,
+          18,
+          16,
+          13,
+          37,
+          13
+        ],
+        "code_fragment_lines_total": 117,
+        "thirteen_previously_wrong_references_verified_correct": true,
+        "equations_14_18_37_semantically_approved": true,
+        "hats_and_time_derivative_accents_preserved": true,
+        "inline_parser_actual_document_findings": [],
+        "resolved_v1_issues": [
+          "M(t) now one intact native function expression",
+          "N_0 is now blackboard-bold naturals in prose and equation 14",
+          "kg/kg moved outside math expressions as ordinary unit text",
+          "Unnecessary parentheses around displayed 0.1500 removed"
+        ],
+        "limitations": [
+          "Static and rendered-document review; no new production PDE integration.",
+          "Approval binds only to the recorded source/output SHA256.",
+          "Scalar formula checks do not establish experimental predictive accuracy."
+        ],
+        "version": "v4",
+        "equation_reference_count": 39,
+        "total_REF_count": 47,
+        "final_prose_delta_review": {
+          "paragraphs": [
+            22,
+            103,
+            106,
+            115,
+            123,
+            173
+          ],
+          "status": "PASS",
+          "finding": "Shortening preserves model assumptions, threshold interpretation, frozen values and boundaries of numerical evidence; latest inline function g(t) remains intact."
+        },
+        "rendered_pdf_sha256": "f1f2933a39c3a3d21b3f47255ea4aaab1d1ebfdade817e2b833ac580f6369030"
+      }
+    },
+    {
+      "path": "paper_output/qa/revision_20260913/final_appendix_visual_audit.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8653218Z",
+      "sha256": "766710877cb1adefcf4a9ce6696b787b35b5339435ea4d7c86fb70b30e1703b3",
+      "bytes": 4298,
+      "lastWriteTimeUtc": "2026-09-12T15:52:22.0172993Z",
+      "content": {
+        "version": "v4",
+        "status": "PASS",
+        "docxSha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+        "pdfSha256": "f1f2933a39c3a3d21b3f47255ea4aaab1d1ebfdade817e2b833ac580f6369030",
+        "review_method": "All appendix pages 23-31 were actually viewed in v2; each final v4 PNG was rehashed and is byte-identical to that viewed evidence.",
+        "pages": [
+          {
+            "page": 23,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-23.png",
+            "sha256": "b6430d7905028495a1f6a3164ab7f319a1f745f7dfe14b845f294778d092e6a3",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "Appendix A starts; (22)(23) conservation and density inequality legible, references correct."
+          },
+          {
+            "page": 24,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-24.png",
+            "sha256": "77d4553685baba7107a0d86946ddaa2d04b46e421abd92255a193535872b3417",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "(24) moving-coordinate hats and R dots visible; (25)-(27) control-volume fractions and indices fit."
+          },
+          {
+            "page": 25,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-25.png",
+            "sha256": "3aa4cb64d5dab994c9fac448eb5ac3759bc700611594ea3d7a3d87d358a4a977",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "(28)-(31) Kirchhoff and Jacobian derivatives, bars, primes and T dot legible; no collisions."
+          },
+          {
+            "page": 26,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-26.png",
+            "sha256": "2c749a7edd295c758eac42519926b2b930f6836901585c0fd8a881be7464e900",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "(32)-(34) conservation and BDF/Newton equations readable; spacing and page edge clear."
+          },
+          {
+            "page": 27,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-27.png",
+            "sha256": "1332555fe69a2999c4135aca0b4e52de6c15b0f81d4f2fbddad8e1e095c4eb5c",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "(35)-(37) Bessel coefficients, convolution T-infinity dot, candidate ceiling visible; no clipping."
+          },
+          {
+            "page": 28,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-28.png",
+            "sha256": "37ea2efb840451a1f9b10e99ef8c92b9c9a38c0b3e31207b1b38955b033aee4f",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "C4 continuation and boundary-factor conditions legible; D1 code complete."
+          },
+          {
+            "page": 29,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-29.png",
+            "sha256": "4a83327b64b1b323c6cf5b99aaec2fcf482b8ac655fa52e6f8fba49e75175807",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "D2 and D3 code legible; long expressions wrap naturally without truncation."
+          },
+          {
+            "page": 30,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-30.png",
+            "sha256": "133c65133b4fffca8c87269c727c9d5566484a392a42c8415f617a70f61e3159",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "D4 and D5 code complete with visible indentation; last break fits above footer."
+          },
+          {
+            "page": 31,
+            "image": "tmp/cache/paper_revision_20260913/v4/page-31.png",
+            "sha256": "5425d065d25e90861c334624c9a1043b202bb20d98ee010210094ef190ea0205",
+            "status": "PASS",
+            "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+            "observation": "D6 code complete; long exception string wraps naturally, no text loss."
+          }
+        ],
+        "blocking_findings": [],
+        "original_visual_review": "paper_output/qa/revision_20260913/v2_appendix_visual_audit.json"
+      }
+    },
+    {
+      "path": "paper_output/qa/revision_20260913/references/final_citation_visual_review.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8660960Z",
+      "sha256": "c1351c48a82fa22cefae14fafb7a37719f1d7168ead4638aaacf829f045c7eaf",
+      "bytes": 16663,
+      "lastWriteTimeUtc": "2026-09-12T15:52:34.4217307Z",
+      "content": {
+        "checked_utc": "2026-09-12T23:52:34.40173+08:00",
+        "document": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+        "document_sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+        "pdf": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\药材热湿耦合模型与干燥时间计算_文献公式修订版.pdf",
+        "pdf_sha256": "f1f2933a39c3a3d21b3f47255ea4aaab1d1ebfdade817e2b833ac580f6369030",
+        "scope": "独立核查最终v4全部正文引文与7条书目支持范围；实际逐张查看v2渲染第1—10页，v3仅第3页变化并已实际重看，其余9页PNG哈希与实际看过的v2完全相同。v4第1—10页与v3的PNG哈希均完全相同。第11—31页由其他代理负责；不代替用户人工审查。",
+        "previous_document_sha256": "11bdfd7bbd23203c0921617809dc4e2ea65d0bcbfc8976d19a6d73026f93c006",
+        "citation_result": "PASS",
+        "visual_result": "PASS",
+        "citation_fields": [
+          {
+            "paragraph_index": 10,
+            "target": "bib_001",
+            "field": "REF bib_001 \\h",
+            "visible": "1",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。"
+          },
+          {
+            "paragraph_index": 10,
+            "target": "bib_002",
+            "field": "REF bib_002 \\h",
+            "visible": "2",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。"
+          },
+          {
+            "paragraph_index": 43,
+            "target": "bib_003",
+            "field": "REF bib_003 \\h",
+            "visible": "3",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。附件1的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记该观测数值为 ，基线取 ，作为表面传质的等效平衡值。这一数值映射是本文的边界假设；文献中的一般平衡关系不构成该映射的标定依据。若进一步将  解释为空气湿度比，其参考质量也需另作说明。"
+          },
+          {
+            "paragraph_index": 49,
+            "target": "bib_004",
+            "field": "REF bib_004 \\h",
+            "visible": "4",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。"
+          },
+          {
+            "paragraph_index": 58,
+            "target": "bib_005",
+            "field": "REF bib_005 \\h",
+            "visible": "5",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "设归一化坐标 ，在  上划分  个等长区间，节点  包含中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体，记其无量纲体积权重为 。有限体积法先计算相邻控制体共用的面通量，再由净通量建立收支；内部面在全域求和时成对相消[5]。该处理可直接落实轴心零通量条件。"
+          },
+          {
+            "paragraph_index": 59,
+            "target": "bib_004",
+            "field": "REF bib_004 \\h",
+            "visible": "4",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "对于随含水率显著变化的扩散系数，参照浓度相关扩散方程的积分变换方法[4]，构造Kirchhoff浓度势。将题给系数写为 ，取"
+          },
+          {
+            "paragraph_index": 62,
+            "target": "bib_006",
+            "field": "REF bib_006 \\h",
+            "visible": "6",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。"
+          },
+          {
+            "paragraph_index": 62,
+            "target": "bib_007",
+            "field": "REF bib_007 \\h",
+            "visible": "7",
+            "target_exists": true,
+            "display_matches": true,
+            "paragraph": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。"
+          }
+        ],
+        "citation_counts": {
+          "bib_001": 1,
+          "bib_002": 1,
+          "bib_003": 1,
+          "bib_004": 2,
+          "bib_005": 1,
+          "bib_006": 1,
+          "bib_007": 1
+        },
+        "bibliography_checks": [
+          {
+            "number": 1,
+            "actual": "[1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2): 1-28. DOI: 10.11975/j.issn.1002-6819.202306104.",
+            "matches_verified": true
+          },
+          {
+            "number": 2,
+            "actual": "[2] 王晓辉, 王学成, 唐培渝, 等. 数值模拟仿真研究现状及其在中药干燥领域应用展望[J]. 中国中药杂志, 2023, 48(13): 3440-3447. DOI: 10.19540/j.cnki.cjcmm.20230331.301.",
+            "matches_verified": true
+          },
+          {
+            "number": 3,
+            "actual": "[3] MUJUMDAR A S, ed. Handbook of industrial drying[M]. 4th ed. Boca Raton: CRC Press, 2014. DOI: 10.1201/b17208.",
+            "matches_verified": true
+          },
+          {
+            "number": 4,
+            "actual": "[4] CRANK J. The mathematics of diffusion[M]. 2nd ed. Oxford: Clarendon Press, 1975.",
+            "matches_verified": true
+          },
+          {
+            "number": 5,
+            "actual": "[5] EYMARD R, GALLOUËT T, HERBIN R. Finite volume methods[M]//CIARLET P G, LIONS J L, eds. Handbook of numerical analysis. Vol. 7. Amsterdam: North-Holland, 2000: 713-1018. DOI: 10.1016/S1570-8659(00)07005-8.",
+            "matches_verified": true
+          },
+          {
+            "number": 6,
+            "actual": "[6] BYRNE G D, HINDMARSH A C. A polyalgorithm for the numerical solution of ordinary differential equations[J]. ACM Transactions on Mathematical Software, 1975, 1(1): 71-96. DOI: 10.1145/355626.355636.",
+            "matches_verified": true
+          },
+          {
+            "number": 7,
+            "actual": "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html.",
+            "matches_verified": true
+          }
+        ],
+        "pages": [
+          {
+            "page": 1,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-1.png",
+            "sha256": "9fe7ee661accaa4964492e0c5f0b5775bfdc16fa6dd42bffa51d2a612f9da7bd",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "9fe7ee661accaa4964492e0c5f0b5775bfdc16fa6dd42bffa51d2a612f9da7bd",
+            "v3_sha256": "9fe7ee661accaa4964492e0c5f0b5775bfdc16fa6dd42bffa51d2a612f9da7bd",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看整页摘要，标题、段落、关键词及页脚完整，无文字截断或叠压。"
+          },
+          {
+            "page": 2,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-2.png",
+            "sha256": "2c8f14cf79819e53d4053fb1b705e100ec058524e7c5276ab5a8cec09ee92196",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "2c8f14cf79819e53d4053fb1b705e100ec058524e7c5276ab5a8cec09ee92196",
+            "v3_sha256": "2c8f14cf79819e53d4053fb1b705e100ec058524e7c5276ab5a8cec09ee92196",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看背景与四问任务；[1]、[2]可读，二阶段明确为本题工况。页末2.1起段延续至下页正常。"
+          },
+          {
+            "page": 3,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-3.png",
+            "sha256": "e90dc8fbacceb13a97c4f74e42dbf21cb53eff252eb310431777e9d94a1f3333",
+            "actually_viewed": true,
+            "viewed_render": "v3",
+            "v2_sha256": "c31bcbaecd171935c7c4ff94e72491e68c3fa6ee7214c877e7b361268a0a89e7",
+            "v3_sha256": "e90dc8fbacceb13a97c4f74e42dbf21cb53eff252eb310431777e9d94a1f3333",
+            "pixel_file_identical_to_viewed_v2": false,
+            "pixel_file_identical_to_v3": true,
+            "finding": "v2实际查看后发现“烘焙”措辞，主代理在v3改为“烘干”。已再次实际打开v3第3页核实修复、正文和材料坐标显示完整；无视觉阻断。"
+          },
+          {
+            "page": 4,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-4.png",
+            "sha256": "b7a4ba21c2b093f899fb05637659d1031f86f792447a02755fadae7c77a81fea",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "b7a4ba21c2b093f899fb05637659d1031f86f792447a02755fadae7c77a81fea",
+            "v3_sha256": "b7a4ba21c2b093f899fb05637659d1031f86f792447a02755fadae7c77a81fea",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看假设与符号表前半，列对齐、底边完整，长表跨页到第5页。"
+          },
+          {
+            "page": 5,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-5.png",
+            "sha256": "975f7392a8ca31d4b5940f5d9a74e8d3ee006056f43413b44666a45f313089d0",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "975f7392a8ca31d4b5940f5d9a74e8d3ee006056f43413b44666a45f313089d0",
+            "v3_sha256": "975f7392a8ca31d4b5940f5d9a74e8d3ee006056f43413b44666a45f313089d0",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看符号表续表（表头重复）、5.1.1及公式(1)，无截断或遮挡。"
+          },
+          {
+            "page": 6,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-6.png",
+            "sha256": "0db27c062465ba8488717b9979b77aea53fdca7ac46a0b64a3baf1b7abd8335d",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "0db27c062465ba8488717b9979b77aea53fdca7ac46a0b64a3baf1b7abd8335d",
+            "v3_sha256": "0db27c062465ba8488717b9979b77aea53fdca7ac46a0b64a3baf1b7abd8335d",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看有效热容量及气固闭合说明，引用[3]、[4]正常；公式(2)—(5)和相应式号可读。"
+          },
+          {
+            "page": 7,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-7.png",
+            "sha256": "2499bc1dbf26fe7e7651b00a6878e7e21534f2dec552f4842d2cf89ef8008917",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "2499bc1dbf26fe7e7651b00a6878e7e21534f2dec552f4842d2cf89ef8008917",
+            "v3_sha256": "2499bc1dbf26fe7e7651b00a6878e7e21534f2dec552f4842d2cf89ef8008917",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看公式(6)、(7)与有限体积/Kirchhoff/BDF说明；[5]、[4]、[6]、[7]可读，未把离散误差写成精确求解。"
+          },
+          {
+            "page": 8,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-8.png",
+            "sha256": "a2ba0f1103eb238841d982371f84ec075cac687e4d7634d1023ca7e2941b525c",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "a2ba0f1103eb238841d982371f84ec075cac687e4d7634d1023ca7e2941b525c",
+            "v3_sha256": "a2ba0f1103eb238841d982371f84ec075cac687e4d7634d1023ca7e2941b525c",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看结果表1与表2，列标题、7行数据、边线均完整，无表格截列。"
+          },
+          {
+            "page": 9,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-9.png",
+            "sha256": "1e05d661a0e2e2385938c7c1673a42cce78eab285999aab49b75a7c0eb843768",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "1e05d661a0e2e2385938c7c1673a42cce78eab285999aab49b75a7c0eb843768",
+            "v3_sha256": "1e05d661a0e2e2385938c7c1673a42cce78eab285999aab49b75a7c0eb843768",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看结果解释、黄色绘图位置1、数值检验与问题二开头及公式(8)，无叠压或截断。"
+          },
+          {
+            "page": 10,
+            "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-10.png",
+            "sha256": "851d3d41a9a5ef6a8ce1f477842ff0dd204873a927cc33af1a1d658de31b1d84",
+            "actually_viewed": true,
+            "viewed_render": "v2",
+            "v2_sha256": "851d3d41a9a5ef6a8ce1f477842ff0dd204873a927cc33af1a1d658de31b1d84",
+            "v3_sha256": "851d3d41a9a5ef6a8ce1f477842ff0dd204873a927cc33af1a1d658de31b1d84",
+            "pixel_file_identical_to_viewed_v2": true,
+            "pixel_file_identical_to_v3": true,
+            "finding": "实际查看公式(9)、(10)、延拓假设、黄色绘图位置2与算法段落，公式及式号完整可读。"
+          }
+        ],
+        "support_scope_review": [
+          {
+            "citations": "[1],[2]",
+            "result": "恰当支持研究背景；二阶段是题给工况独立陈述。"
+          },
+          {
+            "citations": "[3]",
+            "result": "仅支持平衡含水率和等温线概念；Ceq=Y∞另行明确为本文假设。"
+          },
+          {
+            "citations": "[4]",
+            "result": "支持常系数圆柱Bessel框架及浓度积分势；本文Ei公式和温度因子分离由自身推导，未声称全PDE精确。"
+          },
+          {
+            "citations": "[5]",
+            "result": "支持共享面通量的守恒结构，不直接声称全套非线性移动域收敛定理已满足。"
+          },
+          {
+            "citations": "[6]",
+            "result": "支持刚性方程的BDF一般积分框架。"
+          },
+          {
+            "citations": "[7]",
+            "result": "支持SciPy BDF及稀疏Jacobian接口；没有引用文档证明本题实际耗时或实验精度。"
+          }
+        ],
+        "resolved_notes": [
+          {
+            "page": 3,
+            "paragraph_index": 22,
+            "previous_text": "整个烘焙过程",
+            "corrected_text": "整个烘干过程",
+            "status": "v3实际重看已修复"
+          }
+        ],
+        "nonblocking_notes": [],
+        "blocking_findings": [],
+        "limitations": [
+          "未修改DOCX或任何模型/数值输出。",
+          "REF超链接字段按OOXML检查且PDF编号显示正确；本子任务未在Word GUI点击引用跳转。",
+          "科学数值有效性及后续页面不属于这10页视觉通过的证明范围。"
+        ],
+        "media_count": 0
+      }
+    },
+    {
+      "path": "paper_output/figures/review_20260913/render_audit.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8671090Z",
+      "sha256": "48ba2599a8aeb87e393c59f1a89e9b4a225b14d3f85807ef75f02122057276ef",
+      "bytes": 4001,
+      "lastWriteTimeUtc": "2026-09-12T15:38:34.3162869Z",
+      "content": [
+        {
+          "file": "图1_径向温度与含水率.pdf",
+          "pages": 1,
+          "pdf_dimensions_pt": [
+            0.0,
+            0.0,
+            518.0,
+            331.0
+          ],
+          "png_dimensions_px": [
+            2160,
+            1380
+          ],
+          "png_dpi": [
+            299.9994,
+            299.9994
+          ],
+          "pdf_font_names": [
+            "ZAPKBY+MicrosoftYaHei",
+            "PGDKBX+MicrosoftYaHei-Bold",
+            "LWFUUP+MicrosoftYaHei-Bold",
+            "NVYDEP+TimesNewRomanPS-ItalicMT",
+            "ARXEXT+SymbolMT",
+            "SNGBZQ+TimesNewRomanPSMT",
+            "GMGQWZ+MicrosoftYaHei"
+          ],
+          "all_fonts_embedded": true,
+          "pdf_contains_raster_images": false,
+          "sha_check": "input_sha256.csv"
+        },
+        {
+          "file": "图2_环境观测与平台延拓.pdf",
+          "pages": 1,
+          "pdf_dimensions_pt": [
+            0.0,
+            0.0,
+            518.0,
+            424.0
+          ],
+          "png_dimensions_px": [
+            2160,
+            1770
+          ],
+          "png_dpi": [
+            299.9994,
+            299.9994
+          ],
+          "pdf_font_names": [
+            "DZIIRI+MicrosoftYaHei",
+            "ZRQJSB+MicrosoftYaHei-Bold",
+            "UONOLH+MicrosoftYaHei-Bold",
+            "QHYEUI+TimesNewRomanPS-ItalicMT",
+            "ARXEXT+SymbolMT",
+            "MOYKLK+TimesNewRomanPSMT",
+            "PUHGOP+MicrosoftYaHei"
+          ],
+          "all_fonts_embedded": true,
+          "pdf_contains_raster_images": false,
+          "sha_check": "input_sha256.csv"
+        },
+        {
+          "file": "图3_中心与表面热湿响应.pdf",
+          "pages": 1,
+          "pdf_dimensions_pt": [
+            0.0,
+            0.0,
+            518.0,
+            324.0
+          ],
+          "png_dimensions_px": [
+            2160,
+            1350
+          ],
+          "png_dpi": [
+            299.9994,
+            299.9994
+          ],
+          "pdf_font_names": [
+            "LOKWFP+MicrosoftYaHei",
+            "AZKLUU+MicrosoftYaHei-Bold",
+            "YAVAXL+MicrosoftYaHei-Bold",
+            "JYYTJP+TimesNewRomanPS-ItalicMT",
+            "ARXEXT+SymbolMT",
+            "PUYUQJ+TimesNewRomanPSMT",
+            "RAQWDJ+MicrosoftYaHei"
+          ],
+          "all_fonts_embedded": true,
+          "pdf_contains_raster_images": false,
+          "sha_check": "input_sha256.csv"
+        },
+        {
+          "file": "图4_全域达标与临界放大.pdf",
+          "pages": 1,
+          "pdf_dimensions_pt": [
+            0.0,
+            0.0,
+            518.0,
+            352.0
+          ],
+          "png_dimensions_px": [
+            2160,
+            1470
+          ],
+          "png_dpi": [
+            299.9994,
+            299.9994
+          ],
+          "pdf_font_names": [
+            "ALXCYW+MicrosoftYaHei",
+            "PGDKBX+MicrosoftYaHei-Bold",
+            "MLJQNO+MicrosoftYaHei-Bold",
+            "XXVNNJ+TimesNewRomanPS-ItalicMT",
+            "QJVNTT+SymbolMT",
+            "BXLHKD+TimesNewRomanPSMT",
+            "ZGNLQQ+MicrosoftYaHei"
+          ],
+          "all_fonts_embedded": true,
+          "pdf_contains_raster_images": false,
+          "sha_check": "input_sha256.csv"
+        },
+        {
+          "file": "图5_收缩半径与域内含水率.pdf",
+          "pages": 1,
+          "pdf_dimensions_pt": [
+            0.0,
+            0.0,
+            518.0,
+            331.0
+          ],
+          "png_dimensions_px": [
+            2160,
+            1380
+          ],
+          "png_dpi": [
+            299.9994,
+            299.9994
+          ],
+          "pdf_font_names": [
+            "IAHMBD+MicrosoftYaHei",
+            "PGDKBX+MicrosoftYaHei-Bold",
+            "VTJTZX+MicrosoftYaHei-Bold",
+            "ZGQLBU+TimesNewRomanPS-ItalicMT",
+            "IMBGLV+SymbolMT",
+            "KXORDF+TimesNewRomanPSMT",
+            "BDSPLV+MicrosoftYaHei"
+          ],
+          "all_fonts_embedded": true,
+          "pdf_contains_raster_images": false,
+          "sha_check": "input_sha256.csv"
+        },
+        {
+          "file": "图6_经验边界阻力情景.pdf",
+          "pages": 1,
+          "pdf_dimensions_pt": [
+            0.0,
+            0.0,
+            518.0,
+            331.0
+          ],
+          "png_dimensions_px": [
+            2160,
+            1380
+          ],
+          "png_dpi": [
+            299.9994,
+            299.9994
+          ],
+          "pdf_font_names": [
+            "NXYZIO+MicrosoftYaHei",
+            "TEFVVH+MicrosoftYaHei-Bold",
+            "WWMRXB+TimesNewRomanPS-ItalicMT",
+            "SHNRDE+TimesNewRomanPSMT",
+            "IMBGLV+SymbolMT",
+            "KGPQJY+MicrosoftYaHei"
+          ],
+          "all_fonts_embedded": true,
+          "pdf_contains_raster_images": false,
+          "sha_check": "input_sha256.csv"
+        }
+      ]
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/audit_summary.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8692126Z",
+      "sha256": "b24c7f86db7bb0231b163a0f739222cdf2c7ea17393cfe1b84a32d12b41d90d5",
+      "bytes": 15713,
+      "lastWriteTimeUtc": "2026-09-12T11:20:19.0346390Z",
+      "content": {
+        "schemaVersion": "1.0",
+        "createdAtUtc": "2026-09-12T19:20:18.849408+08:00",
+        "status": "FAIL",
+        "verdict": "CURRENT_SUBMISSION_NOT_INDEPENDENTLY_RUNNABLE",
+        "scope": "Current submission code packaging, dependencies and startup/input portability",
+        "archive": {
+          "path": "paper_output/submission/支撑材料/A题_支撑材料.zip",
+          "bytes": 13254253,
+          "sha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91"
+        },
+        "coreDependenciesCleanVenv": "PASS",
+        "pythonSyntax": "55/55 PASS (static only)",
+        "cleanVenvCases": [
+          {
+            "name": "environment",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "-c",
+              "import sys,json,site,importlib.metadata as m; print(json.dumps({'executable':sys.executable,'version':sys.version,'prefix':sys.prefix,'basePrefix':sys.base_prefix,'userSiteEnabled':site.ENABLE_USER_SITE,'libraries':{x:m.version(x) for x in ['numpy','scipy','openpyxl']}},ensure_ascii=False))"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+            "startedAtUtc": "2026-09-12T19:14:37.799229+08:00",
+            "actualExitCode": 0,
+            "elapsedSeconds": 0.16852709999875515,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_environment.stdout.log",
+            "stderrLog": "clean_venv_environment.stderr.log"
+          },
+          {
+            "name": "as_unzipped_final",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+              "--profile",
+              "final",
+              "--run-id",
+              "portability_final"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+            "startedAtUtc": "2026-09-12T19:14:37.96803+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.17948819999946863,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_as_unzipped_final.stdout.log",
+            "stderrLog": "clean_venv_as_unzipped_final.stderr.log"
+          },
+          {
+            "name": "layout_only_final",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+              "--profile",
+              "final",
+              "--run-id",
+              "portability_final"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+            "startedAtUtc": "2026-09-12T19:14:38.147653+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.2498974999980419,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_layout_only_final.stdout.log",
+            "stderrLog": "clean_venv_layout_only_final.stderr.log"
+          },
+          {
+            "name": "as_unzipped_audit",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+              "--profile",
+              "audit",
+              "--run-id",
+              "portability_audit"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+            "startedAtUtc": "2026-09-12T19:14:38.397677+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.1901493000004848,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_as_unzipped_audit.stdout.log",
+            "stderrLog": "clean_venv_as_unzipped_audit.stderr.log"
+          },
+          {
+            "name": "layout_only_audit",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+              "--profile",
+              "audit",
+              "--run-id",
+              "portability_audit"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+            "startedAtUtc": "2026-09-12T19:14:38.588021+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.26053500000125496,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_layout_only_audit.stdout.log",
+            "stderrLog": "clean_venv_layout_only_audit.stderr.log"
+          },
+          {
+            "name": "load_inputs",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "-c",
+              "import sys; sys.path.insert(0,sys.argv[1]); import dryingCore; dryingCore.loadInputs()",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+            "startedAtUtc": "2026-09-12T19:14:38.848646+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.9243088000002899,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_load_inputs.stdout.log",
+            "stderrLog": "clean_venv_load_inputs.stderr.log"
+          }
+        ],
+        "modelSourceChanged": false,
+        "submissionChanged": false,
+        "productionRerunThisAudit": false,
+        "secondPhysicalDeviceTested": false,
+        "crossPlatformTested": false,
+        "guiThisAudit": "NOT_COMPLETED",
+        "humanReview": "PENDING_USER_REVIEW",
+        "report": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+        "evidence": [
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_audit.stderr.log",
+            "bytes": 532,
+            "sha256": "b19e7fd564b3e3defaf2a4fc827e4eaaec32f7f4beed696f11394334a974b955"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_audit.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_final.stderr.log",
+            "bytes": 532,
+            "sha256": "b19e7fd564b3e3defaf2a4fc827e4eaaec32f7f4beed696f11394334a974b955"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_final.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_environment.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_environment.stdout.log",
+            "bytes": 470,
+            "sha256": "be691cbf0cba5be090a0856deba776745728312b2fdf20f4b52c704ae7301b01"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_execution.json",
+            "bytes": 13947,
+            "sha256": "fdf60849087bccbda040615c0dee4918e231c6dc4415bf50d7f8ac584852f46b"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_audit.stderr.log",
+            "bytes": 2899,
+            "sha256": "9794186a902cf7bb54350c4c6b64d83342d21c442507eaabc82a2c5f7d0ee73e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_audit.stdout.log",
+            "bytes": 64,
+            "sha256": "52a9f5656b262811e1349acab068871b59efa7ac7fc84488bee5c054ae65bd77"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_final.stderr.log",
+            "bytes": 2899,
+            "sha256": "9794186a902cf7bb54350c4c6b64d83342d21c442507eaabc82a2c5f7d0ee73e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_final.stdout.log",
+            "bytes": 64,
+            "sha256": "f83850d6652b089ed2137848782adad2725aeba8e469fb4c37d5e587e4a3a7e5"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_load_inputs.stderr.log",
+            "bytes": 1060,
+            "sha256": "d0038164a059399df02158f1a24425536c2f128b0e69a4fc6669b91113495d2e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_load_inputs.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_import_probe.log",
+            "bytes": 1241,
+            "sha256": "e96ce38fb9535d156ccf79d7c6033ebf9bfd933a662bed02b4caa80fe1663a81"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_optional_modules.log",
+            "bytes": 41,
+            "sha256": "6d5f6cc6f981e4384b487f3c9f955c1a3f4c477c1e47e838823fe381de30661d"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pip_check.log",
+            "bytes": 31,
+            "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pip_freeze.log",
+            "bytes": 78,
+            "sha256": "6825a64bfada34e1c46c657a7c84e8d2c56578dca6d7e576718d2b5eb4f91c22"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pip_report.json",
+            "bytes": 70877,
+            "sha256": "e920f84c69d2083cda24c8b8f26fc8ab76b980f23e00ff6593dfc000e7ff3100"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pypi_install.log",
+            "bytes": 1371,
+            "sha256": "630d8a0df8c790d873fabca39e7c3cf0ce3b0bb8d552bdd6341e908781f07442"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_review.json",
+            "bytes": 22137,
+            "sha256": "45a061f84c84635b5514c4a01fd4a020e1910aedacb29ee2acfcd718913f117b"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_review.md",
+            "bytes": 5920,
+            "sha256": "469a5c01cdcc83b66b29e0699311cf67d203ccc5f235ba2aefa4da1a69d89d61"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_venv_create.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/gui_setup.json",
+            "bytes": 1009,
+            "sha256": "3be1a56672cd248d79d141a070faa584f32c823d3fe4138a9255e60a05b29558"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_audit.stderr.log",
+            "bytes": 554,
+            "sha256": "f722dd88584fad5fb026aad4f16c480ffbadb7478205be790de4a9b410a54c64"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_audit.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_final.stderr.log",
+            "bytes": 554,
+            "sha256": "f722dd88584fad5fb026aad4f16c480ffbadb7478205be790de4a9b410a54c64"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_final.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_environment.stderr.log",
+            "bytes": 1434,
+            "sha256": "ae91c5c694a5cb89c14382a4cce9276e3e56ef13b815a0b3a1f226c398715d70"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_environment.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_execution.json",
+            "bytes": 13690,
+            "sha256": "5df61afb572115da35cec487e8d1bb0e396bd01d2c54a395f7726166b2595925"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_audit.stderr.log",
+            "bytes": 1418,
+            "sha256": "f6d2f5adbf69bd85a88193ef3cbe38a221cc8e3f927157c07fa10d236ae36327"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_audit.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_final.stderr.log",
+            "bytes": 1418,
+            "sha256": "f6d2f5adbf69bd85a88193ef3cbe38a221cc8e3f927157c07fa10d236ae36327"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_final.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_load_inputs.stderr.log",
+            "bytes": 491,
+            "sha256": "cb977fccc8591b3bc29397b163621befe39fdb8554fadc6e629561907b740e0c"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_load_inputs.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/package_review.json",
+            "bytes": 60230,
+            "sha256": "d40a3e3c7b95be0923f7989ad7f97d05483e743959c44e94d47b89c9ad11bc1e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/package_review.md",
+            "bytes": 6300,
+            "sha256": "a2810ced75f7e10c7534a60c22553464c385ba578f2f6aee4bb0fb1ec2267c94"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/review_original_package.py",
+            "bytes": 12337,
+            "sha256": "c9b39ba0eb71670035c8a25cae59b2d6948da32e9db73a37515cfe3c7f1a9b72"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/run_dependency_probe.py",
+            "bytes": 5604,
+            "sha256": "ed08fa5e26c3a252c68fa1b3bc696719fd6b4994237c9057ac4678fdb3299aa0"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/run_portability_probes.py",
+            "bytes": 5816,
+            "sha256": "ae911ed61a2d5a520b5694f1e9f5564f32522d8a7e8bc545b965f61bb9cf0ce7"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/source_review.json",
+            "bytes": 75277,
+            "sha256": "87ef068a540fc479395ebbec9db16ac8664d90e01f8076c739736a4ebbe21b74"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/source_review.md",
+            "bytes": 9803,
+            "sha256": "2ed54788ea771651db98695111f14251bb12234d99eca8cbb60e28e134cd0975"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+            "bytes": 7947,
+            "sha256": "48054e9913c023cb9c13f473c48183ca2b085ff95b7cb4adb185eb6baa32ae39"
+          }
+        ]
+      }
+    },
+    {
+      "path": "paper_output/context/code_delivery_status.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8700622Z",
+      "sha256": "a6d8ef4a186dd5232e7a946db22e7cf307539d1e4cbf710a6385c304567175a9",
+      "bytes": 3252,
+      "lastWriteTimeUtc": "2026-09-12T11:21:40.1281712Z",
+      "content": {
+        "workspace": "D:/Document/数学建模/2026CUMCM",
+        "task": "Q1-Q4 code delivery from final_v6a",
+        "status": "COMPLETED_READY_FOR_USER_CODE_REVIEW",
+        "readyForHumanReview": true,
+        "humanReview": "PENDING_USER_REVIEW",
+        "sourceDirectory": "paper_output/code/review_delivery",
+        "visualStudioSolution": "paper_output/code/review_delivery/A_CodeReview.sln",
+        "explanation": "paper_output/code/review_delivery/docs/公式与算法说明.md",
+        "reviewChecklist": "paper_output/code/review_delivery/docs/人工审查清单.md",
+        "deliveryLog": "paper_output/results/code_delivery/交付与运行记录.md",
+        "modelBaseline": "paper_output/results/production/final_v6a",
+        "scope": "Code naming, comments, reproducible runner, independent MATLAB implementation and verification; no change to accepted physical model",
+        "skillAlias": {
+          "requested": "autoresponse",
+          "resolvedFromPriorUserClarification": "autoresearch"
+        },
+        "cli": {
+          "runId": "camel_final_v2",
+          "status": "PASS",
+          "actualExitCode": 0,
+          "elapsedSeconds": 697.7192608,
+          "workbookCellsVerified": 9335598,
+          "paperCsvCellsVerified": 297,
+          "savedArraysExactlyEqual": 21,
+          "independentArtifactAudit": "notes/A-coding/2026-09-11/final-artifact-audit/audit_summary.json"
+        },
+        "matlab": {
+          "guiFunctionCompletedObserved": true,
+          "sourceOpenedInEditor": true,
+          "intervalCount": 40,
+          "comparisonStatus": "PASS",
+          "evidenceDirectory": "paper_output/qa/matlab_crosscheck_20260911",
+          "wholeApplicationExitCode": null
+        },
+        "visualStudio": {
+          "runId": "gui_camel_final_v2",
+          "breakpointAndStepObserved": true,
+          "initialRhsVariablesObserved": true,
+          "fullRunCompletedObserved": true,
+          "actualExitCode": 0,
+          "externalExitRecord": "notes/A-coding/2026-09-11/gui/guiProcessExit.json",
+          "independentArtifactAudit": "notes/A-coding/2026-09-11/gui-artifact-audit/audit_summary.json",
+          "observationLog": "notes/A-coding/2026-09-11/gui/IDE运行观察.md"
+        },
+        "retainedFailure": {
+          "runId": "camel_final_v1",
+          "actualExitCode": 1,
+          "reason": "Q3 exporter provenance retained the old q3_model.py basename",
+          "fixedSource": "paper_output/code/review_delivery/exportOutputs.py",
+          "targetedValidation": "paper_output/code/review_delivery/runtime/exportPathFix_v2/verification.json"
+        },
+        "verifiedCodeBackup": "843654f010c7552fa3d5e98cccb7fa7aba0b0576",
+        "scientificLimit": "Conditional model prediction; no internal temperature or moisture observations to establish empirical accuracy",
+        "workflowScope": "S6 remains current; this coding task does not execute formal paper S7/S8",
+        "submissionPortability": {
+          "auditedAtUtc": "2026-09-12T19:20:18.849408+08:00",
+          "status": "FAIL",
+          "archiveSha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+          "report": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+          "evidence": "paper_output/qa/portability_20260912/audit_summary.json",
+          "scope": "Current submitted ZIP; historical original-workspace CLI/GUI results remain separate",
+          "coreDependencyInstall": "PASS_CLEAN_VENV",
+          "secondPhysicalDeviceTested": false,
+          "guiThisAudit": "NOT_COMPLETED",
+          "humanReview": "PENDING_USER_REVIEW"
+        }
+      }
+    },
+    {
+      "path": "paper_output/qa/workflow_guard_report.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8706597Z",
+      "sha256": "dc61af83dc2b4f747a6887998502c48f9baab9c6c1e563bf17ea3bed2df049ff",
+      "bytes": 1450,
+      "lastWriteTimeUtc": "2026-09-12T14:05:07.8078492Z",
+      "content": {
+        "schema_version": "1.0",
+        "generated_by": "paper-workflow-orchestrator/scripts/workflow_guard.py",
+        "generated_at": "2026-09-12T22:05:07",
+        "mode": "status",
+        "target_step": "S8",
+        "status": "COMPLETE",
+        "current_step": "S8",
+        "next_step": "",
+        "recommended_skill": "",
+        "next_action": "S0-S8 全部通过；可以进行最终一致性复核或交付。",
+        "steps": [
+          {
+            "step": "S0",
+            "name": "准入预检",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S1",
+            "name": "审题分析",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S2",
+            "name": "模型路线",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S3",
+            "name": "数据与图表计划",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S4",
+            "name": "建模代码",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S5",
+            "name": "结果证据",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S6",
+            "name": "证据门禁",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S7",
+            "name": "正式稿",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S8",
+            "name": "格式门禁",
+            "status": "PASS",
+            "failures": []
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "path": "paper_output/context/workflow_memory.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8712729Z",
+      "sha256": "7166c54656cc7b4429c3ee2120c49d8ba7426b2d9f7eb0960e0e8e2692211c5a",
+      "bytes": 7651,
+      "lastWriteTimeUtc": "2026-09-12T15:57:32.5872817Z",
+      "content": {
+        "schema_version": "1.0",
+        "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
+        "generated_at": "2026-09-12T22:05:07",
+        "status": "PASS",
+        "root": "D:\\Document\\数学建模\\2026CUMCM",
+        "workflow": {
+          "status": "COMPLETE",
+          "mode": "status",
+          "current_step": "S8",
+          "next_step": "",
+          "recommended_skill": "",
+          "next_action": "S0-S8 全部通过；可以进行最终一致性复核或交付。",
+          "completed_steps": [
+            "S0",
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8"
+          ],
+          "failures": []
+        },
+        "inputs": {
+          "summary": {
+            "file_count": 33,
+            "role_counts": {
+              "problem_statement": 7,
+              "raw_data": 8,
+              "result_template": 16,
+              "problem_statement_unreadable": 1,
+              "unsupported": 1
+            },
+            "problem_statement_count": 7,
+            "raw_data_count": 8,
+            "result_template_count": 16,
+            "requires_user_confirmation": true
+          },
+          "role_counts": {
+            "problem_statement": 7,
+            "raw_data": 8,
+            "result_template": 16,
+            "problem_statement_unreadable": 1,
+            "unsupported": 1
+          },
+          "problem_statements": [
+            "problem_files/CUMCM2026Problems/A题/A题.pdf",
+            "problem_files/CUMCM2026Problems/B题/B题.pdf",
+            "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+            "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+            "problem_files/CUMCM2026Problems/C题/C题.pdf",
+            "problem_files/CUMCM2026Problems/D题/D题.pdf",
+            "problem_files/CUMCM2026Problems/E题/E题.pdf"
+          ],
+          "raw_data": [
+            "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx"
+          ],
+          "result_templates": [
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx"
+          ]
+        },
+        "runs": {
+          "status": "PASS",
+          "run_count": 1,
+          "scripts": [
+            "paper_output/code/modeling/run_modeling.py"
+          ],
+          "returncodes": [
+            0
+          ]
+        },
+        "artifacts": {
+          "workflow_guard_report": {
+            "path": "paper_output/qa/workflow_guard_report.json",
+            "exists": true,
+            "bytes": 1450,
+            "status": "COMPLETE"
+          },
+          "preflight_report": {
+            "path": "paper_output/preflight_report.json",
+            "exists": true,
+            "bytes": 29027,
+            "status": "PASS"
+          },
+          "input_manifest": {
+            "path": "paper_output/input_manifest.json",
+            "exists": true,
+            "bytes": 29392
+          },
+          "load_report": {
+            "path": "paper_output/data_cleaned/load_report.json",
+            "exists": true,
+            "bytes": 8196,
+            "status": "PASS"
+          },
+          "run_manifest": {
+            "path": "paper_output/results/run_manifest.json",
+            "exists": true,
+            "bytes": 31524,
+            "status": "PASS"
+          },
+          "evidence_gate_report": {
+            "path": "paper_output/qa/evidence_gate_report.json",
+            "exists": true,
+            "bytes": 2028,
+            "status": "PASS"
+          },
+          "authoring_state": {
+            "path": "paper_output/context/authoring_state.json",
+            "exists": true,
+            "bytes": 4781,
+            "status": "PASS"
+          },
+          "writing_plan": {
+            "path": "paper_output/plan/writing_plan.json",
+            "exists": true,
+            "bytes": 8589,
+            "status": "PASS"
+          },
+          "format_check_report": {
+            "path": "paper_output/format_check_report.json",
+            "exists": true,
+            "bytes": 5495,
+            "status": "PASS"
+          }
+        },
+        "latest_statuses": {
+          "preflight": "PASS",
+          "load_report": "PASS",
+          "run_manifest": "PASS",
+          "evidence_gate": "PASS",
+          "authoring": "PASS",
+          "format_check": "PASS"
+        },
+        "blockers": [],
+        "latest_docx_revision": {
+          "status": "PASS_SCOPED_EDITORIAL_REVISION",
+          "docx": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+          "sha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
+          "audit": "paper_output/qa/manuscript_revision_20260912/final_revision_audit.json",
+          "bodyPages": 21,
+          "totalPages": 31,
+          "scope": "Existing S8/DONE evidence binds the earlier canonical manuscript. This supplemental QA binds the user-edited typography/appendix revision; no claim of rerunning original model gates.",
+          "autoresearchMode": "experiment-log analysis",
+          "newPdeRuns": 0,
+          "teamHumanReview": "PENDING"
+        },
+        "six_figure_word_guide": {
+          "status": "PASS",
+          "docx": "paper_output/paper/A题六张图绘制要求与数据说明.docx",
+          "docxSha256": "f72c8c603096cedf6ff07c519cc09f95ca1680f3d7a4c45b856b5cd878f894f9",
+          "pageCount": 7,
+          "figure2GuidePage": 3,
+          "paperModified": false,
+          "audit": "paper_output/qa/figure_guide_20260912/final_audit.json"
+        },
+        "six_figure_data_package": {
+          "path": "paper_output/handoff/A题六图绘图资料包_含全部数据.zip",
+          "sha256": "f2b4355e9c637a9001edf683ed98fdeadbc036865f25599084ee9610003d78fd",
+          "status": "PORTABLE_DATA_PACKAGE_VERIFIED",
+          "tables": 14,
+          "dataRows": 4627,
+          "originalFiles": 15,
+          "qa": "paper_output/qa/figure_package_20260912/final_package_audit.json",
+          "scope": "Six plotting figures only; supersedes path-only handoff. Does not change modeling/submission review status."
+        },
+        "latest_manuscript_revision": {
+          "input": "paper_output/paper/药材热湿耦合模型与干燥时间计算.docx",
+          "output": "paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+          "sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+          "audit": "paper_output/qa/revision_20260913/final_delivery_audit.json",
+          "status": "PAPER_AND_FIGURES_VERIFIED_WECHAT_UNSENT",
+          "scope": "用户最新稿文献、公式、措辞及独立六图；不改变冻结生产结果、不扩大旧S8或submission ZIP状态",
+          "figures": "paper_output/figures/六图核查包_20260913.zip",
+          "figuresInserted": false,
+          "humanReview": "PENDING_USER_REVIEW"
+        }
+      }
+    },
+    {
+      "path": "paper_output/format_check_report.json",
+      "capturedAtUtc": "2026-09-12T18:10:07.8719346Z",
+      "sha256": "a22efe0ea7c7d2c789d39ffa20999a73fc3b06e0d5fbcf318d73aa2caec94953",
+      "bytes": 5495,
+      "lastWriteTimeUtc": "2026-09-12T12:48:03.7165707Z",
+      "content": {
+        "schema_version": "1.0",
+        "generated_by": "paper-formal-writer/scripts/check_paper_format.py",
+        "generated_at": "2026-09-12T20:48:03",
+        "status": "PASS",
+        "delivery_mode": "competition",
+        "acceptance_scope": "STANDARD_COMPETITION_CHECKS",
+        "source": "paper_output/final_paper_source.md",
+        "docx": "paper_output/final_paper.docx",
+        "counts": {
+          "cjk": 11205,
+          "nonspace": 20049,
+          "content": 17061
+        },
+        "target_words": {
+          "min": 11300,
+          "max": 18800
+        },
+        "question_reports": [
+          {
+            "question_id": "Q1",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "question_id": "Q2",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "question_id": "Q3",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "question_id": "Q4",
+            "status": "PASS",
+            "failures": []
+          }
+        ],
+        "figure_count": 0,
+        "table_count": 7,
+        "paper_table_count": 7,
+        "missing_figures": [],
+        "missing_tables": [],
+        "source_heading_count": 293,
+        "input_hashes": {
+          "paper_output/final_paper_source.md": "d64e0c07696e670d88d9f27a8bac63edc658dd06ab7f13b97b34d91b7b8e8f43",
+          "paper_output/final_paper.docx": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+          "paper_output/plan/paper_outline.json": "d6651a0baa0fa871f8854976dc04b0704c68c2b2e6033fefdb61854f9b840758",
+          "paper_output/qa/manuscript_20260912/figure_index_for_manuscript.json": "554122fcf8398ae69ef58f292ecac480967daa930609ae10cef1bee6e50b591a",
+          "paper_output/qa/manuscript_20260912/table_index_for_manuscript.json": "fa08fc9401b15b9a90488bf529427ea892cd9f50d363e42b68f93cb28d3bedbc",
+          "paper_output/qa/evidence_gate_report.json": "897f77db2db00c038be7de45dcee5f02726d2ad2892c749e1ccc81c9b392b451",
+          "paper_output/context/authoring_state.json": "53096769ed0ae4dde648148feb040769b8dae1ce9de63a8af438ace539269041",
+          "paper_output/plan/writing_plan.json": "ca9be2858c77b06a8d335f67a3a3f4b725e40884b7625958ee53d65d76b2e877",
+          "paper_output/qa/manuscript_20260912/rendered/final_paper.pdf": "93cfe62b5db0ec8627be6b7d51170acd916b2b5613e4f3182663f13830539cd4"
+        },
+        "citation_qa": {
+          "bibliography_entry_count": 6,
+          "body_citation_count": 6,
+          "body_citation_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "uncited_bibliography_ids": [],
+          "unknown_body_citation_ids": []
+        },
+        "duplicate_paragraphs": [],
+        "formula_qa": {
+          "status": "PASS",
+          "source_formula_count": 203,
+          "source_display_formula_count": 68,
+          "native_omml_count": 203,
+          "native_display_omml_count": 0,
+          "failures": [],
+          "warnings": []
+        },
+        "docx_structure": {
+          "exists": true,
+          "package_ok": true,
+          "paragraph_count": 9897,
+          "table_count": 12,
+          "table_cell_count": 527,
+          "empty_table_count": 0,
+          "image_count": 0,
+          "inline_shape_count": 0,
+          "heading_count": 106,
+          "sample_headings": [
+            "摘要",
+            "1 问题重述",
+            "1.1问题背景",
+            "1.2问题提出",
+            "2 问题分析",
+            "2.1问题一分析",
+            "2.2问题二分析",
+            "2.3问题三分析",
+            "2.4问题四分析",
+            "3 模型假设",
+            "4 符号说明",
+            "5 模型的建立与求解"
+          ],
+          "nonspace_text_chars": 406639,
+          "native_omml_count": 203,
+          "display_omml_count": 0,
+          "math_text_chars": 3445,
+          "text_preview": "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证\n摘要\n药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表内部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性关系，建立一维径向有效热湿耦合模型，并以全域最大干基含水率确定烘干结束时间。模型区分有效显热容量与守恒干物质密度，将气固含水率映射、观测窗后环境平台和同比径向收缩作为明确闭合；在环形控制体上采用Kirchhoff浓度势处理非线性扩散，配合解析稀疏Jacobian与隐式BDF求解。\n针对"
+        },
+        "visual_qa": {
+          "status": "PASS",
+          "failures": [],
+          "warnings": [
+            "Word 标题数量明显少于 Markdown 标题：106 < 293"
+          ]
+        },
+        "render_qa": {
+          "mode": "required",
+          "status": "PASS",
+          "libreoffice": "D:\\Document\\数学建模\\tools\\libreoffice\\app\\program\\soffice.exe",
+          "returncode": 0,
+          "pdf": "paper_output/qa/manuscript_20260912/rendered/final_paper.pdf",
+          "pdf_sha256": "93cfe62b5db0ec8627be6b7d51170acd916b2b5613e4f3182663f13830539cd4",
+          "pdf_bytes": 4716057,
+          "page_count": 218,
+          "extracted_text_chars": 411350,
+          "paper_scope": {
+            "counted_main_pages": 22,
+            "total_pages": 218,
+            "delivery_mode": "competition",
+            "boundaryMethod": "exact standalone manuscript appendix heading; numbered task attachments are body references",
+            "abstract_pages": 1,
+            "body_including_AI_references_pages": 21,
+            "abstract_to_references_pages": 22,
+            "appendix_start_page": 23,
+            "seminar_body_max": 30
+          },
+          "renderer": "packaged documents/render_docx.py; SHA-bound reuse",
+          "manifest": "paper_output\\qa\\manuscript_20260912\\render_manifest.json"
+        },
+        "failures": [],
+        "warnings": [
+          "图数量少于展示样例建议值：0 < 5",
+          "Word 标题数量明显少于 Markdown 标题：106 < 293"
+        ]
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+      "capturedAtUtc": "2026-09-12T18:10:07.8726157Z",
+      "sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+      "bytes": 82095,
+      "lastWriteTimeUtc": "2026-09-12T15:50:35.5341913Z"
+    },
+    {
+      "path": "paper_output/figures/六图核查包_20260913.zip",
+      "capturedAtUtc": "2026-09-12T18:10:07.8739079Z",
+      "sha256": "5f66e58aab4854fb929f42745e2eec247d74c2a53928c2145c3d10c1765d08bb",
+      "bytes": 1920194,
+      "lastWriteTimeUtc": "2026-09-12T15:39:15.7463839Z"
+    },
+    {
+      "path": "paper_output/submission/支撑材料/A题_支撑材料.zip",
+      "capturedAtUtc": "2026-09-12T18:10:07.8799414Z",
+      "sha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+      "bytes": 13254253,
+      "lastWriteTimeUtc": "2026-09-12T10:11:34.5144680Z"
+    },
+    {
+      "path": "paper_output/submission/A题_论文.pdf",
+      "capturedAtUtc": "2026-09-12T18:10:07.9203421Z",
+      "sha256": "303fbd8ddaba28b12bcf1b3857ef77b2500514606bf76ef3481fe7de35c29e8b",
+      "bytes": 4008755,
+      "lastWriteTimeUtc": "2026-09-12T10:22:27.9303824Z"
+    },
+    {
+      "path": "paper_output/qa/revision_20260913/v4.pdf",
+      "capturedAtUtc": "2026-09-12T18:10:07.9437854Z",
+      "sha256": "f1f2933a39c3a3d21b3f47255ea4aaab1d1ebfdade817e2b833ac580f6369030",
+      "bytes": 1111421,
+      "lastWriteTimeUtc": "2026-09-12T15:50:50.3120526Z"
+    }
+  ]
+}
