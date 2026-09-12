@@ -1,0 +1,349 @@
+{
+  "createdAtUtc": "2026-09-12T11:14:39.773053+00:00",
+  "scope": "CLI startup/input probes; no PDE executed; no new GUI/human/physical-device verification",
+  "sourceZip": "paper_output/submission/支撑材料/A题_支撑材料.zip",
+  "sourceZipSha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+  "zipCrc": "PASS",
+  "members": 178,
+  "label": "clean_venv",
+  "extractedRoot": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+  "layoutDiagnosticRoot": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+  "copiedSourceHashes": [
+    {
+      "path": "analyticJacobian.py",
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+    },
+    {
+      "path": "data/prepare_a_data.py",
+      "sha256": "f32a7a23ea85f0bb68b59b64cf3e9c670cbabf8ce6324e29f0059a41c8f1fc5d"
+    },
+    {
+      "path": "diskDense.py",
+      "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+    },
+    {
+      "path": "dryingCore.py",
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "exportOutputs.py",
+      "sha256": "3a66a754e7f3a13534918c7ebab7bc664d07669121f12ecde47efb5871a406ed"
+    },
+    {
+      "path": "matlab/README.md",
+      "sha256": "022983ca862ef989a7af13d2c9c400ff09a2b204ebd23162c1b1298a1cc082a6"
+    },
+    {
+      "path": "matlab/runCrossCheck.m",
+      "sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda"
+    },
+    {
+      "path": "modeling/analytic_jacobian.py",
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665"
+    },
+    {
+      "path": "modeling/axisymmetric_check.py",
+      "sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c"
+    },
+    {
+      "path": "modeling/compare_analytic.py",
+      "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805"
+    },
+    {
+      "path": "modeling/disk_dense.py",
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60"
+    },
+    {
+      "path": "modeling/drying_core.py",
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "modeling/export_outputs.py",
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b"
+    },
+    {
+      "path": "modeling/peer_beta_check.py",
+      "sha256": "a7a31ba683be96de9f20c13476bdfa2a6e1e9fac25ec0035fdfaedff8159a683"
+    },
+    {
+      "path": "modeling/production_provenance.py",
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130"
+    },
+    {
+      "path": "modeling/publication_plots.py",
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388"
+    },
+    {
+      "path": "modeling/q1_model.py",
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8"
+    },
+    {
+      "path": "modeling/q2_model.py",
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204"
+    },
+    {
+      "path": "modeling/q3_model.py",
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137"
+    },
+    {
+      "path": "modeling/q4_model.py",
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535"
+    },
+    {
+      "path": "modeling/run_experiments.py",
+      "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509"
+    },
+    {
+      "path": "modeling/run_modeling.py",
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84"
+    },
+    {
+      "path": "modeling/validate_bessel.py",
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac"
+    },
+    {
+      "path": "modeling/verify_convergence.py",
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec"
+    },
+    {
+      "path": "modeling/verify_dense_storage.py",
+      "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472"
+    },
+    {
+      "path": "modeling/verify_time_accuracy.py",
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc"
+    },
+    {
+      "path": "q1Model.py",
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1"
+    },
+    {
+      "path": "q2Model.py",
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33"
+    },
+    {
+      "path": "q3Model.py",
+      "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f"
+    },
+    {
+      "path": "q4Model.py",
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009"
+    },
+    {
+      "path": "README.md",
+      "sha256": "be1c2c63928b0b9c35fe654ed93b2f013bfc089ea06a9822097901701ab1f76c"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055"
+    },
+    {
+      "path": "runDelivery.py",
+      "sha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a"
+    },
+    {
+      "path": "runLogged.ps1",
+      "sha256": "a9174b3777c7e710ab41e388499e1335ee19f06cf3acde1909492c9b4a463db9"
+    },
+    {
+      "path": "tools/buildCamelCopies.py",
+      "sha256": "d2f4cb3b8b8f2db0cdc7e1343d4013b2279dc0ed14f4fb21efa30c8588af226b"
+    },
+    {
+      "path": "tools/coreChangeLog.md",
+      "sha256": "b6fe16ef89268ef484a3de41b6a74e656afc4267218ce107a932ab8791a44b9b"
+    },
+    {
+      "path": "tools/coreRenameReport.json",
+      "sha256": "8fced77cec833aed6a234b3f457f49616180af7b9d2e459f5cdb3ee54e841dd1"
+    },
+    {
+      "path": "tools/verifyCamelCopies.py",
+      "sha256": "cff92879aa3e1f51606c951faf74550186eb299ccb0035feccb9137fc87a5a87"
+    },
+    {
+      "path": "tools/verifyExportPathFix.py",
+      "sha256": "948c3d8514a035a09ece450448cf774363a88e4a2ec70c74034affa86432ced5"
+    },
+    {
+      "path": "verification/analytic_metric_check.py",
+      "sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9"
+    },
+    {
+      "path": "verification/compile_crossvalidation_report.py",
+      "sha256": "89e6fbf2692088205063d656ee8432a833f3847a195319c6487727cc092df99b"
+    },
+    {
+      "path": "verification/crossvalidate_series.py",
+      "sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be"
+    },
+    {
+      "path": "verification/crossvalidate_solver.py",
+      "sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09"
+    },
+    {
+      "path": "verification/energy_balance_check.py",
+      "sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94"
+    },
+    {
+      "path": "verification/energy_balance_diagnose.py",
+      "sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b"
+    },
+    {
+      "path": "verification/energy_balance_diagnose2.py",
+      "sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476"
+    },
+    {
+      "path": "verification/isotherm_activity_closure.py",
+      "sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e"
+    },
+    {
+      "path": "verification/isotherm_diagnose.py",
+      "sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a"
+    },
+    {
+      "path": "verification/isotherm_jacobian_probe.py",
+      "sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c"
+    },
+    {
+      "path": "verification/latent_heat_scenarios.py",
+      "sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b"
+    },
+    {
+      "path": "verification/method_comparison.py",
+      "sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0"
+    },
+    {
+      "path": "verification/sensitivity_analysis.py",
+      "sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066"
+    },
+    {
+      "path": "verification/threshold_and_scaling_checks.py",
+      "sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599"
+    }
+  ],
+  "cases": [
+    {
+      "name": "environment",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import sys,json,site,importlib.metadata as m; print(json.dumps({'executable':sys.executable,'version':sys.version,'prefix':sys.prefix,'basePrefix':sys.base_prefix,'userSiteEnabled':site.ENABLE_USER_SITE,'libraries':{x:m.version(x) for x in ['numpy','scipy','openpyxl']}},ensure_ascii=False))"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+      "startedAtUtc": "2026-09-12T11:14:37.799229+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 0.16852709999875515,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_environment.stdout.log",
+      "stderrLog": "clean_venv_environment.stderr.log"
+    },
+    {
+      "name": "as_unzipped_final",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+        "--profile",
+        "final",
+        "--run-id",
+        "portability_final"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+      "startedAtUtc": "2026-09-12T11:14:37.968030+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.17948819999946863,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_as_unzipped_final.stdout.log",
+      "stderrLog": "clean_venv_as_unzipped_final.stderr.log"
+    },
+    {
+      "name": "layout_only_final",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+        "--profile",
+        "final",
+        "--run-id",
+        "portability_final"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+      "startedAtUtc": "2026-09-12T11:14:38.147653+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.2498974999980419,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_layout_only_final.stdout.log",
+      "stderrLog": "clean_venv_layout_only_final.stderr.log"
+    },
+    {
+      "name": "as_unzipped_audit",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+        "--profile",
+        "audit",
+        "--run-id",
+        "portability_audit"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+      "startedAtUtc": "2026-09-12T11:14:38.397677+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.1901493000004848,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_as_unzipped_audit.stdout.log",
+      "stderrLog": "clean_venv_as_unzipped_audit.stderr.log"
+    },
+    {
+      "name": "layout_only_audit",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+        "--profile",
+        "audit",
+        "--run-id",
+        "portability_audit"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+      "startedAtUtc": "2026-09-12T11:14:38.588021+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.26053500000125496,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_layout_only_audit.stdout.log",
+      "stderrLog": "clean_venv_layout_only_audit.stderr.log"
+    },
+    {
+      "name": "load_inputs",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import sys; sys.path.insert(0,sys.argv[1]); import dryingCore; dryingCore.loadInputs()",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+      "startedAtUtc": "2026-09-12T11:14:38.848646+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.9243088000002899,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_load_inputs.stdout.log",
+      "stderrLog": "clean_venv_load_inputs.stderr.log"
+    }
+  ],
+  "unchangedZipSha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91"
+}

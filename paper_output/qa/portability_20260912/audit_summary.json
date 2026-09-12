@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "1.0",
+  "createdAtUtc": "2026-09-12T11:20:18.849408+00:00",
+  "status": "FAIL",
+  "verdict": "CURRENT_SUBMISSION_NOT_INDEPENDENTLY_RUNNABLE",
+  "scope": "Current submission code packaging, dependencies and startup/input portability",
+  "archive": {
+    "path": "paper_output/submission/支撑材料/A题_支撑材料.zip",
+    "bytes": 13254253,
+    "sha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91"
+  },
+  "coreDependenciesCleanVenv": "PASS",
+  "pythonSyntax": "55/55 PASS (static only)",
+  "cleanVenvCases": [
+    {
+      "name": "environment",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import sys,json,site,importlib.metadata as m; print(json.dumps({'executable':sys.executable,'version':sys.version,'prefix':sys.prefix,'basePrefix':sys.base_prefix,'userSiteEnabled':site.ENABLE_USER_SITE,'libraries':{x:m.version(x) for x in ['numpy','scipy','openpyxl']}},ensure_ascii=False))"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+      "startedAtUtc": "2026-09-12T11:14:37.799229+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 0.16852709999875515,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_environment.stdout.log",
+      "stderrLog": "clean_venv_environment.stderr.log"
+    },
+    {
+      "name": "as_unzipped_final",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+        "--profile",
+        "final",
+        "--run-id",
+        "portability_final"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+      "startedAtUtc": "2026-09-12T11:14:37.968030+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.17948819999946863,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_as_unzipped_final.stdout.log",
+      "stderrLog": "clean_venv_as_unzipped_final.stderr.log"
+    },
+    {
+      "name": "layout_only_final",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+        "--profile",
+        "final",
+        "--run-id",
+        "portability_final"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+      "startedAtUtc": "2026-09-12T11:14:38.147653+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.2498974999980419,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_layout_only_final.stdout.log",
+      "stderrLog": "clean_venv_layout_only_final.stderr.log"
+    },
+    {
+      "name": "as_unzipped_audit",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+        "--profile",
+        "audit",
+        "--run-id",
+        "portability_audit"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+      "startedAtUtc": "2026-09-12T11:14:38.397677+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.1901493000004848,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_as_unzipped_audit.stdout.log",
+      "stderrLog": "clean_venv_as_unzipped_audit.stderr.log"
+    },
+    {
+      "name": "layout_only_audit",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+        "--profile",
+        "audit",
+        "--run-id",
+        "portability_audit"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+      "startedAtUtc": "2026-09-12T11:14:38.588021+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.26053500000125496,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_layout_only_audit.stdout.log",
+      "stderrLog": "clean_venv_layout_only_audit.stderr.log"
+    },
+    {
+      "name": "load_inputs",
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import sys; sys.path.insert(0,sys.argv[1]); import dryingCore; dryingCore.loadInputs()",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+      "startedAtUtc": "2026-09-12T11:14:38.848646+00:00",
+      "actualExitCode": 1,
+      "elapsedSeconds": 0.9243088000002899,
+      "timedOut": false,
+      "stdoutLog": "clean_venv_load_inputs.stdout.log",
+      "stderrLog": "clean_venv_load_inputs.stderr.log"
+    }
+  ],
+  "modelSourceChanged": false,
+  "submissionChanged": false,
+  "productionRerunThisAudit": false,
+  "secondPhysicalDeviceTested": false,
+  "crossPlatformTested": false,
+  "guiThisAudit": "NOT_COMPLETED",
+  "humanReview": "PENDING_USER_REVIEW",
+  "report": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+  "evidence": [
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_audit.stderr.log",
+      "bytes": 532,
+      "sha256": "b19e7fd564b3e3defaf2a4fc827e4eaaec32f7f4beed696f11394334a974b955"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_audit.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_final.stderr.log",
+      "bytes": 532,
+      "sha256": "b19e7fd564b3e3defaf2a4fc827e4eaaec32f7f4beed696f11394334a974b955"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_final.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_environment.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_environment.stdout.log",
+      "bytes": 470,
+      "sha256": "be691cbf0cba5be090a0856deba776745728312b2fdf20f4b52c704ae7301b01"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_execution.json",
+      "bytes": 13947,
+      "sha256": "fdf60849087bccbda040615c0dee4918e231c6dc4415bf50d7f8ac584852f46b"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_audit.stderr.log",
+      "bytes": 2899,
+      "sha256": "9794186a902cf7bb54350c4c6b64d83342d21c442507eaabc82a2c5f7d0ee73e"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_audit.stdout.log",
+      "bytes": 64,
+      "sha256": "52a9f5656b262811e1349acab068871b59efa7ac7fc84488bee5c054ae65bd77"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_final.stderr.log",
+      "bytes": 2899,
+      "sha256": "9794186a902cf7bb54350c4c6b64d83342d21c442507eaabc82a2c5f7d0ee73e"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_final.stdout.log",
+      "bytes": 64,
+      "sha256": "f83850d6652b089ed2137848782adad2725aeba8e469fb4c37d5e587e4a3a7e5"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_load_inputs.stderr.log",
+      "bytes": 1060,
+      "sha256": "d0038164a059399df02158f1a24425536c2f128b0e69a4fc6669b91113495d2e"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/clean_venv_load_inputs.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_import_probe.log",
+      "bytes": 1241,
+      "sha256": "e96ce38fb9535d156ccf79d7c6033ebf9bfd933a662bed02b4caa80fe1663a81"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_optional_modules.log",
+      "bytes": 41,
+      "sha256": "6d5f6cc6f981e4384b487f3c9f955c1a3f4c477c1e47e838823fe381de30661d"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_pip_check.log",
+      "bytes": 31,
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_pip_freeze.log",
+      "bytes": 78,
+      "sha256": "6825a64bfada34e1c46c657a7c84e8d2c56578dca6d7e576718d2b5eb4f91c22"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_pip_report.json",
+      "bytes": 70877,
+      "sha256": "e920f84c69d2083cda24c8b8f26fc8ab76b980f23e00ff6593dfc000e7ff3100"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_pypi_install.log",
+      "bytes": 1371,
+      "sha256": "630d8a0df8c790d873fabca39e7c3cf0ce3b0bb8d552bdd6341e908781f07442"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_review.json",
+      "bytes": 22137,
+      "sha256": "45a061f84c84635b5514c4a01fd4a020e1910aedacb29ee2acfcd718913f117b"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_review.md",
+      "bytes": 5920,
+      "sha256": "469a5c01cdcc83b66b29e0699311cf67d203ccc5f235ba2aefa4da1a69d89d61"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/dependency_venv_create.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/gui_setup.json",
+      "bytes": 1009,
+      "sha256": "3be1a56672cd248d79d141a070faa584f32c823d3fe4138a9255e60a05b29558"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_audit.stderr.log",
+      "bytes": 554,
+      "sha256": "f722dd88584fad5fb026aad4f16c480ffbadb7478205be790de4a9b410a54c64"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_audit.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_final.stderr.log",
+      "bytes": 554,
+      "sha256": "f722dd88584fad5fb026aad4f16c480ffbadb7478205be790de4a9b410a54c64"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_final.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_environment.stderr.log",
+      "bytes": 1434,
+      "sha256": "ae91c5c694a5cb89c14382a4cce9276e3e56ef13b815a0b3a1f226c398715d70"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_environment.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_execution.json",
+      "bytes": 13690,
+      "sha256": "5df61afb572115da35cec487e8d1bb0e396bd01d2c54a395f7726166b2595925"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_audit.stderr.log",
+      "bytes": 1418,
+      "sha256": "f6d2f5adbf69bd85a88193ef3cbe38a221cc8e3f927157c07fa10d236ae36327"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_audit.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_final.stderr.log",
+      "bytes": 1418,
+      "sha256": "f6d2f5adbf69bd85a88193ef3cbe38a221cc8e3f927157c07fa10d236ae36327"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_final.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_load_inputs.stderr.log",
+      "bytes": 491,
+      "sha256": "cb977fccc8591b3bc29397b163621befe39fdb8554fadc6e629561907b740e0c"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/installed_environment_load_inputs.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/package_review.json",
+      "bytes": 60230,
+      "sha256": "d40a3e3c7b95be0923f7989ad7f97d05483e743959c44e94d47b89c9ad11bc1e"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/package_review.md",
+      "bytes": 6300,
+      "sha256": "a2810ced75f7e10c7534a60c22553464c385ba578f2f6aee4bb0fb1ec2267c94"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/review_original_package.py",
+      "bytes": 12337,
+      "sha256": "c9b39ba0eb71670035c8a25cae59b2d6948da32e9db73a37515cfe3c7f1a9b72"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/run_dependency_probe.py",
+      "bytes": 5604,
+      "sha256": "ed08fa5e26c3a252c68fa1b3bc696719fd6b4994237c9057ac4678fdb3299aa0"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/run_portability_probes.py",
+      "bytes": 5816,
+      "sha256": "ae911ed61a2d5a520b5694f1e9f5564f32522d8a7e8bc545b965f61bb9cf0ce7"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/source_review.json",
+      "bytes": 75277,
+      "sha256": "87ef068a540fc479395ebbec9db16ac8664d90e01f8076c739736a4ebbe21b74"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/source_review.md",
+      "bytes": 9803,
+      "sha256": "2ed54788ea771651db98695111f14251bb12234d99eca8cbb60e28e134cd0975"
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+      "bytes": 7947,
+      "sha256": "48054e9913c023cb9c13f473c48183ca2b085ff95b7cb4adb185eb6baa32ae39"
+    }
+  ]
+}

@@ -1,0 +1,1998 @@
+{
+  "created_at_utc": "2026-09-12T11:14:12.059648+00:00",
+  "audit_type": "independent read-only archive/static dependency audit",
+  "verdict": "FAIL_PORTABILITY_ORIGINAL_PACKAGE",
+  "audited_archive": {
+    "path": "paper_output\\submission\\支撑材料\\A题_支撑材料.zip",
+    "sha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+    "bytes": 13254253,
+    "entries": 178,
+    "crc_bad_entry": null
+  },
+  "source_mutated": false,
+  "production_executed": false,
+  "gui_executed": false,
+  "human_review_signed": false,
+  "counts": {
+    "python_total": 55,
+    "python_in_code": 46,
+    "python_in_evidence": 9,
+    "matlab": 1,
+    "powershell": 1,
+    "cpp": 0
+  },
+  "duplicate_entries": [],
+  "manifest_hash_mismatches": [],
+  "baseline_inventory_required_by_entrypoint": 107,
+  "readme_local_links": [
+    {
+      "line": 7,
+      "target": "docs/公式与算法说明.md",
+      "resolved": "code/docs/公式与算法说明.md",
+      "exists": false
+    },
+    {
+      "line": 7,
+      "target": "docs/人工审查清单.md",
+      "resolved": "code/docs/人工审查清单.md",
+      "exists": false
+    },
+    {
+      "line": 7,
+      "target": "../../results/code_delivery/交付与运行记录.md",
+      "resolved": "../results/code_delivery/交付与运行记录.md",
+      "exists": false
+    },
+    {
+      "line": 75,
+      "target": "runtime/exportPathFix_v2/verification.json",
+      "resolved": "code/runtime/exportPathFix_v2/verification.json",
+      "exists": false
+    },
+    {
+      "line": 75,
+      "target": "runtime/exportPathFix_v2/process-exit.json",
+      "resolved": "code/runtime/exportPathFix_v2/process-exit.json",
+      "exists": false
+    },
+    {
+      "line": 75,
+      "target": "docs/独立代码审查.md",
+      "resolved": "code/docs/独立代码审查.md",
+      "exists": false
+    }
+  ],
+  "independent_code_identity_token_hits": [],
+  "identity_scope": "limited code text token scan, not full PDF metadata/privacy certification",
+  "findings": [
+    {
+      "id": "P01",
+      "severity": "blocking",
+      "title": "包内目录与核心根目录推导不一致",
+      "locations": [
+        "code/runDelivery.py:29",
+        "code/runDelivery.py:230",
+        "code/dryingCore.py:27",
+        "code/exportOutputs.py:40",
+        "code/matlab/runCrossCheck.m:10"
+      ],
+      "detail": "ZIP将交付代码放到code/，但Python仍向上取parents[3]，MATLAB仍向上四层。解压根目录启动时会触发cwd检查；绕过该检查也会读写解压目录外的错误根目录。主求解、导出和MATLAB入口均受影响。"
+    },
+    {
+      "id": "P02",
+      "severity": "blocking",
+      "title": "入口无条件依赖未打包的冻结工程",
+      "locations": [
+        "code/runDelivery.py:110",
+        "code/runDelivery.py:115",
+        "code/runDelivery.py:253",
+        "code/runDelivery.py:159",
+        "code/runDelivery.py:176"
+      ],
+      "detail": "final和audit均调用verifyFrozenBaseline，要求paper_output/results/production/final_v6a/run_manifest.json及账本中107项输入输出存在并逐字节匹配。包中只有重定位到evidence/final_v6a_run的部分账本/摘要，没有全量NPZ、原精度gz与原目录树。final还要求新解、事件、原精度CSV与冻结结果精确相等；此回归模式不能作为无历史工程的独立生产入口，也不能据此保证不同平台浮点逐位相等。"
+    },
+    {
+      "id": "P03",
+      "severity": "blocking",
+      "title": "输入CSV存放位置不匹配，原始附件和输出模板缺失",
+      "locations": [
+        "code/dryingCore.py:35",
+        "code/exportOutputs.py:43",
+        "code/exportOutputs.py:105",
+        "code/matlab/runCrossCheck.m:64",
+        "code/data/prepare_a_data.py:39"
+      ],
+      "detail": "两份清洗数据存在于figures/A_*_observed.csv，求解器读取paper_output/data_cleaned。题面附件1/2原始XLSX与附件3四个空白模板均未打包；顶层result1—4.xlsx是正式结果，不能冒称原始模板。仅修正根目录仍不能完成求解和导出，也不能完整重跑数据准备。"
+    },
+    {
+      "id": "P04",
+      "severity": "blocking",
+      "title": "交叉验证代码仍绑定作者磁盘路径",
+      "locations": [
+        "code/modeling/validate_bessel.py:291",
+        "code/verification/analytic_metric_check.py:24",
+        "code/verification/crossvalidate_solver.py:28",
+        "code/verification/isotherm_activity_closure.py:59"
+      ],
+      "detail": "14个code/verification脚本直接将ROOT绑定D:/Document/数学建模/2026CUMCM；validate_bessel还强制cwd等于该绝对路径。另一设备或另一解压位置会读不到源码/数据，甚至误读同名旧工程，无法依靠ZIP独立复现。"
+    },
+    {
+      "id": "P05",
+      "severity": "blocking_for_extended_pipeline",
+      "title": "扩展管线依赖未列全且绘图强制本机字体",
+      "locations": [
+        "code/requirements.txt:2",
+        "code/modeling/publication_plots.py:25",
+        "code/modeling/publication_plots.py:32",
+        "code/modeling/run_modeling.py:65",
+        "code/data/prepare_a_data.py:23"
+      ],
+      "detail": "实际ZIP包含19个旧建模脚本、14个验证脚本及数据准备程序；requirements仅列numpy/scipy/openpyxl，遗漏实际导入的matplotlib。publication_plots在C:/Windows/Fonts/msyh.ttc不存在时直接raise，run_modeling无条件stat该字体。精确依赖是否能在目标平台安装应另作干净环境实测；本次不把语法通过当成安装验证。"
+    },
+    {
+      "id": "P06",
+      "severity": "blocking_for_documented_commands",
+      "title": "运行说明和监督器保留本机启动方式",
+      "locations": [
+        "code/README.md:27",
+        "code/README.md:40",
+        "code/README.md:45",
+        "code/runLogged.ps1:4",
+        "code/runLogged.ps1:7"
+      ],
+      "detail": "README让接收者打开未打包的A_CodeReview.sln，并切到作者D盘目录，以包内不存在的paper_output/code/review_delivery路径启动。监督器默认C:/Python314/python.exe。README全部6个本地Markdown链接在包中无法解析；需要面向解压根目录的安装、运行、预期输出与失败判定说明。"
+    },
+    {
+      "id": "P07",
+      "severity": "blocking_for_historical_tools",
+      "title": "重命名和旧修复验证工具的历史依赖缺失",
+      "locations": [
+        "code/tools/verifyCamelCopies.py:17",
+        "code/tools/buildCamelCopies.py:16",
+        "code/tools/verifyExportPathFix.py:32",
+        "code/tools/verifyExportPathFix.py:40",
+        "code/tools/verifyExportPathFix.py:66"
+      ],
+      "detail": "旧代码实际在code/modeling，但工具仍找paper_output/code/modeling。verifyExportPathFix另外读取明确排除的tools/exportPathFixBefore和camel_final_v1失败目录。这些文件可用作开发历史证据，当前无法作为随包可执行复现程序。"
+    },
+    {
+      "id": "P08",
+      "severity": "assurance_gap",
+      "title": "打包通过仅证明容器完整，未证明运行闭包完整",
+      "locations": [
+        "paper_output/submission/支撑材料/build_support_package.py:406",
+        "paper_output/submission/支撑材料/build_support_package.py:477"
+      ],
+      "detail": "附录目录项仅检查any(n.startswith(item))，并未验证其中程序的输入、依赖、路径或调用链。退出条件只检查压缩大小与身份词零命中，missing_sources/附录完整性也未纳入返回码。现有178项CRC/SHA一致和体积合规可确认，但不能推出独立运行通过。"
+    }
+  ],
+  "python_syntax_checks": [
+    {
+      "path": "code/analyticJacobian.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/data/prepare_a_data.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/diskDense.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/dryingCore.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/exportOutputs.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/analytic_jacobian.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/axisymmetric_check.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/compare_analytic.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/disk_dense.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/drying_core.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/export_outputs.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/peer_beta_check.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/production_provenance.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/publication_plots.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/q1_model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/q2_model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/q3_model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/q4_model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/run_experiments.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/run_modeling.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/validate_bessel.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/verify_convergence.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/verify_dense_storage.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/modeling/verify_time_accuracy.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/q1Model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/q2Model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/q3Model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/q4Model.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/runDelivery.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/tools/buildCamelCopies.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/tools/verifyCamelCopies.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/tools/verifyExportPathFix.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/analytic_metric_check.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/compile_crossvalidation_report.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/crossvalidate_series.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/crossvalidate_solver.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/energy_balance_check.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/energy_balance_diagnose.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/energy_balance_diagnose2.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/isotherm_activity_closure.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/isotherm_diagnose.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/isotherm_jacobian_probe.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/latent_heat_scenarios.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/method_comparison.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/sensitivity_analysis.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "code/verification/threshold_and_scaling_checks.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/apply_recheck_corrections.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/assemble_physics_recheck.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_recheck_helper.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/finalize_recheck.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/numerical_recheck.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/physics_small_checks.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/recovered_historical_source/verify_convergence_v3_hash_verified.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/run_data_scale_recheck.py",
+      "syntax": "PASS",
+      "executed": false
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/surface_time_recheck.py",
+      "syntax": "PASS",
+      "executed": false
+    }
+  ],
+  "imports": {
+    "code/analyticJacobian.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "dryingCore",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time",
+      "warnings"
+    ],
+    "code/data/prepare_a_data.py": [
+      "__future__",
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "matplotlib",
+      "numpy",
+      "openpyxl",
+      "os",
+      "pathlib",
+      "platform",
+      "sys"
+    ],
+    "code/diskDense.py": [
+      "__future__",
+      "hashlib",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "tempfile"
+    ],
+    "code/dryingCore.py": [
+      "__future__",
+      "analyticJacobian",
+      "dataclasses",
+      "diskDense",
+      "hashlib",
+      "io",
+      "json",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "time"
+    ],
+    "code/exportOutputs.py": [
+      "__future__",
+      "argparse",
+      "copy",
+      "csv",
+      "dataclasses",
+      "datetime",
+      "dryingCore",
+      "gzip",
+      "hashlib",
+      "inspect",
+      "json",
+      "math",
+      "numpy",
+      "openpyxl",
+      "pathlib",
+      "q3Model",
+      "re",
+      "sys",
+      "tempfile",
+      "time"
+    ],
+    "code/modeling/analytic_jacobian.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time",
+      "warnings"
+    ],
+    "code/modeling/axisymmetric_check.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "time",
+      "traceback"
+    ],
+    "code/modeling/compare_analytic.py": [
+      "__future__",
+      "csv",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "hashlib",
+      "json",
+      "matplotlib",
+      "numpy",
+      "os",
+      "pathlib",
+      "platform",
+      "sys",
+      "time",
+      "validate_bessel"
+    ],
+    "code/modeling/disk_dense.py": [
+      "__future__",
+      "hashlib",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "tempfile"
+    ],
+    "code/modeling/drying_core.py": [
+      "__future__",
+      "analytic_jacobian",
+      "dataclasses",
+      "disk_dense",
+      "hashlib",
+      "io",
+      "json",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "time"
+    ],
+    "code/modeling/export_outputs.py": [
+      "__future__",
+      "argparse",
+      "copy",
+      "csv",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "gzip",
+      "hashlib",
+      "inspect",
+      "json",
+      "math",
+      "numpy",
+      "openpyxl",
+      "pathlib",
+      "q3_model",
+      "re",
+      "sys",
+      "tempfile",
+      "time"
+    ],
+    "code/modeling/peer_beta_check.py": [
+      "__future__",
+      "analytic_jacobian",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "q3_model",
+      "scipy",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback",
+      "warnings"
+    ],
+    "code/modeling/production_provenance.py": [
+      "__future__",
+      "contextlib",
+      "copy",
+      "datetime",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "platform",
+      "run_modeling",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "types",
+      "unittest",
+      "uuid"
+    ],
+    "code/modeling/publication_plots.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "hashlib",
+      "inspect",
+      "json",
+      "matplotlib",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "code/modeling/q1_model.py": [
+      "drying_core"
+    ],
+    "code/modeling/q2_model.py": [
+      "drying_core"
+    ],
+    "code/modeling/q3_model.py": [
+      "math",
+      "numpy"
+    ],
+    "code/modeling/q4_model.py": [
+      "drying_core"
+    ],
+    "code/modeling/run_experiments.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "json",
+      "pathlib",
+      "sys",
+      "traceback"
+    ],
+    "code/modeling/run_modeling.py": [
+      "__future__",
+      "argparse",
+      "gc",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "production_provenance",
+      "subprocess",
+      "sys",
+      "time",
+      "traceback",
+      "uuid",
+      "warnings"
+    ],
+    "code/modeling/validate_bessel.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "datetime",
+      "functools",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "platform",
+      "scipy",
+      "sys"
+    ],
+    "code/modeling/verify_convergence.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "gc",
+      "json",
+      "numpy",
+      "pathlib",
+      "validate_bessel",
+      "warnings"
+    ],
+    "code/modeling/verify_dense_storage.py": [
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "json",
+      "numpy",
+      "pathlib",
+      "warnings"
+    ],
+    "code/modeling/verify_time_accuracy.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "gc",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "production_provenance",
+      "sys",
+      "time",
+      "traceback",
+      "uuid",
+      "verify_convergence",
+      "warnings"
+    ],
+    "code/q1Model.py": [
+      "dryingCore"
+    ],
+    "code/q2Model.py": [
+      "dryingCore"
+    ],
+    "code/q3Model.py": [
+      "math",
+      "numpy"
+    ],
+    "code/q4Model.py": [
+      "dryingCore"
+    ],
+    "code/runDelivery.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "datetime",
+      "dryingCore",
+      "drying_core",
+      "exportOutputs",
+      "gc",
+      "gzip",
+      "hashlib",
+      "importlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "q3Model",
+      "re",
+      "sys",
+      "time",
+      "traceback",
+      "warnings"
+    ],
+    "code/tools/buildCamelCopies.py": [
+      "__future__",
+      "ast",
+      "copy",
+      "datetime",
+      "difflib",
+      "hashlib",
+      "io",
+      "json",
+      "pathlib",
+      "re",
+      "tokenize"
+    ],
+    "code/tools/verifyCamelCopies.py": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "importlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time",
+      "warnings"
+    ],
+    "code/tools/verifyExportPathFix.py": [
+      "__future__",
+      "ast",
+      "datetime",
+      "difflib",
+      "exportOutputs",
+      "hashlib",
+      "json",
+      "pathlib",
+      "q2Model",
+      "q4Model",
+      "sys",
+      "time",
+      "warnings"
+    ],
+    "code/verification/analytic_metric_check.py": [
+      "__future__",
+      "io",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "validate_bessel"
+    ],
+    "code/verification/compile_crossvalidation_report.py": [
+      "__future__",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys"
+    ],
+    "code/verification/crossvalidate_series.py": [
+      "__future__",
+      "io",
+      "json",
+      "math",
+      "matplotlib",
+      "numpy",
+      "pathlib",
+      "sys"
+    ],
+    "code/verification/crossvalidate_solver.py": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "q3_model",
+      "sys",
+      "tempfile",
+      "time",
+      "traceback",
+      "uuid"
+    ],
+    "code/verification/energy_balance_check.py": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time"
+    ],
+    "code/verification/energy_balance_diagnose.py": [
+      "__future__",
+      "drying_core",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "code/verification/energy_balance_diagnose2.py": [
+      "__future__",
+      "drying_core",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "code/verification/isotherm_activity_closure.py": [
+      "__future__",
+      "datetime",
+      "drying_core",
+      "io",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time",
+      "traceback"
+    ],
+    "code/verification/isotherm_diagnose.py": [
+      "__future__",
+      "dataclasses",
+      "drying_core",
+      "isotherm_activity_closure",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "code/verification/isotherm_jacobian_probe.py": [
+      "__future__",
+      "drying_core",
+      "isotherm_activity_closure",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time",
+      "warnings"
+    ],
+    "code/verification/latent_heat_scenarios.py": [
+      "__future__",
+      "dataclasses",
+      "drying_core",
+      "json",
+      "matplotlib",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "time",
+      "uuid"
+    ],
+    "code/verification/method_comparison.py": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "time"
+    ],
+    "code/verification/sensitivity_analysis.py": [
+      "__future__",
+      "dataclasses",
+      "drying_core",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "q3_model",
+      "sys",
+      "time",
+      "uuid"
+    ],
+    "code/verification/threshold_and_scaling_checks.py": [
+      "__future__",
+      "dataclasses",
+      "drying_core",
+      "io",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "time",
+      "uuid"
+    ],
+    "evidence/recheck_20260910_1828/apply_recheck_corrections.py": [
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re"
+    ],
+    "evidence/recheck_20260910_1828/assemble_physics_recheck.py": [
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re"
+    ],
+    "evidence/recheck_20260910_1828/data_scale_recheck_helper.py": [
+      "__future__",
+      "ast",
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "math",
+      "openpyxl",
+      "pathlib",
+      "platform",
+      "pymupdf",
+      "sys",
+      "time",
+      "xml",
+      "zipfile"
+    ],
+    "evidence/recheck_20260910_1828/finalize_recheck.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "urllib"
+    ],
+    "evidence/recheck_20260910_1828/numerical_recheck.py": [
+      "ast",
+      "datetime",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "scipy",
+      "sys",
+      "time"
+    ],
+    "evidence/recheck_20260910_1828/physics_small_checks.py": [
+      "analytic_jacobian",
+      "datetime",
+      "drying_core",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib",
+      "pymupdf",
+      "scipy",
+      "sys",
+      "warnings"
+    ],
+    "evidence/recheck_20260910_1828/recovered_historical_source/verify_convergence_v3_hash_verified.py": [
+      "__future__",
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "drying_core",
+      "gc",
+      "json",
+      "numpy",
+      "pathlib",
+      "validate_bessel",
+      "warnings"
+    ],
+    "evidence/recheck_20260910_1828/run_data_scale_recheck.py": [
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "time"
+    ],
+    "evidence/recheck_20260910_1828/surface_time_recheck.py": [
+      "datetime",
+      "hashlib",
+      "json",
+      "numpy",
+      "os",
+      "pathlib"
+    ]
+  },
+  "archive_inventory": [
+    {
+      "path": "AI工具使用详情.pdf",
+      "bytes": 499002,
+      "sha256": "944ecfd0a609a42e52b06c0ed021615410468922c938a5c13ff8d8cea87e492e"
+    },
+    {
+      "path": "code/README.md",
+      "bytes": 8291,
+      "sha256": "be1c2c63928b0b9c35fe654ed93b2f013bfc089ea06a9822097901701ab1f76c"
+    },
+    {
+      "path": "code/analyticJacobian.py",
+      "bytes": 17600,
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe"
+    },
+    {
+      "path": "code/data/prepare_a_data.py",
+      "bytes": 14799,
+      "sha256": "f32a7a23ea85f0bb68b59b64cf3e9c670cbabf8ce6324e29f0059a41c8f1fc5d"
+    },
+    {
+      "path": "code/diskDense.py",
+      "bytes": 5562,
+      "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f"
+    },
+    {
+      "path": "code/dryingCore.py",
+      "bytes": 21525,
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77"
+    },
+    {
+      "path": "code/exportOutputs.py",
+      "bytes": 42147,
+      "sha256": "3a66a754e7f3a13534918c7ebab7bc664d07669121f12ecde47efb5871a406ed"
+    },
+    {
+      "path": "code/matlab/README.md",
+      "bytes": 10312,
+      "sha256": "022983ca862ef989a7af13d2c9c400ff09a2b204ebd23162c1b1298a1cc082a6"
+    },
+    {
+      "path": "code/matlab/runCrossCheck.m",
+      "bytes": 26369,
+      "sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda"
+    },
+    {
+      "path": "code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665"
+    },
+    {
+      "path": "code/modeling/axisymmetric_check.py",
+      "bytes": 13887,
+      "sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c"
+    },
+    {
+      "path": "code/modeling/compare_analytic.py",
+      "bytes": 14520,
+      "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805"
+    },
+    {
+      "path": "code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60"
+    },
+    {
+      "path": "code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "code/modeling/export_outputs.py",
+      "bytes": 41427,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b"
+    },
+    {
+      "path": "code/modeling/peer_beta_check.py",
+      "bytes": 14337,
+      "sha256": "a7a31ba683be96de9f20c13476bdfa2a6e1e9fac25ec0035fdfaedff8159a683"
+    },
+    {
+      "path": "code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130"
+    },
+    {
+      "path": "code/modeling/publication_plots.py",
+      "bytes": 24337,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388"
+    },
+    {
+      "path": "code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8"
+    },
+    {
+      "path": "code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204"
+    },
+    {
+      "path": "code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137"
+    },
+    {
+      "path": "code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535"
+    },
+    {
+      "path": "code/modeling/run_experiments.py",
+      "bytes": 3995,
+      "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509"
+    },
+    {
+      "path": "code/modeling/run_modeling.py",
+      "bytes": 27729,
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84"
+    },
+    {
+      "path": "code/modeling/validate_bessel.py",
+      "bytes": 16285,
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac"
+    },
+    {
+      "path": "code/modeling/verify_convergence.py",
+      "bytes": 6542,
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec"
+    },
+    {
+      "path": "code/modeling/verify_dense_storage.py",
+      "bytes": 3850,
+      "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472"
+    },
+    {
+      "path": "code/modeling/verify_time_accuracy.py",
+      "bytes": 14430,
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc"
+    },
+    {
+      "path": "code/q1Model.py",
+      "bytes": 532,
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1"
+    },
+    {
+      "path": "code/q2Model.py",
+      "bytes": 550,
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33"
+    },
+    {
+      "path": "code/q3Model.py",
+      "bytes": 1595,
+      "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f"
+    },
+    {
+      "path": "code/q4Model.py",
+      "bytes": 584,
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009"
+    },
+    {
+      "path": "code/requirements.txt",
+      "bytes": 123,
+      "sha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055"
+    },
+    {
+      "path": "code/runDelivery.py",
+      "bytes": 15385,
+      "sha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a"
+    },
+    {
+      "path": "code/runLogged.ps1",
+      "bytes": 2853,
+      "sha256": "a9174b3777c7e710ab41e388499e1335ee19f06cf3acde1909492c9b4a463db9"
+    },
+    {
+      "path": "code/tools/buildCamelCopies.py",
+      "bytes": 19294,
+      "sha256": "d2f4cb3b8b8f2db0cdc7e1343d4013b2279dc0ed14f4fb21efa30c8588af226b"
+    },
+    {
+      "path": "code/tools/coreChangeLog.md",
+      "bytes": 4525,
+      "sha256": "b6fe16ef89268ef484a3de41b6a74e656afc4267218ce107a932ab8791a44b9b"
+    },
+    {
+      "path": "code/tools/coreRenameReport.json",
+      "bytes": 12800,
+      "sha256": "8fced77cec833aed6a234b3f457f49616180af7b9d2e459f5cdb3ee54e841dd1"
+    },
+    {
+      "path": "code/tools/verifyCamelCopies.py",
+      "bytes": 5949,
+      "sha256": "cff92879aa3e1f51606c951faf74550186eb299ccb0035feccb9137fc87a5a87"
+    },
+    {
+      "path": "code/tools/verifyExportPathFix.py",
+      "bytes": 7088,
+      "sha256": "948c3d8514a035a09ece450448cf774363a88e4a2ec70c74034affa86432ced5"
+    },
+    {
+      "path": "code/verification/analytic_metric_check.py",
+      "bytes": 4056,
+      "sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9"
+    },
+    {
+      "path": "code/verification/compile_crossvalidation_report.py",
+      "bytes": 28567,
+      "sha256": "89e6fbf2692088205063d656ee8432a833f3847a195319c6487727cc092df99b"
+    },
+    {
+      "path": "code/verification/crossvalidate_series.py",
+      "bytes": 19916,
+      "sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be"
+    },
+    {
+      "path": "code/verification/crossvalidate_solver.py",
+      "bytes": 8427,
+      "sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09"
+    },
+    {
+      "path": "code/verification/energy_balance_check.py",
+      "bytes": 11942,
+      "sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94"
+    },
+    {
+      "path": "code/verification/energy_balance_diagnose.py",
+      "bytes": 2806,
+      "sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b"
+    },
+    {
+      "path": "code/verification/energy_balance_diagnose2.py",
+      "bytes": 3902,
+      "sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476"
+    },
+    {
+      "path": "code/verification/isotherm_activity_closure.py",
+      "bytes": 23957,
+      "sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e"
+    },
+    {
+      "path": "code/verification/isotherm_diagnose.py",
+      "bytes": 3001,
+      "sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a"
+    },
+    {
+      "path": "code/verification/isotherm_jacobian_probe.py",
+      "bytes": 3883,
+      "sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c"
+    },
+    {
+      "path": "code/verification/latent_heat_scenarios.py",
+      "bytes": 8685,
+      "sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b"
+    },
+    {
+      "path": "code/verification/method_comparison.py",
+      "bytes": 9293,
+      "sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0"
+    },
+    {
+      "path": "code/verification/sensitivity_analysis.py",
+      "bytes": 12878,
+      "sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066"
+    },
+    {
+      "path": "code/verification/threshold_and_scaling_checks.py",
+      "bytes": 8007,
+      "sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599"
+    },
+    {
+      "path": "docs/人工审查清单.md",
+      "bytes": 3755,
+      "sha256": "7be9237a480a2b36a95b262bf8a6a0e6ae93bd259136744941a603ec7336a31a"
+    },
+    {
+      "path": "docs/公式与算法说明.md",
+      "bytes": 41746,
+      "sha256": "6b759a247d6579dc86e8e771f4294c6720260c1dfee047836948f2ed725af859"
+    },
+    {
+      "path": "docs/当前方法与数值求解步骤.md",
+      "bytes": 6412,
+      "sha256": "08d54dce58b70ea61abcf1995ac814f69b0e2c287ff4ada965f613e946d8bd04"
+    },
+    {
+      "path": "docs/独立代码审查.md",
+      "bytes": 13415,
+      "sha256": "b56fdeceaefad2e56c76d6016c7cff8e2ac8d16bf7bf863f653134f3926f5169"
+    },
+    {
+      "path": "evidence/code_runtime/coreRenameVerification.json",
+      "bytes": 13642,
+      "sha256": "1061da524f15ac66d543b5366a07298c2ddd3f45753a36b336edb23e65a1cce9"
+    },
+    {
+      "path": "evidence/code_runtime/exportPathFix_v2/artifactManifest.json",
+      "bytes": 2710,
+      "sha256": "be2e610b130ffd5eb68e0f5d80a4e12a7a146cf505724489f57f33f57bcf105a"
+    },
+    {
+      "path": "evidence/code_runtime/exportPathFix_v2/process-exit.json",
+      "bytes": 363,
+      "sha256": "ba74e1ef42e3110579c1312ca4e435f1978b0681bbbf8b0d6764642c1b3fb5a2"
+    },
+    {
+      "path": "evidence/code_runtime/exportPathFix_v2/verification.json",
+      "bytes": 30965,
+      "sha256": "1c7b6cff35c729df8f9e1f9f6118c97af75236ae56e8ed16ba132bc1cecede2f"
+    },
+    {
+      "path": "evidence/code_runtime/exportPathFix_v2_console.log",
+      "bytes": 873,
+      "sha256": "64e12abbd70f56e8b8b32b6363fd896c0449418fe9e813413dcdf76e6642c355"
+    },
+    {
+      "path": "evidence/crossvalidation/analytic_metric_v1/analytic_metric.json",
+      "bytes": 1732,
+      "sha256": "2dc9d080b15f2de4ffe9a393066c992773902e6f5ae0a7f34efb92aff8896436"
+    },
+    {
+      "path": "evidence/crossvalidation/consolidated_v1/crossvalidation_report.json",
+      "bytes": 34779,
+      "sha256": "3bc6b359d86f0bb77805cca4a9114312e71d433f726b81eb869cbc2260bedd3d"
+    },
+    {
+      "path": "evidence/crossvalidation/consolidated_v1/crossvalidation_report.md",
+      "bytes": 11389,
+      "sha256": "c732d74ad2d0cf303bee7c343ae1364e203b03229a4d5d9c05760f840c856eb2"
+    },
+    {
+      "path": "evidence/crossvalidation/cv_solver_v1/cases.json",
+      "bytes": 81082,
+      "sha256": "2ba7893a3afb0b43b117f57375951c557cc77b8b378ad0b72dc0eb7078c0d268"
+    },
+    {
+      "path": "evidence/crossvalidation/cv_solver_v1/summary.json",
+      "bytes": 349,
+      "sha256": "cdd0f219ab864115f3f2d7032f672e9b488643b40e95e47f3c8fed643163fc98"
+    },
+    {
+      "path": "evidence/crossvalidation/energy_balance_v1/energy_balance.json",
+      "bytes": 31969,
+      "sha256": "00cd0715c6efd6b43fd0c4f200a06365822fb03f7d164a3c04b6ea6ba1bdef2c"
+    },
+    {
+      "path": "evidence/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "bytes": 84755,
+      "sha256": "7528cf2deb3b596c4c1877ad291043a3e47c8e96127de03cbb760a2ee63f9c96"
+    },
+    {
+      "path": "evidence/crossvalidation/isotherm_closure_v1/jacobian_probe.json",
+      "bytes": 1032,
+      "sha256": "59e318f415a3f6cf1256d1f1fa7953eb66c1730d5be7d7412be031a152453e4d"
+    },
+    {
+      "path": "evidence/crossvalidation/latent_scenarios_v1/figures/fig_latent_scenarios.pdf",
+      "bytes": 46428,
+      "sha256": "cc696119d4463904ca1a26f2f34aa41c889c3562973ea32a81eec13ba4067999"
+    },
+    {
+      "path": "evidence/crossvalidation/latent_scenarios_v1/latent_scenarios.json",
+      "bytes": 29791,
+      "sha256": "6a4479bfc5eed1197c83a545f25c0a18e60f0462ec024a4ee1735c15b557c7a0"
+    },
+    {
+      "path": "evidence/crossvalidation/method_v1/method_comparison.json",
+      "bytes": 195088,
+      "sha256": "83fe61738168309af717522bdd0c18357fea2404ecea328a34ccdbce46051510"
+    },
+    {
+      "path": "evidence/crossvalidation/sensitivity_v1/control.json",
+      "bytes": 477,
+      "sha256": "8bd92131e80f7eb91d78cfd19ee570ba7b6f07160349a2a02d027b66236092b7"
+    },
+    {
+      "path": "evidence/crossvalidation/sensitivity_v1/dscale.json",
+      "bytes": 2538,
+      "sha256": "0cb0760f472b8d13330983ba0dbe9c7cb065a2e364ae3f3410039fe95ed9e333"
+    },
+    {
+      "path": "evidence/crossvalidation/sensitivity_v1/kscale.json",
+      "bytes": 1989,
+      "sha256": "7cb6fd9bece486efbb42e3807c94e1c7a3b7d2b1ad4fcdc72cf4ba36f021b094"
+    },
+    {
+      "path": "evidence/crossvalidation/sensitivity_v1/morris.json",
+      "bytes": 15594,
+      "sha256": "e53138015a9025d101d216513c5412eed57dee87d882f34624d84ba439873e43"
+    },
+    {
+      "path": "evidence/crossvalidation/series_v1/figures/fig_series_mutation_tests.pdf",
+      "bytes": 55125,
+      "sha256": "617b06f062059cfbde4652372e9c8d9cb466b56b3d8da9591c06d6b2f160bc59"
+    },
+    {
+      "path": "evidence/crossvalidation/series_v1/figures/fig_stage_boundary_crossvalidation.pdf",
+      "bytes": 62167,
+      "sha256": "7b12907b073563a47dc34c849b38e8a102f42c6e88b4aa0069edddbeb0f80cbb"
+    },
+    {
+      "path": "evidence/crossvalidation/series_v1/series_crossvalidation.json",
+      "bytes": 707360,
+      "sha256": "4a76c89f8861a8634ed17493fdff72f9866318c83088cf214c7ad45288dcf55a"
+    },
+    {
+      "path": "evidence/crossvalidation/series_v1/stage_boundaries.csv",
+      "bytes": 349,
+      "sha256": "cd822a48b669e5b774db5a8e1d11f9fb66197cc9aade7bf738122cb2a238286c"
+    },
+    {
+      "path": "evidence/crossvalidation/series_v1/stage_boundaries.json",
+      "bytes": 1160,
+      "sha256": "722e028850a2e80cde4801d74dec9efbb00b791e3745d427e727c72f643171b0"
+    },
+    {
+      "path": "evidence/crossvalidation/threshold_scaling_v1/threshold_and_scaling_checks.json",
+      "bytes": 3316,
+      "sha256": "81618006e31c5712b7b245fcb5487f3fc0271ab3524270bae82ac64cafc4c4d8"
+    },
+    {
+      "path": "evidence/final_v6a_run/export_validation.json",
+      "bytes": 26056,
+      "sha256": "f064429802c23b8dff7170ccf88435ec7e751ea8f811396d4deedee9a640ff89"
+    },
+    {
+      "path": "evidence/final_v6a_run/launch.json",
+      "bytes": 7509,
+      "sha256": "ffff3d627524c18046a913c6bd0b47da97e114d1c88bbb1e2c8092ad4f9093cb"
+    },
+    {
+      "path": "evidence/final_v6a_run/metric_evidence_validation.json",
+      "bytes": 141,
+      "sha256": "392b896dea12c3678be0bf6bbbc97dcf3c6499889d7b75eedaf95bab00ff5872"
+    },
+    {
+      "path": "evidence/final_v6a_run/numerical_summaries.json",
+      "bytes": 16270,
+      "sha256": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5"
+    },
+    {
+      "path": "evidence/final_v6a_run/process_result.json",
+      "bytes": 815,
+      "sha256": "83915af102ac762430b02beaf41c37b708b635b4eb13eede9b01d340cf2de3dd"
+    },
+    {
+      "path": "evidence/final_v6a_run/run_manifest.json",
+      "bytes": 31524,
+      "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+    },
+    {
+      "path": "evidence/final_v6a_run/stdout.log",
+      "bytes": 4833,
+      "sha256": "bdfbe519a6314773efc13cb075076a6c045c218f8563654ab05f214c33933266"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q1_crossCheck.json",
+      "bytes": 5886,
+      "sha256": "634c073d0be0b74bfcd444e0d5ef70c5cd20ca433fc8277c3054182e624d6877"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q1_samples.csv",
+      "bytes": 731,
+      "sha256": "f279c3a745825c328081cfaa81e517ff32df91f393f4ecd970b52a07ecf3c75f"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q23_crossCheck.json",
+      "bytes": 12770,
+      "sha256": "14bf93b600272609c0cae0672e4ec5e173c39542a73204d2c2a89b7767f66150"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q23_samples.csv",
+      "bytes": 1923,
+      "sha256": "6e5b59fb5ca204f891c27a30415ccd70437bc4a7e1b51707998e0a1af73c88e8"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q2_samples.csv",
+      "bytes": 1898,
+      "sha256": "e8f06fe49e2aea4d9fcb108038788caa979a22185354065c8a6ba948565dc3e2"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q3_samples.csv",
+      "bytes": 1898,
+      "sha256": "5dd4752aafa31b54d239f0578c4740071b5eb57b8df88d7ccc1a23b8f0a645d2"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q4_crossCheck.json",
+      "bytes": 12952,
+      "sha256": "b04c41ea1742b270624371771414ce22d1b01773ef9f82b38d02228fa7b06cb2"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/Q4_samples.csv",
+      "bytes": 1973,
+      "sha256": "898d4611b4e24a5ba32c0525e27480ad6dcf8c3fcf5699408a48da44598d48c8"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/comparison-python-development.json",
+      "bytes": 1262,
+      "sha256": "d4e5ba818f3a9a85db279996dca1a8766bdaaf79af948c3baced98b8bf1845ec"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/comparison-python-manifest.json",
+      "bytes": 1289,
+      "sha256": "05fab6930f4f08f1c27431ab43759c19f02708b53adf0a9193b9d76e679988e5"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/comparison-python-process.jsonl",
+      "bytes": 752,
+      "sha256": "217df06fd50c87376dfe07ead6d6c90cfa6b1e7f339f1d21c415501f5cc51d6f"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/comparison-python.json",
+      "bytes": 55252,
+      "sha256": "9cf5bd7aa55169456378c530f71375fbd53b66c0ff3f3de93d62882ffc784c9d"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/comparison-python.md",
+      "bytes": 2254,
+      "sha256": "2f9f178f1794a5272676b91f509c10baf547dc6d5564765579ee9ea407d1836b"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/runLog.txt",
+      "bytes": 597,
+      "sha256": "0199a0c78bbbc3b36ad986fd3f03ccdace5a794207a631826335ec7c738a1edc"
+    },
+    {
+      "path": "evidence/matlab_crosscheck_20260911/runSummary.json",
+      "bytes": 40173,
+      "sha256": "9edd3cccb57f9485dbea73fe2fe191fb9fba6ba22cb61957d2038026ce23a5f0"
+    },
+    {
+      "path": "evidence/qa/evidence_gate_report.json",
+      "bytes": 2028,
+      "sha256": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
+    },
+    {
+      "path": "evidence/qa/evidence_gate_report.md",
+      "bytes": 415,
+      "sha256": "9dff67a86d1525ea37c37b3c82471d4cf6fbfd029c23de51c1c5668723dbabdf"
+    },
+    {
+      "path": "evidence/qa/workflow_guard_report.json",
+      "bytes": 2066,
+      "sha256": "c9044ff325bc56e23bd5c2137bbbad3ced457ec213b3b24d8c1651ab4c171383"
+    },
+    {
+      "path": "evidence/qa/workflow_guard_report.md",
+      "bytes": 860,
+      "sha256": "917485a8048bc6ebdc6a9c3bbb4bd314c29c173fca75cec005c5b8d556ddd77d"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/apply_recheck_corrections.py",
+      "bytes": 4475,
+      "sha256": "b08476894173ea1fe8e42daff554b80a740f8de62cd7c8ec20acfd95b92f90ce"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/assemble_physics_recheck.py",
+      "bytes": 6594,
+      "sha256": "05195e08f9e4c4c3f5c499a6860f801370fffd97f1edf2990c370c512a6dcb5f"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/backup_preflight.json",
+      "bytes": 10932,
+      "sha256": "548f143af188aa641af34d71882789885546fd1badf005e8202ee187125e3be5"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_20260910T183957938102Z.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_20260910T183957938102Z.stdout.log",
+      "bytes": 12586,
+      "sha256": "b5b20a0ae416f17f3cec50b0c7af65cd0d16ef82d81b9007da7f67e78f7261b8"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_20260910T184117647719Z.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_20260910T184117647719Z.stdout.log",
+      "bytes": 13812,
+      "sha256": "9e008c8f116f30bb2831a5065fd1615791733df30be522630bcfd5d6d59e7e6c"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_process_20260910T183957938102Z.json",
+      "bytes": 728,
+      "sha256": "aab8ed9f3c6a504fd115459550bcd1b6c10d98d422cd86b7954116a71c9670f4"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_process_20260910T184117647719Z.json",
+      "bytes": 728,
+      "sha256": "2259b7079092da8cb36b5f05a183f277917521f1d11b64013b70debfe9798c6b"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_recheck.json",
+      "bytes": 61794,
+      "sha256": "7a10f017f47f75944ea04a93e5ea0e262967f58aeeadac274b4b8777ab0d5223"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_recheck.md",
+      "bytes": 18579,
+      "sha256": "ae02cded6aa3c8f59bc9bdbbef05ef961ec73d70cd43f8cd5a8a26a999332c2d"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/data_scale_recheck_helper.py",
+      "bytes": 18556,
+      "sha256": "b6e4d46cf224a647e3dcf5249b297f01cd9cb94cf2529086805fc3beb4378a3d"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/evidence_gate_after.json",
+      "bytes": 2028,
+      "sha256": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/evidence_gate_after.md",
+      "bytes": 415,
+      "sha256": "9dff67a86d1525ea37c37b3c82471d4cf6fbfd029c23de51c1c5668723dbabdf"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/evidence_gate_before.json",
+      "bytes": 2028,
+      "sha256": "569a3a42937ca7b1c3261e4537feb429c0d443d652973c4760584c14a0be4536"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/evidence_gate_before.md",
+      "bytes": 415,
+      "sha256": "568536c6412e1961dc37d10e7e31292c3bdc202e943227776fb89922c0e4b987"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/explanatory_corrections.json",
+      "bytes": 3725,
+      "sha256": "b6f5ba00878fd4548e9842a4d0a999683137fa9ad050285f53e2689223f90631"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/finalize_recheck.py",
+      "bytes": 7799,
+      "sha256": "816c6816f5263a59d4fa87db43ef9491991d49b036f07bc8c17a3c562134c80e"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/numerical_recheck.json",
+      "bytes": 193222,
+      "sha256": "5a48cd74c1a839488a30fd326da562ac5f0be9c406281a89b8f54b125c3cfe99"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/numerical_recheck.md",
+      "bytes": 17098,
+      "sha256": "67a4afbecf0b5241da22c08ec9d0eb370d85e2d3a5ebdb0fed8b076ea973e64d"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/numerical_recheck.py",
+      "bytes": 16775,
+      "sha256": "1c05df3bd2b12d1989ed74415c40eb3c6455616f2d31d151378a1b2a7c66db1b"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/original_pdf_fresh_text.txt",
+      "bytes": 7072,
+      "sha256": "7adbcbaf8c5a2dec98f35d1a9e0b20f54f900f7ff06be4ade720a7d917367f83"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/physics_recheck.json",
+      "bytes": 23844,
+      "sha256": "1db92b3e106a5d93c28da15fa9c3b78eab10be949ec12d3b6213288f20b3e638"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/physics_recheck.md",
+      "bytes": 26190,
+      "sha256": "815d6981c1779929c09c5a9d615db6efdabf8d46ea6948e668189780d31e48ab"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/physics_small_checks.json",
+      "bytes": 13911,
+      "sha256": "c537f1580366873b76b06a98eefc57d38e001ffbbdb8e333c9e2837b85c63652"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/physics_small_checks.py",
+      "bytes": 9219,
+      "sha256": "13a2a2396a80a4cfb83e9f643a2b28eb43748189c4c58c5821a742579588dae5"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/raw_problem_text.txt",
+      "bytes": 7046,
+      "sha256": "11298485dd852bdd6f5efd477983e1b0b7e6496f2ceaadda98b24cdc365d2b73"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/recheck_summary.json",
+      "bytes": 29385,
+      "sha256": "5106137db3e337d5454503d0636f456ca1b99cf7498c381080239370c47b4de6"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/recovered_historical_source/reconstruction_record.json",
+      "bytes": 873,
+      "sha256": "d25a20a6208cc60a83c3f7733f5c3128d66460ce48cfdffc7c8ff47094000c78"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/recovered_historical_source/verify_convergence_v3_hash_verified.py",
+      "bytes": 5356,
+      "sha256": "ac5f0cbc5de5beeecddf163497626a61bb6aabb82fc458c226c51a7d532f61e0"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/run_data_scale_recheck.py",
+      "bytes": 1602,
+      "sha256": "982da7ff30991708363f64d24471e8e646aec07045844fbb1af68e8302d22943"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/surface_time_recheck.json",
+      "bytes": 10577,
+      "sha256": "4aded431193660c905b697fb4e2aa08d4dc3d86324d5da494fa1b4654b45ca7e"
+    },
+    {
+      "path": "evidence/recheck_20260910_1828/surface_time_recheck.py",
+      "bytes": 5022,
+      "sha256": "86a4911cc9bec942418c8837fe47bfeac9025b87ce309165c2ce304c0c38b9c9"
+    },
+    {
+      "path": "evidence/workbook_validation/result1.export.json",
+      "bytes": 37878,
+      "sha256": "1158f19d64ada8bc0bfb7b3fe01c58944e1acb0af9fcf01b478da8ef3a756836"
+    },
+    {
+      "path": "evidence/workbook_validation/result1.validation.json",
+      "bytes": 5175,
+      "sha256": "7a716ca00499cc858fa0acf54786fc995d38947fb0602a427de011124268bf5a"
+    },
+    {
+      "path": "evidence/workbook_validation/result2.export.json",
+      "bytes": 36606,
+      "sha256": "56f086f6249b35333bb07f432f47243b82ebe11711b0702fe3ec023a1c4eaf2e"
+    },
+    {
+      "path": "evidence/workbook_validation/result2.validation.json",
+      "bytes": 5165,
+      "sha256": "614e20e630d5b6a887d7334d43bcdb05e0ff6552e96a160658c2b4a88a0e05c1"
+    },
+    {
+      "path": "evidence/workbook_validation/result3.export.json",
+      "bytes": 25155,
+      "sha256": "139b8134e231aba69a596f501ccefee0ee003807db427f4498b1734a84c5ad5e"
+    },
+    {
+      "path": "evidence/workbook_validation/result3.validation.json",
+      "bytes": 4530,
+      "sha256": "9a93cbf83cbfa292cab7b0aeff20f831dc204b5ac3d0ad00bb33bd806b2e1ba3"
+    },
+    {
+      "path": "evidence/workbook_validation/result4.export.json",
+      "bytes": 25966,
+      "sha256": "1996a39d7dab85197224f264f736436df0d8f0eee1cbba527e0445ca5452d0df"
+    },
+    {
+      "path": "evidence/workbook_validation/result4.validation.json",
+      "bytes": 5992,
+      "sha256": "c1d065baf8c0fe8eb00e8dd05b76e5be68756a2caebf8dbf5228ca95bf0de6f5"
+    },
+    {
+      "path": "evidence/交付与运行记录.md",
+      "bytes": 9076,
+      "sha256": "c5c3625b68dd840f7f50bbfe9ef01e5c9eff9487ce6873c1aec1169eaf658317"
+    },
+    {
+      "path": "figures/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "figures/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "figures/fig_A_environment.pdf",
+      "bytes": 23880,
+      "sha256": "d47e0fe198c99f4e0fee475ef7c8e96e0a6febd50a72441850dbc1e6eaff9204"
+    },
+    {
+      "path": "figures/fig_A_environment.svg",
+      "bytes": 111940,
+      "sha256": "a1cf01b052b3e2d9340aba41e8bb19eb5c2dbfe81c8c58eebef767accbe9976d"
+    },
+    {
+      "path": "figures/fig_A_radius.pdf",
+      "bytes": 18226,
+      "sha256": "171876248d66e1219ab52c7f52a933eadf95cea2aea2f760a7d84ae90f7823ac"
+    },
+    {
+      "path": "figures/fig_A_radius.svg",
+      "bytes": 75734,
+      "sha256": "016d2af8d9030d19d1eed104c299a2568431ba603a2c3a009cffda0fbddf94b9"
+    },
+    {
+      "path": "figures/fig_q1_profiles.json",
+      "bytes": 3984,
+      "sha256": "59419e2d20b1d2574caca6f7533d55517c724ed9e7b1cb22ef3d6af0c8e33b4b"
+    },
+    {
+      "path": "figures/fig_q1_profiles.pdf",
+      "bytes": 61860,
+      "sha256": "6024b7a69f78c11dafb987d369c044bcba5b368b7c24a566fe59f7bc807d2f18"
+    },
+    {
+      "path": "figures/fig_q1_profiles.svg",
+      "bytes": 148009,
+      "sha256": "59d898934ce14840206c63fef8803998c96bd2e4ec4bdfcda3d9eaa267a1cbdf"
+    },
+    {
+      "path": "figures/fig_q1_profiles_data.npz",
+      "bytes": 12242,
+      "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096"
+    },
+    {
+      "path": "figures/fig_q2_profiles.json",
+      "bytes": 4001,
+      "sha256": "369b20a95a111d9aafb7a22609f6b1946e8ae4f90985d8f5544ae0b6500cf067"
+    },
+    {
+      "path": "figures/fig_q2_profiles.pdf",
+      "bytes": 60863,
+      "sha256": "d745d1d1ce70453712dd7ebf410d6dd49457e0552005904c51013763d5be6171"
+    },
+    {
+      "path": "figures/fig_q2_profiles.svg",
+      "bytes": 143833,
+      "sha256": "057da476dde16e7d14672b60d610ae900403a467977f0f07b81ba3f8a64f5f80"
+    },
+    {
+      "path": "figures/fig_q2_profiles_data.npz",
+      "bytes": 12165,
+      "sha256": "21fe824252f59c64f47b4a85b263481d61ec4f732b24368dc17771c49256a97e"
+    },
+    {
+      "path": "figures/fig_q3_drying.json",
+      "bytes": 4286,
+      "sha256": "eea5178861b44818507fe534851c6c21d5612526f7cafd76cf160bd7bd3a27eb"
+    },
+    {
+      "path": "figures/fig_q3_drying.pdf",
+      "bytes": 68207,
+      "sha256": "de673f06a715fa8a4506aa0ee9a14c56bee6008f2399a816765ebf9863074da1"
+    },
+    {
+      "path": "figures/fig_q3_drying.svg",
+      "bytes": 137422,
+      "sha256": "41c7cdfb5ef9f50a4a69de70369ada2103166e4b3bb0452199996e4b3449ba26"
+    },
+    {
+      "path": "figures/fig_q3_drying_data.npz",
+      "bytes": 249286,
+      "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c"
+    },
+    {
+      "path": "figures/fig_q4_drying.json",
+      "bytes": 4285,
+      "sha256": "39d3c233381e3d4829e3e0413953fe3ac7ca2c03118a1fbc83cc0565c7e26191"
+    },
+    {
+      "path": "figures/fig_q4_drying.pdf",
+      "bytes": 84222,
+      "sha256": "243dd20d0be71564f5415ec605d8871ed1ae1a384598d2b547b83b699444da4e"
+    },
+    {
+      "path": "figures/fig_q4_drying.svg",
+      "bytes": 170550,
+      "sha256": "fd770e261ea222f2805445fb91fcb869c944f065349165e7ddd4aadb1a5d7151"
+    },
+    {
+      "path": "figures/fig_q4_drying_data.npz",
+      "bytes": 222086,
+      "sha256": "340ebfd87d947121cd58214a616c7dd2dd6a5c93f6e1c4a4bf2b81a7a7b1dbc9"
+    },
+    {
+      "path": "result1.xlsx",
+      "bytes": 390899,
+      "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+    },
+    {
+      "path": "result2.xlsx",
+      "bytes": 29210086,
+      "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+    },
+    {
+      "path": "result3.xlsx",
+      "bytes": 339137,
+      "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+    },
+    {
+      "path": "result4.xlsx",
+      "bytes": 278278,
+      "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+    }
+  ],
+  "limits": [
+    "No claim of second physical device execution",
+    "No dependency installation or numerical solve in this sub-audit",
+    "CLI syntax checks do not satisfy Visual Studio GUI or user code review",
+    "This verdict binds only the audited original ZIP SHA256; later repaired packages require a new audit"
+  ]
+}

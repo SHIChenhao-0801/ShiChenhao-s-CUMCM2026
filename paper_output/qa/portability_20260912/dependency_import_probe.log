@@ -1,0 +1,23 @@
+{
+  "executable": "D:\\Document\\\u6570\u5b66\u5efa\u6a21\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "base_prefix": "C:\\Python314",
+  "prefix": "D:\\Document\\\u6570\u5b66\u5efa\u6a21\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv",
+  "modules": {
+    "numpy": {
+      "version": "2.5.2",
+      "file": "D:\\Document\\\u6570\u5b66\u5efa\u6a21\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Lib\\site-packages\\numpy\\__init__.py"
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "file": "D:\\Document\\\u6570\u5b66\u5efa\u6a21\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Lib\\site-packages\\scipy\\__init__.py"
+    },
+    "openpyxl": {
+      "version": "3.1.5",
+      "file": "D:\\Document\\\u6570\u5b66\u5efa\u6a21\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Lib\\site-packages\\openpyxl\\__init__.py"
+    }
+  },
+  "BDF_module": "scipy.integrate._ivp.bdf",
+  "BdfDenseOutput_module": "scipy.integrate._ivp.bdf",
+  "DenseOutput_module": "scipy.integrate._ivp.base"
+}

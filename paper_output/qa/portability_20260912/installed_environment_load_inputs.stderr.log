@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0,sys.argv[1]); import dryingCore; dryingCore.loadInputs()
+                                                ^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\tmp\cache\portability_20260912\installed_environment\layout_diagnostic\paper_output\code\review_delivery\dryingCore.py", line 20, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

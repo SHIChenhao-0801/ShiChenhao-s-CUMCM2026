@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\Document\数学建模\2026CUMCM\tmp\cache\portability_20260912\clean_venv\original_case\extracted\code\runDelivery.py", line 281, in <module>
+    main()
+    ~~~~^^
+  File "D:\Document\数学建模\2026CUMCM\tmp\cache\portability_20260912\clean_venv\original_case\extracted\code\runDelivery.py", line 231, in main
+    raise RuntimeError("请在2026CUMCM根目录启动，或使用已配置的VS工程")
+RuntimeError: 请在2026CUMCM根目录启动，或使用已配置的VS工程

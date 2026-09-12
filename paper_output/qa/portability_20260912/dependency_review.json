@@ -1,0 +1,910 @@
+{
+  "started_utc": "2026-09-12T11:09:51.031735+00:00",
+  "scope": "Fresh venv with include-system-site-packages=false; official PyPI only; no model PDE executed",
+  "root": "D:\\Document\\数学建模\\2026CUMCM",
+  "venv": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv",
+  "host_python": "C:\\Python314\\python.exe",
+  "requirements_sha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055",
+  "requirements": "# 本机实际生产环境；diskDense依赖此SciPy版本的BDF内部接口。\nnumpy==2.5.2\nscipy==1.18.1\nopenpyxl==3.1.5\n",
+  "zip_sha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+  "steps": [
+    {
+      "name": "dependency_venv_create",
+      "exit_code": 0,
+      "elapsed_seconds": 11.323959599998489,
+      "timeout": false,
+      "log": "paper_output\\qa\\portability_20260912\\dependency_venv_create.log"
+    },
+    {
+      "name": "dependency_pypi_install",
+      "exit_code": 0,
+      "elapsed_seconds": 92.43076239999937,
+      "timeout": false,
+      "log": "paper_output\\qa\\portability_20260912\\dependency_pypi_install.log"
+    },
+    {
+      "name": "dependency_pip_check",
+      "exit_code": 0,
+      "elapsed_seconds": 0.6156912000005832,
+      "timeout": false,
+      "log": "paper_output\\qa\\portability_20260912\\dependency_pip_check.log"
+    },
+    {
+      "name": "dependency_pip_freeze",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4512156999990111,
+      "timeout": false,
+      "log": "paper_output\\qa\\portability_20260912\\dependency_pip_freeze.log"
+    },
+    {
+      "name": "dependency_import_probe",
+      "exit_code": 0,
+      "elapsed_seconds": 9.181264900002134,
+      "timeout": false,
+      "log": "paper_output\\qa\\portability_20260912\\dependency_import_probe.log"
+    }
+  ],
+  "pyvenv_cfg": "home = C:\\Python314\ninclude-system-site-packages = false\nversion = 3.14.7\nexecutable = C:\\Python314\\python.exe\ncommand = C:\\Python314\\python.exe -m venv D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\n",
+  "imports": {
+    "executable": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "base_prefix": "C:\\Python314",
+    "prefix": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv",
+    "modules": {
+      "numpy": {
+        "version": "2.5.2",
+        "file": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Lib\\site-packages\\numpy\\__init__.py"
+      },
+      "scipy": {
+        "version": "1.18.1",
+        "file": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Lib\\site-packages\\scipy\\__init__.py"
+      },
+      "openpyxl": {
+        "version": "3.1.5",
+        "file": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Lib\\site-packages\\openpyxl\\__init__.py"
+      }
+    },
+    "BDF_module": "scipy.integrate._ivp.bdf",
+    "BdfDenseOutput_module": "scipy.integrate._ivp.bdf",
+    "DenseOutput_module": "scipy.integrate._ivp.base"
+  },
+  "zip_import_audit": {
+    "python_files": 55,
+    "syntax_errors": [],
+    "imports_by_file": {
+      "code/analyticJacobian.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "dryingCore",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "code/data/prepare_a_data.py": [
+        "__future__",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "openpyxl",
+        "os",
+        "pathlib",
+        "platform",
+        "sys"
+      ],
+      "code/diskDense.py": [
+        "__future__",
+        "hashlib",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "tempfile"
+      ],
+      "code/dryingCore.py": [
+        "__future__",
+        "analyticJacobian",
+        "dataclasses",
+        "diskDense",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "time"
+      ],
+      "code/exportOutputs.py": [
+        "__future__",
+        "argparse",
+        "copy",
+        "csv",
+        "dataclasses",
+        "datetime",
+        "dryingCore",
+        "gzip",
+        "hashlib",
+        "inspect",
+        "json",
+        "math",
+        "numpy",
+        "openpyxl",
+        "pathlib",
+        "q3Model",
+        "re",
+        "sys",
+        "tempfile",
+        "time"
+      ],
+      "code/modeling/analytic_jacobian.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "code/modeling/axisymmetric_check.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "time",
+        "traceback"
+      ],
+      "code/modeling/compare_analytic.py": [
+        "__future__",
+        "csv",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "sys",
+        "time",
+        "validate_bessel"
+      ],
+      "code/modeling/disk_dense.py": [
+        "__future__",
+        "hashlib",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "tempfile"
+      ],
+      "code/modeling/drying_core.py": [
+        "__future__",
+        "analytic_jacobian",
+        "dataclasses",
+        "disk_dense",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "time"
+      ],
+      "code/modeling/export_outputs.py": [
+        "__future__",
+        "argparse",
+        "copy",
+        "csv",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gzip",
+        "hashlib",
+        "inspect",
+        "json",
+        "math",
+        "numpy",
+        "openpyxl",
+        "pathlib",
+        "q3_model",
+        "re",
+        "sys",
+        "tempfile",
+        "time"
+      ],
+      "code/modeling/peer_beta_check.py": [
+        "__future__",
+        "analytic_jacobian",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3_model",
+        "scipy",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback",
+        "warnings"
+      ],
+      "code/modeling/production_provenance.py": [
+        "__future__",
+        "contextlib",
+        "copy",
+        "datetime",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "run_modeling",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "types",
+        "unittest",
+        "uuid"
+      ],
+      "code/modeling/publication_plots.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "inspect",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "code/modeling/q1_model.py": [
+        "drying_core"
+      ],
+      "code/modeling/q2_model.py": [
+        "drying_core"
+      ],
+      "code/modeling/q3_model.py": [
+        "math",
+        "numpy"
+      ],
+      "code/modeling/q4_model.py": [
+        "drying_core"
+      ],
+      "code/modeling/run_experiments.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "pathlib",
+        "sys",
+        "traceback"
+      ],
+      "code/modeling/run_modeling.py": [
+        "__future__",
+        "argparse",
+        "gc",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "production_provenance",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback",
+        "uuid",
+        "warnings"
+      ],
+      "code/modeling/validate_bessel.py": [
+        "__future__",
+        "argparse",
+        "csv",
+        "datetime",
+        "functools",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "platform",
+        "scipy",
+        "sys"
+      ],
+      "code/modeling/verify_convergence.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gc",
+        "json",
+        "numpy",
+        "pathlib",
+        "validate_bessel",
+        "warnings"
+      ],
+      "code/modeling/verify_dense_storage.py": [
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "pathlib",
+        "warnings"
+      ],
+      "code/modeling/verify_time_accuracy.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "gc",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "production_provenance",
+        "sys",
+        "time",
+        "traceback",
+        "uuid",
+        "verify_convergence",
+        "warnings"
+      ],
+      "code/q1Model.py": [
+        "dryingCore"
+      ],
+      "code/q2Model.py": [
+        "dryingCore"
+      ],
+      "code/q3Model.py": [
+        "math",
+        "numpy"
+      ],
+      "code/q4Model.py": [
+        "dryingCore"
+      ],
+      "code/runDelivery.py": [
+        "__future__",
+        "argparse",
+        "contextlib",
+        "datetime",
+        "dryingCore",
+        "drying_core",
+        "exportOutputs",
+        "gc",
+        "gzip",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3Model",
+        "re",
+        "sys",
+        "time",
+        "traceback",
+        "warnings"
+      ],
+      "code/tools/buildCamelCopies.py": [
+        "__future__",
+        "ast",
+        "copy",
+        "datetime",
+        "difflib",
+        "hashlib",
+        "io",
+        "json",
+        "pathlib",
+        "re",
+        "tokenize"
+      ],
+      "code/tools/verifyCamelCopies.py": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "importlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "code/tools/verifyExportPathFix.py": [
+        "__future__",
+        "ast",
+        "datetime",
+        "difflib",
+        "exportOutputs",
+        "hashlib",
+        "json",
+        "pathlib",
+        "q2Model",
+        "q4Model",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "code/verification/analytic_metric_check.py": [
+        "__future__",
+        "io",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "validate_bessel"
+      ],
+      "code/verification/compile_crossvalidation_report.py": [
+        "__future__",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys"
+      ],
+      "code/verification/crossvalidate_series.py": [
+        "__future__",
+        "io",
+        "json",
+        "math",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "sys"
+      ],
+      "code/verification/crossvalidate_solver.py": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3_model",
+        "sys",
+        "tempfile",
+        "time",
+        "traceback",
+        "uuid"
+      ],
+      "code/verification/energy_balance_check.py": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time"
+      ],
+      "code/verification/energy_balance_diagnose.py": [
+        "__future__",
+        "drying_core",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "code/verification/energy_balance_diagnose2.py": [
+        "__future__",
+        "drying_core",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "code/verification/isotherm_activity_closure.py": [
+        "__future__",
+        "datetime",
+        "drying_core",
+        "io",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time",
+        "traceback"
+      ],
+      "code/verification/isotherm_diagnose.py": [
+        "__future__",
+        "dataclasses",
+        "drying_core",
+        "isotherm_activity_closure",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "code/verification/isotherm_jacobian_probe.py": [
+        "__future__",
+        "drying_core",
+        "isotherm_activity_closure",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "code/verification/latent_heat_scenarios.py": [
+        "__future__",
+        "dataclasses",
+        "drying_core",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "time",
+        "uuid"
+      ],
+      "code/verification/method_comparison.py": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "code/verification/sensitivity_analysis.py": [
+        "__future__",
+        "dataclasses",
+        "drying_core",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3_model",
+        "sys",
+        "time",
+        "uuid"
+      ],
+      "code/verification/threshold_and_scaling_checks.py": [
+        "__future__",
+        "dataclasses",
+        "drying_core",
+        "io",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "time",
+        "uuid"
+      ],
+      "evidence/recheck_20260910_1828/apply_recheck_corrections.py": [
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "evidence/recheck_20260910_1828/assemble_physics_recheck.py": [
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "evidence/recheck_20260910_1828/data_scale_recheck_helper.py": [
+        "__future__",
+        "ast",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "openpyxl",
+        "pathlib",
+        "platform",
+        "pymupdf",
+        "sys",
+        "time",
+        "xml",
+        "zipfile"
+      ],
+      "evidence/recheck_20260910_1828/finalize_recheck.py": [
+        "__future__",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "urllib"
+      ],
+      "evidence/recheck_20260910_1828/numerical_recheck.py": [
+        "ast",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time"
+      ],
+      "evidence/recheck_20260910_1828/physics_small_checks.py": [
+        "analytic_jacobian",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "pymupdf",
+        "scipy",
+        "sys",
+        "warnings"
+      ],
+      "evidence/recheck_20260910_1828/recovered_historical_source/verify_convergence_v3_hash_verified.py": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gc",
+        "json",
+        "numpy",
+        "pathlib",
+        "validate_bessel",
+        "warnings"
+      ],
+      "evidence/recheck_20260910_1828/run_data_scale_recheck.py": [
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "evidence/recheck_20260910_1828/surface_time_recheck.py": [
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib"
+      ]
+    },
+    "external_imports_by_file": {
+      "code/analyticJacobian.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/data/prepare_a_data.py": [
+        "matplotlib",
+        "numpy",
+        "openpyxl"
+      ],
+      "code/diskDense.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/dryingCore.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/exportOutputs.py": [
+        "numpy",
+        "openpyxl"
+      ],
+      "code/modeling/analytic_jacobian.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/modeling/axisymmetric_check.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/modeling/compare_analytic.py": [
+        "matplotlib",
+        "numpy"
+      ],
+      "code/modeling/disk_dense.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/modeling/drying_core.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/modeling/export_outputs.py": [
+        "numpy",
+        "openpyxl"
+      ],
+      "code/modeling/peer_beta_check.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/modeling/production_provenance.py": [
+        "numpy"
+      ],
+      "code/modeling/publication_plots.py": [
+        "matplotlib",
+        "numpy"
+      ],
+      "code/modeling/q3_model.py": [
+        "numpy"
+      ],
+      "code/modeling/run_modeling.py": [
+        "numpy"
+      ],
+      "code/modeling/validate_bessel.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/modeling/verify_convergence.py": [
+        "numpy"
+      ],
+      "code/modeling/verify_dense_storage.py": [
+        "numpy"
+      ],
+      "code/modeling/verify_time_accuracy.py": [
+        "numpy"
+      ],
+      "code/q3Model.py": [
+        "numpy"
+      ],
+      "code/runDelivery.py": [
+        "numpy"
+      ],
+      "code/tools/verifyCamelCopies.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/verification/analytic_metric_check.py": [
+        "numpy"
+      ],
+      "code/verification/compile_crossvalidation_report.py": [
+        "numpy"
+      ],
+      "code/verification/crossvalidate_series.py": [
+        "matplotlib",
+        "numpy"
+      ],
+      "code/verification/crossvalidate_solver.py": [
+        "numpy"
+      ],
+      "code/verification/energy_balance_check.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/verification/energy_balance_diagnose.py": [
+        "numpy"
+      ],
+      "code/verification/energy_balance_diagnose2.py": [
+        "numpy"
+      ],
+      "code/verification/isotherm_activity_closure.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/verification/isotherm_diagnose.py": [
+        "numpy"
+      ],
+      "code/verification/isotherm_jacobian_probe.py": [
+        "numpy",
+        "scipy"
+      ],
+      "code/verification/latent_heat_scenarios.py": [
+        "matplotlib",
+        "numpy"
+      ],
+      "code/verification/method_comparison.py": [
+        "numpy"
+      ],
+      "code/verification/sensitivity_analysis.py": [
+        "numpy"
+      ],
+      "code/verification/threshold_and_scaling_checks.py": [
+        "numpy"
+      ],
+      "evidence/recheck_20260910_1828/data_scale_recheck_helper.py": [
+        "openpyxl",
+        "pymupdf"
+      ],
+      "evidence/recheck_20260910_1828/numerical_recheck.py": [
+        "numpy",
+        "scipy"
+      ],
+      "evidence/recheck_20260910_1828/physics_small_checks.py": [
+        "numpy",
+        "pymupdf",
+        "scipy"
+      ],
+      "evidence/recheck_20260910_1828/recovered_historical_source/verify_convergence_v3_hash_verified.py": [
+        "numpy"
+      ],
+      "evidence/recheck_20260910_1828/surface_time_recheck.py": [
+        "numpy"
+      ]
+    },
+    "external_top_level_modules": [
+      "matplotlib",
+      "numpy",
+      "openpyxl",
+      "pymupdf",
+      "scipy"
+    ]
+  },
+  "finished_utc": "2026-09-12T11:11:45.330536+00:00",
+  "optional_module_probe": {
+    "exit_code": 0,
+    "modules_present": {
+      "matplotlib": false,
+      "pymupdf": false
+    },
+    "log": "paper_output/qa/portability_20260912/dependency_optional_modules.log"
+  },
+  "assessment": {
+    "core_declared_dependency_clean_install": "PASS",
+    "entire_zip_dependency_declaration": "INCOMPLETE",
+    "real_second_device_run": "NOT_TESTED",
+    "pde_run_in_this_dependency_probe": "NOT_RUN",
+    "missing_declared_modules": [
+      "matplotlib",
+      "pymupdf"
+    ],
+    "font_blocker": "code/modeling/publication_plots.py:32-34 requires C:/Windows/Fonts/msyh.ttc",
+    "transitive_dependency_unpinned": "et_xmlfile, resolved 2.0.0"
+  }
+}

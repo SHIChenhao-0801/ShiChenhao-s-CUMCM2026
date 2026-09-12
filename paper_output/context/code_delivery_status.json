@@ -49,5 +49,17 @@
   },
   "verifiedCodeBackup": "843654f010c7552fa3d5e98cccb7fa7aba0b0576",
   "scientificLimit": "Conditional model prediction; no internal temperature or moisture observations to establish empirical accuracy",
-  "workflowScope": "S6 remains current; this coding task does not execute formal paper S7/S8"
+  "workflowScope": "S6 remains current; this coding task does not execute formal paper S7/S8",
+  "submissionPortability": {
+    "auditedAtUtc": "2026-09-12T11:20:18.849408+00:00",
+    "status": "FAIL",
+    "archiveSha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+    "report": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+    "evidence": "paper_output/qa/portability_20260912/audit_summary.json",
+    "scope": "Current submitted ZIP; historical original-workspace CLI/GUI results remain separate",
+    "coreDependencyInstall": "PASS_CLEAN_VENV",
+    "secondPhysicalDeviceTested": false,
+    "guiThisAudit": "NOT_COMPLETED",
+    "humanReview": "PENDING_USER_REVIEW"
+  }
 }

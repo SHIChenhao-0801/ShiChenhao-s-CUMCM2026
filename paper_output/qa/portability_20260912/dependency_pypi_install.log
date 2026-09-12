@@ -1,0 +1,17 @@
+Collecting numpy==2.5.2 (from -r D:\Document\��ѧ��ģ\2026CUMCM\paper_output\code\review_delivery\requirements.txt (line 2))
+  Downloading numpy-2.5.2-cp314-cp314-win_amd64.whl.metadata (6.6 kB)
+Collecting scipy==1.18.1 (from -r D:\Document\��ѧ��ģ\2026CUMCM\paper_output\code\review_delivery\requirements.txt (line 3))
+  Downloading scipy-1.18.1-cp314-cp314-win_amd64.whl.metadata (61 kB)
+Collecting openpyxl==3.1.5 (from -r D:\Document\��ѧ��ģ\2026CUMCM\paper_output\code\review_delivery\requirements.txt (line 4))
+  Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting et-xmlfile (from openpyxl==3.1.5->-r D:\Document\��ѧ��ģ\2026CUMCM\paper_output\code\review_delivery\requirements.txt (line 4))
+  Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Downloading numpy-2.5.2-cp314-cp314-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 12.6/12.6 MB 6.5 MB/s  0:00:02
+Downloading scipy-1.18.1-cp314-cp314-win_amd64.whl (37.4 MB)
+   ---------------------------------------- 37.4/37.4 MB 3.2 MB/s  0:00:11
+Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Installing collected packages: numpy, et-xmlfile, scipy, openpyxl
+
+Successfully installed et-xmlfile-2.0.0 numpy-2.5.2 openpyxl-3.1.5 scipy-1.18.1

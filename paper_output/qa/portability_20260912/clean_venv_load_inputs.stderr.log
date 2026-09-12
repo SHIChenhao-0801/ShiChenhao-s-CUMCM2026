@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.path.insert(0,sys.argv[1]); import dryingCore; dryingCore.loadInputs()
+                                                                   ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Document\数学建模\2026CUMCM\tmp\cache\portability_20260912\clean_venv\layout_diagnostic\paper_output\code\review_delivery\dryingCore.py", line 37, in loadInputs
+    content = path.read_bytes()
+  File "C:\Python314\Lib\pathlib\__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\data_cleaned\\A_environment_observed.csv'
