@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper-formal-writer/tools/make_s7_contracts.py",
+  "mode": "section",
+  "status": "PASS",
+  "sections": {
+    "S01": {
+      "status": "PASS",
+      "path": "paper_output/drafts/A题正文/_part1.md",
+      "approved_sha256": "37eb5ce0b4366a37e0c2692b8b46699753b68dbafc83adb47f7f9a117d558632"
+    },
+    "S02": {
+      "status": "PASS",
+      "path": "paper_output/drafts/A题正文/_part2.md",
+      "approved_sha256": "d12a5d6abccde4b115c8b7bda1323a9a1a9a595a9c313815286bcd78d186ed7f"
+    },
+    "S03": {
+      "status": "PASS",
+      "path": "paper_output/drafts/A题正文/_part3.md",
+      "approved_sha256": "67984538fc37526206025b34ea8c0dbfe1c39c0a81973b569b2deede7c648238"
+    },
+    "S04": {
+      "status": "PASS",
+      "path": "paper_output/drafts/A题正文/_part4.md",
+      "approved_sha256": "8f789f69df85328153075094f98149188933c8dded91d0354aa5eaed5c7be4a2"
+    },
+    "S05": {
+      "status": "PASS",
+      "path": "paper_output/drafts/A题正文/_appendix.md",
+      "approved_sha256": "15ca02a8e7d2f45f9417d63b5157abb1b3c4033e9133477a2e09d6885054e33c"
+    }
+  },
+  "assembled": {
+    "status": "PASS",
+    "path": "paper_output/drafts/A题正文/A题_论文正文_30p.md",
+    "sha256": "e7b85cb12a192f01953c1b0c6e539e4d473d55fc54599d4f331f672f173390db"
+  },
+  "final": {
+    "status": "PASS",
+    "path": "paper_output/final_paper_source.md",
+    "sha256": "e7b85cb12a192f01953c1b0c6e539e4d473d55fc54599d4f331f672f173390db"
+  },
+  "input_hashes": {
+    "paper_output/results/production/final_v6a/numerical_summaries.json": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5",
+    "paper_output/results/model_results.json": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547",
+    "paper_output/results/metrics.json": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28",
+    "paper_output/results/conclusions.json": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505",
+    "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b",
+    "paper_output/qa/evidence_gate_report.json": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
+  }
+}

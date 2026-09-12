@@ -1,11 +1,11 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-11T09:41:52`
-- Current step: `S6`
-- Next step: `S7`
+- Generated at: `2026-09-12T18:16:09`
+- Current step: `S7`
+- Next step: `S8`
 - Recommended skill: `paper-formal-writer`
-- Next action: 执行写作计划、章节审计、必要的局部修复、确定性合并与全文统一改写；S7 PASS 后再生成正式 Word。
+- Next action: 运行 check_paper_format.py 并修复格式门禁失败项。
 
 ## Completed Steps
 - `S0`
@@ -15,6 +15,7 @@
 - `S4`
 - `S5`
 - `S6`
+- `S7`
 
 ## Input Summary
 - file_count: `33`
@@ -34,8 +35,4 @@
 - Script: `paper_output/code/modeling/run_modeling.py`
 
 ## Blockers
-- S7: 缺少文件：paper_output/plan/paper_outline.json
-- S7: 缺少文件：paper_output/plan/writing_plan.json
-- S7: 缺少文件：paper_output/context/authoring_state.json
-- S7: 缺少文件：paper_output/final_paper_source.md
-- S7: 缺少文件：paper_output/final_paper.docx
+- S8: 缺少文件：paper_output/format_check_report.json

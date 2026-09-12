@@ -561,11 +561,12 @@ class Parser:
         # --- 大算符
         if name in BIGOP:
             sym = SYMBOL[name]
-            return ("<m:nary><m:naryPr><m:chr m:val=\"%s\"/>"
-                    "<m:limLoc m:val=\"undOvr\"/><m:subHide m:val=\"1\"/>"
-                    "<m:supHide m:val=\"1\"/></m:naryPr>"
-                    "<m:sub/><m:sup/><m:e/></m:nary>" % esc(sym))
-
+            # Emit the operator as an ordinary run so that the following
+            # _{...}/^{...} attach as real sub/superscripts. An m:nary has to
+            # carry its summand inside <m:e>; because the summand is parsed as
+            # a sibling here, m:e stayed empty and both Word and LibreOffice
+            # drew a placeholder box after the operator (∑❑ instead of ∑).
+            return omml_run(sym, style="p")
         # --- 希腊字母与符号
         if name in GREEK:
             return omml_run(GREEK[name])

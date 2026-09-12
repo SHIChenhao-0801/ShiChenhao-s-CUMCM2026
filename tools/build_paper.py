@@ -56,6 +56,10 @@ def main() -> int:
 
     print("== 2/2 render pdf ==", flush=True)
     PDFDIR.mkdir(parents=True, exist_ok=True)
+    # LibreOffice silently keeps a stale output when the target already exists
+    stale = PDFDIR / (args.stem + ".pdf")
+    if stale.exists():
+        stale.unlink()
     subprocess.run([str(SOFFICE), "--headless", "--norestore",
                     "-env:UserInstallation=file:///" + str(ROOT / "tmp" / "cache" / "lo30").replace("\\", "/"),
                     "--convert-to", "pdf", "--outdir", str(PDFDIR), str(docx)],
