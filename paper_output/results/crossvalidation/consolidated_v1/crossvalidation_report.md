@@ -100,16 +100,12 @@
 
 | 情景 | 状态 | 达标时间 / h | 事件时 K_eff | tail 完整性 |
 |---|---|---:|---:|---|
-| iso_p1_Q23 | failed | 57.47232977 | — | — |
-| iso_p1.5_Q23 | failed | 58.44260126 | — | — |
-| iso_p2_Q23 | failed | 59.62390141 | — | — |
-| iso_p3_Q23 | failed | 62.36651111 | — | — |
-| iso_p4_Q23 | failed | 65.44474918 | — | — |
-| iso_p1_Q4 | failed | 51.09059759 | — | — |
-| iso_p1.5_Q4 | failed | 51.61135452 | — | — |
-| iso_p2_Q4 | failed | 52.22830302 | — | — |
-| iso_p3_Q4 | failed | 53.66798267 | — | — |
-| iso_p4_Q4 | failed | 55.31621582 | — | — |
+| iso_p1_Q23 | computed_event_only | 57.47232976 | 1 | event only: the post-event reporting second was not integrated, so only the event time is reported |
+| iso_p2_Q23 | computed_event_only | 59.62390135 | 0.51235 | event only: the post-event reporting second was not integrated, so only the event time is reported |
+| iso_p4_Q23 | computed_event_only | 65.44474914 | 0.26733 | event only: the post-event reporting second was not integrated, so only the event time is reported |
+| iso_p1_Q4 | computed_event_only | 51.09059916 | 1 | event only: the post-event reporting second was not integrated, so only the event time is reported |
+| iso_p2_Q4 | computed_event_only | 52.22830296 | 0.51219 | event only: the post-event reporting second was not integrated, so only the event time is reported |
+| iso_p4_Q4 | computed_event_only | 55.31621495 | 0.26714 | event only: the post-event reporting second was not integrated, so only the event time is reported |
 
 ## L10 参数敏感性（代理网格 N200，仅用于排序）
 

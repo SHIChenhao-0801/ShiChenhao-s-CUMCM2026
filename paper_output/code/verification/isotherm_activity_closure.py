@@ -264,24 +264,15 @@ def solveScenario(name, question, shrink, intervals, p, latent, awRef, horizon_h
     record = {"scenario": name, "question": question, "shrink": shrink,
               "intervals": intervals, "isothermShapeP": float(p), "awRef": float(awRef),
               "latentFraction": float(latent), "horizonH": settings.horizon_h,
-              "jacobianMode": "sparse finite difference, fixed relative step 1e-7",
+              "jacobianMode": "frozen driver's sparse finite-difference Jacobian",
               "startedAtUtc": datetime.now(timezone.utc).isoformat()}
     started = time.perf_counter()
     originalModel = core.RadialModel
-    originalNumJac = scipy.integrate._ivp.common.num_jac
 
     def modelFactory(_settings):
         return ActivityModel(_settings, p=p, awRef=awRef, latentFraction=latent)
 
-    def fixedNumJac(fun, t, y, f, h, factor_, y_scale, f_scale, sparsity):
-        fresh = np.asarray(fun(t, y), dtype=float)
-        jacobian = approx_derivative(lambda yy: fun(t, yy), y, f0=fresh,
-                                     method="2-point", rel_step=1e-7,
-                                     sparsity=sparsity)
-        return jacobian, 1.0
-
     core.RadialModel = modelFactory
-    scipy.integrate._ivp.common.num_jac = fixedNumJac
     run = None
     try:
         run = core.solve_case(settings)
@@ -301,7 +292,6 @@ def solveScenario(name, question, shrink, intervals, p, latent, awRef, horizon_h
             record["traceback"] = traceback.format_exc()
     finally:
         core.RadialModel = originalModel
-        scipy.integrate._ivp.common.num_jac = originalNumJac
         if run is not None:
             try:
                 run.close()
@@ -333,13 +323,25 @@ def _solveToEvent(record, settings, p, awRef):
     endpoints = [0.0, min(14400.0, horizon)]
     if horizon > 14400.0:
         endpoints.append(horizon)
+
+    def stepFor(left):
+        # Mirror the frozen driver: 2 s while the tabulated environment is in use,
+        # then the configured cap. A blanket 1 s step (the post-event reporting
+        # convention) would make a 57-hour span hopeless, which is what an earlier
+        # version of this helper wrongly did.
+        return settings.early_max_step_s if left < 14400.0 else settings.max_step_s
+
     state, event_s = model.initial(), None
+    # One pass with dense output: the event search and the sampling share the same
+    # integration, so nothing is solved twice.
+    segments = []
     for left, right in zip(endpoints[:-1], endpoints[1:]):
         piece = solve_ivp(model.rhs, (left, right), state, method="BDF",
-                          rtol=settings.rtol, atol=atol, max_step=1.0,
+                          rtol=settings.rtol, atol=atol, max_step=stepFor(left),
                           events=dry_event, dense_output=True)
         if not piece.success:
             raise RuntimeError(piece.message)
+        segments.append(piece)
         state = piece.y[:, -1].copy()
         if piece.t_events is not None and len(piece.t_events[0]):
             event_s = float(piece.t_events[0][0])
@@ -349,24 +351,9 @@ def _solveToEvent(record, settings, p, awRef):
         record["maxCAtEnd"] = float(np.max(state[1:-1:2]))
         return None
     sample = np.unique(np.r_[np.linspace(0.0, event_s, 61), event_s])
-    # Re-integrate once with dense output over the whole solved span for sampling.
-    segment, state = [], model.initial()
-    for left, right in zip(endpoints[:-1], endpoints[1:]):
-        stop = min(right, event_s)
-        if stop <= left:
-            break
-        piece = solve_ivp(model.rhs, (left, stop), state, method="BDF",
-                          rtol=settings.rtol, atol=atol, max_step=1.0,
-                          dense_output=True)
-        if not piece.success:
-            raise RuntimeError(piece.message)
-        segment.append(piece)
-        state = piece.y[:, -1].copy()
-        if stop >= event_s:
-            break
     T, C = [], []
     for t in sample:
-        for piece in segment:
+        for piece in segments:
             if piece.t[0] - 1e-7 <= t <= piece.t[-1] + 1e-7:
                 y = piece.sol(t)
                 T.append(y[:-1:2])
@@ -461,9 +448,14 @@ def main():
     intervals = int(numeric[0]) if numeric else 800
     horizon = 1440.0 if "--long-horizon" in sys.argv else None
     scenarios = []
-    for p in (1.0, 1.5, 2.0, 3.0, 4.0):
+    selected = None
+    for arg in sys.argv[1:]:
+        if arg.startswith("--p="):
+            selected = [float(v) for v in arg.split("=", 1)[1].split(",")]
+    shapeParameters = selected if selected else [1.0, 1.5, 2.0, 3.0, 4.0]
+    for p in shapeParameters:
         scenarios.append((f"iso_p{p:g}_Q23", "Q23", False, intervals, p, 0.0))
-    for p in (1.0, 1.5, 2.0, 3.0, 4.0):
+    for p in shapeParameters:
         scenarios.append((f"iso_p{p:g}_Q4", "Q4", True, intervals, p, 0.0))
     records = [solveScenario(name, q, shrink, n, p, latent, awRef, horizon_h=horizon)
                for name, q, shrink, n, p, latent in scenarios]
@@ -479,7 +471,7 @@ def main():
             "form": "a_w(C) = 1 - (1 - awRef) (C_ref/C)^(1/p), p >= 1",
             "C_ref": C_REF, "awRef": awRef,
             "awRefSource": "chamber plateau relative humidity from attachment 1 (derived, not assumed)",
-            "shapeParametersUsed": [1.0, 1.5, 2.0, 3.0, 4.0],
+            "shapeParametersUsed": shapeParameters,
             "pEqualsOneMeans": ("K_eff identically 1, so the frozen baseline is the p = 1 member "
                                 "of this family; larger p means stronger water binding"),
             "status": "family of closures; the material's true isotherm is not provided"},

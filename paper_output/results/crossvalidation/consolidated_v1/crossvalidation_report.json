@@ -388,9 +388,7 @@
         "awRefSource": "chamber plateau relative humidity from attachment 1 (derived, not assumed)",
         "shapeParametersUsed": [
           1.0,
-          1.5,
           2.0,
-          3.0,
           4.0
         ],
         "pEqualsOneMeans": "K_eff identically 1, so the frozen baseline is the p = 1 member of this family; larger p means stronger water binding",
@@ -507,83 +505,51 @@
       "scenarios": [
         {
           "scenario": "iso_p1_Q23",
-          "status": "failed",
-          "eventH": 57.47232977083764,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
-        },
-        {
-          "scenario": "iso_p1.5_Q23",
-          "status": "failed",
-          "eventH": 58.4426012628419,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
+          "status": "computed_event_only",
+          "eventH": 57.47232976256206,
+          "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported",
+          "partitionFactorAtEnd": 1.0,
+          "eventReached": true
         },
         {
           "scenario": "iso_p2_Q23",
-          "status": "failed",
-          "eventH": 59.62390141127482,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
-        },
-        {
-          "scenario": "iso_p3_Q23",
-          "status": "failed",
-          "eventH": 62.366511111880406,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
+          "status": "computed_event_only",
+          "eventH": 59.623901353233975,
+          "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported",
+          "partitionFactorAtEnd": 0.5123522724386987,
+          "eventReached": true
         },
         {
           "scenario": "iso_p4_Q23",
-          "status": "failed",
-          "eventH": 65.44474918288174,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
+          "status": "computed_event_only",
+          "eventH": 65.4447491379564,
+          "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported",
+          "partitionFactorAtEnd": 0.26733012598103817,
+          "eventReached": true
         },
         {
           "scenario": "iso_p1_Q4",
-          "status": "failed",
-          "eventH": 51.090597593063286,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
-        },
-        {
-          "scenario": "iso_p1.5_Q4",
-          "status": "failed",
-          "eventH": 51.61135452312964,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
+          "status": "computed_event_only",
+          "eventH": 51.090599155463806,
+          "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported",
+          "partitionFactorAtEnd": 1.0,
+          "eventReached": true
         },
         {
           "scenario": "iso_p2_Q4",
-          "status": "failed",
-          "eventH": 52.2283030221039,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
-        },
-        {
-          "scenario": "iso_p3_Q4",
-          "status": "failed",
-          "eventH": 53.66798267096376,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
+          "status": "computed_event_only",
+          "eventH": 52.22830295685303,
+          "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported",
+          "partitionFactorAtEnd": 0.5121890783500925,
+          "eventReached": true
         },
         {
           "scenario": "iso_p4_Q4",
-          "status": "failed",
-          "eventH": 55.316215818162476,
-          "tailIntegrity": null,
-          "partitionFactorAtEnd": null,
-          "eventReached": null
+          "status": "computed_event_only",
+          "eventH": 55.31621495305313,
+          "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported",
+          "partitionFactorAtEnd": 0.267139002793132,
+          "eventReached": true
         }
       ],
       "frozenBaselineForComparison": {
