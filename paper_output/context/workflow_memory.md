@@ -1,7 +1,7 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-12T18:16:09`
+- Generated at: `2026-09-12T18:22:35`
 - Current step: `S7`
 - Next step: `S8`
 - Recommended skill: `paper-formal-writer`
@@ -35,4 +35,8 @@
 - Script: `paper_output/code/modeling/run_modeling.py`
 
 ## Blockers
-- S8: 缺少文件：paper_output/format_check_report.json
+- S8: format_check_report.json status 不是 PASS。
+- S8: missing delivery scope; rerun prepare_authoring.py
+- S8: 格式门禁报告已过期，输入发生变化：paper_output/final_paper_source.md
+- S8: 格式门禁报告已过期，输入发生变化：paper_output/final_paper.docx
+- S8: 格式门禁报告已过期，输入发生变化：paper_output/context/authoring_state.json

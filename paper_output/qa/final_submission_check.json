@@ -28,7 +28,7 @@
     {
       "name": "PDF under 20 MB",
       "ok": true,
-      "detail": "2,810,560 bytes"
+      "detail": "4,008,755 bytes"
     },
     {
       "name": "support archive under 20 MB",
@@ -38,7 +38,7 @@
     {
       "name": "PDF text is extractable",
       "ok": true,
-      "detail": "47,419 extractable characters"
+      "detail": "288,866 extractable characters"
     },
     {
       "name": "no placeholder boxes",
@@ -48,12 +48,12 @@
     {
       "name": "Q3 = 57.4724 h present",
       "ok": true,
-      "detail": "appears on pages [1, 5, 16, 17, 23, 26, 28, 29, 30, 34]"
+      "detail": "appears on pages [1, 5, 16, 17, 23, 26, 28, 29, 30, 92, 105]"
     },
     {
       "name": "Q4 = 51.0906 h present",
       "ok": true,
-      "detail": "appears on pages [1, 5, 17, 18, 19, 23, 26, 28, 29, 30, 34]"
+      "detail": "appears on pages [1, 5, 17, 18, 19, 23, 26, 28, 29, 30, 92, 104, 105]"
     },
     {
       "name": "no identity strings in PDF text",
@@ -63,7 +63,7 @@
     {
       "name": "PDF metadata carries no identity",
       "ok": true,
-      "detail": "{\"format\": \"PDF 1.7\", \"title\": \"\", \"author\": \"python-docx\", \"subject\": \"\", \"keywords\": \"\", \"creator\": \"Writer\", \"producer\": \"LibreOffice 26.2.6.3 (X86_64)\", \"creationDate\": \"D:20260912181730+08'00'\", \"modDate\": \"\", \"trapped\": \"\", \"encryption\": null}"
+      "detail": "{\"format\": \"PDF 1.7\", \"title\": \"\", \"author\": \"python-docx\", \"subject\": \"\", \"keywords\": \"\", \"creator\": \"Writer\", \"producer\": \"LibreOffice 26.2.6.3 (X86_64)\", \"creationDate\": \"D:20260912182204+08'00'\", \"modDate\": \"\", \"trapped\": \"\", \"encryption\": null}"
     },
     {
       "name": "DOCX core properties carry no identity",
@@ -74,7 +74,7 @@
   "failures": [],
   "paper_pdf": {
     "path": "paper_output\\submission\\A题_论文.pdf",
-    "bytes": 2810560,
-    "pages": 38
+    "bytes": 4008755,
+    "pages": 108
   }
 }

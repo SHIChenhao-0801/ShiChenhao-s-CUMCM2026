@@ -43,6 +43,7 @@ FONT_CN = "宋体"
 FONT_EN = "Times New Roman"
 FONT_MATH = "Cambria Math"
 FONT_HEAD = "黑体"
+FONT_CODE = "Consolas"
 
 # ---------------------------------------------------------------- OMML 基础
 def esc(t: str) -> str:
@@ -686,10 +687,22 @@ def compact_markdown(text: str, *, keep_notes: bool = False) -> tuple[str, dict]
     stats = {"comment": 0, "quote": 0, "fig_note": 0, "hr": 0, "forbidden": 0}
     in_comment = False
     skip_fig_block = False
+    in_fence = False
 
     for raw in lines:
         line = raw.rstrip()
         s = line.strip()
+
+        # Fenced source listings must survive untouched: the punctuation and
+        # comment rewrite below would corrupt the code the appendix has to
+        # reproduce verbatim.
+        if s.startswith('```'):
+            in_fence = not in_fence
+            out.append(line)
+            continue
+        if in_fence:
+            out.append(line)
+            continue
 
         if in_comment:
             if "-->" in line:
@@ -1006,6 +1019,31 @@ def convert(md_path: Path, out_path: Path, *, compact: bool = True,
                 stats.setdefault("figures", 0)
                 stats["figures"] += 1
             i += 1
+            continue
+
+        # --- 源码块：围栏内逐行按等宽字体排版，空白原样保留
+        if line.strip().startswith('```'):
+            i += 1
+            body_lines: list[str] = []
+            while i < n and not lines[i].strip().startswith('```'):
+                body_lines.append(lines[i])
+                i += 1
+            i += 1
+            for cl in body_lines:
+                cp = doc.add_paragraph()
+                cp.paragraph_format.space_before = Pt(0)
+                cp.paragraph_format.space_after = Pt(0)
+                cp.paragraph_format.line_spacing = 1.0
+                cp.paragraph_format.first_line_indent = Cm(0)
+                cp.paragraph_format.left_indent = Cm(0)
+                run = cp.add_run(cl)
+                set_font(run, size=Pt(7.5), math=False)
+                run.font.name = FONT_CODE
+                rpr = run._element.get_or_add_rPr()
+                rf = rpr.find(qn("w:rFonts"))
+                if rf is not None:
+                    rf.set(qn("w:eastAsia"), FONT_CODE)
+            stats["code_lines"] = stats.get("code_lines", 0) + len(body_lines)
             continue
 
         # --- 表格
