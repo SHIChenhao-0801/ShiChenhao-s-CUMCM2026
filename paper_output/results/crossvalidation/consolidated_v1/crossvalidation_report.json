@@ -602,7 +602,184 @@
         ]
       },
       "sobolIndices": null,
-      "knownInjectionDefect": "The Morris run in morris.json reports mu* = 0 exactly for dScale in all 20 elementary effects of both questions. That is an injection defect, not a robustness result: with face_scheme='kirchhoff' the solver's water_internal_flux uses a hard-coded per-question D0 and never reads the D array returned by properties(), so scaling properties() alone cannot change the model. The defect was found and patched in a parallel session by also scaling the returned Kirchhoff flux (which is exactly linear in D0). Until Morris is re-run on the patched script, the dScale entry in this layer must not be quoted; a single-parameter scan on the patched code shows D pre-factor uncertainty of -30%/+40% moving the Q23 event between 43.1 h and 79.4 h, i.e. D is among the most influential parameters.",
+      "validatedSingleParameterScans": {
+        "dScale": {
+          "parameter": "dScale",
+          "rows": [
+            {
+              "question": "Q23",
+              "parameter": "dScale",
+              "value": 0.7,
+              "eventH": 79.4187383750198
+            },
+            {
+              "question": "Q23",
+              "parameter": "dScale",
+              "value": 0.875,
+              "eventH": 64.75202233602374
+            },
+            {
+              "question": "Q23",
+              "parameter": "dScale",
+              "value": 1.0,
+              "eventH": 57.472760525051456
+            },
+            {
+              "question": "Q23",
+              "parameter": "dScale",
+              "value": 1.05,
+              "eventH": 55.056709414388315
+            },
+            {
+              "question": "Q23",
+              "parameter": "dScale",
+              "value": 1.225,
+              "eventH": 48.18880556334643
+            },
+            {
+              "question": "Q23",
+              "parameter": "dScale",
+              "value": 1.4,
+              "eventH": 43.0796373991185
+            },
+            {
+              "question": "Q4",
+              "parameter": "dScale",
+              "value": 0.7,
+              "eventH": 70.40591160077193
+            },
+            {
+              "question": "Q4",
+              "parameter": "dScale",
+              "value": 0.875,
+              "eventH": 57.52142712272812
+            },
+            {
+              "question": "Q4",
+              "parameter": "dScale",
+              "value": 1.0,
+              "eventH": 51.090968749662835
+            },
+            {
+              "question": "Q4",
+              "parameter": "dScale",
+              "value": 1.05,
+              "eventH": 48.95264166679847
+            },
+            {
+              "question": "Q4",
+              "parameter": "dScale",
+              "value": 1.225,
+              "eventH": 42.86146778661147
+            },
+            {
+              "question": "Q4",
+              "parameter": "dScale",
+              "value": 1.4,
+              "eventH": 38.31595036637175
+            }
+          ],
+          "summary": {
+            "Q23": {
+              "minH": 43.0796373991185,
+              "maxH": 79.4187383750198,
+              "spanH": 36.339100975901296,
+              "baselineH": 57.472760525051456,
+              "relativeSpanPercent": 63.22838966480767
+            },
+            "Q4": {
+              "minH": 38.31595036637175,
+              "maxH": 70.40591160077193,
+              "spanH": 32.08996123440018,
+              "baselineH": 51.090968749662835,
+              "relativeSpanPercent": 62.80945932271435
+            }
+          }
+        },
+        "kScale": {
+          "parameter": "kScale",
+          "rows": [
+            {
+              "question": "Q23",
+              "parameter": "kScale",
+              "value": 0.85,
+              "eventH": 57.47517689050554
+            },
+            {
+              "question": "Q23",
+              "parameter": "kScale",
+              "value": 0.925,
+              "eventH": 57.4738668490543
+            },
+            {
+              "question": "Q23",
+              "parameter": "kScale",
+              "value": 1.0,
+              "eventH": 57.472760525051456
+            },
+            {
+              "question": "Q23",
+              "parameter": "kScale",
+              "value": 1.075,
+              "eventH": 57.471813982430504
+            },
+            {
+              "question": "Q23",
+              "parameter": "kScale",
+              "value": 1.15,
+              "eventH": 57.47099504134215
+            },
+            {
+              "question": "Q4",
+              "parameter": "kScale",
+              "value": 0.85,
+              "eventH": 51.094074987195164
+            },
+            {
+              "question": "Q4",
+              "parameter": "kScale",
+              "value": 0.925,
+              "eventH": 51.09238645081764
+            },
+            {
+              "question": "Q4",
+              "parameter": "kScale",
+              "value": 1.0,
+              "eventH": 51.090968749662835
+            },
+            {
+              "question": "Q4",
+              "parameter": "kScale",
+              "value": 1.075,
+              "eventH": 51.089761991218055
+            },
+            {
+              "question": "Q4",
+              "parameter": "kScale",
+              "value": 1.15,
+              "eventH": 51.08872263839864
+            }
+          ],
+          "summary": {
+            "Q23": {
+              "minH": 57.47099504134215,
+              "maxH": 57.47517689050554,
+              "spanH": 0.0041818491633875965,
+              "baselineH": 57.472760525051456,
+              "relativeSpanPercent": 0.007276228121258932
+            },
+            "Q4": {
+              "minH": 51.08872263839864,
+              "maxH": 51.094074987195164,
+              "spanH": 0.0053523487965208005,
+              "baselineH": 51.090968749662835,
+              "relativeSpanPercent": 0.010476115304734992
+            }
+          }
+        }
+      },
+      "knownInjectionDefect": "The Morris run in morris.json reports mu* = 0 exactly for dScale in all 20 elementary effects of both questions. That is an injection defect, not a robustness result: with face_scheme='kirchhoff' the solver's water_internal_flux uses a hard-coded per-question D0 and never reads the D array returned by properties(), so scaling properties() alone cannot change the model. The defect was patched in a parallel session by also scaling the returned Kirchhoff flux, which is exactly linear in D0. The Morris dScale entry is therefore VOID; the validated single-parameter scans above replace it and carry a self-check at scale 1.0 that reproduces the surrogate baseline to 1e-6 h.",
+      "establishedResult": "Diffusion pre-factor uncertainty of -30%/+40% moves the drying time by +38%/-25% (Q23: 79.42 h to 43.08 h; Q4: 70.41 h to 38.32 h), while thermal conductivity uncertainty of +/-15% moves it by less than 0.011%. Under this operating point the model is mass-transfer controlled.",
       "injectionSentinelRequired": "Every injection-style experiment (monkey-patched properties, alternative flux, wrapped model) must carry a sentinel proving the injection was actually used; see method_v1/method_comparison.json fluxPathUsed.",
       "note": "Indices are rankings on a validated coarse surrogate; absolute event times carry the surrogate grid offset and must not be quoted as production values."
     }
@@ -616,7 +793,8 @@
     "isothermClosure": true,
     "morrisScreening": true,
     "sobolIndices": false,
-    "analyticMetric": true
+    "analyticMetric": true,
+    "validatedScans": true
   },
   "verdicts": [
     {

@@ -2,7 +2,7 @@
 
 - 总判定：**PASS**
 - 预声明容差：`{"integratorEventSeconds": 1.0, "faceSchemeHoursAtFinest": 0.5, "scalingResidualPercent": 5.0, "crossLanguageEventSeconds": 1.0, "analyticBenchmarkKelvin": 0.0001, "massBalanceKgPerKg": 1e-06, "independentRootSeconds": 1e-06, "schemeDifferenceKgPerKg": 0.0001, "observedOrderMinimum": 1.5, "constantDLimitKgPerKg": 0.0, "baselineLimitAbsoluteDifferencePaOverKappa": 1e-06}`
-- 输入齐备情况：`{"solverCases": true, "latentScenarios": true, "thresholdScaling": true, "stageBoundaries": true, "methodComparison": true, "isothermClosure": true, "morrisScreening": true, "sobolIndices": false, "analyticMetric": true}`
+- 输入齐备情况：`{"solverCases": true, "latentScenarios": true, "thresholdScaling": true, "stageBoundaries": true, "methodComparison": true, "isothermClosure": true, "morrisScreening": true, "sobolIndices": false, "analyticMetric": true, "validatedScans": true}`
 
 ## L1 时间积分器交叉验证（同一网格、不同积分族）
 
@@ -111,100 +111,126 @@
 | iso_p3_Q4 | failed | 53.66798267 | — | — |
 | iso_p4_Q4 | failed | 55.31621582 | — | — |
 
-## L10 全局敏感性（代理网格，仅用于排序）
+## L10 参数敏感性（代理网格 N200，仅用于排序）
+
+**Morris 的 dScale 条目已作废**（注入缺陷，见 JSON 的 `knownInjectionDefect`）；
+以下单参数扫描在修补版上运行，并在 scale = 1.0 处自检复现代理基准到 1e−6 h。
+
+### dScale
+
+| 取值 | Q2/Q3 事件 / h | Q4 事件 / h |
+|---:|---:|---:|
+| 0.7 | 79.418738 | 70.405912 |
+| 0.875 | 64.752022 | 57.521427 |
+| 1 | 57.472761 | 51.090969 |
+| 1.05 | 55.056709 | 48.952642 |
+| 1.225 | 48.188806 | 42.861468 |
+| 1.4 | 43.079637 | 38.31595 |
+
+- 跨度：Q2/Q3 36.3391 h（63.23%）；Q4 32.09 h（62.81%）
+
+### kScale
+
+| 取值 | Q2/Q3 事件 / h | Q4 事件 / h |
+|---:|---:|---:|
+| 0.85 | 57.475177 | 51.094075 |
+| 0.925 | 57.473867 | 51.092386 |
+| 1 | 57.472761 | 51.090969 |
+| 1.075 | 57.471814 | 51.089762 |
+| 1.15 | 57.470995 | 51.088723 |
+
+- 跨度：Q2/Q3 0.00418185 h（0.007276%）；Q4 0.00535235 h（0.01048%）
+
+**结论**：Diffusion pre-factor uncertainty of -30%/+40% moves the drying time by +38%/-25% (Q23: 79.42 h to 43.08 h; Q4: 70.41 h to 38.32 h), while thermal conductivity uncertainty of +/-15% moves it by less than 0.011%. Under this operating point the model is mass-transfer controlled.
+
+### Morris 筛选排序（dScale 条目作废）
 
 ```json
 {
-  "morrisRanking": {
-    "Q23": [
-      {
-        "parameter": "tailTemperatureC",
-        "muStar": 7.355290534162124,
-        "sigma": 0.17145472705378212
-      },
-      {
-        "parameter": "surfaceLatentFraction",
-        "muStar": 2.9573812265662967,
-        "sigma": 0.5870383693519421
-      },
-      {
-        "parameter": "beta",
-        "muStar": 2.441901388520472,
-        "sigma": 0.38249623142241174
-      },
-      {
-        "parameter": "h",
-        "muStar": 0.5262343281375154,
-        "sigma": 0.48134555895927056
-      },
-      {
-        "parameter": "tailEquilibrium",
-        "muStar": 0.522354767695715,
-        "sigma": 0.19320568443265662
-      },
-      {
-        "parameter": "equilibriumScale",
-        "muStar": 0.4955588402730621,
-        "sigma": 0.22884076022485944
-      },
-      {
-        "parameter": "kScale",
-        "muStar": 0.006083165617742736,
-        "sigma": 0.002474753155328953
-      },
-      {
-        "parameter": "dScale",
-        "muStar": 0.0,
-        "sigma": 0.0
-      }
-    ],
-    "Q4": [
-      {
-        "parameter": "tailTemperatureC",
-        "muStar": 6.533604352447365,
-        "sigma": 0.16882105116695265
-      },
-      {
-        "parameter": "surfaceLatentFraction",
-        "muStar": 5.258565467921537,
-        "sigma": 0.9394889053319107
-      },
-      {
-        "parameter": "beta",
-        "muStar": 0.978176200791584,
-        "sigma": 0.16816019670622281
-      },
-      {
-        "parameter": "h",
-        "muStar": 0.8798220233226497,
-        "sigma": 0.7919268865909773
-      },
-      {
-        "parameter": "tailEquilibrium",
-        "muStar": 0.5741766579233273,
-        "sigma": 0.23965999020375786
-      },
-      {
-        "parameter": "equilibriumScale",
-        "muStar": 0.5070921254623177,
-        "sigma": 0.27570475010985523
-      },
-      {
-        "parameter": "kScale",
-        "muStar": 0.006872527805339423,
-        "sigma": 0.0019767194185731636
-      },
-      {
-        "parameter": "dScale",
-        "muStar": 0.0,
-        "sigma": 0.0
-      }
-    ]
-  },
-  "sobolIndices": null,
-  "knownInjectionDefect": "The Morris run in morris.json reports mu* = 0 exactly for dScale in all 20 elementary effects of both questions. That is an injection defect, not a robustness result: with face_scheme='kirchhoff' the solver's water_internal_flux uses a hard-coded per-question D0 and never reads the D array returned by properties(), so scaling properties() alone cannot change the model. The defect was found and patched in a parallel session by also scaling the returned Kirchhoff flux (which is exactly linear in D0). Until Morris is re-run on the patched script, the dScale entry in this layer must not be quoted; a single-parameter scan on the patched code shows D pre-factor uncertainty of -30%/+40% moving the Q23 event between 43.1 h and 79.4 h, i.e. D is among the most influential parameters.",
-  "injectionSentinelRequired": "Every injection-style experiment (monkey-patched properties, alternative flux, wrapped model) must carry a sentinel proving the injection was actually used; see method_v1/method_comparison.json fluxPathUsed.",
-  "note": "Indices are rankings on a validated coarse surrogate; absolute event times carry the surrogate grid offset and must not be quoted as production values."
+  "Q23": [
+    {
+      "parameter": "tailTemperatureC",
+      "muStar": 7.355290534162124,
+      "sigma": 0.17145472705378212
+    },
+    {
+      "parameter": "surfaceLatentFraction",
+      "muStar": 2.9573812265662967,
+      "sigma": 0.5870383693519421
+    },
+    {
+      "parameter": "beta",
+      "muStar": 2.441901388520472,
+      "sigma": 0.38249623142241174
+    },
+    {
+      "parameter": "h",
+      "muStar": 0.5262343281375154,
+      "sigma": 0.48134555895927056
+    },
+    {
+      "parameter": "tailEquilibrium",
+      "muStar": 0.522354767695715,
+      "sigma": 0.19320568443265662
+    },
+    {
+      "parameter": "equilibriumScale",
+      "muStar": 0.4955588402730621,
+      "sigma": 0.22884076022485944
+    },
+    {
+      "parameter": "kScale",
+      "muStar": 0.006083165617742736,
+      "sigma": 0.002474753155328953
+    },
+    {
+      "parameter": "dScale",
+      "muStar": 0.0,
+      "sigma": 0.0
+    }
+  ],
+  "Q4": [
+    {
+      "parameter": "tailTemperatureC",
+      "muStar": 6.533604352447365,
+      "sigma": 0.16882105116695265
+    },
+    {
+      "parameter": "surfaceLatentFraction",
+      "muStar": 5.258565467921537,
+      "sigma": 0.9394889053319107
+    },
+    {
+      "parameter": "beta",
+      "muStar": 0.978176200791584,
+      "sigma": 0.16816019670622281
+    },
+    {
+      "parameter": "h",
+      "muStar": 0.8798220233226497,
+      "sigma": 0.7919268865909773
+    },
+    {
+      "parameter": "tailEquilibrium",
+      "muStar": 0.5741766579233273,
+      "sigma": 0.23965999020375786
+    },
+    {
+      "parameter": "equilibriumScale",
+      "muStar": 0.5070921254623177,
+      "sigma": 0.27570475010985523
+    },
+    {
+      "parameter": "kScale",
+      "muStar": 0.006872527805339423,
+      "sigma": 0.0019767194185731636
+    },
+    {
+      "parameter": "dScale",
+      "muStar": 0.0,
+      "sigma": 0.0
+    }
+  ]
 }
 ```
 

@@ -1,0 +1,84 @@
+{
+  "scan": {
+    "stage": "kscale",
+    "parameter": "kScale",
+    "rows": [
+      {
+        "question": "Q23",
+        "parameter": "kScale",
+        "value": 0.85,
+        "eventH": 57.47517689050554
+      },
+      {
+        "question": "Q23",
+        "parameter": "kScale",
+        "value": 0.925,
+        "eventH": 57.4738668490543
+      },
+      {
+        "question": "Q23",
+        "parameter": "kScale",
+        "value": 1.0,
+        "eventH": 57.472760525051456
+      },
+      {
+        "question": "Q23",
+        "parameter": "kScale",
+        "value": 1.075,
+        "eventH": 57.471813982430504
+      },
+      {
+        "question": "Q23",
+        "parameter": "kScale",
+        "value": 1.15,
+        "eventH": 57.47099504134215
+      },
+      {
+        "question": "Q4",
+        "parameter": "kScale",
+        "value": 0.85,
+        "eventH": 51.094074987195164
+      },
+      {
+        "question": "Q4",
+        "parameter": "kScale",
+        "value": 0.925,
+        "eventH": 51.09238645081764
+      },
+      {
+        "question": "Q4",
+        "parameter": "kScale",
+        "value": 1.0,
+        "eventH": 51.090968749662835
+      },
+      {
+        "question": "Q4",
+        "parameter": "kScale",
+        "value": 1.075,
+        "eventH": 51.089761991218055
+      },
+      {
+        "question": "Q4",
+        "parameter": "kScale",
+        "value": 1.15,
+        "eventH": 51.08872263839864
+      }
+    ],
+    "summary": {
+      "Q23": {
+        "minH": 57.47099504134215,
+        "maxH": 57.47517689050554,
+        "spanH": 0.0041818491633875965,
+        "baselineH": 57.472760525051456,
+        "relativeSpanPercent": 0.007276228121258932
+      },
+      "Q4": {
+        "minH": 51.08872263839864,
+        "maxH": 51.094074987195164,
+        "spanH": 0.0053523487965208005,
+        "baselineH": 51.090968749662835,
+        "relativeSpanPercent": 0.010476115304734992
+      }
+    }
+  }
+}

@@ -49,13 +49,16 @@ def main():
     morris = load("sensitivity_v1/morris.json")
     sobol = load("sensitivity_v1/sobol.json")
     metric = load("analytic_metric_v1/analytic_metric.json")
+    dscale = load("sensitivity_v1/dscale.json")
+    kscale = load("sensitivity_v1/kscale.json")
 
     report = {"tolerances": TOLERANCES, "layers": {}, "inputsPresent": {
         "solverCases": bool(cases), "latentScenarios": bool(latent),
         "thresholdScaling": bool(scaling), "stageBoundaries": bool(series),
         "methodComparison": bool(methodReport), "isothermClosure": bool(isotherm),
         "morrisScreening": bool(morris), "sobolIndices": bool(sobol),
-        "analyticMetric": bool(metric)}}
+        "analyticMetric": bool(metric),
+        "validatedScans": bool(dscale and kscale)}}
 
     # ---- L1 time integrators -------------------------------------------------
     byCase = {c["case"]: c for c in cases if c.get("status") == "computed"}
@@ -249,7 +252,7 @@ def main():
                          "status": "PASS" if anchorGap <= 1e-12 else "FAIL"})
 
     # ---- L10 variance-based sensitivity -------------------------------------
-    if morris or sobol:
+    if morris or sobol or dscale or kscale:
         report["layers"]["L10_sensitivity"] = {
             "morrisRanking": None if not morris else {
                 q["question"]: [{"parameter": r["parameter"], "muStar": r["muStar"],
@@ -257,18 +260,28 @@ def main():
                 for q in morris.get("morris", [])},
             "sobolIndices": None if not sobol else {
                 q["question"]: q["indices"] for q in sobol.get("sobol", [])},
+            "validatedSingleParameterScans": {
+                key: (None if not data or "scan" not in data else {
+                    "parameter": data["scan"]["parameter"],
+                    "rows": data["scan"]["rows"],
+                    "summary": data["scan"]["summary"]})
+                for key, data in (("dScale", dscale), ("kScale", kscale))},
             "knownInjectionDefect": (
                 "The Morris run in morris.json reports mu* = 0 exactly for dScale in all "
                 "20 elementary effects of both questions. That is an injection defect, not "
                 "a robustness result: with face_scheme='kirchhoff' the solver's "
                 "water_internal_flux uses a hard-coded per-question D0 and never reads the D "
                 "array returned by properties(), so scaling properties() alone cannot change "
-                "the model. The defect was found and patched in a parallel session by also "
-                "scaling the returned Kirchhoff flux (which is exactly linear in D0). Until "
-                "Morris is re-run on the patched script, the dScale entry in this layer must "
-                "not be quoted; a single-parameter scan on the patched code shows D "
-                "pre-factor uncertainty of -30%/+40% moving the Q23 event between 43.1 h and "
-                "79.4 h, i.e. D is among the most influential parameters."),
+                "the model. The defect was patched in a parallel session by also scaling the "
+                "returned Kirchhoff flux, which is exactly linear in D0. The Morris dScale "
+                "entry is therefore VOID; the validated single-parameter scans above replace "
+                "it and carry a self-check at scale 1.0 that reproduces the surrogate "
+                "baseline to 1e-6 h."),
+            "establishedResult": (
+                "Diffusion pre-factor uncertainty of -30%/+40% moves the drying time by "
+                "+38%/-25% (Q23: 79.42 h to 43.08 h; Q4: 70.41 h to 38.32 h), while thermal "
+                "conductivity uncertainty of +/-15% moves it by less than 0.011%. Under this "
+                "operating point the model is mass-transfer controlled."),
             "injectionSentinelRequired": (
                 "Every injection-style experiment (monkey-patched properties, alternative "
                 "flux, wrapped model) must carry a sentinel proving the injection was "
@@ -371,9 +384,33 @@ def _markdown(report):
             lines.append(f"| {row['scenario']} | {row['status']} | {_fmt(row['eventH'], 10)} | "
                          f"{_fmt(row['partitionFactorAtEnd'], 5)} | {row.get('tailIntegrity') or '—'} |")
     if "L10_sensitivity" in report["layers"]:
-        lines += ["", "## L10 全局敏感性（代理网格，仅用于排序）", "", "```json",
-                  json.dumps(report["layers"]["L10_sensitivity"], ensure_ascii=False, indent=2)[:4000],
-                  "```"]
+        l10 = report["layers"]["L10_sensitivity"]
+        lines += ["", "## L10 参数敏感性（代理网格 N200，仅用于排序）", "",
+                  "**Morris 的 dScale 条目已作废**（注入缺陷，见 JSON 的 `knownInjectionDefect`）；",
+                  "以下单参数扫描在修补版上运行，并在 scale = 1.0 处自检复现代理基准到 1e−6 h。", ""]
+        for key in ("dScale", "kScale"):
+            scan = (l10.get("validatedSingleParameterScans") or {}).get(key)
+            if not scan:
+                continue
+            lines += [f"### {key}", "", "| 取值 | Q2/Q3 事件 / h | Q4 事件 / h |", "|---:|---:|---:|"]
+            rows = scan["rows"]
+            for value in sorted({r["value"] for r in rows}):
+                q23 = next((r["eventH"] for r in rows
+                            if r["question"] == "Q23" and r["value"] == value), None)
+                q4 = next((r["eventH"] for r in rows
+                           if r["question"] == "Q4" and r["value"] == value), None)
+                lines.append(f"| {value:g} | {_fmt(q23, 8)} | {_fmt(q4, 8)} |")
+            summary = scan["summary"]
+            lines += ["", "- 跨度：Q2/Q3 " + _fmt(summary["Q23"]["spanH"], 6) + " h（"
+                      + _fmt(summary["Q23"]["relativeSpanPercent"], 4) + "%）；Q4 "
+                      + _fmt(summary["Q4"]["spanH"], 6) + " h（"
+                      + _fmt(summary["Q4"]["relativeSpanPercent"], 4) + "%）", ""]
+        if l10.get("establishedResult"):
+            lines += ["**结论**：" + l10["establishedResult"], ""]
+        if l10.get("morrisRanking"):
+            lines += ["### Morris 筛选排序（dScale 条目作废）", "", "```json",
+                      json.dumps(l10["morrisRanking"], ensure_ascii=False, indent=2)[:3000],
+                      "```"]
     lines += ["", "## 判定明细", "", "| 检查 | 值 | 单位 | 容差 | 判定 |", "|---|---:|---|---:|---|"]
     for v in report["verdicts"]:
         lines.append(f"| {v['check']} | {_fmt(v.get('value'), 6)} | {v['unit']} | "
