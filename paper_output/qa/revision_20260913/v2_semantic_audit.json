@@ -1,0 +1,959 @@
+{
+  "source_docx": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\user_source.docx",
+  "source_sha256": "0b58fbf0edb76a3f258d07c53eedd72139ef05cb84cb9f28491df32720c8cc24",
+  "output_docx": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+  "output_sha256": "11bdfd7bbd23203c0921617809dc4e2ea65d0bcbfc8976d19a6d73026f93c006",
+  "builder_output_hash_matches": true,
+  "equation_seq_count": 37,
+  "equation_numbers_ordered": true,
+  "equation_bookmark_count": 37,
+  "bibliography_seq_count": 7,
+  "bibliography_ref_count": 8,
+  "bibliography_bookmark_count": 7,
+  "bookmark_ids_unique": true,
+  "bookmark_pairs_match": true,
+  "ref_checks": [
+    {
+      "p": 10,
+      "instr": " REF bib_001 \\h ",
+      "value": "1",
+      "context": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。",
+      "target": "bib_001",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 10,
+      "instr": " REF bib_002 \\h ",
+      "value": "2",
+      "context": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。",
+      "target": "bib_002",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 43,
+      "instr": " REF bib_003 \\h ",
+      "value": "3",
+      "context": "平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。附件1的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记该观测数值为 Y∞，基线取 Ceq=Y∞，作为表面传质的等效平衡值。这一数值映射是本文的边界假设；文献中的一般平衡关系不构成该映射的标定依据。若进一步将 Y∞ 解释为空气湿度比，其参考质量也需另作说明。",
+      "target": "bib_003",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 49,
+      "instr": " REF eq_002 \\h ",
+      "value": "2",
+      "context": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。",
+      "target": "eq_002",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 49,
+      "instr": " REF eq_003 \\h ",
+      "value": "3",
+      "context": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。",
+      "target": "eq_003",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 49,
+      "instr": " REF bib_004 \\h ",
+      "value": "4",
+      "context": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。",
+      "target": "bib_004",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 56,
+      "instr": " REF eq_006 \\h ",
+      "value": "6",
+      "context": "因此本问温度方程是可独立求解的线性热方程，水方程仍因D1(C)而非线性。式(6)没有温度项；Arrhenius温度因子只在问题二至四的物性关系中出现。不能把“常热物性”扩大解释为“全部物性均为常数”，也不应给问题一另外加入温度活化项。",
+      "target": "eq_006",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 58,
+      "instr": " REF bib_005 \\h ",
+      "value": "5",
+      "context": "设归一化坐标 x=r/R0，在 0≤x≤1 上划分 N 个等长区间，节点 xi=i/N 包含中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体，记其无量纲体积权重为 wi。有限体积法先计算相邻控制体共用的面通量，再由净通量建立收支；内部面在全域求和时成对相消[5]。该处理可直接落实轴心零通量条件。",
+      "target": "bib_005",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 59,
+      "instr": " REF bib_004 \\h ",
+      "value": "4",
+      "context": "对于随含水率显著变化的扩散系数，参照浓度相关扩散方程的积分变换方法[4]，构造Kirchhoff浓度势。将题给系数写为 D=D0A(T)exp(−a/C)，取",
+      "target": "bib_004",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 61,
+      "instr": " REF eq_007 \\h ",
+      "value": "7",
+      "context": "相邻节点之间的水分通量通过势差计算，温度因子在该面单独取值。不能把A(T)Φ(C)整体作差，否则会产生原Fick闭合中不存在的温度梯度通量。浓度相近时采用局部展开避免两项接近的势值相减损失有效数字。式(7)使浓度方向的积分得到解析处理，但温度面值、有限网格与时间推进仍有离散误差；它不是对整个偏微分方程的精确求解。",
+      "target": "eq_007",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 62,
+      "instr": " REF bib_006 \\h ",
+      "value": "6",
+      "context": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。",
+      "target": "bib_006",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 62,
+      "instr": " REF bib_007 \\h ",
+      "value": "7",
+      "context": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。",
+      "target": "bib_007",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 72,
+      "instr": " REF eq_006 \\h ",
+      "value": "6",
+      "context": "表层含水率降低后，式(6)中的D随之减小，形成较强的干燥阻力。因而即使表面与外界存在传质驱动力，内部水分也不会立刻均匀释放。只用一个全体平均含水率描述此阶段，会掩盖径向差异，无法回答题目要求的各位置浓度。",
+      "target": "eq_006",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 78,
+      "instr": " REF eq_002 \\h ",
+      "value": "2",
+      "context": "问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3在整个求解区间使用同一套变物性，不在1800 s将附录2解拼接到附录3，也不把问题一末状态用作新的初始条件。这样才能区分两问的物性设定，避免在中途人为改变材料参数。",
+      "target": "eq_002",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 78,
+      "instr": " REF eq_005 \\h ",
+      "value": "5",
+      "context": "问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3在整个求解区间使用同一套变物性，不在1800 s将附录2解拼接到附录3，也不把问题一末状态用作新的初始条件。这样才能区分两问的物性设定，避免在中途人为改变材料参数。",
+      "target": "eq_005",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 84,
+      "instr": " REF eq_008 \\h ",
+      "value": "8",
+      "context": "式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位为m²/s，T必须是绝对温度。指数中的0.45/C和3850/T均为无量纲经验组合，系数按题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解释。",
+      "target": "eq_008",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 84,
+      "instr": " REF eq_009 \\h ",
+      "value": "9",
+      "context": "式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位为m²/s，T必须是绝对温度。指数中的0.45/C和3850/T均为无量纲经验组合，系数按题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解释。",
+      "target": "eq_009",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 100,
+      "instr": " REF eq_009 \\h ",
+      "value": "9",
+      "context": "水分扩散对温度的响应与含水率的响应方向不同。在相同C下，升温使式(9)的温度因子增大，有利于扩散；随着药材逐渐变干，exp(−0.45/C)减小，使后期扩散变慢。因此全过程通常表现为前期升温推动水分迁移、后期低含水率区域限制传递的组合效应。该解释来自物性公式及场分布，不把时间曲线的形状直接归因为某个未经观测的组织变化。",
+      "target": "eq_009",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 120,
+      "instr": " REF eq_014 \\h ",
+      "value": "14",
+      "context": "第一步：在问题二的积分过程中监测 g(t) 下降穿零。第二步：利用连续数值解在包围区间内定位临界根，并核对最大含水率与阈值的一致性。第三步：按式(14)选取并核验烘干时长。第四步：从同一轨迹查询每隔60 s、径向每隔0.1 cm的含水率。另在 N=800 的验证轨迹上采用独立二分法复核事件定位；正式结果由 N=3200 的计算轨迹给出。",
+      "target": "eq_014",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 121,
+      "instr": " REF eq_014 \\h ",
+      "value": "14",
+      "context": "求解阈值方程得到临界时刻 tc≈57.472302 h。按式(14)选取并核验未舍入含水率，得到烘干时长为 57.4724 h。",
+      "target": "eq_014",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 141,
+      "instr": " REF eq_017 \\h ",
+      "value": "17",
+      "context": "式(17)沿用有效显热闭合，未显式包含潜热、湿分携焓及收缩功。材料坐标方程中不再出现额外网格平流项；干基比值也不另加体积浓缩项。收缩引起的干骨架密度变化满足 ρd(t)=ρd0[R0/R(t)]2。坐标变换和干质量守恒推导见附录A。",
+      "target": "eq_017",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 149,
+      "instr": " REF eq_016 \\h ",
+      "value": "16",
+      "context": "在材料坐标中采用 N=6400 的固定网格。每次右端函数求值时，根据当前 t 更新 R(t)，再更新式(16)—(20)中的几何因子、物性和边界通量。网格点随材料运动，输出时转换到题目要求的物理半径 r。",
+      "target": "eq_016",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 149,
+      "instr": " REF eq_020 \\h ",
+      "value": "20",
+      "context": "在材料坐标中采用 N=6400 的固定网格。每次右端函数求值时，根据当前 t 更新 R(t)，再更新式(16)—(20)中的几何因子、物性和边界通量。网格点随材料运动，输出时转换到题目要求的物理半径 r。",
+      "target": "eq_020",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 162,
+      "instr": " REF eq_016 \\h ",
+      "value": "16",
+      "context": "式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。",
+      "target": "eq_016",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 162,
+      "instr": " REF eq_018 \\h ",
+      "value": "18",
+      "context": "式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。",
+      "target": "eq_018",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 162,
+      "instr": " REF eq_010 \\h ",
+      "value": "10",
+      "context": "式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。",
+      "target": "eq_010",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 204,
+      "instr": " REF eq_001 \\h ",
+      "value": "1",
+      "context": "本附录补充正文方程的守恒推导、数值求解步骤和核心算法。温度、时间、长度在计算中分别采用K、s、m；含水率为kg水/kg干物质。式号续正文式(1)—(21)。完整输入、源程序和结果记录作为支撑材料保留，文末仅列实际生产程序的必要片段。",
+      "target": "eq_001",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 204,
+      "instr": " REF eq_021 \\h ",
+      "value": "21",
+      "context": "本附录补充正文方程的守恒推导、数值求解步骤和核心算法。温度、时间、长度在计算中分别采用K、s、m；含水率为kg水/kg干物质。式号续正文式(1)—(21)。完整输入、源程序和结果记录作为支撑材料保留，文末仅列实际生产程序的必要片段。",
+      "target": "eq_021",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 207,
+      "instr": " REF eq_015 \\h ",
+      "value": "15",
+      "context": "记干骨架速度为 u，当前单位体积内的干物质质量为 ρd，水相对骨架的通量为 jw。将正文式(15)的水质量方程减去干物质方程的 C 倍，骨架压缩项消去，得到",
+      "target": "eq_015",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 209,
+      "instr": " REF eq_003 \\h ",
+      "value": "3",
+      "context": "采用 jw=−ρdD∇C，并以空间均匀的干骨架密度闭合，便有 DtC=∇·(D∇C)。固定半径时 u=0，圆柱径向散度给出正文式(3)。初值 C0=2.55 对应湿基质量分数 C0/(1+C0)=0.7183098592；干基含水率可以大于 1。若将环境指标解释为空气湿度比，其分母与材料干基含水率不同；正文的 Ceq 是由环境指标约定的等效边界量。",
+      "target": "eq_003",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 211,
+      "instr": " REF eq_006 \\h ",
+      "value": "6",
+      "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+      "target": "eq_006",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 211,
+      "instr": " REF eq_008 \\h ",
+      "value": "8",
+      "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+      "target": "eq_008",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 211,
+      "instr": " REF eq_009 \\h ",
+      "value": "9",
+      "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+      "target": "eq_009",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 211,
+      "instr": " REF eq_019 \\h ",
+      "value": "19",
+      "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+      "target": "eq_019",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 211,
+      "instr": " REF eq_020 \\h ",
+      "value": "20",
+      "context": "热方程采用 B(C)DtT=∇·(k∇T)，其中 B=ρeffcp 是题给物性构造的有效显热容量。Q1 的热物性为 ρeff=820、cp=2600、k=0.36，其水扩散率仍按正文式(6)随含水率变化；Q2、Q3 从初始时刻统一使用式(8)、(9)，Q4 从初始时刻整组使用式(19)、(20)。题给经验系数直接采用，不由本次附件重新拟合。",
+      "target": "eq_020",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 218,
+      "instr": " REF eq_016 \\h ",
+      "value": "16",
+      "context": "两项平流相消，DtC=Ct；再代入 ∂r=R−1∂x，即得正文式(16)、(17)及边界式(18)。纯收缩而无相对失水时 DtC=0，所以干基比值 C 不另加体积浓缩项。干物质量 πLR2ρd=πLR02ρd0 保持不变。该变换依赖同比运动与干骨架空间均匀假设；半径按观测插值即可，方程求值无需对折线半径数值微分。",
+      "target": "eq_016",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 218,
+      "instr": " REF eq_017 \\h ",
+      "value": "17",
+      "context": "两项平流相消，DtC=Ct；再代入 ∂r=R−1∂x，即得正文式(16)、(17)及边界式(18)。纯收缩而无相对失水时 DtC=0，所以干基比值 C 不另加体积浓缩项。干物质量 πLR2ρd=πLR02ρd0 保持不变。该变换依赖同比运动与干骨架空间均匀假设；半径按观测插值即可，方程求值无需对折线半径数值微分。",
+      "target": "eq_017",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 218,
+      "instr": " REF eq_018 \\h ",
+      "value": "18",
+      "context": "两项平流相消，DtC=Ct；再代入 ∂r=R−1∂x，即得正文式(16)、(17)及边界式(18)。纯收缩而无相对失水时 DtC=0，所以干基比值 C 不另加体积浓缩项。干物质量 πLR2ρd=πLR02ρd0 保持不变。该变换依赖同比运动与干骨架空间均匀假设；半径按观测插值即可，方程求值无需对折线半径数值微分。",
+      "target": "eq_018",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 229,
+      "instr": " REF eq_007 \\h ",
+      "value": "7",
+      "context": "三组扩散率写成 D=D0e−b/Te−a/C，参数 (a,b,D0) 分别为 (0.89,0,7×10−9)、(0.45,3850,2.4×10−3) 和 (0.30,3850,4.2×10−4)。正文式(7)中，Ce−a/C 与 aEi(−a/C) 的导数分别为 e−a/C(1+a/C) 和 −(a/C)e−a/C，故 Φa′(C)=e−a/C。以面平均温度 T―i=(Ti+Ti+1)/2 计算",
+      "target": "eq_007",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 238,
+      "instr": " REF eq_029 \\h ",
+      "value": "29",
+      "context": "对于式(29)，程序对实际中点表达式求导：两侧浓度偏导为 12f′(C―)ΔC∓f(C―)，其中 f(C)=e−a/C、f′=af/C2；在保护区同时乘相应 C>10−12 的活跃标记。热通量中 ∂kH/∂ki=2ki+12/(ki+ki+1)2，另一侧对称。面导数向两侧控制体按正负号装配。",
+      "target": "eq_029",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 246,
+      "instr": " REF eq_033 \\h ",
+      "value": "33",
+      "context": "两侧均为单位长度热率。B 或 R 变化时，2πR2∑iwiBi(Ti−Tref) 的总导数还含容量和几何变化项，故式(33)只能检验离散热算子的通量平衡。",
+      "target": "eq_033",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 250,
+      "instr": " REF eq_034 \\h ",
+      "value": "34",
+      "context": "其中 G=32yn−2yn−1+12yn−2−ΔtF。实际使用 SciPy BDF 的 1—5 阶自适应实现及解析稀疏 Jacobian；式(34)只解释隐式求解，不把固定二阶系数套用于不等步长。",
+      "target": "eq_034",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 253,
+      "instr": " REF eq_010 \\h ",
+      "value": "10",
+      "context": "计算使用清洗环境表的 241 个 0—4 h 记录及半径表的 145 个 0—72 h 记录。环境在观测区间内线性插值，4 h 后沿用正文式(10)的 50°C、Ceq=0.05 平台。三条轨迹均从 T0=301.15 K、C0=2.55 出发：Q1 取 N=3200 并算至 1800 s；Q2、Q3 共用一条 N=3200 轨迹；Q4 取 N=6400 并随当前 R(t) 更新几何。",
+      "target": "eq_010",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 258,
+      "instr": " REF eq_032 \\h ",
+      "value": "32",
+      "context": "每次正式求解还检查接受状态物性为正、含水率范围及式(32)的质量残差。解析热场、导数差分、时间及空间检查承担不同验证作用，事件时长稳定不能替代局部场检验。附件未提供内部温湿度标签，因此不据此给出实测准确率。",
+      "target": "eq_032",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 268,
+      "instr": " REF eq_014 \\h ",
+      "value": "14",
+      "context": "取 Δt=0.36 s，并依次检查 t0,t0+Δt,… 处未舍入的 MN。第一个满足 MN<0.15 的候选点即正文式(14)的 tr；若候选点超出已实际积分的区间，则报错。问题三的连续根为57.47230195056044 h，选取时长为57.4724 h；问题四分别为51.09057478683054 h和51.0906 h。表中显示精度与阈值判定精度分别处理。",
+      "target": "eq_014",
+      "exists": true,
+      "display_matches_target": true
+    },
+    {
+      "p": 271,
+      "instr": " REF eq_021 \\h ",
+      "value": "21",
+      "context": "正文式(21)的 p 情景只改变等效边界阻力。当 Cs≥Cref>0、p≥1 时，令 z=(Cref/Cs)1/p∈[0,1]，有 1−z≤1−zp≤p(1−z)，从而 1/p≤Kp≤1；Cs→Cref 时取连续极限 1/p。该族是在指定参考点下以活动度差缩放得到的经验形式，未标定药材等温线。历史 p=1,2,4 的 N800 事件只用于条件情景比较，不替代正式网格的严格报告时刻，也不推出真实时长下界。",
+      "target": "eq_021",
+      "exists": true,
+      "display_matches_target": true
+    }
+  ],
+  "all_refs_resolve_and_match": true,
+  "equation_math_comparison": [
+    {
+      "number": 1,
+      "sourceParagraph": 40,
+      "original": "C=\\frac{{m}_{w}}{{m}_{d}}, w=\\frac{C}{1+C}",
+      "final": "C=\\frac{{m}_{w}}{{m}_{d}}, w=\\frac{C}{1+C}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 2,
+      "sourceParagraph": 47,
+      "original": "B(C)\\frac{∂T}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rk(C)\\frac{∂T}{∂r}), 0<r<{R}_{0}",
+      "final": "B(C)\\frac{∂T}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rk(C)\\frac{∂T}{∂r}), 0<r<{R}_{0}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 3,
+      "sourceParagraph": 48,
+      "original": "\\frac{∂C}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rD(T,C)\\frac{∂C}{∂r})",
+      "final": "\\frac{∂C}{∂t}=\\frac{1}{r}\\frac{∂}{∂r}(rD(T,C)\\frac{∂C}{∂r})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 4,
+      "sourceParagraph": 51,
+      "original": "T(r,0)=301.15 K, C(r,0)=2.55, {T}_{r}(0,t)={C}_{r}(0,t)=0",
+      "final": "T(r,0)=301.15 K, C(r,0)=2.55, {T}_{r}(0,t)={C}_{r}(0,t)=0",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 5,
+      "sourceParagraph": 52,
+      "original": "−k{T}_{r}({R}_{0},t)=h({T}_{s}−{T}_{∞}), −D{C}_{r}({R}_{0},t)=β({C}_{s}−{C}_{eq})",
+      "final": "−k{T}_{r}({R}_{0},t)=h({T}_{s}−{T}_{∞}), −D{C}_{r}({R}_{0},t)=β({C}_{s}−{C}_{eq})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 6,
+      "sourceParagraph": 55,
+      "original": "{D}_{1}(C)=7×{10}^{−9}exp(−\\frac{0.89}{C}) {m}^{2}/s",
+      "final": "{D}_{1}(C)=7×{10}^{−9}exp(−\\frac{0.89}{C}) {m}^{2}/s",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 7,
+      "sourceParagraph": 60,
+      "original": "{Φ}_{a}(C)=Cexp(−a/C)+aEi(−a/C), {Φ}_{a}^{′}(C)=exp(−a/C)",
+      "final": "{Φ}_{a}(C)=Cexp(−a/C)+aEi(−a/C), {Φ}_{a}^{′}(C)=exp(−a/C)",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 8,
+      "sourceParagraph": 82,
+      "original": "{ρ}_{eff}=650+128C, {c}_{p}=1450+2736w, k=0.21+0.38w",
+      "final": "{ρ}_{eff}=650+128C, {c}_{p}=1450+2736w, k=0.21+0.38w",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 9,
+      "sourceParagraph": 83,
+      "original": "{D}_{3}(T,C)=2.4×{10}^{−3}exp(−\\frac{0.45}{C}−\\frac{3850}{T})",
+      "final": "{D}_{3}(T,C)=2.4×{10}^{−3}exp(−\\frac{0.45}{C}−\\frac{3850}{T})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 10,
+      "sourceParagraph": 86,
+      "original": "({T}_{∞},{C}_{eq})(t)={({I}_{T}(t),{I}_{Y}(t)),0≤t≤14400 s,(323.15,0.05),t>14400 s.",
+      "final": "({T}_{∞},{C}_{eq})(t)={({I}_{T}(t),{I}_{Y}(t)),0≤t≤14400 s,(323.15,0.05),t>14400 s.",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 11,
+      "sourceParagraph": 109,
+      "original": "M(t)={max}_{0≤r≤{R}_{0}}C(r,t)",
+      "final": "M(t)={max}_{0≤r≤{R}_{0}}C(r,t)",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 12,
+      "sourceParagraph": 111,
+      "original": "M(t)<0.15",
+      "final": "M(t)<0.15",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 13,
+      "sourceParagraph": 113,
+      "original": "g(t)=M(t)−0.15",
+      "final": "g(t)=M(t)−0.15",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 14,
+      "sourceParagraph": 117,
+      "original": "{t}_{r}={10}^{−4}⌈{10}^{4}{t}_{c}⌉ h, M({t}_{r})<0.15",
+      "final": "{t}_{r}=min{kΔt: k∈{ℕ}_{0}, kΔt≥{t}_{c}, M(kΔt)<0.15}",
+      "math_text_unchanged": false,
+      "intentional_replacement": true
+    },
+    {
+      "number": 15,
+      "sourceParagraph": 137,
+      "original": "{∂}_{t}{ρ}_{d}+∇ ·({ρ}_{d}u)=0, {∂}_{t}({ρ}_{d}C)+∇ ·({ρ}_{d}Cu+{j}_{w})=0",
+      "final": "{∂}_{t}{ρ}_{d}+∇ ·({ρ}_{d}u)=0, {∂}_{t}({ρ}_{d}C)+∇ ·({ρ}_{d}Cu+{j}_{w})=0",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 16,
+      "sourceParagraph": 139,
+      "original": "\\frac{∂\\hat{C}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xD\\frac{∂\\hat{C}}{∂x})",
+      "final": "\\frac{∂\\hat{C}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xD\\frac{∂\\hat{C}}{∂x})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 17,
+      "sourceParagraph": 140,
+      "original": "B(\\hat{C})\\frac{∂\\hat{T}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xk\\frac{∂\\hat{T}}{∂x})",
+      "final": "B(\\hat{C})\\frac{∂\\hat{T}}{∂t}=\\frac{1}{R(t{)}^{2}x}\\frac{∂}{∂x}(xk\\frac{∂\\hat{T}}{∂x})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 18,
+      "sourceParagraph": 143,
+      "original": "−\\frac{k}{R}{\\hat{T}}_{x}(1,t)=h({T}_{s}−{T}_{∞}), −\\frac{D}{R}{\\hat{C}}_{x}(1,t)=β({C}_{s}−{C}_{eq})",
+      "final": "−\\frac{k}{R(t)}{\\hat{T}}_{x}(1,t)=h({T}_{s}−{T}_{∞}), −\\frac{D}{R(t)}{\\hat{C}}_{x}(1,t)=β({C}_{s}−{C}_{eq})",
+      "math_text_unchanged": false,
+      "intentional_replacement": true
+    },
+    {
+      "number": 19,
+      "sourceParagraph": 145,
+      "original": "{ρ}_{eff}=760+90C, {c}_{p}=1850+2150w, k=0.12+0.20w,",
+      "final": "{ρ}_{eff}=760+90C, {c}_{p}=1850+2150w, k=0.12+0.20w,",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 20,
+      "sourceParagraph": 146,
+      "original": "{D}_{4}(T,C)=4.2×{10}^{−4}exp(−\\frac{0.30}{C}−\\frac{3850}{T})",
+      "final": "{D}_{4}(T,C)=4.2×{10}^{−4}exp(−\\frac{0.30}{C}−\\frac{3850}{T})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 21,
+      "sourceParagraph": 165,
+      "original": "{K}_{p}({C}_{s})=\\frac{1−({C}_{ref}/{C}_{s}{)}^{1/p}}{1−{C}_{ref}/{C}_{s}}, {j}_{w}={ρ}_{d}β{K}_{p}({C}_{s})({C}_{s}−{C}_{eq})",
+      "final": "{K}_{p}({C}_{s})=\\frac{1−({C}_{ref}/{C}_{s}{)}^{1/p}}{1−{C}_{ref}/{C}_{s}}, {j}_{w}={ρ}_{d}β{K}_{p}({C}_{s})({C}_{s}−{C}_{eq})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 22,
+      "sourceParagraph": 203,
+      "original": "{ρ}_{d}{D}_{t}C=−∇·{j}_{w}, {D}_{t}={∂}_{t}+u·∇",
+      "final": "{ρ}_{d}{D}_{t}C=−∇·{j}_{w}, {D}_{t}={∂}_{t}+u·∇",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 23,
+      "sourceParagraph": 208,
+      "original": "R(t)≥{R}_{0}\\sqrt[]{\\frac{{ρ}_{d0}}{760}}=1.2112029565 cm, {ρ}_{d0}=\\frac{760+90×2.55}{3.55}",
+      "final": "R(t)≥{R}_{0}\\sqrt[]{\\frac{{ρ}_{d0}}{760}}=1.2112029565 cm, {ρ}_{d0}=\\frac{760+90×2.55}{3.55}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 24,
+      "sourceParagraph": 212,
+      "original": "{ρ}_{d}(t)={ρ}_{d0}{(\\frac{{R}_{0}}{R(t)})}^{2}, {{C}_{t}|}_{r}={\\hat{C}}_{t}−\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}, {u}_{r}{C}_{r}=\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}",
+      "final": "{ρ}_{d}(t)={ρ}_{d0}{(\\frac{{R}_{0}}{R(t)})}^{2}, {{C}_{t}|}_{r}={\\hat{C}}_{t}−\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}, {u}_{r}{C}_{r}=\\frac{x\\dot{R}}{R}{\\hat{C}}_{x}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 25,
+      "sourceParagraph": 217,
+      "original": "{w}_{i}={∫}_{{a}_{i}}^{{b}_{i}}x dx=\\frac{{b}_{i}^{2}−{a}_{i}^{2}}{2}, {w}_{0}=\\frac{Δ{x}^{2}}{8}, {w}_{i}={x}_{i}Δx (1≤i<N), {w}_{N}=\\frac{Δx}{2}−\\frac{Δ{x}^{2}}{8}",
+      "final": "{w}_{i}={∫}_{{a}_{i}}^{{b}_{i}}x dx=\\frac{{b}_{i}^{2}−{a}_{i}^{2}}{2}, {w}_{0}=\\frac{Δ{x}^{2}}{8}, {w}_{i}={x}_{i}Δx (1≤i<N), {w}_{N}=\\frac{Δx}{2}−\\frac{Δ{x}^{2}}{8}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 26,
+      "sourceParagraph": 219,
+      "original": "{\\dot{T}}_{i}=\\frac{{g}_{i+1/2}^{T}−{g}_{i−1/2}^{T}}{{R}^{2}{w}_{i}{B}_{i}}, {\\dot{C}}_{i}=\\frac{{g}_{i+1/2}^{C}−{g}_{i−1/2}^{C}}{{R}^{2}{w}_{i}}",
+      "final": "{\\dot{T}}_{i}=\\frac{{g}_{i+1/2}^{T}−{g}_{i−1/2}^{T}}{{R}^{2}{w}_{i}{B}_{i}}, {\\dot{C}}_{i}=\\frac{{g}_{i+1/2}^{C}−{g}_{i−1/2}^{C}}{{R}^{2}{w}_{i}}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 27,
+      "sourceParagraph": 222,
+      "original": "{g}_{i+1/2}^{T}={γ}_{i}{k}_{H}({T}_{i+1}−{T}_{i}), {k}_{H}=\\frac{2{k}_{i}{k}_{i+1}}{{k}_{i}+{k}_{i+1}}, {γ}_{i}=\\frac{{x}_{i+1/2}}{Δx}",
+      "final": "{g}_{i+1/2}^{T}={γ}_{i}{k}_{H}({T}_{i+1}−{T}_{i}), {k}_{H}=\\frac{2{k}_{i}{k}_{i+1}}{{k}_{i}+{k}_{i+1}}, {γ}_{i}=\\frac{{x}_{i+1/2}}{Δx}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 28,
+      "sourceParagraph": 225,
+      "original": "{g}_{i+1/2}^{C}={γ}_{i}{D}_{0}{e}^{−b/{T^{―}}_{i}}[{Φ}_{a}({C}_{i+1})−{Φ}_{a}({C}_{i})]",
+      "final": "{g}_{i+1/2}^{C}={γ}_{i}{D}_{0}{e}^{−b/{T^{―}}_{i}}[{Φ}_{a}({C}_{i+1})−{Φ}_{a}({C}_{i})]",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 29,
+      "sourceParagraph": 228,
+      "original": "ΔΦ≃{e}^{−a/C^{―}}ΔC, |ΔC|<{10}^{−7}max(C^{―},{10}^{−3})",
+      "final": "ΔΦ≃{e}^{−a/C^{―}}ΔC, |ΔC|<{10}^{−7}max(C^{―},{10}^{−3})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 30,
+      "sourceParagraph": 232,
+      "original": "\\frac{∂{g}^{C}}{∂{C}_{i}}=−{G}_{i}{e}^{−a/{C}_{i}}, \\frac{∂{g}^{C}}{∂{C}_{i+1}}={G}_{i}{e}^{−a/{C}_{i+1}}, \\frac{∂{g}^{C}}{∂{T}_{i}}=\\frac{∂{g}^{C}}{∂{T}_{i+1}}={g}^{C}\\frac{b}{2{T^{―}}_{i}^{2}}",
+      "final": "\\frac{∂{g}^{C}}{∂{C}_{i}}=−{G}_{i}{e}^{−a/{C}_{i}}, \\frac{∂{g}^{C}}{∂{C}_{i+1}}={G}_{i}{e}^{−a/{C}_{i+1}}, \\frac{∂{g}^{C}}{∂{T}_{i}}=\\frac{∂{g}^{C}}{∂{T}_{i+1}}={g}^{C}\\frac{b}{2{T^{―}}_{i}^{2}}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 31,
+      "sourceParagraph": 235,
+      "original": "{B}_{i}^{′}={ρ}_{eff}^{′}{c}_{p}+{ρ}_{eff}{c}_{p}^{′}, {\\frac{∂{\\dot{T}}_{i}}{∂{C}_{i}}|}_{capacity}=−{\\dot{T}}_{i}\\frac{{B}_{i}^{′}}{{B}_{i}}",
+      "final": "{B}_{i}^{′}={ρ}_{eff}^{′}{c}_{p}+{ρ}_{eff}{c}_{p}^{′}, {\\frac{∂{\\dot{T}}_{i}}{∂{C}_{i}}|}_{capacity}=−{\\dot{T}}_{i}\\frac{{B}_{i}^{′}}{{B}_{i}}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 32,
+      "sourceParagraph": 238,
+      "original": "\\dot{ℓ}=\\frac{2β}{R}({C}_{N}−{C}_{eq}), 2{∑}_{i}{w}_{i}{C}_{i}+ℓ={C}_{0}",
+      "final": "\\dot{ℓ}=\\frac{2β}{R}({C}_{N}−{C}_{eq}), 2{∑}_{i}{w}_{i}{C}_{i}+ℓ={C}_{0}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 33,
+      "sourceParagraph": 240,
+      "original": "2π{R}^{2}{∑}_{i}{w}_{i}{B}_{i}{\\dot{T}}_{i}=2πRh({T}_{∞}−{T}_{N})",
+      "final": "2π{R}^{2}{∑}_{i}{w}_{i}{B}_{i}{\\dot{T}}_{i}=2πRh({T}_{∞}−{T}_{N})",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 34,
+      "sourceParagraph": 244,
+      "original": "\\frac{3{y}_{n}−4{y}_{n−1}+{y}_{n−2}}{2Δt}=F({t}_{n},{y}_{n}), (\\frac{3}{2}I−ΔtJ)δy=−G",
+      "final": "\\frac{3{y}_{n}−4{y}_{n−1}+{y}_{n−2}}{2Δt}=F({t}_{n},{y}_{n}), (\\frac{3}{2}I−ΔtJ)δy=−G",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 35,
+      "sourceParagraph": 256,
+      "original": "{μ}_{n}{J}_{1}({μ}_{n})=B{i}_{h}{J}_{0}({μ}_{n}), B{i}_{h}=\\frac{h{R}_{0}}{k}, {λ}_{n}=\\frac{α{μ}_{n}^{2}}{{R}_{0}^{2}}, {b}_{n}=\\frac{2{J}_{1}({μ}_{n})}{{μ}_{n}[{J}_{0}({μ}_{n}{)}^{2}+{J}_{1}({μ}_{n}{)}^{2}]}",
+      "final": "{μ}_{n}{J}_{1}({μ}_{n})=B{i}_{h}{J}_{0}({μ}_{n}), B{i}_{h}=\\frac{h{R}_{0}}{k}, {λ}_{n}=\\frac{α{μ}_{n}^{2}}{{R}_{0}^{2}}, {b}_{n}=\\frac{2{J}_{1}({μ}_{n})}{{μ}_{n}[{J}_{0}({μ}_{n}{)}^{2}+{J}_{1}({μ}_{n}{)}^{2}]}",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 36,
+      "sourceParagraph": 258,
+      "original": "T(x,t)={T}_{∞}(t)+{∑}_{n=1}^{∞}{b}_{n}{J}_{0}({μ}_{n}x)[({T}_{0}−{T}_{∞}(0)){e}^{−{λ}_{n}t}−{∫}_{0}^{t}{e}^{−{λ}_{n}(t−τ)}{\\dot{T}}_{∞}(τ) dτ]",
+      "final": "T(x,t)={T}_{∞}(t)+{∑}_{n=1}^{∞}{b}_{n}{J}_{0}({μ}_{n}x)[({T}_{0}−{T}_{∞}(0)){e}^{−{λ}_{n}t}−{∫}_{0}^{t}{e}^{−{λ}_{n}(t−τ)}{\\dot{T}}_{∞}(τ) dτ]",
+      "math_text_unchanged": true,
+      "intentional_replacement": false
+    },
+    {
+      "number": 37,
+      "sourceParagraph": 262,
+      "original": "{t}_{rep,h}={10}^{−4}⌈{10}^{4}\\frac{{t}_{∗}}{3600}⌉, {M}_{N}(3600{t}_{rep,h})<0.15",
+      "final": "{t}_{0}=Δt⌈\\frac{{t}_{c}}{Δt}⌉, Δt=0.36 s",
+      "math_text_unchanged": false,
+      "intentional_replacement": true
+    }
+  ],
+  "unchanged_equations_preserved": true,
+  "result_table_checks": [
+    {
+      "index": 1,
+      "same": true,
+      "cells": 48
+    },
+    {
+      "index": 2,
+      "same": true,
+      "cells": 48
+    },
+    {
+      "index": 3,
+      "same": true,
+      "cells": 42
+    },
+    {
+      "index": 4,
+      "same": true,
+      "cells": 42
+    },
+    {
+      "index": 5,
+      "same": true,
+      "cells": 66
+    },
+    {
+      "index": 6,
+      "same": true,
+      "cells": 70
+    },
+    {
+      "index": 7,
+      "same": true,
+      "cells": 20
+    },
+    {
+      "index": 8,
+      "same": true,
+      "cells": 20
+    }
+  ],
+  "all_result_table_cells_unchanged": true,
+  "appendix_D_all_paragraph_text_unchanged": true,
+  "appendix_D_paragraph_styles": {
+    "8": 1,
+    "": 124,
+    "9": 6
+  },
+  "symbol_table_final": [
+    [
+      "符号",
+      "说明",
+      "单位"
+    ],
+    [
+      "t",
+      "时间",
+      "s"
+    ],
+    [
+      "r",
+      "到药材中心的径向距离",
+      "m"
+    ],
+    [
+      "x=r/R(t)",
+      "材料归一化径向坐标",
+      "1"
+    ],
+    [
+      "T",
+      "药材温度",
+      "K"
+    ],
+    [
+      "C",
+      "干基含水率=m水/m干物质",
+      "kg/kg"
+    ],
+    [
+      "w=C/(1+C)",
+      "湿基质量分数",
+      "1"
+    ],
+    [
+      "R(t)",
+      "药材当前半径",
+      "m"
+    ],
+    [
+      "ρeff",
+      "有效密度（用于热容量）",
+      "kg/m³"
+    ],
+    [
+      "ρd",
+      "守恒干物质密度",
+      "kg/m³"
+    ],
+    [
+      "cp",
+      "比热容",
+      "J/(kg·K)"
+    ],
+    [
+      "k",
+      "导热系数",
+      "W/(m·K)"
+    ],
+    [
+      "D",
+      "有效水分扩散系数",
+      "m²/s"
+    ],
+    [
+      "h",
+      "对流换热系数",
+      "W/(m²·K)"
+    ],
+    [
+      "β",
+      "对流传质系数",
+      "m/s"
+    ],
+    [
+      "B=ρeff·cp",
+      "有效体积显热容量",
+      "J/(m³·K)"
+    ],
+    [
+      "qr",
+      "径向导热热流密度（向外为正）",
+      "W/m²"
+    ],
+    [
+      "jw",
+      "径向水分质量通量（向外为正）",
+      "kg/(m²·s)"
+    ],
+    [
+      "ℓ(t)",
+      "每单位初始干物质的累计失水",
+      "kg/kg"
+    ],
+    [
+      "Ceq",
+      "环境对应的等效平衡含水率",
+      "kg/kg"
+    ],
+    [
+      "T∞",
+      "烘房温度",
+      "K"
+    ],
+    [
+      "tc",
+      "全域含水率阈值的临界时刻",
+      "s"
+    ]
+  ],
+  "inline_delimiter_examples": [
+    {
+      "source": "式(14)及式(16)—(20)",
+      "converted": "式(14)及式(16)—(20)"
+    },
+    {
+      "source": "[1]、[7]",
+      "converted": "[1]、[7]"
+    },
+    {
+      "source": "(x=r/R(t))",
+      "converted": "$x=r/R(t)$"
+    },
+    {
+      "source": "([0,1])",
+      "converted": "$[0,1]$"
+    },
+    {
+      "source": "(0.15\\ \\mathrm{kg/kg})",
+      "converted": "$0.15$ kg/kg"
+    },
+    {
+      "source": "(\\Delta t=0.36\\ \\mathrm s=10^{-4}\\ \\mathrm h)",
+      "converted": "$\\Delta t=0.36\\ \\mathrm s=10^{-4}\\ \\mathrm h$"
+    },
+    {
+      "source": "(t_{\\mathrm c}\\approx57.472302\\ \\mathrm h)",
+      "converted": "$t_{\\mathrm c}\\approx57.472302\\ \\mathrm h$"
+    },
+    {
+      "source": "(0.1500)",
+      "converted": "$0.1500$"
+    },
+    {
+      "source": "(kg/kg)",
+      "converted": "$kg/kg$"
+    }
+  ],
+  "status": "PASS",
+  "agent_semantic_review": "COMPLETE",
+  "human_review": "This is an independent AI audit; team human review was not performed here.",
+  "equation_reference_count": 38,
+  "total_REF_count": 46,
+  "code_fragment_line_counts": [
+    20,
+    18,
+    16,
+    13,
+    37,
+    13
+  ],
+  "code_fragment_lines_total": 117,
+  "thirteen_previously_wrong_references_verified_correct": true,
+  "equations_14_18_37_semantically_approved": true,
+  "hats_and_time_derivative_accents_preserved": true,
+  "inline_parser_actual_document_findings": [],
+  "resolved_v1_issues": [
+    "M(t) now one intact native function expression",
+    "N_0 is now blackboard-bold naturals in prose and equation 14",
+    "kg/kg moved outside math expressions as ordinary unit text",
+    "Unnecessary parentheses around displayed 0.1500 removed"
+  ],
+  "limitations": [
+    "Static and rendered-document review; no new production PDE integration.",
+    "Approval binds only to the recorded source/output SHA256.",
+    "Scalar formula checks do not establish experimental predictive accuracy."
+  ]
+}

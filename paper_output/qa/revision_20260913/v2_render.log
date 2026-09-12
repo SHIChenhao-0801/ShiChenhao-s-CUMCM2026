@@ -1,0 +1,15 @@
+Exception in thread Thread-1 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Users\Shi Chenhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Shi Chenhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Shi Chenhao\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xca in position 20: invalid continuation byte
+[render_docx] $ D:\Document\数学建模\tools\libreoffice\app\program\soffice.exe -env:UserInstallation=file:///D:/Document/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/2026CUMCM/tmp/cache/paper_revision_20260913/temp/soffice_profile_se4cud67 --invisible --headless --norestore --convert-to pdf --outdir D:\Document\数学建模\2026CUMCM\tmp\cache\paper_revision_20260913\temp\soffice_convert_jh9ry0ze D:\Document\数学建模\2026CUMCM\paper_output\paper\药材热湿耦合模型与干燥时间计算_文献公式修订版.docx
+Could not find platform independent libraries <prefix>
+
+Pages rendered to D:\Document\数学建模\2026CUMCM\tmp\cache\paper_revision_20260913\v2

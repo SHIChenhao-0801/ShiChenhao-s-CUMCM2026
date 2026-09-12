@@ -188,5 +188,16 @@
     "originalFiles": 15,
     "qa": "paper_output/qa/figure_package_20260912/final_package_audit.json",
     "scope": "Six plotting figures only; supersedes path-only handoff. Does not change modeling/submission review status."
+  },
+  "latest_manuscript_revision": {
+    "input": "paper_output/paper/药材热湿耦合模型与干燥时间计算.docx",
+    "output": "paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+    "sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+    "audit": "paper_output/qa/revision_20260913/final_delivery_audit.json",
+    "status": "PAPER_AND_FIGURES_VERIFIED_WECHAT_UNSENT",
+    "scope": "用户最新稿文献、公式、措辞及独立六图；不改变冻结生产结果、不扩大旧S8或submission ZIP状态",
+    "figures": "paper_output/figures/六图核查包_20260913.zip",
+    "figuresInserted": false,
+    "humanReview": "PENDING_USER_REVIEW"
   }
 }

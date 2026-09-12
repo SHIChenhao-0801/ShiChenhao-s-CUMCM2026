@@ -1,0 +1,296 @@
+[
+  {
+    "name": "wang_2024.crossref.json",
+    "url": "https://api.crossref.org/works/10.11975%2Fj.issn.1002-6819.202306104",
+    "retrieved_utc": "2026-09-12T15:30:17.961883+00:00",
+    "error": "<HTTPError 404: 'Not Found'>"
+  },
+  {
+    "name": "wang_2023.crossref.json",
+    "url": "https://api.crossref.org/works/10.19540%2Fj.cnki.cjcmm.20230331.301",
+    "retrieved_utc": "2026-09-12T15:30:17.962879+00:00",
+    "error": "<HTTPError 429: 'Too Many Requests'>"
+  },
+  {
+    "name": "eymard_2000.crossref.json",
+    "url": "https://api.crossref.org/works/10.1016%2FS1570-8659%2800%2907005-8",
+    "retrieved_utc": "2026-09-12T15:30:17.963879+00:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1016%2FS1570-8659%2800%2907005-8",
+    "content_type": "application/json",
+    "bytes": 41280,
+    "sha256": "c661a43705f091a6a56b92abf38b9ea4bc644ac7093d305e88a9dc6df1f47ffa",
+    "saved_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\source_cache\\eymard_2000.crossref.json",
+    "metadata": {
+      "DOI": "10.1016/s1570-8659(00)07005-8",
+      "title": [
+        "Finite volume methods"
+      ],
+      "author": [
+        {
+          "given": "Robert",
+          "family": "Eymard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thierry",
+          "family": "Gallouët",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raphaèle",
+          "family": "Herbin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Handbook of Numerical Analysis",
+        "Solution of Equation in ℝn (Part 3), Techniques of Scientific Computing (Part 3)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "713-1018",
+      "publisher": "Elsevier",
+      "published": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000
+          ]
+        ]
+      },
+      "published-online": null,
+      "ISBN": [
+        "9780444503503"
+      ],
+      "URL": "https://doi.org/10.1016/s1570-8659(00)07005-8",
+      "type": "book-chapter"
+    }
+  },
+  {
+    "name": "shampine_1997.crossref.json",
+    "url": "https://api.crossref.org/works/10.1137%2FS1064827594276424",
+    "retrieved_utc": "2026-09-12T15:30:17.963879+00:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1137%2FS1064827594276424",
+    "content_type": "application/json",
+    "bytes": 8422,
+    "sha256": "20f1d56964c6df13f9d2fbbe1e134f4ceb4e1e84e934a37f964257904e3cea98",
+    "saved_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\source_cache\\shampine_1997.crossref.json",
+    "metadata": {
+      "DOI": "10.1137/s1064827594276424",
+      "title": [
+        "The MATLAB ODE Suite"
+      ],
+      "author": [
+        {
+          "given": "Lawrence F.",
+          "family": "Shampine",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark W.",
+          "family": "Reichelt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "SIAM Journal on Scientific Computing"
+      ],
+      "volume": "18",
+      "issue": "1",
+      "page": "1-22",
+      "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+      "published": {
+        "date-parts": [
+          [
+            1997,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1997,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2006,
+            7,
+            25
+          ]
+        ]
+      },
+      "ISBN": null,
+      "URL": "https://doi.org/10.1137/s1064827594276424",
+      "type": "journal-article"
+    }
+  },
+  {
+    "name": "mujumdar_2014.crossref.json",
+    "url": "https://api.crossref.org/works/10.1201%2Fb17208",
+    "retrieved_utc": "2026-09-12T15:30:17.964880+00:00",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.1201%2Fb17208",
+    "content_type": "application/json",
+    "bytes": 1348,
+    "sha256": "7cbbcdb0bf6f61005fec9ff64a6baefedfa271af1ad08b5f9559eb96df5a5000",
+    "saved_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\source_cache\\mujumdar_2014.crossref.json",
+    "metadata": {
+      "DOI": "10.1201/b17208",
+      "title": [
+        "Handbook of Industrial Drying"
+      ],
+      "author": null,
+      "editor": [
+        {
+          "given": "Arun S.",
+          "family": "Mujumdar",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "editor"
+            }
+          ]
+        }
+      ],
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "publisher": "CRC Press",
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            11
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            7,
+            11
+          ]
+        ]
+      },
+      "ISBN": [
+        "9780429169762"
+      ],
+      "URL": "https://doi.org/10.1201/b17208",
+      "type": "book"
+    }
+  },
+  {
+    "name": "wang_2023_publisher.pdf",
+    "url": "https://www.tcmjc.com/download/pdf?id=2758B0FBE5314A1ABD31D280D6B915B3",
+    "retrieved_utc": "2026-09-12T15:30:19.232664+00:00",
+    "status": 200,
+    "final_url": "https://www.tcmjc.com/download/pdf?id=2758B0FBE5314A1ABD31D280D6B915B3",
+    "content_type": null,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "valid_pdf": false
+  },
+  {
+    "name": "crank_1975_bath.pdf",
+    "url": "https://people.bath.ac.uk/ensdasr/PAPERS/Crank-The-Mathematics-of-Diffusion.pdf",
+    "retrieved_utc": "2026-09-12T15:30:19.233669+00:00",
+    "status": 200,
+    "final_url": "https://www.bath.ac.uk/",
+    "content_type": "text/html",
+    "bytes": 56946,
+    "sha256": "c0c50594e537863b47a9f47710b208397bc78ad3545abe4322053b6243061566",
+    "valid_pdf": false
+  },
+  {
+    "name": "eymard_author.pdf",
+    "url": "https://www.i2m.univ-amu.fr/perso/raphaele.herbin/PUBLI/bookevol.pdf",
+    "retrieved_utc": "2026-09-12T15:30:19.256548+00:00",
+    "status": 200,
+    "final_url": "https://www.i2m.univ-amu.fr/perso/raphaele.herbin/PUBLI/bookevol.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1999078,
+    "sha256": "ca82f25367c9ec82f89a3aa6878525c2142f2fb287fc53ad93a75ae4cd177b7f",
+    "saved_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\source_cache\\eymard_author.pdf",
+    "valid_pdf": true
+  },
+  {
+    "name": "mujumdar_preview.pdf",
+    "url": "https://api.pageplace.de/preview/DT0400.9781466596665_A24035542/preview-9781466596665_A24035542.pdf",
+    "retrieved_utc": "2026-09-12T15:30:19.284444+00:00",
+    "status": 200,
+    "final_url": "https://api.pageplace.de/preview/DT0400.9781466596665_A24035542/preview-9781466596665_A24035542.pdf",
+    "content_type": "application/pdf",
+    "bytes": 13472641,
+    "sha256": "68be7afc8f204f66960ffe7a1922a56c3f7a54891f98e19ff5f47da7b0f35c2b",
+    "saved_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\source_cache\\mujumdar_preview.pdf",
+    "valid_pdf": true
+  },
+  {
+    "name": "shampine_byu.pdf",
+    "url": "https://www.et.byu.edu/~beard/papers/library/MatlabOdeSuite.pdf",
+    "retrieved_utc": "2026-09-12T15:30:19.945970+00:00",
+    "status": 200,
+    "final_url": "https://www.et.byu.edu/~beard/papers/library/MatlabOdeSuite.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1974378,
+    "sha256": "6dc922d1df01c6dc866a46aef45db5b8e5bfb49d13049b20153ea3247f1814b2",
+    "saved_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\source_cache\\shampine_byu.pdf",
+    "valid_pdf": true
+  }
+]

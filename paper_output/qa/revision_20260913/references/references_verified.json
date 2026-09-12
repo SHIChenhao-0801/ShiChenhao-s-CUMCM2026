@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "checked_at_beijing_date": "2026-09-12",
+  "input_document": "D:/Document/数学建模/2026CUMCM/paper_output/paper/药材热湿耦合模型与干燥时间计算.docx",
+  "scope": "正文必要文献真实性、适用范围与交叉引用建议；未修改稿件或模型结果；不是团队人工签核",
+  "recommended_reference_order": ["wang2024", "wang2023", "mujumdar2014", "crank1975", "eymard2000", "byrne1975", "scipy_bdf"],
+  "references": [
+    {
+      "key": "wang2024", "number": 1,
+      "authors": ["王乐意", "李长河", "刘明政"], "authors_truncated": true,
+      "title": "中药材干燥技术与装备研究现状", "year": 2024,
+      "journal": "农业工程学报", "volume": "40", "issue": "2", "pages": "1-28",
+      "doi": "10.11975/j.issn.1002-6819.202306104", "isbn": null,
+      "bibliography": "[1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2): 1-28. DOI: 10.11975/j.issn.1002-6819.202306104.",
+      "primary_urls": ["https://nygcxb.ijournals.cn/nygcxb/article/abstract/20240201", "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/10.11975/j.issn.1002-6819.202306104.pdf"],
+      "verification_level": "刊方网页的书目与摘要已核；刊方PDF首面检索文本交叉核实；未声称全文通读",
+      "evidence": "刊方引用本文栏目及PDF第一页一致给出第一作者王乐意、40(2)、1-28和DOI；Crossref端点404不否认刊方明确的中文DOI。网页与PDF的末位完整作者存在不同读数，正文采用真实前三作者+等，避免扩大未核清内容。",
+      "supports": ["干燥是中药材初加工的重要环节", "干燥条件影响水分脱除速率和品质", "热风干燥属于所综述的常用技术"],
+      "does_not_support": ["所有热风干燥均按预热平衡/恒温二阶段划分", "本题模型预测数值准确率", "本题未测得的药效或用药安全结论"],
+      "corrections": {"first_author": "王乐毅 → 王乐意", "issue": "40(4) → 40(2)", "pages": "1-15 → 1-28"}
+    },
+    {
+      "key": "wang2023", "number": 2,
+      "authors": ["王晓辉", "王学成", "唐培渝", "伍志成", "伍振峰", "王雅琪", "刘振峰", "杨明"],
+      "title": "数值模拟仿真研究现状及其在中药干燥领域应用展望", "year": 2023,
+      "journal": "中国中药杂志", "volume": "48", "issue": "13", "pages": "3440-3447",
+      "doi": "10.19540/j.cnki.cjcmm.20230331.301", "pmid": "37474981", "isbn": null,
+      "bibliography": "[2] 王晓辉, 王学成, 唐培渝, 等. 数值模拟仿真研究现状及其在中药干燥领域应用展望[J]. 中国中药杂志, 2023, 48(13): 3440-3447. DOI: 10.19540/j.cnki.cjcmm.20230331.301.",
+      "primary_urls": ["https://www.tcmjc.com/download/pdf?id=2758B0FBE5314A1ABD31D280D6B915B3", "https://pubmed.ncbi.nlm.nih.gov/37474981/"],
+      "verification_level": "刊方PDF首面检索文本及PubMed书目/摘要已读；直接PDF下载返回空响应，未声称取得全文",
+      "evidence": "刊方检索到的PDF首面给出中文题名和8位中文作者；PubMed实际打开页面确认英文题名、8位作者拼音、2023 Jul、48(13):3440-3447与DOI。",
+      "supports": ["数值模拟可辅助理解和研究中药干燥过程", "比较工艺和设备、缩短研发周期、降低试错成本的一般背景"],
+      "does_not_support": ["本题具体热湿方程闭合或参数真实性", "实际烘干时间已由实验验证"]
+    },
+    {
+      "key": "mujumdar2014", "number": 3,
+      "authors": [], "editor": "Arun S. Mujumdar", "title": "Handbook of Industrial Drying", "year": 2014,
+      "edition": "4th", "publisher": "CRC Press", "place": "Boca Raton", "pages_used": "13-15", "doi": "10.1201/b17208",
+      "isbn": {"print": "9781466596658", "pdf": "9781466596665", "crossref": "9780429169762"},
+      "bibliography": "[3] MUJUMDAR A S, ed. Handbook of industrial drying[M]. 4th ed. Boca Raton: CRC Press, 2014. DOI: 10.1201/b17208.",
+      "primary_urls": ["https://www.routledge.com/Handbook-of-Industrial-Drying/Mujumdar/p/book/9781466596658", "https://api.crossref.org/works/10.1201/b17208", "https://api.pageplace.de/preview/DT0400.9781466596665_A24035542/preview-9781466596665_A24035542.pdf"],
+      "verification_level": "出版社书目及注册元数据已核；书籍公开预览的题名页、版权页、正文13-15页已实际提取阅读",
+      "evidence": "公开预览PDF第44-46页对应正文13-15页，1.3.1说明材料平衡含水率，1.3.2说明等温线及吸附/解吸滞后；版权页标2015但版本日期20140605，Crossref及出版社发行日期2014-07-11，故采用2014发行年。",
+      "supports": ["材料平衡含水率由材料与环境达到水分平衡定义", "环境相对湿度与材料平衡含水率通过等温线联系", "等温线受材料和温度影响", "干基和湿基换算的一般定义"],
+      "does_not_support": ["Ceq=Y∞这个本题假设", "由气相kg/kg直接等同药材kg/kg", "本题指定药材吸附等温线已知或已标定"]
+    },
+    {
+      "key": "crank1975", "number": 4,
+      "authors": ["John Crank"], "title": "The Mathematics of Diffusion", "year": 1975,
+      "edition": "2nd", "publisher": "Clarendon Press", "place": "Oxford", "pages": "viii, 414", "pages_used": "2-5; 79-80; 107", "doi": null, "isbn": "9780198533443",
+      "bibliography": "[4] CRANK J. The mathematics of diffusion[M]. 2nd ed. Oxford: Clarendon Press, 1975.",
+      "primary_urls": ["https://ndlsearch.ndl.go.jp/books/R100000074-IALIS_QQ00223544", "https://biblio.neel.cnrs.fr/index.php?id=8642&lang_sel=fr_FR&lvl=notice_display", "https://staff.bath.ac.uk/ensdasr/PAPERS/Crank-The-Mathematics-of-Diffusion.pdf"],
+      "reproduction_url": "https://studylib.net/doc/26136814/crank-the-mathematics-of-diffusion",
+      "verification_level": "国家图书馆书目已打开核实；原书公开OCR转录中相应正文已读；Bath原扫描当前重定向首页，未声称本轮取得原版整书PDF",
+      "evidence": "日本国会图书馆和CNRS馆藏均给出作者、第二版、Oxford:Clarendon Press,1975和ISBN。Bath原书检索文本与OCR转录题名页一致。原书1.2-1.3给出Fick通量和守恒；5.3.4(79-80页)给出圆柱表面传质边界和Bessel展开；7.2.2(107页)使用积分浓度势并在脚注指出Kirchhoff来源。",
+      "supports": ["Fick扩散本构与局部守恒建立扩散方程", "常系数圆柱Robin边界Bessel级数方法", "将浓度相关扩散系数积分为浓度势的Kirchhoff思路"],
+      "does_not_support": ["本文所有变温变物性及收缩模型已得到该书验证", "本文混合T/C界面通量无离散误差", "全文解析求解非线性PDE", "本题真实有效密度及边界闭合"]
+    },
+    {
+      "key": "eymard2000", "number": 5,
+      "authors": ["Robert Eymard", "Thierry Gallouët", "Raphaèle Herbin"],
+      "title": "Finite volume methods", "year": 2000, "container": "Handbook of Numerical Analysis", "volume": "7", "pages": "713-1018", "editors": ["P. G. Ciarlet", "J. L. Lions"], "publisher": "North-Holland / Elsevier", "place": "Amsterdam",
+      "doi": "10.1016/S1570-8659(00)07005-8", "isbn": "9780444503503",
+      "bibliography": "[5] EYMARD R, GALLOUËT T, HERBIN R. Finite volume methods[M]//CIARLET P G, LIONS J L, eds. Handbook of numerical analysis. Vol. 7. Amsterdam: North-Holland, 2000: 713-1018. DOI: 10.1016/S1570-8659(00)07005-8.",
+      "primary_urls": ["https://www.sciencedirect.com/science/chapter/handbook/abs/pii/S1570865900070058", "https://api.crossref.org/works/10.1016/S1570-8659(00)07005-8", "https://www.i2m.univ-amu.fr/perso/raphaele.herbin/PUBLI/bookevol.pdf"],
+      "verification_level": "出版社摘要/元数据及Crossref原始JSON已核；作者2019更新稿题名页和控制体守恒、谐均值段落已实际阅读",
+      "evidence": "ScienceDirect和Crossref都给713-1018；作者2019更新稿封面保留713-1020旧写法，本条采用当前刊方数据并记录差异。作者更新稿PDF第7页述共同面反向同值通量，第23页推导串联导热系数的调和平均。",
+      "supports": ["控制体积分和共用界面通量的局部守恒结构", "全域求和时内部通量相消", "均匀网格上导热面系数调和平均的串联阻力解释"],
+      "does_not_support": ["直接将一般收敛定理套用于本题全部非线性收缩离散", "证明本文数值解没有任何误差"]
+    },
+    {
+      "key": "byrne1975", "number": 6,
+      "authors": ["G. D. Byrne", "A. C. Hindmarsh"],
+      "title": "A Polyalgorithm for the Numerical Solution of Ordinary Differential Equations", "year": 1975,
+      "journal": "ACM Transactions on Mathematical Software", "volume": "1", "issue": "1", "pages": "71-96", "doi": "10.1145/355626.355636", "isbn": null,
+      "bibliography": "[6] BYRNE G D, HINDMARSH A C. A polyalgorithm for the numerical solution of ordinary differential equations[J]. ACM Transactions on Mathematical Software, 1975, 1(1): 71-96. DOI: 10.1145/355626.355636.",
+      "primary_urls": ["https://dl.acm.org/doi/10.1145/355626.355636", "https://api.crossref.org/works/10.1145/355626.355636", "https://sundials.readthedocs.io/en/v7.1.0/References.html", "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html"],
+      "verification_level": "ACM注册至Crossref的原始书目元数据已核；作者参与的软件项目SUNDIALS书目与SciPy方法依据交叉核；未取得论文全文或Edge/ACM GUI核实截图",
+      "evidence": "Crossref实际返回ACM、两作者、1975-03、1(1):71-96和正确DOI；SciPy官方BDF文档将其列为一般框架依据。主代理报告当前Edge/ACM界面访问被Computer Use URL识别自动保护阻断，因此未取得GUI证据；未绕过保护，不把已有元数据核实夸大为GUI全文阅读。",
+      "supports": ["BDF作为刚性初值问题隐式多步积分框架", "变阶方法的一般出处"],
+      "does_not_support": ["本题具体解析Jacobian每一项正确", "本机实测耗时保证", "通用无条件收敛保证"],
+      "rejected_doi": "10.1145/355656.355662不是本条DOI，不能采用"
+    },
+    {
+      "key": "scipy_bdf", "number": 7,
+      "authors": ["The SciPy community"], "title": "scipy.integrate.BDF", "year": null,
+      "document_type": "EB/OL", "version_displayed": "SciPy v1.18.0 Manual", "doi": null, "isbn": null, "accessed_date": "2026-09-12",
+      "bibliography": "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html.",
+      "primary_urls": ["https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html"],
+      "verification_level": "官方API正文已实际打开阅读",
+      "evidence": "官方正文说明隐式BDF、阶数1-5、自适应阶数、准定步长和NDF精度改进；jac接口允许函数返回稀疏矩阵；dense_output提供局部插值。网页当前版本不等于本题实际安装版本，后者须由本地运行记录证明。",
+      "supports": ["所用SciPy实现的阶数1-5与隐式方法性质", "提供解析稀疏Jacobian的接口", "局部误差容差和连续查询机制的一般解释"],
+      "does_not_support": ["本题生产代码或GUI已成功复现", "容差就是最终物理预测准确率", "指定网格耗时保证"]
+    }
+  ],
+  "citation_placements": [
+    {"paragraph_index": 10, "section": "1.1问题背景", "reference_keys": ["wang2024", "wang2023"], "recommendation": "将[1]紧跟药材干燥工艺影响品质与脱水效率的句子；把二阶段说法限定为本题工况；[2]紧跟数值模拟辅助工艺分析句。"},
+    {"paragraph_index": 43, "section": "5.1.1建模思路与统一口径", "reference_keys": ["mujumdar2014"], "recommendation": "用明确的平衡含水率/等温线定义替换末句‘材料平衡含水率的一般概念见文献’，只把[3]引在一般定义后；不把本题Ceq=Y∞闭合包装成文献结论。"},
+    {"paragraph_index": 49, "section": "5.1.2变量定义与公式推导", "reference_keys": ["crank1975"], "recommendation": "Crank提供常系数圆柱Bessel级数解句末插入[4]；或Fick/局部守恒与圆柱基准合并一句后插入[4]。"},
+    {"paragraph_index": 58, "section": "5.1.3求解算法", "reference_keys": ["eymard2000"], "recommendation": "‘内部面在全域求和时严格相消’句末插入[5]，不要移到声称本文整个方法收敛的句子。"},
+    {"paragraph_index": 59, "section": "5.1.3求解算法", "reference_keys": ["crank1975"], "recommendation": "‘参照浓度势变换，引入Kirchhoff势’后插入[4]；本题Ei闭式及A(T)分离由自身推导，不说出自该书。"},
+    {"paragraph_index": 62, "section": "5.1.3求解算法", "reference_keys": ["byrne1975", "scipy_bdf"], "recommendation": "隐式BDF推进句引[6]；SciPy实现1-5阶、解析稀疏Jacobian接口及连续输出句引[7]。原来悬空的[6]应依据最终新书目改为真实交叉引用。"},
+    {"paragraph_index": 75, "section": "5.1.5数值检验", "reference_keys": ["crank1975"], "recommendation": "可在常系数圆柱特征函数框架后重复引[4]；本题时变边界卷积推导和1.80e-6实际差值是本题证据，不归给文献。"},
+    {"paragraph_index": 245, "section": "附录B.4", "reference_keys": ["scipy_bdf"], "recommendation": "SciPy BDF 1-5阶实现句后重复引[7]，保持正文与附录引用一致。"}
+  ],
+  "verified_but_not_recommended_additional": [
+    {"key": "shampine1997", "bibliography": "SHAMPINE L F, REICHELT M W. The MATLAB ODE suite[J]. SIAM Journal on Scientific Computing, 1997, 18(1):1-22. DOI:10.1137/S1064827594276424.", "evidence": "SIAM刊方元数据和Crossref已核；BYU提供扫描PDF可取得但本地没有文本层，未全文OCR。可解释SciPy准定步长/NDF来源，但正文目前没有独立论述NDF，故不为数量加入。", "url": "https://epubs.siam.org/doi/abs/10.1137/S1064827594276424"}
+  ],
+  "boundary_notes": [
+    "正文模型假设、题给物性、冻结数值、网格对照结果不由外部引用替代本题证据。",
+    "未使用登录凭据，未购买全文，未使用绕过访问权限的方法。",
+    "跨引用建议使用Word书签/REF超链接字段；文献序号与公式序号分开维护。",
+    "主代理实际尝试Edge/ACM界面核实时被Computer Use URL识别自动保护阻断；GUI证据未取得，元数据及官方方法文档核实已完成，没有继续访问承诺。"
+  ]
+}

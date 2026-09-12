@@ -1,0 +1,296 @@
+{
+  "checked_utc": "2026-09-12T15:52:34.401730+00:00",
+  "document": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+  "document_sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+  "pdf": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\药材热湿耦合模型与干燥时间计算_文献公式修订版.pdf",
+  "pdf_sha256": "f1f2933a39c3a3d21b3f47255ea4aaab1d1ebfdade817e2b833ac580f6369030",
+  "scope": "独立核查最终v4全部正文引文与7条书目支持范围；实际逐张查看v2渲染第1—10页，v3仅第3页变化并已实际重看，其余9页PNG哈希与实际看过的v2完全相同。v4第1—10页与v3的PNG哈希均完全相同。第11—31页由其他代理负责；不代替用户人工审查。",
+  "previous_document_sha256": "11bdfd7bbd23203c0921617809dc4e2ea65d0bcbfc8976d19a6d73026f93c006",
+  "citation_result": "PASS",
+  "visual_result": "PASS",
+  "citation_fields": [
+    {
+      "paragraph_index": 10,
+      "target": "bib_001",
+      "field": "REF bib_001 \\h",
+      "visible": "1",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。"
+    },
+    {
+      "paragraph_index": 10,
+      "target": "bib_002",
+      "field": "REF bib_002 \\h",
+      "visible": "2",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。数值模拟可用于分析药材干燥过程中的温度、水分分布及工艺条件的影响，为实验设计和参数选择提供参考[2]。本题给定的烘干过程分为预热平衡与恒温干燥两个阶段，本文据此研究圆柱形药材的径向热湿传递及烘干时间。"
+    },
+    {
+      "paragraph_index": 43,
+      "target": "bib_003",
+      "field": "REF bib_003 \\h",
+      "visible": "3",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。附件1的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记该观测数值为 ，基线取 ，作为表面传质的等效平衡值。这一数值映射是本文的边界假设；文献中的一般平衡关系不构成该映射的标定依据。若进一步将  解释为空气湿度比，其参考质量也需另作说明。"
+    },
+    {
+      "paragraph_index": 49,
+      "target": "bib_004",
+      "field": "REF bib_004 \\h",
+      "visible": "4",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick扩散定律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，用于检验简化条件下的数值实现。"
+    },
+    {
+      "paragraph_index": 58,
+      "target": "bib_005",
+      "field": "REF bib_005 \\h",
+      "visible": "5",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "设归一化坐标 ，在  上划分  个等长区间，节点  包含中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体，记其无量纲体积权重为 。有限体积法先计算相邻控制体共用的面通量，再由净通量建立收支；内部面在全域求和时成对相消[5]。该处理可直接落实轴心零通量条件。"
+    },
+    {
+      "paragraph_index": 59,
+      "target": "bib_004",
+      "field": "REF bib_004 \\h",
+      "visible": "4",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "对于随含水率显著变化的扩散系数，参照浓度相关扩散方程的积分变换方法[4]，构造Kirchhoff浓度势。将题给系数写为 ，取"
+    },
+    {
+      "paragraph_index": 62,
+      "target": "bib_006",
+      "field": "REF bib_006 \\h",
+      "visible": "6",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。"
+    },
+    {
+      "paragraph_index": 62,
+      "target": "bib_007",
+      "field": "REF bib_007 \\h",
+      "visible": "7",
+      "target_exists": true,
+      "display_matches": true,
+      "paragraph": "细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组的BDF方法进行时间积分[6]。实际使用SciPy的BDF实现及其稀疏雅可比接口[7]。状态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分器的内部步长与1 s或60 s的输出间隔分别设置。"
+    }
+  ],
+  "citation_counts": {
+    "bib_001": 1,
+    "bib_002": 1,
+    "bib_003": 1,
+    "bib_004": 2,
+    "bib_005": 1,
+    "bib_006": 1,
+    "bib_007": 1
+  },
+  "bibliography_checks": [
+    {
+      "number": 1,
+      "actual": "[1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2): 1-28. DOI: 10.11975/j.issn.1002-6819.202306104.",
+      "matches_verified": true
+    },
+    {
+      "number": 2,
+      "actual": "[2] 王晓辉, 王学成, 唐培渝, 等. 数值模拟仿真研究现状及其在中药干燥领域应用展望[J]. 中国中药杂志, 2023, 48(13): 3440-3447. DOI: 10.19540/j.cnki.cjcmm.20230331.301.",
+      "matches_verified": true
+    },
+    {
+      "number": 3,
+      "actual": "[3] MUJUMDAR A S, ed. Handbook of industrial drying[M]. 4th ed. Boca Raton: CRC Press, 2014. DOI: 10.1201/b17208.",
+      "matches_verified": true
+    },
+    {
+      "number": 4,
+      "actual": "[4] CRANK J. The mathematics of diffusion[M]. 2nd ed. Oxford: Clarendon Press, 1975.",
+      "matches_verified": true
+    },
+    {
+      "number": 5,
+      "actual": "[5] EYMARD R, GALLOUËT T, HERBIN R. Finite volume methods[M]//CIARLET P G, LIONS J L, eds. Handbook of numerical analysis. Vol. 7. Amsterdam: North-Holland, 2000: 713-1018. DOI: 10.1016/S1570-8659(00)07005-8.",
+      "matches_verified": true
+    },
+    {
+      "number": 6,
+      "actual": "[6] BYRNE G D, HINDMARSH A C. A polyalgorithm for the numerical solution of ordinary differential equations[J]. ACM Transactions on Mathematical Software, 1975, 1(1): 71-96. DOI: 10.1145/355626.355636.",
+      "matches_verified": true
+    },
+    {
+      "number": 7,
+      "actual": "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html.",
+      "matches_verified": true
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-1.png",
+      "sha256": "9fe7ee661accaa4964492e0c5f0b5775bfdc16fa6dd42bffa51d2a612f9da7bd",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "9fe7ee661accaa4964492e0c5f0b5775bfdc16fa6dd42bffa51d2a612f9da7bd",
+      "v3_sha256": "9fe7ee661accaa4964492e0c5f0b5775bfdc16fa6dd42bffa51d2a612f9da7bd",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看整页摘要，标题、段落、关键词及页脚完整，无文字截断或叠压。"
+    },
+    {
+      "page": 2,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-2.png",
+      "sha256": "2c8f14cf79819e53d4053fb1b705e100ec058524e7c5276ab5a8cec09ee92196",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "2c8f14cf79819e53d4053fb1b705e100ec058524e7c5276ab5a8cec09ee92196",
+      "v3_sha256": "2c8f14cf79819e53d4053fb1b705e100ec058524e7c5276ab5a8cec09ee92196",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看背景与四问任务；[1]、[2]可读，二阶段明确为本题工况。页末2.1起段延续至下页正常。"
+    },
+    {
+      "page": 3,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-3.png",
+      "sha256": "e90dc8fbacceb13a97c4f74e42dbf21cb53eff252eb310431777e9d94a1f3333",
+      "actually_viewed": true,
+      "viewed_render": "v3",
+      "v2_sha256": "c31bcbaecd171935c7c4ff94e72491e68c3fa6ee7214c877e7b361268a0a89e7",
+      "v3_sha256": "e90dc8fbacceb13a97c4f74e42dbf21cb53eff252eb310431777e9d94a1f3333",
+      "pixel_file_identical_to_viewed_v2": false,
+      "pixel_file_identical_to_v3": true,
+      "finding": "v2实际查看后发现“烘焙”措辞，主代理在v3改为“烘干”。已再次实际打开v3第3页核实修复、正文和材料坐标显示完整；无视觉阻断。"
+    },
+    {
+      "page": 4,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-4.png",
+      "sha256": "b7a4ba21c2b093f899fb05637659d1031f86f792447a02755fadae7c77a81fea",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "b7a4ba21c2b093f899fb05637659d1031f86f792447a02755fadae7c77a81fea",
+      "v3_sha256": "b7a4ba21c2b093f899fb05637659d1031f86f792447a02755fadae7c77a81fea",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看假设与符号表前半，列对齐、底边完整，长表跨页到第5页。"
+    },
+    {
+      "page": 5,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-5.png",
+      "sha256": "975f7392a8ca31d4b5940f5d9a74e8d3ee006056f43413b44666a45f313089d0",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "975f7392a8ca31d4b5940f5d9a74e8d3ee006056f43413b44666a45f313089d0",
+      "v3_sha256": "975f7392a8ca31d4b5940f5d9a74e8d3ee006056f43413b44666a45f313089d0",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看符号表续表（表头重复）、5.1.1及公式(1)，无截断或遮挡。"
+    },
+    {
+      "page": 6,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-6.png",
+      "sha256": "0db27c062465ba8488717b9979b77aea53fdca7ac46a0b64a3baf1b7abd8335d",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "0db27c062465ba8488717b9979b77aea53fdca7ac46a0b64a3baf1b7abd8335d",
+      "v3_sha256": "0db27c062465ba8488717b9979b77aea53fdca7ac46a0b64a3baf1b7abd8335d",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看有效热容量及气固闭合说明，引用[3]、[4]正常；公式(2)—(5)和相应式号可读。"
+    },
+    {
+      "page": 7,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-7.png",
+      "sha256": "2499bc1dbf26fe7e7651b00a6878e7e21534f2dec552f4842d2cf89ef8008917",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "2499bc1dbf26fe7e7651b00a6878e7e21534f2dec552f4842d2cf89ef8008917",
+      "v3_sha256": "2499bc1dbf26fe7e7651b00a6878e7e21534f2dec552f4842d2cf89ef8008917",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看公式(6)、(7)与有限体积/Kirchhoff/BDF说明；[5]、[4]、[6]、[7]可读，未把离散误差写成精确求解。"
+    },
+    {
+      "page": 8,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-8.png",
+      "sha256": "a2ba0f1103eb238841d982371f84ec075cac687e4d7634d1023ca7e2941b525c",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "a2ba0f1103eb238841d982371f84ec075cac687e4d7634d1023ca7e2941b525c",
+      "v3_sha256": "a2ba0f1103eb238841d982371f84ec075cac687e4d7634d1023ca7e2941b525c",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看结果表1与表2，列标题、7行数据、边线均完整，无表格截列。"
+    },
+    {
+      "page": 9,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-9.png",
+      "sha256": "1e05d661a0e2e2385938c7c1673a42cce78eab285999aab49b75a7c0eb843768",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "1e05d661a0e2e2385938c7c1673a42cce78eab285999aab49b75a7c0eb843768",
+      "v3_sha256": "1e05d661a0e2e2385938c7c1673a42cce78eab285999aab49b75a7c0eb843768",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看结果解释、黄色绘图位置1、数值检验与问题二开头及公式(8)，无叠压或截断。"
+    },
+    {
+      "page": 10,
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\paper_revision_20260913\\v4\\page-10.png",
+      "sha256": "851d3d41a9a5ef6a8ce1f477842ff0dd204873a927cc33af1a1d658de31b1d84",
+      "actually_viewed": true,
+      "viewed_render": "v2",
+      "v2_sha256": "851d3d41a9a5ef6a8ce1f477842ff0dd204873a927cc33af1a1d658de31b1d84",
+      "v3_sha256": "851d3d41a9a5ef6a8ce1f477842ff0dd204873a927cc33af1a1d658de31b1d84",
+      "pixel_file_identical_to_viewed_v2": true,
+      "pixel_file_identical_to_v3": true,
+      "finding": "实际查看公式(9)、(10)、延拓假设、黄色绘图位置2与算法段落，公式及式号完整可读。"
+    }
+  ],
+  "support_scope_review": [
+    {
+      "citations": "[1],[2]",
+      "result": "恰当支持研究背景；二阶段是题给工况独立陈述。"
+    },
+    {
+      "citations": "[3]",
+      "result": "仅支持平衡含水率和等温线概念；Ceq=Y∞另行明确为本文假设。"
+    },
+    {
+      "citations": "[4]",
+      "result": "支持常系数圆柱Bessel框架及浓度积分势；本文Ei公式和温度因子分离由自身推导，未声称全PDE精确。"
+    },
+    {
+      "citations": "[5]",
+      "result": "支持共享面通量的守恒结构，不直接声称全套非线性移动域收敛定理已满足。"
+    },
+    {
+      "citations": "[6]",
+      "result": "支持刚性方程的BDF一般积分框架。"
+    },
+    {
+      "citations": "[7]",
+      "result": "支持SciPy BDF及稀疏Jacobian接口；没有引用文档证明本题实际耗时或实验精度。"
+    }
+  ],
+  "resolved_notes": [
+    {
+      "page": 3,
+      "paragraph_index": 22,
+      "previous_text": "整个烘焙过程",
+      "corrected_text": "整个烘干过程",
+      "status": "v3实际重看已修复"
+    }
+  ],
+  "nonblocking_notes": [],
+  "blocking_findings": [],
+  "limitations": [
+    "未修改DOCX或任何模型/数值输出。",
+    "REF超链接字段按OOXML检查且PDF编号显示正确；本子任务未在Word GUI点击引用跳转。",
+    "科学数值有效性及后续页面不属于这10页视觉通过的证明范围。"
+  ],
+  "media_count": 0
+}

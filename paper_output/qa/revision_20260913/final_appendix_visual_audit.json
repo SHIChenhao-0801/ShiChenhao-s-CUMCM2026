@@ -1,0 +1,83 @@
+{
+  "version": "v4",
+  "status": "PASS",
+  "docxSha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+  "pdfSha256": "f1f2933a39c3a3d21b3f47255ea4aaab1d1ebfdade817e2b833ac580f6369030",
+  "review_method": "All appendix pages 23-31 were actually viewed in v2; each final v4 PNG was rehashed and is byte-identical to that viewed evidence.",
+  "pages": [
+    {
+      "page": 23,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-23.png",
+      "sha256": "b6430d7905028495a1f6a3164ab7f319a1f745f7dfe14b845f294778d092e6a3",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "Appendix A starts; (22)(23) conservation and density inequality legible, references correct."
+    },
+    {
+      "page": 24,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-24.png",
+      "sha256": "77d4553685baba7107a0d86946ddaa2d04b46e421abd92255a193535872b3417",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "(24) moving-coordinate hats and R dots visible; (25)-(27) control-volume fractions and indices fit."
+    },
+    {
+      "page": 25,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-25.png",
+      "sha256": "3aa4cb64d5dab994c9fac448eb5ac3759bc700611594ea3d7a3d87d358a4a977",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "(28)-(31) Kirchhoff and Jacobian derivatives, bars, primes and T dot legible; no collisions."
+    },
+    {
+      "page": 26,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-26.png",
+      "sha256": "2c749a7edd295c758eac42519926b2b930f6836901585c0fd8a881be7464e900",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "(32)-(34) conservation and BDF/Newton equations readable; spacing and page edge clear."
+    },
+    {
+      "page": 27,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-27.png",
+      "sha256": "1332555fe69a2999c4135aca0b4e52de6c15b0f81d4f2fbddad8e1e095c4eb5c",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "(35)-(37) Bessel coefficients, convolution T-infinity dot, candidate ceiling visible; no clipping."
+    },
+    {
+      "page": 28,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-28.png",
+      "sha256": "37ea2efb840451a1f9b10e99ef8c92b9c9a38c0b3e31207b1b38955b033aee4f",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "C4 continuation and boundary-factor conditions legible; D1 code complete."
+    },
+    {
+      "page": 29,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-29.png",
+      "sha256": "4a83327b64b1b323c6cf5b99aaec2fcf482b8ac655fa52e6f8fba49e75175807",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "D2 and D3 code legible; long expressions wrap naturally without truncation."
+    },
+    {
+      "page": 30,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-30.png",
+      "sha256": "133c65133b4fffca8c87269c727c9d5566484a392a42c8415f617a70f61e3159",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "D4 and D5 code complete with visible indentation; last break fits above footer."
+    },
+    {
+      "page": 31,
+      "image": "tmp/cache/paper_revision_20260913/v4/page-31.png",
+      "sha256": "5425d065d25e90861c334624c9a1043b202bb20d98ee010210094ef190ea0205",
+      "status": "PASS",
+      "verification": "Byte-identical to actually viewed v2 page; final file SHA256 recomputed.",
+      "observation": "D6 code complete; long exception string wraps naturally, no text loss."
+    }
+  ],
+  "blocking_findings": [],
+  "original_visual_review": "paper_output/qa/revision_20260913/v2_appendix_visual_audit.json"
+}

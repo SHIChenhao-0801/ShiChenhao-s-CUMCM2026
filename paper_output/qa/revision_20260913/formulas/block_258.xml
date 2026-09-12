@@ -1,0 +1,274 @@
+<w:p xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpsCustomData="http://www.wps.cn/officeDocument/2013/wpsCustomData" w14:paraId="72540B7E">
+  <w:pPr>
+    <w:snapToGrid w:val="0"/>
+    <w:spacing w:line="300" w:lineRule="auto"/>
+    <w:ind w:firstLine="482"/>
+    <w:jc w:val="both"/>
+  </w:pPr>
+  <w:r>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/>
+      <w:color w:val="000000"/>
+      <w:sz w:val="24"/>
+    </w:rPr>
+    <w:t xml:space="preserve">积分在 4 h 处分段，以前段接受末态作为后段初态；此前最大步长 2 s，此后 120 s。分量尺度取 </w:t>
+  </w:r>
+  <m:oMath>
+    <m:sSub>
+      <m:sSubPr/>
+      <m:e>
+        <m:r>
+          <m:rPr>
+            <m:nor/>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+            <w:b w:val="0"/>
+            <w:i w:val="0"/>
+            <w:iCs w:val="0"/>
+          </w:rPr>
+          <m:t>s</m:t>
+        </m:r>
+      </m:e>
+      <m:sub>
+        <m:r>
+          <m:rPr/>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>j</m:t>
+        </m:r>
+      </m:sub>
+    </m:sSub>
+    <m:r>
+      <m:rPr>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+      </w:rPr>
+      <m:t>=</m:t>
+    </m:r>
+    <m:sSub>
+      <m:sSubPr/>
+      <m:e>
+        <m:r>
+          <m:rPr>
+            <m:nor/>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+            <w:b w:val="0"/>
+            <w:i w:val="0"/>
+            <w:iCs w:val="0"/>
+          </w:rPr>
+          <m:t>atol</m:t>
+        </m:r>
+      </m:e>
+      <m:sub>
+        <m:r>
+          <m:rPr/>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>j</m:t>
+        </m:r>
+      </m:sub>
+    </m:sSub>
+    <m:r>
+      <m:rPr>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+      </w:rPr>
+      <m:t>+</m:t>
+    </m:r>
+    <m:r>
+      <m:rPr>
+        <m:nor/>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+      </w:rPr>
+      <m:t>rtol</m:t>
+    </m:r>
+    <m:r>
+      <m:rPr>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+      </w:rPr>
+      <m:t>|</m:t>
+    </m:r>
+    <m:sSub>
+      <m:sSubPr/>
+      <m:e>
+        <m:r>
+          <m:rPr/>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>y</m:t>
+        </m:r>
+      </m:e>
+      <m:sub>
+        <m:r>
+          <m:rPr/>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>j</m:t>
+        </m:r>
+      </m:sub>
+    </m:sSub>
+    <m:r>
+      <m:rPr>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+      </w:rPr>
+      <m:t>|</m:t>
+    </m:r>
+  </m:oMath>
+  <w:r>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/>
+      <w:color w:val="000000"/>
+      <w:sz w:val="24"/>
+    </w:rPr>
+    <w:t xml:space="preserve">，其中 </w:t>
+  </w:r>
+  <m:oMath>
+    <m:r>
+      <m:rPr>
+        <m:nor/>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+        <w:b w:val="0"/>
+        <w:i w:val="0"/>
+        <w:iCs w:val="0"/>
+      </w:rPr>
+      <m:t>rtol</m:t>
+    </m:r>
+    <m:r>
+      <m:rPr>
+        <m:sty m:val="p"/>
+      </m:rPr>
+      <w:rPr>
+        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+      </w:rPr>
+      <m:t>=</m:t>
+    </m:r>
+    <m:sSup>
+      <m:sSupPr/>
+      <m:e>
+        <m:r>
+          <m:rPr>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>10</m:t>
+        </m:r>
+      </m:e>
+      <m:sup>
+        <m:r>
+          <m:rPr>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>−10</m:t>
+        </m:r>
+      </m:sup>
+    </m:sSup>
+  </m:oMath>
+  <w:r>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/>
+      <w:color w:val="000000"/>
+      <w:sz w:val="24"/>
+    </w:rPr>
+    <w:t xml:space="preserve">，温度绝对容差为 </w:t>
+  </w:r>
+  <m:oMath>
+    <m:sSup>
+      <m:sSupPr/>
+      <m:e>
+        <m:r>
+          <m:rPr>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>10</m:t>
+        </m:r>
+      </m:e>
+      <m:sup>
+        <m:r>
+          <m:rPr>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>−10</m:t>
+        </m:r>
+      </m:sup>
+    </m:sSup>
+  </m:oMath>
+  <w:r>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/>
+      <w:color w:val="000000"/>
+      <w:sz w:val="24"/>
+    </w:rPr>
+    <w:t xml:space="preserve"> K，水分与累计失水为 </w:t>
+  </w:r>
+  <m:oMath>
+    <m:sSup>
+      <m:sSupPr/>
+      <m:e>
+        <m:r>
+          <m:rPr>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>10</m:t>
+        </m:r>
+      </m:e>
+      <m:sup>
+        <m:r>
+          <m:rPr>
+            <m:sty m:val="p"/>
+          </m:rPr>
+          <w:rPr>
+            <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/>
+          </w:rPr>
+          <m:t>−12</m:t>
+        </m:r>
+      </m:sup>
+    </m:sSup>
+  </m:oMath>
+  <w:r>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/>
+      <w:color w:val="000000"/>
+      <w:sz w:val="24"/>
+    </w:rPr>
+    <w:t>。这些是局部控制参数，不是连续解误差上界。BDF 稠密输出在题定时刻查询，1 s、60 s 输出间隔不等于内部步长；磁盘保存原始双精度多项式系数，只改变存储方式。</w:t>
+  </w:r>
+</w:p>

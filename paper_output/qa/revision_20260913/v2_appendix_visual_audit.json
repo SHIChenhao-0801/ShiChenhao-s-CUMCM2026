@@ -1,0 +1,74 @@
+{
+  "version": "v2",
+  "status": "PASS",
+  "review_method": "All nine full-resolution rendered page images actually viewed using view_image; OOXML cross-check for math semantics.",
+  "docxSha256": "11bdfd7bbd23203c0921617809dc4e2ea65d0bcbfc8976d19a6d73026f93c006",
+  "pdfSha256": "195216e0d5fd7d0653763548bbdddc5133ea745a2570eadde97092053a1e3246",
+  "pages": [
+    {
+      "page": 23,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-23.png",
+      "sha256": "b6430d7905028495a1f6a3164ab7f319a1f745f7dfe14b845f294778d092e6a3",
+      "status": "PASS",
+      "observation": "Appendix A starts; (22)(23) conservation and density inequality legible, references correct."
+    },
+    {
+      "page": 24,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-24.png",
+      "sha256": "77d4553685baba7107a0d86946ddaa2d04b46e421abd92255a193535872b3417",
+      "status": "PASS",
+      "observation": "(24) moving-coordinate hats and R dots visible; (25)-(27) control-volume fractions and indices fit."
+    },
+    {
+      "page": 25,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-25.png",
+      "sha256": "3aa4cb64d5dab994c9fac448eb5ac3759bc700611594ea3d7a3d87d358a4a977",
+      "status": "PASS",
+      "observation": "(28)-(31) Kirchhoff and Jacobian derivatives, bars, primes and T dot legible; no collisions."
+    },
+    {
+      "page": 26,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-26.png",
+      "sha256": "2c749a7edd295c758eac42519926b2b930f6836901585c0fd8a881be7464e900",
+      "status": "PASS",
+      "observation": "(32)-(34) conservation and BDF/Newton equations readable; spacing and page edge clear."
+    },
+    {
+      "page": 27,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-27.png",
+      "sha256": "1332555fe69a2999c4135aca0b4e52de6c15b0f81d4f2fbddad8e1e095c4eb5c",
+      "status": "PASS",
+      "observation": "(35)-(37) Bessel coefficients, convolution T-infinity dot, candidate ceiling visible; no clipping."
+    },
+    {
+      "page": 28,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-28.png",
+      "sha256": "37ea2efb840451a1f9b10e99ef8c92b9c9a38c0b3e31207b1b38955b033aee4f",
+      "status": "PASS",
+      "observation": "C4 continuation and boundary-factor conditions legible; D1 code complete."
+    },
+    {
+      "page": 29,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-29.png",
+      "sha256": "4a83327b64b1b323c6cf5b99aaec2fcf482b8ac655fa52e6f8fba49e75175807",
+      "status": "PASS",
+      "observation": "D2 and D3 code legible; long expressions wrap naturally without truncation."
+    },
+    {
+      "page": 30,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-30.png",
+      "sha256": "133c65133b4fffca8c87269c727c9d5566484a392a42c8415f617a70f61e3159",
+      "status": "PASS",
+      "observation": "D4 and D5 code complete with visible indentation; last break fits above footer."
+    },
+    {
+      "page": 31,
+      "image": "tmp/cache/paper_revision_20260913/v2/page-31.png",
+      "sha256": "5425d065d25e90861c334624c9a1043b202bb20d98ee010210094ef190ea0205",
+      "status": "PASS",
+      "observation": "D6 code complete; long exception string wraps naturally, no text loss."
+    }
+  ],
+  "blocking_findings": [],
+  "render_scope": "Only appendix pages 23-31; root/other agent review pages 1-22."
+}

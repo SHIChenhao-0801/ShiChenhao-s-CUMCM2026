@@ -1,0 +1,59 @@
+{
+  "status": "PASS_FOR_REQUESTED_PAPER_AND_FIGURE_WORK",
+  "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
+  "docxSha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
+  "sourceUnchanged": true,
+  "render": {
+    "manifest": "v4_render_manifest.json",
+    "pageCount": 31,
+    "abstractPages": 1,
+    "bodyIncludingAIAndReferencesPages": 21,
+    "appendixPages": 9,
+    "allPagesVisuallyReviewed": true,
+    "changedFromV2": [
+      3,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19
+    ],
+    "unchangedFromV2": 24
+  },
+  "equations": {
+    "numbered": 37,
+    "body": 21,
+    "appendix": 16,
+    "equationREF": 39,
+    "citationREF": 8,
+    "bibliography": 7,
+    "wrongReferencesRepaired": 13
+  },
+  "evidence": [
+    "final_semantic_audit.json",
+    "final_appendix_visual_audit.json",
+    "final_root_visual_audit.json",
+    "references/final_citation_visual_review.json"
+  ],
+  "figureZip": "paper_output/figures/六图核查包_20260913.zip",
+  "figureZipSha256": "5f66e58aab4854fb929f42745e2eec247d74c2a53928c2145c3d10c1765d08bb",
+  "figureZipCRC": "PASS",
+  "figureFormats": {
+    "png": 6,
+    "pdf": 6,
+    "svg": 6
+  },
+  "figuresInserted": false,
+  "productionRecomputed": false,
+  "wordGuiCrossReferenceClickTest": false,
+  "newVisualStudioReproduction": false,
+  "humanReview": "PENDING_USER_REVIEW",
+  "wechat": {
+    "recipient": "乐乐",
+    "status": "UNSENT_TOOL_BLOCKED",
+    "explicitUserAuthorization": true,
+    "reason": "Computer Use自动审批审查无法可靠识别当前Windows浏览器URL，终止本轮桌面控制；用户再次授权后只读重试仍失败。",
+    "messagePrepared": "论文的参考文献核查、正文修改、公式校对与编号整理，以及六张图绘制已完成。修订稿和独立图像已准备好，图像暂未插入论文，等待核查。"
+  }
+}
