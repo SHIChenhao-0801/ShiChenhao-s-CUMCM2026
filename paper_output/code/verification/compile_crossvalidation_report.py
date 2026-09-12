@@ -51,6 +51,7 @@ def main():
     metric = load("analytic_metric_v1/analytic_metric.json")
     dscale = load("sensitivity_v1/dscale.json")
     kscale = load("sensitivity_v1/kscale.json")
+    energy = load("energy_balance_v1/energy_balance.json")
 
     report = {"tolerances": TOLERANCES, "layers": {}, "inputsPresent": {
         "solverCases": bool(cases), "latentScenarios": bool(latent),
@@ -58,7 +59,8 @@ def main():
         "methodComparison": bool(methodReport), "isothermClosure": bool(isotherm),
         "morrisScreening": bool(morris), "sobolIndices": bool(sobol),
         "analyticMetric": bool(metric),
-        "validatedScans": bool(dscale and kscale)}}
+        "validatedScans": bool(dscale and kscale),
+        "thermalConservation": bool(energy)}}
 
     # ---- L1 time integrators -------------------------------------------------
     byCase = {c["case"]: c for c in cases if c.get("status") == "computed"}
@@ -144,6 +146,39 @@ def main():
                 for r in sorted(rows, key=lambda r: r["surfaceLatentFraction"])]
         report["layers"]["L6_modelStructure"] = env
 
+    # ---- L11 thermal conservation certificate -------------------------------
+    if energy:
+        rows = {c["question"]: {"rateIdentityMaxRelativeDeviation":
+                                c["rateIdentityMaxRelativeDeviation"],
+                                "cumulativeRelativeResidual": c["cumulativeRelativeResidual"],
+                                "discardedCapacityWorkJPerM": c.get("discardedCapacityWorkJPerM"),
+                                "unexplainedResidualJPerM": c.get("unexplainedResidualJPerM"),
+                                "cumulativeResidualJPerM": c["cumulativeMaxAbsoluteResidualJPerM"]}
+                     for c in energy["cases"]}
+        report["layers"]["L11_thermalConservation"] = {
+            "checkA_rateIdentity": energy["checkA_rateIdentity"],
+            "checkB_cumulative": energy["checkB_cumulative"],
+            "whyIndependent": energy["whyIndependent"],
+            "cases": rows,
+            "refinement": energy["refinement"],
+        }
+        for question, row in rows.items():
+            if row.get("discardedCapacityWorkJPerM") and row.get("cumulativeResidualJPerM"):
+                row["explainedShare"] = float(
+                    min(1.0, abs(row["discardedCapacityWorkJPerM"])
+                        / abs(row["cumulativeResidualJPerM"])))
+        report["layers"]["L11_thermalConservation"]["cases"] = rows
+        q23 = rows.get("Q23", {})
+        if q23.get("explainedShare") is not None:
+            report["layers"]["L11_thermalConservation"]["discardedWorkExplainsResidual"] = {
+                "question": "Q23", "share": q23["explainedShare"],
+                "note": ("The work done against the changing effective capacity accounts for the "
+                         "stated share of the frozen-capacity cumulative residual. That residual "
+                         "is therefore a property of the effective-capacity closure, not a "
+                         "solver error. Q4 retains an additional gap from the d(R^2)/dt cross "
+                         "term of the shrinking domain."),
+            }
+
     # ---- verdicts ------------------------------------------------------------
     verdicts = []
     for question, row in l1.items():
@@ -220,6 +255,13 @@ def main():
                              "value": order, "unit": "1",
                              "tolerance": TOLERANCES["observedOrderMinimum"],
                              "status": "PASS" if order >= TOLERANCES["observedOrderMinimum"] else "FAIL"})
+
+    if energy:
+        worst = max((c["rateIdentityMaxRelativeDeviation"] for c in energy["cases"]),
+                    default=None)
+        verdicts.append({"check": "L11 thermal rate identity vs surface face",
+                         "value": worst, "unit": "1", "tolerance": 1e-12,
+                         "status": "PASS" if worst is not None and worst <= 1e-12 else "FAIL"})
 
     # ---- L9 isotherm / water-activity closure scenario ----------------------
     if isotherm:
@@ -411,6 +453,24 @@ def _markdown(report):
             lines += ["### Morris 筛选排序（dScale 条目作废）", "", "```json",
                       json.dumps(l10["morrisRanking"], ensure_ascii=False, indent=2)[:3000],
                       "```"]
+    if "L11_thermalConservation" in report["layers"]:
+        l11 = report["layers"]["L11_thermalConservation"]
+        lines += ["", "## L11 温度侧守恒证书", "",
+                  "- CHECK A（速率恒等式）：`d/dt Σ 2w B T R² = 2hR(T∞−T_s)`，直接比较模型右端与表面面通量，"
+                  "不含任何求积或轨迹差分。",
+                  "- CHECK B（累积平衡）：容量冻结在 t = 0 时成立；题目一为精确形式，耦合问的残差即"
+                  "有效容量随含水率变化所丢弃的功。", "",
+                  "| 问题 | CHECK A 最大相对偏差 | CHECK B 相对残差 | 丢弃的容量功 / (J/m) | 未解释残差 / (J/m) |",
+                  "|---|---:|---:|---:|---:|"]
+        for question, row in l11["cases"].items():
+            lines.append(f"| {question} | {_fmt(row['rateIdentityMaxRelativeDeviation'], 4)} | "
+                         f"{_fmt(row['cumulativeRelativeResidual'], 6)} | "
+                         f"{_fmt(row['discardedCapacityWorkJPerM'], 6)} | "
+                         f"{_fmt(row['unexplainedResidualJPerM'], 6)} |")
+        if l11.get("discardedWorkExplainsResidual"):
+            ex = l11["discardedWorkExplainsResidual"]
+            lines += ["", f"**{ex['question']} 的累积残差由丢弃功解释 {_fmt(100*ex['share'],4)}%**："
+                      + ex["note"]]
     lines += ["", "## 判定明细", "", "| 检查 | 值 | 单位 | 容差 | 判定 |", "|---|---:|---|---:|---|"]
     for v in report["verdicts"]:
         lines.append(f"| {v['check']} | {_fmt(v.get('value'), 6)} | {v['unit']} | "

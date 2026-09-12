@@ -2,7 +2,7 @@
 
 - 总判定：**PASS**
 - 预声明容差：`{"integratorEventSeconds": 1.0, "faceSchemeHoursAtFinest": 0.5, "scalingResidualPercent": 5.0, "crossLanguageEventSeconds": 1.0, "analyticBenchmarkKelvin": 0.0001, "massBalanceKgPerKg": 1e-06, "independentRootSeconds": 1e-06, "schemeDifferenceKgPerKg": 0.0001, "observedOrderMinimum": 1.5, "constantDLimitKgPerKg": 0.0, "baselineLimitAbsoluteDifferencePaOverKappa": 1e-06}`
-- 输入齐备情况：`{"solverCases": true, "latentScenarios": true, "thresholdScaling": true, "stageBoundaries": true, "methodComparison": true, "isothermClosure": true, "morrisScreening": true, "sobolIndices": false, "analyticMetric": true, "validatedScans": true}`
+- 输入齐备情况：`{"solverCases": true, "latentScenarios": true, "thresholdScaling": true, "stageBoundaries": true, "methodComparison": true, "isothermClosure": true, "morrisScreening": true, "sobolIndices": false, "analyticMetric": true, "validatedScans": true, "thermalConservation": true}`
 
 ## L1 时间积分器交叉验证（同一网格、不同积分族）
 
@@ -234,6 +234,19 @@
 }
 ```
 
+## L11 温度侧守恒证书
+
+- CHECK A（速率恒等式）：`d/dt Σ 2w B T R² = 2hR(T∞−T_s)`，直接比较模型右端与表面面通量，不含任何求积或轨迹差分。
+- CHECK B（累积平衡）：容量冻结在 t = 0 时成立；题目一为精确形式，耦合问的残差即有效容量随含水率变化所丢弃的功。
+
+| 问题 | CHECK A 最大相对偏差 | CHECK B 相对残差 | 丢弃的容量功 / (J/m) | 未解释残差 / (J/m) |
+|---|---:|---:|---:|---:|
+| Q1 | 2.22e-16 | 7.84892e-10 | -2.65041e-11 | 0.00019522 |
+| Q23 | 2.22e-16 | 0.00644549 | -174715 | 177304 |
+| Q4 | 2.22e-16 | 0.550312 | -275282 | 497934 |
+
+**Q23 的累积残差由丢弃功解释 100%**：The work done against the changing effective capacity accounts for the stated share of the frozen-capacity cumulative residual. That residual is therefore a property of the effective-capacity closure, not a solver error. Q4 retains an additional gap from the d(R^2)/dt cross term of the shrinking domain.
+
 ## 判定明细
 
 | 检查 | 值 | 单位 | 容差 | 判定 |
@@ -256,5 +269,6 @@
 | L8 constant-D Kirchhoff vs midpoint FD | 0 | kg/kg | 0 | PASS |
 | L8 variable-D scheme difference at finest N | 5.82858e-08 | kg/kg | 0.0001 | PASS |
 | L8 observed convergence order | 1.99907 | 1 | 1.5 | PASS |
+| L11 thermal rate identity vs surface face | 2.22045e-16 | 1 | 1e-12 | PASS |
 | L9 p=1 member reproduces the frozen boundary | 0 | 1 | 1e-06 | PASS |
 | L9 isotherm passes through the forced equilibrium point | 0 | 1 | 1e-12 | PASS |

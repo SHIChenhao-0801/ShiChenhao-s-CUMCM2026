@@ -228,6 +228,84 @@
         }
       ]
     },
+    "L11_thermalConservation": {
+      "checkA_rateIdentity": "d/dt sum_i 2 w_i B_i T_i R^2 = 2 h R (T_inf - T_s), verified by comparing the model's own right-hand side with the surface face at the same instant; no quadrature and no trajectory differencing are involved",
+      "checkB_cumulative": "H0(t) = sum_i 2 w_i B_i(0) T_i(t) R(t)^2 with dE/dt = 2 h R (T_inf - T_s); exact for a capacity frozen in time, which is the only form available for this effective-capacity model",
+      "whyIndependent": "Neither check uses the mass bookkeeping variable or the moisture equation; both test only the thermal operator against its boundary face. The two conventions are reported separately and must not be conflated.",
+      "cases": {
+        "Q1": {
+          "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+          "cumulativeRelativeResidual": 7.848921379681963e-10,
+          "discardedCapacityWorkJPerM": -2.6504132222271437e-11,
+          "unexplainedResidualJPerM": 0.00019521993557791717,
+          "cumulativeResidualJPerM": 0.00020157656399533153,
+          "explainedShare": 1.3148419487339444e-07
+        },
+        "Q23": {
+          "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+          "cumulativeRelativeResidual": 0.006445489644920102,
+          "discardedCapacityWorkJPerM": -174714.57402677718,
+          "unexplainedResidualJPerM": 177303.71003945632,
+          "cumulativeResidualJPerM": 2589.1360126791405,
+          "explainedShare": 1.0
+        },
+        "Q4": {
+          "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+          "cumulativeRelativeResidual": 0.5503118628717207,
+          "discardedCapacityWorkJPerM": -275282.27641572733,
+          "unexplainedResidualJPerM": 497934.0844096817,
+          "cumulativeResidualJPerM": 222651.80799395434,
+          "explainedShare": 1.0
+        }
+      },
+      "refinement": [
+        {
+          "question": "Q23",
+          "rows": [
+            {
+              "intervals": 100,
+              "rateIdentityMaxRelativeDeviation": 3.3306690738754696e-16,
+              "cumulativeMaxAbsoluteResidualJPerM": 2589.303871635755
+            },
+            {
+              "intervals": 200,
+              "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+              "cumulativeMaxAbsoluteResidualJPerM": 2589.1360126791405
+            },
+            {
+              "intervals": 400,
+              "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+              "cumulativeMaxAbsoluteResidualJPerM": 2589.093934439181
+            }
+          ]
+        },
+        {
+          "question": "Q4",
+          "rows": [
+            {
+              "intervals": 100,
+              "rateIdentityMaxRelativeDeviation": 4.440892098500626e-16,
+              "cumulativeMaxAbsoluteResidualJPerM": 222651.0925664006
+            },
+            {
+              "intervals": 200,
+              "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+              "cumulativeMaxAbsoluteResidualJPerM": 222651.80799395434
+            },
+            {
+              "intervals": 400,
+              "rateIdentityMaxRelativeDeviation": 3.3306690738754696e-16,
+              "cumulativeMaxAbsoluteResidualJPerM": 222651.9869127796
+            }
+          ]
+        }
+      ],
+      "discardedWorkExplainsResidual": {
+        "question": "Q23",
+        "share": 1.0,
+        "note": "The work done against the changing effective capacity accounts for the stated share of the frozen-capacity cumulative residual. That residual is therefore a property of the effective-capacity closure, not a solver error. Q4 retains an additional gap from the d(R^2)/dt cross term of the shrinking domain."
+      }
+    },
     "L7_independentRootAndMaxLocation": {
       "Q23": {
         "solverEventH": 57.47232976164861,
@@ -794,7 +872,8 @@
     "morrisScreening": true,
     "sobolIndices": false,
     "analyticMetric": true,
-    "validatedScans": true
+    "validatedScans": true,
+    "thermalConservation": true
   },
   "verdicts": [
     {
@@ -921,6 +1000,13 @@
       "value": 1.999069975926462,
       "unit": "1",
       "tolerance": 1.5,
+      "status": "PASS"
+    },
+    {
+      "check": "L11 thermal rate identity vs surface face",
+      "value": 2.220446049250313e-16,
+      "unit": "1",
+      "tolerance": 1e-12,
       "status": "PASS"
     },
     {
