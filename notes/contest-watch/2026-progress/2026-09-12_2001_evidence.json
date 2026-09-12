@@ -1,0 +1,1196 @@
+{
+  "kind": "scheduled_progress_readonly_evidence_snapshot",
+  "planned_at": "2026-09-12T18:00:00+08:00",
+  "started_at": "2026-09-12T20:01:48+08:00",
+  "root": "D:\\Document\\数学建模\\2026CUMCM",
+  "new_model_run": false,
+  "snapshots": [
+    {
+      "path": "paper_output/qa/workflow_guard_report.json",
+      "sha256": "e193bc8c5a2bcc2c92094a4fb9a2f029ad37cb2987f3cec96e66af0fa6289572",
+      "bytes": 1359,
+      "captured_at": "2026-09-12T20:05:47.9342956+08:00",
+      "status": "PASS",
+      "data": {
+        "schema_version": "1.0",
+        "generated_by": "paper-workflow-orchestrator/scripts/workflow_guard.py",
+        "generated_at": "2026-09-12T19:59:45",
+        "target_step": "S6",
+        "status": "PASS",
+        "steps": [
+          {
+            "step": "S0",
+            "name": "准入预检",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S1",
+            "name": "审题分析",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S2",
+            "name": "模型路线",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S3",
+            "name": "数据与图表计划",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S4",
+            "name": "建模代码",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S5",
+            "name": "结果证据",
+            "status": "PASS",
+            "failures": []
+          },
+          {
+            "step": "S6",
+            "name": "证据门禁",
+            "status": "PASS",
+            "failures": []
+          }
+        ],
+        "failures": [],
+        "mode": "skill",
+        "skill": "paper-formal-writer",
+        "required_step": "S6",
+        "handoff": "证据门禁 PASS 后才能进入正式成稿；未 PASS 时只能生成草稿或待写清单。",
+        "next_action": "允许启动 paper-formal-writer；完成后必须回到 paper-workflow-orchestrator 判断下一步。"
+      }
+    },
+    {
+      "path": "paper_output/context/workflow_memory.json",
+      "sha256": "99b5e1165d9452b31fae7bf7b221bd03b3c8a258287ec24c17a9d7536c5ecbca",
+      "bytes": 5762,
+      "captured_at": "2026-09-12T20:05:47.9368054+08:00",
+      "status": "PASS",
+      "data": {
+        "schema_version": "1.0",
+        "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
+        "generated_at": "2026-09-12T19:29:04",
+        "status": "PASS",
+        "root": "D:\\Document\\数学建模\\2026CUMCM",
+        "workflow": {
+          "status": "INCOMPLETE",
+          "mode": "status",
+          "current_step": "S6",
+          "next_step": "S7",
+          "recommended_skill": "paper-formal-writer",
+          "next_action": "执行写作计划、章节审计、必要的局部修复、确定性合并与全文统一改写；S7 PASS 后再生成正式 Word。",
+          "completed_steps": [
+            "S0",
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "failures": [
+            "S7: writing_plan.json 输入已变化：paper_output/qa/evidence_gate_report.json",
+            "S7: authoring_state.json 输入已变化：paper_output/qa/evidence_gate_report.json"
+          ]
+        },
+        "inputs": {
+          "summary": {
+            "file_count": 33,
+            "role_counts": {
+              "problem_statement": 7,
+              "raw_data": 8,
+              "result_template": 16,
+              "problem_statement_unreadable": 1,
+              "unsupported": 1
+            },
+            "problem_statement_count": 7,
+            "raw_data_count": 8,
+            "result_template_count": 16,
+            "requires_user_confirmation": true
+          },
+          "role_counts": {
+            "problem_statement": 7,
+            "raw_data": 8,
+            "result_template": 16,
+            "problem_statement_unreadable": 1,
+            "unsupported": 1
+          },
+          "problem_statements": [
+            "problem_files/CUMCM2026Problems/A题/A题.pdf",
+            "problem_files/CUMCM2026Problems/B题/B题.pdf",
+            "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+            "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+            "problem_files/CUMCM2026Problems/C题/C题.pdf",
+            "problem_files/CUMCM2026Problems/D题/D题.pdf",
+            "problem_files/CUMCM2026Problems/E题/E题.pdf"
+          ],
+          "raw_data": [
+            "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx"
+          ],
+          "result_templates": [
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+            "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+            "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+            "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+            "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx"
+          ]
+        },
+        "runs": {
+          "status": "PASS",
+          "run_count": 1,
+          "scripts": [
+            "paper_output/code/modeling/run_modeling.py"
+          ],
+          "returncodes": [
+            0
+          ]
+        },
+        "artifacts": {
+          "workflow_guard_report": {
+            "path": "paper_output/qa/workflow_guard_report.json",
+            "exists": true,
+            "bytes": 1802,
+            "status": "INCOMPLETE"
+          },
+          "preflight_report": {
+            "path": "paper_output/preflight_report.json",
+            "exists": true,
+            "bytes": 28833,
+            "status": "PASS"
+          },
+          "input_manifest": {
+            "path": "paper_output/input_manifest.json",
+            "exists": true,
+            "bytes": 29392
+          },
+          "load_report": {
+            "path": "paper_output/data_cleaned/load_report.json",
+            "exists": true,
+            "bytes": 8196,
+            "status": "PASS"
+          },
+          "run_manifest": {
+            "path": "paper_output/results/run_manifest.json",
+            "exists": true,
+            "bytes": 31524,
+            "status": "PASS"
+          },
+          "evidence_gate_report": {
+            "path": "paper_output/qa/evidence_gate_report.json",
+            "exists": true,
+            "bytes": 2028,
+            "status": "PASS"
+          },
+          "authoring_state": {
+            "path": "paper_output/context/authoring_state.json",
+            "exists": true,
+            "bytes": 2282,
+            "status": "PASS"
+          },
+          "writing_plan": {
+            "path": "paper_output/plan/writing_plan.json",
+            "exists": true,
+            "bytes": 2042,
+            "status": "PASS"
+          },
+          "format_check_report": {
+            "path": "paper_output/format_check_report.json",
+            "exists": true,
+            "bytes": 10155,
+            "status": "FAIL"
+          }
+        },
+        "latest_statuses": {
+          "preflight": "PASS",
+          "load_report": "PASS",
+          "run_manifest": "PASS",
+          "evidence_gate": "PASS",
+          "authoring": "PASS",
+          "format_check": "FAIL"
+        },
+        "blockers": [
+          "S7: writing_plan.json 输入已变化：paper_output/qa/evidence_gate_report.json",
+          "S7: authoring_state.json 输入已变化：paper_output/qa/evidence_gate_report.json"
+        ]
+      }
+    },
+    {
+      "path": "paper_output/context/authoring_state.json",
+      "sha256": "f696115612532790824d68b1498ee4c8cbd24ee54c960a74eae2a73c56a0c73b",
+      "bytes": 3411,
+      "captured_at": "2026-09-12T20:05:47.9375652+08:00",
+      "status": "PLANNED",
+      "data": {
+        "assembled": {
+          "path": "paper_output/drafts/assembled_draft.md",
+          "sha256": null,
+          "status": "PENDING"
+        },
+        "blocking_reason": null,
+        "created_at_utc": "2026-09-12T12:01:43Z",
+        "final": {
+          "path": "paper_output/final_paper_source.md",
+          "sha256": null,
+          "status": "PENDING"
+        },
+        "input_hashes": {
+          "paper_output/plan/writing_plan.json": "dd4d4fd4bb334e107436a32b5c8b32b89be54b17921442c815d3136c1905b12f"
+        },
+        "mode": "section",
+        "producer_role": "paper-formal-writer/authoring-state",
+        "schema_version": "2.2",
+        "sections": {
+          "1": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/1.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "2": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/2.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "3": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/3.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "4": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/4.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "5": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/5.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "6": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/6.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "7": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/7.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "8": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/8.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "abstract": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/abstract.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          },
+          "appendix": {
+            "approved_sha256": null,
+            "attempts": 0,
+            "issues": [],
+            "last_attempt_sha256": null,
+            "last_issue_signature": null,
+            "path": "paper_output/drafts/sections/appendix.md",
+            "same_issue_count": 0,
+            "status": "PENDING"
+          }
+        },
+        "status": "PLANNED"
+      }
+    },
+    {
+      "path": "paper_output/format_check_report.json",
+      "sha256": "c237ac356c38d3d6a378517bf0984226d8be7f2e72e6f7b313d62d1bf111926b",
+      "bytes": 10155,
+      "captured_at": "2026-09-12T20:05:47.9382390+08:00",
+      "status": "FAIL",
+      "data": {
+        "schema_version": "1.0",
+        "generated_by": "paper-formal-writer/scripts/check_paper_format.py",
+        "generated_at": "2026-09-12T18:16:52",
+        "status": "FAIL",
+        "delivery_mode": "unknown",
+        "acceptance_scope": "NOT_ACCEPTED",
+        "source": "paper_output/final_paper_source.md",
+        "docx": "paper_output/final_paper.docx",
+        "counts": {
+          "cjk": 17600,
+          "nonspace": 56397,
+          "content": 41013
+        },
+        "target_words": {
+          "min": 10000,
+          "max": 22000
+        },
+        "question_reports": [
+          {
+            "question_id": "Q1",
+            "status": "FAIL",
+            "failures": [
+              "缺少 5.1.1 建模思路",
+              "缺少 5.1.2 变量定义与公式推导",
+              "缺少 5.1.3 求解算法",
+              "缺少 5.1.4 结果分析",
+              "缺少 5.1.5 模型检验或灵敏度分析",
+              "5.1 缺少 Step 1/Step 2 形式的算法步骤"
+            ]
+          },
+          {
+            "question_id": "Q2",
+            "status": "FAIL",
+            "failures": [
+              "缺少 5.2.1 建模思路",
+              "缺少 5.2.2 变量定义与公式推导",
+              "缺少 5.2.3 求解算法",
+              "缺少 5.2.4 结果分析",
+              "缺少 5.2.5 模型检验或灵敏度分析",
+              "5.2 缺少 Step 1/Step 2 形式的算法步骤"
+            ]
+          },
+          {
+            "question_id": "Q3",
+            "status": "FAIL",
+            "failures": [
+              "缺少 5.3.1 建模思路",
+              "缺少 5.3.2 变量定义与公式推导",
+              "缺少 5.3.3 求解算法",
+              "缺少 5.3.4 结果分析",
+              "缺少 5.3.5 模型检验或灵敏度分析",
+              "5.3 缺少 Step 1/Step 2 形式的算法步骤"
+            ]
+          },
+          {
+            "question_id": "Q4",
+            "status": "FAIL",
+            "failures": [
+              "缺少 5.4.1 建模思路",
+              "缺少 5.4.2 变量定义与公式推导",
+              "缺少 5.4.3 求解算法",
+              "缺少 5.4.4 结果分析",
+              "缺少 5.4.5 模型检验或灵敏度分析",
+              "5.4 缺少 Step 1/Step 2 形式的算法步骤"
+            ]
+          }
+        ],
+        "figure_count": 6,
+        "table_count": 7,
+        "paper_table_count": 7,
+        "missing_figures": [
+          "fig_A_environment",
+          "fig_A_radius",
+          "fig_q1_profiles",
+          "fig_q2_profiles",
+          "fig_q3_drying",
+          "fig_q4_drying"
+        ],
+        "missing_tables": [
+          "q1_paper_temperature",
+          "q1_paper_moisture",
+          "q2_paper_temperature",
+          "q2_paper_moisture",
+          "q3_paper_moisture",
+          "q4_paper_moisture",
+          "q4_paper_radius"
+        ],
+        "source_heading_count": 135,
+        "input_hashes": {
+          "paper_output/final_paper_source.md": "8cc82ae8f0df64cd20b12dee374bbd46111240b5b5b6e0ee21298f7bdf6eabb2",
+          "paper_output/final_paper.docx": "0230656ace0496877f512b6d74a1d8626754680d7bce206b2c6bc67799b2e4a0",
+          "paper_output/plan/paper_outline.json": "6c517cd201b549722893b262b172930d3fa93cef4ad89992adee64a9e3a0d20c",
+          "paper_output/figure_index.json": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c",
+          "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b",
+          "paper_output/qa/evidence_gate_report.json": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e",
+          "paper_output/context/authoring_state.json": "006d2a4b88f7f2618dfe83b601f16f195ba44b9ccee5e79c8815c5ef9142ffcd",
+          "paper_output/plan/writing_plan.json": "e4bfce1d182d82cc3e63265d618d3811fd0978572b1bd4b95c689d22138a6edc"
+        },
+        "citation_qa": {
+          "bibliography_entry_count": 14,
+          "body_citation_count": 3,
+          "body_citation_ids": [
+            0,
+            1
+          ],
+          "uncited_bibliography_ids": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "unknown_body_citation_ids": [
+            0
+          ]
+        },
+        "duplicate_paragraphs": [],
+        "formula_qa": {
+          "status": "FAIL",
+          "source_formula_count": 767,
+          "source_display_formula_count": 78,
+          "native_omml_count": 744,
+          "native_display_omml_count": 0,
+          "failures": [
+            "Word 原生公式数量不足：744 < 767。禁止用普通文本冒充公式。"
+          ],
+          "warnings": []
+        },
+        "docx_structure": {
+          "exists": true,
+          "package_ok": true,
+          "paragraph_count": 496,
+          "table_count": 111,
+          "table_cell_count": 1827,
+          "empty_table_count": 3,
+          "image_count": 11,
+          "inline_shape_count": 11,
+          "heading_count": 0,
+          "sample_headings": [],
+          "nonspace_text_chars": 29203,
+          "native_omml_count": 744,
+          "display_omml_count": 0,
+          "math_text_chars": 6749,
+          "text_preview": "2026 年高教社杯全国大学生数学建模竞赛\nA 题　药材的烘干问题\n摘要\n本文针对长 25 cm、半径 2 cm 的圆柱形药材,建立轴对称一维径向热湿耦合偏微分方程模型:傅里叶导热定律描述热量传递,干基菲克扩散本构描述水分迁移,由质量守恒导出含水率演化方程;第四问的收缩几何用材料坐标变换映射为固定计算域。空间离散用守恒型节点对偶有限体积与 Kirchhoff 浓度势(精确积分强非线性含水率),时间推进用变阶变步长隐式 BDF/NDF 与解析稀疏 Jacobian,达标时刻由空"
+        },
+        "visual_qa": {
+          "status": "FAIL",
+          "failures": [
+            "Word 中没有可识别标题样式，标题结构可能未正确写入。",
+            "No Word heading styles were detected while markdown headings exist",
+            "DOCX contains empty tables: 3"
+          ],
+          "warnings": []
+        },
+        "render_qa": {
+          "mode": "required",
+          "status": "FAIL",
+          "libreoffice": "D:\\Document\\数学建模\\tools\\libreoffice\\app\\program\\soffice.com",
+          "pdf": "paper_output/qa/rendered/final_paper.pdf",
+          "page_count": 38,
+          "extracted_text_chars": 40741,
+          "returncode": 0,
+          "stdout": "Could not find platform independent libraries <prefix>\nconvert D:\\Document\\��ѧ��ģ\\2026CUMCM\\paper_output\\final_paper.docx as a Writer document -> D:\\Document\\��ѧ��ģ\\2026CUMCM\\paper_output\\qa\\rendered\\final_paper.pdf using filter : writer_pdf_Export\n",
+          "pdf_sha256": "3fc1a19ead1b5d8ea6117020264ee3976c4c31adb59d170cf893cf97441c1ebe",
+          "pdf_bytes": 2810089,
+          "text_preview": "1\n2026 年高教社杯全国大学生数学建模竞赛\nA 题　药材的烘干问题\n摘要\n本文针对长 25 cm、半径 2 cm 的圆柱形药材,建立轴对称一维径向热湿耦合偏微分方程模型:傅里\n叶导热定律描述热量传递,干基菲克扩散本构描述水分迁移,由质量守恒导出含水率演化方程;第四问的收\n缩几何用材料坐标变换映射为固定计算域。空间离散用守恒型节点对偶有限体积与 Kirchhoff 浓度势\n(精确积分强非线性含水率),时间推进用变阶变步长隐式 BDF/NDF 与解析稀疏 Jacobian,达"
+        },
+        "failures": [
+          "S7 写作门禁未通过：authoring state schema_version is not 2.2",
+          "S7 写作门禁未通过：missing delivery scope; rerun prepare_authoring.py",
+          "S7 写作门禁未通过：writing plan envelope is not Standard 2.2 PASS",
+          "正文引用了参考文献表中不存在的编号：[0]",
+          "参考文献表存在未在正文引用的条目：[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]",
+          "missing delivery scope; rerun prepare_authoring.py",
+          "缺少正式论文结构：3 模型假设",
+          "缺少正式论文结构：5 模型的建立与求解",
+          "缺少正式论文结构：6 模型检验",
+          "缺少正式论文结构：7 模型评价",
+          "缺少正式论文结构：8 参考文献",
+          "缺少 5.1.1 建模思路",
+          "缺少 5.1.2 变量定义与公式推导",
+          "缺少 5.1.3 求解算法",
+          "缺少 5.1.4 结果分析",
+          "缺少 5.1.5 模型检验或灵敏度分析",
+          "5.1 缺少 Step 1/Step 2 形式的算法步骤",
+          "缺少 5.2.1 建模思路",
+          "缺少 5.2.2 变量定义与公式推导",
+          "缺少 5.2.3 求解算法",
+          "缺少 5.2.4 结果分析",
+          "缺少 5.2.5 模型检验或灵敏度分析",
+          "5.2 缺少 Step 1/Step 2 形式的算法步骤",
+          "缺少 5.3.1 建模思路",
+          "缺少 5.3.2 变量定义与公式推导",
+          "缺少 5.3.3 求解算法",
+          "缺少 5.3.4 结果分析",
+          "缺少 5.3.5 模型检验或灵敏度分析",
+          "5.3 缺少 Step 1/Step 2 形式的算法步骤",
+          "缺少 5.4.1 建模思路",
+          "缺少 5.4.2 变量定义与公式推导",
+          "缺少 5.4.3 求解算法",
+          "缺少 5.4.4 结果分析",
+          "缺少 5.4.5 模型检验或灵敏度分析",
+          "5.4 缺少 Step 1/Step 2 形式的算法步骤",
+          "figure_index.json 中的图片未在正文引用：fig_A_environment",
+          "figure_index.json 中的图片未在正文引用：fig_A_radius",
+          "figure_index.json 中的图片未在正文引用：fig_q1_profiles",
+          "figure_index.json 中的图片未在正文引用：fig_q2_profiles",
+          "figure_index.json 中的图片未在正文引用：fig_q3_drying",
+          "figure_index.json 中的图片未在正文引用：fig_q4_drying",
+          "table_index.json 中的表格未在正文引用：q1_paper_temperature",
+          "table_index.json 中的表格未在正文引用：q1_paper_moisture",
+          "table_index.json 中的表格未在正文引用：q2_paper_temperature",
+          "table_index.json 中的表格未在正文引用：q2_paper_moisture",
+          "table_index.json 中的表格未在正文引用：q3_paper_moisture",
+          "table_index.json 中的表格未在正文引用：q4_paper_moisture",
+          "table_index.json 中的表格未在正文引用：q4_paper_radius",
+          "Word 中没有可识别标题样式，标题结构可能未正确写入。",
+          "No Word heading styles were detected while markdown headings exist",
+          "DOCX contains empty tables: 3",
+          "Word 原生公式数量不足：744 < 767。禁止用普通文本冒充公式。",
+          "渲染 PDF 无法读取：ValueError: missing delivery scope; rerun prepare_authoring.py",
+          "missing delivery scope; rerun prepare_authoring.py"
+        ],
+        "warnings": [
+          "正文有效字数超过建议上限：41013 > 22000"
+        ]
+      }
+    },
+    {
+      "path": "paper_output/qa/portability_20260912/audit_summary.json",
+      "sha256": "b24c7f86db7bb0231b163a0f739222cdf2c7ea17393cfe1b84a32d12b41d90d5",
+      "bytes": 15713,
+      "captured_at": "2026-09-12T20:05:47.9390798+08:00",
+      "status": "FAIL",
+      "data": {
+        "schemaVersion": "1.0",
+        "createdAtUtc": "2026-09-12T19:20:18.849408+08:00",
+        "status": "FAIL",
+        "verdict": "CURRENT_SUBMISSION_NOT_INDEPENDENTLY_RUNNABLE",
+        "scope": "Current submission code packaging, dependencies and startup/input portability",
+        "archive": {
+          "path": "paper_output/submission/支撑材料/A题_支撑材料.zip",
+          "bytes": 13254253,
+          "sha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91"
+        },
+        "coreDependenciesCleanVenv": "PASS",
+        "pythonSyntax": "55/55 PASS (static only)",
+        "cleanVenvCases": [
+          {
+            "name": "environment",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "-c",
+              "import sys,json,site,importlib.metadata as m; print(json.dumps({'executable':sys.executable,'version':sys.version,'prefix':sys.prefix,'basePrefix':sys.base_prefix,'userSiteEnabled':site.ENABLE_USER_SITE,'libraries':{x:m.version(x) for x in ['numpy','scipy','openpyxl']}},ensure_ascii=False))"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+            "startedAtUtc": "2026-09-12T19:14:37.799229+08:00",
+            "actualExitCode": 0,
+            "elapsedSeconds": 0.16852709999875515,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_environment.stdout.log",
+            "stderrLog": "clean_venv_environment.stderr.log"
+          },
+          {
+            "name": "as_unzipped_final",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+              "--profile",
+              "final",
+              "--run-id",
+              "portability_final"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+            "startedAtUtc": "2026-09-12T19:14:37.96803+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.17948819999946863,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_as_unzipped_final.stdout.log",
+            "stderrLog": "clean_venv_as_unzipped_final.stderr.log"
+          },
+          {
+            "name": "layout_only_final",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+              "--profile",
+              "final",
+              "--run-id",
+              "portability_final"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+            "startedAtUtc": "2026-09-12T19:14:38.147653+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.2498974999980419,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_layout_only_final.stdout.log",
+            "stderrLog": "clean_venv_layout_only_final.stderr.log"
+          },
+          {
+            "name": "as_unzipped_audit",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted\\code\\runDelivery.py",
+              "--profile",
+              "audit",
+              "--run-id",
+              "portability_audit"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\original_case\\extracted",
+            "startedAtUtc": "2026-09-12T19:14:38.397677+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.1901493000004848,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_as_unzipped_audit.stdout.log",
+            "stderrLog": "clean_venv_as_unzipped_audit.stderr.log"
+          },
+          {
+            "name": "layout_only_audit",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery\\runDelivery.py",
+              "--profile",
+              "audit",
+              "--run-id",
+              "portability_audit"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+            "startedAtUtc": "2026-09-12T19:14:38.588021+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.26053500000125496,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_layout_only_audit.stdout.log",
+            "stderrLog": "clean_venv_layout_only_audit.stderr.log"
+          },
+          {
+            "name": "load_inputs",
+            "command": [
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+              "-X",
+              "utf8",
+              "-B",
+              "-c",
+              "import sys; sys.path.insert(0,sys.argv[1]); import dryingCore; dryingCore.loadInputs()",
+              "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic\\paper_output\\code\\review_delivery"
+            ],
+            "cwd": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\clean_venv\\layout_diagnostic",
+            "startedAtUtc": "2026-09-12T19:14:38.848646+08:00",
+            "actualExitCode": 1,
+            "elapsedSeconds": 0.9243088000002899,
+            "timedOut": false,
+            "stdoutLog": "clean_venv_load_inputs.stdout.log",
+            "stderrLog": "clean_venv_load_inputs.stderr.log"
+          }
+        ],
+        "modelSourceChanged": false,
+        "submissionChanged": false,
+        "productionRerunThisAudit": false,
+        "secondPhysicalDeviceTested": false,
+        "crossPlatformTested": false,
+        "guiThisAudit": "NOT_COMPLETED",
+        "humanReview": "PENDING_USER_REVIEW",
+        "report": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+        "evidence": [
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_audit.stderr.log",
+            "bytes": 532,
+            "sha256": "b19e7fd564b3e3defaf2a4fc827e4eaaec32f7f4beed696f11394334a974b955"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_audit.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_final.stderr.log",
+            "bytes": 532,
+            "sha256": "b19e7fd564b3e3defaf2a4fc827e4eaaec32f7f4beed696f11394334a974b955"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_as_unzipped_final.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_environment.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_environment.stdout.log",
+            "bytes": 470,
+            "sha256": "be691cbf0cba5be090a0856deba776745728312b2fdf20f4b52c704ae7301b01"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_execution.json",
+            "bytes": 13947,
+            "sha256": "fdf60849087bccbda040615c0dee4918e231c6dc4415bf50d7f8ac584852f46b"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_audit.stderr.log",
+            "bytes": 2899,
+            "sha256": "9794186a902cf7bb54350c4c6b64d83342d21c442507eaabc82a2c5f7d0ee73e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_audit.stdout.log",
+            "bytes": 64,
+            "sha256": "52a9f5656b262811e1349acab068871b59efa7ac7fc84488bee5c054ae65bd77"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_final.stderr.log",
+            "bytes": 2899,
+            "sha256": "9794186a902cf7bb54350c4c6b64d83342d21c442507eaabc82a2c5f7d0ee73e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_layout_only_final.stdout.log",
+            "bytes": 64,
+            "sha256": "f83850d6652b089ed2137848782adad2725aeba8e469fb4c37d5e587e4a3a7e5"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_load_inputs.stderr.log",
+            "bytes": 1060,
+            "sha256": "d0038164a059399df02158f1a24425536c2f128b0e69a4fc6669b91113495d2e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/clean_venv_load_inputs.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_import_probe.log",
+            "bytes": 1241,
+            "sha256": "e96ce38fb9535d156ccf79d7c6033ebf9bfd933a662bed02b4caa80fe1663a81"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_optional_modules.log",
+            "bytes": 41,
+            "sha256": "6d5f6cc6f981e4384b487f3c9f955c1a3f4c477c1e47e838823fe381de30661d"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pip_check.log",
+            "bytes": 31,
+            "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pip_freeze.log",
+            "bytes": 78,
+            "sha256": "6825a64bfada34e1c46c657a7c84e8d2c56578dca6d7e576718d2b5eb4f91c22"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pip_report.json",
+            "bytes": 70877,
+            "sha256": "e920f84c69d2083cda24c8b8f26fc8ab76b980f23e00ff6593dfc000e7ff3100"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_pypi_install.log",
+            "bytes": 1371,
+            "sha256": "630d8a0df8c790d873fabca39e7c3cf0ce3b0bb8d552bdd6341e908781f07442"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_review.json",
+            "bytes": 22137,
+            "sha256": "45a061f84c84635b5514c4a01fd4a020e1910aedacb29ee2acfcd718913f117b"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_review.md",
+            "bytes": 5920,
+            "sha256": "469a5c01cdcc83b66b29e0699311cf67d203ccc5f235ba2aefa4da1a69d89d61"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/dependency_venv_create.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/gui_setup.json",
+            "bytes": 1009,
+            "sha256": "3be1a56672cd248d79d141a070faa584f32c823d3fe4138a9255e60a05b29558"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_audit.stderr.log",
+            "bytes": 554,
+            "sha256": "f722dd88584fad5fb026aad4f16c480ffbadb7478205be790de4a9b410a54c64"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_audit.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_final.stderr.log",
+            "bytes": 554,
+            "sha256": "f722dd88584fad5fb026aad4f16c480ffbadb7478205be790de4a9b410a54c64"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_as_unzipped_final.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_environment.stderr.log",
+            "bytes": 1434,
+            "sha256": "ae91c5c694a5cb89c14382a4cce9276e3e56ef13b815a0b3a1f226c398715d70"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_environment.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_execution.json",
+            "bytes": 13690,
+            "sha256": "5df61afb572115da35cec487e8d1bb0e396bd01d2c54a395f7726166b2595925"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_audit.stderr.log",
+            "bytes": 1418,
+            "sha256": "f6d2f5adbf69bd85a88193ef3cbe38a221cc8e3f927157c07fa10d236ae36327"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_audit.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_final.stderr.log",
+            "bytes": 1418,
+            "sha256": "f6d2f5adbf69bd85a88193ef3cbe38a221cc8e3f927157c07fa10d236ae36327"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_layout_only_final.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_load_inputs.stderr.log",
+            "bytes": 491,
+            "sha256": "cb977fccc8591b3bc29397b163621befe39fdb8554fadc6e629561907b740e0c"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/installed_environment_load_inputs.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/package_review.json",
+            "bytes": 60230,
+            "sha256": "d40a3e3c7b95be0923f7989ad7f97d05483e743959c44e94d47b89c9ad11bc1e"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/package_review.md",
+            "bytes": 6300,
+            "sha256": "a2810ced75f7e10c7534a60c22553464c385ba578f2f6aee4bb0fb1ec2267c94"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/review_original_package.py",
+            "bytes": 12337,
+            "sha256": "c9b39ba0eb71670035c8a25cae59b2d6948da32e9db73a37515cfe3c7f1a9b72"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/run_dependency_probe.py",
+            "bytes": 5604,
+            "sha256": "ed08fa5e26c3a252c68fa1b3bc696719fd6b4994237c9057ac4678fdb3299aa0"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/run_portability_probes.py",
+            "bytes": 5816,
+            "sha256": "ae911ed61a2d5a520b5694f1e9f5564f32522d8a7e8bc545b965f61bb9cf0ce7"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/source_review.json",
+            "bytes": 75277,
+            "sha256": "87ef068a540fc479395ebbec9db16ac8664d90e01f8076c739736a4ebbe21b74"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/source_review.md",
+            "bytes": 9803,
+            "sha256": "2ed54788ea771651db98695111f14251bb12234d99eca8cbb60e28e134cd0975"
+          },
+          {
+            "path": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+            "bytes": 7947,
+            "sha256": "48054e9913c023cb9c13f473c48183ca2b085ff95b7cb4adb185eb6baa32ae39"
+          }
+        ]
+      }
+    },
+    {
+      "path": "paper_output/context/code_delivery_status.json",
+      "sha256": "a6d8ef4a186dd5232e7a946db22e7cf307539d1e4cbf710a6385c304567175a9",
+      "bytes": 3252,
+      "captured_at": "2026-09-12T20:05:47.9396111+08:00",
+      "status": "COMPLETED_READY_FOR_USER_CODE_REVIEW",
+      "data": {
+        "workspace": "D:/Document/数学建模/2026CUMCM",
+        "task": "Q1-Q4 code delivery from final_v6a",
+        "status": "COMPLETED_READY_FOR_USER_CODE_REVIEW",
+        "readyForHumanReview": true,
+        "humanReview": "PENDING_USER_REVIEW",
+        "sourceDirectory": "paper_output/code/review_delivery",
+        "visualStudioSolution": "paper_output/code/review_delivery/A_CodeReview.sln",
+        "explanation": "paper_output/code/review_delivery/docs/公式与算法说明.md",
+        "reviewChecklist": "paper_output/code/review_delivery/docs/人工审查清单.md",
+        "deliveryLog": "paper_output/results/code_delivery/交付与运行记录.md",
+        "modelBaseline": "paper_output/results/production/final_v6a",
+        "scope": "Code naming, comments, reproducible runner, independent MATLAB implementation and verification; no change to accepted physical model",
+        "skillAlias": {
+          "requested": "autoresponse",
+          "resolvedFromPriorUserClarification": "autoresearch"
+        },
+        "cli": {
+          "runId": "camel_final_v2",
+          "status": "PASS",
+          "actualExitCode": 0,
+          "elapsedSeconds": 697.7192608,
+          "workbookCellsVerified": 9335598,
+          "paperCsvCellsVerified": 297,
+          "savedArraysExactlyEqual": 21,
+          "independentArtifactAudit": "notes/A-coding/2026-09-11/final-artifact-audit/audit_summary.json"
+        },
+        "matlab": {
+          "guiFunctionCompletedObserved": true,
+          "sourceOpenedInEditor": true,
+          "intervalCount": 40,
+          "comparisonStatus": "PASS",
+          "evidenceDirectory": "paper_output/qa/matlab_crosscheck_20260911",
+          "wholeApplicationExitCode": null
+        },
+        "visualStudio": {
+          "runId": "gui_camel_final_v2",
+          "breakpointAndStepObserved": true,
+          "initialRhsVariablesObserved": true,
+          "fullRunCompletedObserved": true,
+          "actualExitCode": 0,
+          "externalExitRecord": "notes/A-coding/2026-09-11/gui/guiProcessExit.json",
+          "independentArtifactAudit": "notes/A-coding/2026-09-11/gui-artifact-audit/audit_summary.json",
+          "observationLog": "notes/A-coding/2026-09-11/gui/IDE运行观察.md"
+        },
+        "retainedFailure": {
+          "runId": "camel_final_v1",
+          "actualExitCode": 1,
+          "reason": "Q3 exporter provenance retained the old q3_model.py basename",
+          "fixedSource": "paper_output/code/review_delivery/exportOutputs.py",
+          "targetedValidation": "paper_output/code/review_delivery/runtime/exportPathFix_v2/verification.json"
+        },
+        "verifiedCodeBackup": "843654f010c7552fa3d5e98cccb7fa7aba0b0576",
+        "scientificLimit": "Conditional model prediction; no internal temperature or moisture observations to establish empirical accuracy",
+        "workflowScope": "S6 remains current; this coding task does not execute formal paper S7/S8",
+        "submissionPortability": {
+          "auditedAtUtc": "2026-09-12T19:20:18.849408+08:00",
+          "status": "FAIL",
+          "archiveSha256": "6460f3299e012c2728385b1f78212386ba98b30a1acad926b9c446cc890c5b91",
+          "report": "paper_output/qa/portability_20260912/提交代码独立运行核验报告.md",
+          "evidence": "paper_output/qa/portability_20260912/audit_summary.json",
+          "scope": "Current submitted ZIP; historical original-workspace CLI/GUI results remain separate",
+          "coreDependencyInstall": "PASS_CLEAN_VENV",
+          "secondPhysicalDeviceTested": false,
+          "guiThisAudit": "NOT_COMPLETED",
+          "humanReview": "PENDING_USER_REVIEW"
+        }
+      }
+    },
+    {
+      "path": "paper_output/plan/review_outline_20260912/outline_review_manifest.json",
+      "sha256": "ab55b4658c5648b240d66b73618d363fe6d0394ad7dd5970cde5360d059a14ab",
+      "bytes": 3614,
+      "captured_at": "2026-09-12T20:05:47.9401374+08:00",
+      "status": "READY_FOR_USER_OUTLINE_REVIEW_NOT_FINAL_PAPER_APPROVAL",
+      "data": {
+        "generatedAtUtc": "2026-09-12T19:29:57.404455+08:00",
+        "status": "READY_FOR_USER_OUTLINE_REVIEW_NOT_FINAL_PAPER_APPROVAL",
+        "outline": {
+          "path": "paper_output/plan/review_outline_20260912/A题论文写作大纲_逐项核实版.md",
+          "sha256": "2729def92af9dce23d4ee16f38d0f1bed1f3411a855f70aa5b7147d035468815"
+        },
+        "userDecisionItems": [
+          {
+            "id": "A01",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "A02",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "A03",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "A04",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "A05",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "A06",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "A07",
+            "status": "PENDING_USER_REVIEW"
+          }
+        ],
+        "chapterReviewItems": [
+          {
+            "id": "B01",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B02",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B03",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B04",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B05",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B06",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B07",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B08",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B09",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B10",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B11",
+            "status": "PENDING_USER_REVIEW"
+          },
+          {
+            "id": "B12",
+            "status": "PENDING_USER_REVIEW"
+          }
+        ],
+        "bodyPageBudget": 27.0,
+        "reservedBodyPages": 3,
+        "abstractPageBudgetExcludedFromBody": 1,
+        "arithmeticChecks": 121,
+        "arithmeticPass": true,
+        "recordedInputHashes": 165,
+        "freshnessCheck": {
+          "method": "Recheck hashes for input files modified after original audit; separately rehash all six algebra-proof sources. Original input hashes remain in crossvalidation_verified.json.",
+          "inputsModifiedAfterAudit": [],
+          "hashMismatches": []
+        },
+        "relativeEvidenceLinks": {
+          "count": 5,
+          "missing": []
+        },
+        "sourceDocxUnchanged": true,
+        "reports": {
+          "innovation_verified.md": "f178721cff886ed27ed4abb9d12f7c1f22c00715b52add11cc3eeef50bba179f",
+          "innovation_proof_checks.json": "4c30e663d6abd8ff62693092d14aeaa8355ceb09c17910a816bad5e0729b90da",
+          "crossvalidation_verified.md": "df483dfafb6aa980b0e523e0d08eee67a8c6d68a61dfe73c4c1bd61de43d87f2",
+          "crossvalidation_verified.json": "78da97878c80ee1f619b2d5c2570c416bcdaffc0ef936201a095d91acfee3a92",
+          "front_matter_review.md": "c12833ce74b755b2cef215028eceba0fde53a7f80aefa9a03f3b689544643ff8",
+          "notice_and_sources.md": "2711cbe4b4ef4cf7fb39571f80f3e7e29a843cc09ae12e239929de2a2ed404bb"
+        },
+        "newProductionPdeRun": false,
+        "newGuiRun": false,
+        "humanApproval": "PENDING_USER_REVIEW",
+        "knownDeliveryBlockers": [
+          "Scientific claims in old manuscript require correction",
+          "Current ZIP independent-startup audit failed in parallel session",
+          "Fresh chapter/render/S8 audit and genuine human review remain required"
+        ],
+        "workflowMemorySha256": "99b5e1165d9452b31fae7bf7b221bd03b3c8a258287ec24c17a9d7536c5ecbca",
+        "sourceExtractionWhitespace": "source_extract.txt preserves empty DOCX paragraph labels and original extraction hash; excluded from prose whitespace lint."
+      }
+    }
+  ]
+}
