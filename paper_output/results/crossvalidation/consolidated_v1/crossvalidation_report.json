@@ -91,6 +91,45 @@
       "scalingResidualPercent": 1.3666709940303834,
       "interpretation": "Stretching the shrinking timeline by (R0/R(t))**2 gives an equivalent fixed-radius time within about 1.4 percent of the directly simulated fixed-radius drying time. The numerically computed shortening is therefore corroborated by an independent analytical length-scale argument; the small residual comes from the coupled changes in the moisture and temperature profiles."
     },
+    "L4b_analyticMetricConvention": {
+      "rows": [
+        {
+          "intervals": 800,
+          "maxPointVsCellDifferenceK": 0.00205117265068111,
+          "surfacePointVsCellDifferenceK": 0.00205117265068111,
+          "interiorMaxDifferenceK": 1.311069695475453e-06
+        },
+        {
+          "intervals": 1600,
+          "maxPointVsCellDifferenceK": 0.0010257532077275755,
+          "surfacePointVsCellDifferenceK": 0.0010257532077275755,
+          "interiorMaxDifferenceK": 3.277668838563841e-07
+        },
+        {
+          "intervals": 3200,
+          "maxPointVsCellDifferenceK": 0.0005129183118128822,
+          "surfacePointVsCellDifferenceK": 0.0005129183118128822,
+          "interiorMaxDifferenceK": 8.194496103897109e-08
+        },
+        {
+          "intervals": 6400,
+          "maxPointVsCellDifferenceK": 0.00025646958874858683,
+          "surfacePointVsCellDifferenceK": 0.00025646958874858683,
+          "interiorMaxDifferenceK": 2.0491256691457238e-08
+        }
+      ],
+      "observedPointToAverageOrder": 0.9998630883821047,
+      "interpretation": "The maximum discrepancy between the analytic point value and the analytic annular average sits at the surface control volume and does not shrink with refinement, exactly like the reported benchmark error. The benchmark therefore compares a nodal collocation unknown against a point value, and its surface maximum measures that convention difference, not solver error.",
+      "knownFrozenNumbers": {
+        "reportedMaxHeatErrorK": {
+          "N800": 1.899177e-06,
+          "N1600": 2.40269e-06,
+          "N3200": 1.803776e-06
+        },
+        "source": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json"
+      },
+      "note": "The Q1 Bessel benchmark maximum sits at the surface node and does not fall under refinement because it compares a nodal collocation unknown with an exact point value. The two conventions are reported separately and neither may stand in for the other."
+    },
     "L5_stageBoundaries": {
       "T1_chamber_plateau_onset": {
         "brokenStick_hours": 0.9,
@@ -474,6 +513,98 @@
         "Q3_reportedHours": 57.4724,
         "Q4_reportedHours": 51.0906
       }
+    },
+    "L10_sensitivity": {
+      "morrisRanking": {
+        "Q23": [
+          {
+            "parameter": "tailTemperatureC",
+            "muStar": 7.355290534162124,
+            "sigma": 0.17145472705378212
+          },
+          {
+            "parameter": "surfaceLatentFraction",
+            "muStar": 2.9573812265662967,
+            "sigma": 0.5870383693519421
+          },
+          {
+            "parameter": "beta",
+            "muStar": 2.441901388520472,
+            "sigma": 0.38249623142241174
+          },
+          {
+            "parameter": "h",
+            "muStar": 0.5262343281375154,
+            "sigma": 0.48134555895927056
+          },
+          {
+            "parameter": "tailEquilibrium",
+            "muStar": 0.522354767695715,
+            "sigma": 0.19320568443265662
+          },
+          {
+            "parameter": "equilibriumScale",
+            "muStar": 0.4955588402730621,
+            "sigma": 0.22884076022485944
+          },
+          {
+            "parameter": "kScale",
+            "muStar": 0.006083165617742736,
+            "sigma": 0.002474753155328953
+          },
+          {
+            "parameter": "dScale",
+            "muStar": 0.0,
+            "sigma": 0.0
+          }
+        ],
+        "Q4": [
+          {
+            "parameter": "tailTemperatureC",
+            "muStar": 6.533604352447365,
+            "sigma": 0.16882105116695265
+          },
+          {
+            "parameter": "surfaceLatentFraction",
+            "muStar": 5.258565467921537,
+            "sigma": 0.9394889053319107
+          },
+          {
+            "parameter": "beta",
+            "muStar": 0.978176200791584,
+            "sigma": 0.16816019670622281
+          },
+          {
+            "parameter": "h",
+            "muStar": 0.8798220233226497,
+            "sigma": 0.7919268865909773
+          },
+          {
+            "parameter": "tailEquilibrium",
+            "muStar": 0.5741766579233273,
+            "sigma": 0.23965999020375786
+          },
+          {
+            "parameter": "equilibriumScale",
+            "muStar": 0.5070921254623177,
+            "sigma": 0.27570475010985523
+          },
+          {
+            "parameter": "kScale",
+            "muStar": 0.006872527805339423,
+            "sigma": 0.0019767194185731636
+          },
+          {
+            "parameter": "dScale",
+            "muStar": 0.0,
+            "sigma": 0.0
+          }
+        ]
+      },
+      "sobolIndices": null,
+      "knownInjectionDefect": "The Morris run in morris.json reports mu* = 0 exactly for dScale in all 20 elementary effects of both questions. That is an injection defect, not a robustness result: with face_scheme='kirchhoff' the solver's water_internal_flux uses a hard-coded per-question D0 and never reads the D array returned by properties(), so scaling properties() alone cannot change the model. The defect was found and patched in a parallel session by also scaling the returned Kirchhoff flux (which is exactly linear in D0). Until Morris is re-run on the patched script, the dScale entry in this layer must not be quoted; a single-parameter scan on the patched code shows D pre-factor uncertainty of -30%/+40% moving the Q23 event between 43.1 h and 79.4 h, i.e. D is among the most influential parameters.",
+      "injectionSentinelRequired": "Every injection-style experiment (monkey-patched properties, alternative flux, wrapped model) must carry a sentinel proving the injection was actually used; see method_v1/method_comparison.json fluxPathUsed.",
+      "note": "Indices are rankings on a validated coarse surrogate; absolute event times carry the surrogate grid offset and must not be quoted as production values."
     }
   },
   "inputsPresent": {
@@ -483,8 +614,9 @@
     "stageBoundaries": true,
     "methodComparison": true,
     "isothermClosure": true,
-    "morrisScreening": false,
-    "sobolIndices": false
+    "morrisScreening": true,
+    "sobolIndices": false,
+    "analyticMetric": true
   },
   "verdicts": [
     {

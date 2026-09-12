@@ -10,6 +10,8 @@ import json
 import pathlib
 import sys
 
+import numpy as np
+
 ROOT = pathlib.Path(r"D:\Document\数学建模\2026CUMCM")
 CV = ROOT / "paper_output" / "results" / "crossvalidation"
 OUT = CV / "consolidated_v1"
@@ -46,12 +48,14 @@ def main():
     isotherm = load("isotherm_closure_v1/isotherm_closure.json")
     morris = load("sensitivity_v1/morris.json")
     sobol = load("sensitivity_v1/sobol.json")
+    metric = load("analytic_metric_v1/analytic_metric.json")
 
     report = {"tolerances": TOLERANCES, "layers": {}, "inputsPresent": {
         "solverCases": bool(cases), "latentScenarios": bool(latent),
         "thresholdScaling": bool(scaling), "stageBoundaries": bool(series),
         "methodComparison": bool(methodReport), "isothermClosure": bool(isotherm),
-        "morrisScreening": bool(morris), "sobolIndices": bool(sobol)}}
+        "morrisScreening": bool(morris), "sobolIndices": bool(sobol),
+        "analyticMetric": bool(metric)}}
 
     # ---- L1 time integrators -------------------------------------------------
     byCase = {c["case"]: c for c in cases if c.get("status") == "computed"}
@@ -99,6 +103,23 @@ def main():
     if scaling:
         l4.update(scaling.get("scalingCheck", {}))
     report["layers"]["L4_analyticAndScaling"] = l4
+
+    # ---- L4b analytic comparison convention ---------------------------------
+    if metric:
+        rows = metric["rows"]
+        gaps = [r["maxPointVsCellDifferenceK"] for r in rows]
+        ratios = [gaps[i] / gaps[i + 1] for i in range(len(gaps) - 1) if gaps[i + 1] > 0]
+        report["layers"]["L4b_analyticMetricConvention"] = {
+            "rows": rows,
+            "observedPointToAverageOrder": (float(np.log2(np.mean(ratios))) if ratios else None),
+            "interpretation": metric["interpretation"],
+            "knownFrozenNumbers": metric["knownFrozenNumbers"],
+        }
+        report["layers"]["L4b_analyticMetricConvention"]["note"] = (
+            "The Q1 Bessel benchmark maximum sits at the surface node and does not fall "
+            "under refinement because it compares a nodal collocation unknown with an "
+            "exact point value. The two conventions are reported separately and neither "
+            "may stand in for the other.")
 
     # ---- L5 stage boundaries -------------------------------------------------
     if series:
@@ -236,6 +257,22 @@ def main():
                 for q in morris.get("morris", [])},
             "sobolIndices": None if not sobol else {
                 q["question"]: q["indices"] for q in sobol.get("sobol", [])},
+            "knownInjectionDefect": (
+                "The Morris run in morris.json reports mu* = 0 exactly for dScale in all "
+                "20 elementary effects of both questions. That is an injection defect, not "
+                "a robustness result: with face_scheme='kirchhoff' the solver's "
+                "water_internal_flux uses a hard-coded per-question D0 and never reads the D "
+                "array returned by properties(), so scaling properties() alone cannot change "
+                "the model. The defect was found and patched in a parallel session by also "
+                "scaling the returned Kirchhoff flux (which is exactly linear in D0). Until "
+                "Morris is re-run on the patched script, the dScale entry in this layer must "
+                "not be quoted; a single-parameter scan on the patched code shows D "
+                "pre-factor uncertainty of -30%/+40% moving the Q23 event between 43.1 h and "
+                "79.4 h, i.e. D is among the most influential parameters."),
+            "injectionSentinelRequired": (
+                "Every injection-style experiment (monkey-patched properties, alternative "
+                "flux, wrapped model) must carry a sentinel proving the injection was "
+                "actually used; see method_v1/method_comparison.json fluxPathUsed."),
             "note": ("Indices are rankings on a validated coarse surrogate; absolute event times "
                      "carry the surrogate grid offset and must not be quoted as production values."),
         }
@@ -281,7 +318,18 @@ def _markdown(report):
                          f"{_fmt(value['ratio'], 5)} |")
     lines += ["", "## L4 解析与尺度交叉验证", "", "```json",
               json.dumps(report["layers"]["L4_analyticAndScaling"], ensure_ascii=False, indent=2),
-              "```", "", "## L6 模型结构（潜热情景包络）", ""]
+              "```"]
+    if "L4b_analyticMetricConvention" in report["layers"]:
+        l4b = report["layers"]["L4b_analyticMetricConvention"]
+        lines += ["", "## L4b 解析基准的比较口径（节点值 vs 控制体平均）", "",
+                  f"- 观测到的一阶收敛率：{_fmt(l4b['observedPointToAverageOrder'], 5)}"
+                  "（表面控制体单侧，几何效应）", "",
+                  "| 网格 N | 点值↔控制体平均最大差 / K | 内部节点最大差 / K |",
+                  "|---:|---:|---:|"]
+        for row in l4b["rows"]:
+            lines.append(f"| {row['intervals']} | {_fmt(row['maxPointVsCellDifferenceK'], 6)} | "
+                         f"{_fmt(row['interiorMaxDifferenceK'], 6)} |")
+    lines += ["", "## L6 模型结构（潜热情景包络）", ""]
     for question, rows in report["layers"].get("L6_modelStructure", {}).items():
         lines += [f"### {question}", "", "| 潜热比例 | 达标时间 / h | 相对基线 / % | 最低表面温度 / °C |",
                   "|---:|---:|---:|---:|"]
