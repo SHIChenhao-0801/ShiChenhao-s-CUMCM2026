@@ -1,0 +1,326 @@
+{
+  "generatedAtUtc": "2026-09-12T14:09:55.868762+00:00",
+  "status": "PASS_STATIC_SCIENTIFIC_SCOPE",
+  "version": "revision_v5_docx",
+  "docx": {
+    "path": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+    "sha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
+    "matchesExpectedV5": true
+  },
+  "appendixMarkdown": {
+    "path": "paper_output/qa/manuscript_revision_20260912/compact_appendix_for_paper.md",
+    "sha256": "98a6fccf8bad8661c5f53d44e6d32c54add0692afec8716e985d2edfdd0a8bfb"
+  },
+  "snippetManifest": {
+    "path": "paper_output/qa/manuscript_revision_20260912/snippet_manifest.json",
+    "sha256": "5bf16b31b6901c591db9f8889ac32d0caf7f3a9fd10d75fccbf011323b01d7d6"
+  },
+  "snippetCount": 6,
+  "codeLineCount": 117,
+  "snippets": [
+    {
+      "id": "D.1",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "sourceHashMatchesManifest": true,
+      "sourceRanges": [
+        [
+          108,
+          126
+        ],
+        [
+          131,
+          131
+        ]
+      ],
+      "lineCount": 20,
+      "allOriginalLineMappingsMatch": true,
+      "snippetSha256": "ce6b1ac06033747dc8c1d3142c3a0a697cfab5694fa6d6432247041ccbcbb0cb",
+      "manifestSnippetSha256": "ce6b1ac06033747dc8c1d3142c3a0a697cfab5694fa6d6432247041ccbcbb0cb",
+      "snippetMatchesManifest": true,
+      "docxMatchingStartParagraphIndices0Based": [
+        265
+      ],
+      "docxExactLogicalLines": true,
+      "context": "RadialModel.properties",
+      "omissionInterpretation": "省略第127—130行仅供验证使用的constant_D与constant_thermal覆盖；第110行只删除行尾注释。其余物性关键语句按原文保留。"
+    },
+    {
+      "id": "D.2",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "sourceHashMatchesManifest": true,
+      "sourceRanges": [
+        [
+          76,
+          80
+        ],
+        [
+          133,
+          135
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          150,
+          157
+        ],
+        [
+          159,
+          159
+        ]
+      ],
+      "lineCount": 18,
+      "allOriginalLineMappingsMatch": true,
+      "snippetSha256": "95b22c40df30fc25ad8c160ed20f161fd677c1caa36a00513925a03b7e81c610",
+      "manifestSnippetSha256": "95b22c40df30fc25ad8c160ed20f161fd677c1caa36a00513925a03b7e81c610",
+      "snippetMatchesManifest": true,
+      "docxMatchingStartParagraphIndices0Based": [
+        287
+      ],
+      "docxExactLogicalLines": true,
+      "context": "RadialModel.__init__ 的网格段、harmonic、water_internal_flux 的Kirchhoff段",
+      "omissionInterpretation": "所列三处上下文分段合列；省略第81—132行其他初始化与物性、第136—144行稀疏模式、第146—149行调和水通量/模式分支和第158行注释。仅展示已选Kirchhoff路径。"
+    },
+    {
+      "id": "D.3",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "sourceHashMatchesManifest": true,
+      "sourceRanges": [
+        [
+          161,
+          161
+        ],
+        [
+          164,
+          173
+        ],
+        [
+          180,
+          184
+        ]
+      ],
+      "lineCount": 16,
+      "allOriginalLineMappingsMatch": true,
+      "snippetSha256": "cddf471fe4923c98f9f4073cddb0c5f687867269d1cae97f06021b1beefe5a48",
+      "manifestSnippetSha256": "cddf471fe4923c98f9f4073cddb0c5f687867269d1cae97f06021b1beefe5a48",
+      "snippetMatchesManifest": true,
+      "docxMatchingStartParagraphIndices0Based": [
+        307
+      ],
+      "docxExactLogicalLines": true,
+      "context": "RadialModel.rhs",
+      "omissionInterpretation": "省略第162行docstring、第163行调用计数和第174—179行可选表面潜热情景；基线surface_latent_fraction=0。中心通量由零数组直接表示。"
+    },
+    {
+      "id": "D.4",
+      "sourcePath": "paper_output/code/modeling/analytic_jacobian.py",
+      "sourceSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "sourceHashMatchesManifest": true,
+      "sourceRanges": [
+        [
+          76,
+          77
+        ],
+        [
+          138,
+          139
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          157,
+          164
+        ]
+      ],
+      "lineCount": 13,
+      "allOriginalLineMappingsMatch": true,
+      "snippetSha256": "0c5286ef33cb4480a07c3d40e17fbca0ad56d242e3259a6e498fc68fa139a803",
+      "manifestSnippetSha256": "0c5286ef33cb4480a07c3d40e17fbca0ad56d242e3259a6e498fc68fa139a803",
+      "snippetMatchesManifest": true,
+      "docxMatchingStartParagraphIndices0Based": [
+        325
+      ],
+      "docxExactLogicalLines": true,
+      "context": "jacobian 的容量、几何尺度和稀疏行列装配段",
+      "omissionInterpretation": "只摘四处关键装配语句；rho_c、cp_c按式(29)前后给出的物性导数，heat_deriv、water_deriv按式(25)—(28)，heat_g按式(24)边界构造。省略其余面偏导构造、add_face辅助函数、边界行、CSC转换及全部自检；相应公式和边界偏导在附录B保留。"
+    },
+    {
+      "id": "D.5",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "sourceHashMatchesManifest": true,
+      "sourceRanges": [
+        [
+          306,
+          318
+        ],
+        [
+          320,
+          333
+        ],
+        [
+          336,
+          337
+        ],
+        [
+          339,
+          342
+        ],
+        [
+          345,
+          346
+        ],
+        [
+          349,
+          350
+        ]
+      ],
+      "lineCount": 37,
+      "allOriginalLineMappingsMatch": true,
+      "snippetSha256": "41f1c442a1440af8d3aa9a35c48bc3caf01368819cb7c09f7266153fb2a25bda",
+      "manifestSnippetSha256": "41f1c442a1440af8d3aa9a35c48bc3caf01368819cb7c09f7266153fb2a25bda",
+      "snippetMatchesManifest": true,
+      "docxMatchingStartParagraphIndices0Based": [
+        340
+      ],
+      "docxExactLogicalLines": true,
+      "context": "_solve_case_impl 的求解主体",
+      "omissionInterpretation": "省略第319、338行注释，第334—335、343—344、347—348行缓存存储或断点整理，及主体之后的Run封装与诊断。保留首次BDF断点整理以显示DiskBDF上下文；该类保存原始BDF稠密系数，不改变方程。所有存储与断点整理仍在完整生产实现执行。"
+    },
+    {
+      "id": "D.6",
+      "sourcePath": "paper_output/code/modeling/q3_model.py",
+      "sourceSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "sourceHashMatchesManifest": true,
+      "sourceRanges": [
+        [
+          6,
+          8
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "lineCount": 13,
+      "allOriginalLineMappingsMatch": true,
+      "snippetSha256": "b155974ba38b57bfd9749db74ecac4b1fc0509c542610fe1c4ecd336ab10a2de",
+      "manifestSnippetSha256": "b155974ba38b57bfd9749db74ecac4b1fc0509c542610fe1c4ecd336ab10a2de",
+      "snippetMatchesManifest": true,
+      "docxMatchingStartParagraphIndices0Based": [
+        379
+      ],
+      "docxExactLogicalLines": true,
+      "context": "completion 的候选报告时刻循环",
+      "omissionInterpretation": "省略第1—5行说明、导入及空行，第9—10行注释，以及第21—27行结果字典；循环所得report_h为严格报告小时，values仍为原精度含水率。"
+    }
+  ],
+  "equationNumbers": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "semanticCorrectionsVerified": {
+    "airHumidityConditionalInMarkdown": true,
+    "axisFaceInMarkdown": true,
+    "airHumidityConditionalInDocx": true,
+    "axisFaceInDocx": true,
+    "removedWrongOuterFace": true
+  },
+  "independentScalarRecalculations": {
+    "wetBasisAtC2_55": 0.7183098591549295,
+    "Q4InitialDryDensityKgM3": 278.7323943661972,
+    "Q4RadiusLowerBoundCm": 1.2112029565383968
+  },
+  "scientificReview": [
+    {
+      "section": "A.1",
+      "review": "Dry-water component subtraction gives rho_d DtC=-div(jw); spatially uniform dry density is explicit; initial wet basis independently recomputed.",
+      "status": "PASS"
+    },
+    {
+      "section": "A.2",
+      "review": "Effective heat capacity is separated from dry density; rho_d<=760 implies stated radius bound. Full thermodynamic energy conservation is not claimed.",
+      "status": "PASS"
+    },
+    {
+      "section": "A.3",
+      "review": "Affine radial velocity cancels moving-coordinate advection; rho_d R² invariant and fixed-length/uniform-skeleton conditions remain explicit.",
+      "status": "PASS"
+    },
+    {
+      "section": "B.1",
+      "review": "Node-control weights sum1/2; centre coefficient4 and both Robin signs match production RHS. Axis-face wording corrected.",
+      "status": "PASS"
+    },
+    {
+      "section": "B.2-B.3",
+      "review": "Primitive derivative, face-temperature factor, near-equal-C midpoint expansion, active-set derivative, capacity quotient term, mass invariant and instantaneous heat balance match implementation.",
+      "status": "PASS"
+    },
+    {
+      "section": "B.4",
+      "review": "Displayed BDF2/Newton residual is explicitly an equal-step illustration; actual1–5order adaptive BDF distinguished.",
+      "status": "PASS"
+    },
+    {
+      "section": "C.1-C.2",
+      "review": "N3200/3200/6400,2s/120s limits and1e-10/1e-12 tolerances match adopted production;456-check actual log/array audit independently supports every C2 printed number.",
+      "status": "PASS"
+    },
+    {
+      "section": "C.3",
+      "review": "Robin eigencondition, cylindrical weighted coefficient and piecewise-linear Duhamel convolution have correct factors/signs;1801x21 sample restriction and heat-only scope retained.",
+      "status": "PASS"
+    },
+    {
+      "section": "C.4",
+      "review": "Seconds root vs hours reporting and true post-event integration are distinguished; strict inequality checked on original values and domain-exterior output left blank.",
+      "status": "PASS"
+    },
+    {
+      "section": "C.5",
+      "review": "Kp bounds follow from1-z<=1-z^p<=p(1-z) for0<=z<=1,p>=1; limit1/p, no identified material isotherm or physical lower bound asserted.",
+      "status": "PASS"
+    }
+  ],
+  "logAudit": {
+    "path": "paper_output/results/experiments/manuscript_revision_20260912_log_review.json",
+    "sha256": "e0d06ec2585357922d2069066e1e1d967e9010b697d5dc5d0ab22f2b75645654",
+    "checks": 456,
+    "failed": 0
+  },
+  "excerptCompletenessAssessment": "Excerpts are explicitly contextual algorithms, not standalone modules. Omitted constant-D/constant-thermal overrides and latent branch are inactive in adopted baseline. D4 omits helper/face derivative construction but B fully states derivatives/boundary signs. D5 omits storage details but C explicitly preserves full original dense-output context. No omitted active baseline term changes the explained algorithm.",
+  "limitations": [
+    "No PDE or GPU run",
+    "Excerpts require imports/classes/state/settings and complete supporting source",
+    "DOCX logical line fidelity does not itself establish pagination; separate image review covers actual pages",
+    "Current support ZIP portability and human approval not certified"
+  ],
+  "executionScope": [
+    "Read current source and tokenizer comment positions",
+    "Independently reconstruct all117 snippet lines from manifest original-source mapping",
+    "Compare six Markdown and six DOCX logical line groups",
+    "Independently inspect formulas and compute scalar identities",
+    "Write this new QA report pair only"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sourceDocx": "paper_output\\paper\\A题_论文_公式规范与精简附录版.docx",
+  "sourceSha256": "a348e343f917354054017f6a332d6430b4ec985227421ebe9c6d80bbc255aac2",
+  "variants": [
+    "A Baseline Times New Roman",
+    "B Ceiling symbols m:nor=1 only",
+    "C Ceiling symbols Cambria Math only",
+    "D Ceiling symbols remove w:rPr",
+    "E Native m:d ceiling delimiter"
+  ],
+  "testDocx": "paper_output\\qa\\manuscript_revision_20260912\\ceil_diagnosis\\ceil_variants.docx",
+  "testDocxSha256": "5e704adbcacd611433b9991b8f3fe3bc88e963c7cb44949bd39f1fd8af491f81",
+  "sourceChangedDuringRead": false
+}

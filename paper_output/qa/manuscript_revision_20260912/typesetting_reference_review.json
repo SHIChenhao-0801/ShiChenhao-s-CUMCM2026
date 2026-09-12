@@ -1,0 +1,340 @@
+{
+  "reviewDate": "2026-09-12",
+  "status": "COMPLETE_REFERENCE_REVIEW",
+  "scope": "只读提取、参考原件副本、关键页面实际视觉核对；未修改论文、模型或 Git。",
+  "authority": "用户要求参考字体/数学排版；本次 CUMCM 官方规则和最新赛前说明会保持首要依据。",
+  "sources": [
+    {
+      "originalPath": "D:/Document/Courses Materials/2026-2027 Semester1/Team Project/IEEE-conference-template-a4.docx",
+      "copiedPath": "reference_materials/typesetting/IEEE-conference-template-a4.docx",
+      "sha256": "4a1be66a40a91c8bbcbb205d5cb9361f9c1203fb2e3460662214a3cd79945b90",
+      "sizeBytes": 32260
+    },
+    {
+      "originalPath": "D:/Document/《厦门大学本科毕业论文（设计）规范》（厦大教〔2016〕5号）.pdf",
+      "copiedPath": "reference_materials/typesetting/《厦门大学本科毕业论文（设计）规范》（厦大教〔2016〕5号）.pdf",
+      "sha256": "413339c0f9709fbc79ad6ead81785592ccd41de49f9aa8800196941da9b56a6c",
+      "sizeBytes": 1034685
+    }
+  ],
+  "pageLocatorNote": "IEEE 页码为本机 LibreOffice 渲染的 3 页文档页码，段落为 document.xml 全部 w:p 的 1-based 索引；厦大 PDF 页码与印刷页码一致。",
+  "rules": [
+    {
+      "id": "FONT-01",
+      "topic": "公式拉丁字符字体",
+      "status": "explicit_reference_rule",
+      "source": "IEEE",
+      "page": 2,
+      "paragraphs": [
+        32,
+        34
+      ],
+      "locator": "III.C Equations，第 1 段和示例式 (1)",
+      "evidence": "either the Times New Roman or the Symbol font (please no other font)",
+      "application": "公式拉丁变量优先 Times New Roman；保持可编辑数学结构，数学特殊符号按实际渲染兼容性处理。"
+    },
+    {
+      "id": "FONT-02",
+      "topic": "中英文混排字体",
+      "status": "explicit_reference_rule",
+      "source": "XMU",
+      "page": 15,
+      "locator": "页面最末段",
+      "evidence": "中文的字体若是用宋体，英文的字体则采用 Times New Roman；中文的字体若是黑体，英文的字体则采用 Arial。",
+      "application": "中文正文仍按本次数模设置；正文内拉丁字符可配 Times New Roman。这不是厦大对每一种公式构件的单独指定。"
+    },
+    {
+      "id": "ITALIC-01",
+      "topic": "拉丁变量斜体",
+      "status": "explicit_reference_rule",
+      "source": "IEEE",
+      "page": 2,
+      "paragraphs": [
+        33,
+        34
+      ],
+      "locator": "III.C Equations，第 2 段和式 (1)",
+      "evidence": "Italicize Roman symbols for quantities and variables, but not Greek symbols.",
+      "application": "C、T、r、R、t、D 等拉丁物理变量斜体；不得由此推出所有希腊字母也必须斜体。"
+    },
+    {
+      "id": "ITALIC-02",
+      "topic": "物理量与单位的正斜体",
+      "status": "explicit_reference_rule",
+      "source": "XMU",
+      "page": 6,
+      "locator": "2. 物理量名称、符号与计量单位，第 (4) 条",
+      "evidence": "物理量符号、物理量常量、变量符号用斜体，计量单位符号均用正体。",
+      "application": "物理量变量与单位分开处理；kg、m、s、K、J、W、h、min、°C 等表示单位时正体。"
+    },
+    {
+      "id": "INDEX-01",
+      "topic": "数字下标与字符辨识",
+      "status": "explicit_reference_rule",
+      "source": "IEEE",
+      "page": 2,
+      "paragraphs": [
+        38
+      ],
+      "locator": "III.D Some Common Mistakes，第 2 个项目",
+      "evidence": "The subscript ... is zero with subscript formatting, not a lowercase letter “o”.",
+      "application": "R₀、T₀、C₀、D₀ 中数字 0 应为真正数字下标，避免字母 o 与手工降低基线替代数学下标。"
+    },
+    {
+      "id": "NUMBER-01",
+      "topic": "编号与对齐",
+      "status": "explicit_reference_rule",
+      "source": "IEEE",
+      "page": 2,
+      "paragraphs": [
+        33,
+        35
+      ],
+      "locator": "III.C Equations",
+      "evidence": "Number equations consecutively. Equation numbers, within parentheses, are to position flush right. ... the equation is centered",
+      "application": "可延续全文连续编号，公式居中、括号编号右对齐。"
+    },
+    {
+      "id": "NUMBER-02",
+      "topic": "编号无点线、重复引用不重编号",
+      "status": "explicit_reference_rule",
+      "source": "XMU",
+      "page": 6,
+      "locator": "4. 公式，第 (1)–(2) 条",
+      "evidence": "公式的编号用英文圆括号括起，放在公式右边行末，在公式和编号之间不加虚线。... 重复引用的公式不得另编新序号。",
+      "application": "保留 (1)–(68) 连续编号，不增虚线，不因正文再引用而新增编号。"
+    },
+    {
+      "id": "BREAK-01",
+      "topic": "长公式换行",
+      "status": "explicit_reference_rule",
+      "source": "XMU",
+      "page": 7,
+      "locator": "4. 公式，第 (3) 条",
+      "evidence": "较长的公式最好在等号处转行，或在运算符号处转行，等号或运算符号应在转行后的行首。",
+      "application": "先按等号或主要运算符分行，再检查整体宽度和上下标；避免仅缩小字体来塞入单行。"
+    },
+    {
+      "id": "SEMANTIC-01",
+      "topic": "说明性下标正体",
+      "status": "editorial_recommendation_not_explicit_in_references",
+      "source": null,
+      "evidence": "两份全文检索未找到说明性下标与变量下标正斜体的一般性条款；IEEE 的明确下标条款仅为数字 0 辨识。",
+      "application": "本论文建议 eff、eq、ref、dry、wet、surf、water 等词语或缩写下标用正体；i、j、n 等可变索引用斜体；先核对符号定义再处理单字母下标。"
+    },
+    {
+      "id": "SEMANTIC-02",
+      "topic": "函数名、算符与微分符号正体",
+      "status": "editorial_recommendation_not_explicit_in_references",
+      "source": null,
+      "evidence": "IEEE 只在压缩公式建议中提到 exp function，未给函数名正体总则；厦大文件未给此总则。",
+      "application": "本论文建议 exp、ln、max、min、argmax、Ei 等函数名用正体，参数变量斜体；微分符号 d 与变量区分，不能把整个公式字符串统一设为斜体。"
+    }
+  ],
+  "conflictsAndLimits": [
+    {
+      "id": "CONFLICT-01",
+      "sources": [
+        {
+          "source": "IEEE",
+          "page": 2,
+          "paragraphs": [
+            33
+          ]
+        },
+        {
+          "source": "XMU",
+          "page": 6,
+          "locator": "2(4)"
+        }
+      ],
+      "issue": "IEEE 明文排除希腊字母斜体，厦大物理量规则采用概括表述，不能声称两份对希腊字母完全一致。",
+      "decisionRecommendation": "本次数模的希腊物理变量 ρ、λ、α、β 等可依物理变量语义延续统一数学风格；若选斜体，应标记为项目样式选择，不能写成 IEEE 强制要求。厦大同页 3(3) 的统计符号例外属于统计语境，不应用来改写物理量符号。"
+    },
+    {
+      "id": "CONFLICT-02",
+      "sources": [
+        {
+          "source": "XMU",
+          "page": 6,
+          "locator": "4(2)"
+        },
+        {
+          "source": "XMU",
+          "page": 17,
+          "locator": "5. 公式，示例图"
+        }
+      ],
+      "issue": "第 6 页明文禁止公式与编号之间虚线，而第 17 页示例实际含虚线。",
+      "decisionRecommendation": "采纳第 6 页明确文字，无虚线；IEEE 第 2 页示例亦无虚线。"
+    },
+    {
+      "id": "LEGACY-01",
+      "sources": [
+        {
+          "source": "IEEE",
+          "page": 2,
+          "paragraphs": [
+            32,
+            34
+          ]
+        }
+      ],
+      "issue": "IEEE 模板使用普通文本、Symbol 私用区字符和制表位，不含 OMML；关于复杂公式可作为图形插入的建议反映其模板制作方式。",
+      "decisionRecommendation": "仅借鉴字体与排版规则，当前论文继续可编辑 OMML，不转换为图片或复制 Symbol 私用区文本。"
+    }
+  ],
+  "visualEvidence": [
+    {
+      "source": "IEEE",
+      "page": 1,
+      "path": "paper_output/qa/manuscript_revision_20260912/ieee_render/page-1.png",
+      "sha256": "0aca38ea6a3fd3231e48511ef1157befe2780fb4eff0e923c1adf06e8ccf348a",
+      "actuallyViewedWith": "view_image",
+      "observation": "规则文字与页面一致"
+    },
+    {
+      "source": "IEEE",
+      "page": 2,
+      "path": "paper_output/qa/manuscript_revision_20260912/ieee_render/page-2.png",
+      "sha256": "0653d8af56454dd763f9cfabd671104f8a0848ece4dc4d9d4aacaa2f9d2f1fc2",
+      "actuallyViewedWith": "view_image",
+      "observation": "规则文字与页面一致"
+    },
+    {
+      "source": "XMU",
+      "page": 5,
+      "path": "paper_output/qa/manuscript_revision_20260912/xmu-page-5.png",
+      "sha256": "e6f46bb2f5ea44343e4e7f799ba87bce45c4e66d4a8e7d2a83a7e1fa87d4de4a",
+      "actuallyViewedWith": "view_image",
+      "observation": "规则文字与页面一致"
+    },
+    {
+      "source": "XMU",
+      "page": 6,
+      "path": "paper_output/qa/manuscript_revision_20260912/xmu-page-6.png",
+      "sha256": "ebef5f61d3c9cbf2b4d1298e0374c86198ef925cb364e51e0f64c930f9c40491",
+      "actuallyViewedWith": "view_image",
+      "observation": "规则文字与页面一致"
+    },
+    {
+      "source": "XMU",
+      "page": 7,
+      "path": "paper_output/qa/manuscript_revision_20260912/xmu-page-7.png",
+      "sha256": "9cb3b66e0db1d08679e89e5ad3ecd5ab4b5c9426157c234d2aff67c9a1e26b59",
+      "actuallyViewedWith": "view_image",
+      "observation": "规则文字与页面一致"
+    },
+    {
+      "source": "XMU",
+      "page": 15,
+      "path": "paper_output/qa/manuscript_revision_20260912/xmu-page-15.png",
+      "sha256": "527ee104f71ba8aded47f672c9c0cb4644c2322e2e718f5224e520da2e8a09d1",
+      "actuallyViewedWith": "view_image",
+      "observation": "规则文字与页面一致"
+    },
+    {
+      "source": "XMU",
+      "page": 17,
+      "path": "paper_output/qa/manuscript_revision_20260912/xmu-page-17.png",
+      "sha256": "8d7dbbcbf92897fcd2ba2fb53de809cbd2c1467027d318c6b9d8cf7fde432cb2",
+      "actuallyViewedWith": "view_image",
+      "observation": "公式示例含虚线，与第 6 页明确文字冲突"
+    }
+  ],
+  "ieeeTechnicalInspection": {
+    "namespace": "http://purl.oclc.org/ooxml/wordprocessingml/main",
+    "ommlCount": 0,
+    "equationParagraph1Based": 34,
+    "equationRuns": [
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "a",
+        "fontExplicit": "Times New Roman",
+        "italicExplicit": true
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "b",
+        "fontExplicit": "Times New Roman",
+        "italicExplicit": true
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      },
+      {
+        "text": "",
+        "fontExplicit": null,
+        "italicExplicit": false
+      }
+    ]
+  },
+  "doNotAdopt": [
+    "IEEE 双栏、作者单位和邮箱块、版权行、标题及摘要限制、8 pt 图字等整套会议版式",
+    "厦大毕业论文封面、学校身份、目录/页眉/装订、整套字号和附录篇幅规则",
+    "把所有英文、公式、函数、数字、单位与下标统一设斜体",
+    "把旧模板的符号私用区文本或公式图片作为当前论文实现要求"
+  ],
+  "suggestedExamples": [
+    "\\rho_{\\mathrm{eff}}(C)\\,c_p(C)",
+    "C_{\\mathrm{eq}},\\ C_{\\mathrm{ref}},\\ R_0,\\ C_i",
+    "\\exp[-E_a/(\\mathcal R T)]",
+    "\\mathrm{kg}\\,\\mathrm{m}^{-3},\\quad \\mathrm{W}\\,\\mathrm{m}^{-1}\\,\\mathrm{K}^{-1}"
+  ],
+  "exampleNote": "单字母下标 p、a 等按实际符号定义处理，不能仅根据字符长度决定斜体。建议例子不改变模型含义。"
+}

@@ -1,0 +1,107 @@
+{
+  "sourceDocx": "paper_output\\paper\\A题_论文_公式规范与精简附录版.docx",
+  "sourceSha256": "a348e343f917354054017f6a332d6430b4ec985227421ebe9c6d80bbc255aac2",
+  "variants": [
+    "A Baseline Times New Roman",
+    "B Ceiling symbols m:nor=1 only",
+    "C Ceiling symbols Cambria Math only",
+    "D Ceiling symbols remove w:rPr",
+    "E Native m:d ceiling delimiter"
+  ],
+  "testDocx": "paper_output\\qa\\manuscript_revision_20260912\\ceil_diagnosis\\ceil_variants.docx",
+  "testDocxSha256": "5e704adbcacd611433b9991b8f3fe3bc88e963c7cb44949bd39f1fd8af491f81",
+  "sourceChangedDuringRead": false,
+  "diagnosedAtUtc": "2026-09-12T14:00:29.696738+00:00",
+  "observedRendering": "revision_v2 page27",
+  "observedRevisionManifest": "paper_output/qa/manuscript_revision_20260912/revision_v2_manifest.json",
+  "observedRevisionPdfSha256": "14eefb54871aa9e2b49013fca467bf6181665eece6a81eb43e192157e37ef6ca",
+  "observedRevisionDocxSha256": "08bf74a9c11717c91d37b7b4b163269c24adb9216e8b99551974f379be7e4765",
+  "sourceVersionNote": "Current in-progress DOCX used to extract test paragraphs differed from revision_v2 snapshot; hash above binds the extracted content. Baseline test reproduced the exact visible defect.",
+  "findings": [
+    "Both inline and display ceiling signs were slanted and visually ambiguous in actual page27 PNG.",
+    "Extracted PDF text still returned U+2308 and U+2309; text-only validation would miss this visual defect.",
+    "DOCX encoded the correct ceiling Unicode characters in m:r, with m:sty=p, Times New Roman run fonts, and no m:nor flag.",
+    "Five isolated test variants were rendered with the local LibreOffice and every page was actually opened using view_image."
+  ],
+  "results": [
+    {
+      "page": 1,
+      "variant": "A Baseline Times New Roman",
+      "visualResult": "DEFECT_REPRODUCED"
+    },
+    {
+      "page": 2,
+      "variant": "B m:nor=1 on ceiling m:r only",
+      "visualResult": "CEILING_GLYPHS_CORRECT_INLINE_AND_DISPLAY"
+    },
+    {
+      "page": 3,
+      "variant": "C Cambria Math on ceiling m:r only",
+      "visualResult": "DEFECT_PERSISTS"
+    },
+    {
+      "page": 4,
+      "variant": "D Remove w:rPr on ceiling m:r only",
+      "visualResult": "DEFECT_PERSISTS"
+    },
+    {
+      "page": 5,
+      "variant": "E Native m:d with ceiling begChr/endChr and grow=1",
+      "visualResult": "DEFECT_PERSISTS"
+    }
+  ],
+  "minimalFix": "Add m:nor m:val=1 to m:rPr for runs whose entire m:t value is U+2308 or U+2309 after mathematical styling. Existing glyph text, m:sty=p, and w:i=0 remain unchanged.",
+  "builderIntegration": "In mathematical_style token loop, include token in {ceil-left,ceil-right} in the condition that adds m:nor=1; alternatively call the supplied pure helper after mathematical_style.",
+  "testPdf": "paper_output/qa/manuscript_revision_20260912/ceil_diagnosis/ceil_variants.pdf",
+  "testPdfSha256": "00c7eea68f3352a3ebeb794c7ae500f90be508694a879efedf7dccf4721891cd",
+  "loCommand": [
+    "D:/Document/数学建模/tools/libreoffice/app/program/soffice.com",
+    "-env:UserInstallation=file:///D:/Document/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/2026CUMCM/tmp/cache/manuscript_revision_20260912/ceil_diagnosis_lo",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "paper_output/qa/manuscript_revision_20260912/ceil_diagnosis",
+    "paper_output/qa/manuscript_revision_20260912/ceil_diagnosis/ceil_variants.docx"
+  ],
+  "loExitCode": 0,
+  "imageDpi": 150,
+  "pageCount": 5,
+  "pages": [
+    {
+      "page": 1,
+      "path": "tmp/cache/manuscript_revision_20260912/ceil_diagnosis/page-1.png",
+      "sha256": "f7063e951f89d69f9aa13f3f4a901dde44727beb54a976e834d28d2eefa06af9",
+      "visuallyInspected": true
+    },
+    {
+      "page": 2,
+      "path": "tmp/cache/manuscript_revision_20260912/ceil_diagnosis/page-2.png",
+      "sha256": "43ae47e2d20b492f0052dcccf1ca9041dace45595ddf943ede815c6af6de0e4c",
+      "visuallyInspected": true
+    },
+    {
+      "page": 3,
+      "path": "tmp/cache/manuscript_revision_20260912/ceil_diagnosis/page-3.png",
+      "sha256": "64ff76034f983db6474c865a139ebee845fb76083ba257586a8360113da7de18",
+      "visuallyInspected": true
+    },
+    {
+      "page": 4,
+      "path": "tmp/cache/manuscript_revision_20260912/ceil_diagnosis/page-4.png",
+      "sha256": "ea71c0c19badbca289ccac5f091480a59bb1ca4d0c47a4c68def0392cafa61ad",
+      "visuallyInspected": true
+    },
+    {
+      "page": 5,
+      "path": "tmp/cache/manuscript_revision_20260912/ceil_diagnosis/page-5.png",
+      "sha256": "c7bf4ef8991ebc079d86e06e7d69996efa48f29e320850c050ffdeb37d751b81",
+      "visuallyInspected": true
+    }
+  ],
+  "limitations": [
+    "Test verified local LibreOffice behavior only; no claim about every Office installation or a corrected final manuscript.",
+    "No main manuscript DOCX or primary builder was modified by this reviewer.",
+    "Full-paper render must still check the body equation (12), the appendix inline ceiling expression, and display (35)."
+  ]
+}

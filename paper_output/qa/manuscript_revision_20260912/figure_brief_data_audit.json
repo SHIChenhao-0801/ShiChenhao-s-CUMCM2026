@@ -1,0 +1,544 @@
+{
+  "status": "PASS_DATA_AND_BRIEF_AUDIT",
+  "date": "2026-09-12",
+  "scope": "六图清单和 QA；无新绘图、无模型运行、无 DOCX 或构建器改动、无 Git 写入。",
+  "bodyReferencePolicy": "按根代理转达的最新用户决定，维持已删除的文末参考文献，正文 [3]–[6] 保留并只加批注；本任务未操作正文。",
+  "sourceDocx": {
+    "path": "paper_output/paper/A题_完整论文_保留原文_含附录.docx",
+    "sha256": "0c8bb744b568fd751dc0ad0d883f69b5f895a74b9f8fcb3666b99975db7b05ee",
+    "sixBriefsVerifiedExact": true
+  },
+  "figures": [
+    {
+      "figureNumber": 1,
+      "userBlockIndex0": 75,
+      "userBodyParagraphIndex0": 72,
+      "userBodyParagraphIndex1": 73,
+      "sectionPath": [
+        "5 模型的建立与求解",
+        "5.1 问题一模型的建立与求解",
+        "5.1.4 结果分析"
+      ],
+      "text": "图像主题1：问题一7个指定时刻的径向温度与含水率双面板曲线。横轴为距中心距离0—2 cm；左图纵轴为温度°C，右图为干基含水率kg/kg；每条曲线对应一个时刻，突出表面先响应及中心水分滞后。该图与表1、表2对应，绘制时保持时间颜色一致。",
+      "textSha256": "02931a678c0135c9bc2cfe3fd5a5c0ab3419f43d050075e144a891caf2f6dd64",
+      "unchangedFromOld": true,
+      "pageBasis": "revision_v5",
+      "pageStatus": "当前31页渲染版已核实；插图后可能变化",
+      "previousProvisionalPage": 9,
+      "currentRenderedPage": 9
+    },
+    {
+      "figureNumber": 2,
+      "userBlockIndex0": 90,
+      "userBodyParagraphIndex0": 87,
+      "userBodyParagraphIndex1": 88,
+      "sectionPath": [
+        "5 模型的建立与求解",
+        "5.2 问题二模型的建立与求解",
+        "5.2.2 变量定义与公式推导"
+      ],
+      "text": "图像主题2：烘房边界条件及延拓。上图为0—4 h温度原始点与插值，下图为环境水分指标；另用较长时间轴展示4 h后的50°C和0.05平台，用竖线标出观测与延拓边界。不能把延拓段画成实测点。",
+      "textSha256": "c7173c7ce4bcf71d9a6ba46dda5df2339c9d0e825c57599fd038e231c1954717",
+      "unchangedFromOld": true,
+      "pageBasis": "revision_v5",
+      "pageStatus": "当前31页渲染版已核实；插图后可能变化",
+      "previousProvisionalPage": 11,
+      "currentRenderedPage": 11
+    },
+    {
+      "figureNumber": 3,
+      "userBlockIndex0": 105,
+      "userBodyParagraphIndex0": 100,
+      "userBodyParagraphIndex1": 101,
+      "sectionPath": [
+        "5 模型的建立与求解",
+        "5.2 问题二模型的建立与求解",
+        "5.2.4 结果分析"
+      ],
+      "text": "图像主题3：问题二中心与表面的温度、含水率随时间变化。温度展示前4 h，含水率展示从0到达标；两图分别使用适合其变化尺度的时间轴，清楚标出中心和表面，避免因同轴缩放掩盖前期热响应。",
+      "textSha256": "310e86769a46a323ea8c759d5b54f336b91ae03380931c6685fb53965a5c9e95",
+      "unchangedFromOld": true,
+      "pageBasis": "revision_v5",
+      "pageStatus": "当前31页渲染版已核实；插图后可能变化",
+      "previousProvisionalPage": 12,
+      "currentRenderedPage": 12
+    },
+    {
+      "figureNumber": 4,
+      "userBlockIndex0": 128,
+      "userBodyParagraphIndex0": 122,
+      "userBodyParagraphIndex1": 123,
+      "sectionPath": [
+        "5 模型的建立与求解",
+        "5.3 问题三模型的建立与求解",
+        "5.3.4 结果分析"
+      ],
+      "text": "图像主题4：问题三中心、表面与全域最大含水率曲线及0.15阈值线。主图展示0—60 h，局部放大图展示临界根附近，分别标记tc与tr。图中明确全域最大值曲线与中心曲线后期重合，不人为错开。",
+      "textSha256": "c10279eb208da3f3d0bb303c363abf10647e922bcad28dce512f57d1771aba4c",
+      "unchangedFromOld": true,
+      "pageBasis": "revision_v5",
+      "pageStatus": "当前31页渲染版已核实；插图后可能变化",
+      "previousProvisionalPage": 15,
+      "currentRenderedPage": 15
+    },
+    {
+      "figureNumber": 5,
+      "userBlockIndex0": 161,
+      "userBodyParagraphIndex0": 153,
+      "userBodyParagraphIndex1": 154,
+      "sectionPath": [
+        "5 模型的建立与求解",
+        "5.4 问题四模型的建立与求解",
+        "5.4.4 结果分析"
+      ],
+      "text": "图像主题5：问题四移动域及含水率剖面。左图绘制R(t)随时间的变化并标出选取时刻；右图在真实物理半径上绘制相同时刻的C(r,t)，每条曲线在各自表面结束。域外区域用浅灰显示，另标中心与真实表面，不把曲线延伸到固定2 cm。",
+      "textSha256": "de91ff358cbaea919ad1e1c61285796201c484ed6b588b7abb606b1e76bf8da1",
+      "unchangedFromOld": true,
+      "pageBasis": "revision_v5",
+      "pageStatus": "当前31页渲染版已核实；插图后可能变化",
+      "previousProvisionalPage": 18,
+      "currentRenderedPage": 18
+    },
+    {
+      "figureNumber": 6,
+      "userBlockIndex0": 169,
+      "userBodyParagraphIndex0": 161,
+      "userBodyParagraphIndex1": 162,
+      "sectionPath": [
+        "5 模型的建立与求解",
+        "5.4 问题四模型的建立与求解",
+        "5.4.6 边界阻力的补充修正"
+      ],
+      "text": "图像主题6：经验边界阻力的情景比较。横轴取p=1、2、4，分别绘制两种模型的临界时长；同图注明N800、未标定情景，主结果以独立符号标注或只在图注引用，避免将不同网格结果混为同一精度。正文以这一组比较说明边界解释的影响，详细因子推导与参数范围放入附录。",
+      "textSha256": "f4b5ccaa72cbb19695d0cbd52e3873dbd9a63924e46c92eb7050e6a21184c226",
+      "unchangedFromOld": true,
+      "pageBasis": "revision_v5",
+      "pageStatus": "当前31页渲染版已核实；插图后可能变化",
+      "previousProvisionalPage": 19,
+      "currentRenderedPage": 19
+    }
+  ],
+  "sources": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "sizeBytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "sizeBytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q1/summary.json",
+      "sizeBytes": 3941,
+      "sha256": "2b4394701813dfcbb4b1041156715f9dd5a488f2ecd7402bf3d91adaecdeb536"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "sizeBytes": 5724,
+      "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "sizeBytes": 5350,
+      "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+      "sizeBytes": 689540,
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "arrays": {
+        "times_s": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        },
+        "material_x": {
+          "shape": [
+            21
+          ],
+          "dtype": "float64"
+        },
+        "T_K": {
+          "shape": [
+            3452,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            3452,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        },
+        "cumulative_loss": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+      "sizeBytes": 628742,
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "arrays": {
+        "times_s": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        },
+        "material_x": {
+          "shape": [
+            21
+          ],
+          "dtype": "float64"
+        },
+        "T_K": {
+          "shape": [
+            3069,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            3069,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        },
+        "cumulative_loss": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+      "sizeBytes": 12242,
+      "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096",
+      "arrays": {
+        "times_s": {
+          "shape": [
+            7
+          ],
+          "dtype": "float64"
+        },
+        "radii_m": {
+          "shape": [
+            121
+          ],
+          "dtype": "float64"
+        },
+        "temperature_C": {
+          "shape": [
+            7,
+            121
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            7,
+            121
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+      "sizeBytes": 249286,
+      "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c",
+      "arrays": {
+        "times_s": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "radii_m": {
+          "shape": [
+            121
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            266,
+            121
+          ],
+          "dtype": "float64"
+        },
+        "centre_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "surface_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "max_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+      "sizeBytes": 380,
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+      "sizeBytes": 345,
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+      "sizeBytes": 315,
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+      "sizeBytes": 285,
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+      "sizeBytes": 466,
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+      "sizeBytes": 390,
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+      "sizeBytes": 172,
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+    },
+    {
+      "path": "paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "sizeBytes": 84755,
+      "sha256": "7528cf2deb3b596c4c1877ad291043a3e47c8e96127de03cbb760a2ee63f9c96"
+    }
+  ],
+  "q23Completion": {
+    "critical_event_s": 206900.28702201758,
+    "critical_event_h": 57.47230195056044,
+    "reported_drying_time_h": 57.4724,
+    "reported_time_s": 206900.64,
+    "max_C_at_reported_time": 0.14999989718225315,
+    "slowest_material_coordinate": 0.0,
+    "conservative_post_verification_s": 206902.0,
+    "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+    "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+  },
+  "q4Completion": {
+    "critical_event_s": 183926.06923258994,
+    "critical_event_h": 51.09057478683054,
+    "reported_drying_time_h": 51.0906,
+    "reported_time_s": 183926.16,
+    "max_C_at_reported_time": 0.14999995339076624,
+    "slowest_material_coordinate": 0.0,
+    "conservative_post_verification_s": 183928.0,
+    "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+    "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+  },
+  "q4SelectedProfiles": [
+    {
+      "time_s": 0.0,
+      "time_h": 0.0,
+      "radius_cm": 2.0,
+      "row0": 0
+    },
+    {
+      "time_s": 21600.0,
+      "time_h": 6.0,
+      "radius_cm": 1.374,
+      "row0": 361
+    },
+    {
+      "time_s": 43200.0,
+      "time_h": 12.0,
+      "radius_cm": 1.248,
+      "row0": 721
+    },
+    {
+      "time_s": 86400.0,
+      "time_h": 24.0,
+      "radius_cm": 1.204,
+      "row0": 1441
+    },
+    {
+      "time_s": 172800.0,
+      "time_h": 48.0,
+      "radius_cm": 1.2,
+      "row0": 2881
+    },
+    {
+      "time_s": 183926.06923258994,
+      "time_h": 51.09057478683054,
+      "radius_cm": 1.2,
+      "row0": 3067
+    }
+  ],
+  "n800Scenarios": [
+    {
+      "scenario": "iso_p1_Q23",
+      "question": "Q23",
+      "isothermShapeP": 1.0,
+      "intervals": 800,
+      "latentFraction": 0.0,
+      "event_h": 57.47232976256206,
+      "event_s": 206900.3871492347,
+      "status": "computed_event_only",
+      "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported"
+    },
+    {
+      "scenario": "iso_p2_Q23",
+      "question": "Q23",
+      "isothermShapeP": 2.0,
+      "intervals": 800,
+      "latentFraction": 0.0,
+      "event_h": 59.623901353233975,
+      "event_s": 214646.04487264922,
+      "status": "computed_event_only",
+      "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported"
+    },
+    {
+      "scenario": "iso_p4_Q23",
+      "question": "Q23",
+      "isothermShapeP": 4.0,
+      "intervals": 800,
+      "latentFraction": 0.0,
+      "event_h": 65.4447491379564,
+      "event_s": 235601.0968952963,
+      "status": "computed_event_only",
+      "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported"
+    },
+    {
+      "scenario": "iso_p1_Q4",
+      "question": "Q4",
+      "isothermShapeP": 1.0,
+      "intervals": 800,
+      "latentFraction": 0.0,
+      "event_h": 51.090599155463806,
+      "event_s": 183926.15696651538,
+      "status": "computed_event_only",
+      "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported"
+    },
+    {
+      "scenario": "iso_p2_Q4",
+      "question": "Q4",
+      "isothermShapeP": 2.0,
+      "intervals": 800,
+      "latentFraction": 0.0,
+      "event_h": 52.22830295685303,
+      "event_s": 188021.89064975345,
+      "status": "computed_event_only",
+      "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported"
+    },
+    {
+      "scenario": "iso_p4_Q4",
+      "question": "Q4",
+      "isothermShapeP": 4.0,
+      "intervals": 800,
+      "latentFraction": 0.0,
+      "event_h": 55.31621495305313,
+      "event_s": 199138.37381456664,
+      "status": "computed_event_only",
+      "tailIntegrity": "event only: the post-event reporting second was not integrated, so only the event time is reported"
+    }
+  ],
+  "numericalPlotBoundaries": {
+    "Q3DataEndsAt_s": 206902.0,
+    "Q3MainAxisTo_h": 60,
+    "Q3DoNotInventTailTo60h": true,
+    "Q3ReportedTimeMissingFromSampledNPZ": true,
+    "Q3ReportedPointAvailableInSummary": true,
+    "Q3CentreMaxLargestAbsDifference": 4.440892098500626e-16,
+    "Q4PhysicalCoordinates": "radius_cm = material_x * radius_m[time_index] * 100",
+    "environmentAt4h": {
+      "temperature_C": 50.165,
+      "air_moisture_kg_per_kg": 0.04986
+    },
+    "environmentAfter4h": {
+      "temperature_C": 50.0,
+      "equilibrium_kg_per_kg": 0.05
+    },
+    "scenarioUseField": "scenarios[i].event_h（同一层顶级字段）",
+    "scenarioDoNotUseField": "frozenBaselineForComparison 或 production 网格结果不能填入 p=1"
+  },
+  "sourceImplementationEvidence": [
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "line": 87,
+      "meaning": "半径直接分段线性插值；环境 t>14400 才切 nominal 平台"
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "line": 186,
+      "meaning": "max_C 来自全体生产离散节点，不能用稀疏径向采样最大值冒充"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_activity_closure.py",
+      "line": 246,
+      "meaning": "情景只报告阈值事件；不是经严格后越界验证的报告时刻"
+    }
+  ],
+  "pageVerificationEvidence": "paper_output/qa/manuscript_revision_20260912/visual_review_body_11_22_v5.json"
+}

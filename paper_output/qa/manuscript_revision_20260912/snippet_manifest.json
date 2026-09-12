@@ -1,0 +1,1361 @@
+{
+  "generatedAtUtc": "2026-09-12T13:39:54.335812+00:00",
+  "status": "PASS_STATIC_EXCERPT_FIDELITY",
+  "scope": "User-requested compact appendix draft; physical/numerical derivations and selected core algorithm statements only.",
+  "outputs": {
+    "markdown": "D:/Document/数学建模/2026CUMCM/paper_output/qa/manuscript_revision_20260912/compact_appendix.md",
+    "markdownSha256": "05d64b00dd1f00d586fea0f478ab0fd0bb067acdcc7be5340f20292735f1c141"
+  },
+  "sourcePolicy": "Current original production files; each whole-file byte hash matches frozen final_v6a entry in prior production appendix manifest.",
+  "supersedesPriorFullListingRequirement": true,
+  "policyReason": "Current user explicitly requests necessary algorithm excerpts rather than complete files.",
+  "sourceManifest": {
+    "path": "D:/Document/数学建模/2026CUMCM/paper_output/qa/manuscript_20260912/code_appendix_manifest.json",
+    "sha256": "97d3a0770a459e13f30cc75e4cbf60cda614a325d01b166e0fba217017e7f941"
+  },
+  "writingEvidence": [
+    "paper_output/final_paper_source.md: original verified appendices A-C and body equations 1-19",
+    "paper_output/qa/manuscript_20260912/appendix_derivation_research.md",
+    "paper_output/qa/manuscript_20260912/appendix_numerical_process.md",
+    "paper_output/qa/manuscript_20260912/independent_numbers_formula_audit.md"
+  ],
+  "bodyUnchangedByThisTask": true,
+  "modelsRerun": false,
+  "equationNumbers": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "requiredCrossReferences": {
+    "A.2": "Effective density/current volume incompatibility",
+    "A": "Material derivative cancellation and dry mass integral",
+    "B": "Residual, sparse matrix, boundary derivatives",
+    "C": "Grid/time settings, Bessel benchmark and sampling, strict report and error scope"
+  },
+  "sources": [
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "frozenProductionSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "matchesFrozenProduction": true,
+      "originalLineCount": 402
+    },
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/analytic_jacobian.py",
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "frozenProductionSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "matchesFrozenProduction": true,
+      "originalLineCount": 325
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/q3_model.py",
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "frozenProductionSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "matchesFrozenProduction": true,
+      "originalLineCount": 27
+    }
+  ],
+  "snippetCount": 6,
+  "codeLineCount": 117,
+  "transformationsAllowed": [
+    "Select documented original line ranges",
+    "Remove comments/docstrings/imports/blank lines",
+    "Remove uniform leading indentation within each snippet"
+  ],
+  "notChanged": [
+    "Identifiers",
+    "Numerical constants",
+    "Operators",
+    "Order of selected original statements"
+  ],
+  "fidelityVerified": true,
+  "allWholeSourceHashesMatchFrozenProduction": true,
+  "pageBudget": {
+    "targetTotal": [
+      8,
+      10
+    ],
+    "derivations": [
+      3,
+      4
+    ],
+    "processAndError": [
+      1,
+      2
+    ],
+    "algorithm": [
+      2,
+      3
+    ],
+    "renderedHere": false,
+    "limitation": "Content budget only; actual page count requires integration and DOCX/PDF rendering."
+  },
+  "notes": [
+    "Excerpts require original context and are not standalone programs.",
+    "No complete validation, plotting, export or historical source file is embedded.",
+    "Complete source package remains separate supporting material."
+  ],
+  "snippets": [
+    {
+      "id": "D.1",
+      "title": "题给物性",
+      "file": "drying_core.py",
+      "ranges": [
+        [
+          108,
+          126
+        ],
+        [
+          131,
+          131
+        ]
+      ],
+      "context": "RadialModel.properties",
+      "omission": "省略第127—130行仅供验证使用的constant_D与constant_thermal覆盖；第110行只删除行尾注释。其余物性关键语句按原文保留。",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceAbsolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "selectedOriginalRanges": [
+        [
+          108,
+          126
+        ],
+        [
+          131,
+          131
+        ]
+      ],
+      "omittedOriginalRanges": [
+        [
+          1,
+          107
+        ],
+        [
+          127,
+          130
+        ],
+        [
+          132,
+          402
+        ]
+      ],
+      "lineCount": 20,
+      "snippetSha256Utf8Lf": "ce6b1ac06033747dc8c1d3142c3a0a697cfab5694fa6d6432247041ccbcbb0cb",
+      "commonLeadingSpacesRemoved": 4,
+      "lineMap": [
+        {
+          "originalLine": 108,
+          "originalText": "    def properties(self, T, C):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 1,
+          "text": "def properties(self, T, C):"
+        },
+        {
+          "originalLine": 109,
+          "originalText": "        s = self.settings",
+          "inlineCommentRemoved": false,
+          "snippetLine": 2,
+          "text": "    s = self.settings"
+        },
+        {
+          "originalLine": 110,
+          "originalText": "        positive_C = np.maximum(C, 1e-12)  # coefficient continuation, never state clipping",
+          "inlineCommentRemoved": true,
+          "snippetLine": 3,
+          "text": "    positive_C = np.maximum(C, 1e-12)"
+        },
+        {
+          "originalLine": 111,
+          "originalText": "        if np.any(T <= 0):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 4,
+          "text": "    if np.any(T <= 0):"
+        },
+        {
+          "originalLine": 112,
+          "originalText": "            raise FloatingPointError('Nonpositive absolute temperature')",
+          "inlineCommentRemoved": false,
+          "snippetLine": 5,
+          "text": "        raise FloatingPointError('Nonpositive absolute temperature')"
+        },
+        {
+          "originalLine": 113,
+          "originalText": "        wet = positive_C / (1. + positive_C)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 6,
+          "text": "    wet = positive_C / (1. + positive_C)"
+        },
+        {
+          "originalLine": 114,
+          "originalText": "        if s.question == 'Q1':",
+          "inlineCommentRemoved": false,
+          "snippetLine": 7,
+          "text": "    if s.question == 'Q1':"
+        },
+        {
+          "originalLine": 115,
+          "originalText": "            rho = np.full_like(C, 820.)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 8,
+          "text": "        rho = np.full_like(C, 820.)"
+        },
+        {
+          "originalLine": 116,
+          "originalText": "            cp = np.full_like(C, 2600.)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 9,
+          "text": "        cp = np.full_like(C, 2600.)"
+        },
+        {
+          "originalLine": 117,
+          "originalText": "            k = np.full_like(C, .36)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 10,
+          "text": "        k = np.full_like(C, .36)"
+        },
+        {
+          "originalLine": 118,
+          "originalText": "            D = 7e-9 * np.exp(-.89 / positive_C)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 11,
+          "text": "        D = 7e-9 * np.exp(-.89 / positive_C)"
+        },
+        {
+          "originalLine": 119,
+          "originalText": "        elif s.question in ('Q2', 'Q3', 'Q23'):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 12,
+          "text": "    elif s.question in ('Q2', 'Q3', 'Q23'):"
+        },
+        {
+          "originalLine": 120,
+          "originalText": "            rho, cp, k = 650 + 128 * positive_C, 1450 + 2736 * wet, .21 + .38 * wet",
+          "inlineCommentRemoved": false,
+          "snippetLine": 13,
+          "text": "        rho, cp, k = 650 + 128 * positive_C, 1450 + 2736 * wet, .21 + .38 * wet"
+        },
+        {
+          "originalLine": 121,
+          "originalText": "            D = 2.4e-3 * np.exp(-.45 / positive_C - 3850 / T)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 14,
+          "text": "        D = 2.4e-3 * np.exp(-.45 / positive_C - 3850 / T)"
+        },
+        {
+          "originalLine": 122,
+          "originalText": "        elif s.question == 'Q4':",
+          "inlineCommentRemoved": false,
+          "snippetLine": 15,
+          "text": "    elif s.question == 'Q4':"
+        },
+        {
+          "originalLine": 123,
+          "originalText": "            rho, cp, k = 760 + 90 * positive_C, 1850 + 2150 * wet, .12 + .20 * wet",
+          "inlineCommentRemoved": false,
+          "snippetLine": 16,
+          "text": "        rho, cp, k = 760 + 90 * positive_C, 1850 + 2150 * wet, .12 + .20 * wet"
+        },
+        {
+          "originalLine": 124,
+          "originalText": "            D = 4.2e-4 * np.exp(-.30 / positive_C - 3850 / T)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 17,
+          "text": "        D = 4.2e-4 * np.exp(-.30 / positive_C - 3850 / T)"
+        },
+        {
+          "originalLine": 125,
+          "originalText": "        else:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 18,
+          "text": "    else:"
+        },
+        {
+          "originalLine": 126,
+          "originalText": "            raise ValueError(s.question)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 19,
+          "text": "        raise ValueError(s.question)"
+        },
+        {
+          "originalLine": 131,
+          "originalText": "        return rho, cp, k, D",
+          "inlineCommentRemoved": false,
+          "snippetLine": 20,
+          "text": "    return rho, cp, k, D"
+        }
+      ],
+      "independentlyRunnable": false,
+      "localDependenciesRequired": true
+    },
+    {
+      "id": "D.2",
+      "title": "环形权重与内部面通量",
+      "file": "drying_core.py",
+      "ranges": [
+        [
+          76,
+          80
+        ],
+        [
+          133,
+          135
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          150,
+          157
+        ],
+        [
+          159,
+          159
+        ]
+      ],
+      "context": "RadialModel.__init__ 的网格段、harmonic、water_internal_flux 的Kirchhoff段",
+      "omission": "所列三处上下文分段合列；省略第81—132行其他初始化与物性、第136—144行稀疏模式、第146—149行调和水通量/模式分支和第158行注释。仅展示已选Kirchhoff路径。",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceAbsolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "selectedOriginalRanges": [
+        [
+          76,
+          80
+        ],
+        [
+          133,
+          135
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          150,
+          157
+        ],
+        [
+          159,
+          159
+        ]
+      ],
+      "omittedOriginalRanges": [
+        [
+          1,
+          75
+        ],
+        [
+          81,
+          132
+        ],
+        [
+          136,
+          144
+        ],
+        [
+          146,
+          149
+        ],
+        [
+          158,
+          158
+        ],
+        [
+          160,
+          402
+        ]
+      ],
+      "lineCount": 18,
+      "snippetSha256Utf8Lf": "95b22c40df30fc25ad8c160ed20f161fd677c1caa36a00513925a03b7e81c610",
+      "commonLeadingSpacesRemoved": 4,
+      "lineMap": [
+        {
+          "originalLine": 76,
+          "originalText": "        self.x = np.linspace(0., 1., settings.intervals + 1)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 1,
+          "text": "    self.x = np.linspace(0., 1., settings.intervals + 1)"
+        },
+        {
+          "originalLine": 77,
+          "originalText": "        self.dx = 1. / settings.intervals",
+          "inlineCommentRemoved": false,
+          "snippetLine": 2,
+          "text": "    self.dx = 1. / settings.intervals"
+        },
+        {
+          "originalLine": 78,
+          "originalText": "        faces = np.r_[0., (self.x[1:] + self.x[:-1]) / 2., 1.]",
+          "inlineCommentRemoved": false,
+          "snippetLine": 3,
+          "text": "    faces = np.r_[0., (self.x[1:] + self.x[:-1]) / 2., 1.]"
+        },
+        {
+          "originalLine": 79,
+          "originalText": "        self.w = np.diff(faces ** 2) / 2.",
+          "inlineCommentRemoved": false,
+          "snippetLine": 4,
+          "text": "    self.w = np.diff(faces ** 2) / 2."
+        },
+        {
+          "originalLine": 80,
+          "originalText": "        self.internal_faces = faces[1:-1]",
+          "inlineCommentRemoved": false,
+          "snippetLine": 5,
+          "text": "    self.internal_faces = faces[1:-1]"
+        },
+        {
+          "originalLine": 133,
+          "originalText": "    @staticmethod",
+          "inlineCommentRemoved": false,
+          "snippetLine": 6,
+          "text": "@staticmethod"
+        },
+        {
+          "originalLine": 134,
+          "originalText": "    def harmonic(a):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 7,
+          "text": "def harmonic(a):"
+        },
+        {
+          "originalLine": 135,
+          "originalText": "        return 2 * a[:-1] * a[1:] / np.maximum(a[:-1] + a[1:], np.finfo(float).tiny)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 8,
+          "text": "    return 2 * a[:-1] * a[1:] / np.maximum(a[:-1] + a[1:], np.finfo(float).tiny)"
+        },
+        {
+          "originalLine": 145,
+          "originalText": "    def water_internal_flux(self, T, C, D):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 9,
+          "text": "def water_internal_flux(self, T, C, D):"
+        },
+        {
+          "originalLine": 150,
+          "originalText": "        a, D0 = {'Q1':(.89,7e-9), 'Q23':(.45,2.4e-3), 'Q2':(.45,2.4e-3),",
+          "inlineCommentRemoved": false,
+          "snippetLine": 10,
+          "text": "    a, D0 = {'Q1':(.89,7e-9), 'Q23':(.45,2.4e-3), 'Q2':(.45,2.4e-3),"
+        },
+        {
+          "originalLine": 151,
+          "originalText": "                  'Q3':(.45,2.4e-3), 'Q4':(.30,4.2e-4)}[self.settings.question]",
+          "inlineCommentRemoved": false,
+          "snippetLine": 11,
+          "text": "              'Q3':(.45,2.4e-3), 'Q4':(.30,4.2e-4)}[self.settings.question]"
+        },
+        {
+          "originalLine": 152,
+          "originalText": "        cc = np.maximum(C, 1e-12)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 12,
+          "text": "    cc = np.maximum(C, 1e-12)"
+        },
+        {
+          "originalLine": 153,
+          "originalText": "        potential = cc * np.exp(-a/cc) + a * expi(-a/cc)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 13,
+          "text": "    potential = cc * np.exp(-a/cc) + a * expi(-a/cc)"
+        },
+        {
+          "originalLine": 154,
+          "originalText": "        difference = np.diff(potential)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 14,
+          "text": "    difference = np.diff(potential)"
+        },
+        {
+          "originalLine": 155,
+          "originalText": "        small = np.abs(np.diff(cc)) < 1e-7 * np.maximum((cc[:-1]+cc[1:])/2, 1e-3)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 15,
+          "text": "    small = np.abs(np.diff(cc)) < 1e-7 * np.maximum((cc[:-1]+cc[1:])/2, 1e-3)"
+        },
+        {
+          "originalLine": 156,
+          "originalText": "        difference[small] = (np.exp(-a/((cc[:-1][small]+cc[1:][small])/2)) * np.diff(cc)[small])",
+          "inlineCommentRemoved": false,
+          "snippetLine": 16,
+          "text": "    difference[small] = (np.exp(-a/((cc[:-1][small]+cc[1:][small])/2)) * np.diff(cc)[small])"
+        },
+        {
+          "originalLine": 157,
+          "originalText": "        thermal_factor = 1. if self.settings.question == 'Q1' else np.exp(-3850/((T[:-1]+T[1:])/2))",
+          "inlineCommentRemoved": false,
+          "snippetLine": 17,
+          "text": "    thermal_factor = 1. if self.settings.question == 'Q1' else np.exp(-3850/((T[:-1]+T[1:])/2))"
+        },
+        {
+          "originalLine": 159,
+          "originalText": "        return self.internal_faces * D0 * thermal_factor * difference / self.dx",
+          "inlineCommentRemoved": false,
+          "snippetLine": 18,
+          "text": "    return self.internal_faces * D0 * thermal_factor * difference / self.dx"
+        }
+      ],
+      "independentlyRunnable": false,
+      "localDependenciesRequired": true
+    },
+    {
+      "id": "D.3",
+      "title": "材料控制体的守恒右端",
+      "file": "drying_core.py",
+      "ranges": [
+        [
+          161,
+          161
+        ],
+        [
+          164,
+          173
+        ],
+        [
+          180,
+          184
+        ]
+      ],
+      "context": "RadialModel.rhs",
+      "omission": "省略第162行docstring、第163行调用计数和第174—179行可选表面潜热情景；基线surface_latent_fraction=0。中心通量由零数组直接表示。",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceAbsolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "selectedOriginalRanges": [
+        [
+          161,
+          161
+        ],
+        [
+          164,
+          173
+        ],
+        [
+          180,
+          184
+        ]
+      ],
+      "omittedOriginalRanges": [
+        [
+          1,
+          160
+        ],
+        [
+          162,
+          163
+        ],
+        [
+          174,
+          179
+        ],
+        [
+          185,
+          402
+        ]
+      ],
+      "lineCount": 16,
+      "snippetSha256Utf8Lf": "cddf471fe4923c98f9f4073cddb0c5f687867269d1cae97f06021b1beefe5a48",
+      "commonLeadingSpacesRemoved": 4,
+      "lineMap": [
+        {
+          "originalLine": 161,
+          "originalText": "    def rhs(self, t, state):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 1,
+          "text": "def rhs(self, t, state):"
+        },
+        {
+          "originalLine": 164,
+          "originalText": "        T, C = state[:-1:2], state[1:-1:2]",
+          "inlineCommentRemoved": false,
+          "snippetLine": 2,
+          "text": "    T, C = state[:-1:2], state[1:-1:2]"
+        },
+        {
+          "originalLine": 165,
+          "originalText": "        rho, cp, k, D = self.properties(T, C)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 3,
+          "text": "    rho, cp, k, D = self.properties(T, C)"
+        },
+        {
+          "originalLine": 166,
+          "originalText": "        radius = float(self.radius(t))",
+          "inlineCommentRemoved": false,
+          "snippetLine": 4,
+          "text": "    radius = float(self.radius(t))"
+        },
+        {
+          "originalLine": 167,
+          "originalText": "        tair, ceq = self.environment(t)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 5,
+          "text": "    tair, ceq = self.environment(t)"
+        },
+        {
+          "originalLine": 168,
+          "originalText": "        heat_g = np.zeros(self.n + 1)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 6,
+          "text": "    heat_g = np.zeros(self.n + 1)"
+        },
+        {
+          "originalLine": 169,
+          "originalText": "        water_g = np.zeros(self.n + 1)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 7,
+          "text": "    water_g = np.zeros(self.n + 1)"
+        },
+        {
+          "originalLine": 170,
+          "originalText": "        heat_g[1:-1] = self.internal_faces * self.harmonic(k) * np.diff(T) / self.dx",
+          "inlineCommentRemoved": false,
+          "snippetLine": 8,
+          "text": "    heat_g[1:-1] = self.internal_faces * self.harmonic(k) * np.diff(T) / self.dx"
+        },
+        {
+          "originalLine": 171,
+          "originalText": "        water_g[1:-1] = self.water_internal_flux(T, C, D)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 9,
+          "text": "    water_g[1:-1] = self.water_internal_flux(T, C, D)"
+        },
+        {
+          "originalLine": 172,
+          "originalText": "        water_g[-1] = -self.settings.beta * radius * (C[-1] - ceq)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 10,
+          "text": "    water_g[-1] = -self.settings.beta * radius * (C[-1] - ceq)"
+        },
+        {
+          "originalLine": 173,
+          "originalText": "        heat_g[-1] = -self.settings.h * radius * (T[-1] - tair)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 11,
+          "text": "    heat_g[-1] = -self.settings.h * radius * (T[-1] - tair)"
+        },
+        {
+          "originalLine": 180,
+          "originalText": "        derivative = np.empty_like(state)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 12,
+          "text": "    derivative = np.empty_like(state)"
+        },
+        {
+          "originalLine": 181,
+          "originalText": "        derivative[:-1:2] = np.diff(heat_g) / (radius ** 2 * self.w * rho * cp)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 13,
+          "text": "    derivative[:-1:2] = np.diff(heat_g) / (radius ** 2 * self.w * rho * cp)"
+        },
+        {
+          "originalLine": 182,
+          "originalText": "        derivative[1:-1:2] = np.diff(water_g) / (radius ** 2 * self.w)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 14,
+          "text": "    derivative[1:-1:2] = np.diff(water_g) / (radius ** 2 * self.w)"
+        },
+        {
+          "originalLine": 183,
+          "originalText": "        derivative[-1] = 2 * self.settings.beta / radius * (C[-1] - ceq)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 15,
+          "text": "    derivative[-1] = 2 * self.settings.beta / radius * (C[-1] - ceq)"
+        },
+        {
+          "originalLine": 184,
+          "originalText": "        return derivative",
+          "inlineCommentRemoved": false,
+          "snippetLine": 16,
+          "text": "    return derivative"
+        }
+      ],
+      "independentlyRunnable": false,
+      "localDependenciesRequired": true
+    },
+    {
+      "id": "D.4",
+      "title": "稀疏装配与容量导数",
+      "file": "analytic_jacobian.py",
+      "ranges": [
+        [
+          76,
+          77
+        ],
+        [
+          138,
+          139
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          157,
+          164
+        ]
+      ],
+      "context": "jacobian 的容量、几何尺度和稀疏行列装配段",
+      "omission": "只摘四处关键装配语句；rho_c、cp_c按式(29)前后给出的物性导数，heat_deriv、water_deriv按式(25)—(28)，heat_g按式(24)边界构造。省略其余面偏导构造、add_face辅助函数、边界行、CSC转换及全部自检；相应公式和边界偏导在附录B保留。",
+      "sourcePath": "paper_output/code/modeling/analytic_jacobian.py",
+      "sourceAbsolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/analytic_jacobian.py",
+      "sourceSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "selectedOriginalRanges": [
+        [
+          76,
+          77
+        ],
+        [
+          138,
+          139
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          157,
+          164
+        ]
+      ],
+      "omittedOriginalRanges": [
+        [
+          1,
+          75
+        ],
+        [
+          78,
+          137
+        ],
+        [
+          140,
+          144
+        ],
+        [
+          146,
+          156
+        ],
+        [
+          165,
+          325
+        ]
+      ],
+      "lineCount": 13,
+      "snippetSha256Utf8Lf": "0c5286ef33cb4480a07c3d40e17fbca0ad56d242e3259a6e498fc68fa139a803",
+      "commonLeadingSpacesRemoved": 4,
+      "lineMap": [
+        {
+          "originalLine": 76,
+          "originalText": "    capacity = rho * cp",
+          "inlineCommentRemoved": false,
+          "snippetLine": 1,
+          "text": "capacity = rho * cp"
+        },
+        {
+          "originalLine": 77,
+          "originalText": "    capacity_c = rho_c * cp + rho * cp_c",
+          "inlineCommentRemoved": false,
+          "snippetLine": 2,
+          "text": "capacity_c = rho_c * cp + rho * cp_c"
+        },
+        {
+          "originalLine": 138,
+          "originalText": "    heat_scale = 1. / (radius**2 * model.w * capacity)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 3,
+          "text": "heat_scale = 1. / (radius**2 * model.w * capacity)"
+        },
+        {
+          "originalLine": 139,
+          "originalText": "    water_scale = 1. / (radius**2 * model.w)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 4,
+          "text": "water_scale = 1. / (radius**2 * model.w)"
+        },
+        {
+          "originalLine": 145,
+          "originalText": "    temp_derivative = np.diff(heat_g) * heat_scale",
+          "inlineCommentRemoved": false,
+          "snippetLine": 5,
+          "text": "temp_derivative = np.diff(heat_g) * heat_scale"
+        },
+        {
+          "originalLine": 157,
+          "originalText": "    add_face(2*face_index, heat_deriv, heat_scale[:-1])",
+          "inlineCommentRemoved": false,
+          "snippetLine": 6,
+          "text": "add_face(2*face_index, heat_deriv, heat_scale[:-1])"
+        },
+        {
+          "originalLine": 158,
+          "originalText": "    add_face(2*face_index+2, heat_deriv, -heat_scale[1:])",
+          "inlineCommentRemoved": false,
+          "snippetLine": 7,
+          "text": "add_face(2*face_index+2, heat_deriv, -heat_scale[1:])"
+        },
+        {
+          "originalLine": 159,
+          "originalText": "    add_face(2*face_index+1, water_deriv, water_scale[:-1])",
+          "inlineCommentRemoved": false,
+          "snippetLine": 8,
+          "text": "add_face(2*face_index+1, water_deriv, water_scale[:-1])"
+        },
+        {
+          "originalLine": 160,
+          "originalText": "    add_face(2*face_index+3, water_deriv, -water_scale[1:])",
+          "inlineCommentRemoved": false,
+          "snippetLine": 9,
+          "text": "add_face(2*face_index+3, water_deriv, -water_scale[1:])"
+        },
+        {
+          "originalLine": 161,
+          "originalText": "    cell_index = np.arange(n)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 10,
+          "text": "cell_index = np.arange(n)"
+        },
+        {
+          "originalLine": 162,
+          "originalText": "    rows.append(2*cell_index)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 11,
+          "text": "rows.append(2*cell_index)"
+        },
+        {
+          "originalLine": 163,
+          "originalText": "    columns.append(2*cell_index+1)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 12,
+          "text": "columns.append(2*cell_index+1)"
+        },
+        {
+          "originalLine": 164,
+          "originalText": "    values.append(-temp_derivative * capacity_c / capacity)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 13,
+          "text": "values.append(-temp_derivative * capacity_c / capacity)"
+        }
+      ],
+      "independentlyRunnable": false,
+      "localDependenciesRequired": true
+    },
+    {
+      "id": "D.5",
+      "title": "BDF 分段、事件与真实后延伸",
+      "file": "drying_core.py",
+      "ranges": [
+        [
+          306,
+          318
+        ],
+        [
+          320,
+          333
+        ],
+        [
+          336,
+          337
+        ],
+        [
+          339,
+          342
+        ],
+        [
+          345,
+          346
+        ],
+        [
+          349,
+          350
+        ]
+      ],
+      "context": "_solve_case_impl 的求解主体",
+      "omission": "省略第319、338行注释，第334—335、343—344、347—348行缓存存储或断点整理，及主体之后的Run封装与诊断。保留首次BDF断点整理以显示DiskBDF上下文；该类保存原始BDF稠密系数，不改变方程。所有存储与断点整理仍在完整生产实现执行。",
+      "sourcePath": "paper_output/code/modeling/drying_core.py",
+      "sourceAbsolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "sourceSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "selectedOriginalRanges": [
+        [
+          306,
+          318
+        ],
+        [
+          320,
+          333
+        ],
+        [
+          336,
+          337
+        ],
+        [
+          339,
+          342
+        ],
+        [
+          345,
+          346
+        ],
+        [
+          349,
+          350
+        ]
+      ],
+      "omittedOriginalRanges": [
+        [
+          1,
+          305
+        ],
+        [
+          319,
+          319
+        ],
+        [
+          334,
+          335
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          343,
+          344
+        ],
+        [
+          347,
+          348
+        ],
+        [
+          351,
+          402
+        ]
+      ],
+      "lineCount": 37,
+      "snippetSha256Utf8Lf": "41f1c442a1440af8d3aa9a35c48bc3caf01368819cb7c09f7266153fb2a25bda",
+      "commonLeadingSpacesRemoved": 4,
+      "lineMap": [
+        {
+          "originalLine": 306,
+          "originalText": "    model = RadialModel(settings)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 1,
+          "text": "model = RadialModel(settings)"
+        },
+        {
+          "originalLine": 307,
+          "originalText": "    method = disk_dense.DiskBDF if cache is not None else settings.method",
+          "inlineCommentRemoved": false,
+          "snippetLine": 2,
+          "text": "method = disk_dense.DiskBDF if cache is not None else settings.method"
+        },
+        {
+          "originalLine": 308,
+          "originalText": "    jacobian_options = ({'jac': lambda t, y: analytic_jacobian.jacobian(model, t, y)}",
+          "inlineCommentRemoved": false,
+          "snippetLine": 3,
+          "text": "jacobian_options = ({'jac': lambda t, y: analytic_jacobian.jacobian(model, t, y)}"
+        },
+        {
+          "originalLine": 309,
+          "originalText": "        if settings.jacobian_mode == 'analytic' else {'jac_sparsity': model.jac_pattern})",
+          "inlineCommentRemoved": false,
+          "snippetLine": 4,
+          "text": "    if settings.jacobian_mode == 'analytic' else {'jac_sparsity': model.jac_pattern})"
+        },
+        {
+          "originalLine": 310,
+          "originalText": "    if cache is not None:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 5,
+          "text": "if cache is not None:"
+        },
+        {
+          "originalLine": 311,
+          "originalText": "        jacobian_options['dense_cache'] = cache",
+          "inlineCommentRemoved": false,
+          "snippetLine": 6,
+          "text": "    jacobian_options['dense_cache'] = cache"
+        },
+        {
+          "originalLine": 312,
+          "originalText": "    def dry_event(t, y):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 7,
+          "text": "def dry_event(t, y):"
+        },
+        {
+          "originalLine": 313,
+          "originalText": "        return float(np.max(y[1:-1:2]) - .15)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 8,
+          "text": "    return float(np.max(y[1:-1:2]) - .15)"
+        },
+        {
+          "originalLine": 314,
+          "originalText": "    dry_event.terminal, dry_event.direction = True, -1",
+          "inlineCommentRemoved": false,
+          "snippetLine": 9,
+          "text": "dry_event.terminal, dry_event.direction = True, -1"
+        },
+        {
+          "originalLine": 315,
+          "originalText": "    atol = np.empty(2 * model.n + 1)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 10,
+          "text": "atol = np.empty(2 * model.n + 1)"
+        },
+        {
+          "originalLine": 316,
+          "originalText": "    atol[:-1:2], atol[1:-1:2], atol[-1] = settings.atol_temperature, settings.atol_moisture, settings.atol_moisture",
+          "inlineCommentRemoved": false,
+          "snippetLine": 11,
+          "text": "atol[:-1:2], atol[1:-1:2], atol[-1] = settings.atol_temperature, settings.atol_moisture, settings.atol_moisture"
+        },
+        {
+          "originalLine": 317,
+          "originalText": "    horizon = 1800. if settings.question == 'Q1' else settings.horizon_h * 3600.",
+          "inlineCommentRemoved": false,
+          "snippetLine": 12,
+          "text": "horizon = 1800. if settings.question == 'Q1' else settings.horizon_h * 3600."
+        },
+        {
+          "originalLine": 318,
+          "originalText": "    pieces, initial, event_s = [], model.initial(), None",
+          "inlineCommentRemoved": false,
+          "snippetLine": 13,
+          "text": "pieces, initial, event_s = [], model.initial(), None"
+        },
+        {
+          "originalLine": 320,
+          "originalText": "    endpoints = [0., min(14400., horizon)]",
+          "inlineCommentRemoved": false,
+          "snippetLine": 14,
+          "text": "endpoints = [0., min(14400., horizon)]"
+        },
+        {
+          "originalLine": 321,
+          "originalText": "    if horizon > 14400.:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 15,
+          "text": "if horizon > 14400.:"
+        },
+        {
+          "originalLine": 322,
+          "originalText": "        endpoints.append(horizon)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 16,
+          "text": "    endpoints.append(horizon)"
+        },
+        {
+          "originalLine": 323,
+          "originalText": "    for left, right in zip(endpoints[:-1], endpoints[1:]):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 17,
+          "text": "for left, right in zip(endpoints[:-1], endpoints[1:]):"
+        },
+        {
+          "originalLine": 324,
+          "originalText": "        piece = solve_ivp(model.rhs, (left, right), initial, method=method,",
+          "inlineCommentRemoved": false,
+          "snippetLine": 18,
+          "text": "    piece = solve_ivp(model.rhs, (left, right), initial, method=method,"
+        },
+        {
+          "originalLine": 325,
+          "originalText": "            rtol=settings.rtol, atol=atol, **jacobian_options,",
+          "inlineCommentRemoved": false,
+          "snippetLine": 19,
+          "text": "        rtol=settings.rtol, atol=atol, **jacobian_options,"
+        },
+        {
+          "originalLine": 326,
+          "originalText": "            max_step=settings.early_max_step_s if left < 14400. else settings.max_step_s,",
+          "inlineCommentRemoved": false,
+          "snippetLine": 20,
+          "text": "        max_step=settings.early_max_step_s if left < 14400. else settings.max_step_s,"
+        },
+        {
+          "originalLine": 327,
+          "originalText": "            events=None if settings.question == 'Q1' else dry_event, dense_output=True)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 21,
+          "text": "        events=None if settings.question == 'Q1' else dry_event, dense_output=True)"
+        },
+        {
+          "originalLine": 328,
+          "originalText": "        if cache is not None:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 22,
+          "text": "    if cache is not None:"
+        },
+        {
+          "originalLine": 329,
+          "originalText": "            disk_dense.align_bdf_segments(piece)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 23,
+          "text": "        disk_dense.align_bdf_segments(piece)"
+        },
+        {
+          "originalLine": 330,
+          "originalText": "        pieces.append(piece)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 24,
+          "text": "    pieces.append(piece)"
+        },
+        {
+          "originalLine": 331,
+          "originalText": "        if not piece.success:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 25,
+          "text": "    if not piece.success:"
+        },
+        {
+          "originalLine": 332,
+          "originalText": "            raise RuntimeError(piece.message)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 26,
+          "text": "        raise RuntimeError(piece.message)"
+        },
+        {
+          "originalLine": 333,
+          "originalText": "        initial = piece.y[:, -1].copy()",
+          "inlineCommentRemoved": false,
+          "snippetLine": 27,
+          "text": "    initial = piece.y[:, -1].copy()"
+        },
+        {
+          "originalLine": 336,
+          "originalText": "        if piece.t_events is not None and len(piece.t_events[0]):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 28,
+          "text": "    if piece.t_events is not None and len(piece.t_events[0]):"
+        },
+        {
+          "originalLine": 337,
+          "originalText": "            event_s = float(piece.t_events[0][0])",
+          "inlineCommentRemoved": false,
+          "snippetLine": 29,
+          "text": "        event_s = float(piece.t_events[0][0])"
+        },
+        {
+          "originalLine": 339,
+          "originalText": "            end = float(np.ceil(event_s) + 1)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 30,
+          "text": "        end = float(np.ceil(event_s) + 1)"
+        },
+        {
+          "originalLine": 340,
+          "originalText": "            tail = solve_ivp(model.rhs, (event_s, end), initial, method=method,",
+          "inlineCommentRemoved": false,
+          "snippetLine": 31,
+          "text": "        tail = solve_ivp(model.rhs, (event_s, end), initial, method=method,"
+        },
+        {
+          "originalLine": 341,
+          "originalText": "                rtol=settings.rtol, atol=atol, **jacobian_options,",
+          "inlineCommentRemoved": false,
+          "snippetLine": 32,
+          "text": "            rtol=settings.rtol, atol=atol, **jacobian_options,"
+        },
+        {
+          "originalLine": 342,
+          "originalText": "                max_step=1., dense_output=True)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 33,
+          "text": "            max_step=1., dense_output=True)"
+        },
+        {
+          "originalLine": 345,
+          "originalText": "            if not tail.success:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 34,
+          "text": "        if not tail.success:"
+        },
+        {
+          "originalLine": 346,
+          "originalText": "                raise RuntimeError(tail.message)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 35,
+          "text": "            raise RuntimeError(tail.message)"
+        },
+        {
+          "originalLine": 349,
+          "originalText": "            pieces.append(tail)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 36,
+          "text": "        pieces.append(tail)"
+        },
+        {
+          "originalLine": 350,
+          "originalText": "            break",
+          "inlineCommentRemoved": false,
+          "snippetLine": 37,
+          "text": "        break"
+        }
+      ],
+      "independentlyRunnable": false,
+      "localDependenciesRequired": true
+    },
+    {
+      "id": "D.6",
+      "title": "四位小时上取并核对严格达标",
+      "file": "q3_model.py",
+      "ranges": [
+        [
+          6,
+          8
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "context": "completion 的候选报告时刻循环",
+      "omission": "省略第1—5行说明、导入及空行，第9—10行注释，以及第21—27行结果字典；循环所得report_h为严格报告小时，values仍为原精度含水率。",
+      "sourcePath": "paper_output/code/modeling/q3_model.py",
+      "sourceAbsolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/q3_model.py",
+      "sourceSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "selectedOriginalRanges": [
+        [
+          6,
+          8
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "omittedOriginalRanges": [
+        [
+          1,
+          5
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          21,
+          27
+        ]
+      ],
+      "lineCount": 13,
+      "snippetSha256Utf8Lf": "b155974ba38b57bfd9749db74ecac4b1fc0509c542610fe1c4ecd336ab10a2de",
+      "commonLeadingSpacesRemoved": 0,
+      "lineMap": [
+        {
+          "originalLine": 6,
+          "originalText": "def completion(run):",
+          "inlineCommentRemoved": false,
+          "snippetLine": 1,
+          "text": "def completion(run):"
+        },
+        {
+          "originalLine": 7,
+          "originalText": "    if run.event_s is None:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 2,
+          "text": "    if run.event_s is None:"
+        },
+        {
+          "originalLine": 8,
+          "originalText": "        raise ValueError('No full-domain drying event within the solved horizon')",
+          "inlineCommentRemoved": false,
+          "snippetLine": 3,
+          "text": "        raise ValueError('No full-domain drying event within the solved horizon')"
+        },
+        {
+          "originalLine": 11,
+          "originalText": "    count = math.ceil(run.event_s / 3600. * 10000.)",
+          "inlineCommentRemoved": false,
+          "snippetLine": 4,
+          "text": "    count = math.ceil(run.event_s / 3600. * 10000.)"
+        },
+        {
+          "originalLine": 12,
+          "originalText": "    while True:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 5,
+          "text": "    while True:"
+        },
+        {
+          "originalLine": 13,
+          "originalText": "        report_h = count/10000.",
+          "inlineCommentRemoved": false,
+          "snippetLine": 6,
+          "text": "        report_h = count/10000."
+        },
+        {
+          "originalLine": 14,
+          "originalText": "        t = report_h*3600.",
+          "inlineCommentRemoved": false,
+          "snippetLine": 7,
+          "text": "        t = report_h*3600."
+        },
+        {
+          "originalLine": 15,
+          "originalText": "        if t > run.end_s:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 8,
+          "text": "        if t > run.end_s:"
+        },
+        {
+          "originalLine": 16,
+          "originalText": "            raise RuntimeError('Four-decimal reporting time is outside the verified trajectory')",
+          "inlineCommentRemoved": false,
+          "snippetLine": 9,
+          "text": "            raise RuntimeError('Four-decimal reporting time is outside the verified trajectory')"
+        },
+        {
+          "originalLine": 17,
+          "originalText": "        values = run.state([t])[1:-1:2,0]",
+          "inlineCommentRemoved": false,
+          "snippetLine": 10,
+          "text": "        values = run.state([t])[1:-1:2,0]"
+        },
+        {
+          "originalLine": 18,
+          "originalText": "        if float(np.max(values)) < .15:",
+          "inlineCommentRemoved": false,
+          "snippetLine": 11,
+          "text": "        if float(np.max(values)) < .15:"
+        },
+        {
+          "originalLine": 19,
+          "originalText": "            break",
+          "inlineCommentRemoved": false,
+          "snippetLine": 12,
+          "text": "            break"
+        },
+        {
+          "originalLine": 20,
+          "originalText": "        count += 1",
+          "inlineCommentRemoved": false,
+          "snippetLine": 13,
+          "text": "        count += 1"
+        }
+      ],
+      "independentlyRunnable": false,
+      "localDependenciesRequired": true
+    }
+  ]
+}

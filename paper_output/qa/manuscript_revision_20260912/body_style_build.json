@@ -1,0 +1,98 @@
+{
+  "source": "paper_output\\qa\\manuscript_revision_20260912\\user_edited_source.docx",
+  "sourceSha256": "0c8bb744b568fd751dc0ad0d883f69b5f895a74b9f8fcb3666b99975db7b05ee",
+  "output": "paper_output\\qa\\manuscript_revision_20260912\\styled_body.docx",
+  "outputSha256": "d91d65a0f73b6671aec445dca55e10bfccb6a5e94c5b93255c34eca54b8522e2",
+  "changes": [
+    {
+      "kind": "referenceRemoval",
+      "before": "材料平衡含水率的一般概念见文献[5]。",
+      "after": ""
+    },
+    {
+      "kind": "referenceRemoval",
+      "before": "[3]",
+      "after": ""
+    },
+    {
+      "kind": "referenceRemoval",
+      "before": "[4]",
+      "after": ""
+    },
+    {
+      "kind": "referenceRemoval",
+      "before": "[6]",
+      "after": ""
+    },
+    {
+      "kind": "typo",
+      "before": "B=ρeff··cp",
+      "after": "B=ρeff·cp"
+    },
+    {
+      "kind": "figureMarker",
+      "before": "图像主题1：",
+      "after": "【绘图位置1】图1："
+    },
+    {
+      "kind": "figureMarker",
+      "before": "图像主题2：",
+      "after": "【绘图位置2】图2："
+    },
+    {
+      "kind": "figureMarker",
+      "before": "图像主题3：",
+      "after": "【绘图位置3】图3："
+    },
+    {
+      "kind": "figureMarker",
+      "before": "图像主题4：",
+      "after": "【绘图位置4】图4："
+    },
+    {
+      "kind": "figureMarker",
+      "before": "图像主题5：",
+      "after": "【绘图位置5】图5："
+    },
+    {
+      "kind": "figureMarker",
+      "before": "图像主题6：",
+      "after": "【绘图位置6】图6："
+    }
+  ],
+  "figureBriefs": [
+    {
+      "number": 1,
+      "section": "5.1.4 结果分析",
+      "text": "【绘图位置1】图1：问题一7个指定时刻的径向温度与含水率双面板曲线。横轴为距中心距离0—2 cm；左图纵轴为温度°C，右图为干基含水率kg/kg；每条曲线对应一个时刻，突出表面先响应及中心水分滞后。该图与表1、表2对应，绘制时保持时间颜色一致。"
+    },
+    {
+      "number": 2,
+      "section": "5.2.2 变量定义与公式推导",
+      "text": "【绘图位置2】图2：烘房边界条件及延拓。上图为0—4 h温度原始点与插值，下图为环境水分指标；另用较长时间轴展示4 h后的50°C和0.05平台，用竖线标出观测与延拓边界。不能把延拓段画成实测点。"
+    },
+    {
+      "number": 3,
+      "section": "5.2.4 结果分析",
+      "text": "【绘图位置3】图3：问题二中心与表面的温度、含水率随时间变化。温度展示前4 h，含水率展示从0到达标；两图分别使用适合其变化尺度的时间轴，清楚标出中心和表面，避免因同轴缩放掩盖前期热响应。"
+    },
+    {
+      "number": 4,
+      "section": "5.3.4 结果分析",
+      "text": "【绘图位置4】图4：问题三中心、表面与全域最大含水率曲线及0.15阈值线。主图展示0—60 h，局部放大图展示临界根附近，分别标记tc与tr。图中明确全域最大值曲线与中心曲线后期重合，不人为错开。"
+    },
+    {
+      "number": 5,
+      "section": "5.4.4 结果分析",
+      "text": "【绘图位置5】图5：问题四移动域及含水率剖面。左图绘制R(t)随时间的变化并标出选取时刻；右图在真实物理半径上绘制相同时刻的C(r,t)，每条曲线在各自表面结束。域外区域用浅灰显示，另标中心与真实表面，不把曲线延伸到固定2 cm。"
+    },
+    {
+      "number": 6,
+      "section": "5.4.6 边界阻力的补充修正",
+      "text": "【绘图位置6】图6：经验边界阻力的情景比较。横轴取p=1、2、4，分别绘制两种模型的临界时长；同图注明N800、未标定情景，主结果以独立符号标注或只在图注引用，避免将不同网格结果混为同一精度。正文以这一组比较说明边界解释的影响，详细因子推导与参数范围放入附录。"
+    }
+  ],
+  "formattedMathRuns": 471,
+  "codeLines": 0,
+  "preservedOpaqueParts": "All source ZIP parts except document.xml, comments.xml and anonymized core.xml copied byte-for-byte."
+}

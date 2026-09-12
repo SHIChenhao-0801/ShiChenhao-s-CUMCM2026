@@ -1,0 +1,2031 @@
+{
+  "reviewedAtUtc": "2026-09-12T14:09:47.007372+00:00",
+  "reviewer": "paper_handoff_review AI agent",
+  "scope": "Full visible body content and native math before the standalone appendix heading; typography may vary, only one double-dot typo and six figure prefixes may alter content. Latest authorization preserves body citation labels/sentences [3]–[6].",
+  "source": {
+    "path": "paper_output/qa/manuscript_revision_20260912/user_edited_source.docx",
+    "sha256": "0c8bb744b568fd751dc0ad0d883f69b5f895a74b9f8fcb3666b99975db7b05ee",
+    "bytes": 452310,
+    "boundary": {
+      "blockIndex0": 201,
+      "paragraphIndex0": 192
+    }
+  },
+  "final": {
+    "path": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+    "sha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
+    "bytes": 79916,
+    "boundary": {
+      "blockIndex0": 201,
+      "paragraphIndex0": 192
+    }
+  },
+  "outcome": "BODY_CONTENT_PRESERVED_WITH_ONLY_AUTHORIZED_EDITS",
+  "checks": {
+    "source_is_frozen_user_authority": true,
+    "source_and_final_zip_crc_ok": true,
+    "same_192_paragraphs_and_order": true,
+    "only_six_marker_prefixes_differ_in_paragraphs": true,
+    "six_figure_descriptions_exactly_retained": true,
+    "nine_tables_same_except_one_permitted_cell": true,
+    "nineteen_math_expressions_semantically_identical": true,
+    "expected_body_blocks_exact_match": true,
+    "references_3_to_6_body_text_retained": true,
+    "four_new_comments_correctly_anchored": true,
+    "two_resolved_old_comments_removed_by_content": true,
+    "two_partial_comments_updated_at_same_anchor": true,
+    "four_remaining_old_comments_unchanged": true,
+    "ten_current_comments_all_have_valid_ranges": true,
+    "bibliography_remains_two_entries_exact_user_text": true,
+    "final_is_requested_v5": true,
+    "v5_fresh_body_parse_exactly_matches_authorized_expected_blocks": true,
+    "v5_fresh_comment_text_and_anchors_equal_verified_comment_operations": true
+  },
+  "paragraphChecks": [
+    {
+      "paragraphIndex0": 0,
+      "sourceTextSha256": "343ee717d5783faf4e48975ca3c197c42a7d2f5d975996ea25fb48a9b6b8c50a",
+      "finalTextSha256": "343ee717d5783faf4e48975ca3c197c42a7d2f5d975996ea25fb48a9b6b8c50a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 1,
+      "sourceTextSha256": "21c04b2eeeb431f7722c4c144f95567e3bae94de9c743472072c84745d24367a",
+      "finalTextSha256": "21c04b2eeeb431f7722c4c144f95567e3bae94de9c743472072c84745d24367a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 2,
+      "sourceTextSha256": "9085b80860907ac64eaabbf709cb9bf3eb50abc857f69392c2103fe6d5e5f221",
+      "finalTextSha256": "9085b80860907ac64eaabbf709cb9bf3eb50abc857f69392c2103fe6d5e5f221",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 3,
+      "sourceTextSha256": "59d5b03623e38e0bccde2acb89d0c5258d984b0c37014ccfc7af4b4d6acf5edb",
+      "finalTextSha256": "59d5b03623e38e0bccde2acb89d0c5258d984b0c37014ccfc7af4b4d6acf5edb",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 4,
+      "sourceTextSha256": "f97e273a6249e094907f28812e39a6b4ebf99e66db85bd316f0c37db5f4bcd23",
+      "finalTextSha256": "f97e273a6249e094907f28812e39a6b4ebf99e66db85bd316f0c37db5f4bcd23",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 5,
+      "sourceTextSha256": "12d53eec5cde235fa381d1f7ac462b2308df88a55d2e7547b2a6e3bb01c2183f",
+      "finalTextSha256": "12d53eec5cde235fa381d1f7ac462b2308df88a55d2e7547b2a6e3bb01c2183f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 6,
+      "sourceTextSha256": "32d6a5223ae416bebe8599562b094d65fba4e233a53d7e62a61401e55876c1da",
+      "finalTextSha256": "32d6a5223ae416bebe8599562b094d65fba4e233a53d7e62a61401e55876c1da",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 7,
+      "sourceTextSha256": "32f6dbef58f4aa151b3022312a1f100a9d9fd6405c52974f8137fb895e2f4557",
+      "finalTextSha256": "32f6dbef58f4aa151b3022312a1f100a9d9fd6405c52974f8137fb895e2f4557",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 8,
+      "sourceTextSha256": "26def74f88969670eb55b57dfeb6541a38d4eec08b4599ba666904e0164ba05f",
+      "finalTextSha256": "26def74f88969670eb55b57dfeb6541a38d4eec08b4599ba666904e0164ba05f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 9,
+      "sourceTextSha256": "fe0d5c88caff96834909183cc50cbafc8f6c4f4a5a26786eb637886fd7638a91",
+      "finalTextSha256": "fe0d5c88caff96834909183cc50cbafc8f6c4f4a5a26786eb637886fd7638a91",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 10,
+      "sourceTextSha256": "e87b5ef7cb261a350c67e15b5aa1f14e59d725db5e04fdf44af78465143fe6fe",
+      "finalTextSha256": "e87b5ef7cb261a350c67e15b5aa1f14e59d725db5e04fdf44af78465143fe6fe",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 11,
+      "sourceTextSha256": "4441b10efafdae1a97174070dcc49e35a95f9dbad0ddc7f0e6ae7819cab91f3b",
+      "finalTextSha256": "4441b10efafdae1a97174070dcc49e35a95f9dbad0ddc7f0e6ae7819cab91f3b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 12,
+      "sourceTextSha256": "ee998366d3f8e71a6b1c4e2aaa15871d7d46523427a30c5337aeab75fb41e0a6",
+      "finalTextSha256": "ee998366d3f8e71a6b1c4e2aaa15871d7d46523427a30c5337aeab75fb41e0a6",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 13,
+      "sourceTextSha256": "28378feb2ae0038dded25833c59eb4033b834994f3259c1911c52b2e1864acc0",
+      "finalTextSha256": "28378feb2ae0038dded25833c59eb4033b834994f3259c1911c52b2e1864acc0",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 14,
+      "sourceTextSha256": "fd2571872111c8c863497ad8eba2b8365f28ea24329e04c7a2a3c0009c9fa23b",
+      "finalTextSha256": "fd2571872111c8c863497ad8eba2b8365f28ea24329e04c7a2a3c0009c9fa23b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 15,
+      "sourceTextSha256": "0f75116361aba9f2c272115b65b7d3770d2076449df133d868ee7bffd854980b",
+      "finalTextSha256": "0f75116361aba9f2c272115b65b7d3770d2076449df133d868ee7bffd854980b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 16,
+      "sourceTextSha256": "0878e6f819c6094a7a0feb016e5c5ad08589d449534a6991fe1eb4b1795839cf",
+      "finalTextSha256": "0878e6f819c6094a7a0feb016e5c5ad08589d449534a6991fe1eb4b1795839cf",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 17,
+      "sourceTextSha256": "64694fb0ba642c0ddd773d4f69a408ba2f7639777b6327da64f58c45ad11b453",
+      "finalTextSha256": "64694fb0ba642c0ddd773d4f69a408ba2f7639777b6327da64f58c45ad11b453",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 18,
+      "sourceTextSha256": "08e72c0d41f9ed3036f7a649d390f72fc246df45284d4cd969d057f539b9b9d0",
+      "finalTextSha256": "08e72c0d41f9ed3036f7a649d390f72fc246df45284d4cd969d057f539b9b9d0",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 19,
+      "sourceTextSha256": "1ea56298d0f5988b6ced20bc9df7bfe774da2e1bb9fa4171c5444d32df237041",
+      "finalTextSha256": "1ea56298d0f5988b6ced20bc9df7bfe774da2e1bb9fa4171c5444d32df237041",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 20,
+      "sourceTextSha256": "cf087d25ffa4625caa4dd5bfc227233be7262ef7b096ddded3634b8323c2f993",
+      "finalTextSha256": "cf087d25ffa4625caa4dd5bfc227233be7262ef7b096ddded3634b8323c2f993",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 21,
+      "sourceTextSha256": "79d8892f23247ecbca1e2745d26b4ee17b8424b6d142b21cc4d335f6e2fd29fa",
+      "finalTextSha256": "79d8892f23247ecbca1e2745d26b4ee17b8424b6d142b21cc4d335f6e2fd29fa",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 22,
+      "sourceTextSha256": "ca47d7e2975903c2a130c4020c5bc1eb9ae81437940a46bc22039d0cd8f89c2c",
+      "finalTextSha256": "ca47d7e2975903c2a130c4020c5bc1eb9ae81437940a46bc22039d0cd8f89c2c",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 23,
+      "sourceTextSha256": "e09dc9d1dde62a22a31f1ba101318c427efe7e60a3155616207022271c119e63",
+      "finalTextSha256": "e09dc9d1dde62a22a31f1ba101318c427efe7e60a3155616207022271c119e63",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 24,
+      "sourceTextSha256": "880d80c5245ca7f0b87f54bb3654feb3f0e9e75d186380bb50209419eb15ce60",
+      "finalTextSha256": "880d80c5245ca7f0b87f54bb3654feb3f0e9e75d186380bb50209419eb15ce60",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 25,
+      "sourceTextSha256": "db6e501fc40af9a9d69f85888d802796ce79afcd6c4e9009d51c7e528569c51f",
+      "finalTextSha256": "db6e501fc40af9a9d69f85888d802796ce79afcd6c4e9009d51c7e528569c51f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 26,
+      "sourceTextSha256": "f49c89c40cb60b37767def0709a4c9c35672ca5fc4159fe7a81350293783a5e3",
+      "finalTextSha256": "f49c89c40cb60b37767def0709a4c9c35672ca5fc4159fe7a81350293783a5e3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 27,
+      "sourceTextSha256": "6226d4d69dfbf0343c6c9274ac18c649f7c6230f9b06315a8c44d911fa88859f",
+      "finalTextSha256": "6226d4d69dfbf0343c6c9274ac18c649f7c6230f9b06315a8c44d911fa88859f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 28,
+      "sourceTextSha256": "8e8120e6685d8da9bc5eca75bb6025348e79499fdb021a561049c0ba851e08cc",
+      "finalTextSha256": "8e8120e6685d8da9bc5eca75bb6025348e79499fdb021a561049c0ba851e08cc",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 29,
+      "sourceTextSha256": "f9e2c3c909cbd6b4d3c26660d85714ea989272c28560f648425974059eeffb2c",
+      "finalTextSha256": "f9e2c3c909cbd6b4d3c26660d85714ea989272c28560f648425974059eeffb2c",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 30,
+      "sourceTextSha256": "2fe7736cd2cf72c572dc3a88303b6c827bf7f03fde0eb7806816335213a6fdb5",
+      "finalTextSha256": "2fe7736cd2cf72c572dc3a88303b6c827bf7f03fde0eb7806816335213a6fdb5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 31,
+      "sourceTextSha256": "12b4b02d560adca88c2936e052a5b25a7ca0984d1ec5772bab7c2a59e94638bf",
+      "finalTextSha256": "12b4b02d560adca88c2936e052a5b25a7ca0984d1ec5772bab7c2a59e94638bf",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 32,
+      "sourceTextSha256": "ab6eb5eafc01b218f542c3c302dacc237432dd4be2f285bb3fe58790c61d41c2",
+      "finalTextSha256": "ab6eb5eafc01b218f542c3c302dacc237432dd4be2f285bb3fe58790c61d41c2",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 33,
+      "sourceTextSha256": "061f6be9deb3809ebca9502493291b0f9ce718d5b58bfce02700491589cf5acf",
+      "finalTextSha256": "061f6be9deb3809ebca9502493291b0f9ce718d5b58bfce02700491589cf5acf",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 34,
+      "sourceTextSha256": "50468a55ce82abbeaf9480a6ae5a010ebe363b5c8964fd9579f4846b168fdd02",
+      "finalTextSha256": "50468a55ce82abbeaf9480a6ae5a010ebe363b5c8964fd9579f4846b168fdd02",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 35,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 36,
+      "sourceTextSha256": "2ef3783d17b4fc27f2c21921dbfa7da419b9876d85e73bdca025bec4b08fb3a3",
+      "finalTextSha256": "2ef3783d17b4fc27f2c21921dbfa7da419b9876d85e73bdca025bec4b08fb3a3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 37,
+      "sourceTextSha256": "067c7442322a7c1a637fca426cec658bad4a66620b92bf255b12b8a659f35dd7",
+      "finalTextSha256": "067c7442322a7c1a637fca426cec658bad4a66620b92bf255b12b8a659f35dd7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 38,
+      "sourceTextSha256": "b397d1406b40fb227d82ace851af0ec8f76c5a2991643ebcea82501c323aedf0",
+      "finalTextSha256": "b397d1406b40fb227d82ace851af0ec8f76c5a2991643ebcea82501c323aedf0",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 39,
+      "sourceTextSha256": "441237ccb257633ddf113bb9f689668cfac1532550b5871497c02efcf15fa7e2",
+      "finalTextSha256": "441237ccb257633ddf113bb9f689668cfac1532550b5871497c02efcf15fa7e2",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 40,
+      "sourceTextSha256": "1631aa947ce34441bbcb8c594909b188711deed6e6c24c9f67cf6cfa1196d8fc",
+      "finalTextSha256": "1631aa947ce34441bbcb8c594909b188711deed6e6c24c9f67cf6cfa1196d8fc",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 41,
+      "sourceTextSha256": "b6dd232b5ca35d75c4d181888191d441b78cd522be91452d8f2414de550952e1",
+      "finalTextSha256": "b6dd232b5ca35d75c4d181888191d441b78cd522be91452d8f2414de550952e1",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 42,
+      "sourceTextSha256": "e03a0f5ac2afc7c1d1e046298df817e4ebbd9ec4d9744a98ed2a8073a0236a0d",
+      "finalTextSha256": "e03a0f5ac2afc7c1d1e046298df817e4ebbd9ec4d9744a98ed2a8073a0236a0d",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 43,
+      "sourceTextSha256": "e2d81c4c3b5778bc0e58ab1d77d809c0d0a66d1e05894209887c0ee896b4ba17",
+      "finalTextSha256": "e2d81c4c3b5778bc0e58ab1d77d809c0d0a66d1e05894209887c0ee896b4ba17",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 44,
+      "sourceTextSha256": "50b2776aabe9f3a595ed508f69c3bba6ec9fd6ac8651e2b8110993231f3cbd5c",
+      "finalTextSha256": "50b2776aabe9f3a595ed508f69c3bba6ec9fd6ac8651e2b8110993231f3cbd5c",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 45,
+      "sourceTextSha256": "c4e5f535a6aa836d12071205454ec620d226e8fa7c411098a121ef949c9ac849",
+      "finalTextSha256": "c4e5f535a6aa836d12071205454ec620d226e8fa7c411098a121ef949c9ac849",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 46,
+      "sourceTextSha256": "769dfeee6fa1dcf4a4775138155544b2014075eb8c4d7fe2936f0c56b80c6866",
+      "finalTextSha256": "769dfeee6fa1dcf4a4775138155544b2014075eb8c4d7fe2936f0c56b80c6866",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 47,
+      "sourceTextSha256": "d85c3a32b81163db00508a57ab876f79d15dde61dbc72ae914bcc2034850e8f2",
+      "finalTextSha256": "d85c3a32b81163db00508a57ab876f79d15dde61dbc72ae914bcc2034850e8f2",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 48,
+      "sourceTextSha256": "b089e4c5c92646ede19a8a3d31ac71222fcb4ea13254497b5c4f34c1831db2cf",
+      "finalTextSha256": "b089e4c5c92646ede19a8a3d31ac71222fcb4ea13254497b5c4f34c1831db2cf",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 49,
+      "sourceTextSha256": "0f394e4fd9b78c20185677e201a21c2046df670d3819b9a3d80da3b5225ce7ea",
+      "finalTextSha256": "0f394e4fd9b78c20185677e201a21c2046df670d3819b9a3d80da3b5225ce7ea",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 50,
+      "sourceTextSha256": "ea897eacfbc37388701da68bd66b5b06fe130c305eaa7f1666ff3bdca4312b95",
+      "finalTextSha256": "ea897eacfbc37388701da68bd66b5b06fe130c305eaa7f1666ff3bdca4312b95",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 51,
+      "sourceTextSha256": "4cc8fa39d35105910c3834c0a22b0577574ba84e2ef560d181b8ead2633f39c3",
+      "finalTextSha256": "4cc8fa39d35105910c3834c0a22b0577574ba84e2ef560d181b8ead2633f39c3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 52,
+      "sourceTextSha256": "e8bf48888a4624f35b988f295fe460ffbbe1e508c2621e2927ec99f12d021ead",
+      "finalTextSha256": "e8bf48888a4624f35b988f295fe460ffbbe1e508c2621e2927ec99f12d021ead",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 53,
+      "sourceTextSha256": "c3b02da1d4624ec45ce25fc1fcacdca762bed4c6073cb9005226e9cfcd1e88d8",
+      "finalTextSha256": "c3b02da1d4624ec45ce25fc1fcacdca762bed4c6073cb9005226e9cfcd1e88d8",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 54,
+      "sourceTextSha256": "35701cf3233bf7007ebca327a10e652dee27f1351834ba352b20861a59c3e767",
+      "finalTextSha256": "35701cf3233bf7007ebca327a10e652dee27f1351834ba352b20861a59c3e767",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 55,
+      "sourceTextSha256": "2724c8d7b4757a96b333d302e626bee4b16c3ec95b7472621ca0bbb20421f070",
+      "finalTextSha256": "2724c8d7b4757a96b333d302e626bee4b16c3ec95b7472621ca0bbb20421f070",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 56,
+      "sourceTextSha256": "a0306e643cc1aba61088510b44153a40438254d4b820995b0fd52f9aa96e042b",
+      "finalTextSha256": "a0306e643cc1aba61088510b44153a40438254d4b820995b0fd52f9aa96e042b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 57,
+      "sourceTextSha256": "6f00ed52f8c7b393c7efdb4cf7603242e6266540b0ebb21144bfe23e818cacb2",
+      "finalTextSha256": "6f00ed52f8c7b393c7efdb4cf7603242e6266540b0ebb21144bfe23e818cacb2",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 58,
+      "sourceTextSha256": "88f0c4197d22e4d6d755f64c946549bcf3ea6f9f1fe8573640b08cad0e3dda36",
+      "finalTextSha256": "88f0c4197d22e4d6d755f64c946549bcf3ea6f9f1fe8573640b08cad0e3dda36",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 59,
+      "sourceTextSha256": "f094a60b0e58fbc80bca69851ea4e5ed01f49e34954b98725b7b6c094f1881c3",
+      "finalTextSha256": "f094a60b0e58fbc80bca69851ea4e5ed01f49e34954b98725b7b6c094f1881c3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 60,
+      "sourceTextSha256": "5ad2ca48f220bc780bf6ae710311a74c26de8b11c9d8f3927d269844bc3a0490",
+      "finalTextSha256": "5ad2ca48f220bc780bf6ae710311a74c26de8b11c9d8f3927d269844bc3a0490",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 61,
+      "sourceTextSha256": "33a775155f2bbf6ca823d1559f3551bc80023d3e3bf659faecfe1dec26de7102",
+      "finalTextSha256": "33a775155f2bbf6ca823d1559f3551bc80023d3e3bf659faecfe1dec26de7102",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 62,
+      "sourceTextSha256": "f37caff092317a92b4fb620089317a6fec0bbcc756296764a912ca88325fe3c4",
+      "finalTextSha256": "f37caff092317a92b4fb620089317a6fec0bbcc756296764a912ca88325fe3c4",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 63,
+      "sourceTextSha256": "0b3cf942d45484ff186ffd474106d3f37f672504bb28278ff1919ede048a2706",
+      "finalTextSha256": "0b3cf942d45484ff186ffd474106d3f37f672504bb28278ff1919ede048a2706",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 64,
+      "sourceTextSha256": "14bea303b2896b2f685514b07d94f7bce0a93ffcf37ba3971a97c3883b127fa5",
+      "finalTextSha256": "14bea303b2896b2f685514b07d94f7bce0a93ffcf37ba3971a97c3883b127fa5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 65,
+      "sourceTextSha256": "a51ccd82e460c80270fa7efc3c22660c02001c79b63cb87419d75fec60f72250",
+      "finalTextSha256": "a51ccd82e460c80270fa7efc3c22660c02001c79b63cb87419d75fec60f72250",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 66,
+      "sourceTextSha256": "2b4111987ab67f266079b825874f027962b8a4c2250d1fff8affeb6b8bbc5ae3",
+      "finalTextSha256": "2b4111987ab67f266079b825874f027962b8a4c2250d1fff8affeb6b8bbc5ae3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 67,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 68,
+      "sourceTextSha256": "b872462f4080672b32e4ae669656ac6435cab749d6c086dc49b9740c6a2b2898",
+      "finalTextSha256": "b872462f4080672b32e4ae669656ac6435cab749d6c086dc49b9740c6a2b2898",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 69,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 70,
+      "sourceTextSha256": "8e1ed71623c83f597be7fbc42f1f6e4bc58854cc298a1e0251dbb7492eb92e41",
+      "finalTextSha256": "8e1ed71623c83f597be7fbc42f1f6e4bc58854cc298a1e0251dbb7492eb92e41",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 71,
+      "sourceTextSha256": "f4c99b181abdfd10a9869829c13a6e20ebe3b762e0099e058c1b83a154fc5a16",
+      "finalTextSha256": "f4c99b181abdfd10a9869829c13a6e20ebe3b762e0099e058c1b83a154fc5a16",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 72,
+      "sourceTextSha256": "02931a678c0135c9bc2cfe3fd5a5c0ab3419f43d050075e144a891caf2f6dd64",
+      "finalTextSha256": "b0435b4d0dcc9ecbb6333cdcc8f9ded2bd203878f9cccfbc59072b08c2a5577a",
+      "textUnchanged": false,
+      "permittedFigurePrefixChange": true
+    },
+    {
+      "paragraphIndex0": 73,
+      "sourceTextSha256": "c563a9da0cc577573c13741b9b484aa0e10d0c030466f8fbd0b9167af27f7cc4",
+      "finalTextSha256": "c563a9da0cc577573c13741b9b484aa0e10d0c030466f8fbd0b9167af27f7cc4",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 74,
+      "sourceTextSha256": "6e90128fc68da79356ca5c149caa7eae145a349b06074eeca88050cabf9bf248",
+      "finalTextSha256": "6e90128fc68da79356ca5c149caa7eae145a349b06074eeca88050cabf9bf248",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 75,
+      "sourceTextSha256": "a351d54f7faabcbb6b60f143512b276f4fbd2393a60609745f617ba7907d5a35",
+      "finalTextSha256": "a351d54f7faabcbb6b60f143512b276f4fbd2393a60609745f617ba7907d5a35",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 76,
+      "sourceTextSha256": "a8dd2ae940b970db041abb14259562c0c37810b5a9c596be57b25e46119bf451",
+      "finalTextSha256": "a8dd2ae940b970db041abb14259562c0c37810b5a9c596be57b25e46119bf451",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 77,
+      "sourceTextSha256": "2cfb72353d4d0f31dc9fbc959086d3a145f78ec475ed497a3037210f92b954b8",
+      "finalTextSha256": "2cfb72353d4d0f31dc9fbc959086d3a145f78ec475ed497a3037210f92b954b8",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 78,
+      "sourceTextSha256": "664547434c573cb256f5ae0492c82b31dfe74fa9e0a619a97e2620b09f0fae36",
+      "finalTextSha256": "664547434c573cb256f5ae0492c82b31dfe74fa9e0a619a97e2620b09f0fae36",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 79,
+      "sourceTextSha256": "f8e6659e73cfc970b9c6098131d0ca0b91e1c9d445379257aa403afc8b82feb7",
+      "finalTextSha256": "f8e6659e73cfc970b9c6098131d0ca0b91e1c9d445379257aa403afc8b82feb7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 80,
+      "sourceTextSha256": "669b9b12f69247e3f0f174f54a41262932212ccf23ba78f3be97633ca8ca88f5",
+      "finalTextSha256": "669b9b12f69247e3f0f174f54a41262932212ccf23ba78f3be97633ca8ca88f5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 81,
+      "sourceTextSha256": "b1b46ee84ea0223feabf94a48740a687e6ae2c0b056d92e1b61990b6d2444e09",
+      "finalTextSha256": "b1b46ee84ea0223feabf94a48740a687e6ae2c0b056d92e1b61990b6d2444e09",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 82,
+      "sourceTextSha256": "d8b31c9935de276fe1b5ed4be3455a452e29a3934427a9d20462071b5101848d",
+      "finalTextSha256": "d8b31c9935de276fe1b5ed4be3455a452e29a3934427a9d20462071b5101848d",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 83,
+      "sourceTextSha256": "1cb5faae76b2f0fbeea0262888133460fc2238f4b0134ebb2c6e14fec0b54e95",
+      "finalTextSha256": "1cb5faae76b2f0fbeea0262888133460fc2238f4b0134ebb2c6e14fec0b54e95",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 84,
+      "sourceTextSha256": "ae156a8b30abb943892ce60dbef2f3301bf1ebe94fcc574fac5e852c2be169ab",
+      "finalTextSha256": "ae156a8b30abb943892ce60dbef2f3301bf1ebe94fcc574fac5e852c2be169ab",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 85,
+      "sourceTextSha256": "7fd7262231e6807917bb87671cc2173f47fb29025e7543329dca460fa7542c8c",
+      "finalTextSha256": "7fd7262231e6807917bb87671cc2173f47fb29025e7543329dca460fa7542c8c",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 86,
+      "sourceTextSha256": "35aa79b86db2a0c9da4e598c70d067ca4979b62b9be15fa748479a425659793b",
+      "finalTextSha256": "35aa79b86db2a0c9da4e598c70d067ca4979b62b9be15fa748479a425659793b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 87,
+      "sourceTextSha256": "c7173c7ce4bcf71d9a6ba46dda5df2339c9d0e825c57599fd038e231c1954717",
+      "finalTextSha256": "87ba2add10900d2d21eb1654c6ede672ac7207fce53be22e78b6ce2ac19e0fb2",
+      "textUnchanged": false,
+      "permittedFigurePrefixChange": true
+    },
+    {
+      "paragraphIndex0": 88,
+      "sourceTextSha256": "228203b782b1856829e839e2af7f8736e9551df5440bbd3ff3eeaf1d5a8bc4a4",
+      "finalTextSha256": "228203b782b1856829e839e2af7f8736e9551df5440bbd3ff3eeaf1d5a8bc4a4",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 89,
+      "sourceTextSha256": "c81f0555cc1464c6976914234deb8e33024567e176b01b8ed7b1b0a9a7d82079",
+      "finalTextSha256": "c81f0555cc1464c6976914234deb8e33024567e176b01b8ed7b1b0a9a7d82079",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 90,
+      "sourceTextSha256": "34df8226aa93fb80fa76f6b6e06da38a5a80fe07a4fb308d506273ae0774748a",
+      "finalTextSha256": "34df8226aa93fb80fa76f6b6e06da38a5a80fe07a4fb308d506273ae0774748a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 91,
+      "sourceTextSha256": "12e71453597dd39a12b311aaf8bb88454e5b06cb6f209b1ba28ed793cd4f352d",
+      "finalTextSha256": "12e71453597dd39a12b311aaf8bb88454e5b06cb6f209b1ba28ed793cd4f352d",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 92,
+      "sourceTextSha256": "f34134f9a9ec33a95df6b9c747760ae0a1956f27845aaead66e664b9a99f2990",
+      "finalTextSha256": "f34134f9a9ec33a95df6b9c747760ae0a1956f27845aaead66e664b9a99f2990",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 93,
+      "sourceTextSha256": "ed095bae0fa22dc96459d619a5bca8ba1329d5eabc67459d0f9215f033bf780a",
+      "finalTextSha256": "ed095bae0fa22dc96459d619a5bca8ba1329d5eabc67459d0f9215f033bf780a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 94,
+      "sourceTextSha256": "1a2689af0b74365ad109abf610636621e78d1fd656832366a7c6ac03010b8ba7",
+      "finalTextSha256": "1a2689af0b74365ad109abf610636621e78d1fd656832366a7c6ac03010b8ba7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 95,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 96,
+      "sourceTextSha256": "bbbd79980798f175b3c1498ca64338e081ea91a08c23e3eebc4348ef3f218a4e",
+      "finalTextSha256": "bbbd79980798f175b3c1498ca64338e081ea91a08c23e3eebc4348ef3f218a4e",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 97,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 98,
+      "sourceTextSha256": "c6080ec2e0ec6c07947c6415525d0a2527794de1fb69854248a4e1db5207de0a",
+      "finalTextSha256": "c6080ec2e0ec6c07947c6415525d0a2527794de1fb69854248a4e1db5207de0a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 99,
+      "sourceTextSha256": "0b6320bb605ec502849c99bb5c1d045355c3b93180fb7751b783367a2bac8ca5",
+      "finalTextSha256": "0b6320bb605ec502849c99bb5c1d045355c3b93180fb7751b783367a2bac8ca5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 100,
+      "sourceTextSha256": "310e86769a46a323ea8c759d5b54f336b91ae03380931c6685fb53965a5c9e95",
+      "finalTextSha256": "9715a8858547f3f103075dacba5df172e88e7a64f6ad271c685ae32379408c22",
+      "textUnchanged": false,
+      "permittedFigurePrefixChange": true
+    },
+    {
+      "paragraphIndex0": 101,
+      "sourceTextSha256": "c44c6d15bb3399f11f6f5dbef864319009e5e32b9116c867a5e9d3c2587b4d92",
+      "finalTextSha256": "c44c6d15bb3399f11f6f5dbef864319009e5e32b9116c867a5e9d3c2587b4d92",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 102,
+      "sourceTextSha256": "69a8af8d1a516ced04718505f18c99c6daed1ee3080ed03f4472202b46e4e37d",
+      "finalTextSha256": "69a8af8d1a516ced04718505f18c99c6daed1ee3080ed03f4472202b46e4e37d",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 103,
+      "sourceTextSha256": "43d721d6dcc02b6290ff698bdabcfddce8fcf7eadeac8b0ceb979257a60db1d5",
+      "finalTextSha256": "43d721d6dcc02b6290ff698bdabcfddce8fcf7eadeac8b0ceb979257a60db1d5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 104,
+      "sourceTextSha256": "bb84d8ac177f3f19c594526878de25d5411d90062595343cfe42461f0b0c4347",
+      "finalTextSha256": "bb84d8ac177f3f19c594526878de25d5411d90062595343cfe42461f0b0c4347",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 105,
+      "sourceTextSha256": "7acab4bf9d75eb1daa88d3f511df3c1210f0d09ca06d3d845c49ad4b5e468c00",
+      "finalTextSha256": "7acab4bf9d75eb1daa88d3f511df3c1210f0d09ca06d3d845c49ad4b5e468c00",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 106,
+      "sourceTextSha256": "7666cada268811d999bd3274cc96b920023af09cc148dcc2c46e3d05b986a187",
+      "finalTextSha256": "7666cada268811d999bd3274cc96b920023af09cc148dcc2c46e3d05b986a187",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 107,
+      "sourceTextSha256": "67b528d7147dccc3fb24d49bf46955527f0dcfa271c5b73af1292b76128e8fb2",
+      "finalTextSha256": "67b528d7147dccc3fb24d49bf46955527f0dcfa271c5b73af1292b76128e8fb2",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 108,
+      "sourceTextSha256": "3b2a792a135152a3fc00aa11b4569a6abbfe6ead2a2c6ded4a2ba77c989a91fe",
+      "finalTextSha256": "3b2a792a135152a3fc00aa11b4569a6abbfe6ead2a2c6ded4a2ba77c989a91fe",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 109,
+      "sourceTextSha256": "5a1b312ef70a7a8792db8e8c542e4e75eaab2426c485db9fe88166b7a941085e",
+      "finalTextSha256": "5a1b312ef70a7a8792db8e8c542e4e75eaab2426c485db9fe88166b7a941085e",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 110,
+      "sourceTextSha256": "1e2993a5cadb5770814bd159ce5026dc25e466e3e564da9aa0bf658875b65a9b",
+      "finalTextSha256": "1e2993a5cadb5770814bd159ce5026dc25e466e3e564da9aa0bf658875b65a9b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 111,
+      "sourceTextSha256": "878ce5491fdc3e4372408bdeae7e0423d14fcbeb3e2986e8f745a7cd713ef9a7",
+      "finalTextSha256": "878ce5491fdc3e4372408bdeae7e0423d14fcbeb3e2986e8f745a7cd713ef9a7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 112,
+      "sourceTextSha256": "b8203a5efdf0d79ee11effd28ada41b3a704287d89533164763b5f94b521a975",
+      "finalTextSha256": "b8203a5efdf0d79ee11effd28ada41b3a704287d89533164763b5f94b521a975",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 113,
+      "sourceTextSha256": "93007ab803fadd877068b8e207765e686aca761d88e41aba4458850d5ee894c1",
+      "finalTextSha256": "93007ab803fadd877068b8e207765e686aca761d88e41aba4458850d5ee894c1",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 114,
+      "sourceTextSha256": "33b7276d0881c2dd3366965ff360095778212f1f55e2996be3f412c101e6b01e",
+      "finalTextSha256": "33b7276d0881c2dd3366965ff360095778212f1f55e2996be3f412c101e6b01e",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 115,
+      "sourceTextSha256": "9f6ffc8a437ccb4162772a2bd52e050ad5c42a4c6e2728d7c1dcf6edac72488f",
+      "finalTextSha256": "9f6ffc8a437ccb4162772a2bd52e050ad5c42a4c6e2728d7c1dcf6edac72488f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 116,
+      "sourceTextSha256": "d7c1b62fb34e8c5527da126e9411323459d7cb5df02b2d2d6fd9ffa0e2b21b22",
+      "finalTextSha256": "d7c1b62fb34e8c5527da126e9411323459d7cb5df02b2d2d6fd9ffa0e2b21b22",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 117,
+      "sourceTextSha256": "287dbaa6d204f59c95e4cb86b2bc8cff8ecbc9a5d71a78b3559e7fe91c7b61de",
+      "finalTextSha256": "287dbaa6d204f59c95e4cb86b2bc8cff8ecbc9a5d71a78b3559e7fe91c7b61de",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 118,
+      "sourceTextSha256": "97c83d36ecf34fde885ddfda79a53cd0e542a0202a807824f436860326d6ee6a",
+      "finalTextSha256": "97c83d36ecf34fde885ddfda79a53cd0e542a0202a807824f436860326d6ee6a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 119,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 120,
+      "sourceTextSha256": "5d4bfdb1e07c6c6a751dc984e7d10e5e2fe934c2580ff24a4d42be7b0e78eb00",
+      "finalTextSha256": "5d4bfdb1e07c6c6a751dc984e7d10e5e2fe934c2580ff24a4d42be7b0e78eb00",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 121,
+      "sourceTextSha256": "cea6070a122862475ff7d061bfc842385664fde44ff40b917bed8fdba45a50d9",
+      "finalTextSha256": "cea6070a122862475ff7d061bfc842385664fde44ff40b917bed8fdba45a50d9",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 122,
+      "sourceTextSha256": "c10279eb208da3f3d0bb303c363abf10647e922bcad28dce512f57d1771aba4c",
+      "finalTextSha256": "08fd1377c7a8bfc0fffb0b0278179356e7edaf350a79373141fd39ce64403a49",
+      "textUnchanged": false,
+      "permittedFigurePrefixChange": true
+    },
+    {
+      "paragraphIndex0": 123,
+      "sourceTextSha256": "e61596ef15db098ebeb1da6bb95bec398f2c1587aa47a264c5c90a96439a6390",
+      "finalTextSha256": "e61596ef15db098ebeb1da6bb95bec398f2c1587aa47a264c5c90a96439a6390",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 124,
+      "sourceTextSha256": "d04863a86615f943fe6c25f59a6d82a977351f30acc5df791569e582121a2ca7",
+      "finalTextSha256": "d04863a86615f943fe6c25f59a6d82a977351f30acc5df791569e582121a2ca7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 125,
+      "sourceTextSha256": "a5583c8ee74d545f83ede5fd8d3f4f58996fd5f4c875f6dda7e1d355def1b417",
+      "finalTextSha256": "a5583c8ee74d545f83ede5fd8d3f4f58996fd5f4c875f6dda7e1d355def1b417",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 126,
+      "sourceTextSha256": "552ad4de3eedc40153c102281b4364ef8fc77a9ece060da73fd6f419b8acfb76",
+      "finalTextSha256": "552ad4de3eedc40153c102281b4364ef8fc77a9ece060da73fd6f419b8acfb76",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 127,
+      "sourceTextSha256": "bc1d5d8d553f32c0101dd1b68ba31d7a41810a3a2127e544a7b98788f17d05ad",
+      "finalTextSha256": "bc1d5d8d553f32c0101dd1b68ba31d7a41810a3a2127e544a7b98788f17d05ad",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 128,
+      "sourceTextSha256": "4294c7d44e7982a67feb7169c9c5410902bef0686414f48283ab962768a93de7",
+      "finalTextSha256": "4294c7d44e7982a67feb7169c9c5410902bef0686414f48283ab962768a93de7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 129,
+      "sourceTextSha256": "155996f237dc8456c3926047615f68831a3af741e4857a7f02b9339546adffc6",
+      "finalTextSha256": "155996f237dc8456c3926047615f68831a3af741e4857a7f02b9339546adffc6",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 130,
+      "sourceTextSha256": "359256f24df43512602b3a6763ffc5a40d5b37d0fc1975918b71a608cbf07db6",
+      "finalTextSha256": "359256f24df43512602b3a6763ffc5a40d5b37d0fc1975918b71a608cbf07db6",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 131,
+      "sourceTextSha256": "34bab50f2e8613cdd0e8f707a634600a34dc161b891dad8d48a03be6525712e8",
+      "finalTextSha256": "34bab50f2e8613cdd0e8f707a634600a34dc161b891dad8d48a03be6525712e8",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 132,
+      "sourceTextSha256": "bec4f6c725ecd4cce930849bff9d53e98824833fabe76a00589d9b1a0a17ab0a",
+      "finalTextSha256": "bec4f6c725ecd4cce930849bff9d53e98824833fabe76a00589d9b1a0a17ab0a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 133,
+      "sourceTextSha256": "a6210bee03eda98f35d9f89db9914d7cfb7253ba05cddabd1e45341c86fac291",
+      "finalTextSha256": "a6210bee03eda98f35d9f89db9914d7cfb7253ba05cddabd1e45341c86fac291",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 134,
+      "sourceTextSha256": "5997527076160bc2743d8e18cf3396e055138c6af4d255c1a8fafb2619b18669",
+      "finalTextSha256": "5997527076160bc2743d8e18cf3396e055138c6af4d255c1a8fafb2619b18669",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 135,
+      "sourceTextSha256": "38d99a1e7ee9219593c06164005ed03a02029cfb25edcee55eba6ec2cbeb4967",
+      "finalTextSha256": "38d99a1e7ee9219593c06164005ed03a02029cfb25edcee55eba6ec2cbeb4967",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 136,
+      "sourceTextSha256": "30867fc8c0a9e8fd986cf71fb1ae71f1cc661a65a11e1ee1e4f8c80ed3784ef4",
+      "finalTextSha256": "30867fc8c0a9e8fd986cf71fb1ae71f1cc661a65a11e1ee1e4f8c80ed3784ef4",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 137,
+      "sourceTextSha256": "af34c3d8df4e93f10de1b8a2bdbf7b1cca4121e73a1eafadf79f38ae6fb84d02",
+      "finalTextSha256": "af34c3d8df4e93f10de1b8a2bdbf7b1cca4121e73a1eafadf79f38ae6fb84d02",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 138,
+      "sourceTextSha256": "1f498586353e31c84bc02199e7fcd685335079b603371d1ae150bcd72b7102c3",
+      "finalTextSha256": "1f498586353e31c84bc02199e7fcd685335079b603371d1ae150bcd72b7102c3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 139,
+      "sourceTextSha256": "49c97400c6a1d904fb4513641fb865bf3683b1012c9290049787582614d831d8",
+      "finalTextSha256": "49c97400c6a1d904fb4513641fb865bf3683b1012c9290049787582614d831d8",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 140,
+      "sourceTextSha256": "7d68e6d61053d02dc16a0c2bf9ea345715c2cd2fcb49994293f8fd78b07b23ab",
+      "finalTextSha256": "7d68e6d61053d02dc16a0c2bf9ea345715c2cd2fcb49994293f8fd78b07b23ab",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 141,
+      "sourceTextSha256": "e6a4cff2ace17a8615bf514a94fa149d357625d3495314d42332d039a5e349a1",
+      "finalTextSha256": "e6a4cff2ace17a8615bf514a94fa149d357625d3495314d42332d039a5e349a1",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 142,
+      "sourceTextSha256": "38f1eb09a18a8727c121b551bf955e3abb1c4219d6f5669c3b3ca46e8673628a",
+      "finalTextSha256": "38f1eb09a18a8727c121b551bf955e3abb1c4219d6f5669c3b3ca46e8673628a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 143,
+      "sourceTextSha256": "7317ae72a31f70b339989b21ad124206682070f655ad6778b6a6b6909884d84b",
+      "finalTextSha256": "7317ae72a31f70b339989b21ad124206682070f655ad6778b6a6b6909884d84b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 144,
+      "sourceTextSha256": "5376a51b0698608ddce692234f8a165ff1b844b9ea405ec1b5df4fa26982b251",
+      "finalTextSha256": "5376a51b0698608ddce692234f8a165ff1b844b9ea405ec1b5df4fa26982b251",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 145,
+      "sourceTextSha256": "9358c32314db3b9c194a99628c30e01f53616a69c65a7fad8fb863da4f3e8764",
+      "finalTextSha256": "9358c32314db3b9c194a99628c30e01f53616a69c65a7fad8fb863da4f3e8764",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 146,
+      "sourceTextSha256": "4c0e0c97c1cede86eba89fa6e10c6a55d52a46d6e8ecf450b0d708577d2663ca",
+      "finalTextSha256": "4c0e0c97c1cede86eba89fa6e10c6a55d52a46d6e8ecf450b0d708577d2663ca",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 147,
+      "sourceTextSha256": "8b859a144b6ba329cf31ea42b3dbacefd636fa10b8e0d3a6175a7d09568585fd",
+      "finalTextSha256": "8b859a144b6ba329cf31ea42b3dbacefd636fa10b8e0d3a6175a7d09568585fd",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 148,
+      "sourceTextSha256": "ad0253c83ecee537ff79a14dceb63360c7d04de3818a672efb7ba141a29af5e3",
+      "finalTextSha256": "ad0253c83ecee537ff79a14dceb63360c7d04de3818a672efb7ba141a29af5e3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 149,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 150,
+      "sourceTextSha256": "074e104f3d7bdaa827a5ae86e8a8268a608519ed71f67da48f660773d80ed30d",
+      "finalTextSha256": "074e104f3d7bdaa827a5ae86e8a8268a608519ed71f67da48f660773d80ed30d",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 151,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 152,
+      "sourceTextSha256": "dc3066998cd0a3bafac20270c982c693e7f5aa30e4b5905dab71d1f11da7ed19",
+      "finalTextSha256": "dc3066998cd0a3bafac20270c982c693e7f5aa30e4b5905dab71d1f11da7ed19",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 153,
+      "sourceTextSha256": "de91ff358cbaea919ad1e1c61285796201c484ed6b588b7abb606b1e76bf8da1",
+      "finalTextSha256": "6f7e819c954265afa7f03a0acfb367ef5eed3678277e76500af385b0091fa0b6",
+      "textUnchanged": false,
+      "permittedFigurePrefixChange": true
+    },
+    {
+      "paragraphIndex0": 154,
+      "sourceTextSha256": "cde036b85dcb184f65c3c0f976e2af804f66ef635e849d7b860866b871b81062",
+      "finalTextSha256": "cde036b85dcb184f65c3c0f976e2af804f66ef635e849d7b860866b871b81062",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 155,
+      "sourceTextSha256": "3f53354d92ff7434587dad521e863c42030d87b5e391e10888f65a2404b84e0e",
+      "finalTextSha256": "3f53354d92ff7434587dad521e863c42030d87b5e391e10888f65a2404b84e0e",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 156,
+      "sourceTextSha256": "d72b8cff896ba1fde4b8cd6c0eadd099b2a9995777c710915c5bffd3f9cd7513",
+      "finalTextSha256": "d72b8cff896ba1fde4b8cd6c0eadd099b2a9995777c710915c5bffd3f9cd7513",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 157,
+      "sourceTextSha256": "fc428cffc8ed29aee3af9f6e441933617383939c33253019df4346896916bfa8",
+      "finalTextSha256": "fc428cffc8ed29aee3af9f6e441933617383939c33253019df4346896916bfa8",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 158,
+      "sourceTextSha256": "0309f996e906c984fb7b92e1c302384f38c57ab9fa5deedee0f7ce480efe28d3",
+      "finalTextSha256": "0309f996e906c984fb7b92e1c302384f38c57ab9fa5deedee0f7ce480efe28d3",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 159,
+      "sourceTextSha256": "530e4527fcf5470466420bb9688b447b450969d1053e027d3147819c42b43c03",
+      "finalTextSha256": "530e4527fcf5470466420bb9688b447b450969d1053e027d3147819c42b43c03",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 160,
+      "sourceTextSha256": "4e7bd6f095247cbbe51049152e1a9ca9a1b1231e10e82fef5983d2f1edf76314",
+      "finalTextSha256": "4e7bd6f095247cbbe51049152e1a9ca9a1b1231e10e82fef5983d2f1edf76314",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 161,
+      "sourceTextSha256": "f4b5ccaa72cbb19695d0cbd52e3873dbd9a63924e46c92eb7050e6a21184c226",
+      "finalTextSha256": "5d189b1bc79c6d8fbaee26b504991f1edd5eea53ca5867be5dc17dbb7d8e0804",
+      "textUnchanged": false,
+      "permittedFigurePrefixChange": true
+    },
+    {
+      "paragraphIndex0": 162,
+      "sourceTextSha256": "8bb1a8c9d255a1d21ec21ff75df2f15fb6c8c9de190de5d8f88db6e1b132d18d",
+      "finalTextSha256": "8bb1a8c9d255a1d21ec21ff75df2f15fb6c8c9de190de5d8f88db6e1b132d18d",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 163,
+      "sourceTextSha256": "54a8180718a18330b920cd236960eb5c45d19c98ca8c36bd84654b8d87c59814",
+      "finalTextSha256": "54a8180718a18330b920cd236960eb5c45d19c98ca8c36bd84654b8d87c59814",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 164,
+      "sourceTextSha256": "d23b6b649922967ad4514fa7ab69ce044c3bf85f97cc0c7a7b00e963752c030a",
+      "finalTextSha256": "d23b6b649922967ad4514fa7ab69ce044c3bf85f97cc0c7a7b00e963752c030a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 165,
+      "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "finalTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 166,
+      "sourceTextSha256": "f4f3511331d6efcd12aebebe8e073b8f24e90b8f9a898605c4fd6460f73eeab9",
+      "finalTextSha256": "f4f3511331d6efcd12aebebe8e073b8f24e90b8f9a898605c4fd6460f73eeab9",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 167,
+      "sourceTextSha256": "4a071ab6d36657305d9e91d7a3bcb785287611d2937db112fa6f41f76d40d57a",
+      "finalTextSha256": "4a071ab6d36657305d9e91d7a3bcb785287611d2937db112fa6f41f76d40d57a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 168,
+      "sourceTextSha256": "fffa25dba21cb2fa34413cffa99631bc2d77862813973a935fb91947586c6c6a",
+      "finalTextSha256": "fffa25dba21cb2fa34413cffa99631bc2d77862813973a935fb91947586c6c6a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 169,
+      "sourceTextSha256": "459baecdc197e1eab5186e3415990502deca7478329899f646062264a565d6c0",
+      "finalTextSha256": "459baecdc197e1eab5186e3415990502deca7478329899f646062264a565d6c0",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 170,
+      "sourceTextSha256": "6f7fcd1f6e59157df7653c2373fc7e03f198239a629f5d39dac494a9c9a334b7",
+      "finalTextSha256": "6f7fcd1f6e59157df7653c2373fc7e03f198239a629f5d39dac494a9c9a334b7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 171,
+      "sourceTextSha256": "3c489748a2f8b56f67f1c045acd6e5d09b90855d3ec5062f86ab7a8ea3ae5d99",
+      "finalTextSha256": "3c489748a2f8b56f67f1c045acd6e5d09b90855d3ec5062f86ab7a8ea3ae5d99",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 172,
+      "sourceTextSha256": "061619550e3375ff4fd280d11a50bbcfb04576dc60eba2ca739b07eb0ec660d7",
+      "finalTextSha256": "061619550e3375ff4fd280d11a50bbcfb04576dc60eba2ca739b07eb0ec660d7",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 173,
+      "sourceTextSha256": "d2a49b5802b252bfff67766e556d048bec13c4040fa937d6e27532eb38436dec",
+      "finalTextSha256": "d2a49b5802b252bfff67766e556d048bec13c4040fa937d6e27532eb38436dec",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 174,
+      "sourceTextSha256": "3576c2020a77d940b3b921f36f14507b001b4d9819a82cbeb97cda07d24a5595",
+      "finalTextSha256": "3576c2020a77d940b3b921f36f14507b001b4d9819a82cbeb97cda07d24a5595",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 175,
+      "sourceTextSha256": "7dd2a254d2206f1f6758e1c3136e433a031208603000431ba58cc7c4435cb604",
+      "finalTextSha256": "7dd2a254d2206f1f6758e1c3136e433a031208603000431ba58cc7c4435cb604",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 176,
+      "sourceTextSha256": "23991ec105dc7135647a0e7887f33b67ecfa50ea5173df5c828160dab0064e61",
+      "finalTextSha256": "23991ec105dc7135647a0e7887f33b67ecfa50ea5173df5c828160dab0064e61",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 177,
+      "sourceTextSha256": "36ffa9f368afc5551bb43444fd42f839b5a8284c2b4676776532479cf3b17719",
+      "finalTextSha256": "36ffa9f368afc5551bb43444fd42f839b5a8284c2b4676776532479cf3b17719",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 178,
+      "sourceTextSha256": "a445d3deadfd50896911e64e1fd0664fe7264d95692a7a207acc0d945ff06322",
+      "finalTextSha256": "a445d3deadfd50896911e64e1fd0664fe7264d95692a7a207acc0d945ff06322",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 179,
+      "sourceTextSha256": "af383e6a80e4bf736e0e97b005cf71ad92ba657c007d75efcd5e5653cfcdfab5",
+      "finalTextSha256": "af383e6a80e4bf736e0e97b005cf71ad92ba657c007d75efcd5e5653cfcdfab5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 180,
+      "sourceTextSha256": "041d2e5b586dbab94b0288fb6052dd07541e3b3d0aa1a855219b7af80a41bf0c",
+      "finalTextSha256": "041d2e5b586dbab94b0288fb6052dd07541e3b3d0aa1a855219b7af80a41bf0c",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 181,
+      "sourceTextSha256": "555d9faa319c3460c921a69a378160c5d6b21c678eb6339446a82f6879f58538",
+      "finalTextSha256": "555d9faa319c3460c921a69a378160c5d6b21c678eb6339446a82f6879f58538",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 182,
+      "sourceTextSha256": "d65b1cd4dc9bb37886c9f6597d174327dc3d43f1de0d235b145db9c5195026dc",
+      "finalTextSha256": "d65b1cd4dc9bb37886c9f6597d174327dc3d43f1de0d235b145db9c5195026dc",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 183,
+      "sourceTextSha256": "532be1024acf3723e2cf801dd0555d0c9a16f796192b36dd3d1b2dd6b9121312",
+      "finalTextSha256": "532be1024acf3723e2cf801dd0555d0c9a16f796192b36dd3d1b2dd6b9121312",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 184,
+      "sourceTextSha256": "e0a2d34182a53241c036581a82b7e778daa7d4acba8d84ddb2313c808d263f2a",
+      "finalTextSha256": "e0a2d34182a53241c036581a82b7e778daa7d4acba8d84ddb2313c808d263f2a",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 185,
+      "sourceTextSha256": "8921b5b54afa7aaef4f4890e877ac2607f74ee2eca452fd71be3e6cca9fddeb9",
+      "finalTextSha256": "8921b5b54afa7aaef4f4890e877ac2607f74ee2eca452fd71be3e6cca9fddeb9",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 186,
+      "sourceTextSha256": "9f6f550a29ede0a049e3b2992c7f1cb46fe0f78e4ef066f8d26f3743a2b06ec5",
+      "finalTextSha256": "9f6f550a29ede0a049e3b2992c7f1cb46fe0f78e4ef066f8d26f3743a2b06ec5",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 187,
+      "sourceTextSha256": "f5bd5caddf6bde92ebc1edb1a817b7c2aa6be21ba8761f6b008d7a3be9f5ad68",
+      "finalTextSha256": "f5bd5caddf6bde92ebc1edb1a817b7c2aa6be21ba8761f6b008d7a3be9f5ad68",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 188,
+      "sourceTextSha256": "2b981a40d8950b84871f2c1e70576122306ffbf21764a2d4a53c57ff202e797f",
+      "finalTextSha256": "2b981a40d8950b84871f2c1e70576122306ffbf21764a2d4a53c57ff202e797f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 189,
+      "sourceTextSha256": "d9f823bbc19b2dcd5db0a8b8f01ce61ff4adc69f073b2a47dbde19680c87de0b",
+      "finalTextSha256": "d9f823bbc19b2dcd5db0a8b8f01ce61ff4adc69f073b2a47dbde19680c87de0b",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 190,
+      "sourceTextSha256": "40edb7686c812050c12969a5303ff067cf181e305d26fd13b6dc3a2dc5e8b689",
+      "finalTextSha256": "40edb7686c812050c12969a5303ff067cf181e305d26fd13b6dc3a2dc5e8b689",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    },
+    {
+      "paragraphIndex0": 191,
+      "sourceTextSha256": "8d77025e59827607ffd6036a88722c57553e9041e6e6a29a025db76b0b07db0f",
+      "finalTextSha256": "8d77025e59827607ffd6036a88722c57553e9041e6e6a29a025db76b0b07db0f",
+      "textUnchanged": true,
+      "permittedFigurePrefixChange": false
+    }
+  ],
+  "tableChecks": [
+    {
+      "tableIndex0": 0,
+      "sourceRows": 22,
+      "finalRows": 22,
+      "shapePreserved": true,
+      "changes": [
+        {
+          "rowIndex0": 15,
+          "columnIndex0": 0,
+          "source": "B=ρeff··cp",
+          "final": "B=ρeff·cp",
+          "allowed": true
+        }
+      ]
+    },
+    {
+      "tableIndex0": 1,
+      "sourceRows": 8,
+      "finalRows": 8,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 2,
+      "sourceRows": 8,
+      "finalRows": 8,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 3,
+      "sourceRows": 7,
+      "finalRows": 7,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 4,
+      "sourceRows": 7,
+      "finalRows": 7,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 5,
+      "sourceRows": 11,
+      "finalRows": 11,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 6,
+      "sourceRows": 10,
+      "finalRows": 10,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 7,
+      "sourceRows": 10,
+      "finalRows": 10,
+      "shapePreserved": true,
+      "changes": []
+    },
+    {
+      "tableIndex0": 8,
+      "sourceRows": 5,
+      "finalRows": 5,
+      "shapePreserved": true,
+      "changes": []
+    }
+  ],
+  "formulaChecks": [
+    {
+      "equationNumber": 1,
+      "paragraphIndex0": 40,
+      "sourceSemanticSha256": "ab7ec409c318aeca07cbf1f31bff5f0c4bdee60d438593799738f9655c9ab9f7",
+      "finalSemanticSha256": "ab7ec409c318aeca07cbf1f31bff5f0c4bdee60d438593799738f9655c9ab9f7",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 2,
+      "paragraphIndex0": 46,
+      "sourceSemanticSha256": "cf34cf0c7ec564f630b0f666c85bffe17a4f7ae110ca6a4fd62d360b0fca0594",
+      "finalSemanticSha256": "cf34cf0c7ec564f630b0f666c85bffe17a4f7ae110ca6a4fd62d360b0fca0594",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 3,
+      "paragraphIndex0": 47,
+      "sourceSemanticSha256": "2ce988373ee018d2fc09275efbf4a133c36853dc22275a0f4fb26b06a21c96fc",
+      "finalSemanticSha256": "2ce988373ee018d2fc09275efbf4a133c36853dc22275a0f4fb26b06a21c96fc",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 4,
+      "paragraphIndex0": 50,
+      "sourceSemanticSha256": "8d9ab3335e351409704baaf989a45ee5281f480cad7af96cd40a1aea3becc749",
+      "finalSemanticSha256": "8d9ab3335e351409704baaf989a45ee5281f480cad7af96cd40a1aea3becc749",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 5,
+      "paragraphIndex0": 51,
+      "sourceSemanticSha256": "73d8eecc9e0c8f799e7a70c0449219135c8b9ba672e7a824f719191a6bb61be7",
+      "finalSemanticSha256": "73d8eecc9e0c8f799e7a70c0449219135c8b9ba672e7a824f719191a6bb61be7",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 6,
+      "paragraphIndex0": 54,
+      "sourceSemanticSha256": "33662ef9dc590f28c8ee4baa013423e93724d79b94b7c397b3700ed7ada3a6e9",
+      "finalSemanticSha256": "33662ef9dc590f28c8ee4baa013423e93724d79b94b7c397b3700ed7ada3a6e9",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 7,
+      "paragraphIndex0": 59,
+      "sourceSemanticSha256": "6d4da9c0da769b2ce402afe41762fa972ea5f074a88e9e28bc703d5e8b8b34ca",
+      "finalSemanticSha256": "6d4da9c0da769b2ce402afe41762fa972ea5f074a88e9e28bc703d5e8b8b34ca",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 8,
+      "paragraphIndex0": 81,
+      "sourceSemanticSha256": "88fa62924b00e60997be7ab1dc127217d71bb06b408ca1dea3981d38da5b8be5",
+      "finalSemanticSha256": "88fa62924b00e60997be7ab1dc127217d71bb06b408ca1dea3981d38da5b8be5",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 9,
+      "paragraphIndex0": 82,
+      "sourceSemanticSha256": "a97d680b1eb0b07312be90ef495b20c5d776b4547115ad3452f4503a75d53f07",
+      "finalSemanticSha256": "a97d680b1eb0b07312be90ef495b20c5d776b4547115ad3452f4503a75d53f07",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 10,
+      "paragraphIndex0": 85,
+      "sourceSemanticSha256": "36d30f32bce242e06b5acebd15c04fe129514bacfcf30287fe7043428787e33b",
+      "finalSemanticSha256": "36d30f32bce242e06b5acebd15c04fe129514bacfcf30287fe7043428787e33b",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 11,
+      "paragraphIndex0": 108,
+      "sourceSemanticSha256": "c34cbbbfd15a1329a7100767e4f91fe2e2bc33fc5c355e1ad5370f162dbf7b02",
+      "finalSemanticSha256": "c34cbbbfd15a1329a7100767e4f91fe2e2bc33fc5c355e1ad5370f162dbf7b02",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 12,
+      "paragraphIndex0": 111,
+      "sourceSemanticSha256": "8aa3afaf731db4ac458110992bb6f42839ee3859a97d24f7d44b8460602f603a",
+      "finalSemanticSha256": "8aa3afaf731db4ac458110992bb6f42839ee3859a97d24f7d44b8460602f603a",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 13,
+      "paragraphIndex0": 131,
+      "sourceSemanticSha256": "2b8996ec8f210d18c414246ed6d2be75d1c7f1e6ea9ec0817505530714c7ebbf",
+      "finalSemanticSha256": "2b8996ec8f210d18c414246ed6d2be75d1c7f1e6ea9ec0817505530714c7ebbf",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 14,
+      "paragraphIndex0": 133,
+      "sourceSemanticSha256": "e5e5a3f0325e335670d6c1ad39691c5f1efba64dbff3d227c1b035dce5e0eb3e",
+      "finalSemanticSha256": "e5e5a3f0325e335670d6c1ad39691c5f1efba64dbff3d227c1b035dce5e0eb3e",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 15,
+      "paragraphIndex0": 134,
+      "sourceSemanticSha256": "477a0c626469e15ac4a39473b56dbfa954ff0f49f88e2d3d3f746af36ff12c1b",
+      "finalSemanticSha256": "477a0c626469e15ac4a39473b56dbfa954ff0f49f88e2d3d3f746af36ff12c1b",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 16,
+      "paragraphIndex0": 137,
+      "sourceSemanticSha256": "47d21e63d871a71efcc3ecce557390c1e69bbd55a38eac4e36687846ca2031d2",
+      "finalSemanticSha256": "47d21e63d871a71efcc3ecce557390c1e69bbd55a38eac4e36687846ca2031d2",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 17,
+      "paragraphIndex0": 139,
+      "sourceSemanticSha256": "6c676d03860bf96dc0cfc6f8fc39b3c2494f654b362006bbbcf573b2ae2a990f",
+      "finalSemanticSha256": "6c676d03860bf96dc0cfc6f8fc39b3c2494f654b362006bbbcf573b2ae2a990f",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 18,
+      "paragraphIndex0": 140,
+      "sourceSemanticSha256": "da18d19ea201029c94ee1aaeec33d94ec66da50772c498c796cab2a8952b65e6",
+      "finalSemanticSha256": "da18d19ea201029c94ee1aaeec33d94ec66da50772c498c796cab2a8952b65e6",
+      "equal": true,
+      "textEqual": true
+    },
+    {
+      "equationNumber": 19,
+      "paragraphIndex0": 159,
+      "sourceSemanticSha256": "49000fe488e4214fe2b9569d947adb18b94fdc33518c9dfe9da21503d640de11",
+      "finalSemanticSha256": "49000fe488e4214fe2b9569d947adb18b94fdc33518c9dfe9da21503d640de11",
+      "equal": true,
+      "textEqual": true
+    }
+  ],
+  "figureMarkers": [
+    {
+      "number": 1,
+      "blockIndex0": 75,
+      "paragraphIndex0": 72,
+      "beforePrefix": "图像主题1：",
+      "afterPrefix": "【绘图位置1】图1：",
+      "descriptionUnchanged": true
+    },
+    {
+      "number": 2,
+      "blockIndex0": 90,
+      "paragraphIndex0": 87,
+      "beforePrefix": "图像主题2：",
+      "afterPrefix": "【绘图位置2】图2：",
+      "descriptionUnchanged": true
+    },
+    {
+      "number": 3,
+      "blockIndex0": 105,
+      "paragraphIndex0": 100,
+      "beforePrefix": "图像主题3：",
+      "afterPrefix": "【绘图位置3】图3：",
+      "descriptionUnchanged": true
+    },
+    {
+      "number": 4,
+      "blockIndex0": 128,
+      "paragraphIndex0": 122,
+      "beforePrefix": "图像主题4：",
+      "afterPrefix": "【绘图位置4】图4：",
+      "descriptionUnchanged": true
+    },
+    {
+      "number": 5,
+      "blockIndex0": 161,
+      "paragraphIndex0": 153,
+      "beforePrefix": "图像主题5：",
+      "afterPrefix": "【绘图位置5】图5：",
+      "descriptionUnchanged": true
+    },
+    {
+      "number": 6,
+      "blockIndex0": 169,
+      "paragraphIndex0": 161,
+      "beforePrefix": "图像主题6：",
+      "afterPrefix": "【绘图位置6】图6：",
+      "descriptionUnchanged": true
+    }
+  ],
+  "referencePreservation": [
+    {
+      "referenceNumber": 5,
+      "paragraphIndex0": 43,
+      "sourceAndFinalFullParagraphTextEqual": true,
+      "citationStillPresent": true,
+      "matchingComments": [
+        {
+          "id": "7",
+          "text": "正文引用[5]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+          "author": "审阅",
+          "initials": "",
+          "starts": 1,
+          "ends": 1,
+          "references": 1,
+          "anchors": [
+            {
+              "paragraphIndex0": 43,
+              "text": "附件1的烘房水分指标只标kg/kg，未给出与药材干基含水率之间的吸附等温线。记该观测数值为Y∞，基线约定Ceq=Y∞，作为表面传质的等效平衡值。这是气固边界的简化映射，不是由单位相同推得两者物理相等；如果进一步把Y∞解释为空气湿度比，其干空气参考质量也须另作假设。上述解释不改变附件数值，但明确了预测结果成立的条件。材料平衡含水率的一般概念见文献[5]。"
+            }
+          ]
+        }
+      ],
+      "commentAnchoredAtExpectedParagraph": true
+    },
+    {
+      "referenceNumber": 3,
+      "paragraphIndex0": 48,
+      "sourceAndFinalFullParagraphTextEqual": true,
+      "citationStillPresent": true,
+      "matchingComments": [
+        {
+          "id": "8",
+          "text": "正文引用[3]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+          "author": "审阅",
+          "initials": "",
+          "starts": 1,
+          "ends": 1,
+          "references": 1,
+          "anchors": [
+            {
+              "paragraphIndex0": 48,
+              "text": "式(2)表示有效显热的局部变化由净导热供给，式(3)由水质量守恒除以均匀且固定的ρd得到。变导热系数、变扩散系数均保留在散度内；将它们直接移至导数外，会漏掉由状态变化引起的通量梯度。经典扩散理论提供了上述构造及圆柱基准解的依据[3]。"
+            }
+          ]
+        }
+      ],
+      "commentAnchoredAtExpectedParagraph": true
+    },
+    {
+      "referenceNumber": 4,
+      "paragraphIndex0": 57,
+      "sourceAndFinalFullParagraphTextEqual": true,
+      "citationStillPresent": true,
+      "matchingComments": [
+        {
+          "id": "9",
+          "text": "正文引用[4]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+          "author": "审阅",
+          "initials": "",
+          "starts": 1,
+          "ends": 1,
+          "references": 1,
+          "anchors": [
+            {
+              "paragraphIndex0": 57,
+              "text": "设材料归一化坐标x=r/R0，在0≤x≤1上取N个等长区间，节点xi=i/N包含中心和表面。对每个节点分配相邻半节点之间的环形控制体。令wi为其无量纲体积权重，中心与表面分别采用半控制体。有限体积法先计算相邻控制体共用的面通量，再作净通量差，因而内部面在全域求和时严格相消[4]。这一性质比直接在r=0代入含1/r的差分式更适合处理轴心。"
+            }
+          ]
+        }
+      ],
+      "commentAnchoredAtExpectedParagraph": true
+    },
+    {
+      "referenceNumber": 6,
+      "paragraphIndex0": 61,
+      "sourceAndFinalFullParagraphTextEqual": true,
+      "citationStillPresent": true,
+      "matchingComments": [
+        {
+          "id": "10",
+          "text": "正文引用[6]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+          "author": "审阅",
+          "initials": "",
+          "starts": 1,
+          "ends": 1,
+          "references": 1,
+          "anchors": [
+            {
+              "paragraphIndex0": 61,
+              "text": "细网格缩短了局部扩散时间尺度，显式推进会受到较严的步长限制。本文将温度和含水率交错排列，利用相邻节点耦合构造稀疏Jacobian，再由隐式BDF联立求解[6]。状态末项只累计失水，不反馈改变温湿方程，可用来核对全域水量收支。附录B展开残量、矩阵及边界导数。求解器在误差控制下选择积分步长，正文和工作簿则查询其连续输出，两者分开处理，保证1 s输出并非由稀疏表格重新拼接。"
+            }
+          ]
+        }
+      ],
+      "commentAnchoredAtExpectedParagraph": true
+    }
+  ],
+  "retiredComments": [
+    {
+      "id": "0",
+      "text": "原文按要求保留。题面及前文1.2给出的长度为25 cm，此处“长2cm”应改为“长25cm”；后续模型按0.25 m计算。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 20,
+          "text": "已知圆柱形药材的几何尺寸（长25cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "text": "原条目按要求保留。PubMed PMID37474981确认2023,48(13):3440–3447，原页码正确；原文共有8名作者，前三人之后宜补“等”。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 191,
+          "text": "[2] 王晓辉,王学成,唐培渝,等.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447."
+        }
+      ]
+    }
+  ],
+  "updatedComments": [
+    {
+      "sourceId": "4",
+      "finalId": "4",
+      "sourceText": "原文按要求保留。Q4材料骨架随径向收缩运动，应限定为干物质没有生成、损失或相对骨架迁移，而不是空间静止。",
+      "finalText": "你已补充干物质没有生成、损失或相对骨架迁移的限定，本次保留。句首“骨架不发生迁移”仍需与Q4材料整体收缩运动区别理解；后文按材料随动建立方程。",
+      "sourceAnchorParagraphs": [
+        32
+      ],
+      "finalAnchorParagraphs": [
+        32
+      ]
+    },
+    {
+      "sourceId": "5",
+      "finalId": "5",
+      "sourceText": "原文按要求保留。“BD”应为“BDF”。Kirchhoff原函数改善面通量计算，仍使用温度面均值和有限精度求积，不能把“精确处理”理解为没有离散或积分误差。分钟量级是已记录计算环境下的运行表现，不是其他设备的时间保证。",
+      "finalText": "你已将BD改为BDF，本次保留。此段“精确处理”仍应结合后文理解：Kirchhoff势仅解析处理浓度方向积分，整个数值通量及方程求解仍有离散误差。分钟量级为已记录环境表现。",
+      "sourceAnchorParagraphs": [
+        173
+      ],
+      "finalAnchorParagraphs": [
+        173
+      ]
+    }
+  ],
+  "finalComments": [
+    {
+      "id": "1",
+      "text": "原文按要求保留。Q1的D1(C)=7e−9 exp(−0.89/C)没有温度项；Arrhenius温度因子属于附录3/4。后文按各问实际公式区分。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 20,
+          "text": "已知圆柱形药材的几何尺寸（长25cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "text": "原文按要求保留。采用同比材料收缩时，坐标变化项与物理平流相消，不另加网格平流。附录A.3给出完整推导。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 27,
+          "text": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "text": "原文按要求保留。同T、同C下D4/D3=0.175exp(0.15/C)，只有C>0.0860600 kg/kg时小于1，低含水率表面可能反转。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 27,
+          "text": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "text": "你已补充干物质没有生成、损失或相对骨架迁移的限定，本次保留。句首“骨架不发生迁移”仍需与Q4材料整体收缩运动区别理解；后文按材料随动建立方程。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 32,
+          "text": "假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四在干物质没有生成、损失或相对骨架迁移时只发生均匀径向收缩，轴向长度不变。"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "text": "你已将BD改为BDF，本次保留。此段“精确处理”仍应结合后文理解：Kirchhoff势仅解析处理浓度方向积分，整个数值通量及方程求解仍有离散误差。分钟量级为已记录环境表现。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 173,
+          "text": "数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BDF处理刚性，使N达到3200/6400仍可在分钟量级完成。"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "text": "原条目按要求保留。刊方确认：王乐意,李长河,刘明政,等.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(2):1–28. DOI:10.11975/j.issn.1002-6819.202306104。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 190,
+          "text": "[1] 王乐毅,李长河,刘明政,等.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "text": "正文引用[5]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 43,
+          "text": "附件1的烘房水分指标只标kg/kg，未给出与药材干基含水率之间的吸附等温线。记该观测数值为Y∞，基线约定Ceq=Y∞，作为表面传质的等效平衡值。这是气固边界的简化映射，不是由单位相同推得两者物理相等；如果进一步把Y∞解释为空气湿度比，其干空气参考质量也须另作假设。上述解释不改变附件数值，但明确了预测结果成立的条件。材料平衡含水率的一般概念见文献[5]。"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "text": "正文引用[3]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 48,
+          "text": "式(2)表示有效显热的局部变化由净导热供给，式(3)由水质量守恒除以均匀且固定的ρd得到。变导热系数、变扩散系数均保留在散度内；将它们直接移至导数外，会漏掉由状态变化引起的通量梯度。经典扩散理论提供了上述构造及圆柱基准解的依据[3]。"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "text": "正文引用[4]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 57,
+          "text": "设材料归一化坐标x=r/R0，在0≤x≤1上取N个等长区间，节点xi=i/N包含中心和表面。对每个节点分配相邻半节点之间的环形控制体。令wi为其无量纲体积权重，中心与表面分别采用半控制体。有限体积法先计算相邻控制体共用的面通量，再作净通量差，因而内部面在全域求和时严格相消[4]。这一性质比直接在r=0代入含1/r的差分式更适合处理轴心。"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "text": "正文引用[6]在当前参考文献表中没有对应条目。按你的最新要求维持已删除条目的状态，正文此处仅加批注，未恢复或补写文献。请团队在定稿时核查处理。",
+      "author": "审阅",
+      "initials": "",
+      "starts": 1,
+      "ends": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "paragraphIndex0": 61,
+          "text": "细网格缩短了局部扩散时间尺度，显式推进会受到较严的步长限制。本文将温度和含水率交错排列，利用相邻节点耦合构造稀疏Jacobian，再由隐式BDF联立求解[6]。状态末项只累计失水，不反馈改变温湿方程，可用来核对全域水量收支。附录B展开残量、矩阵及边界导数。求解器在误差控制下选择积分步长，正文和工作簿则查询其连续输出，两者分开处理，保证1 s输出并非由稀疏表格重新拼接。"
+        }
+      ]
+    }
+  ],
+  "commentIdNote": "Word renumbered source comments during the user save; IDs in this report bind user_edited_source, not older v5. Removed original ID7 is reused by a new reference comment, so retirement is checked by content and anchor rather than requiring absence of that numeric ID.",
+  "unexpectedDifferences": [],
+  "fingerprints": {
+    "sourceCanonicalBodySha256": "8a31e2d9703a8c2b20b77c369a96a530f2ca012a3602ada79d1d3274bada5476",
+    "expectedAuthorizedFinalBodySha256": "c34bc6a2be709f6e74bb81f536c2df90d0c16bae9621a2110de0a43a53a0d8d1",
+    "actualFinalBodySha256": "c34bc6a2be709f6e74bb81f536c2df90d0c16bae9621a2110de0a43a53a0d8d1"
+  },
+  "normalization": "Canonical JSON UTF-8 with ensure_ascii=False,sort_keys=True,separators=(comma,colon). Math preserves nesting/values, merges adjacent text runs, ignores m:rPr/w:rPr/m:ctrlPr and matrix alignment m:mPr, removes XML whitespace flags and empty property nodes. Content nodes remain in order.",
+  "inputsUnchangedDuringAudit": true,
+  "limitations": [
+    "Not a fresh scientific-model validity check or team human approval.",
+    "Comment range validation is OOXML static validation, not a Word GUI review.",
+    "Appendix content lies outside this body-preservation check."
+  ],
+  "checkedVersion": "revision_v5",
+  "priorVersionReview": {
+    "version": "revision_v4",
+    "reviewedAtUtc": "2026-09-12T14:05:14.389145+00:00",
+    "final": {
+      "path": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+      "sha256": "ee9d17c1200310bab0f2e359793fae76918a87717cf77b668bd12e35b07b2197",
+      "bytes": 79916,
+      "boundary": {
+        "blockIndex0": 201,
+        "paragraphIndex0": 192
+      }
+    },
+    "checks": {
+      "source_is_frozen_user_authority": true,
+      "final_is_requested_v4": true,
+      "source_and_final_zip_crc_ok": true,
+      "same_192_paragraphs_and_order": true,
+      "only_six_marker_prefixes_differ_in_paragraphs": true,
+      "six_figure_descriptions_exactly_retained": true,
+      "nine_tables_same_except_one_permitted_cell": true,
+      "nineteen_math_expressions_semantically_identical": true,
+      "expected_body_blocks_exact_match": true,
+      "references_3_to_6_body_text_retained": true,
+      "four_new_comments_correctly_anchored": true,
+      "two_resolved_old_comments_removed_by_content": true,
+      "two_partial_comments_updated_at_same_anchor": true,
+      "four_remaining_old_comments_unchanged": true,
+      "ten_current_comments_all_have_valid_ranges": true,
+      "bibliography_remains_two_entries_exact_user_text": true
+    }
+  },
+  "freshV5Verification": {
+    "method": "Reopened frozen source and new v5 DOCX ZIP, recalculated full-file SHA and CRC, freshly rebuilt every pre-appendix paragraph/table/math canonical block, independently applied six allowed prefixes and one cell typo to fresh source, compared every block exactly, compared all 19 formula trees/text, freshly rebuilt all 10 comment bodies/authors/ranges/anchors and matched the verified comment-operation record.",
+    "bodyBlocks": 201,
+    "paragraphs": 192,
+    "tables": 9,
+    "nativeFormulas": 19,
+    "comments": 10,
+    "sourceAndFinalUnchangedDuringThisRerun": true,
+    "freshCanonicalBodySha256": "c34bc6a2be709f6e74bb81f536c2df90d0c16bae9621a2110de0a43a53a0d8d1"
+  }
+}

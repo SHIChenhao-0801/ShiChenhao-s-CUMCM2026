@@ -1,0 +1,149 @@
+{
+  "status": "PASS_SCOPED_EDITORIAL_REVISION",
+  "scope": "DOCX structure, source identity, typography properties, exact rendered page scope; whole-page visual review is recorded separately.",
+  "docx": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+  "docxSha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
+  "renderManifest": "paper_output\\qa\\manuscript_revision_20260912\\revision_v5_manifest.json",
+  "pageCount": 31,
+  "abstractPages": 1,
+  "bodyPagesIncludingAIReferences": 21,
+  "appendixPages": 9,
+  "appendixStartPage": 23,
+  "pageRequirement": "User confirmed body 20–30 pages; abstract and appendix excluded.",
+  "figurePositions": [
+    {
+      "number": 1,
+      "page": 9
+    },
+    {
+      "number": 2,
+      "page": 11
+    },
+    {
+      "number": 3,
+      "page": 12
+    },
+    {
+      "number": 4,
+      "page": 15
+    },
+    {
+      "number": 5,
+      "page": 18
+    },
+    {
+      "number": 6,
+      "page": 19
+    }
+  ],
+  "numberedFormulas": 35,
+  "editableNativeFormulaObjects": 161,
+  "tables": 9,
+  "codeFragments": 6,
+  "codeLines": 117,
+  "comments": 10,
+  "unmatchedCitationComments": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "bibliographyEntriesRemaining": [
+    1,
+    2
+  ],
+  "mathRunFonts": {
+    "Times New Roman": 2110
+  },
+  "ceilSymbolProperties": [
+    {
+      "glyph": "⌈",
+      "normal": true
+    },
+    {
+      "glyph": "⌉",
+      "normal": true
+    },
+    {
+      "glyph": "⌈",
+      "normal": true
+    },
+    {
+      "glyph": "⌉",
+      "normal": true
+    },
+    {
+      "glyph": "⌈",
+      "normal": true
+    },
+    {
+      "glyph": "⌉",
+      "normal": true
+    }
+  ],
+  "actualPdfFonts": [
+    "BAAAAA+Calibri",
+    "CAAAAA+SimHei",
+    "DAAAAA+SimSun",
+    "EAAAAA+TimesNewRomanPSMT",
+    "FAAAAA+SimSun",
+    "GAAAAA+TimesNewRomanPS-ItalicMT",
+    "IAAAAA+OpenSymbol",
+    "JAAAAA+SimSun",
+    "KAAAAA+TimesNewRomanPS-BoldMT",
+    "LAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "NAAAAA+SimSun",
+    "NotoSansSC-Thin",
+    "NotoSerifSC-ExtraLight",
+    "OAAAAA+Consolas"
+  ],
+  "outOfPageSpans": [],
+  "pdeRerun": false,
+  "actualGuiOrHumanCodeReviewThisRevision": false,
+  "uprightHourUnitHeaders": 5,
+  "italicKpVariableBases": 3,
+  "sourceSnapshotUnchanged": true,
+  "generatedAtUtc": "2026-09-12T14:16:10.102666+00:00",
+  "allPagesVisuallyReviewed": true,
+  "visualMethod": "All 31 v4 pages actually viewed. Six changed v5 pages re-viewed; remaining 25 images have identical SHA256.",
+  "reports": [
+    {
+      "path": "paper_output\\qa\\manuscript_revision_20260912\\final_body_preservation.json",
+      "sha256": "c0bd48d13968791500eb5e31a9bca6b2118ef83d4237077d1df402a919ba5f8e"
+    },
+    {
+      "path": "paper_output\\qa\\manuscript_revision_20260912\\final_structural_check.json",
+      "sha256": "e7bae9cab63be1fa8f8e14295989f1a206226b5cd76a46f1ae6a1171971e0cad"
+    },
+    {
+      "path": "paper_output\\qa\\manuscript_revision_20260912\\compact_appendix_final_review.json",
+      "sha256": "2c1478abf7392da877203082d8d22d1d763b0ddea39458044e587e871a0816b3"
+    },
+    {
+      "path": "paper_output\\qa\\manuscript_revision_20260912\\visual_pages_1_10.json",
+      "sha256": "d0d0982fe7a0e44dbdc0b87343152c1da350c25a7e7d3b8f2ebb0ce291386ae8"
+    },
+    {
+      "path": "paper_output\\qa\\manuscript_revision_20260912\\visual_review_body_11_22_v5.json",
+      "sha256": "351ef452fbd1493c3f9be7e8a5be870859265d96d822497bc9d1c93a5c7a7bea"
+    },
+    {
+      "path": "paper_output\\qa\\manuscript_revision_20260912\\visual_review_appendix_23_31.json",
+      "sha256": "d73f05e9ae31a35b97bdb12bcb681ec56bf76ffcaa8700c9d64aa38adb09cc3b"
+    }
+  ],
+  "autoresearchLogReview": {
+    "path": "paper_output\\results\\experiments\\manuscript_revision_20260912_log_review.json",
+    "sha256": "e0d06ec2585357922d2069066e1e1d967e9010b697d5dc5d0ab22f2b75645654",
+    "validHistoricalTrials": 42,
+    "machineChecks": 456,
+    "newPdeRuns": 0
+  },
+  "sourceOfTruth": "The user-edited source snapshot is authoritative for preserved body content; this revised DOCX is the latest editorial delivery.",
+  "mainWorkflowScope": "Existing S8/DONE evidence binds the earlier canonical manuscript. This supplemental QA binds the user-edited typography/appendix revision; no claim of rerunning original model gates.",
+  "pendingUserWork": [
+    "Create and insert six figures using the drawing guide; recheck pagination after insertion.",
+    "Review comments, models and source excerpts as a team."
+  ],
+  "musicReminder": "Explicitly authorized; execute Computer Use after file work and Git sync, verify actual playing state in UI."
+}

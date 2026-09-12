@@ -1,0 +1,234 @@
+{
+  "version": "revision_v4",
+  "status": "PASS_LAYOUT_WITH_MINOR_FONT_FINDINGS",
+  "scope": "第11–22页12页实际全页视觉检查，另查看第9页以确认图1位置；只修改绘图清单和QA。",
+  "manifestPath": "paper_output/qa/manuscript_revision_20260912/revision_v4_manifest.json",
+  "manifestFileSha256": "d427f2c97df48ab5e17f47de3e5dea01129ee6c34e0841d17ab078a92b929416",
+  "docx": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+  "docxSha256": "ee9d17c1200310bab0f2e359793fae76918a87717cf77b668bd12e35b07b2197",
+  "pdf": "paper_output/qa/manuscript_revision_20260912/rendered/revision_v4.pdf",
+  "pdfSha256": "f82784a5e42da0e85187418aa014fea6356c3266621755bd916f9e4fc33c1593",
+  "documentPageCount": 31,
+  "requiredPageCount": 12,
+  "actuallyViewedRequiredPageCount": 12,
+  "blockingLayoutFindings": [],
+  "fontFindings": [
+    {
+      "id": "F1",
+      "category": "font_semantics",
+      "severity": "minor",
+      "pages": [
+        11,
+        12,
+        14,
+        17
+      ],
+      "location": "表3、表4、表5、表6、表7：时间/h表头",
+      "observation": "单位h呈斜体；DOCX对应w:r确认w:i=1、w:iCs=1。",
+      "recommendation": "只将此处表示小时的h设为正体，不更改换热系数变量h。",
+      "blocksLayoutUse": false,
+      "reportedToRoot": true
+    },
+    {
+      "id": "F2",
+      "category": "font_semantics",
+      "severity": "minor",
+      "pages": [
+        18
+      ],
+      "location": "式(19)两处K_p主字符K",
+      "observation": "视觉为正体；DOCX两处对应m:r确认m:sty=p、m:nor=1、w:i=0。这里K_p是经验阻力函数，正文行内为斜体。",
+      "recommendation": "将此处函数变量K设斜体，保持温度单位K正体；避免仅按字符匹配单位规则。",
+      "blocksLayoutUse": false,
+      "reportedToRoot": true
+    }
+  ],
+  "pages": [
+    {
+      "page": 11,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-11.png",
+      "sha256": "597c74d0866533a560a18093469cab6d93ebba325d6dce4d5501a0064f81f723",
+      "manifestSha256": "597c74d0866533a560a18093469cab6d93ebba325d6dce4d5501a0064f81f723",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [
+        "F1"
+      ],
+      "observation": "已实际查看整页。黄色绘图位置2完整；表3的表题、6列、6行及底线完整，数学行内变量可辨。表头时间/h的单位h为斜体，另列字体观察F1。"
+    },
+    {
+      "page": 12,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-12.png",
+      "sha256": "42ce2ca1b78593b3d59e056b02cf993096bc9134b19abc1acaeffb20c692883b",
+      "manifestSha256": "42ce2ca1b78593b3d59e056b02cf993096bc9134b19abc1acaeffb20c692883b",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [
+        "F1"
+      ],
+      "observation": "已实际查看整页。表4整页上部完整，绘图位置3三行黄色说明没有跨页裁切。表头h同F1；说明中的4 h在行间换行可读，不构成缺字。"
+    },
+    {
+      "page": 13,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-13.png",
+      "sha256": "2b2192ca1412ebe5d483560f86527ae1ea872032c1e6303d7bcfa697e663779b",
+      "manifestSha256": "2b2192ca1412ebe5d483560f86527ae1ea872032c1e6303d7bcfa697e663779b",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页，并放大检查式(12)。式(11)最大值范围及R₀可读；式(12)左右向上取整括号上端横划可辨，10⁻⁴、10⁴、tᵣ、t꜀和小时h完整，编号(11)(12)右齐，无碰撞；页末正文正常延续下一页。"
+    },
+    {
+      "page": 14,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-14.png",
+      "sha256": "b2f42e0bc057614fe0f43b3f9169a2e82bc7cd41fd9d4874a863208ca1f0a7e7",
+      "manifestSha256": "b2f42e0bc057614fe0f43b3f9169a2e82bc7cd41fd9d4874a863208ca1f0a7e7",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [
+        "F1"
+      ],
+      "observation": "已实际查看整页。表5的10个时刻、全部半径列和0.1500显示值完整；行距足够，表题底线完整。表头h同F1。"
+    },
+    {
+      "page": 15,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-15.png",
+      "sha256": "5b67f84a34704405b84e24a9507e699585144a4953cf9b03ac47f59a10fc0042",
+      "manifestSha256": "5b67f84a34704405b84e24a9507e699585144a4953cf9b03ac47f59a10fc0042",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页。黄色绘图位置4完整，临界/报告下标可辨；式(13)–(15)守恒、材料坐标、帽号及R(t)²分母完整，编号不重叠；末段跨页延续正常。"
+    },
+    {
+      "page": 16,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-16.png",
+      "sha256": "8dc50eb43b3403fe018de3e8bdae0d574e0d6e9305e51e84ab972774e8ae2e83",
+      "manifestSha256": "8dc50eb43b3403fe018de3e8bdae0d574e0d6e9305e51e84ab972774e8ae2e83",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页。式(16)表面导数及1/R、Ceq下标可辨；式(17)ρeff与cp、式(18)指数和分数完整，无裁切或行内公式溢出。"
+    },
+    {
+      "page": 17,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-17.png",
+      "sha256": "8404bb47c71a8f91f2c86dd15085661d963aa0d734fbc1d3bc41da96273e6818",
+      "manifestSha256": "8404bb47c71a8f91f2c86dd15085661d963aa0d734fbc1d3bc41da96273e6818",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [
+        "F1"
+      ],
+      "observation": "已实际查看整页。表6/表7均完整，各自标题、表头、末行和底线清楚；表6域外空白与独立表面列清楚，不误判为空缺排版。两表表头h同F1。"
+    },
+    {
+      "page": 18,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-18.png",
+      "sha256": "c19a041fb9a5267e3c95d521d1a4b5238d572da45038a10c00654c21cb2d83a1",
+      "manifestSha256": "c19a041fb9a5267e3c95d521d1a4b5238d572da45038a10c00654c21cb2d83a1",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [
+        "F2"
+      ],
+      "observation": "已实际查看整页。黄色绘图位置5完整，式(19)分式、1/p上标及ref/s/eq下标可读，编号在右侧。式(19)两处Kp的K为正体，另列字体观察F2。"
+    },
+    {
+      "page": 19,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-19.png",
+      "sha256": "a83115692101f1a881df6e6ade11417c3a761f7fee1b0ef026a165812fd5af12",
+      "manifestSha256": "a83115692101f1a881df6e6ade11417c3a761f7fee1b0ef026a165812fd5af12",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页。黄色绘图位置6四行说明完整；表8四列全部在页内，科学计数法上标和单位可辨。个别长单元格分行正常，无覆盖相邻单元格。"
+    },
+    {
+      "page": 20,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-20.png",
+      "sha256": "8104d5f62153112bd67280c4f3e7cdc6b81b163d68d295009dd9d879384a848a",
+      "manifestSha256": "8104d5f62153112bd67280c4f3e7cdc6b81b163d68d295009dd9d879384a848a",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页。灵敏度段落、第7章及7.1内容完整，行内参数和上标清晰，没有异常空行或页边裁切。"
+    },
+    {
+      "page": 21,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-21.png",
+      "sha256": "4435af8e4edb232bbf1fa5d7a01f13472078edbf897f4ec9d1d7207ba286c4c4",
+      "manifestSha256": "4435af8e4edb232bbf1fa5d7a01f13472078edbf897f4ec9d1d7207ba286c4c4",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页。7.2、7.3及AI声明起始部分完整，Ceq说明性下标可辨；AI声明正常跨页延续，页脚与正文分离。"
+    },
+    {
+      "page": 22,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-22.png",
+      "sha256": "2f0cd5e14fb7a85360603ae4f4b8492282a6686a461c27ba3d2ee303fbf28ae6",
+      "manifestSha256": "2f0cd5e14fb7a85360603ae4f4b8492282a6686a461c27ba3d2ee303fbf28ae6",
+      "hashMatchesManifest": true,
+      "actuallyViewed": true,
+      "method": "view_image full page",
+      "layoutStatus": "PASS",
+      "fontFindingIds": [],
+      "observation": "已实际查看整页。AI声明续文与两条参考文献完整，中文和英文混排可辨，无文本裁切。正文参考文献结束后留白较大，按附录另起页的结构接受；不把留白解释为缺失文献。"
+    }
+  ],
+  "equation12": {
+    "page": 13,
+    "fullPageActuallyViewed": true,
+    "detailActuallyViewed": true,
+    "detailPath": "paper_output/qa/manuscript_revision_20260912/revision_v4_equation12_detail.png",
+    "detailSha256": "997cbab9335da83c6454e6be596f02dcc63c20e95f431f2f26e6d2b665e7a8c0",
+    "result": "PASS_CEILING_SUBSCRIPT_SUPERSCRIPT_AND_NUMBER_LEGIBLE"
+  },
+  "supplementalPages": [
+    {
+      "page": 9,
+      "image": "tmp/cache/manuscript_revision_20260912/revision_v4/page-9.png",
+      "sha256": "27b9325ccff273f6b934615241087160447ef92f993c7d77ab370891119c475d",
+      "actuallyViewed": true,
+      "observation": "表2与图1黄色绘图位置完整，确认第9页。"
+    }
+  ],
+  "figurePages": {
+    "1": 9,
+    "2": 11,
+    "3": 12,
+    "4": 15,
+    "5": 18,
+    "6": 19
+  },
+  "figurePageMeaning": "revision_v4当前31页渲染中的位置；插图、修改图注或重新分页后页码会变化。",
+  "page22Whitespace": "正文及参考文献收尾后留白；与附录另起页结构相容，本范围未发现意外空白页。",
+  "limitations": [
+    "本记录只对绑定的revision_v4图片/PDF及其字体观察负责。",
+    "字体观察已交主代理决定修正；本代理未改DOCX。",
+    "插入实际图像后的版本必须重新核对页码和分页。"
+  ]
+}

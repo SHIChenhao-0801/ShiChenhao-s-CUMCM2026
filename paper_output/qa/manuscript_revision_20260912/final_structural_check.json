@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "scope": "DOCX structure, source identity, typography properties, exact rendered page scope; whole-page visual review is recorded separately.",
+  "docx": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+  "docxSha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
+  "renderManifest": "paper_output\\qa\\manuscript_revision_20260912\\revision_v5_manifest.json",
+  "pageCount": 31,
+  "abstractPages": 1,
+  "bodyPagesIncludingAIReferences": 21,
+  "appendixPages": 9,
+  "appendixStartPage": 23,
+  "pageRequirement": "User confirmed body 20–30 pages; abstract and appendix excluded.",
+  "figurePositions": [
+    {
+      "number": 1,
+      "page": 9
+    },
+    {
+      "number": 2,
+      "page": 11
+    },
+    {
+      "number": 3,
+      "page": 12
+    },
+    {
+      "number": 4,
+      "page": 15
+    },
+    {
+      "number": 5,
+      "page": 18
+    },
+    {
+      "number": 6,
+      "page": 19
+    }
+  ],
+  "numberedFormulas": 35,
+  "editableNativeFormulaObjects": 161,
+  "tables": 9,
+  "codeFragments": 6,
+  "codeLines": 117,
+  "comments": 10,
+  "unmatchedCitationComments": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "bibliographyEntriesRemaining": [
+    1,
+    2
+  ],
+  "mathRunFonts": {
+    "Times New Roman": 2110
+  },
+  "ceilSymbolProperties": [
+    {
+      "glyph": "⌈",
+      "normal": true
+    },
+    {
+      "glyph": "⌉",
+      "normal": true
+    },
+    {
+      "glyph": "⌈",
+      "normal": true
+    },
+    {
+      "glyph": "⌉",
+      "normal": true
+    },
+    {
+      "glyph": "⌈",
+      "normal": true
+    },
+    {
+      "glyph": "⌉",
+      "normal": true
+    }
+  ],
+  "actualPdfFonts": [
+    "BAAAAA+Calibri",
+    "CAAAAA+SimHei",
+    "DAAAAA+SimSun",
+    "EAAAAA+TimesNewRomanPSMT",
+    "FAAAAA+SimSun",
+    "GAAAAA+TimesNewRomanPS-ItalicMT",
+    "IAAAAA+OpenSymbol",
+    "JAAAAA+SimSun",
+    "KAAAAA+TimesNewRomanPS-BoldMT",
+    "LAAAAA+TimesNewRomanPS-BoldItalicMT",
+    "NAAAAA+SimSun",
+    "NotoSansSC-Thin",
+    "NotoSerifSC-ExtraLight",
+    "OAAAAA+Consolas"
+  ],
+  "outOfPageSpans": [],
+  "pdeRerun": false,
+  "actualGuiOrHumanCodeReviewThisRevision": false,
+  "uprightHourUnitHeaders": 5,
+  "italicKpVariableBases": 3,
+  "sourceSnapshotUnchanged": true
+}

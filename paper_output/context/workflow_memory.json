@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
-  "generated_at": "2026-09-12T20:58:14",
+  "generated_at": "2026-09-12T22:05:07",
   "status": "PASS",
   "root": "D:\\Document\\数学建模\\2026CUMCM",
   "workflow": {
@@ -157,5 +157,17 @@
     "authoring": "PASS",
     "format_check": "PASS"
   },
-  "blockers": []
+  "blockers": [],
+  "latest_docx_revision": {
+    "status": "PASS_SCOPED_EDITORIAL_REVISION",
+    "docx": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
+    "sha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
+    "audit": "paper_output/qa/manuscript_revision_20260912/final_revision_audit.json",
+    "bodyPages": 21,
+    "totalPages": 31,
+    "scope": "Existing S8/DONE evidence binds the earlier canonical manuscript. This supplemental QA binds the user-edited typography/appendix revision; no claim of rerunning original model gates.",
+    "autoresearchMode": "experiment-log analysis",
+    "newPdeRuns": 0,
+    "teamHumanReview": "PENDING"
+  }
 }
