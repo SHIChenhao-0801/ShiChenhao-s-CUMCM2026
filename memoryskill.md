@@ -12,6 +12,12 @@
 - Python/C++正式代码必须通过Computer Use在Visual Studio实际打开、断点/变量/运行复现；CLI成功、AI阅读均不能等同GUI复现或用户人工审查。MATLAB通过GUI，R通过Rscript；默认CPU与有限预算。
 - 用户持续授权：每完成可复核工作单元由主代理检查后commit/push到私有GitHub仓库 SHIChenhao-0801/ShiChenhao-s-CUMCM2026/main，核对远端哈希才称备份；子代理不操作Git索引，不强推/删锁/丢弃修改。UTC04/10/16/22六小时同步安排见notes/workspace-maintenance。
 
+## 独立六图绘图手册（2026-09-12）
+
+- 用户要求Word逐图说明要求和所需数据，已交付 `paper_output/paper/A题六张图绘制要求与数据说明.docx`，共7页（总览1页、每图1页）；每图完整路径、字段/形状、单位、时刻、图注和边界限制齐全，图2在手册第3页。QA `paper_output/qa/figure_guide_20260912/final_audit.json`。
+- 图2CSV是241条观测+表头，末点4h=50.165°C/0.04986；t>4h平台50°C/0.05另画为假设。图4报告点从summary.completion取，图5域外留空，图6六点全为N800。未改论文/模型，未生成实际图像。
+- 上轮Apple Music已点击播放并显示暂停按钮，但验证进度时用户按物理Esc终止；该音乐操作已停止，本轮独立手册不恢复桌面播放操作。
+
 ## 用户修改稿公式排版与精简附录（2026-09-12，最新）
 
 - 当前交付 `paper_output/paper/A题_论文_公式规范与精简附录版.docx`，SHA256 bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e；用户前版与旧规范源保留，今后正文继续编辑优先从本修订版开始。

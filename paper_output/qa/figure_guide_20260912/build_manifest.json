@@ -1,0 +1,66 @@
+{
+  "output": "paper_output/paper/A题六张图绘制要求与数据说明.docx",
+  "sha256": "f72c8c603096cedf6ff07c519cc09f95ca1680f3d7a4c45b856b5cd878f894f9",
+  "sources": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+      "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+      "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+    },
+    {
+      "path": "paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "sha256": "7528cf2deb3b596c4c1877ad291043a3e47c8e96127de03cbb760a2ee63f9c96"
+    }
+  ],
+  "figures": 6,
+  "newModelRuns": 0,
+  "includesActualImages": false,
+  "authoring": "python-docx from bundled Python"
+}

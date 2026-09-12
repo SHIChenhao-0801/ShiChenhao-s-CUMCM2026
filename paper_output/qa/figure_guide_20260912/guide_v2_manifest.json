@@ -1,0 +1,53 @@
+{
+  "version": "guide_v2",
+  "docx": "paper_output/paper/A题六张图绘制要求与数据说明.docx",
+  "docxSha256": "f72c8c603096cedf6ff07c519cc09f95ca1680f3d7a4c45b856b5cd878f894f9",
+  "pdf": "paper_output/qa/figure_guide_20260912/guide_v2.pdf",
+  "pdfSha256": "1e6619174098bc11356ee92843c4dfbb5dee93f688f9c586ab9d10c640bddb1b",
+  "pageCount": 7,
+  "pages": [
+    {
+      "page": 1,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-1.png",
+      "sha256": "edf87ca0f3ad74019a1a953d4818e398dd1fedd83b7c95551f6582761f879362",
+      "text": "第 1 页\nA\n六\n制要求与数据\n明\n题\n张图绘\n说\n供论文制图与排版使用。每张图均列明绘制内容、坐标与单位、数据文件、字段选取和图注要求。\n按图号进入对应页，即可查到该图需要的数据。\n图号\n建议图名\n正文位置\n图1\n问题一指定时刻的径向温湿分布\n5.1.4　第9 页\n图2\n烘房边界观测及4 小时后的平台延拓\n5.2.2　第11 页\n图3\n问题二中心与表面的热湿响应\n5.2.4　第12 页\n图4\n问题三全域阈值与临界时刻\n5.3.4　第15 页\n图5\n问题四收缩半径与域内含水率剖面\n5.4.4　第18 页\n图6\n经验边界阻力的情景比较\n5.4.6　第19 页\n数据在哪里\n全部路径位于 D:/Document/数学建模/2026CUMCM。各图页列的是完整文件路径；可复制到文件资\n源管理器的地址栏打开所在文件夹。\n图2 的观测数据可直接用 Excel/WPS 打开以下 CSV：\n环境观测表\nD:/Document/数学建模/2026CUMCM/paper_output/data_cleaned/A_environment_observed.csv\n怎\n使用\n些文件\n样\n这\n文件类型\n读取方式与用途\nCSV\n用 Excel/WPS 打开。第一行为字段名，后续为数据；使用对应的时间、半\n径及数值列。\nNPZ\nNumPy 数组文件，不能将其改扩展名当作Excel 表。用支持NumPy 的绘图\n程序按本手册字段读取，或先导出相应数组为CSV。\nJSON\n结构化结果记录。按本手册给出的键名查找事件时间、报告点或六条情景\n值。\n六\n共同\n定\n图\n约\n时间由秒换小时：除以3600；半径由米换厘米：乘100；温度由K 换°C：减273.15。已经是小时、\n厘米或摄氏度的列不再转换。\n图1、图3、图4 采用N3200 生产结果，图5 采用N6400 生产结果；图6 全部采用独立N800 情景。\n21 个或121 个绘图位置只是保存的绘图采样点数。\n曲线用未舍入数据，四位数值表供核对。数学变量采用Times New Roman 斜体，单位和说明性下标\n正体；不同曲线同时用颜色与线型区分。\n页码对应当前31 页论文版。图片插入或重新分页后，以章节及正文“【绘图位置】”定位，再核对正文20–30\n页要求。\n"
+    },
+    {
+      "page": 2,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-2.png",
+      "sha256": "38bf8450f8575911d0fc0d776a65c4b4e6ca58bf347c5b74f8509b3bedfe3972",
+      "text": "第 2 页\n图1 \n一指定\n刻的径向温湿分布\n问题\n时\n论文位置：5.1.4 结果分析，表1 和表2 分析之后　当前论文第9 页\n需要画什么\n绘制左右双面板：左图为径向温度，右图为径向干基含水率。七条曲线分别对应100、300、600、\n900、1200、1500、1800 s；两个面板使用相同的时间颜色和图例次序。\n坐标\n要求\n两图横轴\n距中心距离 r / cm，0–2 cm\n左图纵轴\n温度 T / °C\n右图纵轴\n干基含水率 C / (kg 水/kg 干物质)\n需要哪些数据\n主数据文件\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz\n字段\n形状与取法\ntimes_s\n7 个时刻；作为曲线标签，单位s。\nradii_m\n121 个物理半径；乘100 得到横轴cm。\ntemperature_C\n7×121 数组；第i 行对应times_s[i]，无需再减273.15。\nC\n7×121 数组；第i 行与左图同一时刻，直接作为右图纵轴。\n作\n和核\n要求\n图\n对\n每个时刻取完整121 点曲线，标明中心r=0 和表面r=2 cm。用线图展示模型结果；正文表1、表2 的\n五个指定半径只用于四位数值核对。\n核对温度表\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv\n核对含水率表\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv\n注\n注明\n图\n应\n问题一、附录2 物性、固定半径2 cm、N3200 数值结果；表面先响应，中心含水率变化滞后。中心\n显示2.5500 不表示其未舍入值始终不变。\n"
+    },
+    {
+      "page": 3,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-3.png",
+      "sha256": "91fe8681c5a5888ad8e19f3ea24c1b4722e233121fa0a9b3e9ab8d4b4095ade0",
+      "text": "第 3 页\n图2 烘房\n界\n及\n期平台延拓\n边\n观测\n长\n论文位置：5.2.2 变量定义与公式推导，边界延拓公式之后　当前论文第11 页\n需要画什么\n上图画0–4 h 环境温度原始点与分段线性插值，下图画环境水分指标。再用较长时间轴或插图展示4\n–60 h 平台；在t=4 h 处画竖线，区分观测区间和假设延拓区间。\n坐标\n要求\n横轴\n时间 t / h；观测细图0–4 h，长期图0–60 h。\n上图纵轴\n环境温度 / °C。\n下图纵轴\n环境水分指标 / (kg/kg)，不能标作相对湿度百分比。\n数据直接取\n里\n观测\n这\n原始观测数值的清洗表\nD:/Document/数学建模/2026CUMCM/paper_output/data_cleaned/A_environment_observed.csv\n字段\n具体用途\ntime_h\n横轴；241 条记录覆盖0–4 h，另有1 行表头。\ntemperature_C\n上图观测点纵轴。\nair_moisture_kg_per_kg\n下图观测点纵轴。\ntime_s、temperature_K\n辅助单位列；不与time_h、temperature_C 重复转换。\n4 小\n后的数据怎\n理\n时\n样处\nCSV 只有0–4 h 观测。4 h 之后的平台由模型边界假设构造：对4<t≤60 h，温度恒取50°C，环境等效\n边界指标恒取0.05。画成两条水平虚线，不添加“实测点”标记。\n位置\n温度 / °C\n水分指标 / (kg/kg)\nt=0 h 观测\n28\n0.01963\nt=4 h 末次观测\n50.165\n0.04986\nt=4 h 右侧极限至60 h 的假设平台\n50\n0.05\n相邻观测点直接连线即为线性插值。保留4 h 处的实际末点；平台从4 h 右侧开始，可用开端点或图注说明小\n跳变，不把末点改为50 与0.05。\n平台设置记录\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/summary.json\n读取settings 中的boundary_extension=nominal、tail_temperature_C=50.0、tail_equilibrium=0.05。图注写明：0–4 \nh 为观测与线性插值，4 h 后为假设延拓；空气指标映射为材料等效边界量属于模型假设。\n"
+    },
+    {
+      "page": 4,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-4.png",
+      "sha256": "552d4ac98cf7567e92cff00cbd63e8c948cf357a02a3de3b20e938bf09406db2",
+      "text": "第 4 页\n图3 \n二中心与表面的\n湿响\n问题\n热\n应\n论文位置：5.2.4 结果分析，表3 和表4 分析之后　当前论文第12 页\n需要画什么\n分别绘制温度和含水率两个时间面板，每个面板均包含中心、表面两条曲线。温度图展示0–4 h；含\n水率图展示0 至临界达标附近。两面板中心与表面使用一致的颜色或线型。\n坐标\n要求\n两图横轴\n时间 t / h；允许采用不同横轴范围。\n温度纵轴\nT / °C；突出早期升温与中心滞后。\n含水率纵轴\n干基 C / (kg/kg)；中心r=0，表面r=2 cm。\n需要哪些数据\n主数据文件\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/sampled_solution.npz\n字段\n形状与取法\ntimes_s\n3452 个保存时刻；除3600 转换为小时。\nmaterial_x\n21 个材料位置，首项0、末项1；首列为中心，末列为表面。\nT_K\n3452×21；取首列和末列，再减273.15。\nC\n3452×21；取首列和末列，保持原精度。\n与核\n筛选时间\n对\n温度曲线保留times_s≤14400 的样点。含水率曲线保留至临界根约57.47230195056044 h；若显示严格\n报告点，使用summary.json 中的completion 记录，不把临界等号根当作严格达标点。\n事件与报告时刻\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/summary.json\n表3 与表4 的核对文件\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv\n含水率核对文件\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv\n注\n注明\n图\n应\n问题二、附录3 整组变物性、固定半径、N3200、4 h 后名义平台。问题二从均匀初始状态单独起\n算；不要接到问题一1800 s 的末态。升温接近完成不等于全域含水率已达标。\n"
+    },
+    {
+      "page": 5,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-5.png",
+      "sha256": "c09d58eb003aa53a87117add7816fe9e06c84873cfd6f08e38404b67041dffdc",
+      "text": "第 5 页\n图4 \n三全域\n与\n界\n刻\n问题\n阈值\n临\n时\n论文位置：5.3.4 结果分析，达标过程说明处　当前论文第15 页\n需要画什么\n主图画中心、表面及全域最大含水率，叠加C=0.15 kg/kg 水平阈值线。增加临界时刻附近放大图，\n区分临界等号根与严格可行报告点。中心与最大值重合时直接重合，不人为错开曲线。\n坐标\n要求\n主图\n横轴t / h，可设0–60 h；纵轴干基C / (kg/kg)。\n放大图\n横轴相对临界根的秒差；纵轴全域最大C 减0.15。\n主\n和放大\n分\n取数\n图\n图\n别\n主图优先数据\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz\n字段\n具体用途\ntimes_s\n266 个时刻；除3600。实际终点206902 s，约57.47278 h。\ncentre_C、surface_C\n中心与真实表面曲线。\nmax_C\n生产全体离散节点的最大值；不要改取21 个稀疏半径的最大值。\n放大图已有保存样点\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/sampled_solution.npz\n用末尾times_s 和C 首列显示根附近的已有中心样点，并明确为样点连线。主图的全域最大曲线仍取max_C；\n严格报告点不在该NPZ 中，另从下列JSON 取数。\n临界根与严格报告点\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/summary.json\n标记\n时间 / h\n最大干基含水率\n临界根\n57.47230195056044\n0.15\n严格报告点\n57.4724\n0.14999989718225315\nJSON 读取completion 对象：critical_event_h 为临界小时，reported_drying_time_h 为报告小时，reported_time_s\n为报告秒数，max_C_at_reported_time 为报告点的全域最大含水率。\n两点相差约0.353 s；放大图需有足够分辨率。60 h 只是可选轴上限，已计算终点之后留空，不继续外推曲线。\n注\n注明\n图\n应\nN3200、4 h 后长期边界假设；0.15 等号对应临界根，严格报告点才满足全域最大值低于0.15。不要\n用四位显示浓度判断严格性，也不把该图解释为物理置信区间。\n"
+    },
+    {
+      "page": 6,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-6.png",
+      "sha256": "791d622b40b7370120e5dc2c894e4ae9c3e52b72cc0a55aa75dc3eca9f50eaa3",
+      "text": "第 6 页\n图5 \n四收\n半径与域内含水率剖面\n问题\n缩\n论文位置：5.4.4 结果分析，表6 和表7 分析之后　当前论文第18 页\n需要画什么\n左图画半径随时间的变化，并标出右图选用时刻；右图在真实物理半径上画含水率剖面。建议选0、\n6、12、24、48 h 及临界根51.09057478683054 h。每条曲线均在该时刻的真实表面终止。\n坐标\n要求\n左图\n时间t / h，半径R / cm。\n右图\n物理半径r / cm，干基C / (kg/kg)。横轴可共用0–2 cm。\n需要哪些数据\n半径观测数据\nD:/Document/数学建模/2026CUMCM/paper_output/data_cleaned/A_radius_observed.csv\n145 条数据记录，另有1 行表头；time_h 和radius_cm 可直接作图。覆盖0–72 h、间隔0.5 h；模型按相邻点线\n性插值。\n含水率剖面与当前半径\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q4/sampled_solution.npz\n字段\n形状与取法\ntimes_s\n3069 个时刻；选定六个时刻均已有保存样点。\nmaterial_x\n21 个0–1 材料位置。\nradius_m\n与times_s 逐项对应，乘100 得到当前半径cm。\nC\n3069×21；第i 行作为对应时刻的含水率剖面。\n对第i 个选定时刻：横轴 r_cm = material_x × radius_m[i] × 100；纵轴取 C[i,:]。最后一个材料位置等于1，所\n以自动包含真实表面端点。\n时刻 / h\n0\n6\n12\n24\n48\n临界根\n半径 / cm\n2.0000\n1.3740\n1.2480\n1.2040\n1.2000\n1.2000\n域外与\n注要求\n图\nr>R(t)处无药材，留空或用灰区说明，不填零、不补线。叠加多时刻曲线时用各自颜色标注表面端\n点；需要分别标灰区时采用小面板。\n图注注明附录4 物性、同比径向收缩、固定轴向长度、N6400。与问题三比较同时改变物性与几何，\n不把全部时差归因于纯收缩。\n正文含水率核对表\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv\n正文半径核对表\nD:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv\n"
+    },
+    {
+      "page": 7,
+      "image": "tmp/cache/figure_guide_20260912/guide_v2/page-7.png",
+      "sha256": "7f2f1d269a651088bcfb1d0ab8059fcf46acfedb6e67b3c8209bc22811c6cbfb",
+      "text": "第 7 页\n图6 \n界阻力的情景比\n经验边\n较\n论文位置：5.4.6 边界阻力的补充修正之后　当前论文第19 页\n需要画什么\n横轴p=1、2、4，画两组带标记的折线或分组柱图：一组为问题二三定半径、附录3 物性，另一组为\n问题四收缩、附录4 物性。所有点统一使用N800 和零潜热负荷设置。\n坐标\n要求\n横轴\n经验形状参数p，无量纲，仅画1、2、4。\n纵轴\n临界时长 / h，采用等号事件时间，不采用严格上取报告时间。\n唯一取数文件与\n条件\n筛选\n六个情景数据源\nD:/Document/数学建模/2026CUMCM/paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json\n读取scenarios 数组，筛选intervals=800、latentFraction=0、isothermShapeP 为1/2/4、\nstatus=computed_event_only。每条记录统一取顶层event_h 字段，不混用嵌套输出中的显示值。\n字段\n作用\nscenario\n用iso_p1_Q23 等名称区分p 值及问题。\nisothermShapeP\n横轴p。\nevent_h\n纵轴临界时长，保留原始精度。\n可直接\n入的六个数据点\n录\np\n问题二三临界时长 / h\n问题四临界时长 / h\n1\n57.47232976256206\n51.090599155463806\n2\n59.623901353233975\n52.22830295685303\n4\n65.4447491379564\n55.31621495305313\n情景名依次为iso_p1_Q23、iso_p2_Q23、iso_p4_Q23，以及对应iso_p1_Q4、iso_p2_Q4、\niso_p4_Q4。绘图使用上表精度，标注可显示四位小数。\n注与比\n范\n图\n较\n围\np=1 使用同一N800 情景族的基线，不替换为正文N3200 或N6400 生产时长。不同p 之间连线仅辅助\n阅读，不画未经计算的p 值，不添加误差棒或置信带。\n建议图注：在相同N800 网格及零潜热负荷下比较p=1、2、4 的经验边界阻力情景。该族尚未由真实\n药材等温线标定，结果仅说明所选边界解释对临界时长的影响。\n本图不证明真实干燥时长的全局下界、任意p 下的单调性或实测预测准确率。\n"
+    }
+  ],
+  "renderExitCode": 0
+}

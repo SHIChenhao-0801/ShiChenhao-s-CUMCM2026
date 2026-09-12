@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "Standalone six-figure requirements and source-data Word guide",
+  "docx": "paper_output/paper/A题六张图绘制要求与数据说明.docx",
+  "docxSha256": "f72c8c603096cedf6ff07c519cc09f95ca1680f3d7a4c45b856b5cd878f894f9",
+  "pdfSha256": "1e6619174098bc11356ee92843c4dfbb5dee93f688f9c586ab9d10c640bddb1b",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "edf87ca0f3ad74019a1a953d4818e398dd1fedd83b7c95551f6582761f879362",
+      "actuallyViewedVersion": "guide_v2",
+      "unchangedFromViewedV1": false,
+      "status": "PASS_VISUAL"
+    },
+    {
+      "page": 2,
+      "sha256": "38bf8450f8575911d0fc0d776a65c4b4e6ca58bf347c5b74f8509b3bedfe3972",
+      "actuallyViewedVersion": "guide_v1",
+      "unchangedFromViewedV1": true,
+      "status": "PASS_VISUAL"
+    },
+    {
+      "page": 3,
+      "sha256": "91fe8681c5a5888ad8e19f3ea24c1b4722e233121fa0a9b3e9ab8d4b4095ade0",
+      "actuallyViewedVersion": "guide_v1",
+      "unchangedFromViewedV1": true,
+      "status": "PASS_VISUAL"
+    },
+    {
+      "page": 4,
+      "sha256": "552d4ac98cf7567e92cff00cbd63e8c948cf357a02a3de3b20e938bf09406db2",
+      "actuallyViewedVersion": "guide_v1",
+      "unchangedFromViewedV1": true,
+      "status": "PASS_VISUAL"
+    },
+    {
+      "page": 5,
+      "sha256": "c09d58eb003aa53a87117add7816fe9e06c84873cfd6f08e38404b67041dffdc",
+      "actuallyViewedVersion": "guide_v2",
+      "unchangedFromViewedV1": false,
+      "status": "PASS_VISUAL"
+    },
+    {
+      "page": 6,
+      "sha256": "791d622b40b7370120e5dc2c894e4ae9c3e52b72cc0a55aa75dc3eca9f50eaa3",
+      "actuallyViewedVersion": "guide_v2",
+      "unchangedFromViewedV1": false,
+      "status": "PASS_VISUAL"
+    },
+    {
+      "page": 7,
+      "sha256": "7f2f1d269a651088bcfb1d0ab8059fcf46acfedb6e67b3c8209bc22811c6cbfb",
+      "actuallyViewedVersion": "guide_v1",
+      "unchangedFromViewedV1": true,
+      "status": "PASS_VISUAL"
+    }
+  ],
+  "pageCount": 7,
+  "layout": "One overview page and one page per figure; no clipping, overlap, missing text or split figure sections.",
+  "sourceFilesInWord": 14,
+  "dataRecheck": "paper_output/qa/figure_guide_20260912/data_recheck.json",
+  "figure2GuidePage": 3,
+  "newModelRuns": 0,
+  "paperModified": false,
+  "imageReview": "Root actually viewed every guide_v1 page and re-viewed all changed guide_v2 pages1/5/6; four others have identical PNG hashes."
+}

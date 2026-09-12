@@ -1,0 +1,980 @@
+{
+  "status": "PASS_DATA_WITH_WORDING_CLARIFICATIONS",
+  "checkedAtUtc": "2026-09-12T14:34:37.816682+00:00",
+  "scope": "只读复核清单与已有真实数据；未运行模型、未修改现有论文或清单、未渲染、未写Git。",
+  "guide": {
+    "path": "paper_output/paper/绘图说明与位置清单.md",
+    "sha256": "fabf379a93bebcd2d4802404f06051351428d15e0a599e89132d20797ab4c4cd",
+    "lineCount": 110
+  },
+  "fileCount": 20,
+  "allFilesExist": true,
+  "allPreviouslyAuditedDataFilesHaveUnchangedSha": true,
+  "files": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/data_cleaned/A_environment_observed.csv",
+      "exists": true,
+      "sizeBytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "time_s",
+        "time_h",
+        "temperature_C",
+        "temperature_K",
+        "air_moisture_kg_per_kg"
+      ],
+      "dataRecordCount": 241,
+      "headerRows": 1,
+      "shape": [
+        241,
+        5
+      ],
+      "firstRecord": {
+        "time_s": "0",
+        "time_h": "0",
+        "temperature_C": "28",
+        "temperature_K": "301.15",
+        "air_moisture_kg_per_kg": "0.01963"
+      },
+      "lastRecord": {
+        "time_s": "14400",
+        "time_h": "4",
+        "temperature_C": "50.165",
+        "temperature_K": "323.315",
+        "air_moisture_kg_per_kg": "0.04986"
+      }
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/data_cleaned/A_radius_observed.csv",
+      "exists": true,
+      "sizeBytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "time_s",
+        "time_h",
+        "radius_cm",
+        "radius_m"
+      ],
+      "dataRecordCount": 145,
+      "headerRows": 1,
+      "shape": [
+        145,
+        4
+      ],
+      "firstRecord": {
+        "time_s": "0",
+        "time_h": "0",
+        "radius_cm": "2",
+        "radius_m": "0.02"
+      },
+      "lastRecord": {
+        "time_s": "259200",
+        "time_h": "72",
+        "radius_cm": "1.198",
+        "radius_m": "0.01198"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q1/summary.json",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q1/summary.json",
+      "exists": true,
+      "sizeBytes": 3941,
+      "sha256": "2b4394701813dfcbb4b1041156715f9dd5a488f2ecd7402bf3d91adaecdeb536",
+      "sameShaAsPreviousDataAudit": true,
+      "topLevelFields": [
+        "settings",
+        "diagnostics",
+        "code",
+        "jacobian_code",
+        "dense_storage_code",
+        "inputs",
+        "human_review_status",
+        "gui_reproduced",
+        "solver_warning_count",
+        "source_run_id",
+        "source_trajectory_id",
+        "reproduction_samples",
+        "metric_samples"
+      ]
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/summary.json",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/summary.json",
+      "exists": true,
+      "sizeBytes": 5724,
+      "sha256": "d5cf14f9e69405006e9636cdffd70b1d3dca7811ffa822638a76205f9bcd1346",
+      "sameShaAsPreviousDataAudit": true,
+      "topLevelFields": [
+        "settings",
+        "diagnostics",
+        "code",
+        "jacobian_code",
+        "dense_storage_code",
+        "inputs",
+        "human_review_status",
+        "gui_reproduced",
+        "solver_warning_count",
+        "source_run_id",
+        "source_trajectory_id",
+        "completion",
+        "reproduction_samples",
+        "metric_samples"
+      ]
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/summary.json",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q4/summary.json",
+      "exists": true,
+      "sizeBytes": 5350,
+      "sha256": "8d52cf068286bcaa9fe39d98e50f0f473923bab5592e5d8a727cd2c92c68ce9e",
+      "sameShaAsPreviousDataAudit": true,
+      "topLevelFields": [
+        "settings",
+        "diagnostics",
+        "code",
+        "jacobian_code",
+        "dense_storage_code",
+        "inputs",
+        "human_review_status",
+        "gui_reproduced",
+        "solver_warning_count",
+        "source_run_id",
+        "source_trajectory_id",
+        "completion",
+        "reproduction_samples",
+        "metric_samples"
+      ]
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+      "exists": true,
+      "sizeBytes": 689540,
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "sameShaAsPreviousDataAudit": true,
+      "arrays": {
+        "times_s": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        },
+        "material_x": {
+          "shape": [
+            21
+          ],
+          "dtype": "float64"
+        },
+        "T_K": {
+          "shape": [
+            3452,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            3452,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        },
+        "cumulative_loss": {
+          "shape": [
+            3452
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+      "exists": true,
+      "sizeBytes": 628742,
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "sameShaAsPreviousDataAudit": true,
+      "arrays": {
+        "times_s": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        },
+        "material_x": {
+          "shape": [
+            21
+          ],
+          "dtype": "float64"
+        },
+        "T_K": {
+          "shape": [
+            3069,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            3069,
+            21
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        },
+        "cumulative_loss": {
+          "shape": [
+            3069
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/figures/fig_q1_profiles_data.npz",
+      "exists": true,
+      "sizeBytes": 12242,
+      "sha256": "172fc91c550a124254677695f0ecbb64024db5db8008bc649ab21e5d04c95096",
+      "sameShaAsPreviousDataAudit": true,
+      "arrays": {
+        "times_s": {
+          "shape": [
+            7
+          ],
+          "dtype": "float64"
+        },
+        "radii_m": {
+          "shape": [
+            121
+          ],
+          "dtype": "float64"
+        },
+        "temperature_C": {
+          "shape": [
+            7,
+            121
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            7,
+            121
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+      "exists": true,
+      "sizeBytes": 249286,
+      "sha256": "8966a7ae9eb7523f25734ea8b56a4f1b12bcfc443786e93c80e5b601b0a1655c",
+      "sameShaAsPreviousDataAudit": true,
+      "arrays": {
+        "times_s": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "radii_m": {
+          "shape": [
+            121
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            266,
+            121
+          ],
+          "dtype": "float64"
+        },
+        "centre_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "surface_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        },
+        "max_C": {
+          "shape": [
+            266
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+      "exists": true,
+      "sizeBytes": 380,
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/s",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "dataRecordCount": 7,
+      "headerRows": 1,
+      "shape": [
+        7,
+        6
+      ],
+      "firstRecord": {
+        "时间/s": "100.0000",
+        "0": "28.0001",
+        "0.5": "28.0003",
+        "1": "28.0040",
+        "1.5": "28.0327",
+        "2": "28.1801"
+      },
+      "lastRecord": {
+        "时间/s": "1800.0000",
+        "0": "33.5753",
+        "0.5": "33.7720",
+        "1": "34.3642",
+        "1.5": "35.3621",
+        "2": "36.7856"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+      "exists": true,
+      "sizeBytes": 345,
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/s",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "dataRecordCount": 7,
+      "headerRows": 1,
+      "shape": [
+        7,
+        6
+      ],
+      "firstRecord": {
+        "时间/s": "100.0000",
+        "0": "2.5500",
+        "0.5": "2.5500",
+        "1": "2.5500",
+        "1.5": "2.5500",
+        "2": "2.2470"
+      },
+      "lastRecord": {
+        "时间/s": "1800.0000",
+        "0": "2.5500",
+        "0.5": "2.5497",
+        "1": "2.5383",
+        "1.5": "2.3755",
+        "2": "1.5102"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+      "exists": true,
+      "sizeBytes": 315,
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "dataRecordCount": 6,
+      "headerRows": 1,
+      "shape": [
+        6,
+        6
+      ],
+      "firstRecord": {
+        "时间/h": "0.5000",
+        "0": "32.1892",
+        "0.5": "32.3821",
+        "1": "32.9659",
+        "1.5": "33.9608",
+        "2": "35.4130"
+      },
+      "lastRecord": {
+        "时间/h": "3.0000",
+        "0": "49.8495",
+        "0.5": "49.8553",
+        "1": "49.8746",
+        "1.5": "49.9101",
+        "2": "49.9664"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+      "exists": true,
+      "sizeBytes": 285,
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "dataRecordCount": 6,
+      "headerRows": 1,
+      "shape": [
+        6,
+        6
+      ],
+      "firstRecord": {
+        "时间/h": "0.5000",
+        "0": "2.5499",
+        "0.5": "2.5489",
+        "1": "2.5256",
+        "1.5": "2.3257",
+        "2": "1.6486"
+      },
+      "lastRecord": {
+        "时间/h": "3.0000",
+        "0": "1.7662",
+        "0.5": "1.7165",
+        "1": "1.5702",
+        "1.5": "1.3333",
+        "2": "1.0081"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+      "exists": true,
+      "sizeBytes": 466,
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "dataRecordCount": 10,
+      "headerRows": 1,
+      "shape": [
+        10,
+        6
+      ],
+      "firstRecord": {
+        "时间/h": "6.0000",
+        "0": "1.0170",
+        "0.5": "0.9881",
+        "1": "0.9015",
+        "1.5": "0.7550",
+        "2": "0.5328"
+      },
+      "lastRecord": {
+        "时间/h": "57.4724",
+        "0": "0.1500",
+        "0.5": "0.1477",
+        "1": "0.1402",
+        "1.5": "0.1249",
+        "2": "0.0527"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+      "exists": true,
+      "sizeBytes": 390,
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2",
+        "药材表面"
+      ],
+      "dataRecordCount": 9,
+      "headerRows": 1,
+      "shape": [
+        9,
+        7
+      ],
+      "firstRecord": {
+        "时间/h": "6.0000",
+        "0": "1.7196",
+        "0.5": "1.5377",
+        "1": "1.0226",
+        "1.5": "",
+        "2": "",
+        "药材表面": "0.4207"
+      },
+      "lastRecord": {
+        "时间/h": "51.0906",
+        "0": "0.1500",
+        "0.5": "0.1413",
+        "1": "0.1081",
+        "1.5": "",
+        "2": "",
+        "药材表面": "0.0526"
+      }
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+      "exists": true,
+      "sizeBytes": 172,
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "sameShaAsPreviousDataAudit": true,
+      "fields": [
+        "时间/h",
+        "表面半径/cm"
+      ],
+      "dataRecordCount": 9,
+      "headerRows": 1,
+      "shape": [
+        9,
+        2
+      ],
+      "firstRecord": {
+        "时间/h": "6.0000",
+        "表面半径/cm": "1.3740"
+      },
+      "lastRecord": {
+        "时间/h": "51.0906",
+        "表面半径/cm": "1.2000"
+      }
+    },
+    {
+      "path": "paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "exists": true,
+      "sizeBytes": 84755,
+      "sha256": "7528cf2deb3b596c4c1877ad291043a3e47c8e96127de03cbb760a2ee63f9c96",
+      "sameShaAsPreviousDataAudit": true,
+      "topLevelFields": [
+        "note",
+        "generatedAtUtc",
+        "intervals",
+        "horizonH",
+        "isotherm",
+        "constants",
+        "identityChecks",
+        "frozenBaselineForComparison",
+        "scenarios"
+      ]
+    },
+    {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying_data.npz",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/results/production/final_v6a/figures/fig_q4_drying_data.npz",
+      "exists": true,
+      "sizeBytes": 222086,
+      "sha256": "340ebfd87d947121cd58214a616c7dd2dd6a5c93f6e1c4a4bf2b81a7a7b1dbc9",
+      "arrays": {
+        "times_s": {
+          "shape": [
+            360
+          ],
+          "dtype": "float64"
+        },
+        "radii_m": {
+          "shape": [
+            121
+          ],
+          "dtype": "float64"
+        },
+        "radius_m": {
+          "shape": [
+            360
+          ],
+          "dtype": "float64"
+        },
+        "C": {
+          "shape": [
+            360,
+            121
+          ],
+          "dtype": "float64"
+        },
+        "centre_C": {
+          "shape": [
+            360
+          ],
+          "dtype": "float64"
+        },
+        "mean_C": {
+          "shape": [
+            360
+          ],
+          "dtype": "float64"
+        },
+        "surface_C": {
+          "shape": [
+            360
+          ],
+          "dtype": "float64"
+        },
+        "max_C": {
+          "shape": [
+            360
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/drying_core.py",
+      "exists": true,
+      "sizeBytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305"
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "absolutePath": "D:/Document/数学建模/2026CUMCM/paper_output/code/modeling/publication_plots.py",
+      "exists": true,
+      "sizeBytes": 24337,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388"
+    }
+  ],
+  "dataErrors": [],
+  "wordingClarifications": [
+    {
+      "id": "C1",
+      "category": "record_count_wording",
+      "guideLine": 32,
+      "figure": 2,
+      "current": "共241行",
+      "recommended": "241条数据记录（另有1行表头；文件共242行）",
+      "reason": "241为观测条数，不含CSV表头。数据数值正确。"
+    },
+    {
+      "id": "C2",
+      "category": "path_disambiguation",
+      "guideLine": 42,
+      "figure": 3,
+      "current": "同目录 outputs/q2_paper_temperature.csv、outputs/q2_paper_moisture.csv",
+      "recommended": [
+        "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+        "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv"
+      ],
+      "reason": "outputs在final_v6a目录下，不在Q23子目录下；独立Word宜写完整路径避免照着错误层级查找。"
+    },
+    {
+      "id": "C3",
+      "category": "record_count_wording",
+      "guideLine": 69,
+      "figure": 5,
+      "current": "145行",
+      "recommended": "145条数据记录（另有1行表头；文件共146行）",
+      "reason": "145为半径观测条数，不含CSV表头。数据数值正确。"
+    }
+  ],
+  "figure2": {
+    "dataRecords": 241,
+    "csvHeaderRows": 1,
+    "rawTimeInterval_s": 60,
+    "measuredDomain": "0 <= t <= 14400 s (0 <= t <= 4 h)",
+    "extensionDomain": "t > 14400 s (t > 4 h)",
+    "lastObserved": {
+      "time_s": "14400",
+      "time_h": "4",
+      "temperature_C": "50.165",
+      "temperature_K": "323.315",
+      "air_moisture_kg_per_kg": "0.04986"
+    },
+    "extension": {
+      "temperature_C": 50.0,
+      "equilibrium_kg_per_kg": 0.05
+    },
+    "endpointRecommendation": "t=4 h的实测点实心保留；平台在4 h端点开圆标记或用图注明t>4 h；不改变末次观测、不平滑跳变。",
+    "implementation": {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "line": 92,
+      "strictAfterComparisonLine": 96
+    },
+    "boundarySettings": {
+      "boundary_extension": "nominal",
+      "tail_temperature_C": 50.0,
+      "tail_equilibrium": 0.05,
+      "equilibrium_scale": 1.0
+    }
+  },
+  "figure4": {
+    "fullMaximumSource": "paper_output/results/production/final_v6a/figures/fig_q3_drying_data.npz",
+    "fullMaximumField": "max_C",
+    "arrayTimeCount": 266,
+    "producerMaxDefinition": "np.max(state[1:-1:2], axis=0)",
+    "producerPath": "paper_output/code/modeling/publication_plots.py",
+    "producerLine": 186,
+    "completion": {
+      "critical_event_s": 206900.28702201758,
+      "critical_event_h": 57.47230195056044,
+      "reported_drying_time_h": 57.4724,
+      "reported_time_s": 206900.64,
+      "max_C_at_reported_time": 0.14999989718225315,
+      "slowest_material_coordinate": 0.0,
+      "conservative_post_verification_s": 206902.0,
+      "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+      "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+    },
+    "criticalEventFoundInSampledNPZ": true,
+    "reportedTimeFoundInSampledNPZ": false,
+    "reportPointSource": "Q23/summary.json: completion.reported_time_s + completion.max_C_at_reported_time",
+    "storedDataEnd_s": 206902.0,
+    "mainAxisEnd_h": 60,
+    "doNotInventTrajectoryPastEnd": true,
+    "maxCentreLargestDifference": 4.440892098500626e-16,
+    "localZoomClarification": "全域max主曲线取max_C字段；采样NPZ局部曲线只标中心/表面，若以中心代表max需明确本轨迹中心控制证据，不能把21点抽样最大值冒充全网格最大值。"
+  },
+  "figure5": {
+    "radiusRecords": 145,
+    "csvHeaderRows": 1,
+    "observedTimeInterval_s": 1800,
+    "observedTimeExtent_s": [
+      0,
+      259200
+    ],
+    "sampledArrayShape": [
+      3069,
+      21
+    ],
+    "sampledPhysicalCoordinates": "material_x * radius_m[i] * 100 (cm)",
+    "selectedTimesAllExactlyStored": true,
+    "selected": [
+      {
+        "time_s": 0.0,
+        "time_h": 0.0,
+        "row0": 0,
+        "radius_cm": 2.0,
+        "firstMaterialCoordinate": 0.0,
+        "lastMaterialCoordinate": 1.0,
+        "centreC": 2.55,
+        "surfaceC": 2.55
+      },
+      {
+        "time_s": 21600.0,
+        "time_h": 6.0,
+        "row0": 361,
+        "radius_cm": 1.374,
+        "firstMaterialCoordinate": 0.0,
+        "lastMaterialCoordinate": 1.0,
+        "centreC": 1.7195880367453145,
+        "surfaceC": 0.4206997304501066
+      },
+      {
+        "time_s": 43200.0,
+        "time_h": 12.0,
+        "row0": 721,
+        "radius_cm": 1.248,
+        "firstMaterialCoordinate": 0.0,
+        "lastMaterialCoordinate": 1.0,
+        "centreC": 0.7376689331140169,
+        "surfaceC": 0.16695964704072508
+      },
+      {
+        "time_s": 86400.0,
+        "time_h": 24.0,
+        "row0": 1441,
+        "radius_cm": 1.204,
+        "firstMaterialCoordinate": 0.0,
+        "lastMaterialCoordinate": 1.0,
+        "centreC": 0.2851137001880641,
+        "surfaceC": 0.06733666818683921
+      },
+      {
+        "time_s": 172800.0,
+        "time_h": 48.0,
+        "row0": 2881,
+        "radius_cm": 1.2,
+        "firstMaterialCoordinate": 0.0,
+        "lastMaterialCoordinate": 1.0,
+        "centreC": 0.1561465723705671,
+        "surfaceC": 0.053014624695981526
+      },
+      {
+        "time_s": 183926.06923258994,
+        "time_h": 51.09057478683054,
+        "row0": 3067,
+        "radius_cm": 1.2,
+        "firstMaterialCoordinate": 0.0,
+        "lastMaterialCoordinate": 1.0,
+        "centreC": 0.15,
+        "surfaceC": 0.052620030980109034
+      }
+    ],
+    "alternateFixedPhysicalGrid": {
+      "path": "paper_output/results/production/final_v6a/figures/fig_q4_drying_data.npz",
+      "shape": [
+        360,
+        121
+      ],
+      "outsideNaNCount": 15648,
+      "surfaceFields": [
+        "surface_C",
+        "radius_m"
+      ],
+      "doNotFillOutsideWithZero": true
+    }
+  },
+  "figure6": {
+    "path": "paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+    "jsonRowsKey": "scenarios",
+    "valueKey": "event_h",
+    "scenarioRows": [
+      {
+        "scenario": "iso_p1_Q23",
+        "question": "Q23",
+        "intervals": 800,
+        "isothermShapeP": 1.0,
+        "latentFraction": 0.0,
+        "status": "computed_event_only",
+        "event_h": 57.47232976256206,
+        "event_s": 206900.3871492347
+      },
+      {
+        "scenario": "iso_p2_Q23",
+        "question": "Q23",
+        "intervals": 800,
+        "isothermShapeP": 2.0,
+        "latentFraction": 0.0,
+        "status": "computed_event_only",
+        "event_h": 59.623901353233975,
+        "event_s": 214646.04487264922
+      },
+      {
+        "scenario": "iso_p4_Q23",
+        "question": "Q23",
+        "intervals": 800,
+        "isothermShapeP": 4.0,
+        "latentFraction": 0.0,
+        "status": "computed_event_only",
+        "event_h": 65.4447491379564,
+        "event_s": 235601.0968952963
+      },
+      {
+        "scenario": "iso_p1_Q4",
+        "question": "Q4",
+        "intervals": 800,
+        "isothermShapeP": 1.0,
+        "latentFraction": 0.0,
+        "status": "computed_event_only",
+        "event_h": 51.090599155463806,
+        "event_s": 183926.15696651538
+      },
+      {
+        "scenario": "iso_p2_Q4",
+        "question": "Q4",
+        "intervals": 800,
+        "isothermShapeP": 2.0,
+        "latentFraction": 0.0,
+        "status": "computed_event_only",
+        "event_h": 52.22830295685303,
+        "event_s": 188021.89064975345
+      },
+      {
+        "scenario": "iso_p4_Q4",
+        "question": "Q4",
+        "intervals": 800,
+        "isothermShapeP": 4.0,
+        "latentFraction": 0.0,
+        "status": "computed_event_only",
+        "event_h": 55.31621495305313,
+        "event_s": 199138.37381456664
+      }
+    ],
+    "sameGrid": 800,
+    "allLatentFractionsZero": true,
+    "compareEventsNotStrictReportTimes": true,
+    "noProductionValuesAsP1": true
+  },
+  "figure1": {
+    "times_s": [
+      100.0,
+      300.0,
+      600.0,
+      900.0,
+      1200.0,
+      1500.0,
+      1800.0
+    ],
+    "shape": [
+      7,
+      121
+    ]
+  },
+  "figure3": {
+    "shape": [
+      3452,
+      21
+    ],
+    "temperatureConversion": "T_K - 273.15",
+    "timeConversion": "times_s / 3600",
+    "columns": "0为中心，-1为真实表面"
+  },
+  "parentNotifiedOfClarifications": true
+}

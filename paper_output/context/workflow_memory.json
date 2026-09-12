@@ -169,5 +169,14 @@
     "autoresearchMode": "experiment-log analysis",
     "newPdeRuns": 0,
     "teamHumanReview": "PENDING"
+  },
+  "six_figure_word_guide": {
+    "status": "PASS",
+    "docx": "paper_output/paper/A题六张图绘制要求与数据说明.docx",
+    "docxSha256": "f72c8c603096cedf6ff07c519cc09f95ca1680f3d7a4c45b856b5cd878f894f9",
+    "pageCount": 7,
+    "figure2GuidePage": 3,
+    "paperModified": false,
+    "audit": "paper_output/qa/figure_guide_20260912/final_audit.json"
   }
 }
