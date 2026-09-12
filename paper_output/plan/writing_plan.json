@@ -1,43 +1,244 @@
 {
-  "schema_version": "1.0",
-  "generated_by": "paper-formal-writer/tools/make_s7_contracts.py",
+  "created_at_utc": "2026-09-12T12:14:51Z",
+  "delivery": {
+    "min_body_chars": 8000,
+    "min_pages": 15,
+    "mode": "competition",
+    "reason": "保留用户前文的实际篇幅；用户自行绘图、交叉验证简述；说明会摘要至参考文献至少15页、正文最多30页。完整论文字符门槛保留。"
+  },
+  "evidence_gate_sha256": "897f77db2db00c038be7de45dcee5f02726d2ad2892c749e1ccc81c9b392b451",
+  "evidence_marker": "<!-- mathmodel-evidence: evidence-id-1, evidence-id-2 -->",
+  "global_constraints": {
+    "forbid_internal_workflow_language": true,
+    "forbid_placeholders": true,
+    "formal_source": "paper_output/final_paper_source.md",
+    "numbering_style": "1 / 1.1 / 1.1.1",
+    "require_global_revision": true
+  },
+  "input_hashes": {
+    "paper_output/figure_index.json": "7735fcfdf9146dc65ecf105c8804e25f7c69c8b5ad7708ae6bbf99caad233a2c",
+    "paper_output/plan/model_route.json": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+    "paper_output/plan/paper_outline.json": "d6651a0baa0fa871f8854976dc04b0704c68c2b2e6033fefdb61854f9b840758",
+    "paper_output/qa/evidence_gate_report.json": "897f77db2db00c038be7de45dcee5f02726d2ad2892c749e1ccc81c9b392b451",
+    "paper_output/results/conclusions.json": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505",
+    "paper_output/results/metrics.json": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28",
+    "paper_output/results/model_results.json": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547",
+    "paper_output/results/run_manifest.json": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87",
+    "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b"
+  },
   "mode": "section",
-  "status": "PASS",
-  "language": "zh-CN",
+  "mode_reason": "explicit user or operator selection",
+  "producer_role": "paper-formal-writer/prepare-authoring",
+  "question_ids": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "requested_mode": "section",
+  "schema_version": "2.2",
   "sections": [
     {
-      "section_id": "S01",
-      "title": "摘要、问题重述、问题分析、数据说明、模型假设与符号说明",
-      "path": "paper_output/drafts/A题正文/_part1.md"
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "abstract",
+      "target_chars": 900,
+      "title": "摘要"
     },
     {
-      "section_id": "S02",
-      "title": "统一物理模型、问题一、问题二",
-      "path": "paper_output/drafts/A题正文/_part2.md"
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "1",
+      "target_chars": 700,
+      "title": "问题重述"
     },
     {
-      "section_id": "S03",
-      "title": "问题三、问题四、数值求解与模型检验、模型的修正与创新",
-      "path": "paper_output/drafts/A题正文/_part3.md"
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "2",
+      "target_chars": 1600,
+      "title": "问题分析"
     },
     {
-      "section_id": "S04",
-      "title": "多方法交叉验证、灵敏度分析与不确定性、结论、AI 工具使用声明、参考文献",
-      "path": "paper_output/drafts/A题正文/_part4.md"
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "3",
+      "target_chars": 300,
+      "title": "模型假设"
     },
     {
-      "section_id": "S05",
-      "title": "附录 A—D（支撑材料清单、源程序、补充表格、公式总表）",
-      "path": "paper_output/drafts/A题正文/_appendix.md"
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "4",
+      "target_chars": 450,
+      "title": "符号说明"
+    },
+    {
+      "requirements": {
+        "evidence": [
+          {
+            "evidence_id": "model_result:Q1:1",
+            "question_id": "Q1",
+            "status": "computed",
+            "summary": "在t=0.5000h，中心/表面温度分别为33.5753/36.7856摄氏度，干基含水率为2.5500/1.5102kg/kg。",
+            "type": "model_result"
+          },
+          {
+            "evidence_id": "model_result:Q2:1",
+            "question_id": "Q2",
+            "status": "computed",
+            "summary": "在t=3.0000h，中心/表面温度分别为49.8495/49.9664摄氏度，干基含水率为1.7662/1.0081kg/kg。",
+            "type": "model_result"
+          },
+          {
+            "evidence_id": "model_result:Q3:1",
+            "question_id": "Q3",
+            "status": "computed",
+            "summary": "连续临界时刻57.472301951h；向上到四位小数并复核后报告57.4724h，原精度最大含水率0.149999897182<0.15kg/kg。",
+            "type": "model_result"
+          },
+          {
+            "evidence_id": "model_result:Q4:1",
+            "question_id": "Q4",
+            "status": "computed",
+            "summary": "连续临界时刻51.090574787h；向上到四位小数并复核后报告51.0906h，原精度最大含水率0.149999953391<0.15kg/kg。",
+            "type": "model_result"
+          }
+        ],
+        "figures": [],
+        "formulas": [],
+        "tables": [
+          {
+            "evidence_id": "table:q1_paper_temperature",
+            "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q1_paper_temperature",
+            "title": "问题一的径向温度"
+          },
+          {
+            "evidence_id": "table:q1_paper_moisture",
+            "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q1_paper_moisture",
+            "title": "问题一的径向干基含水率"
+          },
+          {
+            "evidence_id": "table:q2_paper_temperature",
+            "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q2_paper_temperature",
+            "title": "问题二的径向温度"
+          },
+          {
+            "evidence_id": "table:q2_paper_moisture",
+            "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q2_paper_moisture",
+            "title": "问题二的径向干基含水率"
+          },
+          {
+            "evidence_id": "table:q3_paper_moisture",
+            "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q3_paper_moisture",
+            "title": "问题三的径向干基含水率"
+          },
+          {
+            "evidence_id": "table:q4_paper_moisture",
+            "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q4_paper_moisture",
+            "title": "问题四的径向干基含水率"
+          },
+          {
+            "evidence_id": "table:q4_paper_radius",
+            "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+            "purpose": "题目指定正文位置/时间采样",
+            "status": "computed",
+            "table_id": "q4_paper_radius",
+            "title": "问题四各输出时刻的表面半径"
+          }
+        ]
+      },
+      "section_id": "5",
+      "target_chars": 8500,
+      "title": "模型的建立与求解"
+    },
+    {
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "6",
+      "target_chars": 850,
+      "title": "模型检验与灵敏度分析"
+    },
+    {
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "7",
+      "target_chars": 800,
+      "title": "模型评价与推广"
+    },
+    {
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "8",
+      "target_chars": 600,
+      "title": "参考文献"
+    },
+    {
+      "requirements": {
+        "evidence": [],
+        "figures": [],
+        "formulas": [],
+        "tables": []
+      },
+      "section_id": "appendix",
+      "target_chars": 6000,
+      "title": "附录"
     }
   ],
-  "input_hashes": {
-    "paper_output/results/production/final_v6a/numerical_summaries.json": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5",
-    "paper_output/results/model_results.json": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547",
-    "paper_output/results/metrics.json": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28",
-    "paper_output/results/conclusions.json": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505",
-    "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b",
-    "paper_output/qa/evidence_gate_report.json": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
-  },
-  "notes": "正式稿由 S6 证据链（final_v6a）驱动；每章均已通过数值一致性核对与格式门禁。"
+  "status": "PASS",
+  "target_chars": {
+    "ideal": 14000,
+    "max": 18800,
+    "min": 11300
+  }
 }

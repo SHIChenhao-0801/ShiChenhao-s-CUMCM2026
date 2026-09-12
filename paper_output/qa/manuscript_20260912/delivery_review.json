@@ -1,0 +1,67 @@
+{
+  "generatedAtUtc": "2026-09-12T13:00:00.476346+00:00",
+  "status": "PASS_REQUESTED_DOCX_DELIVERY",
+  "delivery": {
+    "path": "paper_output/paper/A题_完整论文_保留原文_含附录.docx",
+    "sha256": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+    "bytes": 311035,
+    "identicalToCanonical": true,
+    "userRequestedFormat": "DOCX",
+    "finalCompetitionSubmission": false
+  },
+  "render": {
+    "docxSha256": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+    "pdfSha256": "93cfe62b5db0ec8627be6b7d51170acd916b2b5613e4f3182663f13830539cd4",
+    "pages": 218,
+    "abstractPages": 1,
+    "bodyIncludingAIReferences": 21,
+    "appendixPages": 196
+  },
+  "visualReview": {
+    "actuallyReviewedPages": 218,
+    "missingPages": [],
+    "reports": [
+      {
+        "path": "paper_output/qa/manuscript_20260912/visual_pages_001_037.json",
+        "sha256": "fab89344b4959e072dcaa14787cc456b7ad11bcb3fa5b6fbc03f8a6f27f50b7d"
+      },
+      {
+        "path": "paper_output/qa/manuscript_20260912/visual_pages_038_100.json",
+        "sha256": "0360e130f280f44633497187acd87a3a2e344dfed350eba0b672d2ffc7125e6a"
+      },
+      {
+        "path": "paper_output/qa/visual_pages_101_160.json",
+        "sha256": "4f475304702befa1dddae1c48383ebc823f025bcfa95ae5eac7dc7ca010c6eca"
+      },
+      {
+        "path": "paper_output/qa/manuscript_20260912/visual_pages_161_218.json",
+        "sha256": "7221420b493e0aad51791ced973ca3bf988f1e1675dad21707dd6a433316d861"
+      }
+    ]
+  },
+  "content": {
+    "preservedSourceBodyAndSymbolTable": true,
+    "wordComments": 8,
+    "numberedDisplayEquations": 68,
+    "nativeWordEquationsIncludingInline": 203,
+    "tables": 12,
+    "textOnlyFigureBriefs": 6,
+    "codeFiles": 42,
+    "codeLines": 9434
+  },
+  "staticIndependentReview": {
+    "path": "paper_output/qa/manuscript_20260912/final_docx_static_independent_review.json",
+    "sha256": "7eb92bef1f1515316380bf0bb6d9771ab6f7d924b0b8a284740f7e9b080df400"
+  },
+  "formatWarningsDisposition": [
+    "No embedded images follows the user request; six drawing briefs are included.",
+    "Markdown heading counter includes comments inside fenced complete source; actual section headings are formatted in Word."
+  ],
+  "scopeLimits": [
+    "No new production PDE computation in this writing task.",
+    "Original source issues preserved with eight comments for team review.",
+    "User produces six figures; layout must be rechecked after insertion.",
+    "Existing submission ZIP portability remains FAIL; this DOCX is not a repaired submission package.",
+    "Team proofreading, scientific approval, and code human signoff remain pending."
+  ]
+}

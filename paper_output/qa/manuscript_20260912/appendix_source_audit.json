@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "scope": "static AST comparison and document structure only; no model imported or solved",
+  "generatedAtUtc": "2026-09-12T12:04:33.225935+00:00",
+  "sourcePairs": [
+    {
+      "originalPath": "paper_output/code/modeling/drying_core.py",
+      "reviewPath": "paper_output/code/review_delivery/dryingCore.py",
+      "originalSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "reviewSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/analytic_jacobian.py",
+      "reviewPath": "paper_output/code/review_delivery/analyticJacobian.py",
+      "originalSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "reviewSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/disk_dense.py",
+      "reviewPath": "paper_output/code/review_delivery/diskDense.py",
+      "originalSha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "reviewSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/q1_model.py",
+      "reviewPath": "paper_output/code/review_delivery/q1Model.py",
+      "originalSha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "reviewSha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/q2_model.py",
+      "reviewPath": "paper_output/code/review_delivery/q2Model.py",
+      "originalSha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "reviewSha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/q3_model.py",
+      "reviewPath": "paper_output/code/review_delivery/q3Model.py",
+      "originalSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "reviewSha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/q4_model.py",
+      "reviewPath": "paper_output/code/review_delivery/q4Model.py",
+      "originalSha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "reviewSha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    },
+    {
+      "originalPath": "paper_output/code/modeling/export_outputs.py",
+      "reviewPath": "paper_output/code/review_delivery/exportOutputs.py",
+      "originalSha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "reviewSha256": "3a66a754e7f3a13534918c7ebab7bc664d07669121f12ecde47efb5871a406ed",
+      "normalizedAstIdentical": true,
+      "originalHashMatchesExistingReport": true,
+      "reviewHashMatchesExistingReport": true
+    }
+  ],
+  "draft": {
+    "path": "paper_output/qa/manuscript_20260912/appendix_derivation_research.md",
+    "sha256": "e104820fe62c05f6e44999d5585b1015055f1f60d5575ea380f121a44bd6e6cb",
+    "unicodeChineseCharacterCount": 4313,
+    "chineseOutsideDisplayMath": 4311,
+    "displayMathPairs": 46,
+    "balancedDisplayMathDelimiters": true,
+    "sections": [
+      "A.1 干基含水率与组分质量守恒",
+      "A.2 有效热容量与题给物性的使用范围",
+      "A.3 同比收缩的材料坐标变换",
+      "A.4 节点有限体积、中心控制体与真实表面",
+      "A.5 浓度 Kirchhoff 势与近等浓度稳定计算",
+      "A.6 解析稀疏 Jacobian 的关键块",
+      "A.7 质量及有效热通量的整体检验",
+      "A.8 隐式 BDF、分段环境与阈值事件",
+      "A.9 可选经验阻力情景及其物理边界",
+      "A.10 公式与实现的对应说明"
+    ]
+  },
+  "knownNonComputationalCorrections": [
+    "The old camel loadInputs comment confuses air dry-basis humidity with material dry-basis moisture. The appendix uses the actual CSV field definition.",
+    "No mathematical or numerical branch differs after the registered identifier/path normalization."
+  ]
+}

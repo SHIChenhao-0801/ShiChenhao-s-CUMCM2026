@@ -1,51 +1,124 @@
 {
-  "schema_version": "1.0",
-  "generated_by": "paper-formal-writer/tools/make_s7_contracts.py",
-  "mode": "section",
-  "status": "PASS",
-  "sections": {
-    "S01": {
-      "status": "PASS",
-      "path": "paper_output/drafts/A题正文/_part1.md",
-      "approved_sha256": "37eb5ce0b4366a37e0c2692b8b46699753b68dbafc83adb47f7f9a117d558632"
-    },
-    "S02": {
-      "status": "PASS",
-      "path": "paper_output/drafts/A题正文/_part2.md",
-      "approved_sha256": "d12a5d6abccde4b115c8b7bda1323a9a1a9a595a9c313815286bcd78d186ed7f"
-    },
-    "S03": {
-      "status": "PASS",
-      "path": "paper_output/drafts/A题正文/_part3.md",
-      "approved_sha256": "67984538fc37526206025b34ea8c0dbfe1c39c0a81973b569b2deede7c648238"
-    },
-    "S04": {
-      "status": "PASS",
-      "path": "paper_output/drafts/A题正文/_part4.md",
-      "approved_sha256": "8f789f69df85328153075094f98149188933c8dded91d0354aa5eaed5c7be4a2"
-    },
-    "S05": {
-      "status": "PASS",
-      "path": "paper_output/drafts/A题正文/_appendix.md",
-      "approved_sha256": "db122cb733efb290a98062be73a50df87160a074437b39fa5df8d9de8c56a72c"
-    }
-  },
   "assembled": {
-    "status": "PASS",
-    "path": "paper_output/drafts/A题正文/A题_论文正文_30p.md",
-    "sha256": "663235bf38b36ba87bb9082cc8b959aef5c6b1487f1fc53764cc625c37bb2ade"
+    "path": "paper_output/drafts/assembled_draft.md",
+    "sha256": "e46e6a7e0b9a44afd0170e0cd2723e57f68a43daae08ae93f79abe1a88ccb53a",
+    "status": "PASS"
   },
+  "blocking_reason": null,
+  "created_at_utc": "2026-09-12T12:14:51Z",
   "final": {
-    "status": "PASS",
     "path": "paper_output/final_paper_source.md",
-    "sha256": "663235bf38b36ba87bb9082cc8b959aef5c6b1487f1fc53764cc625c37bb2ade"
+    "sha256": "d64e0c07696e670d88d9f27a8bac63edc658dd06ab7f13b97b34d91b7b8e8f43",
+    "status": "PASS"
   },
   "input_hashes": {
-    "paper_output/results/production/final_v6a/numerical_summaries.json": "17a1a48bd329ded04b91dc797a4bdbd6f55a1cca62c149711f0c879c780f36a5",
-    "paper_output/results/model_results.json": "62e2b5792a100559a5a8039f786e0620db6a816b70a33fa17418e5ffab0ad547",
-    "paper_output/results/metrics.json": "c3c1bedfa9e57c9dabcb475f6f3d931ec882e8dd5be852ef17e1f627d55b4a28",
-    "paper_output/results/conclusions.json": "b1c00e9f096db299aefacfa25b43109c3694d9960c74524e9e3cf66d448d2505",
-    "paper_output/tables/table_index.json": "ec5866fbbde6d0c6f1a2f307994810f3b992ca1bba5b20480ae55a12b3ff8e7b",
-    "paper_output/qa/evidence_gate_report.json": "d27012eab5e539638a72e71f5c2f9dd19d817a3972182ae9fe78804fbf80172e"
-  }
+    "paper_output/plan/writing_plan.json": "ca9be2858c77b06a8d335f67a3a3f4b725e40884b7625958ee53d65d76b2e877"
+  },
+  "mode": "section",
+  "producer_role": "paper-formal-writer/authoring-state",
+  "schema_version": "2.2",
+  "sections": {
+    "1": {
+      "approved_sha256": "0ffdb949e8fdab834823744fdc38544360b142e5a00854837de70d95e6c3622d",
+      "attempts": 1,
+      "issues": [],
+      "last_attempt_sha256": "0ffdb949e8fdab834823744fdc38544360b142e5a00854837de70d95e6c3622d",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/1.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "2": {
+      "approved_sha256": "e181e772cac03acd35352ca4046c20bb9a962ee7f9d51a6706c1f7127e678fad",
+      "attempts": 1,
+      "issues": [],
+      "last_attempt_sha256": "e181e772cac03acd35352ca4046c20bb9a962ee7f9d51a6706c1f7127e678fad",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/2.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "3": {
+      "approved_sha256": "e6c476c4c8f57ffdf077a9ca95a084bf31c76d64174c8997f75a9398e9493fe2",
+      "attempts": 1,
+      "issues": [],
+      "last_attempt_sha256": "e6c476c4c8f57ffdf077a9ca95a084bf31c76d64174c8997f75a9398e9493fe2",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/3.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "4": {
+      "approved_sha256": "f7e110392a8ae399e14ab08a9fbd7cab232436e576b55278154c60ea9bd01467",
+      "attempts": 1,
+      "issues": [],
+      "last_attempt_sha256": "f7e110392a8ae399e14ab08a9fbd7cab232436e576b55278154c60ea9bd01467",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/4.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "5": {
+      "approved_sha256": "ddfc20df4806349850d7a44b4abf2268f7611100cb3349cd143f056c2267822d",
+      "attempts": 2,
+      "issues": [],
+      "last_attempt_sha256": "ddfc20df4806349850d7a44b4abf2268f7611100cb3349cd143f056c2267822d",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/5.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "6": {
+      "approved_sha256": "448057a1088e6d04b489d357cdadd5d874b94afeac2d17990c53ba96f8460151",
+      "attempts": 1,
+      "issues": [],
+      "last_attempt_sha256": "448057a1088e6d04b489d357cdadd5d874b94afeac2d17990c53ba96f8460151",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/6.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "7": {
+      "approved_sha256": "f8e34bdc85cab96b950f7535b73481a8c50509bae8af320565c727f21d3366cc",
+      "attempts": 2,
+      "issues": [],
+      "last_attempt_sha256": "f8e34bdc85cab96b950f7535b73481a8c50509bae8af320565c727f21d3366cc",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/7.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "8": {
+      "approved_sha256": "83f5dedbb5875faa9b2721d738648c2568743a276d2a63792cba48b439561182",
+      "attempts": 2,
+      "issues": [],
+      "last_attempt_sha256": "83f5dedbb5875faa9b2721d738648c2568743a276d2a63792cba48b439561182",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/8.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "abstract": {
+      "approved_sha256": "a1697f2d91aa608fb4d083b1a31a99b89791fff88561022ab49e09bee759de6e",
+      "attempts": 1,
+      "issues": [],
+      "last_attempt_sha256": "a1697f2d91aa608fb4d083b1a31a99b89791fff88561022ab49e09bee759de6e",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/abstract.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    },
+    "appendix": {
+      "approved_sha256": "b5abb873ea15d9a38e154175a4d2964f21e415a9d5000fc99343be1e73560a74",
+      "attempts": 4,
+      "issues": [],
+      "last_attempt_sha256": "b5abb873ea15d9a38e154175a4d2964f21e415a9d5000fc99343be1e73560a74",
+      "last_issue_signature": null,
+      "path": "paper_output/drafts/sections/appendix.md",
+      "same_issue_count": 0,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS",
+  "updated_at_utc": "2026-09-12T12:47:16Z"
 }

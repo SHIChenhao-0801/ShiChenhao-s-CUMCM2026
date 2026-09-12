@@ -1,11 +1,11 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-12T19:29:04`
-- Current step: `S6`
-- Next step: `S7`
-- Recommended skill: `paper-formal-writer`
-- Next action: 执行写作计划、章节审计、必要的局部修复、确定性合并与全文统一改写；S7 PASS 后再生成正式 Word。
+- Generated at: `2026-09-12T20:58:14`
+- Current step: `S8`
+- Next step: `DONE`
+- Recommended skill: `-`
+- Next action: S0-S8 全部通过；可以进行最终一致性复核或交付。
 
 ## Completed Steps
 - `S0`
@@ -15,6 +15,8 @@
 - `S4`
 - `S5`
 - `S6`
+- `S7`
+- `S8`
 
 ## Input Summary
 - file_count: `33`
@@ -34,5 +36,4 @@
 - Script: `paper_output/code/modeling/run_modeling.py`
 
 ## Blockers
-- S7: writing_plan.json 输入已变化：paper_output/qa/evidence_gate_report.json
-- S7: authoring_state.json 输入已变化：paper_output/qa/evidence_gate_report.json
+- None

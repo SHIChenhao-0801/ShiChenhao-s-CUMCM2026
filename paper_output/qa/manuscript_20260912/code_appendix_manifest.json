@@ -1,0 +1,481 @@
+{
+  "generatedAtUtc": "2026-09-12T12:00:14.723903+00:00",
+  "basis": "Actual imported_model_modules in frozen final_v6a run_manifest; current bytes independently matched to recorded hashes.",
+  "sourceManifest": {
+    "path": "paper_output\\results\\production\\final_v6a\\run_manifest.json",
+    "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87"
+  },
+  "appendixPolicy": "The 11 files below form the original production source closure and must be fully embedded in file order. Validation trial scripts, old model versions, faulty sequential-MK and unavailable Sobol are excluded. publication_plots is retained because the original production entry imports it, not as a request for extra manuscript figures.",
+  "files": [
+    {
+      "appendixOrder": 1,
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\run_modeling.py",
+      "name": "run_modeling.py",
+      "role": "总入口、实际进程监督、版本隔离与结果发布",
+      "embedCompleteSource": true,
+      "sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "frozenProductionSha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "matchesFrozenProduction": true,
+      "bytes": 27729,
+      "lineCount": 448,
+      "productionLocalDependencies": [
+        "production_provenance.py",
+        "drying_core.py",
+        "q1_model.py",
+        "q2_model.py",
+        "q3_model.py",
+        "q4_model.py",
+        "export_outputs.py",
+        "publication_plots.py"
+      ],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "argparse",
+        "gc",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "production_provenance",
+        "subprocess",
+        "sys",
+        "time",
+        "traceback",
+        "uuid",
+        "warnings"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 2,
+      "path": "paper_output/code/modeling/q1_model.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q1_model.py",
+      "name": "q1_model.py",
+      "role": "问题一正式参数入口",
+      "embedCompleteSource": true,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "frozenProductionSha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "matchesFrozenProduction": true,
+      "bytes": 340,
+      "lineCount": 8,
+      "productionLocalDependencies": [
+        "drying_core.py"
+      ],
+      "allStaticImportsIncludingSelfchecks": [
+        "drying_core"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 3,
+      "path": "paper_output/code/modeling/q2_model.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q2_model.py",
+      "name": "q2_model.py",
+      "role": "问题二/三共用轨迹参数入口",
+      "embedCompleteSource": true,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "frozenProductionSha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "matchesFrozenProduction": true,
+      "bytes": 352,
+      "lineCount": 8,
+      "productionLocalDependencies": [
+        "drying_core.py"
+      ],
+      "allStaticImportsIncludingSelfchecks": [
+        "drying_core"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 4,
+      "path": "paper_output/code/modeling/q3_model.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q3_model.py",
+      "name": "q3_model.py",
+      "role": "全域阈值、四位小时上取与严格可行复核",
+      "embedCompleteSource": true,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "frozenProductionSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "matchesFrozenProduction": true,
+      "bytes": 1285,
+      "lineCount": 27,
+      "productionLocalDependencies": [],
+      "allStaticImportsIncludingSelfchecks": [
+        "math",
+        "numpy"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 5,
+      "path": "paper_output/code/modeling/q4_model.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\q4_model.py",
+      "name": "q4_model.py",
+      "role": "问题四附录4物性与收缩开关入口",
+      "embedCompleteSource": true,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "frozenProductionSha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "matchesFrozenProduction": true,
+      "bytes": 377,
+      "lineCount": 8,
+      "productionLocalDependencies": [
+        "drying_core.py"
+      ],
+      "allStaticImportsIncludingSelfchecks": [
+        "drying_core"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 6,
+      "path": "paper_output/code/modeling/drying_core.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\drying_core.py",
+      "name": "drying_core.py",
+      "role": "读取输入、有限体积、水热物性、通量、ODE事件和稠密轨迹查询",
+      "embedCompleteSource": true,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "frozenProductionSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "matchesFrozenProduction": true,
+      "bytes": 19944,
+      "lineCount": 402,
+      "productionLocalDependencies": [
+        "analytic_jacobian.py",
+        "disk_dense.py"
+      ],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "analytic_jacobian",
+        "dataclasses",
+        "disk_dense",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "time"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 7,
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\analytic_jacobian.py",
+      "name": "analytic_jacobian.py",
+      "role": "全部状态交叉导数与解析稀疏Jacobian",
+      "embedCompleteSource": true,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "frozenProductionSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "matchesFrozenProduction": true,
+      "bytes": 16952,
+      "lineCount": 325,
+      "productionLocalDependencies": [],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 8,
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\disk_dense.py",
+      "name": "disk_dense.py",
+      "role": "BDF原精度多项式磁盘存储、分段边界与生命周期",
+      "embedCompleteSource": true,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "frozenProductionSha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "matchesFrozenProduction": true,
+      "bytes": 4869,
+      "lineCount": 121,
+      "productionLocalDependencies": [],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "hashlib",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.integrate._ivp.base",
+        "scipy.integrate._ivp.bdf",
+        "tempfile"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 9,
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\export_outputs.py",
+      "name": "export_outputs.py",
+      "role": "模板识别、完整Excel/未舍入CSV导出、回读和活轨迹采样核验",
+      "embedCompleteSource": true,
+      "sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "frozenProductionSha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "matchesFrozenProduction": true,
+      "bytes": 41427,
+      "lineCount": 748,
+      "productionLocalDependencies": [],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "argparse",
+        "copy",
+        "csv",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gzip",
+        "hashlib",
+        "inspect",
+        "json",
+        "math",
+        "numpy",
+        "openpyxl",
+        "openpyxl.cell",
+        "openpyxl.styles",
+        "openpyxl.utils",
+        "pathlib",
+        "q3_model",
+        "re",
+        "sys",
+        "tempfile",
+        "time"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 10,
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\publication_plots.py",
+      "name": "publication_plots.py",
+      "role": "正式入口直接调用的主题图生成及图源指纹",
+      "embedCompleteSource": true,
+      "sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "frozenProductionSha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "matchesFrozenProduction": true,
+      "bytes": 24337,
+      "lineCount": 402,
+      "productionLocalDependencies": [],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "inspect",
+        "json",
+        "matplotlib",
+        "matplotlib.colors",
+        "matplotlib.pyplot",
+        "matplotlib.ticker",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    },
+    {
+      "appendixOrder": 11,
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\production_provenance.py",
+      "name": "production_provenance.py",
+      "role": "源文件/输入指纹、运行元数据、监督进程和发布事务",
+      "embedCompleteSource": true,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "frozenProductionSha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "matchesFrozenProduction": true,
+      "bytes": 24002,
+      "lineCount": 497,
+      "productionLocalDependencies": [],
+      "allStaticImportsIncludingSelfchecks": [
+        "__future__",
+        "contextlib",
+        "copy",
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "run_modeling",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "types",
+        "unittest.mock",
+        "uuid"
+      ],
+      "note": "Embed the complete UTF-8 source; retain all functions. Do not concatenate files into one runnable script. Existing comments/state flags are historical and do not certify current human review."
+    }
+  ],
+  "totalSourceFiles": 11,
+  "totalSourceLines": 2994,
+  "nonCodeInputsRequiredByOriginalLayout": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true,
+      "currentSha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "matchesFrozenProduction": true,
+      "usage": "runtime numerical input"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true,
+      "currentSha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "matchesFrozenProduction": true,
+      "usage": "runtime numerical input"
+    },
+    {
+      "path": "paper_output/plan/model_route.json",
+      "bytes": 34621,
+      "sha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+      "exists": true,
+      "currentSha256": "9d1c65257b84c90e9113719f8a4b3719694a9b83c4960f6631364277e8cdd54e",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "exists": true,
+      "currentSha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "exists": true,
+      "currentSha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "exists": true,
+      "currentSha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "exists": true,
+      "currentSha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "exists": true,
+      "currentSha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    },
+    {
+      "path": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "exists": true,
+      "currentSha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "matchesFrozenProduction": true,
+      "usage": "original layout, template or provenance inventory input"
+    }
+  ],
+  "historicalRuntime": {
+    "executable": "C:\\Python314\\python.exe",
+    "implementation": "CPython",
+    "version": "3.14.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "installed_library_versions": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.1"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "scope": "Installed distributions; actual imported module paths are recorded by worker."
+  },
+  "requiredDirectoryLayout": [
+    "paper_output/code/modeling/<each of the 11 source files>",
+    "paper_output/data_cleaned/A_environment_observed.csv",
+    "paper_output/data_cleaned/A_radius_observed.csv",
+    "paper_output/plan/model_route.json",
+    "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+    "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+    "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx ... result4.xlsx",
+    "tmp/cache/ (created at runtime)",
+    "paper_output/results/gui_reproduction/ or production/ (new version output)"
+  ],
+  "environmentPrerequisites": [
+    "Run from the original competition workspace root; each module locates that root through its original parents[3] file depth.",
+    "Python 3.14.7; NumPy 2.5.2; SciPy 1.18.1; openpyxl 3.1.5; Matplotlib 3.11.1 were the historical runtime. SciPy private BDF/OdeSolution APIs are used; do not assume an untested version is equivalent.",
+    "The original supervised entry checks C:/Windows/Fonts/msyh.ttc; original publication plots require this Windows font.",
+    "Allow writable per-run output and tmp/cache directories and sufficient disk for original-precision dense coefficients. CPU single-thread task environment is set by the entry.",
+    "Do not reuse final_v6a or any existing run version label. --review avoids publishing new global numerical contracts; it still performs real new solves when a user executes it.",
+    "This manifest certifies recorded source identity and documents prerequisites, not that an existing ZIP is standalone or portable. No new clean-room execution or GUI validation was performed in this task."
+  ],
+  "documentedCommandsNotExecuted": [
+    {
+      "purpose": "Read-only explanation of the historical production entry; execution would create a new reviewed solve/export directory",
+      "cwd": "D:/Document/数学建模/2026CUMCM",
+      "command": "C:/Python314/python.exe -B paper_output/code/modeling/run_modeling.py --version appendix_review_unique --n1 3200 --n23 3200 --n4 6400 --blas-threads 1 --review --review-exports",
+      "writes": "new paper_output/results/gui_reproduction/<version> plus temporary cache; does not by itself mean Visual Studio was used"
+    },
+    {
+      "purpose": "Original supervised production route; supplied for source comprehension, not run here",
+      "cwd": "D:/Document/数学建模/2026CUMCM",
+      "command": "C:/Python314/python.exe -B paper_output/code/modeling/run_modeling.py --version new_unique_version --n1 3200 --n23 3200 --n4 6400 --blas-threads 1",
+      "writes": "new version outputs and publishes global model/result/table/figure contracts after verification"
+    }
+  ],
+  "excludedSources": {
+    "reason": "Not required by the original production dependency closure or unsuitable scientific claims",
+    "examples": [
+      "paper_output/code/verification/crossvalidate_series.py",
+      "paper_output/code/verification/sensitivity_analysis.py",
+      "paper_output/code/verification/energy_balance_check.py",
+      "paper_output/code/verification/isotherm_activity_closure.py",
+      "paper_output/code/versions/*",
+      "paper_output/code/modeling/run_experiments.py"
+    ],
+    "note": "Independent verification results may be cited with their proper scope; exclusion from this source appendix does not erase their historical evidence."
+  },
+  "machineScope": "AST parse, byte hashes, line counts, declared/runtime-import dependency reconciliation. No PDE, no code alteration, no package repair, no Git.",
+  "humanReviewStatus": "pending",
+  "newVisualStudioExecution": false
+}

@@ -1,0 +1,3028 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAtUtc": "2026-09-12T12:24:23.955253+00:00",
+  "purpose": "补齐正文和已采纳附录证据实际用到的完整检验源码；不修改旧生产清单、不重新研究。",
+  "workspace": "D:\\Document\\数学建模\\2026CUMCM",
+  "parentProductionManifest": {
+    "path": "paper_output/qa/manuscript_20260912/code_appendix_manifest.json",
+    "sha256": "97d3a0770a459e13f30cc75e4cbf60cda614a325d01b166e0fba217017e7f941",
+    "filesAlreadyEmbedded": 11
+  },
+  "files": [
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "role": "Robin–Bessel解析热场、级数截断自检",
+      "adoptedScope": "第5/6章 Q1 热场及附录解析基准。独立常D水分特例仅作数值检验，不替代非线性药材答案。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/modeling/validate_bessel.py",
+      "note": "",
+      "historicalBindingScope": "bessel_selfcheck.execution_provenance 精确记录入口哈希；时间检验 launch 亦锁定本文件。",
+      "appendixOrder": 1,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\validate_bessel.py",
+      "name": "validate_bessel.py",
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "lineCount": 345,
+      "bytes": 16285,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/production/final_v6a/run_manifest.json",
+          "jsonPointer": "/runs/0/input_files/15/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/bessel_validation/bessel_selfcheck.json",
+          "jsonPointer": "/execution_provenance/source_code_sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/analytic_comparison/analytic_comparison_report.json",
+          "jsonPointer": "/execution_provenance/source_files/2/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/frozenBaselineVerification/checkedRecords/15/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/launch.json",
+          "jsonPointer": "/input_files/8/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+          "jsonPointer": "/input_files/8/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/launch.json",
+          "jsonPointer": "/input_files/8/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+          "jsonPointer": "/input_files/8/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/launch.json",
+          "jsonPointer": "/input_files/8/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+          "jsonPointer": "/input_files/8/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/3/summary/execution_provenance/source_files/2/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/productionHashVerification/15/expectedSha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/16/sha256",
+          "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+          "recordedPath": "paper_output/code/modeling/validate_bessel.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "datetime",
+        "functools",
+        "hashlib",
+        "json",
+        "numpy",
+        "numpy.typing",
+        "pathlib",
+        "platform",
+        "scipy.integrate",
+        "scipy.optimize",
+        "scipy.special",
+        "sys"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "role": "早期解析对照及常D特例筛选入口",
+      "adoptedScope": "数值过程附录中早期 N400 常D特例未通过的选择依据；完整文件保留实际常D与非线性热场路径。",
+      "requiredLocalCode": [
+        "paper_output/code/versions/drying_core_v2_kirchhoff.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/compare_analytic.py",
+      "note": "历史运行应将 v2 核心安装到 modeling/drying_core.py 原槽位；当前入口字节匹配，历史核心不能替换成 v6 后冒称原运行。",
+      "historicalBindingScope": "",
+      "appendixOrder": 2,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\compare_analytic.py",
+      "name": "compare_analytic.py",
+      "sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "lineCount": 242,
+      "bytes": 14520,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/production/final_v6a/run_manifest.json",
+          "jsonPointer": "/runs/0/input_files/2/sha256",
+          "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+          "recordedPath": "paper_output/code/modeling/compare_analytic.py"
+        },
+        {
+          "evidence": "paper_output/results/analytic_comparison/analytic_comparison_report.json",
+          "jsonPointer": "/execution_provenance/source_files/0/sha256",
+          "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+          "recordedPath": "paper_output/code/modeling/compare_analytic.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/frozenBaselineVerification/checkedRecords/2/sha256",
+          "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+          "recordedPath": "paper_output/code/modeling/compare_analytic.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/3/summary/execution_provenance/source_files/0/sha256",
+          "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+          "recordedPath": "paper_output/code/modeling/compare_analytic.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/productionHashVerification/2/expectedSha256",
+          "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+          "recordedPath": "paper_output/code/modeling/compare_analytic.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/3/sha256",
+          "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+          "recordedPath": "paper_output/code/modeling/compare_analytic.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "csv",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "matplotlib.pyplot",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "sys",
+        "time",
+        "validate_bessel"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/versions/drying_core_v2_kirchhoff.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "role": "当前投影/场差归约模块",
+      "adoptedScope": "final_v6 时间检验实际导入 project_run/compare_projections；当前文件不能冒充早期空间检验驱动版本。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/verify_convergence.py",
+      "note": "",
+      "historicalBindingScope": "",
+      "appendixOrder": 3,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_convergence.py",
+      "name": "verify_convergence.py",
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "lineCount": 127,
+      "bytes": 6542,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/production/final_v6a/run_manifest.json",
+          "jsonPointer": "/runs/0/input_files/16/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/frozenBaselineVerification/checkedRecords/16/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/launch.json",
+          "jsonPointer": "/input_files/9/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+          "jsonPointer": "/input_files/9/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/launch.json",
+          "jsonPointer": "/input_files/9/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+          "jsonPointer": "/input_files/9/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/launch.json",
+          "jsonPointer": "/input_files/9/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+          "jsonPointer": "/input_files/9/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/productionHashVerification/16/expectedSha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/17/sha256",
+          "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gc",
+        "json",
+        "numpy",
+        "pathlib",
+        "validate_bessel",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py"
+      ],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/modeling/validate_bessel.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "role": "同N容差和步长收紧的监督运行入口",
+      "adoptedScope": "Q1/Q23 N3200、Q4 N6400 时间检验；基准/收紧各独立子进程。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/production_provenance.py",
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/verify_convergence.py",
+        "paper_output/code/modeling/validate_bessel.py",
+        "paper_output/code/modeling/q1_model.py",
+        "paper_output/code/modeling/q2_model.py",
+        "paper_output/code/modeling/q3_model.py",
+        "paper_output/code/modeling/q4_model.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/verify_time_accuracy.py",
+      "note": "",
+      "historicalBindingScope": "",
+      "appendixOrder": 4,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+      "name": "verify_time_accuracy.py",
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "lineCount": 251,
+      "bytes": 14430,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/production/final_v6a/run_manifest.json",
+          "jsonPointer": "/runs/0/input_files/18/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/frozenBaselineVerification/checkedRecords/18/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/launch.json",
+          "jsonPointer": "/input_files/10/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+          "jsonPointer": "/driver_code/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+          "jsonPointer": "/input_files/10/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/launch.json",
+          "jsonPointer": "/input_files/10/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+          "jsonPointer": "/driver_code/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+          "jsonPointer": "/input_files/10/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/launch.json",
+          "jsonPointer": "/input_files/10/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+          "jsonPointer": "/driver_code/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+          "jsonPointer": "/input_files/10/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/productionHashVerification/18/expectedSha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/19/sha256",
+          "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+          "recordedPath": "paper_output/code/modeling/verify_time_accuracy.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "gc",
+        "hashlib",
+        "importlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "production_provenance",
+        "sys",
+        "time",
+        "traceback",
+        "uuid",
+        "verify_convergence",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/production_provenance.py",
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/q1_model.py",
+        "paper_output/code/modeling/q2_model.py",
+        "paper_output/code/modeling/q3_model.py",
+        "paper_output/code/modeling/q4_model.py"
+      ],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/modeling/verify_convergence.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "role": "内存/磁盘稠密输出等价性入口",
+      "adoptedScope": "附录采用的 v6 三条完整 N40 轨迹、内部断点及左右邻浮点查询；不是空间精度证据。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/analytic_jacobian.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/verify_dense_storage.py",
+      "note": "",
+      "historicalBindingScope": "",
+      "appendixOrder": 5,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\verify_dense_storage.py",
+      "name": "verify_dense_storage.py",
+      "sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "lineCount": 69,
+      "bytes": 3850,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/production/final_v6a/run_manifest.json",
+          "jsonPointer": "/runs/0/input_files/17/sha256",
+          "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+          "recordedPath": "paper_output/code/modeling/verify_dense_storage.py"
+        },
+        {
+          "evidence": "paper_output/results/dense_storage_verification_v6/verification.json",
+          "jsonPointer": "/sources/0/sha256",
+          "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+          "recordedPath": "paper_output/code/modeling/verify_dense_storage.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/frozenBaselineVerification/checkedRecords/17/sha256",
+          "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+          "recordedPath": "paper_output/code/modeling/verify_dense_storage.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/5/summary/sources/0/sha256",
+          "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+          "recordedPath": "paper_output/code/modeling/verify_dense_storage.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/productionHashVerification/17/expectedSha256",
+          "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+          "recordedPath": "paper_output/code/modeling/verify_dense_storage.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/18/sha256",
+          "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+          "recordedPath": "paper_output/code/modeling/verify_dense_storage.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "pathlib",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/analytic_jacobian.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "role": "Kirchhoff网格与同物性收缩对照批次入口",
+      "adoptedScope": "附录保留方案及正文 N200 附录4 固定/收缩对照；仅采纳指定 trial 的数值与参数，不采纳所有物理分支。",
+      "requiredLocalCode": [
+        "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/run_experiments.py",
+      "note": "历史结果记录锁定 v2 核心；入口当前哈希见后续生产源码盘点，不等于实验启动时入口已被锁定。运行同物性对照应使用原槽位 v2 核心。",
+      "historicalBindingScope": "结果记录了核心和输入，未提供本入口的该次运行时哈希。",
+      "appendixOrder": 6,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\modeling\\run_experiments.py",
+      "name": "run_experiments.py",
+      "sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "lineCount": 74,
+      "bytes": 3995,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/production/final_v6a/run_manifest.json",
+          "jsonPointer": "/runs/0/input_files/13/sha256",
+          "expectedSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+          "recordedPath": "paper_output/code/modeling/run_experiments.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/frozenBaselineVerification/checkedRecords/13/sha256",
+          "expectedSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+          "recordedPath": "paper_output/code/modeling/run_experiments.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/productionHashVerification/13/expectedSha256",
+          "expectedSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+          "recordedPath": "paper_output/code/modeling/run_experiments.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/14/sha256",
+          "expectedSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+          "recordedPath": "paper_output/code/modeling/run_experiments.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "pathlib",
+        "sys",
+        "traceback"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_solver.py",
+      "role": "BDF/Radau与面格式对照入口",
+      "adoptedScope": "第6章采纳 block1 的 Q23/Q4、N800/N1600 共8案；其余 block2/3 全文件保留但不扩展正文结论。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/verification/crossvalidate_solver.py",
+      "note": "",
+      "historicalBindingScope": "cv_solver_v1.summary 仅锁定共享核心，未锁定本驱动。",
+      "appendixOrder": 7,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\verification\\crossvalidate_solver.py",
+      "name": "crossvalidate_solver.py",
+      "sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "lineCount": 206,
+      "bytes": 8427,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/110/sha256",
+          "expectedSha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+          "recordedPath": "paper_output/code/verification/crossvalidate_solver.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3_model",
+        "sys",
+        "tempfile",
+        "time",
+        "traceback",
+        "uuid"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/verification/method_comparison.py",
+      "role": "Kirchhoff与另一守恒面格式比较",
+      "adoptedScope": "第5章非线性水方程面格式对照及附录选择依据；实际另一格式是两节点 D 值算术平均，不是声称整个 PDE 独立。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/verification/method_comparison.py",
+      "note": "常D两路径相同只是极限测试；该文件没有执行额外 Bessel 比较，不能根据文件序言扩展结论。",
+      "historicalBindingScope": "结果未记录入口源码哈希；本轮当前文件与结果的结构/参数对应，不冒称历史字节锁定。",
+      "appendixOrder": 8,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\verification\\method_comparison.py",
+      "name": "method_comparison.py",
+      "sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "lineCount": 197,
+      "bytes": 9293,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/111/sha256",
+          "expectedSha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+          "recordedPath": "paper_output/code/verification/method_comparison.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "role": "N800阈值二分及R平方时标归约",
+      "adoptedScope": "正文 N800 同轨迹事件复核；N200 同物性控制时刻和 R(t) 时标积分。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "note": "二分共享数值轨迹且初始括区依赖事件；R平方积分上限也取仿真时刻。文件序言中“all sampled centre”不是严格逐节点唯一极值，实际 JSON 披露浮点并列；不将这些旧措辞作为正文结论。",
+      "historicalBindingScope": "结果未记录入口源码哈希。",
+      "appendixOrder": 9,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\verification\\threshold_and_scaling_checks.py",
+      "name": "threshold_and_scaling_checks.py",
+      "sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "lineCount": 175,
+      "bytes": 8007,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/112/sha256",
+          "expectedSha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+          "recordedPath": "paper_output/code/verification/threshold_and_scaling_checks.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "drying_core",
+        "io",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "time",
+        "uuid"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_check.py",
+      "role": "有效热方程瞬时加权通量检验",
+      "adoptedScope": "第6章与推导附录仅采纳 rateIdentity() 的实际加权 B*Tdot 运算。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/verification/energy_balance_check.py",
+      "note": "必须完整附源码并在文件前说明：序言/JSON中 d/dt sum(2wBTR²) 写法错误，实际是 sum(2wBR²*Tdot)。CHECK B不构成变容量/收缩总能量守恒；不采纳累计残差已100%解释等旧主张。",
+      "historicalBindingScope": "结果未记录入口源码哈希。",
+      "appendixOrder": 10,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\verification\\energy_balance_check.py",
+      "name": "energy_balance_check.py",
+      "sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "lineCount": 245,
+      "bytes": 11942,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/114/sha256",
+          "expectedSha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+          "recordedPath": "paper_output/code/verification/energy_balance_check.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.integrate",
+        "sys",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/verification/sensitivity_analysis.py",
+      "role": "修复后的D/k单参数扫描入口",
+      "adoptedScope": "仅采纳 dscale、kscale 分支及对应基准自检；N200，D倍率0.7–1.4、k倍率0.85–1.15。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/q3_model.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/verification/sensitivity_analysis.py",
+      "note": "完整保留 Morris/Sobol 函数，不删源码。历史 Morris 的 D 仅缩放 properties 而未改变 Kirchhoff 通量，D 效应为零是失效注入；后来的 water_internal_flux 修复及单参数扫描不使旧 Morris 或 Sobol 结果有效。默认无参数会进入 morris，不是论文采纳的入口。",
+      "historicalBindingScope": "dscale/kscale JSON 未保存本驱动历史 SHA；本轮哈希只登记当前修复版。",
+      "appendixOrder": 11,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\verification\\sensitivity_analysis.py",
+      "name": "sensitivity_analysis.py",
+      "sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "lineCount": 292,
+      "bytes": 12878,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/113/sha256",
+          "expectedSha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+          "recordedPath": "paper_output/code/verification/sensitivity_analysis.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "drying_core",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3_model",
+        "sys",
+        "time",
+        "uuid"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/q3_model.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_activity_closure.py",
+      "role": "经验边界阻力p情景入口",
+      "adoptedScope": "仅采纳 N800、p=1/2/4、latent=0 的事件结果与实际 partitionFactor/ActivityModel 运算。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/verification/isotherm_activity_closure.py",
+      "note": "完整保留原注释和分支，但文件前必须勘误：数据未强制材料平衡点；awRef 不进入 partitionFactor；anchor零差并非与计算RH相等；p<1必负、基线真实下界等旧说明不成立。该批仅到事件，非生产严格报告。",
+      "historicalBindingScope": "isotherm_closure JSON 未记录入口源码哈希。",
+      "appendixOrder": 12,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\verification\\isotherm_activity_closure.py",
+      "name": "isotherm_activity_closure.py",
+      "sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "lineCount": 494,
+      "bytes": 23957,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/115/sha256",
+          "expectedSha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+          "recordedPath": "paper_output/code/verification/isotherm_activity_closure.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "datetime",
+        "drying_core",
+        "io",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.integrate._ivp.common",
+        "scipy.optimize._numdiff",
+        "sys",
+        "time",
+        "traceback"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/versions/verify_convergence_v1.py",
+      "role": "Q1空间检查的原驱动快照",
+      "adoptedScope": "Q1 N800/N1600/N3200 全1801整数秒×21半径及热场解析对照。",
+      "requiredLocalCode": [
+        "paper_output/code/versions/drying_core_v3_analytic_jacobian.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/verify_convergence.py",
+      "note": "",
+      "historicalBindingScope": "Q1_K_analytic_J_v3/convergence_report.driver_code 精确哈希匹配。",
+      "appendixOrder": 13,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\verify_convergence_v1.py",
+      "name": "verify_convergence_v1.py",
+      "sha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+      "lineCount": 106,
+      "bytes": 5346,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+          "jsonPointer": "/driver_code/sha256",
+          "expectedSha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/1/driver_code/sha256",
+          "expectedSha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/11/sha256",
+          "expectedSha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+          "recordedPath": "paper_output/code/versions/verify_convergence_v1.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gc",
+        "json",
+        "numpy",
+        "pathlib",
+        "validate_bessel",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/versions/drying_core_v3_analytic_jacobian.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/versions/verify_convergence_v5.py",
+      "role": "Q23/Q4最终空间检查的原驱动快照",
+      "adoptedScope": "Q23 N1600/N3200；Q4 N1600/N3200/N6400 的全秒公共域场值比较。",
+      "requiredLocalCode": [
+        "paper_output/code/versions/drying_core_v5_disk_dense.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/verify_convergence.py",
+      "note": "全秒临时投影未全部保留；原报告和采样数组存在，不能声称本轮重新积分或全秒重放。",
+      "historicalBindingScope": "两个 final_resolution_v5 报告 driver_code 精确匹配。",
+      "appendixOrder": 14,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\verify_convergence_v5.py",
+      "name": "verify_convergence_v5.py",
+      "sha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+      "lineCount": 123,
+      "bytes": 6186,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/driver_code/sha256",
+          "expectedSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/driver_code/sha256",
+          "expectedSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/3/driver_code/sha256",
+          "expectedSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/6/driver_code/sha256",
+          "expectedSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+          "recordedPath": "paper_output/code/modeling/verify_convergence.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/12/sha256",
+          "expectedSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+          "recordedPath": "paper_output/code/versions/verify_convergence_v5.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "gc",
+        "json",
+        "numpy",
+        "pathlib",
+        "validate_bessel",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/versions/drying_core_v5_disk_dense.py",
+        "paper_output/code/modeling/validate_bessel.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v2_kirchhoff.py",
+      "role": "采用Kirchhoff的早期实际核心快照",
+      "adoptedScope": "正文同物性 N200 固定/收缩对照、早期解析特例与Kirchhoff筛选数值的核心。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/modeling/drying_core.py",
+      "note": "",
+      "historicalBindingScope": "对应实验 summary.code 与 analytic_comparison source_files 核心哈希精确匹配。",
+      "appendixOrder": 15,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\drying_core_v2_kirchhoff.py",
+      "name": "drying_core_v2_kirchhoff.py",
+      "sha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+      "lineCount": 326,
+      "bytes": 15623,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/analytic_comparison/analytic_comparison_report.json",
+          "jsonPointer": "/execution_provenance/source_files/1/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/experiments/physical_Q4_fixed_N200_K/summary.json",
+          "jsonPointer": "/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/experiments/grids_Q4_N200_K/summary.json",
+          "jsonPointer": "/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/4/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/4/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/6/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/6/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/8/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/8/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/9/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/9/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/10/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/10/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/12/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/12/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/14/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/14/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/16/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/16/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/17/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/17/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/18/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/18/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/20/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/20/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/22/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/22/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/24/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/24/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/25/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/25/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/26/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/26/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/27/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/27/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/28/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/28/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/29/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/29/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/30/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/30/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/31/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/31/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/32/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/32/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/33/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/33/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/34/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/34/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/35/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/35/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/36/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/36/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/37/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/37/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/38/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/38/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/39/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/39/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/40/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/40/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/41/code/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/41/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/0/summary/core_sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": null
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/3/summary/execution_provenance/source_files/1/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/axisymmetric_family/data/core_sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": null
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/axisymmetric_family/cases/0/summary/provenance/core_sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": null
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/axisymmetric_family/cases/1/summary/provenance/core_sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": null
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/axisymmetric_family/cases/2/summary/provenance/core_sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": null
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/3/sha256",
+          "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+          "recordedPath": "paper_output/code/versions/drying_core_v2_kirchhoff.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v3_analytic_jacobian.py",
+      "role": "Q1空间检查实际核心快照",
+      "adoptedScope": "Q1 最细空间差及 Q1_K_analytic_J_v3 解析热场历史结果。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/analytic_jacobian.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/drying_core.py",
+      "note": "",
+      "historicalBindingScope": "Q1_K_analytic_J_v3 runs[*].code 精确匹配。",
+      "appendixOrder": 16,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\drying_core_v3_analytic_jacobian.py",
+      "name": "drying_core_v3_analytic_jacobian.py",
+      "sha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+      "lineCount": 338,
+      "bytes": 16516,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+          "jsonPointer": "/runs/0/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+          "jsonPointer": "/runs/1/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+          "jsonPointer": "/runs/2/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/0/run_records/0/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/0/run_records/1/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/1/run_records/0/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/1/run_records/1/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/1/run_records/2/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/4/run_records/0/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/4/run_records/1/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/4/run_records/2/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/7/run_records/0/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/7/run_records/1/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/7/run_records/2/code/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/1/summary/core_sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": null
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/4/sha256",
+          "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+          "recordedPath": "paper_output/code/versions/drying_core_v3_analytic_jacobian.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "analytic_jacobian",
+        "dataclasses",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/analytic_jacobian.py"
+      ],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v5_disk_dense.py",
+      "role": "Q23/Q4空间检查实际核心快照",
+      "adoptedScope": "正文采用的 Q23/Q4 最细相邻网格场差。",
+      "requiredLocalCode": [
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/versions/disk_dense_v5.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/drying_core.py",
+      "note": "此版本只为对应历史空间证据完整性；正式答案使用原清单 v6，不重新把 v5 设为最终生产。",
+      "historicalBindingScope": "两个 final_resolution_v5 runs[*].code 精确匹配。",
+      "appendixOrder": 17,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\drying_core_v5_disk_dense.py",
+      "name": "drying_core_v5_disk_dense.py",
+      "sha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+      "lineCount": 395,
+      "bytes": 19608,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/0/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/1/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/0/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/1/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/2/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/3/run_records/0/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/3/run_records/1/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/6/run_records/0/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/6/run_records/1/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/grid_batches/6/run_records/2/code/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/4/summary/sources/1/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/6/sha256",
+          "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+          "recordedPath": "paper_output/code/versions/drying_core_v5_disk_dense.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "analytic_jacobian",
+        "dataclasses",
+        "disk_dense",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/analytic_jacobian.py"
+      ],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/versions/disk_dense_v5.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/versions/disk_dense_v5.py",
+      "role": "历史空间检查磁盘轨迹依赖",
+      "adoptedScope": "v5 空间比较实际调用的连续输出；其断点选段旧问题由后续 v6 修正，不作为最终存储版本。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/modeling/disk_dense.py",
+      "note": "",
+      "historicalBindingScope": "两个 final_resolution_v5 runs[*].dense_storage_code 精确匹配。",
+      "appendixOrder": 18,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\disk_dense_v5.py",
+      "name": "disk_dense_v5.py",
+      "sha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+      "lineCount": 99,
+      "bytes": 3861,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/0/dense_storage_code/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/modeling/disk_dense.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/1/dense_storage_code/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/modeling/disk_dense.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/0/dense_storage_code/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/modeling/disk_dense.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/1/dense_storage_code/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/modeling/disk_dense.py"
+        },
+        {
+          "evidence": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+          "jsonPointer": "/runs/2/dense_storage_code/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/modeling/disk_dense.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/analytic_and_implementation_checks/4/summary/sources/2/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/modeling/disk_dense.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/0/sha256",
+          "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+          "recordedPath": "paper_output/code/versions/disk_dense_v5.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "hashlib",
+        "numpy",
+        "pathlib",
+        "scipy.integrate._ivp.base",
+        "scipy.integrate._ivp.bdf",
+        "tempfile"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/versions/run_experiments_v1.py",
+      "role": "附录粗网格反例的原批次入口",
+      "adoptedScope": "数值方案筛选表已引用的早期调和粗网格反例。",
+      "requiredLocalCode": [
+        "paper_output/code/versions/drying_core_v1_harmonic.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/modeling/run_experiments.py",
+      "note": "只用于解释已报告的舍弃方案；不额外收录未被稿件引用的旧试验。历史原入口缺少逐次启动指纹，快照为后续归档。",
+      "historicalBindingScope": "",
+      "appendixOrder": 19,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\run_experiments_v1.py",
+      "name": "run_experiments_v1.py",
+      "sha256": "d9732547f958da6b90c7001c41e5b359ad3dac97ec9df43dfd084ef8147b65d4",
+      "lineCount": 73,
+      "bytes": 3870,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/10/sha256",
+          "expectedSha256": "d9732547f958da6b90c7001c41e5b359ad3dac97ec9df43dfd084ef8147b65d4",
+          "recordedPath": "paper_output/code/versions/run_experiments_v1.py"
+        }
+      ],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "drying_core",
+        "json",
+        "pathlib",
+        "sys",
+        "traceback"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/versions/drying_core_v1_harmonic.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v1_harmonic.py",
+      "role": "附录粗网格反例的原核心快照",
+      "adoptedScope": "附录已经引用 N50事件164.5440h等调和通量粗网格反例。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/modeling/drying_core.py",
+      "note": "",
+      "historicalBindingScope": "baseline_Q23_N50/summary.code 精确匹配。",
+      "appendixOrder": 20,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\versions\\drying_core_v1_harmonic.py",
+      "name": "drying_core_v1_harmonic.py",
+      "sha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+      "lineCount": 296,
+      "bytes": 13721,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/experiments/baseline_Q23_N50/summary.json",
+          "jsonPointer": "/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/0/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/0/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/1/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/1/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/2/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/2/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/3/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/3/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/5/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/5/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/7/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/7/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/11/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/11/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/13/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/13/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/15/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/15/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/19/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/19/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/21/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/21/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/23/code/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/modeling/drying_core.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/trial_records/23/recorded_code_snapshot_match/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        },
+        {
+          "evidence": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+          "jsonPointer": "/source_snapshots/2/sha256",
+          "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+          "recordedPath": "paper_output/code/versions/drying_core_v1_harmonic.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.sparse",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/matlab/runCrossCheck.m",
+      "role": "MATLAB独立N40求解入口",
+      "adoptedScope": "独立 MATLAB 有限体积/Kirchhoff/ode15s；所有本地子函数在本文件，无其他 .m 依赖。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/matlab/runCrossCheck.m",
+      "note": "",
+      "historicalBindingScope": "runSummary.sourceSha256 精确匹配；历史GUI观察另有截图和日志，不能当成人工签核。",
+      "appendixOrder": 21,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\matlab\\runCrossCheck.m",
+      "name": "runCrossCheck.m",
+      "sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "lineCount": 495,
+      "bytes": 26369,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/runSummary.json",
+          "jsonPointer": "/sourceSha256",
+          "expectedSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+          "recordedPath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\matlab\\runCrossCheck.m"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/inputRecords/14/sha256",
+          "expectedSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+          "recordedPath": "paper_output/code/review_delivery/matlab/runCrossCheck.m"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/0/actual/sha256",
+          "expectedSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+          "recordedPath": "paper_output/code/review_delivery/matlab/runCrossCheck.m"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/matlabHashVerification/14/expectedSha256",
+          "expectedSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+          "recordedPath": "paper_output/code/review_delivery/matlab/runCrossCheck.m"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/152/sha256",
+          "expectedSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+          "recordedPath": "paper_output/code/review_delivery/matlab/runCrossCheck.m"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+      "role": "MATLAB/Python共点比较及Node进程监督",
+      "adoptedScope": "100场标量与2事件的实际结果比较；只读取已存 JSON/NPZ配对结果（NPZ仅指纹，值由summary样本读出）。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+      "note": "",
+      "historicalBindingScope": "comparison-python-manifest 的 sourceRecord 精确匹配；inputRecords列20个实际输入。",
+      "appendixOrder": 22,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\tools\\compareMatlab.mjs",
+      "name": "compareMatlab.mjs",
+      "sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "lineCount": 200,
+      "bytes": 16706,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/script/sha256",
+          "expectedSha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+          "recordedPath": "paper_output/code/review_delivery/tools/compareMatlab.mjs"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python-manifest.json",
+          "jsonPointer": "/script/sha256",
+          "expectedSha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+          "recordedPath": "paper_output/code/review_delivery/tools/compareMatlab.mjs"
+        }
+      ],
+      "currentAuditHashReferences": [],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/runLogged.ps1",
+      "role": "N40 Python实际进程监督入口",
+      "adoptedScope": "driver_camel_audit_v1 的外部Python退出0证据来源。",
+      "requiredLocalCode": [
+        "paper_output/code/review_delivery/runDelivery.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/runLogged.ps1",
+      "note": "历史日志锁定被启动的 Python 源码，不锁定此 PowerShell 文件自身。本文件无BOM在Windows PowerShell5.1解析有已知问题；PowerShell7可解析，不声称可移植验收。",
+      "historicalBindingScope": "",
+      "appendixOrder": 23,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\runLogged.ps1",
+      "name": "runLogged.ps1",
+      "sha256": "a9174b3777c7e710ab41e388499e1335ee19f06cf3acde1909492c9b4a463db9",
+      "lineCount": 50,
+      "bytes": 2853,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [],
+      "currentAuditHashReferences": [],
+      "hashStatus": "CURRENT_BYTES_ONLY_NO_RUN_TIME_SOURCE_LOCK",
+      "allStaticImports": [],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/review_delivery/runDelivery.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/review_delivery/runDelivery.py",
+      "role": "MATLAB对照所用Python N40生成入口",
+      "adoptedScope": "实际 --profile audit --run-id camel_audit_v1，调用驼峰模块并做 legacy 对照。",
+      "requiredLocalCode": [
+        "paper_output/code/review_delivery/dryingCore.py",
+        "paper_output/code/review_delivery/analyticJacobian.py",
+        "paper_output/code/review_delivery/diskDense.py",
+        "paper_output/code/review_delivery/q1Model.py",
+        "paper_output/code/review_delivery/q2Model.py",
+        "paper_output/code/review_delivery/q3Model.py",
+        "paper_output/code/review_delivery/q4Model.py",
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/q1_model.py",
+        "paper_output/code/modeling/q2_model.py",
+        "paper_output/code/modeling/q4_model.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/runDelivery.py",
+      "note": "audit未执行 exportOutputs.py；该文件仍被启动盘点且目前与旧盘点不同，见运行说明。此入口会强制检查 final_v6a/run_manifest 内107个冻结输入/输出，不能只凭两CSV运行。",
+      "historicalBindingScope": "",
+      "appendixOrder": 24,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\runDelivery.py",
+      "name": "runDelivery.py",
+      "sha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+      "lineCount": 281,
+      "bytes": 15385,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/8/sha256",
+          "expectedSha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+          "recordedPath": "paper_output/code/review_delivery/runDelivery.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/driver_camel_audit_v1/processResult.json",
+          "jsonPointer": "/sourceSha256AtLaunch",
+          "expectedSha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+          "recordedPath": null
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/driver_camel_audit_v1/processResult.json",
+          "jsonPointer": "/sourceSha256AtExit",
+          "expectedSha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+          "recordedPath": null
+        }
+      ],
+      "currentAuditHashReferences": [],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "contextlib",
+        "datetime",
+        "dryingCore",
+        "drying_core",
+        "exportOutputs",
+        "gc",
+        "gzip",
+        "hashlib",
+        "importlib",
+        "importlib.metadata",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "q3Model",
+        "re",
+        "sys",
+        "time",
+        "traceback",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [
+        "paper_output/code/modeling/drying_core.py",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "paper_output/code/modeling/disk_dense.py",
+        "paper_output/code/modeling/q1_model.py",
+        "paper_output/code/modeling/q2_model.py",
+        "paper_output/code/modeling/q4_model.py"
+      ],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/review_delivery/dryingCore.py",
+        "paper_output/code/review_delivery/analyticJacobian.py",
+        "paper_output/code/review_delivery/diskDense.py",
+        "paper_output/code/review_delivery/q1Model.py",
+        "paper_output/code/review_delivery/q2Model.py",
+        "paper_output/code/review_delivery/q3Model.py",
+        "paper_output/code/review_delivery/q4Model.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "role": "N40驼峰有限体积求解器",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [
+        "paper_output/code/review_delivery/analyticJacobian.py",
+        "paper_output/code/review_delivery/diskDense.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/dryingCore.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 25,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\dryingCore.py",
+      "name": "dryingCore.py",
+      "sha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+      "lineCount": 420,
+      "bytes": 21525,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/inputRecords/17/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/3/actual/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/8/actual/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/13/actual/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/2/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q1/code/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q23/code/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q4/code/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/matlabHashVerification/17/expectedSha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/153/sha256",
+          "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+          "recordedPath": "paper_output/code/review_delivery/dryingCore.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "analyticJacobian",
+        "dataclasses",
+        "diskDense",
+        "hashlib",
+        "io",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "time"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/review_delivery/analyticJacobian.py",
+        "paper_output/code/review_delivery/diskDense.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/review_delivery/analyticJacobian.py",
+      "role": "N40驼峰解析Jacobian",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/analyticJacobian.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 26,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\analyticJacobian.py",
+      "name": "analyticJacobian.py",
+      "sha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+      "lineCount": 333,
+      "bytes": 17600,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/inputRecords/18/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/4/actual/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/9/actual/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/14/actual/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/0/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q1/jacobian_code/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q23/jacobian_code/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q4/jacobian_code/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/matlabHashVerification/18/expectedSha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/154/sha256",
+          "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+          "recordedPath": "paper_output/code/review_delivery/analyticJacobian.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "dryingCore",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy",
+        "scipy.integrate",
+        "scipy.sparse",
+        "scipy.special",
+        "sys",
+        "time",
+        "warnings"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/diskDense.py",
+      "role": "N40驼峰磁盘轨迹存储",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/diskDense.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 27,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\diskDense.py",
+      "name": "diskDense.py",
+      "sha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+      "lineCount": 128,
+      "bytes": 5562,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/inputRecords/19/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/5/actual/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/10/actual/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+          "jsonPointer": "/provenanceChecks/15/actual/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/1/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q1/dense_storage_code/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q23/dense_storage_code/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+          "jsonPointer": "/summaries/Q4/dense_storage_code/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        }
+      ],
+      "currentAuditHashReferences": [
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/matlabHashVerification/19/expectedSha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        },
+        {
+          "evidence": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+          "jsonPointer": "/inputManifest/155/sha256",
+          "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+          "recordedPath": "paper_output/code/review_delivery/diskDense.py"
+        }
+      ],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "__future__",
+        "hashlib",
+        "numpy",
+        "pathlib",
+        "scipy.integrate",
+        "scipy.integrate._ivp.base",
+        "scipy.integrate._ivp.bdf",
+        "tempfile"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/q1Model.py",
+      "role": "N40问题一入口",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [
+        "paper_output/code/review_delivery/dryingCore.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/q1Model.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 28,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q1Model.py",
+      "name": "q1Model.py",
+      "sha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1",
+      "lineCount": 10,
+      "bytes": 532,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/4/sha256",
+          "expectedSha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1",
+          "recordedPath": "paper_output/code/review_delivery/q1Model.py"
+        }
+      ],
+      "currentAuditHashReferences": [],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "dryingCore"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/review_delivery/dryingCore.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/review_delivery/q2Model.py",
+      "role": "N40问题二三入口",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [
+        "paper_output/code/review_delivery/dryingCore.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/q2Model.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 29,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q2Model.py",
+      "name": "q2Model.py",
+      "sha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33",
+      "lineCount": 10,
+      "bytes": 550,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/5/sha256",
+          "expectedSha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33",
+          "recordedPath": "paper_output/code/review_delivery/q2Model.py"
+        }
+      ],
+      "currentAuditHashReferences": [],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "dryingCore"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/review_delivery/dryingCore.py"
+      ]
+    },
+    {
+      "path": "paper_output/code/review_delivery/q3Model.py",
+      "role": "N40严格报告与采样时刻",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/q3Model.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 30,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q3Model.py",
+      "name": "q3Model.py",
+      "sha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+      "lineCount": 30,
+      "bytes": 1595,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/6/sha256",
+          "expectedSha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+          "recordedPath": "paper_output/code/review_delivery/q3Model.py"
+        }
+      ],
+      "currentAuditHashReferences": [],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "math",
+        "numpy"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/q4Model.py",
+      "role": "N40问题四入口",
+      "adoptedScope": "MATLAB N40比较实际 Python 源码；与原11个蛇形生产文件字节不同，不按同名功能省略。",
+      "requiredLocalCode": [
+        "paper_output/code/review_delivery/dryingCore.py"
+      ],
+      "originalRuntimeSlot": "paper_output/code/review_delivery/q4Model.py",
+      "note": "",
+      "historicalBindingScope": "camel_audit_v1/launch.inputRecords 精确哈希匹配。",
+      "appendixOrder": 31,
+      "absolutePath": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\review_delivery\\q4Model.py",
+      "name": "q4Model.py",
+      "sha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009",
+      "lineCount": 10,
+      "bytes": 584,
+      "embedCompleteSource": true,
+      "historicalHashReferences": [
+        {
+          "evidence": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+          "jsonPointer": "/inputRecords/7/sha256",
+          "expectedSha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009",
+          "recordedPath": "paper_output/code/review_delivery/q4Model.py"
+        }
+      ],
+      "currentAuditHashReferences": [],
+      "hashStatus": "MATCH_RECORDED_HASH",
+      "allStaticImports": [
+        "dryingCore"
+      ],
+      "dependenciesAlreadyEmbedded": [],
+      "dependenciesInThisSupplement": [
+        "paper_output/code/review_delivery/dryingCore.py"
+      ]
+    }
+  ],
+  "sourceTotals": {
+    "supplementalFileCount": 31,
+    "supplementalLineCount": 6440,
+    "supplementalBytes": 328118,
+    "uniqueNewSha256Count": 31,
+    "noByteDuplicateOfOriginal11": true
+  },
+  "nonCodeInputs": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "bytes": 10125,
+      "role": "所有径向模型共同数值输入"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "bytes": 3522,
+      "role": "所有径向模型共同数值输入"
+    }
+  ],
+  "historicalEntryPoints": [
+    {
+      "scope": "Bessel自检",
+      "source": "paper_output/code/modeling/validate_bessel.py",
+      "arguments": [],
+      "basis": "bessel_selfcheck.execution_provenance.run_command"
+    },
+    {
+      "scope": "BDF/Radau",
+      "source": "paper_output/code/verification/crossvalidate_solver.py",
+      "arguments": [
+        "1",
+        "NEW_UNIQUE_RUN_ID"
+      ],
+      "basis": "现有入口语法；历史 cv_solver_v1/cases 包含8个 B1案；本轮未执行"
+    },
+    {
+      "scope": "D倍率",
+      "source": "paper_output/code/verification/sensitivity_analysis.py",
+      "arguments": [
+        "dscale"
+      ],
+      "basis": "结果stage和main分支；本轮未执行"
+    },
+    {
+      "scope": "k倍率",
+      "source": "paper_output/code/verification/sensitivity_analysis.py",
+      "arguments": [
+        "kscale"
+      ],
+      "basis": "结果stage和main分支；本轮未执行"
+    },
+    {
+      "scope": "p情景",
+      "source": "paper_output/code/verification/isotherm_activity_closure.py",
+      "arguments": [
+        "800",
+        "--p=1,2,4"
+      ],
+      "basis": "结果 intervals/shapeParametersUsed；本轮未执行"
+    },
+    {
+      "scope": "阈值/尺度",
+      "source": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "arguments": [
+        "--with-solver"
+      ],
+      "basis": "main分支与thresholdChecks结果；本轮未执行"
+    },
+    {
+      "scope": "MATLAB N40",
+      "source": "paper_output/code/review_delivery/matlab/runCrossCheck.m",
+      "arguments": [
+        "NEW_OUTPUT_DIRECTORY"
+      ],
+      "basis": "历史 runSummary 与GUI日志；本轮未执行"
+    },
+    {
+      "scope": "Python N40",
+      "source": "paper_output/code/review_delivery/runDelivery.py",
+      "arguments": [
+        "--profile",
+        "audit",
+        "--run-id",
+        "NEW_UNIQUE_RUN_ID"
+      ],
+      "basis": "历史 launch.command；复现须更换已存在运行编号"
+    },
+    {
+      "scope": "MATLAB/Python已存结果比较",
+      "source": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+      "arguments": [],
+      "basis": "历史 comparison-python-manifest；源码写死历史输入输出路径，执行会写比较报告，本轮未执行"
+    },
+    {
+      "scope": "Q1时间检验",
+      "source": "paper_output/code/modeling/verify_time_accuracy.py",
+      "arguments": [
+        "--question",
+        "Q1",
+        "--n",
+        "3200",
+        "--tag",
+        "NEW_UNIQUE_TAG",
+        "--full-second-comparison"
+      ],
+      "basis": "历史 time_accuracy/final_v6/launch.configuration"
+    },
+    {
+      "scope": "Q23时间检验",
+      "source": "paper_output/code/modeling/verify_time_accuracy.py",
+      "arguments": [
+        "--question",
+        "Q23",
+        "--n",
+        "3200",
+        "--tag",
+        "NEW_UNIQUE_TAG",
+        "--full-second-comparison"
+      ],
+      "basis": "历史 time_accuracy/final_v6_Q23/launch.configuration"
+    },
+    {
+      "scope": "Q4时间检验",
+      "source": "paper_output/code/modeling/verify_time_accuracy.py",
+      "arguments": [
+        "--question",
+        "Q4",
+        "--n",
+        "6400",
+        "--tag",
+        "NEW_UNIQUE_TAG",
+        "--full-second-comparison"
+      ],
+      "basis": "历史 time_accuracy/final_v6_Q4/launch.configuration"
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "paper_output/results/production/final_v6a/run_manifest.json",
+      "sha256": "fc9f6404f4d89f8122287d3bd435f82ea6035c5ebcf755aefc48143d57e46a87",
+      "bytes": 31524
+    },
+    {
+      "path": "paper_output/results/bessel_validation/bessel_selfcheck.json",
+      "sha256": "e84f07a57f865069390cd2b9c1e85f1b998bf75158991a8ff757d05eaf022723",
+      "bytes": 3201
+    },
+    {
+      "path": "paper_output/results/analytic_comparison/analytic_comparison_report.json",
+      "sha256": "dd65bf471f4dfc8785693be3caf02f8d890936a9073126763fbe80e9b2dab552",
+      "bytes": 43036
+    },
+    {
+      "path": "paper_output/results/convergence/Q1_K_analytic_J_v3/convergence_report.json",
+      "sha256": "78362f990ca25ca6caad1e8e93b9ca8e2c86d934d8ade58aa74720c2a858c5e7",
+      "bytes": 10761
+    },
+    {
+      "path": "paper_output/results/convergence/Q23_final_resolution_v5/convergence_report.json",
+      "sha256": "0fe5a791f3df2dff3b29c0bcc4a0e527da6f7330570f5144c2f573bc4781a579",
+      "bytes": 7673
+    },
+    {
+      "path": "paper_output/results/convergence/Q4_final_resolution_v5/convergence_report.json",
+      "sha256": "2cd0caad1176bfd182b6be0fe564da80081162bad24753e90a97b8eabb0b5a3d",
+      "bytes": 11574
+    },
+    {
+      "path": "paper_output/results/dense_storage_verification_v6/verification.json",
+      "sha256": "225e25da40b3fe9e144becb9a86c025f744c2686e8a49bae39d47fbbc998c327",
+      "bytes": 9108
+    },
+    {
+      "path": "paper_output/results/crossvalidation/cv_solver_v1/summary.json",
+      "sha256": "cdd0f219ab864115f3f2d7032f672e9b488643b40e95e47f3c8fed643163fc98",
+      "bytes": 349
+    },
+    {
+      "path": "paper_output/results/crossvalidation/cv_solver_v1/cases.json",
+      "sha256": "2ba7893a3afb0b43b117f57375951c557cc77b8b378ad0b72dc0eb7078c0d268",
+      "bytes": 81082
+    },
+    {
+      "path": "paper_output/results/crossvalidation/method_v1/method_comparison.json",
+      "sha256": "83fe61738168309af717522bdd0c18357fea2404ecea328a34ccdbce46051510",
+      "bytes": 195088
+    },
+    {
+      "path": "paper_output/results/crossvalidation/threshold_scaling_v1/threshold_and_scaling_checks.json",
+      "sha256": "81618006e31c5712b7b245fcb5487f3fc0271ab3524270bae82ac64cafc4c4d8",
+      "bytes": 3316
+    },
+    {
+      "path": "paper_output/results/crossvalidation/energy_balance_v1/energy_balance.json",
+      "sha256": "00cd0715c6efd6b43fd0c4f200a06365822fb03f7d164a3c04b6ea6ba1bdef2c",
+      "bytes": 31969
+    },
+    {
+      "path": "paper_output/results/crossvalidation/sensitivity_v1/dscale.json",
+      "sha256": "0cb0760f472b8d13330983ba0dbe9c7cb065a2e364ae3f3410039fe95ed9e333",
+      "bytes": 2538
+    },
+    {
+      "path": "paper_output/results/crossvalidation/sensitivity_v1/kscale.json",
+      "sha256": "7cb6fd9bece486efbb42e3807c94e1c7a3b7d2b1ad4fcdc72cf4ba36f021b094",
+      "bytes": 1989
+    },
+    {
+      "path": "paper_output/results/crossvalidation/isotherm_closure_v1/isotherm_closure.json",
+      "sha256": "7528cf2deb3b596c4c1877ad291043a3e47c8e96127de03cbb760a2ee63f9c96",
+      "bytes": 84755
+    },
+    {
+      "path": "paper_output/results/experiments/physical_Q4_fixed_N200_K/summary.json",
+      "sha256": "251f974f4995f12bb6161f933bb45103935de9cfe83e841884f453097aaa1483",
+      "bytes": 2303
+    },
+    {
+      "path": "paper_output/results/experiments/grids_Q4_N200_K/summary.json",
+      "sha256": "cf28eb6fdfb9debcc69cdec79413c91e819c40a30e0330b4914c78b78c63006c",
+      "bytes": 2304
+    },
+    {
+      "path": "paper_output/results/experiments/baseline_Q23_N50/summary.json",
+      "sha256": "4477172d4e45d1a0c409aefc25d3a022becc4c458bcec519efa6198d6a796cc5",
+      "bytes": 2130
+    },
+    {
+      "path": "notes/A-modeling/2026-09-10/data/autoresearch_final_review.json",
+      "sha256": "c7cddd51186da28e986f4dcbdfc44574ea06ea95efc6f88f174ba1f696a0d1b5",
+      "bytes": 303551
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/runSummary.json",
+      "sha256": "9edd3cccb57f9485dbea73fe2fe191fb9fba6ba22cb61957d2038026ce23a5f0",
+      "bytes": 40173
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/comparison-python.json",
+      "sha256": "9cf5bd7aa55169456378c530f71375fbd53b66c0ff3f3de93d62882ffc784c9d",
+      "bytes": 55252
+    },
+    {
+      "path": "paper_output/qa/matlab_crosscheck_20260911/comparison-python-manifest.json",
+      "sha256": "05fab6930f4f08f1c27431ab43759c19f02708b53adf0a9193b9d76e679988e5",
+      "bytes": 1289
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/launch.json",
+      "sha256": "0bbedcc6f0224afa93544a2a09d14021386ea24b5c50db0491c7b912bfa6510a",
+      "bytes": 3743
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/runResult.json",
+      "sha256": "e19d2e0e9a733efdcec45daf18b898561f642a4ab854887cc3e222ed48eff0ba",
+      "bytes": 44684
+    },
+    {
+      "path": "paper_output/results/code_delivery/camel_audit_v1/artifactManifest.json",
+      "sha256": "5f9fa42214699690db2e14f1405ecfff75e8c1865b3221d6d0a761b43f9da2f3",
+      "bytes": 3943
+    },
+    {
+      "path": "paper_output/results/code_delivery/driver_camel_audit_v1/processResult.json",
+      "sha256": "08ae21bff9f29662b9fd242e9993c984dfff998b1ef703eb31a4a267ef804ddd",
+      "bytes": 914
+    },
+    {
+      "path": "paper_output/qa/paper_readiness_20260912/crossvalidation_verified.json",
+      "sha256": "78da97878c80ee1f619b2d5c2570c416bcdaffc0ef936201a095d91acfee3a92",
+      "bytes": 111414
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6/launch.json",
+      "sha256": "548f94b48d1676a880e7567244933b9fcdc1f2bdecdbdce2157329b6511d1308",
+      "bytes": 3373
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6/time_accuracy_report.json",
+      "sha256": "0a09a105fd5058a8970302413a82e0d701b96f2dabe8bc7d1cdc2615cab82d8b",
+      "bytes": 19464
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6_Q23/launch.json",
+      "sha256": "942255743e1269c9d857f4732f43f3be328437e3f3e22db2ab99ad1ec4a56ed1",
+      "bytes": 3374
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6_Q23/time_accuracy_report.json",
+      "sha256": "e0e2e1ad0ba8ad583319c5a52ff22b37fcb6d4635a7b2398f221b608bcf756fc",
+      "bytes": 19720
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6_Q4/launch.json",
+      "sha256": "f99f4d66d4b091c5862a35841c78a81b43aafc216dda3977c9ae40177623829f",
+      "bytes": 3373
+    },
+    {
+      "path": "paper_output/results/time_accuracy/final_v6_Q4/time_accuracy_report.json",
+      "sha256": "a66f24e588ac1da46f50e74a5c0a20624491b3cb8198b63316afc72d03d5af70",
+      "bytes": 19695
+    }
+  ],
+  "executionScope": {
+    "performed": [
+      "读取源码、AST静态导入分析、读取已有JSON/日志、SHA256匹配、依赖闭包和字节去重",
+      "只写本新清单与对应简短说明"
+    ],
+    "notPerformed": [
+      "PDE重新积分",
+      "运行MATLAB/Node检验/PowerShell监督器",
+      "源码修改",
+      "Git",
+      "新增GUI或人工审查"
+    ]
+  },
+  "originalLayoutRequirements": [
+    "共用原清单11份生产模块，本文不重复嵌入字节相同的 v6归档。",
+    "历史模块均标 originalRuntimeSlot；重建历史方案应在隔离副本按槽位装配，不能覆盖本工程冻结源码，也不能把 versions文件直接同时混入同一Python模块搜索路径。",
+    "MATLAB/Python跨实现调用的驼峰文件与生产蛇形文件字节不同，两者必须分别保留。",
+    "runDelivery.py原样入口强制核对 final_v6a/run_manifest 所列107冻结文件，并盘点源码与4原模板；另查该文件完整 inputRecords。此闭包不等于现ZIP可移植。",
+    "camel_audit_v1/launch.inputRecords 中 exportOutputs.py 是启动盘点而非 audit 实际执行源码，当前哈希不同；旧字节在 tools/exportPathFixBefore/exportOutputs_v1.py.txt，可按旧launch核对。此次不因盘点而重印未执行导出副本。",
+    "Node比较器原样依赖 comparison-python.json/inputRecords 的20项文件；MATLAB需要支持Java、ode15s及json读写的原环境；Python/SciPy用到内部BDF/numdiff接口。",
+    "固定D盘路径、parents目录推导、已存在输出目录和旧版PS5.1解析限制均保留；本轮未修可移植性。"
+  ],
+  "excluded": [
+    "crossvalidate_series.py中的阶段统计：正文未采纳，不纳入",
+    "compile_crossvalidation_report.py历史汇总的无效总体PASS/下界/热残差说明：不是当前数字重算入口，不纳入",
+    "latent_heat_scenarios和各energy/isotherm diagnose/probe：稿件未采纳其独立计算结果，不纳入",
+    "与当前生产模块字节相同的 drying_core_v6_bdf_knots.py、disk_dense_v6.py 不重复",
+    "未被正文或附录采纳的其他旧试验及环境演示不纳入"
+  ]
+}

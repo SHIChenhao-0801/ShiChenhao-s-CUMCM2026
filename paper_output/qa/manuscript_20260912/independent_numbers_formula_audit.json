@@ -1,0 +1,202 @@
+{
+  "checkedAt": "2026-09-12T20:59:57.408650+08:00",
+  "sourceSha256": "d64e0c07696e670d88d9f27a8bac63edc658dd06ab7f13b97b34d91b7b8e8f43",
+  "docxSha256": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+  "scope": "Summary, chapters 5–6 core numerical values and appendix mathematical consistency/reference numbering; no production rerun. User-preserved front matter with comments is intentionally excluded from new-text acceptance.",
+  "status": "PASS_AFTER_CORRECTION",
+  "displayEquationLabels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "displayEquationsSequential1To68": true,
+  "explicitNumberReferences": [
+    {
+      "line": 125,
+      "numbers": [
+        2,
+        3
+      ],
+      "text": "式(2)表示有效显热的局部变化由净导热供给，式(3)由水质量守恒除以均匀且固定的ρd得到。变导热系数、变扩散系数均保留在散度内；将它们直接移至导数外，会漏掉由状态变化引起的通量梯度。经典扩散理论提供了上述构造及圆柱基准解的依据[3]。"
+    },
+    {
+      "line": 145,
+      "numbers": [
+        6
+      ],
+      "text": "因此本问温度方程是可独立求解的线性热方程，水方程仍因D1(C)而非线性。式(6)没有温度项；Arrhenius温度因子只在问题二至四的物性关系中出现。不能把“常热物性”扩大解释为“全部物性均为常数”，也不应给问题一另外加入温度活化项。"
+    },
+    {
+      "line": 157,
+      "numbers": [
+        7
+      ],
+      "text": "相邻节点之间的水分通量通过势差计算，温度因子在该面单独取值。不能把A(T)Φ(C)整体作差，否则会产生原Fick闭合中不存在的温度梯度通量。浓度相近时采用局部展开避免两项接近的势值相减损失有效数字。式(7)使浓度方向的积分得到解析处理，但温度面值、有限网格与时间推进仍有离散误差；它不是对整个偏微分方程的精确求解。"
+    },
+    {
+      "line": 195,
+      "numbers": [
+        6
+      ],
+      "text": "表层含水率降低后，式(6)中的D随之减小，形成较强的干燥阻力。因而即使表面与外界存在传质驱动力，内部水分也不会立刻均匀释放。只用一个全体平均含水率描述此阶段，会掩盖径向差异，无法回答题目要求的各位置浓度。"
+    },
+    {
+      "line": 207,
+      "numbers": [
+        2
+      ],
+      "text": "问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3在整个求解区间使用同一套变物性，不在1800 s将附录2解拼接到附录3，也不把问题一末状态用作新的初始条件。这样才能区分两问的物性设定，避免在中途人为改变材料参数。"
+    },
+    {
+      "line": 223,
+      "numbers": [
+        8,
+        9
+      ],
+      "text": "式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位为m²/s，T必须是绝对温度。指数中的0.45/C和3850/T均为无量纲经验组合，系数按题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解释。"
+    },
+    {
+      "line": 271,
+      "numbers": [
+        9
+      ],
+      "text": "水分扩散对温度的响应与含水率的响应方向不同。在相同C下，升温使式(9)的温度因子增大，有利于扩散；随着药材逐渐变干，exp(−0.45/C)减小，使后期扩散变慢。因此全过程通常表现为前期升温推动水分迁移、后期低含水率区域限制传递的组合效应。该解释来自物性公式及场分布，不把时间曲线的形状直接归因为某个未经观测的组织变化。"
+    },
+    {
+      "line": 305,
+      "numbers": [
+        12
+      ],
+      "text": "Step 1：在问题二积分过程中监测g(t)下降穿零。Step 2：在包围根的时间区间内利用求解器稠密输出定位临界根。Step 3：核对事件处全域最大值与阈值的一致性。Step 4：将临界时刻换算为小时，按式(12)形成报告值。Step 5：查询未舍入最大含水率，确认报告时刻严格可行；按照60 s和0.1 cm输出全过程含水率。另在N800验证轨迹上采用独立二分复核事件定位方法；正式N3200临界根与严格报告值仍由生产轨迹给出。"
+    },
+    {
+      "line": 364,
+      "numbers": [
+        15
+      ],
+      "text": "式(15)沿用有效显热闭合，并非由完整含潜热、湿分携焓和收缩功的总能量方程无条件推出。材料坐标没有额外网格平流项，也不对干基比值C增加体积浓缩项；收缩体积引起的密度变化已经体现在ρd(t)=ρd0[R0/R(t)]²中。详细相消过程和干质量积分证明见附录A。"
+    },
+    {
+      "line": 386,
+      "numbers": [
+        14
+      ],
+      "text": "在材料坐标中使用固定N6400网格。每次计算右端函数时，根据当前t更新R(t)，再更新式(14)—(18)的体积因子、物性和边界通量。由于网格点随材料移动，不需要反复重划网格；输出时再转换到题目要求的物理半径r。"
+    },
+    {
+      "line": 432,
+      "numbers": [
+        14,
+        16,
+        10
+      ],
+      "text": "式(14)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²增强；式(16)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "rho-derivative-notation",
+      "sourceLines": [
+        754,
+        756
+      ],
+      "description": "rho_e derivative was left behind after rho_eff rename.",
+      "status": "RESOLVED_IN_CURRENT_SOURCE",
+      "resolution": "Both now use rho_eff derivative."
+    }
+  ],
+  "checkedCoreValues": {
+    "Q1_T_C": [
+      33.5753,
+      36.7856
+    ],
+    "Q1_C": [
+      2.55,
+      1.5102
+    ],
+    "Q2_T_C": [
+      49.8495,
+      49.9664
+    ],
+    "Q2_C": [
+      1.7662,
+      1.0081
+    ],
+    "Q3_report_h": 57.4724,
+    "Q4_report_h": 51.0906,
+    "Q1_unrounded_surface_minus_center_K": 3.210215470200012
+  },
+  "notes": [
+    "N800 independent bisection is now correctly separated from official N3200 root/report trajectory.",
+    "Body equations 1–19 have consistent explicit references; appendix display equations continue as 20–68.",
+    "Dry-skeleton balance, Q4 material-coordinate cancellation, R^-2, Kirchhoff concentration integral, thermal-face temperature approximation, Jacobian capacity derivative, instantaneous weighted thermal flux identity and BDF/event logic remain consistent with prior independent derivation and actual code.",
+    "Q1 diffusion depends on C only; no Arrhenius T dependence has been added to new formal Q1 explanation.",
+    "Q4 D ratio crossover 0.0860600353 is a same-temperature local comparison, not a whole-process speed ranking.",
+    "Numerical verification wording retains its stated grids, sample domain and no-experimental-accuracy limitation."
+  ]
+}

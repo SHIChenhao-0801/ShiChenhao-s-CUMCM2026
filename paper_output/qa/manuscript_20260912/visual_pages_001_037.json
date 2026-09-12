@@ -1,0 +1,381 @@
+{
+  "status": "PASS_VISUAL_SCOPE",
+  "reviewer": "Codex root",
+  "generatedAtUtc": "2026-09-12T12:57:52.393926+00:00",
+  "scope": "Pages 1–37 actually viewed as individual complete PNGs; changed pages re-viewed in v5.",
+  "docxSha256": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+  "pdfSha256": "93cfe62b5db0ec8627be6b7d51170acd916b2b5613e4f3182663f13830539cd4",
+  "pages": [
+    {
+      "page": 1,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-1.png",
+      "sha256": "bb0b2c76b638f15f01e6406e237165755f6edc67cb45844e4cc058c056826783",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "摘要完整占一页；标题、正文、关键词及页码可读。"
+    },
+    {
+      "page": 2,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-2.png",
+      "sha256": "c8c79b5ac236bd1cbf95d5e3bed392c0dfbdb943637cf1cf1cc5f8d49e4cd6dc",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 3,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-3.png",
+      "sha256": "d84f42d8da05df747838b6676f3823df1f73180753d21a9baf32daaacd64dcb8",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 4,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-4.png",
+      "sha256": "a902bbc1209a7e03068335b21ece57e291657441864fe11900534af43fc56583",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "符号表跨页，表头正常。"
+    },
+    {
+      "page": 5,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-5.png",
+      "sha256": "935ea5e805723d237582d61fa4bdfe4cdf1897c2227f04d00fca9e076776c6f2",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "符号表续页正常；原文后的口径说明可读。"
+    },
+    {
+      "page": 6,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-6.png",
+      "sha256": "7a677f06ab71561b80ccbcebaa33d17206d0562a19db29f5b59079289c200643",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 7,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-7.png",
+      "sha256": "abf94f793f0c8bc883c032f4c2bf91af71569752101b99d5b73258b08688bbf1",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 8,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-8.png",
+      "sha256": "11815174a3d84f6a838547f56cda9f3461e8a883eef255ebc050e638a295f552",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 9,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-9.png",
+      "sha256": "b9f35ec6c0711cf36e09d869507afa362f4eae53b4f50957f218e85d3534807f",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 10,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-10.png",
+      "sha256": "f38bd365ceba8447586c1f1f5f4124d1362578eccb77820b25081fde74919f11",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 11,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-11.png",
+      "sha256": "a2811419367def861d5ad2cf85823d57ae96713e02c8d09ae373dd492242508b",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 12,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-12.png",
+      "sha256": "c103a4415e5c481e90efd0a02331349eabfd02c21d81233b08c64f73429f5afa",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 13,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-13.png",
+      "sha256": "1f5d8184725ad84d4a250d1351b8ca0500d8375db56995853096b879ba5de668",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 14,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-14.png",
+      "sha256": "0fbdd2dc3bbfb1d966ed65234002b62143fcd3309830d969f09b056a28b3649b",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 15,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-15.png",
+      "sha256": "cacad3888a92f5bb9c0a0960ab82a5ed9c1c8a721eecc1eaf2b9b01fa9c20ab6",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 16,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-16.png",
+      "sha256": "bbd66247c31753784b3fb803b54248eadbe907fe9394c0c56842a133d8027d92",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "问题四表格跨页，续页重复表头。"
+    },
+    {
+      "page": 17,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-17.png",
+      "sha256": "32fbdbc9e83b75969b9954149cd52b4674d283c07116350e88f8acf90d0f0832",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "结果表续页及收缩说明正常。"
+    },
+    {
+      "page": 18,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-18.png",
+      "sha256": "2dabc9d7d51b52d1bb25f9f04ca6e115f988721d86ff12466bfb3ae6485e024d",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 19,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-19.png",
+      "sha256": "7303c8848335db695999bd9280c8bd95f144ffd43d0153b4800278c1abf41bfd",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 20,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-20.png",
+      "sha256": "a2b82449dbb0579597a93d2c25e42b3051efe407ce2b3668618cbf3500cd0b11",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 21,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-21.png",
+      "sha256": "06915a10aaa492df6f676f09df75f585d86ac32e93a6546bf82cef51150d13a3",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 22,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-22.png",
+      "sha256": "dc37b6886c6b33056f93d13566d463fd4bf05008f27ef1a5e820ffcefb4d9d70",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "参考文献页留白较多，六条文献及页码完整。"
+    },
+    {
+      "page": 23,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-23.png",
+      "sha256": "60c5854c4c240a1eda9fc9befbcc544513491e1e063880e1220861ba2185489f",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "附录从本页开始，支撑文件列表清楚。"
+    },
+    {
+      "page": 24,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-24.png",
+      "sha256": "24e915e6e21a4910493d7d1eeba60e2e67ad484f452080109ea5962909577961",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 25,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-25.png",
+      "sha256": "073c31dd4826cde5b839257c041e29831728e2ef8133797020f8431b771bb8e1",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 26,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-26.png",
+      "sha256": "2a152b46d8ae51fa1a39e6c77fc34e043411e2006720719df09f8670d5562a90",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 27,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-27.png",
+      "sha256": "b3317856fd436be5af5dbb888bebfe87199e8c1d0c921ea4b41e9622e1863595",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 28,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-28.png",
+      "sha256": "b27b72a7af74410c5cacbfbc6cb11e53943da18338ccd0b5d3e131031dfde199",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 29,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-29.png",
+      "sha256": "6c65b299440d729a57dad73dc03ccc81f19f003c9fe64d6942cf544ef9eaf574",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "最终 v5 实际复看，密度导数已统一为 rho_eff；式49–55完整可读。"
+    },
+    {
+      "page": 30,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-30.png",
+      "sha256": "f1a7ee9cf9c132ba5cd0223fa6c34ee2c0a5ce8bb41ea24993c953820b0aabf2",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "较长 BDF 公式靠近正文宽度边界，仍完整未裁切。"
+    },
+    {
+      "page": 31,
+      "visuallyInspected": true,
+      "inspectedVersion": "v3",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-31.png",
+      "sha256": "71a0a4ee2bb47ecec5ed21a48f4040740205462d7f0ee59c19c384077bf79432",
+      "inheritedByIdenticalImageBytes": true,
+      "blockingVisualDefects": [],
+      "observation": "实际逐页查看，正文/公式/表格按本页内容完整可读；无阻断裁切、重叠、乱码。"
+    },
+    {
+      "page": 32,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-32.png",
+      "sha256": "e5b849a5b0fb4ce363034785ffe2bf6faa5a437ed6c4cdf224c6f21c23367c1f",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "最终 v5 实际复看，极限符号异常字符已消失；式63–66可读。"
+    },
+    {
+      "page": 33,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-33.png",
+      "sha256": "ec35939a38f154ccfc598b9f49c480e13b86e135e8396bd11683f487c8560123",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "v5 实际查看，Bessel 展开与长式68完整，附录C衔接正常。"
+    },
+    {
+      "page": 34,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-34.png",
+      "sha256": "b0d39e90bd2c50834d9c9cfcbb6a40c4bd66aa330fc2bb9beba0a8250621052b",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "v5 实际查看，保留/舍弃表完整，内容换行可读。"
+    },
+    {
+      "page": 35,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-35.png",
+      "sha256": "d9d3822e4dab5da40db4aa99d74434cb210205260f2f98115283ac4d25fb0204",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "v5 实际查看，数值求解、误差及事件报告过程可读。"
+    },
+    {
+      "page": 36,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-36.png",
+      "sha256": "f1b4c854f1d470d8de89ca69f512f183046541f805d13c90847ce8bf578b23c0",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "v5 实际查看，运行前提与代码清单第一页可读。"
+    },
+    {
+      "page": 37,
+      "visuallyInspected": true,
+      "inspectedVersion": "v5",
+      "currentImage": "tmp/cache/manuscript_20260912/render_v5/page-37.png",
+      "sha256": "02e88828c0cf1d1e0a7133b978080c4705efd8017d901b81357b4dbfd3fdbbfa",
+      "inheritedByIdenticalImageBytes": false,
+      "blockingVisualDefects": [],
+      "observation": "v5 实际查看，代码清单续表表头正常，长文件名换行完整。"
+    }
+  ],
+  "remainingHumanReview": "Team proofreading and approval remain pending."
+}

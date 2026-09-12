@@ -1,0 +1,1551 @@
+{
+  "renderedAtUtc": "2026-09-12T12:48:00.132358+00:00",
+  "command": [
+    "C:\\Users\\Shi Chenhao\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\Users\\Shi Chenhao\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.905.11957\\skills\\documents\\render_docx.py",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\final_paper.docx",
+    "--output_dir",
+    "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\manuscript_20260912\\render_v5",
+    "--emit_pdf",
+    "--dpi",
+    "150",
+    "--verbose"
+  ],
+  "returncode": 0,
+  "docx": "paper_output/final_paper.docx",
+  "docxSha256": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+  "pdf": "paper_output/qa/manuscript_20260912/rendered/final_paper.pdf",
+  "pdfSha256": "93cfe62b5db0ec8627be6b7d51170acd916b2b5613e4f3182663f13830539cd4",
+  "libreoffice": "D:\\Document\\数学建模\\tools\\libreoffice\\app\\program\\soffice.exe",
+  "pageCount": 218,
+  "pages": [
+    {
+      "page": 1,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-1.png",
+      "sha256": "bb0b2c76b638f15f01e6406e237165755f6edc67cb45844e4cc058c056826783",
+      "textChars": 968,
+      "start": "1\n考虑物性变化与径向收缩的药材热湿耦合模型及数值验证\n摘要\n药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表\n内部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性关系，建\n立一维径向"
+    },
+    {
+      "page": 2,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-2.png",
+      "sha256": "c8c79b5ac236bd1cbf95d5e3bed392c0dfbdb943637cf1cf1cc5f8d49e4cd6dc",
+      "textChars": 793,
+      "start": "2\n1 问题重述\n1.1 问题背景\n中药材干燥是产地初加工的关键环节，直接决定成品品质与用药安全。热风烘干\n是目前应用最广的干燥方式之一，通常包含预热平衡与恒温干燥两个阶段[1]。然而，\n烘房温湿度调控多凭经验，参数不当"
+    },
+    {
+      "page": 3,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-3.png",
+      "sha256": "d84f42d8da05df747838b6676f3823df1f73180753d21a9baf32daaacd64dcb8",
+      "textChars": 1020,
+      "start": "3\n2 问题分析\n2.1 问题一分析\n已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、\n2.55kg/kg 干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到\n1800s 内药材内"
+    },
+    {
+      "page": 4,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-4.png",
+      "sha256": "a902bbc1209a7e03068335b21ece57e291657441864fe11900534af43fc56583",
+      "textChars": 660,
+      "start": "4\n2.4 问题四分析\n问题四的解决关键在于处理半径随时间减小带来的移动边界。直接使用原坐标会\n面对网格随边界变形的问题，因此采用坐标变换，把实际收缩域映射到固定区间这样，\n移动边界问题转化为固定域问题，问题二、三中的有"
+    },
+    {
+      "page": 5,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-5.png",
+      "sha256": "935ea5e805723d237582d61fa4bdfe4cdf1897c2227f04d00fca9e076776c6f2",
+      "textChars": 313,
+      "start": "5\n符号\n说明\n单位\nw=C/(1+C)\n湿基质量分数\n1\nR(t)\n药材当前半径\nm\nρeff\n有效密度（用于热容量）\nkg/m³\nρd\n守恒干物质密度\nkg/m³\ncp\n比热容\nJ/(kg·K)\nk\n导热系数\nW/("
+    },
+    {
+      "page": 6,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-6.png",
+      "sha256": "7a677f06ab71561b80ccbcebaa33d17206d0562a19db29f5b59079289c200643",
+      "textChars": 915,
+      "start": "6\n5 模型的建立与求解\n5.1 问题一模型的建立与求解\n5.1.1 建模思路与统一口径\n本文采用圆柱径向热湿传递框架研究药材内部状态。计算几何按题面取长度0.25 \nm、初始半径0.02 m；温度方程以开尔文为单位，结"
+    },
+    {
+      "page": 7,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-7.png",
+      "sha256": "abf94f793f0c8bc883c032f4c2bf91af71569752101b99d5b73258b08688bbf1",
+      "textChars": 1034,
+      "start": "7\n∂C\n∂t = 1\nr\n∂\n∂r (r D(T ,C ) ∂C\n∂r )\n(3)\n式(2)表示有效显热的局部变化由净导热供给，式(3)由水质量守恒除以均匀且固定\n的ρd 得到。变导热系数、变扩散系数均保留在散度内；将"
+    },
+    {
+      "page": 8,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-8.png",
+      "sha256": "11815174a3d84f6a838547f56cda9f3461e8a883eef255ebc050e638a295f552",
+      "textChars": 1093,
+      "start": "8\nA(T)Φ(C)整体作差，否则会产生原Fick 闭合中不存在的温度梯度通量。浓度相近时采\n用局部展开避免两项接近的势值相减损失有效数字。式(7)使浓度方向的积分得到解析\n处理，但温度面值、有限网格与时间推进仍有离散误"
+    },
+    {
+      "page": 9,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-9.png",
+      "sha256": "b9f35ec6c0711cf36e09d869507afa362f4eae53b4f50957f218e85d3534807f",
+      "textChars": 969,
+      "start": "9\n表2 问题一的径向干基含水率（kg/kg）\n时间/s\nr=0 cm\nr=0.5 cm\nr=1 cm\nr=1.5 cm\nr=2 cm\n100.0000\n2.5500\n2.5500\n2.5500\n2.5500\n2.247"
+    },
+    {
+      "page": 10,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-10.png",
+      "sha256": "f38bd365ceba8447586c1f1f5f4124d1362578eccb77820b25081fde74919f11",
+      "textChars": 987,
+      "start": "10\n5.2 问题二模型的建立与求解\n5.2.1 建模思路\n问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3 在整\n个求解区间使用同一套变物性，不在1800 s 将附录2 解拼接到附录3，也不把"
+    },
+    {
+      "page": 11,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-11.png",
+      "sha256": "a2811419367def861d5ad2cf85823d57ae96713e02c8d09ae373dd492242508b",
+      "textChars": 941,
+      "start": "11\n分指标；另用较长时间轴展示4 h 后的50°C 和0.05 平台，用竖线标出观测与延拓边界。\n不能把延拓段画成实测点。\n5.2.3 求解算法\n沿用问题一的有限体积网格，同时更新B(C)、k(C)与D(T,C)。温度"
+    },
+    {
+      "page": 12,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-12.png",
+      "sha256": "c103a4415e5c481e90efd0a02331349eabfd02c21d81233b08c64f73429f5afa",
+      "textChars": 895,
+      "start": "12\n表4 问题二的径向干基含水率（kg/kg）\n时间/h\nr=0 cm\nr=0.5 cm\nr=1 cm\nr=1.5 cm\nr=2 cm\n0.5000\n2.5499\n2.5489\n2.5256\n2.3257\n1.6486"
+    },
+    {
+      "page": 13,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-13.png",
+      "sha256": "1f5d8184725ad84d4a250d1351b8ca0500d8375db56995853096b879ba5de668",
+      "textChars": 987,
+      "start": "13\n5.3 问题三模型的建立与求解\n5.3.1 建模思路\n全域达标由含水率最高的位置决定，时间求解应以完整状态轨迹为依据。本文将\n温湿场求解与事件定位衔接，把烘干阈值写成全域最大值约束，分别处理数值临界根\n和严格可行的"
+    },
+    {
+      "page": 14,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-14.png",
+      "sha256": "0fbdd2dc3bbfb1d966ed65234002b62143fcd3309830d969f09b056a28b3649b",
+      "textChars": 1011,
+      "start": "14\n保留事件后整数秒的状态用于导出与核对，相关时间约定见附录C。\n5.3.4 结果分析\n表5 列出每隔6 h 及最终报告时刻的径向含水率。完整60 s 结果保留更多时间信息，\n正文表用于显示干燥过程与径向差异。\n表5 "
+    },
+    {
+      "page": 15,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-15.png",
+      "sha256": "cacad3888a92f5bb9c0a0960ab82a5ed9c1c8a721eecc1eaf2b9b01fa9c20ab6",
+      "textChars": 939,
+      "start": "15\n线后期重合，不人为错开。\n5.3.5 模型检验或灵敏度分析\n约93.04%的报告时长位于附件1 的4 h 观测窗之后，因此57.4724 h 应理解为规定\n平台温湿条件持续存在时的模型预测。数值根的复核能检查“给定"
+    },
+    {
+      "page": 16,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-16.png",
+      "sha256": "bbd66247c31753784b3fb803b54248eadbe907fe9394c0c56842a133d8027d92",
+      "textChars": 1012,
+      "start": "16\n在x=0 保持零通量，表面边界改为\n−k\nR ^T x(1 ,t )= h(T s−T ∞), −D\nR ^C x(1 ,t )= β(C s−C e q)\n(16)\n边界中的1/R 来自空间导数换元，不能遗漏。附"
+    },
+    {
+      "page": 17,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-17.png",
+      "sha256": "32fbdbc9e83b75969b9954149cd52b4674d283c07116350e88f8acf90d0f0832",
+      "textChars": 554,
+      "start": "17\n时间/h\nr=0 cm\nr=0.5 cm\nr=1 cm\nr=1.5 cm\nr=2 cm\n药材表面\n12.0000\n0.7377\n0.6546\n0.4083\n0.1670\n18.0000\n0.4087\n0.3686\n"
+    },
+    {
+      "page": 18,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-18.png",
+      "sha256": "2dabc9d7d51b52d1bb25f9f04ca6e115f988721d86ff12466bfb3ae6485e024d",
+      "textChars": 1148,
+      "start": "18\n面含水率为0.4207，中心仍为1.7196 kg/kg。至最终时刻，中心和表面分别显示0.1500\n与0.0526，仍有明显梯度。径向收缩减少了迁移距离，但不会消除由低含水率扩散变\n慢造成的后期阻力。\n图像主题5"
+    },
+    {
+      "page": 19,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-19.png",
+      "sha256": "7303c8848335db695999bd9280c8bd95f144ffd43d0153b4800278c1abf41bfd",
+      "textChars": 903,
+      "start": "19\n6 模型检验与灵敏度分析\n本题缺少药材内部温度与含水率实测值，因此检验重点是所建方程的数值实现及\n假设敏感性。解析级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设\n参数与边界；各方法不能提供独立的物理预测"
+    },
+    {
+      "page": 20,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-20.png",
+      "sha256": "a2b82449dbb0579597a93d2c25e42b3051efe407ce2b3668618cbf3500cd0b11",
+      "textChars": 886,
+      "start": "20\nh 降至43.0796 h，问题四由70.4059 h 降至38.3160 h；导热系数在±15%内变化，两问\n时长跨度均小于0.011%。这支持所选工况下时长对扩散参数更敏感，不能据此认为潜\n热或气固边界不重要。"
+    },
+    {
+      "page": 21,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-21.png",
+      "sha256": "06915a10aaa492df6f676f09df75f585d86ac32e93a6546bf82cef51150d13a3",
+      "textChars": 933,
+      "start": "21\n重曲线，就无法用观测残差评价预测准确性；4 h 之后没有环境记录，就必须依赖长期\n工况假设；没有药材等温线，就无法从空气指标唯一确定材料平衡状态。此外，半径\n观测只约束表面，不能单独证明内部同比收缩或轴向长度恒定。"
+    },
+    {
+      "page": 22,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-22.png",
+      "sha256": "dc37b6886c6b33056f93d13566d463fd4bf05008f27ef1a5e820ffcefb4d9d70",
+      "textChars": 691,
+      "start": "22\n8 参考文献\n[1] 王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学\n报,2024,40(4):1-15.\n[2] 王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J"
+    },
+    {
+      "page": 23,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-23.png",
+      "sha256": "60c5854c4c240a1eda9fc9befbcc544513491e1e063880e1220861ba2185489f",
+      "textChars": 668,
+      "start": "23\n附录\n本附录依次给出物理推导、数值算法、计算过程、完整生产源码和采纳的检验程\n序。文件清单用于明确复现材料的组成；最终支撑压缩包需按相同版本重新组织与验\n收，不能仅凭此表认定旧压缩包可独立运行。\n表A1 支撑材料文"
+    },
+    {
+      "page": 24,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-24.png",
+      "sha256": "24e915e6e21a4910493d7d1eeba60e2e67ad484f452080109ea5962909577961",
+      "textChars": 859,
+      "start": "24\nρd，水质量为 ρw，水相对骨架的质量通量为 jw。干基含水率定义为 C = ρw / ρd，单\n位为 kg 水/kg 干物质。它可以大于 1，不是质量百分数。初值 C 0=2.55 对应的湿基\n水分质量分数为\nw"
+    },
+    {
+      "page": 25,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-25.png",
+      "sha256": "073c31dd4826cde5b839257c041e29831728e2ef8133797020f8431b771bb8e1",
+      "textChars": 1045,
+      "start": "25\n分别使用的经验关系如下，扩散系数中温度一律以 K 代入，显示温度才换成摄氏度。\nQ 1: ρe f f =820 , c p=2600 , k =0.36 ,\nD1(C )=7×10\n−9exp(−0.89 /C "
+    },
+    {
+      "page": 26,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-26.png",
+      "sha256": "2a152b46d8ae51fa1a39e6c77fc34e043411e2006720719df09f8670d5562a90",
+      "textChars": 996,
+      "start": "26\n这一速度使表面骨架恰随测得半径移动，并令每个材料坐标保持不变。圆柱对称\n下 ∇·u=2 ˙R / R，因此干骨架连续性方程给出\nDt ρd =−2 ˙R\nR ρd , ρd(t )= ρd 0( R0\nR(t ) "
+    },
+    {
+      "page": 27,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-27.png",
+      "sha256": "b3317856fd436be5af5dbb888bebfe87199e8c1d0c921ea4b41e9622e1863595",
+      "textChars": 986,
+      "start": "27\n单位长度的控制体积为 2π R\n2wi。环体积分用节点值乘权重近似，未知量仍位于\n节点；不能将其无条件当成精确的环形平均值，也不能把点值解析解与控制体平均解\n析解混用。\n对于变热容量，控制体上的准确积分首先是 ∫a"
+    },
+    {
+      "page": 28,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-28.png",
+      "sha256": "b27b72a7af74410c5cacbfbc6cb11e53943da18338ccd0b5d3e131031dfde199",
+      "textChars": 1042,
+      "start": "28\n组取 b=3850。引入\nΦa(C )=C e\n−a /C + a Ei(−a / C )\n(43)\n利用指数积分的导数，分别有\nd\nd C (C e\n−a /C)=e\n−a /C(1+a /C ), d\nd C "
+    },
+    {
+      "page": 29,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-29.png",
+      "sha256": "6c65b299440d729a57dad73dc03ccc81f19f003c9fe64d6942cf544ef9eaf574",
+      "textChars": 1055,
+      "start": "29\n(−γi k H , γi\n∂k H\n∂k i\nk i\n′ ΔT , γi k H , γi\n∂k H\n∂k i +1\nk i +1\n′\nΔT )\n(49)\n水通量记为 g\nC =Gi ΔΦ，其中 Gi=γi D0"
+    },
+    {
+      "page": 30,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-30.png",
+      "sha256": "f1a7ee9cf9c132ba5cd0223fa6c34ee2c0a5ce8bb41ea24993c953820b0aabf2",
+      "textChars": 1065,
+      "start": "30\nB.4 质量及有效热通量的整体检验\n将水方程乘 2 wi 求和，所有内部面相消，仅剩表面通量，得到\nd\nd t (2∑i =0\nN wiC i)=−2 β\nR (C N −C e q), 2∑i =0\nN wiC "
+    },
+    {
+      "page": 31,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-31.png",
+      "sha256": "71a0a4ee2bb47ecec5ed21a48f4040740205462d7f0ee59c19c384077bf79432",
+      "textChars": 1116,
+      "start": "31\n插值基函数导数给出，变阶或步长调整时则需同步变换历史差分量。本文使用库内经\n过实现的历史更新、误差估计和步长控制，不自行把固定二阶系数套在任意不等时间\n间隔上。Newton 线性化失败或误差估计过大时，求解器会重试"
+    },
+    {
+      "page": 32,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-32.png",
+      "sha256": "e5b849a5b0fb4ce363034785ffe2bf6faa5a437ed6c4cdf224c6f21c23367c1f",
+      "textChars": 1105,
+      "start": "32\n在连续数学意义上，严格达标集合可能是一个开时间区间，其下确界是含水率恰\n等于阈值的临界时刻，并不一定存在“最早的严格小于时刻”。所以本文将连续根与\n离散报告网格上的可行时刻分开记录。有限时间搜索未触发事件时，应报告"
+    },
+    {
+      "page": 33,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-33.png",
+      "sha256": "ec35939a38f154ccfc598b9f49c480e13b86e135e8396bd11683f487c8560123",
+      "textChars": 1068,
+      "start": "33\nbn= ∫0\n1 x J 0( μn x) d x\n∫0\n1 x J 0( μn x)\n2 d x\n=\n2 J 1( μn)\nμn[ J 0( μn)\n2+ J 1( μn)\n2]\n(67)\n将温度差展开并对各模态"
+    },
+    {
+      "page": 34,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-34.png",
+      "sha256": "b0d39e90bd2c50834d9c9cfcbb6a40c4bd66aa330fc2bb9beba0a8250621052b",
+      "textChars": 842,
+      "start": "34\nC.2 数值方案的保留与舍弃\n最初按粗网格事件与少量场值评价，后来发现临界时间比局部含水率更早趋于稳\n定，因此增加全整数秒及21 个物理半径的检查，重点覆盖第一秒边界层和移动表面附\n近。这是评价覆盖的明确扩展，不能"
+    },
+    {
+      "page": 35,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-35.png",
+      "sha256": "d9d3822e4dab5da40db4aa99d74434cb210205260f2f98115283ac4d25fb0204",
+      "textChars": 1135,
+      "start": "35\nKirchhoff 格式的作用是先积分浓度方向上的非线性扩散因子，再取相邻节点势差；\n面温度仍为数值近似，不能称整个通量无离散误差。其被选用的理由是推导、常系数\n极限和网格证据一致支持，而不是计算得到的干燥时长更短"
+    },
+    {
+      "page": 36,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-36.png",
+      "sha256": "f1b4c854f1d470d8de89ca69f512f183046541f805d13c90847ce8bf578b23c0",
+      "textChars": 937,
+      "start": "36\n入，原精度数据另存压缩CSV；温度表输出°C，长时程表输出h，所有显示值按四位\n小数格式保存，计算过程不提前舍入。随后完整回读四份工作簿，并将正文表格、半\n径身份、空白域和独立Run 查询交叉核对。历史正式验证覆盖"
+    },
+    {
+      "page": 37,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-37.png",
+      "sha256": "02e88828c0cf1d1e0a7133b978080c4705efd8017d901b81357b4dbfd3fdbbfa",
+      "textChars": 426,
+      "start": "37\n编号\n文件\n作用\n行数\nD.4\nq3_model.py\n全域阈值、四位小时\n上取与严格可行复核\n27\nD.5\nq4_model.py\n问题四附录4 物性与收\n缩开关入口\n8\nD.6\ndrying_core.py\n读"
+    },
+    {
+      "page": 38,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-38.png",
+      "sha256": "26bd82bd8e5a792f4498cdf68683d3437e205f2a41c04992bdee252d22464636",
+      "textChars": 2200,
+      "start": "38\nD.1 run_modeling.py\n总入口、实际进程监督、版本隔离与结果发布。源文件SHA256 ：\nd39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b88"
+    },
+    {
+      "page": 39,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-39.png",
+      "sha256": "9ade27b3981bc7b48b69a29e113a064374236f8a053560dc03775ba30b0be0e3",
+      "textChars": 3101,
+      "start": "39\n    paths += list((ROOT / 'problem_files/CUMCM2026Problems/A 题').rglob('*.xlsx'))\n    return [provenance.fi"
+    },
+    {
+      "page": 40,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-40.png",
+      "sha256": "392a5425e9de0ce03e93cd65216fc2923876da2009021370896eb1d397744d0c",
+      "textChars": 3627,
+      "start": "40\n        'execution_provenance': {'source_code_path': source['path'], 'source_code_sha256': \nsource['sha256'"
+    },
+    {
+      "page": 41,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-41.png",
+      "sha256": "c9da3b33c4e995da28a8340e1141cf1bbe05dbd3ad3c427655b1ed711855faf8",
+      "textChars": 3894,
+      "start": "41\n                summary['completion'] = completion(run)\n            times = np.unique(np.array([0., min(180"
+    },
+    {
+      "page": 42,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-42.png",
+      "sha256": "bc262ab2abf57d025bf5377ea3853380b3d123d069b019647ec73718d29a068e",
+      "textChars": 3941,
+      "start": "42\n    if args.review:\n        provenance.write_json(directory / 'review_result.json', {\n            'status':"
+    },
+    {
+      "page": 43,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-43.png",
+      "sha256": "3cb06e16d7d480c79efe845800f7c5137832bb6c496a52b2ca476c9b409f82a3",
+      "textChars": 3720,
+      "start": "43\n        published = directory / 'published_contracts'\n        for name, content in contracts.items():\n     "
+    },
+    {
+      "page": 44,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-44.png",
+      "sha256": "1a5eb74e3584afdf0413a52308f3e5c13c868ee7f164133c07b917d416cb36af",
+      "textChars": 3916,
+      "start": "44\n        raise RuntimeError('Run with the competition workspace as cwd')\n    if not args.version or any(ch n"
+    },
+    {
+      "page": 45,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-45.png",
+      "sha256": "2e98a0fb10df34025308f51abdbbef2efb282ee610b984f115787744adeeee21",
+      "textChars": 2557,
+      "start": "45\n'single_process_VS_review'})\n            worker(args, directory, start)\n            assert_dependencies(sta"
+    },
+    {
+      "page": 46,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-46.png",
+      "sha256": "94962e3d31d1a3901cd6dcb801cb060ddc9e60d2052fb0ef1c0b3129cf235f6a",
+      "textChars": 458,
+      "start": "46\nD.2 q1_model.py\n问\n题\n一\n正\n式\n参\n数\n入\n口\n。\n源\n文\n件\nSHA256\n：\n58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84"
+    },
+    {
+      "page": 47,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-47.png",
+      "sha256": "174d0e4da98197526f4c96a4c2add3d149dfc5be38ef769b223e68dc8b8c0478",
+      "textChars": 478,
+      "start": "47\nD.3 q2_model.py\n问\n题\n二\n/\n三\n共\n用\n轨\n迹\n参\n数\n入\n口\n。\n源\n文\n件\nSHA256\n：\n4ceb89001d2e99270e117d124394213adab1ba678a85395e"
+    },
+    {
+      "page": 48,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-48.png",
+      "sha256": "97f668b78a42e2167b18f461f89f7d4df27fef703545a7a27b181f0c4acba4b5",
+      "textChars": 1401,
+      "start": "48\nD.4 q3_model.py\n全域阈值、四位小时上取与严格可行复核。源文件SHA256 ：\n43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9"
+    },
+    {
+      "page": 49,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-49.png",
+      "sha256": "6f9e5c2133413a9273dee69c7640ac6a7ca9414cd8bf9985e13345c386b896ca",
+      "textChars": 491,
+      "start": "49\nD.5 q4_model.py\n问题四附录\n4\n物性与收缩开关入口。源文件\nSHA256 ：\nd331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7"
+    },
+    {
+      "page": 50,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-50.png",
+      "sha256": "c527fecfe1170b406900f779b4ef38ddc937829844078f29da1392724d00cb42",
+      "textChars": 2230,
+      "start": "50\nD.6 drying_core.py\n读取输入、有限体积、水热物性、通量、ODE 事件和稠密轨迹查询。源文件\nSHA256：4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e"
+    },
+    {
+      "page": 51,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-51.png",
+      "sha256": "a8b657782f22f9ca8376e6f3349979cc487a306dde31065a1aceab6211cb210a",
+      "textChars": 3048,
+      "start": "51\n    equilibrium_scale: float = 1.0\n    surface_latent_fraction: float = 0.0\n    latent_J_kg: float = 2.4e6\n"
+    },
+    {
+      "page": 52,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-52.png",
+      "sha256": "5e50cd2a542f5688e24debc4f1803dfaf5acae48eb3648d05b46b98d6fd8e6b9",
+      "textChars": 3308,
+      "start": "52\n            D = 4.2e-4 * np.exp(-.30 / positive_C - 3850 / T)\n        else:\n            raise ValueError(s."
+    },
+    {
+      "page": 53,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-53.png",
+      "sha256": "ae794e6d6a7f9ba75dd98c880bc5875abe8cfd0e3ebd9372cd8eb21e3f1bea97",
+      "textChars": 3150,
+      "start": "53\n        return state\nclass Run:\n    def __init__(self, model, pieces, elapsed, event_s, cache=None):\n      "
+    },
+    {
+      "page": 54,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-54.png",
+      "sha256": "7454a70c741731304817d279aeb098bdc33d630eb1d130a9543b7cab702beddb",
+      "textChars": 3659,
+      "start": "54\n                minimum_D = min(minimum_D,D.min())\n                maximum_D = max(maximum_D,D.max())\n     "
+    },
+    {
+      "page": 55,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-55.png",
+      "sha256": "a999902e17733d475ca9466d68a918563ee6cc156c01a78d9e3242962801c3db",
+      "textChars": 3310,
+      "start": "55\n    pieces, initial, event_s = [], model.initial(), None\n    # A separate segment at 4 h makes the modellin"
+    },
+    {
+      "page": 56,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-56.png",
+      "sha256": "c81db24d9ed4670f7cdde1119fb8bea73bfa8467bde6811bbd7d2c60d42466bc",
+      "textChars": 1366,
+      "start": "56\n                [t for t in [100., 300., 600., 900., 1200., 1500., 1800., 3600., 5400., 7200., \n9000., 1080"
+    },
+    {
+      "page": 57,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-57.png",
+      "sha256": "0cd4ef535464f4b9f8b49211144d1ef9938a21718101afa5212dba42601b1ea6",
+      "textChars": 2165,
+      "start": "57\nD.7 analytic_jacobian.py\n全部状态交叉导数与解析稀疏Jacobian 。源文件SHA256 ：\nd7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f2"
+    },
+    {
+      "page": 58,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-58.png",
+      "sha256": "fe45380533c3f35b1961c0659e15c8d12d069f0bd43fd2832fb37e76be5bb16a",
+      "textChars": 2566,
+      "start": "58\n    if s.question == 'Q1':\n        a, d0, temp_constant = .89, 7e-9, 0.\n        rho_c, cp_c, k_c = np.zeros"
+    },
+    {
+      "page": 59,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-59.png",
+      "sha256": "38c500cc7c6e283051aac4085366fb43090d49791eb09dc37ec74f78c7888b7e",
+      "textChars": 3013,
+      "start": "59\n            f_prime_mid = f_mid * a / mean_c[small]**2\n            primitive_delta[small] = f_mid * delta_c"
+    },
+    {
+      "page": 60,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-60.png",
+      "sha256": "cd47b5838a84aeaee384a3af7386c5cfece11f79c734976d2e7c1de7b73231cd",
+      "textChars": 4131,
+      "start": "60\n                cases.append(Settings(question=question, intervals=8, face_scheme=scheme,\n                 "
+    },
+    {
+      "page": 61,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-61.png",
+      "sha256": "be450017dbca8640b9a502e6224d71b43f76a4a077e844026125a42abbdb300b",
+      "textChars": 4261,
+      "start": "61\n                      'matrix_nnz':matrix.nnz, 'directional_checks':directional,\n                      'pas"
+    },
+    {
+      "page": 62,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-62.png",
+      "sha256": "31e93d395076d7c1a55a94c89927d151505cbfdeaa741a803b09a3159f753f23",
+      "textChars": 953,
+      "start": "62\n    brief['max_all_steps_component_tolerance_ratio'] = max(\n        step['max_component_tolerance_ratio'] f"
+    },
+    {
+      "page": 63,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-63.png",
+      "sha256": "9f8ebf2b729b3c80fe8bb0fc18845ce251fe29c5cbce9a32c093750d7fa9c377",
+      "textChars": 2451,
+      "start": "63\nD.8 disk_dense.py\nBDF 原精度多项式磁盘存储、分段边界与生命周期。源文件SHA256 ：\n2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6"
+    },
+    {
+      "page": 64,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-64.png",
+      "sha256": "3a47267c371fbd53ea1422d7186cfb89a0f5c21e5c79b0858a8f2355f670356d",
+      "textChars": 2529,
+      "start": "64\n    def store_accepted(self, values):\n        path = self.directory/f'accepted_{len(self.accepted_arrays):0"
+    },
+    {
+      "page": 65,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-65.png",
+      "sha256": "68fa7f05104149cbd718503b553767f26e932f5622112f4fd2892b6725693b1b",
+      "textChars": 2028,
+      "start": "65\nD.9 export_outputs.py\n模板识别、完整Excel/未舍入CSV 导出、回读和活轨迹采样核验。源文件\nSHA256：7111606498554e18e2e007a58e0d5161b5fd209c"
+    },
+    {
+      "page": 66,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-66.png",
+      "sha256": "d3cf2b27fa2189b219c58c6ffb84d6a3f87b9886250f9eeec169a16d8e0d8b47",
+      "textChars": 2520,
+      "start": "66\n    result={'path':path.relative_to(ROOT).as_posix(),'absolute_path':str(path),\n            'bytes':path.st"
+    },
+    {
+      "page": 67,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-67.png",
+      "sha256": "e78ec7db87942f1703fc158cb77e8b2f376fb93655b7fa1dcdd1fcfdd1a5f4cd",
+      "textChars": 2512,
+      "start": "67\n    for rec in input_records:\n        if _sha(ROOT/rec['path'])!=rec['sha256']:\n            raise RuntimeEr"
+    },
+    {
+      "page": 68,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-68.png",
+      "sha256": "add76342a4b6000d2ac6c5dc93133e6306bd8c9249d83477e2ed23149b16d3d3",
+      "textChars": 2451,
+      "start": "68\ndef _sheet(wb,name,header):\n    ws=wb.create_sheet(name)\n    ws.freeze_panes='B2'\n    ws.sheet_view.showGri"
+    },
+    {
+      "page": 69,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-69.png",
+      "sha256": "ebb3a5e66490798a5c9c7812775b2ee0494f823d2d4160d6519ebdf81e98a940",
+      "textChars": 3418,
+      "start": "69\n            w=csv.writer(fh);w.writerow(headers)\n            for i,t in enumerate(ts):\n                row="
+    },
+    {
+      "page": 70,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-70.png",
+      "sha256": "e37bc7079f16836a2611e5fba81bc3d5fe3be28734997d1cc10971bea101ef63",
+      "textChars": 3688,
+      "start": "70\n        errors.append('Missing, duplicate, or unexpected paper CSV artifact')\n    files=[];total_cells=0\n  "
+    },
+    {
+      "page": 71,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-71.png",
+      "sha256": "9a1182c77083ed68c324ba77260e994d74c565cc4fabfe16bb24b2e5ad4ab7a2",
+      "textChars": 3679,
+      "start": "71\n                    continue\n                value=float(expected[i,j])\n                if not math.isfinit"
+    },
+    {
+      "page": 72,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-72.png",
+      "sha256": "58d3bd8401b3cea1f8e320a7954f9d52489fcfdfcccbac4eae49140e9d4db0b2",
+      "textChars": 3774,
+      "start": "72\n        raise ValueError('Required full time grid exceeds the XLSX worksheet row limit; do not \ntruncate')\n"
+    },
+    {
+      "page": 73,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-73.png",
+      "sha256": "d7bee41e57a6dc3747ddd2b05691f5fbba433f8610604e73c4212cf88a00f183",
+      "textChars": 3459,
+      "start": "73\n        'workbook':book_record,'unrounded_archive':archive_record,'paper_tables':paper_records,\n        'pa"
+    },
+    {
+      "page": 74,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-74.png",
+      "sha256": "dc195461e7634b2b31019b77dd7c9f0651f3afbcda2e06947b3b13bc500375fc",
+      "textChars": 3864,
+      "start": "74\n    for item in paths:\n        started=time.perf_counter()\n        manifest_path=_manifest_path(item).resol"
+    },
+    {
+      "page": 75,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-75.png",
+      "sha256": "a6d13da1c2bf15f4cb175450a10191dbbb67943a0013458881ae0a0fc780be76",
+      "textChars": 3849,
+      "start": "75\n                            raise RuntimeError('Export validation failed: '+'; '.join(errors[:30]))\n       "
+    },
+    {
+      "page": 76,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-76.png",
+      "sha256": "6fcc352ab2b98cb5316e1b945660a55e35243f2b523077d4be4e953d68ad7b96",
+      "textChars": 3974,
+      "start": "76\n    directory.mkdir(parents=True,exist_ok=True)\n    summaries=[];negative_checks=[]\n    for qid in ['Q1','Q"
+    },
+    {
+      "page": 77,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-77.png",
+      "sha256": "abc0e0d2691aea463265409df120b3798b00cd07f2eba7bfed605d89fce45be4",
+      "textChars": 2300,
+      "start": "77\n            'negative_test_scope':'Copied paper CSVs only; six deliberate defects must be rejected \neven af"
+    },
+    {
+      "page": 78,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-78.png",
+      "sha256": "7556f3d674ec919085ad29c2136ff5491ff5570c59dbfa0d58b8c8db1c77792d",
+      "textChars": 2152,
+      "start": "78\nD.10 publication_plots.py\n正式入口直接调用的主题图生成及图源指纹。源文件SHA256 ：\na58b5bb7300aef7f334e28cb0be070971d1681b516e537b84"
+    },
+    {
+      "page": 79,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-79.png",
+      "sha256": "867c5d209e81e988ae3515766e972fad9f08c4c95cc504506908d735c07e91d3",
+      "textChars": 2989,
+      "start": "79\n    if not p.is_relative_to(ROOT) or p.is_relative_to(ROOT/'problem_files'):\n        raise ValueError('Writ"
+    },
+    {
+      "page": 80,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-80.png",
+      "sha256": "4921356f4b16ae0e89ae41422c5c9cfccc66a4145f320c12d6ef88428901c6e6",
+      "textChars": 2983,
+      "start": "80\ndef _environment_note(run):\n    s=run.model.settings\n    if s.boundary_extension=='nominal':\n        return"
+    },
+    {
+      "page": 81,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-81.png",
+      "sha256": "cda1a8c15e7304ddabd9078079deb6d96527082a8a5071abb3340b1d0158c4f1",
+      "textChars": 3952,
+      "start": "81\n    mean=2*run.model.w@state[1:-1:2]\n    max_C=np.max(state[1:-1:2],axis=0)\n    del state\n    t_h=ts/3600;e"
+    },
+    {
+      "page": 82,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-82.png",
+      "sha256": "c6aa13675d3b04449fd1d045a2d49c75119566604390a61d9d464368cccc2af6",
+      "textChars": 3448,
+      "start": "82\ndef _saved_summary(path):\n    path=Path(path).resolve()\n    content=path.read_bytes()\n    rec=_record(path)"
+    },
+    {
+      "page": 83,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-83.png",
+      "sha256": "e78b66515b735fedd7115d727c4483b689dab12d782c0878d2a89af746b3b122",
+      "textChars": 3855,
+      "start": "83\n    if not groups:raise ValueError('At least one finished convergence report is required')\n    labels={'Q1'"
+    },
+    {
+      "page": 84,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-84.png",
+      "sha256": "db8dce77effa4d901e9067ebb55cab0ea8837379eb5579a3d716f4385d59b184",
+      "textChars": 3412,
+      "start": "84\nh');ax.grid(axis='x',alpha=.18)\n        for y,v,d in zip(pos,values,delta):ax.text(v+values.max()*.015,y,f'"
+    },
+    {
+      "page": 85,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-85.png",
+      "sha256": "3ca8c6e4fb6363e7b21d690d803f30cadec9bb93f4b27c93587bc4c6504baaf8",
+      "textChars": 1940,
+      "start": "85\nD.11 production_provenance.py\n源文件/输入指纹、运行元数据、监督进程和发布事务。源文件SHA256：\n0370979d780ff59487d1616d7c0ff6041c642624d"
+    },
+    {
+      "page": 86,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-86.png",
+      "sha256": "45d002a37914f5f5e64c14a15cb361a107d508e592723656916dd65a06f7289e",
+      "textChars": 2267,
+      "start": "86\ndef assert_records(records, root=ROOT):\n    for expected in records:\n        path = within(root, Path(root)"
+    },
+    {
+      "page": 87,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-87.png",
+      "sha256": "f53631be7ff2841cc25eab93888e266b19750a9715ced42f40a7fd57cd46ab27",
+      "textChars": 3233,
+      "start": "87\n    cache = {}\n    for metric in metrics:\n        path = within(root, Path(root) / metric['evidence_path'])"
+    },
+    {
+      "page": 88,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-88.png",
+      "sha256": "3c63cd6fedc15af2ddc06d18d458fc488853dc929774347c0eb9733fe6e790d2",
+      "textChars": 3162,
+      "start": "88\n        'prior_index_retained_in_publication_backup': True}\n@contextmanager\ndef publication_lock(root, run_"
+    },
+    {
+      "page": 89,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-89.png",
+      "sha256": "1e8ed00bc8320411276a9ac69351242bdd771341f0b534c4df7e8379ba20620b",
+      "textChars": 3227,
+      "start": "89\n            # Restore the manifest after the other files, so no old PASS is\n            # visible while its"
+    },
+    {
+      "page": 90,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-90.png",
+      "sha256": "97901fdcbf31669129dfcc40d5e4b32f31e5d71a72a902804d6db27cc22e50c8",
+      "textChars": 3337,
+      "start": "90\n    if stream_error is not None:\n        raise RuntimeError('Child exited, but stdout capture failed') from"
+    },
+    {
+      "page": 91,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-91.png",
+      "sha256": "cb597e772e26da47349c76235274fa0d362ccdf9557f36d32d5928ba664ba90f",
+      "textChars": 3162,
+      "start": "91\n        return mappings[name] if name in mappings else original_import(name, *args, **kwargs)\n    args = Si"
+    },
+    {
+      "page": 92,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-92.png",
+      "sha256": "33f5a64b2bd8c383e26b7ac009ffaba8df6ba7b88e1aed159918d5c23c8ab4d6",
+      "textChars": 3546,
+      "start": "92\n    except ValueError:\n        checks.append('metric_mismatch_rejected')\n    else:\n        raise AssertionE"
+    },
+    {
+      "page": 93,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-93.png",
+      "sha256": "230dc33c68723ce50d7be1a76046ec53fb48539a34550aaa981a96f25ece8d8e",
+      "textChars": 441,
+      "start": "93\nif __name__ == '__main__':\n    if sys.argv[1:] != ['--selfcheck']:\n        raise SystemExit('Use --selfchec"
+    },
+    {
+      "page": 94,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-94.png",
+      "sha256": "12bd458215240c7ac26390ba6c52cfacb5146a8f3c5ad8593b2f168d3faa1608",
+      "textChars": 2339,
+      "start": "94\nE.1 validate_bessel.py：Robin–Bessel 解析热场、级数截断自检\n文件：paper_output/code/modeling/validate_bessel.py；共345 行。采用范"
+    },
+    {
+      "page": 95,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-95.png",
+      "sha256": "a631e86332601e2c83731df30c87bb6b8baff62c9d16a0b3009350f02ba26721",
+      "textChars": 2599,
+      "start": "95\n    a = 2*j1(roots) / (roots*(j0(roots)**2+j1(roots)**2))\n    roots.setflags(write=False)\n    a.setflags(wr"
+    },
+    {
+      "page": 96,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-96.png",
+      "sha256": "fcd3227a3d8f6ac4d4abb99fcb74ae806abf639ba4a745cc2b9c8a57d74e92cb",
+      "textChars": 3258,
+      "start": "96\n            raise ValueError(\"radii must lie inside the cylinder\")\n        return j0(mu[:, None]*x[None, :]"
+    },
+    {
+      "page": 97,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-97.png",
+      "sha256": "1c985bd07d53950e5b206a059ddcdb5bf4f504e7fc95683698fc644f2557cecc",
+      "textChars": 2937,
+      "start": "97\n    initial_moisture: float = 2.55, n_terms: int = 240,\n    cell_edges_m: ArrayLike | None = None,\n) -> Flo"
+    },
+    {
+      "page": 98,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-98.png",
+      "sha256": "d2ffebfabfae067c3355be8ede12c384a6a8d40db5b1ed7da7dcbe8edc5a9d50",
+      "textChars": 3466,
+      "start": "98\n    ts=np.array([0.,1.,10.,100.,300.,600.,900.,1200.,1500.,1800.])\n    rs=np.linspace(0,.02,41)\n    t120=be"
+    },
+    {
+      "page": 99,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-99.png",
+      "sha256": "9a4f8be49c42776f1f0ef3e5f029d0bd5307310a547e7806c4a7100225edf917",
+      "textChars": 1828,
+      "start": "99\n    ]:\n        path=out/filename\n        with path.open(\"w\",encoding=\"utf-8\",newline=\"\") as fh:\n           "
+    },
+    {
+      "page": 100,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-100.png",
+      "sha256": "03dbcda9cb4a4649bad3c8e0d01e4e7964312a75256eef56a9d5e65095f9e4f7",
+      "textChars": 1802,
+      "start": "100\nE.2 compare_analytic.py：早期解析对照及常D 特例筛选入口\n文件：paper_output/code/modeling/compare_analytic.py；共242 行。采用范围：数\n值"
+    },
+    {
+      "page": 101,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-101.png",
+      "sha256": "c7df323b9d75b5a3a12b4e9ec4b9e44db2e06fd49b8e34cd024168578e893593",
+      "textChars": 3356,
+      "start": "101\n        'mean_signed_error':float(np.mean(err)),\n        'max_error_time_s':float(times[idx[0]]),\n        "
+    },
+    {
+      "page": 102,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-102.png",
+      "sha256": "9e0c7d08d9dfa6bc2e4bf176bd7e0ebd2169f92c2edca5ef039e13453ff5932e",
+      "textChars": 4123,
+      "start": "102\n        case={'case_id':name,'settings':asdict(setting),'diagnostics':run.diagnostics(),\n              'co"
+    },
+    {
+      "page": 103,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-103.png",
+      "sha256": "ea3ad5cf75044e7dc1b84f2bfe0cc392860ae6ad4591fa7373a6e1c670bfbc54",
+      "textChars": 4059,
+      "start": "103\n    water=[c for c in case_results if c['case_id'] in ['frozen_D_N100','frozen_D_N400']]\n    refined_water"
+    },
+    {
+      "page": 104,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-104.png",
+      "sha256": "292bfa3f8a9cd94cd796a7d01005d962a61becca728ff2dfff749b3636b39115",
+      "textChars": 1454,
+      "start": "104\nF(C_left))/dx, with no thermal factor in the differenced potential.',\n            'Q1_temperature_factor':"
+    },
+    {
+      "page": 105,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-105.png",
+      "sha256": "b98bc1216a3d57ddb6cb408d59bc5c3eaaa6c336dc5ade32930d8f4f1a50695a",
+      "textChars": 2624,
+      "start": "105\nE.3 verify_convergence.py：当前投影/场差归约模块\n文件：paper_output/code/modeling/verify_convergence.py；共127 行。采用范围：\nfin"
+    },
+    {
+      "page": 106,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-106.png",
+      "sha256": "00c803491a37d380e134ed9c4953272db9544d69d44ce29188bf6cf0eae3064b",
+      "textChars": 3556,
+      "start": "106\n    parser = argparse.ArgumentParser()\n    parser.add_argument('--question', choices=['Q1','Q23','Q4'], re"
+    },
+    {
+      "page": 107,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-107.png",
+      "sha256": "613921a8cb385023c0a74c5cf47528137602a0958c7fc1a739bc2d57c0cf79c4",
+      "textChars": 422,
+      "start": "107\n            if run is not None:\n                run.close()\n        del run\n        gc.collect()\n    repor"
+    },
+    {
+      "page": 108,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-108.png",
+      "sha256": "2bfd8bf9aaaf39489d72f381e9c5f5672ca35e46b2d88229d977dd53b23b967d",
+      "textChars": 2407,
+      "start": "108\nE.4 verify_time_accuracy.py：同N 容差和步长收紧的监督运行入口\n文件：paper_output/code/modeling/verify_time_accuracy.py；共251 行"
+    },
+    {
+      "page": 109,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-109.png",
+      "sha256": "1b88f8f910fc53fc5ad7045ef0f3ad3f0f8ca89dd9b9fb63912eb60429189aa0",
+      "textChars": 3562,
+      "start": "109\n    from dataclasses import asdict, replace\n    core = importlib.import_module('drying_core')\n    checker "
+    },
+    {
+      "page": 110,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-110.png",
+      "sha256": "7a2f15a1ce2471e01600445f5060e26d14562c38d358c05bbc5e4bba7264f22b",
+      "textChars": 3668,
+      "start": "110\n                                 'Run_closed': True})\n    provenance.write_json(case / 'summary.json', sum"
+    },
+    {
+      "page": 111,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-111.png",
+      "sha256": "1549750261481ef2b9e8a0c0fcbd92a5a7cbbd6f34dcd6c491d86d111c89d60f",
+      "textChars": 3769,
+      "start": "111\n    args = parser.parse_args()\n    os.environ['OPENBLAS_NUM_THREADS'] = '1'\n    os.environ['OMP_NUM_THREAD"
+    },
+    {
+      "page": 112,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-112.png",
+      "sha256": "384c8d9b8c599835613554d2cba047e75a81badc05c29a300fb983cbcede2f78",
+      "textChars": 1213,
+      "start": "112\n            'scope': 'Fixed-N temporal sensitivity only; small grids are functional checks, not \nfinal acc"
+    },
+    {
+      "page": 113,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-113.png",
+      "sha256": "ff901f8061a9c434f328fa4850d62b3bac6d973699f893dd390e3e711342f5d3",
+      "textChars": 3185,
+      "start": "113\nE.5 verify_dense_storage.py：内存/磁盘稠密输出等价性入口\n文件：paper_output/code/modeling/verify_dense_storage.py；共69 行。采用范"
+    },
+    {
+      "page": 114,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-114.png",
+      "sha256": "3c6e06eb6dd874b6edfb403da38c3579d23516734b30b84ab5bb7228bfbe81d1",
+      "textChars": 829,
+      "start": "114\n            memory.close();disk.close()\n        record['private_cache_removed_after_close'] = not cache_di"
+    },
+    {
+      "page": 115,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-115.png",
+      "sha256": "81a78f14df9ded2063917c3971c8dc1fd8334de183902caa300e157bd2bd9a7e",
+      "textChars": 2855,
+      "start": "115\nE.6 run_experiments.py：Kirchhoff 网格与同物性收缩对照批次入口\n文件：paper_output/code/modeling/run_experiments.py；共74 行。采用范"
+    },
+    {
+      "page": 116,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-116.png",
+      "sha256": "34a72726d718e2de3f68da485d4008cefa8677d922d44ca9d052b57e82c00a37",
+      "textChars": 1392,
+      "start": "116\n        trial_id = f'{args.batch}_{name}_N{args.n}{args.tag}'\n        folder = out/trial_id\n        if (fo"
+    },
+    {
+      "page": 117,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-117.png",
+      "sha256": "399d35691f4479d977ef25631188a331a877a6ee87f7aa6aa82d53e1cec617e1",
+      "textChars": 2030,
+      "start": "117\nE.7 crossvalidate_solver.py：BDF/Radau 与面格式对照入口\n文件：paper_output/code/verification/crossvalidate_solver.py；共"
+    },
+    {
+      "page": 118,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-118.png",
+      "sha256": "c297a01f3354c9a1e43e29c447c9a441685672edd9117e2a4260ed88f7948b79",
+      "textChars": 2791,
+      "start": "118\n    completion = q3_model.completion\nexcept Exception:  # pragma: no cover - fallback keeps the block self"
+    },
+    {
+      "page": 119,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-119.png",
+      "sha256": "f951324eed7f680964a97097577007dc88a2ab4fe16f88f33477446af40c90e9",
+      "textChars": 2935,
+      "start": "119\n                                   dense_storage=\"disk\" if method == \"BDF\" else \"memory\")\n                "
+    },
+    {
+      "page": 120,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-120.png",
+      "sha256": "a0f5a6d468eb73a9c8ab24a742cf31a8373b913e8a786b8ec0eee8d322b5f64c",
+      "textChars": 829,
+      "start": "120\n                continue\n            record = runCase(name, settings)\n            records.append(record)\n "
+    },
+    {
+      "page": 121,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-121.png",
+      "sha256": "145c49de1ee5b5132c20376160fd0771c0c88eaced018c1f77c4a6c4419850ad",
+      "textChars": 2317,
+      "start": "121\nE.8 method_comparison.py：Kirchhoff 与另一守恒面格式比较\n文件：paper_output/code/verification/method_comparison.py；共197 "
+    },
+    {
+      "page": 122,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-122.png",
+      "sha256": "42817a4c12daa39e10c673ffeed3256c8603e66c11a6c15560bea558dd27254d",
+      "textChars": 3047,
+      "start": "122\nFROZEN_BENCHMARK_D = 4.937655094173937e-09      # from results/bessel_validation\nD_REFERENCE = 4.938e-09\nE"
+    },
+    {
+      "page": 123,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-123.png",
+      "sha256": "6adf3e089e97ae3957d46e4288f713ae314caf7efe660e1485d0c9d31e2d8dcb",
+      "textChars": 3444,
+      "start": "123\n                           \"' but the run used '\" + record[\"fluxPathUsed\"] + \"'\")\n    return record\ndef co"
+    },
+    {
+      "page": 124,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-124.png",
+      "sha256": "a5028402e95311d8544a7552a5dc161c91638e21448bceb1236145fc3892ebae",
+      "textChars": 696,
+      "start": "124\n                     \"because Phi'(C) = exp(-a/C) makes the primitive difference proportional to \"\n       "
+    },
+    {
+      "page": 125,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-125.png",
+      "sha256": "10e2293302ff988bd891c67cfc5d799834b5e83ccf3f66f51f6bfe987c8bbd26",
+      "textChars": 2224,
+      "start": "125\nE.9 threshold_and_scaling_checks.py：N800 阈值二分及R 平方时标归约\n文件：paper_output/code/verification/threshold_and_sca"
+    },
+    {
+      "page": 126,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-126.png",
+      "sha256": "c7f17a9b9afc0aeed60b7966b42252abed99247d39be6541dc746e2c2bd31a73",
+      "textChars": 2917,
+      "start": "126\nimport numpy as np  # noqa: E402\nOUT = ROOT / \"paper_output\" / \"results\" / \"crossvalidation\" / \"threshold_"
+    },
+    {
+      "page": 127,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-127.png",
+      "sha256": "c7996b15b65ea04b6497e4da39ae108a1d0765f770ffff42570c73c35d72a042",
+      "textChars": 3130,
+      "start": "127\n            # max-location certificate and monotonicity of the profile\n            grid = np.linspace(0.0,"
+    },
+    {
+      "page": 128,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-128.png",
+      "sha256": "006db2be6797713efd4ce5df475cf9c6f3d91eb5b8bba191c0f41530958f4a55",
+      "textChars": 2930,
+      "start": "128\nE.10 energy_balance_check.py：有效热方程瞬时加权通量检验\n文件：paper_output/code/verification/energy_balance_check.py；共245 "
+    },
+    {
+      "page": 129,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-129.png",
+      "sha256": "e529ab6561323865ffa82845f6ed16040f7325e8043d17fd1677dbc3dc107c6b",
+      "textChars": 2727,
+      "start": "129\nimport pathlib\nimport sys\nimport time\nfrom dataclasses import replace\nfrom datetime import datetime, timez"
+    },
+    {
+      "page": 130,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-130.png",
+      "sha256": "e3cb507a444eea672698430fdefc46d793445d9432f3360bd85f76b863d75261",
+      "textChars": 3566,
+      "start": "130\n    try:\n        model = run.model\n        end = float(run.end_s)\n        times = np.linspace(0.0, end, sa"
+    },
+    {
+      "page": 131,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-131.png",
+      "sha256": "62393d90125f98902f54a818ab5cafd3d1290bf4de2996aa809b591ed6fd770e",
+      "textChars": 2972,
+      "start": "131\n            \"sampleTimesS\": times.tolist(),\n            \"cumulativeResidualsJPerM\": residuals.tolist(),\n  "
+    },
+    {
+      "page": 132,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-132.png",
+      "sha256": "5abf9df9330e1c47a10347d85b8e26f84893cf7828b130a3ddc1112f85101e24",
+      "textChars": 2594,
+      "start": "132\nE.11 sensitivity_analysis.py：修复后的D/k 单参数扫描入口\n文件：paper_output/code/verification/sensitivity_analysis.py；共29"
+    },
+    {
+      "page": 133,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-133.png",
+      "sha256": "fde95d0e6bf09442c19795e6046386045a57b24d36ddfa9643f3e816392933e9",
+      "textChars": 2759,
+      "start": "133\nsys.path.insert(0, str(ROOT / \"paper_output\" / \"code\" / \"modeling\"))\nimport numpy as np  # noqa: E402\nimpo"
+    },
+    {
+      "page": 134,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-134.png",
+      "sha256": "65cabe42734858fc49b31b502e04811d0f63959565ff639cd856851e4c190e48",
+      "textChars": 2447,
+      "start": "134\n                    face_scheme=\"kirchhoff\", jacobian_mode=\"finite_difference\",\n                    **kwar"
+    },
+    {
+      "page": 135,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-135.png",
+      "sha256": "d5b2ff2d70d6b8c6a897714a307014a84b0098ef9ada1e9e71f53389ba4cda31",
+      "textChars": 3256,
+      "start": "135\n        base = rng.choice(grid, size=d)\n        point = {name: float(base[i]) for i, name in enumerate(NAM"
+    },
+    {
+      "page": 136,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-136.png",
+      "sha256": "59d13d782e09c90ee6f3f373daf8304ebcb05fcd1a70bc3fcea25fd35bbd4628",
+      "textChars": 2149,
+      "start": "136\n            rows.append({\"question\": question, \"parameter\": parameter,\n                         \"value\": v"
+    },
+    {
+      "page": 137,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-137.png",
+      "sha256": "c5ad6bb7c60d3092d4ddfe1ea6b2f9f2ae8ae0b4addbd29495037fc0d4dafd5d",
+      "textChars": 2938,
+      "start": "137\nE.12 isotherm_activity_closure.py：经验边界阻力p 情景入口\n文件：paper_output/code/verification/isotherm_activity_closure"
+    },
+    {
+      "page": 138,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-138.png",
+      "sha256": "f5da98b6e29be150e5fcb64a4041b595d379009021dac274a9655ddc053288aa",
+      "textChars": 2551,
+      "start": "138\nimport json\nimport os\nimport pathlib\nimport sys\nimport time\nimport traceback\nfrom datetime import datetime"
+    },
+    {
+      "page": 139,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-139.png",
+      "sha256": "d3946595be85be626ba1c786e97c564570db2acd7501a31e8ffaefa02e5610cc",
+      "textChars": 2931,
+      "start": "139\n    safe = np.maximum(np.asarray(C, dtype=float), 1e-12)\n    z = (Cref / safe) ** (1.0 / p)\n    aw = 1.0 -"
+    },
+    {
+      "page": 140,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-140.png",
+      "sha256": "301f1ba44f4eb16ce50748ede80bc3a58671c32052809cec3e02908a2aae5c58",
+      "textChars": 3588,
+      "start": "140\n        #     g_surface = -beta R kEff (C_s - C_eq),   kEff = 1 for the baseline.\n        kEff = float(par"
+    },
+    {
+      "page": 141,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-141.png",
+      "sha256": "70e0c86b234033f0312ae727c2c80569d4d21d13bc5143b3bb834d874a3915ad",
+      "textChars": 3265,
+      "start": "141\n    The frozen driver integrates one extra second after the crossing as a\n    conservative reporting check"
+    },
+    {
+      "page": 142,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-142.png",
+      "sha256": "a861cb3cba83a2884d9dbcc3047e978ebeded762a9fc4ad5a4e57f06ce3437ab",
+      "textChars": 2969,
+      "start": "142\n    atol[:-1:2] = settings.atol_temperature\n    atol[1:-1:2] = settings.atol_moisture\n    atol[-1] = setti"
+    },
+    {
+      "page": 143,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-143.png",
+      "sha256": "ebd53db64396ecc5802e0e58645ea3e997cad280b1ba96084a5cd8ac50e8ed56",
+      "textChars": 3190,
+      "start": "143\n    \"\"\"Machine-precision checks of every algebraic claim made above.\"\"\"\n    checks = {}\n    chamber = cham"
+    },
+    {
+      "page": 144,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-144.png",
+      "sha256": "68dd675a73d3045b228a9eabc9eb8052a81a9fa1b995ff2991b410a9c1ee160f",
+      "textChars": 2811,
+      "start": "144\n    awRef = float(numeric[1]) if len(numeric) > 1 else AW_REF_DEFAULT\n    if \"--identity-only\" in sys.argv"
+    },
+    {
+      "page": 145,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-145.png",
+      "sha256": "8e83a7a5ecf8686ea4c5a5bb97c0b73cf1ba33f563a44afe286aa48a50225d02",
+      "textChars": 2726,
+      "start": "145\nE.13 verify_convergence_v1.py：Q1 空间检查的原驱动快照\n文件：paper_output/code/versions/verify_convergence_v1.py；共106 行。"
+    },
+    {
+      "page": 146,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-146.png",
+      "sha256": "e95472cf6e2e7b161acd84f06e81f241765ad562db8098e5f81eaaa18b5d19c5",
+      "textChars": 2840,
+      "start": "146\n    for n in args.grids:\n        print(f'START {args.tag} N={n}', flush=True)\n        with warnings.catch_"
+    },
+    {
+      "page": 147,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-147.png",
+      "sha256": "2be50cbd9636402881b693144b5c9e98b3c6697ed21bed5f7292561959780f0a",
+      "textChars": 2623,
+      "start": "147\nE.14 verify_convergence_v5.py：Q23/Q4 最终空间检查的原驱动快照\n文件：paper_output/code/versions/verify_convergence_v5.py；共"
+    },
+    {
+      "page": 148,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-148.png",
+      "sha256": "4795c4de9dfa662e2fd0554ebe73d1f5c15e49d458b3894cc651481b60d66ba8",
+      "textChars": 3392,
+      "start": "148\n            'convention':'Only finite values at common physical points are compared.'}\ndef main():\n    par"
+    },
+    {
+      "page": 149,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-149.png",
+      "sha256": "a6078739578e5cd351736dcb0d24b95800d416e8ad55055b6965be5871989bb6",
+      "textChars": 455,
+      "start": "149\n(out/'convergence_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encodin\ng='utf-8"
+    },
+    {
+      "page": 150,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-150.png",
+      "sha256": "55261bc8a1507ca72aa2b7a8a379c811fde4f21dfce9d2277cfaf7032ada7edf",
+      "textChars": 2280,
+      "start": "150\nE.15 drying_core_v2_kirchhoff.py：采用Kirchhoff 的早期实际核心快照\n文件：paper_output/code/versions/drying_core_v2_kirchh"
+    },
+    {
+      "page": 151,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-151.png",
+      "sha256": "52a09bb84076f2ff0b1d789972a965b0580b69859ad9af507292638627abd20d",
+      "textChars": 2980,
+      "start": "151\n    equilibrium_scale: float = 1.0\n    surface_latent_fraction: float = 0.0\n    latent_J_kg: float = 2.4e6"
+    },
+    {
+      "page": 152,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-152.png",
+      "sha256": "d017efd2bd0142b9a4858e8d1f50562419756902a4f5310c34fde76cd797d95e",
+      "textChars": 3198,
+      "start": "152\n        if s.constant_thermal:\n            rho, cp, k = np.full_like(C, 820.), np.full_like(C, 2600.), np."
+    },
+    {
+      "page": 153,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-153.png",
+      "sha256": "9bb9cad7f82e1074300e78e947dde950b840895138ebcee6e54953c49d71ab57",
+      "textChars": 3467,
+      "start": "153\n        self.model, self.pieces = model, pieces\n        self.elapsed_s, self.event_s = elapsed, event_s\n  "
+    },
+    {
+      "page": 154,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-154.png",
+      "sha256": "59b68672e3a7c9827bacf643916a8e69ef508ec810375458e551f227c6e27d19",
+      "textChars": 3220,
+      "start": "154\n        }\ndef solve_case(settings: Settings) -> Run:\n    started = time.perf_counter()\n    model = RadialM"
+    },
+    {
+      "page": 155,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-155.png",
+      "sha256": "09ba88e098d07621f7650118689bdf8cfdebf696ab61c41ea5fbeb05a2d10a80",
+      "textChars": 700,
+      "start": "155\n    x = np.linspace(0., 1., 21)\n    T, C = run.fields(times, material_x=x)\n    state = run.state(times)\n  "
+    },
+    {
+      "page": 156,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-156.png",
+      "sha256": "4012bde25987162e6952a3ed27e8173a6452a8ca2f35dbf11bac8d6212295586",
+      "textChars": 2284,
+      "start": "156\nE.16 drying_core_v3_analytic_jacobian.py：Q1 空间检查实际核心快照\n文件：paper_output/code/versions/drying_core_v3_analyt"
+    },
+    {
+      "page": 157,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-157.png",
+      "sha256": "33416efb55266033c2ba144217130b95b5ded01afa0ff807d66afa1e2f3dc5f7",
+      "textChars": 3040,
+      "start": "157\n    beta: float = 8e-7\n    equilibrium_scale: float = 1.0\n    surface_latent_fraction: float = 0.0\n    lat"
+    },
+    {
+      "page": 158,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-158.png",
+      "sha256": "c553e943b8de3f612646585132965191d92caf4ef3399486aeebdfffbf6d9de2",
+      "textChars": 3309,
+      "start": "158\n            D = 4.2e-4 * np.exp(-.30 / positive_C - 3850 / T)\n        else:\n            raise ValueError(s"
+    },
+    {
+      "page": 159,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-159.png",
+      "sha256": "5e314b3c43e281d837ccb1c224bab282bada9df068edf58156eedda15306e2aa",
+      "textChars": 3237,
+      "start": "159\n        return state\nclass Run:\n    def __init__(self, model, pieces, elapsed, event_s):\n        self.mode"
+    },
+    {
+      "page": 160,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-160.png",
+      "sha256": "7fe48153e6e4b17b56b8a12e0efa9898bf319fa0c10410ef3ba954e8ba2396cd",
+      "textChars": 3342,
+      "start": "160\n            'radius_end_m': float(self.model.radius(self.end_s)),\n            'radius_extrapolation_used':"
+    },
+    {
+      "page": 161,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-161.png",
+      "sha256": "fea6634a80bb25bf2a121ced3602e4502e0bacb9b3a33ab0f3720cee4d8e676b",
+      "textChars": 1530,
+      "start": "161\nprovenance')\n    jacobian_record = file_record(Path(analytic_jacobian.__file__))\n    if jacobian_record['s"
+    },
+    {
+      "page": 162,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-162.png",
+      "sha256": "f796c4db00c93ed4824bee9b1b287dfefdd7afc89c6374c981008db8e0fc3cb6",
+      "textChars": 2174,
+      "start": "162\nE.17 drying_core_v5_disk_dense.py：Q23/Q4 空间检查实际核心快照\n文件：paper_output/code/versions/drying_core_v5_disk_dens"
+    },
+    {
+      "page": 163,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-163.png",
+      "sha256": "a9dc2452d604e5934876fb2e4d6dacdab20dc30db2fc673fcf89e88d7892f3a8",
+      "textChars": 2870,
+      "start": "163\n    shrink: bool = False\n    boundary_extension: str = 'nominal'\n    tail_temperature_C: float = 50.0\n    "
+    },
+    {
+      "page": 164,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-164.png",
+      "sha256": "a0e97ead9b44d5567ed03c6c1dc00d4727934b578c96b087c8a29db9670e885b",
+      "textChars": 3445,
+      "start": "164\n            D = 7e-9 * np.exp(-.89 / positive_C)\n        elif s.question in ('Q2', 'Q3', 'Q23'):\n         "
+    },
+    {
+      "page": 165,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-165.png",
+      "sha256": "dd540bea6b40a83046770abcdb8603eac6f367c9c3a4635de0dbe7053e00bf53",
+      "textChars": 2970,
+      "start": "165\n        derivative[-1] = 2 * self.settings.beta / radius * (C[-1] - ceq)\n        return derivative\n    def"
+    },
+    {
+      "page": 166,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-166.png",
+      "sha256": "f69701dd657e395a16da045401fe8b0077a44c9f769d715198a70a222f2748d6",
+      "textChars": 3695,
+      "start": "166\n                raw = piece.y[:, first:first+256]\n                T, C = raw[:-1:2], raw[1:-1:2]\n         "
+    },
+    {
+      "page": 167,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-167.png",
+      "sha256": "47c69c32c72084c6f7885580d92eb46b8ceffc14ee277f7e8cbbaaf771edb4c4",
+      "textChars": 3440,
+      "start": "167\n    atol[:-1:2], atol[1:-1:2], atol[-1] = settings.atol_temperature, settings.atol_moisture, \nsettings.ato"
+    },
+    {
+      "page": 168,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-168.png",
+      "sha256": "777c389b0a7c781b3ff2e85fbb3ed84761ad0bac2a2d458e6ec8f57d065b63ad",
+      "textChars": 1271,
+      "start": "168\n9000., 10800.] if t <= run.end_s],\n                run.end_s, [] if run.event_s is None else [run.event_s]"
+    },
+    {
+      "page": 169,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-169.png",
+      "sha256": "0e7f8caef2db96576fe3543462909ae049a5752859889bdf54b0407b013b7eb1",
+      "textChars": 2374,
+      "start": "169\nE.18 disk_dense_v5.py：历史空间检查磁盘轨迹依赖\n文件：paper_output/code/versions/disk_dense_v5.py；共99 行。采用范围：v5 空间\n比较实际调用的"
+    },
+    {
+      "page": 170,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-170.png",
+      "sha256": "92deda9e97533481f25da3e50e9b05613280c7b915f7bb3c4e2d037b37cb65f3",
+      "textChars": 1670,
+      "start": "170\n        return mapped\n    def close(self):\n        if self.closed:\n            return\n        self.handle."
+    },
+    {
+      "page": 171,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-171.png",
+      "sha256": "21c86205526ca10272ccca0a6408a0d7d81c88ac427afc5e00a0060e90345d73",
+      "textChars": 2791,
+      "start": "171\nE.19 run_experiments_v1.py：附录粗网格反例的原批次入口\n文件：paper_output/code/versions/run_experiments_v1.py；共73 行。采用范围：数\n"
+    },
+    {
+      "page": 172,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-172.png",
+      "sha256": "804373ddb136475422b3cc9126cca352c7c595d139c02118ebf2c60d5a96a23d",
+      "textChars": 1330,
+      "start": "172\n        folder = out/trial_id\n        if (folder/'summary.json').exists():\n            raise FileExistsErr"
+    },
+    {
+      "page": 173,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-173.png",
+      "sha256": "a05f212f59079b1ff0e1c34f224e52ad34d4c0baeb6f02b14f026c9c51617a51",
+      "textChars": 2085,
+      "start": "173\nE.20 drying_core_v1_harmonic.py：附录粗网格反例的原核心快照\n文件：paper_output/code/versions/drying_core_v1_harmonic.py；共29"
+    },
+    {
+      "page": 174,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-174.png",
+      "sha256": "9289026d75c583efbb721fa0d69a217016d40c809264cd7b89854478da6d20c9",
+      "textChars": 2984,
+      "start": "174\nclass RadialModel:\n    def __init__(self, settings: Settings):\n        self.settings = settings\n        se"
+    },
+    {
+      "page": 175,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-175.png",
+      "sha256": "e54228f1ce339380bedecf00b365de2bdd76c2064ebc9e12959aa3cc0afc0bd9",
+      "textChars": 3004,
+      "start": "175\n    def _sparsity(self):\n        p = lil_matrix((2 * self.n + 1, 2 * self.n + 1), dtype=int)\n        for i"
+    },
+    {
+      "page": 176,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-176.png",
+      "sha256": "2773c8cf950072173e5e93f710be22110bed6035fbde1f14f0c3d6a4887f9b7e",
+      "textChars": 3446,
+      "start": "176\n            return np.array([np.interp(points, self.model.x, row) for row in Ts]), np.array([\n            "
+    },
+    {
+      "page": 177,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-177.png",
+      "sha256": "598bec5356a5980e8a9f94952e49bb6772b8345628cdf08ffbaf6ce9027c3287",
+      "textChars": 2398,
+      "start": "177\n        if piece.t_events is not None and len(piece.t_events[0]):\n            event_s = float(piece.t_even"
+    },
+    {
+      "page": 178,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-178.png",
+      "sha256": "7e224e17ad97c766d63647c97a832725b30a2269aff21c7472fb0ac00a443b53",
+      "textChars": 3119,
+      "start": "178\nE.21 runCrossCheck.m：MATLAB 独立N40 求解入口\n文件：paper_output/code/review_delivery/matlab/runCrossCheck.m；共495 行。"
+    },
+    {
+      "page": 179,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-179.png",
+      "sha256": "1acc185854af8703039335f3cd80f7e71392f8262878afa962f9be8e9f127e5a",
+      "textChars": 3548,
+      "start": "179\n        'waterFaceScheme', 'Kirchhoff', 'heatFaceScheme', 'harmonic', ...\n        'coefficientFloor', 1e-1"
+    },
+    {
+      "page": 180,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-180.png",
+      "sha256": "0671776e4b8d990c0d0c9cb5851e8d741cead93c543e3c3606b044f9a12f197b",
+      "textChars": 3060,
+      "start": "180\n        rethrow(runError);\n    end\nend\nfunction caseResult = solveSingleCase(caseName, inputData, settings"
+    },
+    {
+      "page": 181,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-181.png",
+      "sha256": "4c0cfe10a825e4b5d64991597c308fb1b44ba801f1c58f66e38efc1c42b2cd6b",
+      "textChars": 3665,
+      "start": "181\n            solutions{end+1} = tail;\n            break;\n        end\n        assertReached(segment, rightSe"
+    },
+    {
+      "page": 182,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-182.png",
+      "sha256": "93fbdd9266ff07ac6b305de634450cc0d914cb7e6f8b018e8f55e7d6903d12af",
+      "textChars": 3733,
+      "start": "182\n    if diagnostic.minMoisture < -1e-8 || ~diagnostic.positiveProperties\n        error('CrossCheck:Physical"
+    },
+    {
+      "page": 183,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-183.png",
+      "sha256": "875e053de13d3db089f2ac0a5ac943f681482773212b0f7d10a004222b49f035",
+      "textChars": 2845,
+      "start": "183\nequilibriumMoisture);\n        heatFlux(end) = -settings.heatTransferCoefficient*radiusM*(temperature(end)-"
+    },
+    {
+      "page": 184,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-184.png",
+      "sha256": "1092812747490ed6506a65ed7be89835a8b464fbcddf90100cb00a39205d9cde",
+      "textChars": 2833,
+      "start": "184\n        case 'Q23'\n            density = 650+128*positiveMoisture;\n            heatCapacity = 1450+2736*we"
+    },
+    {
+      "page": 185,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-185.png",
+      "sha256": "ff24cfbd8702940d72604c544f43620eb9f83d31dd33ecccf035acd3140c7d7b",
+      "textChars": 2696,
+      "start": "185\n    if ~all(ismember(environmentColumns, inputData.environment.Properties.VariableNames)) || ...\n         "
+    },
+    {
+      "page": 186,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-186.png",
+      "sha256": "7f4c0f556dac05ce2ea9892b61f8b7c00412990d16b26847c8f97475dd2d689c",
+      "textChars": 77,
+      "start": "186\n        value = NaN;\n    else\n        value = optionalValue;\n    end\nend\n"
+    },
+    {
+      "page": 187,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-187.png",
+      "sha256": "97fd85afdda8d8e024453ae427b9e7d43ee86967c038e84734b4cbbe7929efa2",
+      "textChars": 3135,
+      "start": "187\nE.22 compareMatlab.mjs：MATLAB/Python 共点比较及Node 进程监督\n文件：paper_output/code/review_delivery/tools/compareMatl"
+    },
+    {
+      "page": 188,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-188.png",
+      "sha256": "5e6ecd1bf4453a866d378ad5a1b8d6ee2b99c5a2a018889d260f4f79aa030560",
+      "textChars": 3718,
+      "start": "188\nrecord.path);\n    const actual = fileRecord(resolved);\n    assert(actual.sha256 === record.sha256, `Declar"
+    },
+    {
+      "page": 189,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-189.png",
+      "sha256": "760e3b17efc0449444a7fe0d6d6ef162ce3137fbd844c49b20525044066835f5",
+      "textChars": 3912,
+      "start": "189\n          const matlabValue = finite(matlab[field][matlabTimeIndex][matlabXIndex], `${question}/$\n{field}/"
+    },
+    {
+      "page": 190,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-190.png",
+      "sha256": "ee7e775159016505c4945d58bab771adefe97af8815d08dcd53d88233c435552",
+      "textChars": 3792,
+      "start": "190\ncoordinates, plus continuous event times',\n    limitations: ['NPZ files are hashed for provenance; numeric"
+    },
+    {
+      "page": 191,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-191.png",
+      "sha256": "83b2c678fffd0de3180722451125e12b8d72f41a2a8b2855763e8900adfe9cae",
+      "textChars": 1234,
+      "start": "191\n    schemaVersion: 1, status: 'FAIL', failures: ['Worker did not produce a numerical report'],\n    script:"
+    },
+    {
+      "page": 192,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-192.png",
+      "sha256": "8586f75aab42dd5e567c7cdcf18b959dfd4e84e959751b83df6a237b3b0a72d8",
+      "textChars": 2910,
+      "start": "192\nE.23 runLogged.ps1：N40 Python 实际进程监督入口\n文件：paper_output/code/review_delivery/runLogged.ps1 ；共50 行。采用范围：\ndri"
+    },
+    {
+      "page": 193,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-193.png",
+      "sha256": "c0edd4b8f2d5ea78879632c7cda848c69880f01dc5a8975647ea6426133a3903",
+      "textChars": 109,
+      "start": "193\n'processResult.json') -Encoding utf8\n$processRecord | ConvertTo-Json -Depth 8\nexit $taskProcess.ExitCode\n"
+    },
+    {
+      "page": 194,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-194.png",
+      "sha256": "180570367bb3a61ddf3fb0cdeed5ba15d6c507305e3ed6dbeb0975cbceb826ee",
+      "textChars": 1770,
+      "start": "194\nE.24 runDelivery.py：MATLAB 对照所用Python N40 生成入口\n文件：paper_output/code/review_delivery/runDelivery.py；共281 行。"
+    },
+    {
+      "page": 195,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-195.png",
+      "sha256": "c63efa2dfd750a315828c3af21744dd66d7ab3d735d895db329b4de70a65a62b",
+      "textChars": 2708,
+      "start": "195\n        for block in iter(lambda: fileHandle.read(1024 * 1024), b\"\"):\n            digest.update(block)\n   "
+    },
+    {
+      "page": 196,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-196.png",
+      "sha256": "799059314b896963d64009b66ed929341499bebf9ad6bdbbf6c17f319b1fc665",
+      "textChars": 3788,
+      "start": "196\n            raise AssertionError(\"冻结基准哈希改变：\" + record[\"path\"])\n        checkedRecords.append(actualRecord)"
+    },
+    {
+      "page": 197,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-197.png",
+      "sha256": "a04794ed93a7451cbd381f5939626f6520240e2fcc745e5f5267bdc3ce33a20e",
+      "textChars": 3539,
+      "start": "197\n                tableChecks = []\n                for tablePath in sorted((outputDirectory / \"outputs\").glo"
+    },
+    {
+      "page": 198,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-198.png",
+      "sha256": "15775112e847161e01db778061db7d22f0ee8b38c5b3d99fa82fe7f0f9943355",
+      "textChars": 2992,
+      "start": "198\n        \"command\": [sys.executable] + sys.argv, \"cwd\": str(Path.cwd()), \"python\": sys.version,\n        \"li"
+    },
+    {
+      "page": 199,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-199.png",
+      "sha256": "dba41f2b7c4df063375a1fb5e1c981343f958f6e0c99cad2c08b5b3bb1ee4b07",
+      "textChars": 2243,
+      "start": "199\nE.25 dryingCore.py：N40 驼峰有限体积求解器\n文件：paper_output/code/review_delivery/dryingCore.py；共420 行。采用范围：\nMATLAB N4"
+    },
+    {
+      "page": 200,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-200.png",
+      "sha256": "ed2b72081d44ff40fcb3e4ae48bee015c8dc606eda98fac15549a5df69a6336a",
+      "textChars": 2870,
+      "start": "200\n    boundaryExtension: str = 'nominal'\n    tailTemperatureC: float = 50.0\n    tailEquilibrium: float = 0.0"
+    },
+    {
+      "page": 201,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-201.png",
+      "sha256": "a32d69bb995164d3e577258a269202f902f34f39a44f49009e5b6f7efb3cf934",
+      "textChars": 3245,
+      "start": "201\n            rho = np.full_like(C, 820.)\n            cp = np.full_like(C, 2600.)\n            k = np.full_li"
+    },
+    {
+      "page": 202,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-202.png",
+      "sha256": "1e9e30856445020523a0f88e2ce4906674f0478262f3804bbb13dc315d0b2a74",
+      "textChars": 3055,
+      "start": "202\n            # Scenario: all selected outgoing water vaporizes at the surface.\n            rhoD = self.rhoD"
+    },
+    {
+      "page": 203,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-203.png",
+      "sha256": "eef83b53186eb91ceb35ab723a86ace8b0e18d8bcc5645d107d3dae12a369276",
+      "textChars": 3794,
+      "start": "203\n    # 每块至多 256 个被接受时刻，避免对高网格状态和物性数组再做整域复制。\n    def diagnostics(self):\n        # Reduce in bounded blocks: "
+    },
+    {
+      "page": 204,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-204.png",
+      "sha256": "c27ef5842c0caebb698a5cbaf57837f52fff9a7b58d5b32c4ae0171039913afb",
+      "textChars": 3113,
+      "start": "204\ndef solveCaseImpl(settings, cache, started):\n    model = RadialModel(settings)\n    method = diskDense.Disk"
+    },
+    {
+      "page": 205,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-205.png",
+      "sha256": "bc7cc5c4a4ca706445b3b12b4ec9dad4b20515fd5ebeaa514e4a849e476d864e",
+      "textChars": 2429,
+      "start": "205\n# 保存 60 s 等审查采样、源码/输入哈希和状态；整秒题表由 exportOutputs 直接查询 live Run。\ndef saveRun(run: Run, directory: Path):\n    "
+    },
+    {
+      "page": 206,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-206.png",
+      "sha256": "5403b2552c49f37913bfca19c1cdeb961e9529d9634b4b6721811357985b90c9",
+      "textChars": 2176,
+      "start": "206\nE.26 analyticJacobian.py：N40 驼峰解析Jacobian\n文件：paper_output/code/review_delivery/analyticJacobian.py；共333 行。"
+    },
+    {
+      "page": 207,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-207.png",
+      "sha256": "e9598fbeb8fcfbcb39d5f7c81a501d3bdcfd3f62b894db6baee56c476a906827",
+      "textChars": 2419,
+      "start": "207\n    s = model.settings\n    T, C = state[:-1:2], state[1:-1:2]\n    cc = np.maximum(C, 1e-12)\n    active = ("
+    },
+    {
+      "page": 208,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-208.png",
+      "sha256": "18ad06559589e61f04249a4a35967bcb4f636cd36e8dd2f790df0aa2c7a449e8",
+      "textChars": 3012,
+      "start": "208\n        small = np.abs(deltaCc) < 1e-7 * np.maximum(meanC, 1e-3)\n        expLeft, expRight = np.exp(-a/cc["
+    },
+    {
+      "page": 209,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-209.png",
+      "sha256": "bc972b3aa9819d2639d073db02edec2f1641a07cc0b7b5062ae7ac2c75f689f9",
+      "textChars": 3761,
+      "start": "209\n    from dryingCore import ROOT, Settings, RadialModel, LOADED_CODE_SHA256 as \nCORE_LOADED_CODE_SHA256\n   "
+    },
+    {
+      "page": 210,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-210.png",
+      "sha256": "aa4e710615612f6aeca408e035e77142608f750bf1e5ffb33e0f75e2400cf0cc",
+      "textChars": 4412,
+      "start": "210\n                massWeights[1:-1:2] = 2*model.w\n                massWeights[-1] = 1.\n                conse"
+    },
+    {
+      "page": 211,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-211.png",
+      "sha256": "8a275523c1fcfdee6f1b6c886849159ee657ee4a18e9c3a6e4bbecce1969f286",
+      "textChars": 1532,
+      "start": "211\n                             'Visual Studio reproduction and human review remain pending.']}\n    outputDir"
+    },
+    {
+      "page": 212,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-212.png",
+      "sha256": "c5dda0d931757d1ffcfa1bbf30bb0edfdf4f28c0191d9162a5a225149c8b28cf",
+      "textChars": 2377,
+      "start": "212\nE.27 diskDense.py：N40 驼峰磁盘轨迹存储\n文件：paper_output/code/review_delivery/diskDense.py ；共128 行。采用范围：\nMATLAB N40 "
+    },
+    {
+      "page": 213,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-213.png",
+      "sha256": "a332e44dfff678a7bf483570073b0ad684461a0ed54dc8f8809af346301c3241",
+      "textChars": 2586,
+      "start": "213\n        values = np.fromfile(self.handle, dtype=np.float64, count=count)\n        if values.size != count:\n"
+    },
+    {
+      "page": 214,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-214.png",
+      "sha256": "65cc9292261369f00e8c45a7675f2f60d53027ee25a7262ded72962639ec0c26",
+      "textChars": 370,
+      "start": "214\n    SciPy solve_ivp tests the exact method class for alt_segment. A subclass\n    otherwise selects the opp"
+    },
+    {
+      "page": 215,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-215.png",
+      "sha256": "93d7d79796a20f47fc80ad18b765df9b4a4db80ff11b33b6e268987bfeac7867",
+      "textChars": 577,
+      "start": "215\nE.28 q1Model.py：N40 问题一入口\n文件：paper_output/code/review_delivery/q1Model.py ；共10 行。采用范围：\nMATLAB N40 比较实际 Pyt"
+    },
+    {
+      "page": 216,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-216.png",
+      "sha256": "b54e59c039de998885f48caca37ff04f0b86ddf76eb9f4880fa9eb8ac9021c0f",
+      "textChars": 596,
+      "start": "216\nE.29 q2Model.py：N40 问题二三入口\n文件：paper_output/code/review_delivery/q2Model.py ；共10 行。采用范围：\nMATLAB N40 比较实际 Py"
+    },
+    {
+      "page": 217,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-217.png",
+      "sha256": "3d5f1595cc3b5475c740036accd884a4227432bcb885d106997fba08b33a7b4b",
+      "textChars": 1586,
+      "start": "217\nE.30 q3Model.py：N40 严格报告与采样时刻\n文件：paper_output/code/review_delivery/q3Model.py ；共30 行。采用范围：\nMATLAB N40 比较实际"
+    },
+    {
+      "page": 218,
+      "path": "tmp/cache/manuscript_20260912/render_v5/page-218.png",
+      "sha256": "5c2154d311051d181a5627a4a9264dd86a9d7fb5fa465da8562cd06ca6059c76",
+      "textChars": 619,
+      "start": "218\nE.31 q4Model.py：N40 问题四入口\n文件：paper_output/code/review_delivery/q4Model.py ；共10 行。采用范围：\nMATLAB N40 比较实际 Pyt"
+    }
+  ],
+  "cachePolicy": "PDF, manifest and review evidence are retained; per-page PNG images are rebuildable contest-local cache."
+}

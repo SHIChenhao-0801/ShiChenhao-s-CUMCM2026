@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_by": "paper-workflow-orchestrator/scripts/preflight_check.py",
-  "generated_at": "2026-09-10T21:13:24",
+  "generated_at": "2026-09-12T19:57:49",
   "status": "PASS",
   "root": "D:/Document/数学建模/2026CUMCM",
   "problem_files": {
@@ -865,7 +865,7 @@
     ]
   },
   "stale_output": {
-    "final_paper_docx_exists": false
+    "final_paper_docx_exists": true
   },
   "input_manifest": {
     "path": "paper_output/input_manifest.json",
@@ -902,6 +902,7 @@
     "D:/Document/数学建模/2026CUMCM/problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx: 文件名疑似结果模板（含 result/结果/submit/提交），不可当作原始数据使用。",
     "D:/Document/数学建模/2026CUMCM/problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx: 文件名疑似结果模板（含 result/结果/submit/提交），不可当作原始数据使用。",
     "D:/Document/数学建模/2026CUMCM/problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx: 文件名疑似结果模板（含 result/结果/submit/提交），不可当作原始数据使用。",
-    "D:/Document/数学建模/2026CUMCM/problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx: 文件名疑似结果模板（含 result/结果/submit/提交），不可当作原始数据使用。"
+    "D:/Document/数学建模/2026CUMCM/problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx: 文件名疑似结果模板（含 result/结果/submit/提交），不可当作原始数据使用。",
+    "D:/Document/数学建模/2026CUMCM/paper_output/final_paper.docx: 检测到旧的 final_paper.docx；如属历史产物建议归档或删除，以免误导 Agent 认为流程已完成。"
   ]
 }

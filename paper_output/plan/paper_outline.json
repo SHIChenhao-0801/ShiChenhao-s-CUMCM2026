@@ -1,79 +1,709 @@
 {
   "schema_version": "1.0",
-  "title": "2026 年高教社杯全国大学生数学建模竞赛 A 题：药材的烘干问题",
-  "sections": [
+  "generated_by": "paper-formal-writer/scripts/build_paper_outline.py",
+  "generated_at": "2026-09-12T19:59:46",
+  "numbering_style": "1 / 1.1 / 1.1.1",
+  "target_words": {
+    "min": 11300,
+    "ideal": 13500,
+    "max": 18800
+  },
+  "title": "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证",
+  "front_matter": {
+    "abstract_target_words": 900,
+    "keyword_count": "4-6",
+    "requirements": [
+      "摘要按子问题展开，必须写明方法、模型、算法、关键结果和结论。",
+      "关键词应覆盖核心模型、算法和问题领域。"
+    ]
+  },
+  "inputs": {
+    "problem_analysis": "paper_output/step1/problem_analysis.json",
+    "model_route": "paper_output/plan/model_route.json",
+    "rubric_alignment": "paper_output/plan/rubric_alignment.json",
+    "figure_index": "paper_output/figure_index.json",
+    "model_results": "paper_output/results/model_results.json",
+    "metrics": "paper_output/results/metrics.json",
+    "conclusions": "paper_output/results/conclusions.json",
+    "table_index": "paper_output/tables/table_index.json"
+  },
+  "warnings": [],
+  "questions": [
     {
-      "id": "1",
-      "title": "问题重述"
+      "question_id": "Q1",
+      "title": "问题一：预热平衡阶段",
+      "summary": "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "sources": [
+        "problem_analysis",
+        "model_route",
+        "model_results"
+      ],
+      "core_goal": "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。",
+      "main_model": "固定骨架一维径向热传导及D(C)非线性扩散；守恒有限体积+隐式时间积分",
+      "baseline_model": "固定半径常系数圆柱Robin-Bessel解析解（热方程可直接验证，水扩散D冻结作求解器基准）",
+      "model_reason": "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²"
+      ],
+      "result_summary": "在t=0.5000h，中心/表面温度分别为33.5753/36.7856摄氏度，干基含水率为2.5500/1.5102kg/kg。"
     },
     {
-      "id": "2",
-      "title": "问题分析"
+      "question_id": "Q2",
+      "title": "问题二：全过程热湿耦合",
+      "summary": "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "sources": [
+        "problem_analysis",
+        "model_route",
+        "model_results"
+      ],
+      "core_goal": "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。",
+      "main_model": "固定骨架一维径向非线性热湿耦合PDE；rho*cp与k依赖C、D依赖C及绝对温度",
+      "baseline_model": "固定半径、同一初值的常物性圆柱热/水基线，作为附录3变物性耦合的对照",
+      "model_reason": "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²"
+      ],
+      "result_summary": "在t=3.0000h，中心/表面温度分别为49.8495/49.9664摄氏度，干基含水率为1.7662/1.0081kg/kg。"
     },
     {
-      "id": "3",
-      "title": "数据说明与数据审计"
+      "question_id": "Q3",
+      "title": "问题三：全域达标时间",
+      "summary": "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "sources": [
+        "problem_analysis",
+        "model_route",
+        "model_results"
+      ],
+      "core_goal": "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。",
+      "main_model": "继承Q2的守恒数值解并对全域最大干基含水率做阈值事件定位",
+      "baseline_model": "问题二已验证解的max(C)阈值事件；常D/Bessel时长仅作可解释尺度对照",
+      "model_reason": "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²",
+        "M(t)=max_{0<=r<=R(t)}C(r,t)，t*=inf{t:M(t)<0.15}",
+        "阈值连续交叉估计、严格首达输出时刻、未舍入余量分别记录"
+      ],
+      "result_summary": "连续临界时刻57.472301951h；向上到四位小数并复核后报告57.4724h，原精度最大含水率0.149999897182<0.15kg/kg。"
     },
     {
-      "id": "4",
-      "title": "模型假设与符号说明"
-    },
-    {
-      "id": "5",
-      "title": "统一物理模型"
-    },
-    {
-      "id": "6",
-      "title": "问题一：预热平衡阶段"
-    },
-    {
-      "id": "7",
-      "title": "问题二：热湿耦合全过程"
-    },
-    {
-      "id": "8",
-      "title": "问题三：全域达标时间的确定"
-    },
-    {
-      "id": "9",
-      "title": "问题四：收缩条件下的烘干时长"
-    },
-    {
-      "id": "10",
-      "title": "数值求解方法与模型检验"
-    },
-    {
-      "id": "11",
-      "title": "模型的修正与创新"
-    },
-    {
-      "id": "12",
-      "title": "多方法交叉验证"
-    },
-    {
-      "id": "13",
-      "title": "灵敏度分析与不确定性"
-    },
-    {
-      "id": "14",
-      "title": "结论"
-    },
-    {
-      "id": "AI",
-      "title": "AI 工具使用声明"
-    },
-    {
-      "id": "REF",
-      "title": "参考文献"
-    },
-    {
-      "id": "APX",
-      "title": "附录 A—D"
+      "question_id": "Q4",
+      "title": "问题四：收缩下的达标时间",
+      "summary": "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。",
+      "task_type": "机理建模/非线性传热传质仿真",
+      "sources": [
+        "problem_analysis",
+        "model_route",
+        "model_results"
+      ],
+      "core_goal": "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。",
+      "main_model": "同比径向材料收缩x=r/R(t)的一维热湿耦合PDE；rho_d随R^-2变化守恒，有限体积在固定材料网格求解",
+      "baseline_model": "附录4相同物性、固定R0、同边界的全过程模型，用于隔离半径收缩的净影响",
+      "model_reason": "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。采用题给传递系数与经验物性直接建立守恒PDE；附件缺内部真值，黑箱预测或泛化趋势代理无可训练/可验证依据。",
+      "formula_requirements": [
+        "C=m_w/m_d，湿基w=C/(1+C)",
+        "rho*cp*(T_t+u*T_r)=(1/r)*d_r(r*k*T_r)",
+        "rho_d*(C_t+u*C_r)=(1/r)*d_r(r*rho_d*D*C_r)",
+        "T_r(0,t)=C_r(0,t)=0",
+        "-k*T_r(R,t)=h*(Ts-Tinf)",
+        "-D*C_r(R,t)=beta*(Cs-Ceq)",
+        "T(r,0)=301.15K，C(r,0)=2.55",
+        "附录对应物性表达式，D指数用除以C及绝对温度T_K",
+        "环形控制体积守恒、面通量与隐式时间积分；物性位于导数内",
+        "Bi_h=h*R/k、Bi_m=beta*R/D、Fo_h=alpha*t/R²、Fo_m=D*t/R²",
+        "x=r/R(t)，u=x*R'(t)，rho_d=rho_d0*(R0/R)^2",
+        "固定材料x下T_t=[1/(rho*cp*R²*x)]*d_x(x*k*T_x)",
+        "固定材料x下C_t=[1/(R²*x)]*d_x(x*D*C_x)",
+        "两式材料平流与网格速度相消；不可再额外加xR'/R平流",
+        "附录4固定/收缩时长差和相对变化率；跨物性比较另列",
+        "M(t)=max_{0<=r<=R(t)}C(r,t)，t*=inf{t:M(t)<0.15}",
+        "阈值连续交叉估计、严格首达输出时刻、未舍入余量分别记录"
+      ],
+      "result_summary": "连续临界时刻51.090574787h；向上到四位小数并复核后报告51.0906h，原精度最大含水率0.149999953391<0.15kg/kg。"
     }
   ],
-  "page_budget": {
-    "abstract": 1,
-    "body_including_ai_and_refs": 30,
-    "appendix": "不限"
+  "sections": [
+    {
+      "section_id": "1",
+      "title": "问题重述",
+      "target_words": 700,
+      "subsections": [
+        {
+          "section_id": "1.1",
+          "title": "背景说明",
+          "target_words": 200,
+          "required_figures": [],
+          "required_formulas": [],
+          "required_evidence": []
+        },
+        {
+          "section_id": "1.2",
+          "title": "题目任务",
+          "target_words": 450,
+          "required_figures": [],
+          "required_formulas": [],
+          "required_evidence": []
+        },
+        {
+          "section_id": "1.3",
+          "title": "本文解决思路概述",
+          "target_words": 250,
+          "required_figures": [],
+          "required_formulas": [],
+          "required_evidence": []
+        }
+      ],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "2",
+      "title": "问题分析",
+      "target_words": 1600,
+      "subsections": [
+        {
+          "section_id": "2.1",
+          "title": "问题一：预热平衡阶段分析",
+          "question_id": "Q1",
+          "target_words": 500,
+          "required_evidence": [],
+          "required_figures": [],
+          "required_tables": [],
+          "required_formulas": []
+        },
+        {
+          "section_id": "2.2",
+          "title": "问题二：全过程热湿耦合分析",
+          "question_id": "Q2",
+          "target_words": 500,
+          "required_evidence": [],
+          "required_figures": [],
+          "required_tables": [],
+          "required_formulas": []
+        },
+        {
+          "section_id": "2.3",
+          "title": "问题三：全域达标时间分析",
+          "question_id": "Q3",
+          "target_words": 500,
+          "required_evidence": [],
+          "required_figures": [],
+          "required_tables": [],
+          "required_formulas": []
+        },
+        {
+          "section_id": "2.4",
+          "title": "问题四：收缩下的达标时间分析",
+          "question_id": "Q4",
+          "target_words": 500,
+          "required_evidence": [],
+          "required_figures": [],
+          "required_tables": [],
+          "required_formulas": []
+        }
+      ],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "3",
+      "title": "模型假设",
+      "target_words": 300,
+      "subsections": [],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "4",
+      "title": "符号说明",
+      "target_words": 450,
+      "subsections": [],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "5",
+      "title": "模型的建立与求解",
+      "target_words": 8500,
+      "subsections": [
+        {
+          "section_id": "5.1",
+          "title": "问题一：预热平衡阶段模型的建立与求解",
+          "question_id": "Q1",
+          "target_words": 2200,
+          "task_type": "机理建模/非线性传热传质仿真",
+          "core_goal": "在0—1800s求固定圆柱T(r,t)、C(r,t)，使用附录2，输出7个时刻×5个半径的两张表及逐秒/0.1cm完整网格。",
+          "main_model": "固定骨架一维径向热传导及D(C)非线性扩散；守恒有限体积+隐式时间积分",
+          "required_figures": [],
+          "required_tables": [
+            {
+              "table_id": "q1_paper_temperature",
+              "title": "问题一的径向温度",
+              "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            },
+            {
+              "table_id": "q1_paper_moisture",
+              "title": "问题一的径向干基含水率",
+              "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            }
+          ],
+          "required_formulas": [],
+          "required_evidence": [
+            {
+              "type": "model_result",
+              "summary": "在t=0.5000h，中心/表面温度分别为33.5753/36.7856摄氏度，干基含水率为2.5500/1.5102kg/kg。",
+              "status": "computed"
+            }
+          ],
+          "subsections": [
+            {
+              "section_id": "5.1.1",
+              "title": "建模思路",
+              "question_id": "Q1",
+              "target_words": 300,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.1.2",
+              "title": "变量定义与公式推导",
+              "question_id": "Q1",
+              "target_words": 600,
+              "required_formulas": [],
+              "required_figures": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.1.3",
+              "title": "求解算法",
+              "question_id": "Q1",
+              "target_words": 400,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.1.4",
+              "title": "结果分析",
+              "question_id": "Q1",
+              "target_words": 650,
+              "required_figures": [],
+              "required_tables": [
+                {
+                  "table_id": "q1_paper_temperature",
+                  "title": "问题一的径向温度",
+                  "path": "paper_output/results/production/final_v6a/outputs/q1_paper_temperature.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                },
+                {
+                  "table_id": "q1_paper_moisture",
+                  "title": "问题一的径向干基含水率",
+                  "path": "paper_output/results/production/final_v6a/outputs/q1_paper_moisture.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                }
+              ],
+              "required_evidence": [
+                {
+                  "type": "model_result",
+                  "summary": "在t=0.5000h，中心/表面温度分别为33.5753/36.7856摄氏度，干基含水率为2.5500/1.5102kg/kg。",
+                  "status": "computed"
+                }
+              ],
+              "required_formulas": []
+            },
+            {
+              "section_id": "5.1.5",
+              "title": "模型检验或灵敏度分析",
+              "question_id": "Q1",
+              "target_words": 250,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            }
+          ]
+        },
+        {
+          "section_id": "5.2",
+          "title": "问题二：全过程热湿耦合模型的建立与求解",
+          "question_id": "Q2",
+          "target_words": 2200,
+          "task_type": "机理建模/非线性传热传质仿真",
+          "core_goal": "从同一初值出发，全过程统一使用附录3，求T/C双向物性耦合，正文显示前3h，文件保留逐秒/0.1cm完整解。",
+          "main_model": "固定骨架一维径向非线性热湿耦合PDE；rho*cp与k依赖C、D依赖C及绝对温度",
+          "required_figures": [],
+          "required_tables": [
+            {
+              "table_id": "q2_paper_temperature",
+              "title": "问题二的径向温度",
+              "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            },
+            {
+              "table_id": "q2_paper_moisture",
+              "title": "问题二的径向干基含水率",
+              "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            }
+          ],
+          "required_formulas": [],
+          "required_evidence": [
+            {
+              "type": "model_result",
+              "summary": "在t=3.0000h，中心/表面温度分别为49.8495/49.9664摄氏度，干基含水率为1.7662/1.0081kg/kg。",
+              "status": "computed"
+            }
+          ],
+          "subsections": [
+            {
+              "section_id": "5.2.1",
+              "title": "建模思路",
+              "question_id": "Q2",
+              "target_words": 300,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.2.2",
+              "title": "变量定义与公式推导",
+              "question_id": "Q2",
+              "target_words": 600,
+              "required_formulas": [],
+              "required_figures": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.2.3",
+              "title": "求解算法",
+              "question_id": "Q2",
+              "target_words": 400,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.2.4",
+              "title": "结果分析",
+              "question_id": "Q2",
+              "target_words": 650,
+              "required_figures": [],
+              "required_tables": [
+                {
+                  "table_id": "q2_paper_temperature",
+                  "title": "问题二的径向温度",
+                  "path": "paper_output/results/production/final_v6a/outputs/q2_paper_temperature.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                },
+                {
+                  "table_id": "q2_paper_moisture",
+                  "title": "问题二的径向干基含水率",
+                  "path": "paper_output/results/production/final_v6a/outputs/q2_paper_moisture.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                }
+              ],
+              "required_evidence": [
+                {
+                  "type": "model_result",
+                  "summary": "在t=3.0000h，中心/表面温度分别为49.8495/49.9664摄氏度，干基含水率为1.7662/1.0081kg/kg。",
+                  "status": "computed"
+                }
+              ],
+              "required_formulas": []
+            },
+            {
+              "section_id": "5.2.5",
+              "title": "模型检验或灵敏度分析",
+              "question_id": "Q2",
+              "target_words": 250,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            }
+          ]
+        },
+        {
+          "section_id": "5.3",
+          "title": "问题三：全域达标时间模型的建立与求解",
+          "question_id": "Q3",
+          "target_words": 2200,
+          "task_type": "机理建模/非线性传热传质仿真",
+          "core_goal": "沿用问题二全过程模型，在整个空间域max(C)<0.15条件下确定结束时间；按6h及60s导出含水率。",
+          "main_model": "继承Q2的守恒数值解并对全域最大干基含水率做阈值事件定位",
+          "required_figures": [],
+          "required_tables": [
+            {
+              "table_id": "q3_paper_moisture",
+              "title": "问题三的径向干基含水率",
+              "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            }
+          ],
+          "required_formulas": [],
+          "required_evidence": [
+            {
+              "type": "model_result",
+              "summary": "连续临界时刻57.472301951h；向上到四位小数并复核后报告57.4724h，原精度最大含水率0.149999897182<0.15kg/kg。",
+              "status": "computed"
+            }
+          ],
+          "subsections": [
+            {
+              "section_id": "5.3.1",
+              "title": "建模思路",
+              "question_id": "Q3",
+              "target_words": 300,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.3.2",
+              "title": "变量定义与公式推导",
+              "question_id": "Q3",
+              "target_words": 600,
+              "required_formulas": [],
+              "required_figures": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.3.3",
+              "title": "求解算法",
+              "question_id": "Q3",
+              "target_words": 400,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.3.4",
+              "title": "结果分析",
+              "question_id": "Q3",
+              "target_words": 650,
+              "required_figures": [],
+              "required_tables": [
+                {
+                  "table_id": "q3_paper_moisture",
+                  "title": "问题三的径向干基含水率",
+                  "path": "paper_output/results/production/final_v6a/outputs/q3_paper_moisture.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                }
+              ],
+              "required_evidence": [
+                {
+                  "type": "model_result",
+                  "summary": "连续临界时刻57.472301951h；向上到四位小数并复核后报告57.4724h，原精度最大含水率0.149999897182<0.15kg/kg。",
+                  "status": "computed"
+                }
+              ],
+              "required_formulas": []
+            },
+            {
+              "section_id": "5.3.5",
+              "title": "模型检验或灵敏度分析",
+              "question_id": "Q3",
+              "target_words": 250,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            }
+          ]
+        },
+        {
+          "section_id": "5.4",
+          "title": "问题四：收缩下的达标时间模型的建立与求解",
+          "question_id": "Q4",
+          "target_words": 2200,
+          "task_type": "机理建模/非线性传热传质仿真",
+          "core_goal": "使用附录4整组物性及附件2半径轨迹，建立与材料收缩守恒相容的模型，求全域达标时刻及移动域内C。",
+          "main_model": "同比径向材料收缩x=r/R(t)的一维热湿耦合PDE；rho_d随R^-2变化守恒，有限体积在固定材料网格求解",
+          "required_figures": [],
+          "required_tables": [
+            {
+              "table_id": "q4_paper_moisture",
+              "title": "问题四的径向干基含水率",
+              "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            },
+            {
+              "table_id": "q4_paper_radius",
+              "title": "问题四各输出时刻的表面半径",
+              "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+              "purpose": "题目指定正文位置/时间采样",
+              "status": "computed"
+            }
+          ],
+          "required_formulas": [],
+          "required_evidence": [
+            {
+              "type": "model_result",
+              "summary": "连续临界时刻51.090574787h；向上到四位小数并复核后报告51.0906h，原精度最大含水率0.149999953391<0.15kg/kg。",
+              "status": "computed"
+            }
+          ],
+          "subsections": [
+            {
+              "section_id": "5.4.1",
+              "title": "建模思路",
+              "question_id": "Q4",
+              "target_words": 300,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.4.2",
+              "title": "变量定义与公式推导",
+              "question_id": "Q4",
+              "target_words": 600,
+              "required_formulas": [],
+              "required_figures": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.4.3",
+              "title": "求解算法",
+              "question_id": "Q4",
+              "target_words": 400,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            },
+            {
+              "section_id": "5.4.4",
+              "title": "结果分析",
+              "question_id": "Q4",
+              "target_words": 650,
+              "required_figures": [],
+              "required_tables": [
+                {
+                  "table_id": "q4_paper_moisture",
+                  "title": "问题四的径向干基含水率",
+                  "path": "paper_output/results/production/final_v6a/outputs/q4_paper_moisture.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                },
+                {
+                  "table_id": "q4_paper_radius",
+                  "title": "问题四各输出时刻的表面半径",
+                  "path": "paper_output/results/production/final_v6a/outputs/q4_paper_radius.csv",
+                  "purpose": "题目指定正文位置/时间采样",
+                  "status": "computed"
+                }
+              ],
+              "required_evidence": [
+                {
+                  "type": "model_result",
+                  "summary": "连续临界时刻51.090574787h；向上到四位小数并复核后报告51.0906h，原精度最大含水率0.149999953391<0.15kg/kg。",
+                  "status": "computed"
+                }
+              ],
+              "required_formulas": []
+            },
+            {
+              "section_id": "5.4.5",
+              "title": "模型检验或灵敏度分析",
+              "question_id": "Q4",
+              "target_words": 250,
+              "required_figures": [],
+              "required_formulas": [],
+              "required_evidence": []
+            }
+          ]
+        }
+      ],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "6",
+      "title": "模型检验与灵敏度分析",
+      "target_words": 850,
+      "subsections": [],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "7",
+      "title": "模型评价与推广",
+      "target_words": 800,
+      "subsections": [],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "8",
+      "title": "参考文献",
+      "target_words": 600,
+      "subsections": [],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    },
+    {
+      "section_id": "appendix",
+      "title": "附录",
+      "target_words": 6000,
+      "subsections": [],
+      "required_figures": [],
+      "required_formulas": [],
+      "required_evidence": []
+    }
+  ],
+  "user_scope": {
+    "date": "2026-09-12",
+    "front_matter": "Preserve supplied DOCX text; mark known corrections unless user approves corrections.",
+    "figures": "User will create images; include descriptive drawing briefs only. No image placeholders counted as finished figures.",
+    "validation": "Concise body verification; detailed numerical process in appendix.",
+    "appendix": "Detailed derivations and complete actually-used core source code."
   }
 }

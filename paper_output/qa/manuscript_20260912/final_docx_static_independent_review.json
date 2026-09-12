@@ -1,0 +1,2093 @@
+{
+  "inspectedAtUtc": "2026-09-12T12:58:46.991934+00:00",
+  "reviewer": "paper_handoff_review AI agent",
+  "method": "Fresh independent ZIP/lxml inspection of current DOCX; no formatter/build script execution and no prior result inherited. Source prose compared verbatim as substrings, retitled headings explicitly mapped, symbol table compared cell by cell with order, source listings reconstructed exactly from marked paragraphs.",
+  "scope": "Final v5 DOCX static structure and preservation audit only.",
+  "docx": "paper_output/final_paper.docx",
+  "docxSha256": "3c0edfdf5946019ac8129afee637880954c86561a6440adc6dc0553483185013",
+  "bytes": 311035,
+  "sourceDocx": "reference_materials/peer-models/2026-09-12_front_matter/数学建模大赛a.docx",
+  "sourceSha256": "8244c3e9b54c407a12169a25e1cd7c8bfde61e22558c3d5196cd91725f407484",
+  "checks": {
+    "docx_hash_matches_requested_v5": true,
+    "zip_crc_ok": true,
+    "all_source_nonempty_paragraphs_preserved_or_heading_mapped": true,
+    "source_31_verbatim_content_or_subheadings_preserved": true,
+    "source_22_row_table_exact_text_and_order_preserved": true,
+    "eight_comments_have_unique_valid_range_and_reference": true,
+    "comment_authors_generic_and_initials_empty": true,
+    "numbered_display_equations_1_through_68_once": true,
+    "native_omml_count_203": true,
+    "main_chapter_order_and_ai_before_references": true,
+    "six_figure_textual_briefs_and_no_embedded_images": true,
+    "a4_and_2_5cm_margins": true,
+    "anonymous_core_person_fields_empty": true,
+    "no_known_identity_literal_in_all_package_xml": true,
+    "no_external_relationships": true,
+    "complete_42_source_files_9434_lines_equal_embedded_text": true,
+    "no_tracked_insert_delete_or_hidden_body_runs": true
+  },
+  "outcome": "STATIC_CHECKS_COMPLETED_NO_BLOCKING_FINDINGS",
+  "crcFirstBadMember": null,
+  "zipEntryCount": 18,
+  "sourceBodyParagraphCountIncludingEmpty": 87,
+  "sourceNonemptyBodyParagraphCount": 41,
+  "sourceAllXmlParagraphCountIncludingTableCells": 153,
+  "sourceNativeOmmlCount": 0,
+  "sourceParagraphPreservation": [
+    {
+      "sourceBodyParagraphIndex0": 0,
+      "sourceText": "问题重述",
+      "kind": "retitled_heading",
+      "expectedTarget": "1 问题重述",
+      "matchingFinalBodyParagraphIndices0": [
+        8
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 1,
+      "sourceText": "1.1问题背景",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "1.1问题背景",
+      "matchingFinalBodyParagraphIndices0": [
+        9
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 2,
+      "sourceText": "中药材干燥是产地初加工的关键环节，直接决定成品品质与用药安全。热风烘干是目前应用最广的干燥方式之一，通常包含预热平衡与恒温干燥两个阶段[1]。然而，烘房温湿度调控多凭经验，参数不当易导致效率低、能耗高、有效成分损失等问题。已有研究表明，通过建立热风干燥的传热传质模型，可以用计算机模拟不同工艺下水分和温度的变化，从而减少试错成本[2]。因此，用数学建模与仿真研究热风烘干规律具有实际意义。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "中药材干燥是产地初加工的关键环节，直接决定成品品质与用药安全。热风烘干是目前应用最广的干燥方式之一，通常包含预热平衡与恒温干燥两个阶段[1]。然而，烘房温湿度调控多凭经验，参数不当易导致效率低、能耗高、有效成分损失等问题。已有研究表明，通过建立热风干燥的传热传质模型，可以用计算机模拟不同工艺下水分和温度的变化，从而减少试错成本[2]。因此，用数学建模与仿真研究热风烘干规律具有实际意义。",
+      "matchingFinalBodyParagraphIndices0": [
+        10
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 4,
+      "sourceText": "1.2问题提出",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "1.2问题提出",
+      "matchingFinalBodyParagraphIndices0": [
+        11
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 5,
+      "sourceText": "基于上述背景，要求建立数学模型解决以下问题：",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "基于上述背景，要求建立数学模型解决以下问题：",
+      "matchingFinalBodyParagraphIndices0": [
+        12
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 6,
+      "sourceText": "本文以圆柱形中药材的热风烘干过程为研究对象，该药材长为25cm、半径为2cm，初始温度为28℃，初始水分浓度（即干基含水率）为2.55kg/kg。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "本文以圆柱形中药材的热风烘干过程为研究对象，该药材长为25cm、半径为2cm，初始温度为28℃，初始水分浓度（即干基含水率）为2.55kg/kg。",
+      "matchingFinalBodyParagraphIndices0": [
+        13
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 7,
+      "sourceText": "问题一：根据烘房的温度以及水分浓度变化情况，建立预热平衡阶段药材温度和水分浓度变化规律的数学模型，据此计算出1800s内每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题一：根据烘房的温度以及水分浓度变化情况，建立预热平衡阶段药材温度和水分浓度变化规律的数学模型，据此计算出1800s内每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度。",
+      "matchingFinalBodyParagraphIndices0": [
+        14
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 8,
+      "sourceText": "问题二：在问题一的基础下，将时间范围扩展至整个烘干过程（2至3天），根据预热平衡阶段与恒温干燥阶段参数，建立整个烘干过程药材温度和水分浓度变化规律的数学模型，据此计算出在烘干过程中，每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度的。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题二：在问题一的基础下，将时间范围扩展至整个烘干过程（2至3天），根据预热平衡阶段与恒温干燥阶段参数，建立整个烘干过程药材温度和水分浓度变化规律的数学模型，据此计算出在烘干过程中，每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度的。",
+      "matchingFinalBodyParagraphIndices0": [
+        15
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 9,
+      "sourceText": "问题三：在问题二的基础上反求问题，约束烘干要求药材各处水分浓度均低于0.15kg/kg。要求依据已建立的水分浓度模型，模拟药材内部水分随时间的变化，计算出药材内部水分浓度每隔60s、到药材中心距离每隔0.1cm的药材水分浓度以及烘干结束时间。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题三：在问题二的基础上反求问题，约束烘干要求药材各处水分浓度均低于0.15kg/kg。要求依据已建立的水分浓度模型，模拟药材内部水分随时间的变化，计算出药材内部水分浓度每隔60s、到药材中心距离每隔0.1cm的药材水分浓度以及烘干结束时间。",
+      "matchingFinalBodyParagraphIndices0": [
+        16
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 10,
+      "sourceText": "问题四：在实际烘干过程中，药材由于水分流失引起的尺寸变化会影响到烘干的最终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出药材内部水分浓度每隔60s时间、0.1cm距离的水分浓度以及烘干结束时间。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题四：在实际烘干过程中，药材由于水分流失引起的尺寸变化会影响到烘干的最终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出药材内部水分浓度每隔60s时间、0.1cm距离的水分浓度以及烘干结束时间。",
+      "matchingFinalBodyParagraphIndices0": [
+        17
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 13,
+      "sourceText": "问题分析",
+      "kind": "retitled_heading",
+      "expectedTarget": "2 问题分析",
+      "matchingFinalBodyParagraphIndices0": [
+        18
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 14,
+      "sourceText": "2.1问题一分析",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "2.1问题一分析",
+      "matchingFinalBodyParagraphIndices0": [
+        19
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 15,
+      "sourceText": "已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。",
+      "matchingFinalBodyParagraphIndices0": [
+        20
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 17,
+      "sourceText": "2.2问题二分析",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "2.2问题二分析",
+      "matchingFinalBodyParagraphIndices0": [
+        21
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 18,
+      "sourceText": "问题二区别于上一问，将时间拉长至整个烘焙过程，已知烘干过程持续数天，预热平衡与恒温干燥两个阶段的参数不同，附录给出了密度、比热容、导热系数和扩散系数随含水率或温度变化的经验关系，要求得到整个烘干过程的温度与水分浓度时空分布。与问题一相比，本问物性同时依赖含水率与温度，温度方程和水分方程不再解耦，必须联立求解。由于两问采用的物性体系不同，本问从初始时刻重新开始计算，不以问题一的末状态作为初值。环境驱动方面，前一段时间按附件数据分段线性插值，之后取平台温湿度延拓，该延拓作为假设在论文中明确说明。求解方法上仍采用守恒型有限体积离散，时间推进需处理方程刚性与非线性耦合，因此配了解析Jacobian并采用隐式BDF格式。非线性系数不能移出散度，热容量项不能改写成特定微分形式。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题二区别于上一问，将时间拉长至整个烘焙过程，已知烘干过程持续数天，预热平衡与恒温干燥两个阶段的参数不同，附录给出了密度、比热容、导热系数和扩散系数随含水率或温度变化的经验关系，要求得到整个烘干过程的温度与水分浓度时空分布。与问题一相比，本问物性同时依赖含水率与温度，温度方程和水分方程不再解耦，必须联立求解。由于两问采用的物性体系不同，本问从初始时刻重新开始计算，不以问题一的末状态作为初值。环境驱动方面，前一段时间按附件数据分段线性插值，之后取平台温湿度延拓，该延拓作为假设在论文中明确说明。求解方法上仍采用守恒型有限体积离散，时间推进需处理方程刚性与非线性耦合，因此配了解析Jacobian并采用隐式BDF格式。非线性系数不能移出散度，热容量项不能改写成特定微分形式。",
+      "matchingFinalBodyParagraphIndices0": [
+        22
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 20,
+      "sourceText": "2.3问题三分析",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "2.3问题三分析",
+      "matchingFinalBodyParagraphIndices0": [
+        23
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 21,
+      "sourceText": "问题三继续沿用问题二的变物性耦合模型，几何依旧保持固定半径，计算时间拉长至数天。本题不再是给定时间求内部分布，而是反向求解烘干结束时刻；烘干达标条件是药材全部位置的水分浓度均低于0.15 kg/kg。由于药材中心水分散失最慢，全场最大值一般出现在中心位置，但求解时不能只监控中心点，必须遍历全部径向位置，取全域最大水分浓度作为判断依据，寻找它第一次低于阈值的时刻作为烘干总时长。为了精确捕捉这一时刻，选择利用数值解进行插值搜索，并严格控制时间步长以确保穿越时刻的精度。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题三继续沿用问题二的变物性耦合模型，几何依旧保持固定半径，计算时间拉长至数天。本题不再是给定时间求内部分布，而是反向求解烘干结束时刻；烘干达标条件是药材全部位置的水分浓度均低于0.15 kg/kg。由于药材中心水分散失最慢，全场最大值一般出现在中心位置，但求解时不能只监控中心点，必须遍历全部径向位置，取全域最大水分浓度作为判断依据，寻找它第一次低于阈值的时刻作为烘干总时长。为了精确捕捉这一时刻，选择利用数值解进行插值搜索，并严格控制时间步长以确保穿越时刻的精度。",
+      "matchingFinalBodyParagraphIndices0": [
+        24
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 23,
+      "sourceText": "2.4问题四分析",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "2.4问题四分析",
+      "matchingFinalBodyParagraphIndices0": [
+        25
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 24,
+      "sourceText": "问题四的解决关键在于处理半径随时间减小带来的移动边界。直接使用原坐标会面对网格随边界变形的问题，因此采用坐标变换，把实际收缩域映射到固定区间这样，移动边界问题转化为固定域问题，问题二、三中的有限体积离散和隐式时间推进可以继续使用。半径由附件2插值得到，密度、比热、导热系数和扩散系数改用附录4的经验公式，并在每个时间步按当前含水率和温度更新。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "问题四的解决关键在于处理半径随时间减小带来的移动边界。直接使用原坐标会面对网格随边界变形的问题，因此采用坐标变换，把实际收缩域映射到固定区间这样，移动边界问题转化为固定域问题，问题二、三中的有限体积离散和隐式时间推进可以继续使用。半径由附件2插值得到，密度、比热、导热系数和扩散系数改用附录4的经验公式，并在每个时间步按当前含水率和温度更新。",
+      "matchingFinalBodyParagraphIndices0": [
+        26
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 25,
+      "sourceText": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。",
+      "matchingFinalBodyParagraphIndices0": [
+        27
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 27,
+      "sourceText": "模型假设",
+      "kind": "retitled_heading",
+      "expectedTarget": "3 模型假设",
+      "matchingFinalBodyParagraphIndices0": [
+        28
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 28,
+      "sourceText": "假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程简化为一维径向模型。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程简化为一维径向模型。",
+      "matchingFinalBodyParagraphIndices0": [
+        29
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 29,
+      "sourceText": "假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对流传质系数取恒定值。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对流传质系数取恒定值。",
+      "matchingFinalBodyParagraphIndices0": [
+        30
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 30,
+      "sourceText": "假设初始时刻药材内部温度与干基含水率均匀分布，不存在初始梯度。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "假设初始时刻药材内部温度与干基含水率均匀分布，不存在初始梯度。",
+      "matchingFinalBodyParagraphIndices0": [
+        31
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 31,
+      "sourceText": "假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四只发生均匀径向收缩，轴向长度不变。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四只发生均匀径向收缩，轴向长度不变。",
+      "matchingFinalBodyParagraphIndices0": [
+        32
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 32,
+      "sourceText": "假设不考虑药材内部生化反应，仅研究热传导与水分扩散物理过程。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "假设不考虑药材内部生化反应，仅研究热传导与水分扩散物理过程。",
+      "matchingFinalBodyParagraphIndices0": [
+        33
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 35,
+      "sourceText": "符号说明",
+      "kind": "retitled_heading",
+      "expectedTarget": "4 符号说明",
+      "matchingFinalBodyParagraphIndices0": [
+        34
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 37,
+      "sourceText": "模型的建立与求解",
+      "kind": "retitled_heading",
+      "expectedTarget": "5 模型的建立与求解",
+      "matchingFinalBodyParagraphIndices0": [
+        36
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 47,
+      "sourceText": "模型的评价",
+      "kind": "retitled_heading",
+      "expectedTarget": "7 模型评价与推广",
+      "matchingFinalBodyParagraphIndices0": [
+        170
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 48,
+      "sourceText": "6.1模型的优点",
+      "kind": "retitled_heading",
+      "expectedTarget": "7.1 模型优点",
+      "matchingFinalBodyParagraphIndices0": [
+        171
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 49,
+      "sourceText": "模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，逻辑一致、便于对比。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，逻辑一致、便于对比。",
+      "matchingFinalBodyParagraphIndices0": [
+        172
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 50,
+      "sourceText": "数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BD处理刚性，使N达到3200/6400仍可在分钟量级完成。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BD处理刚性，使N达到3200/6400仍可在分钟量级完成。",
+      "matchingFinalBodyParagraphIndices0": [
+        173
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 51,
+      "sourceText": "检验分层且可追溯：解析基准、离散守恒、空间/时间收敛、跨语言交叉核验四类证据分开报告，且明确各自的适用范围。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "检验分层且可追溯：解析基准、离散守恒、空间/时间收敛、跨语言交叉核验四类证据分开报告，且明确各自的适用范围。",
+      "matchingFinalBodyParagraphIndices0": [
+        174
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 53,
+      "sourceText": "6.2模型的不足",
+      "kind": "retitled_heading",
+      "expectedTarget": "7.2 模型不足",
+      "matchingFinalBodyParagraphIndices0": [
+        177
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 54,
+      "sourceText": "缺少物理闭合：未显式计入相变潜热，Ceq用等效映射，密度与收缩相容性未完全解决。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "缺少物理闭合：未显式计入相变潜热，Ceq用等效映射，密度与收缩相容性未完全解决。",
+      "matchingFinalBodyParagraphIndices0": [
+        178
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 56,
+      "sourceText": "6.3模型的推广",
+      "kind": "retitled_heading",
+      "expectedTarget": "7.3 改进方向与适用范围",
+      "matchingFinalBodyParagraphIndices0": [
+        181
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 57,
+      "sourceText": "走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为目标，利用参数扫描或启发式算法寻优。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为目标，利用参数扫描或启发式算法寻优。",
+      "matchingFinalBodyParagraphIndices0": [
+        182
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 58,
+      "sourceText": "维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维轴对称模型，显式处理端面传热传质。",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维轴对称模型，显式处理端面传热传质。",
+      "matchingFinalBodyParagraphIndices0": [
+        183
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 83,
+      "sourceText": "参考文献",
+      "kind": "retitled_heading",
+      "expectedTarget": "8 参考文献",
+      "matchingFinalBodyParagraphIndices0": [
+        189
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 84,
+      "sourceText": "王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15.",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15.",
+      "matchingFinalBodyParagraphIndices0": [
+        190
+      ],
+      "retained": true
+    },
+    {
+      "sourceBodyParagraphIndex0": 86,
+      "sourceText": "王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447.",
+      "kind": "verbatim_content_or_subheading",
+      "expectedTarget": "王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447.",
+      "matchingFinalBodyParagraphIndices0": [
+        191
+      ],
+      "retained": true
+    }
+  ],
+  "sourceTablePreservation": [
+    {
+      "sourceTableIndex0": 0,
+      "rowCount": 22,
+      "cellCount": 66,
+      "exactMatchingFinalTableIndices0": [
+        0
+      ],
+      "exactTextAndOrderPreserved": true
+    }
+  ],
+  "finalBodyParagraphCount": 9897,
+  "finalAllXmlParagraphCount": 10424,
+  "finalTableCount": 12,
+  "numberedDisplayEquations": [
+    {
+      "bodyParagraphIndex0": 40,
+      "number": 1,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 46,
+      "number": 2,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 47,
+      "number": 3,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 50,
+      "number": 4,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 51,
+      "number": 5,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 54,
+      "number": 6,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 59,
+      "number": 7,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 81,
+      "number": 8,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 82,
+      "number": 9,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 85,
+      "number": 10,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 108,
+      "number": 11,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 111,
+      "number": 12,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 131,
+      "number": 13,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 133,
+      "number": 14,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 134,
+      "number": 15,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 137,
+      "number": 16,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 139,
+      "number": 17,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 140,
+      "number": 18,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 159,
+      "number": 19,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 203,
+      "number": 20,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 206,
+      "number": 21,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 207,
+      "number": 22,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 209,
+      "number": 23,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 211,
+      "number": 24,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 213,
+      "number": 25,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 217,
+      "number": 26,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 219,
+      "number": 27,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 220,
+      "number": 28,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 221,
+      "number": 29,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 224,
+      "number": 30,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 226,
+      "number": 31,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 231,
+      "number": 32,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 233,
+      "number": 33,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 235,
+      "number": 34,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 237,
+      "number": 35,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 240,
+      "number": 36,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 245,
+      "number": 37,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 247,
+      "number": 38,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 251,
+      "number": 39,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 253,
+      "number": 40,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 255,
+      "number": 41,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 258,
+      "number": 42,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 262,
+      "number": 43,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 264,
+      "number": 44,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 266,
+      "number": 45,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 268,
+      "number": 46,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 271,
+      "number": 47,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 276,
+      "number": 48,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 278,
+      "number": 49,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 280,
+      "number": 50,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 281,
+      "number": 51,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 284,
+      "number": 52,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 285,
+      "number": 53,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 288,
+      "number": 54,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 291,
+      "number": 55,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 295,
+      "number": 56,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 298,
+      "number": 57,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 300,
+      "number": 58,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 304,
+      "number": 59,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 306,
+      "number": 60,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 312,
+      "number": 61,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 315,
+      "number": 62,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 321,
+      "number": 63,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 323,
+      "number": 64,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 326,
+      "number": 65,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 330,
+      "number": 66,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 332,
+      "number": 67,
+      "nativeMathCount": 1
+    },
+    {
+      "bodyParagraphIndex0": 334,
+      "number": 68,
+      "nativeMathCount": 1
+    }
+  ],
+  "nativeOmmlCount": 203,
+  "comments": [
+    {
+      "id": "0",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。“BD”应为“BDF”。Kirchhoff原函数改善面通量计算，仍使用温度面均值和有限精度求积，不能把“精确处理”理解为没有离散或积分误差。分钟量级是已记录计算环境下的运行表现，不是其他设备的时间保证。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 173,
+          "text": "数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BD处理刚性，使N达到3200/6400仍可在分钟量级完成。"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。题面及前文1.2给出的长度为25 cm，此处“长2cm”应改为“长25cm”；后续模型按0.25 m计算。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 20,
+          "text": "已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。Q1的D1(C)=7e−9 exp(−0.89/C)没有温度项；Arrhenius温度因子属于附录3/4。后文按各问实际公式区分。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 20,
+          "text": "已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。采用同比材料收缩时，坐标变化项与物理平流相消，不另加网格平流。附录A.3给出完整推导。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 27,
+          "text": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。同T、同C下D4/D3=0.175exp(0.15/C)，只有C>0.0860600 kg/kg时小于1，低含水率表面可能反转。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 27,
+          "text": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。Q4材料骨架随径向收缩运动，应限定为干物质没有生成、损失或相对骨架迁移，而不是空间静止。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 32,
+          "text": "假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四只发生均匀径向收缩，轴向长度不变。"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "author": "审阅",
+      "initials": "",
+      "text": "原条目按要求保留。刊方确认：王乐意,李长河,刘明政,等.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(2):1–28. DOI:10.11975/j.issn.1002-6819.202306104。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 190,
+          "text": "[1] 王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "author": "审阅",
+      "initials": "",
+      "text": "原条目按要求保留。PubMed PMID37474981确认2023,48(13):3440–3447，原页码正确；原文共有8名作者，前三人之后宜补“等”。",
+      "rangeStarts": 1,
+      "rangeEnds": 1,
+      "references": 1,
+      "anchors": [
+        {
+          "bodyParagraphIndex0": 191,
+          "text": "[2] 王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447."
+        }
+      ]
+    }
+  ],
+  "commentCount": 8,
+  "mainHeadings": [
+    {
+      "bodyParagraphIndex0": 8,
+      "style": "Heading1",
+      "text": "1 问题重述"
+    },
+    {
+      "bodyParagraphIndex0": 18,
+      "style": "Heading1",
+      "text": "2 问题分析"
+    },
+    {
+      "bodyParagraphIndex0": 28,
+      "style": "Heading1",
+      "text": "3 模型假设"
+    },
+    {
+      "bodyParagraphIndex0": 34,
+      "style": "Heading1",
+      "text": "4 符号说明"
+    },
+    {
+      "bodyParagraphIndex0": 36,
+      "style": "Heading1",
+      "text": "5 模型的建立与求解"
+    },
+    {
+      "bodyParagraphIndex0": 162,
+      "style": "Heading1",
+      "text": "6 模型检验与灵敏度分析"
+    },
+    {
+      "bodyParagraphIndex0": 170,
+      "style": "Heading1",
+      "text": "7 模型评价与推广"
+    },
+    {
+      "bodyParagraphIndex0": 186,
+      "style": "Heading1",
+      "text": "AI工具使用声明"
+    },
+    {
+      "bodyParagraphIndex0": 189,
+      "style": "Heading1",
+      "text": "8 参考文献"
+    },
+    {
+      "bodyParagraphIndex0": 196,
+      "style": "Heading1",
+      "text": "附录"
+    }
+  ],
+  "allHeadings": [
+    {
+      "bodyParagraphIndex0": 0,
+      "style": "Title",
+      "text": "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证"
+    },
+    {
+      "bodyParagraphIndex0": 1,
+      "style": "Heading2",
+      "text": "摘要"
+    },
+    {
+      "bodyParagraphIndex0": 8,
+      "style": "Heading1",
+      "text": "1 问题重述"
+    },
+    {
+      "bodyParagraphIndex0": 9,
+      "style": "Heading2",
+      "text": "1.1问题背景"
+    },
+    {
+      "bodyParagraphIndex0": 11,
+      "style": "Heading2",
+      "text": "1.2问题提出"
+    },
+    {
+      "bodyParagraphIndex0": 18,
+      "style": "Heading1",
+      "text": "2 问题分析"
+    },
+    {
+      "bodyParagraphIndex0": 19,
+      "style": "Heading2",
+      "text": "2.1问题一分析"
+    },
+    {
+      "bodyParagraphIndex0": 21,
+      "style": "Heading2",
+      "text": "2.2问题二分析"
+    },
+    {
+      "bodyParagraphIndex0": 23,
+      "style": "Heading2",
+      "text": "2.3问题三分析"
+    },
+    {
+      "bodyParagraphIndex0": 25,
+      "style": "Heading2",
+      "text": "2.4问题四分析"
+    },
+    {
+      "bodyParagraphIndex0": 28,
+      "style": "Heading1",
+      "text": "3 模型假设"
+    },
+    {
+      "bodyParagraphIndex0": 34,
+      "style": "Heading1",
+      "text": "4 符号说明"
+    },
+    {
+      "bodyParagraphIndex0": 36,
+      "style": "Heading1",
+      "text": "5 模型的建立与求解"
+    },
+    {
+      "bodyParagraphIndex0": 37,
+      "style": "Heading2",
+      "text": "5.1 问题一模型的建立与求解"
+    },
+    {
+      "bodyParagraphIndex0": 38,
+      "style": "Heading3",
+      "text": "5.1.1 建模思路与统一口径"
+    },
+    {
+      "bodyParagraphIndex0": 44,
+      "style": "Heading3",
+      "text": "5.1.2 变量定义与公式推导"
+    },
+    {
+      "bodyParagraphIndex0": 56,
+      "style": "Heading3",
+      "text": "5.1.3 求解算法"
+    },
+    {
+      "bodyParagraphIndex0": 64,
+      "style": "Heading3",
+      "text": "5.1.4 结果分析"
+    },
+    {
+      "bodyParagraphIndex0": 73,
+      "style": "Heading3",
+      "text": "5.1.5 模型检验或灵敏度分析"
+    },
+    {
+      "bodyParagraphIndex0": 75,
+      "style": "Heading2",
+      "text": "5.2 问题二模型的建立与求解"
+    },
+    {
+      "bodyParagraphIndex0": 76,
+      "style": "Heading3",
+      "text": "5.2.1 建模思路"
+    },
+    {
+      "bodyParagraphIndex0": 79,
+      "style": "Heading3",
+      "text": "5.2.2 变量定义与公式推导"
+    },
+    {
+      "bodyParagraphIndex0": 88,
+      "style": "Heading3",
+      "text": "5.2.3 求解算法"
+    },
+    {
+      "bodyParagraphIndex0": 92,
+      "style": "Heading3",
+      "text": "5.2.4 结果分析"
+    },
+    {
+      "bodyParagraphIndex0": 101,
+      "style": "Heading3",
+      "text": "5.2.5 模型检验或灵敏度分析"
+    },
+    {
+      "bodyParagraphIndex0": 103,
+      "style": "Heading2",
+      "text": "5.3 问题三模型的建立与求解"
+    },
+    {
+      "bodyParagraphIndex0": 104,
+      "style": "Heading3",
+      "text": "5.3.1 建模思路"
+    },
+    {
+      "bodyParagraphIndex0": 106,
+      "style": "Heading3",
+      "text": "5.3.2 变量定义与公式推导"
+    },
+    {
+      "bodyParagraphIndex0": 113,
+      "style": "Heading3",
+      "text": "5.3.3 求解算法"
+    },
+    {
+      "bodyParagraphIndex0": 116,
+      "style": "Heading3",
+      "text": "5.3.4 结果分析"
+    },
+    {
+      "bodyParagraphIndex0": 123,
+      "style": "Heading3",
+      "text": "5.3.5 模型检验或灵敏度分析"
+    },
+    {
+      "bodyParagraphIndex0": 125,
+      "style": "Heading2",
+      "text": "5.4 问题四模型的建立与求解"
+    },
+    {
+      "bodyParagraphIndex0": 126,
+      "style": "Heading3",
+      "text": "5.4.1 建模思路"
+    },
+    {
+      "bodyParagraphIndex0": 129,
+      "style": "Heading3",
+      "text": "5.4.2 变量定义与公式推导"
+    },
+    {
+      "bodyParagraphIndex0": 142,
+      "style": "Heading3",
+      "text": "5.4.3 求解算法"
+    },
+    {
+      "bodyParagraphIndex0": 146,
+      "style": "Heading3",
+      "text": "5.4.4 结果分析"
+    },
+    {
+      "bodyParagraphIndex0": 154,
+      "style": "Heading3",
+      "text": "5.4.5 模型检验或灵敏度分析"
+    },
+    {
+      "bodyParagraphIndex0": 157,
+      "style": "Heading3",
+      "text": "5.4.6 边界阻力的补充修正"
+    },
+    {
+      "bodyParagraphIndex0": 162,
+      "style": "Heading1",
+      "text": "6 模型检验与灵敏度分析"
+    },
+    {
+      "bodyParagraphIndex0": 170,
+      "style": "Heading1",
+      "text": "7 模型评价与推广"
+    },
+    {
+      "bodyParagraphIndex0": 171,
+      "style": "Heading2",
+      "text": "7.1 模型优点"
+    },
+    {
+      "bodyParagraphIndex0": 177,
+      "style": "Heading2",
+      "text": "7.2 模型不足"
+    },
+    {
+      "bodyParagraphIndex0": 181,
+      "style": "Heading2",
+      "text": "7.3 改进方向与适用范围"
+    },
+    {
+      "bodyParagraphIndex0": 186,
+      "style": "Heading1",
+      "text": "AI工具使用声明"
+    },
+    {
+      "bodyParagraphIndex0": 189,
+      "style": "Heading1",
+      "text": "8 参考文献"
+    },
+    {
+      "bodyParagraphIndex0": 196,
+      "style": "Heading1",
+      "text": "附录"
+    },
+    {
+      "bodyParagraphIndex0": 200,
+      "style": "Heading2",
+      "text": "附录A 物理模型的详细推导"
+    },
+    {
+      "bodyParagraphIndex0": 201,
+      "style": "Heading3",
+      "text": "A.1 干基含水率与组分质量守恒"
+    },
+    {
+      "bodyParagraphIndex0": 215,
+      "style": "Heading3",
+      "text": "A.2 有效热容量与题给物性的使用范围"
+    },
+    {
+      "bodyParagraphIndex0": 229,
+      "style": "Heading3",
+      "text": "A.3 同比收缩的材料坐标变换"
+    },
+    {
+      "bodyParagraphIndex0": 242,
+      "style": "Heading2",
+      "text": "附录B 有限体积、Jacobian与时间积分推导"
+    },
+    {
+      "bodyParagraphIndex0": 243,
+      "style": "Heading3",
+      "text": "B.1 节点有限体积、中心控制体与真实表面"
+    },
+    {
+      "bodyParagraphIndex0": 260,
+      "style": "Heading3",
+      "text": "B.2 浓度 Kirchhoff 势与近等浓度稳定计算"
+    },
+    {
+      "bodyParagraphIndex0": 273,
+      "style": "Heading3",
+      "text": "B.3 解析稀疏 Jacobian 的关键块"
+    },
+    {
+      "bodyParagraphIndex0": 293,
+      "style": "Heading3",
+      "text": "B.4 质量及有效热通量的整体检验"
+    },
+    {
+      "bodyParagraphIndex0": 302,
+      "style": "Heading3",
+      "text": "B.5 隐式 BDF、分段环境与阈值事件"
+    },
+    {
+      "bodyParagraphIndex0": 319,
+      "style": "Heading3",
+      "text": "B.6 可选经验阻力情景及其物理边界"
+    },
+    {
+      "bodyParagraphIndex0": 328,
+      "style": "Heading3",
+      "text": "B.7 圆柱Robin热场解析基准"
+    },
+    {
+      "bodyParagraphIndex0": 336,
+      "style": "Heading2",
+      "text": "附录C 数值解计算过程与复现"
+    },
+    {
+      "bodyParagraphIndex0": 337,
+      "style": "Heading3",
+      "text": "C.1 固定评价条件与计算顺序"
+    },
+    {
+      "bodyParagraphIndex0": 341,
+      "style": "Heading3",
+      "text": "C.2 数值方案的保留与舍弃"
+    },
+    {
+      "bodyParagraphIndex0": 345,
+      "style": "Heading3",
+      "text": "C.3 正式求解、临界事件与连续输出"
+    },
+    {
+      "bodyParagraphIndex0": 350,
+      "style": "Heading3",
+      "text": "C.4 输出与运行前提"
+    },
+    {
+      "bodyParagraphIndex0": 354,
+      "style": "Heading2",
+      "text": "附录D 完整源程序"
+    },
+    {
+      "bodyParagraphIndex0": 357,
+      "style": "Heading3",
+      "text": "D.1 run_modeling.py"
+    },
+    {
+      "bodyParagraphIndex0": 807,
+      "style": "Heading3",
+      "text": "D.2 q1_model.py"
+    },
+    {
+      "bodyParagraphIndex0": 817,
+      "style": "Heading3",
+      "text": "D.3 q2_model.py"
+    },
+    {
+      "bodyParagraphIndex0": 827,
+      "style": "Heading3",
+      "text": "D.4 q3_model.py"
+    },
+    {
+      "bodyParagraphIndex0": 856,
+      "style": "Heading3",
+      "text": "D.5 q4_model.py"
+    },
+    {
+      "bodyParagraphIndex0": 866,
+      "style": "Heading3",
+      "text": "D.6 drying_core.py"
+    },
+    {
+      "bodyParagraphIndex0": 1270,
+      "style": "Heading3",
+      "text": "D.7 analytic_jacobian.py"
+    },
+    {
+      "bodyParagraphIndex0": 1597,
+      "style": "Heading3",
+      "text": "D.8 disk_dense.py"
+    },
+    {
+      "bodyParagraphIndex0": 1720,
+      "style": "Heading3",
+      "text": "D.9 export_outputs.py"
+    },
+    {
+      "bodyParagraphIndex0": 2470,
+      "style": "Heading3",
+      "text": "D.10 publication_plots.py"
+    },
+    {
+      "bodyParagraphIndex0": 2874,
+      "style": "Heading3",
+      "text": "D.11 production_provenance.py"
+    },
+    {
+      "bodyParagraphIndex0": 3373,
+      "style": "Heading2",
+      "text": "E 验证程序与历史版本完整清单"
+    },
+    {
+      "bodyParagraphIndex0": 3375,
+      "style": "Heading3",
+      "text": "E.1 validate_bessel.py：Robin–Bessel解析热场、级数截断自检"
+    },
+    {
+      "bodyParagraphIndex0": 3722,
+      "style": "Heading3",
+      "text": "E.2 compare_analytic.py：早期解析对照及常D特例筛选入口"
+    },
+    {
+      "bodyParagraphIndex0": 3967,
+      "style": "Heading3",
+      "text": "E.3 verify_convergence.py：当前投影/场差归约模块"
+    },
+    {
+      "bodyParagraphIndex0": 4096,
+      "style": "Heading3",
+      "text": "E.4 verify_time_accuracy.py：同N容差和步长收紧的监督运行入口"
+    },
+    {
+      "bodyParagraphIndex0": 4349,
+      "style": "Heading3",
+      "text": "E.5 verify_dense_storage.py：内存/磁盘稠密输出等价性入口"
+    },
+    {
+      "bodyParagraphIndex0": 4420,
+      "style": "Heading3",
+      "text": "E.6 run_experiments.py：Kirchhoff网格与同物性收缩对照批次入口"
+    },
+    {
+      "bodyParagraphIndex0": 4497,
+      "style": "Heading3",
+      "text": "E.7 crossvalidate_solver.py：BDF/Radau与面格式对照入口"
+    },
+    {
+      "bodyParagraphIndex0": 4705,
+      "style": "Heading3",
+      "text": "E.8 method_comparison.py：Kirchhoff与另一守恒面格式比较"
+    },
+    {
+      "bodyParagraphIndex0": 4905,
+      "style": "Heading3",
+      "text": "E.9 threshold_and_scaling_checks.py：N800阈值二分及R平方时标归约"
+    },
+    {
+      "bodyParagraphIndex0": 5083,
+      "style": "Heading3",
+      "text": "E.10 energy_balance_check.py：有效热方程瞬时加权通量检验"
+    },
+    {
+      "bodyParagraphIndex0": 5331,
+      "style": "Heading3",
+      "text": "E.11 sensitivity_analysis.py：修复后的D/k单参数扫描入口"
+    },
+    {
+      "bodyParagraphIndex0": 5626,
+      "style": "Heading3",
+      "text": "E.12 isotherm_activity_closure.py：经验边界阻力p情景入口"
+    },
+    {
+      "bodyParagraphIndex0": 6123,
+      "style": "Heading3",
+      "text": "E.13 verify_convergence_v1.py：Q1空间检查的原驱动快照"
+    },
+    {
+      "bodyParagraphIndex0": 6232,
+      "style": "Heading3",
+      "text": "E.14 verify_convergence_v5.py：Q23/Q4最终空间检查的原驱动快照"
+    },
+    {
+      "bodyParagraphIndex0": 6359,
+      "style": "Heading3",
+      "text": "E.15 drying_core_v2_kirchhoff.py：采用Kirchhoff的早期实际核心快照"
+    },
+    {
+      "bodyParagraphIndex0": 6688,
+      "style": "Heading3",
+      "text": "E.16 drying_core_v3_analytic_jacobian.py：Q1空间检查实际核心快照"
+    },
+    {
+      "bodyParagraphIndex0": 7029,
+      "style": "Heading3",
+      "text": "E.17 drying_core_v5_disk_dense.py：Q23/Q4空间检查实际核心快照"
+    },
+    {
+      "bodyParagraphIndex0": 7428,
+      "style": "Heading3",
+      "text": "E.18 disk_dense_v5.py：历史空间检查磁盘轨迹依赖"
+    },
+    {
+      "bodyParagraphIndex0": 7530,
+      "style": "Heading3",
+      "text": "E.19 run_experiments_v1.py：附录粗网格反例的原批次入口"
+    },
+    {
+      "bodyParagraphIndex0": 7607,
+      "style": "Heading3",
+      "text": "E.20 drying_core_v1_harmonic.py：附录粗网格反例的原核心快照"
+    },
+    {
+      "bodyParagraphIndex0": 7906,
+      "style": "Heading3",
+      "text": "E.21 runCrossCheck.m：MATLAB独立N40求解入口"
+    },
+    {
+      "bodyParagraphIndex0": 8403,
+      "style": "Heading3",
+      "text": "E.22 compareMatlab.mjs：MATLAB/Python共点比较及Node进程监督"
+    },
+    {
+      "bodyParagraphIndex0": 8605,
+      "style": "Heading3",
+      "text": "E.23 runLogged.ps1：N40 Python实际进程监督入口"
+    },
+    {
+      "bodyParagraphIndex0": 8658,
+      "style": "Heading3",
+      "text": "E.24 runDelivery.py：MATLAB对照所用Python N40生成入口"
+    },
+    {
+      "bodyParagraphIndex0": 8942,
+      "style": "Heading3",
+      "text": "E.25 dryingCore.py：N40驼峰有限体积求解器"
+    },
+    {
+      "bodyParagraphIndex0": 9364,
+      "style": "Heading3",
+      "text": "E.26 analyticJacobian.py：N40驼峰解析Jacobian"
+    },
+    {
+      "bodyParagraphIndex0": 9699,
+      "style": "Heading3",
+      "text": "E.27 diskDense.py：N40驼峰磁盘轨迹存储"
+    },
+    {
+      "bodyParagraphIndex0": 9829,
+      "style": "Heading3",
+      "text": "E.28 q1Model.py：N40问题一入口"
+    },
+    {
+      "bodyParagraphIndex0": 9841,
+      "style": "Heading3",
+      "text": "E.29 q2Model.py：N40问题二三入口"
+    },
+    {
+      "bodyParagraphIndex0": 9853,
+      "style": "Heading3",
+      "text": "E.30 q3Model.py：N40严格报告与采样时刻"
+    },
+    {
+      "bodyParagraphIndex0": 9885,
+      "style": "Heading3",
+      "text": "E.31 q4Model.py：N40问题四入口"
+    }
+  ],
+  "figureBriefs": [
+    "图像主题1：问题一7个指定时刻的径向温度与含水率双面板曲线。横轴为距中心距离0—2 cm；左图纵轴为温度°C，右图为干基含水率kg/kg；每条曲线对应一个时刻，突出表面先响应及中心水分滞后。该图与表1、表2对应，绘制时保持时间颜色一致。",
+    "图像主题2：烘房边界条件及延拓。上图为0—4 h温度原始点与插值，下图为环境水分指标；另用较长时间轴展示4 h后的50°C和0.05平台，用竖线标出观测与延拓边界。不能把延拓段画成实测点。",
+    "图像主题3：问题二中心与表面的温度、含水率随时间变化。温度展示前4 h，含水率展示从0到达标；两图分别使用适合其变化尺度的时间轴，清楚标出中心和表面，避免因同轴缩放掩盖前期热响应。",
+    "图像主题4：问题三中心、表面与全域最大含水率曲线及0.15阈值线。主图展示0—60 h，局部放大图展示临界根附近，分别标记tc与tr。图中明确全域最大值曲线与中心曲线后期重合，不人为错开。",
+    "图像主题5：问题四移动域及含水率剖面。左图绘制R(t)随时间的变化并标出选取时刻；右图在真实物理半径上绘制相同时刻的C(r,t)，每条曲线在各自表面结束。域外区域用浅灰显示，另标中心与真实表面，不把曲线延伸到固定2 cm。",
+    "图像主题6：经验边界阻力的情景比较。横轴取p=1、2、4，分别绘制两种模型的临界时长；同图注明N800、未标定情景，主结果以独立符号标注或只在图注引用，避免将不同网格结果混为同一精度。正文以这一组比较说明边界解释的影响，详细因子推导与参数范围放入附录。"
+  ],
+  "mediaEntries": [],
+  "sections": [
+    {
+      "pageSizeTwips": {
+        "w": "11906",
+        "h": "16838"
+      },
+      "marginsTwips": {
+        "top": "1417",
+        "right": "1417",
+        "bottom": "1417",
+        "left": "1417",
+        "header": "567",
+        "footer": "709",
+        "gutter": "0"
+      }
+    }
+  ],
+  "properties": {
+    "docProps/core.xml": {
+      "created": "2026-09-12T02:18:42Z",
+      "creator": "",
+      "lastModifiedBy": "",
+      "modified": "2026-09-12T10:00:40Z",
+      "title": "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证",
+      "subject": "",
+      "description": ""
+    },
+    "docProps/app.xml": {
+      "Template": "Normal.dotm",
+      "Pages": "1",
+      "Words": "0",
+      "Characters": "0",
+      "Lines": "0",
+      "Paragraphs": "0",
+      "TotalTime": "11",
+      "ScaleCrop": "false",
+      "LinksUpToDate": "false",
+      "CharactersWithSpaces": "0",
+      "Application": "WPS Office_11.1.0.10009_F1E327BC-269C-435d-A152-05C5408002CA",
+      "DocSecurity": "0"
+    },
+    "docProps/custom.xml": {
+      "property": ""
+    }
+  },
+  "identityLiteralsSearched": [
+    "福州大学",
+    "厦门大学",
+    "Shi Chenhao",
+    "SHIChenhao",
+    "Chenhao",
+    "陈昊",
+    "陈浩",
+    "SHIChenhao-0801",
+    "SHIChenhao0801",
+    "C:/Users/",
+    "C:\\Users\\"
+  ],
+  "identityLiteralHits": [],
+  "genericLocalPathOccurrences": [
+    {
+      "bodyParagraphIndex0": 3667,
+      "text": "    if root != Path(r\"D:\\Document\\数学建模\\2026CUMCM\").resolve():"
+    },
+    {
+      "bodyParagraphIndex0": 4526,
+      "text": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+    },
+    {
+      "bodyParagraphIndex0": 4747,
+      "text": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+    },
+    {
+      "bodyParagraphIndex0": 4939,
+      "text": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+    },
+    {
+      "bodyParagraphIndex0": 5144,
+      "text": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+    },
+    {
+      "bodyParagraphIndex0": 5378,
+      "text": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+    },
+    {
+      "bodyParagraphIndex0": 5687,
+      "text": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+    },
+    {
+      "bodyParagraphIndex0": 7913,
+      "text": "% 示例：runCrossCheck('D:/Document/数学建模/2026CUMCM/paper_output/qa/matlab_crosscheck_20260911')"
+    }
+  ],
+  "externalRelationships": [],
+  "codeSourceChecks": [
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "expectedSha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "actualSha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "hashMatches": true,
+      "lineCount": 448,
+      "declaredLineCount": 448,
+      "embeddedCodeOffset0": 0,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "expectedSha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "actualSha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "hashMatches": true,
+      "lineCount": 8,
+      "declaredLineCount": 8,
+      "embeddedCodeOffset0": 448,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "expectedSha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "actualSha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "hashMatches": true,
+      "lineCount": 8,
+      "declaredLineCount": 8,
+      "embeddedCodeOffset0": 456,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "expectedSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "actualSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "hashMatches": true,
+      "lineCount": 27,
+      "declaredLineCount": 27,
+      "embeddedCodeOffset0": 464,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "expectedSha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "actualSha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "hashMatches": true,
+      "lineCount": 8,
+      "declaredLineCount": 8,
+      "embeddedCodeOffset0": 491,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "expectedSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "actualSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "hashMatches": true,
+      "lineCount": 402,
+      "declaredLineCount": 402,
+      "embeddedCodeOffset0": 499,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "expectedSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "actualSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "hashMatches": true,
+      "lineCount": 325,
+      "declaredLineCount": 325,
+      "embeddedCodeOffset0": 901,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "expectedSha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "actualSha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "hashMatches": true,
+      "lineCount": 121,
+      "declaredLineCount": 121,
+      "embeddedCodeOffset0": 1226,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "expectedSha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "actualSha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "hashMatches": true,
+      "lineCount": 748,
+      "declaredLineCount": 748,
+      "embeddedCodeOffset0": 1347,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "expectedSha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "actualSha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "hashMatches": true,
+      "lineCount": 402,
+      "declaredLineCount": 402,
+      "embeddedCodeOffset0": 2095,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "expectedSha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "actualSha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "hashMatches": true,
+      "lineCount": 497,
+      "declaredLineCount": 497,
+      "embeddedCodeOffset0": 2497,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "expectedSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "actualSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "hashMatches": true,
+      "lineCount": 345,
+      "declaredLineCount": 345,
+      "embeddedCodeOffset0": 2994,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "expectedSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "actualSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "hashMatches": true,
+      "lineCount": 242,
+      "declaredLineCount": 242,
+      "embeddedCodeOffset0": 3339,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "expectedSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "actualSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "hashMatches": true,
+      "lineCount": 127,
+      "declaredLineCount": 127,
+      "embeddedCodeOffset0": 3581,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "expectedSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "actualSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "hashMatches": true,
+      "lineCount": 251,
+      "declaredLineCount": 251,
+      "embeddedCodeOffset0": 3708,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "expectedSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "actualSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "hashMatches": true,
+      "lineCount": 69,
+      "declaredLineCount": 69,
+      "embeddedCodeOffset0": 3959,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "expectedSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "actualSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "hashMatches": true,
+      "lineCount": 74,
+      "declaredLineCount": 74,
+      "embeddedCodeOffset0": 4028,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_solver.py",
+      "expectedSha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "actualSha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "hashMatches": true,
+      "lineCount": 206,
+      "declaredLineCount": 206,
+      "embeddedCodeOffset0": 4102,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/verification/method_comparison.py",
+      "expectedSha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "actualSha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "hashMatches": true,
+      "lineCount": 197,
+      "declaredLineCount": 197,
+      "embeddedCodeOffset0": 4308,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "expectedSha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "actualSha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "hashMatches": true,
+      "lineCount": 175,
+      "declaredLineCount": 175,
+      "embeddedCodeOffset0": 4505,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_check.py",
+      "expectedSha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "actualSha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "hashMatches": true,
+      "lineCount": 245,
+      "declaredLineCount": 245,
+      "embeddedCodeOffset0": 4680,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/verification/sensitivity_analysis.py",
+      "expectedSha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "actualSha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "hashMatches": true,
+      "lineCount": 292,
+      "declaredLineCount": 292,
+      "embeddedCodeOffset0": 4925,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_activity_closure.py",
+      "expectedSha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "actualSha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "hashMatches": true,
+      "lineCount": 494,
+      "declaredLineCount": 494,
+      "embeddedCodeOffset0": 5217,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/verify_convergence_v1.py",
+      "expectedSha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+      "actualSha256": "2e273bc308e90cb0a6b5a2bf6e68be123670bdd768595c7a02d26edf147945e8",
+      "hashMatches": true,
+      "lineCount": 106,
+      "declaredLineCount": 106,
+      "embeddedCodeOffset0": 5711,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/verify_convergence_v5.py",
+      "expectedSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+      "actualSha256": "d0a7ece6d0b3a360656a693dbd29207f5adc3c7a90fe6165a555ff12dd53a80d",
+      "hashMatches": true,
+      "lineCount": 123,
+      "declaredLineCount": 123,
+      "embeddedCodeOffset0": 5817,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v2_kirchhoff.py",
+      "expectedSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+      "actualSha256": "99ca2a3d71944b81e38fe647c411361720e1e8ff379abdc94a17fb0b45bbadce",
+      "hashMatches": true,
+      "lineCount": 326,
+      "declaredLineCount": 326,
+      "embeddedCodeOffset0": 5940,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v3_analytic_jacobian.py",
+      "expectedSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+      "actualSha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+      "hashMatches": true,
+      "lineCount": 338,
+      "declaredLineCount": 338,
+      "embeddedCodeOffset0": 6266,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v5_disk_dense.py",
+      "expectedSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+      "actualSha256": "325a17c9da48f2ed04f74c1cc7576104449b3340d856f87a181f746d674b70a8",
+      "hashMatches": true,
+      "lineCount": 395,
+      "declaredLineCount": 395,
+      "embeddedCodeOffset0": 6604,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/disk_dense_v5.py",
+      "expectedSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+      "actualSha256": "2a886c39b7d287ce0cccac7850051583d3205a2f9032ba94b0cc04212afacb06",
+      "hashMatches": true,
+      "lineCount": 99,
+      "declaredLineCount": 99,
+      "embeddedCodeOffset0": 6999,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/run_experiments_v1.py",
+      "expectedSha256": "d9732547f958da6b90c7001c41e5b359ad3dac97ec9df43dfd084ef8147b65d4",
+      "actualSha256": "d9732547f958da6b90c7001c41e5b359ad3dac97ec9df43dfd084ef8147b65d4",
+      "hashMatches": true,
+      "lineCount": 73,
+      "declaredLineCount": 73,
+      "embeddedCodeOffset0": 7098,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/versions/drying_core_v1_harmonic.py",
+      "expectedSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+      "actualSha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+      "hashMatches": true,
+      "lineCount": 296,
+      "declaredLineCount": 296,
+      "embeddedCodeOffset0": 7171,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/matlab/runCrossCheck.m",
+      "expectedSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "actualSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "hashMatches": true,
+      "lineCount": 495,
+      "declaredLineCount": 495,
+      "embeddedCodeOffset0": 7467,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+      "expectedSha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "actualSha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "hashMatches": true,
+      "lineCount": 200,
+      "declaredLineCount": 200,
+      "embeddedCodeOffset0": 7962,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/runLogged.ps1",
+      "expectedSha256": "a9174b3777c7e710ab41e388499e1335ee19f06cf3acde1909492c9b4a463db9",
+      "actualSha256": "a9174b3777c7e710ab41e388499e1335ee19f06cf3acde1909492c9b4a463db9",
+      "hashMatches": true,
+      "lineCount": 50,
+      "declaredLineCount": 50,
+      "embeddedCodeOffset0": 8162,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/runDelivery.py",
+      "expectedSha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+      "actualSha256": "95a346c15bd893f24b75e6b86d3ec0e6eeaf83ef367b9cd535faa5ed6406ac5a",
+      "hashMatches": true,
+      "lineCount": 281,
+      "declaredLineCount": 281,
+      "embeddedCodeOffset0": 8212,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/dryingCore.py",
+      "expectedSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+      "actualSha256": "1350b0729bac99ab097da6b45d23ebb5cd554b5410e696bff41cf0539b554c77",
+      "hashMatches": true,
+      "lineCount": 420,
+      "declaredLineCount": 420,
+      "embeddedCodeOffset0": 8493,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/analyticJacobian.py",
+      "expectedSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+      "actualSha256": "a5d06601f8402bdf83cff5a938997bca741e2d947c3c451dd42f24055d24efbe",
+      "hashMatches": true,
+      "lineCount": 333,
+      "declaredLineCount": 333,
+      "embeddedCodeOffset0": 8913,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/diskDense.py",
+      "expectedSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+      "actualSha256": "669045eb21c6980edcbe4ec8a2cd365ee06504caa12a78e6c83428fb27a8889f",
+      "hashMatches": true,
+      "lineCount": 128,
+      "declaredLineCount": 128,
+      "embeddedCodeOffset0": 9246,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/q1Model.py",
+      "expectedSha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1",
+      "actualSha256": "de435965eb2ccd293f839c0eed5830ed247c90aa3a4ee80f2b8c00a5b189e6d1",
+      "hashMatches": true,
+      "lineCount": 10,
+      "declaredLineCount": 10,
+      "embeddedCodeOffset0": 9374,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/q2Model.py",
+      "expectedSha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33",
+      "actualSha256": "814052bf9d27b48f762b602255254bb32d75c212aa7bd61d5673b38822f77c33",
+      "hashMatches": true,
+      "lineCount": 10,
+      "declaredLineCount": 10,
+      "embeddedCodeOffset0": 9384,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/q3Model.py",
+      "expectedSha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+      "actualSha256": "ceb692136efe5bc79075d913779ad59f27625c53af40182c0995f7ace8d2ba8f",
+      "hashMatches": true,
+      "lineCount": 30,
+      "declaredLineCount": 30,
+      "embeddedCodeOffset0": 9394,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    },
+    {
+      "path": "paper_output/code/review_delivery/q4Model.py",
+      "expectedSha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009",
+      "actualSha256": "7356a7ced99a8f6c8603d2cb2ce6350461632680afecb61db2e13609cf606009",
+      "hashMatches": true,
+      "lineCount": 10,
+      "declaredLineCount": 10,
+      "embeddedCodeOffset0": 9424,
+      "embeddedLinesEqualOriginal": true,
+      "mismatchingLineIndices0": []
+    }
+  ],
+  "embeddedCodeParagraphCount": 9434,
+  "limitations": [
+    "This is static AI inspection, not team human approval or a new executable-code/Visual-Studio reproduction.",
+    "Original errors are retained by user instruction and identified in 8 Word comments; verbatim retention does not validate their scientific content.",
+    "10 original headings are explicitly renumbered/retitled to fit the final structure; original prose and remaining subheadings are verbatim retained. Original blank paragraphs and original formatting are not retained as requirements.",
+    "The inherited app.xml Pages=1/Words=0 values are stale metadata, not actual pagination. Actual 218-page PDF evidence is in render_manifest.json.",
+    "8 generic contest-local D: paths remain in complete code listings; no school/user identity literal was found. These are portability limitations, not certified portability."
+  ]
+}

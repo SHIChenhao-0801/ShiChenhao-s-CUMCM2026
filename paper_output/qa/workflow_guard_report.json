@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "generated_by": "paper-workflow-orchestrator/scripts/workflow_guard.py",
-  "generated_at": "2026-09-12T19:29:04",
+  "generated_at": "2026-09-12T20:58:13",
   "mode": "status",
-  "target_step": "S7",
-  "status": "INCOMPLETE",
-  "current_step": "S6",
-  "next_step": "S7",
-  "recommended_skill": "paper-formal-writer",
-  "next_action": "执行写作计划、章节审计、必要的局部修复、确定性合并与全文统一改写；S7 PASS 后再生成正式 Word。",
+  "target_step": "S8",
+  "status": "COMPLETE",
+  "current_step": "S8",
+  "next_step": "",
+  "recommended_skill": "",
+  "next_action": "S0-S8 全部通过；可以进行最终一致性复核或交付。",
   "steps": [
     {
       "step": "S0",
@@ -55,15 +55,15 @@
     {
       "step": "S7",
       "name": "正式稿",
-      "status": "FAIL",
-      "failures": [
-        "writing_plan.json 输入已变化：paper_output/qa/evidence_gate_report.json",
-        "authoring_state.json 输入已变化：paper_output/qa/evidence_gate_report.json"
-      ]
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "step": "S8",
+      "name": "格式门禁",
+      "status": "PASS",
+      "failures": []
     }
   ],
-  "failures": [
-    "S7: writing_plan.json 输入已变化：paper_output/qa/evidence_gate_report.json",
-    "S7: authoring_state.json 输入已变化：paper_output/qa/evidence_gate_report.json"
-  ]
+  "failures": []
 }

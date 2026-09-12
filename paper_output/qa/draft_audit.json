@@ -1,0 +1,608 @@
+{
+  "created_at_utc": "2026-09-12T12:47:16Z",
+  "history": [
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "production:final_v6a",
+          "verification:scoped"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 890,
+        "required_evidence_ids": [],
+        "target_characters": 900
+      },
+      "scope": "section:abstract",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "source:front-matter"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 735,
+        "required_evidence_ids": [],
+        "target_characters": 700
+      },
+      "scope": "section:1",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "source:front-matter"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 1274,
+        "required_evidence_ids": [],
+        "target_characters": 1600
+      },
+      "scope": "section:2",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "source:front-matter"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 200,
+        "required_evidence_ids": [],
+        "target_characters": 300
+      },
+      "scope": "section:3",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "source:front-matter"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 418,
+        "required_evidence_ids": [],
+        "target_characters": 450
+      },
+      "scope": "section:4",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 12591,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 8500
+      },
+      "scope": "section:5",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "verification:scoped"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 1080,
+        "required_evidence_ids": [],
+        "target_characters": 850
+      },
+      "scope": "section:6",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "model:limitations"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 826,
+        "required_evidence_ids": [],
+        "target_characters": 800
+      },
+      "scope": "section:7",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "references:verified"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 856,
+        "required_evidence_ids": [],
+        "target_characters": 600
+      },
+      "scope": "section:8",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:16:53Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "code:exact-source",
+          "derivations:verified",
+          "production:final_v6a"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 17127,
+        "required_evidence_ids": [],
+        "target_characters": 6000
+      },
+      "scope": "section:appendix",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:20:35Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "references:verified"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 856,
+        "required_evidence_ids": [],
+        "target_characters": 600
+      },
+      "scope": "section:8",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:20:37Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 35997,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "assembled",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:22:10Z",
+      "issues": [],
+      "metrics": {
+        "assembly_similarity": 0.980358,
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 36269,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "final",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:28:51Z",
+      "issues": [
+        {
+          "category": "duplicate-paragraph",
+          "expected_evidence": [],
+          "issue_id": "appendix-duplicate-paragraph",
+          "message": "draft contains 7 normalized duplicate paragraphs",
+          "section_id": "appendix",
+          "severity": "BLOCKING"
+        }
+      ],
+      "metrics": {
+        "declared_evidence_ids": [
+          "code:exact-source",
+          "derivations:verified",
+          "production:final_v6a"
+        ],
+        "duplicate_paragraphs": 7,
+        "effective_characters": 22217,
+        "required_evidence_ids": [],
+        "target_characters": 6000
+      },
+      "scope": "section:appendix",
+      "status": "BLOCKED"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:29:41Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 12591,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 8500
+      },
+      "scope": "section:5",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:29:41Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "code:exact-source",
+          "derivations:verified",
+          "production:final_v6a"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 22217,
+        "required_evidence_ids": [],
+        "target_characters": 6000
+      },
+      "scope": "section:appendix",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:29:42Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41087,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "assembled",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:29:44Z",
+      "issues": [],
+      "metrics": {
+        "assembly_similarity": 0.983246,
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41359,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "final",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:32:02Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "code:exact-source",
+          "derivations:verified",
+          "production:final_v6a"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 22217,
+        "required_evidence_ids": [],
+        "target_characters": 6000
+      },
+      "scope": "section:appendix",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:32:03Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41087,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "assembled",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:32:05Z",
+      "issues": [],
+      "metrics": {
+        "assembly_similarity": 0.983246,
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41359,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "final",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:33:42Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "model:limitations"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 1173,
+        "required_evidence_ids": [],
+        "target_characters": 800
+      },
+      "scope": "section:7",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:33:42Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41434,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "assembled",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:33:45Z",
+      "issues": [],
+      "metrics": {
+        "assembly_similarity": 0.983378,
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41706,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "final",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:47:13Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [
+          "code:exact-source",
+          "derivations:verified",
+          "production:final_v6a"
+        ],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 22225,
+        "required_evidence_ids": [],
+        "target_characters": 6000
+      },
+      "scope": "section:appendix",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:47:13Z",
+      "issues": [],
+      "metrics": {
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41442,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "assembled",
+      "status": "PASS"
+    },
+    {
+      "created_at_utc": "2026-09-12T12:47:16Z",
+      "issues": [],
+      "metrics": {
+        "assembly_similarity": 0.983381,
+        "declared_evidence_ids": [],
+        "duplicate_paragraphs": 0,
+        "effective_characters": 41714,
+        "required_evidence_ids": [
+          "model_result:Q1:1",
+          "model_result:Q2:1",
+          "model_result:Q3:1",
+          "model_result:Q4:1",
+          "table:q1_paper_moisture",
+          "table:q1_paper_temperature",
+          "table:q2_paper_moisture",
+          "table:q2_paper_temperature",
+          "table:q3_paper_moisture",
+          "table:q4_paper_moisture",
+          "table:q4_paper_radius"
+        ],
+        "target_characters": 14000
+      },
+      "scope": "final",
+      "status": "PASS"
+    }
+  ],
+  "input_hashes": {
+    "paper_output/final_paper_source.md": "d64e0c07696e670d88d9f27a8bac63edc658dd06ab7f13b97b34d91b7b8e8f43",
+    "paper_output/plan/writing_plan.json": "ca9be2858c77b06a8d335f67a3a3f4b725e40884b7625958ee53d65d76b2e877"
+  },
+  "issues": [],
+  "latest_scope": "final",
+  "metrics": {
+    "assembly_similarity": 0.983381,
+    "declared_evidence_ids": [],
+    "duplicate_paragraphs": 0,
+    "effective_characters": 41714,
+    "required_evidence_ids": [
+      "model_result:Q1:1",
+      "model_result:Q2:1",
+      "model_result:Q3:1",
+      "model_result:Q4:1",
+      "table:q1_paper_moisture",
+      "table:q1_paper_temperature",
+      "table:q2_paper_moisture",
+      "table:q2_paper_temperature",
+      "table:q3_paper_moisture",
+      "table:q4_paper_moisture",
+      "table:q4_paper_radius"
+    ],
+    "target_characters": 14000
+  },
+  "producer_role": "standard-authoring-auditor",
+  "schema_version": "2.2",
+  "status": "PASS"
+}

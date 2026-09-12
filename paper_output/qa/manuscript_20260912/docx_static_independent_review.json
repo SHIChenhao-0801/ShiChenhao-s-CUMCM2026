@@ -1,0 +1,153 @@
+{
+  "inspectedAtUtc": "2026-09-12T12:40:57.790327+00:00",
+  "snapshotDocx": "paper_output\\final_paper.docx",
+  "docxSha256": "13467d00d870dd7e3d65436eb4c6abf3cd61532722d8ea2fa02099707694d3a6",
+  "bytes": 311019,
+  "sourceSha256": "8244c3e9b54c407a12169a25e1cd7c8bfde61e22558c3d5196cd91725f407484",
+  "crcFirstBadMember": null,
+  "entryCount": 18,
+  "metadataXml": {
+    "docProps/core.xml": "<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-09-12T02:18:42Z</dcterms:created><dc:creator/><cp:lastModifiedBy/><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-09-12T10:00:40Z</dcterms:modified><dc:title>考虑物性变化与径向收缩的药材热湿耦合模型及数值验证</dc:title><dc:subject/><dc:description/></cp:coreProperties>",
+    "docProps/app.xml": "<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Template>Normal.dotm</Template><Pages>1</Pages><Words>0</Words><Characters>0</Characters><Lines>0</Lines><Paragraphs>0</Paragraphs><TotalTime>11</TotalTime><ScaleCrop>false</ScaleCrop><LinksUpToDate>false</LinksUpToDate><CharactersWithSpaces>0</CharactersWithSpaces><Application>WPS Office_11.1.0.10009_F1E327BC-269C-435d-A152-05C5408002CA</Application><DocSecurity>0</DocSecurity></Properties>",
+    "docProps/custom.xml": "<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/custom-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"2\" name=\"KSOProductBuildVer\"><vt:lpwstr>2052-11.1.0.10009</vt:lpwstr></property></Properties>"
+  },
+  "identityLiteralHits": [
+    {
+      "part": "word/document.xml",
+      "needle": "D:/Document/数学建模",
+      "count": 1
+    },
+    {
+      "part": "word/document.xml",
+      "needle": "D:\\Document\\数学建模",
+      "count": 7
+    }
+  ],
+  "externalRelationships": [],
+  "sections": [
+    {
+      "pageSize": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w": "11906",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}h": "16838"
+      },
+      "margins": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}top": "1417",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}right": "1417",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bottom": "1417",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1417",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}header": "567",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footer": "709",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}gutter": "0"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": "0",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。“BD”应为“BDF”。Kirchhoff原函数改善面通量计算，仍使用温度面均值和有限精度求积，不能把“精确处理”理解为没有离散或积分误差。分钟量级是已记录计算环境下的运行表现，不是其他设备的时间保证。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "1",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。题面及前文1.2给出的长度为25 cm，此处“长2cm”应改为“长25cm”；后续模型按0.25 m计算。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "2",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。Q1的D1(C)=7e−9 exp(−0.89/C)没有温度项；Arrhenius温度因子属于附录3/4。后文按各问实际公式区分。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "3",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。采用同比材料收缩时，坐标变化项与物理平流相消，不另加网格平流。附录A.3给出完整推导。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "4",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。同T、同C下D4/D3=0.175exp(0.15/C)，只有C>0.0860600 kg/kg时小于1，低含水率表面可能反转。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "5",
+      "author": "审阅",
+      "initials": "",
+      "text": "原文按要求保留。Q4材料骨架随径向收缩运动，应限定为干物质没有生成、损失或相对骨架迁移，而不是空间静止。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "6",
+      "author": "审阅",
+      "initials": "",
+      "text": "原条目按要求保留。刊方确认：王乐意,李长河,刘明政,等.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(2):1–28. DOI:10.11975/j.issn.1002-6819.202306104。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    },
+    {
+      "id": "7",
+      "author": "审阅",
+      "initials": "",
+      "text": "原条目按要求保留。PubMed PMID37474981确认2023,48(13):3440–3447，原页码正确；原文共有8名作者，前三人之后宜补“等”。",
+      "starts": 1,
+      "ends": 1,
+      "references": 1
+    }
+  ],
+  "commentCount": 8,
+  "sourceNonemptyParagraphCount": 41,
+  "explicitHeadingExclusions": [
+    "问题重述",
+    "问题分析",
+    "模型假设",
+    "符号说明",
+    "模型的建立与求解",
+    "模型的评价",
+    "6.1模型的优点",
+    "6.2模型的不足",
+    "6.3模型的推广",
+    "参考文献"
+  ],
+  "requiredSourceParagraphCount": 31,
+  "missingSourceParagraphs": [],
+  "sourceTables": [
+    {
+      "sourceTable": 0,
+      "sourceRows": 22,
+      "exactMatchingFinalTables": [
+        0
+      ],
+      "prefixMatchingFinalTables": [
+        0
+      ],
+      "missingRows": []
+    }
+  ],
+  "finalTableCount": 12,
+  "mediaEntries": [],
+  "ommlCount": 203,
+  "bodyParagraphCount": 9897,
+  "codeParagraphCount": 9434,
+  "scope": "DOCX static snapshot only; no PDF read and no final visual approval"
+}
