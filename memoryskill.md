@@ -12,6 +12,15 @@
 - Python/C++正式代码必须通过Computer Use在Visual Studio实际打开、断点/变量/运行复现；CLI成功、AI阅读均不能等同GUI复现或用户人工审查。MATLAB通过GUI，R通过Rscript；默认CPU与有限预算。
 - 用户持续授权：每完成可复核工作单元由主代理检查后commit/push到私有GitHub仓库 SHIChenhao-0801/ShiChenhao-s-CUMCM2026/main，核对远端哈希才称备份；子代理不操作Git索引，不强推/删锁/丢弃修改。UTC04/10/16/22六小时同步安排见notes/workspace-maintenance。
 
+## 建模与交叉验证核实及写作大纲（2026-09-12 晚间，当前任务）
+
+- 用户本轮要求先参考《数学建模大赛a.docx》核实模型修正与多方法验证，再给逐项审核大纲；**完整论文编撰是随后可能任务，本轮不自动启动全文或替用户批准模型。** 大纲入口 `paper_output/plan/review_outline_20260912/A题论文写作大纲_逐项核实版.md`，A01—A07模型/写作决定、B01—B12章节全部待用户核实；正文预算27页、留3页。
+- Word原件已按SHA256 8244c3e9b54c407a12169a25e1cd7c8bfde61e22558c3d5196cd91725f407484完整保存在`reference_materials/peer-models/2026-09-12_front_matter/`；153段/1表/8渲染页已读，15处修正详见`paper_output/qa/paper_readiness_20260912/front_matter_review.md`。长度应25cm；Q1 D仅依C；Q2从初始整组附录3；空气kg/kg分母未明示；文献[1]刊方更正，文献[2]末页尚待全文核实。
+- 本轮交叉验证审计121项算术检查通过、165输入哈希登记；模型独立推导与构造状态/标量积分也完成。报告`innovation_verified.md`与`crossvalidation_verified.md`同在上述qa目录。未重新积分生产PDE、未新增VS GUI或人工签核，不能把本轮PASS扩展为物理准确率或终审。
+- 可写：条件闭合下的有效容量/干物质守恒、材料坐标、Kirchhoff应用；解析热场、N40 MATLAB、N800/1600 BDF/Radau、网格/时间设置、两面格式、同轨迹根复核。水活度方向只保留经验边界阻力族，潜热只作能量负荷情景；所有范围与共享依赖见大纲V1—V8/I1—I6。
+- 新确证序贯M-K公式错配：20点常数序列UF末值−6.30614且第4点就虚假越界，旧阶段交点作废；Fisher/折线/小波/R/S目标不同不能互证同一阶段。旧Sobol无有效结果；Morris D失效不因单参数补扫而修复。原热100%解释/真实时长下界等旧主张继续禁用。
+- 大纲已接入另一会话的支撑ZIP可移植性FAIL，未宣称独立复现；正式成稿还需修正这些科学口径、候选包修复验收、有效章节/渲染S8和真实人工审查。最新guard实际为S6→S7（paper-formal-writer），workflow_memory已同步；先请用户逐项核实大纲，不从旧合同PASS跳过。
+
 ## 接班核验更新（2026-09-12 北京时间，覆盖下方旧快照）
 
 - 最新接班入口：`notes/A-handoff/2026-09-12/代班工作接班核对.md`。本轮用户要求阅读代班工作；已对 Git、源码/JSON、PDF/ZIP 与旧记忆交叉核对，未重跑生产、未改冻结结果或稿件。

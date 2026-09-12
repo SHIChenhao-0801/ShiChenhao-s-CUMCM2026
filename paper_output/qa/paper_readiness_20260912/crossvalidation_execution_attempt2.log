@@ -1,0 +1,27 @@
+{
+  "arithmeticPass": true,
+  "arithmeticChecks": 121,
+  "inputsHashed": 158,
+  "hashMismatches": [],
+  "bessel": {
+    "question": "Q1 heat only; constant thermal properties, cylindrical Robin, observed piecewise-linear chamber boundary",
+    "N": 3200,
+    "timeCount": 1801,
+    "radiusCount": 21,
+    "maxDifference_K": 1.8037762288258818e-06,
+    "location": {
+      "time_s": 1740.0,
+      "radius_m": 0.02
+    },
+    "series240vs480_K": 1.8995535810972797e-08,
+    "preservedBaselineVsProductionSharedTimeCount": 32,
+    "preservedBaselineVsProductionMax_K": 0.0,
+    "scope": "Full 1801x21 preserved N3200 baseline projection; production sampled values checked separately. Point-value comparison, no cell-average error attribution."
+  },
+  "sequenceProbe": {
+    "n": 20,
+    "ufLast": -6.3061431842660465,
+    "firstExceedanceIndex": 3,
+    "verdict": "INVALID: sign-sum statistic subtracts positive-count expectation; a constant sequence spuriously exceeds trend threshold."
+  }
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\Document\��ѧ��ģ\2026CUMCM\paper_output\qa\paper_readiness_20260912\audit_crossvalidation.py", line 122, in <module>
+    assert m["sampleMaterialX"][mx]==p["material_x"][px]==c["materialX"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

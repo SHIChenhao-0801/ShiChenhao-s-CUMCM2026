@@ -1,0 +1,122 @@
+{
+  "generatedAtUtc": "2026-09-12T11:29:57.404455+00:00",
+  "status": "READY_FOR_USER_OUTLINE_REVIEW_NOT_FINAL_PAPER_APPROVAL",
+  "outline": {
+    "path": "paper_output/plan/review_outline_20260912/A题论文写作大纲_逐项核实版.md",
+    "sha256": "2729def92af9dce23d4ee16f38d0f1bed1f3411a855f70aa5b7147d035468815"
+  },
+  "userDecisionItems": [
+    {
+      "id": "A01",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "A02",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "A03",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "A04",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "A05",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "A06",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "A07",
+      "status": "PENDING_USER_REVIEW"
+    }
+  ],
+  "chapterReviewItems": [
+    {
+      "id": "B01",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B02",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B03",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B04",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B05",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B06",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B07",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B08",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B09",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B10",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B11",
+      "status": "PENDING_USER_REVIEW"
+    },
+    {
+      "id": "B12",
+      "status": "PENDING_USER_REVIEW"
+    }
+  ],
+  "bodyPageBudget": 27.0,
+  "reservedBodyPages": 3,
+  "abstractPageBudgetExcludedFromBody": 1,
+  "arithmeticChecks": 121,
+  "arithmeticPass": true,
+  "recordedInputHashes": 165,
+  "freshnessCheck": {
+    "method": "Recheck hashes for input files modified after original audit; separately rehash all six algebra-proof sources. Original input hashes remain in crossvalidation_verified.json.",
+    "inputsModifiedAfterAudit": [],
+    "hashMismatches": []
+  },
+  "relativeEvidenceLinks": {
+    "count": 5,
+    "missing": []
+  },
+  "sourceDocxUnchanged": true,
+  "reports": {
+    "innovation_verified.md": "f178721cff886ed27ed4abb9d12f7c1f22c00715b52add11cc3eeef50bba179f",
+    "innovation_proof_checks.json": "4c30e663d6abd8ff62693092d14aeaa8355ceb09c17910a816bad5e0729b90da",
+    "crossvalidation_verified.md": "df483dfafb6aa980b0e523e0d08eee67a8c6d68a61dfe73c4c1bd61de43d87f2",
+    "crossvalidation_verified.json": "78da97878c80ee1f619b2d5c2570c416bcdaffc0ef936201a095d91acfee3a92",
+    "front_matter_review.md": "c12833ce74b755b2cef215028eceba0fde53a7f80aefa9a03f3b689544643ff8",
+    "notice_and_sources.md": "2711cbe4b4ef4cf7fb39571f80f3e7e29a843cc09ae12e239929de2a2ed404bb"
+  },
+  "newProductionPdeRun": false,
+  "newGuiRun": false,
+  "humanApproval": "PENDING_USER_REVIEW",
+  "knownDeliveryBlockers": [
+    "Scientific claims in old manuscript require correction",
+    "Current ZIP independent-startup audit failed in parallel session",
+    "Fresh chapter/render/S8 audit and genuine human review remain required"
+  ],
+  "workflowMemorySha256": "99b5e1165d9452b31fae7bf7b221bd03b3c8a258287ec24c17a9d7536c5ecbca",
+  "sourceExtractionWhitespace": "source_extract.txt preserves empty DOCX paragraph labels and original extraction hash; excluded from prose whitespace lint."
+}

@@ -1,0 +1,153 @@
+word/document.xml P0001 | 问题重述
+word/document.xml P0002 | 1.1问题背景
+word/document.xml P0003 | 中药材干燥是产地初加工的关键环节，直接决定成品品质与用药安全。热风烘干是目前应用最广的干燥方式之一，通常包含预热平衡与恒温干燥两个阶段[1]。然而，烘房温湿度调控多凭经验，参数不当易导致效率低、能耗高、有效成分损失等问题。已有研究表明，通过建立热风干燥的传热传质模型，可以用计算机模拟不同工艺下水分和温度的变化，从而减少试错成本[2]。因此，用数学建模与仿真研究热风烘干规律具有实际意义。
+word/document.xml P0004 | 
+word/document.xml P0005 | 1.2问题提出
+word/document.xml P0006 | 基于上述背景，要求建立数学模型解决以下问题：
+word/document.xml P0007 | 本文以圆柱形中药材的热风烘干过程为研究对象，该药材长为25cm、半径为2cm，初始温度为28℃，初始水分浓度（即干基含水率）为2.55kg/kg。
+word/document.xml P0008 | 问题一：根据烘房的温度以及水分浓度变化情况，建立预热平衡阶段药材温度和水分浓度变化规律的数学模型，据此计算出1800s内每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度。
+word/document.xml P0009 | 问题二：在问题一的基础下，将时间范围扩展至整个烘干过程（2至3天），根据预热平衡阶段与恒温干燥阶段参数，建立整个烘干过程药材温度和水分浓度变化规律的数学模型，据此计算出在烘干过程中，每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度的。
+word/document.xml P0010 | 问题三：在问题二的基础上反求问题，约束烘干要求药材各处水分浓度均低于0.15kg/kg。要求依据已建立的水分浓度模型，模拟药材内部水分随时间的变化，计算出药材内部水分浓度每隔60s、到药材中心距离每隔0.1cm的药材水分浓度以及烘干结束时间。
+word/document.xml P0011 | 问题四：在实际烘干过程中，药材由于水分流失引起的尺寸变化会影响到烘干的最终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出药材内部水分浓度每隔60s时间、0.1cm距离的水分浓度以及烘干结束时间。
+word/document.xml P0012 | 
+word/document.xml P0013 | 
+word/document.xml P0014 | 问题分析
+word/document.xml P0015 | 2.1问题一分析
+word/document.xml P0016 | 已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。
+word/document.xml P0017 | 
+word/document.xml P0018 | 2.2问题二分析
+word/document.xml P0019 | 问题二区别于上一问，将时间拉长至整个烘焙过程，已知烘干过程持续数天，预热平衡与恒温干燥两个阶段的参数不同，附录给出了密度、比热容、导热系数和扩散系数随含水率或温度变化的经验关系，要求得到整个烘干过程的温度与水分浓度时空分布。与问题一相比，本问物性同时依赖含水率与温度，温度方程和水分方程不再解耦，必须联立求解。由于两问采用的物性体系不同，本问从初始时刻重新开始计算，不以问题一的末状态作为初值。环境驱动方面，前一段时间按附件数据分段线性插值，之后取平台温湿度延拓，该延拓作为假设在论文中明确说明。求解方法上仍采用守恒型有限体积离散，时间推进需处理方程刚性与非线性耦合，因此配了解析Jacobian并采用隐式BDF格式。非线性系数不能移出散度，热容量项不能改写成特定微分形式。
+word/document.xml P0020 | 
+word/document.xml P0021 | 2.3问题三分析
+word/document.xml P0022 | 问题三继续沿用问题二的变物性耦合模型，几何依旧保持固定半径，计算时间拉长至数天。本题不再是给定时间求内部分布，而是反向求解烘干结束时刻；烘干达标条件是药材全部位置的水分浓度均低于0.15 kg/kg。由于药材中心水分散失最慢，全场最大值一般出现在中心位置，但求解时不能只监控中心点，必须遍历全部径向位置，取全域最大水分浓度作为判断依据，寻找它第一次低于阈值的时刻作为烘干总时长。为了精确捕捉这一时刻，选择利用数值解进行插值搜索，并严格控制时间步长以确保穿越时刻的精度。
+word/document.xml P0023 | 
+word/document.xml P0024 | 2.4问题四分析
+word/document.xml P0025 | 问题四的解决关键在于处理半径随时间减小带来的移动边界。直接使用原坐标会面对网格随边界变形的问题，因此采用坐标变换，把实际收缩域映射到固定区间这样，移动边界问题转化为固定域问题，问题二、三中的有限体积离散和隐式时间推进可以继续使用。半径由附件2插值得到，密度、比热、导热系数和扩散系数改用附录4的经验公式，并在每个时间步按当前含水率和温度更新。
+word/document.xml P0026 | 求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。
+word/document.xml P0027 | 
+word/document.xml P0028 | 模型假设
+word/document.xml P0029 | 假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程简化为一维径向模型。
+word/document.xml P0030 | 假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对流传质系数取恒定值。
+word/document.xml P0031 | 假设初始时刻药材内部温度与干基含水率均匀分布，不存在初始梯度。
+word/document.xml P0032 | 假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四只发生均匀径向收缩，轴向长度不变。
+word/document.xml P0033 | 假设不考虑药材内部生化反应，仅研究热传导与水分扩散物理过程。
+word/document.xml P0034 | 
+word/document.xml P0035 | 
+word/document.xml P0036 | 符号说明
+word/document.xml P0037 | 符号
+word/document.xml P0038 | 说明
+word/document.xml P0039 | 单位
+word/document.xml P0040 | t
+word/document.xml P0041 | 时间
+word/document.xml P0042 | s
+word/document.xml P0043 | r
+word/document.xml P0044 | 到药材中心的径向距离
+word/document.xml P0045 | m
+word/document.xml P0046 | x=r/R(t)
+word/document.xml P0047 | 材料归一化径向坐标
+word/document.xml P0048 | 1
+word/document.xml P0049 | T
+word/document.xml P0050 | 药材温度
+word/document.xml P0051 | K
+word/document.xml P0052 | C
+word/document.xml P0053 | 干基含水率=m水/m干物质
+word/document.xml P0054 | kg/kg
+word/document.xml P0055 | w=C/(1+C)
+word/document.xml P0056 | 湿基质量分数
+word/document.xml P0057 | 1
+word/document.xml P0058 | R(t)
+word/document.xml P0059 | 药材当前半径
+word/document.xml P0060 | m
+word/document.xml P0061 | ρeff
+word/document.xml P0062 | 有效密度（用于热容量）
+word/document.xml P0063 | kg/m³
+word/document.xml P0064 | ρd
+word/document.xml P0065 | 守恒干物质密度
+word/document.xml P0066 | kg/m³
+word/document.xml P0067 | cp
+word/document.xml P0068 | 比热容
+word/document.xml P0069 | J/(kg·K)
+word/document.xml P0070 | k
+word/document.xml P0071 | 导热系数
+word/document.xml P0072 | W/(m·K)
+word/document.xml P0073 | D
+word/document.xml P0074 | 有效水分扩散系数
+word/document.xml P0075 | m²/s
+word/document.xml P0076 | h
+word/document.xml P0077 | 对流换热系数
+word/document.xml P0078 | W/(m²·K)
+word/document.xml P0079 | β
+word/document.xml P0080 | 对流传质系数
+word/document.xml P0081 | m/s
+word/document.xml P0082 | B=ρeff·cp
+word/document.xml P0083 | 有效体积显热容量
+word/document.xml P0084 | J/(m³·K)
+word/document.xml P0085 | qr
+word/document.xml P0086 | 径向导热热流密度（向外为正）
+word/document.xml P0087 | W/m²
+word/document.xml P0088 | jw
+word/document.xml P0089 | 径向水分质量通量（向外为正）
+word/document.xml P0090 | kg/(m²·s)
+word/document.xml P0091 | ℓ(t)
+word/document.xml P0092 | 每单位初始干物质的累计失水
+word/document.xml P0093 | kg/kg
+word/document.xml P0094 | Ceq
+word/document.xml P0095 | 环境对应的等效平衡含水率
+word/document.xml P0096 | kg/kg
+word/document.xml P0097 | T∞
+word/document.xml P0098 | 烘房温度
+word/document.xml P0099 | K
+word/document.xml P0100 | t*
+word/document.xml P0101 | 全域达标时刻
+word/document.xml P0102 | s
+word/document.xml P0103 | 
+word/document.xml P0104 | 模型的建立与求解
+word/document.xml P0105 | 
+word/document.xml P0106 | 
+word/document.xml P0107 | 
+word/document.xml P0108 | 
+word/document.xml P0109 | 
+word/document.xml P0110 | 
+word/document.xml P0111 | 
+word/document.xml P0112 | 
+word/document.xml P0113 | 
+word/document.xml P0114 | 模型的评价
+word/document.xml P0115 | 6.1模型的优点
+word/document.xml P0116 | 模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，逻辑一致、便于对比。
+word/document.xml P0117 | 数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BD处理刚性，使N达到3200/6400仍可在分钟量级完成。
+word/document.xml P0118 | 检验分层且可追溯：解析基准、离散守恒、空间/时间收敛、跨语言交叉核验四类证据分开报告，且明确各自的适用范围。
+word/document.xml P0119 | 
+word/document.xml P0120 | 6.2模型的不足
+word/document.xml P0121 | 缺少物理闭合：未显式计入相变潜热，Ceq用等效映射，密度与收缩相容性未完全解决。
+word/document.xml P0122 | 
+word/document.xml P0123 | 6.3模型的推广
+word/document.xml P0124 | 走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为目标，利用参数扫描或启发式算法寻优。
+word/document.xml P0125 | 维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维轴对称模型，显式处理端面传热传质。
+word/document.xml P0126 | 
+word/document.xml P0127 | 
+word/document.xml P0128 | 
+word/document.xml P0129 | 
+word/document.xml P0130 | 
+word/document.xml P0131 | 
+word/document.xml P0132 | 
+word/document.xml P0133 | 
+word/document.xml P0134 | 
+word/document.xml P0135 | 
+word/document.xml P0136 | 
+word/document.xml P0137 | 
+word/document.xml P0138 | 
+word/document.xml P0139 | 
+word/document.xml P0140 | 
+word/document.xml P0141 | 
+word/document.xml P0142 | 
+word/document.xml P0143 | 
+word/document.xml P0144 | 
+word/document.xml P0145 | 
+word/document.xml P0146 | 
+word/document.xml P0147 | 
+word/document.xml P0148 | 
+word/document.xml P0149 | 
+word/document.xml P0150 | 参考文献
+word/document.xml P0151 | 王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15.
+word/document.xml P0152 | 
+word/document.xml P0153 | 王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447.

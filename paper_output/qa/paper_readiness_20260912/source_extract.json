@@ -1,0 +1,1213 @@
+{
+  "source": "reference_materials/peer-models/2026-09-12_front_matter/数学建模大赛a.docx",
+  "sha256": "8244c3e9b54c407a12169a25e1cd7c8bfde61e22558c3d5196cd91725f407484",
+  "method": "Complete OOXML text in paragraph order; w:t, m:t, deletion text; full OMML/XML retained; table cells and media inventory separately indexed",
+  "parts": [
+    {
+      "part": "word/document.xml",
+      "counts": {
+        "paragraphs": 153,
+        "tables": 1,
+        "omml_equations": 0,
+        "drawings": 0,
+        "pict": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "comment_anchors": 0,
+        "text_boxes": 0
+      },
+      "paragraphs": [
+        {
+          "id": "P0001",
+          "text": "问题重述",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0002",
+          "text": "1.1问题背景",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0003",
+          "text": "中药材干燥是产地初加工的关键环节，直接决定成品品质与用药安全。热风烘干是目前应用最广的干燥方式之一，通常包含预热平衡与恒温干燥两个阶段[1]。然而，烘房温湿度调控多凭经验，参数不当易导致效率低、能耗高、有效成分损失等问题。已有研究表明，通过建立热风干燥的传热传质模型，可以用计算机模拟不同工艺下水分和温度的变化，从而减少试错成本[2]。因此，用数学建模与仿真研究热风烘干规律具有实际意义。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0004",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0005",
+          "text": "1.2问题提出",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0006",
+          "text": "基于上述背景，要求建立数学模型解决以下问题：",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0007",
+          "text": "本文以圆柱形中药材的热风烘干过程为研究对象，该药材长为25cm、半径为2cm，初始温度为28℃，初始水分浓度（即干基含水率）为2.55kg/kg。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0008",
+          "text": "问题一：根据烘房的温度以及水分浓度变化情况，建立预热平衡阶段药材温度和水分浓度变化规律的数学模型，据此计算出1800s内每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0009",
+          "text": "问题二：在问题一的基础下，将时间范围扩展至整个烘干过程（2至3天），根据预热平衡阶段与恒温干燥阶段参数，建立整个烘干过程药材温度和水分浓度变化规律的数学模型，据此计算出在烘干过程中，每隔1s、到药材中心距离每隔0.1cm的药材温度以及水分浓度的。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0010",
+          "text": "问题三：在问题二的基础上反求问题，约束烘干要求药材各处水分浓度均低于0.15kg/kg。要求依据已建立的水分浓度模型，模拟药材内部水分随时间的变化，计算出药材内部水分浓度每隔60s、到药材中心距离每隔0.1cm的药材水分浓度以及烘干结束时间。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0011",
+          "text": "问题四：在实际烘干过程中，药材由于水分流失引起的尺寸变化会影响到烘干的最终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出药材内部水分浓度每隔60s时间、0.1cm距离的水分浓度以及烘干结束时间。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0012",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0013",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0014",
+          "text": "问题分析",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0015",
+          "text": "2.1问题一分析",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0016",
+          "text": "已知圆柱形药材的几何尺寸（长2cm、半径2cm）、均匀初始状态（28°C、2.55kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到1800s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与Fick扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为Arhenius形式，计算中温度一律以开尔文代入。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0017",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0018",
+          "text": "2.2问题二分析",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0019",
+          "text": "问题二区别于上一问，将时间拉长至整个烘焙过程，已知烘干过程持续数天，预热平衡与恒温干燥两个阶段的参数不同，附录给出了密度、比热容、导热系数和扩散系数随含水率或温度变化的经验关系，要求得到整个烘干过程的温度与水分浓度时空分布。与问题一相比，本问物性同时依赖含水率与温度，温度方程和水分方程不再解耦，必须联立求解。由于两问采用的物性体系不同，本问从初始时刻重新开始计算，不以问题一的末状态作为初值。环境驱动方面，前一段时间按附件数据分段线性插值，之后取平台温湿度延拓，该延拓作为假设在论文中明确说明。求解方法上仍采用守恒型有限体积离散，时间推进需处理方程刚性与非线性耦合，因此配了解析Jacobian并采用隐式BDF格式。非线性系数不能移出散度，热容量项不能改写成特定微分形式。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0020",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0021",
+          "text": "2.3问题三分析",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0022",
+          "text": "问题三继续沿用问题二的变物性耦合模型，几何依旧保持固定半径，计算时间拉长至数天。本题不再是给定时间求内部分布，而是反向求解烘干结束时刻；烘干达标条件是药材全部位置的水分浓度均低于0.15 kg/kg。由于药材中心水分散失最慢，全场最大值一般出现在中心位置，但求解时不能只监控中心点，必须遍历全部径向位置，取全域最大水分浓度作为判断依据，寻找它第一次低于阈值的时刻作为烘干总时长。为了精确捕捉这一时刻，选择利用数值解进行插值搜索，并严格控制时间步长以确保穿越时刻的精度。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0023",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0024",
+          "text": "2.4问题四分析",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0025",
+          "text": "问题四的解决关键在于处理半径随时间减小带来的移动边界。直接使用原坐标会面对网格随边界变形的问题，因此采用坐标变换，把实际收缩域映射到固定区间这样，移动边界问题转化为固定域问题，问题二、三中的有限体积离散和隐式时间推进可以继续使用。半径由附件2插值得到，密度、比热、导热系数和扩散系数改用附录4的经验公式，并在每个时间步按当前含水率和温度更新。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0026",
+          "text": "求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0027",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0028",
+          "text": "模型假设",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0029",
+          "text": "假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程简化为一维径向模型。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0030",
+          "text": "假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对流传质系数取恒定值。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0031",
+          "text": "假设初始时刻药材内部温度与干基含水率均匀分布，不存在初始梯度。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0032",
+          "text": "假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四只发生均匀径向收缩，轴向长度不变。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0033",
+          "text": "假设不考虑药材内部生化反应，仅研究热传导与水分扩散物理过程。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0034",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0035",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0036",
+          "text": "符号说明",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0037",
+          "text": "符号",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0038",
+          "text": "说明",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0039",
+          "text": "单位",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0040",
+          "text": "t",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0041",
+          "text": "时间",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0042",
+          "text": "s",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0043",
+          "text": "r",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0044",
+          "text": "到药材中心的径向距离",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0045",
+          "text": "m",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0046",
+          "text": "x=r/R(t)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0047",
+          "text": "材料归一化径向坐标",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0048",
+          "text": "1",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0049",
+          "text": "T",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0050",
+          "text": "药材温度",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0051",
+          "text": "K",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0052",
+          "text": "C",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0053",
+          "text": "干基含水率=m水/m干物质",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0054",
+          "text": "kg/kg",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0055",
+          "text": "w=C/(1+C)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0056",
+          "text": "湿基质量分数",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0057",
+          "text": "1",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0058",
+          "text": "R(t)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0059",
+          "text": "药材当前半径",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0060",
+          "text": "m",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0061",
+          "text": "ρeff",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0062",
+          "text": "有效密度（用于热容量）",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0063",
+          "text": "kg/m³",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0064",
+          "text": "ρd",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0065",
+          "text": "守恒干物质密度",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0066",
+          "text": "kg/m³",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0067",
+          "text": "cp",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0068",
+          "text": "比热容",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0069",
+          "text": "J/(kg·K)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0070",
+          "text": "k",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0071",
+          "text": "导热系数",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0072",
+          "text": "W/(m·K)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0073",
+          "text": "D",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0074",
+          "text": "有效水分扩散系数",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0075",
+          "text": "m²/s",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0076",
+          "text": "h",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0077",
+          "text": "对流换热系数",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0078",
+          "text": "W/(m²·K)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0079",
+          "text": "β",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0080",
+          "text": "对流传质系数",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0081",
+          "text": "m/s",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0082",
+          "text": "B=ρeff·cp",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0083",
+          "text": "有效体积显热容量",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0084",
+          "text": "J/(m³·K)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0085",
+          "text": "qr",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0086",
+          "text": "径向导热热流密度（向外为正）",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0087",
+          "text": "W/m²",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0088",
+          "text": "jw",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0089",
+          "text": "径向水分质量通量（向外为正）",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0090",
+          "text": "kg/(m²·s)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0091",
+          "text": "ℓ(t)",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0092",
+          "text": "每单位初始干物质的累计失水",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0093",
+          "text": "kg/kg",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0094",
+          "text": "Ceq",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0095",
+          "text": "环境对应的等效平衡含水率",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0096",
+          "text": "kg/kg",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0097",
+          "text": "T∞",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0098",
+          "text": "烘房温度",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0099",
+          "text": "K",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0100",
+          "text": "t*",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0101",
+          "text": "全域达标时刻",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0102",
+          "text": "s",
+          "style": [],
+          "omml_xml": [],
+          "in_table": true
+        },
+        {
+          "id": "P0103",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0104",
+          "text": "模型的建立与求解",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0105",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0106",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0107",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0108",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0109",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0110",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0111",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0112",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0113",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0114",
+          "text": "模型的评价",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0115",
+          "text": "6.1模型的优点",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0116",
+          "text": "模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，逻辑一致、便于对比。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0117",
+          "text": "数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BD处理刚性，使N达到3200/6400仍可在分钟量级完成。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0118",
+          "text": "检验分层且可追溯：解析基准、离散守恒、空间/时间收敛、跨语言交叉核验四类证据分开报告，且明确各自的适用范围。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0119",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0120",
+          "text": "6.2模型的不足",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0121",
+          "text": "缺少物理闭合：未显式计入相变潜热，Ceq用等效映射，密度与收缩相容性未完全解决。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0122",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0123",
+          "text": "6.3模型的推广",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0124",
+          "text": "走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为目标，利用参数扫描或启发式算法寻优。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0125",
+          "text": "维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维轴对称模型，显式处理端面传热传质。",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0126",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0127",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0128",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0129",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0130",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0131",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0132",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0133",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0134",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0135",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0136",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0137",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0138",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0139",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0140",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0141",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0142",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0143",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0144",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0145",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0146",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0147",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0148",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0149",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0150",
+          "text": "参考文献",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0151",
+          "text": "王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15.",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0152",
+          "text": "",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        },
+        {
+          "id": "P0153",
+          "text": "王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447.",
+          "style": [],
+          "omml_xml": [],
+          "in_table": false
+        }
+      ],
+      "tables": [
+        {
+          "id": "T001",
+          "rows": [
+            [
+              "符号",
+              "说明",
+              "单位"
+            ],
+            [
+              "t",
+              "时间",
+              "s"
+            ],
+            [
+              "r",
+              "到药材中心的径向距离",
+              "m"
+            ],
+            [
+              "x=r/R(t)",
+              "材料归一化径向坐标",
+              "1"
+            ],
+            [
+              "T",
+              "药材温度",
+              "K"
+            ],
+            [
+              "C",
+              "干基含水率=m水/m干物质",
+              "kg/kg"
+            ],
+            [
+              "w=C/(1+C)",
+              "湿基质量分数",
+              "1"
+            ],
+            [
+              "R(t)",
+              "药材当前半径",
+              "m"
+            ],
+            [
+              "ρeff",
+              "有效密度（用于热容量）",
+              "kg/m³"
+            ],
+            [
+              "ρd",
+              "守恒干物质密度",
+              "kg/m³"
+            ],
+            [
+              "cp",
+              "比热容",
+              "J/(kg·K)"
+            ],
+            [
+              "k",
+              "导热系数",
+              "W/(m·K)"
+            ],
+            [
+              "D",
+              "有效水分扩散系数",
+              "m²/s"
+            ],
+            [
+              "h",
+              "对流换热系数",
+              "W/(m²·K)"
+            ],
+            [
+              "β",
+              "对流传质系数",
+              "m/s"
+            ],
+            [
+              "B=ρeff·cp",
+              "有效体积显热容量",
+              "J/(m³·K)"
+            ],
+            [
+              "qr",
+              "径向导热热流密度（向外为正）",
+              "W/m²"
+            ],
+            [
+              "jw",
+              "径向水分质量通量（向外为正）",
+              "kg/(m²·s)"
+            ],
+            [
+              "ℓ(t)",
+              "每单位初始干物质的累计失水",
+              "kg/kg"
+            ],
+            [
+              "Ceq",
+              "环境对应的等效平衡含水率",
+              "kg/kg"
+            ],
+            [
+              "T∞",
+              "烘房温度",
+              "K"
+            ],
+            [
+              "t*",
+              "全域达标时刻",
+              "s"
+            ]
+          ]
+        }
+      ],
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<w:document xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" mc:Ignorable=\"w14 w15 wp14\"><w:body><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:bookmarkStart w:id=\"0\" w:name=\"_GoBack\"/><w:bookmarkEnd w:id=\"0\"/><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题重述</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1.1问题背景</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>中药材干燥是产地初加工的关键环节，直接决定成品品质与用药安全。热风烘干是目前应用最广的干燥方式之一，通常包含预热平衡与恒温干燥两个阶段</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"superscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>[1]</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>。然而，烘房温湿度调控多凭经验，参数不当易导致效率低、能耗高、有效成分损失等问题。已有研究表明，通过建立热风干燥的传热传质模型，可以用计算机模拟不同工艺下水分和温度的变化，从而减少试错成本</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"superscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>[2]</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>。因此，用数学建模与仿真研究热风烘干规律具有实际意义。</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>.2问题提出</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>基于上述背景，要求建立数学模型解决以下问题：</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>本文以圆柱形中药材的热风烘干过程为研究对象，该药材长为2</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>5cm、半径为</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2cm，初始温度为28℃，初始水分浓度（即干基含水率）为2.5</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>5kg/kg。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"482\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题一：</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>根据烘房的温度以及水分浓度变化情况</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>，建立预热平衡阶段药材温度和水分浓度变化规律的数学模型，据此计算出180</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>0s内每隔</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1s、到药材中心距离每隔0.</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1cm的药材温度以及水分浓度。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"482\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题二：</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>在问题一的基础下，将时间范围扩展至整个烘干过程（2至3天），</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>根据预热平衡阶段与恒温干燥阶段参数</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>，建立整个烘干过程药材温度和水分浓度变化规律的数学模型，据此计算出在烘干过程中，每隔</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1s、到药材中心距离每隔0.</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1cm的药材温度以及水分浓度的。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"482\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题三：</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>在问题二的基础上反求问题，约束烘干要求药材各处水分浓度均低于0.1</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>5kg/kg。要求依据已建立的水分浓度模型，模拟药材内部水分随时间的变化，计算出药材内部水分浓度每隔6</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>0s、到药材中心距离每隔0.</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1cm的药材水分浓度以及</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>烘干结束时间</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"482\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"21\"/><w:szCs w:val=\"21\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题四：</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>在实际烘干过程中，药材由于水分流失引起的尺寸变化会影响到烘干的最终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出药材内部水分浓度每隔6</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>0s时间、0.</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1cm距离的水分浓度以及</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>烘干结束时间</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"420\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"21\"/><w:szCs w:val=\"21\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"420\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"21\"/><w:szCs w:val=\"21\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题分析</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2.1问题一分析</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>已知圆柱形药材的几何尺寸（长</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2cm、半径</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2cm）、均匀初始状态（28°C、2.5</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>5kg/kg干基）、烘房温湿度序列（附件1）与常物性参数（附录2），要求得到180</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>0s内药材内部温度与水分浓度的时空分布。首先由傅里叶导热定律与</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>Fick</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>扩散定律，在轴对称假设下建立一维径向控制方程，并给定中心零通量与表面Robin边界条件。求解顺序上，由于本问热物性为常数，温度方程为常系数线性抛物型，可独立求解，故先求温度；该简化下温度场存在圆柱Bessel级数解析解，本文的数值求解器即以此为基准作对照校验。对于水分浓度场，热物性虽为常数，但扩散系数仍随含水率变化D1(C)，方程自身非线性，故改用守恒型有限体积离散配隐式时间推进求解，并以离散质量守恒恒等式校核(残差量级10-14);注意到扩散系数经验式中的温度项为</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>Arhenius</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>形式，计算中温度一律以开尔文代入。</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2.2问题二分析</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题二区别于上一问，将时间拉长至整个烘焙过程，已知烘干过程持续数天，预热平衡与恒温干燥两个阶段的参数不同，附录给出了密度、比热容、导热系数和扩散系数随含水率或温度变化的经验关系，要求得到整个烘干过程的温度与水分浓度时空分布。与问题一相比，本问物性同时依赖含水率与温度，温度方程和水分方程不再解耦，必须联立求解。由于两问采用的物性体系不同，本问从初始时刻重新开始计算，不以问题一的末状态作为初值。环境驱动方面，前一段时间按附件数据分段线性插值，之后取平台温湿度延拓，该延拓作为假设在论文中明确说明。求解方法上仍采用守恒型有限体积离散，时间推进需处理方程刚性与非线性耦合，因此配了解析Jacobian并采用隐式BDF格式。非线性系数不能移出散度，热容量项不能改写成特定微分形式。</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2.3问题三分析</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题三继续沿用问题二的变物性耦合模型，几何依旧保持固定半径，计算时间拉长至数天。本题不再是给定时间求内部分布，而是反向求解烘干结束时刻；烘干达标条件是药材全部位置的水分浓度均低于0.15 kg/kg。由于药材中心水分散失最慢，全场最大值一般出现在中心位置，但求解时不能只监控中心点，必须遍历全部径向位置，取全域最大水分浓度作为判断依据，寻找它第一次低于阈值的时刻作为烘干总时长。为了精确捕捉这一时刻，</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>选择</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>利用数值解进行插值搜索，并严格控制时间步长以确保穿越时刻的精度</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>。</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>2.</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>4问题四分析</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>问题四的解决关键在于处理半径随时间减小带来的移动边界。直接使用原坐标会面对网格随边界变形的问题，因此采用坐标变换，把实际收缩域映射到固定区间这样，移动边界问题转化为固定域问题，问题二、三中的有限体积离散和隐式时间推进可以继续使用。半径由附件2插值得到，密度、比热、导热系数和扩散系数改用附录4的经验公式，并在每个时间步按当前含水率和温度更新。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>求解时，先将控制方程在变换后的坐标下重新离散，保留由坐标变换产生的网格速度相关项，具体形式按干物质骨架随动或空间固定的假设确定，避免漏项或重复加项。随后分别计算固定半径和变化半径两种情形，以便隔离收缩本身的影响：收缩缩短了水分迁移路径，但附录4扩散系数整体小于附录3，两种作用方向相反，净效应通过数值结果比较得出。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"both\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>模型假设</w:t></w:r></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"2\"/></w:numPr><w:bidi w:val=\"0\"/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程简化为一维径向模型。</w:t></w:r></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"2\"/></w:numPr><w:bidi w:val=\"0\"/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t>假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对流传质系数取恒定值。</w:t></w:r></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"2\"/></w:numPr><w:bidi w:val=\"0\"/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t>假设初始时刻药材内部温度与干基含水率均匀分布，不存在初始梯度。</w:t></w:r></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"2\"/></w:numPr><w:bidi w:val=\"0\"/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t>假设药材干物质骨架不发生迁移；问题一至三骨架尺寸固定，问题四只发生均匀径向收缩，轴向长度不变。</w:t></w:r></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"2\"/></w:numPr><w:bidi w:val=\"0\"/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr><w:t>假设不考虑药材内部生化反应，仅研究热传导与水分扩散物理过程。</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:bidi w:val=\"0\"/><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:bidi w:val=\"0\"/><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>符号说明</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblStyle w:val=\"3\"/><w:tblW w:w=\"0\" w:type=\"auto\"/><w:jc w:val=\"center\"/><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblLayout w:type=\"autofit\"/><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w=\"2016\"/><w:gridCol w:w=\"3576\"/><w:gridCol w:w=\"2260\"/></w:tblGrid><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\"/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cstheme=\"minorEastAsia\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>符号</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\"/><w:sz w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\"/><w:sz w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>说明</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\"/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cstheme=\"minorEastAsia\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>单位</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>t</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>时间</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>s</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>r</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>到药材中心的径向距离</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>m</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>x=r/R(t)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>材料归一化径向坐标</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>T</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>药材温度</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>K</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>C</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>干基含水率=m</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>水</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>/m</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>干物质</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>kg/kg</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>w=C/(1+C)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>湿基质量分数</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>1</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>R(t)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>药材当前半径</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>m</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:i/><w:iCs w:val=\"0\"/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>ρ</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>eff</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>有效密度（用于热容量）</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>kg/m³</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:i/><w:iCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>ρ</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>d</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>守恒干物质密度</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>kg/m³</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>c</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>p</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>比热容</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>J/(kg·K)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>k</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>导热系数</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>W/(m·K)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>D</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>有效水分扩散系数</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>m²/s</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>h</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>对流换热系数</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>W/(m²·K)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>β</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>对流传质系数</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>m/s</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>B=</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:i/><w:iCs w:val=\"0\"/><w:color w:val=\"auto\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>ρ</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>eff</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>·c</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>p</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>有效体积显热容量</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>J/(m³·K)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>q</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>r</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>径向导热热流密度（向外为正）</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>W/m²</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>j</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>w</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>径向水分质量通量（向外为正）</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>kg/(m²·s)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>ℓ(t)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>每单位初始干物质的累计失水</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>kg/kg</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>C</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>eq</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>环境对应的等效平衡含水率</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>kg/kg</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>T∞</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>烘房温度</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"nil\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>K</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tblPrEx><w:tblBorders><w:top w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:left w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:right w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideH w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/><w:insideV w:val=\"single\" w:color=\"auto\" w:sz=\"4\" w:space=\"0\"/></w:tblBorders><w:tblCellMar><w:left w:w=\"108\" w:type=\"dxa\"/><w:right w:w=\"108\" w:type=\"dxa\"/></w:tblCellMar></w:tblPrEx><w:trPr><w:jc w:val=\"center\"/></w:trPr><w:tc><w:tcPr><w:tcW w:w=\"2016\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>t*</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"0\" w:type=\"auto\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>全域达标时刻</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w=\"2260\" w:type=\"dxa\"/><w:tcBorders><w:top w:val=\"nil\"/><w:left w:val=\"nil\"/><w:bottom w:val=\"single\" w:color=\"auto\" w:sz=\"8\" w:space=\"0\"/><w:right w:val=\"nil\"/></w:tcBorders></w:tcPr><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"center\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:iCs/><w:sz w:val=\"24\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:iCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>s</w:t></w:r></w:p></w:tc></w:tr></w:tbl><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:asciiTheme=\"minorEastAsia\" w:hAnsiTheme=\"minorEastAsia\" w:eastAsiaTheme=\"minorEastAsia\" w:cstheme=\"minorEastAsia\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>模型的建立与求解</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"0\" w:firstLineChars=\"0\"/><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>模型的评价</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>6.1模型的优点</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"3\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，逻辑一致、便于对比。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"3\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>数值方法针对问题特性设计：Kirchhoff变换精确处理D(C)的强非线性面通量；材料坐标把移动域化为固定域；解析稀疏Jacobian配合BD处理刚性，使N达到3200/6400仍可在分钟量级完成。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"3\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>检验分层且可追溯：解析基准、离散守恒、空间/时间收敛、跨语言交叉核验四类证据分开报告，且明确各自的适用范围。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>6.2模型的不足</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>缺少物理闭合：未显式计入相变潜热，C</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:vertAlign w:val=\"subscript\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>eq</w:t></w:r><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>用等效映射，密度与收缩相容性未完全解决。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"0\"/></w:numPr><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>6.3模型的推广</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"4\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为目标，利用参数扫描或启发式算法寻优。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"4\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:ind w:firstLine=\"480\" w:firstLineChars=\"200\"/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维轴对称模型，显式处理端面传热传质。</w:t></w:r></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:pageBreakBefore w:val=\"0\"/><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:kinsoku/><w:wordWrap/><w:overflowPunct/><w:topLinePunct w:val=\"0\"/><w:autoSpaceDE/><w:autoSpaceDN/><w:bidi w:val=\"0\"/><w:adjustRightInd/><w:snapToGrid/><w:jc w:val=\"left\"/><w:textAlignment w:val=\"auto\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"1\"/></w:numPr><w:ind w:left=\"0\" w:leftChars=\"0\" w:firstLine=\"0\" w:firstLineChars=\"0\"/><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"黑体\" w:hAnsi=\"黑体\" w:eastAsia=\"黑体\" w:cs=\"黑体\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>参考文献</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"5\"/></w:numPr><w:ind w:left=\"425\" w:leftChars=\"0\" w:hanging=\"425\" w:firstLineChars=\"0\"/><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>王乐毅,李长河,刘明政.中药材干燥技术与装备研究现状[J].农业工程学报,2024,40(4):1-15.</w:t></w:r></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:numId w:val=\"0\"/></w:numPr><w:ind w:firstLineChars=\"0\"/><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr></w:p><w:p><w:pPr><w:widowControl w:val=\"0\"/><w:numPr><w:ilvl w:val=\"0\"/><w:numId w:val=\"5\"/></w:numPr><w:ind w:left=\"425\" w:leftChars=\"0\" w:hanging=\"425\" w:firstLineChars=\"0\"/><w:jc w:val=\"left\"/><w:rPr><w:rFonts w:hint=\"default\" w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"宋体\" w:hAnsi=\"宋体\" w:eastAsia=\"宋体\" w:cs=\"宋体\"/><w:b w:val=\"0\"/><w:bCs w:val=\"0\"/><w:sz w:val=\"24\"/><w:szCs w:val=\"24\"/><w:lang w:val=\"en-US\" w:eastAsia=\"zh-CN\"/></w:rPr><w:t>王晓辉,王学成,唐培渝.数值模拟仿真研究现状及其在中药干燥领域应用展望[J].中国中药杂志,2023,48(13):3440-3447.</w:t></w:r></w:p><w:sectPr><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"1417\" w:right=\"1417\" w:bottom=\"1417\" w:left=\"1417\" w:header=\"851\" w:footer=\"992\" w:gutter=\"0\"/><w:cols w:space=\"425\" w:num=\"1\"/><w:docGrid w:type=\"lines\" w:linePitch=\"312\" w:charSpace=\"0\"/></w:sectPr></w:body></w:document>"
+    }
+  ],
+  "media": []
+}

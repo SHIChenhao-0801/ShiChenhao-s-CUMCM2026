@@ -1,0 +1,212 @@
+{
+  "source": "reference_materials/peer-models/2026-09-12_front_matter/数学建模大赛a.docx",
+  "sha256": "8244c3e9b54c407a12169a25e1cd7c8bfde61e22558c3d5196cd91725f407484",
+  "bytes": 23218,
+  "expected_sha256_match": true,
+  "source_modified": false,
+  "package_entries": [
+    {
+      "path": "[Content_Types].xml",
+      "bytes": 1565,
+      "sha256": "535f3ae1e06deea8475a560597151aa815051b7b1f10da9c2aef999f34f5b078"
+    },
+    {
+      "path": "_rels/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "_rels/.rels",
+      "bytes": 737,
+      "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+    },
+    {
+      "path": "customXml/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "customXml/_rels/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "customXml/_rels/item1.xml.rels",
+      "bytes": 296,
+      "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+    },
+    {
+      "path": "customXml/item1.xml",
+      "bytes": 258,
+      "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+    },
+    {
+      "path": "customXml/itemProps1.xml",
+      "bytes": 327,
+      "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+    },
+    {
+      "path": "docProps/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docProps/app.xml",
+      "bytes": 626,
+      "sha256": "2fc925707188ce7b079190dd43587e03d77fe3ef7da31e28802872a44eacbb14"
+    },
+    {
+      "path": "docProps/core.xml",
+      "bytes": 601,
+      "sha256": "cf5b5626d76b10443154a0a74f6bc1cb9d568db8f024085ea8d2008f0ad948f6"
+    },
+    {
+      "path": "docProps/custom.xml",
+      "bytes": 384,
+      "sha256": "37d126eecddb155e0be09a9b10a8f0fb70b839f783b3fcf61c6463ccf6afe9f2"
+    },
+    {
+      "path": "word/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "word/_rels/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "word/_rels/document.xml.rels",
+      "bytes": 955,
+      "sha256": "1bc19e24862d7e80b681c732db717452b4acd15e287e5abf301852fd10f99192"
+    },
+    {
+      "path": "word/document.xml",
+      "bytes": 157396,
+      "sha256": "06df351b5b00b03c343e7701afd56bf24b56c8f5835b9bd82befe09a7e7f555c"
+    },
+    {
+      "path": "word/fontTable.xml",
+      "bytes": 6329,
+      "sha256": "f458148b6792decca6d1aa58c3114e28af144b428062e1d58fad11eea96c349a"
+    },
+    {
+      "path": "word/numbering.xml",
+      "bytes": 3377,
+      "sha256": "4189035ccb8d67ab0e6f20c1a75bc2af9ac77056571197452e160600929d9e22"
+    },
+    {
+      "path": "word/settings.xml",
+      "bytes": 2665,
+      "sha256": "28d5e4733953d01d8e33213d9e61d901633ab3aefe9f6c91329930fe20ef5302"
+    },
+    {
+      "path": "word/styles.xml",
+      "bytes": 26735,
+      "sha256": "570e6cd32240c4a19ddaf0ad9eeac88dc51ab86e8553ab2e0bde81b6edad397c"
+    },
+    {
+      "path": "word/theme/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "word/theme/theme1.xml",
+      "bytes": 6436,
+      "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+    }
+  ],
+  "counts_by_part": {
+    "word/document.xml": {
+      "paragraphs": 153,
+      "tables": 1,
+      "omml_equations": 0,
+      "drawings": 0,
+      "pict": 0,
+      "insertions": 0,
+      "deletions": 0,
+      "comment_anchors": 0,
+      "text_boxes": 0
+    }
+  },
+  "media_count": 0,
+  "extraction_files": [
+    "source_extract.json",
+    "source_extract.txt"
+  ],
+  "render_status": "SUCCESS",
+  "render_exit_code": 0,
+  "renderer": "documents/render_docx.py",
+  "libreoffice_executable": "D:/Document/数学建模/tools/libreoffice/app/program/soffice.exe",
+  "rendered_pdf": "paper_output/qa/paper_readiness_20260912/source_render/数学建模大赛a.pdf",
+  "rendered_pdf_sha256": "439367eda8fb5d6d4df6bcd37f1d3addcf7fb85d6fa3f6fff42b2523b180c3f5",
+  "page_count": 8,
+  "page_visual_review": [
+    {
+      "page": 1,
+      "characters": 626,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-1.png",
+      "image_sha256": "15c474222055a72af279473f562f36ef9f490a7fd14f5cbb01506d8d5e6602b1",
+      "visually_inspected": true
+    },
+    {
+      "page": 2,
+      "characters": 658,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-2.png",
+      "image_sha256": "055ac6235c9aa739aeece40b442944f9aece3b743dbd0a39a1463d1244f19c7a",
+      "visually_inspected": true
+    },
+    {
+      "page": 3,
+      "characters": 647,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-3.png",
+      "image_sha256": "ddca91caffbcb9251851ba44a23b1d109f5b714cc8c766050505684c98608605",
+      "visually_inspected": true
+    },
+    {
+      "page": 4,
+      "characters": 476,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-4.png",
+      "image_sha256": "b81be2de44a16a697cfe04c18e7906dd68bef4b5b075865b078c30e01e8e0a90",
+      "visually_inspected": true
+    },
+    {
+      "page": 5,
+      "characters": 387,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-5.png",
+      "image_sha256": "6d6a5318126eb9ebb2563fd25b34dc618138972d1a19e349267ad2288320404b",
+      "visually_inspected": true
+    },
+    {
+      "page": 6,
+      "characters": 288,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-6.png",
+      "image_sha256": "b5ad1fd749e94acdb44ee9114e33cadf038ab4a0aa6d7170006e123cb1db2119",
+      "visually_inspected": true
+    },
+    {
+      "page": 7,
+      "characters": 239,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-7.png",
+      "image_sha256": "1895c22aa1cbc7cbc4fc97f06fd5a22e61c481417950fcc57ec01efdeac59abb",
+      "visually_inspected": true
+    },
+    {
+      "page": 8,
+      "characters": 28,
+      "image": "paper_output/qa/paper_readiness_20260912/source_render/page-8.png",
+      "image_sha256": "2c79738163f6a6d3b89a10948bfd5ed4793f10916d745deee9a619f037ca6528",
+      "visually_inspected": true
+    }
+  ],
+  "visual_review_result": "READABLE_WITH_LAYOUT_ISSUES",
+  "source_sha256_after_review": "8244c3e9b54c407a12169a25e1cd7c8bfde61e22558c3d5196cd91725f407484",
+  "source_unchanged_after_review": true,
+  "review_status": "READ_AND_REVIEWED_WITH_REQUIRED_CORRECTIONS",
+  "review_file": "paper_output/qa/paper_readiness_20260912/front_matter_review.md",
+  "review_boundary": "AI read-only source review and full-page image inspection; not human approval or official workflow gate",
+  "extraction_sha256": {
+    "source_extract.json": "25eb92c350968df485810c2d347c4501a3fe14ad190129c51a79fca5a991c3bd",
+    "source_extract.txt": "04a6f6f6ddc074602e07816735b35deb2e51c3a8355dd4f093992e7b0bc14ad8"
+  }
+}

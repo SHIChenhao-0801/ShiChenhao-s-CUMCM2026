@@ -1,0 +1,226 @@
+{
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "generatedAtUtc": "2026-09-12T11:09:00.467256+00:00",
+  "scope": "Independent algebra, scalar quadrature, source-definition extraction and RHS evaluations; no PDE/ODE trajectory was integrated; no GUI or human review claimed.",
+  "scriptSha256": "ff58c9d9d9bdcb67c7510e651661ebd5882b39e07cb4c873a31067b565794139",
+  "sourceHashes": {
+    "paper_output/code/modeling/drying_core.py": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+    "paper_output/code/modeling/analytic_jacobian.py": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+    "paper_output/code/verification/isotherm_activity_closure.py": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+    "paper_output/code/verification/energy_balance_check.py": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+    "paper_output/data_cleaned/A_environment_observed.csv": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+    "paper_output/data_cleaned/A_radius_observed.csv": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+  },
+  "sourceHashesUnchanged": true,
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.2"
+  },
+  "densityCompatibility": {
+    "rhoD0_kg_m3": 278.7323943661972,
+    "necessaryMinimumRadius_m": 0.012112029565383969,
+    "maximumDryMassCapacityRatioAt72h": 0.9783174310257706
+  },
+  "instantaneousRhsChecks": [
+    {
+      "question": "Q1",
+      "intervals": 8,
+      "time_s": 3601.0,
+      "stateOrigin": "manufactured positive state; not a solved trajectory",
+      "thermalWeightedRate_W_per_m": 23.51550169052799,
+      "boundaryHeatRate_W_per_m": 23.515501690527994,
+      "thermalAbsoluteResidual_W_per_m": 3.552713678800501e-15,
+      "thermalScaledResidual": 1.5107964633523122e-16,
+      "dryBasisMassRateResidual": 1.3552527156068805e-20,
+      "instantaneousCapacityChainTerm_W_per_m": 0.0,
+      "movingVolumeChainTerm_W_per_m": 0.0,
+      "actualDerivativeOfSumVBTheta_W_per_m": 23.51550169052799,
+      "oldTotalEnergyIdentityDefect_W_per_m": -3.552713678800501e-15,
+      "p1RhsBitwiseIdentical": true,
+      "awRef02Vs08RhsBitwiseIdenticalAtP2": true
+    },
+    {
+      "question": "Q23",
+      "intervals": 8,
+      "time_s": 3601.0,
+      "stateOrigin": "manufactured positive state; not a solved trajectory",
+      "thermalWeightedRate_W_per_m": 23.515501690527998,
+      "boundaryHeatRate_W_per_m": 23.515501690527994,
+      "thermalAbsoluteResidual_W_per_m": 3.552713678800501e-15,
+      "thermalScaledResidual": 1.5107964633523122e-16,
+      "dryBasisMassRateResidual": 1.3552527156068805e-20,
+      "instantaneousCapacityChainTerm_W_per_m": -3.798226627881282,
+      "movingVolumeChainTerm_W_per_m": 0.0,
+      "actualDerivativeOfSumVBTheta_W_per_m": 19.717275062646717,
+      "oldTotalEnergyIdentityDefect_W_per_m": -3.7982266278812773,
+      "p1RhsBitwiseIdentical": true,
+      "awRef02Vs08RhsBitwiseIdenticalAtP2": true
+    },
+    {
+      "question": "Q4",
+      "intervals": 8,
+      "time_s": 3601.0,
+      "stateOrigin": "manufactured positive state; not a solved trajectory",
+      "thermalWeightedRate_W_per_m": 21.09281059677754,
+      "boundaryHeatRate_W_per_m": 21.092810596777543,
+      "thermalAbsoluteResidual_W_per_m": 3.552713678800501e-15,
+      "thermalScaledResidual": 1.6843244585637474e-16,
+      "dryBasisMassRateResidual": 2.710505431213761e-20,
+      "instantaneousCapacityChainTerm_W_per_m": -2.8224941356897237,
+      "movingVolumeChainTerm_W_per_m": -5.485585668426676,
+      "actualDerivativeOfSumVBTheta_W_per_m": 12.78473079266114,
+      "oldTotalEnergyIdentityDefect_W_per_m": -8.308079804116403,
+      "p1RhsBitwiseIdentical": true,
+      "awRef02Vs08RhsBitwiseIdenticalAtP2": true
+    }
+  ],
+  "kirchhoffPotentialChecks": [
+    {
+      "a": 0.89,
+      "lo": 0.05,
+      "hi": 0.07,
+      "potentialDifference": 1.4381693949815516e-08,
+      "independentScalarQuadrature": 1.4381693949815517e-08,
+      "relativeDifference": 1.150324315674425e-16,
+      "quadratureEstimatedAbsoluteError": 1.5966887756197498e-22
+    },
+    {
+      "a": 0.89,
+      "lo": 0.1,
+      "hi": 0.3,
+      "potentialDifference": 0.003324598798003553,
+      "independentScalarQuadrature": 0.003324598798003553,
+      "relativeDifference": 0.0,
+      "quadratureEstimatedAbsoluteError": 3.6910461331846644e-17
+    },
+    {
+      "a": 0.89,
+      "lo": 1.0,
+      "hi": 2.55,
+      "potentialDifference": 0.9150766615105655,
+      "independentScalarQuadrature": 0.9150766615105655,
+      "relativeDifference": 0.0,
+      "quadratureEstimatedAbsoluteError": 1.0159391789061506e-14
+    },
+    {
+      "a": 0.45,
+      "lo": 0.05,
+      "hi": 0.07,
+      "potentialDifference": 1.3170584795723322e-05,
+      "independentScalarQuadrature": 1.3170584795723325e-05,
+      "relativeDifference": 2.5724991270830854e-16,
+      "quadratureEstimatedAbsoluteError": 1.4622286487990049e-19
+    },
+    {
+      "a": 0.45,
+      "lo": 0.1,
+      "hi": 0.3,
+      "potentialDifference": 0.021752366647341585,
+      "independentScalarQuadrature": 0.021752366647341603,
+      "relativeDifference": 7.974872362630072e-16,
+      "quadratureEstimatedAbsoluteError": 2.414997829196697e-16
+    },
+    {
+      "a": 0.45,
+      "lo": 1.0,
+      "hi": 2.55,
+      "potentialDifference": 1.1843759933224633,
+      "independentScalarQuadrature": 1.1843759933224636,
+      "relativeDifference": 1.8747813715992505e-16,
+      "quadratureEstimatedAbsoluteError": 1.3149214975998896e-14
+    },
+    {
+      "a": 0.3,
+      "lo": 0.05,
+      "hi": 0.07,
+      "potentialDifference": 0.00014403534265185723,
+      "independentScalarQuadrature": 0.00014403534265185718,
+      "relativeDifference": 3.763667140731188e-16,
+      "quadratureEstimatedAbsoluteError": 1.599113537718657e-18
+    },
+    {
+      "a": 0.3,
+      "lo": 0.1,
+      "hi": 0.3,
+      "potentialDifference": 0.04348445952424927,
+      "independentScalarQuadrature": 0.04348445952424933,
+      "relativeDifference": 1.2765744782984311e-15,
+      "quadratureEstimatedAbsoluteError": 4.827744817720228e-16
+    },
+    {
+      "a": 0.3,
+      "lo": 1.0,
+      "hi": 2.55,
+      "potentialDifference": 1.2947219203377422,
+      "independentScalarQuadrature": 1.2947219203377425,
+      "relativeDifference": 1.7149984211830485e-16,
+      "quadratureEstimatedAbsoluteError": 1.4374300864458593e-14
+    }
+  ],
+  "partitionFactorChecks": [
+    {
+      "p": 1.0,
+      "minimumK": 1.0,
+      "maximumK": 1.0,
+      "anchorK": 1.0,
+      "analyticAnchorLimit": 1.0,
+      "anchorActivity": 0.6
+    },
+    {
+      "p": 1.5,
+      "minimumK": 0.6666666666666666,
+      "maximumK": 0.9505954637090023,
+      "anchorK": 0.6666666666666666,
+      "analyticAnchorLimit": 0.6666666666666666,
+      "anchorActivity": 0.6
+    },
+    {
+      "p": 2.0,
+      "minimumK": 0.5,
+      "maximumK": 0.8856615814844945,
+      "anchorK": 0.5,
+      "analyticAnchorLimit": 0.5,
+      "anchorActivity": 0.6
+    },
+    {
+      "p": 4.0,
+      "minimumK": 0.25,
+      "maximumK": 0.6515551403765246,
+      "anchorK": 0.25,
+      "analyticAnchorLimit": 0.25,
+      "anchorActivity": 0.6
+    }
+  ],
+  "pBelowOneCounterexample": {
+    "p": 0.5,
+    "domain_C": [
+      0.05,
+      3.0
+    ],
+    "awRef": 0.6,
+    "minActivity": 0.6,
+    "maxActivity": 0.9998888888888889,
+    "conclusion": "p<1 does not force negative activity for C>=Cref; p>=1 is a slowing-scenario design choice."
+  },
+  "pressureDriveCounterexample": {
+    "CsEqualsCeq": 0.05,
+    "baselineConcentrationDifference": 0,
+    "explicitAssumedPressure_Pa": 101325,
+    "temperature_C": 50,
+    "psatMinusPvAtAw1_Pa": 4820.897093925672,
+    "conclusion": "A nonzero pressure-transfer coefficient with aw=1 cannot identically represent the frozen concentration Robin at this state."
+  },
+  "falseWholePotentialDifference": {
+    "equal_C": 0.2,
+    "T_left_K": 310,
+    "T_right_K": 320,
+    "intendedConcentrationFlux": 0,
+    "erroneousDifferenceOfThermalFactorTimesPotential": 2.4995018752166356e-11
+  },
+  "limits": [
+    "Manufactured RHS states are not evidence of prediction accuracy.",
+    "The K inequalities do not establish monotonic PDE completion times.",
+    "Empirical density reinterpretation remains an explicit closure assumption.",
+    "No claim of calibrated sorption, full thermodynamics, or first originality."
+  ]
+}

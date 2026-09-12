@@ -1,11 +1,11 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-12T18:51:29`
-- Current step: `S7`
-- Next step: `S8`
+- Generated at: `2026-09-12T19:29:04`
+- Current step: `S6`
+- Next step: `S7`
 - Recommended skill: `paper-formal-writer`
-- Next action: 运行 check_paper_format.py 并修复格式门禁失败项。
+- Next action: 执行写作计划、章节审计、必要的局部修复、确定性合并与全文统一改写；S7 PASS 后再生成正式 Word。
 
 ## Completed Steps
 - `S0`
@@ -15,7 +15,6 @@
 - `S4`
 - `S5`
 - `S6`
-- `S7`
 
 ## Input Summary
 - file_count: `33`
@@ -35,8 +34,5 @@
 - Script: `paper_output/code/modeling/run_modeling.py`
 
 ## Blockers
-- S8: format_check_report.json status 不是 PASS。
-- S8: missing delivery scope; rerun prepare_authoring.py
-- S8: 格式门禁报告已过期，输入发生变化：paper_output/final_paper_source.md
-- S8: 格式门禁报告已过期，输入发生变化：paper_output/final_paper.docx
-- S8: 格式门禁报告已过期，输入发生变化：paper_output/context/authoring_state.json
+- S7: writing_plan.json 输入已变化：paper_output/qa/evidence_gate_report.json
+- S7: authoring_state.json 输入已变化：paper_output/qa/evidence_gate_report.json
