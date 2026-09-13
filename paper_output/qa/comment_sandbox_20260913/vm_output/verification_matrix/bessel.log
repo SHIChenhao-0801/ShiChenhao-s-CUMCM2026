@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "robin_eigen_relative_residual",
+      "value": 5.01624228267908e-12,
+      "tolerance": 1e-10,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "name": "piecewise_convolution_vs_adaptive_quadrature",
+      "value": 8.881784197001252e-16,
+      "tolerance": 1e-10,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "annular_average_vs_adaptive_quadrature",
+      "value": 4.440892098500626e-16,
+      "tolerance": 1e-10,
+      "unit": "1",
+      "passed": true
+    },
+    {
+      "name": "constant_boundary_step_energy_identity",
+      "value": 1.7694179454963432e-16,
+      "tolerance": 1e-10,
+      "unit": "K/s",
+      "passed": true
+    },
+    {
+      "name": "Q1_observed_boundary_120_vs_240_terms",
+      "value": 1.524666686236742e-07,
+      "tolerance": 0.0001,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "Q1_observed_boundary_240_vs_480_terms",
+      "value": 1.8995478967553936e-08,
+      "tolerance": 0.0001,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "uniform_equilibrium",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "unit": "K",
+      "passed": true
+    },
+    {
+      "name": "insulating_boundary",
+      "value": 0.0,
+      "tolerance": 1e-12,
+      "unit": "K",
+      "passed": true
+    }
+  ],
+  "report": "C:\\Work\\05_path_adapted\\paper_output\\results\\bessel_validation\\bessel_selfcheck.json"
+}

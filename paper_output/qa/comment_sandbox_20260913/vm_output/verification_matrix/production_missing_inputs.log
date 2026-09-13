@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\run_modeling.py", line 436, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\run_modeling.py", line 371, in main
+    directory.mkdir(exist_ok=False)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Runtime\Lib\pathlib\__init__.py", line 1011, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Work\\05_path_adapted\\paper_output\\results\\gui_reproduction\\sandbox_missing_inputs'

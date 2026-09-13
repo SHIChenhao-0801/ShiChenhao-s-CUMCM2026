@@ -1,0 +1,28 @@
+[
+    {
+        "ProcessId":  8004,
+        "CommandLine":  "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Work\\extra_entries\\03_wrapper\\runLogged.ps1 -Python C:/Runtime/python.exe -Profile quick -RunId vm_wrapper_quick"
+    },
+    {
+        "ProcessId":  6644,
+        "CommandLine":  "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command \"Get-CimInstance Win32_Process -Filter \\\"Name=\u0027powershell.exe\u0027\\\" | Where-Object { $_.CommandLine -match \u0027-RunId vm_wrapper_quick\u0027 } | Select-Object ProcessId,CommandLine | ConvertTo-Json\""
+    }
+]
+
+Traceback (most recent call last):
+  File "C:\Control\watch_wrapper_completion.py", line 20, in <module>
+    assert isinstance(target,dict), target
+           ~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: [{'ProcessId': 8004, 'CommandLine': 'C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Work\\extra_entries\\03_wrapper\\runLogged.ps1 -Python C:/Runtime/python.exe -Profile quick -RunId vm_wrapper_quick'}, {'ProcessId': 6644, 'CommandLine': 'C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command "Get-CimInstance Win32_Process -Filter \\"Name=\'powershell.exe\'\\" | Where-Object { $_.CommandLine -match \'-RunId vm_wrapper_quick\' } | Select-Object ProcessId,CommandLine | ConvertTo-Json"'}]
+[
+    {
+        "ProcessId":  8004,
+        "CommandLine":  "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Work\\extra_entries\\03_wrapper\\runLogged.ps1 -Python C:/Runtime/python.exe -Profile quick -RunId vm_wrapper_quick"
+    },
+    {
+        "ProcessId":  7744,
+        "CommandLine":  "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command \"Get-CimInstance Win32_Process -Filter \\\"Name=\u0027powershell.exe\u0027\\\" | Where-Object { $_.CommandLine -match \u0027-RunId vm_wrapper_quick\u0027 } | Select-Object ProcessId,CommandLine | ConvertTo-Json\""
+    }
+]
+
+{"wrapperActualExit": 1, "programStatus": "PASS"}

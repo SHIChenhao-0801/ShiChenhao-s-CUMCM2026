@@ -1,0 +1,15 @@
+{
+  "job": "export_selfcheck",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/export_outputs.py",
+    "--selfcheck"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:36:26.031239+00:00",
+  "pid": 4548,
+  "returncode": 1,
+  "elapsedSeconds": 13.340479200000004,
+  "finishedAtUtc": "2026-09-13T01:36:39.371718+00:00"
+}

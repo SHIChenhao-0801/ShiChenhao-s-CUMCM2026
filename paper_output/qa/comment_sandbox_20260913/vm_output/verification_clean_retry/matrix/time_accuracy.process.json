@@ -1,0 +1,20 @@
+{
+  "job": "time_accuracy",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/verify_time_accuracy.py",
+    "--question",
+    "Q1",
+    "--n",
+    "20",
+    "--tag",
+    "sandbox"
+  ],
+  "cwd": "C:\\Work\\05_clean_retry",
+  "startedAtUtc": "2026-09-13T01:47:17.104768+00:00",
+  "pid": 7284,
+  "returncode": 0,
+  "elapsedSeconds": 30.540059499999984,
+  "finishedAtUtc": "2026-09-13T01:47:47.644832+00:00"
+}

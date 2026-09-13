@@ -1,0 +1,199 @@
+{
+  "status": "COMPLETED",
+  "startedAtUtc": "2026-09-13T01:54:29.921240+00:00",
+  "root": "C:\\Work\\05_remaining_entry",
+  "inputs": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33"
+    },
+    {
+      "path": "paper_output/code/modeling/axisymmetric_check.py",
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9"
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a"
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a"
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf"
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2"
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d"
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944"
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742"
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc"
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808"
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905"
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92"
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963"
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "sha256": "faff27578a3f3b85107be07d2993fd9575f56a7f92d2f8e0e4a236430d432a27"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19"
+    },
+    {
+      "path": "paper_output/code/verification/analytic_metric_check.py",
+      "sha256": "ac4cddaf7454e84c3e4352f049865ffcb37aec1ced28b4396eafcc47204d8ffd"
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_series.py",
+      "sha256": "1dd2d782a4f0350e164851131d0aed7c4e64019af811b6efa91ae40179767cc6"
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_solver.py",
+      "sha256": "463c0dedd2cf2c48645a164c4fad7621650b287933fcb662165c19a0e9226210"
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_check.py",
+      "sha256": "efb3ce293a57955eef0d220eb20233cd443e3913eb27a8779ea7784056d79cae"
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_diagnose.py",
+      "sha256": "b5a5817437e62b1ed042b089e092fc66286c051d69b5654e29b709f9c018a510"
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_diagnose2.py",
+      "sha256": "6f2e3e4b02c053b63aa41e7aff9ab7a3b62fd56b318906cee4a3c53d0269c4ce"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_activity_closure.py",
+      "sha256": "0256441383aae4237ff7000c7062cc213cf2f15366d718172f0da8cd03bf50ae"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_diagnose.py",
+      "sha256": "f4b72edecad1801ca3ad4ff8c4cf1421462001241e89dd4242fb5f344dca493e"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_jacobian_probe.py",
+      "sha256": "b0c7ee616e1f91f2623c624258477b55ac80189ed84d8ccf3afe6085b25fe4a4"
+    },
+    {
+      "path": "paper_output/code/verification/latent_heat_scenarios.py",
+      "sha256": "a76a55a37f17194da571731e50328ad0dbe027d3c5656dfbbf43b2d3dfdf73d7"
+    },
+    {
+      "path": "paper_output/code/verification/method_comparison.py",
+      "sha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4"
+    },
+    {
+      "path": "paper_output/code/verification/sensitivity_analysis.py",
+      "sha256": "d47a71fbad559790f28b74a1209e0da1fb26fa1d471db9f49b76ab799f3b9ce3"
+    },
+    {
+      "path": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "sha256": "288a318d286c7fb9165f77427839b4362d576c9e7ddd2f496a3041bb1a1737fe"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    }
+  ],
+  "commands": {
+    "run_experiments": [
+      "C:/Runtime/python.exe",
+      "-B",
+      "paper_output/code/modeling/run_experiments.py",
+      "--batch",
+      "baseline",
+      "--n",
+      "20",
+      "--tag",
+      "_vm_remaining",
+      "--face-scheme",
+      "kirchhoff"
+    ],
+    "energy_diagnose2": [
+      "C:/Runtime/python.exe",
+      "-B",
+      "paper_output/code/verification/energy_balance_diagnose2.py"
+    ]
+  },
+  "results": [
+    {
+      "job": "run_experiments",
+      "argv": [
+        "C:/Runtime/python.exe",
+        "-B",
+        "paper_output/code/modeling/run_experiments.py",
+        "--batch",
+        "baseline",
+        "--n",
+        "20",
+        "--tag",
+        "_vm_remaining",
+        "--face-scheme",
+        "kirchhoff"
+      ],
+      "cwd": "C:\\Work\\05_remaining_entry",
+      "startedAtUtc": "2026-09-13T01:54:29.925945+00:00",
+      "pid": 6336,
+      "returncode": 0,
+      "finishedAtUtc": "2026-09-13T01:54:48.021207+00:00",
+      "elapsedSeconds": 18.09529569999995
+    },
+    {
+      "job": "energy_diagnose2",
+      "argv": [
+        "C:/Runtime/python.exe",
+        "-B",
+        "paper_output/code/verification/energy_balance_diagnose2.py"
+      ],
+      "cwd": "C:\\Work\\05_remaining_entry",
+      "startedAtUtc": "2026-09-13T01:54:29.926426+00:00",
+      "pid": 7176,
+      "returncode": 0,
+      "finishedAtUtc": "2026-09-13T01:55:27.193178+00:00",
+      "elapsedSeconds": 57.26678570000013
+    }
+  ],
+  "finishedAtUtc": "2026-09-13T01:55:27.197547+00:00",
+  "sourcesAndInputsUnchanged": true
+}

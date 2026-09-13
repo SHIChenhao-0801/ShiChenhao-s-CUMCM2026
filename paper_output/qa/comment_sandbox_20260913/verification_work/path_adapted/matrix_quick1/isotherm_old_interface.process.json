@@ -1,0 +1,18 @@
+{
+  "job": "isotherm_old_interface",
+  "argv": [
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+    "--job",
+    "isotherm_old_interface"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+  "startedAtUtc": "2026-09-13T01:27:22.512264+00:00",
+  "pid": 60184,
+  "returncode": 1,
+  "elapsedSeconds": 1.1291314999980386,
+  "finishedAtUtc": "2026-09-13T01:27:23.641397+00:00"
+}

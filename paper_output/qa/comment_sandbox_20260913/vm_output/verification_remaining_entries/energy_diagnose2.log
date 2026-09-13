@@ -1,0 +1,20 @@
+=== Q23
+  t=      1  R=0.02000  Ts=301.15012  Tinf=301.15880   dH/dt=+8.676691e-03   2hR(Tinf-Ts)=+8.676691e-03   ratio=1.000000
+  t=     10  R=0.02000  Ts=301.15403  Tinf=301.23800   dH/dt=+8.396769e-02   2hR(Tinf-Ts)=+8.396769e-02   ratio=1.000000
+  t=    100  R=0.02000  Ts=301.28170  Tinf=302.12067   dH/dt=+8.389617e-01   2hR(Tinf-Ts)=+8.389617e-01   ratio=1.000000
+  t=    600  R=0.02000  Ts=302.84901  Tinf=306.35200   dH/dt=+3.502987e+00   2hR(Tinf-Ts)=+3.502987e+00   ratio=1.000000
+  t=   1800  R=0.02000  Ts=308.56305  Tinf=314.66300   dH/dt=+6.099951e+00   2hR(Tinf-Ts)=+6.099951e+00   ratio=1.000000
+  t=   3600  R=0.02000  Ts=316.14765  Tinf=320.63500   dH/dt=+4.487354e+00   2hR(Tinf-Ts)=+4.487354e+00   ratio=1.000000
+  quadrature    2001: stored(end)-stored(0)=-2.319672e+04  E=+1.719951e+04  residual=-4.039622e+04 (1.01e-01 rel)
+  quadrature   20001: stored(end)-stored(0)=-2.319672e+04  E=+1.719951e+04  residual=-4.039622e+04 (1.01e-01 rel)
+  quadrature  200001: stored(end)-stored(0)=-2.319672e+04  E=+1.719951e+04  residual=-4.039622e+04 (1.01e-01 rel)
+=== Q4
+  t=      1  R=0.02000  Ts=301.15016  Tinf=301.15880   dH/dt=+8.641163e-03   2hR(Tinf-Ts)=+8.641163e-03   ratio=1.000000
+  t=     10  R=0.01999  Ts=301.15532  Tinf=301.23800   dH/dt=+8.265429e-02   2hR(Tinf-Ts)=+8.265429e-02   ratio=1.000000
+  t=    100  R=0.01993  Ts=301.31780  Tinf=302.12067   dH/dt=+8.000358e-01   2hR(Tinf-Ts)=+8.000358e-01   ratio=1.000000
+  t=    600  R=0.01958  Ts=303.14372  Tinf=306.35200   dH/dt=+3.140367e+00   2hR(Tinf-Ts)=+3.140367e+00   ratio=1.000000
+  t=   1800  R=0.01873  Ts=309.06007  Tinf=314.66300   dH/dt=+5.247139e+00   2hR(Tinf-Ts)=+5.247139e+00   ratio=1.000000
+  t=   3600  R=0.01794  Ts=316.33956  Tinf=320.63500   dH/dt=+3.853011e+00   2hR(Tinf-Ts)=+3.853011e+00   ratio=1.000000
+  quadrature    2001: stored(end)-stored(0)=-8.405998e+04  E=+1.491222e+04  residual=-9.897220e+04 (2.45e-01 rel)
+  quadrature   20001: stored(end)-stored(0)=-8.405998e+04  E=+1.491222e+04  residual=-9.897220e+04 (2.45e-01 rel)
+  quadrature  200001: stored(end)-stored(0)=-8.405998e+04  E=+1.491222e+04  residual=-9.897220e+04 (2.45e-01 rel)

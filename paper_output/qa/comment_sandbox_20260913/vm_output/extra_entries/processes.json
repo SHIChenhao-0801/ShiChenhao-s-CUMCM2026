@@ -1,0 +1,44 @@
+[
+  {
+    "name": "node_version",
+    "argv": [
+      "C:/Runtime/node.exe",
+      "--version"
+    ],
+    "cwd": "C:\\Work\\extra_entries",
+    "startUtc": "2026-09-13T01:50:39.930213+00:00",
+    "pid": 7556,
+    "returncode": 0,
+    "elapsedSeconds": 1.297938400000021,
+    "endUtc": "2026-09-13T01:50:41.228157+00:00"
+  },
+  {
+    "name": "node_original_worker",
+    "argv": [
+      "C:/Runtime/node.exe",
+      "C:\\Work\\extra_entries\\matlab\\compareMatlab.mjs",
+      "--worker"
+    ],
+    "cwd": "C:\\Work\\extra_entries",
+    "startUtc": "2026-09-13T01:50:41.231338+00:00",
+    "pid": 5096,
+    "returncode": 2,
+    "elapsedSeconds": 0.7013154999999642,
+    "endUtc": "2026-09-13T01:50:41.932669+00:00"
+  },
+  {
+    "name": "powershell_version",
+    "argv": [
+      "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+      "-NoProfile",
+      "-Command",
+      "$PSVersionTable.PSVersion.ToString()"
+    ],
+    "cwd": "C:\\Work\\extra_entries",
+    "startUtc": "2026-09-13T01:50:42.034517+00:00",
+    "pid": 6296,
+    "returncode": 0,
+    "elapsedSeconds": 2.7743099000000484,
+    "endUtc": "2026-09-13T01:50:44.808831+00:00"
+  }
+]

@@ -1,0 +1,2057 @@
+{
+  "scope": "05_数值检验与实验",
+  "records": [
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+      "before_bytes": 16706,
+      "after_bytes": 16706,
+      "before_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "after_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "changed": false,
+      "language": ".mjs",
+      "status": "PENDING_NATIVE_PARSER"
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/runCrossCheck.m",
+      "before_bytes": 26369,
+      "after_bytes": 25180,
+      "before_sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "after_sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa",
+      "changed": true,
+      "language": "MATLAB",
+      "comment_count": 16,
+      "comments": [
+        {
+          "line": 2,
+          "kind": "whole_line"
+        },
+        {
+          "line": 3,
+          "kind": "whole_line"
+        },
+        {
+          "line": 4,
+          "kind": "whole_line"
+        },
+        {
+          "line": 5,
+          "kind": "whole_line"
+        },
+        {
+          "line": 6,
+          "kind": "whole_line"
+        },
+        {
+          "line": 19,
+          "kind": "whole_line"
+        },
+        {
+          "line": 39,
+          "kind": "code_analyzer_directive"
+        },
+        {
+          "line": 83,
+          "kind": "whole_line"
+        },
+        {
+          "line": 177,
+          "kind": "whole_line"
+        },
+        {
+          "line": 292,
+          "kind": "whole_line"
+        },
+        {
+          "line": 301,
+          "kind": "whole_line"
+        },
+        {
+          "line": 307,
+          "kind": "whole_line"
+        },
+        {
+          "line": 322,
+          "kind": "whole_line"
+        },
+        {
+          "line": 352,
+          "kind": "whole_line"
+        },
+        {
+          "line": 462,
+          "kind": "code_analyzer_directive"
+        },
+        {
+          "line": 475,
+          "kind": "code_analyzer_directive"
+        }
+      ],
+      "docstring_count": 0,
+      "remaining_comment_count": 0,
+      "verification": "Only known whole-line comments and trailing %#ok<NASGU> removed; every other percent is inside a preserved quoted format string",
+      "format_strings_with_percent_preserved": [
+        "'START %s | MATLAB %s | output=%s'",
+        "'CASE_START %s at %s'",
+        "'CASE_END %s | elapsed=%.6f s | event=%.12g s | massResidual=%.3g'",
+        "'输入在运行中改变：%s'",
+        "'FINISH %s | elapsed=%.6f s | humanReview=pending'",
+        "'FAILED %s\\n%s'",
+        "'%s 在240小时内没有找到干燥事件。'",
+        "'%s 的接受状态违反物性正值或水分范围。'",
+        "'%s 的离散干基质量守恒残差超限。'",
+        "'%s 的事件后原精度maxC没有严格小于0.15。'",
+        "'WARNING %s [%s] %s'",
+        "'不支持的问题名：%s'",
+        "'请求的时刻 %.17g 不在已积分分段内。'",
+        "'ode15s 实际终点 %.17g 未到请求终点 %.17g。'",
+        "'无法读取待哈希文件：%s'",
+        "'无法写入JSON：%s'",
+        "'%s\\n'",
+        "'%s\\n'",
+        "'%s\\n'"
+      ],
+      "matlab_parser_check": "PENDING_ROOT_RUNTIME_CHECK"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "before_bytes": 16952,
+      "after_bytes": 15901,
+      "before_sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "after_sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 1,
+      "comments": [
+        {
+          "line": 91,
+          "characters": 71
+        }
+      ],
+      "docstring_count": 4,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 9,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 32,
+          "end_line": 32,
+          "owner": "_harmonic_partials",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 43,
+          "end_line": 49,
+          "owner": "jacobian",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 179,
+          "end_line": 179,
+          "owner": "_self_test",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "a78217edee2e6f19d1c59b0e386f5c370fcabe590649093089bbf4abc7707c78",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "before_bytes": 13887,
+      "after_bytes": 13375,
+      "before_sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "after_sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 20,
+          "characters": 78
+        },
+        {
+          "line": 42,
+          "characters": 52
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 7,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "567850f171f92c84ebbfbe4b5c54938a67c623012326f12a67c3dd183d7bafd3",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "before_bytes": 14520,
+      "after_bytes": 13913,
+      "before_sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "after_sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 3,
+      "comments": [
+        {
+          "line": 132,
+          "characters": 68
+        },
+        {
+          "line": 133,
+          "characters": 67
+        },
+        {
+          "line": 134,
+          "characters": 71
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 7,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "c2297477d9772e784b0c33ba368f45ddc4621170bd479d1d936f9781795fa580",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "before_bytes": 4869,
+      "after_bytes": 4015,
+      "before_sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "after_sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 3,
+      "comments": [
+        {
+          "line": 63,
+          "characters": 69
+        },
+        {
+          "line": 76,
+          "characters": 64
+        },
+        {
+          "line": 97,
+          "characters": 70
+        }
+      ],
+      "docstring_count": 2,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 6,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 114,
+          "end_line": 119,
+          "owner": "align_bdf_segments",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "95d6deba8d219a98c4230a966b14ff52c34f749a25003e39012748f100944361",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py",
+      "before_bytes": 19944,
+      "after_bytes": 18634,
+      "before_sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "after_sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 8,
+      "comments": [
+        {
+          "line": 110,
+          "characters": 48
+        },
+        {
+          "line": 158,
+          "characters": 80
+        },
+        {
+          "line": 175,
+          "characters": 65
+        },
+        {
+          "line": 241,
+          "characters": 70
+        },
+        {
+          "line": 242,
+          "characters": 71
+        },
+        {
+          "line": 243,
+          "characters": 52
+        },
+        {
+          "line": 319,
+          "characters": 67
+        },
+        {
+          "line": 338,
+          "characters": 75
+        }
+      ],
+      "docstring_count": 3,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 9,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 162,
+          "end_line": 162,
+          "owner": "rhs",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 200,
+          "end_line": 200,
+          "owner": "close",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "15b69711c785eb2ecf564cdeb17d13b9e7c22b3c90f72ddf832774b4392df4f1",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "before_bytes": 41427,
+      "after_bytes": 38826,
+      "before_sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "after_sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 10,
+      "comments": [
+        {
+          "line": 46,
+          "characters": 59
+        },
+        {
+          "line": 144,
+          "characters": 71
+        },
+        {
+          "line": 207,
+          "characters": 70
+        },
+        {
+          "line": 208,
+          "characters": 71
+        },
+        {
+          "line": 301,
+          "characters": 71
+        },
+        {
+          "line": 302,
+          "characters": 69
+        },
+        {
+          "line": 356,
+          "characters": 59
+        },
+        {
+          "line": 357,
+          "characters": 56
+        },
+        {
+          "line": 732,
+          "characters": 74
+        },
+        {
+          "line": 733,
+          "characters": 75
+        }
+      ],
+      "docstring_count": 5,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 15,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 279,
+          "end_line": 285,
+          "owner": "_validate_paper_tables",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 406,
+          "end_line": 410,
+          "owner": "export_question",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 534,
+          "end_line": 540,
+          "owner": "validate_exports",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 654,
+          "end_line": 654,
+          "owner": "_paper_csv_selfcheck",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "1169323e40df8de79e8c1804da87418590b8e75650482d0820b1e87cf014ab01",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        720
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "before_bytes": 24002,
+      "after_bytes": 22151,
+      "before_sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "after_sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 11,
+      "comments": [
+        {
+          "line": 226,
+          "characters": 67
+        },
+        {
+          "line": 227,
+          "characters": 67
+        },
+        {
+          "line": 236,
+          "characters": 73
+        },
+        {
+          "line": 247,
+          "characters": 63
+        },
+        {
+          "line": 248,
+          "characters": 59
+        },
+        {
+          "line": 292,
+          "characters": 66
+        },
+        {
+          "line": 293,
+          "characters": 60
+        },
+        {
+          "line": 297,
+          "characters": 65
+        },
+        {
+          "line": 298,
+          "characters": 61
+        },
+        {
+          "line": 306,
+          "characters": 75
+        },
+        {
+          "line": 307,
+          "characters": 63
+        }
+      ],
+      "docstring_count": 5,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 8,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 201,
+          "end_line": 206,
+          "owner": "publish_transaction",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 279,
+          "end_line": 279,
+          "owner": "measured_process",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 315,
+          "end_line": 315,
+          "owner": "entry_sequence_selfcheck",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 400,
+          "end_line": 400,
+          "owner": "selfcheck",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "a746db827913869b9b88fd024770eace1865cd4604bc39b9d9ae7bcd7613f164",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "before_bytes": 24337,
+      "after_bytes": 23325,
+      "before_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "after_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 5,
+      "comments": [
+        {
+          "line": 199,
+          "characters": 66
+        },
+        {
+          "line": 200,
+          "characters": 65
+        },
+        {
+          "line": 201,
+          "characters": 60
+        },
+        {
+          "line": 256,
+          "characters": 71
+        },
+        {
+          "line": 257,
+          "characters": 66
+        }
+      ],
+      "docstring_count": 5,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 6,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 239,
+          "end_line": 239,
+          "owner": "make_plots",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 291,
+          "end_line": 291,
+          "owner": "make_convergence_plot",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 333,
+          "end_line": 333,
+          "owner": "make_sensitivity_plot",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 364,
+          "end_line": 364,
+          "owner": "make_question_plot",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "e4dc4eec62e36ef6cf980ae93dda8a8aa5567f3ed5f1c09f3f2b90d4bbdede59",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        373
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py",
+      "before_bytes": 340,
+      "after_bytes": 278,
+      "before_sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "after_sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 0,
+      "comments": [],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "9a5bb960c5254a795422a6b957571d38af354eedea1b1e90cd4586881d01e63b",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py",
+      "before_bytes": 352,
+      "after_bytes": 279,
+      "before_sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "after_sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 0,
+      "comments": [],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "454f1cc58ba20b60bb763dc5c9a871ecef75ec12a673931f03f26f653d9031de",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py",
+      "before_bytes": 1285,
+      "after_bytes": 1073,
+      "before_sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "after_sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 9,
+          "characters": 70
+        },
+        {
+          "line": 10,
+          "characters": 65
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "219640fb80f2cf97c4c8696470ea6226df3aa254e3b46d14b18b6b697db269df",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py",
+      "before_bytes": 377,
+      "after_bytes": 291,
+      "before_sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "after_sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 0,
+      "comments": [],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "456bee1af8033b1add3241ec68082ac6459300628aeea9773e6de49f3e27a457",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "before_bytes": 3995,
+      "after_bytes": 3907,
+      "before_sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "after_sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 0,
+      "comments": [],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "2d8b2f449fc9b4054be99ea1a9e1ca77d95cf7e940dbaa6c1f9b0a99a0bbb625",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "before_bytes": 27729,
+      "after_bytes": 26524,
+      "before_sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "after_sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 11,
+      "comments": [
+        {
+          "line": 54,
+          "characters": 73
+        },
+        {
+          "line": 55,
+          "characters": 65
+        },
+        {
+          "line": 159,
+          "characters": 83
+        },
+        {
+          "line": 233,
+          "characters": 49
+        },
+        {
+          "line": 302,
+          "characters": 72
+        },
+        {
+          "line": 345,
+          "characters": 71
+        },
+        {
+          "line": 346,
+          "characters": 64
+        },
+        {
+          "line": 379,
+          "characters": 54
+        },
+        {
+          "line": 404,
+          "characters": 60
+        },
+        {
+          "line": 405,
+          "characters": 63
+        },
+        {
+          "line": 406,
+          "characters": 62
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 8,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "b1e6cf13c1f1957317058c1a6bb74bcad12ce16deec2ba62c9bb53b6f8238e0e",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        329
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "before_bytes": 16285,
+      "after_bytes": 13839,
+      "before_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "after_sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 9,
+      "comments": [
+        {
+          "line": 50,
+          "characters": 69
+        },
+        {
+          "line": 51,
+          "characters": 73
+        },
+        {
+          "line": 149,
+          "characters": 71
+        },
+        {
+          "line": 158,
+          "characters": 73
+        },
+        {
+          "line": 159,
+          "characters": 70
+        },
+        {
+          "line": 215,
+          "characters": 73
+        },
+        {
+          "line": 216,
+          "characters": 74
+        },
+        {
+          "line": 233,
+          "characters": 75
+        },
+        {
+          "line": 242,
+          "characters": 72
+        }
+      ],
+      "docstring_count": 7,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 14,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 65,
+          "end_line": 65,
+          "owner": "robin_eigenpairs",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 93,
+          "end_line": 98,
+          "owner": "_modal_history",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 137,
+          "end_line": 142,
+          "owner": "bessel_diffusion",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 171,
+          "end_line": 171,
+          "owner": "bessel_temperature",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 189,
+          "end_line": 189,
+          "owner": "bessel_moisture",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 205,
+          "end_line": 209,
+          "owner": "selfcheck",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "a6df97da8e16cf788663021f51a014116d69b49232ea95df194f74618552b3dc",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        286
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "before_bytes": 6542,
+      "after_bytes": 6245,
+      "before_sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "after_sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 0,
+      "comments": [],
+      "docstring_count": 2,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 16,
+          "end_line": 16,
+          "owner": "project_run",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "edaab5246b92bb465e19591608f60c51a7859a340a477a061149a14745b51c5f",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "before_bytes": 3850,
+      "after_bytes": 3682,
+      "before_sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "after_sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 1,
+      "comments": [
+        {
+          "line": 34,
+          "characters": 74
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "8951f6b6fe4dec0afe8a7bca68f878cad3a5cde2cba4d56312f81264b74e26c8",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "before_bytes": 14430,
+      "after_bytes": 13965,
+      "before_sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "after_sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 1,
+      "comments": [
+        {
+          "line": 74,
+          "characters": 62
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 7,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "b1c900d4f3e77eb967d83bc1b4f1cf90bb545d86ae6832eac23537e5f5930485",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        162
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "before_bytes": 4056,
+      "after_bytes": 2968,
+      "before_sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9",
+      "after_sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 5,
+      "comments": [
+        {
+          "line": 30,
+          "characters": 12
+        },
+        {
+          "line": 32,
+          "characters": 12
+        },
+        {
+          "line": 34,
+          "characters": 12
+        },
+        {
+          "line": 56,
+          "characters": 68
+        },
+        {
+          "line": 57,
+          "characters": 54
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 16,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "15adf7a6ec01ee5267d6cb2f8ea1d6eda384583378221fa39a860f838e82adfd",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "before_bytes": 19916,
+      "after_bytes": 17494,
+      "before_sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be",
+      "after_sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 8,
+      "comments": [
+        {
+          "line": 45,
+          "characters": 79
+        },
+        {
+          "line": 92,
+          "characters": 79
+        },
+        {
+          "line": 124,
+          "characters": 78
+        },
+        {
+          "line": 161,
+          "characters": 77
+        },
+        {
+          "line": 188,
+          "characters": 75
+        },
+        {
+          "line": 211,
+          "characters": 77
+        },
+        {
+          "line": 356,
+          "characters": 79
+        },
+        {
+          "line": 410,
+          "characters": 47
+        }
+      ],
+      "docstring_count": 4,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 28,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 64,
+          "end_line": 64,
+          "owner": "sequential_mk",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 94,
+          "end_line": 98,
+          "owner": "broken_stick",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 222,
+          "end_line": 222,
+          "owner": "threshold_time",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "08dfc32e07b4881d1fae890ae04845c4628a31a77bfcac715f0a93524e992c19",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "before_bytes": 8427,
+      "after_bytes": 6055,
+      "before_sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "after_sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 7,
+      "comments": [
+        {
+          "line": 50,
+          "characters": 12
+        },
+        {
+          "line": 52,
+          "characters": 12
+        },
+        {
+          "line": 53,
+          "characters": 12
+        },
+        {
+          "line": 56,
+          "characters": 12
+        },
+        {
+          "line": 59,
+          "characters": 60
+        },
+        {
+          "line": 87,
+          "characters": 33
+        },
+        {
+          "line": 179,
+          "characters": 55
+        }
+      ],
+      "docstring_count": 4,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 14,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 105,
+          "end_line": 116,
+          "owner": "block1",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 129,
+          "end_line": 134,
+          "owner": "block2",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 150,
+          "end_line": 155,
+          "owner": "block3",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "4afda3d65926c884f9a0ed432ee01cfd03cd3dd14f04e3fc9f3ebcd33d216757",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "before_bytes": 11942,
+      "after_bytes": 8018,
+      "before_sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "after_sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 17,
+      "comments": [
+        {
+          "line": 66,
+          "characters": 12
+        },
+        {
+          "line": 67,
+          "characters": 12
+        },
+        {
+          "line": 69,
+          "characters": 12
+        },
+        {
+          "line": 72,
+          "characters": 43
+        },
+        {
+          "line": 124,
+          "characters": 74
+        },
+        {
+          "line": 125,
+          "characters": 44
+        },
+        {
+          "line": 128,
+          "characters": 76
+        },
+        {
+          "line": 129,
+          "characters": 68
+        },
+        {
+          "line": 140,
+          "characters": 67
+        },
+        {
+          "line": 141,
+          "characters": 70
+        },
+        {
+          "line": 142,
+          "characters": 67
+        },
+        {
+          "line": 143,
+          "characters": 22
+        },
+        {
+          "line": 154,
+          "characters": 73
+        },
+        {
+          "line": 155,
+          "characters": 73
+        },
+        {
+          "line": 156,
+          "characters": 74
+        },
+        {
+          "line": 157,
+          "characters": 70
+        },
+        {
+          "line": 158,
+          "characters": 75
+        }
+      ],
+      "docstring_count": 4,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 48,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 76,
+          "end_line": 76,
+          "owner": "energyResidual",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 88,
+          "end_line": 88,
+          "owner": "rateIdentity",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 201,
+          "end_line": 201,
+          "owner": "refinementCheck",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "86b6ef559d252c4d86ad73af20b5ace530d30af4b4fd5c93e530dfe74a343af4",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "before_bytes": 2806,
+      "after_bytes": 2416,
+      "before_sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b",
+      "after_sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 21,
+          "characters": 12
+        },
+        {
+          "line": 23,
+          "characters": 12
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 8,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "932a9c094eb163a3b9d80d61a2b5d40d95e86074a3749fee8432a50303dc5672",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "before_bytes": 3902,
+      "after_bytes": 3339,
+      "before_sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476",
+      "after_sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 3,
+      "comments": [
+        {
+          "line": 22,
+          "characters": 12
+        },
+        {
+          "line": 24,
+          "characters": 12
+        },
+        {
+          "line": 49,
+          "characters": 66
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 9,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "4e8682723f4e690734d9076f9efb4018561fecb160d13dda072ea2670f203ee2",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "before_bytes": 23957,
+      "after_bytes": 16736,
+      "before_sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "after_sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 32,
+      "comments": [
+        {
+          "line": 69,
+          "characters": 12
+        },
+        {
+          "line": 71,
+          "characters": 12
+        },
+        {
+          "line": 72,
+          "characters": 12
+        },
+        {
+          "line": 73,
+          "characters": 12
+        },
+        {
+          "line": 75,
+          "characters": 12
+        },
+        {
+          "line": 77,
+          "characters": 78
+        },
+        {
+          "line": 78,
+          "characters": 17
+        },
+        {
+          "line": 79,
+          "characters": 4
+        },
+        {
+          "line": 80,
+          "characters": 55
+        },
+        {
+          "line": 81,
+          "characters": 52
+        },
+        {
+          "line": 150,
+          "characters": 75
+        },
+        {
+          "line": 177,
+          "characters": 69
+        },
+        {
+          "line": 178,
+          "characters": 73
+        },
+        {
+          "line": 179,
+          "characters": 74
+        },
+        {
+          "line": 180,
+          "characters": 74
+        },
+        {
+          "line": 181,
+          "characters": 48
+        },
+        {
+          "line": 182,
+          "characters": 73
+        },
+        {
+          "line": 185,
+          "characters": 69
+        },
+        {
+          "line": 208,
+          "characters": 71
+        },
+        {
+          "line": 209,
+          "characters": 78
+        },
+        {
+          "line": 210,
+          "characters": 74
+        },
+        {
+          "line": 328,
+          "characters": 74
+        },
+        {
+          "line": 329,
+          "characters": 71
+        },
+        {
+          "line": 330,
+          "characters": 74
+        },
+        {
+          "line": 331,
+          "characters": 37
+        },
+        {
+          "line": 335,
+          "characters": 78
+        },
+        {
+          "line": 336,
+          "characters": 42
+        },
+        {
+          "line": 387,
+          "characters": 73
+        },
+        {
+          "line": 397,
+          "characters": 81
+        },
+        {
+          "line": 399,
+          "characters": 24
+        },
+        {
+          "line": 412,
+          "characters": 52
+        },
+        {
+          "line": 422,
+          "characters": 19
+        }
+      ],
+      "docstring_count": 11,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 48,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 86,
+          "end_line": 86,
+          "owner": "pSat",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 91,
+          "end_line": 91,
+          "owner": "chamberRelativeHumidity",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 109,
+          "end_line": 115,
+          "owner": "waterActivity",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 123,
+          "end_line": 133,
+          "owner": "partitionFactor",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 152,
+          "end_line": 157,
+          "owner": "ActivityModel",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 200,
+          "end_line": 200,
+          "owner": "_extract",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 230,
+          "end_line": 238,
+          "owner": "fixedStepJacobian",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 247,
+          "end_line": 255,
+          "owner": "solveScenario",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 309,
+          "end_line": 309,
+          "owner": "_solveToEvent",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 380,
+          "end_line": 380,
+          "owner": "identityChecks",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "28a24ccedf6f0c498fb3728dcdb997d269ace9031c217e1aa9210b9eb3b38f1b",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "before_bytes": 3001,
+      "after_bytes": 2314,
+      "before_sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a",
+      "after_sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 5,
+      "comments": [
+        {
+          "line": 25,
+          "characters": 12
+        },
+        {
+          "line": 27,
+          "characters": 12
+        },
+        {
+          "line": 28,
+          "characters": 12
+        },
+        {
+          "line": 40,
+          "characters": 70
+        },
+        {
+          "line": 63,
+          "characters": 80
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 10,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "4656b5a580d1390c18bb30d18e2341919220408b9d3484e158d9420554d502fc",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "before_bytes": 3883,
+      "after_bytes": 3494,
+      "before_sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c",
+      "after_sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 5,
+      "comments": [
+        {
+          "line": 23,
+          "characters": 12
+        },
+        {
+          "line": 24,
+          "characters": 12
+        },
+        {
+          "line": 25,
+          "characters": 12
+        },
+        {
+          "line": 27,
+          "characters": 12
+        },
+        {
+          "line": 28,
+          "characters": 12
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 6,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "2ef6ac94dc606c62b476d2e5f717881d23a0353479ecf71ca44b04d1d89478d2",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "before_bytes": 8685,
+      "after_bytes": 7228,
+      "before_sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b",
+      "after_sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 55,
+          "characters": 12
+        },
+        {
+          "line": 57,
+          "characters": 12
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 24,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "185855a90eede8d935bbb4d82cd0286bf8badc252bde64a5764fb7d4dcc9c292",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py",
+      "before_bytes": 9293,
+      "after_bytes": 6689,
+      "before_sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "after_sha256": "e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 8,
+      "comments": [
+        {
+          "line": 50,
+          "characters": 12
+        },
+        {
+          "line": 52,
+          "characters": 12
+        },
+        {
+          "line": 54,
+          "characters": 32
+        },
+        {
+          "line": 56,
+          "characters": 36
+        },
+        {
+          "line": 57,
+          "characters": 38
+        },
+        {
+          "line": 93,
+          "characters": 24
+        },
+        {
+          "line": 161,
+          "characters": 81
+        },
+        {
+          "line": 162,
+          "characters": 79
+        }
+      ],
+      "docstring_count": 4,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 29,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 66,
+          "end_line": 70,
+          "owner": "midpointDiffusionFlux",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 77,
+          "end_line": 83,
+          "owner": "runScheme",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 124,
+          "end_line": 124,
+          "owner": "compareFiniteDifferenceToKirchhoff",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "c41b11bb1414ba746d7ad08d1c6f74c224fe9d711951c3e7ab517319be7dfe61",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "before_bytes": 12878,
+      "after_bytes": 9574,
+      "before_sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "after_sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 7,
+      "comments": [
+        {
+          "line": 51,
+          "characters": 12
+        },
+        {
+          "line": 53,
+          "characters": 12
+        },
+        {
+          "line": 54,
+          "characters": 12
+        },
+        {
+          "line": 55,
+          "characters": 12
+        },
+        {
+          "line": 91,
+          "characters": 33
+        },
+        {
+          "line": 131,
+          "characters": 57
+        },
+        {
+          "line": 225,
+          "characters": 19
+        }
+      ],
+      "docstring_count": 7,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 33,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 73,
+          "end_line": 84,
+          "owner": "_scaled_water_flux",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 123,
+          "end_line": 123,
+          "owner": "evaluate",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 147,
+          "end_line": 147,
+          "owner": "full_point",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 155,
+          "end_line": 155,
+          "owner": "control_check",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 211,
+          "end_line": 211,
+          "owner": "sobol",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 238,
+          "end_line": 238,
+          "owner": "scan",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "3c9b997c8cb680269118c48c0357bba57b1d8dd083091ebe07e162d80ff0b6bf",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "before_bytes": 8007,
+      "after_bytes": 6073,
+      "before_sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "after_sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 12,
+      "comments": [
+        {
+          "line": 51,
+          "characters": 12
+        },
+        {
+          "line": 53,
+          "characters": 12
+        },
+        {
+          "line": 68,
+          "characters": 45
+        },
+        {
+          "line": 69,
+          "characters": 42
+        },
+        {
+          "line": 74,
+          "characters": 77
+        },
+        {
+          "line": 109,
+          "characters": 75
+        },
+        {
+          "line": 119,
+          "characters": 58
+        },
+        {
+          "line": 121,
+          "characters": 73
+        },
+        {
+          "line": 122,
+          "characters": 67
+        },
+        {
+          "line": 127,
+          "characters": 74
+        },
+        {
+          "line": 128,
+          "characters": 73
+        },
+        {
+          "line": 129,
+          "characters": 67
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 20,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "38df6fd52e14638a89c183b57a44bd6731104f62866eb8b1b97a5b31cbe78be6",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "05_数值检验与实验/数值检验说明.txt",
+      "before_bytes": 4195,
+      "after_bytes": 4195,
+      "before_sha256": "e391577ffa9588644f214c9ca4777aae3c7efee07bfdb23a9e862ff284e8b68f",
+      "after_sha256": "e391577ffa9588644f214c9ca4777aae3c7efee07bfdb23a9e862ff284e8b68f",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "05_数值检验与实验/源码文件与校验值.txt",
+      "before_bytes": 10249,
+      "after_bytes": 10249,
+      "before_sha256": "401959c7762b85346360eda3e86493ca011effd72722969df7e3300366befb56",
+      "after_sha256": "401959c7762b85346360eda3e86493ca011effd72722969df7e3300366befb56",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    }
+  ],
+  "original_source_modified": false,
+  "all_files_read": true,
+  "algorithm_changes": false,
+  "runtime_testing": "PENDING_ROOT_SANDBOX",
+  "comments_total": 196,
+  "docstrings_total": 84
+}

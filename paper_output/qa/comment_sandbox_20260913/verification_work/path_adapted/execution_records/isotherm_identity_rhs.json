@@ -1,0 +1,191 @@
+{
+  "job": "isotherm_identity_rhs",
+  "scope": "Explicit function-level numerical check; not every default long experiment",
+  "status": "PASS_FUNCTION_SCOPE",
+  "identities": {
+    "anchor": {
+      "statedEquilibriumC": 0.05,
+      "chamberPlateauRH": 0.6072710989856436,
+      "isothermAtCref": 0.6,
+      "absoluteDifference": 0.0,
+      "note": "a_w(C_eq) is forced to the chamber relative humidity because the stated equilibrium point can neither gain nor lose water"
+    },
+    "baselineLimit": {
+      "partitionFactorAtP1": 1.0,
+      "partitionFactorAtCref": 1.0,
+      "frozenDriveSigned": -1.151111546961326,
+      "revisedDriveSigned": -1.151111546961326,
+      "absoluteDifference": 0.0,
+      "independentCheck": "core.RadialModel and ActivityModel(p=1) were evaluated on the same initial state for Q1, Q23 and Q4; the maximum absolute difference of the right-hand sides was exactly 0.0 in all three cases"
+    },
+    "partitionFactorAcrossRange": [
+      {
+        "C": 0.05,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.6666666666666666,
+        "Keff_p2": 0.5,
+        "Keff_p3": 0.3333333333333333,
+        "Keff_p4": 0.25
+      },
+      {
+        "C": 0.06,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.6867071540869446,
+        "Keff_p2": 0.5227744249483387,
+        "Keff_p3": 0.35378382671382874,
+        "Keff_p4": 0.26734324677379934
+      },
+      {
+        "C": 0.08,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.7173215078580893,
+        "Keff_p2": 0.558481559887747,
+        "Keff_p3": 0.38669873776440394,
+        "Keff_p4": 0.2956274532814363
+      },
+      {
+        "C": 0.1,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.7400789501051268,
+        "Keff_p2": 0.5857864376269049,
+        "Keff_p3": 0.4125989480318004,
+        "Keff_p4": 0.318207169492571
+      },
+      {
+        "C": 0.15,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.7788752148462957,
+        "Keff_p2": 0.6339745962155613,
+        "Keff_p3": 0.45995808847404784,
+        "Keff_p4": 0.3602464715226112
+      },
+      {
+        "C": 0.2,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.8041996493439335,
+        "Keff_p2": 0.6666666666666666,
+        "Keff_p3": 0.4933859667367512,
+        "Keff_p4": 0.3905242917512699
+      },
+      {
+        "C": 0.3,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.8365758814335721,
+        "Keff_p2": 0.7101020514433645,
+        "Keff_p3": 0.5396145502210747,
+        "Keff_p4": 0.433268274904473
+      },
+      {
+        "C": 0.5,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.8717294788853462,
+        "Keff_p2": 0.7597469266479577,
+        "Keff_p3": 0.5953790184874689,
+        "Keff_p4": 0.4862874164551677
+      },
+      {
+        "C": 1.0,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.909767493863426,
+        "Keff_p2": 0.8172560023684433,
+        "Keff_p3": 0.6648387896168013,
+        "Keff_p4": 0.5548728373667496
+      },
+      {
+        "C": 2.55,
+        "Keff_p1": 1.0,
+        "Keff_p1p5": 0.9458314046146762,
+        "Keff_p2": 0.8771714314291431,
+        "Keff_p3": 0.7449509729284063,
+        "Keff_p4": 0.6383127720996233
+      }
+    ],
+    "family": [
+      {
+        "C": 0.05,
+        "aw_p1": 0.6,
+        "aw_p2": 0.6,
+        "aw_p4": 0.6
+      },
+      {
+        "C": 0.06,
+        "aw_p1": 0.6666666666666666,
+        "aw_p2": 0.6348516283298893,
+        "aw_p4": 0.6178228831182533
+      },
+      {
+        "C": 0.08,
+        "aw_p1": 0.75,
+        "aw_p2": 0.683772233983162,
+        "aw_p4": 0.6443441179922154
+      },
+      {
+        "C": 0.1,
+        "aw_p1": 0.8,
+        "aw_p2": 0.7171572875253809,
+        "aw_p4": 0.6636414338985142
+      },
+      {
+        "C": 0.15,
+        "aw_p1": 0.8666666666666667,
+        "aw_p2": 0.7690598923241496,
+        "aw_p4": 0.696065725739363
+      },
+      {
+        "C": 0.25,
+        "aw_p1": 0.9199999999999999,
+        "aw_p2": 0.8211145618000169,
+        "aw_p4": 0.7325038780094312
+      },
+      {
+        "C": 0.5,
+        "aw_p1": 0.96,
+        "aw_p2": 0.8735088935932648,
+        "aw_p4": 0.7750634699238603
+      },
+      {
+        "C": 1.0,
+        "aw_p1": 0.98,
+        "aw_p2": 0.9105572809000084,
+        "aw_p4": 0.8108516781993649
+      },
+      {
+        "C": 2.55,
+        "aw_p1": 0.9921568627450981,
+        "aw_p2": 0.9439887966388796,
+        "aw_p4": 0.850318734156715
+      }
+    ],
+    "monotoneIncreasingKeff": true,
+    "monotoneIncreasingAw": true,
+    "chamber": {
+      "plateauMeanRH": 0.6072710989856436,
+      "plateauMinRH": 0.5941581575283217,
+      "plateauMaxRH": 0.6199076346134036,
+      "windowMeanRH": 0.6228689124600515,
+      "earlyRH": 0.8215669493070091,
+      "plateauTemperatureC": 49.66074033149175,
+      "plateauHumidityRatio": 0.048888453038674035,
+      "tailFromSeconds": 3600.0
+    },
+    "pSatAtPlateau_Pa": 12152.916509784327,
+    "chamberVapourPressure_Pa": 7384.280676083198,
+    "pSatAt28C_Pa": 3773.518813819878
+  },
+  "rhsChecks": [
+    {
+      "question": "Q1",
+      "maxRhsDifferenceP1": 0.0
+    },
+    {
+      "question": "Q23",
+      "maxRhsDifferenceP1": 0.0
+    },
+    {
+      "question": "Q4",
+      "maxRhsDifferenceP1": 0.0
+    }
+  ],
+  "elapsedSeconds": 0.03516169999784324,
+  "python": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe"
+}

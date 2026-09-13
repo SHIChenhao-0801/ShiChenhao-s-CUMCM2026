@@ -1,0 +1,202 @@
+﻿数值检验源码文件与SHA256校验值
+==============================
+
+以下33项均为真实源代码。新复制文件与所列本届来源逐字节一致；runCrossCheck.m与整理前的现有文件逐字节一致。
+
+01. Python检验源码/paper_output/code/modeling/drying_core.py
+用途：原径向热湿方程、材料坐标、Kirchhoff水通量与求解器；检验共同依赖
+来源：paper_output/code/modeling/drying_core.py
+大小：19944 字节
+SHA256：4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305
+
+02. Python检验源码/paper_output/code/modeling/analytic_jacobian.py
+用途：解析稀疏Jacobian与有限差分自检；原求解器依赖
+来源：paper_output/code/modeling/analytic_jacobian.py
+大小：16952 字节
+SHA256：d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665
+
+03. Python检验源码/paper_output/code/modeling/disk_dense.py
+用途：BDF稠密多项式磁盘保存和查询；原求解器依赖
+来源：paper_output/code/modeling/disk_dense.py
+大小：4869 字节
+SHA256：2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60
+
+04. Python检验源码/paper_output/code/modeling/q1_model.py
+用途：问题一参数封装；时间误差检验依赖
+来源：paper_output/code/modeling/q1_model.py
+大小：340 字节
+SHA256：58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8
+
+05. Python检验源码/paper_output/code/modeling/q2_model.py
+用途：问题二/三共享轨迹参数封装；时间误差检验依赖
+来源：paper_output/code/modeling/q2_model.py
+大小：352 字节
+SHA256：4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204
+
+06. Python检验源码/paper_output/code/modeling/q3_model.py
+用途：全域含水率达标及严格报告格点；灵敏度等检验依赖
+来源：paper_output/code/modeling/q3_model.py
+大小：1285 字节
+SHA256：43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137
+
+07. Python检验源码/paper_output/code/modeling/q4_model.py
+用途：问题四附录4物性与径向收缩参数封装；时间误差检验依赖
+来源：paper_output/code/modeling/q4_model.py
+大小：377 字节
+SHA256：d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535
+
+08. Python检验源码/paper_output/code/modeling/validate_bessel.py
+用途：常热物性圆柱Robin边界和时变环境卷积的Bessel解析基准
+来源：paper_output/code/modeling/validate_bessel.py
+大小：16285 字节
+SHA256：64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac
+
+09. Python检验源码/paper_output/code/modeling/compare_analytic.py
+用途：有限体积结果与独立Bessel基准的数值对照
+来源：paper_output/code/modeling/compare_analytic.py
+大小：14520 字节
+SHA256：52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805
+
+10. Python检验源码/paper_output/code/modeling/verify_convergence.py
+用途：网格加密、公共投影及解析特例的空间收敛检查
+来源：paper_output/code/modeling/verify_convergence.py
+大小：6542 字节
+SHA256：7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec
+
+11. Python检验源码/paper_output/code/modeling/verify_time_accuracy.py
+用途：固定物理条件下基准/紧容差对照和监督执行
+来源：paper_output/code/modeling/verify_time_accuracy.py
+大小：14430 字节
+SHA256：a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc
+
+12. Python检验源码/paper_output/code/modeling/verify_dense_storage.py
+用途：BDF稠密输出存储/查询的一致性检查
+来源：paper_output/code/modeling/verify_dense_storage.py
+大小：3850 字节
+SHA256：b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472
+
+13. Python检验源码/paper_output/code/modeling/run_experiments.py
+用途：带明确预算的网格、参数、物理情景实验入口
+来源：paper_output/code/modeling/run_experiments.py
+大小：3995 字节
+SHA256：fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509
+
+14. Python检验源码/paper_output/code/modeling/production_provenance.py
+用途：时间检验需要的源码/输入快照、执行监督和退出记录工具
+来源：paper_output/code/modeling/production_provenance.py
+大小：24002 字节
+SHA256：0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130
+
+15. Python检验源码/paper_output/code/modeling/run_modeling.py
+用途：production_provenance自检引用的原监督/求解入口；依赖补齐
+来源：paper_output/code/modeling/run_modeling.py
+大小：27729 字节
+SHA256：d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84
+
+16. Python检验源码/paper_output/code/modeling/export_outputs.py
+用途：run_modeling动态加载的原结果导出/回读模块；依赖补齐
+来源：paper_output/code/modeling/export_outputs.py
+大小：41427 字节
+SHA256：7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b
+
+17. Python检验源码/paper_output/code/modeling/publication_plots.py
+用途：run_modeling动态加载的原绘图模块；依赖补齐
+来源：paper_output/code/modeling/publication_plots.py
+大小：24337 字节
+SHA256：a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388
+
+18. Python检验源码/paper_output/code/modeling/axisymmetric_check.py
+用途：轴对称二维含端面情景的适用性检查源代码
+来源：paper_output/code/modeling/axisymmetric_check.py
+大小：13887 字节
+SHA256：a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c
+
+19. Python检验源码/paper_output/code/verification/analytic_metric_check.py
+用途：对解析基准的评估指标、共同点与体平均差异核查
+来源：paper_output/code/verification/analytic_metric_check.py
+大小：4056 字节
+SHA256：bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9
+
+20. Python检验源码/paper_output/code/verification/crossvalidate_solver.py
+用途：数值求解器实现、物理边界与诊断的交叉检查
+来源：paper_output/code/verification/crossvalidate_solver.py
+大小：8427 字节
+SHA256：981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09
+
+21. Python检验源码/paper_output/code/verification/crossvalidate_series.py
+用途：已有时间序列、阶段特征与质量变化分析
+来源：paper_output/code/verification/crossvalidate_series.py
+大小：19916 字节
+SHA256：f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be
+
+22. Python检验源码/paper_output/code/verification/method_comparison.py
+用途：BDF、Radau等适用数值方法的小网格比较
+来源：paper_output/code/verification/method_comparison.py
+大小：9293 字节
+SHA256：2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0
+
+23. Python检验源码/paper_output/code/verification/sensitivity_analysis.py
+用途：参数敏感性；包括已修正的Kirchhoff通量尺度注入
+来源：paper_output/code/verification/sensitivity_analysis.py
+大小：12878 字节
+SHA256：e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066
+
+24. Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py
+用途：阈值、量纲标度、缩放与响应解释检查
+来源：paper_output/code/verification/threshold_and_scaling_checks.py
+大小：8007 字节
+SHA256：6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599
+
+25. Python检验源码/paper_output/code/verification/isotherm_activity_closure.py
+用途：吸附/水活度边界闭合的经验情景求解
+来源：paper_output/code/verification/isotherm_activity_closure.py
+大小：23957 字节
+SHA256：d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e
+
+26. Python检验源码/paper_output/code/verification/isotherm_diagnose.py
+用途：上述闭合的物理量、初值及通量诊断
+来源：paper_output/code/verification/isotherm_diagnose.py
+大小：3001 字节
+SHA256：773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a
+
+27. Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py
+用途：上述闭合Jacobian和数值扰动的诊断
+来源：paper_output/code/verification/isotherm_jacobian_probe.py
+大小：3883 字节
+SHA256：2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c
+
+28. Python检验源码/paper_output/code/verification/energy_balance_check.py
+用途：有效热容量和显热收支检查
+来源：paper_output/code/verification/energy_balance_check.py
+大小：11942 字节
+SHA256：1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94
+
+29. Python检验源码/paper_output/code/verification/energy_balance_diagnose.py
+用途：能量残差构成及容量项的补充诊断
+来源：paper_output/code/verification/energy_balance_diagnose.py
+大小：2806 字节
+SHA256：c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b
+
+30. Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py
+用途：能量表达式/容量功解释的进一步诊断
+来源：paper_output/code/verification/energy_balance_diagnose2.py
+大小：3902 字节
+SHA256：e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476
+
+31. Python检验源码/paper_output/code/verification/latent_heat_scenarios.py
+用途：潜热负荷压力情景；非生产基准替换
+来源：paper_output/code/verification/latent_heat_scenarios.py
+大小：8685 字节
+SHA256：07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b
+
+32. MATLAB对照证据/compareMatlab.mjs
+用途：原MATLAB与Python共同时间/材料坐标样点、事件的对照程序；Node.js自带库
+来源：paper_output/code/review_delivery/tools/compareMatlab.mjs
+大小：16706 字节
+SHA256：32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe
+
+33. MATLAB对照证据/runCrossCheck.m
+用途：实际使用的独立MATLAB N40热湿求解和共同样点导出
+来源：现有支撑目录内由用户移入的MATLAB原文件；保持原位，未恢复原目录
+大小：26369 字节
+SHA256：54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda

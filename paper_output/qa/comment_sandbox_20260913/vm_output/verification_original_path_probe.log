@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Control\entry_runner.py", line 8, in <module>
+    runpy.run_path(str(entry), run_name="__main__")
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Work\05_original\paper_output\code\verification\threshold_and_scaling_checks.py", line 27, in <module>
+    os.chdir(ROOT)
+    ~~~~~~~~^^^^^^
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'D:\\Document\\数学建模\\2026CUMCM'

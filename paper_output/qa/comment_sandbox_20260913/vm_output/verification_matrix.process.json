@@ -1,0 +1,26 @@
+{
+  "name": "verification_matrix",
+  "command": [
+    "C:\\Runtime\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "C:/Verification/execute_matrix.py",
+    "--python",
+    "C:\\Runtime\\python.exe",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--workers",
+    "2",
+    "--label",
+    "windows_vm"
+  ],
+  "cwd": "C:\\Work",
+  "startUtc": "2026-09-13T01:34:59.617490+00:00",
+  "status": "EXIT_ZERO",
+  "pid": 7640,
+  "returncode": 0,
+  "elapsedSeconds": 276.1184046,
+  "endUtc": "2026-09-13T01:39:35.735902+00:00"
+}

@@ -1,0 +1,179 @@
+{
+  "case_id": "frozen_D_N400",
+  "settings": {
+    "question": "Q1",
+    "intervals": 400,
+    "rtol": 1e-10,
+    "atol_temperature": 1e-10,
+    "atol_moisture": 1e-11,
+    "max_step_s": 2.0,
+    "early_max_step_s": 2.0,
+    "horizon_h": 240.0,
+    "shrink": false,
+    "boundary_extension": "nominal",
+    "tail_temperature_C": 50.0,
+    "tail_equilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibrium_scale": 1.0,
+    "surface_latent_fraction": 0.0,
+    "latent_J_kg": 2400000.0,
+    "constant_D": 4.937655094173937e-09,
+    "constant_thermal": false,
+    "method": "BDF",
+    "face_scheme": "kirchhoff",
+    "jacobian_mode": "analytic",
+    "dense_storage": "disk"
+  },
+  "diagnostics": {
+    "event_s": null,
+    "event_h": null,
+    "end_s": 1800.0,
+    "elapsed_s": 2.1315629000018816,
+    "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+    "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+    "min_C": 1.5521553096429268,
+    "max_C": 2.5500000000000007,
+    "min_T_K": 301.1499999999999,
+    "max_T_K": 309.9355597172841,
+    "min_D": 4.937655094173937e-09,
+    "max_D": 4.937655094173937e-09,
+    "positive_properties": true,
+    "max_radial_C_increase": 1.7763568394002505e-15,
+    "final_max_C": 2.5499921130776797,
+    "final_surface_C": 1.552155309642927,
+    "strictly_dry_at_end": false,
+    "radius_end_m": 0.02,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 3904,
+    "accepted_time_points": 1710,
+    "nfev": 3904,
+    "njev": 81,
+    "nlu": 437,
+    "solver_success": true,
+    "dense_storage": "disk",
+    "dense_coefficient_bytes": 56627560,
+    "dense_polynomial_count": 1709
+  },
+  "comparison_scope": "constant-property heat and frozen-D linear moisture",
+  "comparisons": {
+    "paper": {
+      "temperature": {
+        "max_abs_error": 5.687805412435409e-06,
+        "rms_error": 1.3996757397080066e-06,
+        "mean_signed_error": -5.328676138560695e-07,
+        "max_error_time_s": 300.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": -5.687805412435409e-06,
+        "centre_max_abs_error": 9.930143960446003e-07,
+        "surface_max_abs_error": 5.687805412435409e-06,
+        "finite_values": true
+      },
+      "analytic_truncation_sensitivity": {
+        "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+        "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+      },
+      "frozen_D_moisture": {
+        "max_abs_error": 6.777100461308194e-05,
+        "rms_error": 1.278198321069362e-05,
+        "mean_signed_error": 3.4869058492529147e-06,
+        "max_error_time_s": 100.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": 6.777100461308194e-05,
+        "centre_max_abs_error": 2.1716925591164227e-08,
+        "surface_max_abs_error": 6.777100461308194e-05,
+        "finite_values": true
+      }
+    },
+    "dense": {
+      "temperature": {
+        "max_abs_error": 5.687805412435409e-06,
+        "rms_error": 1.0866527730322158e-06,
+        "mean_signed_error": -4.737956189059341e-07,
+        "max_error_time_s": 300.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": -5.687805412435409e-06,
+        "centre_max_abs_error": 1.181137463390769e-06,
+        "surface_max_abs_error": 5.687805412435409e-06,
+        "finite_values": true
+      },
+      "analytic_truncation_sensitivity": {
+        "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+        "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+      },
+      "frozen_D_moisture": {
+        "max_abs_error": 0.0002875083008730961,
+        "rms_error": 9.398400934802228e-06,
+        "mean_signed_error": 1.9070795801894124e-06,
+        "max_error_time_s": 10.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": 0.0002875083008730961,
+        "centre_max_abs_error": 2.1716925591164227e-08,
+        "surface_max_abs_error": 0.0002875083008730961,
+        "finite_values": true
+      }
+    }
+  },
+  "output_artifacts": [
+    {
+      "path": "paper_output/results/analytic_comparison/frozen_D_N400_paper.csv",
+      "bytes": 5030,
+      "sha256": "2f3182d1ab901275bde82b27c82c252fcb925d45628cb63090eb506c593417d5"
+    },
+    {
+      "path": "paper_output/results/analytic_comparison/frozen_D_N400_dense.csv",
+      "bytes": 541952,
+      "sha256": "b83494c82dea989dc6fb3269f22e8aba009c7c78e781dacbce9d0fc296439156"
+    },
+    {
+      "path": "paper_output/results/analytic_comparison/frozen_D_N400_early.csv",
+      "bytes": 2906,
+      "sha256": "a561a21779170880c76839f5fbf4c5616656f9b89d11f5a28acb757335302070"
+    }
+  ],
+  "representation_diagnostic": {
+    "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+    "strict_cell_average_interpretation_is_not_primary": true,
+    "heat_node_max_abs_error_K": 5.687805412435409e-06,
+    "heat_vs_annular_average_max_abs_error_K": 0.004100365933481953,
+    "analytic_point_vs_annular_average_max_difference_K": 0.004101005677000558,
+    "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+  },
+  "early_boundary_layer": {
+    "times_s": [
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0,
+      30.0,
+      60.0
+    ],
+    "radii_m": [
+      0.0,
+      0.019,
+      0.02
+    ],
+    "moisture": {
+      "max_abs_error": 0.0010483972438142253,
+      "rms_error": 0.00030311501329085676,
+      "mean_signed_error": 0.0001381731376829874,
+      "max_error_time_s": 1.0,
+      "max_error_radius_m": 0.02,
+      "error_at_max_location": 0.0010483972438142253,
+      "centre_max_abs_error": 1.6063594898696465e-11,
+      "surface_max_abs_error": 0.0010483972438142253,
+      "finite_values": true
+    },
+    "surface_errors_kg_per_kg": [
+      0.0010483972438142253,
+      0.0007056780823679887,
+      0.0004245617797664636,
+      0.00028750904248164844,
+      0.00019207800158271837,
+      0.00015026124443195954,
+      9.64567905596958e-05
+    ],
+    "analytic_240_480_max_difference": 4.515926721460062e-07
+  }
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\axisymmetric_check.py", line 283, in <module>
+    main()
+    ~~~~^^
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\axisymmetric_check.py", line 250, in main
+    raise FileExistsError(f"Refusing to overwrite {folder}")
+FileExistsError: Refusing to overwrite C:\Work\05_path_adapted\paper_output\results\axisymmetric_check\Nr6_Nz4_end_off_sandbox

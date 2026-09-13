@@ -1,0 +1,15 @@
+{
+  "job": "provenance",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/production_provenance.py",
+    "--selfcheck"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:35:20.438979+00:00",
+  "pid": 8160,
+  "returncode": 0,
+  "elapsedSeconds": 4.388344099999998,
+  "finishedAtUtc": "2026-09-13T01:35:24.827447+00:00"
+}

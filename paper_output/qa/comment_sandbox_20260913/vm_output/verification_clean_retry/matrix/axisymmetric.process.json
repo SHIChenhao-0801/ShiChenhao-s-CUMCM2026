@@ -1,0 +1,24 @@
+{
+  "job": "axisymmetric",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/axisymmetric_check.py",
+    "--nr",
+    "6",
+    "--nz",
+    "4",
+    "--end-faces",
+    "off",
+    "--budget-s",
+    "120",
+    "--tag",
+    "_sandbox"
+  ],
+  "cwd": "C:\\Work\\05_clean_retry",
+  "startedAtUtc": "2026-09-13T01:48:05.397289+00:00",
+  "pid": 4212,
+  "returncode": 0,
+  "elapsedSeconds": 15.576176699999905,
+  "finishedAtUtc": "2026-09-13T01:48:20.973469+00:00"
+}

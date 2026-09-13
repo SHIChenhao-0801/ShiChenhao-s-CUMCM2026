@@ -1,0 +1,21 @@
+{
+  "job": "convergence",
+  "argv": [
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe",
+    "-B",
+    "paper_output/code/modeling/verify_convergence.py",
+    "--question",
+    "Q1",
+    "--grids",
+    "20",
+    "40",
+    "--tag",
+    "sandbox"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+  "startedAtUtc": "2026-09-13T01:28:10.260960+00:00",
+  "pid": 19036,
+  "returncode": 0,
+  "elapsedSeconds": 3.197391899986542,
+  "finishedAtUtc": "2026-09-13T01:28:13.458357+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "T1_chamber_plateau_onset": {
+    "brokenStick_hours": 0.9,
+    "sequentialMK_hours": 2.3666666666666667,
+    "fisher_k2_hours": [
+      0.5666666666666667
+    ],
+    "relative_threshold_95pct_hours": 1.3666666666666667
+  },
+  "T1b_chamber_moisture_plateau_onset": {
+    "brokenStick_hours": 1.2,
+    "sequentialMK_hours": 2.3666666666666667,
+    "fisher_k2_hours": [
+      0.7833333333333333
+    ],
+    "relative_threshold_95pct_hours": 1.6666666666666667
+  },
+  "T2_radius_shrinkage_end": {
+    "brokenStick_hours": 7.5,
+    "sequentialMK_hours": 4.5,
+    "fisher_k2_hours": [
+      5.0
+    ],
+    "fisher_k3_hours": [
+      2.0,
+      7.0
+    ],
+    "relative_threshold_95pct_hours": 13.5
+  },
+  "T3_preheating_end": {
+    "brokenStick_center_hours": 2.85,
+    "brokenStick_surface_hours": 2.85,
+    "sequentialMK_center_hours": null,
+    "sequentialMK_surface_hours": null,
+    "fisher_k2_center_hours": [
+      1.1
+    ],
+    "fisher_k2_surface_hours": [
+      0.95
+    ],
+    "relative_threshold_95pct_center_hours": 2.1666666666666665,
+    "relative_threshold_95pct_surface_hours": 1.9666666666666666
+  }
+}

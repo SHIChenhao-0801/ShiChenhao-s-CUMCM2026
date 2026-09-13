@@ -1,0 +1,19 @@
+{
+  "name": "verification_original_path_probe",
+  "command": [
+    "C:\\Runtime\\python.exe",
+    "-I",
+    "-X",
+    "utf8",
+    "-B",
+    "C:\\Control\\entry_runner.py",
+    "C:\\Work\\05_original\\paper_output\\code\\verification\\threshold_and_scaling_checks.py"
+  ],
+  "cwd": "C:\\Work",
+  "startUtc": "2026-09-13T01:34:58.220477+00:00",
+  "status": "EXIT_NONZERO",
+  "pid": 7592,
+  "returncode": 1,
+  "elapsedSeconds": 1.393802199999996,
+  "endUtc": "2026-09-13T01:34:59.614277+00:00"
+}

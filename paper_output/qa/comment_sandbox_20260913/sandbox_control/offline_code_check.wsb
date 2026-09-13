@@ -1,0 +1,17 @@
+<Configuration>
+  <VGpu>Disable</VGpu>
+  <Networking>Disable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <MemoryInMB>16384</MemoryInMB>
+  <MappedFolders>
+    <MappedFolder><HostFolder>D:\Document\数学建模\2026CUMCM\tmp\cache\comment_sandbox_20260913\runtime</HostFolder><SandboxFolder>C:\Runtime</SandboxFolder><ReadOnly>true</ReadOnly></MappedFolder>
+    <MappedFolder><HostFolder>D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\candidate</HostFolder><SandboxFolder>C:\Candidate</SandboxFolder><ReadOnly>true</ReadOnly></MappedFolder>
+    <MappedFolder><HostFolder>D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\sandbox_control</HostFolder><SandboxFolder>C:\Control</SandboxFolder><ReadOnly>true</ReadOnly></MappedFolder>
+    <MappedFolder><HostFolder>D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\verification_work</HostFolder><SandboxFolder>C:\Verification</SandboxFolder><ReadOnly>true</ReadOnly></MappedFolder>
+    <MappedFolder><HostFolder>D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\vm_output</HostFolder><SandboxFolder>C:\Evidence</SandboxFolder><ReadOnly>false</ReadOnly></MappedFolder>
+  </MappedFolders>
+  <LogonCommand><Command>C:\Runtime\python.exe -I -X utf8 -B C:\Control\run_vm.py</Command></LogonCommand>
+</Configuration>

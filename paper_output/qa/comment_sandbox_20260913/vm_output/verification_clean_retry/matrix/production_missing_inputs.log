@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Work\05_clean_retry\paper_output\code\modeling\run_modeling.py", line 436, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Work\05_clean_retry\paper_output\code\modeling\run_modeling.py", line 389, in main
+    'blas_threads': args.blas_threads}, 'input_files': dependencies(),
+                                                       ~~~~~~~~~~~~^^
+  File "C:\Work\05_clean_retry\paper_output\code\modeling\run_modeling.py", line 53, in dependencies
+    return [provenance.file_record(path) for path in sorted(set(paths))]
+            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Work\05_clean_retry\paper_output\code\modeling\production_provenance.py", line 42, in file_record
+    before = path.stat()
+  File "C:\Runtime\Lib\pathlib\__init__.py", line 654, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Work\\05_clean_retry\\paper_output\\plan\\model_route.json'

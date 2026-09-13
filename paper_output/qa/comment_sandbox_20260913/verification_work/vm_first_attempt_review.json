@@ -1,0 +1,1883 @@
+{
+  "scope": "Actual Windows Sandbox VM first attempt. Six pre-existing output directories were copied from the host and must be retried in a clean root.",
+  "environment": {
+    "startedAtUtc": "2026-09-13T01:34:55.563367+00:00",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Runtime\\python.exe",
+    "prefix": "C:\\Runtime",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "computerName": "D07F2591-1B26-4",
+    "originalHostWorkspaceVisible": false,
+    "sysPath": [
+      "C:\\Runtime\\python314.zip",
+      "C:\\Runtime\\DLLs",
+      "C:\\Runtime\\Lib",
+      "C:\\Runtime",
+      "C:\\Runtime\\Lib\\site-packages"
+    ],
+    "libraries": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2"
+    },
+    "networkDisabledByWSB": true,
+    "candidateReadOnlyByWSB": true
+  },
+  "jobCount": 27,
+  "exitZeroCount": 17,
+  "staleOutputFailures": [
+    "time_accuracy",
+    "convergence",
+    "dense_storage",
+    "export_selfcheck",
+    "axisymmetric",
+    "production_missing_inputs"
+  ],
+  "originalFailures": [
+    "isotherm_old_interface",
+    "isotherm_extract",
+    "isotherm_probe",
+    "series_constant_diagnostic"
+  ],
+  "testedSourceChecks": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "vmRecordedSha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "hostAdaptedSha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/axisymmetric_check.py",
+      "vmRecordedSha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "hostAdaptedSha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "vmRecordedSha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "hostAdaptedSha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "vmRecordedSha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "hostAdaptedSha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "vmRecordedSha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "hostAdaptedSha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "vmRecordedSha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2",
+      "hostAdaptedSha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "vmRecordedSha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "hostAdaptedSha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "vmRecordedSha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "hostAdaptedSha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "vmRecordedSha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742",
+      "hostAdaptedSha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "vmRecordedSha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc",
+      "hostAdaptedSha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "vmRecordedSha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808",
+      "hostAdaptedSha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "vmRecordedSha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905",
+      "hostAdaptedSha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "vmRecordedSha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "hostAdaptedSha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "vmRecordedSha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "hostAdaptedSha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "vmRecordedSha256": "faff27578a3f3b85107be07d2993fd9575f56a7f92d2f8e0e4a236430d432a27",
+      "hostAdaptedSha256": "faff27578a3f3b85107be07d2993fd9575f56a7f92d2f8e0e4a236430d432a27",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "vmRecordedSha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "hostAdaptedSha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "vmRecordedSha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "hostAdaptedSha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "vmRecordedSha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "hostAdaptedSha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/analytic_metric_check.py",
+      "vmRecordedSha256": "ac4cddaf7454e84c3e4352f049865ffcb37aec1ced28b4396eafcc47204d8ffd",
+      "hostAdaptedSha256": "ac4cddaf7454e84c3e4352f049865ffcb37aec1ced28b4396eafcc47204d8ffd",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_series.py",
+      "vmRecordedSha256": "1dd2d782a4f0350e164851131d0aed7c4e64019af811b6efa91ae40179767cc6",
+      "hostAdaptedSha256": "1dd2d782a4f0350e164851131d0aed7c4e64019af811b6efa91ae40179767cc6",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_solver.py",
+      "vmRecordedSha256": "463c0dedd2cf2c48645a164c4fad7621650b287933fcb662165c19a0e9226210",
+      "hostAdaptedSha256": "463c0dedd2cf2c48645a164c4fad7621650b287933fcb662165c19a0e9226210",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_check.py",
+      "vmRecordedSha256": "efb3ce293a57955eef0d220eb20233cd443e3913eb27a8779ea7784056d79cae",
+      "hostAdaptedSha256": "efb3ce293a57955eef0d220eb20233cd443e3913eb27a8779ea7784056d79cae",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_diagnose.py",
+      "vmRecordedSha256": "b5a5817437e62b1ed042b089e092fc66286c051d69b5654e29b709f9c018a510",
+      "hostAdaptedSha256": "b5a5817437e62b1ed042b089e092fc66286c051d69b5654e29b709f9c018a510",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_diagnose2.py",
+      "vmRecordedSha256": "6f2e3e4b02c053b63aa41e7aff9ab7a3b62fd56b318906cee4a3c53d0269c4ce",
+      "hostAdaptedSha256": "6f2e3e4b02c053b63aa41e7aff9ab7a3b62fd56b318906cee4a3c53d0269c4ce",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_activity_closure.py",
+      "vmRecordedSha256": "0256441383aae4237ff7000c7062cc213cf2f15366d718172f0da8cd03bf50ae",
+      "hostAdaptedSha256": "0256441383aae4237ff7000c7062cc213cf2f15366d718172f0da8cd03bf50ae",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_diagnose.py",
+      "vmRecordedSha256": "f4b72edecad1801ca3ad4ff8c4cf1421462001241e89dd4242fb5f344dca493e",
+      "hostAdaptedSha256": "f4b72edecad1801ca3ad4ff8c4cf1421462001241e89dd4242fb5f344dca493e",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_jacobian_probe.py",
+      "vmRecordedSha256": "b0c7ee616e1f91f2623c624258477b55ac80189ed84d8ccf3afe6085b25fe4a4",
+      "hostAdaptedSha256": "b0c7ee616e1f91f2623c624258477b55ac80189ed84d8ccf3afe6085b25fe4a4",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/latent_heat_scenarios.py",
+      "vmRecordedSha256": "a76a55a37f17194da571731e50328ad0dbe027d3c5656dfbbf43b2d3dfdf73d7",
+      "hostAdaptedSha256": "a76a55a37f17194da571731e50328ad0dbe027d3c5656dfbbf43b2d3dfdf73d7",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/method_comparison.py",
+      "vmRecordedSha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4",
+      "hostAdaptedSha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/sensitivity_analysis.py",
+      "vmRecordedSha256": "d47a71fbad559790f28b74a1209e0da1fb26fa1d471db9f49b76ab799f3b9ce3",
+      "hostAdaptedSha256": "d47a71fbad559790f28b74a1209e0da1fb26fa1d471db9f49b76ab799f3b9ce3",
+      "sameSource": true
+    },
+    {
+      "path": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "vmRecordedSha256": "288a318d286c7fb9165f77427839b4362d576c9e7ddd2f496a3041bb1a1737fe",
+      "hostAdaptedSha256": "288a318d286c7fb9165f77427839b4362d576c9e7ddd2f496a3041bb1a1737fe",
+      "sameSource": true
+    }
+  ],
+  "rows": [
+    {
+      "job": "bessel",
+      "actualExit": 0,
+      "elapsedSeconds": 19.233904199999998,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\bessel.log",
+      "logSha256": "7f008becc6729bdbbc19486f2af1aa9d12be2af1f53ab80d77490e466314043b",
+      "parsedFinalOutput": {
+        "status": "PASS",
+        "checks": [
+          {
+            "name": "robin_eigen_relative_residual",
+            "value": 5.01624228267908e-12,
+            "tolerance": 1e-10,
+            "unit": "1",
+            "passed": true
+          },
+          {
+            "name": "piecewise_convolution_vs_adaptive_quadrature",
+            "value": 8.881784197001252e-16,
+            "tolerance": 1e-10,
+            "unit": "K",
+            "passed": true
+          },
+          {
+            "name": "annular_average_vs_adaptive_quadrature",
+            "value": 4.440892098500626e-16,
+            "tolerance": 1e-10,
+            "unit": "1",
+            "passed": true
+          },
+          {
+            "name": "constant_boundary_step_energy_identity",
+            "value": 1.7694179454963432e-16,
+            "tolerance": 1e-10,
+            "unit": "K/s",
+            "passed": true
+          },
+          {
+            "name": "Q1_observed_boundary_120_vs_240_terms",
+            "value": 1.524666686236742e-07,
+            "tolerance": 0.0001,
+            "unit": "K",
+            "passed": true
+          },
+          {
+            "name": "Q1_observed_boundary_240_vs_480_terms",
+            "value": 1.8995478967553936e-08,
+            "tolerance": 0.0001,
+            "unit": "K",
+            "passed": true
+          },
+          {
+            "name": "uniform_equilibrium",
+            "value": 0.0,
+            "tolerance": 1e-12,
+            "unit": "K",
+            "passed": true
+          },
+          {
+            "name": "insulating_boundary",
+            "value": 0.0,
+            "tolerance": 1e-12,
+            "unit": "K",
+            "passed": true
+          }
+        ],
+        "report": "C:\\Work\\05_path_adapted\\paper_output\\results\\bessel_validation\\bessel_selfcheck.json"
+      }
+    },
+    {
+      "job": "jacobian",
+      "actualExit": 0,
+      "elapsedSeconds": 20.05772429999999,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\jacobian.log",
+      "logSha256": "e35cb0404a072dd5069100fac34fa2ddac4e00be1a1874f061531326063df43f",
+      "parsedFinalOutput": {
+        "status": "PASS",
+        "failures": [],
+        "case_state_count": 84,
+        "direction_count": 336,
+        "elapsed_s": 0.9863119999999981,
+        "max_best_component_tolerance_ratio": 0.02096710399887589,
+        "max_all_steps_component_tolerance_ratio": 0.2560283171326891,
+        "max_mass_balance_derivative_abs": 6.776263578034403e-20,
+        "warning_count": 0
+      }
+    },
+    {
+      "job": "scaling",
+      "actualExit": 0,
+      "elapsedSeconds": 2.0426979000000074,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\scaling.log",
+      "logSha256": "f36b59354a72261fab84fb3984ee955479d4ef9e778347b04bf65435ed0993a6",
+      "parsedFinalOutput": {
+        "fixedRadiusTimeH": 129.84522834701946,
+        "shrinkingTimeH": 51.090973419826916,
+        "reductionPercent": 60.65240589104815,
+        "equivalentFixedRadiusTimeH": 131.6197854199707,
+        "ratioEquivalentToFixed": 1.0136667099403038,
+        "scalingResidualPercent": 1.3666709940303834,
+        "interpretation": "Stretching the shrinking timeline by (R0/R(t))**2 gives an equivalent fixed-radius time within about 1.4 percent of the directly simulated fixed-radius drying time. The numerically computed shortening is therefore corroborated by an independent analytical length-scale argument; the small residual comes from the coupled changes in the moisture and temperature profiles."
+      }
+    },
+    {
+      "job": "provenance",
+      "actualExit": 0,
+      "elapsedSeconds": 4.388344099999998,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\provenance.log",
+      "logSha256": "75a20cd5520abb78f4f8c40f22162bbb22668041f35105a0afc4751c6fe2ab45",
+      "parsedFinalOutput": {
+        "status": "PASS",
+        "checks": 10,
+        "report": "C:\\Work\\05_path_adapted\\notes\\A-modeling\\2026-09-10\\data\\production_entry_contract_selfcheck\\check-krilgpu2\\selfcheck.json"
+      }
+    },
+    {
+      "job": "analytic_metric",
+      "actualExit": 0,
+      "elapsedSeconds": 10.407460600000007,
+      "classification": "COMPLETED_BUT_STATIC_INTERPRETATION_CONTRADICTS_REFINEMENT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\analytic_metric.log",
+      "logSha256": "ee949ab19066aa3b3eedf476b6ac3dbdaf7da910af32181fb2e17eebb955e474",
+      "parsedFinalOutput": {
+        "intervals": 6400,
+        "maxPointVsCellDifferenceK": 0.00025646958874858683,
+        "surfacePointVsCellDifferenceK": 0.00025646958874858683,
+        "interiorMaxDifferenceK": 2.0491256691457238e-08
+      }
+    },
+    {
+      "job": "energy_diagnose",
+      "actualExit": 0,
+      "elapsedSeconds": 11.995266300000011,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\energy_diagnose.log",
+      "logSha256": "63d3b426b6519307fd028a8477444df4b924f11b746423fccc9e8328f431536c",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "series",
+      "actualExit": 0,
+      "elapsedSeconds": 21.38152910000001,
+      "classification": "COMPLETED_BUT_NEGATIVE_CONSTANT_SERIES_TEST_FAILS",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\series.log",
+      "logSha256": "a416b8edd57135be79ccc0b86cb43f8093bc842cd1b9bbce88fbd6f7328d87cc",
+      "parsedFinalOutput": {
+        "T1_chamber_plateau_onset": {
+          "brokenStick_hours": 0.9,
+          "sequentialMK_hours": 2.3666666666666667,
+          "fisher_k2_hours": [
+            0.5666666666666667
+          ],
+          "relative_threshold_95pct_hours": 1.3666666666666667
+        },
+        "T1b_chamber_moisture_plateau_onset": {
+          "brokenStick_hours": 1.2,
+          "sequentialMK_hours": 2.3666666666666667,
+          "fisher_k2_hours": [
+            0.7833333333333333
+          ],
+          "relative_threshold_95pct_hours": 1.6666666666666667
+        },
+        "T2_radius_shrinkage_end": {
+          "brokenStick_hours": 7.5,
+          "sequentialMK_hours": 4.5,
+          "fisher_k2_hours": [
+            5.0
+          ],
+          "fisher_k3_hours": [
+            2.0,
+            7.0
+          ],
+          "relative_threshold_95pct_hours": 13.5
+        },
+        "T3_preheating_end": {
+          "brokenStick_center_hours": 2.85,
+          "brokenStick_surface_hours": 2.85,
+          "sequentialMK_center_hours": null,
+          "sequentialMK_surface_hours": null,
+          "fisher_k2_center_hours": [
+            1.1
+          ],
+          "fisher_k2_surface_hours": [
+            0.95
+          ],
+          "relative_threshold_95pct_center_hours": 2.1666666666666665,
+          "relative_threshold_95pct_surface_hours": 1.9666666666666666
+        }
+      }
+    },
+    {
+      "job": "time_accuracy",
+      "actualExit": 1,
+      "elapsedSeconds": 1.603477099999992,
+      "classification": "STALE_COPIED_OUTPUT_DIRECTORY",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\time_accuracy.log",
+      "logSha256": "9c7faa071df476117088aea13562953675c9116d553b671b7af1c72244ba3af8",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "convergence",
+      "actualExit": 1,
+      "elapsedSeconds": 8.46120830000001,
+      "classification": "STALE_COPIED_OUTPUT_DIRECTORY",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\convergence.log",
+      "logSha256": "5864725a7b1b4d834e82fb0de623a743a114f5cb6aa9a8f22101eb779eaa5808",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "dense_storage",
+      "actualExit": 1,
+      "elapsedSeconds": 8.530518299999997,
+      "classification": "STALE_COPIED_OUTPUT_DIRECTORY",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\dense_storage.log",
+      "logSha256": "180426bca600712c57740532750ada91cdbb5d8e5702cd29e428f044549a0b94",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "method_quick",
+      "actualExit": 0,
+      "elapsedSeconds": 31.851353899999992,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\method_quick.log",
+      "logSha256": "a2a95fde211d7ee8661de6921c53d8088b5590e97b0d6749f525a858e5b50c32",
+      "parsedFinalOutput": {
+        "limitingCaseConstantD": {
+          "note": "Kirchhoff collapses to the midpoint finite difference when D is constant, because Phi'(C) = exp(-a/C) makes the primitive difference proportional to D dC; the two must agree to round-off.",
+          "rows": [
+            {
+              "intervals": 100,
+              "maxAbsDifference": 0.0
+            },
+            {
+              "intervals": 200,
+              "maxAbsDifference": 0.0
+            }
+          ]
+        },
+        "variableD": {
+          "rows": [
+            {
+              "intervals": 100,
+              "maxAbsDifference": 1.4891388507853875e-05,
+              "maxDifferenceTimeS": 1800.0,
+              "locationOfMax": 0.02
+            },
+            {
+              "intervals": 200,
+              "maxAbsDifference": 3.728809559122581e-06,
+              "maxDifferenceTimeS": 1800.0,
+              "locationOfMax": 0.02
+            }
+          ],
+          "observedOrder": 1.9976912588688045,
+          "expectedOrder": 1.0,
+          "declaredToleranceKgPerKg": 0.0001,
+          "passedDeclaredTolerance": true
+        }
+      }
+    },
+    {
+      "job": "compare_analytic",
+      "actualExit": 0,
+      "elapsedSeconds": 36.04171299999999,
+      "classification": "EXIT_ZERO_NUMERICAL_CRITERIA_REVIEW_REQUIRED",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\compare_analytic.log",
+      "logSha256": "1384ad7fc9adf9ce6d1d13273346fb6c9d58124c62c6422d8dc8977dc907a4c2",
+      "parsedFinalOutput": {
+        "status": "REVIEW_REQUIRED",
+        "convergence": {
+          "paper": {
+            "heat_intervals": [
+              100,
+              200,
+              400
+            ],
+            "heat_max_abs_errors_K": [
+              7.864433223403466e-05,
+              2.0798575690150756e-05,
+              5.856920779478969e-06
+            ],
+            "heat_observed_orders": [
+              1.9188580623894467,
+              1.8282704485249428
+            ],
+            "water_intervals": [
+              100,
+              400
+            ],
+            "water_max_abs_errors_kg_per_kg": [
+              0.001095305366672239,
+              6.777100461308194e-05
+            ],
+            "water_observed_order_100_400": 2.0072605877863188,
+            "both_refinements_reduce_heat_error": true,
+            "water_refinement_reduces_error": true,
+            "N400_heat_max_error_below_0_0001_K": true,
+            "N400_frozen_water_max_error_below_0_0001": true,
+            "N800_frozen_water_max_abs_error": 1.693382915579633e-05,
+            "water_observed_order_400_800": 2.000759918604001
+          },
+          "dense": {
+            "heat_intervals": [
+              100,
+              200,
+              400
+            ],
+            "heat_max_abs_errors_K": [
+              7.864433223403466e-05,
+              2.0798575690150756e-05,
+              5.856920779478969e-06
+            ],
+            "heat_observed_orders": [
+              1.9188580623894467,
+              1.8282704485249428
+            ],
+            "water_intervals": [
+              100,
+              400
+            ],
+            "water_max_abs_errors_kg_per_kg": [
+              0.005154551248608197,
+              0.0002875083008730961
+            ],
+            "water_observed_order_100_400": 2.082085659088355,
+            "both_refinements_reduce_heat_error": true,
+            "water_refinement_reduces_error": true,
+            "N400_heat_max_error_below_0_0001_K": true,
+            "N400_frozen_water_max_error_below_0_0001": false,
+            "N800_frozen_water_max_abs_error": 7.158659870798445e-05,
+            "water_observed_order_400_800": 2.005842170106053
+          }
+        },
+        "total_elapsed_s": 26.398474499999992
+      }
+    },
+    {
+      "job": "export_selfcheck",
+      "actualExit": 1,
+      "elapsedSeconds": 13.340479200000004,
+      "classification": "STALE_COPIED_OUTPUT_DIRECTORY",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\export_selfcheck.log",
+      "logSha256": "714eb3d80d444deec51b80b85ed0dfc23232ad821a2db46817571fe53fe3380a",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "axisymmetric",
+      "actualExit": 1,
+      "elapsedSeconds": 9.571446400000013,
+      "classification": "STALE_COPIED_OUTPUT_DIRECTORY",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\axisymmetric.log",
+      "logSha256": "fc1ec6a989ba91221a68035232b3256a0291270979b8c18df51b95454bf75ec4",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "production_missing_inputs",
+      "actualExit": 1,
+      "elapsedSeconds": 2.0417032999999947,
+      "classification": "STALE_COPIED_OUTPUT_DIRECTORY",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\production_missing_inputs.log",
+      "logSha256": "c75d7ecde6e253ae7d2521b9e21202dbe4ca94aea53b0a1dc1efd043b413f901",
+      "parsedFinalOutput": null
+    },
+    {
+      "job": "crossvalidate_solver_pair",
+      "actualExit": 0,
+      "elapsedSeconds": 13.720431099999985,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\crossvalidate_solver_pair.log",
+      "logSha256": "e48bc758d83a844b74801185fefb31305b419b7bca4ab135e03986f166aada78",
+      "parsedFinalOutput": {
+        "job": "crossvalidate_solver_pair",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "rows": [
+          {
+            "case": "sandbox_Q1_BDF",
+            "settings": {
+              "question": "Q1",
+              "intervals": 20,
+              "rtol": 1e-09,
+              "atol_temperature": 1e-09,
+              "atol_moisture": 1e-11,
+              "max_step_s": 120.0,
+              "early_max_step_s": 2.0,
+              "horizon_h": 240.0,
+              "shrink": false,
+              "boundary_extension": "nominal",
+              "tail_temperature_C": 50.0,
+              "tail_equilibrium": 0.05,
+              "h": 25.0,
+              "beta": 8e-07,
+              "equilibrium_scale": 1.0,
+              "surface_latent_fraction": 0.0,
+              "latent_J_kg": 2400000.0,
+              "constant_D": null,
+              "constant_thermal": false,
+              "method": "BDF",
+              "face_scheme": "kirchhoff",
+              "jacobian_mode": "analytic",
+              "dense_storage": "memory"
+            },
+            "startedAtUtc": "2026-09-13T01:37:00.292914+00:00",
+            "diagnostics": {
+              "event_s": null,
+              "event_h": null,
+              "end_s": 1800.0,
+              "elapsed_s": 1.3385813000000155,
+              "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+              "max_mass_balance_abs_kg_per_kg": 1.3322676295501878e-15,
+              "min_C": 1.5123781644368814,
+              "max_C": 2.55,
+              "min_T_K": 301.15,
+              "max_T_K": 309.9352875818558,
+              "min_D": 3.88620457516606e-09,
+              "max_D": 4.937655094173937e-09,
+              "positive_properties": true,
+              "max_radial_C_increase": 0.0,
+              "final_max_C": 2.5499825185434233,
+              "final_surface_C": 1.5123781644368814,
+              "strictly_dry_at_end": false,
+              "radius_end_m": 0.02,
+              "radius_extrapolation_used": false,
+              "rhs_evaluations": 2685,
+              "accepted_time_points": 1167,
+              "nfev": 2685,
+              "njev": 49,
+              "nlu": 293,
+              "solver_success": true,
+              "dense_storage": "memory",
+              "dense_coefficient_bytes": 0,
+              "dense_polynomial_count": 0
+            },
+            "event_s": null,
+            "event_h": null,
+            "end_s": 1800.0,
+            "status": "computed",
+            "elapsedSeconds": 1.3410685000000058
+          },
+          {
+            "case": "sandbox_Q1_Radau",
+            "settings": {
+              "question": "Q1",
+              "intervals": 20,
+              "rtol": 1e-09,
+              "atol_temperature": 1e-09,
+              "atol_moisture": 1e-11,
+              "max_step_s": 120.0,
+              "early_max_step_s": 2.0,
+              "horizon_h": 240.0,
+              "shrink": false,
+              "boundary_extension": "nominal",
+              "tail_temperature_C": 50.0,
+              "tail_equilibrium": 0.05,
+              "h": 25.0,
+              "beta": 8e-07,
+              "equilibrium_scale": 1.0,
+              "surface_latent_fraction": 0.0,
+              "latent_J_kg": 2400000.0,
+              "constant_D": null,
+              "constant_thermal": false,
+              "method": "Radau",
+              "face_scheme": "kirchhoff",
+              "jacobian_mode": "analytic",
+              "dense_storage": "memory"
+            },
+            "startedAtUtc": "2026-09-13T01:37:01.634175+00:00",
+            "diagnostics": {
+              "event_s": null,
+              "event_h": null,
+              "end_s": 1800.0,
+              "elapsed_s": 2.876244100000008,
+              "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+              "max_mass_balance_abs_kg_per_kg": 1.7763568394002505e-15,
+              "min_C": 1.512378164357052,
+              "max_C": 2.55,
+              "min_T_K": 301.15,
+              "max_T_K": 309.9352877000407,
+              "min_D": 3.8862045750453455e-09,
+              "max_D": 4.937655094173937e-09,
+              "positive_properties": true,
+              "max_radial_C_increase": 0.0,
+              "final_max_C": 2.549982518544396,
+              "final_surface_C": 1.512378164357052,
+              "strictly_dry_at_end": false,
+              "radius_end_m": 0.02,
+              "radius_extrapolation_used": false,
+              "rhs_evaluations": 6370,
+              "accepted_time_points": 906,
+              "nfev": 6370,
+              "njev": 1,
+              "nlu": 1738,
+              "solver_success": true,
+              "dense_storage": "memory",
+              "dense_coefficient_bytes": 0,
+              "dense_polynomial_count": 0
+            },
+            "event_s": null,
+            "event_h": null,
+            "end_s": 1800.0,
+            "status": "computed",
+            "elapsedSeconds": 2.8823117999999965
+          }
+        ],
+        "elapsedSeconds": 4.284516200000013,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "plot_selfcheck",
+      "actualExit": 0,
+      "elapsedSeconds": 35.73536850000002,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\plot_selfcheck.log",
+      "logSha256": "511192ec0c24d2f7d330df969238e1da9e0e38bde6d7010c30f507d20d80700d",
+      "parsedFinalOutput": {
+        "status": "GENERATED_PENDING_VISUAL_REVIEW",
+        "figure_count": 4,
+        "output": "C:\\Work\\05_path_adapted\\paper_output\\results\\plot_selfcheck"
+      }
+    },
+    {
+      "job": "energy_q1",
+      "actualExit": 0,
+      "elapsedSeconds": 11.487817000000007,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\energy_q1.log",
+      "logSha256": "15a2be81f2b2d8c9a03e52af6a6df9656afcc13376605e8bbf263264a29a3663",
+      "parsedFinalOutput": {
+        "job": "energy_q1",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "row": {
+          "question": "Q1",
+          "intervals": 20,
+          "shrink": false,
+          "horizonH": 6.0,
+          "initialStoredPerMetre": 256820.71999999997,
+          "rateIdentityMaxRelativeDeviation": 4.440892098500626e-16,
+          "rateIdentityRows": [
+            {
+              "timeS": 0.0,
+              "modelRate": 0.0,
+              "surfaceFaceRate": 0.0,
+              "ratio": null
+            },
+            {
+              "timeS": 45.0,
+              "modelRate": 0.3442414569747711,
+              "surfaceFaceRate": 0.34424145697477115,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 90.0,
+              "modelRate": 0.7091774057946053,
+              "surfaceFaceRate": 0.7091774057946054,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 135.0,
+              "modelRate": 1.0311499143886635,
+              "surfaceFaceRate": 1.0311499143886635,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 180.0,
+              "modelRate": 1.2618667716266714,
+              "surfaceFaceRate": 1.2618667716266714,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 225.0,
+              "modelRate": 1.3924386803987543,
+              "surfaceFaceRate": 1.3924386803987545,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 270.0,
+              "modelRate": 1.7220089719021416,
+              "surfaceFaceRate": 1.7220089719021416,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 315.0,
+              "modelRate": 2.0364163795951526,
+              "surfaceFaceRate": 2.0364163795951526,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 360.0,
+              "modelRate": 2.193786630773389,
+              "surfaceFaceRate": 2.1937866307733884,
+              "ratio": 1.0000000000000002
+            },
+            {
+              "timeS": 405.0,
+              "modelRate": 2.3950918127698624,
+              "surfaceFaceRate": 2.395091812769863,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 450.0,
+              "modelRate": 2.486583198453218,
+              "surfaceFaceRate": 2.486583198453218,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 495.0,
+              "modelRate": 2.608076318646738,
+              "surfaceFaceRate": 2.608076318646738,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 540.0,
+              "modelRate": 2.853002335160283,
+              "surfaceFaceRate": 2.8530023351602836,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 585.0,
+              "modelRate": 2.9918685351004224,
+              "surfaceFaceRate": 2.991868535100423,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 630.0,
+              "modelRate": 3.220486980843645,
+              "surfaceFaceRate": 3.2204869808436456,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 675.0,
+              "modelRate": 3.4087758709432014,
+              "surfaceFaceRate": 3.4087758709432023,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 720.0,
+              "modelRate": 3.4707310890605063,
+              "surfaceFaceRate": 3.470731089060507,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 765.0,
+              "modelRate": 3.6347828741362487,
+              "surfaceFaceRate": 3.634782874136249,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 810.0,
+              "modelRate": 3.698340584877258,
+              "surfaceFaceRate": 3.6983405848772577,
+              "ratio": 1.0000000000000002
+            },
+            {
+              "timeS": 855.0,
+              "modelRate": 3.735444523900469,
+              "surfaceFaceRate": 3.735444523900469,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 900.0,
+              "modelRate": 3.794332737645505,
+              "surfaceFaceRate": 3.7943327376455045,
+              "ratio": 1.0000000000000002
+            },
+            {
+              "timeS": 945.0,
+              "modelRate": 3.972818506348005,
+              "surfaceFaceRate": 3.9728185063480055,
+              "ratio": 0.9999999999999999
+            },
+            {
+              "timeS": 990.0,
+              "modelRate": 4.000336483284514,
+              "surfaceFaceRate": 4.000336483284514,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1035.0,
+              "modelRate": 4.077116115718638,
+              "surfaceFaceRate": 4.077116115718638,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1080.0,
+              "modelRate": 4.3356096431686515,
+              "surfaceFaceRate": 4.335609643168652,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 1125.0,
+              "modelRate": 4.3365231784711105,
+              "surfaceFaceRate": 4.336523178471111,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 1170.0,
+              "modelRate": 4.399239396605536,
+              "surfaceFaceRate": 4.399239396605537,
+              "ratio": 0.9999999999999996
+            },
+            {
+              "timeS": 1215.0,
+              "modelRate": 4.4335061052995,
+              "surfaceFaceRate": 4.4335061052995,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1260.0,
+              "modelRate": 4.382277105343007,
+              "surfaceFaceRate": 4.382277105343007,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1305.0,
+              "modelRate": 4.588662187103523,
+              "surfaceFaceRate": 4.588662187103523,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1350.0,
+              "modelRate": 4.648827809900751,
+              "surfaceFaceRate": 4.648827809900752,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 1395.0,
+              "modelRate": 4.649226971980909,
+              "surfaceFaceRate": 4.649226971980909,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1440.0,
+              "modelRate": 4.643778916664529,
+              "surfaceFaceRate": 4.64377891666453,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 1485.0,
+              "modelRate": 4.513729491825928,
+              "surfaceFaceRate": 4.513729491825927,
+              "ratio": 1.0000000000000002
+            },
+            {
+              "timeS": 1530.0,
+              "modelRate": 4.547272717924386,
+              "surfaceFaceRate": 4.547272717924386,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1575.0,
+              "modelRate": 4.572748271788441,
+              "surfaceFaceRate": 4.572748271788441,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1620.0,
+              "modelRate": 4.477158531813927,
+              "surfaceFaceRate": 4.477158531813927,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1665.0,
+              "modelRate": 4.526839932250936,
+              "surfaceFaceRate": 4.526839932250937,
+              "ratio": 0.9999999999999998
+            },
+            {
+              "timeS": 1710.0,
+              "modelRate": 4.640081144158728,
+              "surfaceFaceRate": 4.640081144158728,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1755.0,
+              "modelRate": 4.727663038910748,
+              "surfaceFaceRate": 4.727663038910748,
+              "ratio": 1.0
+            },
+            {
+              "timeS": 1800.0,
+              "modelRate": 4.727712292079615,
+              "surfaceFaceRate": 4.727712292079616,
+              "ratio": 0.9999999999999998
+            }
+          ],
+          "cumulativeMaxAbsoluteResidualJPerM": 0.00023854515166021883,
+          "cumulativeRelativeResidual": 9.288391982555725e-10,
+          "discardedCapacityWorkJPerM": -1.3213430349878763e-11,
+          "discardedRelativeToStored": -5.145001676608789e-17,
+          "unexplainedResidualJPerM": 0.00023245696368423552,
+          "declaredToleranceJPerM": 0.001,
+          "cumulativePassed": true,
+          "sampleTimesS": [
+            0.0,
+            45.0,
+            90.0,
+            135.0,
+            180.0,
+            225.0,
+            270.0,
+            315.0,
+            360.0,
+            405.0,
+            450.0,
+            495.0,
+            540.0,
+            585.0,
+            630.0,
+            675.0,
+            720.0,
+            765.0,
+            810.0,
+            855.0,
+            900.0,
+            945.0,
+            990.0,
+            1035.0,
+            1080.0,
+            1125.0,
+            1170.0,
+            1215.0,
+            1260.0,
+            1305.0,
+            1350.0,
+            1395.0,
+            1440.0,
+            1485.0,
+            1530.0,
+            1575.0,
+            1620.0,
+            1665.0,
+            1710.0,
+            1755.0,
+            1800.0
+          ],
+          "cumulativeResidualsJPerM": [
+            0.0,
+            2.698900061659515e-05,
+            1.954191247932613e-05,
+            4.6319939428940415e-05,
+            4.720530705526471e-05,
+            6.153780850581825e-05,
+            9.058331488631666e-05,
+            3.328640013933182e-05,
+            3.281180397607386e-05,
+            3.0332477763295174e-05,
+            0.00010584903066046536,
+            4.544909461401403e-05,
+            7.321068551391363e-06,
+            5.519832484424114e-06,
+            5.954899825155735e-05,
+            4.860502667725086e-05,
+            4.823054769076407e-05,
+            5.386333214119077e-05,
+            0.000123792007798329,
+            0.000103181810118258,
+            0.00010997417848557234,
+            0.00011949476902373135,
+            0.00023854515166021883,
+            7.746691699139774e-05,
+            8.581558358855546e-05,
+            7.561701931990683e-05,
+            3.959867171943188e-05,
+            0.00011790712596848607,
+            0.00011938772513531148,
+            0.0001265830360352993,
+            0.0002272987039759755,
+            0.00023725428036414087,
+            0.00023138843243941665,
+            0.00022603262914344668,
+            0.00011476993677206337,
+            0.00021438318071886897,
+            0.00021998677402734756,
+            0.0002205827331636101,
+            0.00016518283518962562,
+            0.00023421537480317056,
+            0.00023245695047080517
+          ],
+          "maxMassResidualKgPerKg": 1.3322676295501878e-15,
+          "elapsedSeconds": 2.2737313000000086
+        },
+        "cumulativeCriterionPassed": true,
+        "elapsedSeconds": 2.2815288999999837,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "latent_single",
+      "actualExit": 0,
+      "elapsedSeconds": 26.80577790000001,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\latent_single.log",
+      "logSha256": "163ceac2d1e5b9fe066ee96f2bbdb66803948ac2125851c287c35788a101bf81",
+      "parsedFinalOutput": {
+        "job": "latent_single",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "row": {
+          "question": "Q23",
+          "intervals": 20,
+          "surfaceLatentFraction": 0.25,
+          "eventTimeS": 209616.85423234903,
+          "eventTimeH": 58.22690395343029,
+          "sampleTimesS": [
+            0.0,
+            600.0,
+            1200.0,
+            1800.0,
+            3600.0,
+            7200.0,
+            10800.0,
+            21600.0,
+            43200.0,
+            86400.0,
+            209615.85423234903,
+            209616.85423234903
+          ],
+          "surfaceTemperatureC": [
+            28.0,
+            24.851377897314933,
+            26.459587100084207,
+            28.827752910526442,
+            35.95741086627504,
+            42.740752052292066,
+            44.75514499881319,
+            47.22171549531072,
+            49.29824798892349,
+            49.90561125936961,
+            49.98610717611734,
+            49.98610730080094
+          ],
+          "centreTemperatureC": [
+            28.0,
+            26.470987909977225,
+            25.58492074665628,
+            26.61512686959179,
+            33.41115314822099,
+            41.9899706640179,
+            44.454867940321606,
+            47.12351058312902,
+            49.273761307089615,
+            49.904232625447094,
+            49.98604776994614,
+            49.986047895524905
+          ],
+          "surfaceMoisture": [
+            2.55,
+            1.8934054078740747,
+            1.6902433159826757,
+            1.5715950131797505,
+            1.3890243087694143,
+            1.1734863543690859,
+            0.9812003714466296,
+            0.5497317059936517,
+            0.17754294919503338,
+            0.06760459926686692,
+            0.05261977219792046,
+            0.05261974875560549
+          ],
+          "centreMoisture": [
+            2.55,
+            2.549999999966065,
+            2.549999693466485,
+            2.5499754012718094,
+            2.5410543746634264,
+            2.2924832975524954,
+            1.9030601638130193,
+            1.1030452377716164,
+            0.4838550939170909,
+            0.24273287344247507,
+            0.15000029090858613,
+            0.15
+          ],
+          "surfaceLatentFluxWPerM2": [
+            334.0601601802817,
+            246.76246286173475,
+            219.3296923572486,
+            203.11650562731833,
+            177.73947408438843,
+            148.46292647742766,
+            122.96770001313656,
+            65.99320343421316,
+            16.856738919756246,
+            2.3426469936904373,
+            0.3643459029700781,
+            0.36434280810905206
+          ],
+          "minSurfaceTemperatureC": 24.851377897314933,
+          "elapsedSeconds": 17.52665570000002,
+          "diagnostics": {
+            "max_T_K": 323.13610744365644,
+            "min_C": 0.052619721896694165,
+            "max_C": 2.55,
+            "final_max_C": 0.1499996666904601,
+            "max_mass_balance_abs_kg_per_kg": 1.3322676295501878e-14,
+            "solver_success": true,
+            "accepted_time_points": 13755
+          },
+          "_curves": {
+            "timesS": [
+              0.0,
+              600.0,
+              1200.0,
+              1800.0,
+              3600.0,
+              7200.0,
+              10800.0,
+              21600.0,
+              43200.0,
+              86400.0,
+              209615.85423234903,
+              209616.85423234903
+            ],
+            "surfaceC": [
+              28.0,
+              24.851377897314933,
+              26.459587100084207,
+              28.827752910526442,
+              35.95741086627504,
+              42.740752052292066,
+              44.75514499881319,
+              47.22171549531072,
+              49.29824798892349,
+              49.90561125936961,
+              49.98610717611734,
+              49.98610730080094
+            ],
+            "centreC": [
+              28.0,
+              26.470987909977225,
+              25.58492074665628,
+              26.61512686959179,
+              33.41115314822099,
+              41.9899706640179,
+              44.454867940321606,
+              47.12351058312902,
+              49.273761307089615,
+              49.904232625447094,
+              49.98604776994614,
+              49.986047895524905
+            ]
+          }
+        },
+        "elapsedSeconds": 17.84098400000002,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "isotherm_old_interface",
+      "actualExit": 1,
+      "elapsedSeconds": 9.464231399999989,
+      "classification": "ORIGINAL_CODE_OR_DIAGNOSTIC_FAILURE",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\isotherm_old_interface.log",
+      "logSha256": "eb3265da3511802056b91f894256e9417ea623f886866af0dfa5bc9632cdbfc1",
+      "parsedFinalOutput": {
+        "job": "isotherm_old_interface",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "FAIL_ACTUAL_EXCEPTION",
+        "error": "TypeError(\"ActivityModel.__init__() got an unexpected keyword argument 'B'\")",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Work\\05_path_adapted\\verification_jobs.py\", line 63, in main\n    diagnose.main()\n    ~~~~~~~~~~~~~^^\n  File \"C:\\Work\\05_path_adapted\\paper_output\\code\\verification\\isotherm_diagnose.py\", line 50, in main\n    scenario = iso.ActivityModel(settings, B=4.2, latentFraction=0.0)\nTypeError: ActivityModel.__init__() got an unexpected keyword argument 'B'\n",
+        "elapsedSeconds": 0.09271490000000426,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "isotherm_extract",
+      "actualExit": 1,
+      "elapsedSeconds": 11.641064499999999,
+      "classification": "ORIGINAL_CODE_OR_DIAGNOSTIC_FAILURE",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\isotherm_extract.log",
+      "logSha256": "fe120dbc7d610b7c44cdbbf77c472f689e1017fb0f86f3000dd58aa39483a4cc",
+      "parsedFinalOutput": {
+        "job": "isotherm_extract",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "FAIL_ACTUAL_EXCEPTION",
+        "actualFieldShape": [
+          3,
+          2
+        ],
+        "error": "IndexError('index 2 is out of bounds for axis 1 with size 2')",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Work\\05_path_adapted\\verification_jobs.py\", line 70, in main\n    iso._extract({}, run, 1., .6)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Work\\05_path_adapted\\paper_output\\code\\verification\\isotherm_activity_closure.py\", line 143, in _extract\n    \"surfaceKeff\": [float(partitionFactor(C[1, i], p, awRef))\n                                          ~^^^^^^\nIndexError: index 2 is out of bounds for axis 1 with size 2\n",
+        "elapsedSeconds": 1.4000163999999984,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "isotherm_probe",
+      "actualExit": 1,
+      "elapsedSeconds": 10.208505399999979,
+      "classification": "ORIGINAL_CODE_OR_DIAGNOSTIC_FAILURE",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\isotherm_probe.log",
+      "logSha256": "0d692d04d7d20a21218cb269479775b826277e64377a685474a7fa19f54003dd",
+      "parsedFinalOutput": {
+        "job": "isotherm_probe",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "FAIL_DIAGNOSTIC_INJECTION_NOT_CALLED",
+        "row": {
+          "relativeStep": 1e-07,
+          "p": 1.0,
+          "intervals": 8,
+          "horizonH": 0.001,
+          "warnings": [],
+          "status": "computed",
+          "event_h": null,
+          "maxMassBalance": 4.440892098500626e-16,
+          "massBalanceWithinSolverGuard": true,
+          "acceptedTimePoints": 21,
+          "finalMaxC": 2.55,
+          "numJacCalls": 0,
+          "elapsedSeconds": 0.06434809999996105
+        },
+        "numericalSolveCompleted": true,
+        "injectedJacobianActuallyCalled": false,
+        "elapsedSeconds": 0.07950660000000198,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "sensitivity_control",
+      "actualExit": 0,
+      "elapsedSeconds": 80.73581750000002,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\sensitivity_control.log",
+      "logSha256": "dee448b6ab3d495f647753b0cefdbc9072381f0d22ffe638ccde8f94bc8a99d8",
+      "parsedFinalOutput": {
+        "job": "sensitivity_control",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "row": {
+          "unpatchedAnalyticJacobianH": 57.47276052486771,
+          "patchedFiniteDifferenceH": 57.472760525051456,
+          "differenceSeconds": 6.614868652832229e-07,
+          "referenceProductionN3200H": 57.47230195056044,
+          "surrogateOffsetVsProductionSeconds": 1.6508675061601252
+        },
+        "elapsedSeconds": 71.6067089,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "threshold_full_small",
+      "actualExit": 0,
+      "elapsedSeconds": 53.880151499999954,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\threshold_full_small.log",
+      "logSha256": "72aed15ba41afa9212686aa77cc8dcd867c5000e212c80a312e7b52b180278a4",
+      "parsedFinalOutput": {
+        "job": "threshold_full_small",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "rows": {
+          "Q23": {
+            "intervals": 20,
+            "solverEventTimeS": 207046.7725632826,
+            "solverEventTimeH": 57.51299237868961,
+            "independentBisectionTimeS": 207046.77256328252,
+            "independentBisectionTimeH": 57.51299237868959,
+            "eventVsBisectionDifferenceS": 8.731149137020111e-11,
+            "maxLocationUniqueX": [
+              0.0
+            ],
+            "maxLocationAlwaysCentre": true,
+            "maxExcessOverCentreMaxKgPerKg": 0.0,
+            "maxExcessOverCentreMedianKgPerKg": 0.0,
+            "centreWithinStrictThresholdMarginKgPerKg": -2.4,
+            "centreIsMaximumAtEvent": true,
+            "maxLocationNote": "Off-centre argmax appears only where the radial profile is flat to round-off; the excess over the centre value is reported above and is many orders below any physically meaningful moisture difference.",
+            "maxRadialMoistureIncrease": 0.0,
+            "strictCheckTimeS": 207048.0,
+            "unroundedMaxCAtStrictTime": 0.1499996427498144,
+            "strictlyBelowThreshold": true,
+            "elapsedSeconds": 20.882207800000003
+          },
+          "Q4": {
+            "intervals": 20,
+            "solverEventTimeS": 184061.4720040082,
+            "solverEventTimeH": 51.12818666778005,
+            "independentBisectionTimeS": 184061.47200400813,
+            "independentBisectionTimeH": 51.128186667780035,
+            "eventVsBisectionDifferenceS": 5.820766091346741e-11,
+            "maxLocationUniqueX": [
+              0.0
+            ],
+            "maxLocationAlwaysCentre": true,
+            "maxExcessOverCentreMaxKgPerKg": 0.0,
+            "maxExcessOverCentreMedianKgPerKg": 0.0,
+            "centreWithinStrictThresholdMarginKgPerKg": -2.4,
+            "centreIsMaximumAtEvent": true,
+            "maxLocationNote": "Off-centre argmax appears only where the radial profile is flat to round-off; the excess over the centre value is reported above and is many orders below any physically meaningful moisture difference.",
+            "maxRadialMoistureIncrease": 0.0,
+            "strictCheckTimeS": 184063.0,
+            "unroundedMaxCAtStrictTime": 0.14999921608152966,
+            "strictlyBelowThreshold": true,
+            "elapsedSeconds": 21.9482529
+          }
+        },
+        "elapsedSeconds": 42.88837240000004,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "isotherm_identity_rhs",
+      "actualExit": 0,
+      "elapsedSeconds": 10.423278900000014,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\isotherm_identity_rhs.log",
+      "logSha256": "fdfdafd41d1b980fe0b23d7e490320447b254e8880a3373e38958d5786e83ff0",
+      "parsedFinalOutput": {
+        "job": "isotherm_identity_rhs",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "identities": {
+          "anchor": {
+            "statedEquilibriumC": 0.05,
+            "chamberPlateauRH": 0.6072710989856436,
+            "isothermAtCref": 0.6,
+            "absoluteDifference": 0.0,
+            "note": "a_w(C_eq) is forced to the chamber relative humidity because the stated equilibrium point can neither gain nor lose water"
+          },
+          "baselineLimit": {
+            "partitionFactorAtP1": 1.0,
+            "partitionFactorAtCref": 1.0,
+            "frozenDriveSigned": -1.151111546961326,
+            "revisedDriveSigned": -1.151111546961326,
+            "absoluteDifference": 0.0,
+            "independentCheck": "core.RadialModel and ActivityModel(p=1) were evaluated on the same initial state for Q1, Q23 and Q4; the maximum absolute difference of the right-hand sides was exactly 0.0 in all three cases"
+          },
+          "partitionFactorAcrossRange": [
+            {
+              "C": 0.05,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.6666666666666666,
+              "Keff_p2": 0.5,
+              "Keff_p3": 0.3333333333333333,
+              "Keff_p4": 0.25
+            },
+            {
+              "C": 0.06,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.6867071540869446,
+              "Keff_p2": 0.5227744249483387,
+              "Keff_p3": 0.35378382671382874,
+              "Keff_p4": 0.26734324677379934
+            },
+            {
+              "C": 0.08,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.7173215078580893,
+              "Keff_p2": 0.558481559887747,
+              "Keff_p3": 0.38669873776440394,
+              "Keff_p4": 0.2956274532814363
+            },
+            {
+              "C": 0.1,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.7400789501051268,
+              "Keff_p2": 0.5857864376269049,
+              "Keff_p3": 0.4125989480318004,
+              "Keff_p4": 0.318207169492571
+            },
+            {
+              "C": 0.15,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.7788752148462957,
+              "Keff_p2": 0.6339745962155613,
+              "Keff_p3": 0.45995808847404784,
+              "Keff_p4": 0.3602464715226112
+            },
+            {
+              "C": 0.2,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.8041996493439335,
+              "Keff_p2": 0.6666666666666666,
+              "Keff_p3": 0.4933859667367512,
+              "Keff_p4": 0.3905242917512699
+            },
+            {
+              "C": 0.3,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.8365758814335721,
+              "Keff_p2": 0.7101020514433645,
+              "Keff_p3": 0.5396145502210747,
+              "Keff_p4": 0.433268274904473
+            },
+            {
+              "C": 0.5,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.8717294788853462,
+              "Keff_p2": 0.7597469266479577,
+              "Keff_p3": 0.5953790184874689,
+              "Keff_p4": 0.4862874164551677
+            },
+            {
+              "C": 1.0,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.909767493863426,
+              "Keff_p2": 0.8172560023684433,
+              "Keff_p3": 0.6648387896168013,
+              "Keff_p4": 0.5548728373667496
+            },
+            {
+              "C": 2.55,
+              "Keff_p1": 1.0,
+              "Keff_p1p5": 0.9458314046146762,
+              "Keff_p2": 0.8771714314291431,
+              "Keff_p3": 0.7449509729284063,
+              "Keff_p4": 0.6383127720996233
+            }
+          ],
+          "family": [
+            {
+              "C": 0.05,
+              "aw_p1": 0.6,
+              "aw_p2": 0.6,
+              "aw_p4": 0.6
+            },
+            {
+              "C": 0.06,
+              "aw_p1": 0.6666666666666666,
+              "aw_p2": 0.6348516283298893,
+              "aw_p4": 0.6178228831182533
+            },
+            {
+              "C": 0.08,
+              "aw_p1": 0.75,
+              "aw_p2": 0.683772233983162,
+              "aw_p4": 0.6443441179922154
+            },
+            {
+              "C": 0.1,
+              "aw_p1": 0.8,
+              "aw_p2": 0.7171572875253809,
+              "aw_p4": 0.6636414338985142
+            },
+            {
+              "C": 0.15,
+              "aw_p1": 0.8666666666666667,
+              "aw_p2": 0.7690598923241496,
+              "aw_p4": 0.696065725739363
+            },
+            {
+              "C": 0.25,
+              "aw_p1": 0.9199999999999999,
+              "aw_p2": 0.8211145618000169,
+              "aw_p4": 0.7325038780094312
+            },
+            {
+              "C": 0.5,
+              "aw_p1": 0.96,
+              "aw_p2": 0.8735088935932648,
+              "aw_p4": 0.7750634699238603
+            },
+            {
+              "C": 1.0,
+              "aw_p1": 0.98,
+              "aw_p2": 0.9105572809000084,
+              "aw_p4": 0.8108516781993649
+            },
+            {
+              "C": 2.55,
+              "aw_p1": 0.9921568627450981,
+              "aw_p2": 0.9439887966388796,
+              "aw_p4": 0.850318734156715
+            }
+          ],
+          "monotoneIncreasingKeff": true,
+          "monotoneIncreasingAw": true,
+          "chamber": {
+            "plateauMeanRH": 0.6072710989856436,
+            "plateauMinRH": 0.5941581575283217,
+            "plateauMaxRH": 0.6199076346134036,
+            "windowMeanRH": 0.6228689124600515,
+            "earlyRH": 0.8215669493070091,
+            "plateauTemperatureC": 49.66074033149175,
+            "plateauHumidityRatio": 0.048888453038674035,
+            "tailFromSeconds": 3600.0
+          },
+          "pSatAtPlateau_Pa": 12152.916509784327,
+          "chamberVapourPressure_Pa": 7384.280676083198,
+          "pSatAt28C_Pa": 3773.518813819878
+        },
+        "rhsChecks": [
+          {
+            "question": "Q1",
+            "maxRhsDifferenceP1": 0.0
+          },
+          {
+            "question": "Q23",
+            "maxRhsDifferenceP1": 0.0
+          },
+          {
+            "question": "Q4",
+            "maxRhsDifferenceP1": 0.0
+          }
+        ],
+        "elapsedSeconds": 0.09657099999998309,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "series_constant_diagnostic",
+      "actualExit": 1,
+      "elapsedSeconds": 9.857868100000019,
+      "classification": "ORIGINAL_CODE_OR_DIAGNOSTIC_FAILURE",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\series_constant_diagnostic.log",
+      "logSha256": "5b3fb83abbbc294347c0b90a7b5526a01a78be0c2ca254e9df83b8989fa0cec4",
+      "parsedFinalOutput": {
+        "job": "series_constant_diagnostic",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "FAIL_LEGACY_CONSTANT_SERIES_PSEUDOTREND",
+        "constantSeries": {
+          "uf": [
+            0.0,
+            -1.1338934190276817,
+            -1.7320508075688774,
+            -2.215646837627989,
+            -2.6311740579210876,
+            -3.0,
+            -3.334313581357268,
+            -3.641861872001304,
+            -3.927922024247863,
+            -4.196271637081412,
+            -4.449719092257398,
+            -4.69041575982343,
+            -4.920050462314806,
+            -5.139976151570129,
+            -5.351295510095069,
+            -5.5549205986353085,
+            -5.75161551923293,
+            -5.942027625961723,
+            -6.126710811345159,
+            -6.3061431842660465,
+            -6.48074069840786,
+            -6.650867804519309,
+            -6.816845880251514,
+            -6.978959976453596,
+            -7.137464271463297,
+            -7.2925865220659665,
+            -7.444531726816599,
+            -7.5934851648734085,
+            -7.739614935141301,
+            -7.883074092183654,
+            -8.024002454175559,
+            -8.162528142165378,
+            -8.298768897697496,
+            -8.432833216442623,
+            -8.564821328175015,
+            -8.694826047713663,
+            -8.82293351692938,
+            -8.949223854331542,
+            -9.073771725877465,
+            -9.196646848336194
+          ],
+          "ub": [
+            9.196646848336194,
+            9.073771725877465,
+            8.949223854331542,
+            8.82293351692938,
+            8.694826047713663,
+            8.564821328175015,
+            8.432833216442623,
+            8.298768897697496,
+            8.162528142165378,
+            8.024002454175559,
+            7.883074092183654,
+            7.739614935141301,
+            7.5934851648734085,
+            7.444531726816599,
+            7.2925865220659665,
+            7.137464271463297,
+            6.978959976453596,
+            6.816845880251514,
+            6.650867804519309,
+            6.48074069840786,
+            6.3061431842660465,
+            6.126710811345159,
+            5.942027625961723,
+            5.75161551923293,
+            5.5549205986353085,
+            5.351295510095069,
+            5.139976151570129,
+            4.920050462314806,
+            4.69041575982343,
+            4.449719092257398,
+            4.196271637081412,
+            3.927922024247863,
+            3.641861872001304,
+            3.334313581357268,
+            3.0,
+            2.6311740579210876,
+            2.215646837627989,
+            1.7320508075688774,
+            1.1338934190276817,
+            -0.0
+          ],
+          "firstCrossingIndex": null,
+          "firstCrossingInsideBand": false,
+          "firstExceedanceIndex": 3
+        },
+        "expectedNoTrend": true,
+        "elapsedSeconds": 0.016226000000017393,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    },
+    {
+      "job": "q_wrappers",
+      "actualExit": 0,
+      "elapsedSeconds": 55.33699920000004,
+      "classification": "EXIT_ZERO_CHECK_NUMERICAL_REPORT",
+      "log": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\vm_output\\verification_matrix\\q_wrappers.log",
+      "logSha256": "822eb5264744b976a3295b0898fafb782bb8656adbea1509c2dbcbab14cd9045",
+      "parsedFinalOutput": {
+        "job": "q_wrappers",
+        "scope": "Explicit function-level numerical check; not every default long experiment",
+        "status": "PASS_FUNCTION_SCOPE",
+        "rows": [
+          {
+            "question": "Q1",
+            "diagnostics": {
+              "event_s": null,
+              "event_h": null,
+              "end_s": 1800.0,
+              "elapsed_s": 1.7525046000000088,
+              "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+              "max_mass_balance_abs_kg_per_kg": 1.3322676295501878e-15,
+              "min_C": 1.5123781643786316,
+              "max_C": 2.55,
+              "min_T_K": 301.15,
+              "max_T_K": 309.93528770792034,
+              "min_D": 3.886204575077978e-09,
+              "max_D": 4.937655094173937e-09,
+              "positive_properties": true,
+              "max_radial_C_increase": 0.0,
+              "final_max_C": 2.5499825185442844,
+              "final_surface_C": 1.5123781643786316,
+              "strictly_dry_at_end": false,
+              "radius_end_m": 0.02,
+              "radius_extrapolation_used": false,
+              "rhs_evaluations": 3571,
+              "accepted_time_points": 1531,
+              "nfev": 3571,
+              "njev": 45,
+              "nlu": 350,
+              "solver_success": true,
+              "dense_storage": "disk",
+              "dense_coefficient_bytes": 2753720,
+              "dense_polynomial_count": 1530
+            }
+          },
+          {
+            "question": "Q23",
+            "diagnostics": {
+              "event_s": 207046.7725632826,
+              "event_h": 57.51299237868961,
+              "end_s": 207048.0,
+              "elapsed_s": 19.661546399999963,
+              "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+              "max_mass_balance_abs_kg_per_kg": 9.325873406851315e-15,
+              "min_C": 0.05262108374724943,
+              "max_C": 2.55,
+              "min_T_K": 301.15,
+              "max_T_K": 323.18995402696333,
+              "min_D": 3.1051357967404607e-12,
+              "max_D": 1.2521801051688206e-08,
+              "positive_properties": true,
+              "max_radial_C_increase": 0.0,
+              "final_max_C": 0.1499996427498144,
+              "final_surface_C": 0.05262108374724943,
+              "strictly_dry_at_end": true,
+              "radius_end_m": 0.02,
+              "radius_extrapolation_used": false,
+              "rhs_evaluations": 32153,
+              "accepted_time_points": 13682,
+              "nfev": 32153,
+              "njev": 352,
+              "nlu": 3030,
+              "solver_success": true,
+              "dense_storage": "disk",
+              "dense_coefficient_bytes": 24723624,
+              "dense_polynomial_count": 13679
+            },
+            "completion": {
+              "critical_event_s": 207046.7725632826,
+              "critical_event_h": 57.51299237868961,
+              "reported_drying_time_h": 57.513,
+              "reported_time_s": 207046.8,
+              "max_C_at_reported_time": 0.14999999201437683,
+              "slowest_material_coordinate": 0.0,
+              "conservative_post_verification_s": 207048.0,
+              "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+              "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+            }
+          },
+          {
+            "question": "Q4",
+            "diagnostics": {
+              "event_s": 184061.4720040082,
+              "event_h": 51.12818666778005,
+              "end_s": 184063.0,
+              "elapsed_s": 22.59829669999999,
+              "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+              "max_mass_balance_abs_kg_per_kg": 1.199040866595169e-14,
+              "min_C": 0.05259117084253487,
+              "max_C": 2.55,
+              "min_T_K": 301.15,
+              "max_T_K": 323.2002761128126,
+              "min_D": 9.369070290168956e-12,
+              "max_D": 2.476857658685336e-09,
+              "positive_properties": true,
+              "max_radial_C_increase": 0.0,
+              "final_max_C": 0.14999921608152966,
+              "final_surface_C": 0.05259117084253487,
+              "strictly_dry_at_end": true,
+              "radius_end_m": 0.012,
+              "radius_extrapolation_used": false,
+              "rhs_evaluations": 36188,
+              "accepted_time_points": 14962,
+              "nfev": 36188,
+              "njev": 459,
+              "nlu": 3304,
+              "solver_success": true,
+              "dense_storage": "disk",
+              "dense_coefficient_bytes": 26959968,
+              "dense_polynomial_count": 14959
+            },
+            "completion": {
+              "critical_event_s": 184061.4720040082,
+              "critical_event_h": 51.12818666778005,
+              "reported_drying_time_h": 51.1282,
+              "reported_time_s": 184061.52,
+              "max_C_at_reported_time": 0.14999997537599621,
+              "slowest_material_coordinate": 0.0,
+              "conservative_post_verification_s": 184063.0,
+              "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+              "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+            }
+          }
+        ],
+        "elapsedSeconds": 45.45216780000004,
+        "python": "C:\\Runtime\\python.exe"
+      }
+    }
+  ],
+  "doNotCertifyAllProgramsPassed": true,
+  "originalCandidateNotModified": true
+}

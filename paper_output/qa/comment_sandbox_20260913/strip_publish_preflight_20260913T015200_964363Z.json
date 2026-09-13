@@ -1,0 +1,668 @@
+{
+  "mode": "PREFLIGHT_ONLY",
+  "startedAtUtc": "2026-09-13T01:52:00.964400+00:00",
+  "status": "PREFLIGHT_PASS",
+  "allowedFileCount": 46,
+  "sourceFileCount": 44,
+  "sourceAuditSha256": "7b4c6f9525c76d801e213f9f35cca38114881e8f1dc0c8afa153b9e95b7e73f8",
+  "scope": "Only frozen comment-stripped candidate files; no ROOT adaptations or new algorithms",
+  "beforeShaRequired": true,
+  "preflight": [
+    {
+      "path": "03_程序代码/analyticJacobian.py",
+      "beforeSha256": "dc5cfb4b19e8ec30e8882a37a6699fde6e1aaf9fa67be5356597fbb603666c7f",
+      "candidateSha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "3622a0d55acc96f5aed7b670a412f2409e1aefe10bd2fd097c5f40f9f073a44c",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/diskDense.py",
+      "beforeSha256": "f602ca2d6bf52a0a5daea8dbe48be95170b31af3790b597c10989572ae1e06c4",
+      "candidateSha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "accc59ab518d0aa348f430aea8a4e0afa84c8c595cd7a6fb5ec792c45527ab6f",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/dryingCore.py",
+      "beforeSha256": "81afe621bd2a3a8b9f1d77f7999ae31806a344536e213e7718aa54348b729838",
+      "candidateSha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "3314d62a14c294093e74169721721cc6f1ae6ed18487d525fca0f13c41d59ad1",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/exportOutputs.py",
+      "beforeSha256": "5eacfc1cdffa413c1565813c25bd8a9f721e0363ce0ac43e6113b4325409b047",
+      "candidateSha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "75c7bd0b8385f50178e1fff46c6e78e9d2d5995b112294e9aa5dbc2023262733",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/q1Model.py",
+      "beforeSha256": "86914d8e55c6bec3e17718d171a2d5568b13eb5f264d19a05bdeaad6e7e46394",
+      "candidateSha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "2a7d516c104bb06f02105af03c908ad10e5791830df4a6386f977f98ebbea60d",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/q2Model.py",
+      "beforeSha256": "d4cb9716db99e9aaac0040caaeda0313d610be33413d1df6fc2418b101b48588",
+      "candidateSha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "cbe2144f5ee62ee2be6421d1780a8a0952898b23c05ebdb520e32fc471c9788f",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/q3Model.py",
+      "beforeSha256": "02b9b97278ce1132eb23cf5789655fb6ffd44e035d32dba9a28e43c89deeb457",
+      "candidateSha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "18612c32ee693bd44e12aece449e285126e85169e796a04d232a1f3ed4c583a1",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/q4Model.py",
+      "beforeSha256": "b518592729009bd259a1f6342f73f112e99acf22bca8cfaf52dc458b9e64ad8f",
+      "candidateSha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "00fafa7b9850b0d82d3852dbbc591409042406fc4edabe7ee889a5d7eca7b162",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/reference/reference_data.py",
+      "beforeSha256": "9586eb2f168adc86cba2e5e451f513825d2a5bcbecc7453e0b34c73fd3cc80c6",
+      "candidateSha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "14baf662ca5e9f02deeb802f75ccd76d9f62fdeb33ce54fed23a250431507847",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/requirements.txt",
+      "beforeSha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055",
+      "candidateSha256": "73951400cc1ca44a28341231ef3dd2e101203485a15c39388b8f5614cdeb5bc9",
+      "candidateCheck": {
+        "parser": "requirements line comparison",
+        "comment_count": 0,
+        "dependencies_unchanged": true
+      }
+    },
+    {
+      "path": "03_程序代码/runDelivery.py",
+      "beforeSha256": "b167a46bb2bf422867d3de739e4607bcaf4538e0420e652589b5f4aeda76501a",
+      "candidateSha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "a1cad59816174324426b2d140096966de9fe361709eea319027e4630094387f2",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/runLogged.ps1",
+      "beforeSha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "candidateSha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "candidateCheck": {
+        "parser": "System.Management.Automation.Language.Parser",
+        "comment_count": 0,
+        "noncomment_token_equivalent": true,
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+      "beforeSha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "candidateSha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59",
+      "candidateCheck": {
+        "parser": "Babel",
+        "comment_count": 0,
+        "noncomment_ast_equivalent": true,
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/runCrossCheck.m",
+      "beforeSha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "candidateSha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa",
+      "candidateCheck": {
+        "parser": "Observed MATLAB comment-form lexical validation",
+        "comment_count": 0,
+        "noncomment_content_matches_frozen_candidate": true,
+        "quoted_percent_format_strings_preserved": [
+          "'START %s | MATLAB %s | output=%s'",
+          "'CASE_START %s at %s'",
+          "'CASE_END %s | elapsed=%.6f s | event=%.12g s | massResidual=%.3g'",
+          "'输入在运行中改变：%s'",
+          "'FINISH %s | elapsed=%.6f s | humanReview=pending'",
+          "'FAILED %s\\n%s'",
+          "'%s 在240小时内没有找到干燥事件。'",
+          "'%s 的接受状态违反物性正值或水分范围。'",
+          "'%s 的离散干基质量守恒残差超限。'",
+          "'%s 的事件后原精度maxC没有严格小于0.15。'",
+          "'WARNING %s [%s] %s'",
+          "'不支持的问题名：%s'",
+          "'请求的时刻 %.17g 不在已积分分段内。'",
+          "'ode15s 实际终点 %.17g 未到请求终点 %.17g。'",
+          "'无法读取待哈希文件：%s'",
+          "'无法写入JSON：%s'",
+          "'%s\\n'",
+          "'%s\\n'",
+          "'%s\\n'"
+        ],
+        "runtime": "NOT_PERFORMED_BY_PUBLISHER"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "beforeSha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "candidateSha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "c12356d777663aaa6ec65e7b16a7fe470070411b772e70edd9544432db215f0c",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "beforeSha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "candidateSha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "61b21c99511af897036b82b3a5cdc23e80fb8ad739d7ee19f0aa4f175b39e13c",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "beforeSha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "candidateSha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "97d813d299158403006ca35547d5f8264e6a48f482156218653b478bd57c26dc",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "beforeSha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "candidateSha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "14063928c1009e6e2624ca29aa83f6b67aa2da94acdaa6a845bfdb3a38f5a999",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py",
+      "beforeSha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "candidateSha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "61f2eb6209b224d9eab5fd35758fe5849a33763657c92b081acca2fb789c7692",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "beforeSha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "candidateSha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "e5726ab47a9e34a9c612c4f31a79a99fade80ca0ca621268e26434d9e4493bbf",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "beforeSha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "candidateSha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "4ca5366bee42930ab505b346fac92d5a200eca135f4b58737273f3eba163b9e6",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "beforeSha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "candidateSha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "05d8df6f5fce88c851ef8762a572dabad572f5345bcf3f717c308cbee42fa94c",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py",
+      "beforeSha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "candidateSha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "547c402f89e156514a08b44b8e88150daa7bb3e0ff7f24edc885130730dd43d6",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py",
+      "beforeSha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "candidateSha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "4da2c68b99e08c9851bd3b0ad649f5c98c420d370d16350a499b02bd0f2ef662",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py",
+      "beforeSha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "candidateSha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "0eb12c2cd0b18fce5db94478e18f541c934dbae97d5e23cc7d276a116e7d520a",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py",
+      "beforeSha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "candidateSha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "843d85c89048d67282fe058be0d3447bc52ef57e3b626275f2393d8ad04d52aa",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "beforeSha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "candidateSha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "bdafe7fb52aa26312b40c3af6b9902680f649f744880cca8593539ff80a41218",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "beforeSha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "candidateSha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "9a3cf7f579f6dfe1ec737400bc78adfcd6445e04cd5a9488b0e2575b14b04d85",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "beforeSha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "candidateSha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "51f0b380a805562623902eedce4747abc55a22cb9d31d7360c98f5e6a7b07585",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "beforeSha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "candidateSha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "57887d19337ecea94a0cde991ae12512cbd2c5775281bef827bc3ed6bba35257",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "beforeSha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "candidateSha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "1a16498581c12f89ad7964fac721c092637898c83be9b9d7c84fcad160ffeb25",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "beforeSha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "candidateSha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "4e6f85d1b158038410365d86e5c09693e9dd3cec0d3d6022f36c0c2fb448bfc1",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "beforeSha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9",
+      "candidateSha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "a4c7189e31431fffd099c8d2be56655a3f8bf452a147de63bdb7dad21420e598",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "beforeSha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be",
+      "candidateSha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "174b306b72bdbf5a5137a1b9e6d121380f702faa29b0e3a818a13d7ce539fb41",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "beforeSha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "candidateSha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "654c030172661aceb26c136b2e18873ea088c3b1177c0c992854d008f96d0cdd",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "beforeSha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "candidateSha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "5dcaacd631ab04fe8710efb01b882a13784c4f0b07f2f0dcbcc8c7cebc318dae",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "beforeSha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b",
+      "candidateSha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "1fee10a0f8fc8be1b76dce78fffcbb7a2589d88a0d2e2ea9de94e501f76b62ee",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "beforeSha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476",
+      "candidateSha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "c82f5388c2cde9120e6289cadf7902026ef364c98b0fa33c6e51eea871e22fac",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "beforeSha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "candidateSha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "f2993135f60f3efe5e6147914aede76c2898ae098d7c54aba1a5e7c17eed4874",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "beforeSha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a",
+      "candidateSha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "0787e6f1ab29d142548689866255ee6d15eb4a8245ba16f344781a1f3c06a649",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "beforeSha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c",
+      "candidateSha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "4db71c7787495ed9d44b3876d1d32a6c79dbf98932ccc0c70052b31a0e05c553",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "beforeSha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b",
+      "candidateSha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "c33ee96b36a9fbed23a65e46f3cd255dd470dbe1168440a4522bfa286f41ee29",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py",
+      "beforeSha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "candidateSha256": "e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "d9c62387017b8747080184035dac3119535cec5c3401c04dac9b32e65d792791",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "beforeSha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "candidateSha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "b83f6f43ec0797b716b1c8b396e3d14d04e8d3c0a4135414336a717c5b98d7e1",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "beforeSha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "candidateSha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+      "candidateCheck": {
+        "parser": "Python tokenize/ast/compile",
+        "comment_count": 0,
+        "docstring_count": 0,
+        "standalone_string_expression_count": 0,
+        "noncomment_ast_equivalent": true,
+        "normalized_ast_sha256": "1f619d37d8306d557800ac7c0960d32136daec94349c5757cb622fe284490591",
+        "syntax": "PASS"
+      }
+    },
+    {
+      "path": "03_程序代码/input_manifest.csv",
+      "beforeSha256": "c535e21e819dcaeece9e7a63d0a946ffa55b02e7045eb20d0abeed6da89eca9c",
+      "candidateSha256": "573ad682c71920296cfde1cd2a297b59b30e6076b99075c34e239d38cdaa935e",
+      "candidateCheck": {
+        "role": "input_manifest",
+        "check": "Frozen CSV copied; 12 referenced inputs verified separately"
+      }
+    }
+  ],
+  "published": [],
+  "postChecks": [],
+  "excludedFromMutation": [
+    "All TXT descriptions",
+    "Visual Studio project/solution/metadata",
+    "Every other support file"
+  ],
+  "numericalRuntimeClaim": "NONE; runtime results are independently recorded elsewhere",
+  "finishedAtUtc": "2026-09-13T01:52:04.218325+00:00"
+}

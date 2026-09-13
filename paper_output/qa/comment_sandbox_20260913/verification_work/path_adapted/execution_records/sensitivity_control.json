@@ -1,0 +1,14 @@
+{
+  "job": "sensitivity_control",
+  "scope": "Explicit function-level numerical check; not every default long experiment",
+  "status": "PASS_FUNCTION_SCOPE",
+  "row": {
+    "unpatchedAnalyticJacobianH": 57.47276052486771,
+    "patchedFiniteDifferenceH": 57.472760525051456,
+    "differenceSeconds": 6.614868652832229e-07,
+    "referenceProductionN3200H": 57.47230195056044,
+    "surrogateOffsetVsProductionSeconds": 1.6508675061601252
+  },
+  "elapsedSeconds": 39.538819800000056,
+  "python": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe"
+}

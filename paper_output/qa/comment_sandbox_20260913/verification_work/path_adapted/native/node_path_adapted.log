@@ -1,0 +1,8 @@
+Error: ENOENT: no such file or directory, open 'D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\verification_work\path_adapted\paper_output\qa\matlab_crosscheck_20260911\runSummary.json'
+    at Object.readFileSync (node:fs:484:20)
+    at readJson (file:///D:/Document/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/2026CUMCM/paper_output/qa/comment_sandbox_20260913/verification_work/path_adapted/native/compareMatlab_path_adapted.mjs:24:52)
+    at compareWorker (file:///D:/Document/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/2026CUMCM/paper_output/qa/comment_sandbox_20260913/verification_work/path_adapted/native/compareMatlab_path_adapted.mjs:39:21)
+    at file:///D:/Document/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/2026CUMCM/paper_output/qa/comment_sandbox_20260913/verification_work/path_adapted/native/compareMatlab_path_adapted.mjs:166:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

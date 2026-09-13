@@ -1,0 +1,598 @@
+{
+  "sources": [
+    {
+      "path": "execute_matrix.py",
+      "sha256": "7ba67dee18187d546e6b69f4e0270b8bdb75aac350acee7a6be702e175d44576"
+    },
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33"
+    },
+    {
+      "path": "paper_output/code/modeling/axisymmetric_check.py",
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9"
+    },
+    {
+      "path": "paper_output/code/modeling/compare_analytic.py",
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a"
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a"
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf"
+    },
+    {
+      "path": "paper_output/code/modeling/export_outputs.py",
+      "sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2"
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d"
+    },
+    {
+      "path": "paper_output/code/modeling/publication_plots.py",
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944"
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742"
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc"
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808"
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905"
+    },
+    {
+      "path": "paper_output/code/modeling/run_experiments.py",
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92"
+    },
+    {
+      "path": "paper_output/code/modeling/run_modeling.py",
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963"
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "sha256": "faff27578a3f3b85107be07d2993fd9575f56a7f92d2f8e0e4a236430d432a27"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_dense_storage.py",
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08"
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19"
+    },
+    {
+      "path": "paper_output/code/verification/analytic_metric_check.py",
+      "sha256": "ac4cddaf7454e84c3e4352f049865ffcb37aec1ced28b4396eafcc47204d8ffd"
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_series.py",
+      "sha256": "1dd2d782a4f0350e164851131d0aed7c4e64019af811b6efa91ae40179767cc6"
+    },
+    {
+      "path": "paper_output/code/verification/crossvalidate_solver.py",
+      "sha256": "463c0dedd2cf2c48645a164c4fad7621650b287933fcb662165c19a0e9226210"
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_check.py",
+      "sha256": "efb3ce293a57955eef0d220eb20233cd443e3913eb27a8779ea7784056d79cae"
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_diagnose.py",
+      "sha256": "b5a5817437e62b1ed042b089e092fc66286c051d69b5654e29b709f9c018a510"
+    },
+    {
+      "path": "paper_output/code/verification/energy_balance_diagnose2.py",
+      "sha256": "6f2e3e4b02c053b63aa41e7aff9ab7a3b62fd56b318906cee4a3c53d0269c4ce"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_activity_closure.py",
+      "sha256": "0256441383aae4237ff7000c7062cc213cf2f15366d718172f0da8cd03bf50ae"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_diagnose.py",
+      "sha256": "f4b72edecad1801ca3ad4ff8c4cf1421462001241e89dd4242fb5f344dca493e"
+    },
+    {
+      "path": "paper_output/code/verification/isotherm_jacobian_probe.py",
+      "sha256": "b0c7ee616e1f91f2623c624258477b55ac80189ed84d8ccf3afe6085b25fe4a4"
+    },
+    {
+      "path": "paper_output/code/verification/latent_heat_scenarios.py",
+      "sha256": "a76a55a37f17194da571731e50328ad0dbe027d3c5656dfbbf43b2d3dfdf73d7"
+    },
+    {
+      "path": "paper_output/code/verification/method_comparison.py",
+      "sha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4"
+    },
+    {
+      "path": "paper_output/code/verification/sensitivity_analysis.py",
+      "sha256": "d47a71fbad559790f28b74a1209e0da1fb26fa1d471db9f49b76ab799f3b9ce3"
+    },
+    {
+      "path": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "sha256": "288a318d286c7fb9165f77427839b4362d576c9e7ddd2f496a3041bb1a1737fe"
+    },
+    {
+      "path": "verification_jobs.py",
+      "sha256": "0aac43bd439a80572d26bcfb5ec3d43f18ea7089ae421b161cd7fe522accffd8"
+    }
+  ],
+  "results": [
+    {
+      "job": "bessel",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/validate_bessel.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:01.203897+00:00",
+      "pid": 7668,
+      "returncode": 0,
+      "elapsedSeconds": 19.233904199999998,
+      "finishedAtUtc": "2026-09-13T01:35:20.437801+00:00"
+    },
+    {
+      "job": "jacobian",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/analytic_jacobian.py",
+        "--self-test"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:01.204948+00:00",
+      "pid": 7676,
+      "returncode": 0,
+      "elapsedSeconds": 20.05772429999999,
+      "finishedAtUtc": "2026-09-13T01:35:21.262681+00:00"
+    },
+    {
+      "job": "scaling",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/verification/threshold_and_scaling_checks.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:21.264922+00:00",
+      "pid": 8180,
+      "returncode": 0,
+      "elapsedSeconds": 2.0426979000000074,
+      "finishedAtUtc": "2026-09-13T01:35:23.307622+00:00"
+    },
+    {
+      "job": "provenance",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/production_provenance.py",
+        "--selfcheck"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:20.438979+00:00",
+      "pid": 8160,
+      "returncode": 0,
+      "elapsedSeconds": 4.388344099999998,
+      "finishedAtUtc": "2026-09-13T01:35:24.827447+00:00"
+    },
+    {
+      "job": "analytic_metric",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/verification/analytic_metric_check.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:23.309835+00:00",
+      "pid": 7192,
+      "returncode": 0,
+      "elapsedSeconds": 10.407460600000007,
+      "finishedAtUtc": "2026-09-13T01:35:33.717292+00:00"
+    },
+    {
+      "job": "energy_diagnose",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/verification/energy_balance_diagnose.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:33.718719+00:00",
+      "pid": 7004,
+      "returncode": 0,
+      "elapsedSeconds": 11.995266300000011,
+      "finishedAtUtc": "2026-09-13T01:35:45.713982+00:00"
+    },
+    {
+      "job": "series",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/verification/crossvalidate_series.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:24.829140+00:00",
+      "pid": 3456,
+      "returncode": 0,
+      "elapsedSeconds": 21.38152910000001,
+      "finishedAtUtc": "2026-09-13T01:35:46.210674+00:00"
+    },
+    {
+      "job": "time_accuracy",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/verify_time_accuracy.py",
+        "--question",
+        "Q1",
+        "--n",
+        "20",
+        "--tag",
+        "sandbox"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:46.212970+00:00",
+      "pid": 7476,
+      "returncode": 1,
+      "elapsedSeconds": 1.603477099999992,
+      "finishedAtUtc": "2026-09-13T01:35:47.816448+00:00"
+    },
+    {
+      "job": "convergence",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/verify_convergence.py",
+        "--question",
+        "Q1",
+        "--grids",
+        "20",
+        "40",
+        "--tag",
+        "sandbox"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:45.715674+00:00",
+      "pid": 6492,
+      "returncode": 1,
+      "elapsedSeconds": 8.46120830000001,
+      "finishedAtUtc": "2026-09-13T01:35:54.176885+00:00"
+    },
+    {
+      "job": "dense_storage",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/verify_dense_storage.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:47.818067+00:00",
+      "pid": 7576,
+      "returncode": 1,
+      "elapsedSeconds": 8.530518299999997,
+      "finishedAtUtc": "2026-09-13T01:35:56.348585+00:00"
+    },
+    {
+      "job": "method_quick",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/verification/method_comparison.py",
+        "--quick"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:54.178172+00:00",
+      "pid": 1768,
+      "returncode": 0,
+      "elapsedSeconds": 31.851353899999992,
+      "finishedAtUtc": "2026-09-13T01:36:26.029529+00:00"
+    },
+    {
+      "job": "compare_analytic",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/compare_analytic.py"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:35:56.350091+00:00",
+      "pid": 7676,
+      "returncode": 0,
+      "elapsedSeconds": 36.04171299999999,
+      "finishedAtUtc": "2026-09-13T01:36:32.391810+00:00"
+    },
+    {
+      "job": "export_selfcheck",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/export_outputs.py",
+        "--selfcheck"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:36:26.031239+00:00",
+      "pid": 4548,
+      "returncode": 1,
+      "elapsedSeconds": 13.340479200000004,
+      "finishedAtUtc": "2026-09-13T01:36:39.371718+00:00"
+    },
+    {
+      "job": "axisymmetric",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/axisymmetric_check.py",
+        "--nr",
+        "6",
+        "--nz",
+        "4",
+        "--end-faces",
+        "off",
+        "--budget-s",
+        "120",
+        "--tag",
+        "_sandbox"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:36:39.372957+00:00",
+      "pid": 6264,
+      "returncode": 1,
+      "elapsedSeconds": 9.571446400000013,
+      "finishedAtUtc": "2026-09-13T01:36:48.944411+00:00"
+    },
+    {
+      "job": "production_missing_inputs",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/run_modeling.py",
+        "--version",
+        "sandbox_missing_inputs",
+        "--n1",
+        "20",
+        "--n23",
+        "20",
+        "--n4",
+        "20",
+        "--review"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:36:48.947168+00:00",
+      "pid": 5100,
+      "returncode": 1,
+      "elapsedSeconds": 2.0417032999999947,
+      "finishedAtUtc": "2026-09-13T01:36:50.988870+00:00"
+    },
+    {
+      "job": "crossvalidate_solver_pair",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "crossvalidate_solver_pair"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:36:50.990656+00:00",
+      "pid": 8160,
+      "returncode": 0,
+      "elapsedSeconds": 13.720431099999985,
+      "finishedAtUtc": "2026-09-13T01:37:04.711090+00:00"
+    },
+    {
+      "job": "plot_selfcheck",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "paper_output/code/modeling/publication_plots.py",
+        "--selfcheck"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:36:32.393363+00:00",
+      "pid": 8184,
+      "returncode": 0,
+      "elapsedSeconds": 35.73536850000002,
+      "finishedAtUtc": "2026-09-13T01:37:08.128734+00:00"
+    },
+    {
+      "job": "energy_q1",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "energy_q1"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:37:08.130356+00:00",
+      "pid": 4356,
+      "returncode": 0,
+      "elapsedSeconds": 11.487817000000007,
+      "finishedAtUtc": "2026-09-13T01:37:19.618178+00:00"
+    },
+    {
+      "job": "latent_single",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "latent_single"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:37:04.712235+00:00",
+      "pid": 4404,
+      "returncode": 0,
+      "elapsedSeconds": 26.80577790000001,
+      "finishedAtUtc": "2026-09-13T01:37:31.518017+00:00"
+    },
+    {
+      "job": "isotherm_old_interface",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "isotherm_old_interface"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:37:31.519526+00:00",
+      "pid": 5660,
+      "returncode": 1,
+      "elapsedSeconds": 9.464231399999989,
+      "finishedAtUtc": "2026-09-13T01:37:40.983760+00:00"
+    },
+    {
+      "job": "isotherm_extract",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "isotherm_extract"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:37:40.985113+00:00",
+      "pid": 2760,
+      "returncode": 1,
+      "elapsedSeconds": 11.641064499999999,
+      "finishedAtUtc": "2026-09-13T01:37:52.626179+00:00"
+    },
+    {
+      "job": "isotherm_probe",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "isotherm_probe"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:37:52.627260+00:00",
+      "pid": 7284,
+      "returncode": 1,
+      "elapsedSeconds": 10.208505399999979,
+      "finishedAtUtc": "2026-09-13T01:38:02.835769+00:00"
+    },
+    {
+      "job": "sensitivity_control",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "sensitivity_control"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:37:19.620020+00:00",
+      "pid": 7244,
+      "returncode": 0,
+      "elapsedSeconds": 80.73581750000002,
+      "finishedAtUtc": "2026-09-13T01:38:40.355836+00:00"
+    },
+    {
+      "job": "threshold_full_small",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "threshold_full_small"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:38:02.837338+00:00",
+      "pid": 2072,
+      "returncode": 0,
+      "elapsedSeconds": 53.880151499999954,
+      "finishedAtUtc": "2026-09-13T01:38:56.717492+00:00"
+    },
+    {
+      "job": "isotherm_identity_rhs",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "isotherm_identity_rhs"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:38:56.719021+00:00",
+      "pid": 4560,
+      "returncode": 0,
+      "elapsedSeconds": 10.423278900000014,
+      "finishedAtUtc": "2026-09-13T01:39:07.142304+00:00"
+    },
+    {
+      "job": "series_constant_diagnostic",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "series_constant_diagnostic"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:39:07.144155+00:00",
+      "pid": 3764,
+      "returncode": 1,
+      "elapsedSeconds": 9.857868100000019,
+      "finishedAtUtc": "2026-09-13T01:39:17.002027+00:00"
+    },
+    {
+      "job": "q_wrappers",
+      "argv": [
+        "C:\\Runtime\\python.exe",
+        "-B",
+        "verification_jobs.py",
+        "--root",
+        "C:\\Work\\05_path_adapted",
+        "--job",
+        "q_wrappers"
+      ],
+      "cwd": "C:\\Work\\05_path_adapted",
+      "startedAtUtc": "2026-09-13T01:38:40.357225+00:00",
+      "pid": 6752,
+      "returncode": 0,
+      "elapsedSeconds": 55.33699920000004,
+      "finishedAtUtc": "2026-09-13T01:39:35.694229+00:00"
+    }
+  ],
+  "remaining": 0
+}

@@ -1,0 +1,6 @@
+START sandbox N=20
+{"N": 20, "max_heat_error_K": 0.0019600449535914777, "scope": "All 1801 integer seconds and 21 requested radii"}
+START sandbox N=40
+{"max_absolute_difference": {"T_K": 0.0014693875993998518, "C": 0.046707078419066406}, "locations": {"T_K": {"time_s": 300.0, "radius_m": 0.02}, "C": {"time_s": 38.0, "radius_m": 0.02}}, "compared_time_count": 1801, "radial_count": 21, "convention": "Only finite values at common physical points are compared.", "coarse_N": 20, "fine_N": 40, "event_difference_s": null}
+{"N": 40, "max_heat_error_K": 0.0004906573541916259, "scope": "All 1801 integer seconds and 21 requested radii"}
+COMPLETED sandbox

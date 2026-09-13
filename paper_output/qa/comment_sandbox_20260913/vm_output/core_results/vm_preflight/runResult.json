@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "profile": "quick",
+  "runId": "vm_preflight",
+  "startedAtUtc": "2026-09-13T01:34:58.220563+00:00",
+  "guiReproduced": "NOT_PERFORMED",
+  "humanReview": "PENDING_USER_REVIEW",
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "libraries": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5"
+    },
+    "cpuThreads": 1
+  },
+  "sources": [
+    {
+      "path": "analyticJacobian.py",
+      "bytes": 15650,
+      "sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd"
+    },
+    {
+      "path": "diskDense.py",
+      "bytes": 4005,
+      "sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380"
+    },
+    {
+      "path": "dryingCore.py",
+      "bytes": 18416,
+      "sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379"
+    },
+    {
+      "path": "exportOutputs.py",
+      "bytes": 38811,
+      "sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9"
+    },
+    {
+      "path": "q1Model.py",
+      "bytes": 267,
+      "sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535"
+    },
+    {
+      "path": "q2Model.py",
+      "bytes": 268,
+      "sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b"
+    },
+    {
+      "path": "q3Model.py",
+      "bytes": 1065,
+      "sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21"
+    },
+    {
+      "path": "q4Model.py",
+      "bytes": 280,
+      "sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc"
+    },
+    {
+      "path": "runDelivery.py",
+      "bytes": 11192,
+      "sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511"
+    }
+  ],
+  "randomSeed": null,
+  "deterministic": true,
+  "historical107FileRegression": "NOT_RUN_NOT_REQUIRED_FOR_INDEPENDENT_REPRODUCTION",
+  "preflight": {
+    "status": "PASS",
+    "observedRows": {
+      "environment": 241,
+      "radius": 145
+    },
+    "templates": {
+      "Q1": [
+        "温度",
+        "水分浓度"
+      ],
+      "Q2": [
+        "温度",
+        "水分浓度"
+      ],
+      "Q3": [
+        "Sheet1"
+      ],
+      "Q4": [
+        "Sheet1"
+      ]
+    },
+    "checkedFiles": [
+      {
+        "path": "inputs/cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+      },
+      {
+        "path": "inputs/cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+      },
+      {
+        "path": "inputs/original/附件1.xlsx",
+        "bytes": 16586,
+        "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+      },
+      {
+        "path": "inputs/original/附件2.xlsx",
+        "bytes": 11485,
+        "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+      },
+      {
+        "path": "inputs/templates/result1.xlsx",
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      },
+      {
+        "path": "inputs/templates/result2.xlsx",
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+      },
+      {
+        "path": "inputs/templates/result3.xlsx",
+        "bytes": 9345,
+        "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+      },
+      {
+        "path": "inputs/templates/result4.xlsx",
+        "bytes": 9351,
+        "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+      },
+      {
+        "path": "reference/Q1/sampled_solution.npz",
+        "bytes": 10569,
+        "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+      },
+      {
+        "path": "reference/Q23/sampled_solution.npz",
+        "bytes": 689540,
+        "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+      },
+      {
+        "path": "reference/Q4/sampled_solution.npz",
+        "bytes": 628742,
+        "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+      },
+      {
+        "path": "reference/reference_data.py",
+        "bytes": 16093,
+        "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e"
+      }
+    ]
+  },
+  "finishedAtUtc": "2026-09-13T01:35:23.460995+00:00",
+  "elapsedSeconds": 25.248180700000006
+}

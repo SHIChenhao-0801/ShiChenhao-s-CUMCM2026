@@ -1,0 +1,18 @@
+{
+  "job": "sensitivity_control",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "sensitivity_control"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:37:19.620020+00:00",
+  "pid": 7244,
+  "returncode": 0,
+  "elapsedSeconds": 80.73581750000002,
+  "finishedAtUtc": "2026-09-13T01:38:40.355836+00:00"
+}

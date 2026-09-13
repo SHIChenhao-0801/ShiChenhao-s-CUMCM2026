@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "paper_output/code/modeling/run_modeling.py",
+  "generated_at": "2026-09-13T01:27:22.040451+00:00",
+  "source_run_id": "fixture_sequence",
+  "publication_state": "version_only_awaiting_parent_observed_exit",
+  "items": [
+    {
+      "question_id": "Q1",
+      "conclusion_text": "在t=0.5000h，中心/表面温度分别为36.8500/36.8500摄氏度，干基含水率为0.1499/0.1499kg/kg。",
+      "status": "computed",
+      "supporting_metrics": [
+        "mass_balance_absolute_residual",
+        "radial_intervals",
+        "center_C_at_report_time"
+      ],
+      "supporting_artifacts": [
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/figures/Q1_fixture.bin",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q1_fixture.json",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q1_fixture.validation.json"
+      ],
+      "assumptions": [
+        "一维径向有效模型，忽略轴向/端面基线，以二维独立程序检验端面影响。",
+        "题给rho*cp作为有效体积显热容量；不强制它等于守恒骨架的真实湿质量密度。",
+        "附件烘房kg/kg数值直接作为材料干基等效Ceq；这不是已证明的气固吸附平衡换算。",
+        "基线不显式加入潜热；给定等效驱动力的潜热试验仅是能量负荷压力测试。",
+        "前4h采用原始线性插值，4h后Tair=50摄氏度、Ceq=0.05作为长期延拓假设。",
+        "Q4固定长度并采用同比径向材料收缩，半径轨迹来自附件2而非模型预测。",
+        "Q2/Q3从t=0统一附录3；Q4从t=0整组改用附录4；h和beta沿用题给值。"
+      ],
+      "limitations": [
+        "没有内部温度/水分实测真值，数值校核不构成实测预测精度认证。",
+        "密度、气固湿度映射、潜热闭合和外生收缩是模型解释边界，需团队主导确认。",
+        "四位小数为输出格式；网格比较是采样差值，不能冒称连续解严格误差上界。",
+        "Visual Studio复现与用户人工代码审查分别留有独立状态。"
+      ]
+    },
+    {
+      "question_id": "Q2",
+      "conclusion_text": "在t=3.0000h，中心/表面温度分别为36.8500/36.8500摄氏度，干基含水率为0.1499/0.1499kg/kg。",
+      "status": "computed",
+      "supporting_metrics": [
+        "mass_balance_absolute_residual",
+        "radial_intervals",
+        "center_C_at_report_time"
+      ],
+      "supporting_artifacts": [
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/figures/Q2_fixture.bin",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q2_fixture.json",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q2_fixture.validation.json"
+      ],
+      "assumptions": [
+        "一维径向有效模型，忽略轴向/端面基线，以二维独立程序检验端面影响。",
+        "题给rho*cp作为有效体积显热容量；不强制它等于守恒骨架的真实湿质量密度。",
+        "附件烘房kg/kg数值直接作为材料干基等效Ceq；这不是已证明的气固吸附平衡换算。",
+        "基线不显式加入潜热；给定等效驱动力的潜热试验仅是能量负荷压力测试。",
+        "前4h采用原始线性插值，4h后Tair=50摄氏度、Ceq=0.05作为长期延拓假设。",
+        "Q4固定长度并采用同比径向材料收缩，半径轨迹来自附件2而非模型预测。",
+        "Q2/Q3从t=0统一附录3；Q4从t=0整组改用附录4；h和beta沿用题给值。"
+      ],
+      "limitations": [
+        "没有内部温度/水分实测真值，数值校核不构成实测预测精度认证。",
+        "密度、气固湿度映射、潜热闭合和外生收缩是模型解释边界，需团队主导确认。",
+        "四位小数为输出格式；网格比较是采样差值，不能冒称连续解严格误差上界。",
+        "Visual Studio复现与用户人工代码审查分别留有独立状态。"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "conclusion_text": "连续临界时刻4.166666667h；向上到四位小数并复核后报告4.1667h，原精度最大含水率0.149900000000<0.15kg/kg。",
+      "status": "computed",
+      "supporting_metrics": [
+        "mass_balance_absolute_residual",
+        "radial_intervals",
+        "center_C_at_report_time",
+        "reported_drying_time"
+      ],
+      "supporting_artifacts": [
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/figures/Q3_fixture.bin",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q3_fixture.json",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q3_fixture.validation.json"
+      ],
+      "assumptions": [
+        "一维径向有效模型，忽略轴向/端面基线，以二维独立程序检验端面影响。",
+        "题给rho*cp作为有效体积显热容量；不强制它等于守恒骨架的真实湿质量密度。",
+        "附件烘房kg/kg数值直接作为材料干基等效Ceq；这不是已证明的气固吸附平衡换算。",
+        "基线不显式加入潜热；给定等效驱动力的潜热试验仅是能量负荷压力测试。",
+        "前4h采用原始线性插值，4h后Tair=50摄氏度、Ceq=0.05作为长期延拓假设。",
+        "Q4固定长度并采用同比径向材料收缩，半径轨迹来自附件2而非模型预测。",
+        "Q2/Q3从t=0统一附录3；Q4从t=0整组改用附录4；h和beta沿用题给值。"
+      ],
+      "limitations": [
+        "没有内部温度/水分实测真值，数值校核不构成实测预测精度认证。",
+        "密度、气固湿度映射、潜热闭合和外生收缩是模型解释边界，需团队主导确认。",
+        "四位小数为输出格式；网格比较是采样差值，不能冒称连续解严格误差上界。",
+        "Visual Studio复现与用户人工代码审查分别留有独立状态。"
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "conclusion_text": "连续临界时刻4.166666667h；向上到四位小数并复核后报告4.1667h，原精度最大含水率0.149900000000<0.15kg/kg。",
+      "status": "computed",
+      "supporting_metrics": [
+        "mass_balance_absolute_residual",
+        "radial_intervals",
+        "center_C_at_report_time",
+        "reported_drying_time"
+      ],
+      "supporting_artifacts": [
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/figures/Q4_fixture.bin",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q4_fixture.json",
+        "notes/A-modeling/2026-09-10/data/production_entry_contract_selfcheck/check-aa88yjv0/entry_fixture_success/outputs/Q4_fixture.validation.json"
+      ],
+      "assumptions": [
+        "一维径向有效模型，忽略轴向/端面基线，以二维独立程序检验端面影响。",
+        "题给rho*cp作为有效体积显热容量；不强制它等于守恒骨架的真实湿质量密度。",
+        "附件烘房kg/kg数值直接作为材料干基等效Ceq；这不是已证明的气固吸附平衡换算。",
+        "基线不显式加入潜热；给定等效驱动力的潜热试验仅是能量负荷压力测试。",
+        "前4h采用原始线性插值，4h后Tair=50摄氏度、Ceq=0.05作为长期延拓假设。",
+        "Q4固定长度并采用同比径向材料收缩，半径轨迹来自附件2而非模型预测。",
+        "Q2/Q3从t=0统一附录3；Q4从t=0整组改用附录4；h和beta沿用题给值。"
+      ],
+      "limitations": [
+        "没有内部温度/水分实测真值，数值校核不构成实测预测精度认证。",
+        "密度、气固湿度映射、潜热闭合和外生收缩是模型解释边界，需团队主导确认。",
+        "四位小数为输出格式；网格比较是采样差值，不能冒称连续解严格误差上界。",
+        "Visual Studio复现与用户人工代码审查分别留有独立状态。"
+      ]
+    }
+  ]
+}

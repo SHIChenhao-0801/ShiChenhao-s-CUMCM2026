@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "fully_verified_with_live_Run": true,
+  "output": "C:\\Work\\05_clean_retry\\paper_output\\results\\export_selfcheck",
+  "size": {
+    "workbook_bytes": 391203,
+    "workbook_MiB": 0.3730802536010742,
+    "unrounded_archive_bytes": 584817,
+    "warning_limit_bytes": 20000000,
+    "workbook_exceeds_20_decimal_MB": false,
+    "archive_is_internal_not_automatically_in_submission_zip": true,
+    "complete_support_archive_still_requires_actual_size_check": true,
+    "no_required_time_or_space_values_removed": true
+  },
+  "sheets": {
+    "温度": {
+      "data_rows": 1801,
+      "total_rows": 1802,
+      "columns": 22,
+      "outside_domain_blank_cells": 0,
+      "first_time_s": 0.0,
+      "last_time_s": 1800.0,
+      "header": [
+        "时间\\到药材中心的距离",
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        1.9,
+        2.0
+      ]
+    },
+    "水分浓度": {
+      "data_rows": 1801,
+      "total_rows": 1802,
+      "columns": 22,
+      "outside_domain_blank_cells": 0,
+      "first_time_s": 0.0,
+      "last_time_s": 1800.0,
+      "header": [
+        "时间\\到药材中心的距离",
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        1.9,
+        2.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "FAIL",
+  "generated_at": "2026-09-13T01:48:16.039771+00:00",
+  "error": "FileNotFoundError(2, '系统找不到指定的路径。')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\run_modeling.py\", line 389, in main\n    'blas_threads': args.blas_threads}, 'input_files': dependencies(),\n                                                       ~~~~~~~~~~~~^^\n  File \"C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\run_modeling.py\", line 53, in dependencies\n    return [provenance.file_record(path) for path in sorted(set(paths))]\n            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\production_provenance.py\", line 42, in file_record\n    before = path.stat()\n  File \"C:\\Runtime\\Lib\\pathlib\\__init__.py\", line 654, in stat\n    return os.stat(self, follow_symlinks=follow_symlinks)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\\\Work\\\\05_clean_retry\\\\paper_output\\\\plan\\\\model_route.json'\n",
+  "actual_worker_returncode": null,
+  "process": null,
+  "version_is_retained": true,
+  "publication_note": "Worker does not publish global contracts; publication failure records rollback."
+}

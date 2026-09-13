@@ -1,0 +1,110 @@
+{
+  "figure_id": "fig_q1_profiles",
+  "question_id": "Q1",
+  "title": "第一问：预热阶段的径向温湿分布",
+  "caption": "各曲线对应题目指定时刻。温度采用摄氏度，水分采用干基；曲线来自同一live Run的物理径向点值。",
+  "purpose": "各曲线对应题目指定时刻。温度采用摄氏度，水分采用干基；曲线来自同一live Run的物理径向点值。",
+  "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.png",
+  "bytes": 218399,
+  "sha256": "c662875127650d27f852712a625c1b54d1558ca91270714c7f6a9207de11a4b6",
+  "status": "computed",
+  "ok": true,
+  "placeholder": false,
+  "exists": true,
+  "artifacts": {
+    "png": {
+      "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.png",
+      "bytes": 218399,
+      "sha256": "c662875127650d27f852712a625c1b54d1558ca91270714c7f6a9207de11a4b6",
+      "exists": true
+    },
+    "svg": {
+      "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.svg",
+      "bytes": 147992,
+      "sha256": "fe50d12b510eacd556480d179e6e05a79ca7ff340eb2b2beea4a525ac180a6a1",
+      "exists": true
+    },
+    "pdf": {
+      "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.pdf",
+      "bytes": 61965,
+      "sha256": "8904bea3b9dd75783394611d7187edb6ec159197f23cfc18d1341beb63673251",
+      "exists": true
+    }
+  },
+  "plot_data": {
+    "path": "paper_output/results/plot_selfcheck/fig_q1_profiles_data.npz",
+    "bytes": 12404,
+    "sha256": "2887b4fec5369b3b107d746abd1c7157cd08467588b428e3c72fc1368e21104c",
+    "exists": true
+  },
+  "sources": [
+    {
+      "kind": "live_Run",
+      "settings": {
+        "question": "Q1",
+        "intervals": 40,
+        "rtol": 1e-07,
+        "atol_temperature": 1e-07,
+        "atol_moisture": 1e-09,
+        "max_step_s": 600.0,
+        "early_max_step_s": 30.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "files": [
+        {
+          "path": "paper_output/code/modeling/drying_core.py",
+          "bytes": 18634,
+          "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+          "exists": true
+        },
+        {
+          "path": "paper_output/code/modeling/analytic_jacobian.py",
+          "bytes": 15901,
+          "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "event_s": null,
+      "end_s": 1800.0
+    }
+  ],
+  "generated_by": "paper_output/code/modeling/publication_plots.py",
+  "source_code_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+  "generated_at": "2026-09-13T01:36:57.629124+00:00",
+  "font": {
+    "name": "Microsoft YaHei",
+    "file": "C:\\Windows\\Fonts\\msyh.ttc"
+  },
+  "visual_review": "pending",
+  "human_review": "pending",
+  "visual_studio_gui": "pending",
+  "sample_time_count": 7,
+  "sample_radius_count": 121
+}

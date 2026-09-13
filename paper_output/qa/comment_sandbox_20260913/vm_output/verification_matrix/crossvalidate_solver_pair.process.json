@@ -1,0 +1,18 @@
+{
+  "job": "crossvalidate_solver_pair",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "crossvalidate_solver_pair"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:36:50.990656+00:00",
+  "pid": 8160,
+  "returncode": 0,
+  "elapsedSeconds": 13.720431099999985,
+  "finishedAtUtc": "2026-09-13T01:37:04.711090+00:00"
+}

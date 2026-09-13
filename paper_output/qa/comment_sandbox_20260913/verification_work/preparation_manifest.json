@@ -1,0 +1,163 @@
+[
+  {
+    "variant": "unadapted",
+    "role": "explicit_supplied_input",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\cleaned\\A_environment_observed.csv",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\unadapted\\paper_output\\data_cleaned\\A_environment_observed.csv",
+    "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+  },
+  {
+    "variant": "unadapted",
+    "role": "explicit_supplied_input",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\cleaned\\A_radius_observed.csv",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\unadapted\\paper_output\\data_cleaned\\A_radius_observed.csv",
+    "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_input",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\cleaned\\A_environment_observed.csv",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\data_cleaned\\A_environment_observed.csv",
+    "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_input",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\cleaned\\A_radius_observed.csv",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\data_cleaned\\A_radius_observed.csv",
+    "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\modeling\\validate_bessel.py",
+    "beforeSha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+    "afterSha256": "faff27578a3f3b85107be07d2993fd9575f56a7f92d2f8e0e4a236430d432a27"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\analytic_metric_check.py",
+    "beforeSha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+    "afterSha256": "ac4cddaf7454e84c3e4352f049865ffcb37aec1ced28b4396eafcc47204d8ffd"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\crossvalidate_series.py",
+    "beforeSha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+    "afterSha256": "1dd2d782a4f0350e164851131d0aed7c4e64019af811b6efa91ae40179767cc6"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\crossvalidate_solver.py",
+    "beforeSha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+    "afterSha256": "463c0dedd2cf2c48645a164c4fad7621650b287933fcb662165c19a0e9226210"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\energy_balance_check.py",
+    "beforeSha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+    "afterSha256": "efb3ce293a57955eef0d220eb20233cd443e3913eb27a8779ea7784056d79cae"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\energy_balance_diagnose.py",
+    "beforeSha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+    "afterSha256": "b5a5817437e62b1ed042b089e092fc66286c051d69b5654e29b709f9c018a510"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\energy_balance_diagnose2.py",
+    "beforeSha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+    "afterSha256": "6f2e3e4b02c053b63aa41e7aff9ab7a3b62fd56b318906cee4a3c53d0269c4ce"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\isotherm_activity_closure.py",
+    "beforeSha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+    "afterSha256": "0256441383aae4237ff7000c7062cc213cf2f15366d718172f0da8cd03bf50ae"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\isotherm_diagnose.py",
+    "beforeSha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+    "afterSha256": "f4b72edecad1801ca3ad4ff8c4cf1421462001241e89dd4242fb5f344dca493e"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\isotherm_jacobian_probe.py",
+    "beforeSha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+    "afterSha256": "b0c7ee616e1f91f2623c624258477b55ac80189ed84d8ccf3afe6085b25fe4a4"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\latent_heat_scenarios.py",
+    "beforeSha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+    "afterSha256": "a76a55a37f17194da571731e50328ad0dbe027d3c5656dfbbf43b2d3dfdf73d7"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\method_comparison.py",
+    "beforeSha256": "e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5",
+    "afterSha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\sensitivity_analysis.py",
+    "beforeSha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+    "afterSha256": "d47a71fbad559790f28b74a1209e0da1fb26fa1d471db9f49b76ab799f3b9ce3"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "root_path_only_adaptation",
+    "file": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\code\\verification\\threshold_and_scaling_checks.py",
+    "beforeSha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+    "afterSha256": "288a318d286c7fb9165f77427839b4362d576c9e7ddd2f496a3041bb1a1737fe"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_template",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\templates\\result1.xlsx",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\problem_files\\CUMCM2026Problems\\A题\\附件\\附件3\\result1.xlsx",
+    "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_template",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\templates\\result2.xlsx",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\problem_files\\CUMCM2026Problems\\A题\\附件\\附件3\\result2.xlsx",
+    "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_template",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\templates\\result3.xlsx",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\problem_files\\CUMCM2026Problems\\A题\\附件\\附件3\\result3.xlsx",
+    "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_template",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\inputs\\templates\\result4.xlsx",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\problem_files\\CUMCM2026Problems\\A题\\附件\\附件3\\result4.xlsx",
+    "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+  },
+  {
+    "variant": "path_adapted",
+    "role": "explicit_supplied_frozen_NPZ_for_descriptive_series_only",
+    "from": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\candidate\\03_程序代码\\reference\\Q23\\sampled_solution.npz",
+    "to": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted\\paper_output\\results\\production\\final_v6a\\Q23\\sampled_solution.npz",
+    "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+  }
+]

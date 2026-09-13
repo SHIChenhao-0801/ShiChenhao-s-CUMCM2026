@@ -1,0 +1,24 @@
+{
+  "pid": 6172,
+  "returncode": 0,
+  "started_at": "2026-09-13T01:47:19.498757+00:00",
+  "finished_at": "2026-09-13T01:47:29.668072+00:00",
+  "command": "C:\\Runtime\\python.exe -B C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q1 --n 20 --tag sandbox --worker --variant baseline --launch-token e0fef70c0ab94494ad807db3fdfb5126",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+    "--question",
+    "Q1",
+    "--n",
+    "20",
+    "--tag",
+    "sandbox",
+    "--worker",
+    "--variant",
+    "baseline",
+    "--launch-token",
+    "e0fef70c0ab94494ad807db3fdfb5126"
+  ],
+  "cwd": "C:\\Work\\05_clean_retry"
+}

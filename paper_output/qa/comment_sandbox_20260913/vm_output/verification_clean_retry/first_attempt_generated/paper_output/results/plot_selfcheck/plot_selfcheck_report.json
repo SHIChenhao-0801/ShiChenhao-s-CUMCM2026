@@ -1,0 +1,478 @@
+{
+  "scope": "N40 live-run plot selfcheck; primary plots are not final numerical results. Optional comparisons preserve their independent N200/finished-report sources.",
+  "status": "GENERATED_PENDING_VISUAL_REVIEW",
+  "figures": [
+    {
+      "figure_id": "fig_q1_profiles",
+      "question_id": "Q1",
+      "title": "第一问：预热阶段的径向温湿分布",
+      "caption": "各曲线对应题目指定时刻。温度采用摄氏度，水分采用干基；曲线来自同一live Run的物理径向点值。",
+      "purpose": "各曲线对应题目指定时刻。温度采用摄氏度，水分采用干基；曲线来自同一live Run的物理径向点值。",
+      "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.png",
+      "bytes": 218399,
+      "sha256": "c662875127650d27f852712a625c1b54d1558ca91270714c7f6a9207de11a4b6",
+      "status": "computed",
+      "ok": true,
+      "placeholder": false,
+      "exists": true,
+      "artifacts": {
+        "png": {
+          "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.png",
+          "bytes": 218399,
+          "sha256": "c662875127650d27f852712a625c1b54d1558ca91270714c7f6a9207de11a4b6",
+          "exists": true
+        },
+        "svg": {
+          "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.svg",
+          "bytes": 147992,
+          "sha256": "fe50d12b510eacd556480d179e6e05a79ca7ff340eb2b2beea4a525ac180a6a1",
+          "exists": true
+        },
+        "pdf": {
+          "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.pdf",
+          "bytes": 61965,
+          "sha256": "8904bea3b9dd75783394611d7187edb6ec159197f23cfc18d1341beb63673251",
+          "exists": true
+        }
+      },
+      "plot_data": {
+        "path": "paper_output/results/plot_selfcheck/fig_q1_profiles_data.npz",
+        "bytes": 12404,
+        "sha256": "2887b4fec5369b3b107d746abd1c7157cd08467588b428e3c72fc1368e21104c",
+        "exists": true
+      },
+      "sources": [
+        {
+          "kind": "live_Run",
+          "settings": {
+            "question": "Q1",
+            "intervals": 40,
+            "rtol": 1e-07,
+            "atol_temperature": 1e-07,
+            "atol_moisture": 1e-09,
+            "max_step_s": 600.0,
+            "early_max_step_s": 30.0,
+            "horizon_h": 240.0,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50.0,
+            "tail_equilibrium": 0.05,
+            "h": 25.0,
+            "beta": 8e-07,
+            "equilibrium_scale": 1.0,
+            "surface_latent_fraction": 0.0,
+            "latent_J_kg": 2400000.0,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "files": [
+            {
+              "path": "paper_output/code/modeling/drying_core.py",
+              "bytes": 18634,
+              "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+              "exists": true
+            },
+            {
+              "path": "paper_output/code/modeling/analytic_jacobian.py",
+              "bytes": 15901,
+              "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_environment_observed.csv",
+              "bytes": 10125,
+              "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_radius_observed.csv",
+              "bytes": 3522,
+              "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+              "exists": true
+            }
+          ],
+          "event_s": null,
+          "end_s": 1800.0
+        }
+      ],
+      "generated_by": "paper_output/code/modeling/publication_plots.py",
+      "source_code_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "generated_at": "2026-09-13T01:36:57.629124+00:00",
+      "font": {
+        "name": "Microsoft YaHei",
+        "file": "C:\\Windows\\Fonts\\msyh.ttc"
+      },
+      "visual_review": "pending",
+      "human_review": "pending",
+      "visual_studio_gui": "pending",
+      "sample_time_count": 7,
+      "sample_radius_count": 121,
+      "metadata": {
+        "path": "paper_output/results/plot_selfcheck/fig_q1_profiles.json",
+        "bytes": 3913,
+        "sha256": "01c3335a245f3587ce3b89e2eb52ddc9d3541b1315ad47cf9f4da39339ffa60a",
+        "exists": true
+      }
+    },
+    {
+      "figure_id": "fig_q2_profiles",
+      "question_id": "Q2",
+      "title": "第二问：前三小时的径向温湿分布",
+      "caption": "各曲线对应题目指定时刻。温度采用摄氏度，水分采用干基；曲线来自同一live Run的物理径向点值。",
+      "purpose": "各曲线对应题目指定时刻。温度采用摄氏度，水分采用干基；曲线来自同一live Run的物理径向点值。",
+      "path": "paper_output/results/plot_selfcheck/fig_q2_profiles.png",
+      "bytes": 218489,
+      "sha256": "d2f3925bcb478da488b69ad2a08d643b9c66b565f4b5ed90f26530bb63e20fa6",
+      "status": "computed",
+      "ok": true,
+      "placeholder": false,
+      "exists": true,
+      "artifacts": {
+        "png": {
+          "path": "paper_output/results/plot_selfcheck/fig_q2_profiles.png",
+          "bytes": 218489,
+          "sha256": "d2f3925bcb478da488b69ad2a08d643b9c66b565f4b5ed90f26530bb63e20fa6",
+          "exists": true
+        },
+        "svg": {
+          "path": "paper_output/results/plot_selfcheck/fig_q2_profiles.svg",
+          "bytes": 143853,
+          "sha256": "51215ca903c7a9033019e2c3cf368c5474deab278645b0de966bca891b96a387",
+          "exists": true
+        },
+        "pdf": {
+          "path": "paper_output/results/plot_selfcheck/fig_q2_profiles.pdf",
+          "bytes": 60859,
+          "sha256": "c1187edecabd10ba08aa4c4276988ceaf705c7e27f312fb882c0721bec150bf6",
+          "exists": true
+        }
+      },
+      "plot_data": {
+        "path": "paper_output/results/plot_selfcheck/fig_q2_profiles_data.npz",
+        "bytes": 12163,
+        "sha256": "12ae1f5a36b15e2ce0238a433b18e65f9225dea73ecb5caaf925ff23a32b62f1",
+        "exists": true
+      },
+      "sources": [
+        {
+          "kind": "live_Run",
+          "settings": {
+            "question": "Q23",
+            "intervals": 40,
+            "rtol": 1e-07,
+            "atol_temperature": 1e-07,
+            "atol_moisture": 1e-09,
+            "max_step_s": 600.0,
+            "early_max_step_s": 30.0,
+            "horizon_h": 240.0,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50.0,
+            "tail_equilibrium": 0.05,
+            "h": 25.0,
+            "beta": 8e-07,
+            "equilibrium_scale": 1.0,
+            "surface_latent_fraction": 0.0,
+            "latent_J_kg": 2400000.0,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "files": [
+            {
+              "path": "paper_output/code/modeling/drying_core.py",
+              "bytes": 18634,
+              "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+              "exists": true
+            },
+            {
+              "path": "paper_output/code/modeling/analytic_jacobian.py",
+              "bytes": 15901,
+              "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_environment_observed.csv",
+              "bytes": 10125,
+              "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_radius_observed.csv",
+              "bytes": 3522,
+              "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+              "exists": true
+            }
+          ],
+          "event_s": 206938.71427834936,
+          "end_s": 206940.0
+        }
+      ],
+      "generated_by": "paper_output/code/modeling/publication_plots.py",
+      "source_code_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "generated_at": "2026-09-13T01:37:00.390227+00:00",
+      "font": {
+        "name": "Microsoft YaHei",
+        "file": "C:\\Windows\\Fonts\\msyh.ttc"
+      },
+      "visual_review": "pending",
+      "human_review": "pending",
+      "visual_studio_gui": "pending",
+      "sample_time_count": 6,
+      "sample_radius_count": 121,
+      "metadata": {
+        "path": "paper_output/results/plot_selfcheck/fig_q2_profiles.json",
+        "bytes": 3930,
+        "sha256": "9fd99d1b563011390d0b40b9ae96874d28dbc1c6560ebd97386b968e7319f633",
+        "exists": true
+      }
+    },
+    {
+      "figure_id": "fig_q3_drying",
+      "question_id": "Q3",
+      "title": "第三问：固定半径下的全程水分迁移",
+      "caption": "左图为物理半径与时间的水分场；第四问域外留白，黑线为实测半径轨迹的插值。右图显示中心、干质量加权均值、表面及全域阈值事件。",
+      "purpose": "左图为物理半径与时间的水分场；第四问域外留白，黑线为实测半径轨迹的插值。右图显示中心、干质量加权均值、表面及全域阈值事件。",
+      "path": "paper_output/results/plot_selfcheck/fig_q3_drying.png",
+      "bytes": 235169,
+      "sha256": "1bfcb07109aecadc94759109ed4c6a2fedbf7b20026c682e2ecb37279fc81a39",
+      "status": "computed",
+      "ok": true,
+      "placeholder": false,
+      "exists": true,
+      "artifacts": {
+        "png": {
+          "path": "paper_output/results/plot_selfcheck/fig_q3_drying.png",
+          "bytes": 235169,
+          "sha256": "1bfcb07109aecadc94759109ed4c6a2fedbf7b20026c682e2ecb37279fc81a39",
+          "exists": true
+        },
+        "svg": {
+          "path": "paper_output/results/plot_selfcheck/fig_q3_drying.svg",
+          "bytes": 138345,
+          "sha256": "69844a1e27bf7546e1801e96fe9edf87314da681e2d5b676c347a29a0d359a71",
+          "exists": true
+        },
+        "pdf": {
+          "path": "paper_output/results/plot_selfcheck/fig_q3_drying.pdf",
+          "bytes": 68389,
+          "sha256": "2d398d97c7daf3c09519daefe3e9923b8b85a28b8e243a8f463b4c230d89d1d5",
+          "exists": true
+        }
+      },
+      "plot_data": {
+        "path": "paper_output/results/plot_selfcheck/fig_q3_drying_data.npz",
+        "bytes": 249028,
+        "sha256": "d3146b4c11de93a4306f2e979af3547775f7f35c544e509200c5952c6cd613e3",
+        "exists": true
+      },
+      "sources": [
+        {
+          "kind": "live_Run",
+          "settings": {
+            "question": "Q23",
+            "intervals": 40,
+            "rtol": 1e-07,
+            "atol_temperature": 1e-07,
+            "atol_moisture": 1e-09,
+            "max_step_s": 600.0,
+            "early_max_step_s": 30.0,
+            "horizon_h": 240.0,
+            "shrink": false,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50.0,
+            "tail_equilibrium": 0.05,
+            "h": 25.0,
+            "beta": 8e-07,
+            "equilibrium_scale": 1.0,
+            "surface_latent_fraction": 0.0,
+            "latent_J_kg": 2400000.0,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "files": [
+            {
+              "path": "paper_output/code/modeling/drying_core.py",
+              "bytes": 18634,
+              "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+              "exists": true
+            },
+            {
+              "path": "paper_output/code/modeling/analytic_jacobian.py",
+              "bytes": 15901,
+              "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_environment_observed.csv",
+              "bytes": 10125,
+              "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_radius_observed.csv",
+              "bytes": 3522,
+              "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+              "exists": true
+            }
+          ],
+          "event_s": 206938.71427834936,
+          "end_s": 206940.0
+        }
+      ],
+      "generated_by": "paper_output/code/modeling/publication_plots.py",
+      "source_code_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "generated_at": "2026-09-13T01:37:03.990558+00:00",
+      "font": {
+        "name": "Microsoft YaHei",
+        "file": "C:\\Windows\\Fonts\\msyh.ttc"
+      },
+      "visual_review": "pending",
+      "human_review": "pending",
+      "visual_studio_gui": "pending",
+      "event_s": 206938.71427834936,
+      "post_verification_s": 206940.0,
+      "masked_outside_count": 0,
+      "sample_time_count": 266,
+      "sample_radius_count": 121,
+      "mean_definition": "2*sum(material_dual_cell_weights*C); dry-solid mass weighting",
+      "metadata": {
+        "path": "paper_output/results/plot_selfcheck/fig_q3_drying.json",
+        "bytes": 4215,
+        "sha256": "abc96f05a3a4ffe9978495b5fde375f0b2528b37ad658949cc9560a0ab3d1727",
+        "exists": true
+      }
+    },
+    {
+      "figure_id": "fig_q4_drying",
+      "question_id": "Q4",
+      "title": "第四问：收缩域内的全程水分迁移",
+      "caption": "左图为物理半径与时间的水分场；第四问域外留白，黑线为实测半径轨迹的插值。右图显示中心、干质量加权均值、表面及全域阈值事件。",
+      "purpose": "左图为物理半径与时间的水分场；第四问域外留白，黑线为实测半径轨迹的插值。右图显示中心、干质量加权均值、表面及全域阈值事件。",
+      "path": "paper_output/results/plot_selfcheck/fig_q4_drying.png",
+      "bytes": 260041,
+      "sha256": "2f3edf33273534b3d381a0f94c8544be354408c331b551536b14f248f6e7d5f2",
+      "status": "computed",
+      "ok": true,
+      "placeholder": false,
+      "exists": true,
+      "artifacts": {
+        "png": {
+          "path": "paper_output/results/plot_selfcheck/fig_q4_drying.png",
+          "bytes": 260041,
+          "sha256": "2f3edf33273534b3d381a0f94c8544be354408c331b551536b14f248f6e7d5f2",
+          "exists": true
+        },
+        "svg": {
+          "path": "paper_output/results/plot_selfcheck/fig_q4_drying.svg",
+          "bytes": 169769,
+          "sha256": "dbf8a1ac4390e59cb7f71e7500ec522520839ea005980918295b1abda62ef20b",
+          "exists": true
+        },
+        "pdf": {
+          "path": "paper_output/results/plot_selfcheck/fig_q4_drying.pdf",
+          "bytes": 84078,
+          "sha256": "f324d4582900d6b689f26c97322a06d8ae186f4f1ff4e72df1b2b808d3f79ab5",
+          "exists": true
+        }
+      },
+      "plot_data": {
+        "path": "paper_output/results/plot_selfcheck/fig_q4_drying_data.npz",
+        "bytes": 222266,
+        "sha256": "0f66907c0ca101ca9221052c9e8901ce889baa9f18e648aa9482c691e21e85dc",
+        "exists": true
+      },
+      "sources": [
+        {
+          "kind": "live_Run",
+          "settings": {
+            "question": "Q4",
+            "intervals": 40,
+            "rtol": 1e-07,
+            "atol_temperature": 1e-07,
+            "atol_moisture": 1e-09,
+            "max_step_s": 600.0,
+            "early_max_step_s": 30.0,
+            "horizon_h": 240.0,
+            "shrink": true,
+            "boundary_extension": "nominal",
+            "tail_temperature_C": 50.0,
+            "tail_equilibrium": 0.05,
+            "h": 25.0,
+            "beta": 8e-07,
+            "equilibrium_scale": 1.0,
+            "surface_latent_fraction": 0.0,
+            "latent_J_kg": 2400000.0,
+            "constant_D": null,
+            "constant_thermal": false,
+            "method": "BDF",
+            "face_scheme": "kirchhoff",
+            "jacobian_mode": "analytic",
+            "dense_storage": "disk"
+          },
+          "files": [
+            {
+              "path": "paper_output/code/modeling/drying_core.py",
+              "bytes": 18634,
+              "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+              "exists": true
+            },
+            {
+              "path": "paper_output/code/modeling/analytic_jacobian.py",
+              "bytes": 15901,
+              "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_environment_observed.csv",
+              "bytes": 10125,
+              "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+              "exists": true
+            },
+            {
+              "path": "paper_output/data_cleaned/A_radius_observed.csv",
+              "bytes": 3522,
+              "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+              "exists": true
+            }
+          ],
+          "event_s": 183960.62980530158,
+          "end_s": 183962.0
+        }
+      ],
+      "generated_by": "paper_output/code/modeling/publication_plots.py",
+      "source_code_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "generated_at": "2026-09-13T01:37:07.613651+00:00",
+      "font": {
+        "name": "Microsoft YaHei",
+        "file": "C:\\Windows\\Fonts\\msyh.ttc"
+      },
+      "visual_review": "pending",
+      "human_review": "pending",
+      "visual_studio_gui": "pending",
+      "event_s": 183960.62980530158,
+      "post_verification_s": 183962.0,
+      "masked_outside_count": 15648,
+      "sample_time_count": 360,
+      "sample_radius_count": 121,
+      "mean_definition": "2*sum(material_dual_cell_weights*C); dry-solid mass weighting",
+      "metadata": {
+        "path": "paper_output/results/plot_selfcheck/fig_q4_drying.json",
+        "bytes": 4214,
+        "sha256": "64a9e024912a582543a289da2d9b564898932757fcf1eecc8ab90642b4b3a5c4",
+        "exists": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+05源码独立运行核查（Windows Sandbox 实际运行）
+============================================
+已完整阅读33份源码：31个Python、1个MATLAB、1个Node.js。本机与Windows Sandbox实测分开记录。
+本次VM环境：Windows 11；独立Python 3.14.7、NumPy 2.5.2、SciPy 1.18.1、openpyxl 3.1.5、Matplotlib 3.11.2；网络关闭，原D盘工作区不可见。
+原去注释版本先实测旧绝对根路径失败。后续VM数值检查使用仅14处根目录表达式适配的副本，未改物理模型、求解算法或误差门槛。
+两CSV、4个附件3工作簿模板及Q23参考NPZ从已冻结材料显式复制；31源码与7输入共38文件SHA均核对，干净重试前后不变。
+首轮27项中17项退出0；6项因测试副本误带旧输出目录触发FileExistsError。已在仅含源码/必需输入的全新目录实际重试，5项退出0，1项实际缺model_route.json。首轮记录保留，未将目录准备问题记成模型算法失败。
+合并有效轮次后，27项受控任务中22项退出0、5项退出1。退出0只表示进程完成，解析误差、趋势负例、图像状态等继续单独核验，不能写成“全部源码均通过”。
+另在只含31源码及两CSV的全新VM目录运行run_experiments.py baseline N20和energy_balance_diagnose2.py原入口，两者实际退出0，前者三条轨迹均computed。合计29项Python受控任务为24项退出0、5项退出1，31个Python源码均有入口/函数实际调用覆盖。首轮拷入的旧输出不计这两项VM结果。
+原Node候选在VM Node v24.20.0中实际worker退出2：缺C:/paper_output/qa/matlab_crosscheck_20260911/runSummary.json，源SHA与无注释候选一致。原MATLAB脚本未执行，VM未提供MATLAB运行环境、可执行入口查找为空。不得把Python成功等同MATLAB/Node成功。
+
+实际通过的代表性数值证据：
+Bessel原8项解析自检通过；解析Jacobian原84状态、336方向、每个方向全部3差分步长及4条短BDF轨迹通过。
+N40三问各采用内存/磁盘两种存储完成原自检；接受步、状态、事件及末时刻逐位相同，38337个稠密输出查询差全0，关闭后缓存移除。
+原Q1导出自检实际回读79244个工作簿格，并以live Run逐格核验84个正文CSV格，内部PASS。
+Q1 N20/N40网格比较、Q1 N20紧容差双子进程、二维nr6/nz4关闭端面比较均实际完成。此处小网格结果不作为正式网格精度验收。
+
+仍然存在的真实问题：
+run_modeling.py要求的paper_output/plan/model_route.json未随05提供，干净VM实际FileNotFoundError。
+isotherm_diagnose.py向ActivityModel传已不存在的B参数，实际TypeError；未把旧B参数强行改释为p。
+isotherm_activity_closure.py的_extract把时间×空间数组按相反方向访问，真实fields形状为3×2，第三时点实际IndexError；p=1恒等式/RHS测试通过不消除此失败。
+isotherm_jacobian_probe.py实际短时求解完成，但替代Jacobian调用计数为0，诊断注入没有被调用。
+crossvalidate_series.py旧sequential_mk对40个相等值给出伪趋势；主入口即使退出0，也不能把这一统计检验称为可靠。
+compare_analytic.py内部REVIEW_REQUIRED：密集采样N400冻结扩散水分最大误差2.875083008730961e-4，超过原1e-4门槛；N800为7.158659870798445e-5。未放宽门槛。
+analytic_metric_check.py计算的点值/单元平均差随N800→6400逐次减半，但原静态解释称不减少，两者矛盾。
+publication_plots.py真实生成4图，内部仍为GENERATED_PENDING_VISUAL_REVIEW；本核查不追加视觉通过声明。
+
+01. drying_core.py
+Windows Sandbox：通过（实际三轨迹N20）；退出码=0。
+共用PDE、物性、输入、状态/场查询、保存、诊断、关闭缓存真实调用。
+HOST：通过（实际三轨迹N20）。
+
+02. analytic_jacobian.py
+Windows Sandbox：通过（完整原自检）；退出码=0。
+84状态、336方向、全部3差分步长及4个短BDF测试，无警告。
+HOST：通过（完整原自检）。
+
+03. disk_dense.py
+Windows Sandbox：通过（完整原存储自检）；退出码=0。
+N40 Q1/Q23/Q4，接受步与状态逐位相同，38337次稠密查询差值全0，close后缓存清除。
+HOST：通过（完整原存储自检）。
+
+04. q1_model.py
+Windows Sandbox：通过（实际Q1 N20）；退出码=0。
+原solve封装；也由时间误差检查实际调用。
+HOST：通过（实际Q1 N20）。
+
+05. q2_model.py
+Windows Sandbox：通过（实际Q23 N20）；退出码=0。
+原solve封装至严格达标。
+HOST：通过（实际Q23 N20）。
+
+06. q3_model.py
+Windows Sandbox：通过（实际共享轨迹泛函）；退出码=0。
+Q23/Q4事件、四位上取及未舍入阈值实际核验。
+HOST：通过（实际共享轨迹泛函）。
+
+07. q4_model.py
+Windows Sandbox：通过（实际Q4 N20）；退出码=0。
+原收缩solve封装至严格达标。
+HOST：通过（实际Q4 N20）。
+
+08. validate_bessel.py
+Windows Sandbox：通过（路径适配后完整原自检）；退出码=0。
+8项解析自检全部满足原容差。
+HOST：通过（路径适配后完整原自检）。
+
+09. compare_analytic.py
+Windows Sandbox：运行完成，但原误差门槛未全通过；退出码=0。
+exit0，报告REVIEW_REQUIRED；N400密集采样冻结D水分误差2.875083008730961e-4超过1e-4；N800为7.158659870798445e-5。
+HOST：运行完成，但原误差门槛未全通过。
+
+10. verify_convergence.py
+Windows Sandbox：通过（原入口Q1小网格）；退出码=0。
+N20/N40两条1800s真实解和1801整数秒×21半径的独立比较；不代替正式网格收敛。
+HOST：通过（原入口Q1小网格）。
+
+11. verify_time_accuracy.py
+Windows Sandbox：通过（原监督入口Q1 N20）；退出码=0。
+基准/紧容差两个真实子进程，退出码、投影、输入/源码快照和原比较链均完成。
+HOST：通过（原监督入口Q1 N20）。
+
+12. verify_dense_storage.py
+Windows Sandbox：通过（完整原N40入口）；退出码=0。
+Q1/Q23/Q4各两条完整轨迹；3829+16162+18346=38337个查询。
+HOST：通过（完整原N40入口）。
+
+13. run_experiments.py
+Windows Sandbox：通过（原baseline入口N20）；退出码=0。
+原入口--batch baseline --n 20 --tag _vm_remaining --face-scheme kirchhoff；三条轨迹均computed，未跑其他批次。
+HOST：通过（原baseline入口N20）。
+
+14. production_provenance.py
+Windows Sandbox：通过（完整原tinyfixture自检）；退出码=0。
+10项合同与故障注入检查，含真实exit0/exit7子进程；不冒充PDE计算。
+HOST：通过（完整原tinyfixture自检）。
+
+15. run_modeling.py
+Windows Sandbox：失败（缺少原要求的输入）；退出码=1。
+实际exit1：缺paper_output/plan/model_route.json；未删掉要求或虚造路由。
+HOST：失败（缺少原要求的输入）。
+
+16. export_outputs.py
+Windows Sandbox：通过（原Q1 selfcheck）；退出码=0。
+原N40 Q1解导出后回读79244个工作簿格、84正文CSV格，live Run校验PASS。
+HOST：通过（原Q1 selfcheck）。
+
+17. publication_plots.py
+Windows Sandbox：生成完成（原selfcheck）；退出码=0。
+三条N40解及4个真实图件已生成，内部状态GENERATED_PENDING_VISUAL_REVIEW；未宣称图像逐页视觉通过。
+HOST：生成完成（原selfcheck）。
+
+18. axisymmetric_check.py
+Windows Sandbox：小网格运行完成；退出码=0。
+原入口nr6/nz4/end-faces off；2D与1D事件差-1.898558063354964e-7h；不把此小网格当原30×30精度验收。
+HOST：小网格运行完成。
+
+19. crossvalidate_series.py
+Windows Sandbox：运行完成，但旧M-K算法负例失败；退出码=0。
+显式附带Q23参考NPZ与两CSV；常数序列被旧sequential_mk报告伪趋势，不恢复该方法结论。
+HOST：运行完成，但旧M-K算法负例失败。
+
+20. crossvalidate_solver.py
+Windows Sandbox：通过（Q1 N20函数级实算）；退出码=0。
+runCase分别使用BDF/Radau真实求解；原8/12/10条N800以上默认长批次未运行。
+HOST：通过（Q1 N20函数级实算）。
+
+21. threshold_and_scaling_checks.py
+Windows Sandbox：通过（原标度入口及N20阈值函数）；退出码=0。
+Q23/Q4实际二分事件差8.73e-11/5.82e-11s，严格核验均成立；静态越域可能本次未触发，未列实际失败。
+HOST：通过（原标度入口及N20阈值函数）。
+
+22. method_comparison.py
+Windows Sandbox：通过（完整原quick入口）；退出码=0。
+8条Q1真解；变量D两通量差N100=1.4891388507853875e-5，N200=3.728809559122581e-6，观察阶1.99769，原1e-4门槛通过。
+HOST：通过（完整原quick入口）。
+
+23. latent_heat_scenarios.py
+Windows Sandbox：通过（完整事件单情景函数）；退出码=0。
+Q23 N20潜热比例.25，真实事件和热湿采样；原8条N800情景并未全部运行。
+HOST：通过（完整事件单情景函数）。
+
+24. sensitivity_analysis.py
+Windows Sandbox：通过（原N200 control函数）；退出码=0。
+真实两条N200对照事件差6.614868652832229e-7s；未运行Morris 362条或Sobol。
+HOST：通过（原N200 control函数）。
+
+25. isotherm_activity_closure.py
+Windows Sandbox：部分通过、原采样接口失败；退出码=1。
+p1恒等式与三题RHS差0；真实Run.fields为时间×空间，原_extract C[1,i]在第三时点IndexError。
+HOST：部分通过、原采样接口失败。
+
+26. isotherm_diagnose.py
+Windows Sandbox：失败（原历史接口不匹配）；退出码=1。
+实际TypeError：ActivityModel构造函数不接受B；也不能擅把B=4.2解释为p=4.2。
+HOST：失败（原历史接口不匹配）。
+
+27. isotherm_jacobian_probe.py
+Windows Sandbox：计算完成、注入诊断失败；退出码=1。
+N8/3.6s实际BDF计算成功，但numJacCalls=0，不能把未被调用的替代Jacobian声称为成功。
+HOST：计算完成、注入诊断失败。
+
+28. energy_balance_diagnose.py
+Windows Sandbox：原入口运行完成；退出码=0。
+N50/1h真实诊断；原打印关系是用于查错的历史量，不称能量守恒证明。
+HOST：原入口运行完成。
+
+29. energy_balance_diagnose2.py
+Windows Sandbox：原入口运行完成；退出码=0。
+Q23/Q4 N100各1h，2001/20001/200001点三种积分密度；大累计残差仍存在，符合其诊断作用。
+HOST：原入口运行完成。
+
+30. energy_balance_check.py
+Windows Sandbox：通过（Q1 N20函数级检查）；退出码=0。
+瞬时率最大相对偏差4.44e-16，累计残差2.3854515166021883e-4<原1e-3门槛；未扩大到Q23/Q4累计能量。
+HOST：通过（Q1 N20函数级检查）。
+
+31. analytic_metric_check.py
+Windows Sandbox：运行完成，但静态解释不符合输出；退出码=0。
+N800→6400点值/单元平均最大差0.00205117→0.00025647K，逐次减半；原interpretation却称不随细化减少。
+HOST：运行完成，但静态解释不符合输出。
+
+32. runCrossCheck.m
+Windows Sandbox：未执行（VM未提供MATLAB运行环境）；退出码=未执行。
+VM中matlab可执行入口查找为空；未运行原M脚本，不能使用Python或Node代替此验证。
+HOST：未执行（需独立MATLAB环境）。
+
+33. compareMatlab.mjs
+Windows Sandbox：失败（原候选缺少历史输入）；退出码=2。
+Windows Sandbox Node v24.20.0原候选worker实际exit2：缺C:/paper_output/qa/matlab_crosscheck_20260911/runSummary.json；源SHA与无注释候选一致。
+HOST：失败（隔离权限/历史输入缺失）。
+
+本报告没有将历史长批次、Morris/Sobol全量、原N800以上批次标成已全部执行。
+正式03完整网格、Visual Studio GUI、MATLAB GUI及团队人工审查另见对应证据，不由本报告认证。

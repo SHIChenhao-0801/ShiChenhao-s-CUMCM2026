@@ -1,0 +1,53 @@
+{
+  "job": "threshold_full_small",
+  "scope": "Explicit function-level numerical check; not every default long experiment",
+  "status": "PASS_FUNCTION_SCOPE",
+  "rows": {
+    "Q23": {
+      "intervals": 20,
+      "solverEventTimeS": 207046.7725632826,
+      "solverEventTimeH": 57.51299237868961,
+      "independentBisectionTimeS": 207046.77256328252,
+      "independentBisectionTimeH": 57.51299237868959,
+      "eventVsBisectionDifferenceS": 8.731149137020111e-11,
+      "maxLocationUniqueX": [
+        0.0
+      ],
+      "maxLocationAlwaysCentre": true,
+      "maxExcessOverCentreMaxKgPerKg": 0.0,
+      "maxExcessOverCentreMedianKgPerKg": 0.0,
+      "centreWithinStrictThresholdMarginKgPerKg": -2.4,
+      "centreIsMaximumAtEvent": true,
+      "maxLocationNote": "Off-centre argmax appears only where the radial profile is flat to round-off; the excess over the centre value is reported above and is many orders below any physically meaningful moisture difference.",
+      "maxRadialMoistureIncrease": 0.0,
+      "strictCheckTimeS": 207048.0,
+      "unroundedMaxCAtStrictTime": 0.1499996427498144,
+      "strictlyBelowThreshold": true,
+      "elapsedSeconds": 20.882207800000003
+    },
+    "Q4": {
+      "intervals": 20,
+      "solverEventTimeS": 184061.4720040082,
+      "solverEventTimeH": 51.12818666778005,
+      "independentBisectionTimeS": 184061.47200400813,
+      "independentBisectionTimeH": 51.128186667780035,
+      "eventVsBisectionDifferenceS": 5.820766091346741e-11,
+      "maxLocationUniqueX": [
+        0.0
+      ],
+      "maxLocationAlwaysCentre": true,
+      "maxExcessOverCentreMaxKgPerKg": 0.0,
+      "maxExcessOverCentreMedianKgPerKg": 0.0,
+      "centreWithinStrictThresholdMarginKgPerKg": -2.4,
+      "centreIsMaximumAtEvent": true,
+      "maxLocationNote": "Off-centre argmax appears only where the radial profile is flat to round-off; the excess over the centre value is reported above and is many orders below any physically meaningful moisture difference.",
+      "maxRadialMoistureIncrease": 0.0,
+      "strictCheckTimeS": 184063.0,
+      "unroundedMaxCAtStrictTime": 0.14999921608152966,
+      "strictlyBelowThreshold": true,
+      "elapsedSeconds": 21.9482529
+    }
+  },
+  "elapsedSeconds": 42.88837240000004,
+  "python": "C:\\Runtime\\python.exe"
+}

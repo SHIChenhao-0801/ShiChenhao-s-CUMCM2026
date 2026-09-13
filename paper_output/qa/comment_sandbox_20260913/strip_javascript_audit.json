@@ -1,0 +1,33 @@
+{
+  "path": "05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+  "language": "JavaScript (ES module)",
+  "parser": "Babel parser via bundled Playwright babelParse",
+  "comment_count": 3,
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "line": 1,
+      "end_line": 1
+    },
+    {
+      "type": "CommentLine",
+      "line": 14,
+      "end_line": 14
+    },
+    {
+      "type": "CommentLine",
+      "line": 47,
+      "end_line": 47
+    }
+  ],
+  "docstring_count": 0,
+  "remaining_comment_count": 0,
+  "ast_equal_without_comments": true,
+  "normalized_ast_sha256": "d8fbfbf6ffc9823b948d9ebde1b1ad2308669fe3a379a2123eb13b4ce842d47b",
+  "before_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+  "after_sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59",
+  "before_bytes": 16706,
+  "after_bytes": 16409,
+  "parser_check": "PASS",
+  "runtime_check": "PENDING_ROOT_SANDBOX"
+}

@@ -1,0 +1,18 @@
+{
+  "job": "isotherm_old_interface",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "isotherm_old_interface"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:37:31.519526+00:00",
+  "pid": 5660,
+  "returncode": 1,
+  "elapsedSeconds": 9.464231399999989,
+  "finishedAtUtc": "2026-09-13T01:37:40.983760+00:00"
+}

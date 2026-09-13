@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <ProjectGuid>{4DCB5297-3887-48A5-A73B-B22B93A46E20}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>runDelivery.py</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>A_CodeReview</Name>
+    <RootNamespace>A_CodeReview</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>--profile quick</CommandLineArguments>
+    <InterpreterArguments>-X utf8 -B</InterpreterArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runDelivery.py" />
+    <Compile Include="dryingCore.py" />
+    <Compile Include="analyticJacobian.py" />
+    <Compile Include="diskDense.py" />
+    <Compile Include="q1Model.py" />
+    <Compile Include="q2Model.py" />
+    <Compile Include="q3Model.py" />
+    <Compile Include="q4Model.py" />
+    <Compile Include="exportOutputs.py" />
+    <Content Include="README.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

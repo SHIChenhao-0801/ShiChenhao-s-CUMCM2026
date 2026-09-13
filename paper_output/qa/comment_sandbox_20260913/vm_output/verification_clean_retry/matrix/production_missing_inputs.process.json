@@ -1,0 +1,23 @@
+{
+  "job": "production_missing_inputs",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/run_modeling.py",
+    "--version",
+    "sandbox_missing_inputs",
+    "--n1",
+    "20",
+    "--n23",
+    "20",
+    "--n4",
+    "20",
+    "--review"
+  ],
+  "cwd": "C:\\Work\\05_clean_retry",
+  "startedAtUtc": "2026-09-13T01:48:14.322030+00:00",
+  "pid": 6792,
+  "returncode": 1,
+  "elapsedSeconds": 1.7511360999999397,
+  "finishedAtUtc": "2026-09-13T01:48:16.073164+00:00"
+}

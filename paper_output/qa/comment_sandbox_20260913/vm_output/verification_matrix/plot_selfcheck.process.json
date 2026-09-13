@@ -1,0 +1,15 @@
+{
+  "job": "plot_selfcheck",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/publication_plots.py",
+    "--selfcheck"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:36:32.393363+00:00",
+  "pid": 8184,
+  "returncode": 0,
+  "elapsedSeconds": 35.73536850000002,
+  "finishedAtUtc": "2026-09-13T01:37:08.128734+00:00"
+}

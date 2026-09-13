@@ -1,0 +1,184 @@
+{
+  "variant": "tight",
+  "process": {
+    "pid": 2932,
+    "returncode": 0,
+    "started_at": "2026-09-13T01:47:29.786993+00:00",
+    "finished_at": "2026-09-13T01:47:41.053024+00:00",
+    "command": "C:\\Runtime\\python.exe -B C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q1 --n 20 --tag sandbox --worker --variant tight --launch-token e0fef70c0ab94494ad807db3fdfb5126",
+    "argv": [
+      "C:\\Runtime\\python.exe",
+      "-B",
+      "C:\\Work\\05_clean_retry\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+      "--question",
+      "Q1",
+      "--n",
+      "20",
+      "--tag",
+      "sandbox",
+      "--worker",
+      "--variant",
+      "tight",
+      "--launch-token",
+      "e0fef70c0ab94494ad807db3fdfb5126"
+    ],
+    "cwd": "C:\\Work\\05_clean_retry"
+  },
+  "summary": {
+    "settings": {
+      "question": "Q1",
+      "intervals": 20,
+      "rtol": 1e-11,
+      "atol_temperature": 1e-11,
+      "atol_moisture": 1e-13,
+      "max_step_s": 60.0,
+      "early_max_step_s": 1.0,
+      "horizon_h": 240.0,
+      "shrink": false,
+      "boundary_extension": "nominal",
+      "tail_temperature_C": 50.0,
+      "tail_equilibrium": 0.05,
+      "h": 25.0,
+      "beta": 8e-07,
+      "equilibrium_scale": 1.0,
+      "surface_latent_fraction": 0.0,
+      "latent_J_kg": 2400000.0,
+      "constant_D": null,
+      "constant_thermal": false,
+      "method": "BDF",
+      "face_scheme": "kirchhoff",
+      "jacobian_mode": "analytic",
+      "dense_storage": "disk"
+    },
+    "diagnostics": {
+      "event_s": null,
+      "event_h": null,
+      "end_s": 1800.0,
+      "elapsed_s": 3.129009900000028,
+      "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+      "max_mass_balance_abs_kg_per_kg": 3.9968028886505635e-15,
+      "min_C": 1.5123781643576986,
+      "max_C": 2.55,
+      "min_T_K": 301.1499999999999,
+      "max_T_K": 309.9352877020259,
+      "min_D": 3.886204575046323e-09,
+      "max_D": 4.937655094173937e-09,
+      "positive_properties": true,
+      "max_radial_C_increase": 0.0,
+      "final_max_C": 2.549982518544386,
+      "final_surface_C": 1.5123781643576986,
+      "strictly_dry_at_end": false,
+      "radius_end_m": 0.02,
+      "radius_extrapolation_used": false,
+      "rhs_evaluations": 5908,
+      "accepted_time_points": 2562,
+      "nfev": 5908,
+      "njev": 36,
+      "nlu": 488,
+      "solver_success": true,
+      "dense_storage": "disk",
+      "dense_coefficient_bytes": 4830104,
+      "dense_polynomial_count": 2561
+    },
+    "code": {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 18634,
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "exists": true
+    },
+    "jacobian_code": {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 15901,
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "exists": true
+    },
+    "dense_storage_code": {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4015,
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "exists": true
+    },
+    "inputs": [
+      {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+        "exists": true
+      },
+      {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+        "exists": true
+      }
+    ],
+    "human_review_status": "pending",
+    "gui_reproduced": false,
+    "time_check": {
+      "variant": "tight",
+      "question": "Q1",
+      "spatial_intervals": 20,
+      "started_at": "2026-09-13T01:47:37.325318+00:00",
+      "solve_finished_at": "2026-09-13T01:47:40.458891+00:00",
+      "warnings": [],
+      "projection_time_count": 1801,
+      "full_second_comparison": true,
+      "projection_radius_count": 21,
+      "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+      "finished_at": "2026-09-13T01:47:40.850440+00:00",
+      "wall_seconds": 3.525122699999997,
+      "Run_closed": true
+    }
+  },
+  "summary_file": {
+    "path": "paper_output/results/time_accuracy/sandbox/tight/summary.json",
+    "bytes": 3304,
+    "sha256": "cc57572f807b7859f3638589a479d2cd6340df9626b9acb552abb3a88e8270fd",
+    "exists": true
+  },
+  "output_artifacts": [
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/comparison_projection.npz",
+      "bytes": 484799,
+      "sha256": "93e090599b5eb2be0b0c5fe774d45db3c66760d60cfa16091e505a736fc05d89",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/sampled_solution.npz",
+      "bytes": 10810,
+      "sha256": "7174c84273d845105da84c9f95bd291b196c6bd6009b7aa397da0b229538fcd3",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/summary.json",
+      "bytes": 3304,
+      "sha256": "cc57572f807b7859f3638589a479d2cd6340df9626b9acb552abb3a88e8270fd",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/worker_started.json",
+      "bytes": 70,
+      "sha256": "4a4ab7ebd4a87b048c7957cdb5f4f9062e0dd2044c780f5c7b474c41b0b76b4f",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/worker_success.json",
+      "bytes": 7392,
+      "sha256": "f5df5f5df9886f9f7386861bc335ce89e4e6c7e9f2c29ca3dc6674b7111e8076",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/stdout.log",
+      "bytes": 95,
+      "sha256": "b6ffb858fa3c0556d7f77e8acea4e11cd4bb3b24f60b36bf68eb4af4b0933cf6",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/sandbox/tight/process_result.json",
+      "bytes": 739,
+      "sha256": "0642c15cbb48721dad43d8d5a7b8b578ffdc11a81dc4cbfb1d759294cc1b31e1",
+      "exists": true
+    }
+  ],
+  "status": "computed_actual_process_exit_zero"
+}

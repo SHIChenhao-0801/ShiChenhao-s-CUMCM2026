@@ -1,0 +1,11 @@
+{
+  "process": {
+    "ProcessId": 8004,
+    "CommandLine": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\Work\\extra_entries\\03_wrapper\\runLogged.ps1 -Python C:/Runtime/python.exe -Profile quick -RunId vm_wrapper_quick"
+  },
+  "observerStartedUtc": "2026-09-13T01:57:39.285697+00:00",
+  "status": "OBSERVED_PROCESS_EXIT",
+  "reason": "Retain the process exit handle independently of the initial 600-second observer budget.",
+  "actualExitCode": 1,
+  "finishedUtc": "2026-09-13T02:04:31.806184+00:00"
+}

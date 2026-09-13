@@ -1,0 +1,18 @@
+{
+  "job": "latent_single",
+  "argv": [
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+    "--job",
+    "latent_single"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+  "startedAtUtc": "2026-09-13T01:28:59.905102+00:00",
+  "pid": 43100,
+  "returncode": 0,
+  "elapsedSeconds": 10.914055599991116,
+  "finishedAtUtc": "2026-09-13T01:29:10.819160+00:00"
+}

@@ -1,0 +1,1118 @@
+{
+  "schema_version": "1.0",
+  "question_id": "Q1",
+  "generated_by": "paper_output/code/modeling/compare_analytic.py",
+  "generated_at": "2026-09-13T01:36:31.835097+00:00",
+  "status": "REVIEW_REQUIRED",
+  "validation_criteria": "Both heat refinements and 100-to-400 frozen-water refinement reduce max error; N400 sampled max errors below 1e-4 in physical units.",
+  "scope": "Numerical verification against the selected constant-coefficient PDE; no internal experimental accuracy claim.",
+  "point_value_comparison": "Nodal-dual state is compared to exact point values at the same physical radii. Separate representation diagnostics quantify strict annular averages.",
+  "primary_space_time_samples": {
+    "paper_times_s": [
+      100.0,
+      300.0,
+      600.0,
+      900.0,
+      1200.0,
+      1500.0,
+      1800.0
+    ],
+    "paper_radii_m": [
+      0.0,
+      0.005,
+      0.01,
+      0.015,
+      0.02
+    ],
+    "dense_time_step_s": 10.0,
+    "dense_time_range_s": [
+      0.0,
+      1800.0
+    ],
+    "dense_radius_step_m": 0.001,
+    "dense_radius_range_m": [
+      0.0,
+      0.02
+    ]
+  },
+  "nonlinear_moisture_note": "The nonlinear Q1 C solution is stored for provenance only, not compared with constant-D Bessel or labeled analytic truth.",
+  "constant_diffusion_coefficient_m2_s": 4.937655094173937e-09,
+  "core_static_review": {
+    "kirchhoff_primitive": "F(C)=C*exp(-a/C)+a*Ei(-a/C), so F_prime(C)=exp(-a/C)",
+    "water_face_flux": "Internal face radius times D0*exp(-3850/T_face)*(F(C_right)-F(C_left))/dx, with no thermal factor in the differenced potential.",
+    "Q1_temperature_factor": "Exactly one, since D1 has no temperature dependence.",
+    "no_spurious_soret_term": true,
+    "internal_flux_cancellation": "Each face occurs with opposite signs in adjacent control-volume balances; weighted sum leaves only the surface flux.",
+    "density_interpretation": "rho*cp is effective thermal capacity; independent dry-matter weighting is used for conserved moisture.",
+    "scope_limitation": "Static consistency and linear benchmark do not alone validate all nonlinear long-time or shrinkage scenarios."
+  },
+  "convergence": {
+    "paper": {
+      "heat_intervals": [
+        100,
+        200,
+        400
+      ],
+      "heat_max_abs_errors_K": [
+        7.864433223403466e-05,
+        2.0798575690150756e-05,
+        5.856920779478969e-06
+      ],
+      "heat_observed_orders": [
+        1.9188580623894467,
+        1.8282704485249428
+      ],
+      "water_intervals": [
+        100,
+        400
+      ],
+      "water_max_abs_errors_kg_per_kg": [
+        0.001095305366672239,
+        6.777100461308194e-05
+      ],
+      "water_observed_order_100_400": 2.0072605877863188,
+      "both_refinements_reduce_heat_error": true,
+      "water_refinement_reduces_error": true,
+      "N400_heat_max_error_below_0_0001_K": true,
+      "N400_frozen_water_max_error_below_0_0001": true,
+      "N800_frozen_water_max_abs_error": 1.693382915579633e-05,
+      "water_observed_order_400_800": 2.000759918604001
+    },
+    "dense": {
+      "heat_intervals": [
+        100,
+        200,
+        400
+      ],
+      "heat_max_abs_errors_K": [
+        7.864433223403466e-05,
+        2.0798575690150756e-05,
+        5.856920779478969e-06
+      ],
+      "heat_observed_orders": [
+        1.9188580623894467,
+        1.8282704485249428
+      ],
+      "water_intervals": [
+        100,
+        400
+      ],
+      "water_max_abs_errors_kg_per_kg": [
+        0.005154551248608197,
+        0.0002875083008730961
+      ],
+      "water_observed_order_100_400": 2.082085659088355,
+      "both_refinements_reduce_heat_error": true,
+      "water_refinement_reduces_error": true,
+      "N400_heat_max_error_below_0_0001_K": true,
+      "N400_frozen_water_max_error_below_0_0001": false,
+      "N800_frozen_water_max_abs_error": 7.158659870798445e-05,
+      "water_observed_order_400_800": 2.005842170106053
+    }
+  },
+  "cases": [
+    {
+      "case_id": "nonlinear_Q1_N100",
+      "settings": {
+        "question": "Q1",
+        "intervals": 100,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-11,
+        "max_step_s": 2.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 2.6956361999999956,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 1.7763568394002505e-15,
+        "min_C": 1.510318710259995,
+        "max_C": 2.5500000000000003,
+        "min_T_K": 301.15,
+        "max_T_K": 309.9355494913556,
+        "min_D": 3.883087375927894e-09,
+        "max_D": 4.937655094173938e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 4.440892098500626e-16,
+        "final_max_C": 2.5499920702222805,
+        "final_surface_C": 1.510318710259995,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3810,
+        "accepted_time_points": 1677,
+        "nfev": 3810,
+        "njev": 74,
+        "nlu": 423,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 13933920,
+        "dense_polynomial_count": 1676
+      },
+      "comparison_scope": "temperature only; nonlinear C has no Bessel reference",
+      "comparisons": {
+        "paper": {
+          "temperature": {
+            "max_abs_error": 7.864433223403466e-05,
+            "rms_error": 2.208865019283617e-05,
+            "mean_signed_error": -9.230180691182406e-06,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -7.864433223403466e-05,
+            "centre_max_abs_error": 1.6008405850698182e-05,
+            "surface_max_abs_error": 7.864433223403466e-05,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+          }
+        },
+        "dense": {
+          "temperature": {
+            "max_abs_error": 7.864433223403466e-05,
+            "rms_error": 1.7288896477244707e-05,
+            "mean_signed_error": -7.64505795739675e-06,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -7.864433223403466e-05,
+            "centre_max_abs_error": 1.897718311738572e-05,
+            "surface_max_abs_error": 7.864433223403466e-05,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+          }
+        }
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N100_paper.csv",
+          "bytes": 3618,
+          "sha256": "1b0a5b7aac0995afd96d5cb01274101b5e085d72dbba6c32ae3635e122d1acf0"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N100_dense.csv",
+          "bytes": 388355,
+          "sha256": "8543ed806b1904a4d3fe5750d9877c91341ceb9719408ccd116c16d02c7062d1"
+        }
+      ],
+      "representation_diagnostic": {
+        "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+        "strict_cell_average_interpretation_is_not_primary": true,
+        "heat_node_max_abs_error_K": 7.864433223403466e-05,
+        "heat_vs_annular_average_max_abs_error_K": 0.0163610284695892,
+        "analytic_point_vs_annular_average_max_difference_K": 0.016371894141627763,
+        "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+      }
+    },
+    {
+      "case_id": "nonlinear_Q1_N200",
+      "settings": {
+        "question": "Q1",
+        "intervals": 200,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-11,
+        "max_step_s": 2.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 2.6622580000000085,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+        "min_C": 1.5102556198306534,
+        "max_C": 2.5500000000000003,
+        "min_T_K": 301.15,
+        "max_T_K": 309.93555764124187,
+        "min_D": 3.882991787296413e-09,
+        "max_D": 4.937655094173938e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 1.3322676295501878e-15,
+        "final_max_C": 2.549992321147787,
+        "final_surface_C": 1.5102556198306534,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3849,
+        "accepted_time_points": 1690,
+        "nfev": 3849,
+        "njev": 77,
+        "nlu": 430,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 28010112,
+        "dense_polynomial_count": 1689
+      },
+      "comparison_scope": "temperature only; nonlinear C has no Bessel reference",
+      "comparisons": {
+        "paper": {
+          "temperature": {
+            "max_abs_error": 2.0798575690150756e-05,
+            "rms_error": 5.590221267803248e-06,
+            "mean_signed_error": -2.3123331386289334e-06,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -2.0798575690150756e-05,
+            "centre_max_abs_error": 3.993404561697389e-06,
+            "surface_max_abs_error": 2.0798575690150756e-05,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+          }
+        },
+        "dense": {
+          "temperature": {
+            "max_abs_error": 2.0798575690150756e-05,
+            "rms_error": 4.3216001574943164e-06,
+            "mean_signed_error": -1.9072979265836091e-06,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -2.0798575690150756e-05,
+            "centre_max_abs_error": 4.737171821034281e-06,
+            "surface_max_abs_error": 2.0798575690150756e-05,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+          }
+        }
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N200_paper.csv",
+          "bytes": 3615,
+          "sha256": "83c96c9335d592fbc1b2fe586ec89f72e71706b61d8c24daa0607ff72dccaec8"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N200_dense.csv",
+          "bytes": 388376,
+          "sha256": "d366396a1276a09e17d78c0558f40d6f677d9f083fbe3d86e4f994f9a350ca7f"
+        }
+      ],
+      "representation_diagnostic": {
+        "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+        "strict_cell_average_interpretation_is_not_primary": true,
+        "heat_node_max_abs_error_K": 2.0798575690150756e-05,
+        "heat_vs_annular_average_max_abs_error_K": 0.008193942453203817,
+        "analytic_point_vs_annular_average_max_difference_K": 0.008196658239000953,
+        "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+      }
+    },
+    {
+      "case_id": "nonlinear_Q1_N400",
+      "settings": {
+        "question": "Q1",
+        "intervals": 400,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-11,
+        "max_step_s": 2.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 3.5835962000000166,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+        "min_C": 1.5102398568301274,
+        "max_C": 2.5500000000000007,
+        "min_T_K": 301.15,
+        "max_T_K": 309.93555968035093,
+        "min_D": 3.882967903814321e-09,
+        "max_D": 4.937655094173938e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 1.3322676295501878e-15,
+        "final_max_C": 2.5499923834239486,
+        "final_surface_C": 1.5102398568301272,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3899,
+        "accepted_time_points": 1710,
+        "nfev": 3899,
+        "njev": 79,
+        "nlu": 434,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 56775312,
+        "dense_polynomial_count": 1709
+      },
+      "comparison_scope": "temperature only; nonlinear C has no Bessel reference",
+      "comparisons": {
+        "paper": {
+          "temperature": {
+            "max_abs_error": 5.856920779478969e-06,
+            "rms_error": 1.4742180019720834e-06,
+            "mean_signed_error": -5.619024185372317e-07,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -5.856920779478969e-06,
+            "centre_max_abs_error": 9.933442584042496e-07,
+            "surface_max_abs_error": 5.856920779478969e-06,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+          }
+        },
+        "dense": {
+          "temperature": {
+            "max_abs_error": 5.856920779478969e-06,
+            "rms_error": 1.0797463719292152e-06,
+            "mean_signed_error": -4.660181356206308e-07,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -5.856920779478969e-06,
+            "centre_max_abs_error": 1.1859635833388893e-06,
+            "surface_max_abs_error": 5.856920779478969e-06,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+          }
+        }
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N400_paper.csv",
+          "bytes": 3621,
+          "sha256": "16caa65793772bdbd698d8939b5a510e6d7a65bc18fba1ae0ab3668370b70a02"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N400_dense.csv",
+          "bytes": 388315,
+          "sha256": "2ecc2861cbff6f6dd1de2c0de1c442294993c5230dc1c72f801b5124cfd5c8a0"
+        }
+      ],
+      "representation_diagnostic": {
+        "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+        "strict_cell_average_interpretation_is_not_primary": true,
+        "heat_node_max_abs_error_K": 5.856920779478969e-06,
+        "heat_vs_annular_average_max_abs_error_K": 0.004100329000266356,
+        "analytic_point_vs_annular_average_max_difference_K": 0.004101005677000558,
+        "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+      }
+    },
+    {
+      "case_id": "frozen_D_N100",
+      "settings": {
+        "question": "Q1",
+        "intervals": 100,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-11,
+        "max_step_s": 2.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": 4.937655094173937e-09,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 1.9518284000000108,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 1.7763568394002505e-15,
+        "min_C": 1.5521907156722432,
+        "max_C": 2.5500000000000003,
+        "min_T_K": 301.1499999999999,
+        "max_T_K": 309.93554947364606,
+        "min_D": 4.937655094173937e-09,
+        "max_D": 4.937655094173937e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 4.440892098500626e-16,
+        "final_max_C": 2.549991787970636,
+        "final_surface_C": 1.5521907156722432,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3828,
+        "accepted_time_points": 1680,
+        "nfev": 3828,
+        "njev": 74,
+        "nlu": 432,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 13875456,
+        "dense_polynomial_count": 1679
+      },
+      "comparison_scope": "constant-property heat and frozen-D linear moisture",
+      "comparisons": {
+        "paper": {
+          "temperature": {
+            "max_abs_error": 7.853836865479025e-05,
+            "rms_error": 2.209456700544208e-05,
+            "mean_signed_error": -9.252512692065855e-06,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -7.853836865479025e-05,
+            "centre_max_abs_error": 1.6027560661768803e-05,
+            "surface_max_abs_error": 7.853836865479025e-05,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+          },
+          "frozen_D_moisture": {
+            "max_abs_error": 0.001095305366672239,
+            "rms_error": 0.0002063086159244816,
+            "mean_signed_error": 5.618604833010592e-05,
+            "max_error_time_s": 100.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": 0.001095305366672239,
+            "centre_max_abs_error": 3.4682396909957447e-07,
+            "surface_max_abs_error": 0.001095305366672239,
+            "finite_values": true
+          }
+        },
+        "dense": {
+          "temperature": {
+            "max_abs_error": 7.853836865479025e-05,
+            "rms_error": 1.7290565912653502e-05,
+            "mean_signed_error": -7.6475462931917e-06,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -7.853836865479025e-05,
+            "centre_max_abs_error": 1.8998316363649792e-05,
+            "surface_max_abs_error": 7.853836865479025e-05,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+          },
+          "frozen_D_moisture": {
+            "max_abs_error": 0.005154551248608197,
+            "rms_error": 0.00015672224913570854,
+            "mean_signed_error": 3.0791609646937503e-05,
+            "max_error_time_s": 10.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": 0.005154551248608197,
+            "centre_max_abs_error": 3.4682396909957447e-07,
+            "surface_max_abs_error": 0.005154551248608197,
+            "finite_values": true
+          }
+        }
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N100_paper.csv",
+          "bytes": 5024,
+          "sha256": "8a5fb24504f489eac28eafd7339e74d31319bbcc631a1f3bdd4ba4b51f929660"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N100_dense.csv",
+          "bytes": 542018,
+          "sha256": "8979aac795f45a6f0217764a05daeee132836e3571c9e55c7f5d8dc9aaf21cec"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N100_early.csv",
+          "bytes": 2898,
+          "sha256": "b607d2571d08e05934e9d6e7bfb9b86716e5cc1bd07ef8e857587a4fbd5bcc28"
+        }
+      ],
+      "representation_diagnostic": {
+        "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+        "strict_cell_average_interpretation_is_not_primary": true,
+        "heat_node_max_abs_error_K": 7.853836865479025e-05,
+        "heat_vs_annular_average_max_abs_error_K": 0.016361010760022054,
+        "analytic_point_vs_annular_average_max_difference_K": 0.016371894141627763,
+        "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+      },
+      "early_boundary_layer": {
+        "times_s": [
+          1.0,
+          2.0,
+          5.0,
+          10.0,
+          20.0,
+          30.0,
+          60.0
+        ],
+        "radii_m": [
+          0.0,
+          0.019,
+          0.02
+        ],
+        "moisture": {
+          "max_abs_error": 0.014226175261611296,
+          "rms_error": 0.004826294038291428,
+          "mean_signed_error": 0.00228874030050302,
+          "max_error_time_s": 1.0,
+          "max_error_radius_m": 0.02,
+          "error_at_max_location": 0.014226175261611296,
+          "centre_max_abs_error": 1.6063594898696465e-11,
+          "surface_max_abs_error": 0.014226175261611296,
+          "finite_values": true
+        },
+        "surface_errors_kg_per_kg": [
+          0.014226175261611296,
+          0.013032800942831546,
+          0.008436763209964226,
+          0.005154551990216749,
+          0.0032251964925085197,
+          0.0024807372900359503,
+          0.0015681921774817198
+        ],
+        "analytic_240_480_max_difference": 4.515926721460062e-07
+      }
+    },
+    {
+      "case_id": "frozen_D_N400",
+      "settings": {
+        "question": "Q1",
+        "intervals": 400,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-11,
+        "max_step_s": 2.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": 4.937655094173937e-09,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 3.3622571999999877,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+        "min_C": 1.5521553096429268,
+        "max_C": 2.5500000000000007,
+        "min_T_K": 301.1499999999999,
+        "max_T_K": 309.9355597172841,
+        "min_D": 4.937655094173937e-09,
+        "max_D": 4.937655094173937e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 1.7763568394002505e-15,
+        "final_max_C": 2.5499921130776797,
+        "final_surface_C": 1.552155309642927,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3904,
+        "accepted_time_points": 1710,
+        "nfev": 3904,
+        "njev": 81,
+        "nlu": 437,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 56627560,
+        "dense_polynomial_count": 1709
+      },
+      "comparison_scope": "constant-property heat and frozen-D linear moisture",
+      "comparisons": {
+        "paper": {
+          "temperature": {
+            "max_abs_error": 5.687805412435409e-06,
+            "rms_error": 1.3996757397080066e-06,
+            "mean_signed_error": -5.328676138560695e-07,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -5.687805412435409e-06,
+            "centre_max_abs_error": 9.930143960446003e-07,
+            "surface_max_abs_error": 5.687805412435409e-06,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+          },
+          "frozen_D_moisture": {
+            "max_abs_error": 6.777100461308194e-05,
+            "rms_error": 1.278198321069362e-05,
+            "mean_signed_error": 3.4869058492529147e-06,
+            "max_error_time_s": 100.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": 6.777100461308194e-05,
+            "centre_max_abs_error": 2.1716925591164227e-08,
+            "surface_max_abs_error": 6.777100461308194e-05,
+            "finite_values": true
+          }
+        },
+        "dense": {
+          "temperature": {
+            "max_abs_error": 5.687805412435409e-06,
+            "rms_error": 1.0866527730322158e-06,
+            "mean_signed_error": -4.737956189059341e-07,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -5.687805412435409e-06,
+            "centre_max_abs_error": 1.181137463390769e-06,
+            "surface_max_abs_error": 5.687805412435409e-06,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+          },
+          "frozen_D_moisture": {
+            "max_abs_error": 0.0002875083008730961,
+            "rms_error": 9.398400934802228e-06,
+            "mean_signed_error": 1.9070795801894124e-06,
+            "max_error_time_s": 10.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": 0.0002875083008730961,
+            "centre_max_abs_error": 2.1716925591164227e-08,
+            "surface_max_abs_error": 0.0002875083008730961,
+            "finite_values": true
+          }
+        }
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N400_paper.csv",
+          "bytes": 5030,
+          "sha256": "2f3182d1ab901275bde82b27c82c252fcb925d45628cb63090eb506c593417d5"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N400_dense.csv",
+          "bytes": 541952,
+          "sha256": "b83494c82dea989dc6fb3269f22e8aba009c7c78e781dacbce9d0fc296439156"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N400_early.csv",
+          "bytes": 2906,
+          "sha256": "a561a21779170880c76839f5fbf4c5616656f9b89d11f5a28acb757335302070"
+        }
+      ],
+      "representation_diagnostic": {
+        "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+        "strict_cell_average_interpretation_is_not_primary": true,
+        "heat_node_max_abs_error_K": 5.687805412435409e-06,
+        "heat_vs_annular_average_max_abs_error_K": 0.004100365933481953,
+        "analytic_point_vs_annular_average_max_difference_K": 0.004101005677000558,
+        "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+      },
+      "early_boundary_layer": {
+        "times_s": [
+          1.0,
+          2.0,
+          5.0,
+          10.0,
+          20.0,
+          30.0,
+          60.0
+        ],
+        "radii_m": [
+          0.0,
+          0.019,
+          0.02
+        ],
+        "moisture": {
+          "max_abs_error": 0.0010483972438142253,
+          "rms_error": 0.00030311501329085676,
+          "mean_signed_error": 0.0001381731376829874,
+          "max_error_time_s": 1.0,
+          "max_error_radius_m": 0.02,
+          "error_at_max_location": 0.0010483972438142253,
+          "centre_max_abs_error": 1.6063594898696465e-11,
+          "surface_max_abs_error": 0.0010483972438142253,
+          "finite_values": true
+        },
+        "surface_errors_kg_per_kg": [
+          0.0010483972438142253,
+          0.0007056780823679887,
+          0.0004245617797664636,
+          0.00028750904248164844,
+          0.00019207800158271837,
+          0.00015026124443195954,
+          9.64567905596958e-05
+        ],
+        "analytic_240_480_max_difference": 4.515926721460062e-07
+      }
+    },
+    {
+      "case_id": "frozen_D_N800",
+      "settings": {
+        "question": "Q1",
+        "intervals": 800,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-11,
+        "max_step_s": 2.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": false,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": 4.937655094173937e-09,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic",
+        "dense_storage": "disk"
+      },
+      "diagnostics": {
+        "event_s": null,
+        "event_h": null,
+        "end_s": 1800.0,
+        "elapsed_s": 4.523146699999984,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 3.1086244689504383e-15,
+        "min_C": 1.5521535416093466,
+        "max_C": 2.5500000000000007,
+        "min_T_K": 301.15,
+        "max_T_K": 309.93556017325056,
+        "min_D": 4.937655094173937e-09,
+        "max_D": 4.937655094173937e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 1.7763568394002505e-15,
+        "final_max_C": 2.5499921292093806,
+        "final_surface_C": 1.5521535416093466,
+        "strictly_dry_at_end": false,
+        "radius_end_m": 0.02,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 3912,
+        "accepted_time_points": 1720,
+        "nfev": 3912,
+        "njev": 82,
+        "nlu": 435,
+        "solver_success": true,
+        "dense_storage": "disk",
+        "dense_coefficient_bytes": 113979712,
+        "dense_polynomial_count": 1719
+      },
+      "comparison_scope": "constant-property heat and frozen-D linear moisture",
+      "comparisons": {
+        "paper": {
+          "temperature": {
+            "max_abs_error": 1.7066701616386126e-06,
+            "rms_error": 4.411242825904463e-07,
+            "mean_signed_error": -1.0372924797203659e-07,
+            "max_error_time_s": 300.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -1.7066701616386126e-06,
+            "centre_max_abs_error": 2.5538304271321977e-07,
+            "surface_max_abs_error": 1.7066701616386126e-06,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+          },
+          "frozen_D_moisture": {
+            "max_abs_error": 1.693382915579633e-05,
+            "rms_error": 3.193932261524927e-06,
+            "mean_signed_error": 8.712273752399723e-07,
+            "max_error_time_s": 100.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": 1.693382915579633e-05,
+            "centre_max_abs_error": 5.585224727155946e-09,
+            "surface_max_abs_error": 1.693382915579633e-05,
+            "finite_values": true
+          }
+        },
+        "dense": {
+          "temperature": {
+            "max_abs_error": 1.980140552859666e-06,
+            "rms_error": 2.7781987161621784e-07,
+            "mean_signed_error": -1.1811314902705567e-07,
+            "max_error_time_s": 120.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": -1.980140552859666e-06,
+            "centre_max_abs_error": 2.9648953159266966e-07,
+            "surface_max_abs_error": 1.980140552859666e-06,
+            "finite_values": true
+          },
+          "analytic_truncation_sensitivity": {
+            "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+            "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+          },
+          "frozen_D_moisture": {
+            "max_abs_error": 7.158659870798445e-05,
+            "rms_error": 2.3460353726649565e-06,
+            "mean_signed_error": 4.765560399816704e-07,
+            "max_error_time_s": 10.0,
+            "max_error_radius_m": 0.02,
+            "error_at_max_location": 7.158659870798445e-05,
+            "centre_max_abs_error": 5.585224727155946e-09,
+            "surface_max_abs_error": 7.158659870798445e-05,
+            "finite_values": true
+          }
+        }
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N800_paper.csv",
+          "bytes": 5034,
+          "sha256": "d1fa6ab19f183ebf2a3ab50c69b6cc3ebfa4bdfb96ccc9e30802dfee85ee1109"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N800_dense.csv",
+          "bytes": 542010,
+          "sha256": "7c60375f0ad0bab75d7a0bfe8063c9b857d2a8a11e0d55c4dd46ee7c91c6ff1c"
+        },
+        {
+          "path": "paper_output/results/analytic_comparison/frozen_D_N800_early.csv",
+          "bytes": 2910,
+          "sha256": "65ee46fbab664a8ab42be7aff043aa88fc7fd939d5a2804de62c750455d623f2"
+        }
+      ],
+      "representation_diagnostic": {
+        "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+        "strict_cell_average_interpretation_is_not_primary": true,
+        "heat_node_max_abs_error_K": 1.7066701616386126e-06,
+        "heat_vs_annular_average_max_abs_error_K": 0.0020509878592065434,
+        "analytic_point_vs_annular_average_max_difference_K": 0.0020511716363103005,
+        "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+      },
+      "early_boundary_layer": {
+        "times_s": [
+          1.0,
+          2.0,
+          5.0,
+          10.0,
+          20.0,
+          30.0,
+          60.0
+        ],
+        "radii_m": [
+          0.0,
+          0.019,
+          0.02
+        ],
+        "moisture": {
+          "max_abs_error": 0.0002501421049081465,
+          "rms_error": 7.334575422697703e-05,
+          "mean_signed_error": 3.374036966160195e-05,
+          "max_error_time_s": 1.0,
+          "max_error_radius_m": 0.02,
+          "error_at_max_location": 0.0002501421049081465,
+          "centre_max_abs_error": 1.6063594898696465e-11,
+          "surface_max_abs_error": 0.0002501421049081465,
+          "finite_values": true
+        },
+        "surface_errors_kg_per_kg": [
+          0.0002501421049081465,
+          0.00017281302753691108,
+          0.00010529395038583189,
+          7.15873403165368e-05,
+          4.792028876687837e-05,
+          3.751278157215765e-05,
+          2.409716974360876e-05
+        ],
+        "analytic_240_480_max_difference": 4.515926721460062e-07
+      }
+    }
+  ],
+  "total_elapsed_s": 26.398474499999992,
+  "visual_studio_gui": "pending",
+  "human_review": "pending",
+  "execution_provenance": {
+    "run_command": "C:\\Runtime\\python.exe -B paper_output/code/modeling/compare_analytic.py",
+    "run_exit_code": 0,
+    "python_version": "3.14.7",
+    "source_files": [
+      {
+        "path": "paper_output/code/modeling/compare_analytic.py",
+        "bytes": 13913,
+        "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a"
+      },
+      {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 18634,
+        "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf"
+      },
+      {
+        "path": "paper_output/code/modeling/validate_bessel.py",
+        "bytes": 13821,
+        "sha256": "faff27578a3f3b85107be07d2993fd9575f56a7f92d2f8e0e4a236430d432a27"
+      }
+    ],
+    "input_artifacts": [
+      {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+        "exists": true
+      },
+      {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+        "exists": true
+      }
+    ],
+    "output_artifacts": [
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N100_dense.csv",
+        "bytes": 542018,
+        "sha256": "8979aac795f45a6f0217764a05daeee132836e3571c9e55c7f5d8dc9aaf21cec"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N100_early.csv",
+        "bytes": 2898,
+        "sha256": "b607d2571d08e05934e9d6e7bfb9b86716e5cc1bd07ef8e857587a4fbd5bcc28"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N100_paper.csv",
+        "bytes": 5024,
+        "sha256": "8a5fb24504f489eac28eafd7339e74d31319bbcc631a1f3bdd4ba4b51f929660"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N400_dense.csv",
+        "bytes": 541952,
+        "sha256": "b83494c82dea989dc6fb3269f22e8aba009c7c78e781dacbce9d0fc296439156"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N400_early.csv",
+        "bytes": 2906,
+        "sha256": "a561a21779170880c76839f5fbf4c5616656f9b89d11f5a28acb757335302070"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N400_paper.csv",
+        "bytes": 5030,
+        "sha256": "2f3182d1ab901275bde82b27c82c252fcb925d45628cb63090eb506c593417d5"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N800_dense.csv",
+        "bytes": 542010,
+        "sha256": "7c60375f0ad0bab75d7a0bfe8063c9b857d2a8a11e0d55c4dd46ee7c91c6ff1c"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N800_early.csv",
+        "bytes": 2910,
+        "sha256": "65ee46fbab664a8ab42be7aff043aa88fc7fd939d5a2804de62c750455d623f2"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/frozen_D_N800_paper.csv",
+        "bytes": 5034,
+        "sha256": "d1fa6ab19f183ebf2a3ab50c69b6cc3ebfa4bdfb96ccc9e30802dfee85ee1109"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N100_dense.csv",
+        "bytes": 388355,
+        "sha256": "8543ed806b1904a4d3fe5750d9877c91341ceb9719408ccd116c16d02c7062d1"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N100_paper.csv",
+        "bytes": 3618,
+        "sha256": "1b0a5b7aac0995afd96d5cb01274101b5e085d72dbba6c32ae3635e122d1acf0"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N200_dense.csv",
+        "bytes": 388376,
+        "sha256": "d366396a1276a09e17d78c0558f40d6f677d9f083fbe3d86e4f994f9a350ca7f"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N200_paper.csv",
+        "bytes": 3615,
+        "sha256": "83c96c9335d592fbc1b2fe586ec89f72e71706b61d8c24daa0607ff72dccaec8"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N400_dense.csv",
+        "bytes": 388315,
+        "sha256": "2ecc2861cbff6f6dd1de2c0de1c442294993c5230dc1c72f801b5124cfd5c8a0"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N400_paper.csv",
+        "bytes": 3621,
+        "sha256": "16caa65793772bdbd698d8939b5a510e6d7a65bc18fba1ae0ab3668370b70a02"
+      },
+      {
+        "path": "paper_output/results/analytic_comparison/analytic_error_history.png",
+        "bytes": 180522,
+        "sha256": "a31a6b91ab790ffd148317d502cb5af1c1a7c22152cc53c83ec98e7190729e61"
+      }
+    ]
+  }
+}

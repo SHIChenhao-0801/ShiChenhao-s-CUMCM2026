@@ -1,0 +1,18 @@
+{
+  "job": "isotherm_extract",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "isotherm_extract"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:37:40.985113+00:00",
+  "pid": 2760,
+  "returncode": 1,
+  "elapsedSeconds": 11.641064499999999,
+  "finishedAtUtc": "2026-09-13T01:37:52.626179+00:00"
+}

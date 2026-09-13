@@ -1,0 +1,18 @@
+{
+  "job": "energy_q1",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "energy_q1"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:37:08.130356+00:00",
+  "pid": 4356,
+  "returncode": 0,
+  "elapsedSeconds": 11.487817000000007,
+  "finishedAtUtc": "2026-09-13T01:37:19.618178+00:00"
+}

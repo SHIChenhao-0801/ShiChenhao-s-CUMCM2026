@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\verify_dense_storage.py", line 68, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\verify_dense_storage.py", line 16, in main
+    output.mkdir(parents=True, exist_ok=False)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Runtime\Lib\pathlib\__init__.py", line 1011, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Work\\05_path_adapted\\paper_output\\results\\dense_storage_verification_v6'

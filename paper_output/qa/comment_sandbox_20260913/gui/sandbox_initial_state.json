@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-13T01:12:32.699Z",
+  "window": {
+    "app": "process:C:\\Windows\\System32\\WindowsSandbox.exe",
+    "id": 14291686,
+    "title": "Windows 沙盒"
+  },
+  "accessibility": {
+    "tree": "Window: \"Windows 沙盒\", App: WindowsSandbox.exe.\n\t0 窗口 Windows 沙盒 Secondary Actions: Raise\n\t\t1 文本 正在下载和安装更新...\n\t\t2 进度栏 正在下载和安装更新...\n\t\t3 标题栏\n\t\t\t4 菜单栏 系统 ID: MenuBar\n\t\t\t\t5 菜单项 系统\n\t\t\t6 按钮 关闭"
+  },
+  "status": "UPDATING_NOT_YET_VM",
+  "actions": [
+    "launch preexisting WindowsSandbox.exe",
+    "read window state"
+  ],
+  "browserActions": false
+}

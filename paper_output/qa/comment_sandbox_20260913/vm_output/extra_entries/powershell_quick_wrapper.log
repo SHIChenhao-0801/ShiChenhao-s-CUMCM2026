@@ -1,0 +1,26 @@
+2026-09-13T01:50:58.329505+00:00 PREFLIGHT PASS profile=quick
+2026-09-13T01:50:58.331690+00:00 SOLVE Q1 N=40
+2026-09-13T01:51:00.544830+00:00 EXPORT_AND_FULL_READBACK Q1
+2026-09-13T01:51:06.416598+00:00 VERIFIED Q1 cells=79244
+2026-09-13T01:51:06.498690+00:00 RELEASED Q1
+2026-09-13T01:51:06.499958+00:00 SOLVE Q23 N=40
+2026-09-13T01:51:27.837878+00:00 EXPORT_AND_FULL_READBACK Q2
+2026-09-13T02:03:45.718859+00:00 VERIFIED Q2 cells=9105404
+2026-09-13T02:03:45.720147+00:00 EXPORT_AND_FULL_READBACK Q3
+2026-09-13T02:03:53.116260+00:00 VERIFIED Q3 cells=75922
+2026-09-13T02:03:53.216297+00:00 RELEASED Q23
+2026-09-13T02:03:53.217853+00:00 SOLVE Q4 N=40
+2026-09-13T02:04:24.271153+00:00 EXPORT_AND_FULL_READBACK Q4
+2026-09-13T02:04:30.718123+00:00 VERIFIED Q4 cells=76725
+2026-09-13T02:04:30.811604+00:00 RELEASED Q4
+2026-09-13T02:04:30.836078+00:00 ALL_REQUESTED_CHECKS_COMPLETED
+The Win32 internal error "No process is on the other end of the pipe" 0xE9 occu
+rred while setting the console window title. Contact Microsoft Customer Support
+ Services.
+At C:\Work\extra_entries\03_wrapper\runLogged.ps1:22 char:1
++ & $Python -X utf8 -B $entryPath --profile $Profile --run-id $RunId
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ParentContainsErrorR
+ecordException
+    + FullyQualifiedErrorId : SetConsoleWindowTitle
+ 

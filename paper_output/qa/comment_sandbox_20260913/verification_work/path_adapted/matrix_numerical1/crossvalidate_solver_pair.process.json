@@ -1,0 +1,18 @@
+{
+  "job": "crossvalidate_solver_pair",
+  "argv": [
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+    "--job",
+    "crossvalidate_solver_pair"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+  "startedAtUtc": "2026-09-13T01:28:57.561182+00:00",
+  "pid": 61936,
+  "returncode": 0,
+  "elapsedSeconds": 2.8404799999989336,
+  "finishedAtUtc": "2026-09-13T01:29:00.401673+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "job": "threshold_full_small",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "threshold_full_small"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:38:02.837338+00:00",
+  "pid": 2072,
+  "returncode": 0,
+  "elapsedSeconds": 53.880151499999954,
+  "finishedAtUtc": "2026-09-13T01:38:56.717492+00:00"
+}

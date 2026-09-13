@@ -1,0 +1,23 @@
+{
+  "job": "production_missing_inputs",
+  "argv": [
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\clean_venv\\Scripts\\python.exe",
+    "-B",
+    "paper_output/code/modeling/run_modeling.py",
+    "--version",
+    "sandbox_missing_inputs",
+    "--n1",
+    "20",
+    "--n23",
+    "20",
+    "--n4",
+    "20",
+    "--review"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\path_adapted",
+  "startedAtUtc": "2026-09-13T01:27:22.302834+00:00",
+  "pid": 51780,
+  "returncode": 1,
+  "elapsedSeconds": 0.2713664000038989,
+  "finishedAtUtc": "2026-09-13T01:27:22.574204+00:00"
+}

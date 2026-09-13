@@ -1,0 +1,19 @@
+本轮 Computer Use 实际核查说明（2026-09-13）
+
+1. Windows Sandbox
+已启动预先安装的 WindowsSandbox.exe。启动器自动显示“正在下载和安装更新”，随后进入真实 Windows Sandbox 独立桌面；没有点击安装或更改全局系统配置。
+最初无任务数据的空沙盒已关闭。随后用 offline_code_check.wsb 启动配置沙盒，当前保留该 VM；正式数值工作由根代理的 LogonCommand / wsb.exe exec 执行，未在沙盒终端输入命令。
+配置沙盒窗口编号为 67180640，应用为 MicrosoftWindows.WindowsSandbox_cw5n1h2txyewy!App。实际运行状态和退出码以 vm_output 内的运行证据为准，桌面可见不等于数值任务通过。
+
+2. Visual Studio
+通过 GUI 打开原支撑材料方案，然后切换到 paper_output/qa/comment_sandbox_20260913/candidate/03_程序代码/A_CodeReview.sln。
+初次打开显示“不兼容”，使用项目右键“重新加载项目”后正常加载九个 Python 源文件。
+打开无注释 dryingCore.py，设置并实际命中第 19 行断点，单步执行到第 22 行。局部变量实际显示 C0=2.55、T0=301.15、R0=0.02、LENGTH=0.25；ROOT 指向候选目录，LOADED_CODE_SHA256 为 8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379，与磁盘一致。
+随后主动停止调试，没有让本次 GUI 会话运行完整 quick 或 final 求解。不能将断点及变量核查扩大为本次 GUI 全量运行通过，用户人工审查仍待完成。
+VS 自动生成 .vs、UpgradeLog.htm，且自动升级了工程元数据；没有编辑九个 Python 源文件。根代理已获知这些临时变化。
+
+3. 用户放入沙盒的 ZIP
+经用户后续指示，通过 Explorer 将 C:/Users/WDAGUtilityAccount/Desktop/支撑材料临时.zip 复制到 C:/Evidence/user_provided/支撑材料临时.zip，未删除原件。
+宿主回读对应 vm_output/user_provided/支撑材料临时.zip，长度 20542720 字节，SHA256 为 e65deebaaeb87ec542b0972d8fa655796612413e94a1cb256f99e48f40638159，与用户宿主 ZIP 相同。
+
+本说明对应同目录 JSON 文字证据及会话中实际显示的 Computer Use 截图。未声称微信通知、浏览器数据库操作、全量 GUI 求解或用户签核已经完成。

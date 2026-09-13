@@ -1,0 +1,18 @@
+{
+  "job": "isotherm_identity_rhs",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "isotherm_identity_rhs"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:38:56.719021+00:00",
+  "pid": 4560,
+  "returncode": 0,
+  "elapsedSeconds": 10.423278900000014,
+  "finishedAtUtc": "2026-09-13T01:39:07.142304+00:00"
+}

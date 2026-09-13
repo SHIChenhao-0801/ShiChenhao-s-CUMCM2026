@@ -1,0 +1,21 @@
+{
+  "job": "convergence",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "paper_output/code/modeling/verify_convergence.py",
+    "--question",
+    "Q1",
+    "--grids",
+    "20",
+    "40",
+    "--tag",
+    "sandbox"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:35:45.715674+00:00",
+  "pid": 6492,
+  "returncode": 1,
+  "elapsedSeconds": 8.46120830000001,
+  "finishedAtUtc": "2026-09-13T01:35:54.176885+00:00"
+}

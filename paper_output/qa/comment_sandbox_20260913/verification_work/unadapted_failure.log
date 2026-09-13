@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\verification_work\unadapted\paper_output\code\verification\threshold_and_scaling_checks.py", line 27, in <module>
+    os.chdir(ROOT)
+    ~~~~~~~~^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\verification_work\clean_venv\Lib\site-packages\sitecustomize.py", line 43, in _audit
+    _check(args[0] if args else None, False, event)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\comment_sandbox_20260913\verification_work\clean_venv\Lib\site-packages\sitecustomize.py", line 33, in _check
+    raise PermissionError('Independent verification sandbox denied ' + str(path))
+PermissionError: Independent verification sandbox denied D:\Document\数学建模\2026CUMCM

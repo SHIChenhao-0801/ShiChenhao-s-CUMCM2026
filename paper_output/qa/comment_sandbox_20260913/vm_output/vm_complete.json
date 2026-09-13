@@ -1,0 +1,56 @@
+{
+  "finishedAtUtc": "2026-09-13T02:05:38.446832+00:00",
+  "core": {
+    "name": "core_final",
+    "command": [
+      "C:\\Runtime\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "C:\\Control\\entry_runner.py",
+      "C:\\Work\\03\\runDelivery.py",
+      "--profile",
+      "final",
+      "--run-id",
+      "vm_final"
+    ],
+    "cwd": "C:\\Work",
+    "startUtc": "2026-09-13T01:35:23.785646+00:00",
+    "status": "EXIT_ZERO",
+    "pid": 4420,
+    "returncode": 0,
+    "elapsedSeconds": 1812.6291425,
+    "endUtc": "2026-09-13T02:05:36.414794+00:00",
+    "sourceAndInputHashesUnchanged": true,
+    "programStatus": "PASS",
+    "accepted": true
+  },
+  "verificationProcess": {
+    "name": "verification_matrix",
+    "command": [
+      "C:\\Runtime\\python.exe",
+      "-I",
+      "-X",
+      "utf8",
+      "-B",
+      "C:/Verification/execute_matrix.py",
+      "--python",
+      "C:\\Runtime\\python.exe",
+      "--root",
+      "C:\\Work\\05_path_adapted",
+      "--workers",
+      "2",
+      "--label",
+      "windows_vm"
+    ],
+    "cwd": "C:\\Work",
+    "startUtc": "2026-09-13T01:34:59.617490+00:00",
+    "status": "EXIT_ZERO",
+    "pid": 7640,
+    "returncode": 0,
+    "elapsedSeconds": 276.1184046,
+    "endUtc": "2026-09-13T01:39:35.735902+00:00"
+  },
+  "note": "Matrix exit zero means the test queue finished; inspect each job and its numerical result."
+}

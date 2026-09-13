@@ -1,0 +1,11 @@
+﻿支撑材料整理与源码去注释核验说明
+
+当前说明使用TXT；程序与IDE在运行后可能生成额外过程文件，实际交付清单应在最终发布后重新生成。
+本轮共处理44份源码（41份Python、1份MATLAB、1份Node.js、1份PowerShell）及requirements清单，删除274处词法注释和106处Python说明性docstring。
+41份Python非注释AST与去注释前相同，全部编译通过；Node.js用Babel核对非注释AST，PowerShell用原生解析器核对token流。MATLAB只删除已辨认的整行说明和3个编辑器提示，字符串、格式符、转置及计算表达式保留。
+reference/reference_data.py删除说明性docstring后，input_manifest.csv只同步它的字节数和SHA。12项输入/模板/参照经实际回读检查。
+原始PDF、Excel、CSV、NPZ及四份冻结结果不因源码去注释改变。MATLAB源码的字节已改变，不能再包含在“原字节不变”的旧42文件计数中。
+03和05的当前源码SHA见各目录TXT。05的33份源码与原来源之间是可追溯的去注释关系，不再逐字节相同。
+实际运行可否通过须同时检查进程退出码与程序内部数值报告。HOST受限venv、Windows Sandbox虚拟机、MATLAB/Visual Studio GUI及用户人工审查分别记录，不能互相替代。
+当前目录中的05历史源码有路径依赖、旧接口错误或未通过的诊断。数值方法和模型参数未因这些运行问题而被本轮去注释发布擅自改变。
+本说明不填入尚未结束的虚拟机成功声明；最终实际运行范围与结果由对应记录补充。

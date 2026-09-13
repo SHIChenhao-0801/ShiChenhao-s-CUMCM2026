@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "intervals": 2
+  },
+  "diagnostics": {
+    "max_mass_balance_abs_kg_per_kg": 0.0
+  },
+  "solver_warning_count": 0,
+  "source_run_id": "fixture_sequence",
+  "source_trajectory_id": "fixture_sequence:Q1",
+  "reproduction_samples": {
+    "times_s": [
+      0.0,
+      1800.0
+    ],
+    "material_x": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "T_K": [
+      [
+        310.0,
+        310.0,
+        310.0,
+        310.0,
+        310.0
+      ],
+      [
+        310.0,
+        310.0,
+        310.0,
+        310.0,
+        310.0
+      ]
+    ],
+    "C": [
+      [
+        0.1499,
+        0.1499,
+        0.1499,
+        0.1499,
+        0.1499
+      ],
+      [
+        0.1499,
+        0.1499,
+        0.1499,
+        0.1499,
+        0.1499
+      ]
+    ]
+  },
+  "metric_samples": {
+    "Q1": {
+      "time_s": 1800.0,
+      "material_x": [
+        0.0,
+        1.0
+      ],
+      "T_K": [
+        [
+          310.0,
+          310.0
+        ]
+      ],
+      "C": [
+        [
+          0.1499,
+          0.1499
+        ]
+      ],
+      "source": "live_Run_dense_solution"
+    }
+  }
+}

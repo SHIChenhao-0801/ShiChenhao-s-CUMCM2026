@@ -1,0 +1,18 @@
+{
+  "job": "q_wrappers",
+  "argv": [
+    "C:\\Runtime\\python.exe",
+    "-B",
+    "verification_jobs.py",
+    "--root",
+    "C:\\Work\\05_path_adapted",
+    "--job",
+    "q_wrappers"
+  ],
+  "cwd": "C:\\Work\\05_path_adapted",
+  "startedAtUtc": "2026-09-13T01:38:40.357225+00:00",
+  "pid": 6752,
+  "returncode": 0,
+  "elapsedSeconds": 55.33699920000004,
+  "finishedAtUtc": "2026-09-13T01:39:35.694229+00:00"
+}

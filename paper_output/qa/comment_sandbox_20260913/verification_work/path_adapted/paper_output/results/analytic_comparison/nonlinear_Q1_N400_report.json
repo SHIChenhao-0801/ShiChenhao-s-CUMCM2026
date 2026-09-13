@@ -1,0 +1,115 @@
+{
+  "case_id": "nonlinear_Q1_N400",
+  "settings": {
+    "question": "Q1",
+    "intervals": 400,
+    "rtol": 1e-10,
+    "atol_temperature": 1e-10,
+    "atol_moisture": 1e-11,
+    "max_step_s": 2.0,
+    "early_max_step_s": 2.0,
+    "horizon_h": 240.0,
+    "shrink": false,
+    "boundary_extension": "nominal",
+    "tail_temperature_C": 50.0,
+    "tail_equilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibrium_scale": 1.0,
+    "surface_latent_fraction": 0.0,
+    "latent_J_kg": 2400000.0,
+    "constant_D": null,
+    "constant_thermal": false,
+    "method": "BDF",
+    "face_scheme": "kirchhoff",
+    "jacobian_mode": "analytic",
+    "dense_storage": "disk"
+  },
+  "diagnostics": {
+    "event_s": null,
+    "event_h": null,
+    "end_s": 1800.0,
+    "elapsed_s": 2.4084370999917155,
+    "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+    "max_mass_balance_abs_kg_per_kg": 2.220446049250313e-15,
+    "min_C": 1.5102398568301274,
+    "max_C": 2.5500000000000007,
+    "min_T_K": 301.15,
+    "max_T_K": 309.93555968035093,
+    "min_D": 3.882967903814321e-09,
+    "max_D": 4.937655094173938e-09,
+    "positive_properties": true,
+    "max_radial_C_increase": 1.3322676295501878e-15,
+    "final_max_C": 2.5499923834239486,
+    "final_surface_C": 1.5102398568301272,
+    "strictly_dry_at_end": false,
+    "radius_end_m": 0.02,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 3899,
+    "accepted_time_points": 1710,
+    "nfev": 3899,
+    "njev": 79,
+    "nlu": 434,
+    "solver_success": true,
+    "dense_storage": "disk",
+    "dense_coefficient_bytes": 56775312,
+    "dense_polynomial_count": 1709
+  },
+  "comparison_scope": "temperature only; nonlinear C has no Bessel reference",
+  "comparisons": {
+    "paper": {
+      "temperature": {
+        "max_abs_error": 5.856920779478969e-06,
+        "rms_error": 1.4742180019720834e-06,
+        "mean_signed_error": -5.619024185372317e-07,
+        "max_error_time_s": 300.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": -5.856920779478969e-06,
+        "centre_max_abs_error": 9.933442584042496e-07,
+        "surface_max_abs_error": 5.856920779478969e-06,
+        "finite_values": true
+      },
+      "analytic_truncation_sensitivity": {
+        "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+        "frozen_water_240_480_max_difference_kg_per_kg": 1.2360148460288656e-09
+      }
+    },
+    "dense": {
+      "temperature": {
+        "max_abs_error": 5.856920779478969e-06,
+        "rms_error": 1.0797463719292152e-06,
+        "mean_signed_error": -4.660181356206308e-07,
+        "max_error_time_s": 300.0,
+        "max_error_radius_m": 0.02,
+        "error_at_max_location": -5.856920779478969e-06,
+        "centre_max_abs_error": 1.1859635833388893e-06,
+        "surface_max_abs_error": 5.856920779478969e-06,
+        "finite_values": true
+      },
+      "analytic_truncation_sensitivity": {
+        "heat_240_480_max_difference_K": 1.8995478967553936e-08,
+        "frozen_water_240_480_max_difference_kg_per_kg": 1.29306143570318e-09
+      }
+    }
+  },
+  "output_artifacts": [
+    {
+      "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N400_paper.csv",
+      "bytes": 3621,
+      "sha256": "16caa65793772bdbd698d8939b5a510e6d7a65bc18fba1ae0ab3668370b70a02"
+    },
+    {
+      "path": "paper_output/results/analytic_comparison/nonlinear_Q1_N400_dense.csv",
+      "bytes": 388315,
+      "sha256": "2ecc2861cbff6f6dd1de2c0de1c442294993c5230dc1c72f801b5124cfd5c8a0"
+    }
+  ],
+  "representation_diagnostic": {
+    "primary_interpretation": "collocated nodal values with surrounding dual control-volume balances",
+    "strict_cell_average_interpretation_is_not_primary": true,
+    "heat_node_max_abs_error_K": 5.856920779478969e-06,
+    "heat_vs_annular_average_max_abs_error_K": 0.004100329000266356,
+    "analytic_point_vs_annular_average_max_difference_K": 0.004101005677000558,
+    "note": "Endpoint dual cells are one-sided, so point-vs-average differences can be first order; they are not physical model error."
+  }
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\verify_convergence.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "C:\Work\05_path_adapted\paper_output\code\modeling\verify_convergence.py", line 64, in main
+    raise FileExistsError(out)
+FileExistsError: C:\Work\05_path_adapted\paper_output\results\convergence\sandbox

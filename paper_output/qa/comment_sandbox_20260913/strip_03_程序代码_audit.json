@@ -1,0 +1,967 @@
+{
+  "scope": "03_程序代码",
+  "records": [
+    {
+      "path": "03_程序代码/.vs/A_CodeReview/FileContentIndex/70e74aa4-17f9-4ce1-bf85-e2fda95bbde1.vsidx",
+      "before_bytes": 8052,
+      "after_bytes": 8052,
+      "before_sha256": "e115083ac2b41b59614d8182a02d67a3053aabab362c8a6c7657fec835fdddf0",
+      "after_sha256": "e115083ac2b41b59614d8182a02d67a3053aabab362c8a6c7657fec835fdddf0",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/.vs/A_CodeReview/v18/.suo",
+      "before_bytes": 16896,
+      "after_bytes": 16896,
+      "before_sha256": "cb0e161ea0d4426a30ead35aca67219b7e06e1a3acf6f1dc2c4055adb23418db",
+      "after_sha256": "cb0e161ea0d4426a30ead35aca67219b7e06e1a3acf6f1dc2c4055adb23418db",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/.vs/A_CodeReview/v18/DocumentLayout.json",
+      "before_bytes": 315,
+      "after_bytes": 315,
+      "before_sha256": "e87219276a510fcf6929ebaa48a633d82dcf03b162ce890d22cb4d3a93fefe70",
+      "after_sha256": "e87219276a510fcf6929ebaa48a633d82dcf03b162ce890d22cb4d3a93fefe70",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/A_CodeReview.pyproj",
+      "before_bytes": 1507,
+      "after_bytes": 1507,
+      "before_sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb",
+      "after_sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/A_CodeReview.sln",
+      "before_bytes": 838,
+      "after_bytes": 838,
+      "before_sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f",
+      "after_sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/analyticJacobian.py",
+      "before_bytes": 17822,
+      "after_bytes": 15650,
+      "before_sha256": "dc5cfb4b19e8ec30e8882a37a6699fde6e1aaf9fa67be5356597fbb603666c7f",
+      "after_sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 9,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 32,
+          "characters": 31
+        },
+        {
+          "line": 44,
+          "characters": 49
+        },
+        {
+          "line": 94,
+          "characters": 71
+        },
+        {
+          "line": 97,
+          "characters": 39
+        },
+        {
+          "line": 127,
+          "characters": 37
+        },
+        {
+          "line": 169,
+          "characters": 41
+        },
+        {
+          "line": 176,
+          "characters": 43
+        },
+        {
+          "line": 185,
+          "characters": 37
+        }
+      ],
+      "docstring_count": 4,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 10,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 34,
+          "end_line": 34,
+          "owner": "harmonicPartials",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 46,
+          "end_line": 52,
+          "owner": "jacobian",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 187,
+          "end_line": 187,
+          "owner": "selfTest",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "2798c82fe5f6341c63190e006ae51b20b24d3df4fa1e0d687789ad0e261c086d",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/diskDense.py",
+      "before_bytes": 5685,
+      "after_bytes": 4005,
+      "before_sha256": "f602ca2d6bf52a0a5daea8dbe48be95170b31af3790b597c10989572ae1e06c4",
+      "after_sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 10,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 20,
+          "characters": 43
+        },
+        {
+          "line": 62,
+          "characters": 35
+        },
+        {
+          "line": 66,
+          "characters": 69
+        },
+        {
+          "line": 72,
+          "characters": 39
+        },
+        {
+          "line": 80,
+          "characters": 64
+        },
+        {
+          "line": 100,
+          "characters": 43
+        },
+        {
+          "line": 102,
+          "characters": 70
+        },
+        {
+          "line": 109,
+          "characters": 47
+        },
+        {
+          "line": 119,
+          "characters": 43
+        }
+      ],
+      "docstring_count": 2,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 7,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 121,
+          "end_line": 126,
+          "owner": "alignBdfSegments",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "ad97ecb3c1895567fa4df5243d73b46dd3cbde92280fa957a4410334fbfbbd50",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/docs/源码变更说明.txt",
+      "before_bytes": 2848,
+      "after_bytes": 2848,
+      "before_sha256": "c948c301524fb5e7408b6a1d16993d5cc2b29b8cd48a898d833005cc25ec539c",
+      "after_sha256": "c948c301524fb5e7408b6a1d16993d5cc2b29b8cd48a898d833005cc25ec539c",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/docs/运行验收说明.txt",
+      "before_bytes": 2280,
+      "after_bytes": 2280,
+      "before_sha256": "c40008f6e31de21f571101f158ec2f318d1c356e9ab9749d3b61405299a8d0cc",
+      "after_sha256": "c40008f6e31de21f571101f158ec2f318d1c356e9ab9749d3b61405299a8d0cc",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/dryingCore.py",
+      "before_bytes": 21926,
+      "after_bytes": 18416,
+      "before_sha256": "81afe621bd2a3a8b9f1d77f7999ae31806a344536e213e7718aa54348b729838",
+      "after_sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 26,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 32,
+          "characters": 45
+        },
+        {
+          "line": 46,
+          "characters": 46
+        },
+        {
+          "line": 79,
+          "characters": 37
+        },
+        {
+          "line": 96,
+          "characters": 32
+        },
+        {
+          "line": 113,
+          "characters": 36
+        },
+        {
+          "line": 116,
+          "characters": 36
+        },
+        {
+          "line": 117,
+          "characters": 48
+        },
+        {
+          "line": 152,
+          "characters": 40
+        },
+        {
+          "line": 161,
+          "characters": 46
+        },
+        {
+          "line": 166,
+          "characters": 35
+        },
+        {
+          "line": 168,
+          "characters": 80
+        },
+        {
+          "line": 171,
+          "characters": 48
+        },
+        {
+          "line": 183,
+          "characters": 29
+        },
+        {
+          "line": 187,
+          "characters": 65
+        },
+        {
+          "line": 193,
+          "characters": 39
+        },
+        {
+          "line": 233,
+          "characters": 46
+        },
+        {
+          "line": 254,
+          "characters": 38
+        },
+        {
+          "line": 256,
+          "characters": 70
+        },
+        {
+          "line": 257,
+          "characters": 71
+        },
+        {
+          "line": 258,
+          "characters": 52
+        },
+        {
+          "line": 327,
+          "characters": 42
+        },
+        {
+          "line": 335,
+          "characters": 67
+        },
+        {
+          "line": 354,
+          "characters": 75
+        },
+        {
+          "line": 355,
+          "characters": 42
+        },
+        {
+          "line": 383,
+          "characters": 61
+        }
+      ],
+      "docstring_count": 3,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 10,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 173,
+          "end_line": 173,
+          "owner": "rhs",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 213,
+          "end_line": 213,
+          "owner": "close",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "1a92a2f65557d38dd43cca2b17f5d479c3bcdad157d291599d026be16958d077",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/exportOutputs.py",
+      "before_bytes": 42743,
+      "after_bytes": 38811,
+      "before_sha256": "5eacfc1cdffa413c1565813c25bd8a9f721e0363ce0ac43e6113b4325409b047",
+      "after_sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 16,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 47,
+          "characters": 59
+        },
+        {
+          "line": 135,
+          "characters": 43
+        },
+        {
+          "line": 146,
+          "characters": 71
+        },
+        {
+          "line": 192,
+          "characters": 39
+        },
+        {
+          "line": 210,
+          "characters": 70
+        },
+        {
+          "line": 211,
+          "characters": 71
+        },
+        {
+          "line": 235,
+          "characters": 32
+        },
+        {
+          "line": 305,
+          "characters": 71
+        },
+        {
+          "line": 306,
+          "characters": 69
+        },
+        {
+          "line": 360,
+          "characters": 59
+        },
+        {
+          "line": 361,
+          "characters": 56
+        },
+        {
+          "line": 409,
+          "characters": 49
+        },
+        {
+          "line": 538,
+          "characters": 42
+        },
+        {
+          "line": 738,
+          "characters": 74
+        },
+        {
+          "line": 739,
+          "characters": 75
+        }
+      ],
+      "docstring_count": 5,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 16,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 283,
+          "end_line": 289,
+          "owner": "validatePaperTables",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 411,
+          "end_line": 415,
+          "owner": "exportQuestion",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 540,
+          "end_line": 546,
+          "owner": "validateExports",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 660,
+          "end_line": 660,
+          "owner": "paperCsvSelfcheck",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "594306c6606e26927614fd638966a1dcae6aff1c80e2cc3a7cff42065a24096f",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        726
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "03_程序代码/input_manifest.csv",
+      "before_bytes": 1273,
+      "after_bytes": 1270,
+      "before_sha256": "c535e21e819dcaeece9e7a63d0a946ffa55b02e7045eb20d0abeed6da89eca9c",
+      "after_sha256": "573ad682c71920296cfde1cd2a297b59b30e6076b99075c34e239d38cdaa935e",
+      "changed": true,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "REFERENCE_SOURCE_HASH_UPDATED",
+      "reference_hash_changes": [
+        {
+          "path": "reference/reference_data.py",
+          "old": {
+            "path": "reference/reference_data.py",
+            "bytes": "16389",
+            "sha256": "9586eb2f168adc86cba2e5e451f513825d2a5bcbecc7453e0b34c73fd3cc80c6"
+          },
+          "new": {
+            "path": "reference/reference_data.py",
+            "bytes": "16093",
+            "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e"
+          }
+        }
+      ]
+    },
+    {
+      "path": "03_程序代码/inputs/cleaned/A_environment_observed.csv",
+      "before_bytes": 10125,
+      "after_bytes": 10125,
+      "before_sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "after_sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/cleaned/A_radius_observed.csv",
+      "before_bytes": 3522,
+      "after_bytes": 3522,
+      "before_sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "after_sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/original/附件1.xlsx",
+      "before_bytes": 16586,
+      "after_bytes": 16586,
+      "before_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "after_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/original/附件2.xlsx",
+      "before_bytes": 11485,
+      "after_bytes": 11485,
+      "before_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "after_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result1.xlsx",
+      "before_bytes": 10073,
+      "after_bytes": 10073,
+      "before_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "after_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result2.xlsx",
+      "before_bytes": 10073,
+      "after_bytes": 10073,
+      "before_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "after_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result3.xlsx",
+      "before_bytes": 9345,
+      "after_bytes": 9345,
+      "before_sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "after_sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result4.xlsx",
+      "before_bytes": 9351,
+      "after_bytes": 9351,
+      "before_sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "after_sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/numerical_design.txt",
+      "before_bytes": 3057,
+      "after_bytes": 3057,
+      "before_sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442",
+      "after_sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/q1Model.py",
+      "before_bytes": 537,
+      "after_bytes": 267,
+      "before_sha256": "86914d8e55c6bec3e17718d171a2d5568b13eb5f264d19a05bdeaad6e7e46394",
+      "after_sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 6,
+          "characters": 40
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 2,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "feae9247f44d71c7be1dd648683d74470c01fc2d351a058aee45bdcb48bcef46",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/q2Model.py",
+      "before_bytes": 555,
+      "after_bytes": 268,
+      "before_sha256": "d4cb9716db99e9aaac0040caaeda0313d610be33413d1df6fc2418b101b48588",
+      "after_sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 6,
+          "characters": 46
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 2,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "75536b2425184c16f4fb9130fc2c320798704663f432f0a70842301b41eb99ba",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/q3Model.py",
+      "before_bytes": 1620,
+      "after_bytes": 1065,
+      "before_sha256": "02b9b97278ce1132eb23cf5789655fb6ffd44e035d32dba9a28e43c89deeb457",
+      "after_sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 5,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 7,
+          "characters": 56
+        },
+        {
+          "line": 11,
+          "characters": 70
+        },
+        {
+          "line": 12,
+          "characters": 65
+        },
+        {
+          "line": 14,
+          "characters": 35
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 2,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "6127c6688bd363ac64521656a8c337c3e48ca817ca5ebf36f4f678369bf32340",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/q4Model.py",
+      "before_bytes": 589,
+      "after_bytes": 280,
+      "before_sha256": "b518592729009bd259a1f6342f73f112e99acf22bca8cfaf52dc458b9e64ad8f",
+      "after_sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 1,
+          "characters": 46
+        },
+        {
+          "line": 6,
+          "characters": 45
+        }
+      ],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 2,
+          "end_line": 2,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "4ee76e6fade30d55b9a0044aa9390d3fd9518cdfcc3a0212ef5787cad0af317c",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/README.txt",
+      "before_bytes": 5651,
+      "after_bytes": 5651,
+      "before_sha256": "36989a4c7d98e14c3abc4384f73ca9ad620e6ea7c7a3272568cad6ef94acf1e1",
+      "after_sha256": "36989a4c7d98e14c3abc4384f73ca9ad620e6ea7c7a3272568cad6ef94acf1e1",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/reference/Q1/sampled_solution.npz",
+      "before_bytes": 10569,
+      "after_bytes": 10569,
+      "before_sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62",
+      "after_sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/reference/Q23/sampled_solution.npz",
+      "before_bytes": 689540,
+      "after_bytes": 689540,
+      "before_sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "after_sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/reference/Q4/sampled_solution.npz",
+      "before_bytes": 628742,
+      "after_bytes": 628742,
+      "before_sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "after_sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    },
+    {
+      "path": "03_程序代码/reference/reference_data.py",
+      "before_bytes": 16389,
+      "after_bytes": 16093,
+      "before_sha256": "9586eb2f168adc86cba2e5e451f513825d2a5bcbecc7453e0b34c73fd3cc80c6",
+      "after_sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 0,
+      "comments": [],
+      "docstring_count": 1,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "764efac6f224d548fad525ec83457b177e542f241a42f2d6cce1b5e864c22678",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [],
+      "doc_runtime_effect": null
+    },
+    {
+      "path": "03_程序代码/requirements.txt",
+      "before_bytes": 123,
+      "after_bytes": 43,
+      "before_sha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055",
+      "after_sha256": "73951400cc1ca44a28341231ef3dd2e101203485a15c39388b8f5614cdeb5bc9",
+      "changed": true,
+      "language": "pip requirements",
+      "comment_count": 1,
+      "docstring_count": 0,
+      "comments": [
+        1
+      ],
+      "dependency_lines_identical": true,
+      "remaining_comment_count": 0
+    },
+    {
+      "path": "03_程序代码/runDelivery.py",
+      "before_bytes": 11863,
+      "after_bytes": 11192,
+      "before_sha256": "b167a46bb2bf422867d3de739e4607bcaf4538e0420e652589b5f4aeda76501a",
+      "after_sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "changed": true,
+      "language": "Python",
+      "comment_count": 2,
+      "comments": [
+        {
+          "line": 96,
+          "characters": 71
+        },
+        {
+          "line": 97,
+          "characters": 65
+        }
+      ],
+      "docstring_count": 3,
+      "docstrings": [
+        {
+          "line": 1,
+          "end_line": 1,
+          "owner": "<module>",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 64,
+          "end_line": 64,
+          "owner": "preflight",
+          "empty_suite_pass": false
+        },
+        {
+          "line": 89,
+          "end_line": 89,
+          "owner": "compareReference",
+          "empty_suite_pass": false
+        }
+      ],
+      "ast_equal_without_docstrings": true,
+      "normalized_ast_sha256": "3f0163afdcef5cf49b91a994cf07725d3d8b29d9add6621dd03859b29e937e90",
+      "compile": "PASS",
+      "remaining_comment_count": 0,
+      "remaining_docstring_count": 0,
+      "doc_runtime_reference_lines": [
+        194
+      ],
+      "doc_runtime_effect": "argparse description becomes None; CLI options and numerical execution unchanged"
+    },
+    {
+      "path": "03_程序代码/runLogged.ps1",
+      "before_bytes": 1674,
+      "after_bytes": 1674,
+      "before_sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "after_sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "changed": false,
+      "language": ".ps1",
+      "status": "PENDING_NATIVE_PARSER"
+    },
+    {
+      "path": "03_程序代码/UpgradeLog.htm",
+      "before_bytes": 15843,
+      "after_bytes": 15843,
+      "before_sha256": "06e752441bffa99c3993f8e8d4762d593e28659cb60195d1fa45da184cfdbdcb",
+      "after_sha256": "06e752441bffa99c3993f8e8d4762d593e28659cb60195d1fa45da184cfdbdcb",
+      "changed": false,
+      "language": null,
+      "comment_count": 0,
+      "docstring_count": 0,
+      "status": "UNCHANGED_NON_SOURCE"
+    }
+  ],
+  "original_source_modified": false,
+  "all_files_read": true,
+  "algorithm_changes": false,
+  "runtime_testing": "PENDING_ROOT_SANDBOX",
+  "comments_total": 75,
+  "docstrings_total": 22
+}
