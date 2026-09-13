@@ -1817,5 +1817,10 @@
     }
   ],
   "remaining_minor_typography": "Some Chinese inline equation references and punctuation wrap between lines; the full symbols remain readable and no display formula is clipped. Independent A review classifies this as low priority.",
-  "scope": "Standalone appendix editing and evidence audit; no new production model solve, no substituted human code review, AI details remain user-authored."
+  "scope": "Standalone appendix editing and evidence audit; no new production model solve, no substituted human code review, AI details remain user-authored.",
+  "independent_field_and_toc_audit": {
+    "path": "paper_output\\qa\\appendix_full_20260913\\independent_final_fields_and_pages.json",
+    "sha256": "92eb6cd113c0596a74261562b5bf71605d684268ca7735fc9361cb0fd5977a66",
+    "status": "PASS"
+  }
 }
