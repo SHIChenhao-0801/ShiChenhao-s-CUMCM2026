@@ -1,0 +1,24 @@
+{
+  "status": "PASS_REQUESTED_APPENDIX_REVISION",
+  "source_sha256": "92c2e57cded60f47b1d5be72873fbdeda7a090a19a9a5f222e7cfc99c36fb3cb",
+  "output_sha256": "00e6da88d1aff6eae75dce0c02ff07cadd6d7be03e170067be9165f56980ebb2",
+  "page_count": 183,
+  "protected_pages_1_43_pixel_identical": true,
+  "all_pages_visually_reviewed": true,
+  "source_count": 36,
+  "source_lines": 7715,
+  "all_44_candidate_source_files_unchanged": true,
+  "all_36_embedded_sources_exact": true,
+  "appendix_tables_three_line_with_matching_body_captions": true,
+  "ai_report_page": 183,
+  "visual_reports": [
+    "visual_baseline_1_22.json",
+    "visual_baseline_23_43.json",
+    "visual_v2_114_148.json",
+    "visual_v2_149_183.json",
+    "visual_v2_44_78.json",
+    "visual_v2_79_113.json"
+  ],
+  "independent_audit": "independent_final_audit.json",
+  "scope_limit": "Original body and derivation preserved, including pre-existing layout/reference issues. No model rerun, GUI verification, human signoff, contest submission, or messaging asserted."
+}

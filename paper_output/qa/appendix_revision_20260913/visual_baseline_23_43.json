@@ -1,0 +1,245 @@
+{
+  "reviewer": "document_audit",
+  "source_docx": "paper_output/qa/appendix_revision_20260913/preserved_prefix.docx",
+  "visual_review_method": "Each PNG opened through view_image in ordered batches, 23 through 43 inclusive",
+  "inspected_pages": 21,
+  "result": "PASS_READABLE_PRESERVED_PAGES",
+  "pages": [
+    {
+      "page": 23,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-23.png",
+      "sha256": "9f33979652d23986481bf346142639e09ed603e8bc9113b5a971bf0e7e0dea3a",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Original body AI statement; unchanged and outside appendix edits."
+    },
+    {
+      "page": 24,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-24.png",
+      "sha256": "6ccb7bd94a55f92238aad99d706b36485e012e19e5961bd2c1a6d75829618cf1",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Original references; unchanged."
+    },
+    {
+      "page": 25,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-25.png",
+      "sha256": "b7074e2687fa0fb9d9107cdb830b8706df3109ba8b3d1fec4f7ac5104fc68edd",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 26,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-26.png",
+      "sha256": "1b564e05d989bc33148d92d848d5ff1591b66444244eba850ea06ffb35695de4",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 27,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-27.png",
+      "sha256": "0c34627b33222209a3890056fac047281a21d607e855b07db73271b0d144fab6",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 28,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-28.png",
+      "sha256": "d88e48c69731ba6199691a9d774a9ab8a973afc8761d66499c9a9be8f484ac56",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 29,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-29.png",
+      "sha256": "b9f759d083be0abf6d6ec31169dfa76da6884536761c5f57f1bec7d0775d5e66",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 30,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-30.png",
+      "sha256": "e6417fa8236278436d8b3404d253adacfca252db875cc28b325143745ddaec7a",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Inherited inline-formula line wrapping occasionally leaves leading punctuation; content remains visible. No edit under preservation requirement."
+    },
+    {
+      "page": 31,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-31.png",
+      "sha256": "99c17af10bdbc811217beabd6de95b2775ac86891ae8458912acf7d82bec7186",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 32,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-32.png",
+      "sha256": "de0c20c4fe778f1fad0468583c67ec95203c5b3dde481798205ccbd2e338e744",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Inherited inline-formula line wrapping occasionally leaves leading punctuation; content remains visible. No edit under preservation requirement."
+    },
+    {
+      "page": 33,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-33.png",
+      "sha256": "0e7f58c2887820ad9f86e4e9499f2273a858b61ed75e8edabe690bc16a2c59c4",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Inherited inline-formula line wrapping occasionally leaves leading punctuation; content remains visible. No edit under preservation requirement."
+    },
+    {
+      "page": 34,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-34.png",
+      "sha256": "e6fa1005d3cfbaf3cf3b29b3e5f3ddae7795659d0bcffaf69efa3102d28e5722",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 35,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-35.png",
+      "sha256": "4e38dd76f104c161e309bc839c4839a3a67ee1f0686f5dfe6bb7baaea05b02fb",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 36,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-36.png",
+      "sha256": "064574c5849d7ae2835663679a530502951175a28bf561bba664d29fe8e9a8d6",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 37,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-37.png",
+      "sha256": "fd982657433926370131a0fd53b0d651e6a3caf23e03db67ead83441b52083e8",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 38,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-38.png",
+      "sha256": "ea054b02c810751f349e8757209b6fe01005935c2ef416ffd1dd440937168e63",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 39,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-39.png",
+      "sha256": "9217dc212ea43c6491e0027dacb60328ab362ba85c4928f610137609aa89c1c5",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Inherited inline-formula line wrapping occasionally leaves leading punctuation; content remains visible. No edit under preservation requirement."
+    },
+    {
+      "page": 40,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-40.png",
+      "sha256": "da4144d8cd67572e9ebf63b48a6a013ae35897feed659074f85bcfde3c0cc71b",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Inherited inline-formula line wrapping occasionally leaves leading punctuation; content remains visible. No edit under preservation requirement."
+    },
+    {
+      "page": 41,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-41.png",
+      "sha256": "265591413c4df96126bc2e71a35bedf612f393f8ed5c6f2fc25d6b2246c21162",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 42,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-42.png",
+      "sha256": "ecacee4ac7ca0a52647cffbbae770ed9ea59e5ff3ff743f50e031986b91e1e31",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Readable original page; no material visual defect observed."
+    },
+    {
+      "page": 43,
+      "image": "tmp/cache/appendix_revision_20260913/baseline/page-43.png",
+      "sha256": "23e45b825789c2c4a120b725fb18e1bc2b2fb0fb983c965b17f22a130e9eb574",
+      "reviewed": true,
+      "clipping_or_overlap": false,
+      "missing_glyphs": false,
+      "formula_number_legibility": "PASS",
+      "scope": "preserved_original",
+      "note": "Original derivation ending; recheck if appended content changes this page."
+    }
+  ],
+  "limitations": [
+    "No edits to body or derivation authorized; inherited layout and wording retained.",
+    "Only pages 23-43 inspected by this reviewer in this report.",
+    "Source content preservation and final appended section require separate structural audit."
+  ]
+}

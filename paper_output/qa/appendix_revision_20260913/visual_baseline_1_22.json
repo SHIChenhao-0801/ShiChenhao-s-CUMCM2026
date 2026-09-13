@@ -1,0 +1,302 @@
+{
+  "scope": "用户禁止修改的原稿前22页视觉基线检查；只读既有PNG，未重渲染、未编辑文档。",
+  "method": "逐页实际打开page-1.png至page-22.png，每批2至4张，在图像视图中检查文字、公式、图形、表格及分页。",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "reviewed_page_count": 22,
+  "result": "reviewed_with_pre_existing_layout_issues",
+  "critical_issues": 0,
+  "major_issues": 0,
+  "moderate_issues": 3,
+  "minor_issues": 2,
+  "defect_pages": [
+    4,
+    5,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21
+  ],
+  "issues": [
+    {
+      "id": "B01",
+      "pages": [
+        4,
+        5
+      ],
+      "severity": "minor",
+      "kind": "table_caption",
+      "description": "符号说明表采用三线式边框并有章节标题，但未见独立的表号、表题；第5页续页重复表头。",
+      "status": "pre_existing_not_edited"
+    },
+    {
+      "id": "B02",
+      "pages": [
+        14,
+        15
+      ],
+      "severity": "moderate",
+      "kind": "caption_separated_from_table",
+      "description": "表5标题位于第14页底部，完整表体另起第15页，标题与表体跨页分离。",
+      "status": "pre_existing_not_edited"
+    },
+    {
+      "id": "B03",
+      "pages": [
+        16
+      ],
+      "severity": "minor",
+      "kind": "line_start_punctuation",
+      "description": "5.4.1段落中材料速度行末换行后，下一行以句号起首，断行略显生硬。",
+      "status": "pre_existing_not_edited"
+    },
+    {
+      "id": "B04",
+      "pages": [
+        18,
+        19
+      ],
+      "severity": "moderate",
+      "kind": "table_visible_extent",
+      "description": "第18页末的表7可见表头及6.0000 h、1.3740 cm一行，未见底线；第19页直接进入解释段落，未见续表。仅记录渲染可见现象，未据此断言源码内缺失数据。",
+      "status": "pre_existing_not_edited"
+    },
+    {
+      "id": "B05",
+      "pages": [
+        20,
+        21
+      ],
+      "severity": "moderate",
+      "kind": "caption_separated_from_table",
+      "description": "表8标题孤立于第20页底部，表体位于第21页顶部，标题与表体跨页分离。",
+      "status": "pre_existing_not_edited"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-1.png",
+      "sha256": "1bc5daeb9842ccf46b41720c643db34713ef0a77ac271ff96c3e0b5d77487d24",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 2,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-2.png",
+      "sha256": "58d152937d09d769914933d52f18d953319d56067e074f02040712e50a56f7de",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 3,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-3.png",
+      "sha256": "5d96a7e8e266548beb2d2f0ed1c2fd46df8e1b332f2aeb9cd147e820dee4cd3b",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 4,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-4.png",
+      "sha256": "4f45a8c309e28ebaeeb94b5f0072863f3e551e44d483a7121d3f82aad2301ff4",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B01"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 5,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-5.png",
+      "sha256": "5b2eb342420dcba2c50e6ba77136ea32133e20cddd3d0afe1ef9132cf2f042df",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B01"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 6,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-6.png",
+      "sha256": "7cbb2ab28b8e274082f02f9bcf7c6e36ea05d4319d8231d4f9d6e05f18af6854",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 7,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-7.png",
+      "sha256": "7d51bb0e594a28643ebf85ed48134e366fa66a3e5f592e887d5c77b054761f48",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 8,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-8.png",
+      "sha256": "62b4242fac4471073cdb31888988097473dfdc74a3c4b60a14b973d3c52490ab",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 9,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-9.png",
+      "sha256": "58ded9dcc146ffd19c9b3f8d4916f19866e95329ba7f2b0d51ef56c1164a8ab3",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 10,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-10.png",
+      "sha256": "5186b017d172b6930390652dd571b63f97b26365c9a541b53391df455c15e19a",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 11,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-11.png",
+      "sha256": "04feaa030e5294ff39b2f8e3dd39be8eed84558dda34891950e08f6213062a24",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 12,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-12.png",
+      "sha256": "e39a8c54fc8e7f16dc0830ea6dde80e5681751480fe6560e6c628b33f6c54fbe",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 13,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-13.png",
+      "sha256": "892f6cff4dc1d12e0d8ea709af722dee53859298cb5a6bfbea738a5987bec5d2",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 14,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-14.png",
+      "sha256": "3f49a5cce49badc12b9d22a87e8c38a11c5f0be9f008d2e2d45238eca6c86916",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B02"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 15,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-15.png",
+      "sha256": "c87bd13a8c8797d5fcdd51f6697bd5e7cbb432f43b65667f83846e73016d86fa",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B02"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 16,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-16.png",
+      "sha256": "297c0eb4825c84d33024febd938a3fe159a45478ef592ceadbe6cecb9e9e38b9",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B03"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 17,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-17.png",
+      "sha256": "30173479541630ea511831c0edc7b7eecb4a5b553eddce577156ed02a687a9a1",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 18,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-18.png",
+      "sha256": "92239edb89ec0b181f915df74540e38005ab32962de28b5ad0af1fc331d5a8ad",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B04"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 19,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-19.png",
+      "sha256": "d4cc3fc77cbe17e36b718f0f4d224ec86e762000b77980c98a965a520bef9f37",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B04"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 20,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-20.png",
+      "sha256": "dd195d577ca1cff1328f57285816567e2431287c70173e4c35cdfa58b90ede3e",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B05"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 21,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-21.png",
+      "sha256": "bf8b324dd839047732fd79bfd3f66a1c99843502d3d37bbfd6089314872ddb20",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [
+        "B05"
+      ],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    },
+    {
+      "page": 22,
+      "image_path": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\appendix_revision_20260913\\baseline\\page-22.png",
+      "sha256": "a3645ba6f92988dd1b7e54e9f71b831dfca487f126277b05214971f4360637c1",
+      "actually_opened_and_visually_reviewed": true,
+      "issue_ids": [],
+      "readability": "正文、公式、图形及可见表格文字可辨认；未见大范围遮挡、重叠或乱码。"
+    }
+  ],
+  "notes": [
+    "本报告是原稿视觉观察，不能单独证明修订稿正文保持不变；修订后应由主代理比较对应页像素与保留XML。",
+    "不修改正文或前段公式，所有观察均保留为基线已有状态。",
+    "正常段落跨页、已重复表头的续表、图内较小但可读的标注未单独计为缺陷。"
+  ]
+}

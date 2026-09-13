@@ -1,0 +1,6 @@
+[render_docx] $ D:\Document\数学建模\tools\libreoffice\app\program\soffice.exe -env:UserInstallation=file:///D:/Document/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/2026CUMCM/tmp/cache/appendix_revision_20260913/temp/soffice_profile_6jesa9a5 --invisible --headless --norestore --convert-to pdf --outdir D:\Document\数学建模\2026CUMCM\tmp\cache\appendix_revision_20260913\temp\soffice_convert_7rih9kvh D:\Document\数学建模\2026CUMCM\paper_output\qa\appendix_revision_20260913\preserved_prefix.docx
+convert D:\Document\数学建模\2026CUMCM\paper_output\qa\appendix_revision_20260913\preserved_prefix.docx as a Writer document -> D:\Document\数学建模\2026CUMCM\tmp\cache\appendix_revision_20260913\temp\soffice_convert_7rih9kvh\preserved_prefix.pdf using filter : writer_pdf_Export
+
+Could not find platform independent libraries <prefix>
+
+Pages rendered to D:\Document\数学建模\2026CUMCM\tmp\cache\appendix_revision_20260913\baseline
