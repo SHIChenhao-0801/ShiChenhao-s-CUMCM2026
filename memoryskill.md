@@ -47,3 +47,5 @@
 - 初次438文件目录/旧ZIP不可移植FAIL、103文件TXT整理/再去注释106正式文件均各自绑定哈希；旧脚本assemble_support_materials与finalize_support_materials入口已停用，不能用它们恢复AI/旧目录。finalize_support_txt旧清理期脚本也绑定去注释前源SHA，不能不核查直接重跑。
 
 - 2026-09-13提交前补件：依用户四项新指令，支撑材料已增AI详情DOCX（6页，真实交互和团队确认待填）、06绘图R+14CSV+6PNG、05两份输入CSV/相对根路径/Matplotlib依赖和运行入口；三项适量检验实际通过，历史失败保持。完整137文件清单已生成根目录《支撑材料文件列表_附录用.docx》（8页）。论文原DOCX未改、PDF未定稿；方法对照附录需同步一行ROOT。用户按Esc停止Computer Use并催促收尾，本轮VS复现未完成。证据：paper_output/qa/support_completion_20260913/final_delivery_audit.json。
+
+- 2026-09-13用户催促实填AI详情：已以本线程真实提示和回复按绘图、数值检验、附录清单三主题填完，七环节与采用位置已实填；删重复待核实，仅末尾团队签名/日期空白。6页逐页检查通过，文件名及137文件清单不变。最新审计ai/filled_records_audit.json覆盖前次空白模板状态。

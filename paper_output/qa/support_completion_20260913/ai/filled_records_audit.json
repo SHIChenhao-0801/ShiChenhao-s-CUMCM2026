@@ -1,0 +1,24 @@
+{
+  "output_sha256": "296bd41967a60850dc3900871dfd428bae06c52f91e9a441db4d519f8ee940fa",
+  "actual_examples": 3,
+  "same_exchange_topic_excerpts": true,
+  "signature_not_forged": true,
+  "unfilled_prompt_templates": 0,
+  "source": "Current thread user four-part request and assistant preceding final response",
+  "tables": 7,
+  "status": "FILLED_AND_VISUALLY_CHECKED",
+  "pages": 6,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "table_count": 7,
+  "remaining_signature_only": true,
+  "file_count": 137,
+  "model_versions_follow_manuscript_9_3": true,
+  "historical_template_audit_superseded": true
+}
