@@ -1,0 +1,103 @@
+{
+  "control": {
+    "unpatchedAnalyticJacobianH": 57.47276052486771,
+    "patchedFiniteDifferenceH": 57.472760525051456,
+    "differenceSeconds": 6.614868652832229e-07,
+    "referenceProductionN3200H": 57.47230195056044,
+    "surrogateOffsetVsProductionSeconds": 1.6508675061601252
+  },
+  "scan": {
+    "stage": "dscale",
+    "parameter": "dScale",
+    "rows": [
+      {
+        "question": "Q23",
+        "parameter": "dScale",
+        "value": 0.7,
+        "eventH": 79.4187383750198
+      },
+      {
+        "question": "Q23",
+        "parameter": "dScale",
+        "value": 0.875,
+        "eventH": 64.75202233602374
+      },
+      {
+        "question": "Q23",
+        "parameter": "dScale",
+        "value": 1.0,
+        "eventH": 57.472760525051456
+      },
+      {
+        "question": "Q23",
+        "parameter": "dScale",
+        "value": 1.05,
+        "eventH": 55.056709414388315
+      },
+      {
+        "question": "Q23",
+        "parameter": "dScale",
+        "value": 1.225,
+        "eventH": 48.18880556334643
+      },
+      {
+        "question": "Q23",
+        "parameter": "dScale",
+        "value": 1.4,
+        "eventH": 43.0796373991185
+      },
+      {
+        "question": "Q4",
+        "parameter": "dScale",
+        "value": 0.7,
+        "eventH": 70.40591160077193
+      },
+      {
+        "question": "Q4",
+        "parameter": "dScale",
+        "value": 0.875,
+        "eventH": 57.52142712272812
+      },
+      {
+        "question": "Q4",
+        "parameter": "dScale",
+        "value": 1.0,
+        "eventH": 51.090968749662835
+      },
+      {
+        "question": "Q4",
+        "parameter": "dScale",
+        "value": 1.05,
+        "eventH": 48.95264166679847
+      },
+      {
+        "question": "Q4",
+        "parameter": "dScale",
+        "value": 1.225,
+        "eventH": 42.86146778661147
+      },
+      {
+        "question": "Q4",
+        "parameter": "dScale",
+        "value": 1.4,
+        "eventH": 38.31595036637175
+      }
+    ],
+    "summary": {
+      "Q23": {
+        "minH": 43.0796373991185,
+        "maxH": 79.4187383750198,
+        "spanH": 36.339100975901296,
+        "baselineH": 57.472760525051456,
+        "relativeSpanPercent": 63.22838966480767
+      },
+      "Q4": {
+        "minH": 38.31595036637175,
+        "maxH": 70.40591160077193,
+        "spanH": 32.08996123440018,
+        "baselineH": 51.090968749662835,
+        "relativeSpanPercent": 62.80945932271435
+      }
+    }
+  }
+}

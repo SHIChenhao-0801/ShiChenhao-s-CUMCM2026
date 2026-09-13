@@ -1,0 +1,1105 @@
+{
+  "checkA_rateIdentity": "d/dt sum_i 2 w_i B_i T_i R^2 = 2 h R (T_inf - T_s), verified by comparing the model's own right-hand side with the surface face at the same instant; no quadrature and no trajectory differencing are involved",
+  "checkB_cumulative": "H0(t) = sum_i 2 w_i B_i(0) T_i(t) R(t)^2 with dE/dt = 2 h R (T_inf - T_s); exact for a capacity frozen in time, which is the only form available for this effective-capacity model",
+  "derivation": "Summing the discrete temperature equations with weights 2 w_i R^2 makes every interior face cancel pairwise, leaving only the surface face, which in this code is -h R (T_s - T_inf).",
+  "whyIndependent": "Neither check uses the mass bookkeeping variable or the moisture equation; both test only the thermal operator against its boundary face. The two conventions are reported separately and must not be conflated.",
+  "declaredToleranceJPerM": 0.001,
+  "generatedAtUtc": "2026-09-12T08:04:04.133642+00:00",
+  "cases": [
+    {
+      "question": "Q1",
+      "intervals": 200,
+      "shrink": false,
+      "horizonH": 6.0,
+      "initialStoredPerMetre": 256820.72,
+      "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+      "rateIdentityRows": [
+        {
+          "timeS": 0.0,
+          "modelRate": 0.0,
+          "surfaceFaceRate": 0.0,
+          "ratio": null
+        },
+        {
+          "timeS": 45.0,
+          "modelRate": 0.34325703856092105,
+          "surfaceFaceRate": 0.34325703856092105,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 90.0,
+          "modelRate": 0.7077459790689317,
+          "surfaceFaceRate": 0.7077459790689318,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 135.0,
+          "modelRate": 1.0297321444836598,
+          "surfaceFaceRate": 1.0297321444836598,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 180.0,
+          "modelRate": 1.2604882681064282,
+          "surfaceFaceRate": 1.2604882681064282,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 225.0,
+          "modelRate": 1.3913183973863286,
+          "surfaceFaceRate": 1.3913183973863283,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 270.0,
+          "modelRate": 1.7202340817547677,
+          "surfaceFaceRate": 1.7202340817547679,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 315.0,
+          "modelRate": 2.034837314136155,
+          "surfaceFaceRate": 2.034837314136155,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 360.0,
+          "modelRate": 2.1923978027702447,
+          "surfaceFaceRate": 2.1923978027702447,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 405.0,
+          "modelRate": 2.3936513542959688,
+          "surfaceFaceRate": 2.3936513542959688,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 450.0,
+          "modelRate": 2.4855290230410105,
+          "surfaceFaceRate": 2.4855290230410105,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 495.0,
+          "modelRate": 2.6068041487743585,
+          "surfaceFaceRate": 2.6068041487743585,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 540.0,
+          "modelRate": 2.8515659989265028,
+          "surfaceFaceRate": 2.851565998926503,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 585.0,
+          "modelRate": 2.9906498149372855,
+          "surfaceFaceRate": 2.990649814937285,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 630.0,
+          "modelRate": 3.218992451537872,
+          "surfaceFaceRate": 3.218992451537872,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 675.0,
+          "modelRate": 3.407556336366042,
+          "surfaceFaceRate": 3.407556336366042,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 720.0,
+          "modelRate": 3.469731352582187,
+          "surfaceFaceRate": 3.469731352582187,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 765.0,
+          "modelRate": 3.633606412449694,
+          "surfaceFaceRate": 3.6336064124496943,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 810.0,
+          "modelRate": 3.697493925427182,
+          "surfaceFaceRate": 3.6974939254271817,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 855.0,
+          "modelRate": 3.7346769604756673,
+          "surfaceFaceRate": 3.7346769604756673,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 900.0,
+          "modelRate": 3.793606671389398,
+          "surfaceFaceRate": 3.793606671389398,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 945.0,
+          "modelRate": 3.9717900493203615,
+          "surfaceFaceRate": 3.9717900493203615,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 990.0,
+          "modelRate": 3.9997558207061275,
+          "surfaceFaceRate": 3.9997558207061275,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1035.0,
+          "modelRate": 4.076153195485972,
+          "surfaceFaceRate": 4.076153195485972,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1080.0,
+          "modelRate": 4.334362460670604,
+          "surfaceFaceRate": 4.334362460670604,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1125.0,
+          "modelRate": 4.335855593025542,
+          "surfaceFaceRate": 4.335855593025542,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1170.0,
+          "modelRate": 4.3985091109961445,
+          "surfaceFaceRate": 4.3985091109961445,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1215.0,
+          "modelRate": 4.433035895637886,
+          "surfaceFaceRate": 4.433035895637886,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1260.0,
+          "modelRate": 4.381997576334071,
+          "surfaceFaceRate": 4.381997576334072,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 1305.0,
+          "modelRate": 4.587763648362228,
+          "surfaceFaceRate": 4.587763648362227,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 1350.0,
+          "modelRate": 4.648267162091542,
+          "surfaceFaceRate": 4.648267162091543,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 1395.0,
+          "modelRate": 4.648810920816118,
+          "surfaceFaceRate": 4.648810920816118,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1440.0,
+          "modelRate": 4.643442029310562,
+          "surfaceFaceRate": 4.643442029310563,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 1485.0,
+          "modelRate": 4.513805158425782,
+          "surfaceFaceRate": 4.513805158425782,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1530.0,
+          "modelRate": 4.546936343667994,
+          "surfaceFaceRate": 4.546936343667994,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1575.0,
+          "modelRate": 4.572645441131043,
+          "surfaceFaceRate": 4.572645441131044,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 1620.0,
+          "modelRate": 4.477251392418339,
+          "surfaceFaceRate": 4.477251392418339,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1665.0,
+          "modelRate": 4.526628297224477,
+          "surfaceFaceRate": 4.526628297224477,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1710.0,
+          "modelRate": 4.639565536745806,
+          "surfaceFaceRate": 4.639565536745806,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1755.0,
+          "modelRate": 4.727279484845269,
+          "surfaceFaceRate": 4.727279484845269,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1800.0,
+          "modelRate": 4.7274423657842135,
+          "surfaceFaceRate": 4.7274423657842135,
+          "ratio": 1.0
+        }
+      ],
+      "cumulativeMaxAbsoluteResidualJPerM": 0.00020157656399533153,
+      "cumulativeRelativeResidual": 7.848921379681963e-10,
+      "discardedCapacityWorkJPerM": -2.6504132222271437e-11,
+      "discardedRelativeToStored": -1.0320091082320553e-16,
+      "unexplainedResidualJPerM": 0.00019521993557791717,
+      "declaredToleranceJPerM": 0.001,
+      "cumulativePassed": true,
+      "sampleTimesS": [
+        0.0,
+        45.0,
+        90.0,
+        135.0,
+        180.0,
+        225.0,
+        270.0,
+        315.0,
+        360.0,
+        405.0,
+        450.0,
+        495.0,
+        540.0,
+        585.0,
+        630.0,
+        675.0,
+        720.0,
+        765.0,
+        810.0,
+        855.0,
+        900.0,
+        945.0,
+        990.0,
+        1035.0,
+        1080.0,
+        1125.0,
+        1170.0,
+        1215.0,
+        1260.0,
+        1305.0,
+        1350.0,
+        1395.0,
+        1440.0,
+        1485.0,
+        1530.0,
+        1575.0,
+        1620.0,
+        1665.0,
+        1710.0,
+        1755.0,
+        1800.0
+      ],
+      "cumulativeResidualsJPerM": [
+        0.0,
+        2.8409878723323345e-05,
+        6.476242560893297e-06,
+        5.5914424592629075e-05,
+        3.7681893445551395e-05,
+        3.5639910493046045e-05,
+        0.00010998744983226061,
+        1.7029291484504938e-05,
+        1.784643973223865e-05,
+        2.3048807634040713e-05,
+        0.00010170249151997268,
+        9.255018085241318e-08,
+        1.1382508091628551e-06,
+        3.5226112231612206e-06,
+        6.942768231965601e-05,
+        3.0625524232164025e-05,
+        3.103868220932782e-05,
+        4.0033250115811825e-05,
+        0.00010962077067233622,
+        9.072915418073535e-05,
+        9.492371464148164e-05,
+        0.00010392646072432399,
+        0.00020157656399533153,
+        4.6215252950787544e-05,
+        5.188924842514098e-05,
+        3.93744558095932e-05,
+        4.219356924295425e-06,
+        7.882315549068153e-05,
+        8.470186730846763e-05,
+        9.088474325835705e-05,
+        0.00018706536502577364,
+        0.00019256549421697855,
+        0.00018498141434974968,
+        0.00017352364375256002,
+        5.993302329443395e-05,
+        0.00016058131586760283,
+        0.0001707474293652922,
+        0.00017580483108758926,
+        0.00012723857071250677,
+        0.00019697131938301027,
+        0.00019521990907378495
+      ],
+      "maxMassResidualKgPerKg": 2.6645352591003757e-15,
+      "elapsedSeconds": 1.2611303000012413
+    },
+    {
+      "question": "Q23",
+      "intervals": 200,
+      "shrink": false,
+      "horizonH": 6.0,
+      "initialStoredPerMetre": 401697.33492935204,
+      "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+      "rateIdentityRows": [
+        {
+          "timeS": 0.0,
+          "modelRate": 0.0,
+          "surfaceFaceRate": 0.0,
+          "ratio": null
+        },
+        {
+          "timeS": 540.0,
+          "modelRate": 3.2636235267710276,
+          "surfaceFaceRate": 3.2636235267710276,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1080.0,
+          "modelRate": 5.227618191908106,
+          "surfaceFaceRate": 5.227618191908107,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 1620.0,
+          "modelRate": 5.7477249529540595,
+          "surfaceFaceRate": 5.747724952954059,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 2160.0,
+          "modelRate": 5.853971193974019,
+          "surfaceFaceRate": 5.853971193974019,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 2700.0,
+          "modelRate": 5.681417670087911,
+          "surfaceFaceRate": 5.68141767008791,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 3240.0,
+          "modelRate": 4.987670634822167,
+          "surfaceFaceRate": 4.987670634822166,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 3780.0,
+          "modelRate": 4.250552102727511,
+          "surfaceFaceRate": 4.250552102727511,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 4320.0,
+          "modelRate": 3.5507718383192355,
+          "surfaceFaceRate": 3.5507718383192355,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 4860.0,
+          "modelRate": 2.6516618357613875,
+          "surfaceFaceRate": 2.651661835761388,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 5400.0,
+          "modelRate": 1.9759388757787522,
+          "surfaceFaceRate": 1.975938875778752,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 5940.0,
+          "modelRate": 1.859288031638755,
+          "surfaceFaceRate": 1.859288031638755,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 6480.0,
+          "modelRate": 1.0493652021282855,
+          "surfaceFaceRate": 1.0493652021282855,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 7020.0,
+          "modelRate": 0.9941151348469361,
+          "surfaceFaceRate": 0.9941151348469361,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 7560.0,
+          "modelRate": 0.6134797769771012,
+          "surfaceFaceRate": 0.6134797769771012,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 8100.0,
+          "modelRate": 0.29354700358328495,
+          "surfaceFaceRate": 0.293547003583285,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 8640.0,
+          "modelRate": 0.3371342108725912,
+          "surfaceFaceRate": 0.3371342108725912,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 9180.0,
+          "modelRate": 0.3209986355288379,
+          "surfaceFaceRate": 0.3209986355288379,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 9720.0,
+          "modelRate": 0.06219479405990568,
+          "surfaceFaceRate": 0.06219479405990569,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 10260.0,
+          "modelRate": 0.13531176364529074,
+          "surfaceFaceRate": 0.13531176364529074,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 10800.0,
+          "modelRate": 0.228587441961281,
+          "surfaceFaceRate": 0.228587441961281,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 11340.0,
+          "modelRate": -0.06219528896696147,
+          "surfaceFaceRate": -0.06219528896696147,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 11880.0,
+          "modelRate": -0.10882315285726918,
+          "surfaceFaceRate": -0.10882315285726918,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 12420.0,
+          "modelRate": 0.13794279431374437,
+          "surfaceFaceRate": 0.13794279431374434,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 12960.0,
+          "modelRate": -0.15320141057696898,
+          "surfaceFaceRate": -0.153201410576969,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 13500.0,
+          "modelRate": 0.1937987517301849,
+          "surfaceFaceRate": 0.1937987517301849,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 14040.0,
+          "modelRate": 0.18727423500695295,
+          "surfaceFaceRate": 0.18727423500695295,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 14580.0,
+          "modelRate": 0.005536139904677383,
+          "surfaceFaceRate": 0.005536139904677384,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 15120.0,
+          "modelRate": 0.0027283987728878856,
+          "surfaceFaceRate": 0.0027283987728878856,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 15660.0,
+          "modelRate": 0.0017446792247710619,
+          "surfaceFaceRate": 0.0017446792247710619,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 16200.0,
+          "modelRate": 0.0011192359945084718,
+          "surfaceFaceRate": 0.0011192359945084718,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 16740.0,
+          "modelRate": 0.0007150443271939365,
+          "surfaceFaceRate": 0.0007150443271939366,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 17280.0,
+          "modelRate": 0.0004548665381207684,
+          "surfaceFaceRate": 0.0004548665381207684,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 17820.0,
+          "modelRate": 0.0002881274580204263,
+          "surfaceFaceRate": 0.0002881274580204263,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 18360.0,
+          "modelRate": 0.00018173887110606302,
+          "surfaceFaceRate": 0.00018173887110606302,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 18900.0,
+          "modelRate": 0.00011415296938821484,
+          "surfaceFaceRate": 0.00011415296938821484,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 19440.0,
+          "modelRate": 7.140309566011638e-05,
+          "surfaceFaceRate": 7.140309566011638e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 19980.0,
+          "modelRate": 4.447869599744081e-05,
+          "surfaceFaceRate": 4.447869599744081e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 20520.0,
+          "modelRate": 2.7593549589255417e-05,
+          "surfaceFaceRate": 2.7593549589255417e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 21060.0,
+          "modelRate": 1.7049020243575796e-05,
+          "surfaceFaceRate": 1.7049020243575796e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 21600.0,
+          "modelRate": 1.049165450695e-05,
+          "surfaceFaceRate": 1.0491654506949999e-05,
+          "ratio": 1.0000000000000002
+        }
+      ],
+      "cumulativeMaxAbsoluteResidualJPerM": 2589.1360126791405,
+      "cumulativeRelativeResidual": 0.006445489644920102,
+      "discardedCapacityWorkJPerM": -174714.57402677718,
+      "discardedRelativeToStored": -0.4349408343909099,
+      "unexplainedResidualJPerM": 177303.71003945632,
+      "declaredToleranceJPerM": 0.001,
+      "cumulativePassed": false,
+      "sampleTimesS": [
+        0.0,
+        540.0,
+        1080.0,
+        1620.0,
+        2160.0,
+        2700.0,
+        3240.0,
+        3780.0,
+        4320.0,
+        4860.0,
+        5400.0,
+        5940.0,
+        6480.0,
+        7020.0,
+        7560.0,
+        8100.0,
+        8640.0,
+        9180.0,
+        9720.0,
+        10260.0,
+        10800.0,
+        11340.0,
+        11880.0,
+        12420.0,
+        12960.0,
+        13500.0,
+        14040.0,
+        14580.0,
+        15120.0,
+        15660.0,
+        16200.0,
+        16740.0,
+        17280.0,
+        17820.0,
+        18360.0,
+        18900.0,
+        19440.0,
+        19980.0,
+        20520.0,
+        21060.0,
+        21600.0
+      ],
+      "cumulativeResidualsJPerM": [
+        0.0,
+        19.38950738380663,
+        97.50498372677248,
+        240.1286250759731,
+        435.7346065771999,
+        671.4298602989875,
+        919.2581101104734,
+        1168.3581472086953,
+        1402.3882441084133,
+        1617.699418600474,
+        1801.453351843753,
+        1961.916012255475,
+        2101.2359760589316,
+        2215.06140007067,
+        2298.1424825098366,
+        2366.3040462012286,
+        2426.907381362864,
+        2468.6256545352517,
+        2505.821806410153,
+        2531.5241077251267,
+        2556.3175293130334,
+        2565.851692420896,
+        2571.2863416615874,
+        2567.82130026957,
+        2578.5274437874323,
+        2585.31431110634,
+        2587.7047253864584,
+        2586.5256319140317,
+        2587.5272161871544,
+        2588.078136118129,
+        2588.4437842261395,
+        2588.6863716431544,
+        2588.8464472283376,
+        2588.951504534576,
+        2589.0200865329243,
+        2589.064622938342,
+        2589.0933954375796,
+        2589.111889525084,
+        2589.1237176141003,
+        2589.131245202734,
+        2589.1360126791405
+      ],
+      "maxMassResidualKgPerKg": 8.881784197001252e-15,
+      "elapsedSeconds": 17.227845600000364
+    },
+    {
+      "question": "Q4",
+      "intervals": 200,
+      "shrink": true,
+      "horizonH": 6.0,
+      "initialStoredPerMetre": 404592.05591549294,
+      "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+      "rateIdentityRows": [
+        {
+          "timeS": 0.0,
+          "modelRate": 0.0,
+          "surfaceFaceRate": 0.0,
+          "ratio": null
+        },
+        {
+          "timeS": 540.0,
+          "modelRate": 2.940327407911088,
+          "surfaceFaceRate": 2.940327407911088,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1080.0,
+          "modelRate": 4.584417921274501,
+          "surfaceFaceRate": 4.584417921274501,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 1620.0,
+          "modelRate": 4.951235650054376,
+          "surfaceFaceRate": 4.951235650054376,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 2160.0,
+          "modelRate": 5.02176033034818,
+          "surfaceFaceRate": 5.02176033034818,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 2700.0,
+          "modelRate": 4.869916007081303,
+          "surfaceFaceRate": 4.869916007081302,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 3240.0,
+          "modelRate": 4.276599733389623,
+          "surfaceFaceRate": 4.276599733389623,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 3780.0,
+          "modelRate": 3.6434211929998206,
+          "surfaceFaceRate": 3.64342119299982,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 4320.0,
+          "modelRate": 3.0374992481061236,
+          "surfaceFaceRate": 3.037499248106124,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 4860.0,
+          "modelRate": 2.2581324107433756,
+          "surfaceFaceRate": 2.2581324107433756,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 5400.0,
+          "modelRate": 1.6788234109523956,
+          "surfaceFaceRate": 1.6788234109523954,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 5940.0,
+          "modelRate": 1.5584413015240477,
+          "surfaceFaceRate": 1.5584413015240477,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 6480.0,
+          "modelRate": 0.8828128694731976,
+          "surfaceFaceRate": 0.8828128694731975,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 7020.0,
+          "modelRate": 0.8126418668921946,
+          "surfaceFaceRate": 0.8126418668921945,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 7560.0,
+          "modelRate": 0.5052432322198576,
+          "surfaceFaceRate": 0.5052432322198576,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 8100.0,
+          "modelRate": 0.24515543768854495,
+          "surfaceFaceRate": 0.24515543768854495,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 8640.0,
+          "modelRate": 0.2690572476854653,
+          "surfaceFaceRate": 0.26905724768546524,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 9180.0,
+          "modelRate": 0.25326205637816285,
+          "surfaceFaceRate": 0.25326205637816285,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 9720.0,
+          "modelRate": 0.04976046753492158,
+          "surfaceFaceRate": 0.04976046753492158,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 10260.0,
+          "modelRate": 0.105583795586392,
+          "surfaceFaceRate": 0.10558379558639198,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 10800.0,
+          "modelRate": 0.16881956279901988,
+          "surfaceFaceRate": 0.16881956279901988,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 11340.0,
+          "modelRate": -0.04378034784169394,
+          "surfaceFaceRate": -0.04378034784169394,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 11880.0,
+          "modelRate": -0.07979247863020404,
+          "surfaceFaceRate": -0.07979247863020406,
+          "ratio": 0.9999999999999998
+        },
+        {
+          "timeS": 12420.0,
+          "modelRate": 0.10529410251833778,
+          "surfaceFaceRate": 0.10529410251833775,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 12960.0,
+          "modelRate": -0.11228290783628708,
+          "surfaceFaceRate": -0.11228290783628705,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 13500.0,
+          "modelRate": 0.13854083368990897,
+          "surfaceFaceRate": 0.13854083368990894,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 14040.0,
+          "modelRate": 0.13131925289586063,
+          "surfaceFaceRate": 0.13131925289586063,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 14580.0,
+          "modelRate": 0.004225740907463489,
+          "surfaceFaceRate": 0.004225740907463489,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 15120.0,
+          "modelRate": 0.001952807098505218,
+          "surfaceFaceRate": 0.0019528070985052183,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 15660.0,
+          "modelRate": 0.0012205386084133353,
+          "surfaceFaceRate": 0.001220538608413335,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 16200.0,
+          "modelRate": 0.0007672385060322996,
+          "surfaceFaceRate": 0.0007672385060322996,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 16740.0,
+          "modelRate": 0.00048018353156310524,
+          "surfaceFaceRate": 0.0004801835315631053,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 17280.0,
+          "modelRate": 0.00029890361277210784,
+          "surfaceFaceRate": 0.00029890361277210784,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 17820.0,
+          "modelRate": 0.0001850554549759522,
+          "surfaceFaceRate": 0.0001850554549759522,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 18360.0,
+          "modelRate": 0.00011388501961770885,
+          "surfaceFaceRate": 0.00011388501961770884,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 18900.0,
+          "modelRate": 6.965090825683262e-05,
+          "surfaceFaceRate": 6.965090825683262e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 19440.0,
+          "modelRate": 4.233364046817769e-05,
+          "surfaceFaceRate": 4.2333640468177695e-05,
+          "ratio": 0.9999999999999999
+        },
+        {
+          "timeS": 19980.0,
+          "modelRate": 2.5574459661982017e-05,
+          "surfaceFaceRate": 2.5574459661982017e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 20520.0,
+          "modelRate": 1.5363330180213098e-05,
+          "surfaceFaceRate": 1.5363330180213098e-05,
+          "ratio": 1.0
+        },
+        {
+          "timeS": 21060.0,
+          "modelRate": 9.174869535632981e-06,
+          "surfaceFaceRate": 9.17486953563298e-06,
+          "ratio": 1.0000000000000002
+        },
+        {
+          "timeS": 21600.0,
+          "modelRate": 5.446567555111415e-06,
+          "surfaceFaceRate": 5.446567555111415e-06,
+          "ratio": 1.0
+        }
+      ],
+      "cumulativeMaxAbsoluteResidualJPerM": 222651.80799395434,
+      "cumulativeRelativeResidual": 0.5503118628717207,
+      "discardedCapacityWorkJPerM": -275282.27641572733,
+      "discardedRelativeToStored": -0.6803946651716402,
+      "unexplainedResidualJPerM": 497934.0844096817,
+      "declaredToleranceJPerM": 0.001,
+      "cumulativePassed": false,
+      "sampleTimesS": [
+        0.0,
+        540.0,
+        1080.0,
+        1620.0,
+        2160.0,
+        2700.0,
+        3240.0,
+        3780.0,
+        4320.0,
+        4860.0,
+        5400.0,
+        5940.0,
+        6480.0,
+        7020.0,
+        7560.0,
+        8100.0,
+        8640.0,
+        9180.0,
+        9720.0,
+        10260.0,
+        10800.0,
+        11340.0,
+        11880.0,
+        12420.0,
+        12960.0,
+        13500.0,
+        14040.0,
+        14580.0,
+        15120.0,
+        15660.0,
+        16200.0,
+        16740.0,
+        17280.0,
+        17820.0,
+        18360.0,
+        18900.0,
+        19440.0,
+        19980.0,
+        20520.0,
+        21060.0,
+        21600.0
+      ],
+      "cumulativeResidualsJPerM": [
+        0.0,
+        15266.117545963556,
+        30264.140904783446,
+        45034.25270740327,
+        55928.47270665248,
+        64905.91074094188,
+        73836.08985090652,
+        83166.20655936602,
+        93325.66911422036,
+        103387.22452548449,
+        113346.88293322141,
+        121783.13227960852,
+        130134.67107739951,
+        138394.05496115203,
+        143632.55367875824,
+        147374.55011935273,
+        151097.11619730838,
+        154839.50501564314,
+        158627.83294505387,
+        162395.48381036834,
+        166136.47054961958,
+        170361.41904994816,
+        174551.56988826985,
+        178711.48152760038,
+        182243.5937184929,
+        185460.65551347486,
+        188658.35803918273,
+        191741.45314337328,
+        194611.90873623145,
+        197465.03246128577,
+        200300.6485200035,
+        202462.7319321847,
+        204614.51074591718,
+        206755.97440695524,
+        209133.5386212827,
+        211620.73148882185,
+        214093.68745563866,
+        216431.3204761564,
+        218515.1500772799,
+        220588.64608272864,
+        222651.80799395434
+      ],
+      "maxMassResidualKgPerKg": 4.884981308350689e-15,
+      "elapsedSeconds": 16.272943699999814
+    }
+  ],
+  "refinement": [
+    {
+      "question": "Q23",
+      "rows": [
+        {
+          "intervals": 100,
+          "rateIdentityMaxRelativeDeviation": 3.3306690738754696e-16,
+          "cumulativeMaxAbsoluteResidualJPerM": 2589.303871635755
+        },
+        {
+          "intervals": 200,
+          "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+          "cumulativeMaxAbsoluteResidualJPerM": 2589.1360126791405
+        },
+        {
+          "intervals": 400,
+          "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+          "cumulativeMaxAbsoluteResidualJPerM": 2589.093934439181
+        }
+      ]
+    },
+    {
+      "question": "Q4",
+      "rows": [
+        {
+          "intervals": 100,
+          "rateIdentityMaxRelativeDeviation": 4.440892098500626e-16,
+          "cumulativeMaxAbsoluteResidualJPerM": 222651.0925664006
+        },
+        {
+          "intervals": 200,
+          "rateIdentityMaxRelativeDeviation": 2.220446049250313e-16,
+          "cumulativeMaxAbsoluteResidualJPerM": 222651.80799395434
+        },
+        {
+          "intervals": 400,
+          "rateIdentityMaxRelativeDeviation": 3.3306690738754696e-16,
+          "cumulativeMaxAbsoluteResidualJPerM": 222651.9869127796
+        }
+      ]
+    }
+  ]
+}

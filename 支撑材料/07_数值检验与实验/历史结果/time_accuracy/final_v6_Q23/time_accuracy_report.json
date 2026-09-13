@@ -1,0 +1,537 @@
+{
+  "created_at": "2026-09-10T16:52:14.250683+00:00",
+  "finished_at": "2026-09-10T16:57:25.124932+00:00",
+  "wall_seconds": 310.8742456,
+  "question": "Q23",
+  "N": 3200,
+  "status": "computed_zero_solver_warnings",
+  "configuration": {
+    "question": "Q23",
+    "n": 3200,
+    "full_second_comparison": true
+  },
+  "baseline_controls": {
+    "rtol": 1e-10,
+    "atol_temperature": 1e-10,
+    "atol_moisture": 1e-12,
+    "early_max_step_s": 2.0,
+    "max_step_s": 120.0
+  },
+  "tight_controls": {
+    "rtol": 1e-11,
+    "atol_temperature": 1e-11,
+    "atol_moisture": 1e-13,
+    "early_max_step_s": 1.0,
+    "max_step_s": 60.0
+  },
+  "runs": [
+    {
+      "variant": "baseline",
+      "process": {
+        "pid": 39812,
+        "returncode": 0,
+        "started_at": "2026-09-10T16:52:14.475043+00:00",
+        "finished_at": "2026-09-10T16:54:25.316889+00:00",
+        "command": "C:\\Python314\\python.exe -B .\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --worker --variant baseline --launch-token 75562f6985f144e08e7307f2c1ad75f5 --full-second-comparison",
+        "argv": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          ".\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+          "--question",
+          "Q23",
+          "--n",
+          "3200",
+          "--tag",
+          "final_v6_Q23",
+          "--worker",
+          "--variant",
+          "baseline",
+          "--launch-token",
+          "75562f6985f144e08e7307f2c1ad75f5",
+          "--full-second-comparison"
+        ],
+        "cwd": "."
+      },
+      "summary": {
+        "settings": {
+          "question": "Q23",
+          "intervals": 3200,
+          "rtol": 1e-10,
+          "atol_temperature": 1e-10,
+          "atol_moisture": 1e-12,
+          "max_step_s": 120.0,
+          "early_max_step_s": 2.0,
+          "horizon_h": 240.0,
+          "shrink": false,
+          "boundary_extension": "nominal",
+          "tail_temperature_C": 50.0,
+          "tail_equilibrium": 0.05,
+          "h": 25.0,
+          "beta": 8e-07,
+          "equilibrium_scale": 1.0,
+          "surface_latent_fraction": 0.0,
+          "latent_J_kg": 2400000.0,
+          "constant_D": null,
+          "constant_thermal": false,
+          "method": "BDF",
+          "face_scheme": "kirchhoff",
+          "jacobian_mode": "analytic",
+          "dense_storage": "disk"
+        },
+        "diagnostics": {
+          "event_s": 206900.28702201758,
+          "event_h": 57.47230195056044,
+          "end_s": 206902.0,
+          "elapsed_s": 71.93414999999732,
+          "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+          "max_mass_balance_abs_kg_per_kg": 1.1546319456101628e-14,
+          "min_C": 0.05265944808510597,
+          "max_C": 2.550000000000001,
+          "min_T_K": 301.15,
+          "max_T_K": 323.18986600675885,
+          "min_D": 3.124541898624993e-12,
+          "max_D": 1.252185966946026e-08,
+          "positive_properties": true,
+          "max_radial_C_increase": 3.1086244689504383e-15,
+          "final_max_C": 0.14999950103529133,
+          "final_surface_C": 0.05265944808510597,
+          "strictly_dry_at_end": true,
+          "radius_end_m": 0.02,
+          "radius_extrapolation_used": false,
+          "rhs_evaluations": 32705,
+          "accepted_time_points": 14283,
+          "nfev": 32705,
+          "njev": 618,
+          "nlu": 3552,
+          "solver_success": true,
+          "dense_storage": "disk",
+          "dense_coefficient_bytes": 3754872872,
+          "dense_polynomial_count": 14280
+        },
+        "code": {
+          "path": "paper_output/code/modeling/drying_core.py",
+          "bytes": 19944,
+          "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+          "exists": true
+        },
+        "jacobian_code": {
+          "path": "paper_output/code/modeling/analytic_jacobian.py",
+          "bytes": 16952,
+          "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+          "exists": true
+        },
+        "dense_storage_code": {
+          "path": "paper_output/code/modeling/disk_dense.py",
+          "bytes": 4869,
+          "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+          "exists": true
+        },
+        "inputs": [
+          {
+            "path": "paper_output/data_cleaned/A_environment_observed.csv",
+            "bytes": 10125,
+            "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+            "exists": true
+          },
+          {
+            "path": "paper_output/data_cleaned/A_radius_observed.csv",
+            "bytes": 3522,
+            "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+            "exists": true
+          }
+        ],
+        "human_review_status": "pending",
+        "gui_reproduced": false,
+        "time_check": {
+          "variant": "baseline",
+          "question": "Q23",
+          "spatial_intervals": 3200,
+          "started_at": "2026-09-10T16:52:15.791870+00:00",
+          "solve_finished_at": "2026-09-10T16:53:30.760109+00:00",
+          "warnings": [],
+          "projection_time_count": 206903,
+          "full_second_comparison": true,
+          "projection_radius_count": 21,
+          "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+          "finished_at": "2026-09-10T16:54:25.080755+00:00",
+          "wall_seconds": 129.28889379999964,
+          "Run_closed": true
+        }
+      },
+      "summary_file": {
+        "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/summary.json",
+        "bytes": 3380,
+        "sha256": "33bf0866ca05c5d928efa97c9061881e8e98a1457bc809aadcc7498a37b4a09b",
+        "exists": true
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/comparison_projection.npz",
+          "bytes": 35655586,
+          "sha256": "4d9b3147d72a2e635dd5f984ca43629086bf5a474449adcd4abbfd408004b776",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/sampled_solution.npz",
+          "bytes": 689540,
+          "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/summary.json",
+          "bytes": 3380,
+          "sha256": "33bf0866ca05c5d928efa97c9061881e8e98a1457bc809aadcc7498a37b4a09b",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/worker_started.json",
+          "bytes": 71,
+          "sha256": "574bfd57f8a43ae572b0e03d5ad6ee2daed74adfc5ee3d65222697b801e25513",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/worker_success.json",
+          "bytes": 7508,
+          "sha256": "6ab6bf3d81c2f89519ab1e337a0bda8b09a8aadd67b45be4525aa8e2fe8cc21d",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/stdout.log",
+          "bytes": 104,
+          "sha256": "a0c5b3b5f8a40c03c73becbfd587f239e39fb92a13a844f74b76dc9c2ad14ffc",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/baseline/process_result.json",
+          "bytes": 862,
+          "sha256": "b8a233786a30c8e9eefbb99795c38dc27bc3dcdbb88c89d15d80e32c8c317ba9",
+          "exists": true
+        }
+      ],
+      "status": "computed_actual_process_exit_zero"
+    },
+    {
+      "variant": "tight",
+      "process": {
+        "pid": 48076,
+        "returncode": 0,
+        "started_at": "2026-09-10T16:54:25.465101+00:00",
+        "finished_at": "2026-09-10T16:57:23.455566+00:00",
+        "command": "C:\\Python314\\python.exe -B .\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --worker --variant tight --launch-token 75562f6985f144e08e7307f2c1ad75f5 --full-second-comparison",
+        "argv": [
+          "C:\\Python314\\python.exe",
+          "-B",
+          ".\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+          "--question",
+          "Q23",
+          "--n",
+          "3200",
+          "--tag",
+          "final_v6_Q23",
+          "--worker",
+          "--variant",
+          "tight",
+          "--launch-token",
+          "75562f6985f144e08e7307f2c1ad75f5",
+          "--full-second-comparison"
+        ],
+        "cwd": "."
+      },
+      "summary": {
+        "settings": {
+          "question": "Q23",
+          "intervals": 3200,
+          "rtol": 1e-11,
+          "atol_temperature": 1e-11,
+          "atol_moisture": 1e-13,
+          "max_step_s": 60.0,
+          "early_max_step_s": 1.0,
+          "horizon_h": 240.0,
+          "shrink": false,
+          "boundary_extension": "nominal",
+          "tail_temperature_C": 50.0,
+          "tail_equilibrium": 0.05,
+          "h": 25.0,
+          "beta": 8e-07,
+          "equilibrium_scale": 1.0,
+          "surface_latent_fraction": 0.0,
+          "latent_J_kg": 2400000.0,
+          "constant_D": null,
+          "constant_thermal": false,
+          "method": "BDF",
+          "face_scheme": "kirchhoff",
+          "jacobian_mode": "analytic",
+          "dense_storage": "disk"
+        },
+        "diagnostics": {
+          "event_s": 206900.2870259933,
+          "event_h": 57.47230195166481,
+          "end_s": 206902.0,
+          "elapsed_s": 119.25163850000172,
+          "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+          "max_mass_balance_abs_kg_per_kg": 1.0658141036401503e-14,
+          "min_C": 0.052659448085097094,
+          "max_C": 2.5500000000000025,
+          "min_T_K": 301.1499999999999,
+          "max_T_K": 323.18986650950535,
+          "min_D": 3.1245418986204972e-12,
+          "max_D": 1.252185976107208e-08,
+          "positive_properties": true,
+          "max_radial_C_increase": 3.552713678800501e-15,
+          "final_max_C": 0.14999950103562854,
+          "final_surface_C": 0.052659448085097094,
+          "strictly_dry_at_end": true,
+          "radius_end_m": 0.02,
+          "radius_extrapolation_used": false,
+          "rhs_evaluations": 55096,
+          "accepted_time_points": 24943,
+          "nfev": 55096,
+          "njev": 679,
+          "nlu": 5574,
+          "solver_success": true,
+          "dense_storage": "disk",
+          "dense_coefficient_bytes": 6825956568,
+          "dense_polynomial_count": 24940
+        },
+        "code": {
+          "path": "paper_output/code/modeling/drying_core.py",
+          "bytes": 19944,
+          "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+          "exists": true
+        },
+        "jacobian_code": {
+          "path": "paper_output/code/modeling/analytic_jacobian.py",
+          "bytes": 16952,
+          "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+          "exists": true
+        },
+        "dense_storage_code": {
+          "path": "paper_output/code/modeling/disk_dense.py",
+          "bytes": 4869,
+          "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+          "exists": true
+        },
+        "inputs": [
+          {
+            "path": "paper_output/data_cleaned/A_environment_observed.csv",
+            "bytes": 10125,
+            "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+            "exists": true
+          },
+          {
+            "path": "paper_output/data_cleaned/A_radius_observed.csv",
+            "bytes": 3522,
+            "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+            "exists": true
+          }
+        ],
+        "human_review_status": "pending",
+        "gui_reproduced": false,
+        "time_check": {
+          "variant": "tight",
+          "question": "Q23",
+          "spatial_intervals": 3200,
+          "started_at": "2026-09-10T16:54:26.705370+00:00",
+          "solve_finished_at": "2026-09-10T16:56:31.038723+00:00",
+          "warnings": [],
+          "projection_time_count": 206903,
+          "full_second_comparison": true,
+          "projection_radius_count": 21,
+          "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+          "finished_at": "2026-09-10T16:57:23.245616+00:00",
+          "wall_seconds": 176.5402458000026,
+          "Run_closed": true
+        }
+      },
+      "summary_file": {
+        "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/summary.json",
+        "bytes": 3389,
+        "sha256": "87e9e820b96ff25a480bc0fd3ba0250ad2a462fc27636c19fcece3149e666df6",
+        "exists": true
+      },
+      "output_artifacts": [
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/comparison_projection.npz",
+          "bytes": 35734922,
+          "sha256": "1da5e9466d040f19c22b6fdce0d60e5199dd0fe08e7f8325b16012bc37619105",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/sampled_solution.npz",
+          "bytes": 690378,
+          "sha256": "5188509b66d2a6b004b9554d003e3868121a9bb51ebfca65b47066e781fb8f69",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/summary.json",
+          "bytes": 3389,
+          "sha256": "87e9e820b96ff25a480bc0fd3ba0250ad2a462fc27636c19fcece3149e666df6",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/worker_started.json",
+          "bytes": 71,
+          "sha256": "e2d044e012e22d962dc54897486af7d67c5297eabeb45d7c296736b6192f9ce4",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/worker_success.json",
+          "bytes": 7502,
+          "sha256": "ec24b5e36aa1da019ac9234d7bd146874d6bb4672f6834931144473d8fabc7e7",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/stdout.log",
+          "bytes": 98,
+          "sha256": "dff256a235840765c8f4b71c50c233718109dba5deee3bd0d75444a4dca95d6d",
+          "exists": true
+        },
+        {
+          "path": "paper_output/results/time_accuracy/final_v6_Q23/tight/process_result.json",
+          "bytes": 856,
+          "sha256": "0ea61b0a5a67b11280fe7e91ac43830fd043fb7d7c698919ce5faefcc863d73d",
+          "exists": true
+        }
+      ],
+      "status": "computed_actual_process_exit_zero"
+    }
+  ],
+  "comparison": {
+    "max_absolute_difference": {
+      "T_K": 2.6602599518810166e-06,
+      "C": 9.941051204442886e-09
+    },
+    "locations": {
+      "T_K": {
+        "time_s": 12180.0,
+        "radius_m": 0.02
+      },
+      "C": {
+        "time_s": 13260.0,
+        "radius_m": 0.02
+      }
+    },
+    "compared_time_count": 206903,
+    "radial_count": 21,
+    "convention": "Only finite values at common physical points are compared.",
+    "baseline_N": 3200,
+    "tight_N": 3200,
+    "baseline_event_s": 206900.28702201758,
+    "tight_event_s": 206900.2870259933,
+    "event_difference_s": 3.975728759542108e-06,
+    "absolute_event_difference_s": 3.975728759542108e-06,
+    "difference_direction": "tight minus baseline for the event; absolute differences for fields",
+    "baseline_projection_time_count": 206903,
+    "tight_projection_time_count": 206903,
+    "common_last_time_s": 206902.0,
+    "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.",
+    "not_a_rigorous_error_bound": true,
+    "no_experimental_accuracy_claim": true
+  },
+  "driver_code": {
+    "path": "paper_output/code/modeling/verify_time_accuracy.py",
+    "bytes": 14430,
+    "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+    "exists": true
+  },
+  "input_files": [
+    {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 16952,
+      "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4869,
+      "sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 19944,
+      "sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/production_provenance.py",
+      "bytes": 24002,
+      "sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q1_model.py",
+      "bytes": 340,
+      "sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q2_model.py",
+      "bytes": 352,
+      "sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q3_model.py",
+      "bytes": 1285,
+      "sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/q4_model.py",
+      "bytes": 377,
+      "sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/validate_bessel.py",
+      "bytes": 16285,
+      "sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_convergence.py",
+      "bytes": 6542,
+      "sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "exists": true
+    },
+    {
+      "path": "paper_output/code/modeling/verify_time_accuracy.py",
+      "bytes": 14430,
+      "sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    }
+  ],
+  "runtime": {
+    "executable": "C:\\Python314\\python.exe",
+    "implementation": "CPython",
+    "version": "3.14.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "installed_library_versions": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.1"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "scope": "Installed distributions; actual imported module paths are recorded by worker."
+  },
+  "scope": "Fixed-N temporal sensitivity only; small grids are functional checks, not final accuracy evidence.",
+  "human_review": "pending",
+  "visual_studio_gui": "pending"
+}

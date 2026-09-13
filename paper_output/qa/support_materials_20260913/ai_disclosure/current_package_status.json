@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SAME_MACHINE_ISOLATED_CLI",
+  "text": "当前交付程序在同机隔离目录、不继承系统site-packages的干净venv中复现通过。Windows AMD64 / Python 3.14.7，NumPy 2.5.2、SciPy 1.18.1、openpyxl 3.1.5。quick与final均实际exit 0，分别454.516 s和989.547 s。正式Q1 / Q23为N3200，Q4为N6400；四工作簿9,335,598格完整回读，297正文格经live Run核验。21保存数组逐值相同，4份gzip解压CSV及7份正文CSV字节与冻结版一致。仅表示CLI数值复现PASS；第二物理设备未测试。证据E9。",
+  "evidenceFile": "code_package_audit.json",
+  "quickExitCode": 0,
+  "finalExitCode": 0,
+  "quickElapsedSeconds": 454.5157823000045,
+  "finalElapsedSeconds": 989.547267300004,
+  "finalWorkbookCellsChecked": 9335598,
+  "finalPaperCellsChecked": 297,
+  "exactFrozenSavedArrays": 21,
+  "exactDecompressedRawGzipArchives": 4,
+  "exactFrozenPaperCsvFiles": 7,
+  "newVisualStudioGui": "NOT_PERFORMED",
+  "humanReview": "PENDING_USER_REVIEW",
+  "physicalSecondDevice": "NOT_TESTED"
+}

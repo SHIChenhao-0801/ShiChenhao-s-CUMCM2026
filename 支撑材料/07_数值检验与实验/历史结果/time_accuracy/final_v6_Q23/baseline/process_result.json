@@ -1,0 +1,25 @@
+{
+  "pid": 39812,
+  "returncode": 0,
+  "started_at": "2026-09-10T16:52:14.475043+00:00",
+  "finished_at": "2026-09-10T16:54:25.316889+00:00",
+  "command": "C:\\Python314\\python.exe -B .\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q23 --n 3200 --tag final_v6_Q23 --worker --variant baseline --launch-token 75562f6985f144e08e7307f2c1ad75f5 --full-second-comparison",
+  "argv": [
+    "C:\\Python314\\python.exe",
+    "-B",
+    ".\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+    "--question",
+    "Q23",
+    "--n",
+    "3200",
+    "--tag",
+    "final_v6_Q23",
+    "--worker",
+    "--variant",
+    "baseline",
+    "--launch-token",
+    "75562f6985f144e08e7307f2c1ad75f5",
+    "--full-second-comparison"
+  ],
+  "cwd": "."
+}

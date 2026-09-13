@@ -1,0 +1,116 @@
+[
+  {
+    "file": "wang2024_publisher.html",
+    "url": "https://nygcxb.ijournals.cn/nygcxb/article/abstract/20240201",
+    "retrieved_utc": "2026-09-12T23:58:29.606247+00:00",
+    "status": 200,
+    "final_url": "https://nygcxb.ijournals.cn/nygcxb/article/abstract/20240201",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 51166,
+    "sha256": "ef8c6f7407895616ab5af7919bff98ab54143a3149f3ef2e6562965d51d8f40e",
+    "accepted": true
+  },
+  {
+    "file": "wang2024_full.pdf",
+    "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/10.11975/j.issn.1002-6819.202306104.pdf",
+    "retrieved_utc": "2026-09-12T23:58:29.607245+00:00",
+    "status": 200,
+    "final_url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/10.11975/j.issn.1002-6819.202306104.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1904169,
+    "sha256": "4beca0c77feeb6836fa9cc0fb46222fff9d16889237a07bb34de2b48e071700d",
+    "accepted": true
+  },
+  {
+    "file": "wang2023_publisher.pdf",
+    "url": "https://www.tcmjc.com/download/pdf?id=2758B0FBE5314A1ABD31D280D6B915B3",
+    "retrieved_utc": "2026-09-12T23:58:29.607245+00:00",
+    "status": 200,
+    "final_url": "https://www.tcmjc.com/download/pdf?id=2758B0FBE5314A1ABD31D280D6B915B3",
+    "content_type": null,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accepted": false,
+    "reason": "Response does not contain a PDF file; not saved as a PDF."
+  },
+  {
+    "file": "wang2023_pubmed.html",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37474981/",
+    "retrieved_utc": "2026-09-12T23:58:29.608234+00:00",
+    "status": 203,
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/37474981/",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 5565,
+    "sha256": "119b3fbb1068bd0544f1929d05c0b0c671db5ba794118e2e60fce4867f93b30c",
+    "accepted": true
+  },
+  {
+    "file": "wang2023_pubmed.xml",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37474981&retmode=xml",
+    "retrieved_utc": "2026-09-12T23:58:29.609237+00:00",
+    "status": 200,
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37474981&retmode=xml",
+    "content_type": "text/xml; charset=UTF-8",
+    "bytes": 6851,
+    "sha256": "aeae735b2a038b59f606ace24f60490c845439bb3446437d318478d45564658a",
+    "accepted": true
+  },
+  {
+    "file": "mujumdar_publisher.html",
+    "url": "https://www.routledge.com/Handbook-of-Industrial-Drying/Mujumdar/p/book/9781466596658",
+    "retrieved_utc": "2026-09-12T23:58:30.158631+00:00",
+    "accepted": false,
+    "error": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>"
+  },
+  {
+    "file": "crank_ndl.html",
+    "url": "https://ndlsearch.ndl.go.jp/books/R100000074-IALIS_QQ00223544",
+    "retrieved_utc": "2026-09-12T23:58:31.084306+00:00",
+    "accepted": false,
+    "error": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>"
+  },
+  {
+    "file": "scipy_bdf.html",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html",
+    "retrieved_utc": "2026-09-12T23:58:31.245954+00:00",
+    "status": 200,
+    "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html",
+    "content_type": "text/html",
+    "bytes": 37441,
+    "sha256": "ae3874a85175cf32901640d7da4ce337394d123d62b8d9eaab9ea0fb0e5751df",
+    "accepted": true
+  },
+  {
+    "file": "fao_drying.html",
+    "url": "https://www.fao.org/4/t1838e/t1838e0u.htm",
+    "retrieved_utc": "2026-09-12T23:58:31.380824+00:00",
+    "status": 200,
+    "final_url": "https://www.fao.org/4/t1838e/t1838e0u.htm",
+    "content_type": "text/html",
+    "bytes": 29741,
+    "sha256": "d86eaaadb28e545d1eec58217f72af843c7993d0b718930a990e929a7e88ece4",
+    "accepted": true
+  },
+  {
+    "file": "scipy_solve_ivp.html",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html",
+    "retrieved_utc": "2026-09-12T23:58:32.054323+00:00",
+    "status": 200,
+    "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html",
+    "content_type": "text/html",
+    "bytes": 77794,
+    "sha256": "1239f89c6cd44f9342dc19fe24bf7b18eee066efa2159e58c462174f3ce4dfc7",
+    "accepted": true
+  },
+  {
+    "file": "sundials_references.html",
+    "url": "https://sundials.readthedocs.io/en/v7.1.0/References.html",
+    "retrieved_utc": "2026-09-12T23:58:32.733939+00:00",
+    "status": 200,
+    "final_url": "https://sundials.readthedocs.io/en/v7.1.0/References.html",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 64723,
+    "sha256": "f648e4c559e791c8b6d056a95b46aa63d46419ce9258f1e3397c618409993511",
+    "accepted": true
+  }
+]

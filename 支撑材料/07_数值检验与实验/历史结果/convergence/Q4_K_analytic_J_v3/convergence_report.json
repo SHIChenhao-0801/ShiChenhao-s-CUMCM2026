@@ -1,0 +1,307 @@
+{
+  "created_at": "2026-09-10T14:48:06.406569+00:00",
+  "question": "Q4",
+  "runs": [
+    {
+      "settings": {
+        "question": "Q4",
+        "intervals": 400,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "max_step_s": 120.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": true,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic"
+      },
+      "diagnostics": {
+        "event_s": 183926.4239182168,
+        "event_h": 51.09067331061578,
+        "end_s": 183928.0,
+        "elapsed_s": 23.943301899998914,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 9.325873406851315e-15,
+        "min_C": 0.05261980394253638,
+        "max_C": 2.550000000000001,
+        "min_T_K": 301.15,
+        "max_T_K": 323.20009708912215,
+        "min_D": 9.398197458465387e-12,
+        "max_D": 2.4771221563593063e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 1.7763568394002505e-15,
+        "final_max_C": 0.14999919069052978,
+        "final_surface_C": 0.05261980394253639,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.012,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 37375,
+        "accepted_time_points": 16122,
+        "nfev": 37375,
+        "njev": 760,
+        "nlu": 4169,
+        "solver_success": true
+      },
+      "code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 16516,
+        "sha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "warnings": []
+    },
+    {
+      "settings": {
+        "question": "Q4",
+        "intervals": 800,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "max_step_s": 120.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": true,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic"
+      },
+      "diagnostics": {
+        "event_s": 183926.1569631038,
+        "event_h": 51.090599156417724,
+        "end_s": 183928.0,
+        "elapsed_s": 43.205345899999884,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 8.43769498715119e-15,
+        "min_C": 0.052619927387451956,
+        "max_C": 2.550000000000002,
+        "min_T_K": 301.15,
+        "max_T_K": 323.2000977689948,
+        "min_D": 9.398323160544625e-12,
+        "max_D": 2.477122648397886e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 2.220446049250313e-15,
+        "final_max_C": 0.1499990536101906,
+        "final_surface_C": 0.05261992738745195,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.012,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 37256,
+        "accepted_time_points": 16054,
+        "nfev": 37256,
+        "njev": 789,
+        "nlu": 4144,
+        "solver_success": true
+      },
+      "code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 16516,
+        "sha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "warnings": []
+    },
+    {
+      "settings": {
+        "question": "Q4",
+        "intervals": 1600,
+        "rtol": 1e-10,
+        "atol_temperature": 1e-10,
+        "atol_moisture": 1e-12,
+        "max_step_s": 120.0,
+        "early_max_step_s": 2.0,
+        "horizon_h": 240.0,
+        "shrink": true,
+        "boundary_extension": "nominal",
+        "tail_temperature_C": 50.0,
+        "tail_equilibrium": 0.05,
+        "h": 25.0,
+        "beta": 8e-07,
+        "equilibrium_scale": 1.0,
+        "surface_latent_fraction": 0.0,
+        "latent_J_kg": 2400000.0,
+        "constant_D": null,
+        "constant_thermal": false,
+        "method": "BDF",
+        "face_scheme": "kirchhoff",
+        "jacobian_mode": "analytic"
+      },
+      "diagnostics": {
+        "event_s": 183926.0901249732,
+        "event_h": 51.090580590270335,
+        "end_s": 183928.0,
+        "elapsed_s": 102.64750020000065,
+        "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+        "max_mass_balance_abs_kg_per_kg": 9.769962616701378e-15,
+        "min_C": 0.05261995953007914,
+        "max_C": 2.5500000000000016,
+        "min_T_K": 301.15,
+        "max_T_K": 323.2000983847087,
+        "min_D": 9.398355891071941e-12,
+        "max_D": 2.4771227846183713e-09,
+        "positive_properties": true,
+        "max_radial_C_increase": 3.1086244689504383e-15,
+        "final_max_C": 0.14999901928908285,
+        "final_surface_C": 0.052619959530079134,
+        "strictly_dry_at_end": true,
+        "radius_end_m": 0.012,
+        "radius_extrapolation_used": false,
+        "rhs_evaluations": 37127,
+        "accepted_time_points": 16018,
+        "nfev": 37127,
+        "njev": 770,
+        "nlu": 4133,
+        "solver_success": true
+      },
+      "code": {
+        "path": "paper_output/code/modeling/drying_core.py",
+        "bytes": 16516,
+        "sha256": "1c5b3fdea157e5025fcec8b89a5ff1fe6030a120b6eb4edd80042e81a676124a",
+        "exists": true
+      },
+      "jacobian_code": {
+        "path": "paper_output/code/modeling/analytic_jacobian.py",
+        "bytes": 16952,
+        "sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+        "exists": true
+      },
+      "inputs": [
+        {
+          "path": "paper_output/data_cleaned/A_environment_observed.csv",
+          "bytes": 10125,
+          "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+          "exists": true
+        },
+        {
+          "path": "paper_output/data_cleaned/A_radius_observed.csv",
+          "bytes": 3522,
+          "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+          "exists": true
+        }
+      ],
+      "human_review_status": "pending",
+      "gui_reproduced": false,
+      "warnings": []
+    }
+  ],
+  "comparisons": [
+    {
+      "max_absolute_difference": {
+        "T_K": 4.184584321365037e-05,
+        "C": 0.0006963337518694906
+      },
+      "locations": {
+        "T_K": {
+          "time_s": 1384.0,
+          "radius_m": 0.019
+        },
+        "C": {
+          "time_s": 105297.0,
+          "radius_m": 0.012
+        }
+      },
+      "compared_time_count": 183929,
+      "radial_count": 21,
+      "convention": "Only finite values at common physical points are compared.",
+      "coarse_N": 400,
+      "fine_N": 800,
+      "event_difference_s": -0.26695511300931685
+    },
+    {
+      "max_absolute_difference": {
+        "T_K": 1.0432154226691637e-05,
+        "C": 0.00022366870295600222
+      },
+      "locations": {
+        "T_K": {
+          "time_s": 1400.0,
+          "radius_m": 0.019
+        },
+        "C": {
+          "time_s": 124649.0,
+          "radius_m": 0.012
+        }
+      },
+      "compared_time_count": 183929,
+      "radial_count": 21,
+      "convention": "Only finite values at common physical points are compared.",
+      "coarse_N": 800,
+      "fine_N": 1600,
+      "event_difference_s": -0.06683813058771193
+    }
+  ],
+  "driver_code": {
+    "path": "paper_output/code/modeling/verify_convergence.py",
+    "bytes": 5356,
+    "sha256": "ac5f0cbc5de5beeecddf163497626a61bb6aabb82fc458c226c51a7d532f61e0",
+    "exists": true
+  },
+  "human_review": "pending",
+  "finished_at": "2026-09-10T14:53:05.933214+00:00",
+  "status": "computed_and_zero_solver_warnings"
+}

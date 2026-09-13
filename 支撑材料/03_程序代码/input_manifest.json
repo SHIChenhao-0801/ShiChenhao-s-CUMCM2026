@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "source": "paper_output/data_cleaned/A_environment_observed.csv",
+      "path": "inputs/cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "source": "paper_output/data_cleaned/A_radius_observed.csv",
+      "path": "inputs/cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "source": "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "path": "inputs/original/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "source": "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "path": "inputs/original/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "source": "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "path": "inputs/templates/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "source": "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "path": "inputs/templates/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "source": "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "path": "inputs/templates/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "source": "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "path": "inputs/templates/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "source": "paper_output/results/production/final_v6a/Q1/sampled_solution.npz",
+      "path": "reference/Q1/sampled_solution.npz",
+      "bytes": 10569,
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "source": "paper_output/results/production/final_v6a/Q23/sampled_solution.npz",
+      "path": "reference/Q23/sampled_solution.npz",
+      "bytes": 689540,
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "source": "paper_output/results/production/final_v6a/Q4/sampled_solution.npz",
+      "path": "reference/Q4/sampled_solution.npz",
+      "bytes": 628742,
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "reference/numerical_reference.json",
+      "sha256": "0496ffea561fccb5f406ec0506905e9a67b24699435d9d498db4353f5a61c2be",
+      "bytes": 9920
+    }
+  ]
+}

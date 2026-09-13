@@ -1,0 +1,664 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>scipy.integrate.solve_ivp</title><style>body{max-width:980px;margin:40px auto;padding:0 20px;font:16px/1.65 sans-serif;color:#18212b}pre{white-space:pre-wrap}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:6px}a{overflow-wrap:anywhere}</style><body><p>离线文本整理版，移除脚本、导航和图片；原始HTML另存。来源：<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html</a></p>
+  
+  
+  <div><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div></div>
+  
+  
+    Back to top
+  
+  
+  
+  
+  
+    
+
+  
+
+  <div>
+  
+</div>
+
+  
+    
+  
+
+  <div>
+    <div>
+      
+      
+      
+      
+      <div>
+        
+
+  
+  <div>
+    
+    
+      <div>
+        
+          
+          
+            <div>
+</div>
+          
+        
+      </div>
+    
+    
+    
+      <div>
+        
+          <div>
+<div>
+  
+    Choose version  
+    <span></span>
+  
+  <div>
+    
+  </div>
+</div></div>
+        
+          <div>
+
+<div>
+  
+    
+    
+    
+  
+  <ul>
+    <li>System Settings</li>
+    <li>Light</li>
+    <li>Dark</li>
+  </ul>
+</div></div>
+        
+          <div><ul>
+        <li>
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/scipy/scipy"><span>GitHub</span></a>
+        </li>
+        <li>
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discuss.scientific-python.org/c/contributor/scipy/"><span>Scientific Python Forum</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div>
+        <div>
+
+
+ 
+ <span>Search</span>
+ <span>Ctrl+K</span>
+</div>
+        <div>
+</div>
+    </div>
+  
+  
+  <div>
+      <div>
+<div>
+</div></div>
+  </div>
+
+
+      </div>
+      
+      
+        
+        
+          <div>
+            <div>
+              
+              <div>
+<div>
+  
+    <div>
+      
+        <div>
+
+
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div></div>
+                
+                  
+  <div>scipy.integrate.</div>
+<div></div>
+<h1>solve_ivp<a href="#solve-ivp">#</a></h1>
+
+
+<span><span>scipy.integrate.</span></span><span><span>solve_ivp</span></span><span>(</span><em><span><span>fun</span></span></em>, <em><span><span>t_span</span></span></em>, <em><span><span>y0</span></span></em>, <em><span><span>method</span></span><span><span>=</span></span><span><span>&#x27;RK45&#x27;</span></span></em>, <em><span><span>t_eval</span></span><span><span>=</span></span><span><span>None</span></span></em>, <em><span><span>dense_output</span></span><span><span>=</span></span><span><span>False</span></span></em>, <em><span><span>events</span></span><span><span>=</span></span><span><span>None</span></span></em>, <em><span><span>vectorized</span></span><span><span>=</span></span><span><span>False</span></span></em>, <em><span><span>args</span></span><span><span>=</span></span><span><span>None</span></span></em>, <em><span><span>**</span></span><span><span>options</span></span></em><span>)</span><a href="https://github.com/scipy/scipy/blob/v1.18.0/scipy/integrate/_ivp/ivp.py#L160-L760"><span><span>[source]</span></span></a><a href="#scipy.integrate.solve_ivp">#</a>
+<p>Solve an initial value problem for a system of ODEs.</p>
+<p>This function numerically integrates a system of ordinary differential
+equations given an initial value:</p>
+<div><div><pre><span></span><span>dy</span> <span>/</span> <span>dt</span> <span>=</span> <span>f</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>)</span>
+<span>y</span><span>(</span><span>t0</span><span>)</span> <span>=</span> <span>y0</span>
+</pre></div>
+</div>
+<p>Here t is a 1-D independent variable (time), y(t) is an
+N-D vector-valued function (state), and an N-D
+vector-valued function f(t, y) determines the differential equations.
+The goal is to find y(t) approximately satisfying the differential
+equations, given an initial value y(t0)=y0.</p>
+<p>Some of the solvers support integration in the complex domain, but note
+that for stiff ODE solvers, the right-hand side must be
+complex-differentiable (satisfy Cauchy-Riemann equations <a href="#r179348322575-11">[11]</a>).
+To solve a problem in the complex domain, pass y0 with a complex data type.
+Another option always available is to rewrite your problem for real and
+imaginary parts separately.</p>
+
+Parameters<span>:</span>
+
+<strong>fun</strong><span>callable</span><p>Right-hand side of the system: the time derivative of the state <code><span>y</span></code>
+at time <code><span>t</span></code>. The calling signature is <code><span>fun(t,</span> <span>y)</span></code>, where <code><span>t</span></code> is a
+scalar and <code><span>y</span></code> is an ndarray with <code><span>len(y)</span> <span>=</span> <span>len(y0)</span></code>. Additional
+arguments need to be passed if <code><span>args</span></code> is used (see documentation of
+<code><span>args</span></code> argument). <code><span>fun</span></code> must return an array of the same shape as
+<code><span>y</span></code>. See <em>vectorized</em> for more information.</p>
+
+<strong>t_span</strong><span>2-member sequence</span><p>Interval of integration (t0, tf). The solver starts with t=t0 and
+integrates until it reaches t=tf. Both t0 and tf must be floats
+or values interpretable by the float conversion function.</p>
+
+<strong>y0</strong><span>array_like, shape (n,)</span><p>Initial state. For problems in the complex domain, pass <em>y0</em> with a
+complex data type (even if the initial value is purely real).</p>
+
+<strong>method</strong><span>str or <a href="scipy.integrate.OdeSolver.html#scipy.integrate.OdeSolver"><code><span>OdeSolver</span></code></a>, optional</span><p>Integration method to use:</p>
+<ul>
+<li><p><strong>‘RK45’ (default)</strong>: Explicit Runge-Kutta method of order 5(4) <a href="#r179348322575-1">[1]</a>.
+The error is controlled assuming accuracy of the fourth-order
+method, but steps are taken using the fifth-order accurate
+formula (local extrapolation is done). A quartic interpolation
+polynomial is used for the dense output <a href="#r179348322575-2">[2]</a>. Can be applied in
+the complex domain.</p></li>
+<li><p><strong>‘RK23’</strong>: Explicit Runge-Kutta method of order 3(2) <a href="#r179348322575-3">[3]</a>. The error
+is controlled assuming accuracy of the second-order method, but
+steps are taken using the third-order accurate formula (local
+extrapolation is done). A cubic Hermite polynomial is used for the
+dense output. Can be applied in the complex domain.</p></li>
+<li><p><strong>‘DOP853’</strong>: Explicit Runge-Kutta method of order 8 <a href="#r179348322575-13">[13]</a>.
+Python implementation of the “DOP853” algorithm originally
+written in Fortran <a href="#r179348322575-14">[14]</a>. A 7-th order interpolation polynomial
+accurate to 7-th order is used for the dense output.
+Can be applied in the complex domain.</p></li>
+<li><p><strong>‘Radau’</strong>: Implicit Runge-Kutta method of the Radau IIA family of
+order 5 <a href="#r179348322575-4">[4]</a>. The error is controlled with a third-order accurate
+embedded formula. A cubic polynomial which satisfies the
+collocation conditions is used for the dense output.</p></li>
+<li><p><strong>‘BDF’</strong>: Implicit multi-step variable-order (1 to 5) method based
+on a backward differentiation formula for the derivative
+approximation <a href="#r179348322575-5">[5]</a>. The implementation follows the one described
+in <a href="#r179348322575-6">[6]</a>. A quasi-constant step scheme is used and accuracy is
+enhanced using the NDF modification. Can be applied in the
+complex domain.</p></li>
+<li><p><strong>‘LSODA’</strong>: Adams/BDF method with automatic stiffness detection and
+switching <a href="#r179348322575-7">[7]</a>, <a href="#r179348322575-8">[8]</a>. This is a wrapper of the Fortran solver
+from ODEPACK.</p></li>
+</ul>
+<p>Explicit Runge-Kutta methods (‘RK23’, ‘RK45’, ‘DOP853’) should be used
+for non-stiff problems and implicit methods (‘Radau’, ‘BDF’) for
+stiff problems <a href="#r179348322575-9">[9]</a>. Among Runge-Kutta methods, ‘DOP853’ is recommended
+for solving with high precision (low values of <em>rtol</em> and <em>atol</em>).</p>
+<p>If not sure, first try to run ‘RK45’. If it makes unusually many
+iterations, diverges, or fails, your problem is likely to be stiff and
+you should use ‘Radau’ or ‘BDF’. ‘LSODA’ can also be a good universal
+choice, but it might be somewhat less convenient to work with as it
+wraps old Fortran code.</p>
+<p>You can also pass an arbitrary class derived from <a href="scipy.integrate.OdeSolver.html#scipy.integrate.OdeSolver"><code><span>OdeSolver</span></code></a> which
+implements the solver.</p>
+
+<strong>t_eval</strong><span>array_like or None, optional</span><p>Times at which to store the computed solution, must be sorted and lie
+within <em>t_span</em>. If None (default), use points selected by the solver.</p>
+
+<strong>dense_output</strong><span>bool, optional</span><p>Whether to compute a continuous solution. Default is False.</p>
+
+<strong>events</strong><span>callable, or list of callables, optional</span><p>Events to track. If None (default), no events will be tracked.
+Each event occurs at the zeros of a continuous function of time and
+state. Each function must have the signature <code><span>event(t,</span> <span>y)</span></code> where
+additional argument have to be passed if <code><span>args</span></code> is used (see
+documentation of <code><span>args</span></code> argument). Each function must return a
+float. The solver will find an accurate value of <em>t</em> at which
+<code><span>event(t,</span> <span>y(t))</span> <span>=</span> <span>0</span></code> using a root-finding algorithm. By default,
+all zeros will be found. The solver looks for a sign change over
+each step, so if multiple zero crossings occur within one step,
+events may be missed. Additionally each <em>event</em> function might
+have the following attributes:</p>
+
+terminal: bool or int, optional<p>When boolean, whether to terminate integration if this event occurs.
+When integral, termination occurs after the specified the number of
+occurrences of this event.
+Implicitly False if not assigned.</p>
+
+direction: float, optional<p>Direction of a zero crossing. If <em>direction</em> is positive,
+<em>event</em> will only trigger when going from negative to positive,
+and vice versa if <em>direction</em> is negative. If 0, then either
+direction will trigger event. Implicitly 0 if not assigned.</p>
+
+
+<p>You can assign attributes like <code><span>event.terminal</span> <span>=</span> <span>True</span></code> to any
+function in Python.</p>
+
+<strong>vectorized</strong><span>bool, optional</span><p>Whether <em>fun</em> can be called in a vectorized fashion. Default is False.</p>
+<p>If <code><span>vectorized</span></code> is False, <em>fun</em> will always be called with <code><span>y</span></code> of
+shape <code><span>(n,)</span></code>, where <code><span>n</span> <span>=</span> <span>len(y0)</span></code>.</p>
+<p>If <code><span>vectorized</span></code> is True, <em>fun</em> may be called with <code><span>y</span></code> of shape
+<code><span>(n,</span> <span>k)</span></code>, where <code><span>k</span></code> is an integer. In this case, <em>fun</em> must behave
+such that <code><span>fun(t,</span> <span>y)[:,</span> <span>i]</span> <span>==</span> <span>fun(t,</span> <span>y[:,</span> <span>i])</span></code> (i.e. each column of
+the returned array is the time derivative of the state corresponding
+with a column of <code><span>y</span></code>).</p>
+<p>Setting <code><span>vectorized=True</span></code> allows for faster finite difference
+approximation of the Jacobian by methods ‘Radau’ and ‘BDF’, but
+will result in slower execution for other methods and for ‘Radau’ and
+‘BDF’ in some circumstances (e.g. small <code><span>len(y0)</span></code>).</p>
+
+<strong>args</strong><span>tuple, optional</span><p>Additional arguments to pass to the user-defined functions.  If given,
+the additional arguments are passed to all user-defined functions.
+So if, for example, <em>fun</em> has the signature <code><span>fun(t,</span> <span>y,</span> <span>a,</span> <span>b,</span> <span>c)</span></code>,
+then <em>jac</em> (if given) and any event functions must have the same
+signature, and <em>args</em> must be a tuple of length 3.</p>
+
+<strong>**options</strong><p>Options passed to a chosen solver. All options available for already
+implemented solvers are listed below.</p>
+
+first_step<span>float or None, optional</span><p>Initial step size. Default is <em>None</em> which means that the algorithm
+should choose.</p>
+
+max_step<span>float, optional</span><p>Maximum allowed step size. Default is np.inf, i.e., the step size is not
+bounded and determined solely by the solver.</p>
+
+rtol, atol<span>float or array_like, optional</span><p>Relative and absolute tolerances. The solver keeps the local error
+estimates less than <code><span>atol</span> <span>+</span> <span>rtol</span> <span>*</span> <span>abs(y)</span></code>. Here <em>rtol</em> controls a
+relative accuracy (number of correct digits), while <em>atol</em> controls
+absolute accuracy (number of correct decimal places). To achieve the
+desired <em>rtol</em>, set <em>atol</em> to be smaller than the smallest value that
+can be expected from <code><span>rtol</span> <span>*</span> <span>abs(y)</span></code> so that <em>rtol</em> dominates the
+allowable error. If <em>atol</em> is larger than <code><span>rtol</span> <span>*</span> <span>abs(y)</span></code> the
+number of correct digits is not guaranteed. Conversely, to achieve the
+desired <em>atol</em> set <em>rtol</em> such that <code><span>rtol</span> <span>*</span> <span>abs(y)</span></code> is always smaller
+than <em>atol</em>. If components of y have different scales, it might be
+beneficial to set different <em>atol</em> values for different components by
+passing array_like with shape (n,) for <em>atol</em>. Default values are
+1e-3 for <em>rtol</em> and 1e-6 for <em>atol</em>.</p>
+
+jac<span>array_like, sparse_matrix, callable or None, optional</span><p>Jacobian matrix of the right-hand side of the system with respect
+to y, required by the ‘Radau’, ‘BDF’ and ‘LSODA’ method. The
+Jacobian matrix has shape (n, n) and its element (i, j) is equal to
+<code><span>d</span> <span>f_i</span> <span>/</span> <span>d</span> <span>y_j</span></code>.  There are three ways to define the Jacobian:</p>
+<ul>
+<li><p>If array_like or sparse_matrix, the Jacobian is assumed to
+be constant. Not supported by ‘LSODA’.</p></li>
+<li><p>If callable, the Jacobian is assumed to depend on both
+t and y; it will be called as <code><span>jac(t,</span> <span>y)</span></code>, as necessary.
+Additional arguments have to be passed if <code><span>args</span></code> is
+used (see documentation of <code><span>args</span></code> argument).
+For ‘Radau’ and ‘BDF’ methods, the return value might be a
+sparse matrix.</p></li>
+<li><p>If None (default), the Jacobian will be approximated by
+finite differences.</p></li>
+</ul>
+<p>It is generally recommended to provide the Jacobian rather than
+relying on a finite-difference approximation.</p>
+
+jac_sparsity<span>array_like, sparse matrix or None, optional</span><p>Defines a sparsity structure of the Jacobian matrix for a finite-
+difference approximation. Its shape must be (n, n). This argument
+is ignored if <em>jac</em> is not <em>None</em>. If the Jacobian has only few
+non-zero elements in <em>each</em> row, providing the sparsity structure
+will greatly speed up the computations <a href="#r179348322575-10">[10]</a>. A zero entry means that
+a corresponding element in the Jacobian is always zero. If None
+(default), the Jacobian is assumed to be dense.
+Not supported by ‘LSODA’, see <em>lband</em> and <em>uband</em> instead.</p>
+
+lband, uband<span>int or None, optional</span><p>Parameters defining the bandwidth of the Jacobian for the ‘LSODA’
+method, i.e., <code><span>jac[i,</span> <span>j]</span> <span>!=</span> <span>0</span> <span>only</span> <span>for</span> <span>i</span> <span>-</span> <span>lband</span> <span>&lt;=</span> <span>j</span> <span>&lt;=</span> <span>i</span> <span>+</span> <span>uband</span></code>.
+Default is None. Setting these requires your jac routine to return the
+Jacobian in the packed format: the returned array must have <code><span>n</span></code>
+columns and <code><span>uband</span> <span>+</span> <span>lband</span> <span>+</span> <span>1</span></code> rows in which Jacobian diagonals are
+written. Specifically <code><span>jac_packed[uband</span> <span>+</span> <span>i</span> <span>-</span> <span>j</span> <span>,</span> <span>j]</span> <span>=</span> <span>jac[i,</span> <span>j]</span></code>.
+The same format is used in <a href="scipy.linalg.solve_banded.html#scipy.linalg.solve_banded"><code><span>scipy.linalg.solve_banded</span></code></a> (check for an
+illustration).  These parameters can be also used with <code><span>jac=None</span></code> to
+reduce the number of Jacobian elements estimated by finite differences.</p>
+
+min_step<span>float, optional</span><p>The minimum allowed step size for ‘LSODA’ method.
+By default <em>min_step</em> is zero.</p>
+
+
+
+
+
+Returns<span>:</span>
+
+<strong>result</strong><span>OdeResult</span><p>Bunch object with the following fields defined:</p>
+
+t<span>ndarray, shape (n_points,)</span><p>Time points.</p>
+
+y<span>ndarray, shape (n, n_points)</span><p>Values of the solution at <em>t</em>.</p>
+
+sol<span><a href="scipy.integrate.OdeSolution.html#scipy.integrate.OdeSolution"><code><span>OdeSolution</span></code></a> or None</span><p>Found solution as <a href="scipy.integrate.OdeSolution.html#scipy.integrate.OdeSolution"><code><span>OdeSolution</span></code></a> instance; None if <em>dense_output</em> was
+set to False.</p>
+
+t_events<span>list of ndarray or None</span><p>Contains for each event type a list of arrays at which an event of
+that type event was detected. None if <em>events</em> was None.</p>
+
+y_events<span>list of ndarray or None</span><p>For each value of <em>t_events</em>, the corresponding value of the solution.
+None if <em>events</em> was None.</p>
+
+nfev<span>int</span><p>Number of evaluations of the right-hand side.</p>
+
+njev<span>int</span><p>Number of evaluations of the Jacobian.</p>
+
+nlu<span>int</span><p>Number of LU decompositions.</p>
+
+status<span>int</span><p>Reason for algorithm termination:</p>
+<ul>
+<li><p>-1: Integration step failed.</p></li>
+<li><p>0: The solver successfully reached the end of <em>tspan</em>.</p></li>
+<li><p>1: A termination event occurred.</p></li>
+</ul>
+
+message<span>str</span><p>Human-readable description of the termination reason.</p>
+
+success<span>bool</span><p>True if the solver reached the interval end or a termination event
+occurred (<code><span>status</span> <span>&gt;=</span> <span>0</span></code>).</p>
+
+
+
+
+
+
+<p>References</p>
+<div>
+<div>
+<span><span>[</span><a href="#id2">1</a><span>]</span></span>
+<p>J. R. Dormand, P. J. Prince, “A family of embedded Runge-Kutta
+formulae”, Journal of Computational and Applied Mathematics, Vol. 6,
+No. 1, pp. 19-26, 1980.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id3">2</a><span>]</span></span>
+<p>L. W. Shampine, “Some Practical Runge-Kutta Formulas”, Mathematics
+of Computation,, Vol. 46, No. 173, pp. 135-150, 1986.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id4">3</a><span>]</span></span>
+<p>P. Bogacki, L.F. Shampine, “A 3(2) Pair of Runge-Kutta Formulas”,
+Appl. Math. Lett. Vol. 2, No. 4. pp. 321-325, 1989.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id7">4</a><span>]</span></span>
+<p>E. Hairer, G. Wanner, “Solving Ordinary Differential Equations II:
+Stiff and Differential-Algebraic Problems”, Sec. IV.8.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id8">5</a><span>]</span></span>
+<p><a href="https://en.wikipedia.org/wiki/Backward_differentiation_formula">Backward Differentiation Formula</a>
+on Wikipedia.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id9">6</a><span>]</span></span>
+<p>L. F. Shampine, M. W. Reichelt, “THE MATLAB ODE SUITE”, SIAM J. SCI.
+COMPUTE., Vol. 18, No. 1, pp. 1-22, January 1997.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id10">7</a><span>]</span></span>
+<p>A. C. Hindmarsh, “ODEPACK, A Systematized Collection of ODE
+Solvers,” IMACS Transactions on Scientific Computation, Vol 1.,
+pp. 55-64, 1983.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id11">8</a><span>]</span></span>
+<p>L. Petzold, “Automatic selection of methods for solving stiff and
+nonstiff systems of ordinary differential equations”, SIAM Journal
+on Scientific and Statistical Computing, Vol. 4, No. 1, pp. 136-148,
+1983.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id12">9</a><span>]</span></span>
+<p><a href="https://en.wikipedia.org/wiki/Stiff_equation">Stiff equation</a> on
+Wikipedia.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id13">10</a><span>]</span></span>
+<p>A. Curtis, M. J. D. Powell, and J. Reid, “On the estimation of
+sparse Jacobian matrices”, Journal of the Institute of Mathematics
+and its Applications, 13, pp. 117-120, 1974.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id1">11</a><span>]</span></span>
+<p><a href="https://en.wikipedia.org/wiki/Cauchy-Riemann_equations">Cauchy-Riemann equations</a> on
+Wikipedia.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id28">12</a><span>]</span></span>
+<p><a href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations">Lotka-Volterra equations</a>
+on Wikipedia.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id5">13</a><span>]</span></span>
+<p>E. Hairer, S. P. Norsett G. Wanner, “Solving Ordinary Differential
+Equations I: Nonstiff Problems”, Sec. II.</p>
+</div>
+<div>
+<span><span>[</span><a href="#id6">14</a><span>]</span></span>
+<p><a href="http://www.unige.ch/~hairer/software.html">Page with original Fortran code of DOP853</a>.</p>
+</div>
+</div>
+<p>Examples</p>
+<div>
+<div>Try it in your browser!</div><div>
+<p>Basic exponential decay showing automatically chosen time points.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>import</span><span> </span><span>numpy</span><span> </span><span>as</span><span> </span><span>np</span>
+<span>&gt;&gt;&gt; </span><span>from</span><span> </span><span>scipy.integrate</span><span> </span><span>import</span> <span>solve_ivp</span>
+<span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>exponential_decay</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>):</span> <span>return</span> <span>-</span><span>0.5</span> <span>*</span> <span>y</span>
+<span>&gt;&gt;&gt; </span><span>sol</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>exponential_decay</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>10</span><span>],</span> <span>[</span><span>2</span><span>,</span> <span>4</span><span>,</span> <span>8</span><span>])</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>t</span><span>)</span>
+<span>[ 0.          0.11487653  1.26364188  3.06061781  4.81611105  6.57445806</span>
+<span>  8.33328988 10.        ]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>y</span><span>)</span>
+<span>[[2.         1.88836035 1.06327177 0.43319312 0.18017253 0.07483045</span>
+<span>  0.03107158 0.01350781]</span>
+<span> [4.         3.7767207  2.12654355 0.86638624 0.36034507 0.14966091</span>
+<span>  0.06214316 0.02701561]</span>
+<span> [8.         7.5534414  4.25308709 1.73277247 0.72069014 0.29932181</span>
+<span>  0.12428631 0.05403123]]</span>
+</pre></div>
+</div>
+<p>Specifying points where the solution is desired.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>sol</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>exponential_decay</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>10</span><span>],</span> <span>[</span><span>2</span><span>,</span> <span>4</span><span>,</span> <span>8</span><span>],</span>
+<span>... </span>                <span>t_eval</span><span>=</span><span>[</span><span>0</span><span>,</span> <span>1</span><span>,</span> <span>2</span><span>,</span> <span>4</span><span>,</span> <span>10</span><span>])</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>t</span><span>)</span>
+<span>[ 0  1  2  4 10]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>y</span><span>)</span>
+<span>[[2.         1.21305369 0.73534021 0.27066736 0.01350938]</span>
+<span> [4.         2.42610739 1.47068043 0.54133472 0.02701876]</span>
+<span> [8.         4.85221478 2.94136085 1.08266944 0.05403753]]</span>
+</pre></div>
+</div>
+<p>Cannon fired upward with terminal event upon impact. The <code><span>terminal</span></code> and
+<code><span>direction</span></code> fields of an event are applied by monkey patching a function.
+Here <code><span>y[0]</span></code> is position and <code><span>y[1]</span></code> is velocity. The projectile starts
+at position 0 with velocity +10. Note that the integration never reaches
+t=100 because the event is terminal.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>upward_cannon</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>):</span> <span>return</span> <span>[</span><span>y</span><span>[</span><span>1</span><span>],</span> <span>-</span><span>0.5</span><span>]</span>
+<span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>hit_ground</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>):</span> <span>return</span> <span>y</span><span>[</span><span>0</span><span>]</span>
+<span>&gt;&gt;&gt; </span><span>hit_ground</span><span>.</span><span>terminal</span> <span>=</span> <span>True</span>
+<span>&gt;&gt;&gt; </span><span>hit_ground</span><span>.</span><span>direction</span> <span>=</span> <span>-</span><span>1</span>
+<span>&gt;&gt;&gt; </span><span>sol</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>upward_cannon</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>100</span><span>],</span> <span>[</span><span>0</span><span>,</span> <span>10</span><span>],</span> <span>events</span><span>=</span><span>hit_ground</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>t_events</span><span>)</span>
+<span>[array([40.])]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>t</span><span>)</span>
+<span>[0.00000000e+00 9.99900010e-05 1.09989001e-03 1.10988901e-02</span>
+<span> 1.11088891e-01 1.11098890e+00 1.11099890e+01 4.00000000e+01]</span>
+</pre></div>
+</div>
+<p>Use <em>dense_output</em> and <em>events</em> to find position, which is 100, at the apex
+of the cannonball’s trajectory. Apex is not defined as terminal, so both
+apex and hit_ground are found. There is no information at t=20, so the sol
+attribute is used to evaluate the solution. The sol attribute is returned
+by setting <code><span>dense_output=True</span></code>. Alternatively, the <em>y_events</em> attribute
+can be used to access the solution at the time of the event.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>apex</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>):</span> <span>return</span> <span>y</span><span>[</span><span>1</span><span>]</span>
+<span>&gt;&gt;&gt; </span><span>sol</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>upward_cannon</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>100</span><span>],</span> <span>[</span><span>0</span><span>,</span> <span>10</span><span>],</span>
+<span>... </span>                <span>events</span><span>=</span><span>(</span><span>hit_ground</span><span>,</span> <span>apex</span><span>),</span> <span>dense_output</span><span>=</span><span>True</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>t_events</span><span>)</span>
+<span>[array([40.]), array([20.])]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>t</span><span>)</span>
+<span>[0.00000000e+00 9.99900010e-05 1.09989001e-03 1.10988901e-02</span>
+<span> 1.11088891e-01 1.11098890e+00 1.11099890e+01 4.00000000e+01]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>sol</span><span>(</span><span>sol</span><span>.</span><span>t_events</span><span>[</span><span>1</span><span>][</span><span>0</span><span>]))</span>
+<span>[100.   0.]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>sol</span><span>.</span><span>y_events</span><span>)</span>
+<span>[array([[-5.68434189e-14, -1.00000000e+01]]),</span>
+<span> array([[1.00000000e+02, 1.77635684e-15]])]</span>
+</pre></div>
+</div>
+<p>As an example of a system with additional parameters, we’ll implement
+the Lotka-Volterra equations <a href="#r179348322575-12">[12]</a>.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>lotkavolterra</span><span>(</span><span>t</span><span>,</span> <span>z</span><span>,</span> <span>a</span><span>,</span> <span>b</span><span>,</span> <span>c</span><span>,</span> <span>d</span><span>):</span>
+<span>... </span>    <span>x</span><span>,</span> <span>y</span> <span>=</span> <span>z</span>
+<span>... </span>    <span>return</span> <span>[</span><span>a</span><span>*</span><span>x</span> <span>-</span> <span>b</span><span>*</span><span>x</span><span>*</span><span>y</span><span>,</span> <span>-</span><span>c</span><span>*</span><span>y</span> <span>+</span> <span>d</span><span>*</span><span>x</span><span>*</span><span>y</span><span>]</span>
+<span>...</span>
+</pre></div>
+</div>
+<p>We pass in the parameter values a=1.5, b=1, c=3 and d=1 with the <em>args</em>
+argument.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>sol</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>lotkavolterra</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>15</span><span>],</span> <span>[</span><span>10</span><span>,</span> <span>5</span><span>],</span> <span>args</span><span>=</span><span>(</span><span>1.5</span><span>,</span> <span>1</span><span>,</span> <span>3</span><span>,</span> <span>1</span><span>),</span>
+<span>... </span>                <span>dense_output</span><span>=</span><span>True</span><span>)</span>
+</pre></div>
+</div>
+<p>Compute a dense solution and plot it.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>t</span> <span>=</span> <span>np</span><span>.</span><span>linspace</span><span>(</span><span>0</span><span>,</span> <span>15</span><span>,</span> <span>300</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>z</span> <span>=</span> <span>sol</span><span>.</span><span>sol</span><span>(</span><span>t</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>import</span><span> </span><span>matplotlib.pyplot</span><span> </span><span>as</span><span> </span><span>plt</span>
+<span>&gt;&gt;&gt; </span><span>plt</span><span>.</span><span>plot</span><span>(</span><span>t</span><span>,</span> <span>z</span><span>.</span><span>T</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>plt</span><span>.</span><span>xlabel</span><span>(</span><span>&#x27;t&#x27;</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>plt</span><span>.</span><span>legend</span><span>([</span><span>&#x27;x&#x27;</span><span>,</span> <span>&#x27;y&#x27;</span><span>],</span> <span>shadow</span><span>=</span><span>True</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>plt</span><span>.</span><span>title</span><span>(</span><span>&#x27;Lotka-Volterra System&#x27;</span><span>)</span>
+<span>&gt;&gt;&gt; </span><span>plt</span><span>.</span><span>show</span><span>()</span>
+</pre></div>
+</div>
+
+
+
+<p>A couple examples of using solve_ivp to solve the differential
+equation <code><span>y&#x27;</span> <span>=</span> <span>Ay</span></code> with complex matrix <code><span>A</span></code>.</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>A</span> <span>=</span> <span>np</span><span>.</span><span>array</span><span>([[</span><span>-</span><span>0.25</span> <span>+</span> <span>0.14</span><span>j</span><span>,</span> <span>0</span><span>,</span> <span>0.33</span> <span>+</span> <span>0.44</span><span>j</span><span>],</span>
+<span>... </span>              <span>[</span><span>0.25</span> <span>+</span> <span>0.58</span><span>j</span><span>,</span> <span>-</span><span>0.2</span> <span>+</span> <span>0.14</span><span>j</span><span>,</span> <span>0</span><span>],</span>
+<span>... </span>              <span>[</span><span>0</span><span>,</span> <span>0.2</span> <span>+</span> <span>0.4</span><span>j</span><span>,</span> <span>-</span><span>0.1</span> <span>+</span> <span>0.97</span><span>j</span><span>]])</span>
+</pre></div>
+</div>
+<p>Solving an IVP with <code><span>A</span></code> from above and <code><span>y</span></code> as 3x1 vector:</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>deriv_vec</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>):</span>
+<span>... </span>    <span>return</span> <span>A</span> <span>@</span> <span>y</span>
+<span>&gt;&gt;&gt; </span><span>result</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>deriv_vec</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>25</span><span>],</span>
+<span>... </span>                   <span>np</span><span>.</span><span>array</span><span>([</span><span>10</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>20</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>30</span> <span>+</span> <span>0</span><span>j</span><span>]),</span>
+<span>... </span>                   <span>t_eval</span><span>=</span><span>np</span><span>.</span><span>linspace</span><span>(</span><span>0</span><span>,</span> <span>25</span><span>,</span> <span>101</span><span>))</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>result</span><span>.</span><span>y</span><span>[:,</span> <span>0</span><span>])</span>
+<span>[10.+0.j 20.+0.j 30.+0.j]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>result</span><span>.</span><span>y</span><span>[:,</span> <span>-</span><span>1</span><span>])</span>
+<span>[18.46291039+45.25653651j 10.01569306+36.23293216j</span>
+<span> -4.98662741+80.07360388j]</span>
+</pre></div>
+</div>
+<p>Solving an IVP with <code><span>A</span></code> from above with <code><span>y</span></code> as 3x3 matrix :</p>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>def</span><span> </span><span>deriv_mat</span><span>(</span><span>t</span><span>,</span> <span>y</span><span>):</span>
+<span>... </span>    <span>return</span> <span>(</span><span>A</span> <span>@</span> <span>y</span><span>.</span><span>reshape</span><span>(</span><span>3</span><span>,</span> <span>3</span><span>))</span><span>.</span><span>flatten</span><span>()</span>
+<span>&gt;&gt;&gt; </span><span>y0</span> <span>=</span> <span>np</span><span>.</span><span>array</span><span>([[</span><span>2</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>3</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>4</span> <span>+</span> <span>0</span><span>j</span><span>],</span>
+<span>... </span>               <span>[</span><span>5</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>6</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>7</span> <span>+</span> <span>0</span><span>j</span><span>],</span>
+<span>... </span>               <span>[</span><span>9</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>34</span> <span>+</span> <span>0</span><span>j</span><span>,</span> <span>78</span> <span>+</span> <span>0</span><span>j</span><span>]])</span>
+</pre></div>
+</div>
+<div><div><pre><span></span><span>&gt;&gt;&gt; </span><span>result</span> <span>=</span> <span>solve_ivp</span><span>(</span><span>deriv_mat</span><span>,</span> <span>[</span><span>0</span><span>,</span> <span>25</span><span>],</span> <span>y0</span><span>.</span><span>flatten</span><span>(),</span>
+<span>... </span>                   <span>t_eval</span><span>=</span><span>np</span><span>.</span><span>linspace</span><span>(</span><span>0</span><span>,</span> <span>25</span><span>,</span> <span>101</span><span>))</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>result</span><span>.</span><span>y</span><span>[:,</span> <span>0</span><span>]</span><span>.</span><span>reshape</span><span>(</span><span>3</span><span>,</span> <span>3</span><span>))</span>
+<span>[[ 2.+0.j  3.+0.j  4.+0.j]</span>
+<span> [ 5.+0.j  6.+0.j  7.+0.j]</span>
+<span> [ 9.+0.j 34.+0.j 78.+0.j]]</span>
+<span>&gt;&gt;&gt; </span><span>print</span><span>(</span><span>result</span><span>.</span><span>y</span><span>[:,</span> <span>-</span><span>1</span><span>]</span><span>.</span><span>reshape</span><span>(</span><span>3</span><span>,</span> <span>3</span><span>))</span>
+<span>[[  5.67451179 +12.07938445j  17.2888073  +31.03278837j</span>
+<span>    37.83405768 +63.25138759j]</span>
+<span> [  3.39949503 +11.82123994j  21.32530996 +44.88668871j</span>
+<span>    53.17531184+103.80400411j]</span>
+<span> [ -2.26105874 +22.19277664j -15.1255713  +70.19616341j</span>
+<span>   -38.34616845+153.29039931j]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div><div>Go BackOpen In Tab</div><div></div></div>
+
+
+
+
+                
+              
+              
+              
+              
+              
+                
+              
+            </div>
+            
+            
+              
+                
+                <div><div>
+
+
+  <div>
+<div>
+     On this page
+  </div>
+  </div>
+
+</div></div>
+              
+            
+          </div>
+          
+        
+      
+    </div>
+  </div>
+  
+  
+  
+
+
+  
+  </body></html>

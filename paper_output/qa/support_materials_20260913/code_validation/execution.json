@@ -1,0 +1,218 @@
+{
+  "startedAtUtc": "2026-09-13T00:01:18.404937+00:00",
+  "status": "PASS",
+  "archiveSha256": "d59d9398891383352623bd8e06a3d72362806c51a88d06bd4fa3defe888590c0",
+  "sourceArchive": "code_candidate.zip",
+  "isolatedDirectory": "isolated/03_程序代码",
+  "files": [
+    {
+      "path": "A_CodeReview.sln",
+      "sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f"
+    },
+    {
+      "path": "analyticJacobian.py",
+      "sha256": "10cf75e95bc57383c52b540575c9d4e51548a4f6d2227ea7f9446a32f010d7bb"
+    },
+    {
+      "path": "diskDense.py",
+      "sha256": "85fe836269d343dec2ced585ee25d4a052bfdf2376fae06d051e89fa91fab1b1"
+    },
+    {
+      "path": "docs/portable_paths.diff",
+      "sha256": "94822fa3c793ffa899bc9c13ded72abaea04d9a08857edc1671712d2afb500fc"
+    },
+    {
+      "path": "docs/source_changes.json",
+      "sha256": "9b7129433837e7383ab2fd4e95c7c6fb006f923f59286d7ba21c65126ae9a7a0"
+    },
+    {
+      "path": "dryingCore.py",
+      "sha256": "4d332f1a2d6e69ceb1247f74bacfca1132681ba70f5882bccdebb45432afa6cb"
+    },
+    {
+      "path": "exportOutputs.py",
+      "sha256": "2af8119529f23c16784cf41c82883b06932615b1bd72211fe269069ded4a4ef4"
+    },
+    {
+      "path": "input_manifest.json",
+      "sha256": "71bed68aa6bd48ec5d05603da4288e901a47e9bf621f044453319cb83d99cb01"
+    },
+    {
+      "path": "inputs/cleaned/A_environment_observed.csv",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "inputs/cleaned/A_radius_observed.csv",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "inputs/original/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "inputs/original/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "inputs/templates/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "inputs/templates/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "inputs/templates/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "inputs/templates/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "q1Model.py",
+      "sha256": "ea386c0923fcd228de15d218bc834a95cc2be40620a18c88343580d0a9e86ac9"
+    },
+    {
+      "path": "q2Model.py",
+      "sha256": "12ca865e9a18c92aabc7bc3824494891a4b3dc8353d6ef9cb6b0cec5748cae7e"
+    },
+    {
+      "path": "q3Model.py",
+      "sha256": "e1dbc3b7dd682f2e0e152057e132ba73774f083b2bdd78bcb27a188e31c7136d"
+    },
+    {
+      "path": "q4Model.py",
+      "sha256": "c9b2863f62e29aafe1ada0c30305a91301260d5ef2755d1f6b8550c94b9d506f"
+    },
+    {
+      "path": "reference/numerical_reference.json",
+      "sha256": "0496ffea561fccb5f406ec0506905e9a67b24699435d9d498db4353f5a61c2be"
+    },
+    {
+      "path": "reference/Q1/sampled_solution.npz",
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "reference/Q23/sampled_solution.npz",
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "path": "reference/Q4/sampled_solution.npz",
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055"
+    },
+    {
+      "path": "runDelivery.py",
+      "sha256": "ab1571bf741f133e44d85b7f8a015d31d594d6338a139ae1a48b4f92a19470c1"
+    }
+  ],
+  "cases": [
+    {
+      "name": "environment",
+      "startedAtUtc": "2026-09-13T00:01:18.407846+00:00",
+      "finishedAtUtc": "2026-09-13T00:01:18.693348+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 0.28553499998815823,
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-c",
+        "import sys,site,json,importlib.metadata as m; print(json.dumps({'version':sys.version,'prefix':sys.prefix,'basePrefix':sys.base_prefix,'userSiteEnabled':site.ENABLE_USER_SITE,'libraries':{n:m.version(n) for n in ['numpy','scipy','openpyxl']}},ensure_ascii=False))"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码",
+      "stdout": "environment.stdout.log",
+      "stderr": "environment.stderr.log"
+    },
+    {
+      "name": "pip_check",
+      "startedAtUtc": "2026-09-13T00:01:18.694413+00:00",
+      "finishedAtUtc": "2026-09-13T00:01:19.690051+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 0.9956625000049826,
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码",
+      "stdout": "pip_check.stdout.log",
+      "stderr": "pip_check.stderr.log"
+    },
+    {
+      "name": "preflight",
+      "startedAtUtc": "2026-09-13T00:01:19.690773+00:00",
+      "finishedAtUtc": "2026-09-13T00:01:28.625316+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 8.93457219999982,
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码\\runDelivery.py",
+        "--preflight-only",
+        "--run-id",
+        "preflight_isolated"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码",
+      "stdout": "preflight.stdout.log",
+      "stderr": "preflight.stderr.log"
+    },
+    {
+      "name": "quick",
+      "startedAtUtc": "2026-09-13T00:01:28.626513+00:00",
+      "finishedAtUtc": "2026-09-13T00:09:03.142249+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 454.5157823000045,
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码\\runDelivery.py",
+        "--profile",
+        "quick",
+        "--run-id",
+        "quick_isolated"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码",
+      "stdout": "quick.stdout.log",
+      "stderr": "quick.stderr.log"
+    },
+    {
+      "name": "final",
+      "startedAtUtc": "2026-09-13T00:09:03.143734+00:00",
+      "finishedAtUtc": "2026-09-13T00:25:34.039557+00:00",
+      "actualExitCode": 0,
+      "elapsedSeconds": 989.547267300004,
+      "command": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码\\runDelivery.py",
+        "--profile",
+        "final",
+        "--run-id",
+        "final_isolated"
+      ],
+      "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\code_validation\\isolated\\03_程序代码",
+      "stdout": "final.stdout.log",
+      "stderr": "final.stderr.log"
+    }
+  ],
+  "guiNewVersion": "NOT_PERFORMED",
+  "humanReview": "PENDING_USER_REVIEW",
+  "physicalSecondDevice": "NOT_TESTED",
+  "finishedAtUtc": "2026-09-13T00:25:34.098070+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "createdAtUtc": "2026-09-13T00:09:48.939044+00:00",
+  "archive": "paper_output\\qa\\support_materials_20260913\\provisional.rar",
+  "bytes": 20329598,
+  "sha256": "abd1c67f9ea7552eaaa32b6570f25bf811f4001bf4a9a70efd043a7622f3e937",
+  "sourceFiles": 425,
+  "sourceBytes": 50312402,
+  "inputChangedDuringRun": [],
+  "calls": [
+    {
+      "name": "compress",
+      "args": [
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\rar_tool\\runtime\\Rar.exe",
+        "a",
+        "-cfg-",
+        "-r",
+        "-m5",
+        "-md128m",
+        "-s",
+        "-mt4",
+        "-qo-",
+        "-idq",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\provisional.rar",
+        "支撑材料"
+      ],
+      "exitCode": 0,
+      "seconds": 3.4690000000118744
+    },
+    {
+      "name": "test",
+      "args": [
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\rar_tool\\runtime\\Rar.exe",
+        "t",
+        "-cfg-",
+        "-idq",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\provisional.rar"
+      ],
+      "exitCode": 0,
+      "seconds": 0.34399999999732245
+    }
+  ],
+  "allExitZero": true,
+  "under20DecimalMB": false,
+  "under20MiB": true,
+  "provisional": true
+}

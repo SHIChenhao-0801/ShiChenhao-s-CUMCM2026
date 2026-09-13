@@ -1,0 +1,45 @@
+{
+  "status": "TEXT_AND_STRUCTURE_PASS_VISUAL_REVIEW_PENDING",
+  "pages": 6,
+  "sha256": "d996b6aab3be25fe000d2e0f6572c43a6c47d59212d4451e5dc2f96e32010b7a",
+  "bytes": 114642,
+  "metadata": {
+    "format": "PDF 1.4",
+    "title": "AI工具使用详情",
+    "author": "",
+    "subject": "A题支撑材料：AI实际参与和证据边界",
+    "keywords": "",
+    "creator": "",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "creationDate": "D:20260913082828+08'00'",
+    "modDate": "D:20260913082828+08'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "anonymousSensitiveTokenHits": [],
+  "pageTextLengths": [
+    916,
+    899,
+    993,
+    910,
+    1126,
+    972
+  ],
+  "currentPackageStatus": {
+    "status": "PASS_SAME_MACHINE_ISOLATED_CLI",
+    "text": "当前交付程序在同机隔离目录、不继承系统site-packages的干净venv中复现通过。Windows AMD64 / Python 3.14.7，NumPy 2.5.2、SciPy 1.18.1、openpyxl 3.1.5。quick与final均实际exit 0，分别454.516 s和989.547 s。正式Q1 / Q23为N3200，Q4为N6400；四工作簿9,335,598格完整回读，297正文格经live Run核验。21保存数组逐值相同，4份gzip解压CSV及7份正文CSV字节与冻结版一致。仅表示CLI数值复现PASS；第二物理设备未测试。证据E9。",
+    "evidenceFile": "code_package_audit.json",
+    "quickExitCode": 0,
+    "finalExitCode": 0,
+    "quickElapsedSeconds": 454.5157823000045,
+    "finalElapsedSeconds": 989.547267300004,
+    "finalWorkbookCellsChecked": 9335598,
+    "finalPaperCellsChecked": 297,
+    "exactFrozenSavedArrays": 21,
+    "exactDecompressedRawGzipArchives": 4,
+    "exactFrozenPaperCsvFiles": 7,
+    "newVisualStudioGui": "NOT_PERFORMED",
+    "humanReview": "PENDING_USER_REVIEW",
+    "physicalSecondDevice": "NOT_TESTED"
+  }
+}

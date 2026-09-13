@@ -1,0 +1,19 @@
+{
+  "officialPage": "https://www.rarlab.com/download.htm",
+  "downloadUrl": "https://www.rarlab.com/rar/winrar-x64-723.exe",
+  "downloadedAtUtc": "2026-09-13T00:09:43.7815465Z",
+  "version": "7.23 x64",
+  "installerSha256": "8FF0DAF3ED564CC743C0E23FF2E253997FFC74460F9673F0B6DD037B2DB4CE7B",
+  "rarSha256": "F561764BC3E9ED208744321A89A819B562EDEAF06E203C02A06976121FDA1991",
+  "unrarSha256": "0D3715001790F0FD18D3E850F947B540530B2D2DEB9A2E6A9E84F2ED7B234235",
+  "authenticodeStatus": "Valid",
+  "method": "Native tar selective extraction from signed official installer; installer not executed",
+  "license": "Trial, maximum 40 days; binaries are local tooling and excluded from submission; no purchase or license bypass",
+  "localRuntime": "tmp/cache/support-rar/runtime/Rar.exe",
+  "localInstaller": "tmp/cache/support-rar/winrar-x64-723.exe",
+  "licenseSummary": [
+    "EULA section 2: trial use is permitted for at most 40 days without charge; continued use requires purchase.",
+    "EULA section 3a: redistributing separate package parts other than UnRAR requires written permission.",
+    "No license bypass, registry installation, visible GUI or purchase was performed."
+  ]
+}

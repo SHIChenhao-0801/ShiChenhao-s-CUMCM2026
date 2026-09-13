@@ -1,0 +1,166 @@
+--- original/dryingCore.py
++++ portable/dryingCore.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """2026 A: radial heat and dry-basis moisture transport on a material mesh.
+ 
+ Units: s, m, K, kg water / kg dry matter. See numerical_design.md for derivation.
+@@ -24,7 +24,7 @@
+ import analyticJacobian
+ import diskDense
+ 
+-ROOT = Path(__file__).resolve().parents[3]
++ROOT = Path(__file__).resolve().parent
+ LOADED_CODE_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+ C0, T0, R0, LENGTH = 2.55, 301.15, 0.02, 0.25
+ 
+@@ -33,7 +33,7 @@
+ def loadInputs(withRecords=False):
+     arrays, records = [], []
+     for name in ['A_environment_observed.csv', 'A_radius_observed.csv']:
+-        path = ROOT / 'paper_output/data_cleaned' / name
++        path = ROOT / 'inputs/cleaned' / name
+         content = path.read_bytes()
+         arrays.append(np.genfromtxt(io.StringIO(content.decode('utf-8-sig')),
+                                     delimiter=',', names=True))
+--- original/analyticJacobian.py
++++ portable/analyticJacobian.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Analytic sparse Jacobian for drying_core.RadialModel.rhs.
+ 
+ The ordering is T0,C0,...,TN,CN,A. A is a passive cumulative loss variable;
+@@ -6,7 +6,7 @@
+ This file does not modify the core or select a production configuration.
+ 
+ Self-check from the contest root:
+-  C:\\Python314\\python.exe -B paper_output/code/modeling/analytic_jacobian.py --self-test
++  python -B analyticJacobian.py --self-test
+ """
+ from __future__ import annotations
+ 
+@@ -288,7 +288,7 @@
+             if not passed:
+                 failures.append(f"BDF_smoke/{question}/{scheme}")
+     currentSourceHash = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+-    currentCoreHash = hashlib.sha256((ROOT/'paper_output/code/review_delivery/dryingCore.py').read_bytes()).hexdigest()
++    currentCoreHash = hashlib.sha256((ROOT/'dryingCore.py').read_bytes()).hexdigest()
+     if currentSourceHash != LOADED_CODE_SHA256 or currentCoreHash != CORE_LOADED_CODE_SHA256:
+         failures.append('Source file changed after module load during validation')
+     report = {'schema_version':'1.0', 'created_utc':datetime.now(timezone.utc).isoformat(),
+@@ -326,7 +326,7 @@
+     parser = argparse.ArgumentParser()
+     parser.add_argument('--self-test', action='store_true')
+     parser.add_argument('--output-dir', type=Path,
+-        default=Path(__file__).resolve().parents[2]/'code/review_delivery/runtime/jacobianValidation')
++        default=Path(__file__).resolve().parent/'results/jacobianValidation')
+     arguments = parser.parse_args()
+     if not arguments.self_test:
+         parser.error('Use --self-test, or import jacobian(model,t,y) from this module.')
+--- original/diskDense.py
++++ portable/diskDense.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Exact BDF dense polynomials backed by a private, rebuildable disk cache.
+ 
+ This changes storage only: each accepted BDF polynomial is written as float64
+--- original/q1Model.py
++++ portable/q1Model.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Q1 uses Appendix 2 throughout its 1800-second interval."""
+ from dryingCore import Settings, solveCase
+ 
+--- original/q2Model.py
++++ portable/q2Model.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Q2 uses Appendix 3 from t=0; it does not splice the Q1 trajectory."""
+ from dryingCore import Settings, solveCase
+ 
+--- original/q3Model.py
++++ portable/q3Model.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Q3 is a threshold functional of the exact same Run used by Q2."""
+ import math
+ import numpy as np
+--- original/q4Model.py
++++ portable/q4Model.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Q4 switches all properties to Appendix 4 and follows observed radial shrinkage."""
+ from dryingCore import Settings, solveCase
+ 
+--- original/exportOutputs.py
++++ portable/exportOutputs.py
+@@ -1,4 +1,4 @@
+-# 本文件为冻结求解源码的驼峰审查副本；来源、改名与 AST 核验见 tools/coreRenameReport.json。
++# 本文件为冻结求解源码的驼峰审查副本；本次便携路径调整见 docs/source_changes.json。
+ """Stream contest A output directly from a live Run, then stream-read it.
+ 
+ The original contest templates have precedence over workbook design defaults.
+@@ -37,10 +37,10 @@
+ from openpyxl.styles import Alignment, Font, PatternFill
+ from openpyxl.utils import get_column_letter
+ 
+-ROOT = Path(__file__).resolve().parents[3]
++ROOT = Path(__file__).resolve().parent
+ SOURCE = Path(__file__).resolve()
+ LOADED_EXPORTER_SHA256 = hashlib.sha256(SOURCE.read_bytes()).hexdigest()
+-TEMPLATE_DIR = ROOT / 'problem_files/CUMCM2026Problems/A题/附件/附件3'
++TEMPLATE_DIR = ROOT / 'inputs/templates'
+ RADII_M = np.arange(21, dtype=float)*0.001
+ RADII_CM = [i/10 for i in range(21)]
+ NUMBER_FORMAT = '0.0000'
+@@ -416,8 +416,8 @@
+     started=time.perf_counter()
+     qid=normalizeQuestionId(questionId)
+     directory=Path(outputDir).resolve()
+-    if not directory.is_relative_to(ROOT) or directory.is_relative_to(ROOT/'problem_files'):
+-        raise ValueError('Outputs must be inside the competition workspace, outside problem_files')
++    if not directory.is_relative_to(ROOT) or directory.is_relative_to(ROOT/'inputs'):
++        raise ValueError('Outputs must be inside the extracted code package, outside inputs')
+     if not 1<=int(chunkRows)<=2000:
+         raise ValueError('chunk_rows must be between 1 and 2000')
+     directory.mkdir(parents=True,exist_ok=True)
+@@ -492,7 +492,7 @@
+     bookRecord=exportFileRecord(bookPath,'contest_result_workbook')
+     archiveRecord=exportFileRecord(rawPath,'internal_unrounded_output_grid_archive')
+     manifest={
+-        'schema_version':'1.0','question_id':qid,'generated_by':'paper_output/code/review_delivery/exportOutputs.py',
++        'schema_version':'1.0','question_id':qid,'generated_by':'exportOutputs.py',
+         'generated_at':datetime.now(timezone.utc).isoformat(),'status':'EXPORTED_PENDING_STREAM_READBACK',
+         'workbook':bookRecord,'unrounded_archive':archiveRecord,'paper_tables':paperRecords,
+         'paper_table_time_contract':paperTimeContract,
+@@ -638,7 +638,7 @@
+                   'max_abs_unrounded_difference':difference}
+         paperValidation,paperErrors=validatePaperTables(manifest,run)
+         errors.extend(paperErrors)
+-        report={'schema_version':'1.0','question_id':qid,'generated_by':'paper_output/code/review_delivery/exportOutputs.py',
++        report={'schema_version':'1.0','question_id':qid,'generated_by':'exportOutputs.py',
+                 'generated_at':datetime.now(timezone.utc).isoformat(),
+                 'status':'FAIL' if errors else 'PASS','fully_verified_with_live_Run':not errors and run is not None,
+                 'checked_cells':checkedCells,'sheets':checkedSheets,'live_Run_sample_validation':live,
+@@ -726,12 +726,12 @@
+     parser=argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--selfcheck',action='store_true')
+     parser.add_argument('--paper-selfcheck',action='store_true')
+-    parser.add_argument('--output-dir',default='paper_output/code/review_delivery/runtime/exportSelfcheck')
++    parser.add_argument('--output-dir',default='results/exportSelfcheck')
+     args=parser.parse_args()
+     if not args.selfcheck and not args.paper_selfcheck:
+         parser.error('Use the Python API with final Runs, or --selfcheck for a real Q1 validation export')
+     if Path.cwd().resolve()!=ROOT:
+-        raise RuntimeError('Use the competition workspace as cwd')
++        raise RuntimeError('Use the extracted code package as cwd')
+     if args.paper_selfcheck:
+         return paperCsvSelfcheck(ROOT/args.output_dir)
+     from dryingCore import Settings,solveCase

@@ -1,0 +1,63 @@
+{
+  "createdAtUtc": "2026-09-13T00:11:36.237555+00:00",
+  "archive": "paper_output\\qa\\support_materials_20260913\\provisional_exhaustive.rar",
+  "bytes": 20189014,
+  "sha256": "a44362ee18a5eed49efb4a85771ad1a248aa462971bb8a0021ec8ef7ed1275a6",
+  "sourceFiles": 425,
+  "sourceBytes": 50312402,
+  "inputChangedDuringRun": [],
+  "extractedFiles": 425,
+  "extractionHashMismatches": [],
+  "calls": [
+    {
+      "name": "compress",
+      "args": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support-rar\\runtime\\Rar.exe",
+        "a",
+        "-cfg-",
+        "-r",
+        "-m5",
+        "-md128m",
+        "-s",
+        "-mt4",
+        "-qo-",
+        "-idq",
+        "-mcx",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\provisional_exhaustive.rar",
+        "支撑材料"
+      ],
+      "exitCode": 0,
+      "seconds": 11.218999999997322
+    },
+    {
+      "name": "test",
+      "args": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support-rar\\runtime\\Rar.exe",
+        "t",
+        "-cfg-",
+        "-idq",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\provisional_exhaustive.rar"
+      ],
+      "exitCode": 0,
+      "seconds": 0.32800000000861473
+    },
+    {
+      "name": "extract",
+      "args": [
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support-rar\\runtime\\Rar.exe",
+        "x",
+        "-cfg-",
+        "-idq",
+        "-y",
+        "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_materials_20260913\\provisional_exhaustive.rar",
+        "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support-rar\\extracted_exhaustive\\"
+      ],
+      "exitCode": 0,
+      "seconds": 0.9839999999967404
+    }
+  ],
+  "allExitZero": true,
+  "under20DecimalMB": false,
+  "under20MiB": true,
+  "provisional": true
+}

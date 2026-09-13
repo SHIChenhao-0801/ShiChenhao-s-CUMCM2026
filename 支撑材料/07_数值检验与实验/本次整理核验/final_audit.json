@@ -1,0 +1,55 @@
+{
+  "status": "PASS_FOR_AI_DISCLOSURE_ARTIFACT",
+  "pdfSha256": "d996b6aab3be25fe000d2e0f6572c43a6c47d59212d4451e5dc2f96e32010b7a",
+  "bytes": 114642,
+  "pages": 6,
+  "textMatchesStructuredSource": true,
+  "contentBlockMismatches": [],
+  "textOutsidePageSafeBounds": [],
+  "publicRecordSensitiveTokens": [],
+  "metadataAuthor": "",
+  "metadataCreator": "",
+  "visualReview": {
+    "method": "Poppler rendered at 120dpi; all six pages viewed in image tool. Final changed pages 4, 5 and 6 actually re-viewed; pages 1, 2 and 3 pixel-identical to previously reviewed version.",
+    "pages": [
+      {
+        "page": 1,
+        "pngSha256": "69c19f6a5d9793650131a7bc0d5e85638c02304a353e4bec4040b8c9d48cd395",
+        "review": "PASS_ACTUALLY_VIEWED"
+      },
+      {
+        "page": 2,
+        "pngSha256": "a581a93de79339f0fd3b22b5c2d03e026ff446b6e7514aa3e6491a08ea89b17c",
+        "review": "PASS_ACTUALLY_VIEWED"
+      },
+      {
+        "page": 3,
+        "pngSha256": "3074582baba77ba7731a1aa8fe3593afd916a3094535c805ccf1ef3463eb3548",
+        "review": "PASS_ACTUALLY_VIEWED"
+      },
+      {
+        "page": 4,
+        "pngSha256": "4594e7e1fd20332ec6a278cc133b70574b4abf3f554730a66bccd219485b1656",
+        "review": "PASS_ACTUALLY_VIEWED"
+      },
+      {
+        "page": 5,
+        "pngSha256": "32aec487f3c7980833f3b6db843f8f1361c99ec06523d3558016612b92799750",
+        "review": "PASS_ACTUALLY_VIEWED"
+      },
+      {
+        "page": 6,
+        "pngSha256": "f0b6d9f293084bdf4f1061edd92d74571b9bac733a0750be7fca024f1e7e68c1",
+        "review": "PASS_ACTUALLY_VIEWED"
+      }
+    ],
+    "noClippingOrOverlapObserved": true,
+    "chineseGlyphsLegible": true
+  },
+  "humanReview": "PENDING_TEAM_CONFIRMATION",
+  "currentPackageCli": "PASS_SAME_MACHINE_ISOLATED_CLI; quick/final actual exit 0; new GUI and second physical device not tested",
+  "limits": [
+    "Artifact QA is machine/AI verification, not team signoff.",
+    "No production PDE computation in this disclosure subtask; latest full CLI reproduction was independently performed and is explicitly disclosed."
+  ]
+}

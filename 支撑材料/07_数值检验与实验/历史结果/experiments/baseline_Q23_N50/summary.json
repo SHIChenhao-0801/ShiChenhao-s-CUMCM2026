@@ -1,0 +1,72 @@
+{
+  "settings": {
+    "question": "Q23",
+    "intervals": 50,
+    "rtol": 1e-07,
+    "atol_temperature": 1e-07,
+    "atol_moisture": 1e-09,
+    "max_step_s": 600.0,
+    "early_max_step_s": 30.0,
+    "horizon_h": 240.0,
+    "shrink": false,
+    "boundary_extension": "nominal",
+    "tail_temperature_C": 50.0,
+    "tail_equilibrium": 0.05,
+    "h": 25.0,
+    "beta": 8e-07,
+    "equilibrium_scale": 1.0,
+    "surface_latent_fraction": 0.0,
+    "latent_J_kg": 2400000.0,
+    "constant_D": null,
+    "constant_thermal": false,
+    "method": "BDF"
+  },
+  "diagnostics": {
+    "event_s": 592358.5594811044,
+    "event_h": 164.54404430030678,
+    "end_s": 592360.0,
+    "elapsed_s": 2.5387783000005584,
+    "max_mass_balance_abs_kg_per_kg": 4.440892098500626e-15,
+    "min_C": 0.05129264520329803,
+    "max_C": 2.5500000000000003,
+    "min_T_K": 301.15,
+    "max_T_K": 323.1893957005971,
+    "min_D": 2.4882387043634322e-12,
+    "max_D": 1.252191036293472e-08,
+    "positive_properties": true,
+    "max_radial_C_increase": 4.440892098500626e-16,
+    "final_max_C": 0.14999985288865655,
+    "final_surface_C": 0.05129264520329803,
+    "strictly_dry_at_end": true,
+    "radius_end_m": 0.02,
+    "radius_extrapolation_used": false,
+    "rhs_evaluations": 8468,
+    "accepted_time_points": 2576,
+    "nfev": 6367,
+    "njev": 191,
+    "nlu": 795,
+    "solver_success": true
+  },
+  "code": {
+    "path": "paper_output/code/modeling/drying_core.py",
+    "bytes": 13721,
+    "sha256": "27720d3b7862ff68291af3396bd4794dbabe71ceab3724a234e256828caf4501",
+    "exists": true
+  },
+  "inputs": [
+    {
+      "path": "paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "exists": true
+    },
+    {
+      "path": "paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "exists": true
+    }
+  ],
+  "human_review_status": "pending",
+  "gui_reproduced": false
+}
