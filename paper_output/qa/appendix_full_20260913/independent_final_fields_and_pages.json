@@ -1,0 +1,2603 @@
+{
+  "schema": "appendix_independent_field_and_page_audit_v1",
+  "reviewer": "/root/verification_independence",
+  "time": "2026-09-13T12:04:41.978050+08:00",
+  "status": "PASS",
+  "docx": "paper_output\\paper\\药材热湿耦合模型与干燥时间计算_完整附录.docx",
+  "docx_sha256": "2fd451eb2c2492438e324c44ddc3ecd6dc5e514a963ed507ff23ea91582400b9",
+  "pdf": "paper_output\\qa\\appendix_full_20260913\\v4.pdf",
+  "pdf_sha256": "98d9b7bf0944ba5d0b429411c0617b8daa4f9888f6a91235d643f4f96cd14817",
+  "method": "Independently parsed current DOCX XML and actual v4 PDF outline/link destinations; rehashed every v3/v4 PNG. Did not rely solely on root summary/cache map.",
+  "counts": {
+    "bookmarks": 254,
+    "paired_bookmarks": 254,
+    "simple_fields": 151,
+    "formula_seq": 78,
+    "formula_ref": 38,
+    "toc_pageref": 35,
+    "toc_title_hyperlinks": 35,
+    "actual_pdf_outline_entries": 82,
+    "actual_pdf_toc_links": 70,
+    "png_pages_compared": 247
+  },
+  "sequence_gap_or_duplicate": false,
+  "dead_internal_bookmark_link": false,
+  "equations": [
+    {
+      "bookmark": "EQ_A_BASIS",
+      "number": "A.1",
+      "cache": "（A.1）",
+      "seq_instruction": "SEQ AppendixA \\r 1"
+    },
+    {
+      "bookmark": "EQ_A_DENSITY_BASIS",
+      "number": "A.2",
+      "cache": "（A.2）",
+      "seq_instruction": "SEQ AppendixA \\r 2"
+    },
+    {
+      "bookmark": "EQ_A_DRY_CONTINUITY",
+      "number": "A.3",
+      "cache": "（A.3）",
+      "seq_instruction": "SEQ AppendixA \\r 3"
+    },
+    {
+      "bookmark": "EQ_A_WATER_CONTINUITY",
+      "number": "A.4",
+      "cache": "（A.4）",
+      "seq_instruction": "SEQ AppendixA \\r 4"
+    },
+    {
+      "bookmark": "EQ_A_PRODUCT_EXPANSION",
+      "number": "A.5",
+      "cache": "（A.5）",
+      "seq_instruction": "SEQ AppendixA \\r 5"
+    },
+    {
+      "bookmark": "EQ_A_MATERIAL_MOISTURE",
+      "number": "A.6",
+      "cache": "（A.6）",
+      "seq_instruction": "SEQ AppendixA \\r 6"
+    },
+    {
+      "bookmark": "EQ_A_FICK",
+      "number": "A.7",
+      "cache": "（A.7）",
+      "seq_instruction": "SEQ AppendixA \\r 7"
+    },
+    {
+      "bookmark": "EQ_A_NONUNIFORM_DRY_DENSITY",
+      "number": "A.8",
+      "cache": "（A.8）",
+      "seq_instruction": "SEQ AppendixA \\r 8"
+    },
+    {
+      "bookmark": "EQ_A_RADIAL_WATER",
+      "number": "A.9",
+      "cache": "（A.9）",
+      "seq_instruction": "SEQ AppendixA \\r 9"
+    },
+    {
+      "bookmark": "EQ_A_EFFECTIVE_HEAT",
+      "number": "A.10",
+      "cache": "（A.10）",
+      "seq_instruction": "SEQ AppendixA \\r 10"
+    },
+    {
+      "bookmark": "EQ_A_CAPACITY_NOT_ENTHALPY",
+      "number": "A.11",
+      "cache": "（A.11）",
+      "seq_instruction": "SEQ AppendixA \\r 11"
+    },
+    {
+      "bookmark": "EQ_A_PROPERTIES_Q1",
+      "number": "A.12",
+      "cache": "（A.12）",
+      "seq_instruction": "SEQ AppendixA \\r 12"
+    },
+    {
+      "bookmark": "EQ_A_PROPERTIES_Q23",
+      "number": "A.13",
+      "cache": "（A.13）",
+      "seq_instruction": "SEQ AppendixA \\r 13"
+    },
+    {
+      "bookmark": "EQ_A_PROPERTIES_Q4",
+      "number": "A.14",
+      "cache": "（A.14）",
+      "seq_instruction": "SEQ AppendixA \\r 14"
+    },
+    {
+      "bookmark": "EQ_A_DIFFUSIVITY_RATIO",
+      "number": "A.15",
+      "cache": "（A.15）",
+      "seq_instruction": "SEQ AppendixA \\r 15"
+    },
+    {
+      "bookmark": "EQ_A_LINEAR_INTERPOLATION",
+      "number": "A.16",
+      "cache": "（A.16）",
+      "seq_instruction": "SEQ AppendixA \\r 16"
+    },
+    {
+      "bookmark": "EQ_A_ENVIRONMENT_EXTENSION",
+      "number": "A.17",
+      "cache": "（A.17）",
+      "seq_instruction": "SEQ AppendixA \\r 17"
+    },
+    {
+      "bookmark": "EQ_A_INITIAL_CENTER",
+      "number": "A.18",
+      "cache": "（A.18）",
+      "seq_instruction": "SEQ AppendixA \\r 18"
+    },
+    {
+      "bookmark": "EQ_A_SURFACE_PHYSICAL",
+      "number": "A.19",
+      "cache": "（A.19）",
+      "seq_instruction": "SEQ AppendixA \\r 19"
+    },
+    {
+      "bookmark": "EQ_A_SURFACE_NORMALIZED",
+      "number": "A.20",
+      "cache": "（A.20）",
+      "seq_instruction": "SEQ AppendixA \\r 20"
+    },
+    {
+      "bookmark": "EQ_A_SKELETON_VELOCITY",
+      "number": "A.21",
+      "cache": "（A.21）",
+      "seq_instruction": "SEQ AppendixA \\r 21"
+    },
+    {
+      "bookmark": "EQ_A_DRY_DENSITY_SHRINK",
+      "number": "A.22",
+      "cache": "（A.22）",
+      "seq_instruction": "SEQ AppendixA \\r 22"
+    },
+    {
+      "bookmark": "EQ_A_DENSITY_BOUND",
+      "number": "A.23",
+      "cache": "（A.23）",
+      "seq_instruction": "SEQ AppendixA \\r 23"
+    },
+    {
+      "bookmark": "EQ_A_RADIUS_COMPATIBILITY",
+      "number": "A.24",
+      "cache": "（A.24）",
+      "seq_instruction": "SEQ AppendixA \\r 24"
+    },
+    {
+      "bookmark": "EQ_A_ALE_CHAIN",
+      "number": "A.25",
+      "cache": "（A.25）",
+      "seq_instruction": "SEQ AppendixA \\r 25"
+    },
+    {
+      "bookmark": "EQ_A_ALE_RESIDUAL",
+      "number": "A.26",
+      "cache": "（A.26）",
+      "seq_instruction": "SEQ AppendixA \\r 26"
+    },
+    {
+      "bookmark": "EQ_A_GENERAL_MOVING_COORDINATE",
+      "number": "A.27",
+      "cache": "（A.27）",
+      "seq_instruction": "SEQ AppendixA \\r 27"
+    },
+    {
+      "bookmark": "EQ_A_MATERIAL_PDE",
+      "number": "A.28",
+      "cache": "（A.28）",
+      "seq_instruction": "SEQ AppendixA \\r 28"
+    },
+    {
+      "bookmark": "EQ_A_MATERIAL_BOUNDARY",
+      "number": "A.29",
+      "cache": "（A.29）",
+      "seq_instruction": "SEQ AppendixA \\r 29"
+    },
+    {
+      "bookmark": "EQ_A_CONTROL_VOLUME_WEIGHTS",
+      "number": "A.30",
+      "cache": "（A.30）",
+      "seq_instruction": "SEQ AppendixA \\r 30"
+    },
+    {
+      "bookmark": "EQ_A_GRADIENT_FLUX",
+      "number": "A.31",
+      "cache": "（A.31）",
+      "seq_instruction": "SEQ AppendixA \\r 31"
+    },
+    {
+      "bookmark": "EQ_A_SEMIDISCRETE",
+      "number": "A.32",
+      "cache": "（A.32）",
+      "seq_instruction": "SEQ AppendixA \\r 32"
+    },
+    {
+      "bookmark": "EQ_A_AXIS_LIMIT",
+      "number": "A.33",
+      "cache": "（A.33）",
+      "seq_instruction": "SEQ AppendixA \\r 33"
+    },
+    {
+      "bookmark": "EQ_A_BOUNDARY_GRADIENT_FLUX",
+      "number": "A.34",
+      "cache": "（A.34）",
+      "seq_instruction": "SEQ AppendixA \\r 34"
+    },
+    {
+      "bookmark": "EQ_A_HEAT_FACE",
+      "number": "A.35",
+      "cache": "（A.35）",
+      "seq_instruction": "SEQ AppendixA \\r 35"
+    },
+    {
+      "bookmark": "EQ_A_KIRCHHOFF_POTENTIAL",
+      "number": "A.36",
+      "cache": "（A.36）",
+      "seq_instruction": "SEQ AppendixA \\r 36"
+    },
+    {
+      "bookmark": "EQ_A_KIRCHHOFF_DERIVATIVE",
+      "number": "A.37",
+      "cache": "（A.37）",
+      "seq_instruction": "SEQ AppendixA \\r 37"
+    },
+    {
+      "bookmark": "EQ_A_WATER_FACE",
+      "number": "A.38",
+      "cache": "（A.38）",
+      "seq_instruction": "SEQ AppendixA \\r 38"
+    },
+    {
+      "bookmark": "EQ_A_SPURIOUS_TEMPERATURE_TERM",
+      "number": "A.39",
+      "cache": "（A.39）",
+      "seq_instruction": "SEQ AppendixA \\r 39"
+    },
+    {
+      "bookmark": "EQ_A_SMALL_DIFFERENCE",
+      "number": "A.40",
+      "cache": "（A.40）",
+      "seq_instruction": "SEQ AppendixA \\r 40"
+    },
+    {
+      "bookmark": "EQ_A_DISCRETE_MASS",
+      "number": "A.41",
+      "cache": "（A.41）",
+      "seq_instruction": "SEQ AppendixA \\r 41"
+    },
+    {
+      "bookmark": "EQ_A_DISCRETE_HEAT_RATE",
+      "number": "A.42",
+      "cache": "（A.42）",
+      "seq_instruction": "SEQ AppendixA \\r 42"
+    },
+    {
+      "bookmark": "EQ_A_EFFECTIVE_ENERGY_DERIVATIVE",
+      "number": "A.43",
+      "cache": "（A.43）",
+      "seq_instruction": "SEQ AppendixA \\r 43"
+    },
+    {
+      "bookmark": "EQ_A_HARMONIC_DERIVATIVES",
+      "number": "A.44",
+      "cache": "（A.44）",
+      "seq_instruction": "SEQ AppendixA \\r 44"
+    },
+    {
+      "bookmark": "EQ_A_HEAT_FACE_JACOBIAN",
+      "number": "A.45",
+      "cache": "（A.45）",
+      "seq_instruction": "SEQ AppendixA \\r 45"
+    },
+    {
+      "bookmark": "EQ_A_WATER_FACE_JACOBIAN",
+      "number": "A.46",
+      "cache": "（A.46）",
+      "seq_instruction": "SEQ AppendixA \\r 46"
+    },
+    {
+      "bookmark": "EQ_A_SMALL_DIFFERENCE_JACOBIAN",
+      "number": "A.47",
+      "cache": "（A.47）",
+      "seq_instruction": "SEQ AppendixA \\r 47"
+    },
+    {
+      "bookmark": "EQ_A_CAPACITY_JACOBIAN",
+      "number": "A.48",
+      "cache": "（A.48）",
+      "seq_instruction": "SEQ AppendixA \\r 48"
+    },
+    {
+      "bookmark": "EQ_A_PROPERTY_DERIVATIVES",
+      "number": "A.49",
+      "cache": "（A.49）",
+      "seq_instruction": "SEQ AppendixA \\r 49"
+    },
+    {
+      "bookmark": "EQ_A_BOUNDARY_JACOBIAN",
+      "number": "A.50",
+      "cache": "（A.50）",
+      "seq_instruction": "SEQ AppendixA \\r 50"
+    },
+    {
+      "bookmark": "EQ_A_JACOBIAN_LEFT_NULL",
+      "number": "A.51",
+      "cache": "（A.51）",
+      "seq_instruction": "SEQ AppendixA \\r 51"
+    },
+    {
+      "bookmark": "EQ_A_BDF_RESIDUAL",
+      "number": "A.52",
+      "cache": "（A.52）",
+      "seq_instruction": "SEQ AppendixA \\r 52"
+    },
+    {
+      "bookmark": "EQ_A_BDF2",
+      "number": "A.53",
+      "cache": "（A.53）",
+      "seq_instruction": "SEQ AppendixA \\r 53"
+    },
+    {
+      "bookmark": "EQ_A_NEWTON_SYSTEM",
+      "number": "A.54",
+      "cache": "（A.54）",
+      "seq_instruction": "SEQ AppendixA \\r 54"
+    },
+    {
+      "bookmark": "EQ_A_ERROR_SCALE",
+      "number": "A.55",
+      "cache": "（A.55）",
+      "seq_instruction": "SEQ AppendixA \\r 55"
+    },
+    {
+      "bookmark": "EQ_A_BDF_DENSE",
+      "number": "A.56",
+      "cache": "（A.56）",
+      "seq_instruction": "SEQ AppendixA \\r 56"
+    },
+    {
+      "bookmark": "EQ_A_CONTINUOUS_MAXIMUM",
+      "number": "A.57",
+      "cache": "（A.57）",
+      "seq_instruction": "SEQ AppendixA \\r 57"
+    },
+    {
+      "bookmark": "EQ_A_DISCRETE_EVENT",
+      "number": "A.58",
+      "cache": "（A.58）",
+      "seq_instruction": "SEQ AppendixA \\r 58"
+    },
+    {
+      "bookmark": "EQ_A_STRICT_REPORT",
+      "number": "A.59",
+      "cache": "（A.59）",
+      "seq_instruction": "SEQ AppendixA \\r 59"
+    },
+    {
+      "bookmark": "EQ_A_POST_EVENT_END",
+      "number": "A.60",
+      "cache": "（A.60）",
+      "seq_instruction": "SEQ AppendixA \\r 60"
+    },
+    {
+      "bookmark": "EQ_A_REPORT_CANDIDATE",
+      "number": "A.61",
+      "cache": "（A.61）",
+      "seq_instruction": "SEQ AppendixA \\r 61"
+    },
+    {
+      "bookmark": "EQ_A_SPATIAL_QUERY",
+      "number": "A.62",
+      "cache": "（A.62）",
+      "seq_instruction": "SEQ AppendixA \\r 62"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_FORCED_PDE",
+      "number": "A.63",
+      "cache": "（A.63）",
+      "seq_instruction": "SEQ AppendixA \\r 63"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_ROOT",
+      "number": "A.64",
+      "cache": "（A.64）",
+      "seq_instruction": "SEQ AppendixA \\r 64"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_ROOT_BRACKETS",
+      "number": "A.65",
+      "cache": "（A.65）",
+      "seq_instruction": "SEQ AppendixA \\r 65"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_ORTHOGONALITY",
+      "number": "A.66",
+      "cache": "（A.66）",
+      "seq_instruction": "SEQ AppendixA \\r 66"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_INTEGRALS",
+      "number": "A.67",
+      "cache": "（A.67）",
+      "seq_instruction": "SEQ AppendixA \\r 67"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_COEFFICIENT",
+      "number": "A.68",
+      "cache": "（A.68）",
+      "seq_instruction": "SEQ AppendixA \\r 68"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_MODE_ODE",
+      "number": "A.69",
+      "cache": "（A.69）",
+      "seq_instruction": "SEQ AppendixA \\r 69"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_SOLUTION",
+      "number": "A.70",
+      "cache": "（A.70）",
+      "seq_instruction": "SEQ AppendixA \\r 70"
+    },
+    {
+      "bookmark": "EQ_A_PIECEWISE_CONVOLUTION",
+      "number": "A.71",
+      "cache": "（A.71）",
+      "seq_instruction": "SEQ AppendixA \\r 71"
+    },
+    {
+      "bookmark": "EQ_A_BESSEL_CELL_AVERAGE",
+      "number": "A.72",
+      "cache": "（A.72）",
+      "seq_instruction": "SEQ AppendixA \\r 72"
+    },
+    {
+      "bookmark": "EQ_A_COMPARISON_METRICS",
+      "number": "A.73",
+      "cache": "（A.73）",
+      "seq_instruction": "SEQ AppendixA \\r 73"
+    },
+    {
+      "bookmark": "EQ_A_OBSERVED_ORDER",
+      "number": "A.74",
+      "cache": "（A.74）",
+      "seq_instruction": "SEQ AppendixA \\r 74"
+    },
+    {
+      "bookmark": "EQ_A_SHRINK_TIME_SCALE",
+      "number": "A.75",
+      "cache": "（A.75）",
+      "seq_instruction": "SEQ AppendixA \\r 75"
+    },
+    {
+      "bookmark": "EQ_A_EMPIRICAL_RESISTANCE",
+      "number": "A.76",
+      "cache": "（A.76）",
+      "seq_instruction": "SEQ AppendixA \\r 76"
+    },
+    {
+      "bookmark": "EQ_A_EMPIRICAL_RESISTANCE_BOUNDS",
+      "number": "A.77",
+      "cache": "（A.77）",
+      "seq_instruction": "SEQ AppendixA \\r 77"
+    },
+    {
+      "bookmark": "EQ_A_LATENT_SCENARIO",
+      "number": "A.78",
+      "cache": "（A.78）",
+      "seq_instruction": "SEQ AppendixA \\r 78"
+    }
+  ],
+  "formula_refs": [
+    {
+      "index": 1,
+      "target": "EQ_A_BASIS",
+      "cache": "（A.1）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 2,
+      "target": "EQ_A_WATER_CONTINUITY",
+      "cache": "（A.4）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 3,
+      "target": "EQ_A_MATERIAL_MOISTURE",
+      "cache": "（A.6）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 4,
+      "target": "EQ_A_FICK",
+      "cache": "（A.7）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 5,
+      "target": "EQ_A_EFFECTIVE_HEAT",
+      "cache": "（A.10）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 6,
+      "target": "EQ_A_EFFECTIVE_HEAT",
+      "cache": "（A.10）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 7,
+      "target": "EQ_A_PROPERTIES_Q23",
+      "cache": "（A.13）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 8,
+      "target": "EQ_A_PROPERTIES_Q4",
+      "cache": "（A.14）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 9,
+      "target": "EQ_A_PROPERTIES_Q1",
+      "cache": "（A.12）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 10,
+      "target": "EQ_A_ENVIRONMENT_EXTENSION",
+      "cache": "（A.17）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 11,
+      "target": "EQ_A_SURFACE_NORMALIZED",
+      "cache": "（A.20）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 12,
+      "target": "EQ_A_DRY_CONTINUITY",
+      "cache": "（A.3）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 13,
+      "target": "EQ_A_SKELETON_VELOCITY",
+      "cache": "（A.21）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 14,
+      "target": "EQ_A_DRY_DENSITY_SHRINK",
+      "cache": "（A.22）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 15,
+      "target": "EQ_A_GENERAL_MOVING_COORDINATE",
+      "cache": "（A.27）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 16,
+      "target": "EQ_A_SKELETON_VELOCITY",
+      "cache": "（A.21）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 17,
+      "target": "EQ_A_MATERIAL_PDE",
+      "cache": "（A.28）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 18,
+      "target": "EQ_A_AXIS_LIMIT",
+      "cache": "（A.33）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 19,
+      "target": "EQ_A_MATERIAL_BOUNDARY",
+      "cache": "（A.29）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 20,
+      "target": "EQ_A_WATER_FACE",
+      "cache": "（A.38）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 21,
+      "target": "EQ_A_DISCRETE_MASS",
+      "cache": "（A.41）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 22,
+      "target": "EQ_A_DISCRETE_HEAT_RATE",
+      "cache": "（A.42）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 23,
+      "target": "EQ_A_DISCRETE_HEAT_RATE",
+      "cache": "（A.42）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 24,
+      "target": "EQ_A_CAPACITY_JACOBIAN",
+      "cache": "（A.48）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 25,
+      "target": "EQ_A_DISCRETE_MASS",
+      "cache": "（A.41）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 26,
+      "target": "EQ_A_BDF_RESIDUAL",
+      "cache": "（A.52）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 27,
+      "target": "EQ_A_BDF2",
+      "cache": "（A.53）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 28,
+      "target": "EQ_A_BDF_DENSE",
+      "cache": "（A.56）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 29,
+      "target": "EQ_A_STRICT_REPORT",
+      "cache": "（A.59）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 30,
+      "target": "EQ_A_BDF_DENSE",
+      "cache": "（A.56）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 31,
+      "target": "EQ_A_BESSEL_FORCED_PDE",
+      "cache": "（A.63）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 32,
+      "target": "EQ_A_BESSEL_CELL_AVERAGE",
+      "cache": "（A.72）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 33,
+      "target": "EQ_A_BESSEL_CELL_AVERAGE",
+      "cache": "（A.72）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 34,
+      "target": "EQ_A_WATER_FACE",
+      "cache": "（A.38）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 35,
+      "target": "EQ_A_MATERIAL_PDE",
+      "cache": "（A.28）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 36,
+      "target": "EQ_A_WATER_FACE",
+      "cache": "（A.38）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 37,
+      "target": "EQ_A_BDF_DENSE",
+      "cache": "（A.56）",
+      "matches_bookmarked_label": true
+    },
+    {
+      "index": 38,
+      "target": "EQ_A_STRICT_REPORT",
+      "cache": "（A.59）",
+      "matches_bookmarked_label": true
+    }
+  ],
+  "toc_entries": [
+    {
+      "bookmark": "HEAD_001",
+      "heading": "附录 A 连续模型、坐标变换与数值方法的完整推导",
+      "cached_page": 3,
+      "map_page": 3,
+      "actual_pdf_outline_page": 3,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_002",
+      "heading": "A.1 干基含水率、湿基含水率与参考质量",
+      "cached_page": 3,
+      "map_page": 3,
+      "actual_pdf_outline_page": 3,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_003",
+      "heading": "A.2 从组分质量平衡得到干基扩散方程",
+      "cached_page": 4,
+      "map_page": 4,
+      "actual_pdf_outline_page": 4,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_004",
+      "heading": "A.3 圆柱薄壳收支与固定域方程",
+      "cached_page": 5,
+      "map_page": 5,
+      "actual_pdf_outline_page": 5,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_005",
+      "heading": "A.4 四问物性与驱动条件",
+      "cached_page": 5,
+      "map_page": 5,
+      "actual_pdf_outline_page": 5,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_006",
+      "heading": "A.5 初始条件、表面边界与量纲",
+      "cached_page": 7,
+      "map_page": 7,
+      "actual_pdf_outline_page": 7,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_007",
+      "heading": "A.6 干物质密度、有效密度与收缩的一致性",
+      "cached_page": 7,
+      "map_page": 7,
+      "actual_pdf_outline_page": 7,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_008",
+      "heading": "A.7 一般移动坐标与网格速度项",
+      "cached_page": 8,
+      "map_page": 8,
+      "actual_pdf_outline_page": 8,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_009",
+      "heading": "A.8 节点控制体、轴心及表面权重",
+      "cached_page": 9,
+      "map_page": 9,
+      "actual_pdf_outline_page": 9,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_010",
+      "heading": "A.9 导热调和平均与 Kirchhoff 水分面量",
+      "cached_page": 11,
+      "map_page": 11,
+      "actual_pdf_outline_page": 11,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_011",
+      "heading": "A.10 干基质量与有效热收支的离散恒等式",
+      "cached_page": 12,
+      "map_page": 12,
+      "actual_pdf_outline_page": 12,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_012",
+      "heading": "A.11 解析 Jacobian：面量、容量、边界与累计量",
+      "cached_page": 13,
+      "map_page": 13,
+      "actual_pdf_outline_page": 13,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_013",
+      "heading": "A.12 隐式 BDF 与连续数值输出",
+      "cached_page": 15,
+      "map_page": 15,
+      "actual_pdf_outline_page": 15,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_014",
+      "heading": "A.13 全域最大含水率、临界根与严格报告时刻",
+      "cached_page": 16,
+      "map_page": 16,
+      "actual_pdf_outline_page": 16,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_015",
+      "heading": "A.14 固定物理位置查询与缩域输出",
+      "cached_page": 17,
+      "map_page": 17,
+      "actual_pdf_outline_page": 17,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_016",
+      "heading": "A.15 圆柱 Robin–Bessel 解析基准",
+      "cached_page": 18,
+      "map_page": 18,
+      "actual_pdf_outline_page": 18,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_017",
+      "heading": "A.16 解析比较的点值、单元平均及误差范围",
+      "cached_page": 19,
+      "map_page": 19,
+      "actual_pdf_outline_page": 19,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_018",
+      "heading": "A.17 方法比较、收缩尺度与参数敏感性",
+      "cached_page": 20,
+      "map_page": 20,
+      "actual_pdf_outline_page": 20,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_019",
+      "heading": "A.18 经验边界阻力及潜热情景的推导范围",
+      "cached_page": 21,
+      "map_page": 21,
+      "actual_pdf_outline_page": 21,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_020",
+      "heading": "A.19 公式与现行程序的对应关系及验证限度",
+      "cached_page": 22,
+      "map_page": 22,
+      "actual_pdf_outline_page": 22,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_021",
+      "heading": "A.20 推导依据",
+      "cached_page": 23,
+      "map_page": 23,
+      "actual_pdf_outline_page": 23,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_022",
+      "heading": "附录 B 支撑材料与复现说明",
+      "cached_page": 24,
+      "map_page": 24,
+      "actual_pdf_outline_page": 24,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_023",
+      "heading": "B.1 材料范围与代码覆盖",
+      "cached_page": 24,
+      "map_page": 24,
+      "actual_pdf_outline_page": 24,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_024",
+      "heading": "B.2 输入、单位与资料来源",
+      "cached_page": 24,
+      "map_page": 24,
+      "actual_pdf_outline_page": 24,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_025",
+      "heading": "B.3 计算环境与依赖",
+      "cached_page": 25,
+      "map_page": 25,
+      "actual_pdf_outline_page": 25,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_026",
+      "heading": "B.4 独立生产程序的复现步骤",
+      "cached_page": 26,
+      "map_page": 26,
+      "actual_pdf_outline_page": 26,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_027",
+      "heading": "B.5 已实际完成的数值复现与验证",
+      "cached_page": 27,
+      "map_page": 27,
+      "actual_pdf_outline_page": 27,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_028",
+      "heading": "B.6 检验源码的限制与未通过项目",
+      "cached_page": 29,
+      "map_page": 29,
+      "actual_pdf_outline_page": 29,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_029",
+      "heading": "B.7 正文六图的代码与数据衔接",
+      "cached_page": 30,
+      "map_page": 30,
+      "actual_pdf_outline_page": 30,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_030",
+      "heading": "B.8 当前106份正式支撑文件清单",
+      "cached_page": 31,
+      "map_page": 31,
+      "actual_pdf_outline_page": 31,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_031",
+      "heading": "附录 C 结果表与数值精度核查",
+      "cached_page": 37,
+      "map_page": 37,
+      "actual_pdf_outline_page": 37,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_032",
+      "heading": "C.1 临界事件与严格达标时刻",
+      "cached_page": 37,
+      "map_page": 37,
+      "actual_pdf_outline_page": 37,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_033",
+      "heading": "C.2 题目要求的径向采样结果",
+      "cached_page": 37,
+      "map_page": 37,
+      "actual_pdf_outline_page": 37,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_034",
+      "heading": "C.3 全量导出及一致性检查",
+      "cached_page": 40,
+      "map_page": 40,
+      "actual_pdf_outline_page": 40,
+      "title_link_exists": true
+    },
+    {
+      "bookmark": "HEAD_035",
+      "heading": "附录 D 完整无注释源程序",
+      "cached_page": 41,
+      "map_page": 41,
+      "actual_pdf_outline_page": 41,
+      "title_link_exists": true
+    }
+  ],
+  "actual_pdf_toc_links": [
+    {
+      "toc_page": 1,
+      "destination_page": 25,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 24,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 24,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 24,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 23,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 22,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 21,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 20,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 19,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 18,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 17,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 16,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 15,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 13,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 12,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 11,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 9,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 8,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 7,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 7,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 5,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 5,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 4,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 3,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 3,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 3,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 25,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 24,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 24,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 24,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 23,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 22,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 21,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 20,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 19,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 18,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 17,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 16,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 15,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 13,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 12,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 11,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 9,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 8,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 7,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 7,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 5,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 5,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 4,
+      "kind": 1
+    },
+    {
+      "toc_page": 1,
+      "destination_page": 3,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 41,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 40,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 37,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 37,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 37,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 31,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 30,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 29,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 27,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 26,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 41,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 40,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 37,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 37,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 37,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 31,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 30,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 29,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 27,
+      "kind": 1
+    },
+    {
+      "toc_page": 2,
+      "destination_page": 26,
+      "kind": 1
+    }
+  ],
+  "v3_v4_png_page_mapping": [
+    {
+      "page": 1,
+      "sha256": "3550e86b9bbe56f663b7d54db62e34d694d3f1e71b45229e34f38fadd8caab96",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 2,
+      "sha256": "0c7b67d05e2e658978c93ef3d45ab3acb05cf1da58ab3b4bb45c1ee75c60c5f6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 3,
+      "sha256": "bf2253ae3e0d9d52cf70c658c2caa64e3bd166c19c63f2eadfcb9c33add0ab8a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 4,
+      "sha256": "beb256a02b8547ffb826fa8c2b5d2dbec66164672a3b91249300127792fa283d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 5,
+      "sha256": "f4c3635d1d57da4faa7d54654b32185c59da6a71589296f9529bd5f485e333a7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 6,
+      "sha256": "a6e82c91f69bfff1cc124057a092490845f188f9e8799e5d1487cb84659c9f41",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 7,
+      "sha256": "334859c8ad85584e8198f38de8d24173783fdf5d64779d31fbcb9e57ccfed5ae",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 8,
+      "sha256": "dd3acf86e70cebbe99d75332e372402d513a53ea6bcf97197c5670ffdfa33c09",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 9,
+      "sha256": "317b6e5cd448f13c90f03e791c79d43e7712951c50c23024c60d62bb6e8c56b4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 10,
+      "sha256": "baeaee940e8ee693df8bd4b429c8d8ec1a3b86528c01e18f138caf4b0c1856cf",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 11,
+      "sha256": "9b3071b4fc27bf2e312145fcb770cffd801079ee7f359dce4af05782be81540f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 12,
+      "sha256": "6b7746330146a567fa0d0cbf82857bf6931f71950fb80af85058b815f24f9137",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 13,
+      "sha256": "c3cdb28f781691b9f39c42921427f6128e4785870eece1ba50891cfb1079b293",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 14,
+      "sha256": "0a074699f769326f10cf442283a057789d35311dfb1ecb0e8e481b2581ad4959",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 15,
+      "sha256": "6d5873dd2245dbaf1d5c766c6a02f0aad8d653b892bf80baaf48f5cc6a48b048",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 16,
+      "sha256": "6340c08ba084f759b1fd4dccb4488a9d0c0c5b97d793dc95ed7079205423d5dd",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 17,
+      "sha256": "72cd37f2358aa092288a9bb29723fc97851611090b4894046a7ce9bca5453ffc",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 18,
+      "sha256": "ae31d5de6248fc71d45429976877f3d9c4cfa6ab8429571b827e0d3447cd3527",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 19,
+      "sha256": "cbc7793b2197ad3b80b9ab6c89345270f8229196473ba5700f62a4463f0cefb3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 20,
+      "sha256": "a04a1881ff14bf47b6f7d9047fc134bf735e0e389e3aed2cf599407cbf5b9d9e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 21,
+      "sha256": "0fd3842625d055efa09fa09edcdac418efefa874272d29f720fc1d4e494a7d4a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 22,
+      "sha256": "8169b427b48c5d3e59df12fb541b365ea98afe0a31eaa60cfeac003bd954146f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 23,
+      "sha256": "fb148c6bb9936b626ea7f05e311d7dfc18d7907dbd4da9f573720d7f8f9caa23",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 24,
+      "sha256": "9cf46315b482bbc1fe8d622a52faba1e67e73e437d8d076caeb3820afbb2d689",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 25,
+      "sha256": "8503e6b5f670e5d1b3d2c03acaf5660276ca05c6f5dd2507131b2ad2c3252387",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 26,
+      "sha256": "83230bae41b2c49acc83671aab507ab61efe756c146e2c4376fc3f59ca3c47a5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 27,
+      "sha256": "6be80e5430384a5e0ffe96eb614aa90467bde43066eb255edf43a0e6fa0df5ee",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 28,
+      "sha256": "fed685677cf5e2327bc57d20400159d87bb39abb61071b0eadf8b488d34cbba5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 29,
+      "sha256": "3012b5cb1ebb114987c2d673f6e981ca0c92600643eff49ca02bb973a76426d2",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 30,
+      "sha256": "ab42e13f6dc47e84bec2929ff5b963e3f8cde1f87d1d28362d86a2cd9d373bf5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 31,
+      "sha256": "806b333107891d424f2ec58cce99ba8ce1c440ae7f32156e9a0f22ba2ca12e40",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 32,
+      "sha256": "4c2a72246e7378d327956720b71768c84ea353d3c062b4d8c2175f48613ca13a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 33,
+      "sha256": "a6e1a26e7ee498608b62eb457ab6b199bac0ec88a7bbc4ab244cc465184d5397",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 34,
+      "sha256": "79f62731043d059833b35d72e70f8257900d59c879e7855b3336a4ebec5d4f14",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 35,
+      "sha256": "df1d187a502a393523fe235cc475f13f516459f9ae8d5d603dc2dd61d0959ca9",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 36,
+      "sha256": "8d6345a136ce02bc022cb28519f5946a310836c96e28c3d23d811296bbc72c42",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 37,
+      "sha256": "c74872819dd3d9fa2dc9a24f138f4354d818d8a33c5cb553b06151fcf51613f1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 38,
+      "sha256": "1e7853cf0973e42e2dbc94e696d0e7b458783ac1ec91d08aaab3ce40d54b8464",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 39,
+      "sha256": "a71194763d7dfab8a91542561f330acec9758742689326ae0fe32977f8c1f8e3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 40,
+      "sha256": "b5b02fdc7e41112cebd56a067c2e3799315dbfb1abd37793fa0a4dcd8c27542d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 41,
+      "sha256": "c364c74f853125254fcd922c6610f5b5908165bcbd9f85da228f625a9b318db4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 42,
+      "sha256": "43cbdc79daec2ce8bf728a6ca24eb3481fea013af09f56445efc49b1d4c2643d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 43,
+      "sha256": "dcdbd68367ac029a8b4056fc83280573722f8aee28ede8e80fd310845abf9b51",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 44,
+      "sha256": "ab645b62cbd8cc839649b91c22de60d094114f524eb42edee56758b1b09e90d0",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 45,
+      "sha256": "a23df3f43f7ca55cc3119559525ebbcfcad2257746820b29873769148a3be556",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 46,
+      "sha256": "35522c3be1ae64e1df8fb89d250fe9fdd00726560dc389fa23093a83bf58764b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 47,
+      "sha256": "b9c387442c48b989d02c4f9025089a3aa80cdd42d5b774e67f74cbaa7e188083",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 48,
+      "sha256": "55bde3f963677cfb2e28442038246a91da27f9ad4af294d8aede375ccce92d6c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 49,
+      "sha256": "15e4ab74eb5dcee63c11edd6568cbc874fd546d3f0cf3a021fb4ce4d1fde1178",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 50,
+      "sha256": "a33918d2c4ab93380cc5c8ad013cc29b2225b5ad5eb7e32d32b4863f4b434aa6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 51,
+      "sha256": "47ea4403809911da7493c0b07a9e33d8a39b90e987d3f82844462e9333ae4a57",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 52,
+      "sha256": "a4e370031473af5a1990f1aaab9fa0696402c5f947713964dfb263e06670c9fa",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 53,
+      "sha256": "50e25536d93b1c2f4c658d5db78161ecc9a7ec41a5813dcb1946b5ed789bd540",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 54,
+      "sha256": "66f6da15750a3f944a4c7c046f7f14533622a72e628e3e4f31f27d8b2d0341ad",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 55,
+      "sha256": "ff8cdfebddabbc1a0fe45eb4eb8b0cbe9fa0070a3fb54b1cad7e6bf51c78676d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 56,
+      "sha256": "43a97ae137d2b677e18a9ad7e6a67865c0311cec4865fb918e964a522d4ab4ae",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 57,
+      "sha256": "0f17b62820bbbed91ef1948cdd681c0a55a6615dd323bf3f65ff9e3ddbcc158d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 58,
+      "sha256": "5204297272a56089033b10bc2f7261a40ad4f717ce1d2e0c58cc3d1ad8ca873c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 59,
+      "sha256": "87b1e1c105bb3c6f57cd999d8cdafbbba8e65240ec8beda3a8d25c43dbf722c7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 60,
+      "sha256": "71085e0bf4a2ebcfff35b8f8efc482a42941445cacc8f5f722be1e0ccd0501a9",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 61,
+      "sha256": "c24e2b82f405e977ba40577337e6bdd5fe40d5dc90e01cbdd38135bf324cdb4f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 62,
+      "sha256": "9cf475929fae15f43492bdc779fca37da0d88dd4abaa135fdc8e8603587a3a4e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 63,
+      "sha256": "98e7ec9e6937e80639ebe915af274e1e4fdd35556c7c92b22f13d973eb326588",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 64,
+      "sha256": "d3f98c361e50d6dffaec873bcf2f3bb96add652bb3f94365bc2e63a191b2b2e9",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 65,
+      "sha256": "ca69ef2d6074697f9bc6c0687271b051763cf9cb618088a41f3af747801519f7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 66,
+      "sha256": "9f5506537341aaa82eee0ea03ce5637d2045d591bf277bedf242b02049db61ef",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 67,
+      "sha256": "27157c7f208bacbbd7ff33472dd099285e42346b242aebe8363f82afb82ceb95",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 68,
+      "sha256": "f8cb262ca42853766581680683d3aaded9ec8a140fbcf5b0604fee5435e1873f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 69,
+      "sha256": "c080e194d0bfdd625a9d6f83023b0ab15526599969155dfa022dba948e7bc2c4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 70,
+      "sha256": "5c2a81eabc7c99a95f99bdbaa226841c4762284bce6d08f400dfdff5a5287953",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 71,
+      "sha256": "92ce99d342e94b059cd13cfc3763dcb5e2d5d81aca6b38ed902d3eeac611302b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 72,
+      "sha256": "c48ff6dccaf2eab2a6fc81c83e868c02c160585ff2d6fcebafcb4c2413922229",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 73,
+      "sha256": "af3518fb1695c16e188aff2de4759404a863b92adcdab54ed1be347051b4725f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 74,
+      "sha256": "9e9f0e8dc26ba927002628a48fcd50b0f266d49d48f1690f7a097bf80126a662",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 75,
+      "sha256": "28bd18cb968d70203c17ac1a4609d873405af6db089cd61489a3bba8d831d395",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 76,
+      "sha256": "f2e9925c90e3df91f9e0330b43d6f2cf2555b8124c53029dc26accc949b66c9f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 77,
+      "sha256": "05f81fc40fb7c0b7650be60611cf7b0c76e7d809af615e903fe9d97c04863653",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 78,
+      "sha256": "d28c1adc2479cba167fbabf084f146c9dce343d014db14ab171dc48b3aa564d7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 79,
+      "sha256": "ce37b54f68615be883d84b0023bc4ce92ce851c97dbe0af93e5e5b9eea97c72f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 80,
+      "sha256": "d934aea73827bb6337949c0c1706647dfd9d06829f85ab6b1232f7f35b21325a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 81,
+      "sha256": "7e04bd4271a4431f2327308b296870c2c87ebefe8addc388ff5d655c4780d73c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 82,
+      "sha256": "0462b54a30241d7df172ee66fcc9a4bffd4ce70643ebb4f80e07cc61c16457fe",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 83,
+      "sha256": "ec76ec6dd05588c6e65b9e737a32efcef8edc2792ed38f5f60354ee17c7fc45c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 84,
+      "sha256": "aaff8cf898a8904d6a1040c51a6246b035418bc08f0bc578982816d2dc6e30b4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 85,
+      "sha256": "26b13925575e742042101e91632eaa154609c58f76bfdff223f75b43f7b4e56f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 86,
+      "sha256": "93fc489d6f4c3ac9ce099475152f02868391adc0d4da4224799526a616fa81ff",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 87,
+      "sha256": "2a089085a6b5a0391c30dfa5759941a140d48b3d475906f5579f0cb7b58b0f29",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 88,
+      "sha256": "2b25183b1bd09f1a4d405d3cce60eee903aff86583bfd8e6c0758e93405fdf9d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 89,
+      "sha256": "190ff56fa680845df45d3450f1afbe82bb02b4ee9fbf0981a7ab81c2e0508a02",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 90,
+      "sha256": "1af94419c6d75834bb6f14e5d25ee69be69565f411c473ba8e269aa13f52e0e1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 91,
+      "sha256": "a107aad033b996f982d83e3b14227452ac411b6579f43c8f35e33d530e479039",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 92,
+      "sha256": "a6f17e80416d3989bbd407ef77d43a74abfbb46c60881af90001217c3a447fd7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 93,
+      "sha256": "12d5dcd5695abfdc5daccb05d4d5a9baa5d7f4ba0dba55262103767a5df15b16",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 94,
+      "sha256": "f4676215cbc711163673addf2355e9c131d21441ac5bd1638673be83cbbe0613",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 95,
+      "sha256": "a0c552262a490d71c47827563fa1e77def5a9f3346a04a0f9b9199c217479f45",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 96,
+      "sha256": "80e4c5839a313dcc0940f8bfc7b1ae0828ddaec0925c445d34027a013ad940d0",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 97,
+      "sha256": "4dd4232765f9382e6875fedf5ecc51a617b98aca9744089d1bf362cf5f40a5a5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 98,
+      "sha256": "2bcce8019529b0483edf04d31207e0a646b6e189c8c51687c59a60859164f74e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 99,
+      "sha256": "f1f5097609dc8c7acaeab3191100fe8d73f53d36c4144352c5b3501ec6efcb0d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 100,
+      "sha256": "4c73ff11a9490c28ebf06a24bebc3fa5bd3f613a29b091f1d7ac6526419293dc",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 101,
+      "sha256": "8e6f83a04be0ed2ea51e9ef647619e1179a4499beb71164b3f495c2238d61c6e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 102,
+      "sha256": "2b498e1096f15edba5a68cbd9afe566064492c921dc36575d8b03b2f19a0c096",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 103,
+      "sha256": "6213fdc1455bab29ba6ecee887188f315c3bc35adc609e5b66a551bfb13c8a15",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 104,
+      "sha256": "a5549e3f6655edf7f2b70435da057d1a89c136c2d80a14de7567ce15d415ade1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 105,
+      "sha256": "380b48803b104b2ba356eb4b9d3efed97e6738d8dabe578a391ad5a8846e2768",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 106,
+      "sha256": "c55b6e0054d013524f232adb8c3f3077241f1f3915db665a0c4dde55d8913159",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 107,
+      "sha256": "24ade2410088765ad1e7fb27818bd58b43348ac6c5440f21bd8553342ee61be9",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 108,
+      "sha256": "5f79eb8f4b03b7f482ba3f484092a92451d457dc98e0940c4b63b403c82d3f45",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 109,
+      "sha256": "b1af1492874dbef219b17989b20e11b2299658e32c3601471912dc7f910ae49c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 110,
+      "sha256": "74e4c0c349c1cc4d6c9c1101ffa552fe68a3056a57e4d5ec19d23b864a760996",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 111,
+      "sha256": "82a0de03165fb8d0c6a11cbc7d7d2714721462cf7fbba51519d876a6c52b5660",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 112,
+      "sha256": "499ff04d1691906344d2a7e75d4fa39858ba7f995bab89b5f9f9e7339db767cf",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 113,
+      "sha256": "af6d90c340b42a7e8691757870f28c97190d3fba6a26fc61960b9acf63ddca1a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 114,
+      "sha256": "fac83159a3d3cba3c81fd014b81aa41f5f7f29f5d880de303f9a0060f85b67b1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 115,
+      "sha256": "e6fd832a490acfddc319b80c41dc2c68afbf8076a280f6d52669b09a1c49f708",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 116,
+      "sha256": "34fafb84292c939b3b047274ba1bcd8adfa21ec164dd9c41e457fa9c4add625a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 117,
+      "sha256": "9f420e1d7e9a4120b4f0b11ce09b5e96adcc88be079ba637b125f4535349b8e4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 118,
+      "sha256": "a55d4558cb9fb8ed7ef76dbd385dc1c900126e158c9b3f44531a40e30501f5b6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 119,
+      "sha256": "4cd71980a8532a957e492ad5d0d5692a4164bf67b773708dc7f5c7d4e370302d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 120,
+      "sha256": "5423eaeb40d91ea7d9ef715fbded7c9b8fc2116294b991a2fac6f589f12e4367",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 121,
+      "sha256": "652878b764d17ac78651816cc41c77498b47f8cc37738ea5b82b76d71f6b1e25",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 122,
+      "sha256": "f957a3988637f9f7b054a8ea756478fddaaa6f1c2ad3bb9941ae1b56e3b10ac6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 123,
+      "sha256": "2544ce66d3f637d44156d15eb4b271b82b6cb1aeb2b1a4adc93bb9b54cbd657c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 124,
+      "sha256": "d0cfafc8fdaeb7c144f1b6e619403a8d0c0256bc975593413d4fb14f1859061b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 125,
+      "sha256": "986e8fd889218e6cb5d7c386b559a16a1a6a71bce67772a792178b51ea16b070",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 126,
+      "sha256": "42358dcc547882295cd2d19c8ae39c8131ab53e7b436593ed10922f94c1b2647",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 127,
+      "sha256": "6d4c9895ed2ed7dcf3729c4a636990fa416d0c0a963f5b0816499a054c959088",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 128,
+      "sha256": "fade92c59a19f990b5eb5d8e3f0407fc5bcf5ff9d8c8688798a0300f9a8629da",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 129,
+      "sha256": "4eb5c119e5e3aec4d2970040a4b64ae0b0279e5c8e7a456f2bda5802c6f848e5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 130,
+      "sha256": "e661111fab34a12b18ae9d0d9be56f0f69eae5f3898c78872596fa9aea57a735",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 131,
+      "sha256": "3fb183f3389810ae0a8aebe116616b7b529b34000999a69547f109b7dced7a0c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 132,
+      "sha256": "e2e7bc417ff501d3346e508d9d3bfd2e241201441ad4f1da33b45867410b4260",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 133,
+      "sha256": "384f6439b2121fb860dbc084b2ae82667be7255fa66b9913c49a0cc7eeba447e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 134,
+      "sha256": "8574446bfd634e6dc8af27af7dcd89f85cb71de96ddd0f47ab550a727f6f88a4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 135,
+      "sha256": "4c80a0cd879da80be5ed831caa5e4dda01cba7d13b7e08f1050d4031ecc41c5e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 136,
+      "sha256": "1269b190a7db82186e23127e819868ac53e10154cf2ffc765551552e866c22b9",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 137,
+      "sha256": "4a544d9d5d9a8c6e5f8dce7b713dbb8d21820bb01355a555d93a7c02c79ba72c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 138,
+      "sha256": "2030e7882798a4301e8f69b90d53501c9a069f146416765400560aaddfce4b5f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 139,
+      "sha256": "43b39438b97343bdb1c52f17bc7f299d437146e202d1b91c02643b352e3a34a6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 140,
+      "sha256": "e26e79beabce9520f934109c3d8dacdbe962b117efbe2651050faf7b76c611c4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 141,
+      "sha256": "ae8d84eaecd6693eca0eae43f82c76851360073916298eab4acf7453505d867a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 142,
+      "sha256": "7a13ffe9b3624867b9cfd3d887c4dde56b3c78a2117cbe718ff893306a356914",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 143,
+      "sha256": "375767b3268456f8e4e5c4e28aee8e8da300e19a4f2d39aca8cd622cd0c673d5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 144,
+      "sha256": "e9f15450048556fd407fe887ba5e081cc61118ee3d08fed465a08d2b9ddf1a21",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 145,
+      "sha256": "c42f0cb311456ac9c4cc4e0dc12a03462023941ab3bb080a904b029c95487b50",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 146,
+      "sha256": "c807e84d07bd312dc07300fe427b32b28ad1f56797b39cd76e573c9661936dd7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 147,
+      "sha256": "5a7d6082a114b9973c86e790c5c71d6a5a64648fef65493970647428659d08a1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 148,
+      "sha256": "3e93298ebd4140f1cd4cdb1b4341379d5c262e2aba94f84afa83f8a720f7cdd2",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 149,
+      "sha256": "e7301cbef2ead7c146ab2b5030405fc0ad9fe3fe7e0e5ee592d6888088d5080b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 150,
+      "sha256": "87e7d0937fba231e5fd24031e9f34d12569dc5ff6d6f190bd5f33bcc36ff7c85",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 151,
+      "sha256": "ae398488a7df3aa6c1c30a8839ae72c91a1ba2186fc609cad024826a559846eb",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 152,
+      "sha256": "5be06a69c578857911f85490882eb9f8d20aa06e73ec4ad084a0171c23a5b8e3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 153,
+      "sha256": "19cd6c8fc0f6b9a4440fe0df15f191bf286b931303b7ae1315af070ddfcb3f63",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 154,
+      "sha256": "d6db9b8eb1dfc4aca952e36fc40916ddf7bfe3f27c2da39a7ceff49b3f2f640b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 155,
+      "sha256": "05268bd9447a4c5a4dcce70b0b9c9fe5b9a7ec5637396b716d996355e6492fdb",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 156,
+      "sha256": "f0507e6b0aae32f479003094c8e461b69151d47edf2cba002ee94a58e382bf1e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 157,
+      "sha256": "2efbe0da40b95bf07b7c79c8be4d5e38d6fa8695ae2e4e300d870b39d9b71d12",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 158,
+      "sha256": "5f3ad41b63f8f2e4e7485ddade8cdb2bc551ad3dc93aefdcd95287d8156bd561",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 159,
+      "sha256": "4a608cdccf4d6afd4c968872afd62cd2229c54580b8f830737b260f2edcb68a7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 160,
+      "sha256": "8b162f2329ba60db8153555810cabc53307c515b1cf1a71c44d4020562cb07eb",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 161,
+      "sha256": "9e1e50a2b8d6f2ffe41a8d2d3d1d5225e9c34e181c5b30bc03dde4b9ac9969d3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 162,
+      "sha256": "7de669df397d9eb9a64a1c54fe1b3c763a240c3c574b603cfa7a5a2d58778132",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 163,
+      "sha256": "5b5ff3beea5f6014a8e4ad21eb768a9dd4dea48d72eb68b0c2546833383d2e2c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 164,
+      "sha256": "b6ba01ce0e4c13dbe9abdcda4e2c3a0f575a76fa9d98a3797645a927a874166d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 165,
+      "sha256": "93a9b538a6eb37501b755d15c2179037fbff0730864b43f63539b965bc62a2c6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 166,
+      "sha256": "3c37f3c0e75ac52787084e8aeec0188667596067b10a6f46518f9fc94a11230c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 167,
+      "sha256": "e684bff09e6acfb96f45786aa18547be6202c62a27df9e865691500531abf72e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 168,
+      "sha256": "5c3640cb915c647e7edb3d0074db81b4f8bb24547c864ea28b323a4629236a64",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 169,
+      "sha256": "a1f1326a33759a51cd16c74f8d07a7ebccf0474a5e9a1c01542de3acac67f2ec",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 170,
+      "sha256": "e1744cc24cbf495ab90a206383a84684d003bb152ce62a9d4e0f879acea7ceac",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 171,
+      "sha256": "2ebe24d935ebb4bdbb16d7a60288a3dae56d99c539969d24a291461ef9356129",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 172,
+      "sha256": "a539f9971d1a19a8a939a6e2e33f7af41b1d07caa9fe0a5dd8ae6212392bfd00",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 173,
+      "sha256": "cd65f05820623f60ba0aee028cf365a30ad4797dff33ddfe97e82980bd6789fb",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 174,
+      "sha256": "6dc761b7f5b3b8ed12d1ba783de1e2136bf2a305e6a9cebf24c95c75bba08e18",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 175,
+      "sha256": "67b004b8a8403cde7bdf9ade4a5d310d11451eadcbadd7c4aa866ae93efd2c84",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 176,
+      "sha256": "b3b7d508b85a668e40a071d9cc15acb207aa94dfde153be0d40aca657f28503c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 177,
+      "sha256": "e210d1f7488befd7883c27dd9fc05a276cd8d1b5c0c3b1ed7f9d5058bcf0a2d6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 178,
+      "sha256": "0af10a24ca577ceb55cf52962ca982255b22381d41467d605e9370db360459c5",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 179,
+      "sha256": "b88b9009255e1f2f4cb86497d9ae25fdade48891dfd4f3b5b95ccc3767daa95c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 180,
+      "sha256": "2c308e4bfed53e0c82f19bec8f9d4b12e94369723e471aecb94528c79859dcde",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 181,
+      "sha256": "693ab61d3d05c18497a6aa638a55aefbe3488ebda54e0a6db0990d0a710a7349",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 182,
+      "sha256": "6f88c09abe403a1e260efe272a20073c502bb3f7c61e81e7817d6815d0ab5706",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 183,
+      "sha256": "79dd5360c8149056b7d95b097a5095f6a209de3cca2b73ec0d0eda3bd55781d7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 184,
+      "sha256": "b54cf9c05428e3dcbd51cbac3b04c101d729cd9c8ee816a1a0e696b965b9696f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 185,
+      "sha256": "2c52ad36b7f7ead628474130a6af79c191b836ce0505df0a0ccb959574d75fa2",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 186,
+      "sha256": "e71c3a9102e53ff2caf5fa75a96b6942b86d144a4e6b099681ab707f42748448",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 187,
+      "sha256": "d2bc63835953165100857aeaf8e2d17c123593dcd6054078b2a587a64525b76f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 188,
+      "sha256": "c13f9e072e57c1b36bd14955a865d14250dae4b9f7129bd568ac1172f882882b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 189,
+      "sha256": "e4146432669578e26d8dea28eeef5bd8755707759e9915115e5a023944a3e4e6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 190,
+      "sha256": "44257f2b4597c996ad102e223a2c8b34c33676fbdc7387e048b45da347b5b3e1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 191,
+      "sha256": "19eb050abab6b900048a20ed68d2649a9acc9fe7792e1af53254fb187b5e2df7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 192,
+      "sha256": "95aaf95bff3cb811e0b5e17f0d4ff79c4c9cb6bd5b7db2e4bb6535f98208a396",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 193,
+      "sha256": "5ef488e333b40321d24ce583ff28ce1b96454eec06c56161553e0b4fa15c628d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 194,
+      "sha256": "20c479179047b7d28acdd38e17de0012173a611917d4b5e5216e5caa6a5086ec",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 195,
+      "sha256": "4b0c16b99cbb9425a37dfae03ad02b02ed6a6db884e5849a076760b39cec0b6e",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 196,
+      "sha256": "2bbd32c5fdf8a7505df1d49edbbdf06a761e0365d4f7e7271b65b27369159be3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 197,
+      "sha256": "04adf3858cab3924fd94ba1db32229575344aaf54a9c8655cdd368eba7f82f1a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 198,
+      "sha256": "c4d710aea0594da78005706b54de5aaf47f2fe422078b6cdb095c93ca0c537f0",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 199,
+      "sha256": "9e7f902705d41ed50173ab9f1e3b5af49e4f91b869dbb9241b94711097353551",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 200,
+      "sha256": "cf8ff4fd9c9a3dc5bb3f7566a70eac0f9e9faaf524d267d1f751e2b9c5ef9558",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 201,
+      "sha256": "b1a64c25d2c623122082e237ffbfbbafce81d665b258d7ebb9010c453ba7c9fa",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 202,
+      "sha256": "453758028c30ded6d002c21413a7b630e16b90efc04f7fd6572a4f5c59324487",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 203,
+      "sha256": "23f0bac634f05cf3c76e00d755d4061c114bd0b813baba9ba406df8ddbf26633",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 204,
+      "sha256": "5ace5cde5d1de30f59ba8415b8f022b372bb930da29bfcabed4f0d171d6b0266",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 205,
+      "sha256": "c94580e95a331a046cd18a8966f4f93d26af56ba86b4d48bd099111d32a7eeb3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 206,
+      "sha256": "bacee59d0fa979cf1bfa39a881c02e2268a5d677fbdc31f6ad5c727335a19936",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 207,
+      "sha256": "ded8457101178a38ae5d761ce339a5b8233e40cce04901e83ed89b81af8eb968",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 208,
+      "sha256": "28a9e03c47686782f7a20885fe4cac2990eb9414fca513a6396dd5944c287e97",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 209,
+      "sha256": "966e9d855d4ad4dea596e820d536eb42a52393b4c2cf8becd95d34f425cf2947",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 210,
+      "sha256": "11b92242a460450f93638611e54195e9cf4dd5903f1981afa3e12298068abed4",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 211,
+      "sha256": "6f3d0bcfdcccaf712e364414b1522abbab7fe6c3ebbf6ea1b5ba6363d2bf6d9a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 212,
+      "sha256": "436f2b3176a98a9b698de967c89b794f65946731e17930045bc6c69a04aba68d",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 213,
+      "sha256": "7b828d4e3fc51fca21f2a94274c223e938fa18d817f573078a1c0da2b04fca30",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 214,
+      "sha256": "39803e4df82b8fefb57f1ec8ca618cae8d837186bebb49ed3660f39f304e3828",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 215,
+      "sha256": "e0700a73235b079ac5bcadb0dc0e81402591ed2aef8508d171029b58f11ba1ac",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 216,
+      "sha256": "f3578f74bb0acc9573e7a592140f3faba204a359512e77cd6ed97709d344b8da",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 217,
+      "sha256": "172c9f669fffc0e5212fc4444ff00d9d0ff140734f3305ce36116a4292129304",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 218,
+      "sha256": "e42ac631c58af4ea4fc79591161ff59e03d24f7be76275542c799f26e2a4ee82",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 219,
+      "sha256": "8c6966be7dd736db46290d129998d11c6c7c78bebbe4a3db9b53bca327977466",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 220,
+      "sha256": "b08a5fccd2177ea384211a1a00d0b50c64514daa470a688252544e745324d17a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 221,
+      "sha256": "4b3f531e270151b36d6817d9dcb01c18d6e89d01fc153d42a8790cc1100f6bf2",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 222,
+      "sha256": "a4d8e0913655226b4fabaa0d0be0ce0a8974f27f71efee50c170a78f8dfac7a0",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 223,
+      "sha256": "71203f9a28329d03709e9e69091faf1a5401e9673f36d626e7d9a71ac643b5a7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 224,
+      "sha256": "aee2253fdde401becb9fae38899f2fd515aacc994c4ac3a99d055281718a1ac8",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 225,
+      "sha256": "c5b73e3bb8606feb9c213a5271228184cfb18e48cf88ff87923e0e2ab3683ea7",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 226,
+      "sha256": "281afab778966505027249379bc1261e723b2bcf50b7be777e431dce2e792326",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 227,
+      "sha256": "835cf3ef7f0c62b577adab7a2c445a9830a6b126df8ccca83229e58f07a325db",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 228,
+      "sha256": "b240bb1c39e6813eb4e47aa438ec1419eaf5344841bb76bbed352d6a36ff3ff1",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 229,
+      "sha256": "de0acfa65676674de78eed869f1794ce05745eaa60c8e4f11d9efd1dabf5afaa",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 230,
+      "sha256": "574f735dc9b62eb2b898adeec69e2734a9b51047e9c6edc67c0532f08e5ec91a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 231,
+      "sha256": "62174571b1b6c983b64669db9f67100cd75775b0d0c8f2ef2b6f931cd119dcb9",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 232,
+      "sha256": "053a64e5c11ca991a73699f1cbffeefe7cede34117bfd8aaaef73b77d00a2e8c",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 233,
+      "sha256": "28f8bc93b582ae5710dded824422490e71cdd01a449352e2273a4aa42c06a014",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 234,
+      "sha256": "f12561ee5088e6c30faf881ca1a8daee5c71990ab2f3db1921d638788ef52add",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 235,
+      "sha256": "20c004141832d8b48c67402bc0c005304f3a8ed6edf95cf43524956f58c00391",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 236,
+      "sha256": "25e03872d1dd3793f4d43f30f559b9aefb9ebbb72a46f0c125e2e48e076ff110",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 237,
+      "sha256": "eb62c57c13886e5281bb816f108833a4534d5b6653e3b28a11611fcbb2629bca",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 238,
+      "sha256": "08191ed09b2ff52bf398d93e8f3efa593897b9b6ef297ef68100a184dcd114a6",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 239,
+      "sha256": "3af229549817f51c9b330bfc1b0ea689a05d9f35e043326648705be4dd2f2989",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 240,
+      "sha256": "1b070b136c71a311fb49a60078b12ca8308d6471f79d86ee96c85b41c207e322",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 241,
+      "sha256": "3c236b4604bd9a0dca230d031aaa251f24a7ff1a5d735bdd90c6d32b3b58fff0",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 242,
+      "sha256": "1d069c02120f211897b576387b74424530066d9271c74ee41021cc2c4c26feae",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 243,
+      "sha256": "c7e2c32040ea18c4ff40c11074864935ec2e1876b8b95dd36e86446b00a3ba0f",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 244,
+      "sha256": "dc5166f6c4d4290f1bc4bf46e8a6b609f9d54edfd9ebd2c58276a310a39d5de3",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 245,
+      "sha256": "e00219998267206f2a3a5f90270b995da90ccc6a37488a9c5404b86145ac184a",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 246,
+      "sha256": "de97fd720de08d4d214ec5bf59008bf9c4c1b317b6f7f93bcb6b1146a4c7bb4b",
+      "v3_v4_png_bytes_identical": true
+    },
+    {
+      "page": 247,
+      "sha256": "2408d0f34b79c0026061cf923118ec8138b94dc7344f82c678ee55194cc1f0c7",
+      "v3_v4_png_bytes_identical": true
+    }
+  ],
+  "failures": [],
+  "visual_review_transfer": "All v4 PNG bytes equal v3; A visual acceptance inherits visual_A_v3.json, including resolved ceiling and retained low-priority inline line breaks. Other agent visual scopes remain separate.",
+  "limits": [
+    "This is a static field and rendered page mapping audit, not a new PDE run or Word GUI click test.",
+    "Existing SEQ instructions explicitly reset each current number; numbering correctness is confirmed for this frozen document, not promised for arbitrary future insertions.",
+    "No changes made to DOCX/PDF/source or renderer."
+  ]
+}
