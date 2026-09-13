@@ -1,0 +1,86 @@
+{
+  "status": "PASS_STATIC_SEMANTIC_AND_PRESERVATION",
+  "source": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\formatting_20260913\\source.docx",
+  "source_sha256": "190f4d11212c1f42aaf0ab4df4101d93ecf96b5f8cb1db5012f1ca76066b1c69",
+  "output": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+  "output_sha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a",
+  "independent_checks": {
+    "all_32_local_replacements_complete": true,
+    "changed_paragraph_count": 22,
+    "two_figure_descriptions_complete": true,
+    "full_body_text_matches_only_expected_changes_and_six_captions": true,
+    "no_run_boundary_omissions_or_duplicate_phrases": true,
+    "no_first_or_second_person": true,
+    "formal_self_references_retained": {
+      "本文": 15,
+      "本参赛队": 1
+    },
+    "no_figure_work_instructions_or_highlight": true,
+    "six_caption_numbers_ordered_and_adjacent": true,
+    "math_xml_identical_count": 226,
+    "table_cell_contents_identical_count": 9,
+    "result_table_xml_identical_count": 8,
+    "symbol_table_only_expected_style_change": [
+      [
+        64,
+        "全域含水率阈值的临界时刻"
+      ]
+    ],
+    "entire_code_appendix_xml_identical": true,
+    "field_instructions_identical": true,
+    "bookmarks_identical": true,
+    "media_files_byte_identical_count": 11
+  },
+  "figures": [
+    {
+      "number": 1,
+      "caption": "图1  问题一不同时刻的径向温度与干基含水率分布",
+      "embedded_media": "word/media/image1.png",
+      "sha256": "80754fe929b27ac081c05fe709bf88238a642eb8fb636690c8947b344e231b91",
+      "caption_directly_after_image": true,
+      "visual_content_check": "两幅子图分别展示100、300、600、900、1200、1500、1800 s的径向温度和干基含水率，标题与实际内容一致。"
+    },
+    {
+      "number": 2,
+      "caption": "图2  烘房温度与空气水分指标的观测插值及平台延拓",
+      "embedded_media": "word/media/image2.png",
+      "sha256": "2d9eda921e7906cf97f3f1657eb2a450fe82a73daf3001c19d2714b6ecc3187d",
+      "caption_directly_after_image": true,
+      "visual_content_check": "四幅子图展示0—4 h温度、空气水分指标及至60 h的50°C与0.05 kg/kg假设平台，标题及新增说明准确。"
+    },
+    {
+      "number": 3,
+      "caption": "图3  问题二中心与表面的温度及干基含水率变化",
+      "embedded_media": "word/media/image4.png",
+      "sha256": "ae6207dd604642f6cb95bda39db8faf2462a2f009e27efe7055813048b6b04c5",
+      "caption_directly_after_image": true,
+      "visual_content_check": "左图为前4 h中心/表面温度，右图为全过程中心/表面干基含水率，标题及新增说明与时间尺度一致。"
+    },
+    {
+      "number": 4,
+      "caption": "图4  问题三全域含水率达标过程及临界时刻局部放大",
+      "embedded_media": "word/media/image6.png",
+      "sha256": "2b3c73b7e1b8ef072565c376ad54a02e3ca2d80cecf957b31655bf95911760f7",
+      "caption_directly_after_image": true,
+      "visual_content_check": "左图为中心、表面、全域最大含水率的达标过程，右图放大临界时刻并区分临界根与严格达标取值，标题准确。"
+    },
+    {
+      "number": 5,
+      "caption": "图5  问题四半径收缩过程与域内干基含水率分布",
+      "embedded_media": "word/media/image8.png",
+      "sha256": "dc88ff1b950ec522bbdf948ae495537d5e5ca25c022078a587853dca1eee32c1",
+      "caption_directly_after_image": true,
+      "visual_content_check": "左图为半径随时间收缩，右图为多个时刻以各自真实表面为终点的域内干基含水率分布，标题准确。"
+    },
+    {
+      "number": 6,
+      "caption": "图6  经验边界阻力参数对临界烘干时长的影响（N=800）",
+      "embedded_media": "word/media/image10.png",
+      "sha256": "0143e0afe6c3af589b25369d6b87f3a76cc9e1c38667ab090e574e62368cd117",
+      "caption_directly_after_image": true,
+      "visual_content_check": "图示经验边界阻力参数p=1、2、4与两组临界时长的关系，图中明确N=800，标题准确。"
+    }
+  ],
+  "language_assessment": "逐段核对局部替换后的完整句子，未发现新病句、词语重复或替换残留。保留既有模型局限、结果适用条件及人工审查声明。",
+  "limitations": "本审计只确认DOCX静态文本/结构及六张嵌入图与图名的对应；最终PDF分页、页面视觉排版由主代理独立渲染核验，不视为团队人工签核。"
+}

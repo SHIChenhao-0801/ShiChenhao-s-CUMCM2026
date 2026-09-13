@@ -199,5 +199,20 @@
     "figures": "paper_output/figures/六图核查包_20260913.zip",
     "figuresInserted": false,
     "humanReview": "PENDING_USER_REVIEW"
+  },
+  "latest_document_revision": {
+    "date": "2026-09-13",
+    "scope": "formatting_and_language_only",
+    "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+    "sha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a",
+    "audit": "paper_output/qa/formatting_20260913/final_audit.json",
+    "status": "PASS_FORMATTING_AND_LANGUAGE_REVISION",
+    "rendered_pages": 33,
+    "page_number_mode": "abstract_1_continuous_including_appendix",
+    "limitations": [
+      "LibreOffice headless render and actual PNG review; no new Word GUI or team sign-off claim.",
+      "Inherited appendix code long-line soft wraps are fully visible; code content remains byte-equivalent at XML level.",
+      "This pass covers requested formatting and language, not full submission compliance or model revalidation."
+    ]
   }
 }

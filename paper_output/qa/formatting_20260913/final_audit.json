@@ -1,0 +1,317 @@
+{
+  "status": "PASS_FORMATTING_AND_LANGUAGE_REVISION",
+  "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+  "docxSha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a",
+  "sourceSha256": "190f4d11212c1f42aaf0ab4df4101d93ecf96b5f8cb1db5012f1ca76066b1c69",
+  "renderPdf": "paper_output/qa/formatting_20260913/v3.pdf",
+  "renderPdfSha256": "24783a78a8e2140a394212b6e15582f318cd4bb14e09a6bc34836b9cfa8ee7d1",
+  "pages": 33,
+  "abstractPages": [
+    1
+  ],
+  "mainTextIncludingAiAndReferencesPages": [
+    2,
+    24
+  ],
+  "appendixPages": [
+    25,
+    33
+  ],
+  "pageNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "pageNumberDecision": "Follow current explicit format2026 request: abstract page 1 and continuous Arabic numbering including appendix. format article 3 specifies continuous numbering; article 4 exempts appendix from page-count cap, not page numbers. Briefing page 76 conflict separately documented; optional clarification had no reply, default explicitly communicated.",
+  "captions": [
+    {
+      "page": 9,
+      "text": "图1  问题一不同时刻的径向温度与干基含水率分布"
+    },
+    {
+      "page": 11,
+      "text": "图2  烘房温度与空气水分指标的观测插值及平台延拓"
+    },
+    {
+      "page": 13,
+      "text": "图3  问题二中心与表面的温度及干基含水率变化"
+    },
+    {
+      "page": 16,
+      "text": "图4  问题三全域含水率达标过程及临界时刻局部放大"
+    },
+    {
+      "page": 19,
+      "text": "图5  问题四半径收缩过程与域内干基含水率分布"
+    },
+    {
+      "page": 20,
+      "text": "图6  经验边界阻力参数对临界烘干时长的影响（N=800）"
+    }
+  ],
+  "languageLocalReplacements": 32,
+  "figureDescriptionsRewritten": 2,
+  "allVisualPages": [
+    {
+      "page": 1,
+      "imageSha256": "a84e85d0d561ea87c9a554cc6b4a9fa7a4b323cbdfae99f3e0a93a6156a0b6d3",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 2,
+      "imageSha256": "2603e845457cee52befaa90d54c6bc5c6b2775022a637feebc83b2d9e3f3535e",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 3,
+      "imageSha256": "8552187978fe69652369c54d0526c7662b3eb1520ccec4096d830a1a0553e2be",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 4,
+      "imageSha256": "5a5d31aa4f3aa7288023564f3db525e3415db36efaf44099100807c2ff857ec8",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 5,
+      "imageSha256": "71e2324036bc8db72706df3faff8c5dd05e57954ff2b5a1e2feded680b645d47",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 6,
+      "imageSha256": "0352baeb636afda4ffd6d19e4e8511dd9524275f1d9c496f638045cfef728c98",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 7,
+      "imageSha256": "a993cba276a486aa6b9f505cf282a77cc88120681d7bdae82e3d23ff5d214aeb",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 8,
+      "imageSha256": "0c3ce60dcc90b66be0f55a53dbf05a6b46cf0a8db3c7dc36b5c841c4303fe8ae",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 9,
+      "imageSha256": "4b0e8fca21e62cfbcec97add0c7c64ed23585deb8a793df7b86cfaeda831dfba",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 10,
+      "imageSha256": "a4d5d8d0ed310069c7655e32cbca24194634d25a27d8f3c9377d2c40719461e5",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 11,
+      "imageSha256": "71a85f6176390b8b05c5eee03afcfc654c4b214f887040a1777ab2d09c4701a4",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 12,
+      "imageSha256": "19c5c697ea7982742d3a77a14053071499e0db35e06db1e6039b0311552cc433",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 13,
+      "imageSha256": "590d99450c902cd0df5351bc960e79360aca45b5c5237dce4285af2715bb7892",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 14,
+      "imageSha256": "b15e1dc6bebf815dbce74912515c233b398837f4f1827a212f421f2bb3727a06",
+      "review": "direct_v3_image_review",
+      "status": "PASS"
+    },
+    {
+      "page": 15,
+      "imageSha256": "8881333434f6c11160d68d882085d70481da2be456f9681d6774149732ddc18b",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 16,
+      "imageSha256": "da37f59151cc098451f3f4a317b9a696c3c9ecc996daa52b680901cf742f5dca",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 17,
+      "imageSha256": "8a03486f9ff1c09b59fb95567ccd350d4939c51da19f0a86ed23b4f71248b0f3",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 18,
+      "imageSha256": "8c24a8978e190e4d4d53d1ec8eec89232c4b166bc1be2ae394b25c47bcd5c055",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 19,
+      "imageSha256": "068fcec19966f31381f9912002e2f7c82174987d21eed63367e4f3485ad68331",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 20,
+      "imageSha256": "08ea0b4e4c8507a7a0b1f0174eabe74e34a7e2e361a13362f966f45e431b565c",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 21,
+      "imageSha256": "ec7ad063ffbd8b65647ac1f2f675bd76319aaf9cda2a7bb2c4617edddf3cc3bc",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 22,
+      "imageSha256": "a9bf2287dcc057cde5f09e0a0e4816be118a448c0c7ea31b1e6d3a57647a4cb1",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 23,
+      "imageSha256": "3d875b2938f4ff4bfe00b7e88ff6f6adf2adb609776b081b307d116fbb1932be",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 24,
+      "imageSha256": "2d27ce4cdb4b3c8b28e2710a5155ab6cad5dc9385a7be91bf5ef2b0c3ef38f33",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 25,
+      "imageSha256": "b256be334494cad96f2c813c3a7486c5005757628aa89ae85f54b27db044757e",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 26,
+      "imageSha256": "4017a238fd12c63c70df317a083e7258c3b747d6667fc3ad12873ccfa45d3423",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 27,
+      "imageSha256": "f9e217cb58b0332d87383604a97a788a3046d6692b4052b26f2b26522cd36d26",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 28,
+      "imageSha256": "3ab1a281adc2e66dabf207a160542ba25c14c28572aac581aeeb54da0dda601d",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 29,
+      "imageSha256": "0b919eb60afe828e8db65d5bd71dd50cd7f2ca9ec9f0e739c8908242036105e7",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 30,
+      "imageSha256": "5f7caa81f6efd66457198c41593e246883f9e381224b180ed52269ee53dbe80c",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 31,
+      "imageSha256": "fa4dccfd4ad0e181f928eaf28ef462b9fa8047ceb4da25bf3edc29bdb22d7393",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 32,
+      "imageSha256": "e8f96d2bc9f45379449c8da256a80d735c7cf7734ecb375588d6bf6748aefc19",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    },
+    {
+      "page": 33,
+      "imageSha256": "d611f4aaae7aeac3577b1c859a2ff50b5c3cb4e3fa3d8dfef67405e9f8782ec4",
+      "review": "byte_identical_v1_review_reused",
+      "status": "PASS"
+    }
+  ],
+  "independentSemanticAudit": "final_semantic_audit.json",
+  "unchanged": {
+    "all_32_local_replacements_complete": true,
+    "changed_paragraph_count": 22,
+    "two_figure_descriptions_complete": true,
+    "full_body_text_matches_only_expected_changes_and_six_captions": true,
+    "no_run_boundary_omissions_or_duplicate_phrases": true,
+    "no_first_or_second_person": true,
+    "formal_self_references_retained": {
+      "本文": 15,
+      "本参赛队": 1
+    },
+    "no_figure_work_instructions_or_highlight": true,
+    "six_caption_numbers_ordered_and_adjacent": true,
+    "math_xml_identical_count": 226,
+    "table_cell_contents_identical_count": 9,
+    "result_table_xml_identical_count": 8,
+    "symbol_table_only_expected_style_change": [
+      [
+        64,
+        "全域含水率阈值的临界时刻"
+      ]
+    ],
+    "entire_code_appendix_xml_identical": true,
+    "field_instructions_identical": true,
+    "bookmarks_identical": true,
+    "media_files_byte_identical_count": 11
+  },
+  "limitations": [
+    "LibreOffice headless render and actual PNG review; no new Word GUI or team sign-off claim.",
+    "Inherited appendix code long-line soft wraps are fully visible; code content remains byte-equivalent at XML level.",
+    "This pass covers requested formatting and language, not full submission compliance or model revalidation."
+  ]
+}

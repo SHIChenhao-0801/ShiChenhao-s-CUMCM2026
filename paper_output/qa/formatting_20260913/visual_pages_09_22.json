@@ -1,0 +1,78 @@
+{
+  "version": "v1",
+  "docxSha256": "bff4cd41f162aac61ab87731614e46387e759d2f8cb836d5b0bdd5ec5eb10dc7",
+  "reviewer": "root",
+  "reviewedPages": [
+    {
+      "page": 9,
+      "sha256": "985032a668c6e124b5cff415a8d2e8dc8bc30827b0af8674c622d068d88f1e12",
+      "result": "PASS"
+    },
+    {
+      "page": 10,
+      "sha256": "5188adc3ab461b576eb9f6ea4aec3596f30b2b404e30edd19709ae9d3b23fdfd",
+      "result": "REVIEWED_LAYOUT_REPAIR"
+    },
+    {
+      "page": 11,
+      "sha256": "a0a058005b705f4d5de4e501bb665451a133ee45dc7add91274e3eae55c10497",
+      "result": "PASS"
+    },
+    {
+      "page": 12,
+      "sha256": "88dd74ff7c68a26b94861d60ed154cae3bc217b631696a0d07cc2394788af0a6",
+      "result": "REVIEWED_LAYOUT_REPAIR"
+    },
+    {
+      "page": 13,
+      "sha256": "0feec71659f526c4d36ddb70d6f5be17e8377a8fb3db0583fae55010af372c94",
+      "result": "PASS"
+    },
+    {
+      "page": 14,
+      "sha256": "d9d9f97f169c15127c476e6effe35610faf0368591870106a3932fefb878b0d2",
+      "result": "PASS"
+    },
+    {
+      "page": 15,
+      "sha256": "8881333434f6c11160d68d882085d70481da2be456f9681d6774149732ddc18b",
+      "result": "PASS"
+    },
+    {
+      "page": 16,
+      "sha256": "da37f59151cc098451f3f4a317b9a696c3c9ecc996daa52b680901cf742f5dca",
+      "result": "PASS"
+    },
+    {
+      "page": 17,
+      "sha256": "8a03486f9ff1c09b59fb95567ccd350d4939c51da19f0a86ed23b4f71248b0f3",
+      "result": "PASS"
+    },
+    {
+      "page": 18,
+      "sha256": "8c24a8978e190e4d4d53d1ec8eec89232c4b166bc1be2ae394b25c47bcd5c055",
+      "result": "PASS"
+    },
+    {
+      "page": 19,
+      "sha256": "068fcec19966f31381f9912002e2f7c82174987d21eed63367e4f3485ad68331",
+      "result": "PASS"
+    },
+    {
+      "page": 20,
+      "sha256": "08ea0b4e4c8507a7a0b1f0174eabe74e34a7e2e361a13362f966f45e431b565c",
+      "result": "REVIEWED_LAYOUT_REPAIR"
+    },
+    {
+      "page": 21,
+      "sha256": "ec7ad063ffbd8b65647ac1f2f675bd76319aaf9cda2a7bb2c4617edddf3cc3bc",
+      "result": "REVIEWED_LAYOUT_REPAIR"
+    },
+    {
+      "page": 22,
+      "sha256": "a9bf2287dcc057cde5f09e0a0e4816be118a448c0c7ea31b1e6d3a57647a4cb1",
+      "result": "PASS"
+    }
+  ],
+  "notes": "All 14 original PNGs viewed. Six image-caption pairs are present, centered and on same page. Repair widow/orphan prose at source blocks 83,101,174,188 in v2; all mathematical content and plots visible, no clipping or overlap."
+}

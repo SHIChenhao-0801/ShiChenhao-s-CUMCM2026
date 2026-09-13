@@ -1,0 +1,248 @@
+[
+  {
+    "index": 77,
+    "context": [
+      {
+        "index": 75,
+        "type": "p",
+        "text": "表层含水率降低后，式(6)中的D随之减小，形成较强的干燥阻力。因而即使表面与外界存在传质驱动力，内部水分也不会立刻均匀释放。只用一个全体平均含水率描述此阶段，会掩盖径向差异，无法回答题目要求的各位置浓度。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 76,
+        "type": "p",
+        "text": "图1：",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 77,
+        "type": "p",
+        "text": "",
+        "drawings": 1,
+        "section": false
+      },
+      {
+        "index": 78,
+        "type": "p",
+        "text": "",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 79,
+        "type": "p",
+        "text": "5.1.5 模型检验或灵敏度分析",
+        "drawings": 0,
+        "section": false
+      }
+    ],
+    "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" w14:paraId=\"03DACDAD\"><w:pPr><w:pStyle w:val=\"2\"/><w:keepNext w:val=\"0\"/><w:keepLines w:val=\"0\"/><w:widowControl/><w:suppressLineNumbers w:val=\"0\"/><w:jc w:val=\"center\"/></w:pPr><w:r><w:drawing><wp:inline distT=\"0\" distB=\"0\" distL=\"114300\" distR=\"114300\"><wp:extent cx=\"4927600\" cy=\"3147695\"/><wp:effectExtent l=\"0\" t=\"0\" r=\"5715\" b=\"4445\"/><wp:docPr id=\"1\" name=\"图片 1\" descr=\"IMG_256\"/><wp:cNvGraphicFramePr><a:graphicFrameLocks xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" noChangeAspect=\"1\"/></wp:cNvGraphicFramePr><a:graphic xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:pic xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:nvPicPr><pic:cNvPr id=\"1\" name=\"图片 1\" descr=\"IMG_256\"/><pic:cNvPicPr><a:picLocks noChangeAspect=\"1\"/></pic:cNvPicPr></pic:nvPicPr><pic:blipFill><a:blip r:embed=\"rId8\"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"4927600\" cy=\"3147695\"/></a:xfrm><a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom><a:noFill/><a:ln w=\"9525\"><a:noFill/></a:ln></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>"
+  },
+  {
+    "index": 95,
+    "context": [
+      {
+        "index": 93,
+        "type": "p",
+        "text": "【绘图位置2】图2：烘房边界条件及延拓。上图为0—4 h温度原始点与插值，下图为环境水分指标；另用较长时间轴展示4 h后的50°C和0.05平台，用竖线标出观测与延拓边界。不能把延拓段画成实测点。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 94,
+        "type": "p",
+        "text": "图2：",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 95,
+        "type": "p",
+        "text": "",
+        "drawings": 1,
+        "section": false
+      },
+      {
+        "index": 96,
+        "type": "p",
+        "text": "5.2.3 求解算法",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 97,
+        "type": "p",
+        "text": "沿用问题一的有限体积网格，同时更新B(C)、k(C)与D(T,C)。温度面通量采用导热系数调和平均，水分面通量用a=0.45的Kirchhoff势及面温度因子。解析Jacobian保留T对水通量、C对热容量和热通量的导数。中心无通量与表面换热传质直接写入控制体余额，从而保证两类边界与内部离散采用一致的符号。",
+        "drawings": 0,
+        "section": false
+      }
+    ],
+    "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" w14:paraId=\"60C8F3CB\"><w:pPr><w:keepLines/><w:snapToGrid w:val=\"0\"/><w:spacing w:before=\"140\" w:after=\"140\" w:line=\"300\" w:lineRule=\"auto\"/><w:ind w:firstLine=\"0\"/><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:highlight w:val=\"yellow\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:highlight w:val=\"yellow\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr><w:drawing><wp:inline distT=\"0\" distB=\"0\" distL=\"114300\" distR=\"114300\"><wp:extent cx=\"4933950\" cy=\"4038600\"/><wp:effectExtent l=\"0\" t=\"0\" r=\"10160\" b=\"9525\"/><wp:docPr id=\"2\" name=\"图片 2\"/><wp:cNvGraphicFramePr/><a:graphic xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:pic xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:nvPicPr><pic:cNvPr id=\"2\" name=\"图片 2\"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed=\"rId9\"><a:extLst><a:ext uri=\"{96DAC541-7B7A-43D3-8B79-37D633B846F1}\"><asvg:svgBlip xmlns:asvg=\"http://schemas.microsoft.com/office/drawing/2016/SVG/main\" r:embed=\"rId10\"/></a:ext></a:extLst></a:blip></pic:blipFill><pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"4933950\" cy=\"4038600\"/></a:xfrm><a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>"
+  },
+  {
+    "index": 111,
+    "context": [
+      {
+        "index": 109,
+        "type": "p",
+        "text": "水分扩散对温度的响应与含水率的响应方向不同。在相同C下，升温使式(9)的温度因子增大，有利于扩散；随着药材逐渐变干，exp(−0.45/C)减小，使后期扩散变慢。因此全过程通常表现为前期升温推动水分迁移、后期低含水率区域限制传递的组合效应。该解释来自物性公式及场分布，不把时间曲线的形状直接归因为某个未经观测的组织变化。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 110,
+        "type": "p",
+        "text": "【绘图位置3】图3：问题二中心与表面的温度、含水率随时间变化。温度展示前4 h，含水率展示从0到达标；两图分别使用适合其变化尺度的时间轴，清楚标出中心和表面，避免因同轴缩放掩盖前期热响应。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 111,
+        "type": "p",
+        "text": "",
+        "drawings": 1,
+        "section": false
+      },
+      {
+        "index": 112,
+        "type": "p",
+        "text": "5.2.5 模型检验或灵敏度分析",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 113,
+        "type": "p",
+        "text": "空间加密、收紧时间设置以及不同积分器的对照表明，本组数值解在所检验的采样范围内稳定。表3中1.5 h表面温度接近四位小数的舍入边界，基线与更严格时间设置可能给出不同末位；表中统一采用基线计算值47.1401°C。该差异反映计算末位对时间设置的敏感性，详细比较见附录C。",
+        "drawings": 0,
+        "section": false
+      }
+    ],
+    "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" w14:paraId=\"208DB177\"><w:pPr><w:keepLines/><w:snapToGrid w:val=\"0\"/><w:spacing w:before=\"140\" w:after=\"140\" w:line=\"300\" w:lineRule=\"auto\"/><w:ind w:firstLine=\"0\"/><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:highlight w:val=\"yellow\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:highlight w:val=\"yellow\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr><w:drawing><wp:inline distT=\"0\" distB=\"0\" distL=\"114300\" distR=\"114300\"><wp:extent cx=\"4933950\" cy=\"3086100\"/><wp:effectExtent l=\"0\" t=\"0\" r=\"10160\" b=\"1270\"/><wp:docPr id=\"3\" name=\"图片 3\"/><wp:cNvGraphicFramePr/><a:graphic xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:pic xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:nvPicPr><pic:cNvPr id=\"3\" name=\"图片 3\"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed=\"rId11\"><a:extLst><a:ext uri=\"{96DAC541-7B7A-43D3-8B79-37D633B846F1}\"><asvg:svgBlip xmlns:asvg=\"http://schemas.microsoft.com/office/drawing/2016/SVG/main\" r:embed=\"rId12\"/></a:ext></a:extLst></a:blip></pic:blipFill><pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"4933950\" cy=\"3086100\"/></a:xfrm><a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>"
+  },
+  {
+    "index": 139,
+    "context": [
+      {
+        "index": 137,
+        "type": "p",
+        "text": "",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 138,
+        "type": "p",
+        "text": "12 h时表面已接近0.15，但中心仍为0.4561 kg/kg；至48 h中心仍为0.1618 kg/kg。由此可见，表面达标不能代表全域达标。后期中心由0.1859下降到0.1500经历较长时间，反映低含水率条件下扩散系数降低的影响。结束时中心与表面仍有浓度差，达到产品阈值并不要求内部先达到完全均匀的平衡状态。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 139,
+        "type": "p",
+        "text": "",
+        "drawings": 1,
+        "section": false
+      },
+      {
+        "index": 140,
+        "type": "p",
+        "text": "5.3.5 模型检验或灵敏度分析",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 141,
+        "type": "p",
+        "text": "约93.04%的报告时长位于附件1的4 h观测窗之后，因此57.4724 h应理解为规定平台温湿条件持续存在时的模型预测。数值根的复核能检查“给定轨迹上是否找准阈值”，不能消除边界延拓和气固映射的物理不确定性。若后续更换平台温湿度、β或平衡映射，必须重新积分并重新确定事件，不能只按经验比例改动最终时长。",
+        "drawings": 0,
+        "section": false
+      }
+    ],
+    "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" w14:paraId=\"6D566690\"><w:pPr><w:keepLines/><w:snapToGrid w:val=\"0\"/><w:spacing w:before=\"140\" w:after=\"140\" w:line=\"300\" w:lineRule=\"auto\"/><w:ind w:firstLine=\"0\"/><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:highlight w:val=\"yellow\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:b/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:highlight w:val=\"yellow\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr><w:drawing><wp:inline distT=\"0\" distB=\"0\" distL=\"114300\" distR=\"114300\"><wp:extent cx=\"4933950\" cy=\"3352800\"/><wp:effectExtent l=\"0\" t=\"0\" r=\"10160\" b=\"4445\"/><wp:docPr id=\"4\" name=\"图片 4\"/><wp:cNvGraphicFramePr/><a:graphic xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:pic xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:nvPicPr><pic:cNvPr id=\"4\" name=\"图片 4\"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed=\"rId13\"><a:extLst><a:ext uri=\"{96DAC541-7B7A-43D3-8B79-37D633B846F1}\"><asvg:svgBlip xmlns:asvg=\"http://schemas.microsoft.com/office/drawing/2016/SVG/main\" r:embed=\"rId14\"/></a:ext></a:extLst></a:blip></pic:blipFill><pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"4933950\" cy=\"3352800\"/></a:xfrm><a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>"
+  },
+  {
+    "index": 172,
+    "context": [
+      {
+        "index": 170,
+        "type": "p",
+        "text": "",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 171,
+        "type": "p",
+        "text": "6 h时半径已收缩至1.3740 cm，因此1.5 cm和2 cm固定位置均位于域外；此时表面含水率为0.4207，中心仍为1.7196 kg/kg。至最终时刻，中心和表面分别显示0.1500与0.0526，仍有明显梯度。径向收缩减少了迁移距离，但不会消除由低含水率扩散变慢造成的后期阻力。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 172,
+        "type": "p",
+        "text": "",
+        "drawings": 1,
+        "section": false
+      },
+      {
+        "index": 173,
+        "type": "p",
+        "text": "5.4.5 模型检验或灵敏度分析",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 174,
+        "type": "p",
+        "text": "问题三与四的报告时长相差约6.3818 h，但两问物性和几何同时变化，该差值不能全部归因于收缩。为分离几何影响，在相同附录4物性、边界和N200网格下，分别固定半径及采用给定收缩，得到129.8452 h与51.0910 h；在这个指定对照中，收缩情形时长减少约60.65%。这里的N200结果用于机理比较，不替代N6400正式报告。",
+        "drawings": 0,
+        "section": false
+      }
+    ],
+    "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" w14:paraId=\"14100A1F\"><w:pPr><w:snapToGrid w:val=\"0\"/><w:spacing w:line=\"300\" w:lineRule=\"auto\"/><w:ind w:firstLine=\"482\"/><w:jc w:val=\"center\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr><w:drawing><wp:inline distT=\"0\" distB=\"0\" distL=\"114300\" distR=\"114300\"><wp:extent cx=\"4933950\" cy=\"3152775\"/><wp:effectExtent l=\"0\" t=\"0\" r=\"10160\" b=\"10160\"/><wp:docPr id=\"6\" name=\"图片 6\"/><wp:cNvGraphicFramePr/><a:graphic xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:pic xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:nvPicPr><pic:cNvPr id=\"6\" name=\"图片 6\"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed=\"rId15\"><a:extLst><a:ext uri=\"{96DAC541-7B7A-43D3-8B79-37D633B846F1}\"><asvg:svgBlip xmlns:asvg=\"http://schemas.microsoft.com/office/drawing/2016/SVG/main\" r:embed=\"rId16\"/></a:ext></a:extLst></a:blip></pic:blipFill><pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"4933950\" cy=\"3152775\"/></a:xfrm><a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>"
+  },
+  {
+    "index": 180,
+    "context": [
+      {
+        "index": 178,
+        "type": "p",
+        "text": "Kp(Cs)=1−(Cref/Cs)1/p1−Cref/Cs, jw=ρdβKp(Cs)(Cs−Ceq)(21)",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 179,
+        "type": "p",
+        "text": "当Cs趋于Cref时取连续极限1/p；对Cs≥Cref有1/p≤Kp≤1，p=1恢复基线。该构造通过指定参考点下的活动度差缩放获得启发，实际计算仍是一族经验边界阻力，尚未标定真实吸附等温线。历史N800情景下，p=2时问题二三的临界时长为59.6239 h，问题四为52.2283 h；p=4时分别为65.4447 h和55.3162 h。它们表明所选边界阻力会改变预测时长，不能据此推出真实过程必大于基线，亦不能证明所有p下的全局单调性。",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 180,
+        "type": "p",
+        "text": "",
+        "drawings": 1,
+        "section": false
+      },
+      {
+        "index": 181,
+        "type": "p",
+        "text": "6 模型检验与灵敏度分析",
+        "drawings": 0,
+        "section": false
+      },
+      {
+        "index": 182,
+        "type": "p",
+        "text": "本题缺少药材内部温度与含水率实测值，因此检验重点是所建方程的数值实现及假设敏感性。解析级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设参数与边界；各方法不能提供独立的物理预测准确率。表8差值均取未舍入结果，完整计算过程与采样范围见附录C。",
+        "drawings": 0,
+        "section": false
+      }
+    ],
+    "xml": "<w:p xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\" w14:paraId=\"02CC19F0\"><w:pPr><w:snapToGrid w:val=\"0\"/><w:spacing w:line=\"300\" w:lineRule=\"auto\"/><w:ind w:firstLine=\"482\"/><w:jc w:val=\"both\"/><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint=\"eastAsia\" w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:eastAsia=\"宋体\" w:cs=\"Times New Roman\"/><w:color w:val=\"000000\"/><w:sz w:val=\"24\"/><w:lang w:eastAsia=\"zh-CN\"/></w:rPr><w:drawing><wp:inline distT=\"0\" distB=\"0\" distL=\"114300\" distR=\"114300\"><wp:extent cx=\"4933950\" cy=\"3152775\"/><wp:effectExtent l=\"0\" t=\"0\" r=\"10160\" b=\"10160\"/><wp:docPr id=\"7\" name=\"图片 7\"/><wp:cNvGraphicFramePr/><a:graphic xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:pic xmlns:pic=\"http://schemas.openxmlformats.org/drawingml/2006/picture\"><pic:nvPicPr><pic:cNvPr id=\"7\" name=\"图片 7\"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed=\"rId17\"><a:extLst><a:ext uri=\"{96DAC541-7B7A-43D3-8B79-37D633B846F1}\"><asvg:svgBlip xmlns:asvg=\"http://schemas.microsoft.com/office/drawing/2016/SVG/main\" r:embed=\"rId18\"/></a:ext></a:extLst></a:blip></pic:blipFill><pic:spPr><a:xfrm><a:off x=\"0\" y=\"0\"/><a:ext cx=\"4933950\" cy=\"3152775\"/></a:xfrm><a:prstGeom prst=\"rect\"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r><w:bookmarkStart w:id=\"44\" w:name=\"_GoBack\"/><w:bookmarkEnd w:id=\"44\"/></w:p>"
+  }
+]

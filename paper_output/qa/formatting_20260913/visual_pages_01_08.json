@@ -1,0 +1,120 @@
+{
+  "scope": "Visual inspection of pages 1 through 8 only; not whole-document signoff",
+  "version": "v1",
+  "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+  "docxSha256": "bff4cd41f162aac61ab87731614e46387e759d2f8cb836d5b0bdd5ec5eb10dc7",
+  "pdf": "paper_output/qa/formatting_20260913/v1.pdf",
+  "pdfSha256": "34731df2c443b53389d2ffc5e3baf174129bf761beeae8019b173a4ce904025e",
+  "status": "FAIL",
+  "reason": "One minor formatting defect in final symbol-table row on page 5; no clipping, overlap, or wrong page numbers on inspected pages.",
+  "actuallyViewedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image": "tmp/cache/formatting_20260913/v1/page-1.png",
+      "sha256": "a84e85d0d561ea87c9a554cc6b4a9fa7a4b323cbdfae99f3e0a93a6156a0b6d3",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "标题、摘要、关键词完整在一页；页脚1居中，四周无遮挡。",
+      "findings": []
+    },
+    {
+      "page": 2,
+      "image": "tmp/cache/formatting_20260913/v1/page-2.png",
+      "sha256": "1e7964295a7d01f60d08b893e58a8e03bb087772f9cad38c81c052d5f1fd9cac",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "章节层级、正文与引文清楚；正文接续至下页，页脚2正常。",
+      "findings": [
+        {
+          "severity": "low",
+          "blocking": false,
+          "kind": "unit_line_wrap",
+          "detail": "问题三段落的0.15kg/kg在斜杠后换行，全部字形可读，没有内容缺失；可用不换行单位提升可读性。"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "image": "tmp/cache/formatting_20260913/v1/page-3.png",
+      "sha256": "8552187978fe69652369c54d0526c7662b3eb1520ccec4096d830a1a0553e2be",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "各问题分析文字及行内公式可读，无重叠，页脚3正常。",
+      "findings": []
+    },
+    {
+      "page": 4,
+      "image": "tmp/cache/formatting_20260913/v1/page-4.png",
+      "sha256": "5a5d31aa4f3aa7288023564f3db525e3415db36efaf44099100807c2ff857ec8",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "模型假设、符号表首部和单元格可读；表格按行跨页，页脚4正常。",
+      "findings": []
+    },
+    {
+      "page": 5,
+      "image": "tmp/cache/formatting_20260913/v1/page-5.png",
+      "sha256": "3b2b900ae201103a20682b01127bc0509ab6d967b5f6358b895b803df5c39532",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "FAIL",
+      "notes": "续表重复列标题，无单元格裁切；公式(1)完整，页脚5正常。另有末行说明格式瑕疵须统一。",
+      "findings": [
+        {
+          "severity": "low",
+          "blocking": true,
+          "kind": "symbol_table_inconsistent_paragraph_format",
+          "detail": "符号表最后一行t_c的说明“全域含水率阈值的临界时刻”字号、缩进与同表其他行不一致，第二行“界时刻”靠左。建议沿用同表说明列字号，居中对齐并清除首行缩进。"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "image": "tmp/cache/formatting_20260913/v1/page-6.png",
+      "sha256": "4f13e6a716f988b5b69c64d1815a81f5118125cc434cdd111a6b339462af8ec1",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "公式(2)—(5)上下标、分式及右侧编号均清晰，无正文碰撞；页脚6正常。",
+      "findings": []
+    },
+    {
+      "page": 7,
+      "image": "tmp/cache/formatting_20260913/v1/page-7.png",
+      "sha256": "a993cba276a486aa6b9f505cf282a77cc88120681d7bdae82e3d23ff5d214aeb",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "公式(6)—(7)及指数符号完整，算法段落清晰，页脚7正常。",
+      "findings": []
+    },
+    {
+      "page": 8,
+      "image": "tmp/cache/formatting_20260913/v1/page-8.png",
+      "sha256": "0c3ce60dcc90b66be0f55a53dbf05a6b46cf0a8db3c7dc36b5c841c4303fe8ae",
+      "actuallyOpenedUsingViewImage": true,
+      "detail": "original",
+      "status": "PASS",
+      "notes": "结果表1、2标题和全部行清晰完整，表格不截断；页脚8正常。",
+      "findings": []
+    }
+  ],
+  "staticHashVerification": "PASS",
+  "reviewMethod": "Each original PNG opened with view_image detail=original in two batches, 1-4 and 5-8; not inferred from XML or extracted text",
+  "subsequentReuseCondition": "Only reuse these visual observations if exact page image SHA256 remains identical.",
+  "paperEdited": false
+}

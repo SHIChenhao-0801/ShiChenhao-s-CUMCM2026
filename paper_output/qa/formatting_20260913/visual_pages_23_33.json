@@ -1,0 +1,130 @@
+{
+  "reviewer": "appendix_visual",
+  "reviewType": "actual_page_image_visual_inspection",
+  "manifest": "paper_output/qa/formatting_20260913/v1_render_manifest.json",
+  "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+  "docxSha256": "bff4cd41f162aac61ab87731614e46387e759d2f8cb836d5b0bdd5ec5eb10dc7",
+  "pdfSha256": "34731df2c443b53389d2ffc5e3baf174129bf761beeae8019b173a4ce904025e",
+  "viewedPageCount": 11,
+  "viewedPages": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "method": "Used view_image on each original full-page PNG in four batches; all eleven images were displayed and visually inspected. No rerender, document edit or Git operation performed.",
+  "scopeLimit": "Visual layout only. This review does not certify equations or code correctness, source validity, model results, human review, or resolution of competing pagination instructions.",
+  "overall": "PASS_WITH_LAYOUT_NOTES",
+  "paginationObserved": "All inspected pages show one centered footer number, matching physical pages 23 through 33. Appendix starts on page 25 and continues numbering through page 33.",
+  "pages": [
+    {
+      "page": 23,
+      "image": "tmp/cache/formatting_20260913/v1/page-23.png",
+      "actuallyViewed": true,
+      "status": "PASS",
+      "observations": "Model limitations, improvement directions and AI declaration are legible. Headings have following content, no visible clipping, overlap or missing glyphs. Footer 23 centered."
+    },
+    {
+      "page": 24,
+      "image": "tmp/cache/formatting_20260913/v1/page-24.png",
+      "actuallyViewed": true,
+      "status": "PASS",
+      "observations": "Seven references and URLs/DOIs fit inside text margins. Long references wrap without clipping. Large lower blank area is consistent with appendix starting a new page. Footer 24 centered."
+    },
+    {
+      "page": 25,
+      "image": "tmp/cache/formatting_20260913/v1/page-25.png",
+      "actuallyViewed": true,
+      "status": "PASS",
+      "observations": "Appendix opening and A.1/A.2 headings are legible. Equations 22 and 23 fit with visible numbers, fractions, subscripts and radical. No overlap or clipping. Footer 25 centered."
+    },
+    {
+      "page": 26,
+      "image": "tmp/cache/formatting_20260913/v1/page-26.png",
+      "actuallyViewed": true,
+      "status": "PASS_WITH_NOTE",
+      "observations": "Equations 24–27 and appendix B headings are clear and within margins. B.2 appears near the bottom with one following line, then continues on page 27; no content is cut off. Footer 26 centered.",
+      "note": "Optional pagination refinement: keep B.2 heading and at least two following lines together."
+    },
+    {
+      "page": 27,
+      "image": "tmp/cache/formatting_20260913/v1/page-27.png",
+      "actuallyViewed": true,
+      "status": "PASS",
+      "observations": "B.2 continuation and B.3 are clear. Equations 28–31 show complete fractions, powers, derivatives and equation numbers without overlap. The final lead-in sentence continues to its displayed equation on page 28. Footer 27 centered."
+    },
+    {
+      "page": 28,
+      "image": "tmp/cache/formatting_20260913/v1/page-28.png",
+      "actuallyViewed": true,
+      "status": "PASS_WITH_NOTE",
+      "observations": "Equations 32–34, appendix C heading and C.1 text fit within the page. C.2 begins near bottom with one following line and continues on page 29. Footer 28 centered.",
+      "note": "Optional pagination refinement: keep C.2 heading and at least two following lines together."
+    },
+    {
+      "page": 29,
+      "image": "tmp/cache/formatting_20260913/v1/page-29.png",
+      "actuallyViewed": true,
+      "status": "PASS",
+      "observations": "Dense numerical text and equations 35–37 remain legible. Long equation 36 is fully present inside the margins and separate from its number. C.4 final sentence continues onto page 30. No visible clipping, overlap or missing glyphs. Footer 29 centered."
+    },
+    {
+      "page": 30,
+      "image": "tmp/cache/formatting_20260913/v1/page-30.png",
+      "actuallyViewed": true,
+      "status": "PASS",
+      "observations": "C.4 continuation, C.5 and appendix D opening are legible. D.1 code fits inside margins with preserved visible indentation and complete final return line. Footer 30 centered."
+    },
+    {
+      "page": 31,
+      "image": "tmp/cache/formatting_20260913/v1/page-31.png",
+      "actuallyViewed": true,
+      "status": "PASS_WITH_NOTE",
+      "observations": "D.2 and D.3 code is fully visible, without clipping or overlap. Two long D.2 statements visually wrap to the left margin: the difference[small] assignment ends with a separate [small]) line, and the thermal_factor expression has np.exp(...) on the next line. This weakens indentation readability. Footer 31 centered.",
+      "recommendation": "Retain inherited code layout for this revision; recorded wrap is a visual readability limitation only and does not establish a source-code or execution defect."
+    },
+    {
+      "page": 32,
+      "image": "tmp/cache/formatting_20260913/v1/page-32.png",
+      "actuallyViewed": true,
+      "status": "PASS_WITH_NOTE",
+      "observations": "D.4 and D.5 code is complete on this page and stays inside margins. The atol assignment wraps after settings.atol_temperature, with its continuation at the left margin. Final break is clear above the footer. Footer 32 centered.",
+      "recommendation": "Retain inherited code layout for this revision; recorded wrap is a visual readability limitation only and does not establish a source-code or execution defect."
+    },
+    {
+      "page": 33,
+      "image": "tmp/cache/formatting_20260913/v1/page-33.png",
+      "actuallyViewed": true,
+      "status": "PASS_WITH_NOTE",
+      "observations": "D.6 heading, source and code are legible with no clipping or overlap. RuntimeError message wraps mid-string so trajectory') appears at the left margin. Large blank lower area is the document end, not a blank trailing page. Footer 33 centered.",
+      "recommendation": "Retain inherited code layout for this revision; recorded wrap is a visual readability limitation only and does not establish a source-code or execution defect."
+    }
+  ],
+  "unresolvedLayoutNotes": [
+    {
+      "pages": [
+        31,
+        32,
+        33
+      ],
+      "severity": "minor",
+      "issue": "Automatic wrapping of long code lines visually disrupts indentation and string/expression continuity; all characters remain visible."
+    },
+    {
+      "pages": [
+        26,
+        28
+      ],
+      "severity": "optional",
+      "issue": "An appendix subsection heading has only one subsequent line before the page break."
+    }
+  ],
+  "disposition": "The coordinating agent confirms these automatic line wraps were inherited from the input manuscript. All code characters are visible. They are readability limitations only, not evidence of syntax errors, program changes or output damage; no code-font or source edit is requested in this revision."
+}
