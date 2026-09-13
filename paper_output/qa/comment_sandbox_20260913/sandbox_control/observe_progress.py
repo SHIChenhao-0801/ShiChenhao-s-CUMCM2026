@@ -6,7 +6,7 @@ import subprocess
 
 work = Path('C:/Work')
 files = []
-for base in [work/'03/results', work/'03/tmp/cache/runtime', work/'extra_entries/03_wrapper/results']:
+for base in [work/'03/results', work/'03/tmp/cache/runtime', work/'extra_entries/03_wrapper/results', work/'wrapper_stable/results']:
     if base.exists():
         files += [{'path': str(p), 'bytes': p.stat().st_size, 'mtime': p.stat().st_mtime}
                   for p in base.rglob('*') if p.is_file()]

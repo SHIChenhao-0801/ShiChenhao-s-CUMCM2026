@@ -1,10 +1,15 @@
 {
-  "utc": "2026-09-13T02:04:25.377606+00:00",
+  "utc": "2026-09-13T02:21:03.588235+00:00",
   "files": [
     {
+      "path": "C:\\Work\\03\\results\\vm_final\\runResult.json",
+      "bytes": 49434,
+      "mtime": 1789265136.0616302
+    },
+    {
       "path": "C:\\Work\\03\\results\\vm_final\\stdout.log",
-      "bytes": 669,
-      "mtime": 1789264504.966334
+      "bytes": 900,
+      "mtime": 1789265136.0616302
     },
     {
       "path": "C:\\Work\\03\\results\\vm_preflight\\runResult.json",
@@ -40,6 +45,16 @@
       "path": "C:\\Work\\03\\results\\vm_final\\outputs\\q3_paper_moisture.csv",
       "bytes": 466,
       "mtime": 1789264502.0438354
+    },
+    {
+      "path": "C:\\Work\\03\\results\\vm_final\\outputs\\q4_paper_moisture.csv",
+      "bytes": 390,
+      "mtime": 1789265129.3490908
+    },
+    {
+      "path": "C:\\Work\\03\\results\\vm_final\\outputs\\q4_paper_radius.csv",
+      "bytes": 172,
+      "mtime": 1789265129.3490908
     },
     {
       "path": "C:\\Work\\03\\results\\vm_final\\outputs\\result1.export.json",
@@ -102,6 +117,26 @@
       "mtime": 1789264501.9101994
     },
     {
+      "path": "C:\\Work\\03\\results\\vm_final\\outputs\\result4.export.json",
+      "bytes": 25320,
+      "mtime": 1789265129.3805704
+    },
+    {
+      "path": "C:\\Work\\03\\results\\vm_final\\outputs\\result4.validation.json",
+      "bytes": 5572,
+      "mtime": 1789265132.019249
+    },
+    {
+      "path": "C:\\Work\\03\\results\\vm_final\\outputs\\result4.xlsx",
+      "bytes": 278292,
+      "mtime": 1789265129.317539
+    },
+    {
+      "path": "C:\\Work\\03\\results\\vm_final\\outputs\\result4_unrounded.csv.gz",
+      "bytes": 402572,
+      "mtime": 1789265129.2388973
+    },
+    {
       "path": "C:\\Work\\03\\results\\vm_final\\Q1\\comparison.json",
       "bytes": 8004,
       "mtime": 1789263357.4124968
@@ -132,14 +167,29 @@
       "mtime": 1789263570.0810883
     },
     {
+      "path": "C:\\Work\\03\\results\\vm_final\\Q4\\comparison.json",
+      "bytes": 9074,
+      "mtime": 1789265132.0233674
+    },
+    {
       "path": "C:\\Work\\03\\results\\vm_final\\Q4\\sampled_solution.npz",
       "bytes": 628742,
       "mtime": 1789265047.759856
     },
     {
+      "path": "C:\\Work\\03\\results\\vm_final\\Q4\\summary.json",
+      "bytes": 3343,
+      "mtime": 1789265087.636751
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\runResult.json",
+      "bytes": 44157,
+      "mtime": 1789265070.8370998
+    },
+    {
       "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\stdout.log",
-      "bytes": 663,
-      "mtime": 1789265033.2173355
+      "bytes": 894,
+      "mtime": 1789265070.8370998
     },
     {
       "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\q1_paper_moisture.csv",
@@ -165,6 +215,16 @@
       "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\q3_paper_moisture.csv",
       "bytes": 466,
       "mtime": 1789265031.0439837
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\q4_paper_moisture.csv",
+      "bytes": 390,
+      "mtime": 1789265068.25269
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\q4_paper_radius.csv",
+      "bytes": 172,
+      "mtime": 1789265068.2684793
     },
     {
       "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\result1.export.json",
@@ -227,6 +287,26 @@
       "mtime": 1789265030.9015913
     },
     {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\result4.export.json",
+      "bytes": 25594,
+      "mtime": 1789265068.3001032
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\result4.validation.json",
+      "bytes": 5751,
+      "mtime": 1789265070.7172225
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\result4.xlsx",
+      "bytes": 278133,
+      "mtime": 1789265068.25269
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\outputs\\result4_unrounded.csv.gz",
+      "bytes": 402901,
+      "mtime": 1789265068.1578324
+    },
+    {
       "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\Q1\\comparison.json",
       "bytes": 6635,
       "mtime": 1789264266.417139
@@ -255,13 +335,113 @@
       "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\Q23\\summary.json",
       "bytes": 3313,
       "mtime": 1789264287.8272488
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\Q4\\comparison.json",
+      "bytes": 7477,
+      "mtime": 1789265070.7212503
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\Q4\\sampled_solution.npz",
+      "bytes": 629864,
+      "mtime": 1789265064.1273837
+    },
+    {
+      "path": "C:\\Work\\extra_entries\\03_wrapper\\results\\vm_wrapper_quick\\Q4\\summary.json",
+      "bytes": 3323,
+      "mtime": 1789265064.2706802
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\stdout.log",
+      "bytes": 388,
+      "mtime": 1789265310.532129
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\q1_paper_moisture.csv",
+      "bytes": 345,
+      "mtime": 1789265282.7418108
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\q1_paper_temperature.csv",
+      "bytes": 380,
+      "mtime": 1789265282.7418108
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\q2_paper_moisture.csv",
+      "bytes": 285,
+      "mtime": 1789265852.4224985
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\q2_paper_temperature.csv",
+      "bytes": 315,
+      "mtime": 1789265852.4224985
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result1.export.json",
+      "bytes": 37494,
+      "mtime": 1789265282.7894573
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result1.validation.json",
+      "bytes": 4960,
+      "mtime": 1789265285.0635705
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result1.xlsx",
+      "bytes": 391302,
+      "mtime": 1789265282.7260642
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result1_unrounded.csv.gz",
+      "bytes": 584840,
+      "mtime": 1789265282.6001706
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result2.export.json",
+      "bytes": 36033,
+      "mtime": 1789265852.9420574
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result2.xlsx",
+      "bytes": 29215636,
+      "mtime": 1789265852.4067245
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\outputs\\result2_unrounded.csv.gz",
+      "bytes": 42979064,
+      "mtime": 1789265840.6741543
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\Q1\\comparison.json",
+      "bytes": 6588,
+      "mtime": 1789265285.0635705
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\Q1\\sampled_solution.npz",
+      "bytes": 10669,
+      "mtime": 1789265277.5584521
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\Q1\\summary.json",
+      "bytes": 2739,
+      "mtime": 1789265277.5584521
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\Q23\\sampled_solution.npz",
+      "bytes": 689147,
+      "mtime": 1789265310.3897808
+    },
+    {
+      "path": "C:\\Work\\wrapper_stable\\results\\vm_wrapper_stable\\Q23\\summary.json",
+      "bytes": 3313,
+      "mtime": 1789265310.532129
     }
   ],
   "disk": {
     "total": 85764059136,
-    "used": 13385281536,
-    "free": 72378777600
+    "used": 3489988608,
+    "free": 82274070528
   },
-  "pythonProcesses": "[\n    {\n        \"Id\":  1716,\n        \"CPU\":  0.421875,\n        \"WorkingSet64\":  18202624,\n        \"StartTime\":  \"\\/Date(1789265062008)\\/\"\n    },\n    {\n        \"Id\":  3112,\n        \"CPU\":  804.546875,\n        \"WorkingSet64\":  117473280,\n        \"StartTime\":  \"\\/Date(1789264247678)\\/\"\n    },\n    {\n        \"Id\":  4420,\n        \"CPU\":  1715.296875,\n        \"WorkingSet64\":  1909141504,\n        \"StartTime\":  \"\\/Date(1789263323799)\\/\"\n    },\n    {\n        \"Id\":  6520,\n        \"CPU\":  2.359375,\n        \"WorkingSet64\":  32727040,\n        \"StartTime\":  \"\\/Date(1789263292615)\\/\"\n    },\n    {\n        \"Id\":  8148,\n        \"CPU\":  0.375,\n        \"WorkingSet64\":  22695936,\n        \"StartTime\":  \"\\/Date(1789264655467)\\/\"\n    }\n]\n",
+  "pythonProcesses": "[\n    {\n        \"Id\":  1064,\n        \"CPU\":  787.9375,\n        \"WorkingSet64\":  124936192,\n        \"StartTime\":  \"\\/Date(1789265258372)\\/\"\n    },\n    {\n        \"Id\":  4092,\n        \"CPU\":  0.53125,\n        \"WorkingSet64\":  21336064,\n        \"StartTime\":  \"\\/Date(1789265254092)\\/\"\n    },\n    {\n        \"Id\":  6328,\n        \"CPU\":  0.40625,\n        \"WorkingSet64\":  17981440,\n        \"StartTime\":  \"\\/Date(1789266060144)\\/\"\n    }\n]\n",
   "processProbeExit": 0
 }

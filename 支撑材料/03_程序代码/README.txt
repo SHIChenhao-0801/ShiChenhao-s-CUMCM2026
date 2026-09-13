@@ -1,10 +1,10 @@
-A题《药材的烘干问题》程序运行说明
+﻿A题《药材的烘干问题》程序运行说明
 
 1. 本目录内容
 
 本目录包含完整的CPU求解入口、八个核心模块、必需输入、原始结果模板和数值参照。读取路径以runDelivery.py所在目录为根，无须原作者电脑的盘符或上级工作区。
 
-本次交付中没有JSON或Markdown文件。文件完整性清单为input_manifest.csv，冻结数值参照为reference/reference_data.py中的纯数据常量。八个核心模块的模型、数值方法、参数和四题导出规则保持不变。
+正式源码/输入及说明不附带JSON或Markdown；打开VS产生的.vs机器缓存另计。文件完整性清单为input_manifest.csv，冻结数值参照为reference/reference_data.py中的纯数据常量。八个核心模块的模型、数值方法、参数和四题导出规则保持不变。本轮已删除源码注释和Python说明性docstring，并完成非注释AST核对。
 
 2. 安装与运行
 
@@ -44,8 +44,8 @@ inputs/cleaned：241行环境观测和145行半径观测CSV。
 inputs/templates：四份原始结果模板，不是已计算结果。
 reference：三份冻结采样NPZ及reference_data.py纯数据参照。
 input_manifest.csv：上述输入、模板与参照的相对路径、字节数和SHA256。
-docs/源码变更说明.txt：本次文件格式调整及源码前后SHA256。
-docs/运行验收说明.txt：此前全量运行和本次定向核验的区别。
+docs/源码变更说明.txt：当前去注释规则、输入清单同步及源码前后SHA256。
+docs/运行验收说明.txt：当前源码版本、静态检查和按版本区分的实际运行记录。
 A_CodeReview.sln、A_CodeReview.pyproj：Visual Studio Python工程。
 
 支撑材料中的05_数值检验与实验保存其余数值检验与实验源代码；这些历史入口的原路径依赖应按该目录说明处理。正式四份冻结大表在04_结果表格。
@@ -72,4 +72,21 @@ Q4固定半径列落在材料域外时留空，真实表面单列。连续max(C)
 
 打开A_CodeReview.sln，需要Visual Studio的Python开发支持。选择本目录.venv解释器，启动文件为runDelivery.py，参数为--profile quick；工程没有绑定作者机器安装路径。
 
-建议在runQuestion调用solve、RadialModel.rhs和q3Model.completion处设断点，观察初值301.15 K/2.55、物性和通量、事件与严格报告时间以及域外空白。新版工程的GUI打开、断点和运行尚未在本轮实测，用户人工审查仍待本人完成。CLI或静态检查不会代填GUI/人工审查通过。
+建议在runQuestion调用solve、RadialModel.rhs和q3Model.completion处设断点，观察初值301.15 K/2.55、物性和通量、事件与严格报告时间以及域外空白。当前去注释源码已在Visual Studio实际打开、命中dryingCore.py第19行断点并单步到第22行，核对初值和加载SHA；本轮未在VS完成全量求解，用户人工审查仍待本人完成。CLI或静态检查不会代填GUI/人工审查通过。
+
+7. 本轮独立运行结果
+
+当前去注释源码的Windows Sandbox正式重算（2026-09-13）
+实际沙盒为独立Windows 11环境，配置关闭网络，原宿主D盘工作区不可见。
+Python3.14.7、NumPy2.5.2、SciPy1.18.1、openpyxl3.1.5；运行库显式提供且不继承宿主site-packages。
+Q1/Q23 N3200、Q4 N6400正式全量，实际退出码0，程序内部PASS，程序耗时1810.989秒。
+四份工作簿逐格回读9,335,598格，全部正文CSV共297格与当前求解对象逐格核对通过。
+三轨迹21个保存数组与冻结参照逐值相同；运行前后源码及输入SHA不变。
+Q3连续事件57.4723019505604 h，严格报告57.4724 h，未舍入maxC=0.14999989718225315。
+Q4连续事件51.0905747868305 h，严格报告51.0906 h，未舍入maxC=0.14999995339076624。
+原runLogged.ps1也在沙盒Windows PowerShell5.1完成N40三轨迹、四表导出和回读，实际退出码0，内部PASS。
+辅助入口首轮内部数值PASS，但观察器提前退出造成控制台状态错误；改用独立隐藏控制台、保持监督进程至结束后，原脚本重新完整运行通过。
+当前去注释源码已在Visual Studio实际打开、命中dryingCore.py第19行断点并单步到第22行，核对初值和加载SHA；本轮未在VS完成全量求解，用户人工审查仍待本人完成。
+本结论只证明所测Windows环境的数值复现，不表示真实物理预测精度、其他系统通过或人工签核。
+
+05历史检验的实际结果见支撑材料根目录“源码去注释与沙盒核查.txt”。

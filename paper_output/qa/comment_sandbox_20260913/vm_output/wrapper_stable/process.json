@@ -16,7 +16,7 @@
   ],
   "cwd": "C:/Work",
   "startedUtc": "2026-09-13T02:07:35.701769+00:00",
-  "status": "RUNNING",
+  "status": "OBSERVED_EXIT",
   "inputHashes": {
     "analyticJacobian.py": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
     "A_CodeReview.pyproj": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb",
@@ -50,5 +50,9 @@
     "inputs/templates/result4.xlsx": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
   },
   "reason": "Retest original wrapper with dedicated hidden console and observer retained until process exit.",
-  "pid": 7344
+  "pid": 7344,
+  "actualExitCode": 0,
+  "elapsedSeconds": 892.8253613999998,
+  "finishedUtc": "2026-09-13T02:22:28.530546+00:00",
+  "inputHashesUnchanged": true
 }

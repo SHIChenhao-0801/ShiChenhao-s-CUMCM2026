@@ -2,6 +2,17 @@
 
 仅适用于 D:/Document/数学建模/2026CUMCM 及其子目录。当前持续任务：A题《药材的烘干问题》，停止B题分支。
 
+## 支撑源码去注释及真实Windows Sandbox核查（2026-09-13）
+
+- 微信通知已完成：2026-09-13向唯一私人联系人“乐乐”仅发送一次完成说明，聊天显示10:30；02:33:41 UTC实际核到完整绿色气泡、进度标记消失、无失败标记。证据gui/wechat_sent_verified.json，SENT_VERIFIED_IN_CHAT；未发文件/其他消息，未声称对方已读。此前文献修订轮次的UNSENT已由此项实际完成。
+- 当前修改范围仅用户支撑材料03/05，44源＝41 Python+MATLAB+Node+PowerShell；删除274词法注释、106说明性docstring，全部Python非注释AST/编译及Node AST、PowerShell token核验，MATLAB保留计算语句/格式符。实际支撑目录已发布，before快照保留。reference_data.py仅删说明并同步input_manifest.csv，12项清单回读通过。
+- 用户宿主及VM桌面“支撑材料临时.zip”20,542,720B，SHA e65deebaaeb87ec542b0972d8fa655796612413e94a1cb256f99e48f40638159；CRC及44源与before全部相同，原ZIP保留。以当前未压缩支撑材料为去注释交付。
+- 真正Windows Sandbox Win11禁网，原D盘工作区不可见；独立C:/Runtime Python3.14.7/NumPy2.5.2/SciPy1.18.1/openpyxl3.1.5。03正式N3200/N3200/N6400实际exit0、内部PASS，外部1812.629秒；9335598工作簿格、297正文格核验，21保存数组直接与冻结NPZ逐值相同，Q3/Q4严格57.4724h/51.0906h。四份04冻结Excel未改。
+- 05共33源已读；31 Python在VM原入口/函数调用覆盖，29任务24exit0/5exit1。原路径先实际失败，再仅在实验副本做14处根路径适配、明示复制必需输入。首轮6旧输出目录干扰在空目录复测，5通过、run_modeling缺model_route；不把HOST旧结果计VM。旧B接口、_extract转置、Jacobian注入0调用、M-K常数伪趋势、N400解析误差超限、analytic_metric解释矛盾仍列问题，模型算法未因此改变。Node VM exit2缺MATLAB旧结果；MATLAB在VM无runtime未实算。
+- 原PS辅助quick内部首轮数值PASS，观察器600秒退出使控制台恢复报错、真实父进程exit1。使用独立隐藏控制台/保持观察器的新目录完整复测，原PS脚本最终exit0+内部PASS；不隐去首轮准备问题。
+- VS当前无注释candidate已实际打开、dryingCore.py:19断点/22行单步、初值和加载SHA验证；未在VS全量求解，人审仍待用户。WindowsSandbox保持打开，用户ZIP及解压原件保留。正式源码和TXT清单与用户VS生成的.vs缓存分开计数，不再无条件声称整目录JSON为零。
+- 交付入口支撑材料/源码去注释与沙盒核查.txt，05独立沙盒逐源码核查.txt及CSV矩阵；内部QA在paper_output/qa/comment_sandbox_20260913，final_delivery_audit绑定core/05/PS/去注释证据SHA。旧S8/物理精度/其他系统与人审状态不扩大。本轮未编辑论文或正式冻结结果。
+
 ## 最新论文格式、六图命名与专业措辞修订（2026-09-13）
 
 - 用户要求依 `CUMCM2026Problems/format2026.doc` 核查摘要起始页码及附录页码、六图命名、全文人称专业性。本轮输入为7:46更新的 `paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx`，SHA256 `190f4d11212c1f42aaf0ab4df4101d93ecf96b5f8cb1db5012f1ca76066b1c69`，已保留原稿及QA快照。

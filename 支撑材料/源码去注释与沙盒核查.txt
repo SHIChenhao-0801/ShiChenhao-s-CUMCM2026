@@ -1,0 +1,45 @@
+﻿源码去注释与独立Windows Sandbox核查
+
+结论：44份源码去注释已完成。03正式四问可在本次独立Windows Sandbox运行并通过数值回读；05历史检验源码不能全部判为可原样独立运行。
+
+一、文件与去注释范围
+范围为03_程序代码与05_数值检验与实验全部源码：41份Python、1份MATLAB、1份Node.js和1份PowerShell。
+删除274处词法注释和106处Python说明性docstring；Python非注释AST相同并全部编译通过，Node非注释AST相同，PowerShell非注释token流相同；MATLAB计算语句、字符串格式符和转置保留。
+requirements依赖项不变。reference_data.py的说明文字删除后，仅同步input_manifest.csv对应项的字节数和SHA；12项输入清单通过。
+7个使用__doc__作为argparse介绍的入口，其--help不再显示原介绍段，选项和计算行为保持一致。VS方案中的格式标识不是程序注释。
+用户沙盒桌面“支撑材料临时.zip”通过CRC和来源核对，44份源码与去注释前快照相同；ZIP原件保留。ZIP SHA256：e65deebaaeb87ec542b0972d8fa655796612413e94a1cb256f99e48f40638159。当前去注释文件以本支撑材料目录为准。
+
+二、03正式独立运行
+当前去注释源码的Windows Sandbox正式重算（2026-09-13）
+实际沙盒为独立Windows 11环境，配置关闭网络，原宿主D盘工作区不可见。
+Python3.14.7、NumPy2.5.2、SciPy1.18.1、openpyxl3.1.5；运行库显式提供且不继承宿主site-packages。
+Q1/Q23 N3200、Q4 N6400正式全量，实际退出码0，程序内部PASS，程序耗时1810.989秒。
+四份工作簿逐格回读9,335,598格，全部正文CSV共297格与当前求解对象逐格核对通过。
+三轨迹21个保存数组与冻结参照逐值相同；运行前后源码及输入SHA不变。
+Q3连续事件57.4723019505604 h，严格报告57.4724 h，未舍入maxC=0.14999989718225315。
+Q4连续事件51.0905747868305 h，严格报告51.0906 h，未舍入maxC=0.14999995339076624。
+原runLogged.ps1也在沙盒Windows PowerShell5.1完成N40三轨迹、四表导出和回读，实际退出码0，内部PASS。
+辅助入口首轮内部数值PASS，但观察器提前退出造成控制台状态错误；改用独立隐藏控制台、保持监督进程至结束后，原脚本重新完整运行通过。
+当前去注释源码已在Visual Studio实际打开、命中dryingCore.py第19行断点并单步到第22行，核对初值和加载SHA；本轮未在VS完成全量求解，用户人工审查仍待本人完成。
+本结论只证明所测Windows环境的数值复现，不表示真实物理预测精度、其他系统通过或人工签核。
+
+三、05历史检验实际范围与问题
+31份Python均已在真实VM进行入口或函数级调用。29项Python任务24项退出0、5项退出1；退出0的任务仍逐项检查内部数值报告。
+原样路径探测实际失败；数值检验在实验副本中仅对14处根目录路径进行适配，并明确补入两CSV、四模板及描述性序列使用的Q23参考NPZ。适配未写入当前05源码。
+首次6项启动因测试准备时带入旧输出而被禁止覆盖；保留首轮记录，在新的空目录重跑后5项通过，另一项确认缺少model_route.json。
+主要未通过项：
+  run_modeling.py：缺少paper_output/plan/model_route.json。
+  isotherm_diagnose.py：旧B参数与当前ActivityModel接口不匹配，实际TypeError。
+  isotherm_activity_closure.py：原_extract把时间×空间数组按相反方向取值，实际IndexError。
+  isotherm_jacobian_probe.py：计算虽完成，numJacCalls=0，不能判定替代Jacobian测试有效。
+  crossvalidate_series.py：常数序列被旧M-K算法判出伪趋势，负例不通过。
+  compare_analytic.py：程序完成但内部REVIEW_REQUIRED；N400含水率误差约2.87508e-4超过1e-4门槛，N800约7.15866e-5。
+  analytic_metric_check.py：误差随网格细化减小，原固定解释文字却称不减小。
+  compareMatlab.mjs：Node v24.20.0在VM实际退出2，缺少历史MATLAB runSummary.json等对照文件。
+  runCrossCheck.m：沙盒没有MATLAB运行环境，未实算；其原根路径推导及输入位置也需调整。
+解析Jacobian、Bessel基准、稠密输出、部分网格与时间误差、方法对照、阈值事件、导出和有限情景实算的逐项证据见05“独立沙盒逐源码核查.txt”。没有运行全部默认高网格/数百情景批次，也没有把旧能量诊断的大残差写成守恒通过。
+
+四、复现和证据
+03运行：在该目录按README安装requirements，然后运行 python -X utf8 -B runDelivery.py --profile final。每次使用新run-id。
+无注释前后源码快照、修改审计、实际VM配置/环境/日志、进程退出码和结果回读证据保存在本届工作区paper_output/qa/comment_sandbox_20260913。说明及矩阵用TXT/CSV放在支撑材料，原始运行JSON留在内部QA。
+本次仅删除注释及同步相应清单，未以放宽阈值、改变模型或填造历史输入使检验通过。

@@ -214,5 +214,56 @@
       "Inherited appendix code long-line soft wraps are fully visible; code content remains byte-equivalent at XML level.",
       "This pass covers requested formatting and language, not full submission compliance or model revalidation."
     ]
+  },
+  "support_comment_sandbox_review": {
+    "updatedUtc": "2026-09-13T02:34:48.209873+00:00",
+    "task": "Remove all source comments in the current support package and verify independent sandbox execution",
+    "scope": [
+      "支撑材料/03_程序代码",
+      "支撑材料/05_数值检验与实验"
+    ],
+    "status": "COMMENT_REMOVAL_COMPLETE_AND_SANDBOX_AUDIT_COMPLETE",
+    "sourceFiles": 44,
+    "pythonSources": 41,
+    "commentsRemoved": 274,
+    "docstringsRemoved": 106,
+    "coreFormalVm": "PASS",
+    "coreExternalSeconds": 1812.6291425,
+    "workbookCells": 9335598,
+    "paperCells": 297,
+    "savedArraysExactlyEqual": 21,
+    "strictHours": [
+      57.4724,
+      51.0906
+    ],
+    "historical05AllRunnable": false,
+    "historicalPythonTasks": 29,
+    "historicalPythonZeroExit": 24,
+    "historicalPythonNonzeroExit": 5,
+    "historicalPythonVmSourceCoverage": 31,
+    "rootPathAdaptationsInExperimentalCopyOnly": 14,
+    "nodeVm": "EXIT_2_MISSING_HISTORICAL_INPUTS",
+    "matlabVm": "NOT_EXECUTED_RUNTIME_UNAVAILABLE",
+    "powershellVm": "PASS_FULL_QUICK_AFTER_OBSERVER_CONSOLE_CORRECTION",
+    "visualStudioGui": "SOURCE_BREAKPOINT_STEP_AND_VARIABLES_VERIFIED_NOT_FULL_SOLVE",
+    "humanReview": "PENDING_USER_REVIEW",
+    "userArchiveSha256": "e65deebaaeb87ec542b0972d8fa655796612413e94a1cb256f99e48f40638159",
+    "userArchivePreserved": true,
+    "desktopSandboxKeptOpen": true,
+    "finalReport": "支撑材料/源码去注释与沙盒核查.txt",
+    "qa": "paper_output/qa/comment_sandbox_20260913/final_delivery_audit.json",
+    "scopeLimitation": "No new physical accuracy, other operating system, human review or general historical batch PASS is established.",
+    "wechatNotificationStatus": "SENT_VERIFIED_IN_CHAT",
+    "wechatNotificationEvidence": "paper_output\\qa\\comment_sandbox_20260913\\gui\\wechat_sent_verified.json",
+    "sandboxDesktopDelivery": {
+      "status": "COPIED_AND_SHA_VERIFIED",
+      "utc": "2026-09-13T02:23:49.369313+00:00",
+      "destination": "C:\\Users\\WDAGUtilityAccount\\Desktop\\支撑材料_去注释核查版",
+      "fileCount": 106,
+      "originalDesktopZipPreserved": true,
+      "originalExtractedFolderPreserved": true,
+      "excludedMachineCaches": true,
+      "publishedHostFolderWasMappedOnlyAfterAllRuns": true
+    }
   }
 }

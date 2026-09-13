@@ -1,14 +1,15 @@
 ﻿支撑材料文件清单
 
-共103个文件，包含本清单。说明使用TXT，未生成压缩包。
+正式材料共106个文件，包含本清单。保留未压缩文件夹。
+用户VS运行产生的本机工程缓存/升级日志6个另列，不计入正式材料。
 
 分类文件数：
   01_赛题与原始数据：10个文件
   02_参考文献与网络资料：11个文件
   03_程序代码：30个文件
   04_结果表格：12个文件
-  05_数值检验与实验：35个文件
-  根目录说明：5个文件
+  05_数值检验与实验：37个文件
+  根目录说明：6个文件
 
 逐文件相对路径：
 
@@ -115,3 +116,15 @@
 05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py
 05_数值检验与实验/数值检验说明.txt
 05_数值检验与实验/源码文件与校验值.txt
+05_数值检验与实验/独立沙盒运行矩阵.csv
+05_数值检验与实验/独立沙盒逐源码核查.txt
+源码去注释与沙盒核查.txt
+
+另列本机IDE文件（会随VS操作变化）：
+
+03_程序代码/.vs/A_CodeReview/FileContentIndex/5c043762-cbc3-48df-a62d-52923b6ece28.vsidx
+03_程序代码/.vs/A_CodeReview/FileContentIndex/70e74aa4-17f9-4ce1-bf85-e2fda95bbde1.vsidx
+03_程序代码/.vs/A_CodeReview/v18/.suo
+03_程序代码/.vs/A_CodeReview/v18/DocumentLayout.backup.json
+03_程序代码/.vs/A_CodeReview/v18/DocumentLayout.json
+03_程序代码/UpgradeLog.htm

@@ -1,19 +1,19 @@
 ﻿数值检验与实验程序说明
 ====================
 
-本目录保存本题实际使用的数值检验源代码，供阅读和追溯。共有31个Python源文件、1个MATLAB源文件和1个Node.js源文件；没有用报告文件代替程序，也没有恢复此前整个历史版本目录。
+本目录保存本题数值检验源代码的去注释版本，供阅读和追溯。共有31个Python源文件、1个MATLAB源文件和1个Node.js源文件；没有用报告文件代替程序，也没有恢复此前整个历史版本目录。
 
 一、从哪里看
 
-Python检验源码/paper_output/code/modeling：原模型、问题参数、Bessel解析基准、网格/时间/稠密输出检验和实验入口。相互调用的本地Python源码已经补齐，文件名和代码内容保持原样。
+Python检验源码/paper_output/code/modeling：原模型、问题参数、Bessel解析基准、网格/时间/稠密输出检验和实验入口。相互调用的本地Python源码已经补齐，文件名保留；已删除注释及说明性docstring，非注释AST与去注释前等价。
 Python检验源码/paper_output/code/verification：求解器/方法对照、敏感性、阈值标度、经验闭合、能量和潜热情景的检验源码。
-MATLAB对照证据/runCrossCheck.m：用户已经移入本目录的独立MATLAB实现，原位保留；未改任何字节，未移回原工作区。
+MATLAB对照证据/runCrossCheck.m：用户已经移入本目录的独立MATLAB实现，位置保留；已删除整行说明及代码分析器提示，格式化字符串、矩阵转置和计算语句保留。
 MATLAB对照证据/compareMatlab.mjs：读取已有MATLAB/Python共同样点和事件、按预先设定容差比较的原Node.js程序。
 逐文件用途、原来源和SHA256见“源码文件与校验值.txt”。
 
 二、运行前提
 
-这些是实际使用过的原检验源码，仍保留当时的路径、输出结构和数据读取约定。当前生产模型的独立运行入口请查看支撑材料03程序目录；本目录不宣称所有历史检验可以在任意位置直接双击运行。
+这些源码已去注释，仍保留当时的路径、输出结构和数据读取约定。当前生产模型的独立运行入口请查看支撑材料03程序目录；本目录不宣称所有历史检验可以在任意位置直接双击运行。
 
 Python基本依赖为NumPy和SciPy；compare_analytic、crossvalidate_series、latent_heat_scenarios及publication_plots的绘图部分还需要Matplotlib；原export_outputs依赖openpyxl。实际生产依赖版本以03目录的requirements和运行说明为准。disk_dense调用SciPy的BDF内部接口，换版本后须重新验证。
 
@@ -21,9 +21,9 @@ modeling代码按自身所在位置寻找Python检验源码根目录，并读取
 
 verification中的若干程序把原本届工作区写为绝对ROOT路径；crossvalidate_series等还读取final_v6a的采样NPZ。compareMatlab.mjs读取历史MATLAB/Python运行输出，并核对来源哈希；本次交付按要求移除了JSON报告，因此这些历史输出不在本目录。它们需要重新生成相应运行输出或从原工作区读取既有证据；不能以缺少历史报告的当前目录冒称已独立复现。
 
-runCrossCheck.m包含全部MATLAB局部函数，以N40作独立对照。该原文件按所在目录向上四级推断项目路径，移动后这一推断与当前目录层级不再相符。阅读源码时须特别检查projectRoot及输入路径；本轮保留原文件，不自动修补它或恢复用户移走的原路径。MATLAB运行应按团队既定GUI复现流程进行。
+runCrossCheck.m包含全部MATLAB局部函数，以N40作独立对照。该原文件按所在目录向上四级推断项目路径，移动后这一推断与当前目录层级不再相符。阅读源码时须特别检查projectRoot及输入路径；本轮去注释未修补该路径推导，也未恢复用户移走的原路径。MATLAB运行应按团队既定GUI复现流程进行。
 
-本轮只复制与静态核对源码，没有重新求解PDE、运行全部实验或代替核心代码人工审查。运行这些原程序可能新产生JSON等过程输出；本次交付目录本身不保存JSON或Markdown报告。新生成的过程输出应另放实验目录。
+本轮已完成去注释、逐文件SHA和Python非注释AST检查，并在另设的实验副本中开展入口或函数级隔离验证。该副本对14处旧根目录路径作了适配，补入两CSV、四模板及描述性序列所用Q23参考NPZ；这些路径适配没有混入本目录候选源码。当前不能概括为所有历史源码都能原样独立运行，也没有运行全部默认高网格批次。实际环境、命令、异常和数值判定以本轮独立运行核查说明为准；HOST受限venv与Windows Sandbox虚拟机分别记录。运行这些原程序可能新产生JSON等过程输出；本次交付目录本身不保存JSON或Markdown报告。新生成的过程输出应另放实验目录。
 
 三、采用范围
 
@@ -35,4 +35,4 @@ runCrossCheck.m包含全部MATLAB局部函数，以N40作独立对照。该原�
 
 四、文件整理方式
 
-本目录原有12个JSON及1个Markdown说明按用户要求删除。说明以人工可读TXT重新编写，并非把JSON简单改后缀。原本届paper_output内的源程序和证据没有修改；runCrossCheck.m保留用户当前放置位置及原字节。
+本目录原有12个JSON及1个Markdown说明按用户要求删除。说明以人工可读TXT重新编写，并非把JSON简单改后缀。原本届paper_output中的生产源程序及历史证据保持各自版本；本目录交付去注释副本。runCrossCheck.m保留用户当前放置位置，当前字节及SHA以源码文件与校验值为准。
