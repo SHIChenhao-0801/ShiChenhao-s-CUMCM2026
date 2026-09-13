@@ -1,0 +1,65 @@
+{
+  "version": "v2",
+  "docx_sha256": "d9343654445754862b818196752e9f4beea6fe0cdf700336af43c68f51ba21cc",
+  "page_count": 8,
+  "pdf": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\支撑材料文件列表_附录用.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-1.png",
+      "png_sha256": "ac0fdddea90cb2c9cfbf84eca2158d3008c377c5a16af7d2d10246a60a5b33db",
+      "text": "支撑材料文件列表\n支撑材料共137 个文件。下表覆盖题面与数据、参考资料、生产程序、结果表格、数值检验、绘图\n资料和AI 工具使用详情。\n分组标题给出相对目录，表内文件名与该目录共同构成完整路径；所有路径均以“支撑材料”文件\n夹为基准。\n目录中的AI 工具使用详情当前为可编辑DOCX。定稿转为PDF 后，应同步更新本列表。\n表1 支撑材料分类汇总\n目录\n文件数\n根目录\n7\n01_赛题与原始数据\n10\n02_参考文献与网络资料\n11\n03_程序代码\n30\n04_结果表格\n12\n05_数值检验与实验\n43\n06_绘图程序与数据\n24\n表2 根目录\n序号文件名\n用途\n1\n00_可用于论文附录的支撑清单.txt\n含简短用途的完整文件清单\n2\n00_支撑材料总说明.txt\n材料组织与复现入口说明\n3\n00_整理验收说明.txt\n材料整理与真实核查范围\n4\n00_文件清单.txt\n全部文件的相对路径清单\n5\n00_材料来源说明.txt\n数据 程序 文献及图表来源\n6\nAI 工具使用详情.docx\nAI 工具与使用环节记录 可编辑详情\n7\n源码去注释与沙盒核查.txt\n既有去注释与独立沙盒核查范围\n表3 01_赛题与原始数据\n序号文件名\n用途\n8\nA 题.pdf\nA 题题面及参数和结果要求\n9\n数据说明.txt\n原始数据与清洗字段说明\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 2,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-2.png",
+      "png_sha256": "f334540d025d992d2c1d1adce77a73b93a7c4d6d0f2a4ad93830d65e0b0b4a5b",
+      "text": "表4 01_赛题与原始数据/清洗后数据\n序号文件名\n用途\n10\nA_environment_observed.csv\n环境观测数据 时间 温度和湿度\n11\nA_radius_observed.csv\n药材半径观测数据\n表5 01_赛题与原始数据/附件\n序号文件名\n用途\n12\n附件1.xlsx\n原始环境温湿度观测数据\n13\n附件2.xlsx\n原始药材半径观测数据\n表6 01_赛题与原始数据/附件/附件3\n序号文件名\n用途\n14\nresult1.xlsx\n问题1 空白结果模板\n15\nresult2.xlsx\n问题2 空白结果模板\n16\nresult3.xlsx\n问题3 空白结果模板\n17\nresult4.xlsx\n问题4 空白结果模板\n表7 02_参考文献与网络资料\n序号文件名\n用途\n18\nHandbook of Industrial Drying.pdf\n工业干燥手册第4 版5 页节选\n19\nHandbook of numerical analysis.pdf\n有限体积法作者2019 年更新稿254 页\n20\n中药材干燥技术与装备研究现状.pdf\n王乐意等 2024 年综述全文28 页\n21\n参考文献文件说明.txt\n参考文献版本及实际阅读范围\n22\n数值模拟仿真研究现状及其在中药干燥领域应用\n展望_王晓辉.pdf\n王晓辉等 2023 年综述全文8 页\n表8 02_参考文献与网络资料/补充网络资料\n序号文件名\n用途\n23\nFAO_干燥原理_官方网页.html\nFAO 干燥原理网页存档\n24\nFAO_干燥原理_官方网页_离线文本.html\nFAO 干燥原理可离线阅读文本\n25\nSciPy_solve_ivp_官方API 网页.html\nSciPy 积分接口网页存档\n26\nSciPy_solve_ivp_官方API 网页_离线文本.html\nSciPy 积分接口可离线阅读文本\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 3,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-3.png",
+      "png_sha256": "1860d2f547183b090f03f50aa9fd716ae15ae33e5fa545d968a14afe9881f972",
+      "text": "序号文件名\n用途\n27\nShampine1997_BYU 原始扫描_35 页.pdf\n常微分方程求解补充资料35 页扫描\n28\n补充资料说明.txt\n补充文献和网页资料来源\n表9 03_程序代码\n序号文件名\n用途\n29\nA_CodeReview.pyproj\nVisual Studio Python 工程配置\n30\nA_CodeReview.sln\nVisual Studio 方案入口\n31\nanalyticJacobian.py\n正式模型解析稀疏Jacobian\n32\ndiskDense.py\nBDF 连续输出多项式存储\n33\ndryingCore.py\n热湿耦合方程离散与BDF 求解\n34\nexportOutputs.py\n四份结果工作簿导出与回读\n35\ninput_manifest.csv\n正式输入 模板和参照校验清单\n36\nnumerical_design.txt\n离散方程与阈值事件说明\n37\nq1Model.py\n问题一模型配置\n38\nq2Model.py\n问题二与三共同轨迹配置\n39\nq3Model.py\n问题三严格达标时刻判定\n40\nq4Model.py\n问题四收缩模型配置\n41\nREADME.txt\n目录运行与依赖说明\n42\nrequirements.txt\nPython 依赖及固定版本\n43\nrunDelivery.py\n四问生产计算与输入预检入口\n44\nrunLogged.ps1\n生产运行监督与退出码记录\n表10 03_程序代码/docs\n序号文件名\n用途\n45\n源码变更说明.txt\n生产源码来源和变更说明\n46\n运行验收说明.txt\n生产运行证据与适用范围\n表11 03_程序代码/inputs/cleaned\n序号文件名\n用途\n47\nA_environment_observed.csv\n环境观测数据 时间 温度和湿度\n48\nA_radius_observed.csv\n药材半径观测数据\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 4,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-4.png",
+      "png_sha256": "47dc9664f123d5c9ff5e05bf3688b36d03086328401139bc348c88dc00301b92",
+      "text": "表12 03_程序代码/inputs/original\n序号文件名\n用途\n49\n附件1.xlsx\n原始环境温湿度观测数据\n50\n附件2.xlsx\n原始药材半径观测数据\n表13 03_程序代码/inputs/templates\n序号文件名\n用途\n51\nresult1.xlsx\n问题1 空白结果模板\n52\nresult2.xlsx\n问题2 空白结果模板\n53\nresult3.xlsx\n问题3 空白结果模板\n54\nresult4.xlsx\n问题4 空白结果模板\n表14 03_程序代码/reference\n序号文件名\n用途\n55\nreference_data.py\n冻结数值与精度参照常量\n表15 03_程序代码/reference/Q1\n序号文件名\n用途\n56\nsampled_solution.npz\nQ1 冻结采样数组\n表16 03_程序代码/reference/Q23\n序号文件名\n用途\n57\nsampled_solution.npz\nQ23 冻结采样数组\n表17 03_程序代码/reference/Q4\n序号文件名\n用途\n58\nsampled_solution.npz\nQ4 冻结采样数组\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 5,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-5.png",
+      "png_sha256": "b16a543e0121a6e180f2128522ed0f6fb62e97f5d85d4f7c67171c76f79a6918",
+      "text": "表18 04_结果表格\n序号文件名\n用途\n59\nresult1.xlsx\n问题1 完整计算结果\n60\nresult2.xlsx\n问题2 完整计算结果\n61\nresult3.xlsx\n问题3 完整计算结果\n62\nresult4.xlsx\n问题4 完整计算结果\n63\n结果表说明.txt\n完整工作簿与正文表格说明\n表19 04_结果表格/Referrence Table Files\n序号文件名\n用途\n64\nq1_paper_moisture.csv\n正文问题一含水率结果表\n65\nq1_paper_temperature.csv\n正文问题一温度结果表\n66\nq2_paper_moisture.csv\n正文问题二含水率结果表\n67\nq2_paper_temperature.csv\n正文问题二温度结果表\n68\nq3_paper_moisture.csv\n正文问题三含水率结果表\n69\nq4_paper_moisture.csv\n正文问题四含水率结果表\n70\nq4_paper_radius.csv\n正文问题四半径结果表\n表20 05_数值检验与实验\n序号文件名\n用途\n71\n数值检验说明.txt\n检验程序用途及运行前提\n72\n本轮补件与运行核验.txt\n本轮路径适配与实际复现说明\n73\n源码文件与校验值.txt\n检验源码用途 来源与SHA256\n74\n独立沙盒运行矩阵.csv\n既有沙盒逐任务运行状态\n75\n独立沙盒逐源码核查.txt\n既有逐源码实算及失败范围\n76\n论文采用检验_独立运行说明.txt\n本轮路径适配与实际复现说明\n表21 05_数值检验与实验/MATLAB 对照证据\n序号文件名\n用途\n77\ncompareMatlab.mjs\nMATLAB 与Python 结果比较程序\n78\nrunCrossCheck.m\nMATLAB 独立热湿模型对照实现\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 6,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-6.png",
+      "png_sha256": "bba224e8d88e82e32277156075caaaa607e27b1c94b5723f7795160c24787873",
+      "text": "表22 05_数值检验与实验/Python 检验源码\n序号文件名\n用途\n79\nrequirements.txt\nPython 依赖及固定版本\n80\nrun_checks.py\n网格 时间和方法检验统一入口\n表23 05_数值检验与实验/Python 检验源码/paper_output/code/modeling\n序号文件名\n用途\n81\nanalytic_jacobian.py\n检验模型解析Jacobian\n82\naxisymmetric_check.py\n轴对称假设与轴向影响检验\n83\ncompare_analytic.py\n数值解与圆柱解析基准比较\n84\ndisk_dense.py\n检验模型BDF 连续输出存储\n85\ndrying_core.py\n检验所用热湿模型核心\n86\nexport_outputs.py\n检验所用工作簿导出模块\n87\nproduction_provenance.py\n运行监督 输入源码版本记录\n88\npublication_plots.py\n既有绘图辅助程序\n89\nq1_model.py\n检验所用问题一配置\n90\nq2_model.py\n检验所用问题二配置\n91\nq3_model.py\n检验所用问题三达标判定\n92\nq4_model.py\n检验所用问题四配置\n93\nrun_experiments.py\n既有实验任务入口\n94\nrun_modeling.py\n旧模型流程入口 保留原运行前提\n95\nvalidate_bessel.py\n圆柱Robin 与Bessel 解析基准\n96\nverify_convergence.py\n空间网格加密误差检验\n97\nverify_dense_storage.py\nBDF 连续输出存储一致性检验\n98\nverify_time_accuracy.py\n时间容差与步长敏感性检验\n表24 05_数值检验与实验/Python 检验源码/paper_output/code/verification\n序号文件名\n用途\n99\nanalytic_metric_check.py\n解析误差指标历史诊断\n100\ncrossvalidate_series.py\n描述序列对照及历史趋势诊断\n101\ncrossvalidate_solver.py\n不同积分器的数值对照\n102\nenergy_balance_check.py\n模型能量收支检查\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 7,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-7.png",
+      "png_sha256": "3083e61d91a6a70f5b2bd8d990469b40c02936c50e1d11665ee30c697137ff30",
+      "text": "序号文件名\n用途\n103\nenergy_balance_diagnose.py\n能量闭合历史诊断\n104\nenergy_balance_diagnose2.py\n能量闭合进一步历史诊断\n105\nisotherm_activity_closure.py\n历史等温线闭合试验\n106\nisotherm_diagnose.py\n历史等温线接口诊断\n107\nisotherm_jacobian_probe.py\n历史Jacobian 注入探测\n108\nlatent_heat_scenarios.py\n潜热情景计算\n109\nmethod_comparison.py\n两种守恒通量格式对照\n110\nsensitivity_analysis.py\n参数扰动与敏感性计算\n111\nthreshold_and_scaling_checks.py\n阈值事件和标度检验\n表25 05_数值检验与实验/Python 检验源码/paper_output/data_cleaned\n序号文件名\n用途\n112\nA_environment_observed.csv\n环境观测数据 时间 温度和湿度\n113\nA_radius_observed.csv\n药材半径观测数据\n表26 06_绘图程序与数据\n序号文件名\n用途\n114\ndraw_figures.R\n六幅论文图的PNG 绘制程序\n115\n图像校验.csv\n文件来源与校验清单\n116\n数据来源与校验.csv\n文件来源与校验清单\n117\n绘图复现说明.txt\n本轮路径适配与实际复现说明\n表27 06_绘图程序与数据/CSV/图1\n序号文件名\n用途\n118\nmoisture.csv\n图1 径向含水率曲线数据\n119\ntemperature.csv\n图1 径向温度曲线数据\n表28 06_绘图程序与数据/CSV/图2\n序号文件名\n用途\n120\nassumed_platform_4_60h.csv\n图2 后续环境平台假设数据\n121\nobserved_0_4h.csv\n图2 前4 小时环境实测点\n",
+      "geometry_suspects": []
+    },
+    {
+      "page": 8,
+      "png": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-8.png",
+      "png_sha256": "a6e1edb3ee2a81b973cf9d7dbc2bdd1baf239e9f94f84a519998648d3349a159",
+      "text": "表29 06_绘图程序与数据/CSV/图3\n序号文件名\n用途\n122\nmoisture_to_event.csv\n图3 中心和表面含水率数据\n123\ntemperature_0_4h.csv\n图3 中心和表面温度数据\n表30 06_绘图程序与数据/CSV/图4\n序号文件名\n用途\n124\ncentre_near_event.csv\n图4 临界附近中心含水率数据\n125\ndrying_main.csv\n图4 全域含水率与达标曲线\n126\nevent_markers.csv\n图4 连续事件与严格报告点\n127\nmaximum_near_event.csv\n图4 临界附近全域最大含水率\n表31 06_绘图程序与数据/CSV/图5\n序号文件名\n用途\n128\nmoisture_profiles_xy_pairs.csv\n图5 收缩域内含水率XY 数据\n129\nradius_observed.csv\n图5 原始半径观测数据\n130\nselected_times_and_radii.csv\n图5 所选时刻及对应半径\n表32 06_绘图程序与数据/CSV/图6\n序号文件名\n用途\n131\nscenario_comparison.csv\n图6 经验边界阻力情景数据\n表33 06_绘图程序与数据/PNG\n序号文件名\n用途\n132\n图1_径向温度与含水率.png\n图1_径向温度与含水率成图\n133\n图2_环境观测与平台延拓.png\n图2_环境观测与平台延拓成图\n134\n图3_中心与表面热湿响应.png\n图3_中心与表面热湿响应成图\n135\n图4_全域达标与临界放大.png\n图4_全域达标与临界放大成图\n136\n图5_收缩半径与域内含水率.png\n图5_收缩半径与域内含水率成图\n137\n图6_经验边界阻力情景.png\n图6_经验边界阻力情景成图\n",
+      "geometry_suspects": []
+    }
+  ],
+  "render_exit": 0
+}

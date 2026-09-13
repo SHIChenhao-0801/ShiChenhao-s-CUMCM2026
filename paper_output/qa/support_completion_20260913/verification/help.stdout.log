@@ -1,0 +1,17 @@
+usage: run_checks.py [-h] --check {grid,method,time} --output-dir OUTPUT_DIR
+                     [--question {Q1,Q23,Q4}] [--grids GRIDS [GRIDS ...]]
+                     [--n N] [--full-second-comparison] [--frozen-d FROZEN_D]
+                     [--quick]
+
+Run a selected check in a new independent experiment directory.
+
+options:
+  -h, --help            show this help message and exit
+  --check {grid,method,time}
+  --output-dir OUTPUT_DIR
+  --question {Q1,Q23,Q4}
+  --grids GRIDS [GRIDS ...]
+  --n N
+  --full-second-comparison
+  --frozen-d FROZEN_D
+  --quick

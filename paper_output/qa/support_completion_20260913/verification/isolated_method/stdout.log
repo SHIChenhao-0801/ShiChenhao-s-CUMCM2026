@@ -1,0 +1,43 @@
+{"kind": "constant", "scheme": "kirchhoff", "N": 100, "surfaceC1800": 1.5521907159, "elapsedS": 0.8}
+{"kind": "constant", "scheme": "finiteDifference", "N": 100, "surfaceC1800": 1.5521907159, "elapsedS": 0.8}
+{"kind": "constant", "scheme": "kirchhoff", "N": 200, "surfaceC1800": 1.5521623839, "elapsedS": 1.0}
+{"kind": "constant", "scheme": "finiteDifference", "N": 200, "surfaceC1800": 1.5521623839, "elapsedS": 0.9}
+{"kind": "variable", "scheme": "kirchhoff", "N": 100, "surfaceC1800": 1.5103187103, "elapsedS": 0.9}
+{"kind": "variable", "scheme": "finiteDifference", "N": 100, "surfaceC1800": 1.5103038189, "elapsedS": 0.7}
+{"kind": "variable", "scheme": "kirchhoff", "N": 200, "surfaceC1800": 1.5102556198, "elapsedS": 1.1}
+{"kind": "variable", "scheme": "finiteDifference", "N": 200, "surfaceC1800": 1.510251891, "elapsedS": 0.8}
+{
+  "limitingCaseConstantD": {
+    "note": "Kirchhoff collapses to the midpoint finite difference when D is constant, because Phi'(C) = exp(-a/C) makes the primitive difference proportional to D dC; the two must agree to round-off.",
+    "rows": [
+      {
+        "intervals": 100,
+        "maxAbsDifference": 0.0
+      },
+      {
+        "intervals": 200,
+        "maxAbsDifference": 0.0
+      }
+    ]
+  },
+  "variableD": {
+    "rows": [
+      {
+        "intervals": 100,
+        "maxAbsDifference": 1.4891388507853875e-05,
+        "maxDifferenceTimeS": 1800.0,
+        "locationOfMax": 0.02
+      },
+      {
+        "intervals": 200,
+        "maxAbsDifference": 3.728809559122581e-06,
+        "maxDifferenceTimeS": 1800.0,
+        "locationOfMax": 0.02
+      }
+    ],
+    "observedOrder": 1.9976912588688045,
+    "expectedOrder": 1.0,
+    "declaredToleranceKgPerKg": 0.0001,
+    "passedDeclaredTolerance": true
+  }
+}

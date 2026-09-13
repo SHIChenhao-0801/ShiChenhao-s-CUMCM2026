@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<PropertyGroup>
+<Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+<ProjectGuid>{B35A6409-0D0C-47D6-A90A-51A1A3646627}</ProjectGuid>
+<SchemaVersion>2.0</SchemaVersion><ProjectHome>.</ProjectHome><StartupFile>run_checks.py</StartupFile>
+<WorkingDirectory>.</WorkingDirectory><OutputPath>.</OutputPath><Name>VerificationReview</Name>
+<RootNamespace>VerificationReview</RootNamespace><LaunchProvider>Standard Python launcher</LaunchProvider>
+<CommandLineArguments>--check method --quick --output-dir "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\vs\method_gui_run"</CommandLineArguments>
+<InterpreterArguments>-X utf8 -B</InterpreterArguments><EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+<InterpreterId>MSBuild|$(MSBuildProjectFullPath)|VerificationEnv</InterpreterId>
+</PropertyGroup>
+<ItemGroup><Compile Include="run_checks.py"/><Compile Include="paper_output/code/verification/method_comparison.py"/>
+<Interpreter Include="D:\Document\数学建模\2026CUMCM\tmp\cache\support_completion_verification_venv"><Id>VerificationEnv</Id><Version>3.14</Version><Description>Verified Python 3.14.7</Description><InterpreterPath>Scripts\python.exe</InterpreterPath><WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath><PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable><Architecture>x64</Architecture></Interpreter>
+</ItemGroup>
+<Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

@@ -1,0 +1,5 @@
+SOLVE baseline Q1 N=20 UTC=2026-09-13T07:23:37.673347+00:00
+VARIANT_COMPLETED baseline; RUN_CLOSED
+SOLVE tight Q1 N=20 UTC=2026-09-13T07:23:40.861877+00:00
+VARIANT_COMPLETED tight; RUN_CLOSED
+{"status": "computed_zero_solver_warnings", "question": "Q1", "N": 20, "comparison": {"max_absolute_difference": {"T_K": 1.0329394513064472e-06, "C": 3.4171576679398186e-09}, "locations": {"T_K": {"time_s": 480.0, "radius_m": 0.02}, "C": {"time_s": 2.0, "radius_m": 0.02}}, "compared_time_count": 1801, "radial_count": 21, "convention": "Only finite values at common physical points are compared.", "baseline_N": 20, "tight_N": 20, "baseline_event_s": null, "tight_event_s": null, "event_difference_s": null, "absolute_event_difference_s": null, "difference_direction": "tight minus baseline for the event; absolute differences for fields", "baseline_projection_time_count": 1801, "tight_projection_time_count": 1801, "common_last_time_s": 1800.0, "scope": "Numerical sensitivity to simultaneous tighter tolerances and smaller maximum steps at fixed N.", "not_a_rigorous_error_bound": true, "no_experimental_accuracy_claim": true}}

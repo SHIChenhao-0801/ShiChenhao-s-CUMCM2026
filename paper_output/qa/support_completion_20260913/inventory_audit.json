@@ -1,0 +1,1594 @@
+{
+  "at_utc": "2026-09-13T07:31:04.200277+00:00",
+  "docx": "D:\\Document\\数学建模\\2026CUMCM\\支撑材料文件列表_附录用.docx",
+  "docx_sha256": "d9343654445754862b818196752e9f4beea6fe0cdf700336af43c68f51ba21cc",
+  "file_count": 137,
+  "support_bytes": 42093711,
+  "categories": {
+    "根目录": 7,
+    "01_赛题与原始数据": 10,
+    "02_参考文献与网络资料": 11,
+    "03_程序代码": 30,
+    "04_结果表格": 12,
+    "05_数值检验与实验": 43,
+    "06_绘图程序与数据": 24
+  },
+  "groups": {
+    ".": [
+      "00_可用于论文附录的支撑清单.txt",
+      "00_支撑材料总说明.txt",
+      "00_整理验收说明.txt",
+      "00_文件清单.txt",
+      "00_材料来源说明.txt",
+      "AI工具使用详情.docx",
+      "源码去注释与沙盒核查.txt"
+    ],
+    "01_赛题与原始数据": [
+      "A题.pdf",
+      "数据说明.txt"
+    ],
+    "01_赛题与原始数据/清洗后数据": [
+      "A_environment_observed.csv",
+      "A_radius_observed.csv"
+    ],
+    "01_赛题与原始数据/附件": [
+      "附件1.xlsx",
+      "附件2.xlsx"
+    ],
+    "01_赛题与原始数据/附件/附件3": [
+      "result1.xlsx",
+      "result2.xlsx",
+      "result3.xlsx",
+      "result4.xlsx"
+    ],
+    "02_参考文献与网络资料": [
+      "Handbook of Industrial Drying.pdf",
+      "Handbook of numerical analysis.pdf",
+      "中药材干燥技术与装备研究现状.pdf",
+      "参考文献文件说明.txt",
+      "数值模拟仿真研究现状及其在中药干燥领域应用展望_王晓辉.pdf"
+    ],
+    "02_参考文献与网络资料/补充网络资料": [
+      "FAO_干燥原理_官方网页.html",
+      "FAO_干燥原理_官方网页_离线文本.html",
+      "SciPy_solve_ivp_官方API网页.html",
+      "SciPy_solve_ivp_官方API网页_离线文本.html",
+      "Shampine1997_BYU原始扫描_35页.pdf",
+      "补充资料说明.txt"
+    ],
+    "03_程序代码": [
+      "A_CodeReview.pyproj",
+      "A_CodeReview.sln",
+      "analyticJacobian.py",
+      "diskDense.py",
+      "dryingCore.py",
+      "exportOutputs.py",
+      "input_manifest.csv",
+      "numerical_design.txt",
+      "q1Model.py",
+      "q2Model.py",
+      "q3Model.py",
+      "q4Model.py",
+      "README.txt",
+      "requirements.txt",
+      "runDelivery.py",
+      "runLogged.ps1"
+    ],
+    "03_程序代码/docs": [
+      "源码变更说明.txt",
+      "运行验收说明.txt"
+    ],
+    "03_程序代码/inputs/cleaned": [
+      "A_environment_observed.csv",
+      "A_radius_observed.csv"
+    ],
+    "03_程序代码/inputs/original": [
+      "附件1.xlsx",
+      "附件2.xlsx"
+    ],
+    "03_程序代码/inputs/templates": [
+      "result1.xlsx",
+      "result2.xlsx",
+      "result3.xlsx",
+      "result4.xlsx"
+    ],
+    "03_程序代码/reference/Q1": [
+      "sampled_solution.npz"
+    ],
+    "03_程序代码/reference/Q23": [
+      "sampled_solution.npz"
+    ],
+    "03_程序代码/reference/Q4": [
+      "sampled_solution.npz"
+    ],
+    "03_程序代码/reference": [
+      "reference_data.py"
+    ],
+    "04_结果表格/Referrence Table Files": [
+      "q1_paper_moisture.csv",
+      "q1_paper_temperature.csv",
+      "q2_paper_moisture.csv",
+      "q2_paper_temperature.csv",
+      "q3_paper_moisture.csv",
+      "q4_paper_moisture.csv",
+      "q4_paper_radius.csv"
+    ],
+    "04_结果表格": [
+      "result1.xlsx",
+      "result2.xlsx",
+      "result3.xlsx",
+      "result4.xlsx",
+      "结果表说明.txt"
+    ],
+    "05_数值检验与实验/MATLAB对照证据": [
+      "compareMatlab.mjs",
+      "runCrossCheck.m"
+    ],
+    "05_数值检验与实验/Python检验源码/paper_output/code/modeling": [
+      "analytic_jacobian.py",
+      "axisymmetric_check.py",
+      "compare_analytic.py",
+      "disk_dense.py",
+      "drying_core.py",
+      "export_outputs.py",
+      "production_provenance.py",
+      "publication_plots.py",
+      "q1_model.py",
+      "q2_model.py",
+      "q3_model.py",
+      "q4_model.py",
+      "run_experiments.py",
+      "run_modeling.py",
+      "validate_bessel.py",
+      "verify_convergence.py",
+      "verify_dense_storage.py",
+      "verify_time_accuracy.py"
+    ],
+    "05_数值检验与实验/Python检验源码/paper_output/code/verification": [
+      "analytic_metric_check.py",
+      "crossvalidate_series.py",
+      "crossvalidate_solver.py",
+      "energy_balance_check.py",
+      "energy_balance_diagnose.py",
+      "energy_balance_diagnose2.py",
+      "isotherm_activity_closure.py",
+      "isotherm_diagnose.py",
+      "isotherm_jacobian_probe.py",
+      "latent_heat_scenarios.py",
+      "method_comparison.py",
+      "sensitivity_analysis.py",
+      "threshold_and_scaling_checks.py"
+    ],
+    "05_数值检验与实验/Python检验源码/paper_output/data_cleaned": [
+      "A_environment_observed.csv",
+      "A_radius_observed.csv"
+    ],
+    "05_数值检验与实验/Python检验源码": [
+      "requirements.txt",
+      "run_checks.py"
+    ],
+    "05_数值检验与实验": [
+      "数值检验说明.txt",
+      "本轮补件与运行核验.txt",
+      "源码文件与校验值.txt",
+      "独立沙盒运行矩阵.csv",
+      "独立沙盒逐源码核查.txt",
+      "论文采用检验_独立运行说明.txt"
+    ],
+    "06_绘图程序与数据/CSV/图1": [
+      "moisture.csv",
+      "temperature.csv"
+    ],
+    "06_绘图程序与数据/CSV/图2": [
+      "assumed_platform_4_60h.csv",
+      "observed_0_4h.csv"
+    ],
+    "06_绘图程序与数据/CSV/图3": [
+      "moisture_to_event.csv",
+      "temperature_0_4h.csv"
+    ],
+    "06_绘图程序与数据/CSV/图4": [
+      "centre_near_event.csv",
+      "drying_main.csv",
+      "event_markers.csv",
+      "maximum_near_event.csv"
+    ],
+    "06_绘图程序与数据/CSV/图5": [
+      "moisture_profiles_xy_pairs.csv",
+      "radius_observed.csv",
+      "selected_times_and_radii.csv"
+    ],
+    "06_绘图程序与数据/CSV/图6": [
+      "scenario_comparison.csv"
+    ],
+    "06_绘图程序与数据": [
+      "draw_figures.R",
+      "图像校验.csv",
+      "数据来源与校验.csv",
+      "绘图复现说明.txt"
+    ],
+    "06_绘图程序与数据/PNG": [
+      "图1_径向温度与含水率.png",
+      "图2_环境观测与平台延拓.png",
+      "图3_中心与表面热湿响应.png",
+      "图4_全域达标与临界放大.png",
+      "图5_收缩半径与域内含水率.png",
+      "图6_经验边界阻力情景.png"
+    ]
+  },
+  "entries": [
+    {
+      "path": "00_可用于论文附录的支撑清单.txt",
+      "purpose": "含简短用途的完整文件清单",
+      "sha256": "a15e3b0333367ecaf1956bf8da8ae9ddb411a7d741a1201d6050d73d78a4168f"
+    },
+    {
+      "path": "00_支撑材料总说明.txt",
+      "purpose": "材料组织与复现入口说明",
+      "sha256": "5380853dbba9a8187e4e88c3b07dcaf5c5b2b916b2488366e08673af114607a9"
+    },
+    {
+      "path": "00_整理验收说明.txt",
+      "purpose": "材料整理与真实核查范围",
+      "sha256": "1ab6b558933e6ad7d214ce084c128f739400cfa357321eaacfa7a09ac13648e9"
+    },
+    {
+      "path": "00_文件清单.txt",
+      "purpose": "全部文件的相对路径清单",
+      "sha256": "b5eb79358635ad73d85aa20caa1c28a6024a08c5fcd8df4a3e52e4f94cc12c40"
+    },
+    {
+      "path": "00_材料来源说明.txt",
+      "purpose": "数据 程序 文献及图表来源",
+      "sha256": "e0b08037dfdb9bedb6f4e9404c03d2d94a4717b0d3de0086457b8cbf9eb2750e"
+    },
+    {
+      "path": "01_赛题与原始数据/A题.pdf",
+      "purpose": "A题题面及参数和结果要求",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "01_赛题与原始数据/数据说明.txt",
+      "purpose": "原始数据与清洗字段说明",
+      "sha256": "8b55ca1b3d04ee373b84763c28b8b01125b0a017a9f7bba85fc78ff42020c497"
+    },
+    {
+      "path": "01_赛题与原始数据/清洗后数据/A_environment_observed.csv",
+      "purpose": "环境观测数据 时间 温度和湿度",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "01_赛题与原始数据/清洗后数据/A_radius_observed.csv",
+      "purpose": "药材半径观测数据",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件1.xlsx",
+      "purpose": "原始环境温湿度观测数据",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件2.xlsx",
+      "purpose": "原始药材半径观测数据",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result1.xlsx",
+      "purpose": "问题1空白结果模板",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result2.xlsx",
+      "purpose": "问题2空白结果模板",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result3.xlsx",
+      "purpose": "问题3空白结果模板",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result4.xlsx",
+      "purpose": "问题4空白结果模板",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "02_参考文献与网络资料/Handbook of Industrial Drying.pdf",
+      "purpose": "工业干燥手册第4版5页节选",
+      "sha256": "e4dc718fa3c5a2efa00178f6e934bb636e98a3f2bc65c4ed605a6767a0043cf2"
+    },
+    {
+      "path": "02_参考文献与网络资料/Handbook of numerical analysis.pdf",
+      "purpose": "有限体积法作者2019年更新稿254页",
+      "sha256": "ca82f25367c9ec82f89a3aa6878525c2142f2fb287fc53ad93a75ae4cd177b7f"
+    },
+    {
+      "path": "02_参考文献与网络资料/中药材干燥技术与装备研究现状.pdf",
+      "purpose": "王乐意等 2024年综述全文28页",
+      "sha256": "4beca0c77feeb6836fa9cc0fb46222fff9d16889237a07bb34de2b48e071700d"
+    },
+    {
+      "path": "02_参考文献与网络资料/参考文献文件说明.txt",
+      "purpose": "参考文献版本及实际阅读范围",
+      "sha256": "b169972541569d8c22c673f97f6e20a7bcbd0d14b2548d993cdb94c0864cf852"
+    },
+    {
+      "path": "02_参考文献与网络资料/数值模拟仿真研究现状及其在中药干燥领域应用展望_王晓辉.pdf",
+      "purpose": "王晓辉等 2023年综述全文8页",
+      "sha256": "a08e9f5aba4da044d31939c73cd14dfbe7bec91c05c5d048081c798088718ebc"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页.html",
+      "purpose": "FAO干燥原理网页存档",
+      "sha256": "d86eaaadb28e545d1eec58217f72af843c7993d0b718930a990e929a7e88ece4"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页_离线文本.html",
+      "purpose": "FAO干燥原理可离线阅读文本",
+      "sha256": "2ba69c413a81b36949ff695e6ea96a1075ac60421d3a5d41df24322367a539f2"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页.html",
+      "purpose": "SciPy积分接口网页存档",
+      "sha256": "1239f89c6cd44f9342dc19fe24bf7b18eee066efa2159e58c462174f3ce4dfc7"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页_离线文本.html",
+      "purpose": "SciPy积分接口可离线阅读文本",
+      "sha256": "30d483f93a6c7f4f2b926b25b6ca802967682a6adc977e7d1b2318109546c5d0"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/Shampine1997_BYU原始扫描_35页.pdf",
+      "purpose": "常微分方程求解补充资料35页扫描",
+      "sha256": "6dc922d1df01c6dc866a46aef45db5b8e5bfb49d13049b20153ea3247f1814b2"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/补充资料说明.txt",
+      "purpose": "补充文献和网页资料来源",
+      "sha256": "0e099735a403063208ff06c3e7a31332413e136b65e8ad4ba43ff3a241799311"
+    },
+    {
+      "path": "03_程序代码/A_CodeReview.pyproj",
+      "purpose": "Visual Studio Python工程配置",
+      "sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb"
+    },
+    {
+      "path": "03_程序代码/A_CodeReview.sln",
+      "purpose": "Visual Studio方案入口",
+      "sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f"
+    },
+    {
+      "path": "03_程序代码/analyticJacobian.py",
+      "purpose": "正式模型解析稀疏Jacobian",
+      "sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd"
+    },
+    {
+      "path": "03_程序代码/diskDense.py",
+      "purpose": "BDF连续输出多项式存储",
+      "sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380"
+    },
+    {
+      "path": "03_程序代码/docs/源码变更说明.txt",
+      "purpose": "生产源码来源和变更说明",
+      "sha256": "582dd071637df0d780e7188567c4d37e37d0043d11d8fc61541eb881c523f60f"
+    },
+    {
+      "path": "03_程序代码/docs/运行验收说明.txt",
+      "purpose": "生产运行证据与适用范围",
+      "sha256": "7c7a9dba69e8f5ed027f9ba4026b9608d6fc810b986b7c5f9f42098789fbde5d"
+    },
+    {
+      "path": "03_程序代码/dryingCore.py",
+      "purpose": "热湿耦合方程离散与BDF求解",
+      "sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379"
+    },
+    {
+      "path": "03_程序代码/exportOutputs.py",
+      "purpose": "四份结果工作簿导出与回读",
+      "sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9"
+    },
+    {
+      "path": "03_程序代码/input_manifest.csv",
+      "purpose": "正式输入 模板和参照校验清单",
+      "sha256": "573ad682c71920296cfde1cd2a297b59b30e6076b99075c34e239d38cdaa935e"
+    },
+    {
+      "path": "03_程序代码/inputs/cleaned/A_environment_observed.csv",
+      "purpose": "环境观测数据 时间 温度和湿度",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "03_程序代码/inputs/cleaned/A_radius_observed.csv",
+      "purpose": "药材半径观测数据",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "03_程序代码/inputs/original/附件1.xlsx",
+      "purpose": "原始环境温湿度观测数据",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "03_程序代码/inputs/original/附件2.xlsx",
+      "purpose": "原始药材半径观测数据",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result1.xlsx",
+      "purpose": "问题1空白结果模板",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result2.xlsx",
+      "purpose": "问题2空白结果模板",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result3.xlsx",
+      "purpose": "问题3空白结果模板",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result4.xlsx",
+      "purpose": "问题4空白结果模板",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "03_程序代码/numerical_design.txt",
+      "purpose": "离散方程与阈值事件说明",
+      "sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442"
+    },
+    {
+      "path": "03_程序代码/q1Model.py",
+      "purpose": "问题一模型配置",
+      "sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535"
+    },
+    {
+      "path": "03_程序代码/q2Model.py",
+      "purpose": "问题二与三共同轨迹配置",
+      "sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b"
+    },
+    {
+      "path": "03_程序代码/q3Model.py",
+      "purpose": "问题三严格达标时刻判定",
+      "sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21"
+    },
+    {
+      "path": "03_程序代码/q4Model.py",
+      "purpose": "问题四收缩模型配置",
+      "sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc"
+    },
+    {
+      "path": "03_程序代码/README.txt",
+      "purpose": "目录运行与依赖说明",
+      "sha256": "c27e70b8f4d571f51d351704583e4d2cbe7191b2174c6f783275c8af9c522f38"
+    },
+    {
+      "path": "03_程序代码/reference/Q1/sampled_solution.npz",
+      "purpose": "Q1冻结采样数组",
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "03_程序代码/reference/Q23/sampled_solution.npz",
+      "purpose": "Q23冻结采样数组",
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "path": "03_程序代码/reference/Q4/sampled_solution.npz",
+      "purpose": "Q4冻结采样数组",
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "03_程序代码/reference/reference_data.py",
+      "purpose": "冻结数值与精度参照常量",
+      "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e"
+    },
+    {
+      "path": "03_程序代码/requirements.txt",
+      "purpose": "Python依赖及固定版本",
+      "sha256": "73951400cc1ca44a28341231ef3dd2e101203485a15c39388b8f5614cdeb5bc9"
+    },
+    {
+      "path": "03_程序代码/runDelivery.py",
+      "purpose": "四问生产计算与输入预检入口",
+      "sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511"
+    },
+    {
+      "path": "03_程序代码/runLogged.ps1",
+      "purpose": "生产运行监督与退出码记录",
+      "sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q1_paper_moisture.csv",
+      "purpose": "正文问题一含水率结果表",
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q1_paper_temperature.csv",
+      "purpose": "正文问题一温度结果表",
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q2_paper_moisture.csv",
+      "purpose": "正文问题二含水率结果表",
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q2_paper_temperature.csv",
+      "purpose": "正文问题二温度结果表",
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q3_paper_moisture.csv",
+      "purpose": "正文问题三含水率结果表",
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q4_paper_moisture.csv",
+      "purpose": "正文问题四含水率结果表",
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q4_paper_radius.csv",
+      "purpose": "正文问题四半径结果表",
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+    },
+    {
+      "path": "04_结果表格/result1.xlsx",
+      "purpose": "问题1完整计算结果",
+      "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+    },
+    {
+      "path": "04_结果表格/result2.xlsx",
+      "purpose": "问题2完整计算结果",
+      "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+    },
+    {
+      "path": "04_结果表格/result3.xlsx",
+      "purpose": "问题3完整计算结果",
+      "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+    },
+    {
+      "path": "04_结果表格/result4.xlsx",
+      "purpose": "问题4完整计算结果",
+      "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+    },
+    {
+      "path": "04_结果表格/结果表说明.txt",
+      "purpose": "完整工作簿与正文表格说明",
+      "sha256": "329ec782512aa71d7ddb14e948f3c62288e5afe8c7d61b278a359b1109245366"
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+      "purpose": "MATLAB与Python结果比较程序",
+      "sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59"
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/runCrossCheck.m",
+      "purpose": "MATLAB独立热湿模型对照实现",
+      "sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "purpose": "检验模型解析Jacobian",
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "purpose": "轴对称假设与轴向影响检验",
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "purpose": "数值解与圆柱解析基准比较",
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "purpose": "检验模型BDF连续输出存储",
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py",
+      "purpose": "检验所用热湿模型核心",
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "purpose": "检验所用工作簿导出模块",
+      "sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "purpose": "运行监督 输入源码版本记录",
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "purpose": "既有绘图辅助程序",
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py",
+      "purpose": "检验所用问题一配置",
+      "sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py",
+      "purpose": "检验所用问题二配置",
+      "sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py",
+      "purpose": "检验所用问题三达标判定",
+      "sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py",
+      "purpose": "检验所用问题四配置",
+      "sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "purpose": "既有实验任务入口",
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "purpose": "旧模型流程入口 保留原运行前提",
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "purpose": "圆柱Robin与Bessel解析基准",
+      "sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "purpose": "空间网格加密误差检验",
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "purpose": "BDF连续输出存储一致性检验",
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "purpose": "时间容差与步长敏感性检验",
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "purpose": "解析误差指标历史诊断",
+      "sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "purpose": "描述序列对照及历史趋势诊断",
+      "sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "purpose": "不同积分器的数值对照",
+      "sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "purpose": "模型能量收支检查",
+      "sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "purpose": "能量闭合历史诊断",
+      "sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "purpose": "能量闭合进一步历史诊断",
+      "sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "purpose": "历史等温线闭合试验",
+      "sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "purpose": "历史等温线接口诊断",
+      "sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "purpose": "历史Jacobian注入探测",
+      "sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "purpose": "潜热情景计算",
+      "sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py",
+      "purpose": "两种守恒通量格式对照",
+      "sha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "purpose": "参数扰动与敏感性计算",
+      "sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "purpose": "阈值事件和标度检验",
+      "sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/data_cleaned/A_environment_observed.csv",
+      "purpose": "环境观测数据 时间 温度和湿度",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/data_cleaned/A_radius_observed.csv",
+      "purpose": "药材半径观测数据",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/requirements.txt",
+      "purpose": "Python依赖及固定版本",
+      "sha256": "30734d70720b8f82694a2f12100b0c3a32a6f888c6e6c7a1a79baadf397573de"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/run_checks.py",
+      "purpose": "网格 时间和方法检验统一入口",
+      "sha256": "998eae85aa8807f1bd5ebfa1fd41d988d332e9f98a52373505466188361e74b4"
+    },
+    {
+      "path": "05_数值检验与实验/数值检验说明.txt",
+      "purpose": "检验程序用途及运行前提",
+      "sha256": "c9bc8f65a945f46ba49652857115c6acf5b8b9724f8cb626b59e9c47888e20e6"
+    },
+    {
+      "path": "05_数值检验与实验/本轮补件与运行核验.txt",
+      "purpose": "本轮路径适配与实际复现说明",
+      "sha256": "e025701570944a34c10a52f4b4b011be618f1c3d8d1415db86458c7090be783f"
+    },
+    {
+      "path": "05_数值检验与实验/源码文件与校验值.txt",
+      "purpose": "检验源码用途 来源与SHA256",
+      "sha256": "5a3c68e3331e11923ec2d8d3786ad95964cc0c36531fc35acd1d19fe56513857"
+    },
+    {
+      "path": "05_数值检验与实验/独立沙盒运行矩阵.csv",
+      "purpose": "既有沙盒逐任务运行状态",
+      "sha256": "d684514c3a8cc2e08712820902fb271b96665058fee618618be78b0b5b238dcf"
+    },
+    {
+      "path": "05_数值检验与实验/独立沙盒逐源码核查.txt",
+      "purpose": "既有逐源码实算及失败范围",
+      "sha256": "519c75880d296d3aea9b5c9e82c9dc8d176e3f46116b98d706469dcb45ea9a3e"
+    },
+    {
+      "path": "05_数值检验与实验/论文采用检验_独立运行说明.txt",
+      "purpose": "本轮路径适配与实际复现说明",
+      "sha256": "03fc0c05782ffc003b37cf45345e72fedf8d5e440d864f9774f9da84af763ab8"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图1/moisture.csv",
+      "purpose": "图1径向含水率曲线数据",
+      "sha256": "37baad274dc6317d4b8af57d79d83af58653663247fe638ddb76cd09e9f630dd"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图1/temperature.csv",
+      "purpose": "图1径向温度曲线数据",
+      "sha256": "3178ed85da9e445d6965e17a434e1129ee7755b0deaef42dab86c7141d9ebcf7"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图2/assumed_platform_4_60h.csv",
+      "purpose": "图2后续环境平台假设数据",
+      "sha256": "bc53170e1802d0bb4bfab17472ae5873d6c37ae6bd04b5b6bb66dbba04cccf44"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图2/observed_0_4h.csv",
+      "purpose": "图2前4小时环境实测点",
+      "sha256": "53587d9e0c837efe21ea9456af26857b035b370d5bb3180194f5551e38206126"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图3/moisture_to_event.csv",
+      "purpose": "图3中心和表面含水率数据",
+      "sha256": "e97f2271edb8f062027f4238e1e3491b60df8ce3690030b96ed71843aa9066ea"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图3/temperature_0_4h.csv",
+      "purpose": "图3中心和表面温度数据",
+      "sha256": "baf5659461cdb25c0dd28beb8b0804f69ed444196f923dc06eabe7069ed6b2f4"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/centre_near_event.csv",
+      "purpose": "图4临界附近中心含水率数据",
+      "sha256": "2723e357e65989abc06165433c2d67050515feaa3390d2036be3a6c33d64f233"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/drying_main.csv",
+      "purpose": "图4全域含水率与达标曲线",
+      "sha256": "679b6de5ccec6d5904c63b2b530c4b16501442e278bd2a37b2af8afe8a63725c"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/event_markers.csv",
+      "purpose": "图4连续事件与严格报告点",
+      "sha256": "6931d514d9626dc30f0c68e81d9d9da47ff8a8d511aa3a7811bdf0c676ed66dc"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/maximum_near_event.csv",
+      "purpose": "图4临界附近全域最大含水率",
+      "sha256": "a334248c14b407bb3de6e0959087e7bc7448e5a72914e8bc426287d5d2d53ab1"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图5/moisture_profiles_xy_pairs.csv",
+      "purpose": "图5收缩域内含水率XY数据",
+      "sha256": "a056c1c60bae798ef2501ca223da2b2e56ebb409b55f06827e4c3019fb9e3e38"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图5/radius_observed.csv",
+      "purpose": "图5原始半径观测数据",
+      "sha256": "9217f6e42d4b996641982534d5130b2cef667bee14f5238de51f55605b49b9cd"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图5/selected_times_and_radii.csv",
+      "purpose": "图5所选时刻及对应半径",
+      "sha256": "2f9f05c0f4c51dee5d62df9e9a224e585a5464b8fbf46c62804e2a9a6a6e5d9d"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图6/scenario_comparison.csv",
+      "purpose": "图6经验边界阻力情景数据",
+      "sha256": "44fd32289e807d35a616cc87cf53da16bea320520f90950fb7ce52022a55a8c2"
+    },
+    {
+      "path": "06_绘图程序与数据/draw_figures.R",
+      "purpose": "六幅论文图的PNG绘制程序",
+      "sha256": "e25fce029918fa9723bda47f2489e6863cb6110eb4311cab8965b5994e622c6b"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图1_径向温度与含水率.png",
+      "purpose": "图1_径向温度与含水率成图",
+      "sha256": "80754fe929b27ac081c05fe709bf88238a642eb8fb636690c8947b344e231b91"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图2_环境观测与平台延拓.png",
+      "purpose": "图2_环境观测与平台延拓成图",
+      "sha256": "98d0a0924e31ce857861fe0cdee02d22134b9a24e99c98d084cb856801a5112d"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图3_中心与表面热湿响应.png",
+      "purpose": "图3_中心与表面热湿响应成图",
+      "sha256": "4bba35b237ea718148e0f31ea0c30160c8ef8bcd9525130908cf53083075a5a3"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图4_全域达标与临界放大.png",
+      "purpose": "图4_全域达标与临界放大成图",
+      "sha256": "04a96aa51b55e2f14e68bd90a5797f516830394b28c1c667f8b29ff8515434f5"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图5_收缩半径与域内含水率.png",
+      "purpose": "图5_收缩半径与域内含水率成图",
+      "sha256": "42e97f43f9d079bc90cc4a3326c00a0689898cfce5c8b2ff06d0815c353dd518"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图6_经验边界阻力情景.png",
+      "purpose": "图6_经验边界阻力情景成图",
+      "sha256": "31ab305b18917d4768a493589754ebbe30a12821952dead10e029197a54d2931"
+    },
+    {
+      "path": "06_绘图程序与数据/图像校验.csv",
+      "purpose": "文件来源与校验清单",
+      "sha256": "2b4cc908686ceea6ad9c70ae310ef7dea39c2edb44533eb26f7647bb291f5bdb"
+    },
+    {
+      "path": "06_绘图程序与数据/数据来源与校验.csv",
+      "purpose": "文件来源与校验清单",
+      "sha256": "f8a3a4d96cf7dece152f2c53a10ebab3d31b65054da4403d24f383301f7792d6"
+    },
+    {
+      "path": "06_绘图程序与数据/绘图复现说明.txt",
+      "purpose": "本轮路径适配与实际复现说明",
+      "sha256": "2de71442796ef2edbeee18a4200504be88022940d1218015a0cd7865cda2e490"
+    },
+    {
+      "path": "AI工具使用详情.docx",
+      "purpose": "AI工具与使用环节记录 可编辑详情",
+      "sha256": "095d965e3540a62c31d7b6f43bc8bc1a06d2b99df954a9ce1953fae7810633f6"
+    },
+    {
+      "path": "源码去注释与沙盒核查.txt",
+      "purpose": "既有去注释与独立沙盒核查范围",
+      "sha256": "570af7d09403a10a31d5d211fd4452a142ead1d17228c8e601f254866bdea065"
+    }
+  ],
+  "final_metadata_refreshed_at_utc": "2026-09-13T07:40:39.231490+00:00",
+  "final_file_manifest": [
+    {
+      "path": "00_可用于论文附录的支撑清单.txt",
+      "bytes": 14285,
+      "sha256": "a15e3b0333367ecaf1956bf8da8ae9ddb411a7d741a1201d6050d73d78a4168f"
+    },
+    {
+      "path": "00_支撑材料总说明.txt",
+      "bytes": 3065,
+      "sha256": "dd6a8ace129133106acd3a5df4b6d1101e90fb7285239d5719474727978e4103"
+    },
+    {
+      "path": "00_整理验收说明.txt",
+      "bytes": 2925,
+      "sha256": "4e6f4f87b108ec4e841b53ef7737497ec0452da5a1f3166be170ea0d56b4ce0e"
+    },
+    {
+      "path": "00_文件清单.txt",
+      "bytes": 8729,
+      "sha256": "b5eb79358635ad73d85aa20caa1c28a6024a08c5fcd8df4a3e52e4f94cc12c40"
+    },
+    {
+      "path": "00_材料来源说明.txt",
+      "bytes": 2089,
+      "sha256": "54f0ea2ab30594885afe8f69287bc8b36efa1a8022da790eb812c8cff03b34af"
+    },
+    {
+      "path": "01_赛题与原始数据/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "01_赛题与原始数据/数据说明.txt",
+      "bytes": 973,
+      "sha256": "8b55ca1b3d04ee373b84763c28b8b01125b0a017a9f7bba85fc78ff42020c497"
+    },
+    {
+      "path": "01_赛题与原始数据/清洗后数据/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "01_赛题与原始数据/清洗后数据/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "01_赛题与原始数据/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "02_参考文献与网络资料/Handbook of Industrial Drying.pdf",
+      "bytes": 1092802,
+      "sha256": "e4dc718fa3c5a2efa00178f6e934bb636e98a3f2bc65c4ed605a6767a0043cf2"
+    },
+    {
+      "path": "02_参考文献与网络资料/Handbook of numerical analysis.pdf",
+      "bytes": 1999078,
+      "sha256": "ca82f25367c9ec82f89a3aa6878525c2142f2fb287fc53ad93a75ae4cd177b7f"
+    },
+    {
+      "path": "02_参考文献与网络资料/中药材干燥技术与装备研究现状.pdf",
+      "bytes": 1904169,
+      "sha256": "4beca0c77feeb6836fa9cc0fb46222fff9d16889237a07bb34de2b48e071700d"
+    },
+    {
+      "path": "02_参考文献与网络资料/参考文献文件说明.txt",
+      "bytes": 1478,
+      "sha256": "b169972541569d8c22c673f97f6e20a7bcbd0d14b2548d993cdb94c0864cf852"
+    },
+    {
+      "path": "02_参考文献与网络资料/数值模拟仿真研究现状及其在中药干燥领域应用展望_王晓辉.pdf",
+      "bytes": 1052120,
+      "sha256": "a08e9f5aba4da044d31939c73cd14dfbe7bec91c05c5d048081c798088718ebc"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页.html",
+      "bytes": 29741,
+      "sha256": "d86eaaadb28e545d1eec58217f72af843c7993d0b718930a990e929a7e88ece4"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页_离线文本.html",
+      "bytes": 22618,
+      "sha256": "2ba69c413a81b36949ff695e6ea96a1075ac60421d3a5d41df24322367a539f2"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页.html",
+      "bytes": 77794,
+      "sha256": "1239f89c6cd44f9342dc19fe24bf7b18eee066efa2159e58c462174f3ce4dfc7"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页_离线文本.html",
+      "bytes": 39050,
+      "sha256": "30d483f93a6c7f4f2b926b25b6ca802967682a6adc977e7d1b2318109546c5d0"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/Shampine1997_BYU原始扫描_35页.pdf",
+      "bytes": 1974378,
+      "sha256": "6dc922d1df01c6dc866a46aef45db5b8e5bfb49d13049b20153ea3247f1814b2"
+    },
+    {
+      "path": "02_参考文献与网络资料/补充网络资料/补充资料说明.txt",
+      "bytes": 972,
+      "sha256": "0e099735a403063208ff06c3e7a31332413e136b65e8ad4ba43ff3a241799311"
+    },
+    {
+      "path": "03_程序代码/A_CodeReview.pyproj",
+      "bytes": 1507,
+      "sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb"
+    },
+    {
+      "path": "03_程序代码/A_CodeReview.sln",
+      "bytes": 838,
+      "sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f"
+    },
+    {
+      "path": "03_程序代码/analyticJacobian.py",
+      "bytes": 15650,
+      "sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd"
+    },
+    {
+      "path": "03_程序代码/diskDense.py",
+      "bytes": 4005,
+      "sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380"
+    },
+    {
+      "path": "03_程序代码/docs/源码变更说明.txt",
+      "bytes": 4182,
+      "sha256": "582dd071637df0d780e7188567c4d37e37d0043d11d8fc61541eb881c523f60f"
+    },
+    {
+      "path": "03_程序代码/docs/运行验收说明.txt",
+      "bytes": 4575,
+      "sha256": "7c7a9dba69e8f5ed027f9ba4026b9608d6fc810b986b7c5f9f42098789fbde5d"
+    },
+    {
+      "path": "03_程序代码/dryingCore.py",
+      "bytes": 18416,
+      "sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379"
+    },
+    {
+      "path": "03_程序代码/exportOutputs.py",
+      "bytes": 38811,
+      "sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9"
+    },
+    {
+      "path": "03_程序代码/input_manifest.csv",
+      "bytes": 1270,
+      "sha256": "573ad682c71920296cfde1cd2a297b59b30e6076b99075c34e239d38cdaa935e"
+    },
+    {
+      "path": "03_程序代码/inputs/cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "03_程序代码/inputs/cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "03_程序代码/inputs/original/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "03_程序代码/inputs/original/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "03_程序代码/inputs/templates/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "03_程序代码/numerical_design.txt",
+      "bytes": 3057,
+      "sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442"
+    },
+    {
+      "path": "03_程序代码/q1Model.py",
+      "bytes": 267,
+      "sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535"
+    },
+    {
+      "path": "03_程序代码/q2Model.py",
+      "bytes": 268,
+      "sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b"
+    },
+    {
+      "path": "03_程序代码/q3Model.py",
+      "bytes": 1065,
+      "sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21"
+    },
+    {
+      "path": "03_程序代码/q4Model.py",
+      "bytes": 280,
+      "sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc"
+    },
+    {
+      "path": "03_程序代码/README.txt",
+      "bytes": 7598,
+      "sha256": "c27e70b8f4d571f51d351704583e4d2cbe7191b2174c6f783275c8af9c522f38"
+    },
+    {
+      "path": "03_程序代码/reference/Q1/sampled_solution.npz",
+      "bytes": 10569,
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "03_程序代码/reference/Q23/sampled_solution.npz",
+      "bytes": 689540,
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "path": "03_程序代码/reference/Q4/sampled_solution.npz",
+      "bytes": 628742,
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "03_程序代码/reference/reference_data.py",
+      "bytes": 16093,
+      "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e"
+    },
+    {
+      "path": "03_程序代码/requirements.txt",
+      "bytes": 43,
+      "sha256": "73951400cc1ca44a28341231ef3dd2e101203485a15c39388b8f5614cdeb5bc9"
+    },
+    {
+      "path": "03_程序代码/runDelivery.py",
+      "bytes": 11192,
+      "sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511"
+    },
+    {
+      "path": "03_程序代码/runLogged.ps1",
+      "bytes": 1674,
+      "sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q1_paper_moisture.csv",
+      "bytes": 345,
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q1_paper_temperature.csv",
+      "bytes": 380,
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q2_paper_moisture.csv",
+      "bytes": 285,
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q2_paper_temperature.csv",
+      "bytes": 315,
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q3_paper_moisture.csv",
+      "bytes": 466,
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q4_paper_moisture.csv",
+      "bytes": 390,
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7"
+    },
+    {
+      "path": "04_结果表格/Referrence Table Files/q4_paper_radius.csv",
+      "bytes": 172,
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08"
+    },
+    {
+      "path": "04_结果表格/result1.xlsx",
+      "bytes": 390899,
+      "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+    },
+    {
+      "path": "04_结果表格/result2.xlsx",
+      "bytes": 29210086,
+      "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+    },
+    {
+      "path": "04_结果表格/result3.xlsx",
+      "bytes": 339137,
+      "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+    },
+    {
+      "path": "04_结果表格/result4.xlsx",
+      "bytes": 278278,
+      "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+    },
+    {
+      "path": "04_结果表格/结果表说明.txt",
+      "bytes": 825,
+      "sha256": "329ec782512aa71d7ddb14e948f3c62288e5afe8c7d61b278a359b1109245366"
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+      "bytes": 16409,
+      "sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59"
+    },
+    {
+      "path": "05_数值检验与实验/MATLAB对照证据/runCrossCheck.m",
+      "bytes": 25180,
+      "sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 15901,
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "bytes": 13375,
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "bytes": 13913,
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "bytes": 4015,
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py",
+      "bytes": 18634,
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "bytes": 38826,
+      "sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "bytes": 22151,
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "bytes": 23325,
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py",
+      "bytes": 278,
+      "sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py",
+      "bytes": 279,
+      "sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py",
+      "bytes": 1073,
+      "sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py",
+      "bytes": 291,
+      "sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "bytes": 3907,
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "bytes": 26524,
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "bytes": 13839,
+      "sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "bytes": 6245,
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "bytes": 3682,
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "bytes": 13965,
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "bytes": 2968,
+      "sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "bytes": 17494,
+      "sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "bytes": 6055,
+      "sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "bytes": 8018,
+      "sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "bytes": 2416,
+      "sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "bytes": 3339,
+      "sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "bytes": 16736,
+      "sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "bytes": 2314,
+      "sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "bytes": 3494,
+      "sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "bytes": 7228,
+      "sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py",
+      "bytes": 6681,
+      "sha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "bytes": 9574,
+      "sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "bytes": 6073,
+      "sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/data_cleaned/A_environment_observed.csv",
+      "bytes": 10125,
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/paper_output/data_cleaned/A_radius_observed.csv",
+      "bytes": 3522,
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/requirements.txt",
+      "bytes": 62,
+      "sha256": "30734d70720b8f82694a2f12100b0c3a32a6f888c6e6c7a1a79baadf397573de"
+    },
+    {
+      "path": "05_数值检验与实验/Python检验源码/run_checks.py",
+      "bytes": 6027,
+      "sha256": "998eae85aa8807f1bd5ebfa1fd41d988d332e9f98a52373505466188361e74b4"
+    },
+    {
+      "path": "05_数值检验与实验/数值检验说明.txt",
+      "bytes": 5381,
+      "sha256": "c9bc8f65a945f46ba49652857115c6acf5b8b9724f8cb626b59e9c47888e20e6"
+    },
+    {
+      "path": "05_数值检验与实验/本轮补件与运行核验.txt",
+      "bytes": 4356,
+      "sha256": "e025701570944a34c10a52f4b4b011be618f1c3d8d1415db86458c7090be783f"
+    },
+    {
+      "path": "05_数值检验与实验/源码文件与校验值.txt",
+      "bytes": 13901,
+      "sha256": "5a3c68e3331e11923ec2d8d3786ad95964cc0c36531fc35acd1d19fe56513857"
+    },
+    {
+      "path": "05_数值检验与实验/独立沙盒运行矩阵.csv",
+      "bytes": 11045,
+      "sha256": "d684514c3a8cc2e08712820902fb271b96665058fee618618be78b0b5b238dcf"
+    },
+    {
+      "path": "05_数值检验与实验/独立沙盒逐源码核查.txt",
+      "bytes": 11896,
+      "sha256": "519c75880d296d3aea9b5c9e82c9dc8d176e3f46116b98d706469dcb45ea9a3e"
+    },
+    {
+      "path": "05_数值检验与实验/论文采用检验_独立运行说明.txt",
+      "bytes": 6414,
+      "sha256": "03fc0c05782ffc003b37cf45345e72fedf8d5e440d864f9774f9da84af763ab8"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图1/moisture.csv",
+      "bytes": 16316,
+      "sha256": "37baad274dc6317d4b8af57d79d83af58653663247fe638ddb76cd09e9f630dd"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图1/temperature.csv",
+      "bytes": 17756,
+      "sha256": "3178ed85da9e445d6965e17a434e1129ee7755b0deaef42dab86c7141d9ebcf7"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图2/assumed_platform_4_60h.csv",
+      "bytes": 106,
+      "sha256": "bc53170e1802d0bb4bfab17472ae5873d6c37ae6bd04b5b6bb66dbba04cccf44"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图2/observed_0_4h.csv",
+      "bytes": 6964,
+      "sha256": "53587d9e0c837efe21ea9456af26857b035b370d5bb3180194f5551e38206126"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图3/moisture_to_event.csv",
+      "bytes": 188162,
+      "sha256": "e97f2271edb8f062027f4238e1e3491b60df8ce3690030b96ed71843aa9066ea"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图3/temperature_0_4h.csv",
+      "bytes": 12498,
+      "sha256": "baf5659461cdb25c0dd28beb8b0804f69ed444196f923dc06eabe7069ed6b2f4"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/centre_near_event.csv",
+      "bytes": 306,
+      "sha256": "2723e357e65989abc06165433c2d67050515feaa3390d2036be3a6c33d64f233"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/drying_main.csv",
+      "bytes": 21890,
+      "sha256": "679b6de5ccec6d5904c63b2b530c4b16501442e278bd2a37b2af8afe8a63725c"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/event_markers.csv",
+      "bytes": 247,
+      "sha256": "6931d514d9626dc30f0c68e81d9d9da47ff8a8d511aa3a7811bdf0c676ed66dc"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图4/maximum_near_event.csv",
+      "bytes": 156,
+      "sha256": "a334248c14b407bb3de6e0959087e7bc7448e5a72914e8bc426287d5d2d53ab1"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图5/moisture_profiles_xy_pairs.csv",
+      "bytes": 3684,
+      "sha256": "a056c1c60bae798ef2501ca223da2b2e56ebb409b55f06827e4c3019fb9e3e38"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图5/radius_observed.csv",
+      "bytes": 1643,
+      "sha256": "9217f6e42d4b996641982534d5130b2cef667bee14f5238de51f55605b49b9cd"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图5/selected_times_and_radii.csv",
+      "bytes": 191,
+      "sha256": "2f9f05c0f4c51dee5d62df9e9a224e585a5464b8fbf46c62804e2a9a6a6e5d9d"
+    },
+    {
+      "path": "06_绘图程序与数据/CSV/图6/scenario_comparison.csv",
+      "bytes": 147,
+      "sha256": "44fd32289e807d35a616cc87cf53da16bea320520f90950fb7ce52022a55a8c2"
+    },
+    {
+      "path": "06_绘图程序与数据/draw_figures.R",
+      "bytes": 13967,
+      "sha256": "e25fce029918fa9723bda47f2489e6863cb6110eb4311cab8965b5994e622c6b"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图1_径向温度与含水率.png",
+      "bytes": 150401,
+      "sha256": "80754fe929b27ac081c05fe709bf88238a642eb8fb636690c8947b344e231b91"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图2_环境观测与平台延拓.png",
+      "bytes": 136458,
+      "sha256": "98d0a0924e31ce857861fe0cdee02d22134b9a24e99c98d084cb856801a5112d"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图3_中心与表面热湿响应.png",
+      "bytes": 96784,
+      "sha256": "4bba35b237ea718148e0f31ea0c30160c8ef8bcd9525130908cf53083075a5a3"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图4_全域达标与临界放大.png",
+      "bytes": 127260,
+      "sha256": "04a96aa51b55e2f14e68bd90a5797f516830394b28c1c667f8b29ff8515434f5"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图5_收缩半径与域内含水率.png",
+      "bytes": 102736,
+      "sha256": "42e97f43f9d079bc90cc4a3326c00a0689898cfce5c8b2ff06d0815c353dd518"
+    },
+    {
+      "path": "06_绘图程序与数据/PNG/图6_经验边界阻力情景.png",
+      "bytes": 89119,
+      "sha256": "31ab305b18917d4768a493589754ebbe30a12821952dead10e029197a54d2931"
+    },
+    {
+      "path": "06_绘图程序与数据/图像校验.csv",
+      "bytes": 754,
+      "sha256": "2b4cc908686ceea6ad9c70ae310ef7dea39c2edb44533eb26f7647bb291f5bdb"
+    },
+    {
+      "path": "06_绘图程序与数据/数据来源与校验.csv",
+      "bytes": 6158,
+      "sha256": "f8a3a4d96cf7dece152f2c53a10ebab3d31b65054da4403d24f383301f7792d6"
+    },
+    {
+      "path": "06_绘图程序与数据/绘图复现说明.txt",
+      "bytes": 3456,
+      "sha256": "2de71442796ef2edbeee18a4200504be88022940d1218015a0cd7865cda2e490"
+    },
+    {
+      "path": "AI工具使用详情.docx",
+      "bytes": 42587,
+      "sha256": "095d965e3540a62c31d7b6f43bc8bc1a06d2b99df954a9ce1953fae7810633f6"
+    },
+    {
+      "path": "源码去注释与沙盒核查.txt",
+      "bytes": 5108,
+      "sha256": "570af7d09403a10a31d5d211fd4452a142ead1d17228c8e601f254866bdea065"
+    }
+  ]
+}

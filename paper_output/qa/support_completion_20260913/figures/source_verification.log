@@ -1,0 +1,11 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+[1] "LC_COLLATE=Chinese_China.utf8;LC_CTYPE=Chinese_China.utf8;LC_MONETARY=Chinese_China.utf8;LC_NUMERIC=C;LC_TIME=Chinese_China.utf8"
+COMMENT_REMOVAL_AST_EQUIVALENT PASS
+DELIVERED_COMMENT_TOKENS 0
+UNCHANGED_ASSIGNMENTS 32 font_cn, font_math, palette7, ltypes7, shape7, read_table, theme, panel, footer, note, f1t, f1c, f2o, f2p, f3t, f3c, f4, f4near, f4events, f4centre, f5r, f5c, f5sel, f6, checks, bounds, draw1, draw2, draw3, draw4, draw5, draw6 
+NUMERIC_CHECKS_AND_SIX_EMIT_CALLS_IDENTICAL PASS
+ORIGINAL_EXPRESSION_COUNT 63 DELIVERED_EXPRESSION_COUNT 62 

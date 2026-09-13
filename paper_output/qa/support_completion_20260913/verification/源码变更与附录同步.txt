@@ -1,0 +1,9 @@
+源码变更：
+Python检验源码/paper_output/code/verification/method_comparison.py
+适配前SHA256：e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5
+当前SHA256：6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4
+唯一需要同步到已有论文源代码附录的旧程序行：
+ROOT = pathlib.Path(__file__).resolve().parents[3]
+
+run_checks.py为新增运行入口，当前SHA256：998eae85aa8807f1bd5ebfa1fd41d988d332e9f98a52373505466188361e74b4。若论文逐行刊入所有支撑程序，应另加入该入口；完整文件列表必须包括此入口、requirements及两CSV。
+

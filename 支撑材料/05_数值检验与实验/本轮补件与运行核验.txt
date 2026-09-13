@@ -1,0 +1,46 @@
+本轮补件与实际运行核验（2026-09-13）
+======================================
+
+范围：只补齐论文采用的网格、固定N时间误差、两种通量方法对照的交付运行条件。
+
+新增run_checks.py、requirements.txt、两CSV及两份TXT说明。原33源码中仅method_comparison.py第11行ROOT赋值变化；其余32份源码逐字节不变。将ROOT赋值归一化后，两版method_comparison.py的AST完全一致。旧独立沙盒矩阵CSV及逐源码核查TXT的SHA256保持原样，原有失败与限制不改写。
+
+环境：本轮在新建的独立venv实际安装CPython 3.14.7所需NumPy 2.5.2、SciPy 1.18.1、openpyxl 3.1.5、Matplotlib 3.11.2。pip install实际exit 0；pip check实际exit 0，输出“No broken requirements found.”。主机原Matplotlib 3.11.1未被冒作本轮依赖版本。
+
+两CSV原值、字节和SHA均与03/inputs/cleaned相同：
+Python检验源码/paper_output/data_cleaned/A_environment_observed.csv：241行，SHA256 e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0
+Python检验源码/paper_output/data_cleaned/A_radius_observed.csv：145行，SHA256 bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c
+
+本轮三个不同的新实验根实际运行如下（均在支撑目录外，直接调用本目录run_checks.py复制的源码）：
+
+1. 网格：--check grid --question Q1 --grids 20 40
+   实际exit 0，耗时13.819秒，内部computed_and_zero_solver_warnings。
+   1801个整数秒×21半径，N20/N40最大温度差0.0014693875993998518 K，最大含水率差0.046707078419066406。
+   与热方程Bessel基准最大误差：N20为0.0019600449535914777 K，N40为0.0004906573541916259 K。
+   N20/N40是入口与计算链检查；较大的水分网格差明确表明不能把此小网格视为论文精度通过。
+
+2. 时间：--check time --question Q1 --n 20
+   实际exit 0，耗时17.940秒；baseline与tight两个被监督子进程均实际exit 0，内部computed_zero_solver_warnings。
+   同一N20、1801秒×21半径最大温度差1.0329394513064472e-6 K，最大含水率差3.4171576679398186e-9。
+   只证明N20的时间控制敏感性检查已实际运行，不替代N3200/N6400论文细网格检查。
+
+3. 方法：--check method --quick
+   实际exit 0，耗时18.684秒，N100/N200共8次求解，8项实际通量路径守卫均吻合。
+   常D两种通量最大差均为0；变D在N100差1.4891388507853875e-5、N200差3.728809559122581e-6，小于原1e-4阈值，passedDeclaredTolerance=true。
+   此次观察收敛阶1.9976912588688045；源码原expectedOrder=1.0字段未改，不把该字段误作此次实测阶。
+   这是原方法对照的quick批次，不冒称本轮重算N200/N400/N800/N1600完整批次。
+
+其他核验：缺CSV的旧层级在独立副本实际复现FileNotFoundError/exit 1；补入后上列三入口成功。--help实际exit 0；支撑目录内部输出及已有输出目录均按预期拒绝（exit 2）。32份Python源码静态编译通过，未发现Python注释。三个运行副本的源码与输入在运行后全部与交付SHA一致。
+
+源码变更：
+Python检验源码/paper_output/code/verification/method_comparison.py
+适配前SHA256：e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5
+当前SHA256：6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4
+唯一需要同步到已有论文源代码附录的旧程序行：
+ROOT = pathlib.Path(__file__).resolve().parents[3]
+
+run_checks.py为新增运行入口，当前SHA256：998eae85aa8807f1bd5ebfa1fd41d988d332e9f98a52373505466188361e74b4。若论文逐行刊入所有支撑程序，应另加入该入口；完整文件列表必须包括此入口、requirements及两CSV。
+
+原始机器证据位于本届paper_output/qa/support_completion_20260913/verification/：依赖安装日志、pip check、freeze、guard_results、isolated_grid/time/method中的run_result、原数值报告、标准输出以及最终audit.json。它们为内部运行证据，不在本交付目录恢复JSON/Markdown。
+
+本轮无Visual Studio GUI操作，GUI复现和团队人工审查均仍待本人完成；CLI、源码比较和AI审查不代填这些状态。未重算正式四题生产结果、未改变论文采用值、未修改历史弃用试验或其失败状态。

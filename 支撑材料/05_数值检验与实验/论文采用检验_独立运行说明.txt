@@ -1,0 +1,75 @@
+论文采用的网格、时间误差和方法对照：独立运行说明
+================================================
+
+一、已补齐的内容
+
+Python检验源码/paper_output/data_cleaned/A_environment_observed.csv
+Python检验源码/paper_output/data_cleaned/A_radius_observed.csv
+
+这两份CSV逐字节复制自03_程序代码/inputs/cleaned，分别保留241行环境记录和145行半径记录，不插补、不修改原值。
+
+Python检验源码/requirements.txt固定NumPy 2.5.2、SciPy 1.18.1、openpyxl 3.1.5和Matplotlib 3.11.2。复现Python版本为CPython 3.14.7（64位Windows）。Matplotlib也是production_provenance.runtime_record()记录运行环境时的必需依赖，不仅用于绘图。disk_dense使用SciPy内部BDF接口，换版本须重新核验。
+
+Python检验源码/run_checks.py是新增独立入口。它核对源文件与输入SHA256，将交付源码和两CSV复制到指定的新实验目录，再在副本中调用原检验程序。--output-dir必须是尚不存在的目录，且不能位于本05交付目录中。每次检查使用新的输出目录，已有文件不覆盖。输入与源码复制前后及运行后均核验SHA256。
+
+仅method_comparison.py第11行将原绝对ROOT改为按源码所在位置向上三级定位独立实验根。除ROOT赋值外，其抽象语法树与原交付源码相同。verify_convergence.py、verify_time_accuracy.py及所有求解共同模块逐字节未变。其他历史实验源码、原失败记录和独立沙盒运行矩阵均未修改。
+
+二、安装与入口
+
+以下命令在“Python检验源码”目录执行，python须指向上述版本。若在Visual Studio中运行，将工作目录设到这里，程序设为run_checks.py，在脚本参数中填相同的--check等参数。
+
+python -B -m pip install -r requirements.txt
+python -B -m pip check
+python -B run_checks.py --help
+
+--output-dir后使用你选定的新实验路径。下面的../../../检验运行/...相对于Python检验源码目录，落在支撑材料文件夹外；亦可替换为任意独立的新绝对路径。
+
+三、小网格运行检查命令
+
+python -B run_checks.py --check grid --question Q1 --grids 20 40 --output-dir ../../../检验运行/grid_smoke
+python -B run_checks.py --check time --question Q1 --n 20 --output-dir ../../../检验运行/time_smoke
+python -B run_checks.py --check method --quick --output-dir ../../../检验运行/method_quick
+
+grid小样仅比较N20/N40；time小样仅在N20比较原容差/步长与加严容差/减半最大步长。method --quick使用N100/N200、常扩散和变扩散两类、Kirchhoff与中点有限差分两种通量，共8次求解。它们验证文件布置、调用链、报告与数值检查能实际运行，不等于论文细网格精度或正式四题全部重算。
+
+四、复现论文已采用的细网格与时间检验
+
+下列网格、容差、全秒比较选项逐项根据本届原正式运行报告核对；可能占用较长CPU时间和较大磁盘空间。每个命令指定不同的新实验目录。
+
+Q1网格（对应Q1_K_analytic_J_v3）：
+python -B run_checks.py --check grid --question Q1 --grids 800 1600 3200 --full-second-comparison --output-dir ../../../检验运行/grid_Q1
+
+Q23网格（对应Q23_final_resolution_v5）：
+python -B run_checks.py --check grid --question Q23 --grids 1600 3200 --full-second-comparison --output-dir ../../../检验运行/grid_Q23
+
+Q4网格（对应Q4_final_resolution_v5）：
+python -B run_checks.py --check grid --question Q4 --grids 1600 3200 6400 --full-second-comparison --output-dir ../../../检验运行/grid_Q4
+
+Q1冻结扩散Bessel对照（对应Q1_frozenD_analytic_J_v3）：
+python -B run_checks.py --check grid --question Q1 --grids 1600 3200 --frozen-d 4.938e-9 --full-second-comparison --output-dir ../../../检验运行/grid_Q1_frozenD
+
+Q1/Q23/Q4时间检验（对应final_v6、final_v6_Q23、final_v6_Q4）：
+python -B run_checks.py --check time --question Q1 --n 3200 --full-second-comparison --output-dir ../../../检验运行/time_Q1
+python -B run_checks.py --check time --question Q23 --n 3200 --full-second-comparison --output-dir ../../../检验运行/time_Q23
+python -B run_checks.py --check time --question Q4 --n 6400 --full-second-comparison --output-dir ../../../检验运行/time_Q4
+
+完整方法对照（对应method_v1，使用N200/N400/N800/N1600，共16次求解）：
+python -B run_checks.py --check method --output-dir ../../../检验运行/method_full
+
+方法对照的冻结扩散系数为4.937655094173937e-9，与Q1冻结扩散Bessel对照的4.938e-9分别保留，不能混为同一个输入。方法对照采用有限差分Jacobian以公平比较两种面通量；正式生产模型使用解析稀疏Jacobian，未修改。
+
+五、查看输出与理解结论
+
+实验根/run_launch.json、run_result.json：命令、实际环境、源码/输入SHA、真实进程退出码和耗时。
+实验根/stdout.log：原检验程序完整标准输出及错误信息。
+网格：paper_output/results/convergence/reproduction/convergence_report.json。
+时间：paper_output/results/time_accuracy/reproduction/time_accuracy_report.json；baseline/tight子目录还保存各子进程实际退出码及对应证据。
+方法：paper_output/results/crossvalidation/method_v1/method_comparison.json。
+
+这些JSON和求解缓存只在外部实验目录产生，交付05目录本身不保存JSON、Markdown或运行缓存。单独网格、时间和方法检验无需model_route.json、四个导出模板或Q23参考NPZ。
+
+进程exit 0不自动表示论文宣称的全部精度通过。网格报告需看各级差值、实际解析误差和警告；时间报告只反映固定空间N时对容差与步长的敏感性，不是严格误差上界；方法报告需检查常D极限、fluxPathUsed、variableD.passedDeclaredTolerance及相应网格。参考阈值保留原1e-4，未为此次运行放宽。
+
+validate_bessel.py以函数形式被网格检查调用，其独立CLI原工作区断言仍保留；本文入口不调用该CLI。其他未纳入入口的历史实验继续遵守原“数值检验说明.txt”和“独立沙盒逐源码核查.txt”中的限制，不扩展为全部可移植或全部通过。
+
+本轮具体已运行范围与结果见“本轮补件与运行核验.txt”。CLI实际运行、Visual Studio GUI复现和团队人工审查分别记录；本轮CLI结果不能代填后两项。

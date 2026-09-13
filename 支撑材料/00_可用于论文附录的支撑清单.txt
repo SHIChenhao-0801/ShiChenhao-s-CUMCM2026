@@ -1,15 +1,278 @@
 ﻿支撑材料文件列表
 
-1. 01_赛题与原始数据/A题.pdf及附件目录：题面、原始环境/半径数据和空白模板。
-2. 01_赛题与原始数据/清洗后数据：实际输入的两份CSV。
-3. 02_参考文献与网络资料：现存参考文献PDF、补充网页及资料范围说明。
-4. 03_程序代码：完整生产程序、运行入口、必要输入、固定依赖与数值参照。
-5. 04_结果表格/result1.xlsx：问题一完整结果。
-6. 04_结果表格/result2.xlsx：问题二完整时空大表。
-7. 04_结果表格/result3.xlsx：问题三完整结果。
-8. 04_结果表格/result4.xlsx：问题四完整结果。
-9. 04_结果表格/Referrence Table Files：正文七份结果CSV。
-10. 05_数值检验与实验：网格、时间、解析、方法对照、阈值、守恒、参数情景等检验的实际源码及MATLAB交叉实现。
-11. 00_文件清单.txt：按当前目录生成的完整文件列表。
+共137个文件。以下逐项列出相对路径和用途；可用于论文附录。
 
-这份清单供论文附录整理使用，最终以团队实际采用的内容为准。
+1. 00_可用于论文附录的支撑清单.txt
+   含简短用途的完整文件清单
+2. 00_支撑材料总说明.txt
+   材料组织与复现入口说明
+3. 00_整理验收说明.txt
+   材料整理与真实核查范围
+4. 00_文件清单.txt
+   全部文件的相对路径清单
+5. 00_材料来源说明.txt
+   数据 程序 文献及图表来源
+6. 01_赛题与原始数据/A题.pdf
+   A题题面及参数和结果要求
+7. 01_赛题与原始数据/数据说明.txt
+   原始数据与清洗字段说明
+8. 01_赛题与原始数据/清洗后数据/A_environment_observed.csv
+   环境观测数据 时间 温度和湿度
+9. 01_赛题与原始数据/清洗后数据/A_radius_observed.csv
+   药材半径观测数据
+10. 01_赛题与原始数据/附件/附件1.xlsx
+   原始环境温湿度观测数据
+11. 01_赛题与原始数据/附件/附件2.xlsx
+   原始药材半径观测数据
+12. 01_赛题与原始数据/附件/附件3/result1.xlsx
+   问题1空白结果模板
+13. 01_赛题与原始数据/附件/附件3/result2.xlsx
+   问题2空白结果模板
+14. 01_赛题与原始数据/附件/附件3/result3.xlsx
+   问题3空白结果模板
+15. 01_赛题与原始数据/附件/附件3/result4.xlsx
+   问题4空白结果模板
+16. 02_参考文献与网络资料/Handbook of Industrial Drying.pdf
+   工业干燥手册第4版5页节选
+17. 02_参考文献与网络资料/Handbook of numerical analysis.pdf
+   有限体积法作者2019年更新稿254页
+18. 02_参考文献与网络资料/中药材干燥技术与装备研究现状.pdf
+   王乐意等 2024年综述全文28页
+19. 02_参考文献与网络资料/参考文献文件说明.txt
+   参考文献版本及实际阅读范围
+20. 02_参考文献与网络资料/数值模拟仿真研究现状及其在中药干燥领域应用展望_王晓辉.pdf
+   王晓辉等 2023年综述全文8页
+21. 02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页.html
+   FAO干燥原理网页存档
+22. 02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页_离线文本.html
+   FAO干燥原理可离线阅读文本
+23. 02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页.html
+   SciPy积分接口网页存档
+24. 02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页_离线文本.html
+   SciPy积分接口可离线阅读文本
+25. 02_参考文献与网络资料/补充网络资料/Shampine1997_BYU原始扫描_35页.pdf
+   常微分方程求解补充资料35页扫描
+26. 02_参考文献与网络资料/补充网络资料/补充资料说明.txt
+   补充文献和网页资料来源
+27. 03_程序代码/A_CodeReview.pyproj
+   Visual Studio Python工程配置
+28. 03_程序代码/A_CodeReview.sln
+   Visual Studio方案入口
+29. 03_程序代码/analyticJacobian.py
+   正式模型解析稀疏Jacobian
+30. 03_程序代码/diskDense.py
+   BDF连续输出多项式存储
+31. 03_程序代码/docs/源码变更说明.txt
+   生产源码来源和变更说明
+32. 03_程序代码/docs/运行验收说明.txt
+   生产运行证据与适用范围
+33. 03_程序代码/dryingCore.py
+   热湿耦合方程离散与BDF求解
+34. 03_程序代码/exportOutputs.py
+   四份结果工作簿导出与回读
+35. 03_程序代码/input_manifest.csv
+   正式输入 模板和参照校验清单
+36. 03_程序代码/inputs/cleaned/A_environment_observed.csv
+   环境观测数据 时间 温度和湿度
+37. 03_程序代码/inputs/cleaned/A_radius_observed.csv
+   药材半径观测数据
+38. 03_程序代码/inputs/original/附件1.xlsx
+   原始环境温湿度观测数据
+39. 03_程序代码/inputs/original/附件2.xlsx
+   原始药材半径观测数据
+40. 03_程序代码/inputs/templates/result1.xlsx
+   问题1空白结果模板
+41. 03_程序代码/inputs/templates/result2.xlsx
+   问题2空白结果模板
+42. 03_程序代码/inputs/templates/result3.xlsx
+   问题3空白结果模板
+43. 03_程序代码/inputs/templates/result4.xlsx
+   问题4空白结果模板
+44. 03_程序代码/numerical_design.txt
+   离散方程与阈值事件说明
+45. 03_程序代码/q1Model.py
+   问题一模型配置
+46. 03_程序代码/q2Model.py
+   问题二与三共同轨迹配置
+47. 03_程序代码/q3Model.py
+   问题三严格达标时刻判定
+48. 03_程序代码/q4Model.py
+   问题四收缩模型配置
+49. 03_程序代码/README.txt
+   目录运行与依赖说明
+50. 03_程序代码/reference/Q1/sampled_solution.npz
+   Q1冻结采样数组
+51. 03_程序代码/reference/Q23/sampled_solution.npz
+   Q23冻结采样数组
+52. 03_程序代码/reference/Q4/sampled_solution.npz
+   Q4冻结采样数组
+53. 03_程序代码/reference/reference_data.py
+   冻结数值与精度参照常量
+54. 03_程序代码/requirements.txt
+   Python依赖及固定版本
+55. 03_程序代码/runDelivery.py
+   四问生产计算与输入预检入口
+56. 03_程序代码/runLogged.ps1
+   生产运行监督与退出码记录
+57. 04_结果表格/Referrence Table Files/q1_paper_moisture.csv
+   正文问题一含水率结果表
+58. 04_结果表格/Referrence Table Files/q1_paper_temperature.csv
+   正文问题一温度结果表
+59. 04_结果表格/Referrence Table Files/q2_paper_moisture.csv
+   正文问题二含水率结果表
+60. 04_结果表格/Referrence Table Files/q2_paper_temperature.csv
+   正文问题二温度结果表
+61. 04_结果表格/Referrence Table Files/q3_paper_moisture.csv
+   正文问题三含水率结果表
+62. 04_结果表格/Referrence Table Files/q4_paper_moisture.csv
+   正文问题四含水率结果表
+63. 04_结果表格/Referrence Table Files/q4_paper_radius.csv
+   正文问题四半径结果表
+64. 04_结果表格/result1.xlsx
+   问题1完整计算结果
+65. 04_结果表格/result2.xlsx
+   问题2完整计算结果
+66. 04_结果表格/result3.xlsx
+   问题3完整计算结果
+67. 04_结果表格/result4.xlsx
+   问题4完整计算结果
+68. 04_结果表格/结果表说明.txt
+   完整工作簿与正文表格说明
+69. 05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs
+   MATLAB与Python结果比较程序
+70. 05_数值检验与实验/MATLAB对照证据/runCrossCheck.m
+   MATLAB独立热湿模型对照实现
+71. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py
+   检验模型解析Jacobian
+72. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py
+   轴对称假设与轴向影响检验
+73. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py
+   数值解与圆柱解析基准比较
+74. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py
+   检验模型BDF连续输出存储
+75. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py
+   检验所用热湿模型核心
+76. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py
+   检验所用工作簿导出模块
+77. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py
+   运行监督 输入源码版本记录
+78. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py
+   既有绘图辅助程序
+79. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py
+   检验所用问题一配置
+80. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py
+   检验所用问题二配置
+81. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py
+   检验所用问题三达标判定
+82. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py
+   检验所用问题四配置
+83. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py
+   既有实验任务入口
+84. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py
+   旧模型流程入口 保留原运行前提
+85. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py
+   圆柱Robin与Bessel解析基准
+86. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py
+   空间网格加密误差检验
+87. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py
+   BDF连续输出存储一致性检验
+88. 05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py
+   时间容差与步长敏感性检验
+89. 05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py
+   解析误差指标历史诊断
+90. 05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py
+   描述序列对照及历史趋势诊断
+91. 05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py
+   不同积分器的数值对照
+92. 05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py
+   模型能量收支检查
+93. 05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py
+   能量闭合历史诊断
+94. 05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py
+   能量闭合进一步历史诊断
+95. 05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py
+   历史等温线闭合试验
+96. 05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py
+   历史等温线接口诊断
+97. 05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py
+   历史Jacobian注入探测
+98. 05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py
+   潜热情景计算
+99. 05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py
+   两种守恒通量格式对照
+100. 05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py
+   参数扰动与敏感性计算
+101. 05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py
+   阈值事件和标度检验
+102. 05_数值检验与实验/Python检验源码/paper_output/data_cleaned/A_environment_observed.csv
+   环境观测数据 时间 温度和湿度
+103. 05_数值检验与实验/Python检验源码/paper_output/data_cleaned/A_radius_observed.csv
+   药材半径观测数据
+104. 05_数值检验与实验/Python检验源码/requirements.txt
+   Python依赖及固定版本
+105. 05_数值检验与实验/Python检验源码/run_checks.py
+   网格 时间和方法检验统一入口
+106. 05_数值检验与实验/数值检验说明.txt
+   检验程序用途及运行前提
+107. 05_数值检验与实验/本轮补件与运行核验.txt
+   本轮路径适配与实际复现说明
+108. 05_数值检验与实验/源码文件与校验值.txt
+   检验源码用途 来源与SHA256
+109. 05_数值检验与实验/独立沙盒运行矩阵.csv
+   既有沙盒逐任务运行状态
+110. 05_数值检验与实验/独立沙盒逐源码核查.txt
+   既有逐源码实算及失败范围
+111. 05_数值检验与实验/论文采用检验_独立运行说明.txt
+   本轮路径适配与实际复现说明
+112. 06_绘图程序与数据/CSV/图1/moisture.csv
+   图1径向含水率曲线数据
+113. 06_绘图程序与数据/CSV/图1/temperature.csv
+   图1径向温度曲线数据
+114. 06_绘图程序与数据/CSV/图2/assumed_platform_4_60h.csv
+   图2后续环境平台假设数据
+115. 06_绘图程序与数据/CSV/图2/observed_0_4h.csv
+   图2前4小时环境实测点
+116. 06_绘图程序与数据/CSV/图3/moisture_to_event.csv
+   图3中心和表面含水率数据
+117. 06_绘图程序与数据/CSV/图3/temperature_0_4h.csv
+   图3中心和表面温度数据
+118. 06_绘图程序与数据/CSV/图4/centre_near_event.csv
+   图4临界附近中心含水率数据
+119. 06_绘图程序与数据/CSV/图4/drying_main.csv
+   图4全域含水率与达标曲线
+120. 06_绘图程序与数据/CSV/图4/event_markers.csv
+   图4连续事件与严格报告点
+121. 06_绘图程序与数据/CSV/图4/maximum_near_event.csv
+   图4临界附近全域最大含水率
+122. 06_绘图程序与数据/CSV/图5/moisture_profiles_xy_pairs.csv
+   图5收缩域内含水率XY数据
+123. 06_绘图程序与数据/CSV/图5/radius_observed.csv
+   图5原始半径观测数据
+124. 06_绘图程序与数据/CSV/图5/selected_times_and_radii.csv
+   图5所选时刻及对应半径
+125. 06_绘图程序与数据/CSV/图6/scenario_comparison.csv
+   图6经验边界阻力情景数据
+126. 06_绘图程序与数据/draw_figures.R
+   六幅论文图的PNG绘制程序
+127. 06_绘图程序与数据/PNG/图1_径向温度与含水率.png
+   图1_径向温度与含水率成图
+128. 06_绘图程序与数据/PNG/图2_环境观测与平台延拓.png
+   图2_环境观测与平台延拓成图
+129. 06_绘图程序与数据/PNG/图3_中心与表面热湿响应.png
+   图3_中心与表面热湿响应成图
+130. 06_绘图程序与数据/PNG/图4_全域达标与临界放大.png
+   图4_全域达标与临界放大成图
+131. 06_绘图程序与数据/PNG/图5_收缩半径与域内含水率.png
+   图5_收缩半径与域内含水率成图
+132. 06_绘图程序与数据/PNG/图6_经验边界阻力情景.png
+   图6_经验边界阻力情景成图
+133. 06_绘图程序与数据/图像校验.csv
+   文件来源与校验清单
+134. 06_绘图程序与数据/数据来源与校验.csv
+   文件来源与校验清单
+135. 06_绘图程序与数据/绘图复现说明.txt
+   本轮路径适配与实际复现说明
+136. AI工具使用详情.docx
+   AI工具与使用环节记录 可编辑详情
+137. 源码去注释与沙盒核查.txt
+   既有去注释与独立沙盒核查范围

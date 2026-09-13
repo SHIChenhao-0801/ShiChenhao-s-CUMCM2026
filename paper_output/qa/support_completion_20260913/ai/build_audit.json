@@ -1,0 +1,51 @@
+{
+  "source": "药材热湿耦合模型与干燥时间计算_附录修订版.docx",
+  "source_sha256": "b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c",
+  "output": "支撑材料/AI工具使用详情.docx",
+  "sha256": "095d965e3540a62c31d7b6f43bc8bc1a06d2b99df954a9ce1953fae7810633f6",
+  "output_size": 42587,
+  "expected_pages": 6,
+  "tables": 7,
+  "source_report_scope": [
+    "syntax review",
+    "partial debugging",
+    "problem interpretation",
+    "literature search",
+    "result checking",
+    "formula organization"
+  ],
+  "unfilled_fields": [
+    "Harness client version",
+    "Codex client version",
+    "actual use dates",
+    "model assumption/design usage confirmation",
+    "source and paper location references",
+    "three actual prompt/reply records",
+    "adoption details",
+    "human verification and main-author confirmations",
+    "truthfulness confirmation"
+  ],
+  "no_invented_prompt_or_response": true,
+  "human_confirmation_not_preselected": true,
+  "render_status": "PASS",
+  "rendered_pages": 6,
+  "page_images_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "layout_findings": "No clipped text, broken tables, title border, overlap or missing visible glyphs in final six page images.",
+  "ooxml_crc_valid": true,
+  "all_seven_stages_present": true,
+  "human_checkboxes_not_preselected": true,
+  "metadata_and_anonymity_checked": true,
+  "comments_and_tracked_changes": false,
+  "source_unchanged": true,
+  "delivery_format": "DOCX only; rendered PDF and PNGs retained only in internal QA.",
+  "ready_for_human_completion": true,
+  "ready_for_submission": false,
+  "render_runtime": "Codex bundled Python 3.12 and documents render_docx.py; user-configured local LibreOffice D:/Document/数学建模/tools/libreoffice/app/program/soffice.exe; bundled Poppler."
+}

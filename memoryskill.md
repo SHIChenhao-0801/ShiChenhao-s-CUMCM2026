@@ -45,3 +45,5 @@
 - 上轮附录修订稿原SHA00e6da88…，正文前470XML/前43页原样，36源码7715行、183页；当前用户再改后以本轮b6fbac8f…为准。详尽旧QA在appendix_revision_20260913，不继承旧版式PASS。
 - 早先完整附录247页47源9917行与微信发送证据在appendix_full_20260913；此前格式与语言33页、公式文献31页、完整论文218页均为独立历史版本，详见归档。
 - 初次438文件目录/旧ZIP不可移植FAIL、103文件TXT整理/再去注释106正式文件均各自绑定哈希；旧脚本assemble_support_materials与finalize_support_materials入口已停用，不能用它们恢复AI/旧目录。finalize_support_txt旧清理期脚本也绑定去注释前源SHA，不能不核查直接重跑。
+
+- 2026-09-13提交前补件：依用户四项新指令，支撑材料已增AI详情DOCX（6页，真实交互和团队确认待填）、06绘图R+14CSV+6PNG、05两份输入CSV/相对根路径/Matplotlib依赖和运行入口；三项适量检验实际通过，历史失败保持。完整137文件清单已生成根目录《支撑材料文件列表_附录用.docx》（8页）。论文原DOCX未改、PDF未定稿；方法对照附录需同步一行ROOT。用户按Esc停止Computer Use并催促收尾，本轮VS复现未完成。证据：paper_output/qa/support_completion_20260913/final_delivery_audit.json。

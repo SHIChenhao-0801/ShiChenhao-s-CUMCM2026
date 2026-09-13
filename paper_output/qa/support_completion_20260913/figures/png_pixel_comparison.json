@@ -1,0 +1,1351 @@
+[
+  {
+    "name": "图1_径向温度与含水率.png",
+    "identicalPixels": false,
+    "differingChannels": 31064,
+    "maxChannelDifference": 14,
+    "original": {
+      "info": {
+        "width": 2160,
+        "height": 1380,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "80754fe929b27ac081c05fe709bf88238a642eb8fb636690c8947b344e231b91",
+      "filteredHash": "dfc098b52dd406481201377fca158441c44ae899dc41469663c87b1f18e805f1",
+      "pixelHash": "f2e030c72b6d654cdec56d7039c7cf11865d6ddb24c00af6f8e5b972151e65c1",
+      "filters": {
+        "1": 67,
+        "2": 650,
+        "4": 663
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "7a9d57951c222496e8dc40ef05bdcdccb046c814a48abcf777d07ca47e4a72b0"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "ba006f4ed7518599301c76cb89d3358beb4c46fb5acbb09b69687e7a9baf7a3e"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "89ff797046561dec080b64023b224238cb893663a987e8de3fe19823a6a4696c"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6f079a468796c25e4d5ed8462e9168940c0336901d47eeb1be3a369a6116600e"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "88f9dec4fa4dea9559a12c63fbcfd39ef7a575925a005c65c28f3c88e3f704fd"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6ec7964b3d40347ce4cdcd0422e4d41c94f15e840bde77c43b06d398d4fc7681"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "ce0b1dc992f22cb5d10189088d45a48d66198a4b50d3e6aca8a0b447986ccda6"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "b75c8526b79ca5a909486a029afb398c152fc3227a1718fe8aa24ce2d448d595"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "64c18b9e700b320f8168e3c2c5cf2cb126cfbea3763fe0ef6932c23440009188"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "414c6d9df05ce9976f8ec7733679c7d950e090d52955c76a77ecd5dcdc6b3e82"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4c2c63604a00935451a2d6fbad5372648db8661db1b2b2b7de81ab2d7a4e362c"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "168eb9744cc3662191d69334c54761c60e4b6d690fa7920d5f4023b0733cd242"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "1ebe8b5dccb329f97d99099757320f672e9f8860f7efb497e996848927ebaeb1"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "322b43d7fe27025abcb122f4069c0f61642720e356528ffe0a71607fccf68d85"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f0a83bdab7d86d90a7dea67d17ce6e179b27cd428d6051cc80e03ed5a2f67851"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "0e6b1787a4827194a546feed7674bed9a3ce03096499bf3857eb2a65abe90090"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "613328fdb892292c51e87c9ff1b77a049b7a55b7044753200230d788a2ca50e5"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "17aed40fc2353f4505668ed4222f8c1af7999c4c0ef42f2fe4972b0bb709b967"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "069749a1799f00c60a0929a637529caaa3521622f34d995ffd27ec24c3f7a46c"
+        },
+        {
+          "type": "IDAT",
+          "length": 2651,
+          "hash": "2cdea421da383eab505a2b721400dff87a545abf319157b5bf83bc570217c93c"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "redrawn": {
+      "info": {
+        "width": 2160,
+        "height": 1380,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "fbd0b8d5f3cbb38f1cfa5cf8bd1948099cdf10f77e9494f7b61362359800675f",
+      "filteredHash": "40604f6a2adeef73d10567f3204c9846b6c4709d0e3d50e17345153fb0c7fa24",
+      "pixelHash": "5a51d01729e383a2711b7f96274f75567118b8aca10d229b217ecbd0938d6702",
+      "filters": {
+        "1": 69,
+        "2": 650,
+        "4": 661
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "7a9d57951c222496e8dc40ef05bdcdccb046c814a48abcf777d07ca47e4a72b0"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "8c6746ddc14677c4f0a28fe29b628eab954be5033c7973ffc362cf7035f380ec"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "d6769bb44c7994eabd5766efc478f8941b0f02333002a8084eec36458606bab4"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "60cea80a781d848cc99001ec182c8c70d751032d039ad7dfd6c63a24dea75c94"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "42a1eb204ed584c8811c41fb4d165f495cb3f0d9bd74d6909eb05adab378a76d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "1cd778dd32b8392f48631b763e12be8ce28d532908e3027abf59ea1e0fa3bb1d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a9cc098e2bf46284401a8a7bfcd0a15c27b59511db1edf3097a79558e67e9a46"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "59bb70592ad9a3496c7222252cd0f172506baf5dafcfca80351827b190148797"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "391e35ae74c31b577063f9a3649e0e59b1e11fbf51e4e63a5a5fb40210a5a1e8"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "195127a6ca1c053f8b5d11dfe84b0a2f52473996dd6ccbcb85d73a5f8906efc1"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "756a2474ca08c26229fefbc1b1251309deb73c272e700039966210b56360ffa6"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "87c88bb0a2540bf774b97c0bba35c724bcf81c8052a34f21547d725d13b149b7"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f66a88d2a2b9e79168f2539f470e1604af3eadd74676d28660094db49e66fd75"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4ca501098b43cebc957af15b528fec9be2b102bbeee9c9f14dc2d9d1b55db83f"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "d1d85facc5a34fbdae6501a007a6e97bd3987bd59ccabef3b1d33c5b7c62f1da"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "65bdd4957a77e06f019094b549492dcc2bb477683fd40eac20c7f5052893f405"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a226e999d881ffb1f59938ef78d06ebebd53b988d513f8644d5aa1602e2030dd"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "65cafe2cc1a2ef92619c5a197b6f6a91c419dfeddb0b087c56b118223cb43bf3"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "275b8e28029be41f3e30fff3d30132beaa6fe10a537113cf4c994a9623edb35c"
+        },
+        {
+          "type": "IDAT",
+          "length": 6036,
+          "hash": "a2f33da49648af47cf3590ec4e75de799657c3889b488a9c8d3d6715d03d3026"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  },
+  {
+    "name": "图2_环境观测与平台延拓.png",
+    "identicalPixels": false,
+    "differingChannels": 82032,
+    "maxChannelDifference": 14,
+    "original": {
+      "info": {
+        "width": 2160,
+        "height": 1770,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "98d0a0924e31ce857861fe0cdee02d22134b9a24e99c98d084cb856801a5112d",
+      "filteredHash": "710b81735630284ff1aaa83d525f3bac37cfc9d7fcad3412032530f4d7fc9104",
+      "pixelHash": "29d310d55d0cde7b7d73582dd9f93cb8c9736f2bb0e247764e3254bffbcbd950",
+      "filters": {
+        "1": 63,
+        "2": 1061,
+        "4": 646
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "a16f201be9e0428aa9d03574a0b3ab2e6876bcd5d4bf5ab54004c1f7c58ad3bd"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "d3701f14d5ac245a0b74d24c58735dd4bbc77a029d447762d7ef98fc536cb2fb"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "b7fa24772bcf4b0d443d779059f1453d141c7123fd4ea2b0eac89e466e7d2ac2"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "e325d38c223ee638822fb27fe86ef5f29e4b19658799f991263ff3ca454dd096"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "95f0c40107702946c406e62cff74e52f474e04284b4cbcd990a3c35d48e2f3aa"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "15932eb9971d5aeaf5fe26f907cce882185b54020edd59cec3d3b54d94591777"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2cfa53ded170a578bd9b9e19aa9437283860eabcb354253e649fca4a34d028f8"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2ac7cb27bb84d9574773583f69bd6d66264dd6fbd8daacd4f701948ebfdc88be"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "3d997cac53f3957ddf756757deec9b651efdb07e5748216b8e0d5134aae1e049"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "bb886aa00540f6534b442ad8536c437934dbc95f23902c9abdaf17c3d4dd0def"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "8b4b627762be23e311a4c649a46e1fe4631f74dfc899dbe5e873dd8fbefd0238"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "1053a9eb6919f12efea8d701e3229b08300f9743fc699566a2f48eb9cfc006ca"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "861d6261809847c0fe140b6c97deb30c67e76c508f3210693f84d722b19e7d6c"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f3956e62cabf42a288e34cb65b0412887990f20ef126beb2e74d726c7c1d81bf"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5f290a4db25b001d9179d97c6ca14006637a7ab2dc0c3733272e0eda18c6998e"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "9cb72b08808e81e64b54885c24b6a61795ff66b55883180313365874ffdd6111"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "c51dae4220d2842a892eaf51ded48d1ecae16144b23aa30eaae700452f2f9e21"
+        },
+        {
+          "type": "IDAT",
+          "length": 5116,
+          "hash": "e6b6d64044c0d3252e0551ac7178d9de6c29da9dac2c6a0254cdc5272dc6cf7c"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "redrawn": {
+      "info": {
+        "width": 2160,
+        "height": 1770,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "0423a18c33a0722120637a21121515a42104b1860f0a147846d366195e3cf62a",
+      "filteredHash": "4ebf3055e30c80a7ea718723bee7be4606cefd65322a33265d1c5c11fea1b716",
+      "pixelHash": "7ff5891bcf45829e9f66fd37d5b10fcb028d3899f6ffd773eb2ed324335eb20e",
+      "filters": {
+        "1": 63,
+        "2": 1060,
+        "4": 647
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "a16f201be9e0428aa9d03574a0b3ab2e6876bcd5d4bf5ab54004c1f7c58ad3bd"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "56a442d5e68b61084c3fb2d9ea13180dfdf8bcc5bf5b3652b1309bdba4c4d268"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5f5801338c96de4a84c1285fbddb140bb661d397142f90bfe6866f4e468656b3"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "35cff67788ef3473ec647b50591652193fa953f345787c8ed45cb386a441c1a0"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6e6b1ff86afd7fd3e5f83ff958398384e890a331b50b540f01e975e7cf0a29ea"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4ddf5dcef886fc272a2b4b9058beb7822d97184dea15ff8955b982d19b7cb4e8"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "488dae1bf1d9393a99ae38eb3b8d3d283171e13dc0dbe33b8b234bd90744ab32"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "75d3146ac882b3465729464a06c6b9fd76c78b3178c029645ca9eaf1dc668cb0"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "d21b1ef8dd2a7e92d0bd34fe820c503753a746cced5bbe210f86ee1e8f8bb347"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "d483ecde8dc9e06083fed52e02e13464e0a8996eba667a4aed4ceb73a6bfc0fc"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "8fe8225b940e86950595a54b5cc76a3a19bf5b1d0510f4ae966e1e907c995460"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a16c4f44d128b5357ebeb03fb8e79f7b75bca04965e840f9542bf1884a6d0166"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a2223548fc3626da81c49511f8cf06a1c5ced8a09dcfa7d969a72d43386c4867"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a9ded42bdf10863ccfd1b3c594c38bf51a071afcc262f3dfa94b0952b6664414"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "740bdba55664a21d92c8a7cd42280974a324c1141908e42953eba318f68e23fb"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2620c984ee97b4d7b1ae1e289ac1f9ac0172fd9dd810b02a39e62a2dedd8f7ed"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "76274ec253e3b0e01065c1b214e0c1f6815a76c38e315889237ae3a8d805a956"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "e0cd3339fc96095772f06c031e52542ed1db06d1da8a9a0f4bfcb0622b9e3b38"
+        },
+        {
+          "type": "IDAT",
+          "length": 3993,
+          "hash": "96de0b245fdd636d5073e9145135d93b3db0b48d5a19bb84e0db6a9469203a5b"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  },
+  {
+    "name": "图3_中心与表面热湿响应.png",
+    "identicalPixels": false,
+    "differingChannels": 35276,
+    "maxChannelDifference": 14,
+    "original": {
+      "info": {
+        "width": 2160,
+        "height": 1350,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "4bba35b237ea718148e0f31ea0c30160c8ef8bcd9525130908cf53083075a5a3",
+      "filteredHash": "dd5b3a62ae360aa3ab66e2f8e4fac69768f50247426fd761bccf6a1674315d16",
+      "pixelHash": "b2898345b4b79cd75626b1e8f117a0afa1c8cc4fc784af08c1f6441e2999864a",
+      "filters": {
+        "1": 33,
+        "2": 848,
+        "4": 469
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "b1e94986c2197d0bf7873da26dbd259455d31d5ae2bd53d77b3a85d35d67a331"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2e44e67fab7de2537563e255c9d4e20fde2aeacb44b87aad5eb970dde307189c"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "618c427e7579e4b854abeb5efb38210b5856c0ccb3d1f34b140ad999075a581c"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "89dec38bbf1870ca59eea62993f83062cab04e90622473b450483264d47a5ed4"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f3b0905ffe682240c249d434021dcfa0b2550c9ba6a0403fd89740e0297df2f9"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "60ca63eda8d4d6759394f0b75a3a8d3ca5b98575cc164466486041cdff1f8a5e"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "35cca590e0f190d18be0e26c06265ac9868c93fa79ed2ef8a9d031e3bda601bb"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "827a348c458ef14a51335199d70b0defe7cffba8dd171f461d18f1f514575bda"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "afca855ee55b1c058709b61e80eb7eefd660e97a8f76cc7708d93de22b0baabc"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "26fe9ddd40cb297cf1a5c4ee40a55feedf89c391abfe8ec83e6ad812d08fb793"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "77e62c004cea925876d2fb6cce9a865bccf9c8d7c46e3d4774c39bdcb8322094"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "b26bf6174f18a6e61945f96e87e939de983c9800cf054e5a7f48ea2facdf68f2"
+        },
+        {
+          "type": "IDAT",
+          "length": 6462,
+          "hash": "ef563664a654596d93d777948ba255657f8c233d95d146dd14521314cc229244"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "redrawn": {
+      "info": {
+        "width": 2160,
+        "height": 1350,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "ba77298c8d80cecd1124564a41fd81a9424e7855ef7c260c1ac8d29304134869",
+      "filteredHash": "73e779df5b482ed706f103fa1392a90fa52f999c62e10cc9a08fe388cf2727af",
+      "pixelHash": "b7097de334ac28e4a5218a1c4c46998adb875a6224197e79d4932cbd4ddb14f0",
+      "filters": {
+        "1": 37,
+        "2": 847,
+        "4": 466
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "b1e94986c2197d0bf7873da26dbd259455d31d5ae2bd53d77b3a85d35d67a331"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "76e44e7090046dfa563b660360a47bf09342a30139ad7fc269f13979aaffeaa9"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5185323d79ead8be0c8889cbb3c60e5d1f8b9c466aef57738e8154aaea353555"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f96994525e3616d2655057c3a8e735290cb6bdc7fabc32138a3c7113e4d21b97"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6ad600d16c68a6ec15fde105e80379d01adecf0c2fb2c0d8eb7913cb7122021d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4112f7c616665222491aa8aff83df5d2b158633c9e203adc20e990f30de90e6c"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a22d00c437b2e2b00e6b4633086f5a3975586988dfcecb6c937876ab3fe5b2cd"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "57a8182ffa666d3b5b43569e822e12bbed17e79c8edac3e2e5a71627e6656e99"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "05f138d59f8c42fb4f5e46aff32f87b7ca7a3f95c588f041e006f08b32e131f5"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "9c5421a4caf58da684a63c4d0ca6d6d04f48ad7b3b4c7130e845d8efba0d1c38"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "cf1ac33d58eeb9e587229b11571288e65d543fb8ac3233907fed38fdbf92d985"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "700455fc864f5143bce61e22c9994780fcf13953945563a63d78df40588f2f39"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "7d109e8f0150bd36931a07a3a72407e485368b1133a19b9e139ac94bf8d672f4"
+        },
+        {
+          "type": "IDAT",
+          "length": 1963,
+          "hash": "213e02c3877adcdd2c15447a2f89b5cb4cc49e482c97aeae9dd4743eff9237ff"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  },
+  {
+    "name": "图4_全域达标与临界放大.png",
+    "identicalPixels": false,
+    "differingChannels": 68772,
+    "maxChannelDifference": 17,
+    "original": {
+      "info": {
+        "width": 2160,
+        "height": 1470,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "04a96aa51b55e2f14e68bd90a5797f516830394b28c1c667f8b29ff8515434f5",
+      "filteredHash": "7e990820282c25eda63064d127849b227bb7e054d7f46c6fb826e557286244d7",
+      "pixelHash": "08351d8c2dc09183fdcfd11888e759a2038bdc37088bd81620f43211142fdf63",
+      "filters": {
+        "1": 42,
+        "2": 928,
+        "4": 500
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "4d7245dc21839388920780692ffee3499d3ffd66dd0237cc310222ef7ecdc852"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "8d610b32424a93f4f93754087108a2ac05011f37edb103dd471aef2df477fa19"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f9c7cc08dd845cf42cec14b568756ac0e31081ce74f39ca8396359389cfe237d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "c49c9eff60cc675d0e262794363c84be965cafc44bb3a7ae3cfa0d43d0bff20a"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "188c92b8143cc932556103d4c0837e6ca074645811b20965bf0cb2d7e1f40a72"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2cfa6c7bbdf5f0771c774d11ed6049a586317a99d1ddc5e88cb7187b273c9e28"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "82fa2cbb88ab96f1abdd4c23f6598eb7dc8d5f2c60b5c2629c9fa46b323f7841"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "9f8b06168badfe0e71d4287f504f338c0dc04df23f7c2a731a1b6a0f9be98334"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "456a9ae091ce6ca1be83bf59e27422dde09766c9d05ace5635049d56187b784a"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "d45ea15adfb685a40a8d01ecb327a50b2a57131afd48abafaa1b26de45a7daa2"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "9e2adb9413e9b911f918fd29ade55670b05065979a0fb4bd4138df6435491fa7"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f092a22771ebe52ec803c19b8733ce6ee566f36046d72da819c7ca0d0bb0e07a"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "8a3f03c913cfef48c33297a9504a5875738101e14ce39206097639d1b9bdeaaf"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "cdbc5d2b4a82abdbd31bbf3e63d8935458d0c4d2684f2b6e324e2e4132780d60"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "3e0016565f074cabec971a5b8f1c2cce730c2b52f1b4a86b891e5d00eb92796f"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2f7f4955cbfeb7cf2d779e8a7aa4d3aa24ad6187b5d31c796de657e98ae3965b"
+        },
+        {
+          "type": "IDAT",
+          "length": 4122,
+          "hash": "9e026d27b082777707f6f8cd27ec5a5e18a751aa530b05fa316dfe6d045a2c4b"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "redrawn": {
+      "info": {
+        "width": 2160,
+        "height": 1470,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "8b5bbf39b92f2b16c7113f9e9c483206f54de42a14f1d473d1016a1952127da6",
+      "filteredHash": "c122545d229a426deeab13353253306a663e12847c5d25e1a71dff9fda1ab182",
+      "pixelHash": "632578d62afa94382c2872ae6ad20e66f9baad10543233a003c736f237a61fda",
+      "filters": {
+        "1": 43,
+        "2": 931,
+        "4": 496
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "4d7245dc21839388920780692ffee3499d3ffd66dd0237cc310222ef7ecdc852"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "80a4721f99c672a89dd9fc946d2546ff1579c37714140559ec27262445562d45"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "eae7713b90f595d04ef20cfefbaa2907de11d48eb8644b7fa742d2953d63073f"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a934b979c291011a1374fe882543dd64b46656ab0cf4f6cfdce5c7ff3ac704d8"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5015a8da7720873ff85730f5e482d78c1025ff4793c7ae0168bd0dc7edee5692"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "1eacc03e5185fee86fa86276c36c65e66a34c30e18421e491544f0eb27c95795"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2383438c5df32abc65609de68c1b0955f23167ea1e34669a11a68938ff092fcb"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f3c25c1877a201ff766a954899d0ef4d83b9eea70a9d95aee9496d6e15885868"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "fab1683618cd6ff0cbf2d37040cd7b764d306c8984b4e4aed50e9ca648704d87"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "afd3d57f127f17481752f9434ba19c4276dd9986ee7baa1cda41b550a61d0737"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "14d056bcc1e08ef70dcd8cd77963497c99dc5f9cba433b90ac7a0d4e5ff439c9"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "c054ade8cbc36ec915c48c040de82cc3e0b042bde80614d5044c308ee4f26a9d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "21f1402388b3269f0d6a2a01abeda55e11ee89810495ded521f5d9473a3fdfd5"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4c2af1baa8a998fdc2e2b8cb873602f5ad9167857bbec7df504fccabaef4c9b1"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f30504b8caeaa3be5cba3d0b7906a4cf272ebc62b1d26857d44e8c50d510b413"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "687fb12f06b3bd4c2283644e37dc13886b59babc8e0727c81b69d3420908a191"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "01a258cf618116250bcaacd35e6c4845403ce208243c9697637e3e2ad267daab"
+        },
+        {
+          "type": "IDAT",
+          "length": 3257,
+          "hash": "c34ae3b00faf461270655958a88ba94c6c1744f5a4a21e41c5435e140252cd8f"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  },
+  {
+    "name": "图5_收缩半径与域内含水率.png",
+    "identicalPixels": false,
+    "differingChannels": 50530,
+    "maxChannelDifference": 14,
+    "original": {
+      "info": {
+        "width": 2160,
+        "height": 1380,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "42e97f43f9d079bc90cc4a3326c00a0689898cfce5c8b2ff06d0815c353dd518",
+      "filteredHash": "f9f3a4db2ed6513429edc1039ee95b1cb127df461b3764c99adbc4a833307fa9",
+      "pixelHash": "22b8064e486630a12e7cc24ba4a46a15fe29190c477e628bd45cf793cee774cd",
+      "filters": {
+        "1": 36,
+        "2": 848,
+        "4": 496
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "7a9d57951c222496e8dc40ef05bdcdccb046c814a48abcf777d07ca47e4a72b0"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2a9e75563eadb5b5a14165e1e01efad30e8947b53f83998399ef7239a7e43685"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "84638569924b31bba11031482a740e4727b3334815027825612358d724c070a6"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f54b483f44f9efebe05a9232e99c6db973e520a8ff934b7e591fcad8be3a1da4"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5e5b53220a8ab8c703cae76f1953c6c3cb8049d9d72138a5efd8d458de8055d1"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "9b3df8194237e492573ac8b5474d43a54814c5776e71223447c536f231b03c53"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "495d54776e996b7a724c0d8500faa271907ef8277e6b21e446d8730a297fa06f"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "3bbe99f861add564788f05232ec01401b4d3f25ab332b92e34c6afbd1e79889d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2167182e64281ac2964c20f9474cc3c996ed44308dab8c757be55e37f028fa97"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "975b0b61f4cc2ccce7f6c82b027aefdd3146f7fc2781fb6c9df64457564bd6d1"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "c3ca16ef3f0c638a348c020d4bcf223bd78da86f2e3d22be59fd984c5a734f41"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "540371316a64888886806514fef4a979781811b8f05ee3e3003a0682f317d6cf"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "cd931a89362f78cfa4f0fbe21f415e2f62653226928e52d13f84b43f8c49cfad"
+        },
+        {
+          "type": "IDAT",
+          "length": 4210,
+          "hash": "df3f3edafd330d7ef3edbb9514fa17cc1c178b0444f09cf4553b2a33bddbea63"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "redrawn": {
+      "info": {
+        "width": 2160,
+        "height": 1380,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "d171e25f1d00970bb36b0ecfb117199b87bb8dabceb87ae0cedaa34e443223ba",
+      "filteredHash": "39f61220a72b3e5a64296a9772abf7a1643b8817090dfc073698f9a4dcfbfddf",
+      "pixelHash": "e8ccd90b86e253ad6dc7a73e8def2e79ba1a7f3577b5c8f011e9a5b61cde1770",
+      "filters": {
+        "1": 39,
+        "2": 849,
+        "4": 492
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "7a9d57951c222496e8dc40ef05bdcdccb046c814a48abcf777d07ca47e4a72b0"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "431a8f9a812a92b360b05bf57ec5460976e5817f5d5dc7d60d1826c941b13e7a"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "17c2df074cbb6c15914784032367edac5fb1e03dfe2ba083471665dac68e7cf3"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "b1669c5f483eb318fb956662f77c7b6c46bb62ae84c659daacfe810433d25ad4"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "0d0739365ede59b89dcfe14d50a82b176df5262851d1e14854c516941cc74400"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f4a5f31572a13f6e8f46bb1cf7e9f28b81be43956d878f4b5f9931f8e07f0ab9"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5e02457a95128fdd8107e9e45eae8cba23d277ffbb9e3df15b89bd333a7d110d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "bb688b66347e27703025bf8f25ef902a6423ef0e523378b21e4dcec20339fb0d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4ff68fdce835cb697ce08b67f7dc55cfc841ca07538308e738fbd35ebb1d088a"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "afd1403204194a3a8dcbb03ddec10a7e3a9aa209d293c8be99669b7d44068868"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "893e83b022833908468cf4adc1e6f57388922a6cc121aa81e707a4c6f856ed28"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6c93a9406e134f0059cf9dc5062943843dc737f524807367e27656c05d4f498d"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "eae24511525c2255999a1f81b692ce2f50937bd37bfaaf5b55b57f0025a3c022"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "c599d32eb7702408b8317c1113396852eff43f6288c2aa3d66305b76a0f93b76"
+        },
+        {
+          "type": "IDAT",
+          "length": 1216,
+          "hash": "621389d5c05fca36f25d34faaa989b8cd24ced453bc9b3892b7f914082d6ba69"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  },
+  {
+    "name": "图6_经验边界阻力情景.png",
+    "identicalPixels": false,
+    "differingChannels": 57018,
+    "maxChannelDifference": 17,
+    "original": {
+      "info": {
+        "width": 2160,
+        "height": 1380,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "31ab305b18917d4768a493589754ebbe30a12821952dead10e029197a54d2931",
+      "filteredHash": "d44d8003d3ec4dbd1928069ad060f64b873fdb6aaf3a06804d4e208333951a7d",
+      "pixelHash": "737044793022729f388232fd4beeda368d48ce9fb6da18f4978e7c9b13809a53",
+      "filters": {
+        "1": 79,
+        "2": 555,
+        "4": 746
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "7a9d57951c222496e8dc40ef05bdcdccb046c814a48abcf777d07ca47e4a72b0"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "0f6cc727b7a4697b94a5ae5f4e24908f63453ca68e04126589139d6b73a5c040"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "85112d054a670a947338b5bdb05b5a75a4eb947be0967ed8c79290b47e4b24c9"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6265e0cf54ed11e95284cf071877fddb28b775b3109e5b7c01a9234928436653"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "37049caf91f2b803ac28c112260ad9828aad2dffd5bf0e2a877655cb8a62d0be"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "6083229dac389ce5b32da2e3b5d2bb4bfadc7c287c1447bdaae4a98a348716a3"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "09533001e1eef439de4efa3d19d5aadbea3dcbec12d87207c3214fd92a95dee6"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "27dea8d7ba3998243ea96aebbd6af6dcce5f2463206054ecaf443527b3e28b50"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "85aaffe0de93ac8615219f58d8fb766b43fbdfefdeef9532de1ceb6f59dd2fcc"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "4bc1e49fd3ddae8f6cead9186e3da12ccd95248209f643f66c0d468e2b4d9801"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "737937216cd1103c35481e6a579afe35c1742ccfbb323da766e607b7f5523e15"
+        },
+        {
+          "type": "IDAT",
+          "length": 7001,
+          "hash": "faab6cc02a7c741a24bdea856044dec49871745b4facae8c7e9d6464e268e89a"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    "redrawn": {
+      "info": {
+        "width": 2160,
+        "height": 1380,
+        "depth": 8,
+        "colorType": 2,
+        "interlace": 0
+      },
+      "fileHash": "4cf38dfd151f3b4e3caad2c3d7e94ea215eb3e19158262fb4f49c39c572396b7",
+      "filteredHash": "c5dd7d0032565878c81023697bce77d3cb9f145d17c095c88b5c43945647e4bc",
+      "pixelHash": "c394a45ad3095b241476e213abb0b146d881a8b76a05f718e41726d88fac7cc8",
+      "filters": {
+        "1": 81,
+        "2": 553,
+        "4": 746
+      },
+      "chunks": [
+        {
+          "type": "IHDR",
+          "length": 13,
+          "hash": "7a9d57951c222496e8dc40ef05bdcdccb046c814a48abcf777d07ca47e4a72b0"
+        },
+        {
+          "type": "pHYs",
+          "length": 9,
+          "hash": "5b628f116c96eede2fdbb324c459120a8ca3db6a52cf4bc5a7f42f91ca1ee472"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "f6802fde39ee3dd916622e09c4b02ea98457cf7c51dbbfe4890a5b0cd8b5353f"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "0f56d63d40096d20a3f6dfe1ab5a394ecd4b0417ef3fa282a5236e09511b4669"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "58e059729807d4512b459917929e3c8d00df414146a998ec935bac5395b37690"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2ff974d26bd8ef022b92e70ce7446cd8965efb747f2f030e5733dac8df5eb331"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a69dc2d88cdb4804d95c5e01c3e95641fab4ef8670c0ca1dba2ba35d51ead7ce"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5d7cfc509550c7bc27c83c94495fef602541c68187c93faf496e1a89623d9170"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "205dd936654d6e65952b025801c56668e1955ebab315164e27bd84043fdaac2e"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "56a93adf6acec694eb8e7fd907a78bd5d15253a994ba6f6facfc0d25760526d0"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "2d3dd9762897a157975a1d5bf2af47648114862e0f055019c7b97b87fba9d932"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "5fa4e5844b2c7e4356cf1d0962a77996347d788dd9a64b7a3cf10082066e7fcd"
+        },
+        {
+          "type": "IDAT",
+          "length": 8192,
+          "hash": "a77a192c3098d56463231d5191f89eeb07a256d5b54b9e0dfb29881e5825bffc"
+        },
+        {
+          "type": "IDAT",
+          "length": 4056,
+          "hash": "6ae065424376098ed30d301563e31e8c16d67f9633f52c3fc5027af1d6be8b70"
+        },
+        {
+          "type": "IEND",
+          "length": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    }
+  }
+]

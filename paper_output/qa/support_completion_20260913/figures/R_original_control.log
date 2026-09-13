@@ -1,0 +1,17 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+[1] "LC_COLLATE=Chinese_China.utf8;LC_CTYPE=Chinese_China.utf8;LC_MONETARY=Chinese_China.utf8;LC_NUMERIC=C;LC_TIME=Chinese_China.utf8"
+DATA CHECKS PASS: original endpoint / open platform / event values / six distinct radii / six N800 scenario points
+DATA RANGE CHECKS PASS: all 11 plotted data ranges fully visible
+WROTE 图1_径向温度与含水率 PNG 300 dpi / PDF / SVG
+WROTE 图2_环境观测与平台延拓 PNG 300 dpi / PDF / SVG
+WROTE 图3_中心与表面热湿响应 PNG 300 dpi / PDF / SVG
+WROTE 图4_全域达标与临界放大 PNG 300 dpi / PDF / SVG
+WROTE 图5_收缩半径与域内含水率 PNG 300 dpi / PDF / SVG
+WROTE 图6_经验边界阻力情景 PNG 300 dpi / PDF / SVG
+null device 
+          1 
+DONE. Plot data remain unchanged. No PDE integration or DOCX modification performed.

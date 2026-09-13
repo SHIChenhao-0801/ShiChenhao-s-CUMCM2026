@@ -1,0 +1,52 @@
+绘图支撑补件验收（2026-09-13）
+
+交付位置：支撑材料/06_绘图程序与数据/
+交付文件：24个，合计997159字节。
+构成：draw_figures.R 1个、绘图输入CSV 14个、PNG 6个、绘图复现说明TXT 1个、来源/校验CSV 2个。
+图像仅PNG，无PDF/SVG；本新增目录无JSON/MD/ZIP/RAR。
+根论文、03程序、05检验、历史废弃实验、总清单与Git未由本子任务改动。
+
+一、真实数据及图像来源
+输入源：paper_output/figures/review_20260913/input_data/CSV/
+原图源：paper_output/figures/review_20260913/图1…图6.png
+14份输入逐表核对原SHA256，全部相同；数据行共4627行（不含表头）。
+随附六PNG逐图核对原SHA256，全部相同；未用本轮重绘覆盖历史已审图像。
+来源、字段和科学口径从原source_manifest.json中提取到数据来源与校验.csv；不将JSON复制到支撑材料。
+新增目录最终逐文件SHA：delivery_manifest.csv。
+
+二、源码调整及静态核查
+原R固定工作区根路径改为commandArgs中的脚本自身路径；输入改为脚本旁CSV/。
+默认输出为脚本旁PNG/，可用--output-dir指定独立目录。
+emit仅输出原PNG设备的300 dpi图像，去除PDF/SVG及合并PDF设备调用。
+将原核查CSV及sessionInfo保存改为输出终端；数值检查保持。
+删除3条完整行注释，不改变字符串中的颜色“#…”内容。
+R parser验证：去注释前后AST完全一致、交付源COMMENT token为0。
+32个原数据/画图赋值（包括draw1…draw6、theme、panel、footer等）与原源码AST一致。
+stopifnot、for数据检查、6次emit调用均与原源码AST一致。
+最终R源码SHA256：E25FCE029918FA9723BDA47F2489E6863CB6110EB4311CAB8965B5994E622C6B。
+证据：verify_source.R、source_verification.log、adapted_before_comment_removal.R。
+
+三、实际独立运行
+将新增06整个目录复制为QA下isolated_support；以不同当前工作目录运行。
+工作目录：D:/Document/数学建模/2026CUMCM/tmp/cache/figures_run_cwd
+实际命令：
+& 'D:/R-4.6.1/bin/Rscript.exe' --vanilla 'D:/Document/数学建模/2026CUMCM/paper_output/qa/support_completion_20260913/figures/isolated_support/draw_figures.R' --output-dir 'D:/Document/数学建模/2026CUMCM/paper_output/qa/support_completion_20260913/figures/redrawn_png'
+进程TMPDIR设置在本届tmp/cache/figures_R。
+退出码0；实际写出6个PNG；14表关键数据不变量与11组坐标范围均通过。
+无PDE积分；无平滑、插值新预测样点或模型数据变更。
+环境：R 4.6.1（2026-06-24 ucrt），Windows 11 x64 build 26200，Cairo PNG，基础graphics/grDevices；无额外R包。
+字体：Microsoft YaHei、Times New Roman。启动有4条继承C.UTF-8的locale提示，脚本显式设置Chinese_China.utf8后正常读取中文路径并完成图像输出。
+证据：R_reproduction.log、run_status.csv、redrawn_png/。
+
+四、PNG文件SHA差异调查与图像检查
+重绘六PNG相对9月12日历史PNG的SHA不相同，不能报告“历史PNG字节级重现”。
+逐像素解码比较：分辨率、像素布局相同；差异RGB通道最大值分别14、14、14、17、14、17（满量程255）。
+另将原R仅改变输出根目录，在original_control中实际运行所有原绘图表达式和设备调用，退出码0。
+本轮原R对照运行产生的六PNG与本次适配R的六PNG逐字节相同（6/6），已排除本次路径、设备输出和注释调整造成差异。
+原R今天重跑本身也未复现历史PNG字节。历史差异的具体栅格化/字体或图像生成环境因素未确定，不作未经核实的归因。
+重绘六图均已用view_image逐张实际打开，文字、曲线、图例、事件标记完整；未见截断或科学内容变化。
+图1保留七时刻径向曲线；图2保留观测/开放平台；图3保留中心/表面；图4保留对数主图及临界/严格点；图5保留各自真实表面；图6保持N800/零潜热六点。
+证据：redrawn_png_sha256.csv、png_pixel_comparison.json、compare_png.mjs、R_original_control.log、original_control_comparison.csv。
+交付PNG仍与原已审图像逐字节相同，证据delivered_original_png_comparison.csv。
+
+验收结论：绘图补件、输入来源校验、运行路径独立性和真实R复现已完成；历史PNG字节重现差异已如实记录。此验收不代替团队人工确认图像和模型结论。

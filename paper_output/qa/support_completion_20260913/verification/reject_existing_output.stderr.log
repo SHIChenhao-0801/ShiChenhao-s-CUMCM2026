@@ -1,0 +1,5 @@
+usage: run_checks.py [-h] --check {grid,method,time} --output-dir OUTPUT_DIR
+                     [--question {Q1,Q23,Q4}] [--grids GRIDS [GRIDS ...]]
+                     [--n N] [--full-second-comparison] [--frozen-d FROZEN_D]
+                     [--quick]
+run_checks.py: error: --output-dir must be a new directory; existing files are never overwritten

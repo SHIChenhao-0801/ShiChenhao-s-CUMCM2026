@@ -1,0 +1,83 @@
+{
+  "at_local": "2026-09-13T15:33:47",
+  "docx": "D:\\Document\\数学建模\\2026CUMCM\\支撑材料文件列表_附录用.docx",
+  "docx_sha256": "d9343654445754862b818196752e9f4beea6fe0cdf700336af43c68f51ba21cc",
+  "expected_v2_sha256": "d9343654445754862b818196752e9f4beea6fe0cdf700336af43c68f51ba21cc",
+  "same_version": true,
+  "document_pBdr_count": 0,
+  "styles_pBdr_count": 0,
+  "caption_count": 33,
+  "all_table_captions_centered": true,
+  "margins_xml": [
+    {
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}top": "1417",
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}right": "1417",
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bottom": "1417",
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1417",
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}header": "720",
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footer": "720",
+      "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}gutter": "0"
+    }
+  ],
+  "page_count": 8,
+  "page_reviews": [
+    {
+      "page": 1,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-1.png",
+      "sha256": "ac0fdddea90cb2c9cfbf84eca2158d3008c377c5a16af7d2d10246a60a5b33db",
+      "actually_viewed_via_view_image": true,
+      "finding": "Title black with no blue line; 137 total and all seven category counts clear. Tables1–3 complete and captioned."
+    },
+    {
+      "page": 2,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-2.png",
+      "sha256": "f334540d025d992d2c1d1adce77a73b93a7c4d6d0f2a4ad93830d65e0b0b4a5b",
+      "actually_viewed_via_view_image": true,
+      "finding": "Tables4–8 clear. Long PDF filename wraps within its cell. Table8 continues to page3; no clipping or lost filename."
+    },
+    {
+      "page": 3,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-3.png",
+      "sha256": "1860d2f547183b090f03f50aa9fd716ae15ae33e5fa545d968a14afe9881f972",
+      "actually_viewed_via_view_image": true,
+      "finding": "Continued table8 repeats header; remaining entries visible. Tables9–11 fully readable."
+    },
+    {
+      "page": 4,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-4.png",
+      "sha256": "47dc9664f123d5c9ff5e05bf3688b36d03086328401139bc348c88dc00301b92",
+      "actually_viewed_via_view_image": true,
+      "finding": "Tables12–17 readable with centered captions; eight original/runtime templates and three NPZ references distinguished."
+    },
+    {
+      "page": 5,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-5.png",
+      "sha256": "b16a543e0121a6e180f2128522ed0f6fb62e97f5d85d4f7c67171c76f79a6918",
+      "actually_viewed_via_view_image": true,
+      "finding": "Tables18–21 readable; result workbooks labelled complete; row paths and purposes contained in cells."
+    },
+    {
+      "page": 6,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-6.png",
+      "sha256": "bba224e8d88e82e32277156075caaaa607e27b1c94b5723f7795160c24787873",
+      "actually_viewed_via_view_image": true,
+      "finding": "Tables22–24 readable including long modeling/verification directory captions. Table24 continues to next page with no row split."
+    },
+    {
+      "page": 7,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-7.png",
+      "sha256": "3083e61d91a6a70f5b2bd8d990469b40c02936c50e1d11665ee30c697137ff30",
+      "actually_viewed_via_view_image": true,
+      "finding": "Continued table24 repeats header and shows entries103–111. Tables25–28 complete; long paths fit."
+    },
+    {
+      "page": 8,
+      "image": "tmp\\cache\\support_completion_20260913\\inventory\\v2\\page-8.png",
+      "sha256": "a6e1edb3ee2a81b973cf9d7dbc2bdd1baf239e9f94f84a519998648d3349a159",
+      "actually_viewed_via_view_image": true,
+      "finding": "Tables29–33 readable, includes all six PNG entries132–137. No footer overlap or clipped bottom rule."
+    }
+  ],
+  "findings": [],
+  "status": "PASS_INDEPENDENT_EIGHT_PAGE_VISUAL_REVIEW"
+}

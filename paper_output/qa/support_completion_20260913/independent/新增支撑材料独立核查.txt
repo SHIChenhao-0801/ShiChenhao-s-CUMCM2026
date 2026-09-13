@@ -1,0 +1,68 @@
+新增支撑材料独立核查
+2026-09-13
+
+结论：本轮授权补件、路径适配与137文件完整清单通过独立静态核查。AI详情是待团队补入真实记录并确认的可编辑DOCX；最终提交PDF、人审及主稿代码附录同步状态须单独处理。
+
+一、范围与证据
+
+本次以支撑补件之前directory_final_audit.json的106份文件与SHA256为基线，对当前支撑材料逐文件重算SHA，不继承旧通过结论。
+只读核对AI详情、03生产程序、04结果、05改动及其实际运行日志、06图像及数据、根目录支撑材料文件列表DOCX和两份完整TXT。
+机器证据：independent_audit.json；可重跑脚本：audit_completed_support.py。
+没有修改支撑材料或主稿，没有求解生产模型，没有生成论文/PDF，没有Git操作。
+
+二、AI详情DOCX
+
+已实际读取支撑材料/AI工具使用详情.docx的全部正文及7张表格。
+已有用途沿用根论文9.3：Deepseek Harness与Deepseek v4.1 flash用于源码语法检查和部分调试；Codex与GPT6-Astra用于题意理解、文献检索、结果检查和公式整理。
+模型假设/设计是否使用、更多写作辅助等栏目保持待团队确认，未由代理添加未经支持的既往事实。
+典型提示词、AI回复全文、采用处理和人工核验均明确待真实记录填写；没有伪造日期、交互原文或已完成的人审。
+队伍主导确认和真实性声明设置为核实后确认，复选框未预先勾选。
+状态是“可编辑详情已准备”，不是“真实使用记录已全部填妥”或“最终AI详情PDF已完成”。
+
+三、03、04与历史源码边界
+
+03_程序代码全部30份文件与补件前SHA相同。
+04_结果表格全部12份文件与补件前SHA相同；四份result1–4.xlsx还与final_v6a/outputs逐字节相同，且与01内同名空白模板分别不同。没有用空白模板充当结果。
+05原有33份Python/MATLAB/Node源码中仅method_comparison.py发生变化，精确文本差异仅ROOT赋值一行：
+原：ROOT = pathlib.Path(r"D:\Document\数学建模\2026CUMCM")
+现：ROOT = pathlib.Path(__file__).resolve().parents[3]
+除ROOT赋值之外，Python AST完全相同。其余32份源码逐字节未变，包括历史弃用实验脚本。
+原沙盒矩阵CSV与逐源码核查TXT未变化，历史失败未删除或改写。
+新增run_checks.py、requirements.txt、2份CSV和说明属于本次授权补齐范围。依赖明确包含matplotlib==3.11.2。
+两份CSV分别241行环境、145行半径，逐SHA与03/inputs/cleaned一致，没有重新插补或修改数值。
+
+四、实际运行证据绑定
+
+逐份读取isolated_grid/time/method/run_result.json：三次均实际exit 0，运行前后input_files校验通过，记录中的全部源码/输入SHA现仍等于交付文件。
+网格N20/N40、固定N20时间设置、方法quick N100/N200这三次是本轮实际小样；不扩大为本轮正式N3200/N6400全部重算。
+当前主稿SHA仍为b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c，原数值未改。
+因此method_comparison.py的新ROOT行与未修改主稿附录中的旧行存在有意差异；05交付说明已明确提示。不能再沿用补件前“当前36源码与主稿逐行全部相同”的结论。新增run_checks.py与R脚本未自动插进主稿源码附录。
+
+五、06绘图材料
+
+共24文件：14份绘图CSV、6PNG、draw_figures.R、1TXT、2校验CSV。该目录没有JSON/MD/PDF/SVG或压缩包。
+14份CSV共4627数据行，逐SHA与paper_output/figures/review_20260913/input_data/CSV对应原件一致。
+随附六PNG逐SHA与原已审图像一致。
+R源码从commandArgs的--file解析自身目录，读取相邻CSV，默认或指定输出目录，只保留PNG图形输出。
+当前R与实际隔离运行副本逐SHA一致；run_status.csv记录异工作目录运行exit 0。
+原始R解析证据记录32个画图/数据赋值、数值检查与6次emit调用未改，去注释前后AST一致。
+本轮重绘PNG与本轮原R对照输出相同，但与历史保存PNG有少量像素差；交付说明对此如实记录，没有将其误写成历史PNG字节重现。本次交付的PNG仍是原冻结文件。
+
+六、137文件完整清单
+
+已读取根目录支撑材料文件列表_附录用.docx，并按每张分组表的目录标题与文件名单独重建完整相对路径。
+重建137项与实际支撑137文件集合完全一致；每个文件恰好一次，无遗漏、无额外路径、无重复，序号1至137连续。
+分类汇总数量与实际目录统计一致。
+00_文件清单.txt与00_可用于论文附录的支撑清单.txt也分别逐项覆盖137文件且每项一次。
+全部12份同名result1–4.xlsx的用途均正确区分：04目录4份为完整计算结果，01模板与03运行模板合计8份为空白结果模板。
+清单含AI详情DOCX、新运行入口及依赖、两CSV、绘图R/14CSV/6PNG。AI详情定稿转换成PDF或再添加/删除文件后，需要同步更新这些清单。
+
+七、完整清单DOCX最终8页视觉复核
+
+最终清单DOCX SHA256：d9343654445754862b818196752e9f4beea6fe0cdf700336af43c68f51ba21cc。
+已使用view_image实际打开tmp/cache/support_completion_20260913/inventory/v2/page-1.png至page-8.png全部8页，逐页查看文件名、用途、长目录标题、表格边界和续表表头。
+未见裁切、重叠、丢字或表格越界；长文件名在格内完整换行，第3和第7页的跨页续表均重复表头；标题黑色且无蓝线。
+OOXML复核：document.xml和styles.xml的w:pBdr计数均为0，33个表题均直接设置居中。当前DOCX SHA与实际审查v2绑定一致。
+逐页PNG SHA和观察记录：inventory_v2_visual_audit.json，状态PASS_INDEPENDENT_EIGHT_PAGE_VISUAL_REVIEW。
+
+独立审计仅认本报告及JSON记录时的文件。仅更新顶层TXT且文件路径集合与清单DOCX字节未变时，重新刷新静态清单证据即可，不必对同一DOCX重新渲染。本报告不代替团队对模型、源码、AI使用记录和最终论文的人工确认。

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\verification\missing_input_reproduction\paper_output\code\modeling\verify_convergence.py", line 126, in <module>
+    main()
+    ~~~~^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\verification\missing_input_reproduction\paper_output\code\modeling\verify_convergence.py", line 81, in main
+    run = solve_case(replace(settings, intervals=n))
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\verification\missing_input_reproduction\paper_output\code\modeling\drying_core.py", line 285, in solve_case
+    return _solve_case_impl(settings, cache, started)
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\verification\missing_input_reproduction\paper_output\code\modeling\drying_core.py", line 296, in _solve_case_impl
+    model = RadialModel(settings)
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\verification\missing_input_reproduction\paper_output\code\modeling\drying_core.py", line 66, in __init__
+    self.env, self.rad, self.input_records = load_inputs(with_records=True)
+                                             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\Document\数学建模\2026CUMCM\paper_output\qa\support_completion_20260913\verification\missing_input_reproduction\paper_output\code\modeling\drying_core.py", line 26, in load_inputs
+    content = path.read_bytes()
+  File "C:\Python314\Lib\pathlib\__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\missing_input_reproduction\\paper_output\\data_cleaned\\A_environment_observed.csv'

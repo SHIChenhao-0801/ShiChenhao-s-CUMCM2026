@@ -1,0 +1,24 @@
+{
+  "pid": 39504,
+  "returncode": 0,
+  "started_at": "2026-09-13T07:23:27.931163+00:00",
+  "finished_at": "2026-09-13T07:23:38.587833+00:00",
+  "command": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_verification_venv\\Scripts\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\isolated_time\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q1 --n 20 --tag reproduction --worker --variant baseline --launch-token cd59dd7eed624868abf428e4475e8c25",
+  "argv": [
+    "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_verification_venv\\Scripts\\python.exe",
+    "-B",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\isolated_time\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+    "--question",
+    "Q1",
+    "--n",
+    "20",
+    "--tag",
+    "reproduction",
+    "--worker",
+    "--variant",
+    "baseline",
+    "--launch-token",
+    "cd59dd7eed624868abf428e4475e8c25"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\isolated_time"
+}

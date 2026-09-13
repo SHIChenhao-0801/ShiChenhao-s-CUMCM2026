@@ -1,0 +1,184 @@
+{
+  "variant": "tight",
+  "process": {
+    "pid": 40888,
+    "returncode": 0,
+    "started_at": "2026-09-13T07:23:38.663134+00:00",
+    "finished_at": "2026-09-13T07:23:42.202909+00:00",
+    "command": "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_verification_venv\\Scripts\\python.exe -B D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\isolated_time\\paper_output\\code\\modeling\\verify_time_accuracy.py --question Q1 --n 20 --tag reproduction --worker --variant tight --launch-token cd59dd7eed624868abf428e4475e8c25",
+    "argv": [
+      "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\support_completion_verification_venv\\Scripts\\python.exe",
+      "-B",
+      "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\isolated_time\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+      "--question",
+      "Q1",
+      "--n",
+      "20",
+      "--tag",
+      "reproduction",
+      "--worker",
+      "--variant",
+      "tight",
+      "--launch-token",
+      "cd59dd7eed624868abf428e4475e8c25"
+    ],
+    "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_completion_20260913\\verification\\isolated_time"
+  },
+  "summary": {
+    "settings": {
+      "question": "Q1",
+      "intervals": 20,
+      "rtol": 1e-11,
+      "atol_temperature": 1e-11,
+      "atol_moisture": 1e-13,
+      "max_step_s": 60.0,
+      "early_max_step_s": 1.0,
+      "horizon_h": 240.0,
+      "shrink": false,
+      "boundary_extension": "nominal",
+      "tail_temperature_C": 50.0,
+      "tail_equilibrium": 0.05,
+      "h": 25.0,
+      "beta": 8e-07,
+      "equilibrium_scale": 1.0,
+      "surface_latent_fraction": 0.0,
+      "latent_J_kg": 2400000.0,
+      "constant_D": null,
+      "constant_thermal": false,
+      "method": "BDF",
+      "face_scheme": "kirchhoff",
+      "jacobian_mode": "analytic",
+      "dense_storage": "disk"
+    },
+    "diagnostics": {
+      "event_s": null,
+      "event_h": null,
+      "end_s": 1800.0,
+      "elapsed_s": 1.0840173000001414,
+      "end_time_convention": "ceil(critical_event_s)+1: conservative post-crossing verification second; not claimed earliest integer second",
+      "max_mass_balance_abs_kg_per_kg": 3.9968028886505635e-15,
+      "min_C": 1.5123781643576986,
+      "max_C": 2.55,
+      "min_T_K": 301.1499999999999,
+      "max_T_K": 309.9352877020259,
+      "min_D": 3.886204575046323e-09,
+      "max_D": 4.937655094173937e-09,
+      "positive_properties": true,
+      "max_radial_C_increase": 0.0,
+      "final_max_C": 2.549982518544386,
+      "final_surface_C": 1.5123781643576986,
+      "strictly_dry_at_end": false,
+      "radius_end_m": 0.02,
+      "radius_extrapolation_used": false,
+      "rhs_evaluations": 5908,
+      "accepted_time_points": 2562,
+      "nfev": 5908,
+      "njev": 36,
+      "nlu": 488,
+      "solver_success": true,
+      "dense_storage": "disk",
+      "dense_coefficient_bytes": 4830104,
+      "dense_polynomial_count": 2561
+    },
+    "code": {
+      "path": "paper_output/code/modeling/drying_core.py",
+      "bytes": 18634,
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "exists": true
+    },
+    "jacobian_code": {
+      "path": "paper_output/code/modeling/analytic_jacobian.py",
+      "bytes": 15901,
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "exists": true
+    },
+    "dense_storage_code": {
+      "path": "paper_output/code/modeling/disk_dense.py",
+      "bytes": 4015,
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "exists": true
+    },
+    "inputs": [
+      {
+        "path": "paper_output/data_cleaned/A_environment_observed.csv",
+        "bytes": 10125,
+        "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+        "exists": true
+      },
+      {
+        "path": "paper_output/data_cleaned/A_radius_observed.csv",
+        "bytes": 3522,
+        "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+        "exists": true
+      }
+    ],
+    "human_review_status": "pending",
+    "gui_reproduced": false,
+    "time_check": {
+      "variant": "tight",
+      "question": "Q1",
+      "spatial_intervals": 20,
+      "started_at": "2026-09-13T07:23:40.861877+00:00",
+      "solve_finished_at": "2026-09-13T07:23:41.947930+00:00",
+      "warnings": [],
+      "projection_time_count": 1801,
+      "full_second_comparison": true,
+      "projection_radius_count": 21,
+      "process_exit": "Actual exit is recorded by supervising parent in case_record.json.",
+      "finished_at": "2026-09-13T07:23:42.070091+00:00",
+      "wall_seconds": 1.2082142999997814,
+      "Run_closed": true
+    }
+  },
+  "summary_file": {
+    "path": "paper_output/results/time_accuracy/reproduction/tight/summary.json",
+    "bytes": 3306,
+    "sha256": "2d6cde6de058d7f313046c5f853ad9b851348a009a26d737555ea9a9c3953a8a",
+    "exists": true
+  },
+  "output_artifacts": [
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/comparison_projection.npz",
+      "bytes": 484799,
+      "sha256": "93e090599b5eb2be0b0c5fe774d45db3c66760d60cfa16091e505a736fc05d89",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/sampled_solution.npz",
+      "bytes": 10810,
+      "sha256": "7174c84273d845105da84c9f95bd291b196c6bd6009b7aa397da0b229538fcd3",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/summary.json",
+      "bytes": 3306,
+      "sha256": "2d6cde6de058d7f313046c5f853ad9b851348a009a26d737555ea9a9c3953a8a",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/worker_started.json",
+      "bytes": 71,
+      "sha256": "dcca648fbb950e0be291a52cb77fa0134d882756b9a66b5e92d27af33b7c2924",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/worker_success.json",
+      "bytes": 7415,
+      "sha256": "a3cd14ad90b93c8f2a6bf641ee1edcf435c03d2b2a89b7bb719a490e31938d7b",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/stdout.log",
+      "bytes": 95,
+      "sha256": "f18668339e9027ea0c8a50e2b514628eb0fb1d1fed49d0478e135938fad9d2ee",
+      "exists": true
+    },
+    {
+      "path": "paper_output/results/time_accuracy/reproduction/tight/process_result.json",
+      "bytes": 1187,
+      "sha256": "8529786ea01cecb26146d96afa2caac2ca5f17074eb41816038dbb68e47d7924",
+      "exists": true
+    }
+  ],
+  "status": "computed_actual_process_exit_zero"
+}

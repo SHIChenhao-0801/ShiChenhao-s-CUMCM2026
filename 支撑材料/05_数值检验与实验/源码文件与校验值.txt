@@ -1,7 +1,7 @@
-﻿数值检验源码文件与SHA256校验值
+数值检验源码文件与SHA256校验值
 ==============================
 
-以下33项均为真实源代码的去注释版本。来源路径用于追溯；删除注释及Python说明性docstring后文件字节已改变，当前SHA256以本表为准。没有修改计算语句、模型参数或输出数据字符串。
+以下34项为33份原检验源码及新增独立入口；原检验源码保留去注释版本。来源路径用于追溯；删除注释及Python说明性docstring后文件字节已改变，当前SHA256以本表为准。本轮仅将第22项method_comparison.py的ROOT赋值改为由文件位置定位；其余计算语句、模型参数、阈值与输出数据字符串不变。第34项独立入口只负责副本、路径、参数和运行记录。
 
 01. Python检验源码/paper_output/code/modeling/drying_core.py
 用途：原径向热湿方程、材料坐标、Kirchhoff水通量与求解器；检验共同依赖
@@ -153,9 +153,12 @@ SHA256：870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73
 22. Python检验源码/paper_output/code/verification/method_comparison.py
 用途：BDF、Radau等适用数值方法的小网格比较
 来源：paper_output/code/verification/method_comparison.py
-大小：6689 字节
-SHA256：e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5
+大小：6681 字节
+SHA256：6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4
 去注释前SHA256：2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0
+
+路径适配前SHA256：e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5
+本轮修改：仅第11行ROOT赋值；归一化该赋值后AST相同。
 
 23. Python检验源码/paper_output/code/verification/sensitivity_analysis.py
 用途：参数敏感性；包括已修正的Kirchhoff通量尺度注入
@@ -233,3 +236,9 @@ SHA256：967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59
 大小：25180 字节
 SHA256：0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa
 去注释前SHA256：54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda
+
+34. Python检验源码/run_checks.py
+用途：在指定的新实验根复制输入/源码，调用grid/time/method并记录真实进程退出及SHA
+来源：本轮新增独立交付入口，不参与数值求解公式
+大小：6027 字节
+SHA256：998eae85aa8807f1bd5ebfa1fd41d988d332e9f98a52373505466188361e74b4
