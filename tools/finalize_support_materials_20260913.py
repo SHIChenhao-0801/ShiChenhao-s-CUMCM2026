@@ -77,4 +77,4 @@ def generate():
 
 
 if __name__=='__main__':
-    generate()
+    raise SystemExit("已停用旧版清单生成：当前交付使用TXT说明和文件清单。旧逻辑会恢复用户已删除的JSON/MD及旧目录索引，请以当前支撑材料目录为准。")

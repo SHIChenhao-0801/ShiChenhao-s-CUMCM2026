@@ -1,0 +1,564 @@
+{
+  "created_at_utc": "2026-09-13T00:55:05.694293+00:00",
+  "sources": [
+    {
+      "file": "Python检验源码/paper_output/code/modeling/drying_core.py",
+      "source": "paper_output/code/modeling/drying_core.py",
+      "purpose": "原径向热湿方程、材料坐标、Kirchhoff水通量与求解器；检验共同依赖",
+      "bytes": 19944,
+      "source_sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "packaged_sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "source": "paper_output/code/modeling/analytic_jacobian.py",
+      "purpose": "解析稀疏Jacobian与有限差分自检；原求解器依赖",
+      "bytes": 16952,
+      "source_sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "packaged_sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "source": "paper_output/code/modeling/disk_dense.py",
+      "purpose": "BDF稠密多项式磁盘保存和查询；原求解器依赖",
+      "bytes": 4869,
+      "source_sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "packaged_sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q1_model.py",
+      "source": "paper_output/code/modeling/q1_model.py",
+      "purpose": "问题一参数封装；时间误差检验依赖",
+      "bytes": 340,
+      "source_sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "packaged_sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q2_model.py",
+      "source": "paper_output/code/modeling/q2_model.py",
+      "purpose": "问题二/三共享轨迹参数封装；时间误差检验依赖",
+      "bytes": 352,
+      "source_sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "packaged_sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q3_model.py",
+      "source": "paper_output/code/modeling/q3_model.py",
+      "purpose": "全域含水率达标及严格报告格点；灵敏度等检验依赖",
+      "bytes": 1285,
+      "source_sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "packaged_sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q4_model.py",
+      "source": "paper_output/code/modeling/q4_model.py",
+      "purpose": "问题四附录4物性与径向收缩参数封装；时间误差检验依赖",
+      "bytes": 377,
+      "source_sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "packaged_sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "source": "paper_output/code/modeling/validate_bessel.py",
+      "purpose": "常热物性圆柱Robin边界和时变环境卷积的Bessel解析基准",
+      "bytes": 16285,
+      "source_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "packaged_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "source": "paper_output/code/modeling/compare_analytic.py",
+      "purpose": "有限体积结果与独立Bessel基准的数值对照",
+      "bytes": 14520,
+      "source_sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "packaged_sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "source": "paper_output/code/modeling/verify_convergence.py",
+      "purpose": "网格加密、公共投影及解析特例的空间收敛检查",
+      "bytes": 6542,
+      "source_sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "packaged_sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "source": "paper_output/code/modeling/verify_time_accuracy.py",
+      "purpose": "固定物理条件下基准/紧容差对照和监督执行",
+      "bytes": 14430,
+      "source_sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "packaged_sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "source": "paper_output/code/modeling/verify_dense_storage.py",
+      "purpose": "BDF稠密输出存储/查询的一致性检查",
+      "bytes": 3850,
+      "source_sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "packaged_sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "source": "paper_output/code/modeling/run_experiments.py",
+      "purpose": "带明确预算的网格、参数、物理情景实验入口",
+      "bytes": 3995,
+      "source_sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "packaged_sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "source": "paper_output/code/modeling/production_provenance.py",
+      "purpose": "时间检验需要的源码/输入快照、执行监督和退出记录工具",
+      "bytes": 24002,
+      "source_sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "packaged_sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "source": "paper_output/code/modeling/run_modeling.py",
+      "purpose": "production_provenance自检引用的原监督/求解入口；依赖补齐",
+      "bytes": 27729,
+      "source_sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "packaged_sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "source": "paper_output/code/modeling/export_outputs.py",
+      "purpose": "run_modeling动态加载的原结果导出/回读模块；依赖补齐",
+      "bytes": 41427,
+      "source_sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "packaged_sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "source": "paper_output/code/modeling/publication_plots.py",
+      "purpose": "run_modeling动态加载的原绘图模块；依赖补齐",
+      "bytes": 24337,
+      "source_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "packaged_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "source": "paper_output/code/modeling/axisymmetric_check.py",
+      "purpose": "轴对称二维含端面情景的适用性检查源代码",
+      "bytes": 13887,
+      "source_sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "packaged_sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "source": "paper_output/code/verification/analytic_metric_check.py",
+      "purpose": "对解析基准的评估指标、共同点与体平均差异核查",
+      "bytes": 4056,
+      "source_sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9",
+      "packaged_sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "source": "paper_output/code/verification/crossvalidate_solver.py",
+      "purpose": "数值求解器实现、物理边界与诊断的交叉检查",
+      "bytes": 8427,
+      "source_sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "packaged_sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "source": "paper_output/code/verification/crossvalidate_series.py",
+      "purpose": "已有时间序列、阶段特征与质量变化分析",
+      "bytes": 19916,
+      "source_sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be",
+      "packaged_sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/method_comparison.py",
+      "source": "paper_output/code/verification/method_comparison.py",
+      "purpose": "BDF、Radau等适用数值方法的小网格比较",
+      "bytes": 9293,
+      "source_sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "packaged_sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "source": "paper_output/code/verification/sensitivity_analysis.py",
+      "purpose": "参数敏感性；包括已修正的Kirchhoff通量尺度注入",
+      "bytes": 12878,
+      "source_sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "packaged_sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "source": "paper_output/code/verification/threshold_and_scaling_checks.py",
+      "purpose": "阈值、量纲标度、缩放与响应解释检查",
+      "bytes": 8007,
+      "source_sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "packaged_sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "source": "paper_output/code/verification/isotherm_activity_closure.py",
+      "purpose": "吸附/水活度边界闭合的经验情景求解",
+      "bytes": 23957,
+      "source_sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "packaged_sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "source": "paper_output/code/verification/isotherm_diagnose.py",
+      "purpose": "上述闭合的物理量、初值及通量诊断",
+      "bytes": 3001,
+      "source_sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a",
+      "packaged_sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "source": "paper_output/code/verification/isotherm_jacobian_probe.py",
+      "purpose": "上述闭合Jacobian和数值扰动的诊断",
+      "bytes": 3883,
+      "source_sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c",
+      "packaged_sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "source": "paper_output/code/verification/energy_balance_check.py",
+      "purpose": "有效热容量和显热收支检查",
+      "bytes": 11942,
+      "source_sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "packaged_sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "source": "paper_output/code/verification/energy_balance_diagnose.py",
+      "purpose": "能量残差构成及容量项的补充诊断",
+      "bytes": 2806,
+      "source_sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b",
+      "packaged_sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "source": "paper_output/code/verification/energy_balance_diagnose2.py",
+      "purpose": "能量表达式/容量功解释的进一步诊断",
+      "bytes": 3902,
+      "source_sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476",
+      "packaged_sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476",
+      "byte_identical": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "source": "paper_output/code/verification/latent_heat_scenarios.py",
+      "purpose": "潜热负荷压力情景；非生产基准替换",
+      "bytes": 8685,
+      "source_sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b",
+      "packaged_sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b",
+      "byte_identical": true
+    },
+    {
+      "file": "MATLAB对照证据/compareMatlab.mjs",
+      "source": "paper_output/code/review_delivery/tools/compareMatlab.mjs",
+      "purpose": "原MATLAB与Python共同时间/材料坐标样点、事件的对照程序；Node.js自带库",
+      "bytes": 16706,
+      "source_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "packaged_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "byte_identical": true
+    },
+    {
+      "file": "MATLAB对照证据/runCrossCheck.m",
+      "source": "现有支撑目录内由用户移入的MATLAB原文件；保持原位，未恢复原目录",
+      "purpose": "实际使用的独立MATLAB N40热湿求解和共同样点导出",
+      "bytes": 26369,
+      "source_sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "packaged_sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "byte_identical": true
+    }
+  ],
+  "source_count": 33,
+  "python_count": 31,
+  "matlab_count": 1,
+  "mjs_count": 1,
+  "all_source_sha256_match": true,
+  "python_ast_parse_count": 31,
+  "local_import_edges": [
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/drying_core.py",
+      "imports": "analytic_jacobian",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/drying_core.py",
+      "imports": "disk_dense",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/q1_model.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/q2_model.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/q4_model.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "imports": "validate_bessel",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "imports": "validate_bessel",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "imports": "production_provenance",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "imports": "verify_convergence",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "imports": "run_modeling",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "imports": "production_provenance",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "imports": "q3_model",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "imports": "validate_bessel",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "imports": "q3_model",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/method_comparison.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "imports": "q3_model",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "imports": "isotherm_activity_closure",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "imports": "isotherm_activity_closure",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "imports": "drying_core",
+      "included": true
+    },
+    {
+      "source_file": "Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "imports": "drying_core",
+      "included": true
+    }
+  ],
+  "local_import_dependencies_present": true,
+  "existing_matlab_sha256_before": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+  "existing_matlab_sha256_after": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+  "original_matlab_path_restored": false,
+  "remove_plan": [
+    {
+      "file": "数值检验说明.md",
+      "bytes": 2268,
+      "sha256": "243b1b94ff83bbc67dc676089f2b430caf7d290a151321c45972fe5f5d54b019"
+    },
+    {
+      "file": "MATLAB对照证据/comparison-python-development.json",
+      "bytes": 1285,
+      "sha256": "da413a5274aa58e43b05ac5bc9ea8d19b242ea68d57e7f7e8c56563a679838b6"
+    },
+    {
+      "file": "MATLAB对照证据/comparison-python-manifest.json",
+      "bytes": 1253,
+      "sha256": "8ffe58c72a0fee901df7c325c8298e87011aad5c764f135a2fc15d01bf33b2ac"
+    },
+    {
+      "file": "MATLAB对照证据/comparison-python.json",
+      "bytes": 56785,
+      "sha256": "5d8352f6539a4ec68f0a5b39dc11b42550175f886831b2b2a63ccf59b64dba1e"
+    },
+    {
+      "file": "MATLAB对照证据/Q1_crossCheck.json",
+      "bytes": 6208,
+      "sha256": "2c36d0e5eda3b8c822b2a8c9dd6a1d486c0784deab5cc3bd68c9f10144ab191c"
+    },
+    {
+      "file": "MATLAB对照证据/Q23_crossCheck.json",
+      "bytes": 13425,
+      "sha256": "6be51610f0f4904d162363d6d0e2b75e6620fb64b09bffe6a94e7247cb2168e4"
+    },
+    {
+      "file": "MATLAB对照证据/Q4_crossCheck.json",
+      "bytes": 13607,
+      "sha256": "f9f886adcce3da4ab30498410a3bf5240293afc483c5303a44550bdf71904c5d"
+    },
+    {
+      "file": "MATLAB对照证据/runSummary.json",
+      "bytes": 41718,
+      "sha256": "d6e3c827105b7f8475a82b630b997e656aa6f2c428197a5edc03af5eddca45cf"
+    },
+    {
+      "file": "本次整理核验/code_package_audit.json",
+      "bytes": 2976,
+      "sha256": "a1558d14513bcdb8b322a232bf0937ffece82a31d87ccb915bf78cbe9149666f"
+    },
+    {
+      "file": "本次整理核验/final_audit.json",
+      "bytes": 2135,
+      "sha256": "e1fb88dfef7770ff08eedc16f2390095ba5fbb7660bb310e1a2a9e52a39fca45"
+    },
+    {
+      "file": "本次整理核验/independent_package_review.json",
+      "bytes": 36465,
+      "sha256": "e88e72c0f2280b2edf4cdc1dd3ceb2879984a6f270ab15089fb2803b62173d62"
+    },
+    {
+      "file": "本次整理核验/reference_package_audit.json",
+      "bytes": 3555,
+      "sha256": "5802e6f300777a304c4b2df29a8cc8c6220c05484afcfb012507238514e2b8e6"
+    },
+    {
+      "file": "本次整理核验/r_portability_audit.json",
+      "bytes": 956,
+      "sha256": "c6b6f1428894e9bfa8f51c15e3eabf715a71bce10e1ed836d634ebd69cdf319c"
+    }
+  ],
+  "removed_yet": false,
+  "model_runs": 0,
+  "copied_code_modified": false
+}

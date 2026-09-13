@@ -1,0 +1,241 @@
+{
+  "status": "PASS_SOURCE_COPY_AND_CLEANUP",
+  "file_count": 35,
+  "bytes": 413395,
+  "extensions": {
+    ".txt": 2,
+    ".mjs": 1,
+    ".m": 1,
+    ".py": 31
+  },
+  "source_count": 33,
+  "all_33_source_hashes_match": true,
+  "sources": [
+    {
+      "file": "Python检验源码/paper_output/code/modeling/drying_core.py",
+      "source_sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "packaged_sha256": "4b1e1fdacaf6eb195f94192cf1574c96609ca1058297e081dd474f59585f2305",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "source_sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "packaged_sha256": "d7dfda75b335e82eb27d39b8e2f12edf5a56254269ff4f273e7a828ed75a8665",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "source_sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "packaged_sha256": "2a8c0cac75ee0b8a1cd193277f73cde77533683a1b9c3db803b6db0f16deab60",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q1_model.py",
+      "source_sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "packaged_sha256": "58f0f3d8a3c833a9bf4f60702a3a02ec4cd67ae9ace8d0567cb20f84073cdfa8",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q2_model.py",
+      "source_sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "packaged_sha256": "4ceb89001d2e99270e117d124394213adab1ba678a85395e7e8cf36b0e4d1204",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q3_model.py",
+      "source_sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "packaged_sha256": "43a65b6a1982649503beaeec92d7aa553dd6d8f516703cc50b912a086ba9a137",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/q4_model.py",
+      "source_sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "packaged_sha256": "d331207ebdffc2eb36fa3f659cd20215511415258c89334c89640ceaf3c7d535",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "source_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "packaged_sha256": "64a62c7127cf2d5e3117e2aa7bc9a9f3909ee9dfdadb65852cbb48c278a9b2ac",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "source_sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "packaged_sha256": "52a53d38d10fb4bbb121ea4c7336d86b1dffc3f29eb590cc637258e90215f805",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "source_sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "packaged_sha256": "7c6e6d35aba634e41f4e51d4ffd045ce32a9527908b5e1806247dd85c848dbec",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "source_sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "packaged_sha256": "a006f698cda4e0a80f37e83fc4fe1292d6210ef64430400f86a7ca40bc47cddc",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "source_sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "packaged_sha256": "b9035db0a0b1fb510c9743b0566ad4d5e74919fa233fbea623a7cffce1ff9472",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "source_sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "packaged_sha256": "fdfa336e998f7fa649887cbfab615afae33d9554c6094983562b0da139e6f509",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "source_sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "packaged_sha256": "0370979d780ff59487d1616d7c0ff6041c642624d9267c51f9a0925b26453130",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "source_sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "packaged_sha256": "d39b23051cc00d7f06482f90564e0cb34052849f15c5275d439b8824e8016b84",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "source_sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "packaged_sha256": "7111606498554e18e2e007a58e0d5161b5fd209cde98b949a245981eb403c21b",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "source_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "packaged_sha256": "a58b5bb7300aef7f334e28cb0be070971d1681b516e537b84320577b00293388",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "source_sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "packaged_sha256": "a2fee9b466f8e25b86b8f20f053044182d25267ee0ee588f943ff4319df95a9c",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "source_sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9",
+      "packaged_sha256": "bf26cdd8aa7933c9f2cd3250e78be8bc5730653f7de60dbe4c5cb27cefd362c9",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "source_sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "packaged_sha256": "981a5e3ab737dd1a82106e00717d97e0b93963cd6cdad1d28aaec75445639a09",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "source_sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be",
+      "packaged_sha256": "f5271cd39df457ce5f846fc001890c361f2dddd58946208230730d8c170c85be",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/method_comparison.py",
+      "source_sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "packaged_sha256": "2822603def31854e33a1eb98bdcb771e4c30a1605772eb0829a1edebaa2df8f0",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "source_sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "packaged_sha256": "e1260fa875ed68f8a87e76d588c61f49df223755a0ef3827dcbaf1d422314066",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "source_sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "packaged_sha256": "6ff008967432cb93afabe60e3f61c42faeddfeb351bbbd8b948c9e3eb1a70599",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "source_sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "packaged_sha256": "d3b5c60a975d6f03dc83d264e062737f9716e8180e2d0264ce397ee9d70a291e",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "source_sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a",
+      "packaged_sha256": "773b82d0ce8acde10cb3af6ad11dbb9df798053b2cf353b7c08e1022878e972a",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "source_sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c",
+      "packaged_sha256": "2e79116c28e3656de6ca316cae49a3a77ee7e75a9a0054fc8cb5fbbb804bc40c",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "source_sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "packaged_sha256": "1811bd4c79383fa234d6b806ccec10de789927cad25d92dc7802250ac79a1c94",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "source_sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b",
+      "packaged_sha256": "c273024f9c417aaeccfaef67e4d85d8677387d6f6def52376477b06a772dd38b",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "source_sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476",
+      "packaged_sha256": "e272e0637225ebdfd4e6605911b46787456e8fab99c8d2ac7350f167fba93476",
+      "matches": true
+    },
+    {
+      "file": "Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "source_sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b",
+      "packaged_sha256": "07c902118973408cd6dde53e9c6bd90e0890f1a78872fa5c033fa3f739e89f4b",
+      "matches": true
+    },
+    {
+      "file": "MATLAB对照证据/compareMatlab.mjs",
+      "source_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "packaged_sha256": "32301b047f8ae32faec659fa09dd586326cf2984e7b03252d26fe142c7c6efbe",
+      "matches": true
+    },
+    {
+      "file": "MATLAB对照证据/runCrossCheck.m",
+      "source_sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "packaged_sha256": "54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda",
+      "matches": true
+    }
+  ],
+  "json_remaining": 0,
+  "markdown_remaining": 0,
+  "jsonl_remaining": 0,
+  "removed_exact_files": [
+    "数值检验说明.md",
+    "MATLAB对照证据/comparison-python-development.json",
+    "MATLAB对照证据/comparison-python-manifest.json",
+    "MATLAB对照证据/comparison-python.json",
+    "MATLAB对照证据/Q1_crossCheck.json",
+    "MATLAB对照证据/Q23_crossCheck.json",
+    "MATLAB对照证据/Q4_crossCheck.json",
+    "MATLAB对照证据/runSummary.json",
+    "本次整理核验/code_package_audit.json",
+    "本次整理核验/final_audit.json",
+    "本次整理核验/independent_package_review.json",
+    "本次整理核验/reference_package_audit.json",
+    "本次整理核验/r_portability_audit.json"
+  ],
+  "deletion_method": "Explicit exact-path apply_patch after batch PowerShell was rejected before execution",
+  "existing_matlab_unchanged": true,
+  "original_matlab_path_restored": false,
+  "model_runs": 0,
+  "new_GUI_run": false,
+  "human_review": "not_signed_by_agent",
+  "text_explanations": [
+    "数值检验说明.txt",
+    "源码文件与校验值.txt"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "startedAtUtc": "2026-09-13T00:51:54.728882+00:00",
+  "finishedAtUtc": "2026-09-13T00:52:05.759523+00:00",
+  "actualExitCode": 0,
+  "elapsedSeconds": 11.030635999995866,
+  "command": [
+    "D:\\Document\\数学建模\\2026CUMCM\\tmp\\cache\\portability_20260912\\dependency_probe\\venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_cleanup_20260913\\code\\validate_cleanup.py",
+    "--worker"
+  ],
+  "cwd": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_cleanup_20260913\\code",
+  "sourceFiles": [
+    {
+      "path": "A_CodeReview.pyproj",
+      "sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb"
+    },
+    {
+      "path": "A_CodeReview.sln",
+      "sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f"
+    },
+    {
+      "path": "analyticJacobian.py",
+      "sha256": "dc5cfb4b19e8ec30e8882a37a6699fde6e1aaf9fa67be5356597fbb603666c7f"
+    },
+    {
+      "path": "diskDense.py",
+      "sha256": "f602ca2d6bf52a0a5daea8dbe48be95170b31af3790b597c10989572ae1e06c4"
+    },
+    {
+      "path": "dryingCore.py",
+      "sha256": "81afe621bd2a3a8b9f1d77f7999ae31806a344536e213e7718aa54348b729838"
+    },
+    {
+      "path": "exportOutputs.py",
+      "sha256": "5eacfc1cdffa413c1565813c25bd8a9f721e0363ce0ac43e6113b4325409b047"
+    },
+    {
+      "path": "input_manifest.csv",
+      "sha256": "c535e21e819dcaeece9e7a63d0a946ffa55b02e7045eb20d0abeed6da89eca9c"
+    },
+    {
+      "path": "inputs/cleaned/A_environment_observed.csv",
+      "sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0"
+    },
+    {
+      "path": "inputs/cleaned/A_radius_observed.csv",
+      "sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c"
+    },
+    {
+      "path": "inputs/original/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "inputs/original/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "inputs/templates/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "inputs/templates/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "inputs/templates/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "inputs/templates/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "q1Model.py",
+      "sha256": "86914d8e55c6bec3e17718d171a2d5568b13eb5f264d19a05bdeaad6e7e46394"
+    },
+    {
+      "path": "q2Model.py",
+      "sha256": "d4cb9716db99e9aaac0040caaeda0313d610be33413d1df6fc2418b101b48588"
+    },
+    {
+      "path": "q3Model.py",
+      "sha256": "02b9b97278ce1132eb23cf5789655fb6ffd44e035d32dba9a28e43c89deeb457"
+    },
+    {
+      "path": "q4Model.py",
+      "sha256": "b518592729009bd259a1f6342f73f112e99acf22bca8cfaf52dc458b9e64ad8f"
+    },
+    {
+      "path": "reference/Q1/sampled_solution.npz",
+      "sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62"
+    },
+    {
+      "path": "reference/Q23/sampled_solution.npz",
+      "sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67"
+    },
+    {
+      "path": "reference/Q4/sampled_solution.npz",
+      "sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518"
+    },
+    {
+      "path": "reference/reference_data.py",
+      "sha256": "9586eb2f168adc86cba2e5e451f513825d2a5bcbecc7453e0b34c73fd3cc80c6"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "59254be88c7153c88b775fdc328b50bc6a66d73192f07e54c0515edfe4c39055"
+    },
+    {
+      "path": "runDelivery.py",
+      "sha256": "b167a46bb2bf422867d3de739e4607bcaf4538e0420e652589b5f4aeda76501a"
+    },
+    {
+      "path": "runLogged.ps1",
+      "sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17"
+    }
+  ],
+  "status": "PASS"
+}

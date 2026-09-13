@@ -2,7 +2,17 @@
 
 仅适用于 D:/Document/数学建模/2026CUMCM 及其子目录。当前持续任务：A题《药材的烘干问题》，停止B题分支。
 
-## 支撑材料目录交付（2026-09-13，最新）
+## 支撑材料按用户重排及TXT要求整理（2026-09-13，最新，覆盖下方旧交付状态）
+
+- 用户最新三点指令：删除AI工具使用详情，由用户自己写；支撑目录删除JSON和MD，说明使用TXT；数值检验证据复制实际源代码，不使用JSON报告。仍只要目录、不需要压缩。删除范围仅为支撑目录，不删除本项目AGENTS、记忆和内部QA。
+- 用户本轮已自行重排文献与结果CSV，删除旧绘图、AI记录和大部分历史目录，将数值检验改为 `05_数值检验与实验`，并将原工作区 `paper_output/code/review_delivery/matlab/runCrossCheck.m` 移入其中。保留这些手动变更，不再恢复旧05绘图、06AI、07历史目录或原MATLAB位置。
+- 当前支撑材料共103文件、41,024,313字节，JSON/JSONL/MD、AI详情与压缩包均为0，16个TXT说明。入口 `支撑材料/00_支撑材料总说明.txt`，完整TXT清单 `00_文件清单.txt`。42个当前原有PDF/Excel/CSV/NPZ/M文件逐哈希未变，四完整Excel仍与final_v6a逐字节相同。内部核验 `paper_output/qa/support_cleanup_20260913/final_directory_audit.json` 为 `PASS_TXT_AND_SOURCE_DELIVERY`。
+- 03核心程序共30文件：输入清单转为真正CSV（12项），数值参照转为 `reference/reference_data.py` 纯数据常量；原参照逐类型/浮点hex完全等价，八核心模块算法AST一致。当前入口SHA256 `b167a46bb2bf422867d3de739e4607bcaf4538e0420e652589b5f4aeda76501a`。本次隔离QA实跑Q1 N40/N3200，每次回读79,244工作簿格和84正文格；N3200七保存数组全等；实际exit0/11.031s。未重跑Q23/Q4全量，之前全量结果只绑定之前版本；GUI和用户人工审查未新增通过。运行后仍会生成JSON过程记录，当前交付不含这些产物，README.txt已说明。
+- 05检验目录共35文件：31 Python、1 MATLAB、1 Node.js、2 TXT；33源码与原始SHA全部匹配，原M仍为54cdebf6941ed139efc00ff75e43b2c5fd5a3d73d2ec095829d7bc31aae3aeda。补齐本地源码依赖并明确历史绝对路径和输出依赖；只完成复制/静态检查，未重跑全部实验。没有恢复旧62份历史代码。
+- 文献保留用户当前4PDF及补充资料。用户新增王晓辉2023八页原文，现不再缺此全文。Mujumdar文件仍仅5页节选，Eymard仍为2019年254页作者更新稿，范围已在TXT写明。不恢复用户已删的文献目录和书目报告。
+- 旧 `tools/assemble_support_materials_20260913.py` 与 `tools/finalize_support_materials_20260913.py` 命令入口已停用，避免重新生成已删AI/JSON/MD及旧目录。当前清单核验工具为 `tools/finalize_support_txt_20260913.py`；它只核验当前保留材料并写TXT清单和说明，不恢复旧材料。
+
+## 首次支撑材料目录交付（2026-09-13，历史；文件数、入口及AI状态已被上方覆盖）
 
 - 用户要求整理参考文献、代码、数据等到 `支撑材料/`，随后明确 **只要文件夹，不需要压缩**。最终目录没有RAR/ZIP；六图总预览已放回。内部QA保留早期试压缩记录，不是交付压缩包，不得后续擅自把它们复制进用户目录。
 - 最终438文件、50,790,386字节；437项SHA256校验全部通过（SHA清单自身不自引用）。入口 `支撑材料/00_支撑材料总说明.md`，附完整CSV清单、来源JSON、可供论文附录使用的清单和整理验收说明。最终状态 `paper_output/qa/support_materials_20260913/final_directory_audit.json` 为 `PASS_DIRECTORY_DELIVERY`。

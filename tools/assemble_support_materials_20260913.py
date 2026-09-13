@@ -230,4 +230,4 @@ Rscript --vanilla draw_figures.R
 
 
 if __name__ == "__main__":
-    assemble()
+    raise SystemExit("已停用旧版目录装配：用户已重新编排支撑材料，并要求删除AI详情、JSON和MD。不得运行旧装配逻辑恢复已删除材料；请以当前支撑材料目录及TXT说明为准。")

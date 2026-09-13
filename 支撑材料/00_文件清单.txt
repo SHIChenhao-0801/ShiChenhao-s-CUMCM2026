@@ -1,0 +1,117 @@
+﻿支撑材料文件清单
+
+共103个文件，包含本清单。说明使用TXT，未生成压缩包。
+
+分类文件数：
+  01_赛题与原始数据：10个文件
+  02_参考文献与网络资料：11个文件
+  03_程序代码：30个文件
+  04_结果表格：12个文件
+  05_数值检验与实验：35个文件
+  根目录说明：5个文件
+
+逐文件相对路径：
+
+00_可用于论文附录的支撑清单.txt
+00_支撑材料总说明.txt
+00_整理验收说明.txt
+00_文件清单.txt
+00_材料来源说明.txt
+01_赛题与原始数据/A题.pdf
+01_赛题与原始数据/数据说明.txt
+01_赛题与原始数据/清洗后数据/A_environment_observed.csv
+01_赛题与原始数据/清洗后数据/A_radius_observed.csv
+01_赛题与原始数据/附件/附件1.xlsx
+01_赛题与原始数据/附件/附件2.xlsx
+01_赛题与原始数据/附件/附件3/result1.xlsx
+01_赛题与原始数据/附件/附件3/result2.xlsx
+01_赛题与原始数据/附件/附件3/result3.xlsx
+01_赛题与原始数据/附件/附件3/result4.xlsx
+02_参考文献与网络资料/Handbook of Industrial Drying.pdf
+02_参考文献与网络资料/Handbook of numerical analysis.pdf
+02_参考文献与网络资料/中药材干燥技术与装备研究现状.pdf
+02_参考文献与网络资料/参考文献文件说明.txt
+02_参考文献与网络资料/数值模拟仿真研究现状及其在中药干燥领域应用展望_王晓辉.pdf
+02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页.html
+02_参考文献与网络资料/补充网络资料/FAO_干燥原理_官方网页_离线文本.html
+02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页.html
+02_参考文献与网络资料/补充网络资料/SciPy_solve_ivp_官方API网页_离线文本.html
+02_参考文献与网络资料/补充网络资料/Shampine1997_BYU原始扫描_35页.pdf
+02_参考文献与网络资料/补充网络资料/补充资料说明.txt
+03_程序代码/A_CodeReview.pyproj
+03_程序代码/A_CodeReview.sln
+03_程序代码/analyticJacobian.py
+03_程序代码/diskDense.py
+03_程序代码/docs/源码变更说明.txt
+03_程序代码/docs/运行验收说明.txt
+03_程序代码/dryingCore.py
+03_程序代码/exportOutputs.py
+03_程序代码/input_manifest.csv
+03_程序代码/inputs/cleaned/A_environment_observed.csv
+03_程序代码/inputs/cleaned/A_radius_observed.csv
+03_程序代码/inputs/original/附件1.xlsx
+03_程序代码/inputs/original/附件2.xlsx
+03_程序代码/inputs/templates/result1.xlsx
+03_程序代码/inputs/templates/result2.xlsx
+03_程序代码/inputs/templates/result3.xlsx
+03_程序代码/inputs/templates/result4.xlsx
+03_程序代码/numerical_design.txt
+03_程序代码/q1Model.py
+03_程序代码/q2Model.py
+03_程序代码/q3Model.py
+03_程序代码/q4Model.py
+03_程序代码/README.txt
+03_程序代码/reference/Q1/sampled_solution.npz
+03_程序代码/reference/Q23/sampled_solution.npz
+03_程序代码/reference/Q4/sampled_solution.npz
+03_程序代码/reference/reference_data.py
+03_程序代码/requirements.txt
+03_程序代码/runDelivery.py
+03_程序代码/runLogged.ps1
+04_结果表格/Referrence Table Files/q1_paper_moisture.csv
+04_结果表格/Referrence Table Files/q1_paper_temperature.csv
+04_结果表格/Referrence Table Files/q2_paper_moisture.csv
+04_结果表格/Referrence Table Files/q2_paper_temperature.csv
+04_结果表格/Referrence Table Files/q3_paper_moisture.csv
+04_结果表格/Referrence Table Files/q4_paper_moisture.csv
+04_结果表格/Referrence Table Files/q4_paper_radius.csv
+04_结果表格/result1.xlsx
+04_结果表格/result2.xlsx
+04_结果表格/result3.xlsx
+04_结果表格/result4.xlsx
+04_结果表格/结果表说明.txt
+05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs
+05_数值检验与实验/MATLAB对照证据/runCrossCheck.m
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py
+05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py
+05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py
+05_数值检验与实验/数值检验说明.txt
+05_数值检验与实验/源码文件与校验值.txt

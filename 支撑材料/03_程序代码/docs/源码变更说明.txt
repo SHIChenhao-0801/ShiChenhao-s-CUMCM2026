@@ -1,0 +1,57 @@
+源码与输入格式变更说明
+
+本次整理以用户当前03_程序代码目录为输入，没有恢复已删除或重排的其他目录。
+
+本次修改：
+1. 输入完整性清单改用input_manifest.csv，12项路径、字节数、SHA256以真实CSV字段保存。
+2. 冻结数值参照改用reference/reference_data.py中的REFERENCE_DATA纯数据常量。
+   全部字典、列表和标量类型保持一致；每个浮点数的十六进制值均与转换前一致。
+3. runDelivery.py只改两处输入读取方式并增加CSV导入；反向规范化这几处改动后AST一致。
+4. 八个核心模块只改说明文件名引用；模型、参数、离散、Jacobian、BDF及导出算法未改。
+5. Visual Studio工程内的说明文件引用改为README.txt。
+6. 删除冗余审计JSON和旧Markdown说明，重新编写可直接阅读的TXT说明。
+7. 原始Excel、清洗CSV、四份原模板和三份NPZ均保持原字节。
+
+导出器内部生成和回读的JSON协议保留，以保持原有全表验证链条；当前交付目录不含JSON文件。
+本次未重新求解Q23/Q4全量轨迹，实际定向核验范围见运行验收说明.txt。
+
+源码SHA256（整理前 -> 本次交付）：
+
+dryingCore.py
+  前：4d332f1a2d6e69ceb1247f74bacfca1132681ba70f5882bccdebb45432afa6cb
+  后：81afe621bd2a3a8b9f1d77f7999ae31806a344536e213e7718aa54348b729838
+
+analyticJacobian.py
+  前：10cf75e95bc57383c52b540575c9d4e51548a4f6d2227ea7f9446a32f010d7bb
+  后：dc5cfb4b19e8ec30e8882a37a6699fde6e1aaf9fa67be5356597fbb603666c7f
+
+diskDense.py
+  前：85fe836269d343dec2ced585ee25d4a052bfdf2376fae06d051e89fa91fab1b1
+  后：f602ca2d6bf52a0a5daea8dbe48be95170b31af3790b597c10989572ae1e06c4
+
+exportOutputs.py
+  前：2af8119529f23c16784cf41c82883b06932615b1bd72211fe269069ded4a4ef4
+  后：5eacfc1cdffa413c1565813c25bd8a9f721e0363ce0ac43e6113b4325409b047
+
+q1Model.py
+  前：ea386c0923fcd228de15d218bc834a95cc2be40620a18c88343580d0a9e86ac9
+  后：86914d8e55c6bec3e17718d171a2d5568b13eb5f264d19a05bdeaad6e7e46394
+
+q2Model.py
+  前：12ca865e9a18c92aabc7bc3824494891a4b3dc8353d6ef9cb6b0cec5748cae7e
+  后：d4cb9716db99e9aaac0040caaeda0313d610be33413d1df6fc2418b101b48588
+
+q3Model.py
+  前：e1dbc3b7dd682f2e0e152057e132ba73774f083b2bdd78bcb27a188e31c7136d
+  后：02b9b97278ce1132eb23cf5789655fb6ffd44e035d32dba9a28e43c89deeb457
+
+q4Model.py
+  前：c9b2863f62e29aafe1ada0c30305a91301260d5ef2755d1f6b8550c94b9d506f
+  后：b518592729009bd259a1f6342f73f112e99acf22bca8cfaf52dc458b9e64ad8f
+
+runDelivery.py
+  前：ab1571bf741f133e44d85b7f8a015d31d594d6338a139ae1a48b4f92a19470c1
+  后：b167a46bb2bf422867d3de739e4607bcaf4538e0420e652589b5f4aeda76501a
+
+reference/reference_data.py（新增纯数据文件）
+  SHA256：9586eb2f168adc86cba2e5e451f513825d2a5bcbecc7453e0b34c73fd3cc80c6

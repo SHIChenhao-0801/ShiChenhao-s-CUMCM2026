@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "createdAtUtc": "2026-09-13T00:56:44.937617+00:00",
+  "scope": "Current code-folder JSON/Markdown cleanup with equivalent input formats and focused Q1 execution",
+  "deliveryFiles": 30,
+  "deliveryBytes": 1548391,
+  "jsonFiles": 0,
+  "markdownFiles": 0,
+  "plainTextNotes": 4,
+  "inputManifestFormat": "CSV",
+  "inputManifestRows": 12,
+  "referenceFormat": "Python pure-data constant",
+  "referenceExactTypeAndFloatEquality": true,
+  "unchangedAlgorithmCoreModules": 8,
+  "pythonFilesSyntaxChecked": 10,
+  "actualExitCode": 0,
+  "targetedElapsedSeconds": 11.030635999995866,
+  "q1IntervalsTested": [
+    40,
+    3200
+  ],
+  "workbookCellsCheckedPerRun": 79244,
+  "paperCellsCheckedPerRun": 84,
+  "q1FinalArraysExactlyMatchFrozen": 7,
+  "fullQ23Q4RerunThisCleanup": false,
+  "runtimeStillGeneratesJsonRecords": true,
+  "newVisualStudioGui": "NOT_PERFORMED",
+  "humanReview": "PENDING_USER_REVIEW",
+  "sourceFiles": [
+    {
+      "path": "analyticJacobian.py",
+      "sha256": "dc5cfb4b19e8ec30e8882a37a6699fde6e1aaf9fa67be5356597fbb603666c7f"
+    },
+    {
+      "path": "diskDense.py",
+      "sha256": "f602ca2d6bf52a0a5daea8dbe48be95170b31af3790b597c10989572ae1e06c4"
+    },
+    {
+      "path": "dryingCore.py",
+      "sha256": "81afe621bd2a3a8b9f1d77f7999ae31806a344536e213e7718aa54348b729838"
+    },
+    {
+      "path": "exportOutputs.py",
+      "sha256": "5eacfc1cdffa413c1565813c25bd8a9f721e0363ce0ac43e6113b4325409b047"
+    },
+    {
+      "path": "q1Model.py",
+      "sha256": "86914d8e55c6bec3e17718d171a2d5568b13eb5f264d19a05bdeaad6e7e46394"
+    },
+    {
+      "path": "q2Model.py",
+      "sha256": "d4cb9716db99e9aaac0040caaeda0313d610be33413d1df6fc2418b101b48588"
+    },
+    {
+      "path": "q3Model.py",
+      "sha256": "02b9b97278ce1132eb23cf5789655fb6ffd44e035d32dba9a28e43c89deeb457"
+    },
+    {
+      "path": "q4Model.py",
+      "sha256": "b518592729009bd259a1f6342f73f112e99acf22bca8cfaf52dc458b9e64ad8f"
+    },
+    {
+      "path": "reference/reference_data.py",
+      "sha256": "9586eb2f168adc86cba2e5e451f513825d2a5bcbecc7453e0b34c73fd3cc80c6"
+    },
+    {
+      "path": "runDelivery.py",
+      "sha256": "b167a46bb2bf422867d3de739e4607bcaf4538e0420e652589b5f4aeda76501a"
+    }
+  ],
+  "removedFromDelivery": [
+    "input_manifest.json",
+    "numerical_design.md",
+    "README.md",
+    "docs/source_changes.json",
+    "docs/validation_summary.json",
+    "docs/运行验收说明.md",
+    "reference/numerical_reference.json",
+    "docs/portable_paths.diff"
+  ],
+  "detailedEvidence": [
+    "migration_static.json",
+    "process_result.json",
+    "targeted_result.json"
+  ]
+}

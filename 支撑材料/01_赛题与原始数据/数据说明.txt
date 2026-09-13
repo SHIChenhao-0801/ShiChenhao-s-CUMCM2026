@@ -1,0 +1,18 @@
+﻿数据说明
+
+A题.pdf：官方题面。
+附件/附件1.xlsx：环境观测，共241条，0至4小时。
+附件/附件2.xlsx：半径观测，共145条，0至72小时。
+附件/附件3/result1.xlsx至result4.xlsx：官方空白结果模板。
+
+清洗后数据/A_environment_observed.csv字段：
+time_s（秒）、time_h（小时）、temperature_C（摄氏度）、temperature_K（开尔文）、air_moisture_kg_per_kg（空气水分指标）。
+
+清洗后数据/A_radius_observed.csv字段：
+time_s（秒）、time_h（小时）、radius_cm（厘米）、radius_m（米）。
+
+两份CSV保存实际输入值。已有读取检查未发现缺失数值、非有限值或重复时间。
+
+4小时后的50°C、0.05 kg/kg平台是模型延拓假设。气相水分指标映射为材料平衡含水率是闭合假设，不能将其当成额外材料实测数据。
+
+已填好的四问完整结果在04_结果表格，不能与本目录空白模板混淆。
