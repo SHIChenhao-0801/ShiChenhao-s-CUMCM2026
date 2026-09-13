@@ -1,0 +1,41 @@
+提交前代码检查简表
+
+当前可确认：03正式独立入口及必要文件齐全。本轮副本--help/--preflight-only实际exit0、内部PASS；12项清单全匹配。44份03/05源SHA全部与此前沙盒交付一致，直接核对9正式源+12输入也与VM全量runResult一致；41Python编译、Node/PowerShell解析通过。本轮没有PDE重算。
+
+待团队完成：当前核心代码人工审查；当前VS只有断点/单步/初值SHA核查，未完整运行，不能代填通过。
+已整理：主代理移走6个IDE缓存/迁移日志，本代理复读确认.vs/UpgradeLog均不在03。初始仅检出项目绝对路径，未检出姓名/学校字面串。
+
+05如需让读者复现论文采用的网格、误差、方法对照，最少补以下条件，不需要补全所有废弃实验：
+1. 保留现有modeling的全部相互依赖源码。网格/时间核心所需模块目前已齐。
+2. 将支撑03/inputs/cleaned的两CSV复制到独立实验根的paper_output/data_cleaned；当前05预期层级没有这两文件。
+3. 使用Python3.14.7、numpy2.5.2、scipy1.18.1、openpyxl3.1.5，并补Matplotlib3.11.2。Matplotlib还被production_provenance.py:94无条件读取版本，不能仅写成“绘图时需要”。这些是已实际VM环境版本。
+4. 方法对照脚本的ROOT由原D盘改为实验根；需跑validate_bessel.py自身CLI自检时，其265行绝对工作区断言也要适配。此前VM的成功证据绑定这些路径适配副本，当前正式05保存原源码。
+5. 若同时复现导出自检，再补03/inputs/templates的4工作簿到独立实验根problem_files/CUMCM2026Problems/A题/附件/附件3。单独网格/时间/方法检查不依赖这些模板。
+6. 若复现描述性序列对照，再补03/reference/Q23/sampled_solution.npz到实验根paper_output/results/production/final_v6a/Q23。不得采用其旧M-K伪趋势结论。
+7. 上述网格/时间/方法入口不需要model_route.json；它只影响旧run_modeling.py。正式四题生产复现用03/runDelivery.py，无须为此恢复被用户删除的JSON。
+
+此前实际执行过的命令（均从原始日志复读，不代表本轮执行；小网格不等于论文细网格）：
+工作目录C:/Work/05_clean_retry，输入已显式补入且路径适配完成：
+  C:/Runtime/python.exe -B paper_output/code/modeling/verify_convergence.py --question Q1 --grids 20 40 --tag sandbox
+  实际exit0，14.123848秒；原证据comment_sandbox_20260913/vm_output/verification_clean_retry/retry.log第1行。
+  C:/Runtime/python.exe -B paper_output/code/modeling/verify_time_accuracy.py --question Q1 --n 20 --tag sandbox
+  实际exit0，30.5400595秒；同retry.log第2行。首轮旧输出目录导致exit1的记录仍保留，采用的是干净重试。
+工作目录C:/Work/05_path_adapted：
+  C:/Runtime/python.exe -B paper_output/code/verification/method_comparison.py --quick
+  实际exit0，31.8513539秒；原证据comment_sandbox_20260913/vm_output/verification_matrix/method_quick.process.json。
+以上命令的N20/N40是运行核查预算，不是论文正式网格设置。复现论文具体网格结果必须使用该结论对应原运行参数并重新校验，不能直接拿此小样作正式精度证据。
+
+当前实际原始命令（已在本轮执行）：
+工作目录D:/Document/数学建模/2026CUMCM/paper_output/qa/support_recheck_20260913/code：
+  C:/Python314/python.exe -X utf8 -B isolated03/runDelivery.py --help
+  C:/Python314/python.exe -X utf8 -B isolated03/runDelivery.py --preflight-only --run-id support_recheck
+两项exit0，预检内部PASS；stdout/stderr日志与isolated03/results/support_recheck/runResult.json已保留。该副本完全在QA内，未向支撑目录产生运行结果。
+
+以下是历史失败或限制，不要求临交前修成PASS，但论文不得采用其无效结论：
+- isotherm_diagnose旧B接口、isotherm_activity_closure采样轴反转、isotherm_jacobian_probe无实际注入调用。
+- crossvalidate_series常数序列旧M-K伪趋势；analytic_metric_check静态解释与实算趋势矛盾。
+- compare_analytic的N400密集水分误差超过原1e-4阈值；N800通过的数字必须与网格标注对应。
+- 旧Morris无效注入及未完成Sobol不采纳；现sensitivity_analysis控制样例通过不等于Morris362条/Sobol全量通过。
+- MATLAB/Node原路径和旧输出仍不齐；当前无注释M源码未重新MATLAB实算，不得借Python成功代替。
+
+详细文件/行及边界：提交前代码核查.txt；机器核验：code_audit.json。

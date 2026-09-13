@@ -1,0 +1,91 @@
+提交前支撑代码独立复核（2026-09-13）
+
+范围：支撑材料/03_程序代码、05_数值检验与实验。
+本轮实际执行：41个Python源码静态编译；Node.js --check；PowerShell Parser；03完整副本异cwd --help、--preflight-only。
+本轮未求解PDE、未修改算法、未执行VS或MATLAB GUI、未代替团队人工审查、未操作Git。
+
+一、结论与提交优先级
+
+1. 03正式独立求解程序未发现缺失源文件、输入、模板、参照或必要Python依赖。
+   八核心模块、runDelivery.py、reference_data.py以及runLogged.ps1共11份源文件齐全。
+   03的12项input_manifest.csv路径、字节数和SHA全部通过；03副本实际预检退出0、内部PASS，确认241环境行、145半径行及四模板工作表。
+   当前44份03/05源码SHA全部与2026-09-13早前Windows Sandbox交付绑定相同；直接复读正式VM runResult，9正式Python和12输入/参照共21项SHA与当前一致。
+   可以保留此前正式VM全量重算通过的证据：Q1/Q23 N3200、Q4 N6400，实际exit0、内部PASS；本轮只是重新核实绑定，不称再次全量重跑。
+
+2. 必须留给团队实际完成：核心代码人工审查，以及按工作区要求补足当前版本的VS运行验收。
+   README.txt:75、89如实写明人工审查待完成。当前GUI证据只证明dryingCore.py:19断点、单步至22行及初值/源码SHA核验，随后停止调试，fullRun=false。
+   当前无注释源码的Windows Sandbox全量成功不能替代用户人工审查，旧工程VS全量记录也不能冒作当前目录GUI完成。
+   这是本工作区人工协作与复现要求；本报告不自行把它扩展为未经核对的全国提交规则。
+
+3. 本轮初始发现、主代理已整理：03含隐藏.vs五文件及UpgradeLog.htm，共6份机器生成文件。
+   .vs内有两个DocumentLayout JSON；UpgradeLog记录初次项目类型不兼容错误。它们与正式源码无关，应从提交目录排除。
+   本代理复读确认03/.vs、03/UpgradeLog.htm均已不存在，主代理负责移至本轮QA保留。没有删除正式源码。
+   初始缓存DocumentLayout包含D:/Document/数学建模/2026CUMCM项目路径，不包含已知姓名/学校。UTF-8、UTF16LE、GB18030身份字面串扫描未命中；不能把仅项目路径直接说成实名泄漏。
+
+4. 05当前应作为“历史数值检验源码及真实适用范围”提交，不能描述成每个入口都可原样独立运行或全部通过。
+   现有数值检验说明.txt:4、16、22、24及独立沙盒逐源码核查已明确这一点，没有发现把整体失败隐瞒为成功的说明。
+   若论文需要读者在任意目录直接复现某项05结果，相应依赖、路径和采用范围必须补齐；若仅存档历史实验，不需要为提交临时修完所有已弃用程序。
+
+二、05仍然缺少的运行条件（不属于03正式求解缺件）
+
+A. 两CSV在支撑01/03中已有，但05原代码实际寻找的层级没有。
+   Python检验源码/paper_output/code/modeling/drying_core.py:25读取ROOT/paper_output/data_cleaned。
+   实际缺：05/Python检验源码/paper_output/data_cleaned/A_environment_observed.csv、A_radius_observed.csv。
+   verify_time_accuracy.py:32同样依赖这一层级；不是缺原始数据本体，而是缺05入口需要的输入摆放/路径适配。
+
+B. run_modeling.py:51要求paper_output/plan/model_route.json，此文件不在05。
+   早前干净VM原入口已实际FileNotFoundError，见独立沙盒逐源码核查.txt:19、100。
+   用户已要求支撑目录不留JSON，不能擅自恢复它；03/runDelivery.py是已经独立验证的正式替代入口。
+
+C. verification共13个脚本仍写死原D盘ROOT，validate_bessel.py:265仍作原工作区绝对路径判断，共14处。
+   示例：crossvalidate_solver.py:14、crossvalidate_series.py:11、sensitivity_analysis.py:12。
+   这些路径只有在原宿主工作区才存在；原路径版本在独立VM先实际失败，后续成功针对14处路径适配的实验副本。当前支撑源码没有混入适配修改。
+   crossvalidate_series还需要原final_v6a/Q23/sampled_solution.npz；参照本体在03/reference/Q23已有，但未放在05预期层级。
+
+D. MATLAB与Node的默认根路径因移动失效，旧结果输入未随目录提供。
+   runCrossCheck.m:5–8向上四级后得到父数学建模目录，不是2026CUMCM；:60–61随之指向错误CSV。
+   compareMatlab.mjs:8–10同样上溯四级，读取旧paper_output/qa/matlab_crosscheck_20260911及paper_output/results/code_delivery/camel_audit_v1。
+   旧MATLAB/Python JSON输出按用户要求未附带；VM Node原候选exit2缺runSummary.json；VM无MATLAB运行环境，未实算当前M脚本。
+   源码完整与可直接运行是两个不同条件；当前说明已承认这些缺口。
+
+E. 05的可复现安装说明可进一步补清，暂非03依赖缺失。
+   03/requirements.txt只固定numpy、scipy、openpyxl，满足03正式入口。
+   05若要运行，需另装Matplotlib（早前实际VM版本3.11.2）；它不只用于四个绘图程序。
+   production_provenance.py:94无条件查询Matplotlib包版本，verify_time_accuracy.py:40调用runtime_record，因此非绘图监督检验也会依赖Matplotlib已安装。
+   05/数值检验说明.txt:18目前仅写绘图部分需要Matplotlib，建议交接时补明上述监督器依赖。
+   publication_plots.py:26、run_modeling.py:57还固定C:/Windows/Fonts/msyh.ttc；其他系统字体条件未验证。
+
+三、05原有失败与数值限制必须继续明示
+
+这些均有此前Windows Sandbox实际日志，当前源码SHA相同。本轮不重复求解，不称新发现的生产模型失败。
+
+1. isotherm_diagnose.py:50传入已不存在的B参数，实际TypeError。
+2. isotherm_activity_closure.py:141–143把时间×空间场按相反方向提取，第三时点实际IndexError。
+3. isotherm_jacobian_probe.py替代Jacobian实际调用计数0，不能把未触发注入算作验证通过。
+4. crossvalidate_series.py:34旧sequential_mk对常数序列产生伪趋势，不能采用此项统计结论。
+5. compare_analytic.py N400密集水分最大误差2.875083008730961e-4超过原1e-4门槛，内部REVIEW_REQUIRED；N800为7.158659870798445e-5。不应把N400写成达标。
+6. analytic_metric_check.py:56静态interpretation与实际随网格细化逐次减半的结果矛盾，解释不宜采用。
+7. publication_plots.py历史四图仅GENERATED_PENDING_VISUAL_REVIEW，不能当最新六图重画或完整视觉验收。
+
+以上未采用的探索失败不要求比赛前仓促修改算法；应确认论文没有引用被否定的结果或声称全部实验通过。
+目录内独立沙盒逐源码核查.txt:19–26已逐条说明；31Python源均有入口或函数覆盖，共29受控任务24exit0/5exit1，不代表全部默认批次执行或全部数值通过。
+
+四、本轮原始证据与适用边界
+
+本轮：
+  code_audit.json：44源SHA、41Python编译、12清单、21正式VM绑定、8证据SHA回读、身份字面串与绝对路径扫描、实际命令退出码。
+  help.stdout.log / help.stderr.log：实际副本--help输出。
+  preflight.stdout.log / preflight.stderr.log：实际副本输入预检输出。
+  isolated03/results/support_recheck/runResult.json：本轮仅预检PASS，不能当模型求解。
+  recheck_code.py：本轮审计实现，不属于支撑材料模型代码。
+  Node --check及PowerShell Parser本轮工具实际exit0；M源只做源码完整性回读，未宣称MATLAB语法/求解运行通过。
+
+直接回读的此前正式运行证据：
+  paper_output/qa/comment_sandbox_20260913/vm_output/core_final_result.json：外部exit0，1812.6291425秒，内部PASS，来源未变。
+  同目录vm_output/core_results/vm_final/runResult.json：九源、12输入、版本及实际完整轨迹记录。
+  同目录vm_output/wrapper_stable/result.json：原PS入口实际exit0、quick完整运行；首轮观察器问题另保留。
+  同目录final_delivery_audit.json：9,335,598工作簿格、297正文格、21保存数组精确一致及证据SHA。
+  同目录verification_work/windows_sandbox_verification_matrix.json：05逐任务/逐源码实际范围和失败。
+  同目录gui/vs_candidate_breakpoint_variables.json及GUI核查说明.txt：当前源码断点/变量核对，fullRun=false、人审待完成。
+
+本报告结论不覆盖其他操作系统、第二物理设备、真实药材物理预测精度、最终论文一致性、比赛MD5登记或正式上传。

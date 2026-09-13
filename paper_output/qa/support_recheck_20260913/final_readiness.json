@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-09-13T07:09:29.490420+00:00",
+  "audit_status": "COMPLETED_WITH_ACTION_ITEMS",
+  "submission_readiness": "ACTION_REQUIRED",
+  "paper_sha256": "b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c",
+  "support_files": 106,
+  "support_bytes": 41004065,
+  "report": "paper_output/qa/support_recheck_20260913/提交前缺项核查.txt",
+  "report_sha256": "582f3b2ea66928cf5fedb6cdb080ef3934f93b88a32a13879ee7c0bfab788dcd",
+  "independent_of_historical_s8": true,
+  "final_pdf_confirmed_by_user": "NOT_FINALIZED",
+  "archive_created": false,
+  "md5_registration_verified": false,
+  "human_review": "PENDING_USER_CONFIRMATION",
+  "remaining": [
+    "用户独立AI详情PDF",
+    "六图R及必要CSV/可运行路径",
+    "采纳检验的可复现入口/输入/Matplotlib依赖",
+    "AI声明移到参考文献前、最终PDF导出核查",
+    "附录完整支撑文件清单",
+    "实际最终压缩大小/论文与支撑MD5登记/一致文件上传"
+  ],
+  "evidence_files": {
+    "paper_output\\qa\\support_recheck_20260913\\directory_initial_audit.json": "2927ff238753052a774f4bd7c605701245670aeaf3bf50c78603683bb707575a",
+    "paper_output\\qa\\support_recheck_20260913\\directory_final_audit.json": "31cf5808374f66cdcc6101e50c840b67760e05b65e561d032e2c253094e0d9d4",
+    "paper_output\\qa\\support_recheck_20260913\\code\\code_audit.json": "2c5e94f24a958931c3b2a14f011f8a939f5022b10a1b2d7141667a2d9a7904ab",
+    "paper_output\\qa\\support_recheck_20260913\\mapping\\current_mapping_audit.json": "9a1e94a252ddb410d71b35e65259cabf07c0842860019d29e36c3da6aab4d9c4"
+  }
+}

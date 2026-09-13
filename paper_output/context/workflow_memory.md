@@ -1,7 +1,7 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-12T22:05:07`
+- Generated at: `2026-09-13T15:09:29`
 - Current step: `S8`
 - Next step: `DONE`
 - Recommended skill: `-`
@@ -39,6 +39,6 @@
 - None
 
 
-## 最新用户修改稿编辑补充
+## 2026-09-13 提交前独立复核
 
-当前修订另存 `paper_output/paper/A题_论文_公式规范与精简附录版.docx`，实渲染31页（正文21页），独立审查通过。正文仍以用户修改为准；公式排版、精简附录、绘图定位见 `paper_output/qa/manuscript_revision_20260912/final_revision_audit.json`。上方S8/DONE是旧规范稿门禁，不能替代本修订QA；模型未重算、人工签核待完成。
+当前提交状态 ACTION_REQUIRED。用户确认最新根DOCX，PDF未定稿；旧S8 COMPLETE不表示本次提交就绪。详见paper_output/qa/support_recheck_20260913/提交前缺项核查.txt与final_readiness.json。

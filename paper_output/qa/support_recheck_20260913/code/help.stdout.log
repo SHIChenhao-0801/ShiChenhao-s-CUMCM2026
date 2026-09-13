@@ -1,0 +1,8 @@
+usage: runDelivery.py [-h] [--profile {quick,final}] [--run-id RUN_ID]
+                      [--preflight-only]
+
+options:
+  -h, --help            show this help message and exit
+  --profile {quick,final}
+  --run-id RUN_ID
+  --preflight-only

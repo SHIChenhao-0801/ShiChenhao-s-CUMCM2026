@@ -1,0 +1,97 @@
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parents[3]
+QA = Path(__file__).resolve().parent
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def main():
+    directory = json.loads((QA/'directory_final_audit.json').read_text('utf-8'))
+    mapping = json.loads((QA/'mapping/current_mapping_audit.json').read_text('utf-8'))
+    current = sorted(p for p in (ROOT/'支撑材料').rglob('*') if p.is_file())
+    assert len(current)==106
+    expected = {r['path']:r['sha256'] for r in directory['files']}
+    assert {p.relative_to(ROOT/'支撑材料').as_posix():sha(p) for p in current}==expected
+    assert sha(Path(mapping['paper']))==mapping['paper_sha256']
+    assert mapping['all_297_result_cells_equal'] and mapping['all_36_source_texts_equal']
+    assert all(r['crc_valid'] for r in directory['xlsx_npz_crc'])
+    assert all(r['equal'] for r in directory['raw_inputs'])
+    assert all(r['frozen_equal'] for r in directory['frozen_results'])
+    inventory=(ROOT/'支撑材料/00_文件清单.txt').read_text('utf-8-sig')
+    names=set(expected)
+    listed={line.strip() for line in inventory.splitlines() if line.strip() in names}
+    assert listed==names
+    readiness={'checked_at_utc':datetime.now(timezone.utc).isoformat(), 'audit_status':'COMPLETED_WITH_ACTION_ITEMS', 'submission_readiness':'ACTION_REQUIRED', 'paper_sha256':mapping['paper_sha256'], 'support_files':106, 'support_bytes':directory['actual_bytes'], 'report':'paper_output/qa/support_recheck_20260913/提交前缺项核查.txt', 'report_sha256':sha(QA/'提交前缺项核查.txt'), 'independent_of_historical_s8':True, 'final_pdf_confirmed_by_user':'NOT_FINALIZED', 'archive_created':False, 'md5_registration_verified':False, 'human_review':'PENDING_USER_CONFIRMATION', 'remaining':['用户独立AI详情PDF','六图R及必要CSV/可运行路径','采纳检验的可复现入口/输入/Matplotlib依赖','AI声明移到参考文献前、最终PDF导出核查','附录完整支撑文件清单','实际最终压缩大小/论文与支撑MD5登记/一致文件上传'], 'evidence_files':{str(p.relative_to(ROOT)):sha(p) for p in [QA/'directory_initial_audit.json',QA/'directory_final_audit.json',QA/'code/code_audit.json',QA/'mapping/current_mapping_audit.json']}}
+    (QA/'final_readiness.json').write_text(json.dumps(readiness,ensure_ascii=False,indent=2),encoding='utf-8')
+    memfile=ROOT/'memoryskill.md'
+    old=memfile.read_text('utf-8')
+    archive=ROOT/'memory_archive.md'
+    marker='## 2026-09-13 提交前复核：压缩前完整记忆快照'
+    archive_text=archive.read_text('utf-8')
+    if marker not in archive_text:
+        archive.write_text(archive_text.rstrip()+'\n\n'+marker+'\n\n'+old,encoding='utf-8')
+    memory='''# 2026 CUMCM 比赛记忆
+
+仅适用于 D:/Document/数学建模/2026CUMCM。当前A题《药材的烘干问题》，B题已停止。详细历史已完整归档到 memory_archive.md 的“2026-09-13 提交前复核：压缩前完整记忆快照”。
+
+## 最新：提交前支撑复核（2026-09-13 15时）
+
+- 用户要求重新核实支撑材料、查看提交缺项，并确认当前根目录 `药材热湿耦合模型与干燥时间计算_附录修订版.docx` 为准，PDF尚未定稿。
+- 当前DOCX为14:52:53用户保存、1,427,111字节，SHA256 `b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c`。与旧附录审计SHA不同，本轮已重新核对7表297格、36源码7715行均与当前支撑逐项一致；4结果XLSX与final_v6a逐字节相同。
+- 结论为 `ACTION_REQUIRED`，未完成最终提交。报告 `paper_output/qa/support_recheck_20260913/提交前缺项核查.txt`，机器表 `final_readiness.json`，三独立报告在 code/mapping/rules。旧S8 COMPLETE不能扩大为当前提交就绪。
+- 硬缺/待办：用户独立`AI工具使用详情.pdf`；六图实际R源码及14CSV4627行、交付路径运行；论文采用检验的独立入口/必要输入/Matplotlib依赖；最新稿AI前置独立节移到参考文献前；附录补完整支撑文件列表（现只有36源码索引）；最终PDF、实际ZIP/RAR容量、两项MD5登记及同文件上传。
+- 当前AI声明在摘要前独立节，两节都从页码1开始；电子论文首面应摘要。DOCX末尾9.3 AI报告存在，但不能替代独立支撑PDF。正文还有附录A/C/C.4旧指引，需映射实际9.1等小节。未渲染当前用户稿，不沿用旧183页或旧版式PASS。
+- 支撑初始112文件＝106正式＋6IDE；正式106项SHA均与上午交付相同。本轮仅将隐藏.vs五文件及UpgradeLog.htm移到QA/local_ide_backup，更新00_文件清单.txt；其他105正式文件字节未变。最终106文件41,004,065B，JSON/MD/压缩包0、空文件0，16XLSX+3NPZ CRC通过、6PDF可打开。
+- 没有生成压缩包；仅内存DEFLATE9+UTF8 ZIP头测算20,258,987B，超过20,000,000B但小于20MiB、仅余712,533B，未包含待补AI/绘图。20M口径未自行断言，最终需实查且建议留余量。
+- 44源码与当前VM交付SHA一致；41Python编译、Node/PS解析通过；本轮QA隔离03 --help/--preflight-only exit0、12输入完整，无PDE重算。实际VM全量证据仍有效绑定当前03源码。
+- 05仍非全部原样独立运行：论文网格/时间/方法最少需两CSV到paper_output/data_cleaned、路径适配、Matplotlib3.11.2（production_provenance.py:94无条件读取版本）。仅这些检验不用model_route；模板/NPZ分别用于导出/描述序列。弃用等温线/M-K/无效Jacobian/Morris/Sobol不要求仓促改PASS，也不能采纳其无效结论。
+- 六图原件在paper_output/figures/review_20260913，draw_figures.R第5行仍为工作区路径，补入应适配并实际验证。文献[7]BDF离线页未随包，已有solve_ivp；可用BDF原件位于旧QA reference_audit/raw_downloads/scipy_bdf.html。Crank/Byrne整本全文未附不是自动硬缺，Mujumdar5页节选、Eymard2019更新稿254页须保留范围说明。
+- 旧paper_output/submission/A题_论文.pdf是9月12日108页文件，不是最新稿；旧支撑ZIP也不是当前目录。未登记/上传、未补用户人工审查、无消息发送。本次只完成缺项审计与IDE整理。
+
+## 持续有效用户约束
+
+- 9月10日18:00起本次所有新增工作、终端cwd、输出/日志/记忆在本目录及子目录；父目录和联接Skill只读。共享Python用-B或把缓存放本届tmp/cache；不把本队身份/偏好写到全局或别的工作区。
+- 最新9月10赛前说明会是首要依据，原件reference_materials/contest-admin。保留要求/建议差别及原件内部矛盾，不自行制造校方澄清。
+- 9月13日19:00前报MD5是建议，20:00硬截止；上传窗口9月13日20:30—9月14日14:00，必须上传与两项所报哈希一致文件。PDF及支撑ZIP/RAR各≤20M；当前用户要求只整理文件夹、不代压缩，不等于规则免除最终压缩。
+- 正文≤30页含AI声明和参考文献，摘要/附录另计；摘要到参考文献至少15页校内要求，20–30页是建议。AI声明放参考文献前，电子版首面摘要；附录连续页码按format专项核查，讲义不同口径已保留。
+- 用户自己编写独立AI详情，代理不自动生成/恢复；用户仅在上轮末尾附录明确授权撰写9.3 AI报告，未授权恢复独立PDF。支撑目录不含JSON/MD，说明TXT，检验提供源代码，保留用户重排及删除决定；内部QA不属于删除范围。
+- Python/C++核心代码必须Computer Use在Visual Studio（非VS Code）可视化复现、团队人工审查；CLI、AI阅读、沙盒不能替代GUI或人工。MATLAB需GUI，R经Rscript；CPU和有限预算。
+- 福州大学参赛小组，用户主导模型/结论，论文同学参与结构文字图表与一致性。MATLAB来源厦门大学不改变参赛单位，许可范围未核实，不记录账号/密钥。匿名提交不含队员/学校/赛区身份。
+- 数据审计→抽象→基线与选型→可复现实现→数值/敏感性检验→冻结→论文→独立终审，不跳步。修改数据/模型触发重算与复核；新稿不继承旧S8。
+- GitHub私有仓库origin为SHIChenhao-0801/ShiChenhao-s-CUMCM2026，main。持续授权主代理在可复核单元后检查并commit/push、远端核验；不强推/删锁/丢弃用户改稿。子代理不并行操作Git。排除凭据/可重建缓存，不能把本地保存说已推送。
+- 6小时Git heartbeat为2026-6-git，UTC04/10/16/22＝北京00/06/12/18，无新变化保持安静；需确认真实工具状态才声称提醒/备份。赛事/市场关注仅相关且符合数据截止的信息入文，防未来信息。
+- 旧09-12微信/音乐未完成不自动恢复。09-13向“乐乐”的完成通知和向“郑欣洁”的完整附录发送已有真实聊天证据，属于历史已完成任务；本轮不发送其他消息。
+
+## 冻结模型与实际复现范围
+
+- final_v6a：Q1/Q23 N3200、Q4 N6400，Kirchhoff水通量、解析稀疏Jacobian。Q3连续57.47230195056044h、严格57.4724h；Q4连续51.09057478683054h、严格51.0906h。均为条件模型预测，无内部T/C实测精度。
+- 附件1为0–4h共241环境点，4h后50°C/0.05是平台假设；附件2为0–72h共145半径点。Q1附录2，Q23从t0整组附录3共享轨迹，Q4从t0整组附录4，不拼接Q1。
+- 有效rho*cp与干骨架密度分开、空气kg/kg映射Ceq及给定同比收缩/固定长度为模型闭合。潜热只作情景；能量有效自洽不等于真实能量解释，网格/灵敏度不等于实测精度。D4/D3=.175exp(.15/C)在C≈.08606反转，不能写整体小于。
+- 当前03无注释版本真实Windows Sandbox禁网、D盘不可见，Python3.14.7/NumPy2.5.2/SciPy1.18.1/openpyxl3.1.5，正式全量exit0/内部PASS、1812.629s，9,335,598工作簿格、297正文格、21数组逐值一致；runLogged.ps1在PS5.1 N40重试exit0。证据paper_output/qa/comment_sandbox_20260913/final_delivery_audit.json。
+- 05在VM有入口/函数调用和路径适配实跑记录，29Python任务24exit0/5exit1，exit0不等于所有内部数值PASS；MATLAB当前去注释版本VM无runtime未实算，Node缺旧MATLAB输出exit2。不得把有限N20/N40小样说成全默认高网格检验通过。
+- 当前无注释VS仅dryingCore.py:19断点/22行单步、初值和加载SHA核查，未全量求解；用户人工审查待本人确认。原review_delivery旧GUI全量/MATLAB通过仅绑定原版本历史，不扩大当前GUI状态。
+- 四位显示与严格阈值分别用；Q2 1.5h表面温度在舍入边界末位不稳定。Q4域外留空/独立surface是导出约定。
+
+## 历史交付定位
+
+- 上轮附录修订稿原SHA00e6da88…，正文前470XML/前43页原样，36源码7715行、183页；当前用户再改后以本轮b6fbac8f…为准。详尽旧QA在appendix_revision_20260913，不继承旧版式PASS。
+- 早先完整附录247页47源9917行与微信发送证据在appendix_full_20260913；此前格式与语言33页、公式文献31页、完整论文218页均为独立历史版本，详见归档。
+- 初次438文件目录/旧ZIP不可移植FAIL、103文件TXT整理/再去注释106正式文件均各自绑定哈希；旧脚本assemble_support_materials与finalize_support_materials入口已停用，不能用它们恢复AI/旧目录。finalize_support_txt旧清理期脚本也绑定去注释前源SHA，不能不核查直接重跑。
+'''
+    assert len(memory.splitlines())<=100
+    memfile.write_text(memory,encoding='utf-8')
+    wf=ROOT/'paper_output/context/workflow_memory.json'
+    d=json.loads(wf.read_text('utf-8'))
+    d['submission_readiness_recheck']=readiness
+    wf.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+    wfmd=ROOT/'paper_output/context/workflow_memory.md'
+    with wfmd.open('a',encoding='utf-8') as f:
+        f.write('\n\n## 2026-09-13 提交前独立复核\n\n当前提交状态 ACTION_REQUIRED。用户确认最新根DOCX，PDF未定稿；旧S8 COMPLETE不表示本次提交就绪。详见paper_output/qa/support_recheck_20260913/提交前缺项核查.txt与final_readiness.json。\n')
+    print(json.dumps({'final_readiness':readiness,'memory_lines':len(memory.splitlines()),'inventory_exact':True,'all_inputs_stable':True},ensure_ascii=False,indent=2))
+
+if __name__=='__main__':
+    main()

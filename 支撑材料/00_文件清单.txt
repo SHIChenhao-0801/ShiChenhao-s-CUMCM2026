@@ -1,7 +1,7 @@
 ﻿支撑材料文件清单
 
 正式材料共106个文件，包含本清单。保留未压缩文件夹。
-用户VS运行产生的本机工程缓存/升级日志6个另列，不计入正式材料。
+2026-09-13提交前复核：6个本机工程缓存/升级日志已移出本目录，当前只列正式材料。
 
 分类文件数：
   01_赛题与原始数据：10个文件
@@ -120,11 +120,4 @@
 05_数值检验与实验/独立沙盒逐源码核查.txt
 源码去注释与沙盒核查.txt
 
-另列本机IDE文件（会随VS操作变化）：
-
-03_程序代码/.vs/A_CodeReview/FileContentIndex/5c043762-cbc3-48df-a62d-52923b6ece28.vsidx
-03_程序代码/.vs/A_CodeReview/FileContentIndex/70e74aa4-17f9-4ce1-bf85-e2fda95bbde1.vsidx
-03_程序代码/.vs/A_CodeReview/v18/.suo
-03_程序代码/.vs/A_CodeReview/v18/DocumentLayout.backup.json
-03_程序代码/.vs/A_CodeReview/v18/DocumentLayout.json
-03_程序代码/UpgradeLog.htm
+提交目录内打开Visual Studio后可能重新生成.vs缓存，最终打包前需再次排除。

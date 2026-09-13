@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
-  "generated_at": "2026-09-12T22:05:07",
+  "generated_at": "2026-09-13T15:09:29",
   "status": "PASS",
   "root": "D:\\Document\\数学建模\\2026CUMCM",
   "workflow": {
@@ -158,112 +158,33 @@
     "format_check": "PASS"
   },
   "blockers": [],
-  "latest_docx_revision": {
-    "status": "PASS_SCOPED_EDITORIAL_REVISION",
-    "docx": "paper_output/paper/A题_论文_公式规范与精简附录版.docx",
-    "sha256": "bbc16aae9a8aa2efb3c20662d8ac91d809a464096700b81d80fb3b3fb2a0518e",
-    "audit": "paper_output/qa/manuscript_revision_20260912/final_revision_audit.json",
-    "bodyPages": 21,
-    "totalPages": 31,
-    "scope": "Existing S8/DONE evidence binds the earlier canonical manuscript. This supplemental QA binds the user-edited typography/appendix revision; no claim of rerunning original model gates.",
-    "autoresearchMode": "experiment-log analysis",
-    "newPdeRuns": 0,
-    "teamHumanReview": "PENDING"
-  },
-  "six_figure_word_guide": {
-    "status": "PASS",
-    "docx": "paper_output/paper/A题六张图绘制要求与数据说明.docx",
-    "docxSha256": "f72c8c603096cedf6ff07c519cc09f95ca1680f3d7a4c45b856b5cd878f894f9",
-    "pageCount": 7,
-    "figure2GuidePage": 3,
-    "paperModified": false,
-    "audit": "paper_output/qa/figure_guide_20260912/final_audit.json"
-  },
-  "six_figure_data_package": {
-    "path": "paper_output/handoff/A题六图绘图资料包_含全部数据.zip",
-    "sha256": "f2b4355e9c637a9001edf683ed98fdeadbc036865f25599084ee9610003d78fd",
-    "status": "PORTABLE_DATA_PACKAGE_VERIFIED",
-    "tables": 14,
-    "dataRows": 4627,
-    "originalFiles": 15,
-    "qa": "paper_output/qa/figure_package_20260912/final_package_audit.json",
-    "scope": "Six plotting figures only; supersedes path-only handoff. Does not change modeling/submission review status."
-  },
-  "latest_manuscript_revision": {
-    "input": "paper_output/paper/药材热湿耦合模型与干燥时间计算.docx",
-    "output": "paper_output/paper/药材热湿耦合模型与干燥时间计算_文献公式修订版.docx",
-    "sha256": "c872029841c907ba0155e09b53912d46c75547df4ed3a05921645f7ab2bb1f38",
-    "audit": "paper_output/qa/revision_20260913/final_delivery_audit.json",
-    "status": "PAPER_AND_FIGURES_VERIFIED_WECHAT_UNSENT",
-    "scope": "用户最新稿文献、公式、措辞及独立六图；不改变冻结生产结果、不扩大旧S8或submission ZIP状态",
-    "figures": "paper_output/figures/六图核查包_20260913.zip",
-    "figuresInserted": false,
-    "humanReview": "PENDING_USER_REVIEW"
-  },
-  "latest_document_revision": {
-    "date": "2026-09-13",
-    "scope": "formatting_and_language_only",
-    "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
-    "sha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a",
-    "audit": "paper_output/qa/formatting_20260913/final_audit.json",
-    "status": "PASS_FORMATTING_AND_LANGUAGE_REVISION",
-    "rendered_pages": 33,
-    "page_number_mode": "abstract_1_continuous_including_appendix",
-    "limitations": [
-      "LibreOffice headless render and actual PNG review; no new Word GUI or team sign-off claim.",
-      "Inherited appendix code long-line soft wraps are fully visible; code content remains byte-equivalent at XML level.",
-      "This pass covers requested formatting and language, not full submission compliance or model revalidation."
-    ]
-  },
-  "support_comment_sandbox_review": {
-    "updatedUtc": "2026-09-13T02:34:48.209873+00:00",
-    "task": "Remove all source comments in the current support package and verify independent sandbox execution",
-    "scope": [
-      "支撑材料/03_程序代码",
-      "支撑材料/05_数值检验与实验"
+  "submission_readiness_recheck": {
+    "checked_at_utc": "2026-09-13T07:09:29.490420+00:00",
+    "audit_status": "COMPLETED_WITH_ACTION_ITEMS",
+    "submission_readiness": "ACTION_REQUIRED",
+    "paper_sha256": "b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c",
+    "support_files": 106,
+    "support_bytes": 41004065,
+    "report": "paper_output/qa/support_recheck_20260913/提交前缺项核查.txt",
+    "report_sha256": "582f3b2ea66928cf5fedb6cdb080ef3934f93b88a32a13879ee7c0bfab788dcd",
+    "independent_of_historical_s8": true,
+    "final_pdf_confirmed_by_user": "NOT_FINALIZED",
+    "archive_created": false,
+    "md5_registration_verified": false,
+    "human_review": "PENDING_USER_CONFIRMATION",
+    "remaining": [
+      "用户独立AI详情PDF",
+      "六图R及必要CSV/可运行路径",
+      "采纳检验的可复现入口/输入/Matplotlib依赖",
+      "AI声明移到参考文献前、最终PDF导出核查",
+      "附录完整支撑文件清单",
+      "实际最终压缩大小/论文与支撑MD5登记/一致文件上传"
     ],
-    "status": "COMMENT_REMOVAL_COMPLETE_AND_SANDBOX_AUDIT_COMPLETE",
-    "sourceFiles": 44,
-    "pythonSources": 41,
-    "commentsRemoved": 274,
-    "docstringsRemoved": 106,
-    "coreFormalVm": "PASS",
-    "coreExternalSeconds": 1812.6291425,
-    "workbookCells": 9335598,
-    "paperCells": 297,
-    "savedArraysExactlyEqual": 21,
-    "strictHours": [
-      57.4724,
-      51.0906
-    ],
-    "historical05AllRunnable": false,
-    "historicalPythonTasks": 29,
-    "historicalPythonZeroExit": 24,
-    "historicalPythonNonzeroExit": 5,
-    "historicalPythonVmSourceCoverage": 31,
-    "rootPathAdaptationsInExperimentalCopyOnly": 14,
-    "nodeVm": "EXIT_2_MISSING_HISTORICAL_INPUTS",
-    "matlabVm": "NOT_EXECUTED_RUNTIME_UNAVAILABLE",
-    "powershellVm": "PASS_FULL_QUICK_AFTER_OBSERVER_CONSOLE_CORRECTION",
-    "visualStudioGui": "SOURCE_BREAKPOINT_STEP_AND_VARIABLES_VERIFIED_NOT_FULL_SOLVE",
-    "humanReview": "PENDING_USER_REVIEW",
-    "userArchiveSha256": "e65deebaaeb87ec542b0972d8fa655796612413e94a1cb256f99e48f40638159",
-    "userArchivePreserved": true,
-    "desktopSandboxKeptOpen": true,
-    "finalReport": "支撑材料/源码去注释与沙盒核查.txt",
-    "qa": "paper_output/qa/comment_sandbox_20260913/final_delivery_audit.json",
-    "scopeLimitation": "No new physical accuracy, other operating system, human review or general historical batch PASS is established.",
-    "wechatNotificationStatus": "SENT_VERIFIED_IN_CHAT",
-    "wechatNotificationEvidence": "paper_output\\qa\\comment_sandbox_20260913\\gui\\wechat_sent_verified.json",
-    "sandboxDesktopDelivery": {
-      "status": "COPIED_AND_SHA_VERIFIED",
-      "utc": "2026-09-13T02:23:49.369313+00:00",
-      "destination": "C:\\Users\\WDAGUtilityAccount\\Desktop\\支撑材料_去注释核查版",
-      "fileCount": 106,
-      "originalDesktopZipPreserved": true,
-      "originalExtractedFolderPreserved": true,
-      "excludedMachineCaches": true,
-      "publishedHostFolderWasMappedOnlyAfterAllRuns": true
+    "evidence_files": {
+      "paper_output\\qa\\support_recheck_20260913\\directory_initial_audit.json": "2927ff238753052a774f4bd7c605701245670aeaf3bf50c78603683bb707575a",
+      "paper_output\\qa\\support_recheck_20260913\\directory_final_audit.json": "31cf5808374f66cdcc6101e50c840b67760e05b65e561d032e2c253094e0d9d4",
+      "paper_output\\qa\\support_recheck_20260913\\code\\code_audit.json": "2c5e94f24a958931c3b2a14f011f8a939f5022b10a1b2d7141667a2d9a7904ab",
+      "paper_output\\qa\\support_recheck_20260913\\mapping\\current_mapping_audit.json": "9a1e94a252ddb410d71b35e65259cabf07c0842860019d29e36c3da6aab4d9c4"
     }
   }
 }

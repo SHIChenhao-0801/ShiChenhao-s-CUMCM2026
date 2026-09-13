@@ -1,0 +1,962 @@
+{
+  "audit_time_local": "2026-09-13T15:05:26",
+  "scope": "Current saved DOCX and support files only; no document edits, no solver run, no layout approval, no independent AI file restoration.",
+  "paper": "D:\\Document\\数学建模\\2026CUMCM\\药材热湿耦合模型与干燥时间计算_附录修订版.docx",
+  "snapshot": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\support_recheck_20260913\\mapping\\current_paper_readonly_snapshot.docx",
+  "paper_sha256": "b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c",
+  "paper_bytes": 1427111,
+  "paper_last_write_local": "2026-09-13T14:52:53",
+  "unchanged_during_audit": true,
+  "prior_appendix_output_sha256": "00e6da88d1aff6eae75dce0c02ff07cadd6d7be03e170067be9165f56980ebb2",
+  "equals_prior_appendix_output": false,
+  "seven_result_tables": [
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_moisture.csv",
+      "csv_sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "exact_table_indices": [],
+      "data_only_table_indices": [
+        2
+      ],
+      "data_cells": 42,
+      "headers_csv": [
+        "时间/s",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "headers_docx": [
+        "时间/s",
+        "r=0 cm",
+        "r=0.5 cm",
+        "r=1 cm",
+        "r=1.5 cm",
+        "r=2 cm"
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_temperature.csv",
+      "csv_sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "exact_table_indices": [],
+      "data_only_table_indices": [
+        1
+      ],
+      "data_cells": 42,
+      "headers_csv": [
+        "时间/s",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "headers_docx": [
+        "时间/s",
+        "r=0 cm",
+        "r=0.5 cm",
+        "r=1 cm",
+        "r=1.5 cm",
+        "r=2 cm"
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_moisture.csv",
+      "csv_sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "exact_table_indices": [],
+      "data_only_table_indices": [
+        4
+      ],
+      "data_cells": 36,
+      "headers_csv": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "headers_docx": [
+        "时间/h",
+        "r=0 cm",
+        "r=0.5 cm",
+        "r=1 cm",
+        "r=1.5 cm",
+        "r=2 cm"
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_temperature.csv",
+      "csv_sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "exact_table_indices": [],
+      "data_only_table_indices": [
+        3
+      ],
+      "data_cells": 36,
+      "headers_csv": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "headers_docx": [
+        "时间/h",
+        "r=0 cm",
+        "r=0.5 cm",
+        "r=1 cm",
+        "r=1.5 cm",
+        "r=2 cm"
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q3_paper_moisture.csv",
+      "csv_sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "exact_table_indices": [],
+      "data_only_table_indices": [
+        5
+      ],
+      "data_cells": 60,
+      "headers_csv": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2"
+      ],
+      "headers_docx": [
+        "时间/h",
+        "r=0 cm",
+        "r=0.5 cm",
+        "r=1 cm",
+        "r=1.5 cm",
+        "r=2 cm"
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_moisture.csv",
+      "csv_sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "exact_table_indices": [],
+      "data_only_table_indices": [
+        6
+      ],
+      "data_cells": 63,
+      "headers_csv": [
+        "时间/h",
+        "0",
+        "0.5",
+        "1",
+        "1.5",
+        "2",
+        "药材表面"
+      ],
+      "headers_docx": [
+        "时间/h",
+        "r=0 cm",
+        "r=0.5 cm",
+        "r=1 cm",
+        "r=1.5 cm",
+        "r=2 cm",
+        "药材表面"
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_radius.csv",
+      "csv_sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "exact_table_indices": [
+        7
+      ],
+      "data_only_table_indices": [
+        7
+      ],
+      "data_cells": 18,
+      "headers_csv": [
+        "时间/h",
+        "表面半径/cm"
+      ],
+      "headers_docx": [
+        "时间/h",
+        "表面半径/cm"
+      ]
+    }
+  ],
+  "all_297_result_cells_equal": true,
+  "four_workbooks": [
+    {
+      "file": "支撑材料\\04_结果表格\\result1.xlsx",
+      "bytes": 390899,
+      "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4",
+      "frozen_exists": true,
+      "frozen_sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4",
+      "equals_frozen": true
+    },
+    {
+      "file": "支撑材料\\04_结果表格\\result2.xlsx",
+      "bytes": 29210086,
+      "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336",
+      "frozen_exists": true,
+      "frozen_sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336",
+      "equals_frozen": true
+    },
+    {
+      "file": "支撑材料\\04_结果表格\\result3.xlsx",
+      "bytes": 339137,
+      "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e",
+      "frozen_exists": true,
+      "frozen_sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e",
+      "equals_frozen": true
+    },
+    {
+      "file": "支撑材料\\04_结果表格\\result4.xlsx",
+      "bytes": 278278,
+      "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f",
+      "frozen_exists": true,
+      "frozen_sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f",
+      "equals_frozen": true
+    }
+  ],
+  "appendix_sources": [
+    {
+      "number": 1,
+      "source": "支撑材料\\03_程序代码\\runDelivery.py",
+      "heading": "9.2.1 runDelivery.py",
+      "source_lines": 236,
+      "exact_lines_equal": true,
+      "current_source_sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 2,
+      "source": "支撑材料\\03_程序代码\\q1Model.py",
+      "heading": "9.2.2 q1Model.py",
+      "source_lines": 7,
+      "exact_lines_equal": true,
+      "current_source_sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 3,
+      "source": "支撑材料\\03_程序代码\\q2Model.py",
+      "heading": "9.2.3 q2Model.py",
+      "source_lines": 7,
+      "exact_lines_equal": true,
+      "current_source_sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 4,
+      "source": "支撑材料\\03_程序代码\\q3Model.py",
+      "heading": "9.2.4 q3Model.py",
+      "source_lines": 27,
+      "exact_lines_equal": true,
+      "current_source_sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 5,
+      "source": "支撑材料\\03_程序代码\\q4Model.py",
+      "heading": "9.2.5 q4Model.py",
+      "source_lines": 7,
+      "exact_lines_equal": true,
+      "current_source_sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 6,
+      "source": "支撑材料\\03_程序代码\\dryingCore.py",
+      "heading": "9.2.6 dryingCore.py",
+      "source_lines": 407,
+      "exact_lines_equal": true,
+      "current_source_sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 7,
+      "source": "支撑材料\\03_程序代码\\analyticJacobian.py",
+      "heading": "9.2.7 analyticJacobian.py",
+      "source_lines": 315,
+      "exact_lines_equal": true,
+      "current_source_sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 8,
+      "source": "支撑材料\\03_程序代码\\diskDense.py",
+      "heading": "9.2.8 diskDense.py",
+      "source_lines": 114,
+      "exact_lines_equal": true,
+      "current_source_sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 9,
+      "source": "支撑材料\\03_程序代码\\exportOutputs.py",
+      "heading": "9.2.9 exportOutputs.py",
+      "source_lines": 720,
+      "exact_lines_equal": true,
+      "current_source_sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 10,
+      "source": "支撑材料\\03_程序代码\\reference\\reference_data.py",
+      "heading": "9.2.10 reference_data.py",
+      "source_lines": 216,
+      "exact_lines_equal": true,
+      "current_source_sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 11,
+      "source": "支撑材料\\03_程序代码\\runLogged.ps1",
+      "heading": "9.2.11 runLogged.ps1",
+      "source_lines": 40,
+      "exact_lines_equal": true,
+      "current_source_sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 12,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\axisymmetric_check.py",
+      "heading": "9.2.12 axisymmetric_check.py",
+      "source_lines": 283,
+      "exact_lines_equal": true,
+      "current_source_sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 13,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\compare_analytic.py",
+      "heading": "9.2.13 compare_analytic.py",
+      "source_lines": 234,
+      "exact_lines_equal": true,
+      "current_source_sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 14,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\production_provenance.py",
+      "heading": "9.2.14 production_provenance.py",
+      "source_lines": 485,
+      "exact_lines_equal": true,
+      "current_source_sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 15,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\publication_plots.py",
+      "heading": "9.2.15 publication_plots.py",
+      "source_lines": 395,
+      "exact_lines_equal": true,
+      "current_source_sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 16,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\run_experiments.py",
+      "heading": "9.2.16 run_experiments.py",
+      "source_lines": 73,
+      "exact_lines_equal": true,
+      "current_source_sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 17,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\run_modeling.py",
+      "heading": "9.2.17 run_modeling.py",
+      "source_lines": 439,
+      "exact_lines_equal": true,
+      "current_source_sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 18,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\validate_bessel.py",
+      "heading": "9.2.18 validate_bessel.py",
+      "source_lines": 319,
+      "exact_lines_equal": true,
+      "current_source_sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 19,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\verify_convergence.py",
+      "heading": "9.2.19 verify_convergence.py",
+      "source_lines": 126,
+      "exact_lines_equal": true,
+      "current_source_sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 20,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\verify_dense_storage.py",
+      "heading": "9.2.20 verify_dense_storage.py",
+      "source_lines": 68,
+      "exact_lines_equal": true,
+      "current_source_sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 21,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+      "heading": "9.2.21 verify_time_accuracy.py",
+      "source_lines": 244,
+      "exact_lines_equal": true,
+      "current_source_sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 22,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\analytic_metric_check.py",
+      "heading": "9.2.22 analytic_metric_check.py",
+      "source_lines": 76,
+      "exact_lines_equal": true,
+      "current_source_sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 23,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\crossvalidate_series.py",
+      "heading": "9.2.23 crossvalidate_series.py",
+      "source_lines": 404,
+      "exact_lines_equal": true,
+      "current_source_sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 24,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\crossvalidate_solver.py",
+      "heading": "9.2.24 crossvalidate_solver.py",
+      "source_lines": 174,
+      "exact_lines_equal": true,
+      "current_source_sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 25,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\energy_balance_check.py",
+      "heading": "9.2.25 energy_balance_check.py",
+      "source_lines": 190,
+      "exact_lines_equal": true,
+      "current_source_sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 26,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\energy_balance_diagnose.py",
+      "heading": "9.2.26 energy_balance_diagnose.py",
+      "source_lines": 61,
+      "exact_lines_equal": true,
+      "current_source_sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 27,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\energy_balance_diagnose2.py",
+      "heading": "9.2.27 energy_balance_diagnose2.py",
+      "source_lines": 74,
+      "exact_lines_equal": true,
+      "current_source_sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 28,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\isotherm_activity_closure.py",
+      "heading": "9.2.28 isotherm_activity_closure.py",
+      "source_lines": 404,
+      "exact_lines_equal": true,
+      "current_source_sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 29,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\isotherm_diagnose.py",
+      "heading": "9.2.29 isotherm_diagnose.py",
+      "source_lines": 66,
+      "exact_lines_equal": true,
+      "current_source_sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 30,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\isotherm_jacobian_probe.py",
+      "heading": "9.2.30 isotherm_jacobian_probe.py",
+      "source_lines": 90,
+      "exact_lines_equal": true,
+      "current_source_sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 31,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\latent_heat_scenarios.py",
+      "heading": "9.2.31 latent_heat_scenarios.py",
+      "source_lines": 161,
+      "exact_lines_equal": true,
+      "current_source_sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 32,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\method_comparison.py",
+      "heading": "9.2.32 method_comparison.py",
+      "source_lines": 160,
+      "exact_lines_equal": true,
+      "current_source_sha256": "e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 33,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\sensitivity_analysis.py",
+      "heading": "9.2.33 sensitivity_analysis.py",
+      "source_lines": 249,
+      "exact_lines_equal": true,
+      "current_source_sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 34,
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\threshold_and_scaling_checks.py",
+      "heading": "9.2.34 threshold_and_scaling_checks.py",
+      "source_lines": 154,
+      "exact_lines_equal": true,
+      "current_source_sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 35,
+      "source": "支撑材料\\05_数值检验与实验\\MATLAB对照证据\\runCrossCheck.m",
+      "heading": "9.2.35 runCrossCheck.m",
+      "source_lines": 491,
+      "exact_lines_equal": true,
+      "current_source_sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    },
+    {
+      "number": 36,
+      "source": "支撑材料\\05_数值检验与实验\\MATLAB对照证据\\compareMatlab.mjs",
+      "heading": "9.2.36 compareMatlab.mjs",
+      "source_lines": 199,
+      "exact_lines_equal": true,
+      "current_source_sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59",
+      "matches_old_manifest_hash": true,
+      "first_differences": []
+    }
+  ],
+  "source_total_lines": 7715,
+  "all_36_source_texts_equal": true,
+  "docx_media": [
+    {
+      "part": "word/media/image1.png",
+      "bytes": 117683,
+      "sha256": "02f7f29628e1c3b16ed992d629d1ba1ee05008f1f3e260dc69edad3d07117b93"
+    },
+    {
+      "part": "word/media/image10.png",
+      "bytes": 102194,
+      "sha256": "0143e0afe6c3af589b25369d6b87f3a76cc9e1c38667ab090e574e62368cd117"
+    },
+    {
+      "part": "word/media/image11.svg",
+      "bytes": 123878,
+      "sha256": "3a27d21b5203e5085e16ced4ba29bb48b4873b4063fd793e9687b46377b70d3b"
+    },
+    {
+      "part": "word/media/image2.png",
+      "bytes": 169515,
+      "sha256": "2d9eda921e7906cf97f3f1657eb2a450fe82a73daf3001c19d2714b6ecc3187d"
+    },
+    {
+      "part": "word/media/image3.svg",
+      "bytes": 290788,
+      "sha256": "7c0080ccf6b4eb02fb51f1d0ea1287898137301c587800439d063e0a4a86d17b"
+    },
+    {
+      "part": "word/media/image4.png",
+      "bytes": 95716,
+      "sha256": "ae6207dd604642f6cb95bda39db8faf2462a2f009e27efe7055813048b6b04c5"
+    },
+    {
+      "part": "word/media/image5.svg",
+      "bytes": 189128,
+      "sha256": "3ac8faa731a7fdfa239368892d41575460b3b70c5bc05c918989e6e4a748e480"
+    },
+    {
+      "part": "word/media/image6.png",
+      "bytes": 137804,
+      "sha256": "2b3c73b7e1b8ef072565c376ad54a02e3ca2d80cecf957b31655bf95911760f7"
+    },
+    {
+      "part": "word/media/image7.svg",
+      "bytes": 174826,
+      "sha256": "6e91412e32dd223d300bda2bcb73b51b3eddee2d6306cc2bb184ef14336331fd"
+    },
+    {
+      "part": "word/media/image8.png",
+      "bytes": 109598,
+      "sha256": "dc88ff1b950ec522bbdf948ae495537d5e5ca25c022078a587853dca1eee32c1"
+    },
+    {
+      "part": "word/media/image9.svg",
+      "bytes": 130403,
+      "sha256": "44cc7da8f0c4617357e39b11edb483e196af7df77645d985b4ce73f1b2ef0993"
+    }
+  ],
+  "figure_assets_in_workspace": [
+    {
+      "file": "paper_output\\figures\\review_20260913\\图1_径向温度与含水率.pdf",
+      "sha256": "cea762fca66fa74220da3eb21d0000a7613fd87bdde26bf65f116397112c05aa",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图1_径向温度与含水率.png",
+      "sha256": "80754fe929b27ac081c05fe709bf88238a642eb8fb636690c8947b344e231b91",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图1_径向温度与含水率.svg",
+      "sha256": "55092242ed8a9ca1e9e4d3165ea1c97968c51b75c78cdcbcdc55a412a5b68666",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图2_环境观测与平台延拓.pdf",
+      "sha256": "a65328ead3c1d4334c7a9e41316e158e9d05c67c47c8e60e121e62832dd8b4cb",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图2_环境观测与平台延拓.png",
+      "sha256": "98d0a0924e31ce857861fe0cdee02d22134b9a24e99c98d084cb856801a5112d",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图2_环境观测与平台延拓.svg",
+      "sha256": "7c0080ccf6b4eb02fb51f1d0ea1287898137301c587800439d063e0a4a86d17b",
+      "docx_media_exact_matches": [
+        "word/media/image3.svg"
+      ],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图3_中心与表面热湿响应.pdf",
+      "sha256": "a51f87dfdeb77a7bd7132c665c1260f1f89c5fe68dacd067f1c74c00f919c1e5",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图3_中心与表面热湿响应.png",
+      "sha256": "4bba35b237ea718148e0f31ea0c30160c8ef8bcd9525130908cf53083075a5a3",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图3_中心与表面热湿响应.svg",
+      "sha256": "3ac8faa731a7fdfa239368892d41575460b3b70c5bc05c918989e6e4a748e480",
+      "docx_media_exact_matches": [
+        "word/media/image5.svg"
+      ],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图4_全域达标与临界放大.pdf",
+      "sha256": "a1f303ac597dfbc63a643195b0a6add873f63f9549bae2fe85f04db2d8d25238",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图4_全域达标与临界放大.png",
+      "sha256": "04a96aa51b55e2f14e68bd90a5797f516830394b28c1c667f8b29ff8515434f5",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图4_全域达标与临界放大.svg",
+      "sha256": "6e91412e32dd223d300bda2bcb73b51b3eddee2d6306cc2bb184ef14336331fd",
+      "docx_media_exact_matches": [
+        "word/media/image7.svg"
+      ],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图5_收缩半径与域内含水率.pdf",
+      "sha256": "459942c10d7917a247bc5ed87a0b71270afce0568ad64e199b5f46667427f029",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图5_收缩半径与域内含水率.png",
+      "sha256": "42e97f43f9d079bc90cc4a3326c00a0689898cfce5c8b2ff06d0815c353dd518",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图5_收缩半径与域内含水率.svg",
+      "sha256": "44cc7da8f0c4617357e39b11edb483e196af7df77645d985b4ce73f1b2ef0993",
+      "docx_media_exact_matches": [
+        "word/media/image9.svg"
+      ],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图6_经验边界阻力情景.pdf",
+      "sha256": "aff4bcb738972daa18a57eb40882103c8c9f17e24658d2c26419a33e04ff122c",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图6_经验边界阻力情景.png",
+      "sha256": "31ab305b18917d4768a493589754ebbe30a12821952dead10e029197a54d2931",
+      "docx_media_exact_matches": [],
+      "support_file_same_hash": []
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\图6_经验边界阻力情景.svg",
+      "sha256": "3a27d21b5203e5085e16ced4ba29bb48b4873b4063fd793e9687b46377b70d3b",
+      "docx_media_exact_matches": [
+        "word/media/image11.svg"
+      ],
+      "support_file_same_hash": []
+    }
+  ],
+  "figure_csvs_in_workspace": [
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图1\\moisture.csv",
+      "data_rows": 121,
+      "sha256": "37baad274dc6317d4b8af57d79d83af58653663247fe638ddb76cd09e9f630dd"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图1\\temperature.csv",
+      "data_rows": 121,
+      "sha256": "3178ed85da9e445d6965e17a434e1129ee7755b0deaef42dab86c7141d9ebcf7"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图2\\assumed_platform_4_60h.csv",
+      "data_rows": 2,
+      "sha256": "bc53170e1802d0bb4bfab17472ae5873d6c37ae6bd04b5b6bb66dbba04cccf44"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图2\\observed_0_4h.csv",
+      "data_rows": 241,
+      "sha256": "53587d9e0c837efe21ea9456af26857b035b370d5bb3180194f5551e38206126"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图3\\moisture_to_event.csv",
+      "data_rows": 3451,
+      "sha256": "e97f2271edb8f062027f4238e1e3491b60df8ce3690030b96ed71843aa9066ea"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图3\\temperature_0_4h.csv",
+      "data_rows": 242,
+      "sha256": "baf5659461cdb25c0dd28beb8b0804f69ed444196f923dc06eabe7069ed6b2f4"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图4\\centre_near_event.csv",
+      "data_rows": 4,
+      "sha256": "2723e357e65989abc06165433c2d67050515feaa3390d2036be3a6c33d64f233"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图4\\drying_main.csv",
+      "data_rows": 266,
+      "sha256": "679b6de5ccec6d5904c63b2b530c4b16501442e278bd2a37b2af8afe8a63725c"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图4\\event_markers.csv",
+      "data_rows": 2,
+      "sha256": "6931d514d9626dc30f0c68e81d9d9da47ff8a8d511aa3a7811bdf0c676ed66dc"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图4\\maximum_near_event.csv",
+      "data_rows": 2,
+      "sha256": "a334248c14b407bb3de6e0959087e7bc7448e5a72914e8bc426287d5d2d53ab1"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图5\\moisture_profiles_xy_pairs.csv",
+      "data_rows": 21,
+      "sha256": "a056c1c60bae798ef2501ca223da2b2e56ebb409b55f06827e4c3019fb9e3e38"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图5\\radius_observed.csv",
+      "data_rows": 145,
+      "sha256": "9217f6e42d4b996641982534d5130b2cef667bee14f5238de51f55605b49b9cd"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图5\\selected_times_and_radii.csv",
+      "data_rows": 6,
+      "sha256": "2f9f05c0f4c51dee5d62df9e9a224e585a5464b8fbf46c62804e2a9a6a6e5d9d"
+    },
+    {
+      "file": "paper_output\\figures\\review_20260913\\input_data\\CSV\\图6\\scenario_comparison.csv",
+      "data_rows": 3,
+      "sha256": "44fd32289e807d35a616cc87cf53da16bea320520f90950fb7ce52022a55a8c2"
+    }
+  ],
+  "figure_csv_data_rows": 4627,
+  "support_image_files": [],
+  "support_r_scripts": [],
+  "pdf_inventory": [
+    {
+      "file": "支撑材料\\02_参考文献与网络资料\\Handbook of Industrial Drying.pdf",
+      "sha256": "e4dc718fa3c5a2efa00178f6e934bb636e98a3f2bc65c4ed605a6767a0043cf2",
+      "pages": 5,
+      "first_page_text": "Boca Raton  London  New York\nCRC Press is an imprint of the\nTaylor & Francis Group, an informa business\nHandbook of\nIndustrial Drying\nFourth Edition\nEdited by\nArun S. Mujumdar\n",
+      "last_page_text": "15\nPrinciples, Classification, and Selection of Dryers\nare superimposed on the drying and wetting processes, pro-\nducing states of tension in the interior of the products and \nleading to varying equilibrium moisture contents depending \non whether desorption or absorption is in progress.\n1.3.2.2  \u0007Temperature Variations \nand Enthalpy of Binding\nMoisture isotherms pertain to a particular temperature. \nHowever, the variation in equilibrium moisture content for \nsmall changes of temperature (<10°C) is neglected [3]. To a \nfirst approximation, the temperature coefficient of the equi-\nlibrium moisture content is proportional to the moisture con-\ntent at a given relative humidity:\n\t\n∂\n∂\n\n\n\n\n\n\n= −\nX\nT\nAX\n*\n*\nψ\n\t\n(1.51)\nThe coefficient A lies between 0.005 and 0.01 per kelvin for \nrelative humidities between 0.1 and 0.9 for such materials as \nnatural and synthetic fibers, wood, and potatoes. A could be \ntaken to increase linearly with ψ. So for ψ = 0.5 there is a \n0.75% fall in moisture content for each degree kelvin rise in \ntemperature. The extent of absorption–desorption hysteresis \nbecomes smaller with increasing temperature.\nFigure 1.10 shows moisture isotherms at various tempera-\ntures. The binding forces decrease with increasing tempera-\nture; that is, less moisture is absorbed at higher temperatures \nat the same relative humidity. Kessler [10] has shown that the \nslope of a plot of ln(PW/PW\n0) versus 1/T at constant X (Figure 1.11) \ngives the enthalpy of binding. The variation of enthalpy of \nbinding versus moisture content is shown in Figure 1.12. \nFrom the figure it is seen that in the region where monomo-\nlecular layers are formed, enthalpies of binding are very high.\n1.3.3  \u0007Determination of Sorption Isotherms [10]\nThe sorption isotherms are established experimentally start-\ning mostly with dry products. The initial humidity of the air \nwith which the product is in equilibrium should be brought \nWetting\nDrying\nI\n0\nX*max\nψ\nEquilibrium moisture content, X*\nFigure 1.9  Wetting and drying isotherms for a typical hygro-\nscopic solid.\n100°C\n0°C\n0\n25\n50\nX, %\n1.0\nRelative humidity, ψ\nFigure 1.10  Sorption isotherms for potatoes.\n1/T\nX = Constant\nlog (Rel. humidity)\nLow\nmoisture\ncontent\nHigh moisture content\nFigure 1.11  Determination of the heat of sorption from sorption \nisotherms.\n0\n10\nEgg white\nPotato\n20\n30\nMoisture content, X (g H2O/100 g TS)\n500\n1000\n1500\n2000\nEnthalpy of binding (kJ/kg)\nFigure 1.12  Enthalpy of sorption as a function of the hygro-\nscopic moisture content. (Egg white data by Nemitz; potato data \nby Krischer.)\n"
+    },
+    {
+      "file": "支撑材料\\02_参考文献与网络资料\\Handbook of numerical analysis.pdf",
+      "sha256": "ca82f25367c9ec82f89a3aa6878525c2142f2fb287fc53ad93a75ae4cd177b7f",
+      "pages": 254,
+      "first_page_text": "Finite Volume Methods\nRobert Eymard1, Thierry Gallou¨et2 and Rapha`ele Herbin3\nJanuary 2019. This manuscript is an update of the preprint\nn0 97-19 du LATP, UMR 6632, Marseille, September 1997\nwhich appeared in Handbook of Numerical Analysis,\nP.G. Ciarlet, J.L. Lions eds, vol 7, pp 713-1020\n1Ecole Nationale des Ponts et Chauss´ees, Marne-la-Vall´ee, et Universit´e de Paris XIII\n2Ecole Normale Sup´erieure de Lyon\n3Universit´e de Provence, Marseille\n",
+      "last_page_text": "Bibliography\n253\n[150] Van Leer B. (1977), Towards the ultimate conservative diﬀerence scheme, IV. a new approach to\nnumerical convection. J. Comput. Phys. 23, 276-299.\n[151] Van Leer B. (1979), Towards the ultimate conservative diﬀerence scheme, V, J. Comput. Phys.\n32, 101-136.\n[152] Vanselow R. (1996), Relations between FEM and FVM, in: F. Benkhaldoun and R. Vilsmeier\neds, Finite volumes for complex applications, Problems and Perspectives (Hermes, Paris), 217-223.\n[153] Vassileski, P.S., S.I. Petrova and R.D. Lazarov (1992), Finite diﬀerence schemes on trian-\ngular cell-centered grids with local reﬁnement, SIAM J. Sci. Stat. Comput. 13, 6, 1287-1313.\n[154] Vignal M.H. (1996), Convergence of a ﬁnite volume scheme for a system of an elliptic equation\nand a hyperbolic equation Mod´el. Math. Anal. Num´er. 30, 7, 841-872.\n[155] Vignal M.H. (1996), Convergence of Finite Volumes Schemes for an elliptic hyperbolic system\nwith boundary conditions,in: F. Benkhaldoun and R. Vilsmeier eds, Finite volumes for complex\napplications, Problems and Perspectives (Hermes, Paris), 145-152.\n[156] Vignal M.H. and S. Verdi`ere (1998), Numerical and theoretical study of a dual mesh method\nusing ﬁnite volume schemes for two phase ﬂow problems in porous media, Numer. Math., 80, 4,\n601-639.\n[157] Vila J.P. (1986), Sur la th´eorie et l’approximation num´erique de probl`emes hyperboliques non\nlin´eaires. Application aux ´equations de saint Venant et `a la mod´elisation des avalanches de neige\ndense, Thesis, Universit´e Paris VI.\n[158] Vila J.P. (1994), Convergence and error estimate in ﬁnite volume schemes for general multidimen-\nsional conservation laws, I. explicit monotone schemes, Mod´el. Math. Anal. Num´er. 28, 3, 267-285.\n[159] Vol’pert A. I. (1967), The spaces BV and quasilinear equations, Math. USSR Sb. 2, 225-267.\n[160] Vovelle, J. (2002): Convergence of ﬁnite volume monotone schemes for scalar conservation laws on\nbounded domains. Num. Math., 3, 563–596\n[161] Weiser A. and M.F. Wheeler (1988), On convergence of block-centered ﬁnite-diﬀerences for\nelliptic problems, SIAM J. Numer. Anal., 25, 351-375.\n"
+    },
+    {
+      "file": "支撑材料\\02_参考文献与网络资料\\中药材干燥技术与装备研究现状.pdf",
+      "sha256": "4beca0c77feeb6836fa9cc0fb46222fff9d16889237a07bb34de2b48e071700d",
+      "pages": 28,
+      "first_page_text": " \n▪  专题:农特产品绿色保质低碳智能干燥新技术  ▪\n中药材干燥技术与装备研究现状\n王乐意 1，李长河 1※，刘明政 1，李　康 1，叶祥瑞 1，王子文 1，范林政 1，\n王仁坤 1，赵华洋 2，坎　杂 3，张国华 4，邬健康 4\n（1.   青岛理工大学机械与汽车工程学院，青岛 266520；2.   内蒙古民族大学工学院，通辽 028042；3.   石河子大学机械电气工程\n学院，石河子 832003；4.   山东五康轩现代农林发展有限公司，邹城 273500）\n摘　要：中药材在采收后需经过产地初加工处理，其中干燥是产地初加工的必要环节，并直接影响到中药材的品质。传\n统的自然干燥方式效率低，且药材干燥品质良莠不齐，严重制约中药产业的发展。因此，加强对中药材干燥技术与装备\n的研究尤为迫切。基于此，该研究综述了中药材干燥技术与装备的研究现状。首先，总结中药材的干燥脱水过程与理化\n性质变化规律，分析了药材自身特性与干燥条件对水分脱除速率与干燥品质的影响机制。其次，针对热风、热泵、红外、\n微波、真空与高压电场干燥技术，以干燥机理为基础，总结各类干燥技术的装备结构与工作原理，分析了干燥装备存在\n的干燥不均匀、能耗大、效率低等问题并探讨了相应改善方法。同时，研究了各类干燥技术在不同工艺条件下的干燥效\n果，分析了干燥温度、切片厚度、真空度等工艺参数对干燥效果的影响规律，探讨了预处理、阶段式变温变湿、间歇式\n干燥等赋能干燥效果的工艺手段，并综合干燥品质、干燥效率与干燥成本，得到了各类干燥技术的优缺点与适用范围。\n进一步地，分析了微波-真空、微波-热风与远红外-热泵三类联合干燥技术不同组合方式下的干燥机理，阐述了各类联合\n干燥装备的研发进展，探讨了联合干燥技术相较于单一干燥技术的优势以及装备和工艺存在的不足。最后，从提高中药\n材品质评价标准、完善干燥相关模型、加强干燥装备研发三方面对研究方向进行了展望，以期为中药材干燥技术研究与\n装备创新研发提供理论依据与技术支持。\n关键词：中药材；干燥；机理；装备；效果；工艺\ndoi：10.11975/j.issn.1002-6819.202306104\n中图分类号：R282.4　　　　文献标志码：A　　　　文章编号：1002-6819(2024)-02-0001-28\n王乐意，李长河，刘明政，等. 中药材干燥技术与装备研究现状[J]. 农业工程学报，2024，40(2)：1-28. doi: 10.11975/j.\nissn.1002-6819.202306104　　http://www.tcsae.org\nWANG Leyi, LI Changhe, LIU Mingzheng, et al. Research status of drying technology and equipment for Chinese medicinal\nmaterials[J]. Transactions of the Chinese Society of Agricultural Engineering (Transactions of the CSAE), 2024, 40(2): 1-28. (in\nChinese with English abstract)　　doi: 10.11975/j.issn.1002-6819.202306104　　http://www.tcsae.org\n \n0　引　 言\n中医药是中国人民在与疾病斗争中通过实践总结出\n的智慧结晶，在中国已有5 000 余年历史。中国疆域辽\n阔、气候复杂、土壤多样，造就了极为丰富的中药资源，\n根据全国第四次中药资源普查，国内中药材种类多达\n13 000 余种，其来源绝大多数为植物，还包括少量的动\n物与矿物[1]。在国家与政府的大力扶持下，中药材的人\n工种植规模也在逐年扩大，截止至2020 年，国内中药材\n种植总面积已达8 400 余万亩，其中临床常用药材占比\n约70% ，药食同源药材占比约65%[2]。\n随着人民生活水平和对健康重视程度的不断提高，\n中药类产品因来源天然、疗效显著、副作用低等优势越\n来越被大众所认可与接受，且在全球范围内都受到了广\n泛关注，国际市场需求量逐年攀升[3-4]。中国凭借雄厚的\n用药理论以及丰富的中药资源，在发展中药产业方面具\n有独特的优势。然而，目前中国在国际市场却严重缺乏\n竞争力，中药类产品出口规模较小，大约80% 的市场份\n额被日本与韩国所占据[5]。造成上述现象的一个重要原\n因在于中国所生产的部分中药材品质低劣，无法满足当\n前市场对中药材及其产品的品质要求，改善中药材品质\n是推动中药产业走向现代化与国际化的关键[6]。\n中药材品质不仅受种植产地与采收时间影响，还与\n产地初加工密切相关[7-8]。除小部分鲜用中药材，大部分\n中药材在采收后需要经过一系列产地初加工处理，如捡\n选、清洗、切片、蒸煮、干燥等，其中干燥是中药材产\n地初加工的必要环节[9-10]。新鲜中药材含水率普遍较高，\n一般在60%～90% 之间[11]，给微生物的生长繁殖提供了\n有利环境，导致药材在贮藏过程中易发霉腐烂，且高含\n水率不利于药材的运输以及炮制、粉碎等后续加工，所\n以必须通过干燥降低药材所含水分[12]。同时，药材干燥\n过程中受自身水分变化与干燥条件作用，其色泽、外观\n形态、微观结构以及有效成分等理化性质也会发生改变，\n因此，干燥过程会直接影响到药材品质。\n  \n收稿日期：2023-06-15　　修订日期： 2023-09-17\n基金项目：国家自然科学基金项目（52105264）\n作者简介：王乐意，研究方向为农业机械装备设计研究。\nEmail：wly416410669@163.com\n※通信作者：李长河，博士，二级教授，博士生导师，研究方向为精密加\n工与智能制造。Email：sy_lichanghe@163.com\n \n第 40 卷 　 第 2 期\n农 业 工 程 学 报　\nVol.40　No.2\n2024 年 　　 1 月\nTransactions of the Chinese Society of Agricultural Engineering\nJan. 2024\n1\n",
+      "last_page_text": " \nResearch status of drying technology and equipment for\nChinese medicinal materials\nWANG Leyi1, LI Changhe1※, LIU Mingzheng1, LI Kang1, YE Xiangrui1, WANG Ziwen1, FAN Linzheng1,\nWANG Renkun1, ZHAO Huayang2, KAN Za3, ZHANG Guohua4, WU Jiankang4\n(1. School of Mechanical and Automotive Engineering, Qingdao University of Technology, Qingdao 266520, China;　2. School of\nEngineering, Inner Mongolia Minzu University, Tongliao 028042, China;　3. College of Mechanical and Electrical Engineering,\nShihezi University, Shihezi 832003, China;　4. Shandong Wukangxuan Modern Agriculture and Forestry Development Co.,\nLtd., Zoucheng 273500, China)\nAbstract: The drying process is one of the most essential steps in the initial processing of Chinese medicinal materials. Current\nnatural drying (such as sun and shade drying) approaches have been widely used to improve the quality of medicinal materials,\ndue to their simplicity and low cost. However, the natural environmental conditions can dominate the quality of dried medicinal\nmaterials, resulting in low drying efficiency. It is still lacking in the strengthened research of controllable drying. In this study,\na critical review was given on the research status of drying technology and equipment for Chinese medicine materials. Firstly, a\nsystematic  investigation  was  performed  on  the  moisture  migration,  diffusion  and  removal  of  Chinese  medicinal  materials\nduring drying, as well as the changes in color, appearance, microstructure, and physical and chemical properties. The moisture\nremoval  rate  and  drying  quality  depended  mainly  on  the  water  content,  volume,  and  tissue  structure  of  Chinese  medicinal\nmaterials in the conditions of drying, such as temperature, relative humidity and wind speed. Secondly, the drying mechanisms,\nequipment  structure  and  working  principle  were  performed  on  various  drying,  including  hot  air,  heat  pump,  infrared,\nmicrowave,  vacuum  and  high  voltage  electric  field  drying.  The  performances  of  drying  equipment  were  analyzed,  such  as\nuneven drying, high-energy consumption and low efficiency. The structure of the drying chamber was optimized to improve the\nairflow distribution using heating with multiple heat sources. Chinese medicine materials remained in a dynamic state during\ndrying, in order to improve drying uniformity. At the same time, the drying performances were also evaluated on various drying\ntechnologies under different conditions. Some parameters were then considered, including drying temperature, slice thickness,\nand vacuum degree. The drying temperature generally improved the drying rate while shortening the drying time. Much higher\ntemperature led to reduce the sensory quality and efficacy of medicinal materials. Pretreatment, staged variable temperature and\nhumidity,  and  intermittent  drying  were  also  discussed  to  obtain  comprehensive  drying  quality,  efficiency  and  cost,  and\napplication  scopes.  Among  them,  the  hot-air  drying  equipment  was  suitable  for  the  large-scale  drying  of  cheap  Chinese\nmedicinal materials, due to its simple, low cost and large scale, but with the low drying efficiency and quality, as well as the\nhigh energy consumption. Vacuum drying was suitable for small batch drying of Chinese medicinal materials, which were easy\nto oxidize and brown with high added value. The low temperature and oxygen environments were used to improve the drying\nquality  of  Chinese  medicinal  materials,  but  with  the  low  drying  efficiency,  the  high  investment  and  the  operation  cost  of\nequipment. Moreover, the drying mechanisms were analyzed for the microwave-vacuum, microwave-hot air, and far infrared-\nheat pump drying in the coupling or series combination modes. The research progress on the development of combined drying\nequipment was summarized to compare the combined and single drying, in order to explore the limitations of combined drying\nequipment  and  processes.  Finally,  the  research  directions  were  predicted  from  the  evaluation  standards,  the  drying-related\nmodels, and the drying equipment of Chinese medicinal materials. This finding can provide the theoretical basis and technical\nsupport for the research and innovation of drying technology and equipment for Chinese medicinal materials.\nKeywords: Chinese medicinal materials; drying; mechanism; equipment; effect; process\n　 28\n农业工程学报（http://www.tcsae.org）\n2024 年\n"
+    },
+    {
+      "file": "支撑材料\\02_参考文献与网络资料\\数值模拟仿真研究现状及其在中药干燥领域应用展望_王晓辉.pdf",
+      "sha256": "a08e9f5aba4da044d31939c73cd14dfbe7bec91c05c5d048081c798088718ebc",
+      "pages": 8,
+      "first_page_text": "2023 年7 月\n \n \n第48 卷第13 期\nVol. 48,\n \nNo. 13\nJuly,\n \n2023\n[收稿日期]　2023-02-15\n[基金项目] 　\n国家自然科学基金项目( 82003952); 江西省研究生创新专项( YC2022-S838); 中央引导地方科技发展基金项目\n(2022ZDD03085);江西中医药大学科研基金项目(2022WBZR006)\n[通信作者]　\n∗杨明,教授,博士生导师,主要从事中药制剂学研究,Tel/ Fax:( 0791) 87118658,E-mail:lab215@ 163. com;∗王学成,博士,\n副教授,主要从事中药制剂工艺与装备研究,E-mail:wangxcdd@ 126. com\n[作者简介]　王晓辉,硕士研究生,E-mail:1679191901@ qq. com\n数值模拟仿真研究现状及其在中药干燥领域应用展望\n王晓辉\n1, 王学成\n1∗, 唐培渝\n1, 伍志成\n1, 伍振峰\n1, 王雅琪\n1, 刘振峰\n2, 杨明\n1∗\n(1. 江西中医药大学\n \n现代中药制剂教育部重点实验室,\n \n江西\n \n南昌\n \n330004;\n \n2. 宜春万申制药机械有限公司,\n \n江西\n \n宜春\n \n336000)\n[摘要]　随着计算机技术的迅猛发展,数值模拟仿真逐渐成为研究干燥过程及改进干燥设备的重要方法。采用计算机模拟\n中药干燥过程,具有直观性、科学性以及经济性等优势,是干燥领域技术创新的重要辅助手段。因此对不同干燥方式物料干\n燥理论以及干燥数值模拟仿真的研究现状进行总结,概述数值模拟建模解析方法与仿真模拟软件,阐述了模拟仿真方法在干\n燥领域对缩短研发周期、改进干燥设备以及优化工艺参数的重要意义。分析了目前干燥过程数值模拟仿真技术存在模型精\n确性不高、模拟结果对工艺的调控缺少定量化指标以及对药物品质变化机制研究不够深入等问题,并展望了模拟仿真在中药\n干燥领域的应用前景,为数值模拟技术在该领域的深入研究提供参考。\n[关键词]　过程模拟; 仿真研究; 中药干燥; 传热传质; 计算流体力学\nCurrent\n \nresearch\n \nstatus\n \nand\n \napplication\n \nprospect\n \nof\n \nnumerical\n \nsimulation\n \nin\n \ntraditional\n \nChinese\n \nmedicine\n \ndrying\nWANG\n \nXiao-hui1, WANG\n \nXue-cheng1∗, TANG\n \nPei-yu1, WU\n \nZhi-cheng1, WU\n \nZhen-feng1, WANG\n \nYa-qi1,\nLIU\n \nZhen-feng2, YANG\n \nMing1∗\n(1. Key\n \nLaboratory\n \nof\n \nModern\n \nPreparation\n \nof\n \nChinese\n \nMedicine,\n \nMinistry\n \nof\n \nEducation,\n \nJiangxi\n \nUniversity\n \nof\n \nChinese\n \nMedicine,\nNanchang\n \n330004,\n \nChina;\n \n2. Yichun\n \nWanshen\n \nPharmaceutical\n \nMachinery\n \nCo. ,\n \nLtd. ,\n \nYichun\n \n336000,\n \nChina)\n[Abstract]　With\n \nthe\n \nrapid\n \ndevelopment\n \nof\n \ncomputer\n \ntechnology,\n \nnumerical\n \nsimulation\n \nhas\n \ngradually\n \nbecome\n \nan\n \nimportant\n \nmethod\n \nto\n \nstudy\n \ndrying\n \nprocess\n \nand\n \nimprove\n \ndrying\n \nequipment.\n \nUsing\n \ncomputer\n \nto\n \nsimulate\n \nthe\n \ndrying\n \nprocess\n \nof\n \ntraditional\n \nChinese\n \nmedicine\n(TCM)\n \nis\n \ncharacterized\n \nby\n \nintuitiveness,\n \nscientificity,\n \nand\n \nlow\n \ncost,\n \nwhich\n \nserves\n \nas\n \nan\n \nauxiliary\n \nmeans\n \nfor\n \ntechnical\n \ninnovation\n \nin\n \nTCM\n \ndrying.\n \nThis\n \npaper\n \nsummarizes\n \nthe\n \ntheories\n \nof\n \ndifferent\n \ndrying\n \nmethods\n \nand\n \nthe\n \nresearch\n \nstatus\n \nof\n \nnumerical\n \nsimulation\n \nin\n \ndrying,\n \nintroduces\n \nthe\n \nmodeling\n \nmethods\n \nand\n \nsoftware\n \nof\n \nnumerical\n \nsimulation,\n \nand\n \nexpounds\n \nthe\n \nsignificance\n \nof\n \nnumerical\n \nsimulation\n \nmodeling\n \nin\n \nshortening\n \nthe\n \nresearch\n \nand\n \ndevelopment\n \ncycle,\n \nimproving\n \ndrying\n \nequipment,\n \nand\n \noptimizing\n \ndrying\n \nparameters.\n \nHowever,\n \nthe\n \ncur-\nrent\n \nnumerical\n \nsimulation\n \nmethod\n \nfor\n \ndrying\n \nprocess\n \nhas\n \nproblems,\n \nsuch\n \nas\n \nlow\n \naccuracy,\n \nlack\n \nof\n \nquantitative\n \nindicators\n \nfor\n \nthe\n \ncontrol\n \nof\n \nsimulation\n \nresults\n \non\n \nthe\n \nprocess,\n \nand\n \ninsufficient\n \nin-depth\n \nresearch\n \non\n \nthe\n \nmechanism\n \nof\n \ndrug\n \nquality\n \nchanges.\n \nFurthermore,\n \nthis\n \npaper\n \nput\n \nforward\n \nthe\n \napplication\n \nprospect\n \nof\n \nnumerical\n \nsimulation\n \nin\n \nTCM\n \ndrying,\n \nproviding\n \nreference\n \nfor\n \nthe\n \nfurther\n \nstudy\n \nof\n \nnumerical\n \nsimulation\n \nin\n \nthis\n \nfield.\n \n[Key\n \nwords]　process\n \nsimulation;\n \nsimulation\n \nstudy;\n \ntraditional\n \nChinese\n \nmedicine\n \ndrying;\n \nheat\n \nand\n \nmass\n \ntransfer;\n \ncomputational\n \nfluid\n \ndynamics\nDOI:10. 19540/ j. cnki. cjcmm. 20230331. 301\n0\n4\n4\n3\n",
+      "last_page_text": "王晓辉等:数值模拟仿真研究现状及其在中药干燥领域应用展望\n[24]　苏天一,张志军,韩晶雪. 应用二维轴对称模型的微波真空干\n燥数值模拟[J]. 真空,2020,57(4):60.\n[25]　ZHAO\n \nY,GAO\n \nY,SUN\n \nZ,et\n \nal. Dielectric\n \nanisotropy\n \neffects\n \non\n \nthe\n \nmicrowave-induced\n \nthermodynamic\n \nresponse\n \nof\n \ncoal:numerical\n \nsimulations\n \nand\n \nexperiments[J]. Fuel,2022,326:125038.\n[26]　HOU\n \nL, LI\n \nR, WANG\n \nS, et\n \nal. Numerical\n \nanalysis\n \nof\n \nheat\n \nand\n \nmass\n \ntransfers\n \nduring\n \nintermittent\n \nmicrowave\n \ndrying\n \nof\n \nChinese\n \nju-\njube\n \n(Zizyphus\n \njujuba\n \nMiller) [ J]. Food\n \nBioprod\n \nProcess,2021,\n129:10.\n[27]　王亚娟,张凤娟,滕建文,等. 胡萝卜片微波真空干燥动力学数\n值拟合[J]. 食品工业科技,2020,41(18):17.\n[28]　SONG\n \nC,WU\n \nT,LI\n \nZ,et\n \nal. Analysis\n \nof\n \nthe\n \nheat\n \ntransfer\n \ncharac-\nteristics\n \nof\n \nblackberries\n \nduring\n \nmicrowave\n \nvacuum\n \nheating [ J].\nJ\n \nFood\n \nEng,2018,223:70.\n[29]　吴涛,宋春芳,孟丽媛,等. 黑莓微波真空干燥传热特性[ J].\n食品与机械,2017,33(4):54.\n[30]　任晓芬,陈启东,郜玉聪,等. 热泵干燥技术的研究进展[ J].\n节能,2021,40(4):74.\n[31]　王振文,吴敏,徐新民,等. 热泵烘房结构及参数优化仿真设计\n[J]. 农业机械学报,2020,51(S1):464.\n[32]　李淑国,杨薇,张付杰,等. 农产品空气能热泵烘房温度场的数\n值模拟与验证[J]. 保鲜与加工,2020,20(1):133.\n[33]　李国建,崔蕴涵,吴爽,等. 热泵烘干房流场Fluent 建模与仿真\n分析[J]. 福建农林大学学报( 自然科学版),2020,49( 3):\n425.\n[34]　周铁桩,王磊,黄帅,等. 喷雾干燥技术研究进展和展望[ J].\n辽宁化工,2019,48(9):907.\n[35]　吕丹,张艳军. 中药喷雾干燥技术设备现状及问题研究[ J].\n化工装备技术,2021,42(2):8.\n[36]　OKADA\n \nS,OHSAKI\n \nS,NAKAMURA\n \nH,et\n \nal. Numerical\n \nstudy\n \non\n \nspray\n \ndrying\n \nprocess:effect\n \nof\n \nnonuniform\n \ntemperature\n \nfield\n \nand\n \nInteraction\n \nbetween\n \ndroplets\n \non\n \nevaporation\n \nrates\n \nof\n \nindividual\n \ndroplets[J]. Chem\n \nPharm\n \nBull,2021,69(2):203.\n[37]　李翔宇,杜健军,樊江莉,等. 不同进风方式喷雾干燥过程的\nCFD 模拟研究[J]. 现代化工,2020,40(1):202.\n[38]　王优杰,徐德生,冯怡,等. 利用数值模拟技术分析中药喷雾干\n燥黏壁原因[C]. 南宁:2013 年中国药学大会暨第十三届中国\n药师周,2013.\n[39]　戴胜云,杨茂蕊,李文静,等. 喷雾干燥在中药粉体研究中的应\n用进展[J]. 中国实验方剂学杂志,2022,28(14):200.\n[40]　于洋,贾智旗,杨国锋,等. 基于FLUENT 的真空干燥箱参数优\n化及仿真分析[J]. 真空科学与技术学报,2022,42(2):145.\n[41]　XANTHOPOULOS\n \nG,YANNIOTIS\n \nS,BOUDOUVIS\n \nA\n \nG. Numeri-\ncal\n \nsimulation\n \nof\n \nvariable\n \nwater\n \ndiffusivity\n \nduring\n \ndrying\n \nof\n \npeeled\n \nand\n \nunpeeled\n \ntomato[J]. J\n \nFood\n \nSci,2012,77(10):E287.\n[42]　詹娟娟,伍振峰,王雅琪,等. 中药材及制剂干燥工艺与装备现\n状及问题分析[J]. 中国中药杂志,2015,40(23):4715.\n[43]　刘道奇,范传辉,董慧锋,等. 基于Fluent 的负压式电加热干燥\n机内部流场分析与机构参数优化[ J]. 食品与机械,2017,33\n(9):94.\n[44]　王丹阳,王洁,于文泽,等. 数值模拟技术在粮食干燥过程中应\n用的研究进展[J]. 中国粮油学报,2021,36(8):129.\n[45]　曾佳,黄婷,俸灵林,等. 流化床制粒数值模拟技术研究进展\n[J]. 中国新药杂志,2019,28(11):1330.\n[46]　AZIZ\n \nH,AHSAN\n \nS\n \nN,DE\n \nSIMONE\n \nG,et\n \nal. Computational\n \nmo-\ndeling\n \nof\n \ndrying\n \nof\n \npharmaceutical\n \nwet\n \ngranules\n \nin\n \na\n \nfluidized\n \nbed\n \ndryer\n \nusing\n \ncoupled\n \nCFD-DEM\n \napproach [ J ]. AAPS\n \nPharm-\nSciTech,2022,23(1):59.\n[47]　薛启隆,王鐾璇,苗坤宏,等. 中药制药工艺知识库构建方法研\n究[J]. 中国中药杂志,2022,47(12):3402.\n[48]　ZHU\n \nG,RAGHAVAN\n \nG\n \nS\n \nV,LI\n \nZ. Predicting\n \nthe\n \nmoisture\n \nratio\n \nof\n \na\n \nhami\n \nmelon\n \ndrying\n \nprocess\n \nusing\n \nimage\n \nprocessing\n \ntechnology\n[J]. Foods,2023,12(3):672.\n[49]　孙伟. 热泵干燥箱内部流场的数值模拟及特性分析[ D].\n昆明:云南师范大学,2020.\n[50]　侯艳冬. 不同干燥设备对中药丸剂有效成分影响的工艺研究\n[J]. 今日药学,2015,25(10):706.\n[51]　徐冰,史新元,罗赣, 等. 中药工业大数据关键技术与应用\n[J]. 中国中药杂志,2020,45(2):221.\n[责任编辑　孔晶晶]\n7\n4\n4\n3\n"
+    },
+    {
+      "file": "支撑材料\\02_参考文献与网络资料\\补充网络资料\\Shampine1997_BYU原始扫描_35页.pdf",
+      "sha256": "6dc922d1df01c6dc866a46aef45db5b8e5bfb49d13049b20153ea3247f1814b2",
+      "pages": 35,
+      "first_page_text": "",
+      "last_page_text": ""
+    }
+  ],
+  "reference_paragraphs": [
+    "[1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2): 1-28. DOI: 10.11975/j.issn.1002-6819.202306104.",
+    "[2] 王晓辉, 王学成, 唐培渝, 等. 数值模拟仿真研究现状及其在中药干燥领域应用展望[J]. 中国中药杂志, 2023, 48(13): 3440-3447. DOI: 10.19540/j.cnki.cjcmm.20230331.301.",
+    "[3] MUJUMDAR A S, ed. Handbook of industrial drying[M]. 4th ed. Boca Raton: CRC Press, 2014. DOI: 10.1201/b17208.",
+    "[4] CRANK J. The mathematics of diffusion[M]. 2nd ed. Oxford: Clarendon Press, 1975.",
+    "[5] EYMARD R, GALLOUËT T, HERBIN R. Finite volume methods[M]//CIARLET P G, LIONS J L, eds. Handbook of numerical analysis. Vol. 7. Amsterdam: North-Holland, 2000: 713-1018. DOI: 10.1016/S1570-8659(00)07005-8.",
+    "[6] BYRNE G D, HINDMARSH A C. A polyalgorithm for the numerical solution of ordinary differential equations[J]. ACM Transactions on Mathematical Software, 1975, 1(1): 71-96. DOI: 10.1145/355626.355636.",
+    "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html."
+  ],
+  "support_html": [
+    "支撑材料\\02_参考文献与网络资料\\补充网络资料\\FAO_干燥原理_官方网页.html",
+    "支撑材料\\02_参考文献与网络资料\\补充网络资料\\FAO_干燥原理_官方网页_离线文本.html",
+    "支撑材料\\02_参考文献与网络资料\\补充网络资料\\SciPy_solve_ivp_官方API网页.html",
+    "支撑材料\\02_参考文献与网络资料\\补充网络资料\\SciPy_solve_ivp_官方API网页_离线文本.html"
+  ],
+  "ai_files_in_support": [],
+  "first_fifteen_paragraphs": [
+    "AI工具使用声明",
+    "本参赛队在竞赛过程中使用了AI工具，主要用于资料检索、模型推导辅助、程序调试、数值结果核对及文字整理，详细使用情况见支撑材料。",
+    "AI参与内容包括文献检索与真实性核查、模型推导辅助、程序调试、计算结果核对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一致性。参赛队对采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行记录。",
+    "",
+    "",
+    "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证",
+    "摘要",
+    "药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表内部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性关系，建立一维径向有效热湿耦合模型，并以全域最大干基含水率确定烘干结束时间。模型区分有效显热容量与守恒干物质密度，将气固含水率映射、观测窗后环境平台和同比径向收缩作为明确闭合；在环形控制体上采用Kirchhoff浓度势处理非线性扩散，配合解析稀疏Jacobian与隐式BDF求解。",
+    "针对问题一，采用常热物性与含水率依赖扩散系数建立预热模型，计算0—1800 s内温度和水分的径向分布。1800 s时中心、表面温度分别为33.5753°C和36.7856°C，干基含水率分别显示2.5500和1.5102 kg/kg，反映表层先响应及内部水分迁移滞后。温度场另与包含时变边界卷积的圆柱解析级数对照，验证简化条件下的数值实现。",
+    "针对问题二，从初始状态统一采用附录3的变物性，联立计算温度对扩散及水分对热物性的反馈。附件观测区间内进行分段线性插值，4 h后按50°C与等效平衡含水率0.05延拓。3 h时中心、表面温度为49.8495°C和49.9664°C，而含水率仍为1.7662和1.0081 kg/kg，说明升温接近完成早于全域脱水完成。",
+    "针对问题三，复用全过程轨迹，以全域最大含水率下降穿越0.15 kg/kg定位临界根，并区别临界等号与严格可行的报告时刻，得到烘干时长57.4724 h。针对问题四，在干物质守恒下取材料坐标，将给定半径变化转化为固定区间上的时变几何因子；采用整组附录4物性，得到时长51.0906 h、结束半径约1.2000 cm，输出中将域外位置与真实表面分别处理。",
+    "针对问题四，在干物质守恒条件下引入材料坐标变换，将随半径收缩的移动区域映射到固定区间，并依据半径观测和第四问物性关系更新几何因子、扩散系数及边界通量。计算得到烘干时间为51.0906 h，结束时半径约为1.2000 cm。该时间较问题三缩短6.3818 h，体现径向收缩与物性变化的综合影响；同物性对照进一步表明，径向收缩通过缩短水分迁移距离加快干燥。输出时区分药材外部位置与实际表面，保证收缩过程中的空间对应关系。",
+    "通过圆柱解析级数对照、网格加密、时间积分设置检验以及独立MATLAB程序比较，验证了模型在所检验范围内的数值一致性。敏感性分析表明，烘干时间对水分扩散参数和表面传质边界较为敏感，所求时长适用于题给物性、环境延拓及收缩假设。",
+    "关键词：热湿耦合；有限体积法；Kirchhoff变换；径向收缩；干燥时间",
+    "一、问题重述"
+  ],
+  "section_properties": [
+    {
+      "body_element_index": 3,
+      "section_properties_xml": "<w:sectPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\"><w:footerReference r:id=\"rId5\" w:type=\"default\"/><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"1417\" w:right=\"1417\" w:bottom=\"1417\" w:left=\"1417\" w:header=\"567\" w:footer=\"709\" w:gutter=\"0\"/><w:pgNumType w:fmt=\"decimal\" w:start=\"1\"/><w:cols w:space=\"425\" w:num=\"1\"/></w:sectPr>"
+    },
+    {
+      "body_element_index": 8242,
+      "section_properties_xml": "<w:sectPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\"><w:footerReference r:id=\"rId6\" w:type=\"default\"/><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"1417\" w:right=\"1417\" w:bottom=\"1417\" w:left=\"1417\" w:header=\"567\" w:footer=\"709\" w:gutter=\"0\"/><w:pgNumType w:fmt=\"decimal\" w:start=\"1\"/><w:cols w:space=\"425\" w:num=\"1\"/></w:sectPr>"
+    }
+  ],
+  "support_catalog_evidence_before_source": [
+    {
+      "body_element_index": 1,
+      "text": "本参赛队在竞赛过程中使用了AI工具，主要用于资料检索、模型推导辅助、程序调试、数值结果核对及文字整理，详细使用情况见支撑材料。"
+    },
+    {
+      "body_element_index": 474,
+      "text": "以下列出核心计算、数值检验及 MATLAB 对照程序。核心计算程序位于支撑材料的“03_程序代码”；Python 检验程序位于“05_数值检验与实验/Python检验源码/paper_output/code”；MATLAB 对照程序位于“05_数值检验与实验/MATLAB对照证据”。相同计算逻辑的核心模块仅列出一份。"
+    },
+    {
+      "body_element_index": 475,
+      "text": "表9 核心计算程序及用途"
+    },
+    {
+      "body_element_index": 477,
+      "text": "表10 Python 数值检验程序及用途"
+    },
+    {
+      "body_element_index": 479,
+      "text": "续表10 Python 数值检验程序及用途"
+    },
+    {
+      "body_element_index": 481,
+      "text": "表11 MATLAB 对照程序及用途"
+    }
+  ],
+  "final_ai_report_paragraphs": [
+    "9.3 AI 使用报告",
+    "本次建模过程中，使用 Deepseek Harness 与 Deepseek v4.1 flash 组合辅助检查源代码语法并进行部分程序调试；使用 Codex 与 GPT6-Astra 组合辅助理解题目、检索参考文献、检查建模结果和整理公式。具体使用情况如下。",
+    "9.3.1 Deepseek Harness 与 Deepseek v4.1 flash",
+    "该组合用于检查已编写源代码的语法问题，以及辅助部分程序的调试。语法检查围绕程序的语言规则展开，包括括号与引号的配对、缩进、语句结构和函数调用形式等。对程序运行中出现的报错，结合相关代码片段分析可能原因，提供定位问题和调整语句的思路，以便修改后继续检查。",
+    "在部分程序调试中，借助该组合解释报错信息，并辅助梳理变量、参数与函数之间的传递关系。其作用是帮助发现源代码中的具体问题、理解异常发生的位置，为后续修改提供参考。",
+    "9.3.2 Codex 与 GPT6-Astra",
+    "该组合用于解释题目，辅助梳理各问的研究目标、已知条件、输入数据和输出要求，理解温度、干基含水率、物性参数及半径变化等量在题目中的含义和联系。参考文献搜索主要围绕药材干燥、热湿耦合传递及相关数值方法展开，用于寻找可查阅的文献线索和理论资料。",
+    "在建模结果检查方面，借助该组合分析数值结果与题设条件、模型方程及边界条件之间的对应关系，检查温度、含水率和干燥时间等结果的单位、变化趋势与表达是否一致。公式整理主要包括梳理推导步骤、统一符号写法、检查公式之间的衔接，以及整理公式与变量说明的对应关系，使数学表达更清楚、连贯。"
+  ],
+  "appendix_cross_references_in_main_text": [
+    "热学和质量方程需要分别说明密度的用途。题给ρ与cp的乘积记为B，用来描述单位体积温升的有效显热需求；ρd则用于计算随材料守恒的干物质和水质量。若把题给ρ同时解释为真实湿密度，再强行令ρd=ρ/(1+C)，会对固定长度和给定半径施加额外约束。附录A.2表明，该约束与所给后期收缩数据不能同时满足。因此本文采用有效容量与独立干骨架的闭合，使两套方程的定义一致；这一处理也限定了结果的物理解释，不能视为对真实组分密度的验证。",
+    "问题一采用N=3200，积分至1800 s；相对容差为10⁻¹⁰，温度与水分绝对容差分别为10⁻¹⁰ K和10⁻¹² kg/kg。严格容差用于控制时间积分，不能解释为最终物理预测具备相同精度。网格选择依据及时间设置对照见附录C。",
+    "在本问常热物性条件下，将变温边界写入圆柱Robin特征函数展开及时间卷积，得到热场解析基准。它与数值结果在N3200、1801个整数秒和21个半径点上最大相差约1.80×10⁻⁶ K。非线性水方程另用守恒检查与面格式对照核验，不由热场的一致性替代。基准公式与取样范围在附录C交代，正文不逐项展开误差矩阵。",
+    "空间加密、收紧时间设置以及不同积分器的对照表明，本组数值解在所检验的采样范围内稳定。表3中1.5 h表面温度接近四位小数的舍入边界，基线与更严格时间设置可能给出不同末位；表中统一采用基线计算值47.1401°C。该差异反映计算末位对时间设置的敏感性，详细比较见附录C。",
+    "式中， 为非负整数集合；、 与  统一以秒计算。达标判定采用未舍入的数值解，最终将  换算为小时表示。候选点的生成和逐格核验见附录C.4。",
+    "式(17)沿用有效显热闭合，未显式包含潜热、湿分携焓及收缩功。材料坐标方程中不再出现额外网格平流项；干基比值也不另加体积浓缩项。收缩引起的干骨架密度变化满足 。坐标变换和干质量守恒推导见附录A。",
+    "本题缺少药材内部温度与含水率实测值，因此检验重点是所建方程的数值实现及假设敏感性。解析级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设参数与边界；各方法不能提供独立的物理预测准确率。表8差值均取未舍入结果，完整计算过程与采样范围见附录C。",
+    "达标时间由全域最大含水率事件确定，并在  的验证轨迹上用独立二分法复核事件定位。最终烘干时刻按式(14)确定，其可行性由未舍入的最大含水率核验；两种定位方法的比较见附录C.4。"
+  ]
+}
