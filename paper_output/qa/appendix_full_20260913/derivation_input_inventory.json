@@ -1,0 +1,273 @@
+{
+  "paper": {
+    "path": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+    "sha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a"
+  },
+  "sourceCount": 44,
+  "sources": [
+    {
+      "path": "支撑材料/03_程序代码/analyticJacobian.py",
+      "sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "lines": 315,
+      "bytes": 15650
+    },
+    {
+      "path": "支撑材料/03_程序代码/diskDense.py",
+      "sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "lines": 114,
+      "bytes": 4005
+    },
+    {
+      "path": "支撑材料/03_程序代码/dryingCore.py",
+      "sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "lines": 407,
+      "bytes": 18416
+    },
+    {
+      "path": "支撑材料/03_程序代码/exportOutputs.py",
+      "sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "lines": 720,
+      "bytes": 38811
+    },
+    {
+      "path": "支撑材料/03_程序代码/q1Model.py",
+      "sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "lines": 7,
+      "bytes": 267
+    },
+    {
+      "path": "支撑材料/03_程序代码/q2Model.py",
+      "sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "lines": 7,
+      "bytes": 268
+    },
+    {
+      "path": "支撑材料/03_程序代码/q3Model.py",
+      "sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "lines": 27,
+      "bytes": 1065
+    },
+    {
+      "path": "支撑材料/03_程序代码/q4Model.py",
+      "sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "lines": 7,
+      "bytes": 280
+    },
+    {
+      "path": "支撑材料/03_程序代码/reference/reference_data.py",
+      "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "lines": 216,
+      "bytes": 16093
+    },
+    {
+      "path": "支撑材料/03_程序代码/runDelivery.py",
+      "sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "lines": 236,
+      "bytes": 11192
+    },
+    {
+      "path": "支撑材料/03_程序代码/runLogged.ps1",
+      "sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "lines": 40,
+      "bytes": 1674
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+      "sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59",
+      "lines": 199,
+      "bytes": 16409
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/MATLAB对照证据/runCrossCheck.m",
+      "sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa",
+      "lines": 491,
+      "bytes": 25180
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "lines": 311,
+      "bytes": 15901
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "lines": 283,
+      "bytes": 13375
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "lines": 234,
+      "bytes": 13913
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "lines": 111,
+      "bytes": 4015
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py",
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "lines": 392,
+      "bytes": 18634
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2",
+      "lines": 720,
+      "bytes": 38826
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "lines": 485,
+      "bytes": 22151
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "lines": 395,
+      "bytes": 23325
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py",
+      "sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742",
+      "lines": 7,
+      "bytes": 278
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py",
+      "sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc",
+      "lines": 7,
+      "bytes": 279
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py",
+      "sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808",
+      "lines": 26,
+      "bytes": 1073
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py",
+      "sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905",
+      "lines": 7,
+      "bytes": 291
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "lines": 73,
+      "bytes": 3907
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "lines": 439,
+      "bytes": 26524
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+      "lines": 319,
+      "bytes": 13839
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "lines": 126,
+      "bytes": 6245
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "lines": 68,
+      "bytes": 3682
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "lines": 244,
+      "bytes": 13965
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+      "lines": 76,
+      "bytes": 2968
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+      "lines": 404,
+      "bytes": 17494
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+      "lines": 174,
+      "bytes": 6055
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+      "lines": 190,
+      "bytes": 8018
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+      "lines": 61,
+      "bytes": 2416
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+      "lines": 74,
+      "bytes": 3339
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+      "lines": 404,
+      "bytes": 16736
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+      "lines": 66,
+      "bytes": 2314
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+      "lines": 90,
+      "bytes": 3494
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+      "lines": 161,
+      "bytes": 7228
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py",
+      "sha256": "e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5",
+      "lines": 160,
+      "bytes": 6689
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+      "lines": 249,
+      "bytes": 9574
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+      "lines": 154,
+      "bytes": 6073
+    }
+  ]
+}

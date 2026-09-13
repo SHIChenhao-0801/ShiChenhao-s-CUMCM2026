@@ -1,0 +1,1249 @@
+{
+  "version": "v2",
+  "reviewer": "/root/comment_cleanup",
+  "recorded_at_utc": "2026-09-13T03:52:52.365343+00:00",
+  "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_完整附录.docx",
+  "docx_sha256": "fa0d623a7230aa0ae71679158318ebdb258f6b9ac49cf34869933b3e8646d196",
+  "pdf": "paper_output/qa/appendix_full_20260913/v2.pdf",
+  "pdf_sha256": "ba1e5f5b5e63a9bb2f339a491e022cda5ad1a6ab14485fe6d0598ec8a9e03b85",
+  "render_manifest": "paper_output/qa/appendix_full_20260913/v2_render_manifest.json",
+  "render_manifest_sha256": "f47f654d29281f2d0e41e52edbf04dfff8971739004de3c8587ad5fa60c98eef",
+  "reviewed_page_range": [
+    81,
+    165
+  ],
+  "expected_pages": 85,
+  "actually_viewed_pages": 85,
+  "coverage_complete": true,
+  "source_static_audit": "paper_output/qa/appendix_full_20260913/source_inventory/docx_source_audit_v2.json",
+  "status": "COMPLETE_WITH_ONE_MINOR_PAGINATION_FINDING_PENDING_V3",
+  "material_clipping_overlap_or_missing_glyph_findings": 0,
+  "minor_pagination_findings": 1,
+  "pages": [
+    {
+      "page": 81,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-81.png",
+      "sha256": "7e04bd4271a4431f2327308b296870c2c87ebefe8addc388ff5d655c4780d73c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 82,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-82.png",
+      "sha256": "0462b54a30241d7df172ee66fcc9a4bffd4ce70643ebb4f80e07cc61c16457fe",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。",
+        "该组深层数据字典保留原始缩进，较多左侧留白和显示折行不构成源码缺失。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 83,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-83.png",
+      "sha256": "ec76ec6dd05588c6e65b9e737a32efcef8edc2792ed38f5f60354ee17c7fc45c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "该组深层数据字典保留原始缩进，较多左侧留白和显示折行不构成源码缺失。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 84,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-84.png",
+      "sha256": "aaff8cf898a8904d6a1040c51a6246b035418bc08f0bc578982816d2dc6e30b4",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "该组深层数据字典保留原始缩进，较多左侧留白和显示折行不构成源码缺失。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 85,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-85.png",
+      "sha256": "26b13925575e742042101e91632eaa154609c58f76bfdff223f75b43f7b4e56f",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "该组深层数据字典保留原始缩进，较多左侧留白和显示折行不构成源码缺失。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 86,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-86.png",
+      "sha256": "93fc489d6f4c3ac9ce099475152f02868391adc0d4da4224799526a616fa81ff",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 87,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-87.png",
+      "sha256": "2a089085a6b5a0391c30dfa5759941a140d48b3d475906f5579f0cb7b58b0f29",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 88,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-88.png",
+      "sha256": "2b25183b1bd09f1a4d405d3cce60eee903aff86583bfd8e6c0758e93405fdf9d",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 89,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-89.png",
+      "sha256": "190ff56fa680845df45d3450f1afbe82bb02b4ee9fbf0981a7ab81c2e0508a02",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 90,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-90.png",
+      "sha256": "1af94419c6d75834bb6f14e5d25ee69be69565f411c473ba8e269aa13f52e0e1",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 91,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-91.png",
+      "sha256": "a107aad033b996f982d83e3b14227452ac411b6579f43c8f35e33d530e479039",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 92,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-92.png",
+      "sha256": "a6f17e80416d3989bbd407ef77d43a74abfbb46c60881af90001217c3a447fd7",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 93,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-93.png",
+      "sha256": "12d5dcd5695abfdc5daccb05d4d5a9baa5d7f4ba0dba55262103767a5df15b16",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 94,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-94.png",
+      "sha256": "f4676215cbc711163673addf2355e9c131d21441ac5bd1638673be83cbbe0613",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 95,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-95.png",
+      "sha256": "a0c552262a490d71c47827563fa1e77def5a9f3346a04a0f9b9199c217479f45",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 96,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-96.png",
+      "sha256": "80e4c5839a313dcc0940f8bfc7b1ae0828ddaec0925c445d34027a013ad940d0",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 97,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-97.png",
+      "sha256": "4dd4232765f9382e6875fedf5ecc51a617b98aca9744089d1bf362cf5f40a5a5",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 98,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-98.png",
+      "sha256": "2bcce8019529b0483edf04d31207e0a646b6e189c8c51687c59a60859164f74e",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 99,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-99.png",
+      "sha256": "f1f5097609dc8c7acaeab3191100fe8d73f53d36c4144352c5b3501ec6efcb0d",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 100,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-100.png",
+      "sha256": "4c73ff11a9490c28ebf06a24bebc3fa5bd3f613a29b091f1d7ac6526419293dc",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 101,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-101.png",
+      "sha256": "8e6f83a04be0ed2ea51e9ef647619e1179a4499beb71164b3f495c2238d61c6e",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 102,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-102.png",
+      "sha256": "2b498e1096f15edba5a68cbd9afe566064492c921dc36575d8b03b2f19a0c096",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 103,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-103.png",
+      "sha256": "6213fdc1455bab29ba6ecee887188f315c3bc35adc609e5b66a551bfb13c8a15",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 104,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-104.png",
+      "sha256": "a5549e3f6655edf7f2b70435da057d1a89c136c2d80a14de7567ce15d415ade1",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 105,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-105.png",
+      "sha256": "380b48803b104b2ba356eb4b9d3efed97e6738d8dabe578a391ad5a8846e2768",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 106,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-106.png",
+      "sha256": "c55b6e0054d013524f232adb8c3f3077241f1f3915db665a0c4dde55d8913159",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 107,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-107.png",
+      "sha256": "24ade2410088765ad1e7fb27818bd58b43348ac6c5440f21bd8553342ee61be9",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 108,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-108.png",
+      "sha256": "5f79eb8f4b03b7f482ba3f484092a92451d457dc98e0940c4b63b403c82d3f45",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 109,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-109.png",
+      "sha256": "b1af1492874dbef219b17989b20e11b2299658e32c3601471912dc7f910ae49c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 110,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-110.png",
+      "sha256": "74e4c0c349c1cc4d6c9c1101ffa552fe68a3056a57e4d5ec19d23b864a760996",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 111,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-111.png",
+      "sha256": "82a0de03165fb8d0c6a11cbc7d7d2714721462cf7fbba51519d876a6c52b5660",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 112,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-112.png",
+      "sha256": "499ff04d1691906344d2a7e75d4fa39858ba7f995bab89b5f9f9e7339db767cf",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 113,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-113.png",
+      "sha256": "af6d90c340b42a7e8691757870f28c97190d3fba6a26fc61960b9acf63ddca1a",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 114,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-114.png",
+      "sha256": "fac83159a3d3cba3c81fd014b81aa41f5f7f29f5d880de303f9a0060f85b67b1",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 115,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-115.png",
+      "sha256": "e6fd832a490acfddc319b80c41dc2c68afbf8076a280f6d52669b09a1c49f708",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 116,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-116.png",
+      "sha256": "34fafb84292c939b3b047274ba1bcd8adfa21ec164dd9c41e457fa9c4add625a",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 117,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-117.png",
+      "sha256": "9f420e1d7e9a4120b4f0b11ce09b5e96adcc88be079ba637b125f4535349b8e4",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 118,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-118.png",
+      "sha256": "fc4a5ad4e9d76e2a7bfa4134e5880c3430ca3488c57123cd51b27aabb626e094",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "页末 align_bdf_segments 函数与 if 条件之后的赋值跨到第 119 页；该小块的分页问题记录在第 119 页。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 119,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-119.png",
+      "sha256": "40ce31282576496765623e6dc81710102505d5f9561a3b883be2005e2ec0861d",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": [
+        {
+          "severity": "minor_layout",
+          "source": "D.17 disk_dense.py",
+          "finding": "文件末尾 result.sol = OdeSolution(...) 单独占一页；上一页已列 align_bdf_segments 函数及 if 条件。代码完整，但单行孤页影响阅读。",
+          "recommended_action": "仅保持该函数末尾约 3–4 行同页，不修改源文字、缩进或字号。",
+          "parent_notified": true,
+          "v2_status": "open_pending_v3_local_pagination_fix"
+        }
+      ]
+    },
+    {
+      "page": 120,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-120.png",
+      "sha256": "5423eaeb40d91ea7d9ef715fbded7c9b8fc2116294b991a2fac6f589f12e4367",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 121,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-121.png",
+      "sha256": "652878b764d17ac78651816cc41c77498b47f8cc37738ea5b82b76d71f6b1e25",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 122,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-122.png",
+      "sha256": "f957a3988637f9f7b054a8ea756478fddaaa6f1c2ad3bb9941ae1b56e3b10ac6",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 123,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-123.png",
+      "sha256": "2544ce66d3f637d44156d15eb4b271b82b6cb1aeb2b1a4adc93bb9b54cbd657c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 124,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-124.png",
+      "sha256": "d0cfafc8fdaeb7c144f1b6e619403a8d0c0256bc975593413d4fb14f1859061b",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 125,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-125.png",
+      "sha256": "986e8fd889218e6cb5d7c386b559a16a1a6a71bce67772a792178b51ea16b070",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 126,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-126.png",
+      "sha256": "42358dcc547882295cd2d19c8ae39c8131ab53e7b436593ed10922f94c1b2647",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 127,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-127.png",
+      "sha256": "6d4c9895ed2ed7dcf3729c4a636990fa416d0c0a963f5b0816499a054c959088",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 128,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-128.png",
+      "sha256": "fade92c59a19f990b5eb5d8e3f0407fc5bcf5ff9d8c8688798a0300f9a8629da",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 129,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-129.png",
+      "sha256": "4eb5c119e5e3aec4d2970040a4b64ae0b0279e5c8e7a456f2bda5802c6f848e5",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 130,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-130.png",
+      "sha256": "e661111fab34a12b18ae9d0d9be56f0f69eae5f3898c78872596fa9aea57a735",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 131,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-131.png",
+      "sha256": "3fb183f3389810ae0a8aebe116616b7b529b34000999a69547f109b7dced7a0c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 132,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-132.png",
+      "sha256": "e2e7bc417ff501d3346e508d9d3bfd2e241201441ad4f1da33b45867410b4260",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 133,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-133.png",
+      "sha256": "384f6439b2121fb860dbc084b2ae82667be7255fa66b9913c49a0cc7eeba447e",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 134,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-134.png",
+      "sha256": "8574446bfd634e6dc8af27af7dcd89f85cb71de96ddd0f47ab550a727f6f88a4",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 135,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-135.png",
+      "sha256": "4c80a0cd879da80be5ed831caa5e4dda01cba7d13b7e08f1050d4031ecc41c5e",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 136,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-136.png",
+      "sha256": "1269b190a7db82186e23127e819868ac53e10154cf2ffc765551552e866c22b9",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 137,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-137.png",
+      "sha256": "4a544d9d5d9a8c6e5f8dce7b713dbb8d21820bb01355a555d93a7c02c79ba72c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 138,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-138.png",
+      "sha256": "2030e7882798a4301e8f69b90d53501c9a069f146416765400560aaddfce4b5f",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 139,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-139.png",
+      "sha256": "43b39438b97343bdb1c52f17bc7f299d437146e202d1b91c02643b352e3a34a6",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 140,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-140.png",
+      "sha256": "e26e79beabce9520f934109c3d8dacdbe962b117efbe2651050faf7b76c611c4",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 141,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-141.png",
+      "sha256": "ae8d84eaecd6693eca0eae43f82c76851360073916298eab4acf7453505d867a",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 142,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-142.png",
+      "sha256": "7a13ffe9b3624867b9cfd3d887c4dde56b3c78a2117cbe718ff893306a356914",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 143,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-143.png",
+      "sha256": "375767b3268456f8e4e5c4e28aee8e8da300e19a4f2d39aca8cd622cd0c673d5",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 144,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-144.png",
+      "sha256": "e9f15450048556fd407fe887ba5e081cc61118ee3d08fed465a08d2b9ddf1a21",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 145,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-145.png",
+      "sha256": "c42f0cb311456ac9c4cc4e0dc12a03462023941ab3bb080a904b029c95487b50",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 146,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-146.png",
+      "sha256": "c807e84d07bd312dc07300fe427b32b28ad1f56797b39cd76e573c9661936dd7",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 147,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-147.png",
+      "sha256": "5a7d6082a114b9973c86e790c5c71d6a5a64648fef65493970647428659d08a1",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 148,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-148.png",
+      "sha256": "3e93298ebd4140f1cd4cdb1b4341379d5c262e2aba94f84afa83f8a720f7cdd2",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 149,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-149.png",
+      "sha256": "e7301cbef2ead7c146ab2b5030405fc0ad9fe3fe7e0e5ee592d6888088d5080b",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 150,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-150.png",
+      "sha256": "87e7d0937fba231e5fd24031e9f34d12569dc5ff6d6f190bd5f33bcc36ff7c85",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 151,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-151.png",
+      "sha256": "ae398488a7df3aa6c1c30a8839ae72c91a1ba2186fc609cad024826a559846eb",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 152,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-152.png",
+      "sha256": "5be06a69c578857911f85490882eb9f8d20aa06e73ec4ad084a0171c23a5b8e3",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 153,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-153.png",
+      "sha256": "19cd6c8fc0f6b9a4440fe0df15f191bf286b931303b7ae1315af070ddfcb3f63",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 154,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-154.png",
+      "sha256": "d6db9b8eb1dfc4aca952e36fc40916ddf7bfe3f27c2da39a7ceff49b3f2f640b",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 155,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-155.png",
+      "sha256": "05268bd9447a4c5a4dcce70b0b9c9fe5b9a7ec5637396b716d996355e6492fdb",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 156,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-156.png",
+      "sha256": "f0507e6b0aae32f479003094c8e461b69151d47edf2cba002ee94a58e382bf1e",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 157,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-157.png",
+      "sha256": "2efbe0da40b95bf07b7c79c8be4d5e38d6fa8695ae2e4e300d870b39d9b71d12",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 158,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-158.png",
+      "sha256": "5f3ad41b63f8f2e4e7485ddade8cdb2bc551ad3dc93aefdcd95287d8156bd561",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。",
+        "此页对应仅 7 行的完整独立封装文件；标题后保留整页文件边界造成的留白合理，不是断裂后的孤行。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 159,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-159.png",
+      "sha256": "4a608cdccf4d6afd4c968872afd62cd2229c54580b8f830737b260f2edcb68a7",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。",
+        "此页对应仅 7 行的完整独立封装文件；标题后保留整页文件边界造成的留白合理，不是断裂后的孤行。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 160,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-160.png",
+      "sha256": "8b162f2329ba60db8153555810cabc53307c515b1cf1a71c44d4020562cb07eb",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 161,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-161.png",
+      "sha256": "9e1e50a2b8d6f2ffe41a8d2d3d1d5225e9c34e181c5b30bc03dde4b9ac9969d3",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。",
+        "此页对应仅 7 行的完整独立封装文件；标题后保留整页文件边界造成的留白合理，不是断裂后的孤行。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 162,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-162.png",
+      "sha256": "7de669df397d9eb9a64a1c54fe1b3c763a240c3c574b603cfa7a5a2d58778132",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 163,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-163.png",
+      "sha256": "5b5ff3beea5f6014a8e4ad21eb768a9dd4dea48d72eb68b0c2546833383d2e2c",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 164,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-164.png",
+      "sha256": "b6ba01ce0e4c13dbe9abdcda4e2c3a0f575a76fa9d98a3797645a927a874166d",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。",
+        "源码标题、路径及用途文字可读；语言与 SHA 已独立分段、左对齐，未见 v1 的两端对齐字间距问题。"
+      ],
+      "issues": []
+    },
+    {
+      "page": 165,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-165.png",
+      "sha256": "93a9b538a6eb37501b755d15c2179037fbff0730864b43f63539b965bc62a2c6",
+      "matches_render_manifest": true,
+      "observed": true,
+      "review_method": "Actual visual inspection of the individual full 120 dpi original PNG with view_image",
+      "observations": [
+        "已实际查看本页完整 120 dpi 原始 PNG；未使用缩略拼图代替逐页观察。",
+        "页内代码可读；未见裁切、文字重叠、乱码或页脚碰撞；页码与图像页号一致。",
+        "长行采用显示折行；完整逻辑行、空行及缩进另由 v2 DOCX 源码逐行一致性检查确认。"
+      ],
+      "issues": []
+    }
+  ]
+}

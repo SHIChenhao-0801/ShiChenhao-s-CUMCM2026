@@ -1,0 +1,1978 @@
+{
+  "docx": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_完整附录.docx",
+  "docx_sha256": "2fd451eb2c2492438e324c44ddc3ecd6dc5e514a963ed507ff23ea91582400b9",
+  "source_paper_sha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a",
+  "source_count": 47,
+  "source_lines": 9917,
+  "paragraphs": 10574,
+  "equations": [
+    {
+      "key": "EQ_A_BASIS",
+      "number": "A.1",
+      "latex": "C=\\frac{m_w}{m_d},\\qquad\nw=\\frac{m_w}{m_d+m_w}=\\frac{C}{1+C},\\qquad\nC=\\frac{w}{1-w}.",
+      "paragraph_index": 44
+    },
+    {
+      "key": "EQ_A_DENSITY_BASIS",
+      "number": "A.2",
+      "latex": "\\rho_w=\\rho_d C,\\qquad\nm_d=\\int_{\\Omega(t)}\\rho_d\\,\\mathrm dV,\\qquad\nm_w=\\int_{\\Omega(t)}\\rho_d C\\,\\mathrm dV.",
+      "paragraph_index": 47
+    },
+    {
+      "key": "EQ_A_DRY_CONTINUITY",
+      "number": "A.3",
+      "latex": "\\frac{\\partial\\rho_d}{\\partial t}\n+\\nabla\\cdot(\\rho_d\\boldsymbol v_s)=0.",
+      "paragraph_index": 52
+    },
+    {
+      "key": "EQ_A_WATER_CONTINUITY",
+      "number": "A.4",
+      "latex": "\\frac{\\partial(\\rho_d C)}{\\partial t}\n+\\nabla\\cdot(\\rho_d C\\boldsymbol v_s+\\boldsymbol j_w)=0.",
+      "paragraph_index": 54
+    },
+    {
+      "key": "EQ_A_PRODUCT_EXPANSION",
+      "number": "A.5",
+      "latex": "\\rho_d\\left(\\frac{\\partial C}{\\partial t}\n+\\boldsymbol v_s\\cdot\\nabla C\\right)\n+C\\left[\\frac{\\partial\\rho_d}{\\partial t}\n+\\nabla\\cdot(\\rho_d\\boldsymbol v_s)\\right]\n=-\\nabla\\cdot\\boldsymbol j_w.",
+      "paragraph_index": 56
+    },
+    {
+      "key": "EQ_A_MATERIAL_MOISTURE",
+      "number": "A.6",
+      "latex": "\\rho_d\\frac{\\mathrm D_s C}{\\mathrm Dt}\n=-\\nabla\\cdot\\boldsymbol j_w.",
+      "paragraph_index": 58
+    },
+    {
+      "key": "EQ_A_FICK",
+      "number": "A.7",
+      "latex": "\\boldsymbol j_w=-\\rho_dD(T,C)\\nabla C,\n\\qquad\n\\rho_d\\frac{\\mathrm D_s C}{\\mathrm Dt}\n=\\nabla\\cdot\\left[\\rho_dD(T,C)\\nabla C\\right].",
+      "paragraph_index": 61
+    },
+    {
+      "key": "EQ_A_NONUNIFORM_DRY_DENSITY",
+      "number": "A.8",
+      "latex": "\\frac{\\mathrm D_s C}{\\mathrm Dt}\n=\\nabla\\cdot(D\\nabla C)\n+D\\nabla(\\ln\\rho_d)\\cdot\\nabla C.",
+      "paragraph_index": 63
+    },
+    {
+      "key": "EQ_A_RADIAL_WATER",
+      "number": "A.9",
+      "latex": "\\frac{\\partial C}{\\partial t}\n=\\frac1r\\frac{\\partial}{\\partial r}\n\\left[rD(T,C)\\frac{\\partial C}{\\partial r}\\right],\n\\qquad 0<r<R_0.",
+      "paragraph_index": 67
+    },
+    {
+      "key": "EQ_A_EFFECTIVE_HEAT",
+      "number": "A.10",
+      "latex": "\\begin{aligned}\nB(C)\\frac{\\mathrm D_sT}{\\mathrm Dt}\n&=\\nabla\\cdot[k(C)\\nabla T],\\\\\nB(C)\\frac{\\partial T}{\\partial t}\n&=\\frac1r\\frac{\\partial}{\\partial r}\n\\left[rk(C)\\frac{\\partial T}{\\partial r}\\right]\n\\quad(\\boldsymbol v_s=0).\n\\end{aligned}",
+      "paragraph_index": 70
+    },
+    {
+      "key": "EQ_A_CAPACITY_NOT_ENTHALPY",
+      "number": "A.11",
+      "latex": "\\frac{\\mathrm D_s}{\\mathrm Dt}[B(C)T]\n=B(C)\\frac{\\mathrm D_sT}{\\mathrm Dt}\n+T B'(C)\\frac{\\mathrm D_sC}{\\mathrm Dt}.",
+      "paragraph_index": 73
+    },
+    {
+      "key": "EQ_A_PROPERTIES_Q1",
+      "number": "A.12",
+      "latex": "\\rho_{eff}=820,\\qquad c_p=2600,\\qquad k=0.36,\n\\qquad D_1(C)=7\\times10^{-9}\\exp(-0.89/C).",
+      "paragraph_index": 77
+    },
+    {
+      "key": "EQ_A_PROPERTIES_Q23",
+      "number": "A.13",
+      "latex": "\\begin{aligned}\n\\rho_{eff}(C)&=650+128C,\\\\\nc_p(C)&=1450+2736\\frac{C}{1+C},\\\\\nk(C)&=0.21+0.38\\frac{C}{1+C},\\\\\nD_{23}(T,C)&=2.4\\times10^{-3}\n\\exp\\left(-\\frac{0.45}{C}-\\frac{3850}{T}\\right).\n\\end{aligned}",
+      "paragraph_index": 80
+    },
+    {
+      "key": "EQ_A_PROPERTIES_Q4",
+      "number": "A.14",
+      "latex": "\\begin{aligned}\n\\rho_{eff}(C)&=760+90C,\\\\\nc_p(C)&=1850+2150\\frac{C}{1+C},\\\\\nk(C)&=0.12+0.20\\frac{C}{1+C},\\\\\nD_4(T,C)&=4.2\\times10^{-4}\n\\exp\\left(-\\frac{0.30}{C}-\\frac{3850}{T}\\right).\n\\end{aligned}",
+      "paragraph_index": 82
+    },
+    {
+      "key": "EQ_A_DIFFUSIVITY_RATIO",
+      "number": "A.15",
+      "latex": "\\frac{D_4(T,C)}{D_{23}(T,C)}\n=0.175\\exp\\left(\\frac{0.15}{C}\\right),\n\\qquad C_\\times=\\frac{0.15}{\\ln(1/0.175)}\\approx0.08606.",
+      "paragraph_index": 85
+    },
+    {
+      "key": "EQ_A_LINEAR_INTERPOLATION",
+      "number": "A.16",
+      "latex": "I_f(t)=f_j+\\frac{f_{j+1}-f_j}{t_{j+1}-t_j}(t-t_j).",
+      "paragraph_index": 88
+    },
+    {
+      "key": "EQ_A_ENVIRONMENT_EXTENSION",
+      "number": "A.17",
+      "latex": "(T_\\infty,C_{eq})(t)=\n\\begin{cases}\n(I_T(t),I_Y(t)),&0\\le t\\le14400\\,\\mathrm s,\\\\\n(323.15,0.05),&t>14400\\,\\mathrm s.\n\\end{cases}",
+      "paragraph_index": 90
+    },
+    {
+      "key": "EQ_A_INITIAL_CENTER",
+      "number": "A.18",
+      "latex": "T(r,0)=T_0,\\qquad C(r,0)=C_0,\n\\qquad T_r(0,t)=C_r(0,t)=0.",
+      "paragraph_index": 94
+    },
+    {
+      "key": "EQ_A_SURFACE_PHYSICAL",
+      "number": "A.19",
+      "latex": "q_{out}=-kT_r=h(T_s-T_\\infty),\n\\qquad\nj_{w,out}=-\\rho_d D C_r\n=\\rho_d\\beta(C_s-C_{eq}).",
+      "paragraph_index": 96
+    },
+    {
+      "key": "EQ_A_SURFACE_NORMALIZED",
+      "number": "A.20",
+      "latex": "-D C_r=\\beta(C_s-C_{eq}).",
+      "paragraph_index": 98
+    },
+    {
+      "key": "EQ_A_SKELETON_VELOCITY",
+      "number": "A.21",
+      "latex": "v_s(r,t)=\\left.\\frac{\\partial r}{\\partial t}\\right|_{r_0}\n=\\frac{r\\dot R(t)}{R(t)},\\qquad\n\\nabla\\cdot\\boldsymbol v_s\n=\\frac1r\\frac{\\partial(rv_s)}{\\partial r}\n=2\\frac{\\dot R(t)}{R(t)}.",
+      "paragraph_index": 103
+    },
+    {
+      "key": "EQ_A_DRY_DENSITY_SHRINK",
+      "number": "A.22",
+      "latex": "\\begin{aligned}\n\\frac{\\mathrm D_s\\rho_d}{\\mathrm Dt}\n&=-2\\frac{\\dot R}{R}\\rho_d,\\\\\n\\rho_d(t)&=\\rho_{d0}\\left(\\frac{R_0}{R(t)}\\right)^2,\\\\\nM_d&=\\pi L_zR(t)^2\\rho_d(t)=\\pi L_zR_0^2\\rho_{d0}.\n\\end{aligned}",
+      "paragraph_index": 105
+    },
+    {
+      "key": "EQ_A_DENSITY_BOUND",
+      "number": "A.23",
+      "latex": "\\rho_d=\\frac{760+90C}{1+C}\n=90+\\frac{670}{1+C}\\le760.",
+      "paragraph_index": 108
+    },
+    {
+      "key": "EQ_A_RADIUS_COMPATIBILITY",
+      "number": "A.24",
+      "latex": "R(t)\\ge R_0\\sqrt{\\frac{\\rho_{d0}}{760}}\n\\approx1.2112029565\\,\\mathrm{cm}.",
+      "paragraph_index": 110
+    },
+    {
+      "key": "EQ_A_ALE_CHAIN",
+      "number": "A.25",
+      "latex": "\\left.\\frac{\\partial C}{\\partial t}\\right|_r\n=\\left.\\frac{\\partial\\widehat C}{\\partial t}\\right|_x\n-\\frac{x\\dot R}{R}\\frac{\\partial\\widehat C}{\\partial x},\n\\qquad\n\\frac{\\partial C}{\\partial r}\n=\\frac1R\\frac{\\partial\\widehat C}{\\partial x}.",
+      "paragraph_index": 114
+    },
+    {
+      "key": "EQ_A_ALE_RESIDUAL",
+      "number": "A.26",
+      "latex": "\\begin{aligned}\n\\frac{\\mathrm D_s C}{\\mathrm Dt}\n&=\\frac{\\partial\\widehat C}{\\partial t}\n+\\frac{v_s-v_g}{R}\\frac{\\partial\\widehat C}{\\partial x},\\\\\n\\frac{\\mathrm D_s T}{\\mathrm Dt}\n&=\\frac{\\partial\\widehat T}{\\partial t}\n+\\frac{v_s-v_g}{R}\\frac{\\partial\\widehat T}{\\partial x}.\n\\end{aligned}",
+      "paragraph_index": 116
+    },
+    {
+      "key": "EQ_A_GENERAL_MOVING_COORDINATE",
+      "number": "A.27",
+      "latex": "\\frac{\\partial\\widehat C}{\\partial t}\n+\\frac{v_s-x\\dot R}{R}\\frac{\\partial\\widehat C}{\\partial x}\n=\\frac1{R^2x}\\frac{\\partial}{\\partial x}\n\\left(xD\\frac{\\partial\\widehat C}{\\partial x}\\right).",
+      "paragraph_index": 118
+    },
+    {
+      "key": "EQ_A_MATERIAL_PDE",
+      "number": "A.28",
+      "latex": "\\begin{aligned}\n\\frac{\\partial\\widehat C}{\\partial t}\n&=\\frac1{R(t)^2x}\\frac{\\partial}{\\partial x}\n\\left(xD(\\widehat T,\\widehat C)\\widehat C_x\\right),\\\\\nB(\\widehat C)\\frac{\\partial\\widehat T}{\\partial t}\n&=\\frac1{R(t)^2x}\\frac{\\partial}{\\partial x}\n\\left(xk(\\widehat C)\\widehat T_x\\right).\n\\end{aligned}",
+      "paragraph_index": 121
+    },
+    {
+      "key": "EQ_A_MATERIAL_BOUNDARY",
+      "number": "A.29",
+      "latex": "\\begin{aligned}\n\\widehat T_x(0,t)&=\\widehat C_x(0,t)=0,\\\\\n-\\frac{k_s}{R}\\widehat T_x(1,t)&=h(T_s-T_\\infty),\\\\\n-\\frac{D_s}{R}\\widehat C_x(1,t)&=\\beta(C_s-C_{eq}).\n\\end{aligned}",
+      "paragraph_index": 124
+    },
+    {
+      "key": "EQ_A_CONTROL_VOLUME_WEIGHTS",
+      "number": "A.30",
+      "latex": "\\begin{aligned}\nw_i&=\\int_{a_i}^{b_i}x\\,\\mathrm dx=\\frac{b_i^2-a_i^2}{2},\\\\\nw_0&=\\frac{\\Delta x^2}{8},\\qquad\nw_i=x_i\\Delta x\\ (1\\le i<N),\\\\\nw_N&=\\frac{\\Delta x}{2}-\\frac{\\Delta x^2}{8}.\n\\end{aligned}",
+      "paragraph_index": 128
+    },
+    {
+      "key": "EQ_A_GRADIENT_FLUX",
+      "number": "A.31",
+      "latex": "g^T=xk\\widehat T_x,\\qquad g^C=xD\\widehat C_x.",
+      "paragraph_index": 132
+    },
+    {
+      "key": "EQ_A_SEMIDISCRETE",
+      "number": "A.32",
+      "latex": "\\dot T_i=\\frac{g^T_{i+1/2}-g^T_{i-1/2}}{R^2w_iB_i},\n\\qquad\n\\dot C_i=\\frac{g^C_{i+1/2}-g^C_{i-1/2}}{R^2w_i},\n\\qquad B_i=B(C_i).",
+      "paragraph_index": 134
+    },
+    {
+      "key": "EQ_A_AXIS_LIMIT",
+      "number": "A.33",
+      "latex": "\\dot T_0=\n\\frac{4k(T_1-T_0)}{BR^2\\Delta x^2}.",
+      "paragraph_index": 137
+    },
+    {
+      "key": "EQ_A_BOUNDARY_GRADIENT_FLUX",
+      "number": "A.34",
+      "latex": "g^T_{N+1/2}=hR(T_\\infty-T_N),\n\\qquad\ng^C_{N+1/2}=-\\beta R(C_N-C_{eq}).",
+      "paragraph_index": 140
+    },
+    {
+      "key": "EQ_A_HEAT_FACE",
+      "number": "A.35",
+      "latex": "\\begin{aligned}\n\\frac{\\Delta x}{k_H}\n&=\\frac{\\Delta x/2}{k_i}+\\frac{\\Delta x/2}{k_{i+1}},\\\\\nk_H&=\\frac{2k_i k_{i+1}}{k_i+k_{i+1}},\\\\\ng^T_{i+1/2}&=\\gamma_i k_H(T_{i+1}-T_i).\n\\end{aligned}",
+      "paragraph_index": 144
+    },
+    {
+      "key": "EQ_A_KIRCHHOFF_POTENTIAL",
+      "number": "A.36",
+      "latex": "\\Phi_a(C)=C\\exp(-a/C)+a\\operatorname{Ei}(-a/C).",
+      "paragraph_index": 147
+    },
+    {
+      "key": "EQ_A_KIRCHHOFF_DERIVATIVE",
+      "number": "A.37",
+      "latex": "\\begin{aligned}\n\\frac{\\mathrm d}{\\mathrm dC}\\left[C e^{-a/C}\\right]\n&=e^{-a/C}\\left(1+\\frac aC\\right),\\\\\n\\frac{\\mathrm d}{\\mathrm dC}\\left[a\\operatorname{Ei}(-a/C)\\right]\n&=-\\frac aC e^{-a/C},\\\\\n\\Phi_a'(C)&=e^{-a/C}.\n\\end{aligned}",
+      "paragraph_index": 149
+    },
+    {
+      "key": "EQ_A_WATER_FACE",
+      "number": "A.38",
+      "latex": "g^C_{i+1/2}=\\gamma_iD_0\n\\exp\\left(-\\frac b{\\overline T_i}\\right)\n\\left[\\Phi_a(C_{i+1})-\\Phi_a(C_i)\\right].",
+      "paragraph_index": 151
+    },
+    {
+      "key": "EQ_A_SPURIOUS_TEMPERATURE_TERM",
+      "number": "A.39",
+      "latex": "\\frac{\\partial}{\\partial x}[A(T)\\Phi_a(C)]\n=A(T)e^{-a/C}C_x\n+A(T)\\frac b{T^2}\\Phi_a(C)T_x.",
+      "paragraph_index": 154
+    },
+    {
+      "key": "EQ_A_SMALL_DIFFERENCE",
+      "number": "A.40",
+      "latex": "\\Delta\\Phi\n=f_a(\\overline C_i)\\Delta C\n+\\frac{f_a''(\\overline C_i)}{24}(\\Delta C)^3\n+O((\\Delta C)^5).",
+      "paragraph_index": 157
+    },
+    {
+      "key": "EQ_A_DISCRETE_MASS",
+      "number": "A.41",
+      "latex": "\\begin{aligned}\n\\frac{\\mathrm d\\overline C_N}{\\mathrm dt}\n&=\\frac{2g^C_{N+1/2}}{R^2}\n=-\\frac{2\\beta}{R}(C_N-C_{eq}),\\\\\n\\dot\\ell&=\\frac{2\\beta}{R}(C_N-C_{eq}),\\\\\n\\overline C_N(t)+\\ell(t)&=C_0.\n\\end{aligned}",
+      "paragraph_index": 161
+    },
+    {
+      "key": "EQ_A_DISCRETE_HEAT_RATE",
+      "number": "A.42",
+      "latex": "2\\pi R^2\\sum_iw_iB_i\\dot T_i\n=2\\pi Rh(T_\\infty-T_N).",
+      "paragraph_index": 164
+    },
+    {
+      "key": "EQ_A_EFFECTIVE_ENERGY_DERIVATIVE",
+      "number": "A.43",
+      "latex": "\\begin{aligned}\n\\frac{\\mathrm dH_{eff}}{\\mathrm dt}\n={}&2\\pi Rh(T_\\infty-T_N)\n+2\\pi R^2\\sum_iw_i(T_i-T_{ref})B_i'\\dot C_i\\\\\n&+4\\pi R\\dot R\\sum_iw_iB_i(T_i-T_{ref}).\n\\end{aligned}",
+      "paragraph_index": 166
+    },
+    {
+      "key": "EQ_A_HARMONIC_DERIVATIVES",
+      "number": "A.44",
+      "latex": "\\frac{\\partial k_H}{\\partial k_i}\n=\\frac{2k_{i+1}^2}{(k_i+k_{i+1})^2},\n\\qquad\n\\frac{\\partial k_H}{\\partial k_{i+1}}\n=\\frac{2k_i^2}{(k_i+k_{i+1})^2}.",
+      "paragraph_index": 171
+    },
+    {
+      "key": "EQ_A_HEAT_FACE_JACOBIAN",
+      "number": "A.45",
+      "latex": "\\begin{aligned}\n\\partial_{T_i}g^T&=-\\gamma_i k_H,\n&\\partial_{T_{i+1}}g^T&=\\gamma_i k_H,\\\\\n\\partial_{C_i}g^T&=\\gamma_i\\Delta T\n\\frac{2k_{i+1}^2k_i'}{(k_i+k_{i+1})^2},\n&\\partial_{C_{i+1}}g^T&=\\gamma_i\\Delta T\n\\frac{2k_i^2k_{i+1}'}{(k_i+k_{i+1})^2}.\n\\end{aligned}",
+      "paragraph_index": 173
+    },
+    {
+      "key": "EQ_A_WATER_FACE_JACOBIAN",
+      "number": "A.46",
+      "latex": "\\begin{aligned}\n\\partial_{C_i}g^C&=-G_i e^{-a/C_i},\n&\\partial_{C_{i+1}}g^C&=G_i e^{-a/C_{i+1}},\\\\\n\\partial_{T_i}g^C&=g^C\\frac{b}{2\\overline T_i^2},\n&\\partial_{T_{i+1}}g^C&=g^C\\frac{b}{2\\overline T_i^2}.\n\\end{aligned}",
+      "paragraph_index": 176
+    },
+    {
+      "key": "EQ_A_SMALL_DIFFERENCE_JACOBIAN",
+      "number": "A.47",
+      "latex": "\\begin{aligned}\n\\partial_{C_i}\\Delta\\Phi\n&=\\frac12 f_a'(\\overline C_i)\\Delta C-f_a(\\overline C_i),\\\\\n\\partial_{C_{i+1}}\\Delta\\Phi\n&=\\frac12 f_a'(\\overline C_i)\\Delta C+f_a(\\overline C_i),\\\\\nf_a'(C)&=\\frac a{C^2}e^{-a/C}.\n\\end{aligned}",
+      "paragraph_index": 179
+    },
+    {
+      "key": "EQ_A_CAPACITY_JACOBIAN",
+      "number": "A.48",
+      "latex": "\\partial_{C_i}\\dot T_i\n=\\frac{\\partial_{C_i}H_i}{R^2w_iB_i}\n-\\dot T_i\\frac{B_i'}{B_i},\n\\qquad\nB_i'=\\rho_{eff}'(C_i)c_p(C_i)+\\rho_{eff}(C_i)c_p'(C_i).",
+      "paragraph_index": 182
+    },
+    {
+      "key": "EQ_A_PROPERTY_DERIVATIVES",
+      "number": "A.49",
+      "latex": "\\begin{aligned}\n\\text{Q1: }&\\quad (\\rho_{eff}',c_p',k')=(0,0,0),\\\\\n\\text{Q23: }&\\quad\n(\\rho_{eff}',c_p',k')=\n\\left(128,\\frac{2736}{(1+C)^2},\\frac{0.38}{(1+C)^2}\\right),\\\\\n\\text{Q4: }&\\quad\n(\\rho_{eff}',c_p',k')=\n\\left(90,\\frac{2150}{(1+C)^2},\\frac{0.20}{(1+C)^2}\\right).\n\\end{aligned}",
+      "paragraph_index": 184
+    },
+    {
+      "key": "EQ_A_BOUNDARY_JACOBIAN",
+      "number": "A.50",
+      "latex": "\\partial_{T_N}g_s^T=-hR,\n\\qquad\n\\partial_{C_N}g_s^C=-\\beta R,\n\\qquad\n\\partial_{C_N}\\dot\\ell=\\frac{2\\beta}{R}.",
+      "paragraph_index": 187
+    },
+    {
+      "key": "EQ_A_JACOBIAN_LEFT_NULL",
+      "number": "A.51",
+      "latex": "\\boldsymbol m^{\\mathsf T}\\boldsymbol F=0,\n\\qquad\n\\boldsymbol m^{\\mathsf T}\\boldsymbol J=\\boldsymbol0^{\\mathsf T}.",
+      "paragraph_index": 189
+    },
+    {
+      "key": "EQ_A_BDF_RESIDUAL",
+      "number": "A.52",
+      "latex": "\\boldsymbol G(\\boldsymbol y_n)\n=\\alpha_0\\boldsymbol y_n\n+\\sum_{j=1}^{q}\\alpha_j\\boldsymbol y_{n-j}\n-\\Delta t_n\\beta_q\\boldsymbol F(t_n,\\boldsymbol y_n)\n=\\boldsymbol0.",
+      "paragraph_index": 193
+    },
+    {
+      "key": "EQ_A_BDF2",
+      "number": "A.53",
+      "latex": "\\frac{3\\boldsymbol y_n-4\\boldsymbol y_{n-1}+\\boldsymbol y_{n-2}}{2\\Delta t}\n=\\boldsymbol F(t_n,\\boldsymbol y_n).",
+      "paragraph_index": 195
+    },
+    {
+      "key": "EQ_A_NEWTON_SYSTEM",
+      "number": "A.54",
+      "latex": "\\left(\\alpha_0\\boldsymbol I-\\Delta t_n\\beta_q\\boldsymbol J\\right)\n\\delta\\boldsymbol y=-\\boldsymbol G.",
+      "paragraph_index": 197
+    },
+    {
+      "key": "EQ_A_ERROR_SCALE",
+      "number": "A.55",
+      "latex": "s_j=\\operatorname{atol}_j+\\operatorname{rtol}|y_j|.",
+      "paragraph_index": 200
+    },
+    {
+      "key": "EQ_A_BDF_DENSE",
+      "number": "A.56",
+      "latex": "\\boldsymbol P_n(t)=\\boldsymbol D_0+\n\\sum_{j=1}^{q}\\boldsymbol D_j\n\\prod_{k=0}^{j-1}\\frac{t-(t_n-kh_p)}{(k+1)h_p}.",
+      "paragraph_index": 203
+    },
+    {
+      "key": "EQ_A_CONTINUOUS_MAXIMUM",
+      "number": "A.57",
+      "latex": "M(t)=\\max_{0\\le r\\le R(t)}C(r,t)\n=\\max_{0\\le x\\le1}\\widehat C(x,t).",
+      "paragraph_index": 208
+    },
+    {
+      "key": "EQ_A_DISCRETE_EVENT",
+      "number": "A.58",
+      "latex": "M_N(t)=\\max_{0\\le i\\le N}C_i(t),\n\\qquad g_N(t)=M_N(t)-C_*.",
+      "paragraph_index": 211
+    },
+    {
+      "key": "EQ_A_STRICT_REPORT",
+      "number": "A.59",
+      "latex": "\\begin{aligned}\n\\mathcal K_N&=\\left\\{k\\in\\mathbb N_0:\nk\\Delta t_r\\ge t_{c,N},\\ M_N(k\\Delta t_r)<C_*\\right\\},\\\\\nt_{r,N}&=\\Delta t_r\\min\\mathcal K_N,\n\\qquad \\Delta t_r=0.36\\,\\mathrm s=10^{-4}\\,\\mathrm h.\n\\end{aligned}",
+      "paragraph_index": 215
+    },
+    {
+      "key": "EQ_A_POST_EVENT_END",
+      "number": "A.60",
+      "latex": "t_{end}=\\Delta t_s\\left[\n\\left\\lceil\\frac{t_{c,N}}{\\Delta t_s}\\right\\rceil+1\\right],\n\\qquad \\Delta t_s=1\\,\\mathrm s,",
+      "paragraph_index": 218
+    },
+    {
+      "key": "EQ_A_REPORT_CANDIDATE",
+      "number": "A.61",
+      "latex": "t_r^{(0)}=\\Delta t_r\n\\left\\lceil\\frac{t_{c,N}}{\\Delta t_r}\\right\\rceil,\n\\qquad t_r^{(j)}=t_r^{(0)}+j\\Delta t_r.",
+      "paragraph_index": 220
+    },
+    {
+      "key": "EQ_A_SPATIAL_QUERY",
+      "number": "A.62",
+      "latex": "\\widehat C_N(x_j,t)\n=(1-\\eta)C_i(t)+\\eta C_{i+1}(t),\n\\qquad\n\\eta=\\frac{x_j-x_i}{\\Delta x}.",
+      "paragraph_index": 225
+    },
+    {
+      "key": "EQ_A_BESSEL_FORCED_PDE",
+      "number": "A.63",
+      "latex": "\\begin{aligned}\nv_t&=\\frac{\\alpha}{R_0^2}\\frac1x(xv_x)_x-\\dot T_\\infty(t),\\\\\nv_x(0,t)&=0,\\qquad v_x(1,t)+Bi_hv(1,t)=0,\\\\\nBi_h&=\\frac{hR_0}{k}.\n\\end{aligned}",
+      "paragraph_index": 230
+    },
+    {
+      "key": "EQ_A_BESSEL_ROOT",
+      "number": "A.64",
+      "latex": "\\mu_nJ_1(\\mu_n)=Bi_hJ_0(\\mu_n),\n\\qquad\n\\lambda_n=\\frac{\\alpha\\mu_n^2}{R_0^2},\n\\qquad n=1,2,\\ldots.",
+      "paragraph_index": 232
+    },
+    {
+      "key": "EQ_A_BESSEL_ROOT_BRACKETS",
+      "number": "A.65",
+      "latex": "0<\\mu_1<j_{0,1},\\qquad\nj_{1,n-1}<\\mu_n<j_{0,n}\\quad(n\\ge2).",
+      "paragraph_index": 235
+    },
+    {
+      "key": "EQ_A_BESSEL_ORTHOGONALITY",
+      "number": "A.66",
+      "latex": "\\int_0^1 xJ_0(\\mu_mx)J_0(\\mu_nx)\\,\\mathrm dx=0\n\\quad(m\\ne n).",
+      "paragraph_index": 237
+    },
+    {
+      "key": "EQ_A_BESSEL_INTEGRALS",
+      "number": "A.67",
+      "latex": "\\int_0^1xJ_0(\\mu_nx)\\,\\mathrm dx\n=\\frac{J_1(\\mu_n)}{\\mu_n},\n\\qquad\n\\int_0^1xJ_0(\\mu_nx)^2\\,\\mathrm dx\n=\\frac{J_0(\\mu_n)^2+J_1(\\mu_n)^2}{2}.",
+      "paragraph_index": 239
+    },
+    {
+      "key": "EQ_A_BESSEL_COEFFICIENT",
+      "number": "A.68",
+      "latex": "b_n=\n\\frac{2J_1(\\mu_n)}\n{\\mu_n[J_0(\\mu_n)^2+J_1(\\mu_n)^2]}.",
+      "paragraph_index": 241
+    },
+    {
+      "key": "EQ_A_BESSEL_MODE_ODE",
+      "number": "A.69",
+      "latex": "\\dot a_n+\\lambda_na_n=-b_n\\dot T_\\infty(t),\n\\qquad a_n(0)=b_n[T_0-T_\\infty(0)].",
+      "paragraph_index": 243
+    },
+    {
+      "key": "EQ_A_BESSEL_SOLUTION",
+      "number": "A.70",
+      "latex": "\\begin{aligned}\nT(x,t)=T_\\infty(t)+\\sum_{n=1}^{\\infty}b_nJ_0(\\mu_nx)\n\\Bigg[&[T_0-T_\\infty(0)]e^{-\\lambda_nt}\\\\\n&-\\int_0^t e^{-\\lambda_n(t-\\tau)}\\dot T_\\infty(\\tau)\\,\\mathrm d\\tau\\Bigg].\n\\end{aligned}",
+      "paragraph_index": 245
+    },
+    {
+      "key": "EQ_A_PIECEWISE_CONVOLUTION",
+      "number": "A.71",
+      "latex": "\\int_a^b e^{-\\lambda_n(t-\\tau)}s\\,\\mathrm d\\tau\n=\\frac{s}{\\lambda_n}\n\\left[e^{-\\lambda_n(t-b)}-e^{-\\lambda_n(t-a)}\\right].",
+      "paragraph_index": 247
+    },
+    {
+      "key": "EQ_A_BESSEL_CELL_AVERAGE",
+      "number": "A.72",
+      "latex": "\\begin{aligned}\n\\left\\langle J_0\\right\\rangle_i\n&=\\frac{1}{w_i}\\int_{a_i}^{b_i}xJ_0(\\mu x)\\,\\mathrm dx\\\\\n&=\\frac{b_iJ_1(\\mu b_i)-a_iJ_1(\\mu a_i)}{\\mu w_i}.\n\\end{aligned}",
+      "paragraph_index": 252
+    },
+    {
+      "key": "EQ_A_COMPARISON_METRICS",
+      "number": "A.73",
+      "latex": "\\begin{aligned}\nE_\\infty&=\\max_{(t,r)\\in\\mathcal S}|U_N(t,r)-U_{ref}(t,r)|,\\\\\nE_{RMS}&=\\sqrt{\\frac1{|\\mathcal S|}\n\\sum_{(t,r)\\in\\mathcal S}[U_N(t,r)-U_{ref}(t,r)]^2}.\n\\end{aligned}",
+      "paragraph_index": 255
+    },
+    {
+      "key": "EQ_A_OBSERVED_ORDER",
+      "number": "A.74",
+      "latex": "p_{obs}=\\frac{\\ln(E_N/E_{2N})}{\\ln2}.",
+      "paragraph_index": 260
+    },
+    {
+      "key": "EQ_A_SHRINK_TIME_SCALE",
+      "number": "A.75",
+      "latex": "\\tau(t)=\\int_0^t\\frac{D_{ref}}{R(s)^2}\\,\\mathrm ds,\n\\qquad\n\\widetilde t(t)=R_0^2\\int_0^t\\frac{1}{R(s)^2}\\,\\mathrm ds.",
+      "paragraph_index": 264
+    },
+    {
+      "key": "EQ_A_EMPIRICAL_RESISTANCE",
+      "number": "A.76",
+      "latex": "\\begin{aligned}\nK_p(C_s)&=\\frac{1-(C_{ref}/C_s)^{1/p}}{1-C_{ref}/C_s}\n\\quad(C_s>C_{ref}),\\\\\nK_p(C_{ref})&=\\frac1p,\\\\\nj_{w,out}&=\\rho_d\\beta K_p(C_s)(C_s-C_{eq}).\n\\end{aligned}",
+      "paragraph_index": 270
+    },
+    {
+      "key": "EQ_A_EMPIRICAL_RESISTANCE_BOUNDS",
+      "number": "A.77",
+      "latex": "\\begin{aligned}\nq(1-z)&\\le1-z^q\\le1-z,\\\\\n\\frac1p&\\le K_p(C_s)\\le1,\\qquad K_1(C_s)=1,\\\\\n\\lim_{C_s\\downarrow C_{ref}}K_p(C_s)&=\\frac1p.\n\\end{aligned}",
+      "paragraph_index": 272
+    },
+    {
+      "key": "EQ_A_LATENT_SCENARIO",
+      "number": "A.78",
+      "latex": "g_s^T=hR(T_\\infty-T_s)\n-R\\chi L_v\\rho_d\\beta(C_s-C_{eq}).",
+      "paragraph_index": 275
+    }
+  ],
+  "headings": [
+    {
+      "text": "附录 A 连续模型、坐标变换与数值方法的完整推导",
+      "bookmark": "HEAD_001",
+      "level": 1,
+      "paragraph_index": 40
+    },
+    {
+      "text": "A.1 干基含水率、湿基含水率与参考质量",
+      "bookmark": "HEAD_002",
+      "level": 2,
+      "paragraph_index": 42
+    },
+    {
+      "text": "A.2 从组分质量平衡得到干基扩散方程",
+      "bookmark": "HEAD_003",
+      "level": 2,
+      "paragraph_index": 50
+    },
+    {
+      "text": "A.3 圆柱薄壳收支与固定域方程",
+      "bookmark": "HEAD_004",
+      "level": 2,
+      "paragraph_index": 65
+    },
+    {
+      "text": "A.4 四问物性与驱动条件",
+      "bookmark": "HEAD_005",
+      "level": 2,
+      "paragraph_index": 75
+    },
+    {
+      "text": "A.5 初始条件、表面边界与量纲",
+      "bookmark": "HEAD_006",
+      "level": 2,
+      "paragraph_index": 92
+    },
+    {
+      "text": "A.6 干物质密度、有效密度与收缩的一致性",
+      "bookmark": "HEAD_007",
+      "level": 2,
+      "paragraph_index": 101
+    },
+    {
+      "text": "A.7 一般移动坐标与网格速度项",
+      "bookmark": "HEAD_008",
+      "level": 2,
+      "paragraph_index": 112
+    },
+    {
+      "text": "A.8 节点控制体、轴心及表面权重",
+      "bookmark": "HEAD_009",
+      "level": 2,
+      "paragraph_index": 126
+    },
+    {
+      "text": "A.9 导热调和平均与 Kirchhoff 水分面量",
+      "bookmark": "HEAD_010",
+      "level": 2,
+      "paragraph_index": 142
+    },
+    {
+      "text": "A.10 干基质量与有效热收支的离散恒等式",
+      "bookmark": "HEAD_011",
+      "level": 2,
+      "paragraph_index": 159
+    },
+    {
+      "text": "A.11 解析 Jacobian：面量、容量、边界与累计量",
+      "bookmark": "HEAD_012",
+      "level": 2,
+      "paragraph_index": 168
+    },
+    {
+      "text": "A.12 隐式 BDF 与连续数值输出",
+      "bookmark": "HEAD_013",
+      "level": 2,
+      "paragraph_index": 191
+    },
+    {
+      "text": "A.13 全域最大含水率、临界根与严格报告时刻",
+      "bookmark": "HEAD_014",
+      "level": 2,
+      "paragraph_index": 206
+    },
+    {
+      "text": "A.14 固定物理位置查询与缩域输出",
+      "bookmark": "HEAD_015",
+      "level": 2,
+      "paragraph_index": 223
+    },
+    {
+      "text": "A.15 圆柱 Robin–Bessel 解析基准",
+      "bookmark": "HEAD_016",
+      "level": 2,
+      "paragraph_index": 228
+    },
+    {
+      "text": "A.16 解析比较的点值、单元平均及误差范围",
+      "bookmark": "HEAD_017",
+      "level": 2,
+      "paragraph_index": 250
+    },
+    {
+      "text": "A.17 方法比较、收缩尺度与参数敏感性",
+      "bookmark": "HEAD_018",
+      "level": 2,
+      "paragraph_index": 258
+    },
+    {
+      "text": "A.18 经验边界阻力及潜热情景的推导范围",
+      "bookmark": "HEAD_019",
+      "level": 2,
+      "paragraph_index": 268
+    },
+    {
+      "text": "A.19 公式与现行程序的对应关系及验证限度",
+      "bookmark": "HEAD_020",
+      "level": 2,
+      "paragraph_index": 277
+    },
+    {
+      "text": "A.20 推导依据",
+      "bookmark": "HEAD_021",
+      "level": 2,
+      "paragraph_index": 283
+    },
+    {
+      "text": "附录 B 支撑材料与复现说明",
+      "bookmark": "HEAD_022",
+      "level": 1,
+      "paragraph_index": 289
+    },
+    {
+      "text": "B.1 材料范围与代码覆盖",
+      "bookmark": "HEAD_023",
+      "level": 2,
+      "paragraph_index": 290
+    },
+    {
+      "text": "B.2 输入、单位与资料来源",
+      "bookmark": "HEAD_024",
+      "level": 2,
+      "paragraph_index": 294
+    },
+    {
+      "text": "B.3 计算环境与依赖",
+      "bookmark": "HEAD_025",
+      "level": 2,
+      "paragraph_index": 299
+    },
+    {
+      "text": "B.4 独立生产程序的复现步骤",
+      "bookmark": "HEAD_026",
+      "level": 2,
+      "paragraph_index": 303
+    },
+    {
+      "text": "B.5 已实际完成的数值复现与验证",
+      "bookmark": "HEAD_027",
+      "level": 2,
+      "paragraph_index": 315
+    },
+    {
+      "text": "B.6 检验源码的限制与未通过项目",
+      "bookmark": "HEAD_028",
+      "level": 2,
+      "paragraph_index": 319
+    },
+    {
+      "text": "B.7 正文六图的代码与数据衔接",
+      "bookmark": "HEAD_029",
+      "level": 2,
+      "paragraph_index": 327
+    },
+    {
+      "text": "B.8 当前106份正式支撑文件清单",
+      "bookmark": "HEAD_030",
+      "level": 2,
+      "paragraph_index": 334
+    },
+    {
+      "text": "附录 C 结果表与数值精度核查",
+      "bookmark": "HEAD_031",
+      "level": 1,
+      "paragraph_index": 348
+    },
+    {
+      "text": "C.1 临界事件与严格达标时刻",
+      "bookmark": "HEAD_032",
+      "level": 2,
+      "paragraph_index": 349
+    },
+    {
+      "text": "C.2 题目要求的径向采样结果",
+      "bookmark": "HEAD_033",
+      "level": 2,
+      "paragraph_index": 352
+    },
+    {
+      "text": "C.3 全量导出及一致性检查",
+      "bookmark": "HEAD_034",
+      "level": 2,
+      "paragraph_index": 368
+    },
+    {
+      "text": "附录 D 完整无注释源程序",
+      "bookmark": "HEAD_035",
+      "level": 1,
+      "paragraph_index": 371
+    },
+    {
+      "text": "D.1 runDelivery.py",
+      "bookmark": "FILE_SRC001",
+      "level": 2,
+      "paragraph_index": 375
+    },
+    {
+      "text": "D.2 q1Model.py",
+      "bookmark": "FILE_SRC002",
+      "level": 2,
+      "paragraph_index": 617
+    },
+    {
+      "text": "D.3 q2Model.py",
+      "bookmark": "FILE_SRC003",
+      "level": 2,
+      "paragraph_index": 630
+    },
+    {
+      "text": "D.4 q3Model.py",
+      "bookmark": "FILE_SRC004",
+      "level": 2,
+      "paragraph_index": 643
+    },
+    {
+      "text": "D.5 q4Model.py",
+      "bookmark": "FILE_SRC005",
+      "level": 2,
+      "paragraph_index": 676
+    },
+    {
+      "text": "D.6 dryingCore.py",
+      "bookmark": "FILE_SRC006",
+      "level": 2,
+      "paragraph_index": 689
+    },
+    {
+      "text": "D.7 analyticJacobian.py",
+      "bookmark": "FILE_SRC007",
+      "level": 2,
+      "paragraph_index": 1102
+    },
+    {
+      "text": "D.8 diskDense.py",
+      "bookmark": "FILE_SRC008",
+      "level": 2,
+      "paragraph_index": 1423
+    },
+    {
+      "text": "D.9 exportOutputs.py",
+      "bookmark": "FILE_SRC009",
+      "level": 2,
+      "paragraph_index": 1543
+    },
+    {
+      "text": "D.10 reference_data.py",
+      "bookmark": "FILE_SRC010",
+      "level": 2,
+      "paragraph_index": 2269
+    },
+    {
+      "text": "D.11 runLogged.ps1",
+      "bookmark": "FILE_SRC011",
+      "level": 2,
+      "paragraph_index": 2491
+    },
+    {
+      "text": "D.12 compareMatlab.mjs",
+      "bookmark": "FILE_SRC012",
+      "level": 2,
+      "paragraph_index": 2537
+    },
+    {
+      "text": "D.13 runCrossCheck.m",
+      "bookmark": "FILE_SRC013",
+      "level": 2,
+      "paragraph_index": 2742
+    },
+    {
+      "text": "D.14 analytic_jacobian.py",
+      "bookmark": "FILE_SRC014",
+      "level": 2,
+      "paragraph_index": 3239
+    },
+    {
+      "text": "D.15 axisymmetric_check.py",
+      "bookmark": "FILE_SRC015",
+      "level": 2,
+      "paragraph_index": 3556
+    },
+    {
+      "text": "D.16 compare_analytic.py",
+      "bookmark": "FILE_SRC016",
+      "level": 2,
+      "paragraph_index": 3845
+    },
+    {
+      "text": "D.17 disk_dense.py",
+      "bookmark": "FILE_SRC017",
+      "level": 2,
+      "paragraph_index": 4085
+    },
+    {
+      "text": "D.18 drying_core.py",
+      "bookmark": "FILE_SRC018",
+      "level": 2,
+      "paragraph_index": 4202
+    },
+    {
+      "text": "D.19 export_outputs.py",
+      "bookmark": "FILE_SRC019",
+      "level": 2,
+      "paragraph_index": 4600
+    },
+    {
+      "text": "D.20 production_provenance.py",
+      "bookmark": "FILE_SRC020",
+      "level": 2,
+      "paragraph_index": 5326
+    },
+    {
+      "text": "D.21 publication_plots.py",
+      "bookmark": "FILE_SRC021",
+      "level": 2,
+      "paragraph_index": 5817
+    },
+    {
+      "text": "D.22 q1_model.py",
+      "bookmark": "FILE_SRC022",
+      "level": 2,
+      "paragraph_index": 6218
+    },
+    {
+      "text": "D.23 q2_model.py",
+      "bookmark": "FILE_SRC023",
+      "level": 2,
+      "paragraph_index": 6231
+    },
+    {
+      "text": "D.24 q3_model.py",
+      "bookmark": "FILE_SRC024",
+      "level": 2,
+      "paragraph_index": 6244
+    },
+    {
+      "text": "D.25 q4_model.py",
+      "bookmark": "FILE_SRC025",
+      "level": 2,
+      "paragraph_index": 6276
+    },
+    {
+      "text": "D.26 run_experiments.py",
+      "bookmark": "FILE_SRC026",
+      "level": 2,
+      "paragraph_index": 6289
+    },
+    {
+      "text": "D.27 run_modeling.py",
+      "bookmark": "FILE_SRC027",
+      "level": 2,
+      "paragraph_index": 6368
+    },
+    {
+      "text": "D.28 validate_bessel.py",
+      "bookmark": "FILE_SRC028",
+      "level": 2,
+      "paragraph_index": 6813
+    },
+    {
+      "text": "D.29 verify_convergence.py",
+      "bookmark": "FILE_SRC029",
+      "level": 2,
+      "paragraph_index": 7138
+    },
+    {
+      "text": "D.30 verify_dense_storage.py",
+      "bookmark": "FILE_SRC030",
+      "level": 2,
+      "paragraph_index": 7270
+    },
+    {
+      "text": "D.31 verify_time_accuracy.py",
+      "bookmark": "FILE_SRC031",
+      "level": 2,
+      "paragraph_index": 7344
+    },
+    {
+      "text": "D.32 analytic_metric_check.py",
+      "bookmark": "FILE_SRC032",
+      "level": 2,
+      "paragraph_index": 7594
+    },
+    {
+      "text": "D.33 crossvalidate_series.py",
+      "bookmark": "FILE_SRC033",
+      "level": 2,
+      "paragraph_index": 7676
+    },
+    {
+      "text": "D.34 crossvalidate_solver.py",
+      "bookmark": "FILE_SRC034",
+      "level": 2,
+      "paragraph_index": 8086
+    },
+    {
+      "text": "D.35 energy_balance_check.py",
+      "bookmark": "FILE_SRC035",
+      "level": 2,
+      "paragraph_index": 8266
+    },
+    {
+      "text": "D.36 energy_balance_diagnose.py",
+      "bookmark": "FILE_SRC036",
+      "level": 2,
+      "paragraph_index": 8462
+    },
+    {
+      "text": "D.37 energy_balance_diagnose2.py",
+      "bookmark": "FILE_SRC037",
+      "level": 2,
+      "paragraph_index": 8529
+    },
+    {
+      "text": "D.38 isotherm_activity_closure.py",
+      "bookmark": "FILE_SRC038",
+      "level": 2,
+      "paragraph_index": 8609
+    },
+    {
+      "text": "D.39 isotherm_diagnose.py",
+      "bookmark": "FILE_SRC039",
+      "level": 2,
+      "paragraph_index": 9019
+    },
+    {
+      "text": "D.40 isotherm_jacobian_probe.py",
+      "bookmark": "FILE_SRC040",
+      "level": 2,
+      "paragraph_index": 9091
+    },
+    {
+      "text": "D.41 latent_heat_scenarios.py",
+      "bookmark": "FILE_SRC041",
+      "level": 2,
+      "paragraph_index": 9187
+    },
+    {
+      "text": "D.42 method_comparison.py",
+      "bookmark": "FILE_SRC042",
+      "level": 2,
+      "paragraph_index": 9354
+    },
+    {
+      "text": "D.43 sensitivity_analysis.py",
+      "bookmark": "FILE_SRC043",
+      "level": 2,
+      "paragraph_index": 9520
+    },
+    {
+      "text": "D.44 threshold_and_scaling_checks.py",
+      "bookmark": "FILE_SRC044",
+      "level": 2,
+      "paragraph_index": 9775
+    },
+    {
+      "text": "D.45 prepare_a_data.py",
+      "bookmark": "FILE_SRC045",
+      "level": 2,
+      "paragraph_index": 9935
+    },
+    {
+      "text": "D.46 export_six_figure_package_20260912.py",
+      "bookmark": "FILE_SRC046",
+      "level": 2,
+      "paragraph_index": 10187
+    },
+    {
+      "text": "D.47 draw_figures.R",
+      "bookmark": "FILE_SRC047",
+      "level": 2,
+      "paragraph_index": 10371
+    }
+  ],
+  "toc": [
+    {
+      "text": "附录 A 连续模型、坐标变换与数值方法的完整推导",
+      "bookmark": "HEAD_001",
+      "level": 1,
+      "paragraph_index": 6,
+      "cached_page": 3
+    },
+    {
+      "text": "A.1 干基含水率、湿基含水率与参考质量",
+      "bookmark": "HEAD_002",
+      "level": 2,
+      "paragraph_index": 8,
+      "cached_page": 3
+    },
+    {
+      "text": "A.2 从组分质量平衡得到干基扩散方程",
+      "bookmark": "HEAD_003",
+      "level": 2,
+      "paragraph_index": 16,
+      "cached_page": 4
+    },
+    {
+      "text": "A.3 圆柱薄壳收支与固定域方程",
+      "bookmark": "HEAD_004",
+      "level": 2,
+      "paragraph_index": 31,
+      "cached_page": 5
+    },
+    {
+      "text": "A.4 四问物性与驱动条件",
+      "bookmark": "HEAD_005",
+      "level": 2,
+      "paragraph_index": 41,
+      "cached_page": 5
+    },
+    {
+      "text": "A.5 初始条件、表面边界与量纲",
+      "bookmark": "HEAD_006",
+      "level": 2,
+      "paragraph_index": 58,
+      "cached_page": 7
+    },
+    {
+      "text": "A.6 干物质密度、有效密度与收缩的一致性",
+      "bookmark": "HEAD_007",
+      "level": 2,
+      "paragraph_index": 67,
+      "cached_page": 7
+    },
+    {
+      "text": "A.7 一般移动坐标与网格速度项",
+      "bookmark": "HEAD_008",
+      "level": 2,
+      "paragraph_index": 78,
+      "cached_page": 8
+    },
+    {
+      "text": "A.8 节点控制体、轴心及表面权重",
+      "bookmark": "HEAD_009",
+      "level": 2,
+      "paragraph_index": 92,
+      "cached_page": 9
+    },
+    {
+      "text": "A.9 导热调和平均与 Kirchhoff 水分面量",
+      "bookmark": "HEAD_010",
+      "level": 2,
+      "paragraph_index": 108,
+      "cached_page": 11
+    },
+    {
+      "text": "A.10 干基质量与有效热收支的离散恒等式",
+      "bookmark": "HEAD_011",
+      "level": 2,
+      "paragraph_index": 125,
+      "cached_page": 12
+    },
+    {
+      "text": "A.11 解析 Jacobian：面量、容量、边界与累计量",
+      "bookmark": "HEAD_012",
+      "level": 2,
+      "paragraph_index": 134,
+      "cached_page": 13
+    },
+    {
+      "text": "A.12 隐式 BDF 与连续数值输出",
+      "bookmark": "HEAD_013",
+      "level": 2,
+      "paragraph_index": 157,
+      "cached_page": 15
+    },
+    {
+      "text": "A.13 全域最大含水率、临界根与严格报告时刻",
+      "bookmark": "HEAD_014",
+      "level": 2,
+      "paragraph_index": 172,
+      "cached_page": 16
+    },
+    {
+      "text": "A.14 固定物理位置查询与缩域输出",
+      "bookmark": "HEAD_015",
+      "level": 2,
+      "paragraph_index": 189,
+      "cached_page": 17
+    },
+    {
+      "text": "A.15 圆柱 Robin–Bessel 解析基准",
+      "bookmark": "HEAD_016",
+      "level": 2,
+      "paragraph_index": 194,
+      "cached_page": 18
+    },
+    {
+      "text": "A.16 解析比较的点值、单元平均及误差范围",
+      "bookmark": "HEAD_017",
+      "level": 2,
+      "paragraph_index": 216,
+      "cached_page": 19
+    },
+    {
+      "text": "A.17 方法比较、收缩尺度与参数敏感性",
+      "bookmark": "HEAD_018",
+      "level": 2,
+      "paragraph_index": 224,
+      "cached_page": 20
+    },
+    {
+      "text": "A.18 经验边界阻力及潜热情景的推导范围",
+      "bookmark": "HEAD_019",
+      "level": 2,
+      "paragraph_index": 234,
+      "cached_page": 21
+    },
+    {
+      "text": "A.19 公式与现行程序的对应关系及验证限度",
+      "bookmark": "HEAD_020",
+      "level": 2,
+      "paragraph_index": 243,
+      "cached_page": 22
+    },
+    {
+      "text": "A.20 推导依据",
+      "bookmark": "HEAD_021",
+      "level": 2,
+      "paragraph_index": 249,
+      "cached_page": 23
+    },
+    {
+      "text": "附录 B 支撑材料与复现说明",
+      "bookmark": "HEAD_022",
+      "level": 1,
+      "paragraph_index": 255,
+      "cached_page": 24
+    },
+    {
+      "text": "B.1 材料范围与代码覆盖",
+      "bookmark": "HEAD_023",
+      "level": 2,
+      "paragraph_index": 256,
+      "cached_page": 24
+    },
+    {
+      "text": "B.2 输入、单位与资料来源",
+      "bookmark": "HEAD_024",
+      "level": 2,
+      "paragraph_index": 260,
+      "cached_page": 24
+    },
+    {
+      "text": "B.3 计算环境与依赖",
+      "bookmark": "HEAD_025",
+      "level": 2,
+      "paragraph_index": 265,
+      "cached_page": 25
+    },
+    {
+      "text": "B.4 独立生产程序的复现步骤",
+      "bookmark": "HEAD_026",
+      "level": 2,
+      "paragraph_index": 269,
+      "cached_page": 26
+    },
+    {
+      "text": "B.5 已实际完成的数值复现与验证",
+      "bookmark": "HEAD_027",
+      "level": 2,
+      "paragraph_index": 281,
+      "cached_page": 27
+    },
+    {
+      "text": "B.6 检验源码的限制与未通过项目",
+      "bookmark": "HEAD_028",
+      "level": 2,
+      "paragraph_index": 285,
+      "cached_page": 29
+    },
+    {
+      "text": "B.7 正文六图的代码与数据衔接",
+      "bookmark": "HEAD_029",
+      "level": 2,
+      "paragraph_index": 293,
+      "cached_page": 30
+    },
+    {
+      "text": "B.8 当前106份正式支撑文件清单",
+      "bookmark": "HEAD_030",
+      "level": 2,
+      "paragraph_index": 300,
+      "cached_page": 31
+    },
+    {
+      "text": "附录 C 结果表与数值精度核查",
+      "bookmark": "HEAD_031",
+      "level": 1,
+      "paragraph_index": 314,
+      "cached_page": 37
+    },
+    {
+      "text": "C.1 临界事件与严格达标时刻",
+      "bookmark": "HEAD_032",
+      "level": 2,
+      "paragraph_index": 315,
+      "cached_page": 37
+    },
+    {
+      "text": "C.2 题目要求的径向采样结果",
+      "bookmark": "HEAD_033",
+      "level": 2,
+      "paragraph_index": 318,
+      "cached_page": 37
+    },
+    {
+      "text": "C.3 全量导出及一致性检查",
+      "bookmark": "HEAD_034",
+      "level": 2,
+      "paragraph_index": 334,
+      "cached_page": 40
+    },
+    {
+      "text": "附录 D 完整无注释源程序",
+      "bookmark": "HEAD_035",
+      "level": 1,
+      "paragraph_index": 337,
+      "cached_page": 41
+    }
+  ],
+  "result_tables": [
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_temperature.csv",
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "rows": [
+        [
+          "时间/s",
+          "0",
+          "0.5",
+          "1",
+          "1.5",
+          "2"
+        ],
+        [
+          "100.0000",
+          "28.0001",
+          "28.0003",
+          "28.0040",
+          "28.0327",
+          "28.1801"
+        ],
+        [
+          "300.0000",
+          "28.0408",
+          "28.0635",
+          "28.1514",
+          "28.3681",
+          "28.8489"
+        ],
+        [
+          "600.0000",
+          "28.4533",
+          "28.5360",
+          "28.8039",
+          "29.3159",
+          "30.1652"
+        ],
+        [
+          "900.0000",
+          "29.3243",
+          "29.4583",
+          "29.8755",
+          "30.6161",
+          "31.7304"
+        ],
+        [
+          "1200.0000",
+          "30.5427",
+          "30.7098",
+          "31.2223",
+          "32.1126",
+          "33.4276"
+        ],
+        [
+          "1500.0000",
+          "31.9957",
+          "32.1867",
+          "32.7660",
+          "33.7463",
+          "35.1203"
+        ],
+        [
+          "1800.0000",
+          "33.5753",
+          "33.7720",
+          "34.3642",
+          "35.3621",
+          "36.7856"
+        ]
+      ]
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_moisture.csv",
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "rows": [
+        [
+          "时间/s",
+          "0",
+          "0.5",
+          "1",
+          "1.5",
+          "2"
+        ],
+        [
+          "100.0000",
+          "2.5500",
+          "2.5500",
+          "2.5500",
+          "2.5500",
+          "2.2470"
+        ],
+        [
+          "300.0000",
+          "2.5500",
+          "2.5500",
+          "2.5500",
+          "2.5492",
+          "2.0508"
+        ],
+        [
+          "600.0000",
+          "2.5500",
+          "2.5500",
+          "2.5500",
+          "2.5353",
+          "1.8770"
+        ],
+        [
+          "900.0000",
+          "2.5500",
+          "2.5500",
+          "2.5497",
+          "2.5045",
+          "1.7547"
+        ],
+        [
+          "1200.0000",
+          "2.5500",
+          "2.5500",
+          "2.5482",
+          "2.4646",
+          "1.6586"
+        ],
+        [
+          "1500.0000",
+          "2.5500",
+          "2.5499",
+          "2.5445",
+          "2.4206",
+          "1.5787"
+        ],
+        [
+          "1800.0000",
+          "2.5500",
+          "2.5497",
+          "2.5383",
+          "2.3755",
+          "1.5102"
+        ]
+      ]
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_temperature.csv",
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "rows": [
+        [
+          "时间/h",
+          "0",
+          "0.5",
+          "1",
+          "1.5",
+          "2"
+        ],
+        [
+          "0.5000",
+          "32.1892",
+          "32.3821",
+          "32.9659",
+          "33.9608",
+          "35.4130"
+        ],
+        [
+          "1.0000",
+          "40.3816",
+          "40.5536",
+          "41.0605",
+          "41.8782",
+          "42.9976"
+        ],
+        [
+          "1.5000",
+          "45.8468",
+          "45.9348",
+          "46.1930",
+          "46.6051",
+          "47.1401"
+        ],
+        [
+          "2.0000",
+          "48.4502",
+          "48.4881",
+          "48.5984",
+          "48.7736",
+          "49.0033"
+        ],
+        [
+          "2.5000",
+          "49.4670",
+          "49.4792",
+          "49.5136",
+          "49.5653",
+          "49.6609"
+        ],
+        [
+          "3.0000",
+          "49.8495",
+          "49.8553",
+          "49.8746",
+          "49.9101",
+          "49.9664"
+        ]
+      ]
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_moisture.csv",
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "rows": [
+        [
+          "时间/h",
+          "0",
+          "0.5",
+          "1",
+          "1.5",
+          "2"
+        ],
+        [
+          "0.5000",
+          "2.5499",
+          "2.5489",
+          "2.5256",
+          "2.3257",
+          "1.6486"
+        ],
+        [
+          "1.0000",
+          "2.5257",
+          "2.4948",
+          "2.3578",
+          "2.0230",
+          "1.4711"
+        ],
+        [
+          "1.5000",
+          "2.3861",
+          "2.3256",
+          "2.1344",
+          "1.8020",
+          "1.3476"
+        ],
+        [
+          "2.0000",
+          "2.1709",
+          "2.1084",
+          "1.9236",
+          "1.6259",
+          "1.2311"
+        ],
+        [
+          "2.5000",
+          "1.9566",
+          "1.9006",
+          "1.7360",
+          "1.4720",
+          "1.1166"
+        ],
+        [
+          "3.0000",
+          "1.7662",
+          "1.7165",
+          "1.5702",
+          "1.3333",
+          "1.0081"
+        ]
+      ]
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q3_paper_moisture.csv",
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "rows": [
+        [
+          "时间/h",
+          "0",
+          "0.5",
+          "1",
+          "1.5",
+          "2"
+        ],
+        [
+          "6.0000",
+          "1.0170",
+          "0.9881",
+          "0.9015",
+          "0.7550",
+          "0.5328"
+        ],
+        [
+          "12.0000",
+          "0.4561",
+          "0.4432",
+          "0.4031",
+          "0.3297",
+          "0.1642"
+        ],
+        [
+          "18.0000",
+          "0.2988",
+          "0.2915",
+          "0.2687",
+          "0.2253",
+          "0.0845"
+        ],
+        [
+          "24.0000",
+          "0.2378",
+          "0.2327",
+          "0.2167",
+          "0.1855",
+          "0.0665"
+        ],
+        [
+          "30.0000",
+          "0.2058",
+          "0.2018",
+          "0.1892",
+          "0.1641",
+          "0.0598"
+        ],
+        [
+          "36.0000",
+          "0.1859",
+          "0.1825",
+          "0.1718",
+          "0.1504",
+          "0.0566"
+        ],
+        [
+          "42.0000",
+          "0.1721",
+          "0.1691",
+          "0.1597",
+          "0.1407",
+          "0.0549"
+        ],
+        [
+          "48.0000",
+          "0.1618",
+          "0.1592",
+          "0.1507",
+          "0.1334",
+          "0.0537"
+        ],
+        [
+          "54.0000",
+          "0.1539",
+          "0.1514",
+          "0.1436",
+          "0.1277",
+          "0.0530"
+        ],
+        [
+          "57.4724",
+          "0.1500",
+          "0.1477",
+          "0.1402",
+          "0.1249",
+          "0.0527"
+        ]
+      ]
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_moisture.csv",
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "rows": [
+        [
+          "时间/h",
+          "0",
+          "0.5",
+          "1",
+          "1.5",
+          "2",
+          "药材表面"
+        ],
+        [
+          "6.0000",
+          "1.7196",
+          "1.5377",
+          "1.0226",
+          "",
+          "",
+          "0.4207"
+        ],
+        [
+          "12.0000",
+          "0.7377",
+          "0.6546",
+          "0.4083",
+          "",
+          "",
+          "0.1670"
+        ],
+        [
+          "18.0000",
+          "0.4087",
+          "0.3686",
+          "0.2397",
+          "",
+          "",
+          "0.0892"
+        ],
+        [
+          "24.0000",
+          "0.2851",
+          "0.2611",
+          "0.1790",
+          "",
+          "",
+          "0.0673"
+        ],
+        [
+          "30.0000",
+          "0.2263",
+          "0.2094",
+          "0.1493",
+          "",
+          "",
+          "0.0595"
+        ],
+        [
+          "36.0000",
+          "0.1928",
+          "0.1797",
+          "0.1317",
+          "",
+          "",
+          "0.0560"
+        ],
+        [
+          "42.0000",
+          "0.1712",
+          "0.1604",
+          "0.1200",
+          "",
+          "",
+          "0.0541"
+        ],
+        [
+          "48.0000",
+          "0.1561",
+          "0.1468",
+          "0.1116",
+          "",
+          "",
+          "0.0530"
+        ],
+        [
+          "51.0906",
+          "0.1500",
+          "0.1413",
+          "0.1081",
+          "",
+          "",
+          "0.0526"
+        ]
+      ]
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_radius.csv",
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "rows": [
+        [
+          "时间/h",
+          "表面半径/cm"
+        ],
+        [
+          "6.0000",
+          "1.3740"
+        ],
+        [
+          "12.0000",
+          "1.2480"
+        ],
+        [
+          "18.0000",
+          "1.2140"
+        ],
+        [
+          "24.0000",
+          "1.2040"
+        ],
+        [
+          "30.0000",
+          "1.2010"
+        ],
+        [
+          "36.0000",
+          "1.2000"
+        ],
+        [
+          "42.0000",
+          "1.2000"
+        ],
+        [
+          "48.0000",
+          "1.2000"
+        ],
+        [
+          "51.0906",
+          "1.2000"
+        ]
+      ]
+    }
+  ],
+  "bookmarks": [
+    "HEAD_001",
+    "HEAD_002",
+    "EQ_A_BASIS",
+    "EQ_A_DENSITY_BASIS",
+    "HEAD_003",
+    "EQ_A_DRY_CONTINUITY",
+    "EQ_A_WATER_CONTINUITY",
+    "EQ_A_PRODUCT_EXPANSION",
+    "EQ_A_MATERIAL_MOISTURE",
+    "EQ_A_FICK",
+    "EQ_A_NONUNIFORM_DRY_DENSITY",
+    "HEAD_004",
+    "EQ_A_RADIAL_WATER",
+    "EQ_A_EFFECTIVE_HEAT",
+    "EQ_A_CAPACITY_NOT_ENTHALPY",
+    "HEAD_005",
+    "EQ_A_PROPERTIES_Q1",
+    "EQ_A_PROPERTIES_Q23",
+    "EQ_A_PROPERTIES_Q4",
+    "EQ_A_DIFFUSIVITY_RATIO",
+    "EQ_A_LINEAR_INTERPOLATION",
+    "EQ_A_ENVIRONMENT_EXTENSION",
+    "HEAD_006",
+    "EQ_A_INITIAL_CENTER",
+    "EQ_A_SURFACE_PHYSICAL",
+    "EQ_A_SURFACE_NORMALIZED",
+    "HEAD_007",
+    "EQ_A_SKELETON_VELOCITY",
+    "EQ_A_DRY_DENSITY_SHRINK",
+    "EQ_A_DENSITY_BOUND",
+    "EQ_A_RADIUS_COMPATIBILITY",
+    "HEAD_008",
+    "EQ_A_ALE_CHAIN",
+    "EQ_A_ALE_RESIDUAL",
+    "EQ_A_GENERAL_MOVING_COORDINATE",
+    "EQ_A_MATERIAL_PDE",
+    "EQ_A_MATERIAL_BOUNDARY",
+    "HEAD_009",
+    "EQ_A_CONTROL_VOLUME_WEIGHTS",
+    "EQ_A_GRADIENT_FLUX",
+    "EQ_A_SEMIDISCRETE",
+    "EQ_A_AXIS_LIMIT",
+    "EQ_A_BOUNDARY_GRADIENT_FLUX",
+    "HEAD_010",
+    "EQ_A_HEAT_FACE",
+    "EQ_A_KIRCHHOFF_POTENTIAL",
+    "EQ_A_KIRCHHOFF_DERIVATIVE",
+    "EQ_A_WATER_FACE",
+    "EQ_A_SPURIOUS_TEMPERATURE_TERM",
+    "EQ_A_SMALL_DIFFERENCE",
+    "HEAD_011",
+    "EQ_A_DISCRETE_MASS",
+    "EQ_A_DISCRETE_HEAT_RATE",
+    "EQ_A_EFFECTIVE_ENERGY_DERIVATIVE",
+    "HEAD_012",
+    "EQ_A_HARMONIC_DERIVATIVES",
+    "EQ_A_HEAT_FACE_JACOBIAN",
+    "EQ_A_WATER_FACE_JACOBIAN",
+    "EQ_A_SMALL_DIFFERENCE_JACOBIAN",
+    "EQ_A_CAPACITY_JACOBIAN",
+    "EQ_A_PROPERTY_DERIVATIVES",
+    "EQ_A_BOUNDARY_JACOBIAN",
+    "EQ_A_JACOBIAN_LEFT_NULL",
+    "HEAD_013",
+    "EQ_A_BDF_RESIDUAL",
+    "EQ_A_BDF2",
+    "EQ_A_NEWTON_SYSTEM",
+    "EQ_A_ERROR_SCALE",
+    "EQ_A_BDF_DENSE",
+    "HEAD_014",
+    "EQ_A_CONTINUOUS_MAXIMUM",
+    "EQ_A_DISCRETE_EVENT",
+    "EQ_A_STRICT_REPORT",
+    "EQ_A_POST_EVENT_END",
+    "EQ_A_REPORT_CANDIDATE",
+    "HEAD_015",
+    "EQ_A_SPATIAL_QUERY",
+    "HEAD_016",
+    "EQ_A_BESSEL_FORCED_PDE",
+    "EQ_A_BESSEL_ROOT",
+    "EQ_A_BESSEL_ROOT_BRACKETS",
+    "EQ_A_BESSEL_ORTHOGONALITY",
+    "EQ_A_BESSEL_INTEGRALS",
+    "EQ_A_BESSEL_COEFFICIENT",
+    "EQ_A_BESSEL_MODE_ODE",
+    "EQ_A_BESSEL_SOLUTION",
+    "EQ_A_PIECEWISE_CONVOLUTION",
+    "HEAD_017",
+    "EQ_A_BESSEL_CELL_AVERAGE",
+    "EQ_A_COMPARISON_METRICS",
+    "HEAD_018",
+    "EQ_A_OBSERVED_ORDER",
+    "EQ_A_SHRINK_TIME_SCALE",
+    "HEAD_019",
+    "EQ_A_EMPIRICAL_RESISTANCE",
+    "EQ_A_EMPIRICAL_RESISTANCE_BOUNDS",
+    "EQ_A_LATENT_SCENARIO",
+    "HEAD_020",
+    "HEAD_021",
+    "HEAD_022",
+    "HEAD_023",
+    "HEAD_024",
+    "HEAD_025",
+    "HEAD_026",
+    "HEAD_027",
+    "HEAD_028",
+    "HEAD_029",
+    "HEAD_030",
+    "HEAD_031",
+    "HEAD_032",
+    "HEAD_033",
+    "HEAD_034",
+    "HEAD_035",
+    "FILE_SRC001",
+    "CODE_SRC001_BEGIN",
+    "CODE_SRC001_END",
+    "FILE_SRC002",
+    "CODE_SRC002_BEGIN",
+    "CODE_SRC002_END",
+    "FILE_SRC003",
+    "CODE_SRC003_BEGIN",
+    "CODE_SRC003_END",
+    "FILE_SRC004",
+    "CODE_SRC004_BEGIN",
+    "CODE_SRC004_END",
+    "FILE_SRC005",
+    "CODE_SRC005_BEGIN",
+    "CODE_SRC005_END",
+    "FILE_SRC006",
+    "CODE_SRC006_BEGIN",
+    "CODE_SRC006_END",
+    "FILE_SRC007",
+    "CODE_SRC007_BEGIN",
+    "CODE_SRC007_END",
+    "FILE_SRC008",
+    "CODE_SRC008_BEGIN",
+    "CODE_SRC008_END",
+    "FILE_SRC009",
+    "CODE_SRC009_BEGIN",
+    "CODE_SRC009_END",
+    "FILE_SRC010",
+    "CODE_SRC010_BEGIN",
+    "CODE_SRC010_END",
+    "FILE_SRC011",
+    "CODE_SRC011_BEGIN",
+    "CODE_SRC011_END",
+    "FILE_SRC012",
+    "CODE_SRC012_BEGIN",
+    "CODE_SRC012_END",
+    "FILE_SRC013",
+    "CODE_SRC013_BEGIN",
+    "CODE_SRC013_END",
+    "FILE_SRC014",
+    "CODE_SRC014_BEGIN",
+    "CODE_SRC014_END",
+    "FILE_SRC015",
+    "CODE_SRC015_BEGIN",
+    "CODE_SRC015_END",
+    "FILE_SRC016",
+    "CODE_SRC016_BEGIN",
+    "CODE_SRC016_END",
+    "FILE_SRC017",
+    "CODE_SRC017_BEGIN",
+    "CODE_SRC017_END",
+    "FILE_SRC018",
+    "CODE_SRC018_BEGIN",
+    "CODE_SRC018_END",
+    "FILE_SRC019",
+    "CODE_SRC019_BEGIN",
+    "CODE_SRC019_END",
+    "FILE_SRC020",
+    "CODE_SRC020_BEGIN",
+    "CODE_SRC020_END",
+    "FILE_SRC021",
+    "CODE_SRC021_BEGIN",
+    "CODE_SRC021_END",
+    "FILE_SRC022",
+    "CODE_SRC022_BEGIN",
+    "CODE_SRC022_END",
+    "FILE_SRC023",
+    "CODE_SRC023_BEGIN",
+    "CODE_SRC023_END",
+    "FILE_SRC024",
+    "CODE_SRC024_BEGIN",
+    "CODE_SRC024_END",
+    "FILE_SRC025",
+    "CODE_SRC025_BEGIN",
+    "CODE_SRC025_END",
+    "FILE_SRC026",
+    "CODE_SRC026_BEGIN",
+    "CODE_SRC026_END",
+    "FILE_SRC027",
+    "CODE_SRC027_BEGIN",
+    "CODE_SRC027_END",
+    "FILE_SRC028",
+    "CODE_SRC028_BEGIN",
+    "CODE_SRC028_END",
+    "FILE_SRC029",
+    "CODE_SRC029_BEGIN",
+    "CODE_SRC029_END",
+    "FILE_SRC030",
+    "CODE_SRC030_BEGIN",
+    "CODE_SRC030_END",
+    "FILE_SRC031",
+    "CODE_SRC031_BEGIN",
+    "CODE_SRC031_END",
+    "FILE_SRC032",
+    "CODE_SRC032_BEGIN",
+    "CODE_SRC032_END",
+    "FILE_SRC033",
+    "CODE_SRC033_BEGIN",
+    "CODE_SRC033_END",
+    "FILE_SRC034",
+    "CODE_SRC034_BEGIN",
+    "CODE_SRC034_END",
+    "FILE_SRC035",
+    "CODE_SRC035_BEGIN",
+    "CODE_SRC035_END",
+    "FILE_SRC036",
+    "CODE_SRC036_BEGIN",
+    "CODE_SRC036_END",
+    "FILE_SRC037",
+    "CODE_SRC037_BEGIN",
+    "CODE_SRC037_END",
+    "FILE_SRC038",
+    "CODE_SRC038_BEGIN",
+    "CODE_SRC038_END",
+    "FILE_SRC039",
+    "CODE_SRC039_BEGIN",
+    "CODE_SRC039_END",
+    "FILE_SRC040",
+    "CODE_SRC040_BEGIN",
+    "CODE_SRC040_END",
+    "FILE_SRC041",
+    "CODE_SRC041_BEGIN",
+    "CODE_SRC041_END",
+    "FILE_SRC042",
+    "CODE_SRC042_BEGIN",
+    "CODE_SRC042_END",
+    "FILE_SRC043",
+    "CODE_SRC043_BEGIN",
+    "CODE_SRC043_END",
+    "FILE_SRC044",
+    "CODE_SRC044_BEGIN",
+    "CODE_SRC044_END",
+    "FILE_SRC045",
+    "CODE_SRC045_BEGIN",
+    "CODE_SRC045_END",
+    "FILE_SRC046",
+    "CODE_SRC046_BEGIN",
+    "CODE_SRC046_END",
+    "FILE_SRC047",
+    "CODE_SRC047_BEGIN",
+    "CODE_SRC047_END"
+  ],
+  "omml_count": 405
+}

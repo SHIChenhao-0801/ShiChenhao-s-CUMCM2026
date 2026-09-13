@@ -1,0 +1,1032 @@
+{
+  "status": "DERIVATION_SOURCE_AND_STATIC_MATH_REVIEW_COMPLETE",
+  "createdAtUtc": "2026-09-13T03:36:07.364145+00:00",
+  "output": {
+    "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\appendix_full_20260913\\derivations.md",
+    "sha256": "9b6ca3136153f439590c88fbe274dbbe262fdd5fcbd72efff493145c34d8b093",
+    "characters": 31343,
+    "lines": 964
+  },
+  "scope": "Standalone appendix derivations only. No formal PDE/model/source changes, no new numerical experiment, no DOCX construction or rendering by this agent.",
+  "paperInput": {
+    "path": "paper_output/paper/药材热湿耦合模型与干燥时间计算_格式与语言修订版.docx",
+    "sha256": "2fc45b6bbc7aff10db0de198e47f5595b83f8990969cd7258353fa31ddfbe44a"
+  },
+  "currentSupportSourceReadInventory": [
+    {
+      "path": "支撑材料/03_程序代码/analyticJacobian.py",
+      "sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "lines": 315,
+      "bytes": 15650,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/diskDense.py",
+      "sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "lines": 114,
+      "bytes": 4005,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/dryingCore.py",
+      "sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "lines": 407,
+      "bytes": 18416,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/exportOutputs.py",
+      "sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "lines": 720,
+      "bytes": 38811,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/q1Model.py",
+      "sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "lines": 7,
+      "bytes": 267,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/q2Model.py",
+      "sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "lines": 7,
+      "bytes": 268,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/q3Model.py",
+      "sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "lines": 27,
+      "bytes": 1065,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/q4Model.py",
+      "sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "lines": 7,
+      "bytes": 280,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/reference/reference_data.py",
+      "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "lines": 216,
+      "bytes": 16093,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/runDelivery.py",
+      "sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "lines": 236,
+      "bytes": 11192,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/03_程序代码/runLogged.ps1",
+      "sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "lines": 40,
+      "bytes": 1674,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/MATLAB对照证据/compareMatlab.mjs",
+      "sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59",
+      "lines": 199,
+      "bytes": 16409,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/MATLAB对照证据/runCrossCheck.m",
+      "sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa",
+      "lines": 491,
+      "bytes": 25180,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/analytic_jacobian.py",
+      "sha256": "43960b47fbe92f34770b1be3eebba9fed8c355d8819ad1dd030a6f9803110b33",
+      "lines": 311,
+      "bytes": 15901,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/axisymmetric_check.py",
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "lines": 283,
+      "bytes": 13375,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/compare_analytic.py",
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "lines": 234,
+      "bytes": 13913,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/disk_dense.py",
+      "sha256": "f8ade59c2f45166339613af0dc95666d8b240d45ef238ef91f5586f41e368a3a",
+      "lines": 111,
+      "bytes": 4015,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/drying_core.py",
+      "sha256": "dedfe48af60c43d41faf11ba66d8e767f2ed5ea9ecd0f6f9cf9a86f4467b6ebf",
+      "lines": 392,
+      "bytes": 18634,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/export_outputs.py",
+      "sha256": "1b9c358f5219bf522ac9f5fe7a4f62b0395c419127c614103957643d98b4f7e2",
+      "lines": 720,
+      "bytes": 38826,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/production_provenance.py",
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "lines": 485,
+      "bytes": 22151,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/publication_plots.py",
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "lines": 395,
+      "bytes": 23325,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q1_model.py",
+      "sha256": "7bed421147579095319aad785ee6f66328dc1d13a154db5472b9b98f8e736742",
+      "lines": 7,
+      "bytes": 278,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q2_model.py",
+      "sha256": "5c27d23b1168c445591bf0e50f8f003d11b65e7a50c6156336285236f6e21adc",
+      "lines": 7,
+      "bytes": 279,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q3_model.py",
+      "sha256": "6fb1084ef3bfe3976ff52f26760574650d3d5389f93b8b09983e528cc205c808",
+      "lines": 26,
+      "bytes": 1073,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/q4_model.py",
+      "sha256": "e78b37fde9bcab5c196c7ba6bd2033f48889d07be00fdfd8395db7957ab1c905",
+      "lines": 7,
+      "bytes": 291,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_experiments.py",
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "lines": 73,
+      "bytes": 3907,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/run_modeling.py",
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "lines": 439,
+      "bytes": 26524,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/validate_bessel.py",
+      "sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+      "lines": 319,
+      "bytes": 13839,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_convergence.py",
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "lines": 126,
+      "bytes": 6245,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_dense_storage.py",
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "lines": 68,
+      "bytes": 3682,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/modeling/verify_time_accuracy.py",
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "lines": 244,
+      "bytes": 13965,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/analytic_metric_check.py",
+      "sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+      "lines": 76,
+      "bytes": 2968,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_series.py",
+      "sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+      "lines": 404,
+      "bytes": 17494,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/crossvalidate_solver.py",
+      "sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+      "lines": 174,
+      "bytes": 6055,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_check.py",
+      "sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+      "lines": 190,
+      "bytes": 8018,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose.py",
+      "sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+      "lines": 61,
+      "bytes": 2416,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/energy_balance_diagnose2.py",
+      "sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+      "lines": 74,
+      "bytes": 3339,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_activity_closure.py",
+      "sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+      "lines": 404,
+      "bytes": 16736,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_diagnose.py",
+      "sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+      "lines": 66,
+      "bytes": 2314,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/isotherm_jacobian_probe.py",
+      "sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+      "lines": 90,
+      "bytes": 3494,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/latent_heat_scenarios.py",
+      "sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+      "lines": 161,
+      "bytes": 7228,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/method_comparison.py",
+      "sha256": "e5def0b0d4a8a45089decedaf5512c932158fd7647503dbdaecbf076888890c5",
+      "lines": 160,
+      "bytes": 6689,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/sensitivity_analysis.py",
+      "sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+      "lines": 249,
+      "bytes": 9574,
+      "unchangedSinceRead": true
+    },
+    {
+      "path": "支撑材料/05_数值检验与实验/Python检验源码/paper_output/code/verification/threshold_and_scaling_checks.py",
+      "sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+      "lines": 154,
+      "bytes": 6073,
+      "unchangedSinceRead": true
+    }
+  ],
+  "currentSourceCountRead": 44,
+  "additionalDataProcessingAndPlottingSources": "Root handles the appended three sources; derivation prose points to the final code appendix rather than freezing its file count.",
+  "equationCount": 78,
+  "equations": [
+    {
+      "label": "EQ_A_BASIS",
+      "latexSha256": "15a9e2cb29739e92316d94c312502a26f436a06b62179e3a9e1d8ec91bc11409",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 9
+    },
+    {
+      "label": "EQ_A_DENSITY_BASIS",
+      "latexSha256": "134a09a75b72c2f44fa5e1a0abed603546443e6b4ce5509fce23aa72d33e32a9",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 20
+    },
+    {
+      "label": "EQ_A_DRY_CONTINUITY",
+      "latexSha256": "8571fb49157bdbe91f2d948d32fd31e04c0dd2d5b84576ca5b98adce5d98b9f7",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 35
+    },
+    {
+      "label": "EQ_A_WATER_CONTINUITY",
+      "latexSha256": "ad34f5bdab0b4d1a21f3ffcc847e8d02ce5d72674d894b6d2f92c2e07d4d494a",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 43
+    },
+    {
+      "label": "EQ_A_PRODUCT_EXPANSION",
+      "latexSha256": "94fe52dfbe7655727c5ce490ebf95bcdbf2709cdc96087c188233e7e383d1920",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 51
+    },
+    {
+      "label": "EQ_A_MATERIAL_MOISTURE",
+      "latexSha256": "4b57aa7d4aa5abaa839b586970c2093ab499ec45726bc3117648287b190e24fd",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 62
+    },
+    {
+      "label": "EQ_A_FICK",
+      "latexSha256": "9d9530afd7997d72f921afe46933570c92b22af6a2606ca4c6305de564ddaff9",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 72
+    },
+    {
+      "label": "EQ_A_NONUNIFORM_DRY_DENSITY",
+      "latexSha256": "75aca8feb9f622b34ca12e79f95fe2272eea58e72ea6cb377dcf4fa18f983883",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 82
+    },
+    {
+      "label": "EQ_A_RADIAL_WATER",
+      "latexSha256": "dbfc24d10425f008ad228195b574eaf0bc6e21f52c695e8a6e5fd9f62c3e11cb",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 95
+    },
+    {
+      "label": "EQ_A_EFFECTIVE_HEAT",
+      "latexSha256": "edf5d10b403d0750de1af1e0a50035001b3b24b6370e4910890d9629f8cbacb5",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 107
+    },
+    {
+      "label": "EQ_A_CAPACITY_NOT_ENTHALPY",
+      "latexSha256": "6a7dd44ef7dd90557532fadc4cefbbfe6a3c5f92ab0750a731b91916623c28ee",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 123
+    },
+    {
+      "label": "EQ_A_PROPERTIES_Q1",
+      "latexSha256": "20e05ce2d235e92299a8cde7ebae28fe77d6dec1e7ae31977df56043f4256c77",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 136
+    },
+    {
+      "label": "EQ_A_PROPERTIES_Q23",
+      "latexSha256": "380acf8390e5a30e3b1500a06d531c6734d9a498dab9d38c21b708ad7a631a27",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 146
+    },
+    {
+      "label": "EQ_A_PROPERTIES_Q4",
+      "latexSha256": "aeb780c6396cb2c4de08fb381423da5e2c51619b6c316a886469bca666fb169b",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 159
+    },
+    {
+      "label": "EQ_A_DIFFUSIVITY_RATIO",
+      "latexSha256": "3c1e6c9d84cf7660f23e42b5416cd1ce7aa64f79541837a45a0d56a62c09d565",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 174
+    },
+    {
+      "label": "EQ_A_LINEAR_INTERPOLATION",
+      "latexSha256": "27f5f9c601eaead73c36aebb00d5cec18abae6350e95e6b3be13954c325a888b",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 185
+    },
+    {
+      "label": "EQ_A_ENVIRONMENT_EXTENSION",
+      "latexSha256": "7cafe88ff87a7c483afc8636d94904eaf6ea00ddaa2a5051320bc4bea5841fcc",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 192
+    },
+    {
+      "label": "EQ_A_INITIAL_CENTER",
+      "latexSha256": "0536adfce43ca0ed46345875199a2e393dddc705c51a1aa8aea1cdf179920614",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 207
+    },
+    {
+      "label": "EQ_A_SURFACE_PHYSICAL",
+      "latexSha256": "c4c47773baf4235ecb079fa8b41e1d3aba07ccdc6a2d4e2f5dc14e735b58ec99",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 215
+    },
+    {
+      "label": "EQ_A_SURFACE_NORMALIZED",
+      "latexSha256": "e24b741c5c51e8fe8f928e322161be3d78d68844f6402f1f7d386d20bfdc9ca6",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 225
+    },
+    {
+      "label": "EQ_A_SKELETON_VELOCITY",
+      "latexSha256": "91dbd59028390f8d141274738aab52935b21b14b2ae86cb553c1de1b90728c05",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 238
+    },
+    {
+      "label": "EQ_A_DRY_DENSITY_SHRINK",
+      "latexSha256": "d5904b8142542c58091a5f997c45e647774262c856a201e5e0cfc77b3f4e041c",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 249
+    },
+    {
+      "label": "EQ_A_DENSITY_BOUND",
+      "latexSha256": "30056cda2671a3417b6a4c95b9873bafb2f13e802696de196d023dcb84b7936f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 263
+    },
+    {
+      "label": "EQ_A_RADIUS_COMPATIBILITY",
+      "latexSha256": "eaf10b1f18d161012b641f9994d1ecac72a31d2c54925b0342efebe067b0ba60",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 271
+    },
+    {
+      "label": "EQ_A_ALE_CHAIN",
+      "latexSha256": "c9b3727007b95394123d80d21f8e1b26dc1d28aef2f6138e12b409aeac2a7d74",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 283
+    },
+    {
+      "label": "EQ_A_ALE_RESIDUAL",
+      "latexSha256": "c938cf8c7c672f552727a5174a864d5a35e443ad2f896f2c35b2afc6654715df",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 295
+    },
+    {
+      "label": "EQ_A_GENERAL_MOVING_COORDINATE",
+      "latexSha256": "974cc8067db3a9302011bd61355f31bc5cd9c83534a0d87dbc5e3875c0349584",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 309
+    },
+    {
+      "label": "EQ_A_MATERIAL_PDE",
+      "latexSha256": "023a3287acf005020a4d1507d8c320e2e847fb21ee1950db2fd25567c20c8bec",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 321
+    },
+    {
+      "label": "EQ_A_MATERIAL_BOUNDARY",
+      "latexSha256": "7a129f46be291082df0d3ef89e134946244cf8d593952f57e40311aa4f47b534",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 337
+    },
+    {
+      "label": "EQ_A_CONTROL_VOLUME_WEIGHTS",
+      "latexSha256": "05cbe2b7b3370aee9717fcd84d2747d954e760d4a876a33657a12b8a3334949b",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 352
+    },
+    {
+      "label": "EQ_A_GRADIENT_FLUX",
+      "latexSha256": "cb7327663c059944a568b15416f10eafb317f8ab33108ca5a11e91565fc1381f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 368
+    },
+    {
+      "label": "EQ_A_SEMIDISCRETE",
+      "latexSha256": "63ddb379b20d31d8472c7b04d1551afd872335672c803e7bf064658ebfee6b68",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 375
+    },
+    {
+      "label": "EQ_A_AXIS_LIMIT",
+      "latexSha256": "f95d96b1e9faeec2b5e1e2416d68d7be084c9e6b8d16cce28197d0774b567781",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 387
+    },
+    {
+      "label": "EQ_A_BOUNDARY_GRADIENT_FLUX",
+      "latexSha256": "9f1ca2604e70a6920cebe2711ed64ea4fabf1a3cd635a4edc8a2da948dc5001f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 397
+    },
+    {
+      "label": "EQ_A_HEAT_FACE",
+      "latexSha256": "5594bbab7b617ec7016dc72be580355da73b67e3f6e4561a3777ed585d69dde5",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 410
+    },
+    {
+      "label": "EQ_A_KIRCHHOFF_POTENTIAL",
+      "latexSha256": "8aaebc70e6ae645a1caa58ae0696e69349ed35e679d62d83ebb05e2289097a51",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 424
+    },
+    {
+      "label": "EQ_A_KIRCHHOFF_DERIVATIVE",
+      "latexSha256": "676db31b3e0261bc81a15c0363bc81157b9699c9acf4b0ebccebd80c50553ee8",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 431
+    },
+    {
+      "label": "EQ_A_WATER_FACE",
+      "latexSha256": "73f8a1f12028ee4c59587def9753fc813eae948f4eaa51f8e2ee3f18d1199e91",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 444
+    },
+    {
+      "label": "EQ_A_SPURIOUS_TEMPERATURE_TERM",
+      "latexSha256": "f8f2bda861a8cb3a1df2a1f08e3e4fde65a909a0da2be5ce2a995dc4d02d7054",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 455
+    },
+    {
+      "label": "EQ_A_SMALL_DIFFERENCE",
+      "latexSha256": "fc810ad1cbb2bb793b6b43ba57810616a3c51b1c48bfe0a4098873cbf7cdc4ae",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 466
+    },
+    {
+      "label": "EQ_A_DISCRETE_MASS",
+      "latexSha256": "cca49fc0a41bbef2303738386a9d14c33f5fa5f6e11d95403ec83105a7079958",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 480
+    },
+    {
+      "label": "EQ_A_DISCRETE_HEAT_RATE",
+      "latexSha256": "9563f9229a9b3d0c587100ccc5966d59337de1882e7979ae50bd719114faec36",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 495
+    },
+    {
+      "label": "EQ_A_EFFECTIVE_ENERGY_DERIVATIVE",
+      "latexSha256": "bd8bdcce091a095d34cec12605d57d8677bf5794f4144f77f2f9a35426f9fc5f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 503
+    },
+    {
+      "label": "EQ_A_HARMONIC_DERIVATIVES",
+      "latexSha256": "b7a3dcb5939dff59a6fd3e2ee43cbc33c88b07f7fc12086816513d00028e65f1",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 521
+    },
+    {
+      "label": "EQ_A_HEAT_FACE_JACOBIAN",
+      "latexSha256": "b1c02e07a41448cdd276ca5ea81ebd239241386486b408eeb8859973ec78564b",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 532
+    },
+    {
+      "label": "EQ_A_WATER_FACE_JACOBIAN",
+      "latexSha256": "2f21215cb750a6a98bace0864d7b3e872bbbca40a1815a0bdd539552e022b926",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 548
+    },
+    {
+      "label": "EQ_A_SMALL_DIFFERENCE_JACOBIAN",
+      "latexSha256": "df6305464e469b475849f70bc41bccbd26ba825661d21496351e9c6340f74901",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 562
+    },
+    {
+      "label": "EQ_A_CAPACITY_JACOBIAN",
+      "latexSha256": "a16746a3123de051e5a1dfde9207ea00d55dd8641001fde42f55ea136b4d915f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 577
+    },
+    {
+      "label": "EQ_A_PROPERTY_DERIVATIVES",
+      "latexSha256": "4fc360eae995e20f8283de76b7a00cf296b25f75a23ae0f03a8971be98eac244",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 588
+    },
+    {
+      "label": "EQ_A_BOUNDARY_JACOBIAN",
+      "latexSha256": "5d7342c51e10bc0d64f0ccc972aae89abb95c3b3782f7946711776f161b28f17",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 605
+    },
+    {
+      "label": "EQ_A_JACOBIAN_LEFT_NULL",
+      "latexSha256": "f23429a63771b1473db0440b4b270617330b9825a8824749bde4350308750fb6",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 616
+    },
+    {
+      "label": "EQ_A_BDF_RESIDUAL",
+      "latexSha256": "5144f4e054fea786af6a9dda7c6dcb0c4f922542270b4e006087a52a35a71c82",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 629
+    },
+    {
+      "label": "EQ_A_BDF2",
+      "latexSha256": "135b451a3136233b8f5f5aa1d4d18c49667720347e5e94c7082f974efad92a4e",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 640
+    },
+    {
+      "label": "EQ_A_NEWTON_SYSTEM",
+      "latexSha256": "3e3c5e35ccf4aca061dec9cffd1f77bdb44ae20359d033c530a139483b983af0",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 648
+    },
+    {
+      "label": "EQ_A_ERROR_SCALE",
+      "latexSha256": "254b1b93ae7c9e2cb5a59d3691cfdc139b24c28280a2260b35ccbed6bdb38d58",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 658
+    },
+    {
+      "label": "EQ_A_BDF_DENSE",
+      "latexSha256": "fc46505aff19521a20edee11e6b14d375b653c37b2d8b04150b0cd724f0eb185",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 667
+    },
+    {
+      "label": "EQ_A_CONTINUOUS_MAXIMUM",
+      "latexSha256": "033e0ffbf135cc22b9396356dfa3f26c3ff24e0553ed88e954b57470f3b1626a",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 682
+    },
+    {
+      "label": "EQ_A_DISCRETE_EVENT",
+      "latexSha256": "2bd382f225323f82ba35ed655bd4838c3d9407a312dd006f7d9212d6d0ca1a78",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 692
+    },
+    {
+      "label": "EQ_A_STRICT_REPORT",
+      "latexSha256": "819175a0049527dd81584862a53203fef4fdef61e4f2bb56724032cbfc4b55c6",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 704
+    },
+    {
+      "label": "EQ_A_POST_EVENT_END",
+      "latexSha256": "83e9d3381393972b7673d06b224dcbc833334e01b76669805995194fb83f1e3a",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 718
+    },
+    {
+      "label": "EQ_A_REPORT_CANDIDATE",
+      "latexSha256": "80ed640712ccae9e28dc5535bb556ebc268fadd98d3b02424c7ed4d81d6bd808",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 727
+    },
+    {
+      "label": "EQ_A_SPATIAL_QUERY",
+      "latexSha256": "674ca43f1e585ce8b175766f7d9f421a442df8da4c7afa8fc1decaf5b350907b",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 742
+    },
+    {
+      "label": "EQ_A_BESSEL_FORCED_PDE",
+      "latexSha256": "acf4dbab1958448a3df6dfe5cb257d1f5ec18f51417fbee63a762abea11b3b23",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 758
+    },
+    {
+      "label": "EQ_A_BESSEL_ROOT",
+      "latexSha256": "27b8391335206d9c5538d5cb0ff9cbd26442bfc6ba34c0f9a520052b05e9220f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 769
+    },
+    {
+      "label": "EQ_A_BESSEL_ROOT_BRACKETS",
+      "latexSha256": "174f2e1f45dacc57f451a1f15be5641ad3429add30490173945c74f238a22b8f",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 781
+    },
+    {
+      "label": "EQ_A_BESSEL_ORTHOGONALITY",
+      "latexSha256": "ee46f65d05ec4bbdba06c10b1529b771a18571fe967b8c56588034b26a4d678d",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 789
+    },
+    {
+      "label": "EQ_A_BESSEL_INTEGRALS",
+      "latexSha256": "5ecd16fc9815ce9c85c14358e4117a6ae606609556ba88d2dd65b0191fa56435",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 797
+    },
+    {
+      "label": "EQ_A_BESSEL_COEFFICIENT",
+      "latexSha256": "6ae7ee7c0135bd503dc0297264450e4eed58d47bbd5477fe1189c225dc0758d4",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 808
+    },
+    {
+      "label": "EQ_A_BESSEL_MODE_ODE",
+      "latexSha256": "5963d343489cdc4352008c6f84783453af8ca30181419f2bbdb89374266bb8bf",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 817
+    },
+    {
+      "label": "EQ_A_BESSEL_SOLUTION",
+      "latexSha256": "48b89a0522a03d93626bd147197515c5aabed6da8f0949052a8071af21e7c393",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 825
+    },
+    {
+      "label": "EQ_A_PIECEWISE_CONVOLUTION",
+      "latexSha256": "53055d0d775720f8abcf26256a0076f2a8c65a8c80deaa7a19342a5cfb52ac1b",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 836
+    },
+    {
+      "label": "EQ_A_BESSEL_CELL_AVERAGE",
+      "latexSha256": "8b7811d5239511de0bb5e4a7f2bc8a1c462505a2bf65749cc7c303a00a2938c4",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 851
+    },
+    {
+      "label": "EQ_A_COMPARISON_METRICS",
+      "latexSha256": "ccaeac40cbc65ac06e49047ea8123db7259dbea838edac3e74a3f83144b20021",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 864
+    },
+    {
+      "label": "EQ_A_OBSERVED_ORDER",
+      "latexSha256": "f8339bcbd394849851654e560b8e37bbd3f72f686b03d3ce8c8fb6ebfc17458c",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 881
+    },
+    {
+      "label": "EQ_A_SHRINK_TIME_SCALE",
+      "latexSha256": "ab96758559cf1a22dd0d2e327fa7243e84b7f1286223dc7663ee248b59c17f5c",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 892
+    },
+    {
+      "label": "EQ_A_EMPIRICAL_RESISTANCE",
+      "latexSha256": "a659b0dd5c29907292a0d2e3b7dcd7de00d6ef49fe49afe58b9354cb6c760750",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 909
+    },
+    {
+      "label": "EQ_A_EMPIRICAL_RESISTANCE_BOUNDS",
+      "latexSha256": "e2b5cd165db0f0b7370a2e97ac23514ae7708aa4ea6bc31aa2ef9f6d26208ab6",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 921
+    },
+    {
+      "label": "EQ_A_LATENT_SCENARIO",
+      "latexSha256": "078da9906fb3679d49e7c817bcfcf9486b6bbe332b6eeb0192ed2764a9aa98e0",
+      "balancedBracesAndEnvironments": true,
+      "sourceLine": 934
+    }
+  ],
+  "equationReferencesResolved": true,
+  "duplicateLabels": [],
+  "headings": [
+    [
+      "A.1",
+      "干基含水率、湿基含水率与参考质量"
+    ],
+    [
+      "A.2",
+      "从组分质量平衡得到干基扩散方程"
+    ],
+    [
+      "A.3",
+      "圆柱薄壳收支与固定域方程"
+    ],
+    [
+      "A.4",
+      "四问物性与驱动条件"
+    ],
+    [
+      "A.5",
+      "初始条件、表面边界与量纲"
+    ],
+    [
+      "A.6",
+      "干物质密度、有效密度与收缩的一致性"
+    ],
+    [
+      "A.7",
+      "一般移动坐标与网格速度项"
+    ],
+    [
+      "A.8",
+      "节点控制体、轴心及表面权重"
+    ],
+    [
+      "A.9",
+      "导热调和平均与 Kirchhoff 水分面量"
+    ],
+    [
+      "A.10",
+      "干基质量与有效热收支的离散恒等式"
+    ],
+    [
+      "A.11",
+      "解析 Jacobian：面量、容量、边界与累计量"
+    ],
+    [
+      "A.12",
+      "隐式 BDF 与连续数值输出"
+    ],
+    [
+      "A.13",
+      "全域最大含水率、临界根与严格报告时刻"
+    ],
+    [
+      "A.14",
+      "固定物理位置查询与缩域输出"
+    ],
+    [
+      "A.15",
+      "圆柱 Robin–Bessel 解析基准"
+    ],
+    [
+      "A.16",
+      "解析比较的点值、单元平均及误差范围"
+    ],
+    [
+      "A.17",
+      "方法比较、收缩尺度与参数敏感性"
+    ],
+    [
+      "A.18",
+      "经验边界阻力及潜热情景的推导范围"
+    ],
+    [
+      "A.19",
+      "公式与现行程序的对应关系及验证限度"
+    ],
+    [
+      "A.20",
+      "推导依据"
+    ]
+  ],
+  "coverage": {
+    "dry_basis_and_wet_basis": [
+      "A.1"
+    ],
+    "dry_and_water_mass_balance": [
+      "A.2",
+      "A.3",
+      "A.6"
+    ],
+    "effective_heat_capacity_not_total_energy": [
+      "A.3",
+      "A.6",
+      "A.10",
+      "A.18"
+    ],
+    "given_four_question_properties_and_units": [
+      "A.4",
+      "A.5"
+    ],
+    "material_vs_fixed_spatial_skeleton_and_grid_velocity": [
+      "A.6",
+      "A.7"
+    ],
+    "center_surface_control_volume_weights": [
+      "A.8"
+    ],
+    "kirchhoff_concentration_potential_and_frozen_face_temperature": [
+      "A.9"
+    ],
+    "analytic_jacobian_flux_capacity_boundary_and_accumulator": [
+      "A.11"
+    ],
+    "bdf_newton_ndf_dense_output": [
+      "A.12"
+    ],
+    "continuous_vs_discrete_maximum_and_strict_report": [
+      "A.13"
+    ],
+    "physical_positions_moving_boundary_output": [
+      "A.14"
+    ],
+    "robin_bessel_roots_coefficients_and_time_convolution": [
+      "A.15"
+    ],
+    "point_vs_cell_average_and_error_metric": [
+      "A.16"
+    ],
+    "accepted_sensitivity_and_method_comparison_scope": [
+      "A.17",
+      "A.18",
+      "A.19"
+    ],
+    "references_real_metadata_and_support_limits": [
+      "A.20"
+    ]
+  },
+  "reviewedMathematicalPoints": [
+    "rho_d conservation subtracts out compression; rho_eff belongs to effective heat capacity, not conserved dry mass.",
+    "General moving-grid residual is (v_s-v_g)/R times the material-coordinate gradient; it cancels only for v_s=v_g=r Rdot/R.",
+    "Uniform radial shrink at fixed axial length gives rho_d R^2 constant; initial uniform rho_d remains spatially uniform.",
+    "Heat capacity times material T derivative is a closure; product differentiation adds capacity and volume terms to a capacity-weighted energy-like quantity.",
+    "Center and surface weights are dx^2/8 and dx/2-dx^2/8; total weights equal 1/2.",
+    "Production unknowns are approximate nodal point values; cell-average representation has a distinct Bessel projection.",
+    "Kirchhoff potential derivative equals exp(-a/C); only the concentration integral is analytic, not the entire temperature-dependent spatial flux.",
+    "Near-equal concentration uses a midpoint expression and its own chain-rule derivatives; protected coefficient derivatives differ from raw surface-drive derivatives.",
+    "Jacobian includes temperature factor derivatives with 1/2, harmonic k derivatives, rho_eff*cp quotient derivative, Robin surface derivatives and accumulator row.",
+    "SciPy BDF uses NDF refinement; the dense polynomial uses saved scale and differences, not a fitted 60-second series.",
+    "Strict report uses integer indices on the 0.36-second grid, original precision and actual trajectory queries; root equality alone is not strict feasibility.",
+    "Positive finite Robin Biot roots, weighted norms, uniform-function coefficients and piecewise-linear boundary convolution match the benchmark source.",
+    "Kp at Cref is defined by continuous extension 1/p; its empirical family is not a calibrated isotherm or a proven physical time bound.",
+    "Known historical failed interfaces, false trends and unmet error tolerances remain explicitly unaccepted."
+  ],
+  "independentReviewer": {
+    "agent": "/root/verification_independence/appendix_math_review",
+    "scope": "Read-only formulas against current core/Jacobian/dense-output/Bessel/analytic-comparison sources, with local SciPy implementation inspection.",
+    "result": "Formulas and limitations reconciled; no PDE rerun or source mutation."
+  },
+  "rootRequestedCorrectionsApplied": [
+    "Removed dynamic code count from derivation prose",
+    "Added A.20 four real reference records with limited support statements",
+    "Split identified long formulas using aligned",
+    "Explicit continuous extension Kp(Cref)=1/p"
+  ],
+  "referenceMetadata": [
+    {
+      "number": 4,
+      "key": "crank1975",
+      "bibliography": "[4] CRANK J. The mathematics of diffusion[M]. 2nd ed. Oxford: Clarendon Press, 1975.",
+      "verification_level": "国家图书馆书目已打开核实；原书公开OCR转录中相应正文已读；Bath原扫描当前重定向首页，未声称本轮取得原版整书PDF"
+    },
+    {
+      "number": 5,
+      "key": "eymard2000",
+      "bibliography": "[5] EYMARD R, GALLOUËT T, HERBIN R. Finite volume methods[M]//CIARLET P G, LIONS J L, eds. Handbook of numerical analysis. Vol. 7. Amsterdam: North-Holland, 2000: 713-1018. DOI: 10.1016/S1570-8659(00)07005-8.",
+      "verification_level": "出版社摘要/元数据及Crossref原始JSON已核；作者2019更新稿题名页和控制体守恒、谐均值段落已实际阅读"
+    },
+    {
+      "number": 6,
+      "key": "byrne1975",
+      "bibliography": "[6] BYRNE G D, HINDMARSH A C. A polyalgorithm for the numerical solution of ordinary differential equations[J]. ACM Transactions on Mathematical Software, 1975, 1(1): 71-96. DOI: 10.1145/355626.355636.",
+      "verification_level": "ACM注册至Crossref的原始书目元数据已核；作者参与的软件项目SUNDIALS书目与SciPy方法依据交叉核；未取得论文全文或Edge/ACM GUI核实截图"
+    },
+    {
+      "number": 7,
+      "key": "scipy_bdf",
+      "bibliography": "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html.",
+      "verification_level": "官方API正文已实际打开阅读"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\支撑材料\\03_程序代码\\numerical_design.txt",
+      "sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\manuscript_20260912\\appendix_derivation_research.md",
+      "sha256": "e104820fe62c05f6e44999d5585b1015055f1f60d5575ea380f121a44bd6e6cb"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\manuscript_20260912\\appendix_numerical_process.md",
+      "sha256": "73caa6b782e4999731207f25d5028903e329e8fb38b8141d44a796e4632a825b"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\final_paper_source.md",
+      "sha256": "d64e0c07696e670d88d9f27a8bac63edc658dd06ab7f13b97b34d91b7b8e8f43"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\final_delivery_audit.json",
+      "sha256": "486082a1cfadd5d70f6eb4b6da9d7e3224a30bdc7da03cc6ea4be7e32a9e1163"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\comment_sandbox_20260913\\verification_work\\windows_sandbox_verification_matrix.json",
+      "sha256": "32d88cf171321bc03a7cb3dcc5e04b9b5f2594dd1c0c680764cddb930b1995ed"
+    },
+    {
+      "path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\revision_20260913\\references\\references_verified.json",
+      "sha256": "dec361b7c5481beb1338970af075de7f56274b9d2635c6c240aad7b54697dc53"
+    }
+  ],
+  "remainingLimits": [
+    "No rigorous full-field error bound or measured internal-temperature/moisture validation is supplied.",
+    "Gas-solid equilibrium mapping, effective heat capacity and internal uniform shrink remain model assumptions.",
+    "Historical high-grid spatial full-second projection arrays were not all retained; appendix does not claim a new replay.",
+    "Empirical closure default script/interface issues remain; no claim all old methods passed.",
+    "LaTeX-to-OMML conversion, DOCX equation numbering, page layout and visual rendering are pending the root document build.",
+    "Team human review is not certified by this mathematical review."
+  ],
+  "newExternalSearchPerformed": false,
+  "noNewFullTextReadingClaim": true,
+  "noGitOperations": true
+}

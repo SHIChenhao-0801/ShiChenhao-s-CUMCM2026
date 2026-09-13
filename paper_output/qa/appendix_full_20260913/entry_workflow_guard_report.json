@@ -1,14 +1,9 @@
 {
   "schema_version": "1.0",
   "generated_by": "paper-workflow-orchestrator/scripts/workflow_guard.py",
-  "generated_at": "2026-09-13T12:01:56",
-  "mode": "status",
-  "target_step": "S8",
-  "status": "COMPLETE",
-  "current_step": "S8",
-  "next_step": "",
-  "recommended_skill": "",
-  "next_action": "S0-S8 全部通过；可以进行最终一致性复核或交付。",
+  "generated_at": "2026-09-13T11:19:38",
+  "target_step": "S6",
+  "status": "PASS",
   "steps": [
     {
       "step": "S0",
@@ -51,19 +46,12 @@
       "name": "证据门禁",
       "status": "PASS",
       "failures": []
-    },
-    {
-      "step": "S7",
-      "name": "正式稿",
-      "status": "PASS",
-      "failures": []
-    },
-    {
-      "step": "S8",
-      "name": "格式门禁",
-      "status": "PASS",
-      "failures": []
     }
   ],
-  "failures": []
+  "failures": [],
+  "mode": "skill",
+  "skill": "paper-formal-writer",
+  "required_step": "S6",
+  "handoff": "证据门禁 PASS 后才能进入正式成稿；未 PASS 时只能生成草稿或待写清单。",
+  "next_action": "允许启动 paper-formal-writer；完成后必须回到 paper-workflow-orchestrator 判断下一步。"
 }

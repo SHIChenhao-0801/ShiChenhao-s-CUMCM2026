@@ -1,0 +1,1821 @@
+{
+  "status": "PASS_DOCUMENT_CONTENT_AND_ALL_PAGE_REVIEW",
+  "docx": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\paper\\药材热湿耦合模型与干燥时间计算_完整附录.docx",
+  "docx_sha256": "2fd451eb2c2492438e324c44ddc3ecd6dc5e514a963ed507ff23ea91582400b9",
+  "bytes": 311867,
+  "pages": 247,
+  "display_equations": 78,
+  "native_omml": 405,
+  "complete_sources": 47,
+  "source_lines": 9917,
+  "source_integrity_report_sha256": "eaa706083f92fdddb454f878dfca979004ca8de4e11f61c7267c9a74d7015a6d",
+  "result_tables": [
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_temperature.csv",
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "data_cells": 42,
+      "docx_table_index": 12
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_moisture.csv",
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "data_cells": 42,
+      "docx_table_index": 13
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_temperature.csv",
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "data_cells": 36,
+      "docx_table_index": 14
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_moisture.csv",
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "data_cells": 36,
+      "docx_table_index": 15
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q3_paper_moisture.csv",
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "data_cells": 60,
+      "docx_table_index": 16
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_moisture.csv",
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "data_cells": 63,
+      "docx_table_index": 17
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_radius.csv",
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "data_cells": 18,
+      "docx_table_index": 18
+    }
+  ],
+  "all_106_support_files_unchanged": true,
+  "source_paper_unchanged": true,
+  "visual_review_evidence": [
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\visual_A_v2.json",
+      "sha256": "7bab56e9d02792e574bd0979c5205d2eda33b2d1bb56a871b6bd70938f918e3a"
+    },
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\visual_root_24_80_v2.json",
+      "sha256": "5c65465af5a9dd8dfbe31225bffe831a08e923a4665ba83b435e7403c7cdae29"
+    },
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\source_inventory\\visual_source_81_165_v2.json",
+      "sha256": "9118f755da3839fda775460883dd2e805b9ef7e3609a3edfadfc137ff3df3920"
+    },
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\visual_source_166_247_v2.json",
+      "sha256": "94c9ad15eb579439fe926b2b597e0a93c2c8887a6ff232004e0dbf6b6222da93"
+    },
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\visual_A_v3.json",
+      "sha256": "564fa3177da4ccc91964306f79139a819b7d5b965e4eb50ce6eadebb30c9950f"
+    },
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\visual_root_v3.json",
+      "sha256": "01e8afdf13ddb611474bcbc4f12301ecb7929465b21fdc0bfd4d8f7f8ed6bf28"
+    },
+    {
+      "path": "paper_output\\qa\\appendix_full_20260913\\source_inventory\\visual_source_81_165_v3.json",
+      "sha256": "edc381416e13bfa2bf752ac1fb1b3dc967e6f040be39927211b8fb3f2b5418b5"
+    }
+  ],
+  "page_reviews": [
+    {
+      "page": 1,
+      "final_png_sha256": "3550e86b9bbe56f663b7d54db62e34d694d3f1e71b45229e34f38fadd8caab96",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 2,
+      "final_png_sha256": "0c7b67d05e2e658978c93ef3d45ab3acb05cf1da58ab3b4bb45c1ee75c60c5f6",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 3,
+      "final_png_sha256": "bf2253ae3e0d9d52cf70c658c2caa64e3bd166c19c63f2eadfcb9c33add0ab8a",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 4,
+      "final_png_sha256": "beb256a02b8547ffb826fa8c2b5d2dbec66164672a3b91249300127792fa283d",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 5,
+      "final_png_sha256": "f4c3635d1d57da4faa7d54654b32185c59da6a71589296f9529bd5f485e333a7",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 6,
+      "final_png_sha256": "a6e82c91f69bfff1cc124057a092490845f188f9e8799e5d1487cb84659c9f41",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 7,
+      "final_png_sha256": "334859c8ad85584e8198f38de8d24173783fdf5d64779d31fbcb9e57ccfed5ae",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 8,
+      "final_png_sha256": "dd3acf86e70cebbe99d75332e372402d513a53ea6bcf97197c5670ffdfa33c09",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 9,
+      "final_png_sha256": "317b6e5cd448f13c90f03e791c79d43e7712951c50c23024c60d62bb6e8c56b4",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 10,
+      "final_png_sha256": "baeaee940e8ee693df8bd4b429c8d8ec1a3b86528c01e18f138caf4b0c1856cf",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 11,
+      "final_png_sha256": "9b3071b4fc27bf2e312145fcb770cffd801079ee7f359dce4af05782be81540f",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 12,
+      "final_png_sha256": "6b7746330146a567fa0d0cbf82857bf6931f71950fb80af85058b815f24f9137",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 13,
+      "final_png_sha256": "c3cdb28f781691b9f39c42921427f6128e4785870eece1ba50891cfb1079b293",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 14,
+      "final_png_sha256": "0a074699f769326f10cf442283a057789d35311dfb1ecb0e8e481b2581ad4959",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 15,
+      "final_png_sha256": "6d5873dd2245dbaf1d5c766c6a02f0aad8d653b892bf80baaf48f5cc6a48b048",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 16,
+      "final_png_sha256": "6340c08ba084f759b1fd4dccb4488a9d0c0c5b97d793dc95ed7079205423d5dd",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 17,
+      "final_png_sha256": "72cd37f2358aa092288a9bb29723fc97851611090b4894046a7ce9bca5453ffc",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 18,
+      "final_png_sha256": "ae31d5de6248fc71d45429976877f3d9c4cfa6ab8429571b827e0d3447cd3527",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 19,
+      "final_png_sha256": "cbc7793b2197ad3b80b9ab6c89345270f8229196473ba5700f62a4463f0cefb3",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 20,
+      "final_png_sha256": "a04a1881ff14bf47b6f7d9047fc134bf735e0e389e3aed2cf599407cbf5b9d9e",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 21,
+      "final_png_sha256": "0fd3842625d055efa09fa09edcdac418efefa874272d29f720fc1d4e494a7d4a",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 22,
+      "final_png_sha256": "8169b427b48c5d3e59df12fb541b365ea98afe0a31eaa60cfeac003bd954146f",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 23,
+      "final_png_sha256": "fb148c6bb9936b626ea7f05e311d7dfc18d7907dbd4da9f573720d7f8f9caa23",
+      "reviewer": "/root/verification_independence",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 24,
+      "final_png_sha256": "9cf46315b482bbc1fe8d622a52faba1e67e73e437d8d076caeb3820afbb2d689",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 25,
+      "final_png_sha256": "8503e6b5f670e5d1b3d2c03acaf5660276ca05c6f5dd2507131b2ad2c3252387",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 26,
+      "final_png_sha256": "83230bae41b2c49acc83671aab507ab61efe756c146e2c4376fc3f59ca3c47a5",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 27,
+      "final_png_sha256": "6be80e5430384a5e0ffe96eb614aa90467bde43066eb255edf43a0e6fa0df5ee",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 28,
+      "final_png_sha256": "fed685677cf5e2327bc57d20400159d87bb39abb61071b0eadf8b488d34cbba5",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 29,
+      "final_png_sha256": "3012b5cb1ebb114987c2d673f6e981ca0c92600643eff49ca02bb973a76426d2",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 30,
+      "final_png_sha256": "ab42e13f6dc47e84bec2929ff5b963e3f8cde1f87d1d28362d86a2cd9d373bf5",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 31,
+      "final_png_sha256": "806b333107891d424f2ec58cce99ba8ce1c440ae7f32156e9a0f22ba2ca12e40",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 32,
+      "final_png_sha256": "4c2a72246e7378d327956720b71768c84ea353d3c062b4d8c2175f48613ca13a",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 33,
+      "final_png_sha256": "a6e1a26e7ee498608b62eb457ab6b199bac0ec88a7bbc4ab244cc465184d5397",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 34,
+      "final_png_sha256": "79f62731043d059833b35d72e70f8257900d59c879e7855b3336a4ebec5d4f14",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 35,
+      "final_png_sha256": "df1d187a502a393523fe235cc475f13f516459f9ae8d5d603dc2dd61d0959ca9",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 36,
+      "final_png_sha256": "8d6345a136ce02bc022cb28519f5946a310836c96e28c3d23d811296bbc72c42",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 37,
+      "final_png_sha256": "c74872819dd3d9fa2dc9a24f138f4354d818d8a33c5cb553b06151fcf51613f1",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 38,
+      "final_png_sha256": "1e7853cf0973e42e2dbc94e696d0e7b458783ac1ec91d08aaab3ce40d54b8464",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 39,
+      "final_png_sha256": "a71194763d7dfab8a91542561f330acec9758742689326ae0fe32977f8c1f8e3",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 40,
+      "final_png_sha256": "b5b02fdc7e41112cebd56a067c2e3799315dbfb1abd37793fa0a4dcd8c27542d",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 41,
+      "final_png_sha256": "c364c74f853125254fcd922c6610f5b5908165bcbd9f85da228f625a9b318db4",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 42,
+      "final_png_sha256": "43cbdc79daec2ce8bf728a6ca24eb3481fea013af09f56445efc49b1d4c2643d",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 43,
+      "final_png_sha256": "dcdbd68367ac029a8b4056fc83280573722f8aee28ede8e80fd310845abf9b51",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 44,
+      "final_png_sha256": "ab645b62cbd8cc839649b91c22de60d094114f524eb42edee56758b1b09e90d0",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 45,
+      "final_png_sha256": "a23df3f43f7ca55cc3119559525ebbcfcad2257746820b29873769148a3be556",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 46,
+      "final_png_sha256": "35522c3be1ae64e1df8fb89d250fe9fdd00726560dc389fa23093a83bf58764b",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 47,
+      "final_png_sha256": "b9c387442c48b989d02c4f9025089a3aa80cdd42d5b774e67f74cbaa7e188083",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 48,
+      "final_png_sha256": "55bde3f963677cfb2e28442038246a91da27f9ad4af294d8aede375ccce92d6c",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 49,
+      "final_png_sha256": "15e4ab74eb5dcee63c11edd6568cbc874fd546d3f0cf3a021fb4ce4d1fde1178",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 50,
+      "final_png_sha256": "a33918d2c4ab93380cc5c8ad013cc29b2225b5ad5eb7e32d32b4863f4b434aa6",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 51,
+      "final_png_sha256": "47ea4403809911da7493c0b07a9e33d8a39b90e987d3f82844462e9333ae4a57",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 52,
+      "final_png_sha256": "a4e370031473af5a1990f1aaab9fa0696402c5f947713964dfb263e06670c9fa",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 53,
+      "final_png_sha256": "50e25536d93b1c2f4c658d5db78161ecc9a7ec41a5813dcb1946b5ed789bd540",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 54,
+      "final_png_sha256": "66f6da15750a3f944a4c7c046f7f14533622a72e628e3e4f31f27d8b2d0341ad",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 55,
+      "final_png_sha256": "ff8cdfebddabbc1a0fe45eb4eb8b0cbe9fa0070a3fb54b1cad7e6bf51c78676d",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 56,
+      "final_png_sha256": "43a97ae137d2b677e18a9ad7e6a67865c0311cec4865fb918e964a522d4ab4ae",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 57,
+      "final_png_sha256": "0f17b62820bbbed91ef1948cdd681c0a55a6615dd323bf3f65ff9e3ddbcc158d",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 58,
+      "final_png_sha256": "5204297272a56089033b10bc2f7261a40ad4f717ce1d2e0c58cc3d1ad8ca873c",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 59,
+      "final_png_sha256": "87b1e1c105bb3c6f57cd999d8cdafbbba8e65240ec8beda3a8d25c43dbf722c7",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 60,
+      "final_png_sha256": "71085e0bf4a2ebcfff35b8f8efc482a42941445cacc8f5f722be1e0ccd0501a9",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 61,
+      "final_png_sha256": "c24e2b82f405e977ba40577337e6bdd5fe40d5dc90e01cbdd38135bf324cdb4f",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 62,
+      "final_png_sha256": "9cf475929fae15f43492bdc779fca37da0d88dd4abaa135fdc8e8603587a3a4e",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 63,
+      "final_png_sha256": "98e7ec9e6937e80639ebe915af274e1e4fdd35556c7c92b22f13d973eb326588",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 64,
+      "final_png_sha256": "d3f98c361e50d6dffaec873bcf2f3bb96add652bb3f94365bc2e63a191b2b2e9",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 65,
+      "final_png_sha256": "ca69ef2d6074697f9bc6c0687271b051763cf9cb618088a41f3af747801519f7",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 66,
+      "final_png_sha256": "9f5506537341aaa82eee0ea03ce5637d2045d591bf277bedf242b02049db61ef",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 67,
+      "final_png_sha256": "27157c7f208bacbbd7ff33472dd099285e42346b242aebe8363f82afb82ceb95",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 68,
+      "final_png_sha256": "f8cb262ca42853766581680683d3aaded9ec8a140fbcf5b0604fee5435e1873f",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 69,
+      "final_png_sha256": "c080e194d0bfdd625a9d6f83023b0ab15526599969155dfa022dba948e7bc2c4",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 70,
+      "final_png_sha256": "5c2a81eabc7c99a95f99bdbaa226841c4762284bce6d08f400dfdff5a5287953",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 71,
+      "final_png_sha256": "92ce99d342e94b059cd13cfc3763dcb5e2d5d81aca6b38ed902d3eeac611302b",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 72,
+      "final_png_sha256": "c48ff6dccaf2eab2a6fc81c83e868c02c160585ff2d6fcebafcb4c2413922229",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 73,
+      "final_png_sha256": "af3518fb1695c16e188aff2de4759404a863b92adcdab54ed1be347051b4725f",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 74,
+      "final_png_sha256": "9e9f0e8dc26ba927002628a48fcd50b0f266d49d48f1690f7a097bf80126a662",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 75,
+      "final_png_sha256": "28bd18cb968d70203c17ac1a4609d873405af6db089cd61489a3bba8d831d395",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 76,
+      "final_png_sha256": "f2e9925c90e3df91f9e0330b43d6f2cf2555b8124c53029dc26accc949b66c9f",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 77,
+      "final_png_sha256": "05f81fc40fb7c0b7650be60611cf7b0c76e7d809af615e903fe9d97c04863653",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 78,
+      "final_png_sha256": "d28c1adc2479cba167fbabf084f146c9dce343d014db14ab171dc48b3aa564d7",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 79,
+      "final_png_sha256": "ce37b54f68615be883d84b0023bc4ce92ce851c97dbe0af93e5e5b9eea97c72f",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 80,
+      "final_png_sha256": "d934aea73827bb6337949c0c1706647dfd9d06829f85ab6b1232f7f35b21325a",
+      "reviewer": "/root",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 81,
+      "final_png_sha256": "7e04bd4271a4431f2327308b296870c2c87ebefe8addc388ff5d655c4780d73c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 82,
+      "final_png_sha256": "0462b54a30241d7df172ee66fcc9a4bffd4ce70643ebb4f80e07cc61c16457fe",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 83,
+      "final_png_sha256": "ec76ec6dd05588c6e65b9e737a32efcef8edc2792ed38f5f60354ee17c7fc45c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 84,
+      "final_png_sha256": "aaff8cf898a8904d6a1040c51a6246b035418bc08f0bc578982816d2dc6e30b4",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 85,
+      "final_png_sha256": "26b13925575e742042101e91632eaa154609c58f76bfdff223f75b43f7b4e56f",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 86,
+      "final_png_sha256": "93fc489d6f4c3ac9ce099475152f02868391adc0d4da4224799526a616fa81ff",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 87,
+      "final_png_sha256": "2a089085a6b5a0391c30dfa5759941a140d48b3d475906f5579f0cb7b58b0f29",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 88,
+      "final_png_sha256": "2b25183b1bd09f1a4d405d3cce60eee903aff86583bfd8e6c0758e93405fdf9d",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 89,
+      "final_png_sha256": "190ff56fa680845df45d3450f1afbe82bb02b4ee9fbf0981a7ab81c2e0508a02",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 90,
+      "final_png_sha256": "1af94419c6d75834bb6f14e5d25ee69be69565f411c473ba8e269aa13f52e0e1",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 91,
+      "final_png_sha256": "a107aad033b996f982d83e3b14227452ac411b6579f43c8f35e33d530e479039",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 92,
+      "final_png_sha256": "a6f17e80416d3989bbd407ef77d43a74abfbb46c60881af90001217c3a447fd7",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 93,
+      "final_png_sha256": "12d5dcd5695abfdc5daccb05d4d5a9baa5d7f4ba0dba55262103767a5df15b16",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 94,
+      "final_png_sha256": "f4676215cbc711163673addf2355e9c131d21441ac5bd1638673be83cbbe0613",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 95,
+      "final_png_sha256": "a0c552262a490d71c47827563fa1e77def5a9f3346a04a0f9b9199c217479f45",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 96,
+      "final_png_sha256": "80e4c5839a313dcc0940f8bfc7b1ae0828ddaec0925c445d34027a013ad940d0",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 97,
+      "final_png_sha256": "4dd4232765f9382e6875fedf5ecc51a617b98aca9744089d1bf362cf5f40a5a5",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 98,
+      "final_png_sha256": "2bcce8019529b0483edf04d31207e0a646b6e189c8c51687c59a60859164f74e",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 99,
+      "final_png_sha256": "f1f5097609dc8c7acaeab3191100fe8d73f53d36c4144352c5b3501ec6efcb0d",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 100,
+      "final_png_sha256": "4c73ff11a9490c28ebf06a24bebc3fa5bd3f613a29b091f1d7ac6526419293dc",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 101,
+      "final_png_sha256": "8e6f83a04be0ed2ea51e9ef647619e1179a4499beb71164b3f495c2238d61c6e",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 102,
+      "final_png_sha256": "2b498e1096f15edba5a68cbd9afe566064492c921dc36575d8b03b2f19a0c096",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 103,
+      "final_png_sha256": "6213fdc1455bab29ba6ecee887188f315c3bc35adc609e5b66a551bfb13c8a15",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 104,
+      "final_png_sha256": "a5549e3f6655edf7f2b70435da057d1a89c136c2d80a14de7567ce15d415ade1",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 105,
+      "final_png_sha256": "380b48803b104b2ba356eb4b9d3efed97e6738d8dabe578a391ad5a8846e2768",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 106,
+      "final_png_sha256": "c55b6e0054d013524f232adb8c3f3077241f1f3915db665a0c4dde55d8913159",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 107,
+      "final_png_sha256": "24ade2410088765ad1e7fb27818bd58b43348ac6c5440f21bd8553342ee61be9",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 108,
+      "final_png_sha256": "5f79eb8f4b03b7f482ba3f484092a92451d457dc98e0940c4b63b403c82d3f45",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 109,
+      "final_png_sha256": "b1af1492874dbef219b17989b20e11b2299658e32c3601471912dc7f910ae49c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 110,
+      "final_png_sha256": "74e4c0c349c1cc4d6c9c1101ffa552fe68a3056a57e4d5ec19d23b864a760996",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 111,
+      "final_png_sha256": "82a0de03165fb8d0c6a11cbc7d7d2714721462cf7fbba51519d876a6c52b5660",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 112,
+      "final_png_sha256": "499ff04d1691906344d2a7e75d4fa39858ba7f995bab89b5f9f9e7339db767cf",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 113,
+      "final_png_sha256": "af6d90c340b42a7e8691757870f28c97190d3fba6a26fc61960b9acf63ddca1a",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 114,
+      "final_png_sha256": "fac83159a3d3cba3c81fd014b81aa41f5f7f29f5d880de303f9a0060f85b67b1",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 115,
+      "final_png_sha256": "e6fd832a490acfddc319b80c41dc2c68afbf8076a280f6d52669b09a1c49f708",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 116,
+      "final_png_sha256": "34fafb84292c939b3b047274ba1bcd8adfa21ec164dd9c41e457fa9c4add625a",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 117,
+      "final_png_sha256": "9f420e1d7e9a4120b4f0b11ce09b5e96adcc88be079ba637b125f4535349b8e4",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 118,
+      "final_png_sha256": "a55d4558cb9fb8ed7ef76dbd385dc1c900126e158c9b3f44531a40e30501f5b6",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 119,
+      "final_png_sha256": "4cd71980a8532a957e492ad5d0d5692a4164bf67b773708dc7f5c7d4e370302d",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v3",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 120,
+      "final_png_sha256": "5423eaeb40d91ea7d9ef715fbded7c9b8fc2116294b991a2fac6f589f12e4367",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 121,
+      "final_png_sha256": "652878b764d17ac78651816cc41c77498b47f8cc37738ea5b82b76d71f6b1e25",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 122,
+      "final_png_sha256": "f957a3988637f9f7b054a8ea756478fddaaa6f1c2ad3bb9941ae1b56e3b10ac6",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 123,
+      "final_png_sha256": "2544ce66d3f637d44156d15eb4b271b82b6cb1aeb2b1a4adc93bb9b54cbd657c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 124,
+      "final_png_sha256": "d0cfafc8fdaeb7c144f1b6e619403a8d0c0256bc975593413d4fb14f1859061b",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 125,
+      "final_png_sha256": "986e8fd889218e6cb5d7c386b559a16a1a6a71bce67772a792178b51ea16b070",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 126,
+      "final_png_sha256": "42358dcc547882295cd2d19c8ae39c8131ab53e7b436593ed10922f94c1b2647",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 127,
+      "final_png_sha256": "6d4c9895ed2ed7dcf3729c4a636990fa416d0c0a963f5b0816499a054c959088",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 128,
+      "final_png_sha256": "fade92c59a19f990b5eb5d8e3f0407fc5bcf5ff9d8c8688798a0300f9a8629da",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 129,
+      "final_png_sha256": "4eb5c119e5e3aec4d2970040a4b64ae0b0279e5c8e7a456f2bda5802c6f848e5",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 130,
+      "final_png_sha256": "e661111fab34a12b18ae9d0d9be56f0f69eae5f3898c78872596fa9aea57a735",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 131,
+      "final_png_sha256": "3fb183f3389810ae0a8aebe116616b7b529b34000999a69547f109b7dced7a0c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 132,
+      "final_png_sha256": "e2e7bc417ff501d3346e508d9d3bfd2e241201441ad4f1da33b45867410b4260",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 133,
+      "final_png_sha256": "384f6439b2121fb860dbc084b2ae82667be7255fa66b9913c49a0cc7eeba447e",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 134,
+      "final_png_sha256": "8574446bfd634e6dc8af27af7dcd89f85cb71de96ddd0f47ab550a727f6f88a4",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 135,
+      "final_png_sha256": "4c80a0cd879da80be5ed831caa5e4dda01cba7d13b7e08f1050d4031ecc41c5e",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 136,
+      "final_png_sha256": "1269b190a7db82186e23127e819868ac53e10154cf2ffc765551552e866c22b9",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 137,
+      "final_png_sha256": "4a544d9d5d9a8c6e5f8dce7b713dbb8d21820bb01355a555d93a7c02c79ba72c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 138,
+      "final_png_sha256": "2030e7882798a4301e8f69b90d53501c9a069f146416765400560aaddfce4b5f",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 139,
+      "final_png_sha256": "43b39438b97343bdb1c52f17bc7f299d437146e202d1b91c02643b352e3a34a6",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 140,
+      "final_png_sha256": "e26e79beabce9520f934109c3d8dacdbe962b117efbe2651050faf7b76c611c4",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 141,
+      "final_png_sha256": "ae8d84eaecd6693eca0eae43f82c76851360073916298eab4acf7453505d867a",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 142,
+      "final_png_sha256": "7a13ffe9b3624867b9cfd3d887c4dde56b3c78a2117cbe718ff893306a356914",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 143,
+      "final_png_sha256": "375767b3268456f8e4e5c4e28aee8e8da300e19a4f2d39aca8cd622cd0c673d5",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 144,
+      "final_png_sha256": "e9f15450048556fd407fe887ba5e081cc61118ee3d08fed465a08d2b9ddf1a21",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 145,
+      "final_png_sha256": "c42f0cb311456ac9c4cc4e0dc12a03462023941ab3bb080a904b029c95487b50",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 146,
+      "final_png_sha256": "c807e84d07bd312dc07300fe427b32b28ad1f56797b39cd76e573c9661936dd7",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 147,
+      "final_png_sha256": "5a7d6082a114b9973c86e790c5c71d6a5a64648fef65493970647428659d08a1",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 148,
+      "final_png_sha256": "3e93298ebd4140f1cd4cdb1b4341379d5c262e2aba94f84afa83f8a720f7cdd2",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 149,
+      "final_png_sha256": "e7301cbef2ead7c146ab2b5030405fc0ad9fe3fe7e0e5ee592d6888088d5080b",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 150,
+      "final_png_sha256": "87e7d0937fba231e5fd24031e9f34d12569dc5ff6d6f190bd5f33bcc36ff7c85",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 151,
+      "final_png_sha256": "ae398488a7df3aa6c1c30a8839ae72c91a1ba2186fc609cad024826a559846eb",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 152,
+      "final_png_sha256": "5be06a69c578857911f85490882eb9f8d20aa06e73ec4ad084a0171c23a5b8e3",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 153,
+      "final_png_sha256": "19cd6c8fc0f6b9a4440fe0df15f191bf286b931303b7ae1315af070ddfcb3f63",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 154,
+      "final_png_sha256": "d6db9b8eb1dfc4aca952e36fc40916ddf7bfe3f27c2da39a7ceff49b3f2f640b",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 155,
+      "final_png_sha256": "05268bd9447a4c5a4dcce70b0b9c9fe5b9a7ec5637396b716d996355e6492fdb",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 156,
+      "final_png_sha256": "f0507e6b0aae32f479003094c8e461b69151d47edf2cba002ee94a58e382bf1e",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 157,
+      "final_png_sha256": "2efbe0da40b95bf07b7c79c8be4d5e38d6fa8695ae2e4e300d870b39d9b71d12",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 158,
+      "final_png_sha256": "5f3ad41b63f8f2e4e7485ddade8cdb2bc551ad3dc93aefdcd95287d8156bd561",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 159,
+      "final_png_sha256": "4a608cdccf4d6afd4c968872afd62cd2229c54580b8f830737b260f2edcb68a7",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 160,
+      "final_png_sha256": "8b162f2329ba60db8153555810cabc53307c515b1cf1a71c44d4020562cb07eb",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 161,
+      "final_png_sha256": "9e1e50a2b8d6f2ffe41a8d2d3d1d5225e9c34e181c5b30bc03dde4b9ac9969d3",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 162,
+      "final_png_sha256": "7de669df397d9eb9a64a1c54fe1b3c763a240c3c574b603cfa7a5a2d58778132",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 163,
+      "final_png_sha256": "5b5ff3beea5f6014a8e4ad21eb768a9dd4dea48d72eb68b0c2546833383d2e2c",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 164,
+      "final_png_sha256": "b6ba01ce0e4c13dbe9abdcda4e2c3a0f575a76fa9d98a3797645a927a874166d",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 165,
+      "final_png_sha256": "93a9b538a6eb37501b755d15c2179037fbff0730864b43f63539b965bc62a2c6",
+      "reviewer": "/root/comment_cleanup",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 166,
+      "final_png_sha256": "3c37f3c0e75ac52787084e8aeec0188667596067b10a6f46518f9fc94a11230c",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 167,
+      "final_png_sha256": "e684bff09e6acfb96f45786aa18547be6202c62a27df9e865691500531abf72e",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 168,
+      "final_png_sha256": "5c3640cb915c647e7edb3d0074db81b4f8bb24547c864ea28b323a4629236a64",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 169,
+      "final_png_sha256": "a1f1326a33759a51cd16c74f8d07a7ebccf0474a5e9a1c01542de3acac67f2ec",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 170,
+      "final_png_sha256": "e1744cc24cbf495ab90a206383a84684d003bb152ce62a9d4e0f879acea7ceac",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 171,
+      "final_png_sha256": "2ebe24d935ebb4bdbb16d7a60288a3dae56d99c539969d24a291461ef9356129",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 172,
+      "final_png_sha256": "a539f9971d1a19a8a939a6e2e33f7af41b1d07caa9fe0a5dd8ae6212392bfd00",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 173,
+      "final_png_sha256": "cd65f05820623f60ba0aee028cf365a30ad4797dff33ddfe97e82980bd6789fb",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 174,
+      "final_png_sha256": "6dc761b7f5b3b8ed12d1ba783de1e2136bf2a305e6a9cebf24c95c75bba08e18",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 175,
+      "final_png_sha256": "67b004b8a8403cde7bdf9ade4a5d310d11451eadcbadd7c4aa866ae93efd2c84",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 176,
+      "final_png_sha256": "b3b7d508b85a668e40a071d9cc15acb207aa94dfde153be0d40aca657f28503c",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 177,
+      "final_png_sha256": "e210d1f7488befd7883c27dd9fc05a276cd8d1b5c0c3b1ed7f9d5058bcf0a2d6",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 178,
+      "final_png_sha256": "0af10a24ca577ceb55cf52962ca982255b22381d41467d605e9370db360459c5",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 179,
+      "final_png_sha256": "b88b9009255e1f2f4cb86497d9ae25fdade48891dfd4f3b5b95ccc3767daa95c",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 180,
+      "final_png_sha256": "2c308e4bfed53e0c82f19bec8f9d4b12e94369723e471aecb94528c79859dcde",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 181,
+      "final_png_sha256": "693ab61d3d05c18497a6aa638a55aefbe3488ebda54e0a6db0990d0a710a7349",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 182,
+      "final_png_sha256": "6f88c09abe403a1e260efe272a20073c502bb3f7c61e81e7817d6815d0ab5706",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 183,
+      "final_png_sha256": "79dd5360c8149056b7d95b097a5095f6a209de3cca2b73ec0d0eda3bd55781d7",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 184,
+      "final_png_sha256": "b54cf9c05428e3dcbd51cbac3b04c101d729cd9c8ee816a1a0e696b965b9696f",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 185,
+      "final_png_sha256": "2c52ad36b7f7ead628474130a6af79c191b836ce0505df0a0ccb959574d75fa2",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 186,
+      "final_png_sha256": "e71c3a9102e53ff2caf5fa75a96b6942b86d144a4e6b099681ab707f42748448",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 187,
+      "final_png_sha256": "d2bc63835953165100857aeaf8e2d17c123593dcd6054078b2a587a64525b76f",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 188,
+      "final_png_sha256": "c13f9e072e57c1b36bd14955a865d14250dae4b9f7129bd568ac1172f882882b",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 189,
+      "final_png_sha256": "e4146432669578e26d8dea28eeef5bd8755707759e9915115e5a023944a3e4e6",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 190,
+      "final_png_sha256": "44257f2b4597c996ad102e223a2c8b34c33676fbdc7387e048b45da347b5b3e1",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 191,
+      "final_png_sha256": "19eb050abab6b900048a20ed68d2649a9acc9fe7792e1af53254fb187b5e2df7",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 192,
+      "final_png_sha256": "95aaf95bff3cb811e0b5e17f0d4ff79c4c9cb6bd5b7db2e4bb6535f98208a396",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 193,
+      "final_png_sha256": "5ef488e333b40321d24ce583ff28ce1b96454eec06c56161553e0b4fa15c628d",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 194,
+      "final_png_sha256": "20c479179047b7d28acdd38e17de0012173a611917d4b5e5216e5caa6a5086ec",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 195,
+      "final_png_sha256": "4b0c16b99cbb9425a37dfae03ad02b02ed6a6db884e5849a076760b39cec0b6e",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 196,
+      "final_png_sha256": "2bbd32c5fdf8a7505df1d49edbbdf06a761e0365d4f7e7271b65b27369159be3",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 197,
+      "final_png_sha256": "04adf3858cab3924fd94ba1db32229575344aaf54a9c8655cdd368eba7f82f1a",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 198,
+      "final_png_sha256": "c4d710aea0594da78005706b54de5aaf47f2fe422078b6cdb095c93ca0c537f0",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 199,
+      "final_png_sha256": "9e7f902705d41ed50173ab9f1e3b5af49e4f91b869dbb9241b94711097353551",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 200,
+      "final_png_sha256": "cf8ff4fd9c9a3dc5bb3f7566a70eac0f9e9faaf524d267d1f751e2b9c5ef9558",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 201,
+      "final_png_sha256": "b1a64c25d2c623122082e237ffbfbbafce81d665b258d7ebb9010c453ba7c9fa",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 202,
+      "final_png_sha256": "453758028c30ded6d002c21413a7b630e16b90efc04f7fd6572a4f5c59324487",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 203,
+      "final_png_sha256": "23f0bac634f05cf3c76e00d755d4061c114bd0b813baba9ba406df8ddbf26633",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 204,
+      "final_png_sha256": "5ace5cde5d1de30f59ba8415b8f022b372bb930da29bfcabed4f0d171d6b0266",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 205,
+      "final_png_sha256": "c94580e95a331a046cd18a8966f4f93d26af56ba86b4d48bd099111d32a7eeb3",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 206,
+      "final_png_sha256": "bacee59d0fa979cf1bfa39a881c02e2268a5d677fbdc31f6ad5c727335a19936",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 207,
+      "final_png_sha256": "ded8457101178a38ae5d761ce339a5b8233e40cce04901e83ed89b81af8eb968",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 208,
+      "final_png_sha256": "28a9e03c47686782f7a20885fe4cac2990eb9414fca513a6396dd5944c287e97",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 209,
+      "final_png_sha256": "966e9d855d4ad4dea596e820d536eb42a52393b4c2cf8becd95d34f425cf2947",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 210,
+      "final_png_sha256": "11b92242a460450f93638611e54195e9cf4dd5903f1981afa3e12298068abed4",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 211,
+      "final_png_sha256": "6f3d0bcfdcccaf712e364414b1522abbab7fe6c3ebbf6ea1b5ba6363d2bf6d9a",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 212,
+      "final_png_sha256": "436f2b3176a98a9b698de967c89b794f65946731e17930045bc6c69a04aba68d",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 213,
+      "final_png_sha256": "7b828d4e3fc51fca21f2a94274c223e938fa18d817f573078a1c0da2b04fca30",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 214,
+      "final_png_sha256": "39803e4df82b8fefb57f1ec8ca618cae8d837186bebb49ed3660f39f304e3828",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 215,
+      "final_png_sha256": "e0700a73235b079ac5bcadb0dc0e81402591ed2aef8508d171029b58f11ba1ac",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 216,
+      "final_png_sha256": "f3578f74bb0acc9573e7a592140f3faba204a359512e77cd6ed97709d344b8da",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 217,
+      "final_png_sha256": "172c9f669fffc0e5212fc4444ff00d9d0ff140734f3305ce36116a4292129304",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 218,
+      "final_png_sha256": "e42ac631c58af4ea4fc79591161ff59e03d24f7be76275542c799f26e2a4ee82",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 219,
+      "final_png_sha256": "8c6966be7dd736db46290d129998d11c6c7c78bebbe4a3db9b53bca327977466",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 220,
+      "final_png_sha256": "b08a5fccd2177ea384211a1a00d0b50c64514daa470a688252544e745324d17a",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 221,
+      "final_png_sha256": "4b3f531e270151b36d6817d9dcb01c18d6e89d01fc153d42a8790cc1100f6bf2",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 222,
+      "final_png_sha256": "a4d8e0913655226b4fabaa0d0be0ce0a8974f27f71efee50c170a78f8dfac7a0",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 223,
+      "final_png_sha256": "71203f9a28329d03709e9e69091faf1a5401e9673f36d626e7d9a71ac643b5a7",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 224,
+      "final_png_sha256": "aee2253fdde401becb9fae38899f2fd515aacc994c4ac3a99d055281718a1ac8",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 225,
+      "final_png_sha256": "c5b73e3bb8606feb9c213a5271228184cfb18e48cf88ff87923e0e2ab3683ea7",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 226,
+      "final_png_sha256": "281afab778966505027249379bc1261e723b2bcf50b7be777e431dce2e792326",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 227,
+      "final_png_sha256": "835cf3ef7f0c62b577adab7a2c445a9830a6b126df8ccca83229e58f07a325db",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 228,
+      "final_png_sha256": "b240bb1c39e6813eb4e47aa438ec1419eaf5344841bb76bbed352d6a36ff3ff1",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 229,
+      "final_png_sha256": "de0acfa65676674de78eed869f1794ce05745eaa60c8e4f11d9efd1dabf5afaa",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 230,
+      "final_png_sha256": "574f735dc9b62eb2b898adeec69e2734a9b51047e9c6edc67c0532f08e5ec91a",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 231,
+      "final_png_sha256": "62174571b1b6c983b64669db9f67100cd75775b0d0c8f2ef2b6f931cd119dcb9",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 232,
+      "final_png_sha256": "053a64e5c11ca991a73699f1cbffeefe7cede34117bfd8aaaef73b77d00a2e8c",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 233,
+      "final_png_sha256": "28f8bc93b582ae5710dded824422490e71cdd01a449352e2273a4aa42c06a014",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 234,
+      "final_png_sha256": "f12561ee5088e6c30faf881ca1a8daee5c71990ab2f3db1921d638788ef52add",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 235,
+      "final_png_sha256": "20c004141832d8b48c67402bc0c005304f3a8ed6edf95cf43524956f58c00391",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 236,
+      "final_png_sha256": "25e03872d1dd3793f4d43f30f559b9aefb9ebbb72a46f0c125e2e48e076ff110",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 237,
+      "final_png_sha256": "eb62c57c13886e5281bb816f108833a4534d5b6653e3b28a11611fcbb2629bca",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 238,
+      "final_png_sha256": "08191ed09b2ff52bf398d93e8f3efa593897b9b6ef297ef68100a184dcd114a6",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 239,
+      "final_png_sha256": "3af229549817f51c9b330bfc1b0ea689a05d9f35e043326648705be4dd2f2989",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 240,
+      "final_png_sha256": "1b070b136c71a311fb49a60078b12ca8308d6471f79d86ee96c85b41c207e322",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 241,
+      "final_png_sha256": "3c236b4604bd9a0dca230d031aaa251f24a7ff1a5d735bdd90c6d32b3b58fff0",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 242,
+      "final_png_sha256": "1d069c02120f211897b576387b74424530066d9271c74ee41021cc2c4c26feae",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 243,
+      "final_png_sha256": "c7e2c32040ea18c4ff40c11074864935ec2e1876b8b95dd36e86446b00a3ba0f",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 244,
+      "final_png_sha256": "dc5166f6c4d4290f1bc4bf46e8a6b609f9d54edfd9ebd2c58276a310a39d5de3",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 245,
+      "final_png_sha256": "e00219998267206f2a3a5f90270b995da90ccc6a37488a9c5404b86145ac184a",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 246,
+      "final_png_sha256": "de97fd720de08d4d214ec5bf59008bf9c4c1b317b6f7f93bcb6b1146a4c7bb4b",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    },
+    {
+      "page": 247,
+      "final_png_sha256": "2408d0f34b79c0026061cf923118ec8138b94dc7344f82c678ee55194cc1f0c7",
+      "reviewer": "/root/sandbox_gui",
+      "actual_original_png_review_version": "v2",
+      "reuse_basis": "Final v4 PNG SHA256 matches the actually viewed page PNG exactly."
+    }
+  ],
+  "remaining_minor_typography": "Some Chinese inline equation references and punctuation wrap between lines; the full symbols remain readable and no display formula is clipped. Independent A review classifies this as low priority.",
+  "scope": "Standalone appendix editing and evidence audit; no new production model solve, no substituted human code review, AI details remain user-authored."
+}

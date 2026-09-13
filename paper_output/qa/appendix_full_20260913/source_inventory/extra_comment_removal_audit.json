@@ -1,0 +1,72 @@
+[
+  {
+    "language": "Python",
+    "comment_count": 1,
+    "comments": [
+      {
+        "line": 203,
+        "characters": 79
+      }
+    ],
+    "docstring_count": 1,
+    "docstrings": [
+      {
+        "line": 1,
+        "end_line": 8,
+        "owner": "<module>",
+        "empty_suite_pass": false
+      }
+    ],
+    "ast_equal_without_docstrings": true,
+    "normalized_ast_sha256": "61e50bdfaf576730c75accdf512213ca16f329737716eb4e9a5c17fd396eed97",
+    "compile": "PASS",
+    "remaining_comment_count": 0,
+    "remaining_docstring_count": 0,
+    "doc_runtime_reference_lines": [],
+    "doc_runtime_effect": null,
+    "original_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\code\\data\\prepare_a_data.py",
+    "original_sha256": "f32a7a23ea85f0bb68b59b64cf3e9c670cbabf8ce6324e29f0059a41c8f1fc5d",
+    "appendix_source_sha256": "520b8c91a5c51299f83bc7ed1a3a3b63320b876a9e1a6ab5775234ecc494a6db",
+    "original_bytes": 14799,
+    "appendix_source_bytes": 14497
+  },
+  {
+    "language": "Python",
+    "comment_count": 0,
+    "comments": [],
+    "docstring_count": 1,
+    "docstrings": [
+      {
+        "line": 1,
+        "end_line": 1,
+        "owner": "<module>",
+        "empty_suite_pass": false
+      }
+    ],
+    "ast_equal_without_docstrings": true,
+    "normalized_ast_sha256": "37a404c7bb7472bc2a5b7f74526a64ee41895a76c307c34ce50bb508d463352f",
+    "compile": "PASS",
+    "remaining_comment_count": 0,
+    "remaining_docstring_count": 0,
+    "doc_runtime_reference_lines": [],
+    "doc_runtime_effect": null,
+    "original_path": "D:\\Document\\数学建模\\2026CUMCM\\tools\\export_six_figure_package_20260912.py",
+    "original_sha256": "9009e5541a11ed552fa7957b9c8ea5c66b2c528ba5b9061ba39480bb96dda6bf",
+    "appendix_source_sha256": "b68228ff0c954c4025df95a8b207bb8d020d503b470a2518fe7c59b1ba932845",
+    "original_bytes": 12706,
+    "appendix_source_bytes": 12802
+  },
+  {
+    "language": "R",
+    "native_parse": "PASS",
+    "parse_expression_equal_without_source": true,
+    "comment_count": 3,
+    "remaining_comment_count": 0,
+    "proof": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\qa\\appendix_full_20260913\\source_inventory\\r_strip_check.txt",
+    "original_path": "D:\\Document\\数学建模\\2026CUMCM\\paper_output\\figures\\review_20260913\\draw_figures.R",
+    "original_sha256": "a42073b650df4e86d211e3d422e759a5446a2b527dbb3981ed7c1f0c9c0ccbbe",
+    "appendix_source_sha256": "1b6683dbed416bf4201c889b62d1c44ccdbf75a79a5fbb869da37d139c7eb599",
+    "original_bytes": 14340,
+    "appendix_source_bytes": 14328
+  }
+]

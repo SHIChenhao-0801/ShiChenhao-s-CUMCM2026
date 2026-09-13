@@ -1,0 +1,262 @@
+{
+  "schema": "appendix_visual_review_v1",
+  "reviewer": "/root/verification_independence",
+  "reviewed_at": "2026-09-13T11:59:08.1420611+08:00",
+  "status": "PASS_WITH_RETAINED_MINOR_INLINE_LINE_BREAKS",
+  "scope": "v3 derivation pages 1–23 and 78 display equations",
+  "manifest": "paper_output/qa/appendix_full_20260913/v3_render_manifest.json",
+  "rendered_docx_sha256": "d49de18ddaddfb7bbabf1c07b585a7b9c04383a29ab79a2f8be76edd81e8c831",
+  "pdf": "paper_output/qa/appendix_full_20260913/v3.pdf",
+  "pdf_sha256": "30a1b182308a222c0f03c14ed996d7b4a3ce05e80e5fa1c9f09afd1965be2af3",
+  "current_docx_sha256_after_toc_cache": "2fd451eb2c2492438e324c44ddc3ecd6dc5e514a963ed507ff23ea91582400b9",
+  "current_docx_note": "Current DOCX differs because root subsequently filled 35 TOC cached PAGEREF results. This review binds the v3 rendering input, not the later cached DOCX; final field/page binding is a separate audit.",
+  "prior_review": "paper_output/qa/appendix_full_20260913/visual_A_v2.json",
+  "prior_review_sha256": "7bab56e9d02792e574bd0979c5205d2eda33b2d1bb56a871b6bd70938f918e3a",
+  "changed_pages": [
+    17
+  ],
+  "newly_viewed_original_png_pages": [
+    17
+  ],
+  "inherited_exactly_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "page17_observed": "A.60/A.61 ceiling brackets now have vertical stems and visible top bars, distinguishable from slash. Exterior bracket, +1, fractions and units are intact. A.60–A.62 complete and numbered on same page. Strict threshold values and physical-position interpolation unchanged. Full original 993x1404 PNG viewed.",
+  "resolved_issues": [
+    {
+      "id": "A-V2-01",
+      "status": "RESOLVED_VISUALLY",
+      "description": "Ceiling glyph slant corrected to upright."
+    }
+  ],
+  "retained_issues": [
+    {
+      "id": "A-V2-02",
+      "priority": "low",
+      "status": "ACCEPTED_REMAINING_LAYOUT_DETAIL",
+      "pages": [
+        4,
+        5,
+        8,
+        15,
+        20,
+        21,
+        22
+      ],
+      "description": "Inline punctuation/reference line breaks retained; complete and readable, no effect on mathematics or display formulas."
+    }
+  ],
+  "mathematical_content_error_found": false,
+  "display_formula_truncation_or_number_crosspage_found": false,
+  "pages": [
+    {
+      "page": 1,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-1.png",
+      "v2_sha256": "3550e86b9bbe56f663b7d54db62e34d694d3f1e71b45229e34f38fadd8caab96",
+      "v3_sha256": "3550e86b9bbe56f663b7d54db62e34d694d3f1e71b45229e34f38fadd8caab96",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 2,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-2.png",
+      "v2_sha256": "0c7b67d05e2e658978c93ef3d45ab3acb05cf1da58ab3b4bb45c1ee75c60c5f6",
+      "v3_sha256": "0c7b67d05e2e658978c93ef3d45ab3acb05cf1da58ab3b4bb45c1ee75c60c5f6",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 3,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-3.png",
+      "v2_sha256": "bf2253ae3e0d9d52cf70c658c2caa64e3bd166c19c63f2eadfcb9c33add0ab8a",
+      "v3_sha256": "bf2253ae3e0d9d52cf70c658c2caa64e3bd166c19c63f2eadfcb9c33add0ab8a",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 4,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-4.png",
+      "v2_sha256": "beb256a02b8547ffb826fa8c2b5d2dbec66164672a3b91249300127792fa283d",
+      "v3_sha256": "beb256a02b8547ffb826fa8c2b5d2dbec66164672a3b91249300127792fa283d",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 5,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-5.png",
+      "v2_sha256": "f4c3635d1d57da4faa7d54654b32185c59da6a71589296f9529bd5f485e333a7",
+      "v3_sha256": "f4c3635d1d57da4faa7d54654b32185c59da6a71589296f9529bd5f485e333a7",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 6,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-6.png",
+      "v2_sha256": "a6e82c91f69bfff1cc124057a092490845f188f9e8799e5d1487cb84659c9f41",
+      "v3_sha256": "a6e82c91f69bfff1cc124057a092490845f188f9e8799e5d1487cb84659c9f41",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 7,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-7.png",
+      "v2_sha256": "334859c8ad85584e8198f38de8d24173783fdf5d64779d31fbcb9e57ccfed5ae",
+      "v3_sha256": "334859c8ad85584e8198f38de8d24173783fdf5d64779d31fbcb9e57ccfed5ae",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 8,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-8.png",
+      "v2_sha256": "dd3acf86e70cebbe99d75332e372402d513a53ea6bcf97197c5670ffdfa33c09",
+      "v3_sha256": "dd3acf86e70cebbe99d75332e372402d513a53ea6bcf97197c5670ffdfa33c09",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 9,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-9.png",
+      "v2_sha256": "317b6e5cd448f13c90f03e791c79d43e7712951c50c23024c60d62bb6e8c56b4",
+      "v3_sha256": "317b6e5cd448f13c90f03e791c79d43e7712951c50c23024c60d62bb6e8c56b4",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 10,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-10.png",
+      "v2_sha256": "baeaee940e8ee693df8bd4b429c8d8ec1a3b86528c01e18f138caf4b0c1856cf",
+      "v3_sha256": "baeaee940e8ee693df8bd4b429c8d8ec1a3b86528c01e18f138caf4b0c1856cf",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 11,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-11.png",
+      "v2_sha256": "9b3071b4fc27bf2e312145fcb770cffd801079ee7f359dce4af05782be81540f",
+      "v3_sha256": "9b3071b4fc27bf2e312145fcb770cffd801079ee7f359dce4af05782be81540f",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 12,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-12.png",
+      "v2_sha256": "6b7746330146a567fa0d0cbf82857bf6931f71950fb80af85058b815f24f9137",
+      "v3_sha256": "6b7746330146a567fa0d0cbf82857bf6931f71950fb80af85058b815f24f9137",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 13,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-13.png",
+      "v2_sha256": "c3cdb28f781691b9f39c42921427f6128e4785870eece1ba50891cfb1079b293",
+      "v3_sha256": "c3cdb28f781691b9f39c42921427f6128e4785870eece1ba50891cfb1079b293",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 14,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-14.png",
+      "v2_sha256": "0a074699f769326f10cf442283a057789d35311dfb1ecb0e8e481b2581ad4959",
+      "v3_sha256": "0a074699f769326f10cf442283a057789d35311dfb1ecb0e8e481b2581ad4959",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 15,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-15.png",
+      "v2_sha256": "6d5873dd2245dbaf1d5c766c6a02f0aad8d653b892bf80baaf48f5cc6a48b048",
+      "v3_sha256": "6d5873dd2245dbaf1d5c766c6a02f0aad8d653b892bf80baaf48f5cc6a48b048",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 16,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-16.png",
+      "v2_sha256": "6340c08ba084f759b1fd4dccb4488a9d0c0c5b97d793dc95ed7079205423d5dd",
+      "v3_sha256": "6340c08ba084f759b1fd4dccb4488a9d0c0c5b97d793dc95ed7079205423d5dd",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 17,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-17.png",
+      "v2_sha256": "896fce8c8161ff8e23c2a89afe5443cb3162f70b7b2a3f09bdd0cb8a581b7b01",
+      "v3_sha256": "72cd37f2358aa092288a9bb29723fc97851611090b4894046a7ce9bca5453ffc",
+      "identical_png_bytes": false,
+      "review_evidence": "v3 original complete 120 dpi PNG viewed anew"
+    },
+    {
+      "page": 18,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-18.png",
+      "v2_sha256": "ae31d5de6248fc71d45429976877f3d9c4cfa6ab8429571b827e0d3447cd3527",
+      "v3_sha256": "ae31d5de6248fc71d45429976877f3d9c4cfa6ab8429571b827e0d3447cd3527",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 19,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-19.png",
+      "v2_sha256": "cbc7793b2197ad3b80b9ab6c89345270f8229196473ba5700f62a4463f0cefb3",
+      "v3_sha256": "cbc7793b2197ad3b80b9ab6c89345270f8229196473ba5700f62a4463f0cefb3",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 20,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-20.png",
+      "v2_sha256": "a04a1881ff14bf47b6f7d9047fc134bf735e0e389e3aed2cf599407cbf5b9d9e",
+      "v3_sha256": "a04a1881ff14bf47b6f7d9047fc134bf735e0e389e3aed2cf599407cbf5b9d9e",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 21,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-21.png",
+      "v2_sha256": "0fd3842625d055efa09fa09edcdac418efefa874272d29f720fc1d4e494a7d4a",
+      "v3_sha256": "0fd3842625d055efa09fa09edcdac418efefa874272d29f720fc1d4e494a7d4a",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 22,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-22.png",
+      "v2_sha256": "8169b427b48c5d3e59df12fb541b365ea98afe0a31eaa60cfeac003bd954146f",
+      "v3_sha256": "8169b427b48c5d3e59df12fb541b365ea98afe0a31eaa60cfeac003bd954146f",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    },
+    {
+      "page": 23,
+      "image": "tmp/cache/appendix_full_20260913/v3/page-23.png",
+      "v2_sha256": "fb148c6bb9936b626ea7f05e311d7dfc18d7907dbd4da9f573720d7f8f9caa23",
+      "v3_sha256": "fb148c6bb9936b626ea7f05e311d7dfc18d7907dbd4da9f573720d7f8f9caa23",
+      "identical_png_bytes": true,
+      "review_evidence": "v2 original PNG individually viewed; v3 PNG bytes exactly identical"
+    }
+  ],
+  "limitations": [
+    "No claim for pages 24–247.",
+    "No DOCX edits, rendering, model changes or numerical experiments performed."
+  ]
+}

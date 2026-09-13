@@ -1,0 +1,520 @@
+{
+  "schema": "appendix_visual_review_v1",
+  "reviewer": "/root/verification_independence",
+  "reviewed_at": "2026-09-13T11:47:19.3494669+08:00",
+  "status": "MATHEMATICS_AND_78_EQUATIONS_VISUALLY_COMPLETE_WITH_FORMATTING_ISSUES",
+  "scope": "Only v2 pages 1–23: title, full TOC, derivation A.1–A.20, 78 equations, four references. No review claim for pages 24–247.",
+  "actual_review_method": "Every 120 dpi original PNG viewed in full; no contact sheet or extracted text substituted for page viewing. p17 original pixel crop is supplementary only.",
+  "manifest": "paper_output/qa/appendix_full_20260913/v2_render_manifest.json",
+  "manifest_sha256": "f47f654d29281f2d0e41e52edbf04dfff8971739004de3c8587ad5fa60c98eef",
+  "docx": "paper_output/paper/药材热湿耦合模型与干燥时间计算_完整附录.docx",
+  "rendered_docx_sha256": "fa0d623a7230aa0ae71679158318ebdb258f6b9ac49cf34869933b3e8646d196",
+  "pdf": "paper_output/qa/appendix_full_20260913/v2.pdf",
+  "pdf_sha256": "ba1e5f5b5e63a9bb2f339a491e022cda5ad1a6ab14485fe6d0598ec8a9e03b85",
+  "total_document_pages": 247,
+  "actual_pages_viewed": 23,
+  "actual_display_equations_viewed": 78,
+  "mathematical_content_error_found": false,
+  "geometry_truncation_or_display_number_crosspage_found": false,
+  "issues": [
+    {
+      "id": "A-V2-01",
+      "priority": "medium",
+      "category": "math_typography",
+      "pages": [
+        17
+      ],
+      "equations": [
+        "A.60",
+        "A.61"
+      ],
+      "observed": "U+2308/U+2309 向上取整符号在原图中被斜体化，顶横线极短、侧杆倾斜，易误读为斜杠；PDF 提取字符确认仍为 ceiling，属于显示问题而非源公式错误。",
+      "requested_fix": "将 ceiling 定界符改为正体或原生 OMML delimiter，重看该页。",
+      "evidence": "paper_output/qa/appendix_full_20260913/v2_page17_ceiling_crop.png",
+      "status": "reported_to_root"
+    },
+    {
+      "id": "A-V2-02",
+      "priority": "low",
+      "category": "inline_line_break",
+      "pages": [
+        4,
+        5,
+        8,
+        15,
+        20,
+        21,
+        22
+      ],
+      "observed": "部分行内公式/交叉引用在标点前断行：p4 A.7、p20 A.38 的右括号落在次行；p22 A.59 与左括号断开；p5/p8/p15/p21 个别中文标点落到行首。显示公式与编号没有此问题。",
+      "requested_fix": "如调整构建器，可对短引用及紧随行内公式的标点设置不拆行；不需改推导。",
+      "status": "reported_to_root"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-1.png",
+      "sha256": "3550e86b9bbe56f663b7d54db62e34d694d3f1e71b45229e34f38fadd8caab96",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看标题、材料范围说明、目录前半及页码；标题模板蓝线已移除，A.1–A.20 目录及起始页清楚。",
+      "display_equations": [],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 2,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-2.png",
+      "sha256": "0c7b67d05e2e658978c93ef3d45ab3acb05cf1da58ab3b4bb45c1ee75c60c5f6",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看目录后半及页码；B/C/D 起始页可读，目录结束后的空白为分章分页；未发现裁切。",
+      "display_equations": [],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 3,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-3.png",
+      "sha256": "bf2253ae3e0d9d52cf70c658c2caa64e3bd166c19c63f2eadfcb9c33add0ab8a",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看推导引言和 A.1；干基/湿基换算、组分密度与积分基准完整，文献序号已解析，显示公式编号同页。",
+      "display_equations": [
+        "A.1",
+        "A.2"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 4,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-4.png",
+      "sha256": "beb256a02b8547ffb826fa8c2b5d2dbec66164672a3b91249300127792fa283d",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看干物质与水连续平衡、乘积展开、材料导数、Fick 闭合及非均匀干密度项；各符号与负号完整，显示式均未分裂。",
+      "display_equations": [
+        "A.3",
+        "A.4",
+        "A.5",
+        "A.6",
+        "A.7",
+        "A.8"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 5,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-5.png",
+      "sha256": "f4c3635d1d57da4faa7d54654b32185c59da6a71589296f9529bd5f485e333a7",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看圆柱方程、有效热容量闭合、乘积求导与问题一物性；有效热收支与总能量区别明确，显示式与编号均在同页。",
+      "display_equations": [
+        "A.9",
+        "A.10",
+        "A.11",
+        "A.12"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 6,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-6.png",
+      "sha256": "a6e82c91f69bfff1cc124057a092490845f188f9e8799e5d1487cb84659c9f41",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看 Q23/Q4 题给物性、扩散率之比、线性插值和环境平台分段；指数负号、温度项、分段区间端点均可读。",
+      "display_equations": [
+        "A.13",
+        "A.14",
+        "A.15",
+        "A.16",
+        "A.17"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 7,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-7.png",
+      "sha256": "334859c8ad85584e8198f38de8d24173783fdf5d64779d31fbcb9e57ccfed5ae",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看初始/轴心条件、表面边界单位和均匀径向收缩速度；轴向不变及径向散度 2 Rdot/R 正确呈现。",
+      "display_equations": [
+        "A.18",
+        "A.19",
+        "A.20",
+        "A.21"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 8,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-8.png",
+      "sha256": "dd3acf86e70cebbe99d75332e372402d513a53ea6bcf97197c5670ffdfa33c09",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看干密度守恒三行式、有效密度约束、半径下界、一般 ALE 链式法则和相对速度；长式分行后完整且编号同页。",
+      "display_equations": [
+        "A.22",
+        "A.23",
+        "A.24",
+        "A.25",
+        "A.26"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 9,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-9.png",
+      "sha256": "317b6e5cd448f13c90f03e791c79d43e7712951c50c23024c60d62bb6e8c56b4",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看保留网格速度的一般方程、材料随动相消后的热湿方程及边界换元；1/R 和 1/R² 各在对应位置，未添加额外干基压缩项。",
+      "display_equations": [
+        "A.27",
+        "A.28",
+        "A.29"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 10,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-10.png",
+      "sha256": "baeaee940e8ee693df8bd4b429c8d8ec1a3b86528c01e18f138caf4b0c1856cf",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看轴心/内部/表面控制体权重、梯度面量、半离散差分、轴心系数 4 和 Robin 表面项；上下标、首末面及正负号均可辨。",
+      "display_equations": [
+        "A.30",
+        "A.31",
+        "A.32",
+        "A.33",
+        "A.34"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 11,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-11.png",
+      "sha256": "9b3071b4fc27bf2e312145fcb770cffd801079ee7f359dce4af05782be81540f",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看调和导热面、Kirchhoff 势、三个求导分行和面温度近似；a/C 与 b/T 的负号完整，水分势两端顺序正确。",
+      "display_equations": [
+        "A.35",
+        "A.36",
+        "A.37",
+        "A.38"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 12,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-12.png",
+      "sha256": "6b7746330146a567fa0d0cbf82857bf6931f71950fb80af85058b815f24f9137",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看温度因子整体求导产生的额外项、近等浓度展开、质量累计守恒；中心差分三阶项和 Cbar+ell 恒等式完整。",
+      "display_equations": [
+        "A.39",
+        "A.40",
+        "A.41"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 13,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-13.png",
+      "sha256": "c3cdb28f781691b9f39c42921427f6128e4785870eece1ba50891cfb1079b293",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看有效热通量及容量/几何乘积导数、热/水解析 Jacobian；A.43 双行完整，两个温度各有 1/2，边界温度未误求状态导数。",
+      "display_equations": [
+        "A.42",
+        "A.43",
+        "A.44",
+        "A.45",
+        "A.46"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 14,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-14.png",
+      "sha256": "0a074699f769326f10cf442283a057789d35311dfb1ecb0e8e481b2581ad4959",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看近等浓度导数、保护分支说明、容量链式导数、物性导数、表面与累计量导数、质量左零向量；负号与 R 分母均清楚。",
+      "display_equations": [
+        "A.47",
+        "A.48",
+        "A.49",
+        "A.50",
+        "A.51"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 15,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-15.png",
+      "sha256": "6d5873dd2245dbaf1d5c766c6a02f0aad8d653b892bf80baaf48f5cc6a48b048",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看 BDF 残量、二阶示例、Newton 线性化、误差权重和后向差分连续输出；NDF 范围、实际 1–5 阶说明及保存 h_p 尺度完整。",
+      "display_equations": [
+        "A.52",
+        "A.53",
+        "A.54",
+        "A.55",
+        "A.56"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 16,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-16.png",
+      "sha256": "6340c08ba084f759b1fd4dccb4488a9d0c0c5b97d793dc95ed7079205423d5dd",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看连续场最大值与节点最大值、分段线性重构范围、临界等号根与严格报告集合；0≤r≤R、0≤x≤1、k≥0、时间≥根与含水率严格<均正确显示。",
+      "display_equations": [
+        "A.57",
+        "A.58",
+        "A.59"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 17,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-17.png",
+      "sha256": "896fce8c8161ff8e23c2a89afe5443cb3162f70b7b2a3f09bdd0cb8a581b7b01",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看事件后续算、候选报告时刻、根与报告小时数及缩域物理位置查询；A.60/A.61 文本取整语义正确但取整符号被明显斜体化，另保存原图局部作定位证据。",
+      "display_equations": [
+        "A.60",
+        "A.61",
+        "A.62"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-01"
+      ]
+    },
+    {
+      "page": 18,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-18.png",
+      "sha256": "ae31d5de6248fc71d45429976877f3d9c4cfa6ab8429571b827e0d3447cd3527",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看时变环境强迫的圆柱基准、Robin 特征根、根区间、正交性、投影积分和系数；零模态限制、J0/J1 下标及两个区间端点可读。",
+      "display_equations": [
+        "A.63",
+        "A.64",
+        "A.65",
+        "A.66",
+        "A.67",
+        "A.68"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 19,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-19.png",
+      "sha256": "cbc7793b2197ad3b80b9ab6c89345270f8229196473ba5700f62a4463f0cefb3",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看模态微分方程、时变卷积解、分段卷积、环体平均及比较误差；A.70 括号覆盖初值和卷积，A.73 两行及编号同页，已消除 v1 编号挤行。",
+      "display_equations": [
+        "A.69",
+        "A.70",
+        "A.71",
+        "A.72",
+        "A.73"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    },
+    {
+      "page": 20,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-20.png",
+      "sha256": "a04a1881ff14bf47b6f7d9047fc134bf735e0e389e3aed2cf599407cbf5b9d9e",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看解析验证实际采样范围、N400 未过门槛、观察阶与收缩累积尺度；历史解释错误未当定论，幂律及 ln 2 分母完整。",
+      "display_equations": [
+        "A.74",
+        "A.75"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 21,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-21.png",
+      "sha256": "0fd3842625d055efa09fa09edcdac418efefa874272d29f720fc1d4e494a7d4a",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看同物性收缩对照、有效参数注入范围、经验阻力及界限；Kp 在 Cs=Cref 明确定义连续延拓 1/p，(0,1] 区间和所有不等号方向正确。",
+      "display_equations": [
+        "A.76",
+        "A.77"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 22,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-22.png",
+      "sha256": "8169b427b48c5d3e59df12fb541b365ea98afe0a31eaa60cfeac003bd954146f",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看条件情景局限、潜热热边界、源码对应与实际 Sandbox 证据；潜热负号和 rho_d 因子可读，原入口失败及函数覆盖未写成完整通过。",
+      "display_equations": [
+        "A.78"
+      ],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": [
+        "A-V2-02"
+      ]
+    },
+    {
+      "page": 23,
+      "image": "tmp/cache/appendix_full_20260913/v2/page-23.png",
+      "sha256": "fb148c6bb9936b626ea7f05e311d7dfc18d7907dbd4da9f573720d7f8f9caa23",
+      "original_image_actually_viewed": true,
+      "original_resolution": "993x1404",
+      "render_dpi": 120,
+      "viewed_as": "tools.view_image detail original, complete single-page PNG",
+      "observed": "完整查看实验/闭合局限及 A.20 四项书目；Crank、Eymard、Byrne/Hindmarsh、SciPy 与正文 [4]–[7] 一致，DOI/URL 未裁切。",
+      "display_equations": [],
+      "display_equations_complete_and_number_same_page": true,
+      "cropped_display_formula": false,
+      "footer_page_number_checked": true,
+      "issues": []
+    }
+  ],
+  "limitations": [
+    "Read-only PNG review and source/manifest binding; this task did not alter DOCX, rerender, rerun PDE or claim external experimental validity.",
+    "Font slant/line-break observations are specific to v2. Root owns fixes and subsequent render acceptance.",
+    "Current support-source execution evidence is quoted with its original limits; historical failed methods are not repaired by this review."
+  ]
+}
