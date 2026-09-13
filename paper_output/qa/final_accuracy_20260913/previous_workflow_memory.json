@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "context-memory-keeper/scripts/update_workflow_memory.py",
+  "generated_at": "2026-09-13T15:09:29",
+  "status": "PASS",
+  "root": "D:\\Document\\数学建模\\2026CUMCM",
+  "workflow": {
+    "status": "COMPLETE",
+    "mode": "status",
+    "current_step": "S8",
+    "next_step": "",
+    "recommended_skill": "",
+    "next_action": "S0-S8 全部通过；可以进行最终一致性复核或交付。",
+    "completed_steps": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ],
+    "failures": []
+  },
+  "inputs": {
+    "summary": {
+      "file_count": 33,
+      "role_counts": {
+        "problem_statement": 7,
+        "raw_data": 8,
+        "result_template": 16,
+        "problem_statement_unreadable": 1,
+        "unsupported": 1
+      },
+      "problem_statement_count": 7,
+      "raw_data_count": 8,
+      "result_template_count": 16,
+      "requires_user_confirmation": true
+    },
+    "role_counts": {
+      "problem_statement": 7,
+      "raw_data": 8,
+      "result_template": 16,
+      "problem_statement_unreadable": 1,
+      "unsupported": 1
+    },
+    "problem_statements": [
+      "problem_files/CUMCM2026Problems/A题/A题.pdf",
+      "problem_files/CUMCM2026Problems/B题/B题.pdf",
+      "problem_files/CUMCM2026Problems/B题/附件/附件1.docx",
+      "problem_files/CUMCM2026Problems/B题/附件/附件2.docx",
+      "problem_files/CUMCM2026Problems/C题/C题.pdf",
+      "problem_files/CUMCM2026Problems/D题/D题.pdf",
+      "problem_files/CUMCM2026Problems/E题/E题.pdf"
+    ],
+    "raw_data": [
+      "problem_files/CUMCM2026Problems/A题/附件/附件1.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件1.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件3.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件4.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件1.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件1.xlsx"
+    ],
+    "result_templates": [
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result1.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result2.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result3.xlsx",
+      "problem_files/CUMCM2026Problems/A题/附件/附件3/result4.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result1.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result3.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx",
+      "problem_files/CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result1.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result2.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result3.xlsx",
+      "problem_files/CUMCM2026Problems/D题/附件/附件2/result4.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件2/result2.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件2/result3.xlsx",
+      "problem_files/CUMCM2026Problems/E题/附件/附件2/result4.xlsx"
+    ]
+  },
+  "runs": {
+    "status": "PASS",
+    "run_count": 1,
+    "scripts": [
+      "paper_output/code/modeling/run_modeling.py"
+    ],
+    "returncodes": [
+      0
+    ]
+  },
+  "artifacts": {
+    "workflow_guard_report": {
+      "path": "paper_output/qa/workflow_guard_report.json",
+      "exists": true,
+      "bytes": 1450,
+      "status": "COMPLETE"
+    },
+    "preflight_report": {
+      "path": "paper_output/preflight_report.json",
+      "exists": true,
+      "bytes": 29027,
+      "status": "PASS"
+    },
+    "input_manifest": {
+      "path": "paper_output/input_manifest.json",
+      "exists": true,
+      "bytes": 29392
+    },
+    "load_report": {
+      "path": "paper_output/data_cleaned/load_report.json",
+      "exists": true,
+      "bytes": 8196,
+      "status": "PASS"
+    },
+    "run_manifest": {
+      "path": "paper_output/results/run_manifest.json",
+      "exists": true,
+      "bytes": 31524,
+      "status": "PASS"
+    },
+    "evidence_gate_report": {
+      "path": "paper_output/qa/evidence_gate_report.json",
+      "exists": true,
+      "bytes": 2028,
+      "status": "PASS"
+    },
+    "authoring_state": {
+      "path": "paper_output/context/authoring_state.json",
+      "exists": true,
+      "bytes": 4781,
+      "status": "PASS"
+    },
+    "writing_plan": {
+      "path": "paper_output/plan/writing_plan.json",
+      "exists": true,
+      "bytes": 8589,
+      "status": "PASS"
+    },
+    "format_check_report": {
+      "path": "paper_output/format_check_report.json",
+      "exists": true,
+      "bytes": 5495,
+      "status": "PASS"
+    }
+  },
+  "latest_statuses": {
+    "preflight": "PASS",
+    "load_report": "PASS",
+    "run_manifest": "PASS",
+    "evidence_gate": "PASS",
+    "authoring": "PASS",
+    "format_check": "PASS"
+  },
+  "blockers": [],
+  "submission_readiness_recheck": {
+    "checked_at_utc": "2026-09-13T07:09:29.490420+00:00",
+    "audit_status": "COMPLETED_WITH_ACTION_ITEMS",
+    "submission_readiness": "ACTION_REQUIRED",
+    "paper_sha256": "b6fbac8fefd87c10497a7c63f3638a7ead1f7e82c9bb0af7e773031a51f6960c",
+    "support_files": 106,
+    "support_bytes": 41004065,
+    "report": "paper_output/qa/support_recheck_20260913/提交前缺项核查.txt",
+    "report_sha256": "582f3b2ea66928cf5fedb6cdb080ef3934f93b88a32a13879ee7c0bfab788dcd",
+    "independent_of_historical_s8": true,
+    "final_pdf_confirmed_by_user": "NOT_FINALIZED",
+    "archive_created": false,
+    "md5_registration_verified": false,
+    "human_review": "PENDING_USER_CONFIRMATION",
+    "remaining": [
+      "用户独立AI详情PDF",
+      "六图R及必要CSV/可运行路径",
+      "采纳检验的可复现入口/输入/Matplotlib依赖",
+      "AI声明移到参考文献前、最终PDF导出核查",
+      "附录完整支撑文件清单",
+      "实际最终压缩大小/论文与支撑MD5登记/一致文件上传"
+    ],
+    "evidence_files": {
+      "paper_output\\qa\\support_recheck_20260913\\directory_initial_audit.json": "2927ff238753052a774f4bd7c605701245670aeaf3bf50c78603683bb707575a",
+      "paper_output\\qa\\support_recheck_20260913\\directory_final_audit.json": "31cf5808374f66cdcc6101e50c840b67760e05b65e561d032e2c253094e0d9d4",
+      "paper_output\\qa\\support_recheck_20260913\\code\\code_audit.json": "2c5e94f24a958931c3b2a14f011f8a939f5022b10a1b2d7141667a2d9a7904ab",
+      "paper_output\\qa\\support_recheck_20260913\\mapping\\current_mapping_audit.json": "9a1e94a252ddb410d71b35e65259cabf07c0842860019d29e36c3da6aab4d9c4"
+    }
+  }
+}

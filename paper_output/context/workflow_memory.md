@@ -1,7 +1,7 @@
 # Workflow Memory Snapshot
 
 - Status: `PASS`
-- Generated at: `2026-09-13T15:09:29`
+- Generated at: `2026-09-13T16:27:41`
 - Current step: `S8`
 - Next step: `DONE`
 - Recommended skill: `-`
@@ -38,7 +38,6 @@
 ## Blockers
 - None
 
+## 当前提交版本终审覆盖状态
 
-## 2026-09-13 提交前独立复核
-
-当前提交状态 ACTION_REQUIRED。用户确认最新根DOCX，PDF未定稿；旧S8 COMPLETE不表示本次提交就绪。详见paper_output/qa/support_recheck_20260913/提交前缺项核查.txt与final_readiness.json。
+当前186页论文及138项支撑为ACTION_REQUIRED。上面的历史S8/COMPLETE不表示这份新稿可直接提交。详见final_accuracy_20260913/最终提交材料核查报告.txt；最新通知要求匿名，承诺书等赛后办理，不列为本轮缺项。

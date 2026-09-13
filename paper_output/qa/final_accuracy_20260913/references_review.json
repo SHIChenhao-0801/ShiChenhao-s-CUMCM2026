@@ -1,0 +1,118 @@
+{
+  "paper_sha256": "2bb7c6b3fff1151318a46d7a8884e4ad0ec99c202a5faf1ceaf24e893cea347b",
+  "status": "BIBLIOGRAPHIC_MATCH",
+  "scope": "核对7条书目、方法支持范围；不是全部文献全文审读",
+  "items": [
+    {
+      "number": 1,
+      "title": "中药材干燥技术与装备研究现状",
+      "bibliography": "[1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2): 1-28. DOI: 10.11975/j.issn.1002-6819.202306104.",
+      "primary_urls": [
+        "https://nygcxb.ijournals.cn/nygcxb/article/abstract/20240201",
+        "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/10.11975/j.issn.1002-6819.202306104.pdf"
+      ],
+      "matches_current_pdf": true
+    },
+    {
+      "number": 2,
+      "title": "数值模拟仿真研究现状及其在中药干燥领域应用展望",
+      "bibliography": "[2] 王晓辉, 王学成, 唐培渝, 等. 数值模拟仿真研究现状及其在中药干燥领域应用展望[J]. 中国中药杂志, 2023, 48(13): 3440-3447. DOI: 10.19540/j.cnki.cjcmm.20230331.301.",
+      "primary_urls": [
+        "https://www.tcmjc.com/download/pdf?id=2758B0FBE5314A1ABD31D280D6B915B3",
+        "https://pubmed.ncbi.nlm.nih.gov/37474981/"
+      ],
+      "matches_current_pdf": true
+    },
+    {
+      "number": 3,
+      "title": "Handbook of Industrial Drying",
+      "bibliography": "[3] MUJUMDAR A S, ed. Handbook of industrial drying[M]. 4th ed. Boca Raton: CRC Press, 2014. DOI: 10.1201/b17208.",
+      "primary_urls": [
+        "https://www.routledge.com/Handbook-of-Industrial-Drying/Mujumdar/p/book/9781466596658",
+        "https://api.crossref.org/works/10.1201/b17208",
+        "https://api.pageplace.de/preview/DT0400.9781466596665_A24035542/preview-9781466596665_A24035542.pdf"
+      ],
+      "matches_current_pdf": true
+    },
+    {
+      "number": 4,
+      "title": "The Mathematics of Diffusion",
+      "bibliography": "[4] CRANK J. The mathematics of diffusion[M]. 2nd ed. Oxford: Clarendon Press, 1975.",
+      "primary_urls": [
+        "https://ndlsearch.ndl.go.jp/books/R100000074-IALIS_QQ00223544",
+        "https://biblio.neel.cnrs.fr/index.php?id=8642&lang_sel=fr_FR&lvl=notice_display",
+        "https://staff.bath.ac.uk/ensdasr/PAPERS/Crank-The-Mathematics-of-Diffusion.pdf"
+      ],
+      "matches_current_pdf": true
+    },
+    {
+      "number": 5,
+      "title": "Finite volume methods",
+      "bibliography": "[5] EYMARD R, GALLOUËT T, HERBIN R. Finite volume methods[M]//CIARLET P G, LIONS J L, eds. Handbook of numerical analysis. Vol. 7. Amsterdam: North-Holland, 2000: 713-1018. DOI: 10.1016/S1570-8659(00)07005-8.",
+      "primary_urls": [
+        "https://www.sciencedirect.com/science/chapter/handbook/abs/pii/S1570865900070058",
+        "https://api.crossref.org/works/10.1016/S1570-8659(00)07005-8",
+        "https://www.i2m.univ-amu.fr/perso/raphaele.herbin/PUBLI/bookevol.pdf"
+      ],
+      "matches_current_pdf": true
+    },
+    {
+      "number": 6,
+      "title": "A Polyalgorithm for the Numerical Solution of Ordinary Differential Equations",
+      "bibliography": "[6] BYRNE G D, HINDMARSH A C. A polyalgorithm for the numerical solution of ordinary differential equations[J]. ACM Transactions on Mathematical Software, 1975, 1(1): 71-96. DOI: 10.1145/355626.355636.",
+      "primary_urls": [
+        "https://dl.acm.org/doi/10.1145/355626.355636",
+        "https://api.crossref.org/works/10.1145/355626.355636",
+        "https://sundials.readthedocs.io/en/v7.1.0/References.html",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html"
+      ],
+      "matches_current_pdf": true
+    },
+    {
+      "number": 7,
+      "title": "scipy.integrate.BDF",
+      "bibliography": "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html.",
+      "primary_urls": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html"
+      ],
+      "matches_current_pdf": true
+    }
+  ],
+  "fresh_web_checks": [
+    {
+      "reference": 1,
+      "url": "https://www.aeeisp.com/nygcxb/cn/article/pdf/preview/10.11975/j.issn.1002-6819.202306104.pdf",
+      "result": "刊方条目作者前三、40(2)、1-28、DOI匹配"
+    },
+    {
+      "reference": 2,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37474981/",
+      "result": "PubMed作者、48(13)、3440-3447、DOI匹配；当前刊方PDF网页超时，但本地提交PDF首面可核"
+    },
+    {
+      "reference": 3,
+      "url": "https://www.routledge.com/Handbook-of-Industrial-Drying/Mujumdar/p/book/9781466596658",
+      "result": "CRC官方第4版编辑匹配；copyright2015与已存注册出版2014-07-11是不同日期口径，不据此改文献2014"
+    },
+    {
+      "reference": 4,
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000074-IALIS_QQ00223544",
+      "result": "国家图书馆直接书目Crank/2版/Clarendon/Oxford/1975匹配"
+    },
+    {
+      "reference": 5,
+      "url": "https://www.sciencedirect.com/science/chapter/handbook/abs/pii/S1570865900070058",
+      "result": "刊方卷7/2000/713-1018/DOI匹配"
+    },
+    {
+      "reference": 6,
+      "url": "https://dl.acm.org/doi/10.1145/355626.355636",
+      "result": "本次直接访问403；已保存ACM注册Crossref数据与当前参考条目作者/题名/1975/1(1)/71-96/DOI逐项一致，SciPy官方BDF文档也列为一般框架来源"
+    },
+    {
+      "reference": 7,
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html",
+      "result": "当前官方BDF页可访问，隐式变阶1-5、NDF、稀疏Jacobian接口对应论文方法说明"
+    }
+  ]
+}

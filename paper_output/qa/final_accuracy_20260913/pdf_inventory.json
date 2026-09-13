@@ -1,0 +1,2255 @@
+{
+  "file": "D:\\Document\\数学建模\\2026CUMCM\\论文.pdf",
+  "bytes": 2549114,
+  "sha256": "2bb7c6b3fff1151318a46d7a8884e4ad0ec99c202a5faf1ceaf24e893cea347b",
+  "md5": "677a169b092a3f6817030cb213313092",
+  "page_count": 186,
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "药材热湿耦合模型与干燥时间计算_附录修订版.docx",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "",
+    "producer": "Microsoft: Print To PDF",
+    "creationDate": "D:20260913160900+08'00'",
+    "modDate": "D:20260913160900+08'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "toc": [],
+  "pages": [
+    {
+      "page": 1,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1142,
+      "first": "1\n考虑物性变化与径向收缩的药材热湿耦合模型及数值验证\n摘要\n药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表内\n部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性",
+      "last": "的数值一致性。敏感性分析表明，烘干时间对水分扩散参数\n和表面传质边界较为敏感，所求时长适用于题给物性、环境延拓及收缩假设。\n关键词：热湿耦合；有限体积法；Kirchhoff 变换；径向收缩；干燥时间\n"
+    },
+    {
+      "page": 2,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 743,
+      "first": "2\n一、问题重述\n1.1 问题背景\n中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗\n和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。\n数值模拟",
+      "last": "于水分流失引起的尺寸变化会影响到烘干的最\n终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出\n药材内部水分浓度每隔60s 时间、0.1cm 距离的水分浓度以及烘干结束时间。\n"
+    },
+    {
+      "page": 3,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1110,
+      "first": "3\n二、问题分析\n2.1 问题一分析\n已知圆柱形药材的几何尺寸、均匀初始状态、烘房温湿度序列及附录2 参数，问题\n一要求得到1800 s 内的径向温度和含水率分布。由傅里叶导热定律与Fick 扩散定律",
+      "last": "缩本身的影响，保持附录4 物性、初始条件、环境\n条件及数值设置一致，分别计算固定半径与给定半径变化两种情形，比较其含水率分布\n和烘干时长。问题三与问题四的结果之差则反映物性变化和径向收缩的综合影响。\n"
+    },
+    {
+      "page": 4,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 494,
+      "first": "4\n三、模型假设\n假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程\n简化为一维径向模型。\n假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对\n流传质系数取",
+      "last": "(t)\n药材当前半径\nm\nρeff\n有效密度（用于热容量）\nkg/m³\nρd\n守恒干物质密度\nkg/m³\ncp\n比热容\nJ/(kg·K)\nk\n导热系数\nW/(m·K)\nD\n有效水分扩散系数\nm²/s\n"
+    },
+    {
+      "page": 5,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 712,
+      "first": "5\n符号\n说明\n单位\nh\n对流换热系数\nW/(m²·K)\nβ\n对流传质系数\nm/s\nB=ρeff·cp\n有效体积显热容量\nJ/(m³·K)\nqr\n径向导热热流密度（向外为正）\nW/m²\njw\n径向水分",
+      "last": "，会对固定长度和给定半径施加额外约束。\n附录A.2 表明，该约束与所给后期收缩数据不能同时满足。因此本文采用有效容量与独\n立干骨架的闭合，使两套方程的定义一致；这一处理也限定了结果的物理解释，不能视\n"
+    },
+    {
+      "page": 6,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1099,
+      "first": "6\n为对真实组分密度的验证。\n平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。\n附件1 的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记\n该观测",
+      "last": "。不能把“常热物性”\n扩大解释为“全部物性均为常数”，也不应给问题一另外加入温度活化项。\n5.1.3 求解算法\n设归一化坐标𝑥= 𝑟/𝑅0，在0 ≤𝑥≤1 上划分𝑁个等长区间，节点𝑥𝑖= 𝑖/𝑁包含\n"
+    },
+    {
+      "page": 7,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1221,
+      "first": "7\n中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体，\n记其无量纲体积权重为𝑤𝑖。有限体积法先计算相邻控制体共用的面通量，再由净通量\n建立收支；内部面在全域求和时成对相消[5",
+      "last": "9\n600.0000\n28.4533\n28.5360\n28.8039\n29.3159\n30.1652\n900.0000\n29.3243\n29.4583\n29.8755\n30.6161\n31.7304\n"
+    },
+    {
+      "page": 8,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 863,
+      "first": "8\n时间/s\nr=0 cm\nr=0.5 cm\nr=1 cm\nr=1.5 cm\nr=2 cm\n1200.0000\n30.5427\n30.7098\n31.2223\n32.1126\n33.4276\n1500",
+      "last": "低后，式(6)中的D 随之减小，形成较强的干燥阻力。因而即使表面\n与外界存在传质驱动力，内部水分也不会立刻均匀释放。只用一个全体平均含水率描述\n此阶段，会掩盖径向差异，无法回答题目要求的各位置浓度。\n"
+    },
+    {
+      "page": 9,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 553,
+      "first": "9\n图1 问题一径向温度含水率分布\n5.1.5 模型检验或灵敏度分析\n在本问常热物性条件下，将变温边界写入圆柱Robin 特征函数展开及时间卷积，得\n到热场解析基准。它与数值结果在N3200、1801",
+      "last": "温度轨迹。联立算法在同\n一时刻更新T、C 与全部物性，使耦合关系进入隐式残量；先独立计算全程热场再求水\n分，会改变这里采用的模型。\n5.2.2 变量定义与公式推导\n令w=C/(1+C)，附录3 规定\n"
+    },
+    {
+      "page": 10,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 601,
+      "first": "10\n𝜌eff = 650 + 128𝐶, 𝑐p = 1450 + 2736𝑤, 𝑘= 0.21 + 0.38𝑤\n(8)\n𝐷3(𝑇, 𝐶) = 2.4 × 10−3exp( −\n0.45\n𝐶−\n385",
+      "last": "推趋势。超过观测窗后的\n输出是指定工况下的条件预测。附录3 未重给表面换热和传质系数，本文明确沿用h 和\nβ；这也属于全过程边界设置，而不是对不同风速或设备的普遍结论。\n图2 烘房环境边界条件与延拓\n"
+    },
+    {
+      "page": 11,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 866,
+      "first": "11\n5.2.3 求解算法\n沿用问题一的有限体积网格，同时更新B(C)、k(C)与D(T,C)。温度面通量采用导热\n系数调和平均，水分面通量用a=0.45 的Kirchhoff 势及面温度因子。解析J",
+      "last": ".0033\n2.5000\n49.4670\n49.4792\n49.5136\n49.5653\n49.6609\n3.0000\n49.8495\n49.8553\n49.8746\n49.9101\n49.9664\n"
+    },
+    {
+      "page": 12,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 649,
+      "first": "12\n表4 问题二的径向干基含水率（kg/kg）\n时间/h\nr=0 cm\nr=0.5 cm\nr=1 cm\nr=1.5 cm\nr=2 cm\n0.5000\n2.5499\n2.5489\n2.5256\n2.3",
+      "last": "\n因此全过程通常表现为前期升温推动水分迁移、后期低含水率区域限制传递的组合效\n应。该解释来自物性公式及场分布，不把时间曲线的形状直接归因为某个未经观测的组\n织变化。\n图3 问题二中心表面温湿响应曲线\n"
+    },
+    {
+      "page": 13,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 829,
+      "first": "13\n5.2.5 模型检验或灵敏度分析\n空间加密、收紧时间设置以及不同积分器的对照表明，本组数值解在所检验的采样\n范围内稳定。表3 中1.5 h 表面温度接近四位小数的舍入边界，基线与更严格时间设置\n",
+      "last": "算。达标判定采用未舍入的\n数值解，最终将𝑡r 换算为小时表示。候选点的生成和逐格核验见附录C.4。\n5.3.3 求解算法\n第一步：在问题二的积分过程中监测𝑔(𝑡) 下降穿零。第二步：利用连续数值解在\n"
+    },
+    {
+      "page": 14,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1014,
+      "first": "14\n包围区间内定位临界根，并核对最大含水率与阈值的一致性。第三步：按式(14)选取并\n核验烘干时长。第四步：从同一轨迹查询每隔60 s、径向每隔0.1 cm 的含水率。另在𝑁=\n800 的验证轨迹上",
+      "last": "标不能代表全域达标。后期中心由0.1859 下降到0.1500 经历较长时\n间，反映低含水率条件下扩散系数降低的影响。结束时中心与表面仍有浓度差，达到产\n品阈值并不要求内部先达到完全均匀的平衡状态。\n"
+    },
+    {
+      "page": 15,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 537,
+      "first": "15\n图4 问题三烘干阈值穿越临界时刻\n5.3.5 模型检验或灵敏度分析\n约93.04%的报告时长位于附件1 的4 h 观测窗之后，因此57.4724 h 应理解为规定\n平台温湿条件持续存在时的模型预",
+      "last": "复加入浓缩项或漏掉物质运动。本文先从组分守恒建立物质导数，再进行材料坐标变\n换，保证控制方程的来源清楚。\n5.4.2 变量定义与公式推导\n在没有干物质生成或相对迁移的条件下，干质量守恒及水质量守恒为\n"
+    },
+    {
+      "page": 16,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1149,
+      "first": "16\n∂𝑡𝜌d + ∇·(𝜌du) = 0, ∂𝑡(𝜌d𝐶) + ∇·(𝜌d𝐶u + jw) = 0\n(15)\n将水质量方程减去干质量方程的𝐶倍，得到𝜌d𝐷𝑡𝐶=−∇·jw。取jw =−𝜌d𝐷∇𝐶，\n",
+      "last": "理位置已不在药材内，不能插值或填成零含水率。本文保留这些固定半\n径列为空，并单列“药材表面”，从而同时保留原距离坐标与移动边界信息。真实表面不\n一定恰好落在0.1 cm 网格，不能取最近固定列冒充。\n"
+    },
+    {
+      "page": 17,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 665,
+      "first": "17\n5.4.4 结果分析\n问题四的连续临界时刻约为51.090575 h，按与问题三相同的时间网格和严格阈值\n判据，得到烘干时长为51.0906 h，对应半径约为1.2000 cm。该时刻位于附件2",
+      "last": "00\n1.3740\n12.0000\n1.2480\n18.0000\n1.2140\n24.0000\n1.2040\n30.0000\n1.2010\n36.0000\n1.2000\n42.0000\n1.2000\n"
+    },
+    {
+      "page": 18,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 611,
+      "first": "18\n时间/h\n表面半径/cm\n48.0000\n1.2000\n51.0906\n1.2000\n6 h 时半径已收缩至1.3740 cm，因此1.5 cm 和2 cm 固定位置均位于域外；此时表\n面含水率",
+      "last": "的尺度解释。由于换算积分使用了仿真事件\n作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数\n据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。\n"
+    },
+    {
+      "page": 19,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 544,
+      "first": "19\n5.4.6 边界阻力的补充修正\n为考察基线气固映射的不确定性，在保持主答案不变的前提下，构造受水活度启发\n的经验阻力族。令Cref=0.05，p≥1，对表面通量增加因子\n𝐾𝑝(𝐶s) =\n1−(",
+      "last": "的数值实现及假\n设敏感性。解析级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设参数\n与边界；各方法不能提供独立的物理预测准确率。表8 差值均取未舍入结果，完整计算\n过程与采样范围见附录C。\n"
+    },
+    {
+      "page": 20,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 974,
+      "first": "20\n表8 数值检验的对象、范围与结果\n检验对象\n方法及范围\n主要结果\n支持的结论\n问题一热场\nN3200，1801 整数秒×21\n半径；有限体积与\nRobin–Bessel 级数\n最大温差1.804",
+      "last": "p=4 相对同\nN 基线使问题三、四分别延长约13.87%和8.27%；这批结果只完成事件积分，不替代正\n式严格报告值。其用途是展示未标定边界关系的影响，不能据此推出真实时长下界或参\n数全域单调性。\n"
+    },
+    {
+      "page": 21,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 933,
+      "first": "21\n七、模型评价与推广\n7.1 模型优点\n模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，\n逻辑一致、便于对比。\n针对扩散系数随含水率显著变化的特点，采用Kirchhoff",
+      "last": "验阻力只提供指定情景下的响应，\n尚不构成真实过程的上下界。\n7.3 改进方向与适用范围\n走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为\n目标，利用参数扫描或启发式算法寻优。\n"
+    },
+    {
+      "page": 22,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 537,
+      "first": "22\n维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维\n轴对称模型，显式处理端面传热传质。\n后续可补充不同温度下的药材吸附、解吸等温线，结合质量变化及内部测温数据标\n定气固边界",
+      "last": "模型推导辅助、程序调试、计算结果核\n对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一致性。参赛队对\n采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行\n记录。\n"
+    },
+    {
+      "page": 23,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 999,
+      "first": "23\n参考文献\n[1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2):\n1-28. DOI: 10.11975/j.issn.100",
+      "last": "B/OL]. [2026-09-12].\nhttps://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html.\n"
+    },
+    {
+      "page": 24,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 512,
+      "first": "24\n九、附录\n9.0 支撑材料文件列表\n支撑材料共137 个文件。下表覆盖题面与数据、参考资料、生产程序、结果表格、\n数值检验、绘图资料和AI 工具使用详情。\n表1 支撑材料分类汇总\n目录\n文件数\n",
+      "last": "3 01_赛题与原始数据\n序号\n文件名\n用途\n8\nA 题.pdf\nA 题题面及参数和结果要求\n9\n数据说明.txt\n原始数据与清洗字段说明\n表4 01_赛题与原始数据/清洗后数据\n序号\n文件名\n用途\n"
+    },
+    {
+      "page": 25,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 775,
+      "first": "25\n序号\n文件名\n用途\n10\nA_environment_observed.csv\n环境观测数据时间温度和湿度\n11\nA_radius_observed.csv\n药材半径观测数据\n表5 01_赛题与",
+      "last": "iPy_solve_ivp_官方API 网页.html\nSciPy 积分接口网页存档\n26\nSciPy_solve_ivp_官方API 网页_离线\n文本.html\nSciPy 积分接口可离线阅读文本\n"
+    },
+    {
+      "page": 26,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 821,
+      "first": "26\n序号\n文件名\n用途\n27\nShampine1997_BYU 原始扫描_35\n页.pdf\n常微分方程求解补充资料35 页扫描\n28\n补充资料说明.txt\n补充文献和网页资料来源\n表9 03_程序代",
+      "last": "uts/cleaned\n序号\n文件名\n用途\n47\nA_environment_observed.csv\n环境观测数据时间温度和湿度\n48\nA_radius_observed.csv\n药材半径观测数据\n"
+    },
+    {
+      "page": 27,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 531,
+      "first": "27\n表12 03_程序代码/inputs/original\n序号\n文件名\n用途\n49\n附件1.xlsx\n原始环境温湿度观测数据\n50\n附件2.xlsx\n原始药材半径观测数据\n表13 03_程序代码/",
+      "last": "3 冻结采样数组\n表17 03_程序代码/reference/Q4\n序号\n文件名\n用途\n58\nsampled_solution.npz\nQ4 冻结采样数组\n表18 04_结果表格\n序号\n文件名\n用途\n"
+    },
+    {
+      "page": 28,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 776,
+      "first": "28\n序号\n文件名\n用途\n59\nresult1.xlsx\n问题1 完整计算结果\n60\nresult2.xlsx\n问题2 完整计算结果\n61\nresult3.xlsx\n问题3 完整计算结果\n62\nres",
+      "last": "TLAB 对照证据\n序号\n文件名\n用途\n77\ncompareMatlab.mjs\nMATLAB 与Python 结果比较程序\n78\nrunCrossCheck.m\nMATLAB 独立热湿模型对照实现\n"
+    },
+    {
+      "page": 29,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1005,
+      "first": "29\n表22 05_数值检验与实验/Python 检验源码\n序号\n文件名\n用途\n79\nrequirements.txt\nPython 依赖及固定版本\n80\nrun_checks.py\n网格时间和方法检",
+      "last": "series.py\n描述序列对照及历史趋势诊断\n101\ncrossvalidate_solver.py\n不同积分器的数值对照\n102\nenergy_balance_check.py\n模型能量收支检查\n"
+    },
+    {
+      "page": 30,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 866,
+      "first": "30\n序号\n文件名\n用途\n103\nenergy_balance_diagnose.py\n能量闭合历史诊断\n104\nenergy_balance_diagnose2.py\n能量闭合进一步历史诊断\n105",
+      "last": "据/CSV/图2\n序号\n文件名\n用途\n120\nassumed_platform_4_60h.csv\n图2 后续环境平台假设数据\n121\nobserved_0_4h.csv\n图2 前4 小时环境实测点\n"
+    },
+    {
+      "page": 31,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 780,
+      "first": "31\n表29 06_绘图程序与数据/CSV/图3\n序号\n文件名\n用途\n122\nmoisture_to_event.csv\n图3 中心和表面含水率数据\n123\ntemperature_0_4h.csv\n",
+      "last": "域达标与临界放大.png\n图4_全域达标与临界放大成图\n136\n图5_收缩半径与域内含水率.png\n图5_收缩半径与域内含水率成图\n137\n图6_经验边界阻力情景.png\n图6_经验边界阻力情景成图\n"
+    },
+    {
+      "page": 32,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1077,
+      "first": "32\n9.1 连续模型、坐标变换与数值方法的完整推导\n本附录给出正文采用的有效热湿模型及其数值实现的推导，补充公式的成立条件、\n变量含义和计算检查范围。题给物性、环境观测及模型闭合分别说明；数学推导不",
+      "last": "散方程\n设干物质骨架速度为v𝑠，水相对骨架的质量通量为j𝑤，其单位为kg/(m2s)。无干物\n质生成、损失及相对于骨架迁移时，干物质连续性方程为\n𝜕𝜌𝑑\n𝜕𝑡+ 𝛻·(𝜌𝑑v𝑠) = 0\n（A.3）\n"
+    },
+    {
+      "page": 33,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 976,
+      "first": "33\n水的实验室坐标总通量由随骨架运输的𝜌𝑑𝐶v𝑠与相对通量j𝑤组成。无内部水源项时，\n水质量守恒为\n𝜕(𝜌𝑑𝐶)\n𝜕𝑡\n+ 𝛻·(𝜌𝑑𝐶v𝑠+ j𝑤) = 0\n（A.4）\n将式（A.4）展开，得到\n",
+      "last": "数梯度贡献。\n热侧采用Fourier 通量q =−𝑘(𝐶)𝛻𝑇，并以题给物性构造有效显热容量𝐵(𝐶) =\n𝜌eff(𝐶)𝑐𝑝(𝐶)。选择𝐵(𝐶)D𝑠𝑇/D𝑡作为本模型的局部温升需求，薄壳导热收支给出\n"
+    },
+    {
+      "page": 34,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1057,
+      "first": "34\n𝐵(𝐶)\nD𝑠𝑇\nD𝑡= 𝛻·[𝑘(𝐶)𝛻𝑇],\n𝐵(𝐶)\n𝜕𝑇\n𝜕𝑡=\n1\n𝑟\n𝜕\n𝜕𝑟[𝑟𝑘(𝐶)\n𝜕𝑇\n𝜕𝑟] (v𝑠= 0)\n（A.10）\n𝑘的单位为W/(m K)，𝑐𝑝为J/(kg K",
+      "last": "一数值口径。这些系数来自\n题给经验关系，不是由本次附件重新拟合，也不是从第一原理推导的常数。问题二、三\n不拼接问题一的末态，问题四也不在某一阶段才切换附录4。\n相同𝑇, 𝐶下，两组全过程扩散率之比为\n"
+    },
+    {
+      "page": 35,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1037,
+      "first": "35\n𝐷4(𝑇,𝐶)\n𝐷23(𝑇,𝐶) = 0.175𝑒𝑥𝑝(\n0.15\n𝐶), 𝐶× =\n0.15\n𝑙𝑛(1/0.175) ≈0.08606\n（A.15）\n其中𝐶×是两扩散率相等的含水率。𝐶> 𝐶×",
+      "last": "贯穿边界与控制体离散。\n初值与瞬时表面Robin 条件未必在𝑡= 0 完全相容。这表示启动阶段形成快速边界\n层，不要求人为改动题给初态。数值求解采用较小的早期步长，并另行检查接受状态和\n早期场误差。\n"
+    },
+    {
+      "page": 36,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 987,
+      "first": "36\n9.1.6 干物质密度、有效密度与收缩的一致性\n问题一至三令骨架固定；问题四采用定长、径向同比收缩。每个初始材料半径𝑟0\n随时间变为𝑟= 𝑟0𝑅(𝑡)/𝑅0，相应骨架速度为\n𝑣𝑠(𝑟, 𝑡) =",
+      "last": "网格速度为𝑣𝑔= 𝑥𝑅˙ 。链式法则给\n出\n𝜕𝐶\n𝜕𝑡|𝑟=\n𝜕𝐶^\n𝜕𝑡|𝑥−\n𝑥𝑅˙\n𝑅\n𝜕𝐶^\n𝜕𝑥,\n𝜕𝐶\n𝜕𝑟=\n1\n𝑅\n𝜕𝐶^\n𝜕𝑥\n（A.25）\n把物理方程中的骨架运输项同时变换，得到\n"
+    },
+    {
+      "page": 37,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 940,
+      "first": "37\nD𝑠𝐶\nD𝑡=\n𝜕𝐶^\n𝜕𝑡+\n𝑣𝑠−𝑣𝑔\n𝑅\n𝜕𝐶^\n𝜕𝑥,\nD𝑠𝑇\nD𝑡=\n𝜕𝑇^\n𝜕𝑡+\n𝑣𝑠−𝑣𝑔\n𝑅\n𝜕𝑇^\n𝜕𝑥\n（A.26）\n在干密度空间均匀的条件下，完整变换后的水分方程为\n𝜕𝐶",
+      "last": "下推导。取𝑁个均匀区间，𝛥𝑥= 1/𝑁，节点𝑥𝑖= 𝑖𝛥𝑥，\n𝑖= 0, …, 𝑁。对偶控制体的内部边界为相邻节点中点，左、右外边界分别截在0 和1。记\n第𝑖个控制体为[𝑎𝑖, 𝑏𝑖]，其圆柱权重为\n"
+    },
+    {
+      "page": 38,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 992,
+      "first": "38\n𝑤𝑖= ∫𝑎𝑖\n𝑏𝑖𝑥d𝑥=\n𝑏𝑖\n2−𝑎𝑖\n2\n2\n,\n𝑤0 =\n𝛥𝑥2\n8 , 𝑤𝑖= 𝑥𝑖𝛥𝑥(1 ≤𝑖< 𝑁),\n𝑤𝑁=\n𝛥𝑥\n2 −\n𝛥𝑥2\n8\n（A.30）\n中心控制体为[0, 𝛥𝑥",
+      "last": "格，未知量位置与边界离散必须同步重建。\n9.1.9 导热调和平均与Kirchhoff 水分面量\n对内部面𝑖+ 1/2，记𝛾𝑖= 𝑥𝑖+1/2/𝛥𝑥。两侧各半间距的导热阻相加，等效导热系数与热\n面量为\n"
+    },
+    {
+      "page": 39,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1107,
+      "first": "39\n𝛥𝑥\n𝑘𝐻=\n𝛥𝑥/2\n𝑘𝑖+\n𝛥𝑥/2\n𝑘𝑖+1 ,\n𝑘𝐻=\n2𝑘𝑖𝑘𝑖+1\n𝑘𝑖+𝑘𝑖+1 ,\n𝑔𝑖+1/2\n𝑇\n= 𝛾𝑖𝑘𝐻(𝑇𝑖+1 −𝑇𝑖)\n（A.35）\n这里的等效阻力解释针对面附近",
+      "last": " < 10−7𝑚𝑎𝑥(𝐶\n―\n𝑖, 10−3)时使用第一项，其局部差为𝑂((𝛥𝐶)3)。一般分\n支保留指数积分势差。系数求值采用𝐶+ = 𝑚𝑎𝑥(𝐶, 10−12)保护Newton 试探点，实际比较\n"
+    },
+    {
+      "page": 40,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1012,
+      "first": "40\n与势差分支以𝐶+为准；它不裁剪求得的状态。正值保护是数值定义，不是干基含水率的\n物理下限。\n9.1.10 干基质量与有效热收支的离散恒等式\n全体水方程乘2𝑤𝑖求和，内部面两两相消，只有表面项保留",
+      "last": "𝑖+1 −𝑇𝑖。调和系数偏导为\n𝜕𝑘𝐻\n𝜕𝑘𝑖=\n2𝑘𝑖+1\n2\n(𝑘𝑖+𝑘𝑖+1)2 ,\n𝜕𝑘𝐻\n𝜕𝑘𝑖+1 =\n2𝑘𝑖\n2\n(𝑘𝑖+𝑘𝑖+1)2\n（A.44）\n由此，热面量对四个相邻状态的偏导是\n"
+    },
+    {
+      "page": 41,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1106,
+      "first": "41\n𝜕𝑇𝑖𝑔𝑇=−𝛾𝑖𝑘𝐻, 𝜕𝑇𝑖+1𝑔𝑇= 𝛾𝑖𝑘𝐻,\n𝜕𝐶𝑖𝑔𝑇= 𝛾𝑖𝛥𝑇\n2𝑘𝑖+1\n2 𝑘𝑖\n′\n(𝑘𝑖+𝑘𝑖+1)2 , 𝜕𝐶𝑖+1𝑔𝑇= 𝛾𝑖𝛥𝑇\n2𝑘𝑖\n2𝑘𝑖+1\n′\n(𝑘𝑖+𝑘",
+      "last": ")；\n热方程同时添加式（A.48）的容量项。由此得到邻近节点的2 × 2 块带结构。\n基线表面与累计量导数为\n𝜕𝑇𝑁𝑔𝑠𝑇=−ℎ𝑅, 𝜕𝐶𝑁𝑔𝑠\n𝐶=−𝛽𝑅, 𝜕𝐶𝑁ℓ˙ =\n2𝛽\n𝑅\n（A.50）\n"
+    },
+    {
+      "page": 42,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1098,
+      "first": "42\n累计量ℓ不反馈温湿场，因此Jacobian 对ℓ的整列为零。令行向量m𝑇在每个𝐶𝑖分量取\n2𝑤𝑖、在ℓ分量取1、其余取零，则式（A.41）的微分结构要求\nm𝑇F = 0, m𝑇J = 0𝑇\n（A",
+      "last": "\n(𝑘+1)ℎ𝑝\n（A.56）\n式（A.56）中的差分系数和尺度是求解器为该步输出对象保存的量，不应另从稀疏\n采样反推。diskDense.py 保存原始双精度系数与接受状态，并使用同一求值公式；只\n"
+    },
+    {
+      "page": 43,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1015,
+      "first": "43\n改变存储位置。BDF 内部断点恰好落在查询点时，保留与SciPy 原BDF 一致的右侧多\n项式选择；跨显式分段边界则保持Run.state 的段选择规则。\n题定每1 s 或60 s 的数值直接从",
+      "last": "可行\n点时才成立；未触发事件不能把预设计算上限当作烘干时长。\n程序先从临界状态实际续算至\n𝑡end = 𝛥𝑡𝑠[⌈\n𝑡𝑐,𝑁\n𝛥𝑡𝑠⌉+ 1], 𝛥𝑡𝑠= 1 s,\n（A.60）\n再生成报告候选首点\n"
+    },
+    {
+      "page": 44,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1128,
+      "first": "44\n𝑡𝑟\n(0) = 𝛥𝑡𝑟⌈\n𝑡𝑐,𝑁\n𝛥𝑡𝑟⌉, 𝑡𝑟\n(𝑗) = 𝑡𝑟\n(0) + 𝑗𝛥𝑡𝑟\n（A.61）\n从𝑗= 0 起逐点查询𝑀𝑁，第一个严格小于0.15 的点作为𝑡𝑟,𝑁；若查询超出已实",
+      "last": ")′ + 𝜇2𝑥𝑋= 0，轴心有界的解\n取第一类零阶Bessel 函数𝑋(𝑥) = 𝐽0(𝜇𝑥) ；第二类函数在轴心发散而舍去。利\n用𝐽0\n′ (𝑧) =−𝐽1(𝑧)，表面Robin 条件给出特征根\n"
+    },
+    {
+      "page": 45,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1041,
+      "first": "45\n𝜇𝑛𝐽1(𝜇𝑛) = 𝐵𝑖ℎ𝐽0(𝜇𝑛), 𝜆𝑛=\n𝛼𝜇𝑛2\n𝑅0\n2 , 𝑛= 1,2, …\n（A.64）\n𝜆𝑛为正的模态衰减率，单位s−1。\n本题𝐵𝑖ℎ有限且大于零，设𝑗𝜈,𝑛为𝐽𝜈的第𝑛个",
+      "last": "𝑛\n2/𝑅0\n2，\n将𝑇, 𝑇∞, 𝑇0替换为𝐶, 𝐶eq, 𝐶0即可构造相同类型的线性基准。这个特例只用于检验算法，\n不替代正式𝐷1(𝐶)非线性水分结果，也不能验证Q23/Q4 的变物性收缩问题。\n"
+    },
+    {
+      "page": 46,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1146,
+      "first": "46\n9.1.16 解析比较的点值、单元平均及误差范围\n本文生产未知量按节点点值解释，主要比较𝑇𝑖与𝑇(𝑥𝑖, 𝑡)。若为了诊断另外比较解析\n环体平均，应明确使用\n⟨𝐽0⟩𝑖=\n1\n𝑤𝑖∫𝑎𝑖\n𝑏𝑖𝑥",
+      "last": "限制继续保留，不将摘要差值冒充重新全量回放。\n对另一守恒水分面格式，可将相邻𝐷𝑖, 𝐷𝑖+1的调和平均乘浓度差，与式（A.38）对比。\n常𝐷时两式退化为同一个线性面量；变量𝐷时差别属于空间离散。现行\n"
+    },
+    {
+      "page": 47,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1248,
+      "first": "47\nmethod_comparison.py--quick 的8 条Q1 轨迹实际完成，变量D 的N100 与N200\n两格式最大差约为1.4891 × 10−5和3.7288 × 10−6，观察阶",
+      "last": "切线不等式𝑧𝑞≤1 + 𝑞(𝑧−1)，得到\n𝑞(1 −𝑧) ≤1 −𝑧𝑞≤1 −𝑧,\n1\n𝑝≤𝐾𝑝(𝐶𝑠) ≤1, 𝐾1(𝐶𝑠) = 1,\nlim𝐶𝑠↓𝐶ref𝐾𝑝(𝐶𝑠) =\n1\n𝑝\n（A.77）\n"
+    },
+    {
+      "page": 48,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 444,
+      "first": "48\n这个族包含原边界并可控地减弱所设传质驱动，但不是由实测材料等温线推得的唯\n一边界。界限仅在上述𝐶𝑠, 𝑝范围成立。正文历史N800 的𝑝= 1,2,4 情景保留为条件数值\n比较，不据几个参数点证",
+      "last": "偏导为−𝑅𝜒𝐿𝑣𝜌𝑑𝛽，应加入表面热行，累计失\n水方程保持与实际水边界一致。这类情景约定了蒸发位置和比例，但没有识别真实气膜\n传递、凝结、吸附热或内部相变，不能声称补入一个潜热项就完成总热力学闭合。\n"
+    },
+    {
+      "page": 49,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 601,
+      "first": "49\n9.2 程序源码\n以下列出核心计算、数值检验及MATLAB 对照程序。核心计算程序位于支撑材料的“03_程序\n代码”；Python 检验程序位于“05_数值检验与实验/Python 检验源码/p",
+      "last": "生成各问所需结果表格。\n10\nreference/reference_data.py\n保存参考数值，供程序对照检查计算输出。\n11\nrunLogged.ps1\n启动求解程序并记录运行过程和退出状态。\n"
+    },
+    {
+      "page": 50,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 558,
+      "first": "50\n表10 Python 数值检验程序及用途\n编号\n程序文件\n主要用途\n12\naxisymmetric_check.py\n建立轴对称模型，考察端面传递的影响。\n13\ncompare_analytic",
+      "last": "间离散误差。\n22\nanalytic_metric_check.py\n比较解析节点值与控制体平均值的差异。\n23\ncrossvalidate_series.py\n分析环境和干燥序列的趋势与阶段变化。\n"
+    },
+    {
+      "page": 51,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 686,
+      "first": "51\n续表10 Python 数值检验程序及用途\n编号\n程序文件\n主要用途\n24\ncrossvalidate_solver.py\n比较求解算法、网格及边界处理的影响。\n25\nenergy_balanc",
+      "last": "程序文件\n主要用途\n35\nrunCrossCheck.m\n用MATLAB 独立实现热湿模型并进行对\n照。\n36\ncompareMatlab.mjs\n对照MATLAB 与Python 的温湿场和时间。\n"
+    },
+    {
+      "page": 52,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1419,
+      "first": "52\n9.2.1 runDelivery.py\nfrom __future__ import annotations\nimport argparse\nimport csv\nfrom contextli",
+      "last": "write(text)\nself.log.write(text)\nself.flush()\nreturn len(text)\ndef flush(self):\nself.screen.flush()\n"
+    },
+    {
+      "page": 53,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2343,
+      "first": "53\nself.log.flush()\ndef preflight():\nif sys.maxsize <= 2**32:\nraise RuntimeError('Use a 64-bit Pytho",
+      "last": "or difference > tolerances[key]:\nraise AssertionError(f'Frozen reference mismatch {question}/{key}:\n"
+    },
+    {
+      "page": 54,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2931,
+      "first": "54\n{difference}')\nchecks.append({'array':key, 'valuesCompared':int(actual.size),\n'maximumAbsoluteDif",
+      "last": "question == 'Q23' else [question]):\nprint(f'{utcNow()} EXPORT_AND_FULL_READBACK {qid}', flush=True)\n"
+    },
+    {
+      "page": 55,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2777,
+      "first": "55\nartifact = exportOutputs.exportQuestion(run, qid, output/'outputs')\nvalidation = exportOutputs.va",
+      "last": "(),\nelapsedSeconds=time.perf_counter()-started)\nwriteJson(output/'runResult.json', report)\nreturn 0\n"
+    },
+    {
+      "page": 56,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1573,
+      "first": "56\nif __name__ == '__main__':\nraise SystemExit(main())\n9.2.2 q1Model.py\nfrom dryingCore import Setti",
+      "last": "idence bound on physical\ndrying time.'}\n9.2.5 q4Model.py\nfrom dryingCore import Settings, solveCase\n"
+    },
+    {
+      "page": 57,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1769,
+      "first": "57\ndef solve(intervals=6400):\nreturn solveCase(Settings(question='Q4', intervals=intervals, faceSche",
+      "last": "JKg: float = 2.4e6\nconstantD: float | None = None\nconstantThermal: bool = False\nmethod: str = 'BDF'\n"
+    },
+    {
+      "page": 58,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2241,
+      "first": "58\nfaceScheme: str = 'harmonic'\njacobianMode: str = 'analytic'\ndenseStorage: str = 'disk'\nclass Radi",
+      "last": "36 * wet, .21 + .38 * wet\nD = 2.4e-3 * np.exp(-.45 / positiveC - 3850 / T)\nelif s.question == 'Q4':\n"
+    },
+    {
+      "page": 59,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2194,
+      "first": "59\nrho, cp, k = 760 + 90 * positiveC, 1850 + 2150 * wet, .12 + .20 * wet\nD = 4.2e-4 * np.exp(-.30 / ",
+      "last": "D * self.settings.beta * (C[-1] - ceq)\nheatG[-1] -= (radius * self.settings.surfaceLatentFraction *\n"
+    },
+    {
+      "page": 60,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2109,
+      "first": "60\nself.settings.latentJKg * jEvap)\nderivative = np.empty_like(state)\nderivative[:-1:2] = np.diff(he",
+      "last": "terp(xx, self.model.x, Cs[i], left=np.nan, right=np.nan))\nreturn np.asarray(Tout), np.asarray(Cout)\n"
+    },
+    {
+      "page": 61,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2821,
+      "first": "61\ndef diagnostics(self):\nminimumC = minimumT = minimumD = minimumProperty = np.inf\nmaximumC = maxim",
+      "last": "Exception as error:\nif cache is not None:\ntry:\ncache.close()\nexcept BaseException as cleanup_error:\n"
+    },
+    {
+      "page": 62,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2325,
+      "first": "62\nerror.add_note('Private cache cleanup also failed: '+repr(cleanup_error))\nraise\ndef solveCaseImpl",
+      "last": " > 1e-6:\nraise FloatingPointError('Dry-basis mass balance failed')\nreturn run\ndef fileRecord(path):\n"
+    },
+    {
+      "page": 63,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2504,
+      "first": "63\np = Path(path)\nreturn {'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size,\n'sha256",
+      "last": "hlib\nimport json\nfrom pathlib import Path\nimport sys\nimport time\nimport warnings\nimport numpy as np\n"
+    },
+    {
+      "page": 64,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1802,
+      "first": "64\nfrom scipy.integrate import solve_ivp\nfrom scipy.sparse import coo_matrix\nfrom scipy.special impo",
+      "last": " model.environment(t)\ngeom = model.internalFaces / model.dx\ndeltaT, deltaC = np.diff(T), np.diff(C)\n"
+    },
+    {
+      "page": 65,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2093,
+      "first": "65\nkHarm = model.harmonic(k)\nkhL, khR = harmonicPartials(k[:-1], k[1:])\nheatDeriv = np.column_stack(",
+      "last": "faceIndex, 2*faceIndex+1,\n2*faceIndex+2, 2*faceIndex+3)).ravel()\nrows, columns, values = [], [], []\n"
+    },
+    {
+      "page": 66,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2281,
+      "first": "66\ndef addFace(rowIndex, derivatives, factor):\nrows.append(np.repeat(rowIndex, 4))\ncolumns.append(fa",
+      "last": "dry'][1][1:-1:2] = .175 - .115*x**2\nstates['near_uniform_small_branch'][1][:-1:2] = 303. + 17.*x**2\n"
+    },
+    {
+      "page": 67,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2746,
+      "first": "67\nstates['near_uniform_small_branch'][1][1:-1:2] = .15 + 1e-10*x\nfor stateName, (t, y) in states.it",
+      "last": "el(settings)\nwith warnings.catch_warnings(record=True) as captured:\nwarnings.simplefilter('always')\n"
+    },
+    {
+      "page": 68,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3292,
+      "first": "68\nresult = solve_ivp(model.rhs, (0., 2.), model.initial(), method='BDF',\njac=lambda t,y:jacobian(mo",
+      "last": "nt('--output-dir', type=Path,\ndefault=Path(__file__).resolve().parent/'results/jacobianValidation')\n"
+    },
+    {
+      "page": 69,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1993,
+      "first": "69\narguments = parser.parse_args()\nif not arguments.self_test:\nparser.error('Use --self-test, or imp",
+      "last": "f storeAccepted(self, values):\npath = self.directory/f'accepted_{len(self.acceptedArrays):03d}.npy'\n"
+    },
+    {
+      "page": 70,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1602,
+      "first": "70\nmapped = np.lib.format.open_memmap(path, mode='w+', dtype=values.dtype,\nshape=values.shape)\nself.",
+      "last": "esult.sol.interpolants, alt_segment=True)\n9.2.9 exportOutputs.py\nfrom __future__ import annotations\n"
+    },
+    {
+      "page": 71,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1532,
+      "first": "71\nimport argparse\nimport csv\nfrom dataclasses import asdict\nfrom datetime import datetime, timezone",
+      "last": "lue not in ['Q1','Q2','Q3','Q4']:\nraise ValueError('Export requires Q1, Q2, Q3 or Q4')\nreturn value\n"
+    },
+    {
+      "page": 72,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2384,
+      "first": "72\ndef outputTimes(questionId,end,event):\nif questionId=='Q1':\nif end<1800-1e-7:\nraise ValueError('Q",
+      "last": "lds(times,radiiM=RADII_M)\nradius=np.asarray(run.model.radius(times),dtype=float)\nif radius.ndim==0:\n"
+    },
+    {
+      "page": 73,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1925,
+      "first": "73\nradius=np.full(len(times),radius)\nsurfaceC=None\nif qid=='Q4':\n_,surface=run.fields(times,material",
+      "last": " 16\nws.row_dimensions[1].height=34\ncells=[]\nfor value in header:\ncell=WriteOnlyCell(ws,value=value)\n"
+    },
+    {
+      "page": 74,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1838,
+      "first": "74\ncell.font=Font(name='Arial',size=10,bold=True,color='FFFFFF')\ncell.fill=PatternFill(fill_type='so",
+      "last": "2\nvalue=values[i,j]\nif not outside and not np.isfinite(value) and qid=='Q4' and\nabs(r-R[i])<=1e-12:\n"
+    },
+    {
+      "page": 75,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2510,
+      "first": "75\nvalue=Cs[i,0]\nrow.append('' if outside else f'{float(value):.4f}')\nif qid=='Q4':\nrow += [f'{Cs[i,",
+      "last": "=next(reader,None);rows=list(reader)\ndesiredTime='时间/s' if qid=='Q1' else '时间/h'\nif kind=='radius':\n"
+    },
+    {
+      "page": 76,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2626,
+      "first": "76\ncorrectHeader=['时间/h','表面半径/cm']\nif header!=correctHeader:\nerrors.append(path.name+': radius/time",
+      "last": "-?\\d+\\.\\d{4}',cell):\nerrors.append(f'{path.name}: finite four-decimal number required at row {i+2},\n"
+    },
+    {
+      "page": 77,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2881,
+      "first": "77\ncolumn {j+2}')\ncontinue\nactual=float(cell)\nif not math.isfinite(actual) or abs(actual-float(forma",
+      "last": "heet row limit; do not\ntruncate')\nworkbook=Workbook(write_only=True)\nworkbook.properties.creator=''\n"
+    },
+    {
+      "page": 78,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2914,
+      "first": "78\nworkbook.properties.lastModifiedBy=''\nworkbook.properties.title=f'问题{qid[-1]}结果'\nheaders={name:[t",
+      "last": "ts.py',\n'generated_at':datetime.now(timezone.utc).isoformat(),'status':'EXPORTED_PENDING_STREAM_REA\n"
+    },
+    {
+      "page": 79,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2604,
+      "first": "79\nDBACK',\n'workbook':bookRecord,'unrounded_archive':archiveRecord,'paper_tables':paperRecords,\n'pap",
+      "last": ")-float(b))<=tolerance)\ndef validateExports(paths,runs=None):\nif isinstance(paths,(str,Path,dict)):\n"
+    },
+    {
+      "page": 80,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2515,
+      "first": "80\npaths=[paths]\nruns={} if runs is None else runs\nresults=[]\nfor item in paths:\nstarted=time.perf_c",
+      "last": "loat(cell.value)*1e4))>1e-5:\nerrors.append(f'{name}: non-finite or non-four-decimal stored\nnumber')\n"
+    },
+    {
+      "page": 81,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2700,
+      "first": "81\nmaxRoundingError=max(maxRoundingError,abs(float(cell.value)-value))\nelse:\nblanks+=1\ncheckedCells+",
+      "last": "nding'}\nreportPath=manifestPath.with_name(manifestPath.name.replace('.export.json','.validation.jso\n"
+    },
+    {
+      "page": 82,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2725,
+      "first": "82\nn'))\nwriteJson(reportPath,report);report['report_path']=str(reportPath);results.append(report)\nif",
+      "last": "sult['status']!='FAIL':\nraise AssertionError('Independent paper validator missed deliberate defect:\n"
+    },
+    {
+      "page": 83,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2683,
+      "first": "83\n'+defect)\nnegativeChecks.append({'question_id':qid,'defect':defect,'correctly_rejected':True,\n'er",
+      "last": "({'status':checks['status'],'fully_verified_with_live_Run':checks['fully_ve\nrified_with_live_Run'],\n"
+    },
+    {
+      "page": 84,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1866,
+      "first": "84\n'output':str(output),'size':record['size'],'sheets':record['sheets']},ensure_ascii=False,in\ndent=",
+      "last": "2.39432490000036,\n'end_time_convention': 'ceil(critical_event_s)+1: '\n'conservative post-crossing '\n"
+    },
+    {
+      "page": 85,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1752,
+      "first": "85\n'verification second; not claimed '\n'earliest integer second',\n'max_mass_balance_abs_kg_per_kg':\n",
+      "last": "23.1499999999999],\n[323.15, 323.15, 323.15, 323.15, 323.15]],\n'C': [[2.55, 2.55, 2.55, 2.55, 2.55],\n"
+    },
+    {
+      "page": 86,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1869,
+      "first": "86\n[2.549934098712396,\n2.5488838430623373,\n2.5255580144516143,\n2.3257039999977334,\n1.648617763296951",
+      "last": "ck',\n'interpretation': 'A conditional numerical event, not a '\n'confidence bound on physical drying\n"
+    },
+    {
+      "page": 87,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1630,
+      "first": "87\ntime.'},\n'reproduction_samples': {'times_s': [0.0,\n1800.0,\n10800.0,\n183926.16,\n183928.0],\n'materi",
+      "last": "rectory already exists; use a new run identifier.'\n}\n$startedUtc = [DateTime]::UtcNow.ToString('o')\n"
+    },
+    {
+      "page": 88,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1841,
+      "first": "88\n$timer = [Diagnostics.Stopwatch]::StartNew()\n$entryHash = (Get-FileHash -LiteralPath $entryPath -",
+      "last": "on_potential(c):\ncc = np.maximum(c, 1e-12)\nreturn cc * np.exp(-0.45 / cc) + 0.45 * expi(-0.45 / cc)\n"
+    },
+    {
+      "page": 89,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2152,
+      "first": "89\nclass AxisymmetricModel:\ndef __init__(self, nr=30, nz=30, end_faces=True):\nself.nr, self.nz = nr,",
+      "last": " - self.started > self.budget_s:\nraise TimeoutError(\"Axisymmetric per-run CPU/wall budget reached\")\n"
+    },
+    {
+      "page": 90,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2703,
+      "first": "90\nT, C = self.fields(state)\nrho, cp, k, _ = self.reference.properties(T, C)\ntair, ceq = self.refere",
+      "last": "))\nCC = C.reshape(*m.shape, -1)\naxial_spread = max(axial_spread, float(np.max(np.ptp(CC, axis=1))))\n"
+    },
+    {
+      "page": 91,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2666,
+      "first": "91\nevent_state = self.state([self.event_s if self.event_s is not None else self.end_s])[:,\n0]\n_, fin",
+      "last": "else radial.event_s/3600,\n\"axisymmetric_event_h\":None if run.event_s is None else run.event_s/3600,\n"
+    },
+    {
+      "page": 92,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2833,
+      "first": "92\n\"event_difference_h_2d_minus_1d\":delta_t,\n\"event_relative_difference\":None if delta_t is None els",
+      "last": "\nexcept Exception:\n(folder/\"failure.txt\").write_text(traceback.format_exc(),encoding=\"utf-8\")\nraise\n"
+    },
+    {
+      "page": 93,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1571,
+      "first": "93\nif __name__==\"__main__\":\nmain()\n9.2.13 compare_analytic.py\nfrom __future__ import annotations\nimp",
+      "last": "r[:,-1]))),\n'finite_values':bool(np.all(np.isfinite(actual)) and np.all(np.isfinite(reference))),\n}\n"
+    },
+    {
+      "page": 94,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2799,
+      "first": "94\ndef write_comparison_csv(path,times,radii,T,Tref,C,Cref):\nwith path.open('w',encoding='utf-8',new",
+      "last": "else 'constant-property heat and frozen-D linear moisture',\n'comparisons':{},'output_artifacts':[]}\n"
+    },
+    {
+      "page": 95,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2814,
+      "first": "95\nfor grid,ts,rs in\n[('paper',paper_times,paper_radii),('dense',dense_times,dense_radii)]:\nT,C=run.",
+      "last": "rror'],\n'dense_C_error':case['comparisons']['dense'].get('frozen_D_moisture',{}).get('max_abs_error\n"
+    },
+    {
+      "page": 96,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3158,
+      "first": "96\n')}),flush=True)\nheat=[c for c in case_results if c['case_id'].startswith('nonlinear_Q1')]\nwater=",
+      "last": "ages.',\n'primary_space_time_samples':{'paper_times_s':paper_times.tolist(),'paper_radii_m':paper_ra\n"
+    },
+    {
+      "page": 97,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2295,
+      "first": "97\ndii.tolist(),\n'dense_time_step_s':10.,'dense_time_range_s':[0.,1800.],\n'dense_radius_step_m':.001",
+      "last": "ha256(SOURCE.read_bytes()).hexdigest()\ndef utc_now():\nreturn datetime.now(timezone.utc).isoformat()\n"
+    },
+    {
+      "page": 98,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1660,
+      "first": "98\ndef sha256(path):\ndigest = hashlib.sha256()\nwith Path(path).open('rb') as stream:\nfor block in it",
+      "last": "h, value):\natomic_bytes(path, json_bytes(value))\ndef exclusive_json(path, value):\npath = Path(path)\n"
+    },
+    {
+      "page": 99,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2490,
+      "first": "99\npath.parent.mkdir(parents=True, exist_ok=True)\nwith path.open('xb') as stream:\nstream.write(json_",
+      "last": "artifact: ' + actual['path'])\nif expected.get('sha256') and actual['sha256'] != expected['sha256']:\n"
+    },
+    {
+      "page": 100,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2287,
+      "first": "100\nraise RuntimeError('Existing figure hash mismatch: ' + actual['path'])\nchecked[actual['path']] =",
+      "last": "es, manifest_name]\nprevious = {}\nbackup = directory / 'publication_previous'\nfor relative in paths:\n"
+    },
+    {
+      "page": 101,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2298,
+      "first": "101\ntarget = within(root, root / relative)\nprevious[relative] = target.read_bytes() if target.exists",
+      "last": "\n'rollback_errors': rollback_errors, 'prior_publication_restored': changed and not\nrollback_errors,\n"
+    },
+    {
+      "page": 102,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1822,
+      "first": "102\n'generated_at': utc_now()})\nraise\ndef measured_process(command, cwd, log_path):\nstarted = utc_no",
+      "last": "lse 15002.\nactive.add(id(self))\nevents.append('solve:' + name)\ndef fields(self, times, material_x):\n"
+    },
+    {
+      "page": 103,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3117,
+      "first": "103\nshape = (len(times), len(material_x))\nreturn np.full(shape, 310.), np.full(shape, .1499)\ndef clo",
+      "last": "r(p): sha256(p) if p.exists() else None for p in global_paths}\nassert global_after == global_before\n"
+    },
+    {
+      "page": 104,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2513,
+      "first": "104\nreturn ['entry_one_run_at_a_time_and_Q2_Q3_same_identity',\n'entry_closes_run_after_export_failur",
+      "last": "eneration': 'new'}}\nintended_bytes = json_bytes(updates['paper_output/results/model_results.json'])\n"
+    },
+    {
+      "page": 105,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2543,
+      "first": "105\nintended_record = {'path': 'paper_output/results/model_results.json', 'bytes':\nlen(intended_byte",
+      "last": "rom dataclasses import asdict\nfrom datetime import datetime, timezone\nimport hashlib\nimport inspect\n"
+    },
+    {
+      "page": 106,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2197,
+      "first": "106\nimport json\nimport os\nfrom pathlib import Path\nimport sys\nimport numpy as np\nROOT=Path(__file__)",
+      "last": ".append(_record(jac))\nfor rec in run.model.input_records:\nif _sha(ROOT/rec['path'])!=rec['sha256']:\n"
+    },
+    {
+      "page": 107,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2238,
+      "first": "107\nraise RuntimeError('Run input changed: '+rec['path'])\nrecords.append(rec)\nreturn {'kind':'live_R",
+      "last": "} kg/kg'\nif s.boundary_extension=='tail_mean':return '4 h 后环境按末1 h 观测均值延拓'\nreturn '4 h 后环境按最后观测值延拓'\n"
+    },
+    {
+      "page": 108,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2399,
+      "first": "108\ndef _profiles(run,qid,directory):\nsource=_run_source(run)\nif qid=='Q1':\nts=np.array([100.,300.,6",
+      "last": "l.w@state[1:-1:2]\nmax_C=np.max(state[1:-1:2],axis=0)\ndel state\nt_h=ts/3600;event_h=run.event_s/3600\n"
+    },
+    {
+      "page": 109,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2871,
+      "first": "109\ntitle=('第三问：固定半径下的全程水分迁移' if qid=='Q3' else '第四问：收缩域内的全程水分迁移')\nwith plt.rc_context(STYLE):\nfig,a",
+      "last": "ctory),_profiles(run23,'Q2',directory),\n_drying(run23,'Q3',directory),_drying(run4,'Q4',directory)]\n"
+    },
+    {
+      "page": 110,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2513,
+      "first": "110\ndef _saved_summary(path):\npath=Path(path).resolve()\ncontent=path.read_bytes()\nrec=_record(path)\n",
+      "last": "_paths:\npath=Path(path).resolve();content=path.read_bytes();data=json.loads(content);rec=_record(pa\n"
+    },
+    {
+      "page": 111,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2855,
+      "first": "111\nth)\nif hashlib.sha256(content).hexdigest()!=rec['sha256']:raise RuntimeError('Changing\nconvergen",
+      "last": "4'} if question_id=='Q4' else {'Q2','Q3','Q23'}\nif rows[0]['settings']['question'] not in expected:\n"
+    },
+    {
+      "page": 112,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2729,
+      "first": "112\nraise ValueError('Sensitivity figure label does not match the saved physical question')\nif len({",
+      "last": "f fixed.exists() and\nshrunk.exists():records.append(make_shrinkage_comparison(fixed,shrunk,output))\n"
+    },
+    {
+      "page": 113,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2632,
+      "first": "113\nreports=[ROOT/f'paper_output/results/convergence/{q}_K_analytic_J_v3/convergence_report.jso\nn' f",
+      "last": "3_T49', replace(base, tail_temperature_C=49.)),\n('Q23_T51', replace(base, tail_temperature_C=51.)),\n"
+    },
+    {
+      "page": 114,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2052,
+      "first": "114\n('Q23_eq045', replace(base, tail_equilibrium=.045)),\n('Q23_eq055', replace(base, tail_equilibriu",
+      "last": "rt traceback\nimport uuid\nimport warnings\nSOURCE = Path(__file__).resolve()\nROOT = SOURCE.parents[3]\n"
+    },
+    {
+      "page": 115,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2300,
+      "first": "115\nLOADED_CODE_SHA256 = hashlib.sha256(SOURCE.read_bytes()).hexdigest()\nimport production_provenanc",
+      "last": "alues()):\nfilename = getattr(module, '__file__', None)\nif filename:\npath = Path(filename).resolve()\n"
+    },
+    {
+      "page": 116,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2965,
+      "first": "116\nif path.is_relative_to(SOURCE.parent) and path.suffix == '.py':\npaths.add(path)\nreturn [provenan",
+      "last": "letime,\n'interpretation': interpretation}\nfor name, value, unit, interpretation, pointer in values]\n"
+    },
+    {
+      "page": 117,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2899,
+      "first": "117\nconclusion = {'question_id': qid, 'conclusion_text': result_text, 'status': 'computed',\n'support",
+      "last": "int('EXPORT ' + qid, flush=True)\nexport = exporter.export_question(run, qid, directory / 'outputs')\n"
+    },
+    {
+      "page": 118,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2668,
+      "first": "118\ncheck = exporter.validate_exports([export], runs={qid: run})\nif check.get('status') != 'PASS' or",
+      "last": "(metrics))\nprovenance.write_json(directory / 'export_validation.json', {'status': 'PASS', 'checks':\n"
+    },
+    {
+      "page": 119,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3110,
+      "first": "119\nexport_checks})\nmeta = {'schema_version': '1.0', 'generated_by': SOURCE.relative_to(ROOT).as_pos",
+      "last": "ec['path']] = rec\ntarget = {**rec, 'path': CONTRACT_TARGETS[name]}\nrecords[target['path']] = target\n"
+    },
+    {
+      "page": 120,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2994,
+      "first": "120\nfor figure in merged:\nfor rec in provenance.figure_artifact_records(figure):\nrecords[rec['path']",
+      "last": " args.review else\n'paper_output/results/production') / args.version\nif args.worker:\nif args.review:\n"
+    },
+    {
+      "page": 121,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2872,
+      "first": "121\nraise ValueError('--review uses a single process so Visual Studio can hit solver\nbreakpoints')\ns",
+      "last": "success['output_artifacts'])\nprovenance.write_json(directory / 'review_evidence_validation.json', {\n"
+    },
+    {
+      "page": 122,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2293,
+      "first": "122\n'status': 'COMPUTED_PENDING_GUI_OBSERVATION', 'input_files':\nstart['input_files'],\n'worker_succe",
+      "last": ".integrate import quad\nfrom scipy.optimize import brentq\nfrom scipy.special import j0, j1, jn_zeros\n"
+    },
+    {
+      "page": 123,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2171,
+      "first": "123\nFloatArray = NDArray[np.float64]\ndef _vector(value: ArrayLike, name: str) -> FloatArray:\na = np.",
+      "last": "y, knots: FloatArray, values: FloatArray,\nrates: FloatArray, initial_value: float,\n) -> FloatArray:\n"
+    },
+    {
+      "page": 124,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2248,
+      "first": "124\nz = (initial_value-values[0])*np.exp(-times[:, None]*rates[None, :])\nslopes = np.diff(values)/np",
+      "last": "ots, values)[:, None] + (history*a[None, :]) @ spatial\nresult[t == 0] = initial_value\nreturn result\n"
+    },
+    {
+      "page": 125,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1994,
+      "first": "125\ndef bessel_temperature(\ntimes_s: ArrayLike, radii_m: ArrayLike, env_t: ArrayLike,\nenv_T: ArrayLi",
+      "last": ":\nintegral = 0.\nfor lo,hi,gl,gh in zip(knots[:-1],knots[1:],boundary[:-1],boundary[1:]):\nif t > lo:\n"
+    },
+    {
+      "page": 126,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2583,
+      "first": "126\nslope = (gh-gl)/(hi-lo)\nintegral += quad(lambda s:\nslope*np.exp(-lam*(t-s)),lo,min(t,hi),epsabs=",
+      "last": "tal_validation\":True,\n\"visual_studio_gui\":\"pending\",\n\"human_review\":\"pending\",\n}\ndef main() -> int:\n"
+    },
+    {
+      "page": 127,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2751,
+      "first": "127\nparser=argparse.ArgumentParser(description=__doc__)\nparser.add_argument(\"--environment-csv\",defa",
+      "last": "json\"\nreport_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+\"\\n\",encoding=\"utf-8\"\n)\n"
+    },
+    {
+      "page": 128,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2184,
+      "first": "128\nprint(json.dumps({\"status\":report[\"status\"],\"checks\":report[\"checks\"],\"report\":str(report_p\nath)",
+      "last": "dial_count':len(points),\n'convention':'Only finite values at common physical points are compared.'}\n"
+    },
+    {
+      "page": 129,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2583,
+      "first": "129\ndef main():\nparser = argparse.ArgumentParser()\nparser.add_argument('--question', choices=['Q1','",
+      "last": "or_C.max()),\n'water_error_time_s':float(times[at[0]]),\n'water_error_radius_m':float(radii[at[1]])})\n"
+    },
+    {
+      "page": 130,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2106,
+      "first": "130\nsummary['analytic_comparison'] = analytic\nprint(json.dumps(analytic), flush=True)\nprevious = pro",
+      "last": ")\ntimes = np.r_[times,knots,np.nextafter(knots,-np.inf),np.nextafter(knots,np.inf)]\ndifference = 0.\n"
+    },
+    {
+      "page": 131,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2080,
+      "first": "131\nfor first in range(0,len(times),100):\ntt = times[first:first+100]\ndifference =\nmax(difference,fl",
+      "last": "venance as provenance\nBASELINE = {'rtol': 1e-10, 'atol_temperature': 1e-10, 'atol_moisture': 1e-12,\n"
+    },
+    {
+      "page": 132,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2638,
+      "first": "132\n'early_max_step_s': 2., 'max_step_s': 120.}\nTIGHT = {'rtol': 1e-11, 'atol_temperature': 1e-11, '",
+      "last": "Actual variant settings differ from the fixed-physics\ncontract')\nsummary = core.save_run(run, case)\n"
+    },
+    {
+      "page": 133,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2812,
+      "first": "133\npoints = np.linspace(0., .02, 21)\nprojection = checker.project_run(run, points, args.full_second",
+      "last": " not np.array_equal(points, archive['radii_m']):\nraise ValueError('Projection radius grids differ')\n"
+    },
+    {
+      "page": 134,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3196,
+      "first": "134\npoints = archive['radii_m'].copy()\nprojected.append({'times': archive['times_s'].copy(), 'T': ar",
+      "last": "ok=True)\ndirectory.mkdir(exist_ok=False)\nstarted, timer = provenance.utc_now(), time.perf_counter()\n"
+    },
+    {
+      "page": 135,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2992,
+      "first": "135\nlaunch = {'created_at': started, 'parent_pid': os.getpid(), 'token': uuid.uuid4().hex,\n'configur",
+      "last": "ance.utc_now(),\n'wall_seconds': time.perf_counter() - timer, 'observed_processes': observed})\nraise\n"
+    },
+    {
+      "page": 136,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1675,
+      "first": "136\nif __name__ == '__main__':\ntry:\nraise SystemExit(main())\nexcept Exception:\ntraceback.print_exc()",
+      "last": ")),\n})\nreport = {\n\"purpose\": (\"separate a solver error from a point-versus-control-volume-average \"\n"
+    },
+    {
+      "page": 137,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2047,
+      "first": "137\n\"comparison artifact in the Q1 analytic benchmark\"),\n\"levels\": list(LEVELS),\n\"rows\": rows,\n\"inte",
+      "last": "nd\": (\"increasing\" if z > Z95 else \"decreasing\" if z < -Z95 else \"no trend\")}\ndef sequential_mk(x):\n"
+    },
+    {
+      "page": 138,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1738,
+      "first": "138\nx = np.asarray(x, dtype=float)\nn = x.size\ndef forward(series):\nout = np.zeros(n)\nsk = 0.0\nfor k ",
+      "last": "(x * x)))\nprev = np.full(n + 1, np.inf)\nprev[0] = 0.0\nback = np.zeros((maxK + 1, n + 1), dtype=int)\n"
+    },
+    {
+      "page": 139,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1884,
+      "first": "139\ncosts = [0.0]\nfor k in range(1, maxK + 1):\ncur = np.full(n + 1, np.inf)\nfor j in range(1, n + 1)",
+      "last": ":\nreturn {\"hurst\": None, \"note\": \"series too short\"}\nlogs, logrs = [], []\nfor s in sizes:\nvals = []\n"
+    },
+    {
+      "page": 140,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1888,
+      "first": "140\nfor w in range(n // s):\nseg = x[w * s:(w + 1) * s]\ny = np.cumsum(seg - seg.mean())\nsd = seg.std(",
+      "last": "s = q23[\"times_s\"]\nT_center = q23[\"T_K\"][:, 0]\nT_surface = q23[\"T_K\"][:, -1]\nmean_c = q23[\"mean_C\"]\n"
+    },
+    {
+      "page": 141,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2725,
+      "first": "141\nt_env = env[\"time_s\"]\ntargets = {\n\"T1_chamber_plateau_onset\": analyse(\n\"chamber temperature\", en",
+      "last": "][1][\"boundaryIndices\"]],\n\"relative_threshold_95pct_hours\": r95 / 3600.0,\n},\n\"T3_preheating_end\": {\n"
+    },
+    {
+      "page": 142,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2501,
+      "first": "142\n\"brokenStick_center_hours\": bs_hours(\"T3_preheating_end_center\", t_s),\n\"brokenStick_surface_hour",
+      "last": " 8))\nax.legend(fontsize=8)\nax.grid(alpha=.25)\nax = axes[2]\nvalues = boundaries[\"T3_preheating_end\"]\n"
+    },
+    {
+      "page": 143,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2523,
+      "first": "143\nlabels = [\"两段\\n 折线\", \"M–K\\n 突变\", \"Fisher\\nk=2\", \"95%\\n 阈值\"]\ncenter = [values[\"brokenStick_center",
+      "last": "g(FIG / \"fig_series_mutation_tests.pdf\")\nplt.close(fig)\nif __name__ == \"__main__\":\nsys.exit(main())\n"
+    },
+    {
+      "page": 144,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1490,
+      "first": "144\n9.2.24 crossvalidate_solver.py\nfrom __future__ import annotations\nimport json\nimport os\nimport p",
+      "last": " {\"case\": name, \"settings\": {k: v for k, v in settings.__dict__.items()},\n\"startedAtUtc\": utcnow()}\n"
+    },
+    {
+      "page": 145,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1707,
+      "first": "145\nrun = None\ntry:\nrun = solve_case(settings)\ndiagnostic = run.diagnostics()\nrecord[\"diagnostics\"] ",
+      "last": "eme)\ncases.append((f\"B2_Q4_{scheme}_N{intervals}\", settings))\nreturn cases\ndef block3():\ncases = []\n"
+    },
+    {
+      "page": 146,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2017,
+      "first": "146\nfor question, shrink in ((\"Q23\", False), (\"Q4\", True)):\nfor fraction in (0.0, 0.25, 0.5, 1.0):\ns",
+      "last": "hlib\nimport sys\nimport time\nfrom dataclasses import replace\nfrom datetime import datetime, timezone\n"
+    },
+    {
+      "page": 147,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2096,
+      "first": "147\nROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")\nos.environ.setdefault(\"OPENBLAS_NUM_THREADS\",",
+      "last": "= time.perf_counter()\nrun = core.solve_case(settings)\ntry:\nmodel = run.model\nend = float(run.end_s)\n"
+    },
+    {
+      "page": 148,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2294,
+      "first": "148\ntimes = np.linspace(0.0, end, sampleCount)\nstates = run.state(times)\nrate = rateIdentity(model, ",
+      "last": "e_abs_kg_per_kg\"],\n})\nfinally:\nrun.close()\nrecord[\"elapsedSeconds\"] = time.perf_counter() - started\n"
+    },
+    {
+      "page": 149,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2152,
+      "first": "149\nprint(json.dumps({k: record[k] for k in\n(\"question\", \"intervals\", \"rateIdentityMaxRelativeDeviat",
+      "last": "6 energy_balance_diagnose.py\nfrom __future__ import annotations\nimport os\nimport pathlib\nimport sys\n"
+    },
+    {
+      "page": 150,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1918,
+      "first": "150\nROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")\nos.environ.setdefault(\"OPENBLAS_NUM_THREADS\",",
+      "last": "\":\nsys.exit(main())\n9.2.27 energy_balance_diagnose2.py\nfrom __future__ import annotations\nimport os\n"
+    },
+    {
+      "page": 151,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2184,
+      "first": "151\nimport pathlib\nimport sys\nROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")\nos.environ.setdefau",
+      "last": ").sum() * radius_0 ** 2)\nprint(\"\nquadrature %7d: stored(end)-stored(0)=%+.6e\nE=%+.6e\nresidual=%+.6e\n"
+    },
+    {
+      "page": 152,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1460,
+      "first": "152\n(%.2e rel)\"\n% (count, stored_end - stored_0, cumulative,\n(stored_end - stored_0) - cumulative,\na",
+      "last": "oisture_kg_per_kg\"]\npv = P_ATM * Y / (KAPPA + Y)\nrh = pv / pSat(T - 273.15)\nkeep = t >= tail_from_s\n"
+    },
+    {
+      "page": 153,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1866,
+      "first": "153\nreturn {\"plateauMeanRH\": float(rh[keep].mean()),\n\"plateauMinRH\": float(rh[keep].min()),\n\"plateau",
+      "last": "(C[-1], self.shapeP, self.awRef))\nwater_g[-1] = -self.settings.beta * radius * kEff * (C[-1] - ceq)\n"
+    },
+    {
+      "page": 154,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2366,
+      "first": "154\nheat_g[-1] = -self.settings.h * radius * (T[-1] - tair)\nif self.latentFraction:\nrho_d = self.rho",
+      "last": "atent}\nif horizon_h is not None:\nkwargs[\"horizon_h\"] = horizon_h\nsettings = core.Settings(**kwargs)\n"
+    },
+    {
+      "page": 155,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2173,
+      "first": "155\nrecord = {\"scenario\": name, \"question\": question, \"shrink\": shrink,\n\"intervals\": intervals, \"iso",
+      "last": " * 3600.0)\nendpoints = [0.0, min(14400.0, horizon)]\nif horizon > 14400.0:\nendpoints.append(horizon)\n"
+    },
+    {
+      "page": 156,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2009,
+      "first": "156\ndef stepFor(left):\nreturn settings.early_max_step_s if left < 14400.0 else settings.max_step_s\ns",
+      "last": "berPlateauRH\": chamber[\"plateauMeanRH\"],\n\"isothermAtCref\": float(waterActivity(C_REF, 1.0, awRef)),\n"
+    },
+    {
+      "page": 157,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2417,
+      "first": "157\n\"absoluteDifference\": float(abs(waterActivity(C_REF, 1.0, awRef) - awRef)),\n\"note\": (\"a_w(C_eq) ",
+      "last": "0 if \"--long-horizon\" in sys.argv else None\nscenarios = []\nselected = None\nfor arg in sys.argv[1:]:\n"
+    },
+    {
+      "page": 158,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2456,
+      "first": "158\nif arg.startswith(\"--p=\"):\nselected = [float(v) for v in arg.split(\"=\", 1)[1].split(\",\")]\nshapeP",
+      "last": "ling\"))\nsys.path.insert(0, str(ROOT / \"paper_output\" / \"code\" / \"verification\"))\nimport numpy as np\n"
+    },
+    {
+      "page": 159,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1742,
+      "first": "159\nimport drying_core as core\nimport isotherm_activity_closure as iso\ndef describe(model, label, st",
+      "last": "re__ import annotations\nimport json\nimport os\nimport pathlib\nimport sys\nimport time\nimport warnings\n"
+    },
+    {
+      "page": 160,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2358,
+      "first": "160\nROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")\nos.environ.setdefault(\"OPENBLAS_NUM_THREADS\",",
+      "last": "cord[\"error\"] = f\"{type(error).__name__}: {error}\"\nrecord[\"numJacCalls\"] = calls[\"numJac\"]\nfinally:\n"
+    },
+    {
+      "page": 161,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1662,
+      "first": "161\ncore.RadialModel, common.num_jac = originalModel, originalNumJac\nif run is not None:\nrun.close()",
+      "last": "k, fraction, intervals):\nsettings = Settings(question=question, intervals=intervals, shrink=shrink,\n"
+    },
+    {
+      "page": 162,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2426,
+      "first": "162\nrtol=1e-10, atol_temperature=1e-10, atol_moisture=1e-12,\nearly_max_step_s=2.0, max_step_s=120.0,",
+      "last": "mary = {\"intervals\": intervals, \"fractions\": list(FRACTIONS),\n\"records\": records, \"generatedAtUtc\":\n"
+    },
+    {
+      "page": 163,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2107,
+      "first": "163\n__import__(\"datetime\").datetime.now(\n__import__(\"datetime\").timezone.utc).isoformat()}\n(OUT / \"l",
+      "last": "me__ == \"__main__\":\nsys.exit(main())\n9.2.32 method_comparison.py\nfrom __future__ import annotations\n"
+    },
+    {
+      "page": 164,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1651,
+      "first": "164\nimport json\nimport os\nimport pathlib\nimport sys\nimport time\nfrom dataclasses import replace\nfrom",
+      "last": "dialModel = FluxModel\nstarted = time.perf_counter()\nrun = None\ntry:\nrun = core.solve_case(settings)\n"
+    },
+    {
+      "page": 165,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2377,
+      "first": "165\nT, C = run.fields(TIMES_S, radii_m=RADII_M)\nrecord = {\"scheme\": scheme, \"intervals\": intervals, ",
+      "last": "False), flush=True)\nconstantRows = [r for r in records if r[\"kind\"] == \"constant\"]\nlimitChecks = []\n"
+    },
+    {
+      "page": 166,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1976,
+      "first": "166\nfor n in levels:\na = next(r for r in constantRows if r[\"intervals\"] == n and r[\"scheme\"] == \"kir",
+      "last": " as np\nimport drying_core\nfrom drying_core import RadialModel, Settings, solve_case\nimport q3_model\n"
+    },
+    {
+      "page": 167,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1897,
+      "first": "167\nOUT = ROOT / \"paper_output\" / \"results\" / \"crossvalidation\" / \"sensitivity_v1\"\nINTERVALS = 200\nS",
+      "last": "+ unitPoint[name] * (high - low)\nSCALES[\"d\"] = values[\"dScale\"]\nSCALES[\"k\"] = values[\"kScale\"]\ntry:\n"
+    },
+    {
+      "page": 168,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1804,
+      "first": "168\nrun = solve_case(settings_for(question, values))\nexcept Exception as error:\nFAILURES.append({\"qu",
+      "last": "ate(question, nxt)\neffects[name].append((y1 - y0) / delta)\npoint, y0 = nxt, y1\nif (t + 1) % 5 == 0:\n"
+    },
+    {
+      "page": 169,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2529,
+      "first": "169\nprint(f\"\nmorris {question} trajectory {t+1}/{trajectories} \"\nf\"({time.perf_counter()-started:.0f",
+      "last": "t((r[\"eventH\"] for r in rows\nif r[\"question\"] == question and abs(r[\"value\"] - 1.0) < 1e-12), None)\n"
+    },
+    {
+      "page": 170,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1927,
+      "first": "170\nbyQ[question] = {\"minH\": lo, \"maxH\": hi, \"spanH\": hi - lo,\n\"baselineH\": base,\n\"relativeSpanPerce",
+      "last": ":\ncandidate.mkdir(parents=False)\nreturn str(candidate)\nraise FileExistsError(\"no unused temp name\")\n"
+    },
+    {
+      "page": 171,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2104,
+      "first": "171\ntempfile.mkdtemp = _mkdtemp\nos.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\")\nos.chdir(ROOT)\nsy",
+      "last": "se(replace(base, question=question, shrink=shrink))\ntry:\nt_event = float(run.event_s)\ndef max_c(t):\n"
+    },
+    {
+      "page": 172,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1975,
+      "first": "172\nstate = run.state([t])\nreturn float(np.max(state[1:-1:2, 0]))\nlo, hi = t_event - 3600.0, t_event",
+      "last": "nts=True, exist_ok=True)\nresult = {\"scalingCheck\": scaling_check()}\nif \"--with-solver\" in sys.argv:\n"
+    },
+    {
+      "page": 173,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2601,
+      "first": "173\nresult[\"thresholdChecks\"] = solver_checks()\n(OUT / \"threshold_and_scaling_checks.json\").write_te",
+      "last": "'environmentSwitchSec', 14400, ...\n'tailTemperatureK', 323.15, 'tailEquilibriumMoisture', 0.05, ...\n"
+    },
+    {
+      "page": 174,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2832,
+      "first": "174\n'solver', 'ode15s_default_NDF', 'jacobianMode', 'JPattern_finite_difference', ...\n'waterFaceSche",
+      "last": "dentifier, ...\n'message', runError.message, 'report', getReport(runError, 'extended', 'hyperlinks',\n"
+    },
+    {
+      "page": 175,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2432,
+      "first": "175\n'off'));\nwriteJson(summaryPath, runSummary);\nlogLine(logFileId, 'FAILED %s\\n%s', runSummary.fini",
+      "last": "Event\neventSec = segment.xe(end);\ninitialState = segment.ye(:, end);\ntailEndSec = ceil(eventSec)+1;\n"
+    },
+    {
+      "page": 176,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2962,
+      "first": "176\ntailOptions = odeset(baseOptions, 'MaxStep', 1, 'Events', []);\nlastwarn('');\ntail = ode15s(@bala",
+      "last": "ssResidual)));\ndiagnostic.maxRadialMoistureIncrease = max(diagnostic.maxRadialMoistureIncrease, ...\n"
+    },
+    {
+      "page": 177,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2954,
+      "first": "177\nmax(diff(acceptedMoisture, 1, 1), [], 'all'));\ndiagnostic.acceptedTimePoints =\ndiagnostic.accept",
+      "last": "usionPrefactor = 2.4e-3;\nthermalFactor = exp(-3850./((temperature(1:end-1)+temperature(2:end))/2));\n"
+    },
+    {
+      "page": 178,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2415,
+      "first": "178\nend\npositiveMoisture = max(waterContent, settings.coefficientFloor);\nkirchhoffPotential = positi",
+      "last": ", warningId, 'message', warningText, ...\n'segmentStartSec', leftSec, 'segmentTargetSec', rightSec);\n"
+    },
+    {
+      "page": 179,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2093,
+      "first": "179\nlogLine(logFileId, 'WARNING %s [%s] %s', caseName, warningId, warningText);\nend\nend\nend\nfunction",
+      "last": "reak;\nend\nend\nif ~foundPiece\nerror('CrossCheck:DenseDomain', '请求的时刻%.17g 不在已积分分段内。', queryTimeSec);\n"
+    },
+    {
+      "page": 180,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2615,
+      "first": "180\nend\nend\nend\nfunction sampleTable = makeSampleTable(caseResult)\nsampleCount = numel(caseResult.sa",
+      "last": "eBytes = fread(fileId, Inf, '*uint8');\ndigest = java.security.MessageDigest.getInstance('SHA-256');\n"
+    },
+    {
+      "page": 181,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 2192,
+      "first": "181\ndigest.update(typecast(fileBytes, 'int8'));\ndigestBytes = typecast(digest.digest(), 'uint8');\nha",
+      "last": "')); }\nfunction writeJson(filePath, value) { fs.writeFileSync(filePath, JSON.stringify(value, null,\n"
+    },
+    {
+      "page": 182,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3252,
+      "first": "182\n2) + '\\n', 'utf8'); }\nfunction assert(condition, message) { if (!condition) throw new Error(mess",
+      "last": "settingsPairs) {\nassert(python.settings[pythonKey] === matlabRun.settings[matlabKey], `${question}:\n"
+    },
+    {
+      "page": 183,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3130,
+      "first": "183\n${pythonKey} differs`);\n}\nassert(python.settings.faceScheme.toLowerCase() ===\nmatlabRun.settings",
+      "last": ".push({ question, status: failures.some(item => item.startsWith(question + '/')) ?\n'FAIL' : 'PASS',\n"
+    },
+    {
+      "page": 184,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 3201,
+      "first": "184\nintervals: 40, commonTimesSec: times, commonMaterialX: coordinates,\nmatchedCoordinatePairs: pair",
+      "last": ": 8 * 1024 * 1024 });\nconst supervision = { supervisorStartedAtUtc, supervisorFinishedAtUtc: now(),\n"
+    },
+    {
+      "page": 185,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 1802,
+      "first": "185\nexecutable: process.execPath, commandArguments: [scriptPath, '--worker'], cwd: projectRoot,\nwork",
+      "last": ": item.event.absoluteDifferenceSec ?? null })) }) + '\\n');\nprocess.exitCode = worker.status ?? 2;\n}\n"
+    },
+    {
+      "page": 186,
+      "rect": [
+        0.0,
+        0.0,
+        595.3200073242188,
+        841.9200439453125
+      ],
+      "chars": 690,
+      "first": "186\n9.3 AI 使用报告\n本次建模过程中，使用Deepseek Harness 与Deepseek v4.1 flash 组合辅助检查源\n代码语法并进行部分程序调试；使用Codex 与GPT6-",
+      "last": "应关系，检查温度、含水率和干燥时间等结果的单位、变化趋势与表达是否一\n致。公式整理主要包括梳理推导步骤、统一符号写法、检查公式之间的衔接，以及整理\n公式与变量说明的对应关系，使数学表达更清楚、连贯。\n"
+    }
+  ]
+}

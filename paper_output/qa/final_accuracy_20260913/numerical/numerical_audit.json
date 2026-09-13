@@ -1,0 +1,1669 @@
+{
+  "audit_time_local": "2026-09-13T16:21:43.113439",
+  "inputs": [
+    {
+      "path": "药材热湿耦合模型与干燥时间计算_附录修订版.docx",
+      "sha256": "7eb8e9ef50e1645baddbf968e4cdd5e5fb48d9914119cc6a07101f4b45e7c757",
+      "bytes": 1447199,
+      "mtime": "2026-09-13T15:56:21.276516"
+    },
+    {
+      "path": "论文.pdf",
+      "sha256": "2bb7c6b3fff1151318a46d7a8884e4ad0ec99c202a5faf1ceaf24e893cea347b",
+      "bytes": 2549114,
+      "mtime": "2026-09-13T16:09:00.284345"
+    }
+  ],
+  "pdf_pages": 186,
+  "seven_result_tables": [
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_moisture.csv",
+      "sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "frozen_sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "frozen_equal": true,
+      "data_cells": 42,
+      "docx_table_indices": [
+        2
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "100.0000",
+            "2.5500",
+            "2.5500",
+            "2.5500",
+            "2.5500",
+            "2.2470"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "300.0000",
+            "2.5500",
+            "2.5500",
+            "2.5500",
+            "2.5492",
+            "2.0508"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "600.0000",
+            "2.5500",
+            "2.5500",
+            "2.5500",
+            "2.5353",
+            "1.8770"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "900.0000",
+            "2.5500",
+            "2.5500",
+            "2.5497",
+            "2.5045",
+            "1.7547"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "1200.0000",
+            "2.5500",
+            "2.5500",
+            "2.5482",
+            "2.4646",
+            "1.6586"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "1500.0000",
+            "2.5500",
+            "2.5499",
+            "2.5445",
+            "2.4206",
+            "1.5787"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "1800.0000",
+            "2.5500",
+            "2.5497",
+            "2.5383",
+            "2.3755",
+            "1.5102"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_temperature.csv",
+      "sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "frozen_sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "frozen_equal": true,
+      "data_cells": 42,
+      "docx_table_indices": [
+        1
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "100.0000",
+            "28.0001",
+            "28.0003",
+            "28.0040",
+            "28.0327",
+            "28.1801"
+          ],
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "row": [
+            "300.0000",
+            "28.0408",
+            "28.0635",
+            "28.1514",
+            "28.3681",
+            "28.8489"
+          ],
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "row": [
+            "600.0000",
+            "28.4533",
+            "28.5360",
+            "28.8039",
+            "29.3159",
+            "30.1652"
+          ],
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "row": [
+            "900.0000",
+            "29.3243",
+            "29.4583",
+            "29.8755",
+            "30.6161",
+            "31.7304"
+          ],
+          "pdf_pages": [
+            7
+          ]
+        },
+        {
+          "row": [
+            "1200.0000",
+            "30.5427",
+            "30.7098",
+            "31.2223",
+            "32.1126",
+            "33.4276"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "1500.0000",
+            "31.9957",
+            "32.1867",
+            "32.7660",
+            "33.7463",
+            "35.1203"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        },
+        {
+          "row": [
+            "1800.0000",
+            "33.5753",
+            "33.7720",
+            "34.3642",
+            "35.3621",
+            "36.7856"
+          ],
+          "pdf_pages": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_moisture.csv",
+      "sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "frozen_sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "frozen_equal": true,
+      "data_cells": 36,
+      "docx_table_indices": [
+        4
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "0.5000",
+            "2.5499",
+            "2.5489",
+            "2.5256",
+            "2.3257",
+            "1.6486"
+          ],
+          "pdf_pages": [
+            12
+          ]
+        },
+        {
+          "row": [
+            "1.0000",
+            "2.5257",
+            "2.4948",
+            "2.3578",
+            "2.0230",
+            "1.4711"
+          ],
+          "pdf_pages": [
+            12
+          ]
+        },
+        {
+          "row": [
+            "1.5000",
+            "2.3861",
+            "2.3256",
+            "2.1344",
+            "1.8020",
+            "1.3476"
+          ],
+          "pdf_pages": [
+            12
+          ]
+        },
+        {
+          "row": [
+            "2.0000",
+            "2.1709",
+            "2.1084",
+            "1.9236",
+            "1.6259",
+            "1.2311"
+          ],
+          "pdf_pages": [
+            12
+          ]
+        },
+        {
+          "row": [
+            "2.5000",
+            "1.9566",
+            "1.9006",
+            "1.7360",
+            "1.4720",
+            "1.1166"
+          ],
+          "pdf_pages": [
+            12
+          ]
+        },
+        {
+          "row": [
+            "3.0000",
+            "1.7662",
+            "1.7165",
+            "1.5702",
+            "1.3333",
+            "1.0081"
+          ],
+          "pdf_pages": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_temperature.csv",
+      "sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "frozen_sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "frozen_equal": true,
+      "data_cells": 36,
+      "docx_table_indices": [
+        3
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "0.5000",
+            "32.1892",
+            "32.3821",
+            "32.9659",
+            "33.9608",
+            "35.4130"
+          ],
+          "pdf_pages": [
+            11
+          ]
+        },
+        {
+          "row": [
+            "1.0000",
+            "40.3816",
+            "40.5536",
+            "41.0605",
+            "41.8782",
+            "42.9976"
+          ],
+          "pdf_pages": [
+            11
+          ]
+        },
+        {
+          "row": [
+            "1.5000",
+            "45.8468",
+            "45.9348",
+            "46.1930",
+            "46.6051",
+            "47.1401"
+          ],
+          "pdf_pages": [
+            11
+          ]
+        },
+        {
+          "row": [
+            "2.0000",
+            "48.4502",
+            "48.4881",
+            "48.5984",
+            "48.7736",
+            "49.0033"
+          ],
+          "pdf_pages": [
+            11
+          ]
+        },
+        {
+          "row": [
+            "2.5000",
+            "49.4670",
+            "49.4792",
+            "49.5136",
+            "49.5653",
+            "49.6609"
+          ],
+          "pdf_pages": [
+            11
+          ]
+        },
+        {
+          "row": [
+            "3.0000",
+            "49.8495",
+            "49.8553",
+            "49.8746",
+            "49.9101",
+            "49.9664"
+          ],
+          "pdf_pages": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q3_paper_moisture.csv",
+      "sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "frozen_sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "frozen_equal": true,
+      "data_cells": 60,
+      "docx_table_indices": [
+        5
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "6.0000",
+            "1.0170",
+            "0.9881",
+            "0.9015",
+            "0.7550",
+            "0.5328"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "12.0000",
+            "0.4561",
+            "0.4432",
+            "0.4031",
+            "0.3297",
+            "0.1642"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "18.0000",
+            "0.2988",
+            "0.2915",
+            "0.2687",
+            "0.2253",
+            "0.0845"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "24.0000",
+            "0.2378",
+            "0.2327",
+            "0.2167",
+            "0.1855",
+            "0.0665"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "30.0000",
+            "0.2058",
+            "0.2018",
+            "0.1892",
+            "0.1641",
+            "0.0598"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "36.0000",
+            "0.1859",
+            "0.1825",
+            "0.1718",
+            "0.1504",
+            "0.0566"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "42.0000",
+            "0.1721",
+            "0.1691",
+            "0.1597",
+            "0.1407",
+            "0.0549"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "48.0000",
+            "0.1618",
+            "0.1592",
+            "0.1507",
+            "0.1334",
+            "0.0537"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "54.0000",
+            "0.1539",
+            "0.1514",
+            "0.1436",
+            "0.1277",
+            "0.0530"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        },
+        {
+          "row": [
+            "57.4724",
+            "0.1500",
+            "0.1477",
+            "0.1402",
+            "0.1249",
+            "0.0527"
+          ],
+          "pdf_pages": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_moisture.csv",
+      "sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "frozen_sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "frozen_equal": true,
+      "data_cells": 63,
+      "docx_table_indices": [
+        6
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "6.0000",
+            "1.7196",
+            "1.5377",
+            "1.0226",
+            "",
+            "",
+            "0.4207"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "12.0000",
+            "0.7377",
+            "0.6546",
+            "0.4083",
+            "",
+            "",
+            "0.1670"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "18.0000",
+            "0.4087",
+            "0.3686",
+            "0.2397",
+            "",
+            "",
+            "0.0892"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "24.0000",
+            "0.2851",
+            "0.2611",
+            "0.1790",
+            "",
+            "",
+            "0.0673"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "30.0000",
+            "0.2263",
+            "0.2094",
+            "0.1493",
+            "",
+            "",
+            "0.0595"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "36.0000",
+            "0.1928",
+            "0.1797",
+            "0.1317",
+            "",
+            "",
+            "0.0560"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "42.0000",
+            "0.1712",
+            "0.1604",
+            "0.1200",
+            "",
+            "",
+            "0.0541"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "48.0000",
+            "0.1561",
+            "0.1468",
+            "0.1116",
+            "",
+            "",
+            "0.0530"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "51.0906",
+            "0.1500",
+            "0.1413",
+            "0.1081",
+            "",
+            "",
+            "0.0526"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "csv": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_radius.csv",
+      "sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "frozen_sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "frozen_equal": true,
+      "data_cells": 18,
+      "docx_table_indices": [
+        7
+      ],
+      "pdf_numeric_rows": [
+        {
+          "row": [
+            "6.0000",
+            "1.3740"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "12.0000",
+            "1.2480"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "18.0000",
+            "1.2140"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "24.0000",
+            "1.2040"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "30.0000",
+            "1.2010"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "36.0000",
+            "1.2000"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "42.0000",
+            "1.2000"
+          ],
+          "pdf_pages": [
+            17
+          ]
+        },
+        {
+          "row": [
+            "48.0000",
+            "1.2000"
+          ],
+          "pdf_pages": [
+            18
+          ]
+        },
+        {
+          "row": [
+            "51.0906",
+            "1.2000"
+          ],
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    }
+  ],
+  "all_297_docx_cells_equal": true,
+  "all_seven_csv_equal_frozen": true,
+  "all_pdf_table_rows_found": true,
+  "four_workbooks": [
+    {
+      "path": "支撑材料\\04_结果表格\\result1.xlsx",
+      "sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4",
+      "frozen_equal": true,
+      "frozen_sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4"
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result2.xlsx",
+      "sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336",
+      "frozen_equal": true,
+      "frozen_sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336"
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result3.xlsx",
+      "sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e",
+      "frozen_equal": true,
+      "frozen_sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e"
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result4.xlsx",
+      "sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f",
+      "frozen_equal": true,
+      "frozen_sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f"
+    }
+  ],
+  "appendix_sources": [
+    {
+      "source": "支撑材料\\03_程序代码\\runDelivery.py",
+      "heading": "9.2.1 runDelivery.py",
+      "source_lines": 236,
+      "sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\q1Model.py",
+      "heading": "9.2.2 q1Model.py",
+      "source_lines": 7,
+      "sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\q2Model.py",
+      "heading": "9.2.3 q2Model.py",
+      "source_lines": 7,
+      "sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\q3Model.py",
+      "heading": "9.2.4 q3Model.py",
+      "source_lines": 27,
+      "sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\q4Model.py",
+      "heading": "9.2.5 q4Model.py",
+      "source_lines": 7,
+      "sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\dryingCore.py",
+      "heading": "9.2.6 dryingCore.py",
+      "source_lines": 407,
+      "sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\analyticJacobian.py",
+      "heading": "9.2.7 analyticJacobian.py",
+      "source_lines": 315,
+      "sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\diskDense.py",
+      "heading": "9.2.8 diskDense.py",
+      "source_lines": 114,
+      "sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\exportOutputs.py",
+      "heading": "9.2.9 exportOutputs.py",
+      "source_lines": 720,
+      "sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\reference\\reference_data.py",
+      "heading": "9.2.10 reference_data.py",
+      "source_lines": 216,
+      "sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\03_程序代码\\runLogged.ps1",
+      "heading": "9.2.11 runLogged.ps1",
+      "source_lines": 40,
+      "sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\axisymmetric_check.py",
+      "heading": "9.2.12 axisymmetric_check.py",
+      "source_lines": 283,
+      "sha256": "666db958b1c300db3adc207e8069347540af1f75e41c4d984b255004d85105e9",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\compare_analytic.py",
+      "heading": "9.2.13 compare_analytic.py",
+      "source_lines": 234,
+      "sha256": "18dbb8ede83416eeb7d5d08b9a5d14131937f22c4d44ffe304a5b36180364f8a",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\production_provenance.py",
+      "heading": "9.2.14 production_provenance.py",
+      "source_lines": 485,
+      "sha256": "4d0a9081eabbc9b0ac729dda22d8f626dc3411910b37124ce053b51029d4ec8d",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\publication_plots.py",
+      "heading": "9.2.15 publication_plots.py",
+      "source_lines": 395,
+      "sha256": "dac6c1197faf496c6b09cab833e510a092ca615e2d9b2df4d49165a521d2a944",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\run_experiments.py",
+      "heading": "9.2.16 run_experiments.py",
+      "source_lines": 73,
+      "sha256": "51a5747e45ee8098fa1cb36b6b2388bcb0e10ff11da9cc2b7b33baa9491f7e92",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\run_modeling.py",
+      "heading": "9.2.17 run_modeling.py",
+      "source_lines": 439,
+      "sha256": "eab2be6bd8fd5b64823b2a6aafe5c7b4439e90ad782d4defe8d9b2d911a69963",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\validate_bessel.py",
+      "heading": "9.2.18 validate_bessel.py",
+      "source_lines": 319,
+      "sha256": "5177cf016621b9f1cc6e705af7674408a72e12b0bfed7f6a3609c80b79ea4064",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\verify_convergence.py",
+      "heading": "9.2.19 verify_convergence.py",
+      "source_lines": 126,
+      "sha256": "e5aab92348b3981fb681ce6c55b50a509925b87d73ba28ea2761778998f69561",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\verify_dense_storage.py",
+      "heading": "9.2.20 verify_dense_storage.py",
+      "source_lines": 68,
+      "sha256": "e0bd4eef08a8cbab3a76f87e0e8b5d846fa625532213845a9c7117a26cce6d08",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\modeling\\verify_time_accuracy.py",
+      "heading": "9.2.21 verify_time_accuracy.py",
+      "source_lines": 244,
+      "sha256": "5ff48fc996e69016aca8b60f54b38d542bc4fe7ecdc9b9cffd733b91313cfb19",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\analytic_metric_check.py",
+      "heading": "9.2.22 analytic_metric_check.py",
+      "source_lines": 76,
+      "sha256": "a1f193c0d18ad707f8301a06df083b5cf7b6d810de44b49de4cabdf3d086d394",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\crossvalidate_series.py",
+      "heading": "9.2.23 crossvalidate_series.py",
+      "source_lines": 404,
+      "sha256": "870c3d2fc2af4a223441ba588a7383e1a87185bfc876bb229676b16092affb73",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\crossvalidate_solver.py",
+      "heading": "9.2.24 crossvalidate_solver.py",
+      "source_lines": 174,
+      "sha256": "103f88dc6a07b2bf1d38ba954bad09ecd540d364ca05177f73e1307f4baf764a",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\energy_balance_check.py",
+      "heading": "9.2.25 energy_balance_check.py",
+      "source_lines": 190,
+      "sha256": "9f5be13254369b4400585f64e846ffefb3e9a0c3ff530f63afc662d13c8c4e9a",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\energy_balance_diagnose.py",
+      "heading": "9.2.26 energy_balance_diagnose.py",
+      "source_lines": 61,
+      "sha256": "9e2ccf793b50ba8cacb23632616bf6ce10bc4ad230ce2b4a4e61cb4f6d5ce298",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\energy_balance_diagnose2.py",
+      "heading": "9.2.27 energy_balance_diagnose2.py",
+      "source_lines": 74,
+      "sha256": "5c0d49f5a215e81c41b33368a6e3e41daff2dbcdde98ff89ac3f6f57a6201556",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\isotherm_activity_closure.py",
+      "heading": "9.2.28 isotherm_activity_closure.py",
+      "source_lines": 404,
+      "sha256": "0dcf39af6938c0e28bb7ff927fa38c6793798582b5d35cabe3ff988ba07881ec",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\isotherm_diagnose.py",
+      "heading": "9.2.29 isotherm_diagnose.py",
+      "source_lines": 66,
+      "sha256": "2d535c6102130600251586aeb8c1bcd3bee9a0edbb9490c5559b070acff1a602",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\isotherm_jacobian_probe.py",
+      "heading": "9.2.30 isotherm_jacobian_probe.py",
+      "source_lines": 90,
+      "sha256": "e6f0a302e64506d9942eff851900517defb7afc8ffd1fc53d2106de985cfbbee",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\latent_heat_scenarios.py",
+      "heading": "9.2.31 latent_heat_scenarios.py",
+      "source_lines": 161,
+      "sha256": "f0e6141adb7573c940ce2ff65827cbf7ee1ea1c861362b227c14ea54b92966e6",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\method_comparison.py",
+      "heading": "9.2.32 method_comparison.py",
+      "source_lines": 160,
+      "sha256": "6fccbd683b2e6ee1a02391cee152c024db091aa379e3eeb8c1f9662c87692fb4",
+      "exact_lines_equal": false,
+      "differences": [
+        {
+          "line": 11,
+          "current_source": "ROOT = pathlib.Path(__file__).resolve().parents[3]",
+          "docx": "ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\")"
+        }
+      ]
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\sensitivity_analysis.py",
+      "heading": "9.2.33 sensitivity_analysis.py",
+      "source_lines": 249,
+      "sha256": "f0d85de0fc394c4b33f9b5c8a8310de10c405d4f7a87e4229c9d1e64556d49e1",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\Python检验源码\\paper_output\\code\\verification\\threshold_and_scaling_checks.py",
+      "heading": "9.2.34 threshold_and_scaling_checks.py",
+      "source_lines": 154,
+      "sha256": "73a8d8cfd3bcebc218ac25a7cb30e443500c6d05f57263a11f862ec023b87e6d",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\MATLAB对照证据\\runCrossCheck.m",
+      "heading": "9.2.35 runCrossCheck.m",
+      "source_lines": 491,
+      "sha256": "0132b3bed4a6b43347deb0be102fd85bf077f6a116760f267037cd3e665874aa",
+      "exact_lines_equal": true,
+      "differences": []
+    },
+    {
+      "source": "支撑材料\\05_数值检验与实验\\MATLAB对照证据\\compareMatlab.mjs",
+      "heading": "9.2.36 compareMatlab.mjs 主要部分",
+      "source_lines": 199,
+      "sha256": "967fd3cb232b7e0f775728035ea51783fd1f5cd2e61e8533354e939151491d59",
+      "exact_lines_equal": false,
+      "differences": [
+        {
+          "type": "delete",
+          "source_line_start": 155,
+          "source_line_stop_inclusive": 162,
+          "docx_line_start": 155,
+          "docx_line_stop_inclusive": 154
+        }
+      ],
+      "declared_excerpt": true,
+      "excerpt_lines": 191,
+      "matches_full_source_except_markdown_formatter": true,
+      "note": "标题明确注明主要部分；省略源码155–162行的markdown报告格式化函数，数值比较主体未变。此节选不能被视为完整可独立运行源码。"
+    }
+  ],
+  "source_total_lines": 7715,
+  "all_36_sources_exact": false,
+  "sandbox_evidence_binding_checks": [
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/verification_work/windows_sandbox_verification_matrix.json",
+      "recorded_sha256": "32d88cf171321bc03a7cb3dcc5e04b9b5f2594dd1c0c680764cddb930b1995ed",
+      "current_sha256": "32d88cf171321bc03a7cb3dcc5e04b9b5f2594dd1c0c680764cddb930b1995ed",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/verification_work/05源码独立运行核查_WINDOWS_SANDBOX.txt",
+      "recorded_sha256": "519c75880d296d3aea9b5c9e82c9dc8d176e3f46116b98d706469dcb45ea9a3e",
+      "current_sha256": "519c75880d296d3aea9b5c9e82c9dc8d176e3f46116b98d706469dcb45ea9a3e",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/verification_work/05源码独立运行矩阵_WINDOWS_SANDBOX.csv",
+      "recorded_sha256": "d684514c3a8cc2e08712820902fb271b96665058fee618618be78b0b5b238dcf",
+      "current_sha256": "d684514c3a8cc2e08712820902fb271b96665058fee618618be78b0b5b238dcf",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/vm_output/wrapper_stable/result.json",
+      "recorded_sha256": "1d1fb8e69d1755edae00335dcf186ae6ecc7a76f1bfd051ba151c13a36fdb048",
+      "current_sha256": "1d1fb8e69d1755edae00335dcf186ae6ecc7a76f1bfd051ba151c13a36fdb048",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/vm_output/extra_entries/wrapper_external_exit.json",
+      "recorded_sha256": "ab4a1a77b893be81032b5eefa8139abe2985cd9072436d0b33b0a756fa7b949d",
+      "current_sha256": "ab4a1a77b893be81032b5eefa8139abe2985cd9072436d0b33b0a756fa7b949d",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/vm_output/core_final_result.json",
+      "recorded_sha256": "7ef1130e53e8ea43bf8c59999f28a6be550e856fffa1ac73a200eb1d8fbc9eae",
+      "current_sha256": "7ef1130e53e8ea43bf8c59999f28a6be550e856fffa1ac73a200eb1d8fbc9eae",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/strip_final_audit.json",
+      "recorded_sha256": "7b4c6f9525c76d801e213f9f35cca38114881e8f1dc0c8afa153b9e95b7e73f8",
+      "current_sha256": "7b4c6f9525c76d801e213f9f35cca38114881e8f1dc0c8afa153b9e95b7e73f8",
+      "equal": true
+    },
+    {
+      "path": "paper_output/qa/comment_sandbox_20260913/strip_publish_apply_20260913T015409_362775Z.json",
+      "recorded_sha256": "d78349dda3ac40763811dc0155d04c682f2e5e71aa81a6cd5cce27cb018a078c",
+      "current_sha256": "d78349dda3ac40763811dc0155d04c682f2e5e71aa81a6cd5cce27cb018a078c",
+      "equal": true
+    }
+  ],
+  "sandbox_current_03_04_file_checks": [
+    {
+      "path": "支撑材料\\03_程序代码\\A_CodeReview.pyproj",
+      "recorded_sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb",
+      "current_sha256": "d73dc309e26ab93fffdc4b8d0761f800bfd75e7a1d88480598adb810f94a9dfb",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\A_CodeReview.sln",
+      "recorded_sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f",
+      "current_sha256": "e67be5bcd3148cae5209d364439a60d2da493fbc342e45bf18f4ab8c670faf4f",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\analyticJacobian.py",
+      "recorded_sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "current_sha256": "e52fd4c4ed7a11e7e6ac17d13c7e1de90b79d08b5e563f2e85248ec3afb17cdd",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\diskDense.py",
+      "recorded_sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "current_sha256": "cd57ab4add0e76ba7e282eba3884e8207ef0db2ec895828f8a84e0de08e05380",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\docs\\源码变更说明.txt",
+      "recorded_sha256": "582dd071637df0d780e7188567c4d37e37d0043d11d8fc61541eb881c523f60f",
+      "current_sha256": "582dd071637df0d780e7188567c4d37e37d0043d11d8fc61541eb881c523f60f",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\docs\\运行验收说明.txt",
+      "recorded_sha256": "7c7a9dba69e8f5ed027f9ba4026b9608d6fc810b986b7c5f9f42098789fbde5d",
+      "current_sha256": "7c7a9dba69e8f5ed027f9ba4026b9608d6fc810b986b7c5f9f42098789fbde5d",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\dryingCore.py",
+      "recorded_sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "current_sha256": "8beb436df1acad7d541810b3f89b4aa87d207ad1f7a0b6d7880128bb717bf379",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\exportOutputs.py",
+      "recorded_sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "current_sha256": "b7daf45a89dd54a4a5df26e47e2b07cbe1b145656234d53e7d20c3022112d5d9",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\input_manifest.csv",
+      "recorded_sha256": "573ad682c71920296cfde1cd2a297b59b30e6076b99075c34e239d38cdaa935e",
+      "current_sha256": "573ad682c71920296cfde1cd2a297b59b30e6076b99075c34e239d38cdaa935e",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\cleaned\\A_environment_observed.csv",
+      "recorded_sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "current_sha256": "e4994c5cb38e4433afc927de72500bbdd15315b203e7997ba59fc6c9dfab9af0",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\cleaned\\A_radius_observed.csv",
+      "recorded_sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "current_sha256": "bbb5b0aac31ede1173521183d81e8d55b7ed1012e1869fbb3eef50166801470c",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\original\\附件1.xlsx",
+      "recorded_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "current_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\original\\附件2.xlsx",
+      "recorded_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "current_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\templates\\result1.xlsx",
+      "recorded_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "current_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\templates\\result2.xlsx",
+      "recorded_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "current_sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\templates\\result3.xlsx",
+      "recorded_sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "current_sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\inputs\\templates\\result4.xlsx",
+      "recorded_sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "current_sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\numerical_design.txt",
+      "recorded_sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442",
+      "current_sha256": "be369797282f4052a35289158e149582008948f813b6b835e726059aa949e442",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\q1Model.py",
+      "recorded_sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "current_sha256": "ba6c80a1711a4c4803bbc77ce3cf4b2a97c56a61997b5e5ffb38e733adc0a535",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\q2Model.py",
+      "recorded_sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "current_sha256": "bb437d6ca5171d73b2530e7d84e84ba338f946b2a9dc4a10ffa48c5c2808170b",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\q3Model.py",
+      "recorded_sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "current_sha256": "b46504b0dcd5411ee55c03dad9e36e9033cef0275d112d5642e939783ffbee21",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\q4Model.py",
+      "recorded_sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "current_sha256": "ba62825c22d60a931b6568e425fabae88fae6f35ce1f485f45f8a9f74f5b4efc",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\README.txt",
+      "recorded_sha256": "c27e70b8f4d571f51d351704583e4d2cbe7191b2174c6f783275c8af9c522f38",
+      "current_sha256": "c27e70b8f4d571f51d351704583e4d2cbe7191b2174c6f783275c8af9c522f38",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\reference\\Q1\\sampled_solution.npz",
+      "recorded_sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62",
+      "current_sha256": "5ef77c8eda471d59671f337c2b180a165387ba0d8898ab9b14adc5f2218a5f62",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\reference\\Q23\\sampled_solution.npz",
+      "recorded_sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "current_sha256": "e63270b32f3a59b7c0959143da319131001babf8a42c08f21531335692ec2e67",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\reference\\Q4\\sampled_solution.npz",
+      "recorded_sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "current_sha256": "953db94a659d0ae4f4a9830aa2e14c10b2460fd19a15963ff5cf222f8f2f5518",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\reference\\reference_data.py",
+      "recorded_sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "current_sha256": "9ab09a806872ef171824920a661ac3fdd422f356834a7d4563beba02d4f9a94e",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\requirements.txt",
+      "recorded_sha256": "73951400cc1ca44a28341231ef3dd2e101203485a15c39388b8f5614cdeb5bc9",
+      "current_sha256": "73951400cc1ca44a28341231ef3dd2e101203485a15c39388b8f5614cdeb5bc9",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\runDelivery.py",
+      "recorded_sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "current_sha256": "3e9936e94995fce5a8917c7e66721b6cece900b3c9d5a754f71a6c6002188511",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\03_程序代码\\runLogged.ps1",
+      "recorded_sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "current_sha256": "ad9888888a757e07ec9be147ffeeaae7a4e58347093f664d7894abd4323c4f17",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_moisture.csv",
+      "recorded_sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "current_sha256": "729553493254621fe62da6a9f9c5f49b9ee2ca555dd430e44b253d8e2c82ae8f",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q1_paper_temperature.csv",
+      "recorded_sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "current_sha256": "ee7e81b53adc9d4a5180985e1f055140144d663418bc8c01e8ea26f464d6574b",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_moisture.csv",
+      "recorded_sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "current_sha256": "cc73675708618b35b78e5022c04bd32ce9db54f2b2e8c9184a484a321f7edeaa",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q2_paper_temperature.csv",
+      "recorded_sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "current_sha256": "7d43f2bf1537084ed098f30a04169fdfcf14aef8fc83c9265edff20d9a8b356d",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q3_paper_moisture.csv",
+      "recorded_sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "current_sha256": "21edee79172d5dc6080207e36ad79fa7fd6511b86a0fa917583f4711c363a90e",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_moisture.csv",
+      "recorded_sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "current_sha256": "1901b15527b8e19e7dd45f11803b51c8807f766a0a226ba83caabb9f8ffdc8d7",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\Referrence Table Files\\q4_paper_radius.csv",
+      "recorded_sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "current_sha256": "374f39349913e79088ab60b8502d95f5c6ea9b020d1d289c46d04e7ee483cd08",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result1.xlsx",
+      "recorded_sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4",
+      "current_sha256": "9c81c8152e3c1b40a379faae3745cd370ade4d85a8d5e22d79b14d804d470aa4",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result2.xlsx",
+      "recorded_sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336",
+      "current_sha256": "318d753e5d462cb38a2b079f4c195240b322364f70579f05123ab15b5c359336",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result3.xlsx",
+      "recorded_sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e",
+      "current_sha256": "7b26bbf53530bb5bf83dd19a210ee092187bfe892759399716932fe04440359e",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\result4.xlsx",
+      "recorded_sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f",
+      "current_sha256": "8b62d09365a3bbcff081db49c53225c276dfb0a95bccfbc9762aa09bb6804d9f",
+      "equal": true
+    },
+    {
+      "path": "支撑材料\\04_结果表格\\结果表说明.txt",
+      "recorded_sha256": "329ec782512aa71d7ddb14e948f3c62288e5afe8c7d61b278a359b1109245366",
+      "current_sha256": "329ec782512aa71d7ddb14e948f3c62288e5afe8c7d61b278a359b1109245366",
+      "equal": true
+    }
+  ],
+  "recorded_full_run": {
+    "core": {
+      "name": "core_final",
+      "command": [
+        "C:\\Runtime\\python.exe",
+        "-I",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Control\\entry_runner.py",
+        "C:\\Work\\03\\runDelivery.py",
+        "--profile",
+        "final",
+        "--run-id",
+        "vm_final"
+      ],
+      "cwd": "C:\\Work",
+      "startUtc": "2026-09-13T01:35:23.785646+00:00",
+      "status": "EXIT_ZERO",
+      "pid": 4420,
+      "returncode": 0,
+      "elapsedSeconds": 1812.6291425,
+      "endUtc": "2026-09-13T02:05:36.414794+00:00",
+      "sourceAndInputHashesUnchanged": true,
+      "programStatus": "PASS",
+      "accepted": true
+    },
+    "workbookCells": {
+      "Q1": 79244,
+      "Q2": 9103732,
+      "Q3": 75922,
+      "Q4": 76700
+    },
+    "paperCells": 297,
+    "savedArraysExactlyEqual": true,
+    "q3": {
+      "critical_event_s": 206900.28702201758,
+      "critical_event_h": 57.47230195056044,
+      "reported_drying_time_h": 57.4724,
+      "reported_time_s": 206900.64,
+      "max_C_at_reported_time": 0.14999989718225315,
+      "slowest_material_coordinate": 0.0,
+      "conservative_post_verification_s": 206902.0,
+      "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+      "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+    },
+    "q4": {
+      "critical_event_s": 183926.06923258994,
+      "critical_event_h": 51.09057478683054,
+      "reported_drying_time_h": 51.0906,
+      "reported_time_s": 183926.16,
+      "max_C_at_reported_time": 0.14999995339076624,
+      "slowest_material_coordinate": 0.0,
+      "conservative_post_verification_s": 183928.0,
+      "rounding_convention": "upward on 0.0001 h grid, followed by actual strict threshold check",
+      "interpretation": "A conditional numerical event, not a confidence bound on physical drying time."
+    }
+  },
+  "assertion_pdf_pages": {
+    "drying_times": [
+      {
+        "page": 1,
+        "text": "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证\n\n\n                摘要\n\n  药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表内\n\n部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性关系，建立一\n\n维径向有效热湿耦合模型，并以全域最大干基含水率确定烘干结束时间。模型区分有效\n\n显热容量与守恒干物质密度，将气固含水率映射、观测窗后环境平台和同比径向收缩作\n\n为明确闭合；在环形控制体上采用Kirchhoff 浓度势处理非线性扩散，配合解析稀疏\nJacobian 与隐式BDF 求解。\n\n  针对问题一，采用常热物性与含水率依赖扩散系数建立预热模型，计算0—1800 s\n内温度和水分的径向分布。1800 s 时中心、表面温度分别为33.5753°C 和36.7856°C，干\n基含水率分别显示2.5500 和1.5102 kg/kg，反映表层先响应及内部水分迁移滞后。温度\n\n场另与包含时变边界卷积的圆柱解析级数对照，验证简化条件下的数值实现。\n\n  针对问题二，从初始状态统一采用附录3 的变物性，联立计算温度对扩散及水分对\n热物性的反馈。附件观测区间内进行分段线性插值，4 h 后按50°C 与等效平衡含水率\n0.05 延拓。3 h 时中心、表面温度为49.8495°C 和49.9664°C，而含水率仍为1.7662 和\n1.0081 kg/kg，说明升温接近完成早于全域脱水完成。\n\n  针对问题三，复用全过程轨迹，以全域最大含水率下降穿越0.15 kg/kg 定位临界根，\n并区别临界等号与严格可行的报告时刻，得到烘干时长57.4724 h。针对问题四，在干物\n\n质守恒下取材料坐标，将给定半径变化转化为固定区间上的时变几何因子；采用整组附\n\n录4 物性，得到时长51.0906 h、结束半径约1.2000 cm，输出中将域外位置与真实表面\n\n分别处理。\n\n  针对问题四，在干物质守恒条件下引入材料坐标变换，将随半径收缩的移动区域映\n\n射到固定区间，并依据半径观测和第四问物性关系更新几何因子、扩散系数及边界通量。\n计算得到烘干时间为51.0906 h，结束时半径约为1.2000 cm。该时间较问题三缩短6.3818\nh，体现径向收缩与物性变化的综合影响；同物性对照进一步表明，径向收缩通过缩短\n\n水分迁移距离加快干燥。输出时区分药材外部位置与实际表面，保证收缩过程中的空间\n\n对应关系。\n\n  通过圆柱解析级数对照、网格加密、时间积分设置检验以及独立MATLAB 程序比较，\n验证了模型在所检验范围内的数值一致性。敏感性分析表明，烘干时间对水分扩散参数\n\n和表面传质边界较为敏感，所求时长适用于题给物性、环境延拓及收缩假设。\n\n  关键词：热湿耦合；有限体积法；Kirchhoff 变换；径向收缩；干燥时间\n\n\n\n\n\n                                                    1"
+      },
+      {
+        "page": 14,
+        "text": "包围区间内定位临界根，并核对最大含水率与阈值的一致性。第三步：按式(14)选取并\n核验烘干时长。第四步：从同一轨迹查询每隔60 s、径向每隔0.1 cm 的含水率。另在𝑁=\n800 的验证轨迹上采用独立二分法复核事件定位；正式结果由𝑁= 3200 的计算轨迹给\n\n出。\n\n  求解阈值方程得到临界时刻𝑡c ≈57.472302 h。按式(14)选取并核验未舍入含水率，\n得到烘干时长为57.4724 h。\n\n5.3.4 结果分析\n\n  表5 列出每隔6 h 及最终烘干时刻的径向含水率，用于展示干燥过程中的空间差异；\n题定60 s 间隔的完整结果另行导出。\n\n                表5 问题三的径向干基含水率（kg/kg）\n\n   时间/h         r=0 cm         r=0.5 cm        r=1 cm         r=1.5 cm        r=2 cm\n\n\n     6.0000          1.0170          0.9881          0.9015          0.7550          0.5328\n\n    12.0000         0.4561          0.4432          0.4031          0.3297          0.1642\n\n    18.0000         0.2988          0.2915          0.2687          0.2253          0.0845\n\n    24.0000         0.2378          0.2327          0.2167          0.1855          0.0665\n\n    30.0000         0.2058          0.2018          0.1892          0.1641          0.0598\n\n    36.0000         0.1859          0.1825          0.1718          0.1504          0.0566\n\n    42.0000         0.1721          0.1691          0.1597          0.1407          0.0549\n\n    48.0000         0.1618          0.1592          0.1507          0.1334          0.0537\n\n    54.0000         0.1539          0.1514          0.1436          0.1277          0.0530\n\n    57.4724         0.1500          0.1477          0.1402          0.1249          0.0527\n\n注：含水率保留四位小数。57.4724 h 时的全域最大含水率约为0.149999897 kg/kg，表中显示为\n0.1500；达标判定采用未舍入的计算值。\n\n\n    12 h 时表面已接近0.15，但中心仍为0.4561 kg/kg；至48 h 中心仍为0.1618 kg/kg。\n由此可见，表面达标不能代表全域达标。后期中心由0.1859 下降到0.1500 经历较长时\n\n间，反映低含水率条件下扩散系数降低的影响。结束时中心与表面仍有浓度差，达到产\n\n品阈值并不要求内部先达到完全均匀的平衡状态。\n\n\n\n\n\n                                                   14"
+      },
+      {
+        "page": 15,
+        "text": "                 图4 问题三烘干阈值穿越临界时刻\n\n5.3.5 模型检验或灵敏度分析\n\n  约93.04%的报告时长位于附件1 的4 h 观测窗之后，因此57.4724 h 应理解为规定\n平台温湿条件持续存在时的模型预测。数值根的复核能检查“给定轨迹上是否找准阈\n值”，不能消除边界延拓和气固映射的物理不确定性。若后续更换平台温湿度、β或平衡\n\n映射，必须重新积分并重新确定事件，不能只按经验比例改动最终时长。\n\n\n\n5.4 问题四模型的建立与求解\n\n\n5.4.1 建模思路\n\n  问题四同时改变几何与物性。从t=0 起整组采用附录4，并由附件2 查询R(t)。附\n件2 在0—72 h 提供145 个半径观测，间隔0.5 h，按分段线性插值连接。基线假定轴向\n长度保持不变，内部材料发生与半径一致的同比径向收缩；材料速度为u(r,t)=rR′(t)/R(t)。\n\n该速度场与表面运动相容，是从半径数据推断内部运动的明确假设。\n\n  如果只在固定域模型中将R0 换成R(t)，而不说明水质量和材料速度的含义，就可能\n\n重复加入浓缩项或漏掉物质运动。本文先从组分守恒建立物质导数，再进行材料坐标变\n\n换，保证控制方程的来源清楚。\n\n5.4.2 变量定义与公式推导\n\n  在没有干物质生成或相对迁移的条件下，干质量守恒及水质量守恒为\n\n\n\n                                                   15"
+      },
+      {
+        "page": 17,
+        "text": "5.4.4 结果分析\n\n   问题四的连续临界时刻约为51.090575 h，按与问题三相同的时间网格和严格阈值\n判据，得到烘干时长为51.0906 h，对应半径约为1.2000 cm。该时刻位于附件2 的观测\n范围内。表6 与表7 分别给出含水率和表面半径。\n\n            表6 问题四的径向干基含水率（kg/kg；空白表示域外）\n\n  时间/h       r=0 cm      r=0.5 cm      r=1 cm      r=1.5 cm      r=2 cm   药材表面\n\n\n    6.0000       1.7196       1.5377       1.0226                                  0.4207\n\n\n   12.0000       0.7377       0.6546       0.4083                                  0.1670\n\n\n   18.0000       0.4087       0.3686       0.2397                                  0.0892\n\n\n   24.0000       0.2851        0.2611       0.1790                                  0.0673\n\n\n   30.0000       0.2263       0.2094       0.1493                                  0.0595\n\n\n   36.0000       0.1928       0.1797       0.1317                                  0.0560\n\n\n   42.0000       0.1712       0.1604       0.1200                                  0.0541\n\n\n   48.0000       0.1561       0.1468        0.1116                                  0.0530\n\n\n   51.0906       0.1500       0.1413       0.1081                                  0.0526\n\n\n\n                 表7 问题四各输出时刻的表面半径\n\n             时间/h                      表面半径/cm\n\n\n                     6.0000                                         1.3740\n\n                    12.0000                                        1.2480\n\n                    18.0000                                        1.2140\n\n                    24.0000                                        1.2040\n\n                    30.0000                                        1.2010\n\n                    36.0000                                        1.2000\n\n                    42.0000                                        1.2000\n\n\n\n                                                   17"
+      },
+      {
+        "page": 18,
+        "text": "             时间/h                      表面半径/cm\n\n\n                    48.0000                                        1.2000\n\n                    51.0906                                        1.2000\n\n\n    6 h 时半径已收缩至1.3740 cm，因此1.5 cm 和2 cm 固定位置均位于域外；此时表\n面含水率为0.4207，中心仍为1.7196 kg/kg。至最终时刻，中心和表面分别显示0.1500\n与0.0526，仍有明显梯度。径向收缩减少了迁移距离，但不会消除由低含水率扩散变慢\n\n造成的后期阻力。\n\n\n\n\n\n                 图5 问题四径向收缩及含水率分布\n\n5.4.5 模型检验或灵敏度分析\n\n  问题三与四的报告时长相差约6.3818 h，但两问物性和几何同时变化，该差值不能\n全部归因于收缩。为分离几何影响，在相同附录4 物性、边界和N200 网格下，分别固\n定半径及采用给定收缩，得到129.8452 h 与51.0910 h；在这个指定对照中，收缩情形时\n长减少约60.65%。这里的N200 结果用于机理比较，不替代N6400 正式报告。\n\n  式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²\n增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定\n半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件\n\n作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数\n\n据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。\n\n\n\n\n                                                   18"
+      }
+    ],
+    "numerical_errors": [
+      {
+        "page": 6,
+        "text": "为对真实组分密度的验证。\n\n  平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。\n附件1 的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记\n该观测数值为𝑌∞，基线取𝐶eq = 𝑌∞，作为表面传质的等效平衡值。这一数值映射是本\n文的边界假设；文献中的一般平衡关系不构成该映射的标定依据。若进一步将𝑌∞解释\n为空气湿度比，其参考质量也需另作说明。\n\n5.1.2 变量定义与公式推导\n\n  在半径r 至r+dr 的圆柱薄壳内，对向外为正的热流和水分通量采用Fourier 与Fick\n\n本构。薄壳内外表面积不同，积分守恒后须保留径向几何因子。得到\n\n                                    ∂𝑇   1 ∂        ∂𝑇\n                         𝐵(𝐶) ∂𝑡= 𝑟 ∂𝑟(𝑟𝑘(𝐶) ∂𝑟), 0 < 𝑟< 𝑅0                             (2)\n\n                                      ∂𝐶   1 ∂           ∂𝐶\n                             ∂𝑡= 𝑟 ∂𝑟(𝑟𝐷(𝑇, 𝐶) ∂𝑟)                                     (3)\n\n  式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick 扩散定\n\n律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态\n\n变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，\n\n用于检验简化条件下的数值实现。\n\n  中心由于轴对称不存在跨轴通量，表面与烘房发生对流换热和有效传质。初始条件\n\n与边界条件分别为\n\n                  𝑇(𝑟, 0) = 301.15 K, 𝐶(𝑟, 0) = 2.55, 𝑇𝑟(0, 𝑡) = 𝐶𝑟(0, 𝑡) = 0                  (4)\n\n                −𝑘𝑇𝑟(𝑅0, 𝑡) = ℎ(𝑇s −𝑇∞), −𝐷𝐶𝑟(𝑅0, 𝑡) = 𝛽(𝐶s −𝐶eq)                  (5)\n\n   这里Ts 与Cs 是药材真实表面的状态，h=25 W/(m²·K)，β=8×10⁻⁷ m/s。初始场与表\n面边界在t=0 处可能不完全相容，意味着启动阶段形成边界层，不应人为修改初始温湿\n\n度来消除该现象。采用较小的早期步长处理快速响应，并在后续检查非负性与通量方向。\n\n  问题一采用附录2：ρ=820 kg/m³，cp=2600 J/(kg·K)，k=0.36 W/(m·K)，水分扩散系\n\n数为\n\n                                                                       0.89\n                          𝐷1(𝐶) = 7 × 10−9exp( − 𝐶) m2/s                              (6)\n\n  因此本问温度方程是可独立求解的线性热方程，水方程仍因D1(C)而非线性。式(6)\n没有温度项；Arrhenius 温度因子只在问题二至四的物性关系中出现。不能把“常热物性”\n扩大解释为“全部物性均为常数”，也不应给问题一另外加入温度活化项。\n\n5.1.3 求解算法\n\n  设归一化坐标𝑥= 𝑟/𝑅0，在0 ≤𝑥≤1 上划分𝑁个等长区间，节点𝑥𝑖= 𝑖/𝑁包含\n\n\n\n                                                    6"
+      },
+      {
+        "page": 7,
+        "text": "中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体，\n\n记其无量纲体积权重为𝑤𝑖。有限体积法先计算相邻控制体共用的面通量，再由净通量\n建立收支；内部面在全域求和时成对相消[5]。该处理可直接落实轴心零通量条件。\n\n  对于随含水率显著变化的扩散系数，参照浓度相关扩散方程的积分变换方法[4]，构\n造Kirchhoff 浓度势。将题给系数写为𝐷= 𝐷0𝐴(𝑇)exp( −𝑎/𝐶)，取\n\n                                                                                                                                                     ′\n               𝛷𝑎(𝐶) = 𝐶exp( −𝑎/𝐶) + 𝑎Ei( −𝑎/𝐶), 𝛷𝑎 (𝐶) = exp( −𝑎/𝐶)                 (7)\n\n  相邻节点之间的水分通量通过势差计算，温度因子在该面单独取值。不能把A(T)Φ(C)\n整体作差，否则会产生原Fick 闭合中不存在的温度梯度通量。浓度相近时采用局部展开\n避免两项接近的势值相减损失有效数字。式(7)使浓度方向的积分得到解析处理，但温度\n\n面值、有限网格与时间推进仍有离散误差；它不是对整个偏微分方程的精确求解。\n\n  细网格缩短了局部扩散时间尺度，显式推进受到较严格的步长限制。本文将温度与\n\n含水率交错排列，利用相邻节点耦合构造解析稀疏雅可比矩阵，并采用适于刚性方程组\n\n的BDF 方法进行时间积分[6]。实际使用SciPy 的BDF 实现及其稀疏雅可比接口[7]。状\n\n态末项累计失水，用于核对全域水量收支。题定输出时刻由同一连续数值解查询；积分\n\n器的内部步长与1 s 或60 s 的输出间隔分别设置。\n\n  第一步：读取附件观测，统一长度和温度单位，核对初始场与附录2 参数。第二步：\n\n生成环形控制体、初值和相邻面通量。第三步：采用隐式变步长推进，检查求解成功、\n\n有限数值及物性正性。第四步：从同一数值轨迹查询指定时刻及物理半径。第五步：导\n\n出结果表，并检查累计失水与全域水量变化是否一致。\n\n   问题一采用N=3200，积分至1800 s；相对容差为10⁻¹⁰，温度与水分绝对容差分别\n为10⁻¹⁰ K 和10⁻¹² kg/kg。严格容差用于控制时间积分，不能解释为最终物理预测具备相\n同精度。网格选择依据及时间设置对照见附录C。\n\n5.1.4 结果分析\n\n  表1、表2 列出题目要求的7 个时刻和5 个半径位置；完整逐秒、0.1 cm 结果由同\n一轨迹生成。温度和浓度分别保留四位小数，表头中的半径以cm 表示。\n\n                  表1 问题一的径向温度（°C）\n\n   时间/s         r=0 cm         r=0.5 cm        r=1 cm         r=1.5 cm        r=2 cm\n\n\n    100.0000        28.0001        28.0003        28.0040        28.0327        28.1801\n\n    300.0000        28.0408        28.0635        28.1514        28.3681        28.8489\n\n    600.0000        28.4533        28.5360        28.8039        29.3159        30.1652\n\n    900.0000        29.3243        29.4583        29.8755        30.6161        31.7304\n\n\n\n                                                    7"
+      },
+      {
+        "page": 9,
+        "text": "                 图1 问题一径向温度含水率分布\n\n\n5.1.5 模型检验或灵敏度分析\n\n  在本问常热物性条件下，将变温边界写入圆柱Robin 特征函数展开及时间卷积，得\n到热场解析基准。它与数值结果在N3200、1801 个整数秒和21 个半径点上最大相差约\n1.80×10⁻⁶ K。非线性水方程另用守恒检查与面格式对照核验，不由热场的一致性替代。\n基准公式与取样范围在附录C 交代，正文不逐项展开误差矩阵。\n\n\n\n5.2 问题二模型的建立与求解\n\n5.2.1 建模思路\n\n  问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3 在整\n个求解区间使用同一套变物性，不在1800 s 将附录2 解拼接到附录3，也不把问题一末\n\n状态用作新的初始条件。这样才能区分两问的物性设定，避免在中途人为改变材料参数。\n\n  附录3 使两个状态之间出现双向反馈：T 进入扩散系数，C 同时进入热容量和导热\n\n系数。在一次时间推进中，新的温度会影响水通量，新的含水率又改变温升速度和热通\n\n量。因此即使外部环境完全相同，问题二也不能沿用问题一的温度轨迹。联立算法在同\n\n一时刻更新T、C 与全部物性，使耦合关系进入隐式残量；先独立计算全程热场再求水\n\n分，会改变这里采用的模型。\n\n5.2.2 变量定义与公式推导\n\n   令w=C/(1+C)，附录3 规定\n\n\n\n                                                    9"
+      },
+      {
+        "page": 10,
+        "text": "                       𝜌eff = 650 + 128𝐶, 𝑐p = 1450 + 2736𝑤, 𝑘= 0.21 + 0.38𝑤                 (8)\n\n                                                                         0.45   3850\n                        𝐷3(𝑇, 𝐶) = 2.4 × 10−3exp( − 𝐶− 𝑇)                          (9)\n\n   式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位\n为m²/s，T 必须是绝对温度。指数中的0.45/C 和3850/T 均为无量纲经验组合，系数按\n题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解\n\n释。\n\n  附件1 包含0—4 h 共241 组观测，观测间隔60 s。为了向连续时间求解器提供边界，\n观测区间内作分段线性插值。t>4 h 后取T∞=50°C、Ceq=0.05。这一延拓利用题目恒温干\n\n燥的工况描述及末段平台特征，但平台尾段并非持续数天的实测记录。相应的分段表达\n\n为\n\n                                            (𝐼𝑇(𝑡), 𝐼𝑌(𝑡)),   0 ≤𝑡≤14400 s,\n                    (𝑇∞, 𝐶eq)(𝑡) = {                                                    (10)                                      (323.15,0.05),   𝑡> 14400 s.\n\n  其中两种插值算子直接连接相邻观测点，不额外平滑或外推趋势。超过观测窗后的\n\n输出是指定工况下的条件预测。附录3 未重给表面换热和传质系数，本文明确沿用h 和\nβ；这也属于全过程边界设置，而不是对不同风速或设备的普遍结论。\n\n\n\n\n\n                  图2 烘房环境边界条件与延拓\n\n\n\n\n\n                                                   10"
+      },
+      {
+        "page": 12,
+        "text": "                表4 问题二的径向干基含水率（kg/kg）\n\n   时间/h         r=0 cm         r=0.5 cm        r=1 cm         r=1.5 cm        r=2 cm\n\n\n     0.5000          2.5499          2.5489          2.5256          2.3257          1.6486\n\n     1.0000          2.5257          2.4948          2.3578          2.0230          1.4711\n\n     1.5000          2.3861          2.3256          2.1344          1.8020          1.3476\n\n     2.0000          2.1709          2.1084          1.9236          1.6259          1.2311\n\n     2.5000          1.9566          1.9006          1.7360          1.4720          1.1166\n\n     3.0000          1.7662          1.7165          1.5702          1.3333          1.0081\n\n\n    3 h 时中心和表面温度分别为49.8495°C、49.9664°C，温差已缩小到约0.1169°C，\n而中心与表面的含水率分别为1.7662、1.0081 kg/kg，仍存在明显差异。升温接近完成不\n\n代表脱水已经完成；单独根据药材温度接近烘房温度来决定出料，会忽视中心水分的持\n\n续迁移。\n\n  水分扩散对温度的响应与含水率的响应方向不同。在相同C 下，升温使式(9)的温\n度因子增大，有利于扩散；随着药材逐渐变干，exp(−0.45/C)减小，使后期扩散变慢。\n\n因此全过程通常表现为前期升温推动水分迁移、后期低含水率区域限制传递的组合效\n\n应。该解释来自物性公式及场分布，不把时间曲线的形状直接归因为某个未经观测的组\n\n织变化。\n\n\n\n\n\n                 图3 问题二中心表面温湿响应曲线\n\n\n                                                   12"
+      },
+      {
+        "page": 13,
+        "text": "5.2.5 模型检验或灵敏度分析\n\n  空间加密、收紧时间设置以及不同积分器的对照表明，本组数值解在所检验的采样\n\n范围内稳定。表3 中1.5 h 表面温度接近四位小数的舍入边界，基线与更严格时间设置\n可能给出不同末位；表中统一采用基线计算值47.1401°C。该差异反映计算末位对时间\n设置的敏感性，详细比较见附录C。\n\n\n\n5.3 问题三模型的建立与求解\n\n5.3.1 建模思路\n\n  问题三将给定时刻的温湿状态计算转化为烘干时间求解。沿用问题二的完整数值轨\n\n迹，以全域最大含水率构造阈值事件，定位临界时刻，并据此确定满足严格含水率约束\n\n的烘干时长。\n\n5.3.2 变量定义与公式推导\n\n问题三要求确定药材各处干基含水率均低于0.15 kg/kg 所需的烘干时间。沿用问题二得\n到的含水率场𝐶(𝑟, 𝑡)，定义时刻𝑡的全域最大含水率：\n\n                             𝑀(𝑡) = max0≤𝑟≤𝑅0𝐶(𝑟, 𝑡)                                (11)\n\n   其中，𝑀(𝑡) 的单位仍为kg/kg。药材各处均达标，等价于全域最大含水率满足\n\n                                    𝑀(𝑡)<0.15                                      (12)\n\n  为定位阈值，定义辅助函数\n\n                                    𝑔(𝑡) = 𝑀(𝑡) −0.15                                  (13)\n\n\n   当𝑔(𝑡) > 0 时尚有位置未达标；𝑔(𝑡) = 0 对应临界边界；𝑔(𝑡) < 0 表示全域达标。\n\n数值计算对全部径向节点取最大值。\n\n   记𝑔(𝑡) 首次下降穿越零点的临界时刻为𝑡c。在临界附近连续下降的条件下，根时\n刻对应等号。取时间间隔𝛥𝑡= 0.36 s = 10−4 h，在该离散时间网格上选择不早于临界时\n\n刻且满足严格阈值的首个时刻：\n\n                            𝑡r = min{𝑘𝛥𝑡: 𝑘∈ℕ0, 𝑘𝛥𝑡≥𝑡c, 𝑀(𝑘𝛥𝑡) < 0.15}                  (14)\n\n  式中，ℕ0 为非负整数集合；𝑡c、𝑡r 与𝛥𝑡统一以秒计算。达标判定采用未舍入的\n数值解，最终将𝑡r 换算为小时表示。候选点的生成和逐格核验见附录C.4。\n\n5.3.3 求解算法\n\n  第一步：在问题二的积分过程中监测𝑔(𝑡) 下降穿零。第二步：利用连续数值解在\n\n\n                                                   13"
+      },
+      {
+        "page": 16,
+        "text": "                    ∂𝑡𝜌d + ∇·(𝜌du) = 0, ∂𝑡(𝜌d𝐶) + ∇·(𝜌d𝐶u + jw) = 0                  (15)\n\n  将水质量方程减去干质量方程的𝐶倍，得到𝜌d𝐷𝑡𝐶=−∇·jw。取jw =−𝜌d𝐷∇𝐶，\n并利用干骨架密度的空间均匀性消去𝜌d。令𝑥= 𝑟/𝑅(𝑡)，定义𝐶^(𝑥, 𝑡) = 𝐶(𝑅(𝑡)𝑥, 𝑡)、\n𝑇^(𝑥, 𝑡) = 𝑇(𝑅(𝑡)𝑥, 𝑡)。链式法则中的坐标变化项与骨架平流项相消，得到\n\n                                                          ∂𝐶^     1   ∂        ∂𝐶^\n                             ∂𝑡= 𝑅(𝑡)2𝑥 ∂𝑥(𝑥𝐷 ∂𝑥)                                 (16)\n\n                                    𝐵(𝐶^) ∂𝑇^     1   ∂        ∂𝑇^                                (17)                               ∂𝑡= 𝑅(𝑡)2𝑥 ∂𝑥(𝑥𝑘 ∂𝑥)\n\n  式(17)沿用有效显热闭合，未显式包含潜热、湿分携焓及收缩功。材料坐标方程中\n\n不再出现额外网格平流项；干基比值也不另加体积浓缩项。收缩引起的干骨架密度变化\n满足𝜌d(𝑡) = 𝜌d0[𝑅0/𝑅(𝑡)]2。坐标变换和干质量守恒推导见附录A。\n\n   在x=0 保持零通量，表面边界改为\n\n          −                       𝑘  𝑇^𝑥(1, 𝑡) = ℎ(𝑇s −𝑇∞), − 𝐷  𝐶^𝑥(1, 𝑡) = 𝛽(𝐶s −𝐶eq)               (18)                            𝑅(𝑡)                                   𝑅(𝑡)\n\n  边界中的1/R 来自空间导数换元，不能遗漏。附录4 物性为\n\n                       𝜌eff = 760 + 90𝐶, 𝑐p = 1850 + 2150𝑤, 𝑘= 0.12 + 0.20𝑤,               (19)\n\n                                                                         0.30   3850\n                        𝐷4(𝑇, 𝐶) = 4.2 × 10−4exp( − 𝐶− 𝑇)                       (20)\n\n  在相同温度与含水率下，两组扩散系数满足𝐷4/𝐷3 = 0.175exp(0.15/𝐶)。当𝐶≈\n0.08606 kg/kg 时两者相等；高于该值时𝐷4 < 𝐷3，低于该值时大小关系反转。因此，物\n性变化的综合作用由全过程数值对照评估，不能仅由扩散系数前因子判断。\n\n5.4.3 求解算法\n\n  在材料坐标中采用𝑁= 6400 的固定网格。每次右端函数求值时，根据当前𝑡更新\n𝑅(𝑡)，再更新式(16)—(20)中的几何因子、物性和边界通量。网格点随材料运动，输出时\n\n转换到题目要求的物理半径𝑟。\n\n     Step 1：选定整组附录4 参数，读取半径序列并检查其正值与非增性。Step 2：在材\n料坐标上生成初值、控制体和通量。Step 3：按当前半径联立积分温度与含水率。Step 4：\n监测材料域内最大C 的阈值事件并复核严格报告时刻。Step 5：按每60 s 和0.1 cm 生成\n物理距离结果，同时单列当前真实表面及R(t)。\n\n  r>R(t)的物理位置已不在药材内，不能插值或填成零含水率。本文保留这些固定半\n径列为空，并单列“药材表面”，从而同时保留原距离坐标与移动边界信息。真实表面不\n一定恰好落在0.1 cm 网格，不能取最近固定列冒充。\n\n\n\n\n\n                                                   16"
+      },
+      {
+        "page": 18,
+        "text": "             时间/h                      表面半径/cm\n\n\n                    48.0000                                        1.2000\n\n                    51.0906                                        1.2000\n\n\n    6 h 时半径已收缩至1.3740 cm，因此1.5 cm 和2 cm 固定位置均位于域外；此时表\n面含水率为0.4207，中心仍为1.7196 kg/kg。至最终时刻，中心和表面分别显示0.1500\n与0.0526，仍有明显梯度。径向收缩减少了迁移距离，但不会消除由低含水率扩散变慢\n\n造成的后期阻力。\n\n\n\n\n\n                 图5 问题四径向收缩及含水率分布\n\n5.4.5 模型检验或灵敏度分析\n\n  问题三与四的报告时长相差约6.3818 h，但两问物性和几何同时变化，该差值不能\n全部归因于收缩。为分离几何影响，在相同附录4 物性、边界和N200 网格下，分别固\n定半径及采用给定收缩，得到129.8452 h 与51.0910 h；在这个指定对照中，收缩情形时\n长减少约60.65%。这里的N200 结果用于机理比较，不替代N6400 正式报告。\n\n  式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²\n增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定\n半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件\n\n作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数\n\n据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。\n\n\n\n\n                                                   18"
+      },
+      {
+        "page": 20,
+        "text": "                 表8 数值检验的对象、范围与结果\n\n\n   检验对象      方法及范围      主要结果      支持的结论\n\n\n                      N3200，1801 整数秒×21\n                                 常热物性热方程的数\n   问题一热场   半径；有限体积与     最大温差1.804×10⁻⁶ K\n                                    值一致性\n                        Robin–Bessel 级数\n\n\n                                         温差≤2.375×10⁻⁷ K，水\n                    N40；Python 与\n                                          分差≤5.851×10⁻¹⁰    共同采样点的跨实现\n  三条计算轨迹    MATLAB，100 场值及\n                                kg/kg，事件差        一致性\n                       2 事件\n                                                 ≤2.297×10⁻⁴ s\n\n                  N800、N1600；BDF 与 最大事件差约3.2×10⁻⁶ 同一空间离散的积分\n 问题三、四临界时间\n                      Radau                                  s         器一致性\n\n\n            最细相邻网格；同N 收 最大水分差分别\n                                 检验范围内的离散敏\n   场值分辨率   紧容差与步长，公共有  ≤4.70×10⁻⁵、≤9.95×10⁻⁹\n                                     感性\n           效域                   kg/kg\n\n\n\n  空间检查分别采用问题一、二三的N1600 与N3200，以及问题四的N3200 与N6400；\n时间检查固定最细网格。比较覆盖全整数秒及21 个有效物理半径点，问题四排除域外\n\n位置，真实表面另作核对。网格差不是连续解的严格误差界，四位输出也不保证全部末\n\n位稳定。水分平均值与累计流出量的残差约为10⁻¹⁴ kg/kg，说明共享通量记账自洽；热\n\n侧验证的是瞬时加权温度变化与边界通量相符，不能扩大为完整热力学能量守恒。\n\n  达标时间由全域最大含水率事件确定，并在𝑁= 800 的验证轨迹上用独立二分法\n复核事件定位。最终烘干时刻按式(14)确定，其可行性由未舍入的最大含水率核验；两\n种定位方法的比较见附录C.4。\n\n   在N200 单参数情景中，扩散前因子倍率由0.7 增至1.4 时，问题三时长由79.4187 h\n降至43.0796 h，问题四由70.4059 h 降至38.3160 h；导热系数在±15%内变化，两问时\n长跨度均小于0.011%。这支持所选工况下时长对扩散参数更敏感，不能据此认为潜热或\n\n气固边界不重要。\n\n  边界阻力族采用p=1、2、4 时，已计算的临界时间随所选参数点增大。p=4 相对同\nN 基线使问题三、四分别延长约13.87%和8.27%；这批结果只完成事件积分，不替代正\n\n式严格报告值。其用途是展示未标定边界关系的影响，不能据此推出真实时长下界或参\n\n数全域单调性。\n\n\n\n\n\n                                                   20"
+      },
+      {
+        "page": 34,
+        "text": "                                    D𝑠𝑇\n                           𝐵(𝐶) D𝑡= 𝛻·[𝑘(𝐶)𝛻𝑇],                                                   （A.10）                                𝜕𝑇   1 𝜕       𝜕𝑇\n                       𝐵(𝐶) 𝜕𝑡= 𝑟 𝜕𝑟[𝑟𝑘(𝐶) 𝜕𝑟] (v𝑠= 0)\n   𝑘的单位为W/(m K)，𝑐𝑝为J/(kg K)，𝜌eff为kg/m3，故𝐵为J/(m3K)。式（A.10）是本\n文采用的有效显热闭合；由Fourier 定律只能确定导热通量，不能单独推出完整多组分\n\n能量方程恰好等于该容量形式。\n\n  特别地，𝜌eff不自动等于质量守恒中的𝜌𝑑。比热、密度依赖含水率时，有\n\n                           D𝑠                D𝑠𝑇         D𝑠𝐶\n                       D𝑡[𝐵(𝐶)𝑇] = 𝐵(𝐶) D𝑡+ 𝑇𝐵′(𝐶) D𝑡                （A.11）\n  因此不能把式（A.10）的左端改写为D𝑠(𝐵𝑇)/D𝑡而省略第二项。基线未逐项建立水\n分迁移携焓、相变热及机械功，后面的有效热通量恒等式只检查所采用的方程，不证明\n\n真实完整过程的总能量平衡已经闭合。\n\n9.1.4 四问物性与驱动条件\n\n  问题一采用题给附录2 的常热物性及含水率相关扩散率：\n\n             𝜌eff = 820, 𝑐𝑝= 2600, 𝑘= 0.36, 𝐷1(𝐶) = 7 × 10−9𝑒𝑥𝑝( −0.89/𝐶)      （A.12）\n  密度、比热、导热率和扩散率依次使用kg/m3、J/(kg K)、W/(m K)和m2/s。问题一\n的热场可独立求解，水分扩散仍是非线性的；𝐷1不含温度因子。\n\n  问题二与问题三从同一均匀初态开始，在整个过程采用题给附录3：\n\n                                   𝜌eff(𝐶) = 650 + 128𝐶,\n                             𝑐𝑝(𝐶) = 1450 + 2736 1+𝐶,𝐶\n                                                𝐶                    （A.13）\n                             𝑘(𝐶) = 0.21 + 0.38 1+𝐶,\n                                                                   0.45   3850\n                     𝐷23(𝑇, 𝐶) = 2.4 × 10−3𝑒𝑥𝑝( −                        𝐶− 𝑇)\n\n  问题四从初始时刻整组使用题给附录4，并同时引入半径变化：\n\n                                    𝜌eff(𝐶) = 760 + 90𝐶,\n                             𝑐𝑝(𝐶) = 1850 + 2150 1+𝐶,𝐶\n                                                𝐶                    （A.14）\n                             𝑘(𝐶) = 0.12 + 0.20 1+𝐶,\n                                                                   0.30   3850\n                    𝐷4(𝑇, 𝐶) = 4.2 × 10−4𝑒𝑥𝑝( −                        𝐶− 𝑇)\n\n   式（A.13）、式（A.14）的单位与式（A.12）相同。𝑇必须以K 代入，3850 带有使\n3850/𝑇无量纲的温度尺度；𝑎/𝐶中参数𝑎与干基含水率采用同一数值口径。这些系数来自\n题给经验关系，不是由本次附件重新拟合，也不是从第一原理推导的常数。问题二、三\n\n不拼接问题一的末态，问题四也不在某一阶段才切换附录4。\n\n   相同𝑇, 𝐶下，两组全过程扩散率之比为\n\n\n\n                                                   34"
+      },
+      {
+        "page": 35,
+        "text": "                      𝐷4(𝑇,𝐶)                  0.15             0.15\n                    = 0.175𝑒𝑥𝑝( 𝐶), 𝐶× = 𝑙𝑛(1/0.175) ≈0.08606          （A.15）                      𝐷23(𝑇,𝐶)\n  其中𝐶×是两扩散率相等的含水率。𝐶> 𝐶×时𝐷4 < 𝐷23，0 < 𝐶< 𝐶×时顺序反转。因此\n不能写“附录4 扩散系数在全程整体更小”；收缩和整组物性变化的净作用需由保持条件\n\n明确的数值对照判断。\n\n  环境表有241 个0—4 h 记录，半径表有145 个0—72 h 记录。对相邻时间节点𝑡𝑗≤𝑡≤\n𝑡𝑗+1，以𝑓𝑗表示同一观测变量，分段线性插值为\n\n                                                   （A.16）                                  𝐼𝑓(𝑡) = 𝑓𝑗+ 𝑓𝑗+1−𝑓𝑗𝑡𝑗+1−𝑡𝑗(𝑡−𝑡𝑗)\n\n  温度观测先换成K；半径换成m。正文基线环境为\n\n                                        (𝐼𝑇(𝑡), 𝐼𝑌(𝑡)),   0 ≤𝑡≤14400 s,                 (𝑇∞, 𝐶eq)(𝑡) = {                               （A.17）                                 (323.15,0.05),   𝑡> 14400 s.\n\n  式（A.17）后一段是平台延拓假设，不是持续数天的观测。收缩半径在附件2 的观\n测区间内使用𝑅(𝑡) = 𝐼𝑅(𝑡)。正式问题四的达标时刻位于72 h 内，未用到半径观测窗外延\n拓；对其他长时情景则必须另行说明。\n\n9.1.5 初始条件、表面边界与量纲\n\n  三条正式轨迹均从均匀初态开始，轴心由对称性给零径向梯度：\n\n                   𝑇(𝑟, 0) = 𝑇0, 𝐶(𝑟, 0) = 𝐶0, 𝑇𝑟(0, 𝑡) = 𝐶𝑟(0, 𝑡) = 0           （A.18）\n\n   记𝑇𝑠= 𝑇(𝑅(𝑡), 𝑡)、𝐶𝑠= 𝐶(𝑅(𝑡), 𝑡)为真实表面状态。向外为正时，表面热、水通量分\n别为\n\n              𝑞out =−𝑘𝑇𝑟= ℎ(𝑇𝑠−𝑇∞), 𝑗𝑤,𝑜𝑢𝑡=−𝜌𝑑𝐷𝐶𝑟= 𝜌𝑑𝛽(𝐶𝑠−𝐶eq)       （A.19）\n   ℎ= 25 W/(m2K)，𝛽= 8 × 10−7m/s。热边界两侧单位均为W/m2；水质量边界两侧单\n位均为kg/(m2s)。将水边界约去同一表面干密度得到源码使用的形式\n\n                     −𝐷𝐶𝑟= 𝛽(𝐶𝑠−𝐶eq)                   （A.20）\n\n  式（A.20）的两侧是以干密度归一化的传递量，其长度—时间单位为m/s，尚不是\n质量通量。材料较空气冷时𝑇𝑠< 𝑇∞，向外热通量为负，热量进入材料；𝐶𝑠> 𝐶eq时向外\n水通量为正，材料失水。该符号规则贯穿边界与控制体离散。\n\n  初值与瞬时表面Robin 条件未必在𝑡= 0 完全相容。这表示启动阶段形成快速边界\n\n层，不要求人为改动题给初态。数值求解采用较小的早期步长，并另行检查接受状态和\n\n早期场误差。\n\n\n\n\n\n                                                   35"
+      },
+      {
+        "page": 39,
+        "text": "                                   𝛥𝑥   𝛥𝑥/2   𝛥𝑥/2\n                          𝑘𝐻= 𝑘𝑖+ 𝑘𝑖+1 ,\n                                                        2𝑘𝑖𝑘𝑖+1                                                                             ,                      （A.35）                        𝑘𝐻=                                                        𝑘𝑖+𝑘𝑖+1\n                                  𝑔𝑖+1/2𝑇   = 𝛾𝑖𝑘𝐻(𝑇𝑖+1 −𝑇𝑖)\n\n  这里的等效阻力解释针对面附近两段系数近似，圆柱面位置也按𝑥𝑖+1/2近似；不是对\n整个有限厚圆柱壳稳态导热的无误差积分。\n\n  三组扩散率可统一写成𝐷= 𝐷0𝐴(𝑇)𝑓𝑎(𝐶)，其中𝐴(𝑇) = 𝑒𝑥𝑝( −𝑏/𝑇)、𝑓𝑎(𝐶) = 𝑒𝑥𝑝( −𝑎/\n𝐶)。参数(𝑎, 𝑏, 𝐷0)依次为(0.89,0,7 × 10−9)、(0.45,3850,2.4 × 10−3)和(0.30,3850,4.2 × 10−4)。\n对𝐶> 0 定义Kirchhoff 浓度势\n\n                     𝛷𝑎(𝐶) = 𝐶𝑒𝑥𝑝( −𝑎/𝐶) + 𝑎𝐸𝑖( −𝑎/𝐶)              （A.36）\n\n   𝐸𝑖为指数积分函数。利用d𝐸𝑖(𝑧)/d𝑧= 𝑒𝑧/𝑧和链式法则，分别有\n                            d𝐶[𝐶𝑒−𝑎/𝐶]d                      𝑎                                 = 𝑒−𝑎/𝐶(1 + 𝐶),\n                                 d                   𝑎\n                           d𝐶[𝑎𝐸𝑖( −𝑎/𝐶)] =− 𝐶𝑒−𝑎/𝐶,                 （A.37）\n                                                                                                 ′                                       (𝐶) = 𝑒−𝑎/𝐶                          𝛷𝑎\n\n                                                         ―\n    因此𝛷𝑎(𝐶𝑖+1) −𝛷𝑎(𝐶𝑖) = ∫𝐶𝑖𝐶𝑖+1𝑒−𝑎/𝑐d𝑐。在面上用当前两侧温度平均𝑇𝑖= (𝑇𝑖+ 𝑇𝑖+1)/2，\n水分面量为\n\n                      𝐶                   𝑏                                       ―         −𝛷𝑎(𝐶𝑖)]            （A.38）                        𝑔𝑖+1/2 = 𝛾𝑖𝐷0𝑒𝑥𝑝( −                                        𝑇 𝑖)[𝛷𝑎(𝐶𝑖+1)\n\n  式（A.38）对浓度因子的积分采用解析势差；温度面值、空间重构、几何面值及时\n间积分仍有数值误差。Q1 的𝑏= 0；其余两组的温度因子在一个面内单独取值。“面温度\n冻结”指这一步空间近似，不表示Newton 迭代中温度不更新。\n\n  不能对𝐴(𝑇)𝛷𝑎(𝐶)整体作差。因为其空间导数为\n                 𝜕𝑥[𝐴(𝑇)𝛷𝑎(𝐶)]𝜕           = 𝐴(𝑇)𝑒−𝑎/𝐶𝐶𝑥+ 𝐴(𝑇) 𝑇2𝑏 𝛷𝑎(𝐶)𝑇𝑥           （A.39）\n\n  第二项不在本题所用Fick 闭合内。当两侧含水率相同、温度不同时，正确浓度梯度\n\n通量应为零，整体势差却会产生非零值，因而不符合原模型。\n\n                                                          ―\n  相邻浓度很接近时，两项势值相减存在消减误差。令𝛥𝐶= 𝐶𝑖+1 −𝐶𝑖、𝐶𝑖= (𝐶𝑖+ 𝐶𝑖+1)/2，\n则中点积分展开给出\n\n                                                                                                                                     ′ ―                        ―                         ′                                              𝑓𝑎 (𝐶𝑖)             𝛥𝛷= 𝑓𝑎(𝐶𝑖)𝛥𝐶+     (𝛥𝐶)3 + 𝑂((𝛥𝐶)5)             （A.40）                                               24\n                           ―\n   现行源码在|𝛥𝐶| < 10−7𝑚𝑎𝑥(𝐶𝑖, 10−3)时使用第一项，其局部差为𝑂((𝛥𝐶)3)。一般分\n支保留指数积分势差。系数求值采用𝐶+ = 𝑚𝑎𝑥(𝐶, 10−12)保护Newton 试探点，实际比较\n\n\n\n\n                                                   39"
+      },
+      {
+        "page": 41,
+        "text": "                     𝜕𝑇𝑖𝑔𝑇=−𝛾𝑖𝑘𝐻, 𝜕𝑇𝑖+1𝑔𝑇= 𝛾𝑖𝑘𝐻,\n                                                  2       ′                                                                      ′             （A.45）                                              2𝑘𝑖+1 𝑘𝑖                        2𝑘𝑖2𝑘𝑖+1\n                𝜕𝐶𝑖𝑔𝑇= 𝛾𝑖𝛥𝑇             , 𝜕𝐶𝑖+1𝑔𝑇= 𝛾𝑖𝛥𝑇                                                (𝑘𝑖+𝑘𝑖+1)2                        (𝑘𝑖+𝑘𝑖+1)2\n\n                             ′\n   其中𝑘𝑖 = d𝑘(𝐶𝑖)/d𝐶𝑖。本题𝑘不显式依赖温度，故热通量的温度导数来自温差，浓度\n导数来自导热系数。\n\n                               ―\n  对水面量定义𝐺𝑖= 𝛾𝑖𝐷0𝑒−𝑏/𝑇 𝑖、𝛥𝛷= 𝛷𝑎(𝐶𝑖+1) −𝛷𝑎(𝐶𝑖)。常规正值势差分支下\n                    𝜕𝐶𝑖𝑔𝐶=−𝐺𝑖𝑒−𝑎/𝐶𝑖, 𝜕𝐶𝑖+1𝑔𝐶= 𝐺𝑖𝑒−𝑎/𝐶𝑖+1,\n                                         𝑏                 𝑏                （A.46）\n                     𝜕𝑇𝑖𝑔𝐶= 𝑔𝐶                                                    ― 2                                    ―2 , 𝜕𝑇𝑖+1𝑔𝐶= 𝑔𝐶                                       2𝑇𝑖               2𝑇 𝑖\n\n                                                         ―\n  温度偏导不能因采用面温度近似而省去；两侧温度各以1/2 进入𝑇𝑖。Q1 的𝑏= 0，\n相应热对水耦合偏导才为零。\n\n                                 ―\n  近等浓度分支必须对实际用到的𝑓𝑎(𝐶𝑖)𝛥𝐶求导，得到\n\n                                          1     ′ ―        ―\n                    𝜕𝐶𝑖𝛥𝛷= 2 𝑓𝑎 (𝐶𝑖)𝛥𝐶−𝑓𝑎(𝐶 𝑖),\n                                           1     ′ ―        ―\n                       𝜕𝐶𝑖+1𝛥𝛷= 2 𝑓𝑎 (𝐶𝑖)𝛥𝐶+ 𝑓𝑎(𝐶 𝑖),                （A.47）\n                                                                                             ′                                            𝑎 𝑒−𝑎/𝐶                                     (𝐶) =                              𝑓𝑎                                                𝐶2\n  在系数保护区，势差与物性关于浓度的偏导还需乘对应节点的活跃标记1𝐶𝑖>10−12。表\n面驱动使用原状态𝐶𝑁−𝐶eq，其下述边界偏导不因此变为零。保护阈值处属于分段数值\n规则，不是处处光滑的物理本构；Jacobian 采用与右端相同的分支，不能用另一表达式\n\n的导数替代。\n\n  热方程除面量外还有依赖𝐶𝑖的分母𝐵𝑖。设𝐻𝑖= 𝑔𝑖+1/2𝑇   −𝑔𝑖−1/2𝑇 ，则\n\n                                                                                                               ′\n                             𝜕𝐶𝑖𝐻𝑖        𝐵𝑖        ′           ′                                                        ′\n                                                           𝑖                 𝜕𝐶𝑖𝑇˙𝑖= 𝑅2𝑤𝑖𝐵𝑖−𝑇˙                                      𝐵𝑖, 𝐵𝑖 = 𝜌eff (𝐶𝑖)𝑐𝑝(𝐶𝑖) + 𝜌eff(𝐶𝑖)𝑐𝑝 (𝐶𝑖)         （A.48）\n\n  物性导数由题给表达式直接求得：\n\n                                                                                             ′          ′\n                               Q1:(𝜌eff , 𝑐𝑝 , 𝑘′) = (0,0,0),\n                                                                                 ′          ′               2736    0.38\n                        Q23:(𝜌eff , 𝑐𝑝 , 𝑘′) = (128, (1+𝐶)2 , (1+𝐶)2 ),              （A.49）\n                                                                                  ′          ′             2150    0.20\n                          Q4:(𝜌eff , 𝑐𝑝 , 𝑘′) = (90, (1+𝐶)2 , (1+𝐶)2 )\n   将每个面偏导向左、右控制体按正、负号加入，再乘各自的1/(𝑅2𝑤𝑖𝐵𝑖)或1/(𝑅2𝑤𝑖)；\n热方程同时添加式（A.48）的容量项。由此得到邻近节点的2 × 2 块带结构。\n\n  基线表面与累计量导数为\n\n                                                              2𝛽\n                  𝜕𝑇𝑁𝑔𝑠𝑇=−ℎ𝑅, 𝜕𝐶𝑁𝑔𝑠𝐶=−𝛽𝑅, 𝜕𝐶𝑁ℓ˙ = 𝑅              （A.50）\n\n\n\n                                                   41"
+      },
+      {
+        "page": 42,
+        "text": "   累计量ℓ不反馈温湿场，因此Jacobian 对ℓ的整列为零。令行向量m𝑇在每个𝐶𝑖分量取\n2𝑤𝑖、在ℓ分量取1、其余取零，则式（A.41）的微分结构要求\n\n                     m𝑇F = 0, m𝑇J = 0𝑇                    （A.51）\n\n  前者检查共享通量的质量装配，后者检查其导数装配。方向差分检验采用[F(y +\n𝜀v) −F(y −𝜀v)]/(2𝜀)与Jv 对照；必须同时覆盖浓度、温度、边界、累计量及近等浓度分\n\n支，不能只检查对角项。\n\n9.1.12 隐式BDF 与连续数值输出\n\n  空间加密使扩散算子的快速尺度约随(𝑅𝛥𝑥)−2增大，状态相关扩散率又带来不同的\n局部时间尺度。系统因此采用隐式BDF 推进。以当前状态和若干历史状态的插值多项\n\n式在当前时刻求导，可得一般后向差分残量\n\n                G(y𝑛) = 𝛼0y𝑛+ ∑𝑗=1𝑞𝛼𝑗y𝑛−𝑗−𝛥𝑡𝑛𝛽𝑞F(𝑡𝑛, y𝑛) = 0           （A.52）\n\n   𝑞为阶数，𝛼𝑗, 𝛽𝑞是该历史时间布局对应的系数。等步长二阶仅作为原理示例：\n\n                                 3y𝑛−4y𝑛−1+y𝑛−2                                    = F(𝑡𝑛, y𝑛)                  （A.53）                                         2𝛥𝑡\n\n   对式（A.52）作Newton 线性化，每次修正求解\n\n                             (𝛼0I −𝛥𝑡𝑛𝛽𝑞J)𝛿y =−G                  （A.54）\n\n   实际采用SciPy BDF 的1—5 阶自适应实现及NDF 精度修正；式（A.53）不表示全\n程固定二阶。隐式多步常微分方程求解的算法背景见Byrne 与Hindmarsh[6]，当前BDF\n的阶数、误差控制与Jacobian 接口依SciPy 官方说明[7]及本次使用版本源码核对。变步\n\n长、变阶时的历史差分更新、误差估计和失败重试由库实现，不能将固定等步长系数用\n\n于任意不等间距历史点。\n\n  时间局部误差按分量尺度归一化：\n\n                         𝑠𝑗= 𝑎𝑡𝑜𝑙𝑗+ 𝑟𝑡𝑜𝑙|𝑦𝑗|                   （A.55）\n\n   正式参数为𝑟𝑡𝑜𝑙= 10−10，温度绝对容差10−10K，水分与累计失水绝对容差10−12。\n前4 h 最大步长2 s，之后120 s；程序在14400 s 处切段，并用上一段接受末态作为下一\n\n段初态。这些参数控制时间积分局部误差，不能当作全时空场误差的严格上界。\n\n   BDF 每个接受步带有连续输出多项式。以一个接受步的右端𝑡𝑛、多项式步长尺度ℎ𝑝、\n阶数𝑞和后向差分系数向量D0, …, D𝑞表示，其求值形式为\n\n                                                  𝑗−1 𝑡−(𝑡𝑛−𝑘ℎ𝑝)\n                         P𝑛(𝑡) = D0 + ∑𝑗=1𝑞D𝑗∏𝑘=0                     （A.56）                                                                  (𝑘+1)ℎ𝑝\n\n  式（A.56）中的差分系数和尺度是求解器为该步输出对象保存的量，不应另从稀疏\n采样反推。diskDense.py 保存原始双精度系数与接受状态，并使用同一求值公式；只\n\n\n\n                                                   42"
+      },
+      {
+        "page": 43,
+        "text": "改变存储位置。BDF 内部断点恰好落在查询点时，保留与SciPy 原BDF 一致的右侧多\n项式选择；跨显式分段边界则保持Run.state 的段选择规则。\n\n  题定每1 s 或60 s 的数值直接从尚未关闭的连续数值轨迹查询。保存的60 s 等审查\n用NPZ 并不是逐秒输出的插值来源。连续输出多项式是离散ODE 解的数值表示，不是\n\n偏微分方程的解析解。\n\n9.1.13 全域最大含水率、临界根与严格报告时刻\n\n  对连续模型定义\n\n                  𝑀(𝑡) = 𝑚𝑎𝑥0≤𝑟≤𝑅(𝑡)𝐶(𝑟, 𝑡) = 𝑚𝑎𝑥0≤𝑥≤1𝐶^(𝑥, 𝑡)            （A.57）\n\n  𝑀(𝑡)表示时刻𝑡最湿位置的干基含水率，单位仍为kg/kg。题目要求各处含水率均低\n于𝐶∗= 0.15，等价于𝑀(𝑡) < 𝐶∗；平均含水率低于阈值不能替代这一条件，也不应在求解\n前只指定中心为唯一检查点。\n\n  数值计算实际采用全部𝑁+ 1 个节点的最大值\n\n                 𝑀𝑁(𝑡) = 𝑚𝑎𝑥0≤𝑖≤𝑁𝐶𝑖(𝑡), 𝑔𝑁(𝑡) = 𝑀𝑁(𝑡) −𝐶∗            （A.58）\n\n  节点间作分段线性重构时，每段值都是两个端点的凸组合，因此重构场的最大值恰\n\n等于𝑀𝑁。这使数值判据覆盖整个重构空间域，但不等于证明真实连续场与重构场的最\n大值完全相同。二者差异仍需空间、时间误差检查；若需要真实连续场的严格可行保证，\n\n还需可用的统一误差界。\n\n  以𝑔𝑁从正到负的第一次穿零定位临界时刻𝑡𝑐,𝑁。在临界附近连续下降时，𝑀𝑁(𝑡𝑐,𝑁) =\n𝐶∗对应等号，严格可行集合的下确界为该根，严格集合本身未必具有最小时间点。最大\n值函数在控制节点切换时可以不可微，但连续性仍使包围区间上的标量事件定位有意\n\n义；不要求对最大值求解析导数。\n\n  正文式(14)对应在指定报告网格上求严格可行的首点。本附录以离散数值模型明确\n\n写为\n\n           𝒦𝑁= {𝑘∈𝑁0: 𝑘𝛥𝑡𝑟≥𝑡𝑐,𝑁, 𝑀𝑁(𝑘𝛥𝑡𝑟) < 𝐶∗},\n                                                   （A.59）\n                     𝑡𝑟,𝑁= 𝛥𝑡𝑟𝑚𝑖𝑛𝒦𝑁, 𝛥𝑡𝑟= 0.36 s = 10−4h\n\n  𝑁0为非负整数集合，𝒦𝑁为满足时间与严格含水率条件的整数指标集合。所有集合\n内比较使用未舍入的数值解，𝑡𝑐,𝑁, 𝑡𝑟,𝑁, 𝛥𝑡𝑟统一以秒计算。该定义在所搜索区间内有可行\n点时才成立；未触发事件不能把预设计算上限当作烘干时长。\n\n  程序先从临界状态实际续算至\n\n                                                        𝑡𝑐,𝑁\n                             𝑡end = 𝛥𝑡𝑠[⌈ 𝛥𝑡𝑠⌉+ 1], 𝛥𝑡𝑠= 1 s,               （A.60）\n\n  再生成报告候选首点\n\n\n\n                                                   43"
+      }
+    ],
+    "independent_comparisons": [
+      {
+        "page": 18,
+        "text": "             时间/h                      表面半径/cm\n\n\n                    48.0000                                        1.2000\n\n                    51.0906                                        1.2000\n\n\n    6 h 时半径已收缩至1.3740 cm，因此1.5 cm 和2 cm 固定位置均位于域外；此时表\n面含水率为0.4207，中心仍为1.7196 kg/kg。至最终时刻，中心和表面分别显示0.1500\n与0.0526，仍有明显梯度。径向收缩减少了迁移距离，但不会消除由低含水率扩散变慢\n\n造成的后期阻力。\n\n\n\n\n\n                 图5 问题四径向收缩及含水率分布\n\n5.4.5 模型检验或灵敏度分析\n\n  问题三与四的报告时长相差约6.3818 h，但两问物性和几何同时变化，该差值不能\n全部归因于收缩。为分离几何影响，在相同附录4 物性、边界和N200 网格下，分别固\n定半径及采用给定收缩，得到129.8452 h 与51.0910 h；在这个指定对照中，收缩情形时\n长减少约60.65%。这里的N200 结果用于机理比较，不替代N6400 正式报告。\n\n  式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²\n增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定\n半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件\n\n作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数\n\n据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。\n\n\n\n\n                                                   18"
+      },
+      {
+        "page": 19,
+        "text": "5.4.6 边界阻力的补充修正\n\n  为考察基线气固映射的不确定性，在保持主答案不变的前提下，构造受水活度启发\n\n的经验阻力族。令Cref=0.05，p≥1，对表面通量增加因子\n\n                                              1−(𝐶ref/𝐶s)1/𝑝\n                     𝐾𝑝(𝐶s) =                  , 𝑗w = 𝜌d𝛽𝐾𝑝(𝐶s)(𝐶s −𝐶eq)                    (21)                                            1−𝐶ref/𝐶s\n\n   当Cs 趋于Cref 时取连续极限1/p；对Cs≥Cref 有1/p≤Kp≤1，p=1 恢复基线。该构造通\n\n过指定参考点下的活动度差缩放获得启发，实际计算仍是一族经验边界阻力，尚未标定\n\n真实吸附等温线。历史N800 情景下，p=2 时问题二三的临界时长为59.6239 h，问题四\n为52.2283 h；p=4 时分别为65.4447 h 和55.3162 h。它们表明所选边界阻力会改变预测\n时长，不能据此推出真实过程必大于基线，亦不能证明所有p 下的全局单调性。\n\n\n\n\n\n                  图6 边界阻力参数灵敏度分析\n\n\n\n\n         六、模型检验与灵敏度分析\n\n  本题缺少药材内部温度与含水率实测值，因此检验重点是所建方程的数值实现及假\n\n设敏感性。解析级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设参数\n\n与边界；各方法不能提供独立的物理预测准确率。表8 差值均取未舍入结果，完整计算\n过程与采样范围见附录C。\n\n\n\n\n\n                                                   19"
+      },
+      {
+        "page": 20,
+        "text": "                 表8 数值检验的对象、范围与结果\n\n\n   检验对象      方法及范围      主要结果      支持的结论\n\n\n                      N3200，1801 整数秒×21\n                                 常热物性热方程的数\n   问题一热场   半径；有限体积与     最大温差1.804×10⁻⁶ K\n                                    值一致性\n                        Robin–Bessel 级数\n\n\n                                         温差≤2.375×10⁻⁷ K，水\n                    N40；Python 与\n                                          分差≤5.851×10⁻¹⁰    共同采样点的跨实现\n  三条计算轨迹    MATLAB，100 场值及\n                                kg/kg，事件差        一致性\n                       2 事件\n                                                 ≤2.297×10⁻⁴ s\n\n                  N800、N1600；BDF 与 最大事件差约3.2×10⁻⁶ 同一空间离散的积分\n 问题三、四临界时间\n                      Radau                                  s         器一致性\n\n\n            最细相邻网格；同N 收 最大水分差分别\n                                 检验范围内的离散敏\n   场值分辨率   紧容差与步长，公共有  ≤4.70×10⁻⁵、≤9.95×10⁻⁹\n                                     感性\n           效域                   kg/kg\n\n\n\n  空间检查分别采用问题一、二三的N1600 与N3200，以及问题四的N3200 与N6400；\n时间检查固定最细网格。比较覆盖全整数秒及21 个有效物理半径点，问题四排除域外\n\n位置，真实表面另作核对。网格差不是连续解的严格误差界，四位输出也不保证全部末\n\n位稳定。水分平均值与累计流出量的残差约为10⁻¹⁴ kg/kg，说明共享通量记账自洽；热\n\n侧验证的是瞬时加权温度变化与边界通量相符，不能扩大为完整热力学能量守恒。\n\n  达标时间由全域最大含水率事件确定，并在𝑁= 800 的验证轨迹上用独立二分法\n复核事件定位。最终烘干时刻按式(14)确定，其可行性由未舍入的最大含水率核验；两\n种定位方法的比较见附录C.4。\n\n   在N200 单参数情景中，扩散前因子倍率由0.7 增至1.4 时，问题三时长由79.4187 h\n降至43.0796 h，问题四由70.4059 h 降至38.3160 h；导热系数在±15%内变化，两问时\n长跨度均小于0.011%。这支持所选工况下时长对扩散参数更敏感，不能据此认为潜热或\n\n气固边界不重要。\n\n  边界阻力族采用p=1、2、4 时，已计算的临界时间随所选参数点增大。p=4 相对同\nN 基线使问题三、四分别延长约13.87%和8.27%；这批结果只完成事件积分，不替代正\n\n式严格报告值。其用途是展示未标定边界关系的影响，不能据此推出真实时长下界或参\n\n数全域单调性。\n\n\n\n\n\n                                                   20"
+      }
+    ],
+    "method_root": [],
+    "assumptions": [
+      {
+        "page": 1,
+        "text": "考虑物性变化与径向收缩的药材热湿耦合模型及数值验证\n\n\n                摘要\n\n  药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表内\n\n部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性关系，建立一\n\n维径向有效热湿耦合模型，并以全域最大干基含水率确定烘干结束时间。模型区分有效\n\n显热容量与守恒干物质密度，将气固含水率映射、观测窗后环境平台和同比径向收缩作\n\n为明确闭合；在环形控制体上采用Kirchhoff 浓度势处理非线性扩散，配合解析稀疏\nJacobian 与隐式BDF 求解。\n\n  针对问题一，采用常热物性与含水率依赖扩散系数建立预热模型，计算0—1800 s\n内温度和水分的径向分布。1800 s 时中心、表面温度分别为33.5753°C 和36.7856°C，干\n基含水率分别显示2.5500 和1.5102 kg/kg，反映表层先响应及内部水分迁移滞后。温度\n\n场另与包含时变边界卷积的圆柱解析级数对照，验证简化条件下的数值实现。\n\n  针对问题二，从初始状态统一采用附录3 的变物性，联立计算温度对扩散及水分对\n热物性的反馈。附件观测区间内进行分段线性插值，4 h 后按50°C 与等效平衡含水率\n0.05 延拓。3 h 时中心、表面温度为49.8495°C 和49.9664°C，而含水率仍为1.7662 和\n1.0081 kg/kg，说明升温接近完成早于全域脱水完成。\n\n  针对问题三，复用全过程轨迹，以全域最大含水率下降穿越0.15 kg/kg 定位临界根，\n并区别临界等号与严格可行的报告时刻，得到烘干时长57.4724 h。针对问题四，在干物\n\n质守恒下取材料坐标，将给定半径变化转化为固定区间上的时变几何因子；采用整组附\n\n录4 物性，得到时长51.0906 h、结束半径约1.2000 cm，输出中将域外位置与真实表面\n\n分别处理。\n\n  针对问题四，在干物质守恒条件下引入材料坐标变换，将随半径收缩的移动区域映\n\n射到固定区间，并依据半径观测和第四问物性关系更新几何因子、扩散系数及边界通量。\n计算得到烘干时间为51.0906 h，结束时半径约为1.2000 cm。该时间较问题三缩短6.3818\nh，体现径向收缩与物性变化的综合影响；同物性对照进一步表明，径向收缩通过缩短\n\n水分迁移距离加快干燥。输出时区分药材外部位置与实际表面，保证收缩过程中的空间\n\n对应关系。\n\n  通过圆柱解析级数对照、网格加密、时间积分设置检验以及独立MATLAB 程序比较，\n验证了模型在所检验范围内的数值一致性。敏感性分析表明，烘干时间对水分扩散参数\n\n和表面传质边界较为敏感，所求时长适用于题给物性、环境延拓及收缩假设。\n\n  关键词：热湿耦合；有限体积法；Kirchhoff 变换；径向收缩；干燥时间\n\n\n\n\n\n                                                    1"
+      },
+      {
+        "page": 3,
+        "text": "            二、问题分析\n\n2.1 问题一分析\n\n  已知圆柱形药材的几何尺寸、均匀初始状态、烘房温湿度序列及附录2 参数，问题\n一要求得到1800 s 内的径向温度和含水率分布。由傅里叶导热定律与Fick 扩散定律建\n\n立轴对称控制方程，并给定中心零通量和表面对流边界条件。本问热物性为常数，温度\n方程可独立求解，并可构造圆柱Bessel 级数基准进行检验；水分扩散系数𝐷1(𝐶) 仍随\n含水率变化，采用守恒型有限体积离散和隐式时间积分求解。问题一的扩散系数不含温\n\n度项；问题二至四含Arrhenius 温度因子的经验式统一以开尔文温度代入。\n\n2.2 问题二分析\n\n  问题二区别于上一问，将时间拉长至整个烘干过程，已知烘干过程持续数天，预热\n\n平衡与恒温干燥两个阶段的参数不同，附录给出了密度、比热容、导热系数和扩散系数\n\n随含水率或温度变化的经验关系，要求得到整个烘干过程的温度与水分浓度时空分布。\n\n与问题一相比，本问物性同时依赖含水率与温度，温度方程和水分方程不再解耦，必须\n\n联立求解。由于两问采用的物性体系不同，本问从初始时刻重新开始计算，不以问题一\n\n的末状态作为初值。环境驱动方面，前一段时间按附件数据分段线性插值，之后取平台\n\n温湿度延拓，该延拓作为假设在论文中明确说明。求解方法上仍采用守恒型有限体积离\n\n散，时间推进需处理方程刚性与非线性耦合，因此配了解析Jacobian 并采用隐式BDF\n\n格式。非线性系数不能移出散度，热容量项不能改写成特定微分形式。\n\n2.3 问题三分析\n\n  问题三沿用问题二的变物性耦合模型及同一条数值轨迹，确定药材各处干基含水率\n\n均低于0.15 kg/kg 所需的时间。以全域最大含水率构造阈值函数，通过连续数值解定位\n\n其下降穿越阈值的临界时刻，再在指定时间精度下选取并核验满足严格不等式的烘干时\n\n长。该判据同时检查全部径向位置，不预先指定中心或表面作为唯一控制点。\n\n2.4 问题四分析\n\n  问题四需要处理半径随时间减小引起的移动边界。半径由附件2 线性插值得到，热\n容量、导热系数和扩散系数采用附录4 的经验关系，并随当前含水率与温度更新。\n\n  在干物质守恒及径向同比收缩的假设下，引入材料坐标𝑥= 𝑟/𝑅(𝑡)，将随时间变化\n的药材区域映射到固定区间[0,1]。从组分守恒方程出发进行坐标变换，骨架运动产生\n\n的平流项与坐标变化项相消，收缩影响通过时变几何系数及边界条件体现。在此基础上\n\n采用有限体积法离散求解。为考察收缩本身的影响，保持附录4 物性、初始条件、环境\n\n条件及数值设置一致，分别计算固定半径与给定半径变化两种情形，比较其含水率分布\n\n和烘干时长。问题三与问题四的结果之差则反映物性变化和径向收缩的综合影响。\n\n\n                                                    3"
+      },
+      {
+        "page": 4,
+        "text": "            三、模型假设\n\n  假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程\n\n简化为一维径向模型。\n\n  假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对\n\n流传质系数取恒定值。\n\n  假设初始时刻药材内部温度与干基含水率均匀分布，不存在初始梯度。\n\n  假设药材干物质初始分布均匀，烘干过程中不存在干物质的生成、损失及相对于骨\n\n架的迁移。问题一至三忽略药材尺寸变化；问题四假设轴向长度保持不变，干物质骨架\n仅发生径向同比收缩，即各材料点到轴线的距离均按𝑅(𝑡)/𝑅0 的比例变化。\n\n  假设不考虑药材内部生化反应，仅研究热传导与水分扩散物理过程。\n\n\n\n            四、符号说明\n\n\n    符号              说明              单位\n\n\n                   t               时间                                       s\n\n\n             r           到药材中心的径向距离              m\n\n\n         x=r/R(t)          材料归一化径向坐标                       1\n\n\n         T              药材温度                   K\n\n\n        C           干基含水率=m 水/m 干物质                    kg/kg\n\n\n      w=C/(1+C)           湿基质量分数                          1\n\n\n            R(t)            药材当前半径                 m\n\n\n                ρeff          有效密度（用于热容量）                    kg/m³\n\n\n            ρd            守恒干物质密度                        kg/m³\n\n\n             cp              比热容                               J/(kg·K)\n\n\n            k              导热系数                       W/(m·K)\n\n\n       D            有效水分扩散系数                          m²/s\n\n\n\n                                                    4"
+      },
+      {
+        "page": 5,
+        "text": "    符号              说明              单位\n\n\n          h             对流换热系数                      W/(m²·K)\n\n\n          β             对流传质系数                          m/s\n\n\n         B=ρeff·cp          有效体积显热容量                        J/(m³·K)\n\n\n              qr         径向导热热流密度（向外为正）              W/m²\n\n\n             jw         径向水分质量通量（向外为正）                  kg/(m²·s)\n\n\n              ℓ(t)         每单位初始干物质的累计失水                   kg/kg\n\n\n           Ceq          环境对应的等效平衡含水率                    kg/kg\n\n\n          T∞              烘房温度                   K\n\n            𝑡c          全域含水率阈值的临界时刻                          s\n\n\n\n          五、模型的建立与求解\n\n5.1 问题一模型的建立与求解\n\n\n5.1.1 建模思路\n\n  本文采用圆柱径向热湿传递框架研究药材内部状态。计算几何按题面取长度0.25\nm、初始半径0.02 m；温度方程以开尔文为单位，结果表换算为摄氏度。含水率C 表示\n单位药材干物质所含的水质量，其与湿基质量分数w 的关系为\n\n                      𝐶= 𝑚w , 𝑤=  𝐶                                         (1)\n                                       𝑚d       1+𝐶\n\n  干基含水率表示水质量与干物质质量的比值。为保持水量计算的量纲一致，引入单\n\n位当前体积内的干物质质量𝜌d，则水质量密度为𝜌d𝐶。问题一至三采用固定且空间均\n匀的干物质骨架；问题四允许骨架随材料收缩运动，并假设干物质相对于骨架的通量为\n\n零。下文据此建立移动区域上的组分守恒方程。\n\n  热学和质量方程需要分别说明密度的用途。题给ρ与cp 的乘积记为B，用来描述单\n位体积温升的有效显热需求；ρd 则用于计算随材料守恒的干物质和水质量。若把题给ρ\n同时解释为真实湿密度，再强行令ρd=ρ/(1+C)，会对固定长度和给定半径施加额外约束。\n附录A.2 表明，该约束与所给后期收缩数据不能同时满足。因此本文采用有效容量与独\n\n立干骨架的闭合，使两套方程的定义一致；这一处理也限定了结果的物理解释，不能视\n\n\n                                                    5"
+      },
+      {
+        "page": 6,
+        "text": "为对真实组分密度的验证。\n\n  平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。\n附件1 的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记\n该观测数值为𝑌∞，基线取𝐶eq = 𝑌∞，作为表面传质的等效平衡值。这一数值映射是本\n文的边界假设；文献中的一般平衡关系不构成该映射的标定依据。若进一步将𝑌∞解释\n为空气湿度比，其参考质量也需另作说明。\n\n5.1.2 变量定义与公式推导\n\n  在半径r 至r+dr 的圆柱薄壳内，对向外为正的热流和水分通量采用Fourier 与Fick\n\n本构。薄壳内外表面积不同，积分守恒后须保留径向几何因子。得到\n\n                                    ∂𝑇   1 ∂        ∂𝑇\n                         𝐵(𝐶) ∂𝑡= 𝑟 ∂𝑟(𝑟𝑘(𝐶) ∂𝑟), 0 < 𝑟< 𝑅0                             (2)\n\n                                      ∂𝐶   1 ∂           ∂𝐶\n                             ∂𝑡= 𝑟 ∂𝑟(𝑟𝐷(𝑇, 𝐶) ∂𝑟)                                     (3)\n\n  式(2)表示有效显热的局部变化由净导热供给；式(3)由水质量守恒结合Fick 扩散定\n\n律，在干骨架密度均匀且固定时得到。导热系数和扩散系数保留在散度内，以反映状态\n\n变化引起的通量梯度。相应常系数圆柱问题的Bessel函数级数解可参考Crank的推导[4]，\n\n用于检验简化条件下的数值实现。\n\n  中心由于轴对称不存在跨轴通量，表面与烘房发生对流换热和有效传质。初始条件\n\n与边界条件分别为\n\n                  𝑇(𝑟, 0) = 301.15 K, 𝐶(𝑟, 0) = 2.55, 𝑇𝑟(0, 𝑡) = 𝐶𝑟(0, 𝑡) = 0                  (4)\n\n                −𝑘𝑇𝑟(𝑅0, 𝑡) = ℎ(𝑇s −𝑇∞), −𝐷𝐶𝑟(𝑅0, 𝑡) = 𝛽(𝐶s −𝐶eq)                  (5)\n\n   这里Ts 与Cs 是药材真实表面的状态，h=25 W/(m²·K)，β=8×10⁻⁷ m/s。初始场与表\n面边界在t=0 处可能不完全相容，意味着启动阶段形成边界层，不应人为修改初始温湿\n\n度来消除该现象。采用较小的早期步长处理快速响应，并在后续检查非负性与通量方向。\n\n  问题一采用附录2：ρ=820 kg/m³，cp=2600 J/(kg·K)，k=0.36 W/(m·K)，水分扩散系\n\n数为\n\n                                                                       0.89\n                          𝐷1(𝐶) = 7 × 10−9exp( − 𝐶) m2/s                              (6)\n\n  因此本问温度方程是可独立求解的线性热方程，水方程仍因D1(C)而非线性。式(6)\n没有温度项；Arrhenius 温度因子只在问题二至四的物性关系中出现。不能把“常热物性”\n扩大解释为“全部物性均为常数”，也不应给问题一另外加入温度活化项。\n\n5.1.3 求解算法\n\n  设归一化坐标𝑥= 𝑟/𝑅0，在0 ≤𝑥≤1 上划分𝑁个等长区间，节点𝑥𝑖= 𝑖/𝑁包含\n\n\n\n                                                    6"
+      },
+      {
+        "page": 10,
+        "text": "                       𝜌eff = 650 + 128𝐶, 𝑐p = 1450 + 2736𝑤, 𝑘= 0.21 + 0.38𝑤                 (8)\n\n                                                                         0.45   3850\n                        𝐷3(𝑇, 𝐶) = 2.4 × 10−3exp( − 𝐶− 𝑇)                          (9)\n\n   式(8)的密度、比热容、导热系数依次采用kg/m³、J/(kg·K)、W/(m·K)，式(9)的单位\n为m²/s，T 必须是绝对温度。指数中的0.45/C 和3850/T 均为无量纲经验组合，系数按\n题目给定取值，不从当前附件重新拟合。后续采用B(C)=ρeff(C)cp(C)，仍是有效显热解\n\n释。\n\n  附件1 包含0—4 h 共241 组观测，观测间隔60 s。为了向连续时间求解器提供边界，\n观测区间内作分段线性插值。t>4 h 后取T∞=50°C、Ceq=0.05。这一延拓利用题目恒温干\n\n燥的工况描述及末段平台特征，但平台尾段并非持续数天的实测记录。相应的分段表达\n\n为\n\n                                            (𝐼𝑇(𝑡), 𝐼𝑌(𝑡)),   0 ≤𝑡≤14400 s,\n                    (𝑇∞, 𝐶eq)(𝑡) = {                                                    (10)                                      (323.15,0.05),   𝑡> 14400 s.\n\n  其中两种插值算子直接连接相邻观测点，不额外平滑或外推趋势。超过观测窗后的\n\n输出是指定工况下的条件预测。附录3 未重给表面换热和传质系数，本文明确沿用h 和\nβ；这也属于全过程边界设置，而不是对不同风速或设备的普遍结论。\n\n\n\n\n\n                  图2 烘房环境边界条件与延拓\n\n\n\n\n\n                                                   10"
+      },
+      {
+        "page": 15,
+        "text": "                 图4 问题三烘干阈值穿越临界时刻\n\n5.3.5 模型检验或灵敏度分析\n\n  约93.04%的报告时长位于附件1 的4 h 观测窗之后，因此57.4724 h 应理解为规定\n平台温湿条件持续存在时的模型预测。数值根的复核能检查“给定轨迹上是否找准阈\n值”，不能消除边界延拓和气固映射的物理不确定性。若后续更换平台温湿度、β或平衡\n\n映射，必须重新积分并重新确定事件，不能只按经验比例改动最终时长。\n\n\n\n5.4 问题四模型的建立与求解\n\n\n5.4.1 建模思路\n\n  问题四同时改变几何与物性。从t=0 起整组采用附录4，并由附件2 查询R(t)。附\n件2 在0—72 h 提供145 个半径观测，间隔0.5 h，按分段线性插值连接。基线假定轴向\n长度保持不变，内部材料发生与半径一致的同比径向收缩；材料速度为u(r,t)=rR′(t)/R(t)。\n\n该速度场与表面运动相容，是从半径数据推断内部运动的明确假设。\n\n  如果只在固定域模型中将R0 换成R(t)，而不说明水质量和材料速度的含义，就可能\n\n重复加入浓缩项或漏掉物质运动。本文先从组分守恒建立物质导数，再进行材料坐标变\n\n换，保证控制方程的来源清楚。\n\n5.4.2 变量定义与公式推导\n\n  在没有干物质生成或相对迁移的条件下，干质量守恒及水质量守恒为\n\n\n\n                                                   15"
+      },
+      {
+        "page": 16,
+        "text": "                    ∂𝑡𝜌d + ∇·(𝜌du) = 0, ∂𝑡(𝜌d𝐶) + ∇·(𝜌d𝐶u + jw) = 0                  (15)\n\n  将水质量方程减去干质量方程的𝐶倍，得到𝜌d𝐷𝑡𝐶=−∇·jw。取jw =−𝜌d𝐷∇𝐶，\n并利用干骨架密度的空间均匀性消去𝜌d。令𝑥= 𝑟/𝑅(𝑡)，定义𝐶^(𝑥, 𝑡) = 𝐶(𝑅(𝑡)𝑥, 𝑡)、\n𝑇^(𝑥, 𝑡) = 𝑇(𝑅(𝑡)𝑥, 𝑡)。链式法则中的坐标变化项与骨架平流项相消，得到\n\n                                                          ∂𝐶^     1   ∂        ∂𝐶^\n                             ∂𝑡= 𝑅(𝑡)2𝑥 ∂𝑥(𝑥𝐷 ∂𝑥)                                 (16)\n\n                                    𝐵(𝐶^) ∂𝑇^     1   ∂        ∂𝑇^                                (17)                               ∂𝑡= 𝑅(𝑡)2𝑥 ∂𝑥(𝑥𝑘 ∂𝑥)\n\n  式(17)沿用有效显热闭合，未显式包含潜热、湿分携焓及收缩功。材料坐标方程中\n\n不再出现额外网格平流项；干基比值也不另加体积浓缩项。收缩引起的干骨架密度变化\n满足𝜌d(𝑡) = 𝜌d0[𝑅0/𝑅(𝑡)]2。坐标变换和干质量守恒推导见附录A。\n\n   在x=0 保持零通量，表面边界改为\n\n          −                       𝑘  𝑇^𝑥(1, 𝑡) = ℎ(𝑇s −𝑇∞), − 𝐷  𝐶^𝑥(1, 𝑡) = 𝛽(𝐶s −𝐶eq)               (18)                            𝑅(𝑡)                                   𝑅(𝑡)\n\n  边界中的1/R 来自空间导数换元，不能遗漏。附录4 物性为\n\n                       𝜌eff = 760 + 90𝐶, 𝑐p = 1850 + 2150𝑤, 𝑘= 0.12 + 0.20𝑤,               (19)\n\n                                                                         0.30   3850\n                        𝐷4(𝑇, 𝐶) = 4.2 × 10−4exp( − 𝐶− 𝑇)                       (20)\n\n  在相同温度与含水率下，两组扩散系数满足𝐷4/𝐷3 = 0.175exp(0.15/𝐶)。当𝐶≈\n0.08606 kg/kg 时两者相等；高于该值时𝐷4 < 𝐷3，低于该值时大小关系反转。因此，物\n性变化的综合作用由全过程数值对照评估，不能仅由扩散系数前因子判断。\n\n5.4.3 求解算法\n\n  在材料坐标中采用𝑁= 6400 的固定网格。每次右端函数求值时，根据当前𝑡更新\n𝑅(𝑡)，再更新式(16)—(20)中的几何因子、物性和边界通量。网格点随材料运动，输出时\n\n转换到题目要求的物理半径𝑟。\n\n     Step 1：选定整组附录4 参数，读取半径序列并检查其正值与非增性。Step 2：在材\n料坐标上生成初值、控制体和通量。Step 3：按当前半径联立积分温度与含水率。Step 4：\n监测材料域内最大C 的阈值事件并复核严格报告时刻。Step 5：按每60 s 和0.1 cm 生成\n物理距离结果，同时单列当前真实表面及R(t)。\n\n  r>R(t)的物理位置已不在药材内，不能插值或填成零含水率。本文保留这些固定半\n径列为空，并单列“药材表面”，从而同时保留原距离坐标与移动边界信息。真实表面不\n一定恰好落在0.1 cm 网格，不能取最近固定列冒充。\n\n\n\n\n\n                                                   16"
+      },
+      {
+        "page": 18,
+        "text": "             时间/h                      表面半径/cm\n\n\n                    48.0000                                        1.2000\n\n                    51.0906                                        1.2000\n\n\n    6 h 时半径已收缩至1.3740 cm，因此1.5 cm 和2 cm 固定位置均位于域外；此时表\n面含水率为0.4207，中心仍为1.7196 kg/kg。至最终时刻，中心和表面分别显示0.1500\n与0.0526，仍有明显梯度。径向收缩减少了迁移距离，但不会消除由低含水率扩散变慢\n\n造成的后期阻力。\n\n\n\n\n\n                 图5 问题四径向收缩及含水率分布\n\n5.4.5 模型检验或灵敏度分析\n\n  问题三与四的报告时长相差约6.3818 h，但两问物性和几何同时变化，该差值不能\n全部归因于收缩。为分离几何影响，在相同附录4 物性、边界和N200 网格下，分别固\n定半径及采用给定收缩，得到129.8452 h 与51.0910 h；在这个指定对照中，收缩情形时\n长减少约60.65%。这里的N200 结果用于机理比较，不替代N6400 正式报告。\n\n  式(16)直接显示收缩为何会加快内部传递：在相同局部物性下，径向扩散项随R⁻²\n增强；式(18)又表明表面交换与内部传递的相对比例也在变化。R²时标换算与同物性定\n半径对照相差约1.37%，支持迁移路径缩短的尺度解释。由于换算积分使用了仿真事件\n\n作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数\n\n据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。\n\n\n\n\n                                                   18"
+      },
+      {
+        "page": 19,
+        "text": "5.4.6 边界阻力的补充修正\n\n  为考察基线气固映射的不确定性，在保持主答案不变的前提下，构造受水活度启发\n\n的经验阻力族。令Cref=0.05，p≥1，对表面通量增加因子\n\n                                              1−(𝐶ref/𝐶s)1/𝑝\n                     𝐾𝑝(𝐶s) =                  , 𝑗w = 𝜌d𝛽𝐾𝑝(𝐶s)(𝐶s −𝐶eq)                    (21)                                            1−𝐶ref/𝐶s\n\n   当Cs 趋于Cref 时取连续极限1/p；对Cs≥Cref 有1/p≤Kp≤1，p=1 恢复基线。该构造通\n\n过指定参考点下的活动度差缩放获得启发，实际计算仍是一族经验边界阻力，尚未标定\n\n真实吸附等温线。历史N800 情景下，p=2 时问题二三的临界时长为59.6239 h，问题四\n为52.2283 h；p=4 时分别为65.4447 h 和55.3162 h。它们表明所选边界阻力会改变预测\n时长，不能据此推出真实过程必大于基线，亦不能证明所有p 下的全局单调性。\n\n\n\n\n\n                  图6 边界阻力参数灵敏度分析\n\n\n\n\n         六、模型检验与灵敏度分析\n\n  本题缺少药材内部温度与含水率实测值，因此检验重点是所建方程的数值实现及假\n\n设敏感性。解析级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设参数\n\n与边界；各方法不能提供独立的物理预测准确率。表8 差值均取未舍入结果，完整计算\n过程与采样范围见附录C。\n\n\n\n\n\n                                                   19"
+      },
+      {
+        "page": 20,
+        "text": "                 表8 数值检验的对象、范围与结果\n\n\n   检验对象      方法及范围      主要结果      支持的结论\n\n\n                      N3200，1801 整数秒×21\n                                 常热物性热方程的数\n   问题一热场   半径；有限体积与     最大温差1.804×10⁻⁶ K\n                                    值一致性\n                        Robin–Bessel 级数\n\n\n                                         温差≤2.375×10⁻⁷ K，水\n                    N40；Python 与\n                                          分差≤5.851×10⁻¹⁰    共同采样点的跨实现\n  三条计算轨迹    MATLAB，100 场值及\n                                kg/kg，事件差        一致性\n                       2 事件\n                                                 ≤2.297×10⁻⁴ s\n\n                  N800、N1600；BDF 与 最大事件差约3.2×10⁻⁶ 同一空间离散的积分\n 问题三、四临界时间\n                      Radau                                  s         器一致性\n\n\n            最细相邻网格；同N 收 最大水分差分别\n                                 检验范围内的离散敏\n   场值分辨率   紧容差与步长，公共有  ≤4.70×10⁻⁵、≤9.95×10⁻⁹\n                                     感性\n           效域                   kg/kg\n\n\n\n  空间检查分别采用问题一、二三的N1600 与N3200，以及问题四的N3200 与N6400；\n时间检查固定最细网格。比较覆盖全整数秒及21 个有效物理半径点，问题四排除域外\n\n位置，真实表面另作核对。网格差不是连续解的严格误差界，四位输出也不保证全部末\n\n位稳定。水分平均值与累计流出量的残差约为10⁻¹⁴ kg/kg，说明共享通量记账自洽；热\n\n侧验证的是瞬时加权温度变化与边界通量相符，不能扩大为完整热力学能量守恒。\n\n  达标时间由全域最大含水率事件确定，并在𝑁= 800 的验证轨迹上用独立二分法\n复核事件定位。最终烘干时刻按式(14)确定，其可行性由未舍入的最大含水率核验；两\n种定位方法的比较见附录C.4。\n\n   在N200 单参数情景中，扩散前因子倍率由0.7 增至1.4 时，问题三时长由79.4187 h\n降至43.0796 h，问题四由70.4059 h 降至38.3160 h；导热系数在±15%内变化，两问时\n长跨度均小于0.011%。这支持所选工况下时长对扩散参数更敏感，不能据此认为潜热或\n\n气固边界不重要。\n\n  边界阻力族采用p=1、2、4 时，已计算的临界时间随所选参数点增大。p=4 相对同\nN 基线使问题三、四分别延长约13.87%和8.27%；这批结果只完成事件积分，不替代正\n\n式严格报告值。其用途是展示未标定边界关系的影响，不能据此推出真实时长下界或参\n\n数全域单调性。\n\n\n\n\n\n                                                   20"
+      },
+      {
+        "page": 21,
+        "text": "           七、模型评价与推广\n\n7.1 模型优点\n\n  模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换，\n\n逻辑一致、便于对比。\n\n  针对扩散系数随含水率显著变化的特点，采用Kirchhoff 变换构造水分扩散的界面\n\n通量；针对径向收缩引起的区域变化，采用材料坐标将移动区域映射到固定区间。空间\n\n离散后，使用隐式BDF 进行时间积分，并提供解析构造的稀疏雅可比矩阵，以处理细\n\n网格离散和热湿耦合形成的刚性方程组。\n\n  检验分层且可追溯：解析基准、离散守恒、空间/时间收敛、跨语言交叉核验四类证\n\n据分开报告，且明确各自的适用范围。\n\n  本文将四问置于同一守恒框架内，并明确区分各问的物性、几何和输出任务。问题\n\n二与三共享全过程轨迹，使状态表与达标时刻具有共同来源；问题四从组分守恒推导材\n\n料坐标，避免重复加入网格速度或把干基浓度误当体积浓度。节点包括中心与真实表面，\n\n因此中心对称、表面对流和移动域输出能够一致处理。\n\n  圆柱控制体统一处理轴心、内部界面和表面收支；磁盘连续输出降低高网格轨迹的\n\n内存占用。解析基准、网格加密、时间设置和独立实现分别检查不同求解环节，为结果\n\n一致性提供相互补充的证据。\n\n7.2 模型不足\n\n  模型的主要限制来自气固平衡映射、有效显热容量和内部同比收缩等假设；这些关\n\n系仍需相应实验进一步验证。\n\n  计算设置稳定之后，主要不确定性仍来自模型输入的解释。没有内部温湿度或称重\n\n曲线，就无法用观测残差评价预测准确性；4 h 之后没有环境记录，就必须依赖长期工\n\n况假设；没有药材等温线，就无法从空气指标唯一确定材料平衡状态。此外，半径观测\n\n只约束表面，不能单独证明内部同比收缩或轴向长度恒定。这些条件与数值网格差属于\n\n不同来源，需要在未来实验中分别识别。\n\n  基线采用有效显热容量，没有同时求解完整相变、迁移携焓及收缩功；一维模型忽\n\n略端面与轴向差异，也未描述品质损伤或有效成分变化。因此温湿预测不能直接推出最\n\n低能耗、最佳药效或最优设备参数。表面潜热负荷和经验阻力只提供指定情景下的响应，\n\n尚不构成真实过程的上下界。\n\n7.3 改进方向与适用范围\n\n  走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为\n\n目标，利用参数扫描或启发式算法寻优。\n\n\n                                                   21"
+      },
+      {
+        "page": 22,
+        "text": "  维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维\n\n轴对称模型，显式处理端面传热传质。\n\n  后续可补充不同温度下的药材吸附、解吸等温线，结合质量变化及内部测温数据标\n\n定气固边界和有效扩散参数，并留出独立工况检验。若观察到显著轴向温差、长度变化\n\n或非均匀收缩，应扩展为二维轴对称模型，重新建立材料运动和质量守恒。完整能量模\n\n型还需蒸发位置、潜热及相关传质参数支持。\n\n  现有框架适用于几何可近似圆柱、径向传递占主导且物性形式已给定的条件计算。\n\n迁移到其他药材时，应重新确定物性、平衡关系和收缩轨迹，而非直接沿用本文系数。\n\n在本文约定条件下，四问结果分别给出了预热分布、全过程耦合变化、固定半径达标时\n\n长及收缩修正后的时长，可作为后续实验和工况比较的量化依据。\n\n              八、AI 工具使用声明\n\n  本参赛队在竞赛过程中使用了AI 工具，主要用于资料检索、模型推导辅助、程序\n\n调试、数值结果核对及文字整理，详细使用情况见支撑材料。\n\n    AI 参与内容包括文献检索与真实性核查、模型推导辅助、程序调试、计算结果核\n\n对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一致性。参赛队对\n\n采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行\n\n记录。\n\n\n\n\n\n                                                   22"
+      },
+      {
+        "page": 30,
+        "text": "序号   文件名                用途\n\n 103        energy_balance_diagnose.py       能量闭合历史诊断\n\n 104        energy_balance_diagnose2.py       能量闭合进一步历史诊断\n\n 105         isotherm_activity_closure.py       历史等温线闭合试验\n\n 106        isotherm_diagnose.py          历史等温线接口诊断\n\n 107        isotherm_jacobian_probe.py             历史Jacobian 注入探测\n\n 108         latent_heat_scenarios.py         潜热情景计算\n\n 109        method_comparison.py          两种守恒通量格式对照\n\n 110         sensitivity_analysis.py          参数扰动与敏感性计算\n\n 111        threshold_and_scaling_checks.py      阈值事件和标度检验\n\n\n\n      表25 05_数值检验与实验/Python 检验源码/paper_output/data_cleaned\n\n序号   文件名                用途\n\n 112        A_environment_observed.csv       环境观测数据时间温度和湿度\n\n 113        A_radius_observed.csv          药材半径观测数据\n\n\n\n                   表26 06_绘图程序与数据\n\n序号    文件名                用途\n\n 114         draw_figures.R              六幅论文图的PNG 绘制程序\n\n 115      图像校验.csv             文件来源与校验清单\n\n 116     数据来源与校验.csv          文件来源与校验清单\n\n 117     绘图复现说明.txt           本轮路径适配与实际复现说明\n\n\n\n                表27 06_绘图程序与数据/CSV/图1\n\n 序号    文件名               用途\n\n  118          moisture.csv               图1 径向含水率曲线数据\n\n  119          temperature.csv             图1 径向温度曲线数据\n\n\n\n                表28 06_绘图程序与数据/CSV/图2\n\n序号    文件名               用途\n\n 120         assumed_platform_4_60h.csv       图2 后续环境平台假设数据\n\n 121         observed_0_4h.csv            图2 前4 小时环境实测点\n\n\n\n\n                                             30"
+      },
+      {
+        "page": 31,
+        "text": "                表29 06_绘图程序与数据/CSV/图3\n\n序号    文件名                用途\n\n122         moisture_to_event.csv           图3 中心和表面含水率数据\n\n123         temperature_0_4h.csv           图3 中心和表面温度数据\n\n\n\n                表30 06_绘图程序与数据/CSV/图4\n\n 序号    文件名              用途\n\n  124           centre_near_event.csv          图4 临界附近中心含水率数据\n\n  125          drying_main.csv            图4 全域含水率与达标曲线\n\n  126          event_markers.csv           图4 连续事件与严格报告点\n\n  127         maximum_near_event.csv        图4 临界附近全域最大含水率\n\n\n\n                表31 06_绘图程序与数据/CSV/图5\n\n 序号    文件名              用途\n\n  128           moisture_profiles_xy_pairs.csv     图5 收缩域内含水率XY 数据\n\n  129           radius_observed.csv          图5 原始半径观测数据\n\n  130           selected_times_and_radii.csv      图5 所选时刻及对应半径\n\n\n\n                表32 06_绘图程序与数据/CSV/图6\n\n序号    文件名               用途\n\n 131          scenario_comparison.csv         图6 经验边界阻力情景数据\n\n\n\n                 表33 06_绘图程序与数据/PNG\n\n序号    文件名               用途\n\n 132     图1_径向温度与含水率.png       图1_径向温度与含水率成图\n\n 133     图2_环境观测与平台延拓.png     图2_环境观测与平台延拓成图\n\n 134     图3_中心与表面热湿响应.png     图3_中心与表面热湿响应成图\n\n 135     图4_全域达标与临界放大.png     图4_全域达标与临界放大成图\n\n 136     图5_收缩半径与域内含水率.png    图5_收缩半径与域内含水率成图\n\n 137     图6_经验边界阻力情景.png       图6_经验边界阻力情景成图\n\n\n\n\n\n                                            31"
+      },
+      {
+        "page": 32,
+        "text": "9.1 连续模型、坐标变换与数值方法的完整推导\n\n  本附录给出正文采用的有效热湿模型及其数值实现的推导，补充公式的成立条件、\n\n变量含义和计算检查范围。题给物性、环境观测及模型闭合分别说明；数学推导不改变\n\n正文已冻结的模型和结果。计算统一使用m、s、K；含水率以kg 水/kg 干物质计。题定\n长度为𝐿𝑧= 0.25 m，初始半径为𝑅0 = 0.02 m，初温为𝑇0 = 301.15 K，初始干基含水率为𝐶0 =\n2.55。为避免与长度混淆，累计平均失水量统一记为ℓ。文献序号沿用正文参考文献；扩\n散与圆柱基准的理论出处为Crank[4]，有限体积的一般构造见Eymard 等[5]，隐式多步求\n解及具体实现见文献[6]、[7]。以下推导同时列明这些一般方法在当前题设中的使用条件。\n\n9.1.1 干基含水率、湿基含水率与参考质量\n\n  设某一材料微团内干物质质量为𝑚𝑑、水质量为𝑚𝑤。干基含水率𝐶与湿基水质量分数\n𝑤定义为\n               𝐶= 𝑚𝑤𝑚𝑑, 𝑤= 𝑚𝑑+𝑚𝑤=𝑚𝑤    1+𝐶,𝐶 𝐶= 1−𝑤𝑤                （A.1）\n\n  这里的𝐶是质量比，可以大于1；𝑤是总湿质量中的水质量分数，应在0 与1 之间。\n由式（A.1），𝐶0 = 2.55 对应𝑤0 = 2.55/3.55 ≈0.7183098592，即初始水分约占湿质量的\n71.83%。不能将𝐶0 = 2.55 直接写成2.55%或255%的湿基质量分数。\n\n  在当前物理体积内，分别记干物质质量密度为𝜌𝑑、水质量密度为𝜌𝑤。微团两组分占\n用同一统计体积时，干基定义等价于\n\n             𝜌𝑤= 𝜌𝑑𝐶, 𝑚𝑑= ∫𝛺(𝑡)𝜌𝑑d𝑉, 𝑚𝑤= ∫𝛺(𝑡)𝜌𝑑𝐶d𝑉            （A.2）\n  𝛺(𝑡)为当前药材区域，𝜌𝑑与𝜌𝑤的单位均为kg/m3。水质量的计算必须有相应的干物\n质权重，不能把含水率节点的算术平均直接当作体积总水质量。\n\n   附件的烘房水分指标仅标注kg/kg，记其观测数值为𝑌∞(𝑡)。基线采用𝐶eq(𝑡) = 𝑌∞(𝑡)\n的数值映射，构造表面有效平衡含水率。这是一项边界闭合假设。若进一步把𝑌∞解释为\n空气湿度比，则其分母是干空气质量，与药材𝐶的干物质参考质量不同；两者同写kg/kg\n\n不能证明数值可直接相减。材料真实平衡含水率一般还依赖温度与吸附、解吸等温线，\n\n当前附件没有给出这种标定关系。\n\n9.1.2 从组分质量平衡得到干基扩散方程\n\n  设干物质骨架速度为v𝑠，水相对骨架的质量通量为j𝑤，其单位为kg/(m2s)。无干物\n质生成、损失及相对于骨架迁移时，干物质连续性方程为\n\n                                    𝜕𝜌𝑑𝜕𝑡+ 𝛻·(𝜌𝑑v𝑠) = 0                    （A.3）\n\n\n\n                                                   32"
+      },
+      {
+        "page": 33,
+        "text": "  水的实验室坐标总通量由随骨架运输的𝜌𝑑𝐶v𝑠与相对通量j𝑤组成。无内部水源项时，\n水质量守恒为\n\n                                    𝜕(𝜌𝑑𝐶)\n                             + 𝛻·(𝜌𝑑𝐶v𝑠+ j𝑤) = 0                 （A.4）                                      𝜕𝑡\n\n  将式（A.4）展开，得到\n                   𝜌𝑑( 𝜕𝐶𝜕𝑡+ v𝑠·𝛻𝐶) + 𝐶[ 𝜕𝜌𝑑𝜕𝑡+ 𝛻·(𝜌𝑑v𝑠)] =−𝛻·j𝑤            （A.5）\n  方括号为干物质连续性方程的左端，因而为零。定义随骨架运动的物质导数D𝑠/D𝑡=\n𝜕𝑡+ v𝑠·𝛻，即可得到干基含水率的输运方程\n\n                                      D𝑠𝐶\n                             𝜌𝑑 D𝑡=−𝛻·j𝑤                     （A.6）\n\n  式（A.6）显示，骨架压缩导致的干密度变化已经在质量比的求导过程中相消。若\n没有相对水通量，则D𝑠𝐶/D𝑡= 0；纯几何收缩不使同一材料微团的干基质量比自行增加。\n\n  采用相对骨架的有效Fick 闭合。扩散通量与浓度梯度关系的一般理论可参见\nCrank[4]；这里对干骨架参考系和有效扩散率的选取仍是本模型的具体闭合：\n\n                                           D𝑠𝐶\n               j𝑤=−𝜌𝑑𝐷(𝑇, 𝐶)𝛻𝐶, 𝜌𝑑 D𝑡= 𝛻·[𝜌𝑑𝐷(𝑇, 𝐶)𝛻𝐶]            （A.7）\n  𝐷的单位为m2/s，负号表示水沿含水率下降方向迁移。将散度展开后，若𝜌𝑑空间不\n均匀，一般有\n\n                           D𝑠𝐶\n                   D𝑡= 𝛻·(𝐷𝛻𝐶) + 𝐷𝛻(𝑙𝑛𝜌𝑑)·𝛻𝐶                （A.8）\n\n  因此只有在干骨架密度空间均匀时，才能从散度内约去𝜌𝑑。本文以初始干物质均匀\n分布、固定骨架或同比收缩保证这一条件；若采用非均匀收缩，须回到式（A.7），不\n\n能沿用已经约去密度的简式。\n\n9.1.3 圆柱薄壳收支与固定域方程\n\n  忽略轴向、周向差异及两端面的传递，所有场量仅随径向位置𝑟和时间𝑡变化。固定\n半径时v𝑠= 0。半径𝑟至𝑟+ d𝑟、长度𝐿𝑧的薄壳体积为2𝜋𝑟𝐿𝑧d𝑟，两侧传递面积分别为2𝜋𝑟𝐿𝑧\n与2𝜋(𝑟+ d𝑟)𝐿𝑧。将水的净流入量除以薄壳体积并令d𝑟→0，有\n\n                          𝜕𝐶   1 𝜕          𝜕𝐶\n                     𝜕𝑡= 𝑟 𝜕𝑟[𝑟𝐷(𝑇, 𝐶) 𝜕𝑟], 0 < 𝑟< 𝑅0               （A.9）\n\n  这里1/𝑟来自圆柱薄壳面积随半径的变化。𝐷随状态变化时，应保留在径向导数内；\n把右端写成𝐷(𝐶𝑟𝑟+ 𝐶𝑟/𝑟)会遗漏系数梯度贡献。\n\n   热侧采用Fourier 通量q =−𝑘(𝐶)𝛻𝑇，并以题给物性构造有效显热容量𝐵(𝐶) =\n𝜌eff(𝐶)𝑐𝑝(𝐶)。选择𝐵(𝐶)D𝑠𝑇/D𝑡作为本模型的局部温升需求，薄壳导热收支给出\n\n\n\n\n\n                                                   33"
+      },
+      {
+        "page": 35,
+        "text": "                      𝐷4(𝑇,𝐶)                  0.15             0.15\n                    = 0.175𝑒𝑥𝑝( 𝐶), 𝐶× = 𝑙𝑛(1/0.175) ≈0.08606          （A.15）                      𝐷23(𝑇,𝐶)\n  其中𝐶×是两扩散率相等的含水率。𝐶> 𝐶×时𝐷4 < 𝐷23，0 < 𝐶< 𝐶×时顺序反转。因此\n不能写“附录4 扩散系数在全程整体更小”；收缩和整组物性变化的净作用需由保持条件\n\n明确的数值对照判断。\n\n  环境表有241 个0—4 h 记录，半径表有145 个0—72 h 记录。对相邻时间节点𝑡𝑗≤𝑡≤\n𝑡𝑗+1，以𝑓𝑗表示同一观测变量，分段线性插值为\n\n                                                   （A.16）                                  𝐼𝑓(𝑡) = 𝑓𝑗+ 𝑓𝑗+1−𝑓𝑗𝑡𝑗+1−𝑡𝑗(𝑡−𝑡𝑗)\n\n  温度观测先换成K；半径换成m。正文基线环境为\n\n                                        (𝐼𝑇(𝑡), 𝐼𝑌(𝑡)),   0 ≤𝑡≤14400 s,                 (𝑇∞, 𝐶eq)(𝑡) = {                               （A.17）                                 (323.15,0.05),   𝑡> 14400 s.\n\n  式（A.17）后一段是平台延拓假设，不是持续数天的观测。收缩半径在附件2 的观\n测区间内使用𝑅(𝑡) = 𝐼𝑅(𝑡)。正式问题四的达标时刻位于72 h 内，未用到半径观测窗外延\n拓；对其他长时情景则必须另行说明。\n\n9.1.5 初始条件、表面边界与量纲\n\n  三条正式轨迹均从均匀初态开始，轴心由对称性给零径向梯度：\n\n                   𝑇(𝑟, 0) = 𝑇0, 𝐶(𝑟, 0) = 𝐶0, 𝑇𝑟(0, 𝑡) = 𝐶𝑟(0, 𝑡) = 0           （A.18）\n\n   记𝑇𝑠= 𝑇(𝑅(𝑡), 𝑡)、𝐶𝑠= 𝐶(𝑅(𝑡), 𝑡)为真实表面状态。向外为正时，表面热、水通量分\n别为\n\n              𝑞out =−𝑘𝑇𝑟= ℎ(𝑇𝑠−𝑇∞), 𝑗𝑤,𝑜𝑢𝑡=−𝜌𝑑𝐷𝐶𝑟= 𝜌𝑑𝛽(𝐶𝑠−𝐶eq)       （A.19）\n   ℎ= 25 W/(m2K)，𝛽= 8 × 10−7m/s。热边界两侧单位均为W/m2；水质量边界两侧单\n位均为kg/(m2s)。将水边界约去同一表面干密度得到源码使用的形式\n\n                     −𝐷𝐶𝑟= 𝛽(𝐶𝑠−𝐶eq)                   （A.20）\n\n  式（A.20）的两侧是以干密度归一化的传递量，其长度—时间单位为m/s，尚不是\n质量通量。材料较空气冷时𝑇𝑠< 𝑇∞，向外热通量为负，热量进入材料；𝐶𝑠> 𝐶eq时向外\n水通量为正，材料失水。该符号规则贯穿边界与控制体离散。\n\n  初值与瞬时表面Robin 条件未必在𝑡= 0 完全相容。这表示启动阶段形成快速边界\n\n层，不要求人为改动题给初态。数值求解采用较小的早期步长，并另行检查接受状态和\n\n早期场误差。\n\n\n\n\n\n                                                   35"
+      },
+      {
+        "page": 36,
+        "text": "9.1.6 干物质密度、有效密度与收缩的一致性\n\n  问题一至三令骨架固定；问题四采用定长、径向同比收缩。每个初始材料半径𝑟0\n随时间变为𝑟= 𝑟0𝑅(𝑡)/𝑅0，相应骨架速度为\n\n                                  𝜕𝑟         𝑟𝑅˙(𝑡)         1 𝜕(𝑟𝑣𝑠)        𝑅˙(𝑡)\n                      𝑣𝑠(𝑟, 𝑡) = 𝜕𝑡|𝑟0 =  𝑅(𝑡) , 𝛻·v𝑠= 𝑟  𝜕𝑟  = 2 𝑅(𝑡)            （A.21）\n\n      𝑅˙ < 0 表示收缩；轴向速度取零。式（A.3）因而给出\n\n                                     D𝑠𝜌𝑑           𝑅˙\n                     D𝑡=−2 𝑅𝜌𝑑,\n                                  𝜌𝑑(𝑡) = 𝜌𝑑0( 𝑅0 )2,                    （A.22）                                                                𝑅(𝑡)\n                𝑀𝑑= 𝜋𝐿𝑧𝑅(𝑡)2𝜌𝑑(𝑡) = 𝜋𝐿𝑧𝑅02𝜌𝑑0\n\n  这里𝑀𝑑为恒定总干质量，𝜌𝑑0为初始均匀干物质密度。同比收缩使每个材料体积均\n按𝑅2/𝑅02缩小，因此初始均匀干密度保持空间均匀而随时间变化。半径的表面观测不能\n单独证明内部运动同比，式（A.21）是用于闭合内部运动的明确假设。\n\n  若同时强行把附录4 的760 + 90𝐶解释为真实湿密度，则非负含水率下应有\n\n                                    760+90𝐶        670\n                   𝜌𝑑=      = 90 +                       （A.23）                                     1+𝐶       1+𝐶≤760\n  以初始关系𝜌𝑑0 = (760 + 90𝐶0)/(1 + 𝐶0) ≈278.7323943662 归一化干质量，再与式\n（A.22）联立，得到\n\n                        𝑅(𝑡) ≥𝑅0  𝜌𝑑0 ≈1.2112029565 cm              （A.24）                                         760\n\n  附件2 在72 h 给出1.198 cm，小于上述下界。因此真实湿密度解释、非负含水率、\n固定长度和给定收缩轨迹不能在所给全时段同时成立。本文将𝜌eff𝑐𝑝用作有效热容量，𝜌𝑑\n独立守恒；初始归一化不意味着随时重新设置𝜌𝑑= 𝜌eff(𝐶)/(1 + 𝐶)。基线温湿方程约去均\n匀干密度后不依赖其绝对标度；只有换算绝对水量或添加指定潜热负荷时才需要该标\n\n度。\n\n9.1.7 一般移动坐标与网格速度项\n\n  为明确网格运动的来源，先不假定网格速度等于骨架速度。取𝑟= 𝑅(𝑡)𝑥，0 ≤𝑥≤1；\n定义𝐶^(𝑥, 𝑡) = 𝐶(𝑅(𝑡)𝑥, 𝑡)，𝑇^(𝑥, 𝑡) = 𝑇(𝑅(𝑡)𝑥, 𝑡)。固定𝑥的网格速度为𝑣𝑔= 𝑥𝑅˙ 。链式法则给\n出\n\n                            𝜕𝐶        𝜕𝐶^        𝑥𝑅˙ 𝜕𝐶^ 𝜕𝐶   1 𝜕𝐶^\n                       𝜕𝑡|𝑟= 𝜕𝑡|𝑥− 𝑅 𝜕𝑥, 𝜕𝑟= 𝑅 𝜕𝑥                 （A.25）\n\n  把物理方程中的骨架运输项同时变换，得到\n\n\n\n\n\n                                                   36"
+      },
+      {
+        "page": 37,
+        "text": "                                 D𝑠𝐶    𝜕𝐶^  𝑣𝑠−𝑣𝑔 𝜕𝐶^\n                       D𝑡= 𝜕𝑡+  𝑅  𝜕𝑥,                                                   （A.26）\n                                  D𝑠𝑇    𝜕𝑇^  𝑣𝑠−𝑣𝑔 𝜕𝑇^\n                       D𝑡= 𝜕𝑡+  𝑅  𝜕𝑥\n\n  在干密度空间均匀的条件下，完整变换后的水分方程为\n\n                                           𝜕𝐶^   𝑣𝑠−𝑥𝑅˙ 𝜕𝐶^    1  𝜕        𝜕𝐶^\n                        𝜕𝑡+  𝑅  𝜕𝑥= 𝑅2𝑥 𝜕𝑥(𝑥𝐷 𝜕𝑥)                 （A.27）\n\n  式（A.27）保留了网格相对骨架运动的项。如果假设骨架在空间固定而只有计算边\n界改变，则𝑣𝑠= 0，左侧必须保留−𝑥𝑅˙𝐶^ 𝑥/𝑅；不能直接套用材料随动形式。这样的假设\n是否与边界处物质流失、干质量守恒相容，还需重新说明，不能只换坐标而省略物理解\n\n释。\n\n  本文问题四采用式（A.21），故𝑣𝑠= 𝑣𝑔= 𝑥𝑅˙。坐标变化项与骨架平流项恰好相消，\n材料坐标控制方程为\n\n                                            𝜕𝐶^\n                                                                  𝑥),                                         1  𝜕𝑥(𝑥𝐷(𝑇^,𝜕           𝐶^)𝐶^                        𝜕𝑡= 𝑅(𝑡)2𝑥\n                                                   （A.28）\n                                𝐵(𝐶^) 𝜕𝑇^     1                           𝜕𝑡= 𝑅(𝑡)2𝑥 𝜕𝑥(𝑥𝑘(𝐶^)𝑇^𝜕          𝑥)\n\n  固定半径的前三问是𝑅(𝑡) = 𝑅0、𝑣𝑠= 𝑣𝑔= 0 的特例。材料坐标形式不再重复添加网\n格平流，也不增加−2𝑅˙𝐶/𝑅的体积浓缩项；后者只适用于相应体积密度的收支，不能施\n\n加在已由组分方程消去压缩项的干基比值上。\n\n  表面导数换元后，边界条件变为\n\n                                           𝑇^𝑥(0, 𝑡) = 𝐶^ 𝑥(0, 𝑡) = 0,\n                                       𝑘𝑠\n                −                                                   （A.29）                             𝑅𝑇^𝑥(1, 𝑡) = ℎ(𝑇𝑠−𝑇∞),\n                                  𝐷𝑠\n                −                            𝑅𝐶^𝑥(1, 𝑡) = 𝛽(𝐶𝑠−𝐶eq)\n     𝑘𝑠, 𝐷𝑠为当前表面物性。1/𝑅来自空间导数换元，内部方程中的1/𝑅2来自两次长度缩\n放。半径折线的𝑅˙在观测节点处可不连续，但相消后的求解方程只需连续的𝑅(𝑡)；各开区\n\n间上的推导可拼接为相容的分段解，不需对折线半径作数值微分。\n\n9.1.8 节点控制体、轴心及表面权重\n\n  有限体积法以控制体积分收支和共用面通量建立离散方程，一般框架见Eymard 等\n[5]；本题的具体圆柱权重和节点配置如下推导。取𝑁个均匀区间，𝛥𝑥= 1/𝑁，节点𝑥𝑖= 𝑖𝛥𝑥，\n𝑖= 0, …, 𝑁。对偶控制体的内部边界为相邻节点中点，左、右外边界分别截在0 和1。记\n第𝑖个控制体为[𝑎𝑖, 𝑏𝑖]，其圆柱权重为\n\n\n\n\n\n                                                   37"
+      },
+      {
+        "page": 40,
+        "text": "与势差分支以𝐶+为准；它不裁剪求得的状态。正值保护是数值定义，不是干基含水率的\n\n物理下限。\n\n9.1.10 干基质量与有效热收支的离散恒等式\n\n  全体水方程乘2𝑤𝑖求和，内部面两两相消，只有表面项保留。定义加权平均含水率\n―\n𝐶 𝑁= 2∑𝑖𝑤𝑖𝐶𝑖和累计平均失水量ℓ(0) = 0，有\n\n                           ―       𝐶\n                             d𝐶 𝑁   2𝑔𝑁+1/2     2𝛽\n                    d𝑡=   𝑅2  =− 𝑅(𝐶𝑁−𝐶eq),\n                                       2𝛽                           （A.41）                                                     ℓ˙ = 𝑅(𝐶𝑁−𝐶eq),\n                          ―\n                       𝐶𝑁(𝑡) + ℓ(𝑡) = 𝐶0\n                         ―                                ―\n  连续材料域的对应平均为𝐶 = 2∫01𝑥𝐶^d𝑥。由𝜌𝑑𝑅2恒定，水质量为𝑀𝑑𝐶 ；故式（A.41）\n与移动体积下的干质量守恒相容。ℓ单位为kg 水/kg 干物质，𝑀𝑑ℓ才是累计水质量。当\n前基线以失水为主；若边界条件改变而出现吸湿，ℓ˙可以为负，仍是带符号的净流出量。\n\n  热方程乘2𝜋𝑅2𝑤𝑖𝐵𝑖求和，同样得到瞬时有效热通量恒等式\n                      2𝜋𝑅2∑𝑖𝑤𝑖𝐵𝑖𝑇˙𝑖= 2𝜋𝑅ℎ(𝑇∞−𝑇𝑁)               （A.42）\n\n  式（A.42）两侧均为单位轴向长度的功率，单位W/m。若另定义单位长度的容量加\n权温升量𝐻eff = 2𝜋𝑅2∑𝑖𝑤𝑖𝐵𝑖(𝑇𝑖−𝑇ref)，其中𝑇ref为固定参考温度，则乘积法则给出\n\n                        d𝐻eff\n            d𝑡= 2𝜋𝑅ℎ(𝑇∞−𝑇𝑁) + 2𝜋𝑅2∑𝑖𝑤𝑖(𝑇𝑖−𝑇ref)𝐵𝑖′𝐶˙                                                                                                                        𝑖          （A.43）\n                          +4𝜋𝑅𝑅˙ ∑𝑖𝑤𝑖𝐵𝑖(𝑇𝑖−𝑇ref)\n\n  第二项来自容量变化，第三项来自物理体积变化。二者是这一数学量的乘积求导项，\n未经额外热力学本构不能认定为真实机械功或潜热。Q1 的𝐵, 𝑅恒定时，后两项为零，可\n对式（A.42）积分核验相应常物性显热收支；Q23/Q4 不能省略它们后把残差解释为数\n\n值积分误差。\n\n9.1.11 解析Jacobian：面量、容量、边界与累计量\n\n  将状态交错排列为y = (𝑇0, 𝐶0, 𝑇1, 𝐶1, …, 𝑇𝑁, 𝐶𝑁, ℓ)𝑇，维数为2𝑁+ 3，半离散系统写为\ny˙ = F(𝑡,y)。Jacobian 为J = 𝜕F/𝜕y。固定求值时刻时，𝑅, 𝑇∞, 𝐶eq是外部驱动，不对状态求\n导。\n\n  对内部热面，记𝛥𝑇= 𝑇𝑖+1 −𝑇𝑖。调和系数偏导为\n\n                                                    2                     2                             𝜕𝑘𝐻      2𝑘𝑖+1    𝜕𝑘𝐻       2𝑘𝑖\n                         𝜕𝑘𝑖= (𝑘𝑖+𝑘𝑖+1)2 , 𝜕𝑘𝑖+1 = (𝑘𝑖+𝑘𝑖+1)2                 （A.44）\n\n  由此，热面量对四个相邻状态的偏导是\n\n\n\n\n\n                                                   40"
+      }
+    ]
+  },
+  "source_and_pdf_unchanged_during_audit": true,
+  "scope": "Read-only comparison; no new PDE calculation; CLI metadata inspection is not VS GUI or human review."
+}

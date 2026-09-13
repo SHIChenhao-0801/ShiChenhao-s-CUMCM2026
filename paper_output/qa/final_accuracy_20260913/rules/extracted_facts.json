@@ -1,0 +1,1335 @@
+{
+  "inputs": [
+    {
+      "path": "论文.pdf",
+      "size": 2549114,
+      "sha256": "2bb7c6b3fff1151318a46d7a8884e4ad0ec99c202a5faf1ceaf24e893cea347b",
+      "md5": "677a169b092a3f6817030cb213313092"
+    },
+    {
+      "path": "药材热湿耦合模型与干燥时间计算_附录修订版.docx",
+      "size": 1447199,
+      "sha256": "7eb8e9ef50e1645baddbf968e4cdd5e5fb48d9914119cc6a07101f4b45e7c757",
+      "md5": "574aec01766dbab459212f9724cf2eeb"
+    },
+    {
+      "path": "支撑材料\\AI工具使用详情.pdf",
+      "size": 513963,
+      "sha256": "91848a164d0e0addc89326eb2473bd8bda5fc7b72741bf5aa4482d1b32162009",
+      "md5": "43bb8ff09d0ed12e2c49ef0aea281cd2"
+    },
+    {
+      "path": "支撑材料\\AI工具使用详情.docx",
+      "size": 240585,
+      "sha256": "0b9318206e8b52d480b98346375b528fb890982a94d9f183b0863827feca6d36",
+      "md5": "a396083432ac72d981ae4cd9b761f068"
+    },
+    {
+      "path": "reference_materials\\contest-admin\\20260910“高教社杯”全国大学生数学竞赛赛前说明会.pdf",
+      "size": 5288459,
+      "sha256": "ca04fb5efa61863d1421f8347b29d1ec06f2a0287564ba39dedfd25eea4fba67",
+      "md5": "38a6afdcc935c91da18b10d20da713f0"
+    },
+    {
+      "path": "problem_files\\CUMCM2026Problems\\A题\\A题.pdf",
+      "size": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "md5": "bab0d2b2a160ba902d3f2f67f8197d67"
+    }
+  ],
+  "pdf": {
+    "paper": {
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "药材热湿耦合模型与干燥时间计算_附录修订版.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Microsoft: Print To PDF",
+        "creationDate": "D:20260913160900+08'00'",
+        "modDate": "D:20260913160900+08'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 186,
+      "toc": [],
+      "encrypted": false,
+      "attachments": 0,
+      "page_labels": [],
+      "page_sizes": [
+        [
+          595.3200073242188,
+          841.9200439453125
+        ]
+      ],
+      "page_heads": [
+        {
+          "page": 1,
+          "head": "1 | 考虑物性变化与径向收缩的药材热湿耦合模型及数值验证 | 摘要 | 药材热风烘干同时涉及温度传递、水分迁移及尺寸变化，表面状态难以直接代表内 | 部干燥程度。针对圆柱形药材的四个问题，本文基于题给环境观测和物性关系，建立一",
+          "tail": "和表面传质边界较为敏感，所求时长适用于题给物性、环境延拓及收缩假设。 | 关键词：热湿耦合；有限体积法；Kirchhoff 变换；径向收缩；干燥时间"
+        },
+        {
+          "page": 2,
+          "head": "2 | 一、问题重述 | 1.1 问题背景 | 中药材干燥是产地初加工的重要环节，干燥方式及工艺参数会影响产品品质、能耗 | 和生产效率。热风干燥是常用方法之一，相关技术与装备的发展现状已有系统综述[1]。",
+          "tail": "终效果，需要建立含尺寸变化的温度和水分浓度模型，重新确定烘干时长，据此计算出 | 药材内部水分浓度每隔60s 时间、0.1cm 距离的水分浓度以及烘干结束时间。"
+        },
+        {
+          "page": 3,
+          "head": "3 | 二、问题分析 | 2.1 问题一分析 | 已知圆柱形药材的几何尺寸、均匀初始状态、烘房温湿度序列及附录2 参数，问题 | 一要求得到1800 s 内的径向温度和含水率分布。由傅里叶导热定律与Fick 扩散定律建",
+          "tail": "条件及数值设置一致，分别计算固定半径与给定半径变化两种情形，比较其含水率分布 | 和烘干时长。问题三与问题四的结果之差则反映物性变化和径向收缩的综合影响。"
+        },
+        {
+          "page": 4,
+          "head": "4 | 三、模型假设 | 假设药材长径比较大，忽略药材两个端面的传热与水分散失，将三维传热传质过程 | 简化为一维径向模型。 | 假设烘房内热风充分混合，同一时刻药材表面外侧温湿度均匀，对流换热系数、对",
+          "tail": "有效水分扩散系数 | m²/s"
+        },
+        {
+          "page": 5,
+          "head": "5 | 符号 | 说明 | 单位 | h",
+          "tail": "附录A.2 表明，该约束与所给后期收缩数据不能同时满足。因此本文采用有效容量与独 | 立干骨架的闭合，使两套方程的定义一致；这一处理也限定了结果的物理解释，不能视"
+        },
+        {
+          "page": 6,
+          "head": "6 | 为对真实组分密度的验证。 | 平衡含水率与材料性质、温度及环境湿度有关，通常需由吸附或解吸等温线描述[3]。 | 附件1 的烘房水分指标仅标注kg/kg，未给出其与药材干基含水率之间的转换关系。记 | 该观测数值为𝑌∞，基线取𝐶eq = 𝑌∞，作为表面传质的等效平衡值。这一数值映射是本",
+          "tail": "5.1.3 求解算法 | 设归一化坐标𝑥= 𝑟/𝑅0，在0 ≤𝑥≤1 上划分𝑁个等长区间，节点𝑥𝑖= 𝑖/𝑁包含"
+        },
+        {
+          "page": 7,
+          "head": "7 | 中心和表面。每个节点对应相邻半节点之间的环形控制体，中心和表面取截断控制体， | 记其无量纲体积权重为𝑤𝑖。有限体积法先计算相邻控制体共用的面通量，再由净通量 | 建立收支；内部面在全域求和时成对相消[5]。该处理可直接落实轴心零通量条件。 | 对于随含水率显著变化的扩散系数，参照浓度相关扩散方程的积分变换方法[4]，构",
+          "tail": "30.6161 | 31.7304"
+        },
+        {
+          "page": 8,
+          "head": "8 | 时间/s | r=0 cm | r=0.5 cm | r=1 cm",
+          "tail": "与外界存在传质驱动力，内部水分也不会立刻均匀释放。只用一个全体平均含水率描述 | 此阶段，会掩盖径向差异，无法回答题目要求的各位置浓度。"
+        },
+        {
+          "page": 9,
+          "head": "9 | 图1 问题一径向温度含水率分布 | 5.1.5 模型检验或灵敏度分析 | 在本问常热物性条件下，将变温边界写入圆柱Robin 特征函数展开及时间卷积，得 | 到热场解析基准。它与数值结果在N3200、1801 个整数秒和21 个半径点上最大相差约",
+          "tail": "5.2.2 变量定义与公式推导 | 令w=C/(1+C)，附录3 规定"
+        },
+        {
+          "page": 10,
+          "head": "10 | 𝜌eff = 650 + 128𝐶, 𝑐p = 1450 + 2736𝑤, 𝑘= 0.21 + 0.38𝑤 | (8) | 𝐷3(𝑇, 𝐶) = 2.4 × 10−3exp( − | 0.45",
+          "tail": "β；这也属于全过程边界设置，而不是对不同风速或设备的普遍结论。 | 图2 烘房环境边界条件与延拓"
+        },
+        {
+          "page": 11,
+          "head": "11 | 5.2.3 求解算法 | 沿用问题一的有限体积网格，同时更新B(C)、k(C)与D(T,C)。温度面通量采用导热 | 系数调和平均，水分面通量用a=0.45 的Kirchhoff 势及面温度因子。解析Jacobian 保留 | T 对水通量、C 对热容量和热通量的导数。中心无通量与表面换热传质直接写入控制体",
+          "tail": "49.9101 | 49.9664"
+        },
+        {
+          "page": 12,
+          "head": "12 | 表4 问题二的径向干基含水率（kg/kg） | 时间/h | r=0 cm | r=0.5 cm",
+          "tail": "织变化。 | 图3 问题二中心表面温湿响应曲线"
+        },
+        {
+          "page": 13,
+          "head": "13 | 5.2.5 模型检验或灵敏度分析 | 空间加密、收紧时间设置以及不同积分器的对照表明，本组数值解在所检验的采样 | 范围内稳定。表3 中1.5 h 表面温度接近四位小数的舍入边界，基线与更严格时间设置 | 可能给出不同末位；表中统一采用基线计算值47.1401°C。该差异反映计算末位对时间",
+          "tail": "5.3.3 求解算法 | 第一步：在问题二的积分过程中监测𝑔(𝑡) 下降穿零。第二步：利用连续数值解在"
+        },
+        {
+          "page": 14,
+          "head": "14 | 包围区间内定位临界根，并核对最大含水率与阈值的一致性。第三步：按式(14)选取并 | 核验烘干时长。第四步：从同一轨迹查询每隔60 s、径向每隔0.1 cm 的含水率。另在𝑁= | 800 的验证轨迹上采用独立二分法复核事件定位；正式结果由𝑁= 3200 的计算轨迹给 | 出。",
+          "tail": "间，反映低含水率条件下扩散系数降低的影响。结束时中心与表面仍有浓度差，达到产 | 品阈值并不要求内部先达到完全均匀的平衡状态。"
+        },
+        {
+          "page": 15,
+          "head": "15 | 图4 问题三烘干阈值穿越临界时刻 | 5.3.5 模型检验或灵敏度分析 | 约93.04%的报告时长位于附件1 的4 h 观测窗之后，因此57.4724 h 应理解为规定 | 平台温湿条件持续存在时的模型预测。数值根的复核能检查“给定轨迹上是否找准阈",
+          "tail": "5.4.2 变量定义与公式推导 | 在没有干物质生成或相对迁移的条件下，干质量守恒及水质量守恒为"
+        },
+        {
+          "page": 16,
+          "head": "16 | ∂𝑡𝜌d + ∇·(𝜌du) = 0, ∂𝑡(𝜌d𝐶) + ∇·(𝜌d𝐶u + jw) = 0 | (15) | 将水质量方程减去干质量方程的𝐶倍，得到𝜌d𝐷𝑡𝐶=−∇·jw。取jw =−𝜌d𝐷∇𝐶， | 并利用干骨架密度的空间均匀性消去𝜌d。令𝑥= 𝑟/𝑅(𝑡)，定义𝐶^(𝑥, 𝑡) = 𝐶(𝑅(𝑡)𝑥, 𝑡)、",
+          "tail": "径列为空，并单列“药材表面”，从而同时保留原距离坐标与移动边界信息。真实表面不 | 一定恰好落在0.1 cm 网格，不能取最近固定列冒充。"
+        },
+        {
+          "page": 17,
+          "head": "17 | 5.4.4 结果分析 | 问题四的连续临界时刻约为51.090575 h，按与问题三相同的时间网格和严格阈值 | 判据，得到烘干时长为51.0906 h，对应半径约为1.2000 cm。该时刻位于附件2 的观测 | 范围内。表6 与表7 分别给出含水率和表面半径。",
+          "tail": "42.0000 | 1.2000"
+        },
+        {
+          "page": 18,
+          "head": "18 | 时间/h | 表面半径/cm | 48.0000 | 1.2000",
+          "tail": "作为上限，它是机理核对而非额外的独立解析时长。几何数据覆盖达标时刻，但环境数 | 据没有：约92.17%的时长仍处于式(10)的平台延拓中，两类观测范围必须分清。"
+        },
+        {
+          "page": 19,
+          "head": "19 | 5.4.6 边界阻力的补充修正 | 为考察基线气固映射的不确定性，在保持主答案不变的前提下，构造受水活度启发 | 的经验阻力族。令Cref=0.05，p≥1，对表面通量增加因子 | 𝐾𝑝(𝐶s) =",
+          "tail": "与边界；各方法不能提供独立的物理预测准确率。表8 差值均取未舍入结果，完整计算 | 过程与采样范围见附录C。"
+        },
+        {
+          "page": 20,
+          "head": "20 | 表8 数值检验的对象、范围与结果 | 检验对象 | 方法及范围 | 主要结果",
+          "tail": "式严格报告值。其用途是展示未标定边界关系的影响，不能据此推出真实时长下界或参 | 数全域单调性。"
+        },
+        {
+          "page": 21,
+          "head": "21 | 七、模型评价与推广 | 7.1 模型优点 | 模型结构统一：四个问题的解决用同一套守恒框架，只是物性、几何与判据的切换， | 逻辑一致、便于对比。",
+          "tail": "走向工艺优化：将模型作为约束条件接入优化框架，在品质约束下以能耗或时长为 | 目标，利用参数扫描或启发式算法寻优。"
+        },
+        {
+          "page": 22,
+          "head": "22 | 维度扩展：针对长径比较小、端面影响不可忽略的物料，可将一维径向扩展为二维 | 轴对称模型，显式处理端面传热传质。 | 后续可补充不同温度下的药材吸附、解吸等温线，结合质量变化及内部测温数据标 | 定气固边界和有效扩散参数，并留出独立工况检验。若观察到显著轴向温差、长度变化",
+          "tail": "采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行 | 记录。"
+        },
+        {
+          "page": 23,
+          "head": "23 | 参考文献 | [1] 王乐意, 李长河, 刘明政, 等. 中药材干燥技术与装备研究现状[J]. 农业工程学报, 2024, 40(2): | 1-28. DOI: 10.11975/j.issn.1002-6819.202306104. | [2] 王晓辉, 王学成, 唐培渝, 等. 数值模拟仿真研究现状及其在中药干燥领域应用展望[J]. 中国中",
+          "tail": "[7] THE SCIPY COMMUNITY. scipy.integrate.BDF[EB/OL]. [2026-09-12]. | https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.BDF.html."
+        },
+        {
+          "page": 24,
+          "head": "24 | 九、附录 | 9.0 支撑材料文件列表 | 支撑材料共137 个文件。下表覆盖题面与数据、参考资料、生产程序、结果表格、 | 数值检验、绘图资料和AI 工具使用详情。",
+          "tail": "文件名 | 用途"
+        },
+        {
+          "page": 25,
+          "head": "25 | 序号 | 文件名 | 用途 | 10",
+          "tail": "文本.html | SciPy 积分接口可离线阅读文本"
+        },
+        {
+          "page": 26,
+          "head": "26 | 序号 | 文件名 | 用途 | 27",
+          "tail": "A_radius_observed.csv | 药材半径观测数据"
+        },
+        {
+          "page": 27,
+          "head": "27 | 表12 03_程序代码/inputs/original | 序号 | 文件名 | 用途",
+          "tail": "文件名 | 用途"
+        },
+        {
+          "page": 28,
+          "head": "28 | 序号 | 文件名 | 用途 | 59",
+          "tail": "runCrossCheck.m | MATLAB 独立热湿模型对照实现"
+        },
+        {
+          "page": 29,
+          "head": "29 | 表22 05_数值检验与实验/Python 检验源码 | 序号 | 文件名 | 用途",
+          "tail": "energy_balance_check.py | 模型能量收支检查"
+        },
+        {
+          "page": 30,
+          "head": "30 | 序号 | 文件名 | 用途 | 103",
+          "tail": "observed_0_4h.csv | 图2 前4 小时环境实测点"
+        },
+        {
+          "page": 31,
+          "head": "31 | 表29 06_绘图程序与数据/CSV/图3 | 序号 | 文件名 | 用途",
+          "tail": "图6_经验边界阻力情景.png | 图6_经验边界阻力情景成图"
+        },
+        {
+          "page": 32,
+          "head": "32 | 9.1 连续模型、坐标变换与数值方法的完整推导 | 本附录给出正文采用的有效热湿模型及其数值实现的推导，补充公式的成立条件、 | 变量含义和计算检查范围。题给物性、环境观测及模型闭合分别说明；数学推导不改变 | 正文已冻结的模型和结果。计算统一使用m、s、K；含水率以kg 水/kg 干物质计。题定",
+          "tail": "𝜕𝑡+ 𝛻·(𝜌𝑑v𝑠) = 0 | （A.3）"
+        },
+        {
+          "page": 33,
+          "head": "33 | 水的实验室坐标总通量由随骨架运输的𝜌𝑑𝐶v𝑠与相对通量j𝑤组成。无内部水源项时， | 水质量守恒为 | 𝜕(𝜌𝑑𝐶) | 𝜕𝑡",
+          "tail": "热侧采用Fourier 通量q =−𝑘(𝐶)𝛻𝑇，并以题给物性构造有效显热容量𝐵(𝐶) = | 𝜌eff(𝐶)𝑐𝑝(𝐶)。选择𝐵(𝐶)D𝑠𝑇/D𝑡作为本模型的局部温升需求，薄壳导热收支给出"
+        },
+        {
+          "page": 34,
+          "head": "34 | 𝐵(𝐶) | D𝑠𝑇 | D𝑡= 𝛻·[𝑘(𝐶)𝛻𝑇], | 𝐵(𝐶)",
+          "tail": "不拼接问题一的末态，问题四也不在某一阶段才切换附录4。 | 相同𝑇, 𝐶下，两组全过程扩散率之比为"
+        },
+        {
+          "page": 35,
+          "head": "35 | 𝐷4(𝑇,𝐶) | 𝐷23(𝑇,𝐶) = 0.175𝑒𝑥𝑝( | 0.15 | 𝐶), 𝐶× =",
+          "tail": "层，不要求人为改动题给初态。数值求解采用较小的早期步长，并另行检查接受状态和 | 早期场误差。"
+        },
+        {
+          "page": 36,
+          "head": "36 | 9.1.6 干物质密度、有效密度与收缩的一致性 | 问题一至三令骨架固定；问题四采用定长、径向同比收缩。每个初始材料半径𝑟0 | 随时间变为𝑟= 𝑟0𝑅(𝑡)/𝑅0，相应骨架速度为 | 𝑣𝑠(𝑟, 𝑡) =",
+          "tail": "（A.25） | 把物理方程中的骨架运输项同时变换，得到"
+        },
+        {
+          "page": 37,
+          "head": "37 | D𝑠𝐶 | D𝑡= | 𝜕𝐶^ | 𝜕𝑡+",
+          "tail": "𝑖= 0, …, 𝑁。对偶控制体的内部边界为相邻节点中点，左、右外边界分别截在0 和1。记 | 第𝑖个控制体为[𝑎𝑖, 𝑏𝑖]，其圆柱权重为"
+        },
+        {
+          "page": 38,
+          "head": "38 | 𝑤𝑖= ∫𝑎𝑖 | 𝑏𝑖𝑥d𝑥= | 𝑏𝑖 | 2−𝑎𝑖",
+          "tail": "对内部面𝑖+ 1/2，记𝛾𝑖= 𝑥𝑖+1/2/𝛥𝑥。两侧各半间距的导热阻相加，等效导热系数与热 | 面量为"
+        },
+        {
+          "page": 39,
+          "head": "39 | 𝛥𝑥 | 𝑘𝐻= | 𝛥𝑥/2 | 𝑘𝑖+",
+          "tail": "𝑖, 10−3)时使用第一项，其局部差为𝑂((𝛥𝐶)3)。一般分 | 支保留指数积分势差。系数求值采用𝐶+ = 𝑚𝑎𝑥(𝐶, 10−12)保护Newton 试探点，实际比较"
+        },
+        {
+          "page": 40,
+          "head": "40 | 与势差分支以𝐶+为准；它不裁剪求得的状态。正值保护是数值定义，不是干基含水率的 | 物理下限。 | 9.1.10 干基质量与有效热收支的离散恒等式 | 全体水方程乘2𝑤𝑖求和，内部面两两相消，只有表面项保留。定义加权平均含水率",
+          "tail": "（A.44） | 由此，热面量对四个相邻状态的偏导是"
+        },
+        {
+          "page": 41,
+          "head": "41 | 𝜕𝑇𝑖𝑔𝑇=−𝛾𝑖𝑘𝐻, 𝜕𝑇𝑖+1𝑔𝑇= 𝛾𝑖𝑘𝐻, | 𝜕𝐶𝑖𝑔𝑇= 𝛾𝑖𝛥𝑇 | 2𝑘𝑖+1 | 2 𝑘𝑖",
+          "tail": "𝑅 | （A.50）"
+        },
+        {
+          "page": 42,
+          "head": "42 | 累计量ℓ不反馈温湿场，因此Jacobian 对ℓ的整列为零。令行向量m𝑇在每个𝐶𝑖分量取 | 2𝑤𝑖、在ℓ分量取1、其余取零，则式（A.41）的微分结构要求 | m𝑇F = 0, m𝑇J = 0𝑇 | （A.51）",
+          "tail": "式（A.56）中的差分系数和尺度是求解器为该步输出对象保存的量，不应另从稀疏 | 采样反推。diskDense.py 保存原始双精度系数与接受状态，并使用同一求值公式；只"
+        },
+        {
+          "page": 43,
+          "head": "43 | 改变存储位置。BDF 内部断点恰好落在查询点时，保留与SciPy 原BDF 一致的右侧多 | 项式选择；跨显式分段边界则保持Run.state 的段选择规则。 | 题定每1 s 或60 s 的数值直接从尚未关闭的连续数值轨迹查询。保存的60 s 等审查 | 用NPZ 并不是逐秒输出的插值来源。连续输出多项式是离散ODE 解的数值表示，不是",
+          "tail": "（A.60） | 再生成报告候选首点"
+        },
+        {
+          "page": 44,
+          "head": "44 | 𝑡𝑟 | (0) = 𝛥𝑡𝑟⌈ | 𝑡𝑐,𝑁 | 𝛥𝑡𝑟⌉, 𝑡𝑟",
+          "tail": "用𝐽0 | ′ (𝑧) =−𝐽1(𝑧)，表面Robin 条件给出特征根"
+        },
+        {
+          "page": 45,
+          "head": "45 | 𝜇𝑛𝐽1(𝜇𝑛) = 𝐵𝑖ℎ𝐽0(𝜇𝑛), 𝜆𝑛= | 𝛼𝜇𝑛2 | 𝑅0 | 2 , 𝑛= 1,2, …",
+          "tail": "将𝑇, 𝑇∞, 𝑇0替换为𝐶, 𝐶eq, 𝐶0即可构造相同类型的线性基准。这个特例只用于检验算法， | 不替代正式𝐷1(𝐶)非线性水分结果，也不能验证Q23/Q4 的变物性收缩问题。"
+        },
+        {
+          "page": 46,
+          "head": "46 | 9.1.16 解析比较的点值、单元平均及误差范围 | 本文生产未知量按节点点值解释，主要比较𝑇𝑖与𝑇(𝑥𝑖, 𝑡)。若为了诊断另外比较解析 | 环体平均，应明确使用 | ⟨𝐽0⟩𝑖=",
+          "tail": "对另一守恒水分面格式，可将相邻𝐷𝑖, 𝐷𝑖+1的调和平均乘浓度差，与式（A.38）对比。 | 常𝐷时两式退化为同一个线性面量；变量𝐷时差别属于空间离散。现行"
+        },
+        {
+          "page": 47,
+          "head": "47 | method_comparison.py--quick 的8 条Q1 轨迹实际完成，变量D 的N100 与N200 | 两格式最大差约为1.4891 × 10−5和3.7288 × 10−6，观察阶约1.9977。历史粗网格调和格 | 式严重偏离时长的记录不能用来否定调和平均在所有问题中的适用性，但足以说明本题 | 不能采用未加密检查的粗网格答案。",
+          "tail": "𝑝 | （A.77）"
+        },
+        {
+          "page": 48,
+          "head": "48 | 这个族包含原边界并可控地减弱所设传质驱动，但不是由实测材料等温线推得的唯 | 一边界。界限仅在上述𝐶𝑠, 𝑝范围成立。正文历史N800 的𝑝= 1,2,4 情景保留为条件数值 | 比较，不据几个参数点证明所有𝑝下时长单调，也不能作为真实烘干时长下界。当前旧 | 经验闭合源码存在参数接口和结果数组方向问题，本轮sandbox 没有把该批历史情景重",
+          "tail": "水方程保持与实际水边界一致。这类情景约定了蒸发位置和比例，但没有识别真实气膜 | 传递、凝结、吸附热或内部相变，不能声称补入一个潜热项就完成总热力学闭合。"
+        },
+        {
+          "page": 49,
+          "head": "49 | 9.2 程序源码 | 以下列出核心计算、数值检验及MATLAB 对照程序。核心计算程序位于支撑材料的“03_程序 | 代码”；Python 检验程序位于“05_数值检验与实验/Python 检验源码/paper_output/code”；MATLAB 对 | 照程序位于“05_数值检验与实验/MATLAB 对照证据”。相同计算逻辑的核心模块仅列出一份。",
+          "tail": "runLogged.ps1 | 启动求解程序并记录运行过程和退出状态。"
+        },
+        {
+          "page": 50,
+          "head": "50 | 表10 Python 数值检验程序及用途 | 编号 | 程序文件 | 主要用途",
+          "tail": "crossvalidate_series.py | 分析环境和干燥序列的趋势与阶段变化。"
+        },
+        {
+          "page": 51,
+          "head": "51 | 续表10 Python 数值检验程序及用途 | 编号 | 程序文件 | 主要用途",
+          "tail": "compareMatlab.mjs | 对照MATLAB 与Python 的温湿场和时间。"
+        },
+        {
+          "page": 52,
+          "head": "52 | 9.2.1 runDelivery.py | from __future__ import annotations | import argparse | import csv",
+          "tail": "def flush(self): | self.screen.flush()"
+        },
+        {
+          "page": 53,
+          "head": "53 | self.log.flush() | def preflight(): | if sys.maxsize <= 2**32: | raise RuntimeError('Use a 64-bit Python interpreter.')",
+          "tail": "if not np.isfinite(actual).all() or difference > tolerances[key]: | raise AssertionError(f'Frozen reference mismatch {question}/{key}:"
+        },
+        {
+          "page": 54,
+          "head": "54 | {difference}') | checks.append({'array':key, 'valuesCompared':int(actual.size), | 'maximumAbsoluteDifference':difference, | 'absoluteTolerance':tolerances[key], 'status':'PASS'})",
+          "tail": "for qid in (['Q2', 'Q3'] if question == 'Q23' else [question]): | print(f'{utcNow()} EXPORT_AND_FULL_READBACK {qid}', flush=True)"
+        },
+        {
+          "page": 55,
+          "head": "55 | artifact = exportOutputs.exportQuestion(run, qid, output/'outputs') | validation = exportOutputs.validateExports([artifact], runs={qid:run}) | if validation['status'] != 'PASS' or not validation['fully_verified_with_live_Run']: | raise AssertionError('Workbook/archive/live Run verification failed')",
+          "tail": "writeJson(output/'runResult.json', report) | return 0"
+        },
+        {
+          "page": 56,
+          "head": "56 | if __name__ == '__main__': | raise SystemExit(main()) | 9.2.2 q1Model.py | from dryingCore import Settings, solveCase",
+          "tail": "9.2.5 q4Model.py | from dryingCore import Settings, solveCase"
+        },
+        {
+          "page": 57,
+          "head": "57 | def solve(intervals=6400): | return solveCase(Settings(question='Q4', intervals=intervals, faceScheme='kirchhoff', | shrink=True, rtol=1e-10, atolTemperature=1e-10, atolMoisture=1e-12, | earlyMaxStepS=2., maxStepS=120.))",
+          "tail": "constantThermal: bool = False | method: str = 'BDF'"
+        },
+        {
+          "page": 58,
+          "head": "58 | faceScheme: str = 'harmonic' | jacobianMode: str = 'analytic' | denseStorage: str = 'disk' | class RadialModel:",
+          "tail": "D = 2.4e-3 * np.exp(-.45 / positiveC - 3850 / T) | elif s.question == 'Q4':"
+        },
+        {
+          "page": 59,
+          "head": "59 | rho, cp, k = 760 + 90 * positiveC, 1850 + 2150 * wet, .12 + .20 * wet | D = 4.2e-4 * np.exp(-.30 / positiveC - 3850 / T) | else: | raise ValueError(s.question)",
+          "tail": "jEvap = rhoD * self.settings.beta * (C[-1] - ceq) | heatG[-1] -= (radius * self.settings.surfaceLatentFraction *"
+        },
+        {
+          "page": 60,
+          "head": "60 | self.settings.latentJKg * jEvap) | derivative = np.empty_like(state) | derivative[:-1:2] = np.diff(heatG) / (radius ** 2 * self.w * rho * cp) | derivative[1:-1:2] = np.diff(waterG) / (radius ** 2 * self.w)",
+          "tail": "Cout.append(np.interp(xx, self.model.x, Cs[i], left=np.nan, right=np.nan)) | return np.asarray(Tout), np.asarray(Cout)"
+        },
+        {
+          "page": 61,
+          "head": "61 | def diagnostics(self): | minimumC = minimumT = minimumD = minimumProperty = np.inf | maximumC = maximumT = maximumD = maximumRadialIncrease = -np.inf | maximumMassResidual = 0.",
+          "tail": "cache.close() | except BaseException as cleanup_error:"
+        },
+        {
+          "page": 62,
+          "head": "62 | error.add_note('Private cache cleanup also failed: '+repr(cleanup_error)) | raise | def solveCaseImpl(settings, cache, started): | model = RadialModel(settings)",
+          "tail": "return run | def fileRecord(path):"
+        },
+        {
+          "page": 63,
+          "head": "63 | p = Path(path) | return {'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size, | 'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'exists': True} | def saveRun(run: Run, directory: Path):",
+          "tail": "import warnings | import numpy as np"
+        },
+        {
+          "page": 64,
+          "head": "64 | from scipy.integrate import solve_ivp | from scipy.sparse import coo_matrix | from scipy.special import expi | LOADED_CODE_SHA256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()",
+          "tail": "geom = model.internalFaces / model.dx | deltaT, deltaC = np.diff(T), np.diff(C)"
+        },
+        {
+          "page": 65,
+          "head": "65 | kHarm = model.harmonic(k) | khL, khR = harmonicPartials(k[:-1], k[1:]) | heatDeriv = np.column_stack(( | -geom * kHarm,",
+          "tail": "2*faceIndex+2, 2*faceIndex+3)).ravel() | rows, columns, values = [], [], []"
+        },
+        {
+          "page": 66,
+          "head": "66 | def addFace(rowIndex, derivatives, factor): | rows.append(np.repeat(rowIndex, 4)) | columns.append(faceColumns) | values.append((derivatives * factor[:, None]).ravel())",
+          "tail": "states['late_dry'][1][1:-1:2] = .175 - .115*x**2 | states['near_uniform_small_branch'][1][:-1:2] = 303. + 17.*x**2"
+        },
+        {
+          "page": 67,
+          "head": "67 | states['near_uniform_small_branch'][1][1:-1:2] = .15 + 1e-10*x | for stateName, (t, y) in states.items(): | with warnings.catch_warnings(record=True) as captured: | warnings.simplefilter('always')",
+          "tail": "with warnings.catch_warnings(record=True) as captured: | warnings.simplefilter('always')"
+        },
+        {
+          "page": 68,
+          "head": "68 | result = solve_ivp(model.rhs, (0., 2.), model.initial(), method='BDF', | jac=lambda t,y:jacobian(model,t,y), rtol=1e-10, | atol=1e-12, max_step=.2) | msgs = [str(w.message) for w in captured]",
+          "tail": "parser.add_argument('--output-dir', type=Path, | default=Path(__file__).resolve().parent/'results/jacobianValidation')"
+        },
+        {
+          "page": 69,
+          "head": "69 | arguments = parser.parse_args() | if not arguments.self_test: | parser.error('Use --self-test, or import jacobian(model,t,y) from this module.') | raise SystemExit(selfTest(arguments.output_dir))",
+          "tail": "def storeAccepted(self, values): | path = self.directory/f'accepted_{len(self.acceptedArrays):03d}.npy'"
+        },
+        {
+          "page": 70,
+          "head": "70 | mapped = np.lib.format.open_memmap(path, mode='w+', dtype=values.dtype, | shape=values.shape) | self.acceptedArrays.append(mapped) | mapped[:] = values",
+          "tail": "9.2.9 exportOutputs.py | from __future__ import annotations"
+        },
+        {
+          "page": 71,
+          "head": "71 | import argparse | import csv | from dataclasses import asdict | from datetime import datetime, timezone",
+          "tail": "raise ValueError('Export requires Q1, Q2, Q3 or Q4') | return value"
+        },
+        {
+          "page": 72,
+          "head": "72 | def outputTimes(questionId,end,event): | if questionId=='Q1': | if end<1800-1e-7: | raise ValueError('Q1 requires a solved interval covering 0..1800s')",
+          "tail": "radius=np.asarray(run.model.radius(times),dtype=float) | if radius.ndim==0:"
+        },
+        {
+          "page": 73,
+          "head": "73 | radius=np.full(len(times),radius) | surfaceC=None | if qid=='Q4': | _,surface=run.fields(times,materialX=np.array([1.0]))",
+          "tail": "for value in header: | cell=WriteOnlyCell(ws,value=value)"
+        },
+        {
+          "page": 74,
+          "head": "74 | cell.font=Font(name='Arial',size=10,bold=True,color='FFFFFF') | cell.fill=PatternFill(fill_type='solid',fgColor='334155') | cell.alignment=Alignment(horizontal='center',vertical='center',wrap_text=True) | if isinstance(value,(int,float)):",
+          "tail": "if not outside and not np.isfinite(value) and qid=='Q4' and | abs(r-R[i])<=1e-12:"
+        },
+        {
+          "page": 75,
+          "head": "75 | value=Cs[i,0] | row.append('' if outside else f'{float(value):.4f}') | if qid=='Q4': | row += [f'{Cs[i,0]:.4f}']",
+          "tail": "desiredTime='时间/s' if qid=='Q1' else '时间/h' | if kind=='radius':"
+        },
+        {
+          "page": 76,
+          "head": "76 | correctHeader=['时间/h','表面半径/cm'] | if header!=correctHeader: | errors.append(path.name+': radius/time units or header mismatch') | continue",
+          "tail": "if not re.fullmatch(r'-?\\d+\\.\\d{4}',cell): | errors.append(f'{path.name}: finite four-decimal number required at row {i+2},"
+        },
+        {
+          "page": 77,
+          "head": "77 | column {j+2}') | continue | actual=float(cell) | if not math.isfinite(actual) or abs(actual-float(format(value,'.4f')))>1e-10:",
+          "tail": "workbook=Workbook(write_only=True) | workbook.properties.creator=''"
+        },
+        {
+          "page": 78,
+          "head": "78 | workbook.properties.lastModifiedBy='' | workbook.properties.title=f'问题{qid[-1]}结果' | headers={name:[template['time_header']]+RADII_CM for name in template['sheet_names']} | if qid=='Q4':",
+          "tail": "'schema_version':'1.0','question_id':qid,'generated_by':'exportOutputs.py', | 'generated_at':datetime.now(timezone.utc).isoformat(),'status':'EXPORTED_PENDING_STREAM_REA"
+        },
+        {
+          "page": 79,
+          "head": "79 | DBACK', | 'workbook':bookRecord,'unrounded_archive':archiveRecord,'paper_tables':paperRecords, | 'paper_table_time_contract':paperTimeContract, | 'provenance':provenance,'template':template['record'],'sheets':counts,",
+          "tail": "def validateExports(paths,runs=None): | if isinstance(paths,(str,Path,dict)):"
+        },
+        {
+          "page": 80,
+          "head": "80 | paths=[paths] | runs={} if runs is None else runs | results=[] | for item in paths:",
+          "tail": "errors.append(f'{name}: non-finite or non-four-decimal stored | number')"
+        },
+        {
+          "page": 81,
+          "head": "81 | maxRoundingError=max(maxRoundingError,abs(float(cell.value)-value)) | else: | blanks+=1 | checkedCells+=len(cells);count+=1",
+          "tail": "'visual_render':'pending','visual_studio_gui':'pending','human_review':'pending'} | reportPath=manifestPath.with_name(manifestPath.name.replace('.export.json','.validation.jso"
+        },
+        {
+          "page": 82,
+          "head": "82 | n')) | writeJson(reportPath,report);report['report_path']=str(reportPath);results.append(report) | if errors: | raise RuntimeError('Export validation failed: '+'; '.join(errors[:30]))",
+          "tail": "if not errors or result['status']!='FAIL': | raise AssertionError('Independent paper validator missed deliberate defect:"
+        },
+        {
+          "page": 83,
+          "head": "83 | '+defect) | negativeChecks.append({'question_id':qid,'defect':defect,'correctly_rejected':True, | 'errors':errors,'artifact':exportFileRecord(target)}) | summaries.append({'question_id':qid,'settings':asdict(run.model.settings),'export':exported",
+          "tail": "print(json.dumps({'status':checks['status'],'fully_verified_with_live_Run':checks['fully_ve | rified_with_live_Run'],"
+        },
+        {
+          "page": 84,
+          "head": "84 | 'output':str(output),'size':record['size'],'sheets':record['sheets']},ensure_ascii=False,in | dent=2)) | return 0 | if __name__=='__main__':",
+          "tail": "'end_time_convention': 'ceil(critical_event_s)+1: ' | 'conservative post-crossing '"
+        },
+        {
+          "page": 85,
+          "head": "85 | 'verification second; not claimed ' | 'earliest integer second', | 'max_mass_balance_abs_kg_per_kg': | 1.1546319456101628e-14,",
+          "tail": "[323.15, 323.15, 323.15, 323.15, 323.15]], | 'C': [[2.55, 2.55, 2.55, 2.55, 2.55],"
+        },
+        {
+          "page": 86,
+          "head": "86 | [2.549934098712396, | 2.5488838430623373, | 2.5255580144516143, | 2.3257039999977334,",
+          "tail": "'interpretation': 'A conditional numerical event, not a ' | 'confidence bound on physical drying"
+        },
+        {
+          "page": 87,
+          "head": "87 | time.'}, | 'reproduction_samples': {'times_s': [0.0, | 1800.0, | 10800.0,",
+          "tail": "} | $startedUtc = [DateTime]::UtcNow.ToString('o')"
+        },
+        {
+          "page": 88,
+          "head": "88 | $timer = [Diagnostics.Stopwatch]::StartNew() | $entryHash = (Get-FileHash -LiteralPath $entryPath -Algorithm SHA256).Hash.ToLowerInvariant() | & $Python -X utf8 -B $entryPath --profile $Profile --run-id $RunId | $processExit = $LASTEXITCODE",
+          "tail": "cc = np.maximum(c, 1e-12) | return cc * np.exp(-0.45 / cc) + 0.45 * expi(-0.45 / cc)"
+        },
+        {
+          "page": 89,
+          "head": "89 | class AxisymmetricModel: | def __init__(self, nr=30, nz=30, end_faces=True): | self.nr, self.nz = nr, nz | self.shape = (nr + 1, nz + 1)",
+          "tail": "if self.calls % 50 == 0 and time.perf_counter() - self.started > self.budget_s: | raise TimeoutError(\"Axisymmetric per-run CPU/wall budget reached\")"
+        },
+        {
+          "page": 90,
+          "head": "90 | T, C = self.fields(state) | rho, cp, k, _ = self.reference.properties(T, C) | tair, ceq = self.reference.environment(t) | F = concentration_potential(C)",
+          "tail": "CC = C.reshape(*m.shape, -1) | axial_spread = max(axial_spread, float(np.max(np.ptp(CC, axis=1))))"
+        },
+        {
+          "page": 91,
+          "head": "91 | event_state = self.state([self.event_s if self.event_s is not None else self.end_s])[:, | 0] | _, finalC = m.fields(event_state) | index = np.unravel_index(np.argmax(finalC), m.shape)",
+          "tail": "\"one_dimensional_event_h\":None if radial.event_s is None else radial.event_s/3600, | \"axisymmetric_event_h\":None if run.event_s is None else run.event_s/3600,"
+        },
+        {
+          "page": 92,
+          "head": "92 | \"event_difference_h_2d_minus_1d\":delta_t, | \"event_relative_difference\":None if delta_t is None else delta_t/(radial.event_s/3600), | \"max_midplane_C_difference\":float(np.max(np.abs(C2[:,0,:]-C1))), | \"max_midplane_T_difference_K\":float(np.max(np.abs(T2[:,0,:]-T1))),",
+          "tail": "(folder/\"failure.txt\").write_text(traceback.format_exc(),encoding=\"utf-8\") | raise"
+        },
+        {
+          "page": 93,
+          "head": "93 | if __name__==\"__main__\": | main() | 9.2.13 compare_analytic.py | from __future__ import annotations",
+          "tail": "'finite_values':bool(np.all(np.isfinite(actual)) and np.all(np.isfinite(reference))), | }"
+        },
+        {
+          "page": 94,
+          "head": "94 | def write_comparison_csv(path,times,radii,T,Tref,C,Cref): | with path.open('w',encoding='utf-8',newline='') as fh: | writer=csv.writer(fh) | writer.writerow(['time_s','radius_m','fvm_temperature_K','analytic_temperature_K',",
+          "tail": "else 'constant-property heat and frozen-D linear moisture', | 'comparisons':{},'output_artifacts':[]}"
+        },
+        {
+          "page": 95,
+          "head": "95 | for grid,ts,rs in | [('paper',paper_times,paper_radii),('dense',dense_times,dense_radii)]: | T,C=run.fields(ts,radii_m=rs) | Tref,Cref,truncation=analytic[grid]",
+          "tail": "'dense_T_error':case['comparisons']['dense']['temperature']['max_abs_error'], | 'dense_C_error':case['comparisons']['dense'].get('frozen_D_moisture',{}).get('max_abs_error"
+        },
+        {
+          "page": 96,
+          "head": "96 | ')}),flush=True) | heat=[c for c in case_results if c['case_id'].startswith('nonlinear_Q1')] | water=[c for c in case_results if c['case_id'] in ['frozen_D_N100','frozen_D_N400']] | refined_water=[c for c in case_results if c['case_id']=='frozen_D_N800'][0]",
+          "tail": "physical radii. Separate representation diagnostics quantify strict annular averages.', | 'primary_space_time_samples':{'paper_times_s':paper_times.tolist(),'paper_radii_m':paper_ra"
+        },
+        {
+          "page": 97,
+          "head": "97 | dii.tolist(), | 'dense_time_step_s':10.,'dense_time_range_s':[0.,1800.], | 'dense_radius_step_m':.001,'dense_radius_range_m':[0.,.02]}, | 'nonlinear_moisture_note':'The nonlinear Q1 C solution is stored for provenance only,",
+          "tail": "def utc_now(): | return datetime.now(timezone.utc).isoformat()"
+        },
+        {
+          "page": 98,
+          "head": "98 | def sha256(path): | digest = hashlib.sha256() | with Path(path).open('rb') as stream: | for block in iter(lambda: stream.read(1024 * 1024), b''):",
+          "tail": "def exclusive_json(path, value): | path = Path(path)"
+        },
+        {
+          "page": 99,
+          "head": "99 | path.parent.mkdir(parents=True, exist_ok=True) | with path.open('xb') as stream: | stream.write(json_bytes(value)) | stream.flush()",
+          "tail": "raise ValueError('Empty figure artifact: ' + actual['path']) | if expected.get('sha256') and actual['sha256'] != expected['sha256']:"
+        },
+        {
+          "page": 100,
+          "head": "100 | raise RuntimeError('Existing figure hash mismatch: ' + actual['path']) | checked[actual['path']] = actual | if not checked: | raise ValueError('Computed figure has no usable artifact')",
+          "tail": "backup = directory / 'publication_previous' | for relative in paths:"
+        },
+        {
+          "page": 101,
+          "head": "101 | target = within(root, root / relative) | previous[relative] = target.read_bytes() if target.exists() else None | if previous[relative] is not None: | atomic_bytes(backup / relative, previous[relative])",
+          "tail": "'rollback_errors': rollback_errors, 'prior_publication_restored': changed and not | rollback_errors,"
+        },
+        {
+          "page": 102,
+          "head": "102 | 'generated_at': utc_now()}) | raise | def measured_process(command, cwd, log_path): | started = utc_now()",
+          "tail": "events.append('solve:' + name) | def fields(self, times, material_x):"
+        },
+        {
+          "page": 103,
+          "head": "103 | shape = (len(times), len(material_x)) | return np.full(shape, 310.), np.full(shape, .1499) | def close(self): | events.append('close:' + self.name)",
+          "tail": "global_after = {str(p): sha256(p) if p.exists() else None for p in global_paths} | assert global_after == global_before"
+        },
+        {
+          "page": 104,
+          "head": "104 | return ['entry_one_run_at_a_time_and_Q2_Q3_same_identity', | 'entry_closes_run_after_export_failure', | 'worker_does_not_publish_global_contracts'] | def selfcheck():",
+          "tail": "updates = {'paper_output/results/model_results.json': {'generation': 'new'}} | intended_bytes = json_bytes(updates['paper_output/results/model_results.json'])"
+        },
+        {
+          "page": 105,
+          "head": "105 | intended_record = {'path': 'paper_output/results/model_results.json', 'bytes': | len(intended_bytes), | 'sha256': hashlib.sha256(intended_bytes).hexdigest()} | manifest = {'status': 'PASS', 'runs': [{'run_id': 'test', 'returncode': 0,",
+          "tail": "import hashlib | import inspect"
+        },
+        {
+          "page": 106,
+          "head": "106 | import json | import os | from pathlib import Path | import sys",
+          "tail": "for rec in run.model.input_records: | if _sha(ROOT/rec['path'])!=rec['sha256']:"
+        },
+        {
+          "page": 107,
+          "head": "107 | raise RuntimeError('Run input changed: '+rec['path']) | records.append(rec) | return {'kind':'live_Run','settings':asdict(run.model.settings),'files':records, | 'event_s':None if run.event_s is None else",
+          "tail": "if s.boundary_extension=='tail_mean':return '4 h 后环境按末1 h 观测均值延拓' | return '4 h 后环境按最后观测值延拓'"
+        },
+        {
+          "page": 108,
+          "head": "108 | def _profiles(run,qid,directory): | source=_run_source(run) | if qid=='Q1': | ts=np.array([100.,300.,600.,900.,1200.,1500.,1800.])",
+          "tail": "del state | t_h=ts/3600;event_h=run.event_s/3600"
+        },
+        {
+          "page": 109,
+          "head": "109 | title=('第三问：固定半径下的全程水分迁移' if qid=='Q3' else '第四问：收缩域内的全程水分迁移') | with plt.rc_context(STYLE): | fig,axes=plt.subplots(1,2,figsize=(12,5.1),gridspec_kw={'width_ratios':[1.08,1]}) | fig.subplots_adjust(left=.065,right=.965,bottom=.21,top=.83,wspace=.31)",
+          "tail": "return [_profiles(run1,'Q1',directory),_profiles(run23,'Q2',directory), | _drying(run23,'Q3',directory),_drying(run4,'Q4',directory)]"
+        },
+        {
+          "page": 110,
+          "head": "110 | def _saved_summary(path): | path=Path(path).resolve() | content=path.read_bytes() | rec=_record(path)",
+          "tail": "for path in report_paths: | path=Path(path).resolve();content=path.read_bytes();data=json.loads(content);rec=_record(pa"
+        },
+        {
+          "page": 111,
+          "head": "111 | th) | if hashlib.sha256(content).hexdigest()!=rec['sha256']:raise RuntimeError('Changing | convergence report') | if not data.get('finished_at') or not",
+          "tail": "expected={'Q4'} if question_id=='Q4' else {'Q2','Q3','Q23'} | if rows[0]['settings']['question'] not in expected:"
+        },
+        {
+          "page": 112,
+          "head": "112 | raise ValueError('Sensitivity figure label does not match the saved physical question') | if len({r.get('code',{}).get('sha256') for r in rows})!=1: | raise ValueError('Sensitivity cases must use the same saved source version') | values=np.array([r['diagnostics']['event_h'] for r in",
+          "tail": "if fixed.exists() and | shrunk.exists():records.append(make_shrinkage_comparison(fixed,shrunk,output))"
+        },
+        {
+          "page": 113,
+          "head": "113 | reports=[ROOT/f'paper_output/results/convergence/{q}_K_analytic_J_v3/convergence_report.jso | n' for q in ['Q1','Q23']] | if all(p.exists() for p in reports):records.append(make_convergence_plot(reports,output)) | scenario_root=ROOT/'paper_output/results/experiments'",
+          "tail": "('Q23_T49', replace(base, tail_temperature_C=49.)), | ('Q23_T51', replace(base, tail_temperature_C=51.)),"
+        },
+        {
+          "page": 114,
+          "head": "114 | ('Q23_eq045', replace(base, tail_equilibrium=.045)), | ('Q23_eq055', replace(base, tail_equilibrium=.055)), | ('Q4_T49', replace(base, question='Q4', shrink=True, | tail_temperature_C=49.)),",
+          "tail": "SOURCE = Path(__file__).resolve() | ROOT = SOURCE.parents[3]"
+        },
+        {
+          "page": 115,
+          "head": "115 | LOADED_CODE_SHA256 = hashlib.sha256(SOURCE.read_bytes()).hexdigest() | import production_provenance as provenance | ASSUMPTIONS = [ | '一维径向有效模型，忽略轴向/端面基线，以二维独立程序检验端面影响。',",
+          "tail": "if filename: | path = Path(filename).resolve()"
+        },
+        {
+          "page": 116,
+          "head": "116 | if path.is_relative_to(SOURCE.parent) and path.suffix == '.py': | paths.add(path) | return [provenance.file_record(path) for path in sorted(paths)] | def question_plot(plots, run, qid, directory):",
+          "tail": "'interpretation': interpretation} | for name, value, unit, interpretation, pointer in values]"
+        },
+        {
+          "page": 117,
+          "head": "117 | conclusion = {'question_id': qid, 'conclusion_text': result_text, 'status': 'computed', | 'supporting_metrics': [value[0] for value in values], 'supporting_artifacts': artifacts, | 'assumptions': ASSUMPTIONS, 'limitations': LIMITATIONS} | return question, metrics, conclusion",
+          "tail": "print('EXPORT ' + qid, flush=True) | export = exporter.export_question(run, qid, directory / 'outputs')"
+        },
+        {
+          "page": 118,
+          "head": "118 | check = exporter.validate_exports([export], runs={qid: run}) | if check.get('status') != 'PASS' or not | check.get('fully_verified_with_live_Run'): | raise RuntimeError('Export did not pass live Run validation: ' + qid)",
+          "tail": "provenance.validate_metric_evidence(metrics)) | provenance.write_json(directory / 'export_validation.json', {'status': 'PASS', 'checks':"
+        },
+        {
+          "page": 119,
+          "head": "119 | export_checks}) | meta = {'schema_version': '1.0', 'generated_by': SOURCE.relative_to(ROOT).as_posix(), | 'generated_at': provenance.utc_now(), 'source_run_id': args.version, | 'publication_state': 'version_only_awaiting_parent_observed_exit'}",
+          "tail": "target = {**rec, 'path': CONTRACT_TARGETS[name]} | records[target['path']] = target"
+        },
+        {
+          "page": 120,
+          "head": "120 | for figure in merged: | for rec in provenance.figure_artifact_records(figure): | records[rec['path']] = rec | assert_dependencies(start)",
+          "tail": "if args.worker: | if args.review:"
+        },
+        {
+          "page": 121,
+          "head": "121 | raise ValueError('--review uses a single process so Visual Studio can hit solver | breakpoints') | start = json.loads((directory / 'launch.json').read_text(encoding='utf-8')) | config = {'n1': args.n1, 'n23': args.n23, 'n4': args.n4, 'review': args.review,",
+          "tail": "provenance.assert_records(success['output_artifacts']) | provenance.write_json(directory / 'review_evidence_validation.json', {"
+        },
+        {
+          "page": 122,
+          "head": "122 | 'status': 'COMPUTED_PENDING_GUI_OBSERVATION', 'input_files': | start['input_files'], | 'worker_success': provenance.file_record(directory / 'worker_success.json'), | 'scope': 'Direct solve function and saved hashes checked; no process exit code",
+          "tail": "from scipy.optimize import brentq | from scipy.special import j0, j1, jn_zeros"
+        },
+        {
+          "page": 123,
+          "head": "123 | FloatArray = NDArray[np.float64] | def _vector(value: ArrayLike, name: str) -> FloatArray: | a = np.atleast_1d(np.asarray(value, dtype=float)) | if a.ndim != 1 or a.size == 0 or not np.all(np.isfinite(a)):",
+          "tail": "rates: FloatArray, initial_value: float, | ) -> FloatArray:"
+        },
+        {
+          "page": 124,
+          "head": "124 | z = (initial_value-values[0])*np.exp(-times[:, None]*rates[None, :]) | slopes = np.diff(values)/np.diff(knots) | for lo, hi, slope in zip(knots[:-1], knots[1:], slopes): | if slope == 0:",
+          "tail": "result[t == 0] = initial_value | return result"
+        },
+        {
+          "page": 125,
+          "head": "125 | def bessel_temperature( | times_s: ArrayLike, radii_m: ArrayLike, env_t: ArrayLike, | env_T: ArrayLike, radius: float = 0.02, h: float = 25.0, | k: float = 0.36, rho: float = 820.0, cp: float = 2600.0,",
+          "tail": "for lo,hi,gl,gh in zip(knots[:-1],knots[1:],boundary[:-1],boundary[1:]): | if t > lo:"
+        },
+        {
+          "page": 126,
+          "head": "126 | slope = (gh-gl)/(hi-lo) | integral += quad(lambda s: | slope*np.exp(-lam*(t-s)),lo,min(t,hi),epsabs=1e-12,epsrel=1e-12)[0] | independent[i,j] = (299.-boundary[0])*np.exp(-lam*t)-integral",
+          "tail": "} | def main() -> int:"
+        },
+        {
+          "page": 127,
+          "head": "127 | parser=argparse.ArgumentParser(description=__doc__) | parser.add_argument(\"--environment-csv\",default=\"paper_output/data_cleaned/A_environment_ob | served.csv\") | parser.add_argument(\"--output-dir\",default=\"paper_output/results/bessel_validation\")",
+          "tail": "report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+\"\\n\",encoding=\"utf-8\" | )"
+        },
+        {
+          "page": 128,
+          "head": "128 | print(json.dumps({\"status\":report[\"status\"],\"checks\":report[\"checks\"],\"report\":str(report_p | ath)},ensure_ascii=False,indent=2)) | return 0 if report[\"status\"]==\"PASS\" else 1 | if __name__ == \"__main__\":",
+          "tail": "'compared_time_count':len(times), 'radial_count':len(points), | 'convention':'Only finite values at common physical points are compared.'}"
+        },
+        {
+          "page": 129,
+          "head": "129 | def main(): | parser = argparse.ArgumentParser() | parser.add_argument('--question', choices=['Q1','Q23','Q4'], required=True) | parser.add_argument('--grids', type=int, nargs='+', required=True)",
+          "tail": "'water_error_time_s':float(times[at[0]]), | 'water_error_radius_m':float(radii[at[1]])})"
+        },
+        {
+          "page": 130,
+          "head": "130 | summary['analytic_comparison'] = analytic | print(json.dumps(analytic), flush=True) | previous = projection | (out/'convergence_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),e",
+          "tail": "times = np.r_[times,knots,np.nextafter(knots,-np.inf),np.nextafter(knots,np.inf)] | difference = 0."
+        },
+        {
+          "page": 131,
+          "head": "131 | for first in range(0,len(times),100): | tt = times[first:first+100] | difference = | max(difference,float(np.max(np.abs(memory.state(tt)-disk.state(tt)))))",
+          "tail": "import production_provenance as provenance | BASELINE = {'rtol': 1e-10, 'atol_temperature': 1e-10, 'atol_moisture': 1e-12,"
+        },
+        {
+          "page": 132,
+          "head": "132 | 'early_max_step_s': 2., 'max_step_s': 120.} | TIGHT = {'rtol': 1e-11, 'atol_temperature': 1e-11, 'atol_moisture': 1e-13, | 'early_max_step_s': 1., 'max_step_s': 60.} | def dependencies():",
+          "tail": "contract') | summary = core.save_run(run, case)"
+        },
+        {
+          "page": 133,
+          "head": "133 | points = np.linspace(0., .02, 21) | projection = checker.project_run(run, points, args.full_second_comparison or | args.question == 'Q1') | np.savez_compressed(case / 'comparison_projection.npz',",
+          "tail": "if points is not None and not np.array_equal(points, archive['radii_m']): | raise ValueError('Projection radius grids differ')"
+        },
+        {
+          "page": 134,
+          "head": "134 | points = archive['radii_m'].copy() | projected.append({'times': archive['times_s'].copy(), 'T': archive['T_K'].copy(), | 'C': archive['C'].copy(), 'N': summary['settings']['intervals'], | 'end_s': summary['diagnostics']['end_s'], 'event_s':",
+          "tail": "directory.mkdir(exist_ok=False) | started, timer = provenance.utc_now(), time.perf_counter()"
+        },
+        {
+          "page": 135,
+          "head": "135 | launch = {'created_at': started, 'parent_pid': os.getpid(), 'token': uuid.uuid4().hex, | 'configuration': config, 'input_files': dependencies(), 'runtime': | provenance.runtime_record()} | provenance.exclusive_json(directory / 'launch.json', launch)",
+          "tail": "'wall_seconds': time.perf_counter() - timer, 'observed_processes': observed}) | raise"
+        },
+        {
+          "page": 136,
+          "head": "136 | if __name__ == '__main__': | try: | raise SystemExit(main()) | except Exception:",
+          "tail": "report = { | \"purpose\": (\"separate a solver error from a point-versus-control-volume-average \""
+        },
+        {
+          "page": 137,
+          "head": "137 | \"comparison artifact in the Q1 analytic benchmark\"), | \"levels\": list(LEVELS), | \"rows\": rows, | \"interpretation\": (\"The maximum discrepancy between the analytic point value and the \"",
+          "tail": "\"trend\": (\"increasing\" if z > Z95 else \"decreasing\" if z < -Z95 else \"no trend\")} | def sequential_mk(x):"
+        },
+        {
+          "page": 138,
+          "head": "138 | x = np.asarray(x, dtype=float) | n = x.size | def forward(series): | out = np.zeros(n)",
+          "tail": "prev[0] = 0.0 | back = np.zeros((maxK + 1, n + 1), dtype=int)"
+        },
+        {
+          "page": 139,
+          "head": "139 | costs = [0.0] | for k in range(1, maxK + 1): | cur = np.full(n + 1, np.inf) | for j in range(1, n + 1):",
+          "tail": "for s in sizes: | vals = []"
+        },
+        {
+          "page": 140,
+          "head": "140 | for w in range(n // s): | seg = x[w * s:(w + 1) * s] | y = np.cumsum(seg - seg.mean()) | sd = seg.std(ddof=0)",
+          "tail": "T_surface = q23[\"T_K\"][:, -1] | mean_c = q23[\"mean_C\"]"
+        },
+        {
+          "page": 141,
+          "head": "141 | t_env = env[\"time_s\"] | targets = { | \"T1_chamber_plateau_onset\": analyse( | \"chamber temperature\", env[\"temperature_C\"], t_env, \"degC\"),",
+          "tail": "}, | \"T3_preheating_end\": {"
+        },
+        {
+          "page": 142,
+          "head": "142 | \"brokenStick_center_hours\": bs_hours(\"T3_preheating_end_center\", t_s), | \"brokenStick_surface_hours\": bs_hours(\"T3b_preheating_end_surface\", t_s), | \"sequentialMK_center_hours\": mk_hours(\"T3_preheating_end_center\", t_s), | \"sequentialMK_surface_hours\": mk_hours(\"T3b_preheating_end_surface\", t_s),",
+          "tail": "ax = axes[2] | values = boundaries[\"T3_preheating_end\"]"
+        },
+        {
+          "page": 143,
+          "head": "143 | labels = [\"两段\\n 折线\", \"M–K\\n 突变\", \"Fisher\\nk=2\", \"95%\\n 阈值\"] | center = [values[\"brokenStick_center_hours\"], values[\"sequentialMK_center_hours\"], | values[\"fisher_k2_center_hours\"][0] if values[\"fisher_k2_center_hours\"] else | None,",
+          "tail": "if __name__ == \"__main__\": | sys.exit(main())"
+        },
+        {
+          "page": 144,
+          "head": "144 | 9.2.24 crossvalidate_solver.py | from __future__ import annotations | import json | import os",
+          "tail": "record = {\"case\": name, \"settings\": {k: v for k, v in settings.__dict__.items()}, | \"startedAtUtc\": utcnow()}"
+        },
+        {
+          "page": 145,
+          "head": "145 | run = None | try: | run = solve_case(settings) | diagnostic = run.diagnostics()",
+          "tail": "def block3(): | cases = []"
+        },
+        {
+          "page": 146,
+          "head": "146 | for question, shrink in ((\"Q23\", False), (\"Q4\", True)): | for fraction in (0.0, 0.25, 0.5, 1.0): | settings = replace(BASE, question=question, shrink=shrink, | intervals=800, surface_latent_fraction=fraction)",
+          "tail": "from dataclasses import replace | from datetime import datetime, timezone"
+        },
+        {
+          "page": 147,
+          "head": "147 | ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\") | os.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\") | os.environ.setdefault(\"OMP_NUM_THREADS\", \"1\") | os.chdir(ROOT)",
+          "tail": "model = run.model | end = float(run.end_s)"
+        },
+        {
+          "page": 148,
+          "head": "148 | times = np.linspace(0.0, end, sampleCount) | states = run.state(times) | rate = rateIdentity(model, times, states, settings) | radius0 = float(model.radius(times[0]))",
+          "tail": "run.close() | record[\"elapsedSeconds\"] = time.perf_counter() - started"
+        },
+        {
+          "page": 149,
+          "head": "149 | print(json.dumps({k: record[k] for k in | (\"question\", \"intervals\", \"rateIdentityMaxRelativeDeviation\", | \"cumulativeRelativeResidual\", \"discardedCapacityWorkJPerM\", | \"unexplainedResidualJPerM\")},",
+          "tail": "import pathlib | import sys"
+        },
+        {
+          "page": 150,
+          "head": "150 | ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\") | os.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\") | os.chdir(ROOT) | sys.dont_write_bytecode = True",
+          "tail": "from __future__ import annotations | import os"
+        },
+        {
+          "page": 151,
+          "head": "151 | import pathlib | import sys | ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\") | os.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\")",
+          "tail": "E=%+.6e | residual=%+.6e"
+        },
+        {
+          "page": 152,
+          "head": "152 | (%.2e rel)\" | % (count, stored_end - stored_0, cumulative, | (stored_end - stored_0) - cumulative, | abs((stored_end - stored_0) - cumulative) / abs(stored_0)))",
+          "tail": "rh = pv / pSat(T - 273.15) | keep = t >= tail_from_s"
+        },
+        {
+          "page": 153,
+          "head": "153 | return {\"plateauMeanRH\": float(rh[keep].mean()), | \"plateauMinRH\": float(rh[keep].min()), | \"plateauMaxRH\": float(rh[keep].max()), | \"windowMeanRH\": float(rh.mean()),",
+          "tail": "kEff = float(partitionFactor(C[-1], self.shapeP, self.awRef)) | water_g[-1] = -self.settings.beta * radius * kEff * (C[-1] - ceq)"
+        },
+        {
+          "page": 154,
+          "head": "154 | heat_g[-1] = -self.settings.h * radius * (T[-1] - tair) | if self.latentFraction: | rho_d = self.rho_d0 * (core.R0 / radius) ** 2 | j_evap = rho_d * self.settings.beta * kEff * (C[-1] - ceq)",
+          "tail": "kwargs[\"horizon_h\"] = horizon_h | settings = core.Settings(**kwargs)"
+        },
+        {
+          "page": 155,
+          "head": "155 | record = {\"scenario\": name, \"question\": question, \"shrink\": shrink, | \"intervals\": intervals, \"isothermShapeP\": float(p), \"awRef\": float(awRef), | \"latentFraction\": float(latent), \"horizonH\": settings.horizon_h, | \"jacobianMode\": \"frozen driver's sparse finite-difference Jacobian\",",
+          "tail": "if horizon > 14400.0: | endpoints.append(horizon)"
+        },
+        {
+          "page": 156,
+          "head": "156 | def stepFor(left): | return settings.early_max_step_s if left < 14400.0 else settings.max_step_s | state, event_s = model.initial(), None | segments = []",
+          "tail": "\"chamberPlateauRH\": chamber[\"plateauMeanRH\"], | \"isothermAtCref\": float(waterActivity(C_REF, 1.0, awRef)),"
+        },
+        {
+          "page": 157,
+          "head": "157 | \"absoluteDifference\": float(abs(waterActivity(C_REF, 1.0, awRef) - awRef)), | \"note\": (\"a_w(C_eq) is forced to the chamber relative humidity because the stated \" | \"equilibrium point can neither gain nor lose water\"), | }",
+          "tail": "selected = None | for arg in sys.argv[1:]:"
+        },
+        {
+          "page": 158,
+          "head": "158 | if arg.startswith(\"--p=\"): | selected = [float(v) for v in arg.split(\"=\", 1)[1].split(\",\")] | shapeParameters = selected if selected else [1.0, 1.5, 2.0, 3.0, 4.0] | for p in shapeParameters:",
+          "tail": "sys.path.insert(0, str(ROOT / \"paper_output\" / \"code\" / \"verification\")) | import numpy as np"
+        },
+        {
+          "page": 159,
+          "head": "159 | import drying_core as core | import isotherm_activity_closure as iso | def describe(model, label, state): | rhs = model.rhs(0.0, state)",
+          "tail": "import time | import warnings"
+        },
+        {
+          "page": 160,
+          "head": "160 | ROOT = pathlib.Path(r\"D:\\Document\\数学建模\\2026CUMCM\") | os.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\") | os.chdir(ROOT) | sys.dont_write_bytecode = True",
+          "tail": "record[\"numJacCalls\"] = calls[\"numJac\"] | finally:"
+        },
+        {
+          "page": 161,
+          "head": "161 | core.RadialModel, common.num_jac = originalModel, originalNumJac | if run is not None: | run.close() | record[\"elapsedSeconds\"] = time.perf_counter() - started",
+          "tail": "def scenario(question, shrink, fraction, intervals): | settings = Settings(question=question, intervals=intervals, shrink=shrink,"
+        },
+        {
+          "page": 162,
+          "head": "162 | rtol=1e-10, atol_temperature=1e-10, atol_moisture=1e-12, | early_max_step_s=2.0, max_step_s=120.0, | face_scheme=\"kirchhoff\", jacobian_mode=\"analytic\", | surface_latent_fraction=fraction)",
+          "tail": "summary = {\"intervals\": intervals, \"fractions\": list(FRACTIONS), | \"records\": records, \"generatedAtUtc\":"
+        },
+        {
+          "page": 163,
+          "head": "163 | __import__(\"datetime\").datetime.now( | __import__(\"datetime\").timezone.utc).isoformat()} | (OUT / \"latent_scenarios.json\").write_text( | json.dumps(summary, ensure_ascii=False, indent=2), encoding=\"utf-8\")",
+          "tail": "9.2.32 method_comparison.py | from __future__ import annotations"
+        },
+        {
+          "page": 164,
+          "head": "164 | import json | import os | import pathlib | import sys",
+          "tail": "try: | run = core.solve_case(settings)"
+        },
+        {
+          "page": 165,
+          "head": "165 | T, C = run.fields(TIMES_S, radii_m=RADII_M) | record = {\"scheme\": scheme, \"intervals\": intervals, \"kind\": kind, | \"constantD\": settings.constant_D, | \"fluxPathUsed\": ACTIVE[\"scheme\"],",
+          "tail": "constantRows = [r for r in records if r[\"kind\"] == \"constant\"] | limitChecks = []"
+        },
+        {
+          "page": 166,
+          "head": "166 | for n in levels: | a = next(r for r in constantRows if r[\"intervals\"] == n and r[\"scheme\"] == \"kirchhoff\") | b = next(r for r in constantRows if r[\"intervals\"] == n and r[\"scheme\"] == | \"finiteDifference\")",
+          "tail": "from drying_core import RadialModel, Settings, solve_case | import q3_model"
+        },
+        {
+          "page": 167,
+          "head": "167 | OUT = ROOT / \"paper_output\" / \"results\" / \"crossvalidation\" / \"sensitivity_v1\" | INTERVALS = 200 | SURROGATE_EVENT_H = {\"Q23\": 57.4727587858255, \"Q4\": 51.090973419826916} | PRODUCTION_EVENT_H = {\"Q23\": 57.47230195056044, \"Q4\": 51.09057478683054}",
+          "tail": "SCALES[\"k\"] = values[\"kScale\"] | try:"
+        },
+        {
+          "page": 168,
+          "head": "168 | run = solve_case(settings_for(question, values)) | except Exception as error: | FAILURES.append({\"question\": question, \"values\": values, | \"error\": f\"{type(error).__name__}: {error}\"})",
+          "tail": "point, y0 = nxt, y1 | if (t + 1) % 5 == 0:"
+        },
+        {
+          "page": 169,
+          "head": "169 | print(f\" | morris {question} trajectory {t+1}/{trajectories} \" | f\"({time.perf_counter()-started:.0f}s)\", flush=True) | summary = []",
+          "tail": "base = next((r[\"eventH\"] for r in rows | if r[\"question\"] == question and abs(r[\"value\"] - 1.0) < 1e-12), None)"
+        },
+        {
+          "page": 170,
+          "head": "170 | byQ[question] = {\"minH\": lo, \"maxH\": hi, \"spanH\": hi - lo, | \"baselineH\": base, | \"relativeSpanPercent\": None if not base else 100.0 * (hi - lo) / base} | return {\"stage\": stageName, \"parameter\": parameter, \"rows\": rows, \"summary\": byQ}",
+          "tail": "return str(candidate) | raise FileExistsError(\"no unused temp name\")"
+        },
+        {
+          "page": 171,
+          "head": "171 | tempfile.mkdtemp = _mkdtemp | os.environ.setdefault(\"OPENBLAS_NUM_THREADS\", \"1\") | os.chdir(ROOT) | sys.dont_write_bytecode = True",
+          "tail": "t_event = float(run.event_s) | def max_c(t):"
+        },
+        {
+          "page": 172,
+          "head": "172 | state = run.state([t]) | return float(np.max(state[1:-1:2, 0])) | lo, hi = t_event - 3600.0, t_event + 3600.0 | for _ in range(80):",
+          "tail": "result = {\"scalingCheck\": scaling_check()} | if \"--with-solver\" in sys.argv:"
+        },
+        {
+          "page": 173,
+          "head": "173 | result[\"thresholdChecks\"] = solver_checks() | (OUT / \"threshold_and_scaling_checks.json\").write_text( | json.dumps(result, ensure_ascii=False, indent=2), encoding=\"utf-8\") | print(json.dumps(result[\"scalingCheck\"], ensure_ascii=False, indent=2), flush=True)",
+          "tail": "'dryThreshold', 0.15, 'environmentSwitchSec', 14400, ... | 'tailTemperatureK', 323.15, 'tailEquilibriumMoisture', 0.05, ..."
+        },
+        {
+          "page": 174,
+          "head": "174 | 'solver', 'ode15s_default_NDF', 'jacobianMode', 'JPattern_finite_difference', ... | 'waterFaceScheme', 'Kirchhoff', 'heatFaceScheme', 'harmonic', ... | 'coefficientFloor', 1e-12, 'latentHeatIncluded', false); | runSummary.settings = settings;",
+          "tail": "runSummary.exception = struct('identifier', runError.identifier, ... | 'message', runError.message, 'report', getReport(runError, 'extended', 'hyperlinks',"
+        },
+        {
+          "page": 175,
+          "head": "175 | 'off')); | writeJson(summaryPath, runSummary); | logLine(logFileId, 'FAILED %s\\n%s', runSummary.finishedAtUtc, | runSummary.exception.report);",
+          "tail": "initialState = segment.ye(:, end); | tailEndSec = ceil(eventSec)+1;"
+        },
+        {
+          "page": 176,
+          "head": "176 | tailOptions = odeset(baseOptions, 'MaxStep', 1, 'Events', []); | lastwarn(''); | tail = ode15s(@balanceRhs, [eventSec, tailEndSec], initialState, tailOptions); | [warningText, warningId] = lastwarn;",
+          "tail": "max(abs(massResidual))); | diagnostic.maxRadialMoistureIncrease = max(diagnostic.maxRadialMoistureIncrease, ..."
+        },
+        {
+          "page": 177,
+          "head": "177 | max(diff(acceptedMoisture, 1, 1), [], 'all')); | diagnostic.acceptedTimePoints = | diagnostic.acceptedTimePoints+numel(solutions{pieceIndex}.x); | end",
+          "tail": "diffusionPrefactor = 2.4e-3; | thermalFactor = exp(-3850./((temperature(1:end-1)+temperature(2:end))/2));"
+        },
+        {
+          "page": 178,
+          "head": "178 | end | positiveMoisture = max(waterContent, settings.coefficientFloor); | kirchhoffPotential = positiveMoisture.*exp(-moistureExponent./positiveMoisture) ... | -moistureExponent*expint(moistureExponent./positiveMoisture);",
+          "tail": "warningRecords{end+1} = struct('identifier', warningId, 'message', warningText, ... | 'segmentStartSec', leftSec, 'segmentTargetSec', rightSec);"
+        },
+        {
+          "page": 179,
+          "head": "179 | logLine(logFileId, 'WARNING %s [%s] %s', caseName, warningId, warningText); | end | end | end",
+          "tail": "if ~foundPiece | error('CrossCheck:DenseDomain', '请求的时刻%.17g 不在已积分分段内。', queryTimeSec);"
+        },
+        {
+          "page": 180,
+          "head": "180 | end | end | end | function sampleTable = makeSampleTable(caseResult)",
+          "tail": "fileBytes = fread(fileId, Inf, '*uint8'); | digest = java.security.MessageDigest.getInstance('SHA-256');"
+        },
+        {
+          "page": 181,
+          "head": "181 | digest.update(typecast(fileBytes, 'int8')); | digestBytes = typecast(digest.digest(), 'uint8'); | hashText = lower(reshape(dec2hex(digestBytes, 2)', 1, [])); | end",
+          "tail": "'utf8').replace(/^\\uFEFF/, '')); } | function writeJson(filePath, value) { fs.writeFileSync(filePath, JSON.stringify(value, null,"
+        },
+        {
+          "page": 182,
+          "head": "182 | 2) + '\\n', 'utf8'); } | function assert(condition, message) { if (!condition) throw new Error(message); } | function finite(value, label) { assert(typeof value === 'number' && Number.isFinite(value), | `Nonfinite ${label}`); return value; }",
+          "tail": "for (const [pythonKey, matlabKey] of settingsPairs) { | assert(python.settings[pythonKey] === matlabRun.settings[matlabKey], `${question}:"
+        },
+        {
+          "page": 183,
+          "head": "183 | ${pythonKey} differs`); | } | assert(python.settings.faceScheme.toLowerCase() === | matlabRun.settings.waterFaceScheme.toLowerCase(), `${question}: face scheme differs`);",
+          "tail": "questions.push({ question, status: failures.some(item => item.startsWith(question + '/')) ? | 'FAIL' : 'PASS',"
+        },
+        {
+          "page": 184,
+          "head": "184 | intervals: 40, commonTimesSec: times, commonMaterialX: coordinates, | matchedCoordinatePairs: pairs.length, | maxima, event, comparisons: pairs, | excludedPythonTimesSec: sample.timesS.filter(value => !times.includes(value)),",
+          "tail": "encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }); | const supervision = { supervisorStartedAtUtc, supervisorFinishedAtUtc: now(),"
+        },
+        {
+          "page": 185,
+          "head": "185 | executable: process.execPath, commandArguments: [scriptPath, '--worker'], cwd: projectRoot, | workerActualExitCode: worker.status, workerSignal: worker.signal, workerSpawnError: | worker.error ? String(worker.error) : null, | workerStderr: worker.stderr, source: 'Node parent process spawnSync return status; not a child",
+          "tail": "process.exitCode = worker.status ?? 2; | }"
+        },
+        {
+          "page": 186,
+          "head": "186 | 9.3 AI 使用报告 | 本次建模过程中，使用Deepseek Harness 与Deepseek v4.1 flash 组合辅助检查源 | 代码语法并进行部分程序调试；使用Codex 与GPT6-Astra 组合辅助理解题目、检索 | 参考文献、检查建模结果和整理公式。具体使用情况如下。",
+          "tail": "致。公式整理主要包括梳理推导步骤、统一符号写法、检查公式之间的衔接，以及整理 | 公式与变量说明的对应关系，使数学表达更清楚、连贯。"
+        }
+      ]
+    },
+    "ai": {
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "AI工具使用详情.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Microsoft: Print To PDF",
+        "creationDate": "D:20260913160633+08'00'",
+        "modDate": "D:20260913160633+08'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 5,
+      "toc": [],
+      "encrypted": false,
+      "attachments": 0,
+      "page_labels": [],
+      "page_sizes": [
+        [
+          595.3200073242188,
+          841.9200439453125
+        ]
+      ]
+    },
+    "briefing": {
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "PowerPoint 演示文稿",
+        "author": "优品PPT",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® 2016",
+        "producer": "Microsoft® PowerPoint® 2016",
+        "creationDate": "D:20260910155418+08'00'",
+        "modDate": "D:20260910155418+08'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 79,
+      "toc": [],
+      "encrypted": false,
+      "attachments": 0,
+      "page_labels": [],
+      "page_sizes": [
+        [
+          960.0,
+          540.0
+        ]
+      ]
+    },
+    "problem": {
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "沈继红",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® Office Word 2007",
+        "producer": "Microsoft® Office Word 2007",
+        "creationDate": "D:20260909050217",
+        "modDate": "D:20260909050217",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 4,
+      "toc": [],
+      "encrypted": false,
+      "attachments": 0,
+      "page_labels": [],
+      "page_sizes": [
+        [
+          595.3200073242188,
+          841.9199829101562
+        ]
+      ]
+    }
+  },
+  "paper_hits": {
+    "福州": [],
+    "厦门": [],
+    "陈浩": [],
+    "陈豪": [],
+    "陈昊": [],
+    "陈皓": [],
+    "陈颢": [],
+    "Shi Chenhao": [],
+    "Chenhao": [],
+    "郑欣洁": [],
+    "乐乐": [],
+    "队号": [],
+    "参赛编号": [],
+    "待补": [],
+    "待确认": [],
+    "待核": [],
+    "附录 A": [],
+    "附录A": [
+      {
+        "page": 5,
+        "context": "有效显热需求；ρd 则用于计算随材料守恒的干物质和水质量。若把题给ρ\n同时解释为真实湿密度，再强行令ρd=ρ/(1+C)，会对固定长度和给定半径施加额外约束。\n附录A.2 表明，该约束与所给后期收缩数据不能同时满足。因此本文采用有效容量与独\n立干骨架的闭合，使两套方程的定义一致；这一处理也限定了结果的物理解释，不能视\n"
+      },
+      {
+        "page": 16,
+        "context": "方程中\n不再出现额外网格平流项；干基比值也不另加体积浓缩项。收缩引起的干骨架密度变化\n满足𝜌d(𝑡) = 𝜌d0[𝑅0/𝑅(𝑡)]2。坐标变换和干质量守恒推导见附录A。\n在x=0 保持零通量，表面边界改为\n−\n𝑘\n𝑅(𝑡) 𝑇^\n𝑥(1, 𝑡) = ℎ(𝑇s −𝑇∞), −\n𝐷\n𝑅(𝑡) 𝐶^\n𝑥(1, 𝑡) = 𝛽(𝐶s −𝐶eq)\n(18)\n边界中的1/R 来自空间导数换元，不能遗漏。附录4 物性为"
+      }
+    ],
+    "附录 C": [],
+    "附录C": [
+      {
+        "page": 7,
+        "context": "温度与水分绝对容差分别\n为10⁻¹⁰ K 和10⁻¹² kg/kg。严格容差用于控制时间积分，不能解释为最终物理预测具备相\n同精度。网格选择依据及时间设置对照见附录C。\n5.1.4 结果分析\n表1、表2 列出题目要求的7 个时刻和5 个半径位置；完整逐秒、0.1 cm 结果由同\n一轨迹生成。温度和浓度分别保留四位小数，表头中的半径以cm 表示。\n表1 问题一的径向温度（°C）\n时间/s\nr=0 cm\nr"
+      },
+      {
+        "page": 9,
+        "context": "、1801 个整数秒和21 个半径点上最大相差约\n1.80×10⁻⁶ K。非线性水方程另用守恒检查与面格式对照核验，不由热场的一致性替代。\n基准公式与取样范围在附录C 交代，正文不逐项展开误差矩阵。\n5.2 问题二模型的建立与求解\n5.2.1 建模思路\n问题二沿用式(2)—(5)的几何与边界框架，重新从均匀初始场开始。按附录3 在整\n个求解区间使用同一套变物性，不在1800 s 将附录2 解拼接到附录3"
+      },
+      {
+        "page": 13,
+        "context": "温度接近四位小数的舍入边界，基线与更严格时间设置\n可能给出不同末位；表中统一采用基线计算值47.1401°C。该差异反映计算末位对时间\n设置的敏感性，详细比较见附录C。\n5.3 问题三模型的建立与求解\n5.3.1 建模思路\n问题三将给定时刻的温湿状态计算转化为烘干时间求解。沿用问题二的完整数值轨\n迹，以全域最大含水率构造阈值事件，定位临界时刻，并据此确定满足严格含水率约束\n的烘干时长。\n5.3.2 变量"
+      },
+      {
+        "page": 13,
+        "context": "15}\n(14)\n式中，ℕ0 为非负整数集合；𝑡c、𝑡r 与𝛥𝑡统一以秒计算。达标判定采用未舍入的\n数值解，最终将𝑡r 换算为小时表示。候选点的生成和逐格核验见附录C.4。\n5.3.3 求解算法\n第一步：在问题二的积分过程中监测𝑔(𝑡) 下降穿零。第二步：利用连续数值解在\n"
+      },
+      {
+        "page": 19,
+        "context": "级数、独立语言程序和不同积分器分别更换求解环节，仍共享题设参数\n与边界；各方法不能提供独立的物理预测准确率。表8 差值均取未舍入结果，完整计算\n过程与采样范围见附录C。\n"
+      },
+      {
+        "page": 20,
+        "context": "含水率事件确定，并在𝑁= 800 的验证轨迹上用独立二分法\n复核事件定位。最终烘干时刻按式(14)确定，其可行性由未舍入的最大含水率核验；两\n种定位方法的比较见附录C.4。\n在N200 单参数情景中，扩散前因子倍率由0.7 增至1.4 时，问题三时长由79.4187 h\n降至43.0796 h，问题四由70.4059 h 降至38.3160 h；导热系数在±15%内变化，两问时\n长跨度均小于0.011%"
+      }
+    ],
+    "AI": [
+      {
+        "page": 22,
+        "context": "接沿用本文系数。\n在本文约定条件下，四问结果分别给出了预热分布、全过程耦合变化、固定半径达标时\n长及收缩修正后的时长，可作为后续实验和工况比较的量化依据。\n八、AI 工具使用声明\n本参赛队在竞赛过程中使用了AI 工具，主要用于资料检索、模型推导辅助、程序\n调试、数值结果核对及文字整理，详细使用情况见支撑材料。\nAI 参与内容包括文献检索与真实性核查、模型推导辅助、程序调试、计算结果核\n对、公式与引用整"
+      },
+      {
+        "page": 22,
+        "context": "别给出了预热分布、全过程耦合变化、固定半径达标时\n长及收缩修正后的时长，可作为后续实验和工况比较的量化依据。\n八、AI 工具使用声明\n本参赛队在竞赛过程中使用了AI 工具，主要用于资料检索、模型推导辅助、程序\n调试、数值结果核对及文字整理，详细使用情况见支撑材料。\nAI 参与内容包括文献检索与真实性核查、模型推导辅助、程序调试、计算结果核\n对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一"
+      },
+      {
+        "page": 22,
+        "context": "。\n八、AI 工具使用声明\n本参赛队在竞赛过程中使用了AI 工具，主要用于资料检索、模型推导辅助、程序\n调试、数值结果核对及文字整理，详细使用情况见支撑材料。\nAI 参与内容包括文献检索与真实性核查、模型推导辅助、程序调试、计算结果核\n对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一致性。参赛队对\n采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行\n记录。\n"
+      },
+      {
+        "page": 24,
+        "context": "24\n九、附录\n9.0 支撑材料文件列表\n支撑材料共137 个文件。下表覆盖题面与数据、参考资料、生产程序、结果表格、\n数值检验、绘图资料和AI 工具使用详情。\n表1 支撑材料分类汇总\n目录\n文件数\n根目录\n7\n01_赛题与原始数据\n10\n02_参考文献与网络资料\n11\n03_程序代码\n30\n04_结果表格\n12\n05_数值检验与实验\n43\n06_绘图程序与数据\n24\n表2 根目录"
+      },
+      {
+        "page": 24,
+        "context": "_整理验收说明.txt\n材料整理与真实核查范围\n4\n00_文件清单.txt\n全部文件的相对路径清单\n5\n00_材料来源说明.txt\n数据程序文献及图表来源\n6\nAI 工具使用详情.docx\nAI 工具与使用环节记录\n7\n源码去注释与沙盒核查.txt\n既有去注释与独立沙盒核查范围\n表3 01_赛题与原始数据\n序号\n文件名\n用途\n8\nA 题.pdf\nA 题题面及参数和结果要求\n9\n数据说明.txt\n原始数"
+      },
+      {
+        "page": 24,
+        "context": "理与真实核查范围\n4\n00_文件清单.txt\n全部文件的相对路径清单\n5\n00_材料来源说明.txt\n数据程序文献及图表来源\n6\nAI 工具使用详情.docx\nAI 工具与使用环节记录\n7\n源码去注释与沙盒核查.txt\n既有去注释与独立沙盒核查范围\n表3 01_赛题与原始数据\n序号\n文件名\n用途\n8\nA 题.pdf\nA 题题面及参数和结果要求\n9\n数据说明.txt\n原始数据与清洗字段说明\n表4 01_"
+      },
+      {
+        "page": 55,
+        "context": "S_COMPLETED', flush=True)\nexcept BaseException as error:\nreport.update(status='FAIL', error=repr(error))\ntraceback.print_exc()\nraise\nfinally:\nreport.update(finishedAtUtc=utcNow(),\nelapsedSeconds=time.pe"
+      },
+      {
+        "page": 67,
+        "context": "dict(settings), 'state':stateName, 'time_s':t,\n'status':'PASS' if passed else 'FAIL', 'matrix_shape':matrix.shape,\n'matrix_nnz':matrix.nnz, 'directional_checks':directional,\n'passive_column_analytic_abs"
+      },
+      {
+        "page": 68,
+        "context": "ion, 'face_scheme':scheme,\n'interval_s':[0,2],\n'status':'PASS' if passed else 'FAIL', 'warnings':msgs,\n'nfev':result.nfev, 'njev':result.njev, 'nlu':result.nlu,\n'purpose':'Short Jacobian/BDF wiring chec"
+      },
+      {
+        "page": 68,
+        "context": ":datetime.now(timezone.utc).isoformat(),\n'status':'PASS' if not failures else 'FAIL', 'failures':failures,\n'source_sha256':LOADED_CODE_SHA256,\n'core_sha256':CORE_LOADED_CODE_SHA256,\n'source_hash_policy'"
+      },
+      {
+        "page": 75,
+        "context": "pend('Paper CSV contract exceeds the live solution horizon')\nreturn {'status':'FAIL','checked_cells':0,'files':[]},errors\nexpectedNames={f'{qid.lower()}_paper_{kind}.csv':kind for kind in expectedKinds}"
+      },
+      {
+        "page": 77,
+        "context": "ileRecord(path),'kind':kind,'status':'PASS' if\nlen(errors)==beforeErrors else 'FAIL',\n'header':header,'data_rows':len(rows),'expected_data_rows':len(times),'checked_cells':check\ned,\n'source_query_times_"
+      },
+      {
+        "page": 77,
+        "context": "material_x=1; never fixed 2\ncm' if surfaceColumn else None})\nreturn {'status':'FAIL' if errors else 'PASS','checked_cells':totalCells,'files':files,\n'completion':completionInfo,'completion_source':expor"
+      },
+      {
+        "page": 81,
+        "context": "mple mismatch exceeds 1e-10')\nlive={'status':'PASS' if difference<=1e-10 else 'FAIL','samples':len(samples),\n'max_abs_unrounded_difference':difference}\npaperValidation,paperErrors=validatePaperTables(ma"
+      },
+      {
+        "page": 81,
+        "context": "tOutputs.py',\n'generated_at':datetime.now(timezone.utc).isoformat(),\n'status':'FAIL' if errors else 'PASS','fully_verified_with_live_Run':not errors\nand run is not None,\n'checked_cells':checkedCells,'sh"
+      },
+      {
+        "page": 82,
+        "context": "]))\nreturn {'status':'PASS' if all(r['status']=='PASS' for r in results) else 'FAIL',\n'fully_verified_with_live_Run':all(r['fully_verified_with_live_Run'] for r in\nresults),'exports':results}\ndef paperC"
+      },
+      {
+        "page": 82,
+        "context": "lt,errors=validatePaperTables(changed,run)\nif not errors or result['status']!='FAIL':\nraise AssertionError('Independent paper validator missed deliberate defect:\n"
+      },
+      {
+        "page": 101,
+        "context": "back_error)})\nif rollback_errors:\nwrite_json(root / manifest_name, {'status': 'FAILED_PUBLICATION', 'error':\nrepr(error),\n'rollback_errors': rollback_errors, 'generated_at': utc_now()})\nwrite_json(direc"
+      },
+      {
+        "page": 101,
+        "context": "t': utc_now()})\nwrite_json(directory / 'publication_failure.json', {'status': 'FAIL', 'error':\nrepr(error),\n'rollback_errors': rollback_errors, 'prior_publication_restored': changed and not\nrollback_err"
+      },
+      {
+        "page": 121,
+        "context": "as error:\nprovenance.write_json(directory / 'worker_failure.json', {'status': 'FAIL', 'error':\nrepr(error),\n'traceback': traceback.format_exc(), 'generated_at': provenance.utc_now(),\n'returncode': None,"
+      },
+      {
+        "page": 122,
+        "context": "'utf-8'))\nprovenance.write_json(directory / 'parent_failure.json', {'status': 'FAIL',\n'generated_at': provenance.utc_now(), 'error': repr(error), 'traceback':\ntraceback.format_exc(),\n'actual_worker_retu"
+      },
+      {
+        "page": 126,
+        "context": "),\n]\nreturn {\n\"status\":\"PASS\" if all(v<=limit for _,v,limit,_ in checks) else \"FAIL\",\n\"scope\":\"analytic benchmark implementation selfcheck; production FVM comparison is\nseparate\",\n\"checks\":[{\"name\":name"
+      },
+      {
+        "page": 133,
+        "context": "tion as error:\nprovenance.write_json(case / 'worker_failure.json', {'status': 'FAIL', 'error':\nrepr(error),\n'traceback': traceback.format_exc(), 'started_at': started, 'failed_at':\nprovenance.utc_now(),"
+      },
+      {
+        "page": 135,
+        "context": "coding='utf-8'))\nprovenance.write_json(directory / 'failure.json', {'status': 'FAIL', 'error':\nrepr(error),\n'traceback': traceback.format_exc(), 'started_at': started, 'failed_at':\nprovenance.utc_now(),"
+      },
+      {
+        "page": 167,
+        "context": "s=120.0,\nface_scheme=\"kirchhoff\", jacobian_mode=\"finite_difference\",\n**kwargs)\nFAILURES = []\ndef evaluate(question, unitPoint):\nvalues = {}\nfor name, _unit, low, high in ((p[0], p[1], p[3], p[4]) for p "
+      },
+      {
+        "page": 168,
+        "context": "68\nrun = solve_case(settings_for(question, values))\nexcept Exception as error:\nFAILURES.append({\"question\": question, \"values\": values,\n\"error\": f\"{type(error).__name__}: {error}\"})\nreturn float(\"nan\")\n"
+      },
+      {
+        "page": 174,
+        "context": "ary.finishedAtUtc, runSummary.elapsedSec);\ncatch runError\nrunSummary.status = 'FAILED';\nrunSummary.finishedAtUtc = utcStamp();\nrunSummary.elapsedSec = toc(runTimer);\nrunSummary.exception = struct('ident"
+      },
+      {
+        "page": 175,
+        "context": "175\n'off'));\nwriteJson(summaryPath, runSummary);\nlogLine(logFileId, 'FAILED %s\\n%s', runSummary.finishedAtUtc,\nrunSummary.exception.report);\nrethrow(runError);\nend\nend\nfunction caseResult = so"
+      },
+      {
+        "page": 183,
+        "context": "({ question, status: failures.some(item => item.startsWith(question + '/')) ?\n'FAIL' : 'PASS',\n"
+      },
+      {
+        "page": 184,
+        "context": "changed\nwhile running');\nreturn { schemaVersion: 1, status: failures.length ? 'FAIL' : 'PASS', failures,\nstartedAtUtc, finishedAtUtc: now(), elapsedSeconds: Number(process.hrtime.bigint() -\nstartTime) /"
+      },
+      {
+        "page": 185,
+        "context": "rker.stdout?.length ? JSON.parse(worker.stdout) : {\nschemaVersion: 1, status: 'FAIL', failures: ['Worker did not produce a numerical report'],\nscript: scriptRecord, thresholds, startedAtUtc: supervisorS"
+      },
+      {
+        "page": 185,
+        "context": "rt.processSupervision = supervision;\nif (worker.status !== 0) report.status = 'FAIL';\nwriteJson(outputJson, report);\nfs.writeFileSync(outputMarkdown, markdown(report), 'utf8');\nwriteJson(path.join(matla"
+      },
+      {
+        "page": 186,
+        "context": "186\n9.3 AI 使用报告\n本次建模过程中，使用Deepseek Harness 与Deepseek v4.1 flash 组合辅助检查源\n代码语法并进行部分程序调试；使用Codex 与GPT6-Astra 组合辅助理解题目、检索\n参考文献、检查建模结果和"
+      }
+    ],
+    "人工智能": [],
+    "人工审查": [
+      {
+        "page": 22,
+        "context": "调试、计算结果核\n对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一致性。参赛队对\n采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行\n记录。\n"
+      }
+    ],
+    "团队": [
+      {
+        "page": 22,
+        "context": "程序调试、计算结果核\n对、公式与引用整理。本稿中的数值对照用于说明所列计算条件下的一致性。参赛队对\n采用的模型、源码、引用和结论承担核实责任；核心代码及最终稿的团队人工审查另行\n记录。\n"
+      },
+      {
+        "page": 115,
+        "context": "\nLIMITATIONS = [\n'没有内部温度/水分实测真值，数值校核不构成实测预测精度认证。',\n'密度、气固湿度映射、潜热闭合和外生收缩是模型解释边界，需团队主导确认。',\n'四位小数为输出格式；网格比较是采样差值，不能冒称连续解严格误差上界。',\n'Visual Studio 复现与用户人工代码审查分别留有独立状态。',\n]\nCONTRACT_TARGETS = {\n'model_result"
+      }
+    ],
+    "目录": [
+      {
+        "page": 24,
+        "context": "撑材料文件列表\n支撑材料共137 个文件。下表覆盖题面与数据、参考资料、生产程序、结果表格、\n数值检验、绘图资料和AI 工具使用详情。\n表1 支撑材料分类汇总\n目录\n文件数\n根目录\n7\n01_赛题与原始数据\n10\n02_参考文献与网络资料\n11\n03_程序代码\n30\n04_结果表格\n12\n05_数值检验与实验\n43\n06_绘图程序与数据\n24\n表2 根目录\n序号\n文件名\n用途\n1\n00_可用于论文附录"
+      },
+      {
+        "page": 24,
+        "context": "支撑材料共137 个文件。下表覆盖题面与数据、参考资料、生产程序、结果表格、\n数值检验、绘图资料和AI 工具使用详情。\n表1 支撑材料分类汇总\n目录\n文件数\n根目录\n7\n01_赛题与原始数据\n10\n02_参考文献与网络资料\n11\n03_程序代码\n30\n04_结果表格\n12\n05_数值检验与实验\n43\n06_绘图程序与数据\n24\n表2 根目录\n序号\n文件名\n用途\n1\n00_可用于论文附录的支撑清单.tx"
+      },
+      {
+        "page": 24,
+        "context": "题与原始数据\n10\n02_参考文献与网络资料\n11\n03_程序代码\n30\n04_结果表格\n12\n05_数值检验与实验\n43\n06_绘图程序与数据\n24\n表2 根目录\n序号\n文件名\n用途\n1\n00_可用于论文附录的支撑清单.txt\n含简短用途的完整文件清单\n2\n00_支撑材料总说明.txt\n材料组织与复现入口说明\n3\n00_整理验收说明.txt\n材料整理与真实核查范围\n4\n00_文件清单.txt\n全部文"
+      },
+      {
+        "page": 26,
+        "context": ".py\n问题二与三共同轨迹配置\n39\nq3Model.py\n问题三严格达标时刻判定\n40\nq4Model.py\n问题四收缩模型配置\n41\nREADME.txt\n目录运行与依赖说明\n42\nrequirements.txt\nPython 依赖及固定版本\n43\nrunDelivery.py\n四问生产计算与输入预检入口\n44\nrunLogged.ps1\n生产运行监督与退出码记录\n表10 03_程序代码/doc"
+      },
+      {
+        "page": 173,
+        "context": "y, 'runSummary.json');\nif isfile(summaryPath)\nerror('CrossCheck:ExistingRun', '该目录已有运行记录，请使用新的输出目录以保留证据。');\nend\nif ~isfolder(outputDirectory)\nmkdir(outputDirectory);\nend\nlogPath = fullfile(outputDirecto"
+      },
+      {
+        "page": 173,
+        "context": "son');\nif isfile(summaryPath)\nerror('CrossCheck:ExistingRun', '该目录已有运行记录，请使用新的输出目录以保留证据。');\nend\nif ~isfolder(outputDirectory)\nmkdir(outputDirectory);\nend\nlogPath = fullfile(outputDirectory, 'runLog.txt'"
+      }
+    ]
+  },
+  "药材热湿耦合模型与干燥时间计算_附录修订版.docx": {
+    "properties": {
+      "docProps/app.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Template>Normal.dotm</Template><Pages>186</Pages><Words>2905</Words><Characters>3149</Characters><Lines>1</Lines><Paragraphs>1</Paragraphs><TotalTime>4</TotalTime><ScaleCrop>false</ScaleCrop><LinksUpToDate>false</LinksUpToDate><CharactersWithSpaces>3171</CharactersWithSpaces><Application>WPS Office_12.1.0.28505_F1E327BC-269C-435d-A152-05C5408002CA</Application><DocSecurity>0</DocSecurity></Properties>",
+      "docProps/core.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-09-12T02:18:00Z</dcterms:created><dc:creator>施陈灏</dc:creator><cp:lastModifiedBy>施陈灏</cp:lastModifiedBy><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-09-13T07:56:21Z</dcterms:modified><dc:title>药材热湿耦合模型与干燥时间计算</dc:title><cp:revision>1</cp:revision></cp:coreProperties>",
+      "docProps/custom.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/custom-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"2\" name=\"KSOProductBuildVer\"><vt:lpwstr>2052-12.1.0.28505</vt:lpwstr></property><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"3\" name=\"KSOTemplateDocerSaveRecord\"><vt:lpwstr>eyJoZGlkIjoiMzEwNTM5NzYwMDRjMzkwZTVkZjY2ODkwMGIxNGU0OTUiLCJ1c2VySWQiOiIxNjMyMzQ3OTQwIn0=</vt:lpwstr></property><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"4\" name=\"ICV\"><vt:lpwstr>833062AFED354DC68951125E9B0EE4E5_12</vt:lpwstr></property></Properties>"
+    },
+    "sections": [
+      "<w:sectPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\"><w:footerReference r:id=\"rId5\" w:type=\"default\"/><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"1417\" w:right=\"1417\" w:bottom=\"1417\" w:left=\"1417\" w:header=\"567\" w:footer=\"709\" w:gutter=\"0\"/><w:pgNumType w:fmt=\"decimal\" w:start=\"1\"/><w:cols w:space=\"425\" w:num=\"1\"/></w:sectPr>"
+    ],
+    "track_change_elements": 0,
+    "comment_files": []
+  },
+  "AI工具使用详情.docx": {
+    "properties": {
+      "docProps/app.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Template>Normal.dotm</Template><Pages>5</Pages><Words>2789</Words><Characters>3416</Characters><Lines>0</Lines><Paragraphs>0</Paragraphs><TotalTime>10</TotalTime><ScaleCrop>false</ScaleCrop><LinksUpToDate>false</LinksUpToDate><CharactersWithSpaces>3481</CharactersWithSpaces><Application>WPS Office_12.1.0.28505_F1E327BC-269C-435d-A152-05C5408002CA</Application><DocSecurity>0</DocSecurity></Properties>",
+      "docProps/core.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2013-12-23T23:15:00Z</dcterms:created><dc:creator>施陈灏</dc:creator><cp:lastModifiedBy>施陈灏</cp:lastModifiedBy><cp:lastPrinted>2026-09-13T08:06:09Z</cp:lastPrinted><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-09-13T08:06:36Z</dcterms:modified><dc:subject>药材热湿耦合模型与干燥时间计算 AI工具使用记录</dc:subject><dc:title>AI工具使用详情</dc:title><cp:revision>1</cp:revision></cp:coreProperties>",
+      "docProps/custom.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/custom-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"2\" name=\"KSOTemplateDocerSaveRecord\"><vt:lpwstr>eyJoZGlkIjoiMzEwNTM5NzYwMDRjMzkwZTVkZjY2ODkwMGIxNGU0OTUiLCJ1c2VySWQiOiIxNjMyMzQ3OTQwIn0=</vt:lpwstr></property><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"3\" name=\"KSOProductBuildVer\"><vt:lpwstr>2052-12.1.0.28505</vt:lpwstr></property><property fmtid=\"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}\" pid=\"4\" name=\"ICV\"><vt:lpwstr>5DD982B165364D86A3CD68B0C7911E18_12</vt:lpwstr></property></Properties>"
+    },
+    "sections": [
+      "<w:sectPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\" xmlns:wpsCustomData=\"http://www.wps.cn/officeDocument/2013/wpsCustomData\"><w:footerReference r:id=\"rId5\" w:type=\"default\"/><w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"1134\" w:right=\"1134\" w:bottom=\"1020\" w:left=\"1134\" w:header=\"720\" w:footer=\"482\" w:gutter=\"0\"/><w:cols w:space=\"720\" w:num=\"1\"/><w:docGrid w:linePitch=\"360\" w:charSpace=\"0\"/></w:sectPr>"
+    ],
+    "track_change_elements": 0,
+    "comment_files": []
+  }
+}
